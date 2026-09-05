@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Btheta",
-  "created": "2026-09-05T20:36:09Z",
+  "created": "2026-09-05T21:07:23Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Btheta'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -29,6 +29,17 @@
           "reaction": "CBPS",
           "gpr_before": "NP_809470_1 or (NP_809469_1 and NP_809470_1)",
           "gpr_after": "NP_809469_1 and NP_809470_1"
+        },
+        {
+          "reaction": "PPCK",
+          "bounds_before": [
+            0.0,
+            1000.0
+          ],
+          "bounds_after": [
+            -1000.0,
+            1000.0
+          ]
         },
         {
           "reaction": "ACLS",
@@ -122,6 +133,13 @@
           "genes_added": [
             "BT3866"
           ]
+        },
+        {
+          "reaction": "PC",
+          "gpr_before": "NP_810361_1 or NP_810601_1 or (NP_810610_1 and NP_810828_1)",
+          "gpr_after": "(NP_810610_1 and NP_810828_1 and NP_810361_1) or (NP_810610_1 and NP_810828_1 and NP_810601_1)",
+          "rule": "R2",
+          "genes_added": []
         },
         {
           "reaction": "CHORM",
@@ -272,7 +290,7 @@
       "drop_rich_medium_essentials": false,
       "rich_medium_uptake": -1000.0,
       "knockout_genes": [],
-      "processes": 2,
+      "processes": 3,
       "solver": "glpk",
       "max_conditions": null,
       "complete_medium_transport": true,
@@ -318,17 +336,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.46522483237185686,
+        "point": 0.4713189512898749,
         "ci95": [
-          0.3627530572415059,
-          0.5784508453915836
+          0.3702913607961684,
+          0.5864070004256402
         ]
       },
       "auroc_standard": {
-        "point": 0.7772840984559904,
+        "point": 0.7774414415344433,
         "ci95": [
-          0.7233972937722748,
-          0.8283070510662087
+          0.7239951400731219,
+          0.8293430283100154
         ]
       },
       "mcc": {
@@ -371,17 +389,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.21988894656323352,
+        "point": 0.23103362345548012,
         "ci95": [
-          0.17411146816556763,
-          0.2733748112359831
+          0.18521205903291862,
+          0.28355100990426524
         ]
       },
       "auroc_standard": {
-        "point": 0.6392467963150912,
+        "point": 0.6456456957871911,
         "ci95": [
-          0.6087038444365821,
-          0.6663964932506791
+          0.6154986151946257,
+          0.6766115059221854
         ]
       },
       "mcc": {
@@ -433,9 +451,9 @@
       "medium_completion_exchanges_added": 5
     },
     "timings_s": {
-      "rich_medium_essentials_s": 2.1457672119140625e-06,
-      "knockout_simulation_s": 20.49095869064331,
-      "total_s": 20.796955585479736
+      "rich_medium_essentials_s": 1.6689300537109375e-06,
+      "knockout_simulation_s": 20.89815616607666,
+      "total_s": 21.239741325378418
     },
     "dropped_rich_medium_essentials": 0
   },

@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Putida",
-  "created": "2026-09-05T20:38:40Z",
+  "created": "2026-09-05T21:09:49Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Putida'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -205,6 +205,13 @@
           "genes_added": []
         },
         {
+          "reaction": "RBFSa",
+          "gpr_before": "NP_742680_1 or NP_745060_1",
+          "gpr_after": "NP_745060_1 or NP_742678_1",
+          "rule": "R4",
+          "genes_added": []
+        },
+        {
           "reaction": "UMPK",
           "gpr_before": "NP_743750_1 or NP_743927_1",
           "gpr_after": "NP_743750_1",
@@ -374,7 +381,7 @@
       "drop_rich_medium_essentials": false,
       "rich_medium_uptake": -1000.0,
       "knockout_genes": [],
-      "processes": 2,
+      "processes": 3,
       "solver": "glpk",
       "max_conditions": null,
       "complete_medium_transport": true,
@@ -420,17 +427,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.4138236925036841,
+        "point": 0.4074059817979271,
         "ci95": [
-          0.3020306360498513,
-          0.518553884022856
+          0.2992414705524553,
+          0.5085407584685131
         ]
       },
       "auroc_standard": {
-        "point": 0.756303674065444,
+        "point": 0.7561884784518117,
         "ci95": [
-          0.6947828324915897,
-          0.8052351059215538
+          0.6944900661995866,
+          0.8052732310304561
         ]
       },
       "mcc": {
@@ -473,17 +480,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.17731295209993983,
+        "point": 0.1693575896464216,
         "ci95": [
-          0.12681524993804025,
-          0.22378151115260353
+          0.12517025209035162,
+          0.21000998157235165
         ]
       },
       "auroc_standard": {
-        "point": 0.6614429700171884,
+        "point": 0.6587298715494856,
         "ci95": [
-          0.6207359812233562,
-          0.6952781359219649
+          0.6177098335271479,
+          0.6927076068848204
         ]
       },
       "mcc": {
@@ -535,9 +542,9 @@
       "medium_completion_exchanges_added": 7
     },
     "timings_s": {
-      "rich_medium_essentials_s": 1.430511474609375e-06,
-      "knockout_simulation_s": 116.54872226715088,
-      "total_s": 116.80573725700378
+      "rich_medium_essentials_s": 9.5367431640625e-07,
+      "knockout_simulation_s": 109.15411019325256,
+      "total_s": 109.49773931503296
     },
     "dropped_rich_medium_essentials": 0
   },

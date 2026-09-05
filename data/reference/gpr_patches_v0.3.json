@@ -1,7 +1,7 @@
 {
   "version": "0.3",
   "created": "2026-09-05",
-  "scope": "gene-rule corrections for the OR-rule reactions that are essential in at least one carbon-source condition where the wild-type model grows (scripts/essential_or_rules.py: 55 in B. thetaiotaomicron, 85 in P. putida, 47 in S. oneidensis, 70 in S. meliloti), beyond those already in v0.2. Same rules as v0.2, adjudicated from RefSeq product names and enzymology only: R1 remove genes annotated as a different enzyme, a family/domain, or a non-enzyme (regulators, ribosomal proteins, thioredoxins as substrates, hypotheticals); R2 join annotated subunits with AND; R3 leave same-name paralogs, generic names ('aminotransferase', 'aldolase') and same-family members with no specific alternative; R5 (new) a diffusion or porin reaction keeps only porins, and a rule whose every gene is a different enzyme becomes empty (the reaction then carries no gene, i.e. it can no longer be knocked out) rather than keeping a wrong assignment. ABC-transporter and PTS rules were skipped (complexes lumped across systems). VERIFIER OUTCOME (5 Sept 2026): applied on top of v0.1+v0.2, the full set changed 391 gene-condition predictions to essential of which only 21 were experimentally important, so patches whose changes the fitness data contradict are marked status='held' with the reason; the runner applies only status='accepted' patches. The held reasons fall into three classes: transporter gaps for vitamins that the media contain, reaction-level essentiality artefacts unmasked by removing a false isozyme, and adjudications the data show to be wrong.",
+  "scope": "gene-rule corrections for the OR-rule reactions that are essential in at least one carbon-source condition where the wild-type model grows (scripts/essential_or_rules.py: 55 in B. thetaiotaomicron, 85 in P. putida, 47 in S. oneidensis, 70 in S. meliloti), beyond those already in v0.2. Same rules as v0.2, adjudicated from RefSeq product names and enzymology only: R1 remove genes annotated as a different enzyme, a family/domain, or a non-enzyme (regulators, ribosomal proteins, thioredoxins as substrates, hypotheticals); R2 join annotated subunits with AND; R3 leave same-name paralogs, generic names ('aminotransferase', 'aldolase') and same-family members with no specific alternative; R5 (new) a diffusion or porin reaction keeps only porins, and a rule whose every gene is a different enzyme becomes empty (the reaction then carries no gene, i.e. it can no longer be knocked out) rather than keeping a wrong assignment. ABC-transporter and PTS rules were skipped (complexes lumped across systems). VERIFIER OUTCOME (5 Sept 2026): applied on top of v0.1+v0.2, the full set changed 391 gene-condition predictions to essential of which only 21 were experimentally important, so patches whose changes the fitness data contradict are marked status='held' with the reason; the runner applies only status='accepted' patches. The held reasons fall into three classes: transporter gaps for vitamins that the media contain, reaction-level essentiality artefacts unmasked by removing a false isozyme, and adjudications the data show to be wrong. UPDATE (5 Sept 2026, later): four held patches were re-adjudicated — the B. thetaiotaomicron pyruvate-carboxylase rule is accepted together with a Btheta-scoped PPCK direction patch (universe_patches_v0.1.json), and the three riboflavin-synthase rules held as transporter gaps or unexplained were re-adjudicated under R4 (a second annotated isozyme present in the genome: PP_0515, SMc01777, SO3468) — 24 remain held.",
   "patches": [
     {
       "org": "Btheta",
@@ -9,8 +9,8 @@
       "new_rule": "(BT1697 and BT1915 and BT1448) or (BT1697 and BT1915 and BT1688)",
       "rule": "R2",
       "note": "pyruvate carboxylase subunits A and B with either biotin carboxyl carrier protein",
-      "status": "held",
-      "verifier": "unmasks a reaction-level artefact: the model makes pyruvate carboxylase essential, but B. thetaiotaomicron uses PEP carboxykinase for anaplerosis and the PC subunits have no phenotype"
+      "status": "accepted",
+      "verifier": "held at first: the rule made pyruvate carboxylase essential although its subunits have no phenotype, but this unmasked a reaction-level artefact rather than a rule error: the draft carries PEP carboxykinase only in the gluconeogenic direction and has no PEP carboxylase, whereas Bacteroides run PckA carboxylating (succinate-propionate pathway). Re-accepted with the PPCK direction patch scoped to Btheta in universe_patches_v0.1.json, after which the pyruvate-carboxylase rule is neutral"
     },
     {
       "org": "Btheta",
@@ -374,11 +374,11 @@
     {
       "org": "Putida",
       "reaction": "RBFSa",
-      "new_rule": "PP_2916",
-      "rule": "R1",
-      "note": "lumazine synthase RibH (PP_0517) removed",
-      "status": "held",
-      "verifier": "riboflavin synthase without phenotype on a vitamin-free medium: cross-feeding of riboflavin in the pooled assay or an unannotated isozyme"
+      "new_rule": "PP_2916 or PP_0515",
+      "rule": "R4",
+      "note": "lumazine synthase RibH (PP_0517) removed; PP_0515 (RefSeq NP_742678.1, 'riboflavin synthase', in the ribD-ribE-ribBA-ribH operon) added as a genuine isozyme of PP_2916 (also 'riboflavin synthase'); the draft lacked PP_0515 altogether",
+      "status": "accepted",
+      "verifier": "held at first: riboflavin synthase without phenotype on a vitamin-free medium. Re-adjudicated under R4: the genome carries two riboflavin synthases (PP_0515 in the rib operon, PP_2916), which explains the absence of a phenotype for either"
     },
     {
       "org": "Putida",
@@ -701,11 +701,11 @@
     {
       "org": "MR1",
       "reaction": "RBFSa",
-      "new_rule": "SO2296",
-      "rule": "R1",
-      "note": "riboflavin synthase proper: the RibC-annotated gene kept, the beta subunit / lumazine synthase (SO3466) removed",
-      "status": "held",
-      "verifier": "the medium (ShewMM) contains Wolfe's vitamins including riboflavin, which the draft cannot import: a transporter gap, not a rule error"
+      "new_rule": "SO2296 or SO3468",
+      "rule": "R4",
+      "note": "riboflavin synthase proper: the beta subunit / lumazine synthase (SO3466) removed; SO3468 (NP_719017.1, 'riboflavin synthase alpha subunit RibC-like protein', in the rib operon next to ribE SO3466) added as a genuine isozyme of SO2296 ('... alpha subunit RibC')",
+      "status": "accepted",
+      "verifier": "held at first as a transporter gap (riboflavin in Wolfe's vitamins). Re-adjudicated under R4: two RibC-type riboflavin synthases in the genome; medium completion (riboflavin uptake) covers the rest"
     },
     {
       "org": "MR1",
@@ -746,7 +746,7 @@
       "rule": "R1",
       "note": "GntR-family repressor/aminotransferase fusion (SO2282) removed",
       "status": "held",
-      "verifier": "aspartate aminotransferase alone made essential; other aminotransferases evidently transaminate phenylalanine in vivo \u2014 generic aminotransferases should have been kept"
+      "verifier": "aspartate aminotransferase alone made essential; other aminotransferases evidently transaminate phenylalanine in vivo — generic aminotransferases should have been kept"
     },
     {
       "org": "MR1",
@@ -787,7 +787,7 @@
       "rule": "R1",
       "note": "hypothetical SMc00521, DNA helicase SMc01566 and FixI cation ATPases removed; dinucleoside polyphosphate hydrolase (Nudix) kept",
       "status": "held",
-      "verifier": "folate-branch gene without phenotype: the medium (RCH2) contains folate that the draft cannot import \u2014 transporter gap"
+      "verifier": "folate-branch gene without phenotype: the medium (RCH2) contains folate that the draft cannot import — transporter gap"
     },
     {
       "org": "Smeli",
@@ -978,11 +978,11 @@
     {
       "org": "Smeli",
       "reaction": "RBFSb",
-      "new_rule": "SMc01609",
-      "rule": "R1",
-      "note": "lumazine synthase step: riboflavin synthase alpha (SMc01773) removed",
-      "status": "held",
-      "verifier": "riboflavin in the medium (Wolfe's vitamins), no uptake in the draft \u2014 transporter gap"
+      "new_rule": "SMc01609 or SMc01777",
+      "rule": "R4",
+      "note": "lumazine synthase step: riboflavin synthase alpha (SMc01773) removed; SMc01777 (NP_385321.1, '6,7-dimethyl-8-ribityllumazine synthase', ribH2) added as a genuine isozyme of SMc01609 ('riboflavin synthase subunit beta' = lumazine synthase, ribH1)",
+      "status": "accepted",
+      "verifier": "held at first as a transporter gap (riboflavin in Wolfe's vitamins, no uptake in the draft). Re-adjudicated under R4: S. meliloti has two lumazine synthase genes (ribH1, ribH2); medium completion (riboflavin uptake) removes the remaining essentiality"
     },
     {
       "org": "Smeli",
@@ -991,7 +991,7 @@
       "rule": "R1",
       "note": "phosphomethylpyrimidine kinase SM_b20962 removed",
       "status": "held",
-      "verifier": "thiamine in the medium, no uptake in the draft \u2014 transporter gap"
+      "verifier": "thiamine in the medium, no uptake in the draft — transporter gap"
     },
     {
       "org": "Smeli",

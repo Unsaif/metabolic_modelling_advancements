@@ -147,6 +147,8 @@ def main() -> None:
             for pt in patches["patches"]:
                 if pt["reaction"] not in model.reactions:
                     continue
+                if pt.get("scope_orgs") and org not in pt["scope_orgs"]:
+                    continue        # taxon-scoped patch (e.g. URIC closed for E. coli, PPCK reversible for Bacteroides)
                 r = model.reactions.get_by_id(pt["reaction"])
                 if "gpr" in pt["change"]:
                     import re as _re

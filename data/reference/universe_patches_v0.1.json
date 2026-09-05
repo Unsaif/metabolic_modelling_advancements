@@ -42,6 +42,22 @@
       "rationale": "iML1515 carries urate oxidase without a gene. E. coli K-12 has no uricase and cannot degrade urate; its allantoin utilisation genes (allABCD, ybbY/allP) act on exogenous allantoin. With URIC open the model routes de novo purines through urate, allantoin and oxalurate to oxamate carbamoyltransferase and so makes carbamoyl-phosphate synthetase (carAB) dispensable on every carbon source, contradicting the auxotrophy of carAB mutants and their strong fitness defects.",
       "flagged_by": "benchmark: carA (b0032) and carB (b0033) important in 30 of 32 conditions but never predicted essential by iML1515; pFBA after carA knockout with carbamate kinase restricted routes all carbamoyl phosphate through URIC -> ... -> OXAMTC",
       "caveat": "scoped to E. coli; organisms with a genuine uricase keep the reaction"
+    },
+    {
+      "reaction": "PPCK",
+      "name": "phosphoenolpyruvate carboxykinase (ATP)",
+      "bigg_reaction": "atp_c + oaa_c --> adp_c + co2_c + pep_c",
+      "change": {
+        "lower_bound": -1000.0,
+        "upper_bound": 1000.0
+      },
+      "scope_orgs": [
+        "Btheta"
+      ],
+      "effect": "reversible (carboxylating direction PEP + CO2 + ADP -> OAA + ATP allowed)",
+      "rationale": "The CarveMe universe carries PEP carboxykinase only in the gluconeogenic direction inherited from E. coli. Bacteroides species run PckA carboxylating as the entry to the succinate-propionate pathway (PEP -> oxaloacetate -> malate -> fumarate -> succinate -> propionate), their principal anaplerotic and fermentative route; B. thetaiotaomicron has no PEP carboxylase, and its draft therefore had to route all oxaloacetate formation through pyruvate carboxylase, whose subunits have no fitness phenotype.",
+      "flagged_by": "benchmark: the v0.3 pyruvate-carboxylase subunit rule (R2) made PC essential in every B. thetaiotaomicron condition although the PC subunit genes have no phenotype; a false isozyme in the shipped rule had masked the missing anaplerotic route",
+      "caveat": "scoped to B. thetaiotaomicron (and applicable to other Bacteroidetes with a succinate-propionate pathway); in E. coli and most aerobes PckA is gluconeogenic and the reaction should stay irreversible"
     }
   ]
 }
