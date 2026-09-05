@@ -1,0 +1,175 @@
+# Extract of media definitions from the Fitness Browser code repository (FEBA), bitbucket.org/berkeleylab/feba,
+# files metadata/media and metadata/mixes, branch master (last "metadata update" commit 2026-07-25), retrieved 5 September 2026.
+# Only the base media used by the carbon-source experiments of the organisms in GEM-Bench, and the mixes they reference.
+# Format: blocks separated by blank lines; first line "Media<TAB>name"; then Description/Minimal/X lines; then component lines
+# "Controlled vocabulary name<TAB>concentration<TAB>units". "X<TAB>100" means a 100x stock; media use it at "1 X".
+Media	M9 minimal media_noCarbon
+Description	E. coli defined media no carbon
+Minimal	TRUE
+Controlled vocabulary	Concentration	Units
+Magnesium sulfate	2	mM
+Calcium chloride	0.1	mM
+Sodium phosphate dibasic heptahydrate	12.8	g/L
+Potassium phosphate monobasic	3	g/L
+Sodium Chloride	0.5	g/L
+Ammonium chloride	1	g/L
+
+Media	MOPS minimal media_noCarbon
+Description	MOPS minimal media with no carbon source
+Minimal	TRUE
+Controlled vocabulary	Concentration	Units
+3-(N-morpholino)propanesulfonic acid	40	mM
+Tricine	4	mM
+Potassium phosphate dibasic	1.32	mM
+Iron (II) sulfate heptahydrate	0.01	mM
+Ammonium chloride	9.5	mM
+Aluminum potassium sulfate dodecahydrate	0.276	mM
+Calcium chloride	0.0005	mM
+Magnesium chloride hexahydrate	0.525	mM
+Sodium Chloride	50	mM
+Ammonium heptamolybdate tetrahydrate	3.00E-09	M
+Boric Acid	4.00E-07	M
+Cobalt chloride hexahydrate	3.00E-08	M
+Copper (II) sulfate pentahydrate	1.00E-08	M
+Manganese (II) chloride tetrahydrate	8.00E-08	M
+Zinc sulfate heptahydrate	1.00E-08	M
+
+Media	MOPS Rich Defined media_noCarbon
+Description	MOPS rich media with no carbon source
+Minimal	TRUE
+Controlled vocabulary	Concentration	Units
+3-(N-morpholino)propanesulfonic acid	40	mM
+Tricine	4	mM
+Iron (II) sulfate heptahydrate	0.01	mM
+Ammonium chloride	9.5	mM
+Aluminum potassium sulfate dodecahydrate	0.276	mM
+Calcium chloride	0.0005	mM
+Magnesium chloride hexahydrate	0.525	mM
+Sodium Chloride	50	mM
+Ammonium heptamolybdate tetrahydrate	3.00E-09	M
+Boric Acid	4.00E-07	M
+Cobalt chloride hexahydrate	3.00E-08	M
+Copper (II) sulfate pentahydrate	1.00E-08	M
+Manganese (II) chloride tetrahydrate	8.00E-08	M
+Zinc sulfate heptahydrate	1.00E-08	M
+Potassium phosphate dibasic	1.32	mM
+Potassium hydroxide	1.5	mM
+Adenine hydrochloride hydrate	0.2	mM
+Cytosine	0.2	mM
+Uracil	0.2	mM
+Guanine	0.2	mM
+L-Alanine	0.8	mM
+L-Arginine	5.2	mM
+L-Asparagine	0.4	mM
+L-Aspartic acid potassium salt	0.4	mM
+L-Glutamic acid monopotassium salt monohydrate	0.66	mM
+L-Glutamine	0.6	mM
+Glycine	0.8	mM
+L-Histidine	0.2	mM
+L-Isoleucine	0.4	mM
+L-Proline	0.4	mM
+L-Serine	10	mM
+L-Threonine	0.4	mM
+L-Tryptophan	0.1	mM
+L-Valine	0.6	mM
+L-Leucine	0.8	mM
+L-Lysine	0.4	mM
+L-Methionine	0.2	mM
+L-Phenylalanine	0.4	mM
+L-Cysteine hydrochloride monohydrate	0.1	mM
+L-tyrosine	0.2	mM
+Thiamine HCl	0.01	mM
+calcium pantothenate	0.01	mM
+4-Aminobenzoic acid	0.01	mM
+4-Hydroxybenzoic Acid	0.01	mM
+2,3-dihydroxybenzoic acid	0.01	mM
+
+Media	RCH2_defined_noCarbon
+Description	Defined minimal media for soil and groundwater bacteria with no carbon
+Minimal	TRUE
+Controlled vocabulary	Concentration	Units
+Ammonium chloride	0.25	g/L
+Potassium Chloride	0.1	g/L
+Sodium phosphate monobasic monohydrate	0.6	g/L
+PIPES sesquisodium salt	30	mM
+Wolfe's mineral mix	1	X
+Wolfe's vitamin mix	1	X
+
+Media	ShewMM_noCarbon
+Description	Shewanella minimal media with no carbon
+Minimal	TRUE
+Controlled vocabulary	Concentration	Units
+Ammonium chloride	1.5	g/L
+Sodium Chloride	1.75	g/L
+Magnesium chloride hexahydrate	0.61	g/L
+Potassium Chloride	0.1	g/L
+Sodium phosphate monobasic monohydrate	0.6	g/L
+PIPES sesquisodium salt	30	mM
+Wolfe's mineral mix	1	X
+Wolfe's vitamin mix	1	X
+
+Media	Varel_Bryant_medium
+Description	Defined medium for B.theta without Carbon
+Minimal	TRUE
+Controlled vocabulary	Concentration	Units
+Mineral 3B solution	1	X
+Hemin	15	uM
+L-methionine	134	uM
+Iron (II) sulfate heptahydrate	15	uM
+L-Cysteine	8.25	mM
+Sodium bicarbonate	23.8	mM
+
+Media	LB
+Description	Luria-Bertani broth
+Minimal	FALSE
+Controlled vocabulary	Concentration	Units
+Tryptone	10	g/L
+Yeast Extract	5	g/L
+Sodium Chloride	5	g/L
+
+Media	Wolfe's mineral mix
+Description	Standard 100X mineral solution (based on Wolfe's formulation)
+X	100
+Controlled vocabulary	Concentration	Units
+Magnesium Sulfate Heptahydrate	3	g/L
+Nitrilotriacetic acid	1.5	g/L
+Sodium Chloride	1	g/L
+Manganese (II) sulfate monohydrate	0.5	g/L
+Cobalt chloride hexahydrate	0.1	g/L
+Zinc sulfate heptahydrate	0.1	g/L
+Calcium Chloride Dihydrate	0.1	g/L
+Iron (II) sulfate heptahydrate	0.1	g/L
+Nickel (II) chloride hexahydrate	0.025	g/L
+Aluminum potassium sulfate dodecahydrate	0.02	g/L
+Copper (II) sulfate pentahydrate	0.01	g/L
+Boric Acid	0.01	g/L
+Sodium Molybdate Dihydrate	0.01	g/L
+Sodium selenite pentahydrate	0.3	mg/L
+
+Media	Wolfe's vitamin mix
+Description	Standard 100X vitamin solution (based on Wolfe's formulation)
+X	100
+Controlled vocabulary	Concentration	Units
+pyridoxine HCl	10	mg/L
+4-Aminobenzoic acid	5	mg/L
+Lipoic acid	5	mg/L
+Nicotinic Acid	5	mg/L
+Riboflavin	5	mg/L
+thiamine HCl	5	mg/L
+calcium pantothenate	5	mg/L
+biotin	2	mg/L
+Folic Acid	2	mg/L
+Cyanocobalamin	0.1	mg/L
+
+Media	Mineral 3B solution
+Description	mineral mix for B. theta defined medium
+X	1
+Controlled vocabulary	Concentration	Units
+Potassium phosphate monobasic	6.6	mM
+Sodium Chloride	15.4	mM
+Magnesium chloride hexahydrate	98	uM
+Calcium chloride dihydrate	176.5	uM
+Cobalt chloride hexahydrate	4.2	uM
+Manganese (II) chloride tetrahydrate	50.5	uM
+Ammonium chloride	9.3	mM
+Sodium sulfate	1.75	mM

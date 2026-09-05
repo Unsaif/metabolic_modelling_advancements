@@ -1,0 +1,36 @@
+{
+  "org_id": "MR1",
+  "source_model": "models/embl/Shewanella_oneidensis_MR_1.xml.gz",
+  "source_sha256": "591d8e5b5fdd1124a4e78a947b0ad9907398c9a64f1c4028c6dee92452f1220e",
+  "universe": "external/carveme/universe_bacteria.xml.gz",
+  "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+  "medium": "ShewMM_noCarbon",
+  "reference_carbon_exchange": "EX_lac__L_e",
+  "min_growth": 0.05,
+  "added_reactions": [
+    {
+      "id": "CITACt",
+      "name": "Citrate transport via acetate antiport",
+      "reaction": "ac_c + cit_e <-- ac_e + cit_c",
+      "weight": 1.5
+    },
+    {
+      "id": "LDH_L",
+      "name": "L-lactate dehydrogenase",
+      "reaction": "lac__L_c + nad_c <=> h_c + nadh_c + pyr_c",
+      "weight": 1.0
+    },
+    {
+      "id": "ORNCD",
+      "name": "Ornithine cyclodeaminase",
+      "reaction": "orn_c <=> nh4_c + pro__L_c",
+      "weight": 1.0
+    }
+  ],
+  "growth_before": 0.0,
+  "growth_after": 0.09670002118994862,
+  "milp_status": "Optimal",
+  "n_candidates": 3415,
+  "seconds": 5.061230897903442,
+  "created": "2026-09-05T12:27:12Z"
+}

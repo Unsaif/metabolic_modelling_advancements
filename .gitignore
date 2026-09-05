@@ -3,9 +3,9 @@ __pycache__/
 *.pyc
 *.egg-info/
 .ipynb_checkpoints/
-# large reference data fetched by scripts (see gembench-README.md)
-data/reference/
-models/
+# large reference data fetched by scripts (see gembench-README.md); curated mapping tables in data/reference/ are kept
+models/*
+!models/gapfilled/
 # solver fixtures are large; comparison summaries are kept
 results/frog_cross_solver/*/cobrapy_*/
 .DS_Store

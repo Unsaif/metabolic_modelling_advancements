@@ -1,0 +1,24 @@
+{
+  "org_id": "Smeli",
+  "source_model": "models/embl/Sinorhizobium_meliloti_1021.xml.gz",
+  "source_sha256": "9881183f0104a2966fa81e80e471c3ab26c948ac2206911e9363da0ec2341362",
+  "universe": "external/carveme/universe_bacteria.xml.gz",
+  "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+  "medium": "RCH2_defined_noCarbon",
+  "reference_carbon_exchange": "EX_glc__D_e",
+  "min_growth": 0.05,
+  "added_reactions": [
+    {
+      "id": "DXPS",
+      "name": "1-deoxy-D-xylulose 5-phosphate synthase",
+      "reaction": "g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c",
+      "weight": 1.0
+    }
+  ],
+  "growth_before": 0.0,
+  "growth_after": 0.2129296001099393,
+  "milp_status": "Optimal",
+  "n_candidates": 3356,
+  "seconds": 1.713785171508789,
+  "created": "2026-09-05T12:27:17Z"
+}

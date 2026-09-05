@@ -1,4 +1,4 @@
-# GEM-Bench v0 (Sprint 1, September 2026)
+# GEM-Bench v0 (Sprints 1–3, September 2026)
 
 A small, explicit benchmark harness for genome-scale metabolic models, built for the
 "Metabolic modelling improvements" project. Every dataset carries provenance and a
@@ -8,9 +8,12 @@ benchmark card (dataset, model, protocol, leakage, software versions).
 ## Layout
 
 ```
-gembench/            package: media.py, datasets.py, metrics.py, cards.py, frog.py, protocols/
+gembench/            package: media.py, datasets.py, metrics.py, cards.py, frog.py, protocols/,
+                     fitness_browser.py (any-organism Fitness Browser loader + BiGG mapping), gene_mapping.py,
+                     gapfill.py (minimal gap-fill on HiGHS), wbm.py / wbm_iem.py (whole-body models, IEM protocol)
 scripts/             run_ecoli_fitness.py, run_yeast_essential.py, run_frog_cross_solver.py,
-                     parse_iem_ground_truth.py, link_iem_ground_truth.py
+                     parse_iem_ground_truth.py, link_iem_ground_truth.py, run_wbm_solvers.py, run_wbm_iem.py,
+                     gapfill_embl_models.py, run_carbon_fitness_generic.py, verify_carbon_fitness_multi.py
 results/             benchmark cards (.card.json/.md), arrays (.npz), FROG fixtures, IEM tables
 data/                downloaded reference data (HPO, Orphanet, Human-GEM gene table) — re-fetch, see below
 external/            git clones used as data/model sources — re-fetch, see below
@@ -34,6 +37,18 @@ curl -L -o data/phenotype.hpoa https://github.com/obophenotype/human-phenotype-o
 curl -L -o data/humangem_genes.tsv https://raw.githubusercontent.com/SysBioChalmers/Human-GEM/main/model/genes.tsv
 # Orphanet product1/4/6 (CC-BY-4.0) via the Orphadata GitHub mirror (LFS files, served from media.githubusercontent.com)
 ```
+
+## Running the multi-organism benchmark (Sprint 3)
+
+```
+# EMBL draft models (CC-BY 4.0) into models/embl/ from github.com/cdanielmachado/embl_gems (models/<x>/<genus>/<species>_<strain>.xml.gz)
+# CarveMe universe into external/carveme/universe_bacteria.xml.gz from github.com/cdanielmachado/carveme (carveme/data/generated/)
+python scripts/gapfill_embl_models.py                       # -> models/gapfilled/<org>.xml.gz + <org>_gapfill.json
+python scripts/run_carbon_fitness_generic.py --variant gapfilled --orgs Btheta,Putida,MR1,Smeli
+python scripts/run_carbon_fitness_generic.py --variant shipped   --orgs Btheta,Putida,MR1,Smeli,Keio
+python scripts/verify_carbon_fitness_multi.py               # independent recomputation of every card
+```
+Gene maps need data/genpept/<org>_genpept_map.tsv (NCBI efetch GenPept, parsed by tools/genpept_parse.js; see data/genpept/PROVENANCE.md).
 
 ## Running
 

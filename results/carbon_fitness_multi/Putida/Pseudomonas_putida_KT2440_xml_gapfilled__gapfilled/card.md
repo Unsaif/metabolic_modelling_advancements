@@ -1,0 +1,66 @@
+# Benchmark card — carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Putida
+
+Created: 2026-09-05T12:12:12Z
+
+## Model
+
+- model_id: Pseudomonas_putida_KT2440_xml_gapfilled
+- file: models/gapfilled/Putida.xml.gz
+- source: EMBL GEMs (CarveMe draft, Machado et al. 2018) minimally gap-filled by gembench.gapfill for growth on MOPS minimal media_noCarbon + EX_glc__D_e: added ['OXCDC', 'PHPYROX']
+- version_note: 
+- n_reactions: 1897
+- n_metabolites: 1316
+- n_genes: 1292
+- sha256: a35a98597ebebc1e4d3bb3b0885942e1b4ea174befca90f62e9594dc41114e87
+
+## Dataset provenance
+
+- dataset: Fitness Browser RB-TnSeq gene fitness, orgId 'Putida'
+- primary_source: Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov
+- download: 5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)
+- n_genes_with_fitness: 4778
+- n_experiments: 314
+- conditions_unmapped: 1,3-Butandiol; 1,4-Butanediol; 1,5-Pentanediol; 1-Pentanol; 2-Piperidinone; 2-methyl-1-butanol; 3-methyl-3-butenol; 4-Hydroxyvalerate; Butyl stearate; Heptanoic acid; Levulinic Acid; Nonanoic acid; Tween 20; Valeric acid
+
+## Protocol
+
+- variant: gapfilled
+- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": true, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null}
+- media_mapping: data/reference/fitness_browser_media_bigg.tsv
+- carbon_source_mapping: data/reference/fitness_browser_carbon_sources_bigg.tsv
+- gene_mapping: {"method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed", "genpept_table": "data/genpept/Putida_genpept_map.tsv"}
+- condition_selection: expGroup == 'carbon source'; condition_2 empty or DMSO; media with a BiGG mapping; replicates averaged per condition x medium
+- scoring: gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows
+
+## Leakage
+
+- ground_truth_used_in_model_curation: no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data)
+- ground_truth_public_since: Fitness Browser releases 2015-2018 (Price et al. 2018)
+- frontier_model_training_exposure: Fitness Browser tables are public and partly in training corpora; the mapping tables here are new
+- held_out_recommendation: unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off
+- notes: ['Draft models are untouched by any phenotype data, so this is a true prospective test of automated reconstruction.']
+
+## Results
+
+- condition_level: {"n_conditions_mapped": 43, "n_conditions_wt_grows": 28, "wt_growth_recall": 0.6511627906976745, "conditions_with_absent_exchange": 10}
+- gene_level_conditions_where_wt_grows: {"n_genes": 1021, "n_conditions": 28, "n_gene_condition_pairs": 28588, "aucpr_bernstein": {"point": 0.5489547900498687, "ci95": [0.41930824059130706, 0.6745638885080155]}, "aucpr_standard": {"point": 0.4726408697632057, "ci95": [0.3714253791805504, 0.575426394742284]}, "auroc_standard": {"point": 0.7185214710332339, "ci95": [0.6644220090781764, 0.7747759605383846]}, "mcc": {"point": 0.620775292074 …
+- gene_level_all_mapped_conditions: {"n_genes": 1021, "n_conditions": 43, "n_gene_condition_pairs": 43903, "aucpr_bernstein": {"point": 0.44341176514714725, "ci95": [0.4137543100591534, 0.47449609956627564]}, "aucpr_standard": {"point": 0.19217556007430145, "ci95": [0.1526679547211345, 0.23557344581202025]}, "auroc_standard": {"point": 0.6404341413363748, "ci95": [0.6039736118699679, 0.6805135519219123]}, "mcc": {"point": 0.13526093 …
+- gene_map: {"model_genes": 1292, "mapped": 1291, "matched_by_version": 1291, "matched_by_accession_only": 0, "no_genpept_record": 1, "locus_tag_not_in_browser": 0, "browser_genes_hit": 1291, "mapped_with_fitness_data": 1038}
+- counts: {"model_genes": 1292, "model_genes_mapped": 1291, "genes_with_fitness": 1038, "genes_after_adjustment": 1021, "conditions_total": 57, "conditions_mapped": 43, "conditions_wt_grows": 28}
+- timings_s: {"rich_medium_essentials_s": 2.5366196632385254, "knockout_simulation_s": 72.83400344848633, "total_s": 75.67546367645264}
+- dropped_rich_medium_essentials: 17
+
+## Warnings
+
+- 14 of 57 conditions have no BiGG mapping
+- medium 'MOPS minimal media_noCarbon' components absent from the model: ['EX_na1_e', 'EX_ni2_e', 'EX_sel_e', 'EX_slnt_e', 'EX_tungs_e']
+- medium 'RCH2_defined_noCarbon' components absent from the model: ['EX_na1_e', 'EX_ni2_e', 'EX_sel_e', 'EX_slnt_e', 'EX_tungs_e', 'EX_4abz_e', 'EX_lipoate_e', 'EX_nac_e', 'EX_ribflv_e', 'EX_thm_e', 'EX_btn_e', 'EX_fol_e', 'EX_cbl1_e', 'EX_adocbl_e']
+
+## Software
+
+- python: 3.11.15
+- cobra: 0.32.1
+- optlang: 1.9.1
+- numpy: 2.4.4
+- scipy: 1.17.1
+- scikit-learn: 1.8.0

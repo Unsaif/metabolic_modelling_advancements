@@ -1,0 +1,48 @@
+{
+  "org_id": "Btheta",
+  "source_model": "models/embl/Bacteroides_thetaiotaomicron_VPI_5482.xml.gz",
+  "source_sha256": "0d38cb19d7e2deba4224c12eb114ec4b9f812678284091dd6a30cb5f394cd985",
+  "universe": "external/carveme/universe_bacteria.xml.gz",
+  "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+  "medium": "Varel_Bryant_medium",
+  "reference_carbon_exchange": "EX_glc__D_e",
+  "min_growth": 0.05,
+  "added_reactions": [
+    {
+      "id": "ASPO2y",
+      "name": "L-aspartate oxidase",
+      "reaction": "asp__L_c + nadp_c --> 2.0 h_c + iasp_c + nadph_c",
+      "weight": 1.0
+    },
+    {
+      "id": "DHORD6",
+      "name": "Dihydoorotic acid dehydrogenase NAD",
+      "reaction": "dhor__S_c + nad_c --> h_c + nadh_c + orot_c",
+      "weight": 1.0
+    },
+    {
+      "id": "FE3t",
+      "name": "Ferric iron uptake, plasma membrane",
+      "reaction": "fe3_e <=> fe3_c",
+      "weight": 1.5
+    },
+    {
+      "id": "OCBT_2",
+      "name": "Ornithine carbamoyltransferase",
+      "reaction": "cbp_c + orn_c <=> citr__L_c + h_c + pi_c",
+      "weight": 1.0
+    },
+    {
+      "id": "PDX5PO2",
+      "name": "Pyridoxine 5'-phosphate oxidase (anaerboic",
+      "reaction": "nad_c + pdx5p_c --> h_c + nadh_c + pydx5p_c",
+      "weight": 1.0
+    }
+  ],
+  "growth_before": 0.0,
+  "growth_after": 0.4383620930468912,
+  "milp_status": "Optimal",
+  "n_candidates": 3735,
+  "seconds": 19.147993326187134,
+  "created": "2026-09-05T12:26:59Z"
+}

@@ -56,6 +56,7 @@ class HighsWBM:
         h.setOptionValue("time_limit", time_limit)
         h.passModel(lp)
         self.h = h
+        self.per_solve_time_limit = time_limit
         self.rxn_pos = {r: i for i, r in enumerate(wbm.rxns)}
         self.met_pos = {m: i for i, m in enumerate(wbm.mets)}
         self.lb = wbm.lb.copy(); self.ub = wbm.ub.copy()
@@ -113,6 +114,9 @@ class HighsWBM:
         # Interior point (with crossover) for every solve: on Harvey a cold IPM solve takes ~15-20 s whereas
         # dual-simplex warm starts after bound/objective changes were observed to take minutes.
         self.h.setOptionValue("solver", self.method)
+        # HiGHS applies time_limit to the cumulative run time of the Highs object, so a persistent model
+        # would start failing every solve once the total exceeds the limit; re-base it before each run.
+        self.h.setOptionValue("time_limit", float(self.h.getRunTime()) + self.per_solve_time_limit)
         self.h.run()
         dt = time.time() - t
         self.n_solves += 1; self.solve_time += dt

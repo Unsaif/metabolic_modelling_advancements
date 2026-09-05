@@ -82,5 +82,489 @@
         "status_disease": "Optimal"
       }
     ]
+  },
+  {
+    "iem": "AGAT",
+    "call_index": 2,
+    "iem_reactions": [
+      "Colon_GLYAMDTRc",
+      "Liver_GLYAMDTRc",
+      "Gall_GLYAMDTRc",
+      "Pancreas_GLYAMDTRc",
+      "Kidney_GLYAMDTRc",
+      "Brain_GLYAMDTRc",
+      "Muscle_GLYAMDTRc",
+      "Skin_GLYAMDTRc",
+      "Scord_GLYAMDTRc",
+      "Agland_GLYAMDTRc",
+      "Thyroidgland_GLYAMDTRc",
+      "Stomach_GLYAMDTRc",
+      "Testis_GLYAMDTRc",
+      "RBC_GLYAMDTRc",
+      "Retina_GLYAMDTRc"
+    ],
+    "vmax_healthy": 542.3984833904263,
+    "vmax_disease": 0.0,
+    "wb_objective_disease_feasible": true,
+    "n_solves": 7,
+    "time_s": 292.3991587162018,
+    "notes": [],
+    "biomarkers": [
+      {
+        "reaction": "EX_creat[u]",
+        "expected": "Decreased",
+        "healthy": 77.61271722377387,
+        "disease": 0.0,
+        "predicted": "Decreased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_gudac[u]",
+        "expected": "Decreased",
+        "healthy": 6.913024885122048,
+        "disease": 0.0,
+        "predicted": "Decreased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      }
+    ]
+  },
+  {
+    "iem": "ARG",
+    "call_index": 3,
+    "iem_reactions": [
+      "sIEC_ARGN",
+      "sIEC_ARGNm",
+      "Colon_ARGN",
+      "Liver_ARGN",
+      "Liver_ARGN1ASPMDte",
+      "Gall_ARGN",
+      "Pancreas_ARGN",
+      "Kidney_ARGNm",
+      "Kidney_ARGN1ASPMDte",
+      "Brain_ARGN1ASPMDte",
+      "Lung_ARGN1ASPMDte",
+      "Muscle_ARGN",
+      "Muscle_ARGN1ASPMDte",
+      "Retina_ARGNm",
+      "Heart_ARGN",
+      "Heart_ARGN1ASPMDte",
+      "Pthyroidgland_ARGN",
+      "Testis_ARGNm",
+      "Testis_ARGN1ASPMDte",
+      "Prostate_ARGN",
+      "RBC_ARGN",
+      "Kidney_ARGN1ASPMDte[bcK]"
+    ],
+    "vmax_healthy": 813.5977250844419,
+    "vmax_disease": 0.0,
+    "wb_objective_disease_feasible": true,
+    "n_solves": 15,
+    "time_s": 927.3466765880585,
+    "notes": [],
+    "biomarkers": [
+      {
+        "reaction": "EX_argsuc[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 3.7367702081740792,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_orot[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 16.599152232462075,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_ura[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 120.85041147469359,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_creat[bc]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 542.3984833910209,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_arg_L[bc]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 406.7988625421093,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_gudac[bc]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 79.76512400684796,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      }
+    ]
+  },
+  {
+    "iem": "CPS1",
+    "call_index": 4,
+    "iem_reactions": [
+      "sIEC_CBPSam",
+      "Colon_r0034",
+      "Liver_CBPSam",
+      "Liver_r0034",
+      "Pancreas_r0034",
+      "Adipocytes_r0034"
+    ],
+    "vmax_healthy": 789.5039460971072,
+    "vmax_disease": 0.0,
+    "wb_objective_disease_feasible": true,
+    "n_solves": 15,
+    "time_s": 580.5970468521118,
+    "notes": [],
+    "biomarkers": [
+      {
+        "reaction": "EX_lys_L[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 39.43253499949097,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_gly[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 1398.393425120565,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_ura[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 120.85041147469106,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_5oxpro[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 0.0,
+        "predicted": "Unchanged",
+        "correct": false,
+        "status_healthy": "Time limit reached",
+        "status_disease": "Time limit reached"
+      },
+      {
+        "reaction": "DM_citr_L[bc]",
+        "expected": "Decreased",
+        "healthy": 0.0,
+        "disease": 0.0,
+        "predicted": "Unchanged",
+        "correct": false,
+        "status_healthy": "Time limit reached",
+        "status_disease": "Time limit reached"
+      },
+      {
+        "reaction": "DM_gln_L[bc]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 0.0,
+        "predicted": "Unchanged",
+        "correct": false,
+        "status_healthy": "Time limit reached",
+        "status_disease": "Time limit reached"
+      }
+    ]
+  },
+  {
+    "iem": "3MGA",
+    "call_index": 5,
+    "iem_reactions": [
+      "Colon_MGCHrm",
+      "Liver_MGCHrm",
+      "Gall_MGCHrm",
+      "Pancreas_MGCHrm",
+      "Kidney_MGCHrm",
+      "Spleen_MGCHrm",
+      "Brain_MGCHrm",
+      "Lung_MGCHrm",
+      "Muscle_MGCHrm",
+      "Skin_MGCHrm",
+      "Adipocytes_MGCHrm",
+      "Retina_MGCHrm",
+      "Heart_MGCHrm",
+      "Scord_MGCHrm",
+      "Agland_MGCHrm",
+      "Urinarybladder_MGCHrm",
+      "Thyroidgland_MGCHrm",
+      "Pthyroidgland_MGCHrm",
+      "Stomach_MGCHrm",
+      "Testis_MGCHrm",
+      "Prostate_MGCHrm",
+      "Bcells_MGCHrm"
+    ],
+    "vmax_healthy": 55.766627277020234,
+    "vmax_disease": 0.0,
+    "wb_objective_disease_feasible": true,
+    "n_solves": 9,
+    "time_s": 240.92252397537231,
+    "notes": [],
+    "biomarkers": [
+      {
+        "reaction": "EX_3ivcrn[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 15.515488872092353,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_3mglutac[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 3.7367702081740792,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_3mglutr[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 0.0,
+        "predicted": "Unchanged",
+        "correct": false,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      }
+    ]
+  },
+  {
+    "iem": "AMA1",
+    "call_index": 6,
+    "iem_reactions": [
+      "Colon_RE2640C",
+      "Liver_RE2640C",
+      "Kidney_RE2640C",
+      "Brain_RE2640C",
+      "Kidney_ACODA",
+      "Thyroidgland_RE2640C",
+      "RBC_RE2640C"
+    ],
+    "vmax_healthy": 13348.796851621915,
+    "vmax_disease": 0.0,
+    "wb_objective_disease_feasible": true,
+    "n_solves": 7,
+    "time_s": 381.2319805622101,
+    "notes": [],
+    "biomarkers": [
+      {
+        "reaction": "EX_acglu[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 641.331494726878,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_acgly[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 1412.0856997719957,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      }
+    ]
+  },
+  {
+    "iem": "AADC",
+    "call_index": 7,
+    "iem_reactions": [
+      "Colon_3HLYTCL",
+      "Colon_5HLTDL",
+      "Colon_LTDCL",
+      "Colon_PHYCBOXL",
+      "Liver_3HLYTCL",
+      "Liver_5HLTDL",
+      "Liver_LTDCL",
+      "Liver_TYRCBOX",
+      "Gall_5HLTDL",
+      "Pancreas_3HLYTCL",
+      "Pancreas_5HLTDL",
+      "Pancreas_TYRCBOX",
+      "Kidney_LTDCL",
+      "Spleen_3HLYTCL",
+      "Spleen_5HLTDL",
+      "Brain_3HLYTCL",
+      "Brain_5HLTDL",
+      "Lung_3HLYTCL",
+      "Lung_5HLTDL",
+      "Lung_LTDCL",
+      "Lung_PHYCBOXL",
+      "Lung_TYRCBOX",
+      "Muscle_5HLTDL",
+      "Skin_3HLYTCL",
+      "Skin_5HLTDL",
+      "Adipocytes_3HLYTCL",
+      "Adipocytes_5HLTDL",
+      "Retina_3HLYTCL",
+      "Scord_5HLTDL",
+      "Agland_3HLYTCL",
+      "Agland_5HLTDL",
+      "Urinarybladder_3HLYTCL",
+      "Pthyroidgland_5HLTDL",
+      "Stomach_5HLTDL",
+      "Testis_5HLTDL",
+      "RBC_3HLYTCL",
+      "RBC_PHYCBOXL",
+      "Kidney_TYRCBOX"
+    ],
+    "vmax_healthy": 48.7045931482658,
+    "vmax_disease": 0.0,
+    "wb_objective_disease_feasible": true,
+    "n_solves": 23,
+    "time_s": 531.5205600261688,
+    "notes": [],
+    "biomarkers": [
+      {
+        "reaction": "EX_34dhphe[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 5.802732251120197,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_34dhphe[bc]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 43.25096890763259,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_5htrp[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 5.45362424068359,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_5htrp[bc]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 5.453624240684803,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_adrnl[bc]",
+        "expected": "Decreased",
+        "healthy": 43.25096890743355,
+        "disease": 0.0,
+        "predicted": "Decreased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_dopa[u]",
+        "expected": "Increased",
+        "healthy": 9.622183286048312,
+        "disease": 0.0,
+        "predicted": "Decreased",
+        "correct": false,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_CE2176[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 5.8313185432127295,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_CE2176[bc]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 43.250968907481116,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_nrpphr[bc]",
+        "expected": "Decreased",
+        "healthy": 43.25096890744752,
+        "disease": 0.0,
+        "predicted": "Decreased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_3moxtyr[u]",
+        "expected": "Increased",
+        "healthy": 0.0005418316801852416,
+        "disease": 0.0,
+        "predicted": "Decreased",
+        "correct": false,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      }
+    ]
   }
 ]

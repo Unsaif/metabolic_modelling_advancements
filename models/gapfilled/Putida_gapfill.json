@@ -1,0 +1,30 @@
+{
+  "org_id": "Putida",
+  "source_model": "models/embl/Pseudomonas_putida_KT2440.xml.gz",
+  "source_sha256": "5b69bf07cf15fdecb7cf5a6c87e35271cd94e97c7d16747aee62f4c7594fd7c1",
+  "universe": "external/carveme/universe_bacteria.xml.gz",
+  "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+  "medium": "MOPS minimal media_noCarbon",
+  "reference_carbon_exchange": "EX_glc__D_e",
+  "min_growth": 0.05,
+  "added_reactions": [
+    {
+      "id": "OXCDC",
+      "name": "Oxalyl-CoA decarboxylase",
+      "reaction": "h_c + oxalcoa_c --> co2_c + forcoa_c",
+      "weight": 1.0
+    },
+    {
+      "id": "PHPYROX",
+      "name": "Phenylpyruvate oxidation chemical",
+      "reaction": "o2_c + phpyr_c --> bzal_c + h_c + oxa_c",
+      "weight": 1.0
+    }
+  ],
+  "growth_before": 0.0,
+  "growth_after": 0.9240026512496038,
+  "milp_status": "Optimal",
+  "n_candidates": 3411,
+  "seconds": 1.5218148231506348,
+  "created": "2026-09-05T12:27:04Z"
+}

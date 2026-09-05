@@ -19,8 +19,11 @@ scripts/       runnable entry points (see gembench-README.md)
 results/       benchmark cards and result tables produced so far
 data/
   fitness_browser/   RB-TnSeq gene fitness for 9 organisms (Fitness Browser; see PROVENANCE.md)
+  genpept/           NCBI GenPept-derived maps from EMBL GEM gene ids (RefSeq accessions) to Fitness Browser locus tags
+  reference/         curated mapping tables: Fitness Browser media and carbon sources -> BiGG identifiers
   iem/               inborn-error-of-metabolism biomarker ground truth v0.1 (linked to Orphanet/OMIM/HPO/HMDB)
-tools/         small helpers
+models/gapfilled/  the four EMBL draft models minimally gap-filled for their experimental media (added reactions in *_gapfill.json)
+tools/         small helpers (browser-download collectors, GenPept parser)
 external/      (git-ignored) clones of public repositories used as data/model sources — see gembench-README.md
 ```
 
@@ -35,6 +38,9 @@ commands documented there rather than stored here.
 
 - E. coli carbon-source fitness benchmark (Bernstein et al. 2023 protocol) reproduced with bootstrap CIs.
 - yeast-GEM 9.1.1 essential-gene test reproduced exactly.
+- Multi-organism carbon-source fitness benchmark (Sprint 3): EMBL draft models of B. thetaiotaomicron, P. putida,
+  S. oneidensis and S. meliloti scored against Fitness Browser fitness, as shipped and after a one-condition minimal
+  gap-fill, with iML1515 as control — `results/carbon_fitness_multi/`, summary in `summary.tsv`.
 - Harvey/Harvetta 1.03d solve with HiGHS (interior point, ~20 s) and GLPK in Python, coupling constraints included, solutions certified.
 - IEM biomarker protocol ported to Python; full 63-IEM run in progress (shipped bounds; physiological/diet constraints not yet ported).
 - IEM ground truth v0.1: 279 tuples from the lab's benchmark, linked outward; HPO cross-check done.

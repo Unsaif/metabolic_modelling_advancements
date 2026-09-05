@@ -1,0 +1,136 @@
+condition	bigg_ids	confidence	note
+D-Glucose	glc__D	high
+D-Fructose	fru	high
+D-Galactose	gal	high
+D-Mannose	man	high
+D-Xylose	xyl__D	high
+L-Arabinose	arab__L	high
+D-Arabinose	arab__D	high
+D-Ribose	rib__D	high
+L-Fucose	fuc__L	high
+L-Rhamnose monohydrate	rmn	high
+D-Maltose monohydrate	malt	high
+D-Trehalose dihydrate	tre	high
+Beta-Lactose	lcts	high
+Melibiose	melib	high
+D-Raffinose pentahydrate	raffin	high
+D-Cellobiose	cellb	high
+D-Salicin	salcn	high
+D-Sorbitol	sbt__D	high
+D-Mannitol	mnl	high
+m-Inositol	inost	high
+Glycerol	glyc	high
+D-(-)-tagatose	tagat__D	high
+L-(-)-sorbose	srb__L	medium	BiGG id for L-sorbose
+D-Galacturonic Acid monohydrate	galur	high
+D-Glucuronic Acid	glcur	high
+D-Gluconic Acid sodium salt	glcn	high
+D-Glucose-6-Phosphate sodium salt	g6p	high
+D-Glucosamine Hydrochloride	gam	high
+N-Acetyl-D-Glucosamine	acgam	high
+Laminaribiose	lmn2	medium	BiGG lmn2 = laminaribiose (beta-1,3-glucobiose)
+Maltotetraose	maltttr	high
+Maltohexaose	malthx	high
+Amylose from potato	amylose300	medium	CarveMe/BiGG amylose300 (300-unit amylose)
+Starch	starch1200	medium	CarveMe/BiGG starch1200
+Red Arabinan from sugar-beet	araban__L	medium	BiGG araban__L
+Stachyose - 70%	stys	medium	BiGG stys
+Sodium pyruvate	pyr	high
+Potassium acetate	ac	high
+Sodium succinate dibasic hexahydrate	succ	high
+Sodium propionate	ppa	high
+Sodium butyrate	but	high
+Sodium L-Lactate	lac__L	high
+Sodium D-Lactate	lac__D	high
+Sodium D,L-Lactate	lac__D;lac__L	high	racemate: both enantiomer exchanges opened
+L-Malic acid disodium salt monohydrate	mal__L	high
+D,L-Malic Acid	mal__L;mal__D	high	racemate
+Trisodium citrate dihydrate	cit	high
+a-Ketoglutaric acid disodium salt hydrate	akg	high
+Glycolic Acid	glyclt	high
+Ethanol	etoh	high
+Butanol	btoh	high
+1,2-Propanediol	12ppd__S;12ppd__R	high	racemate
+3-methyl-1-butanol	iamoh	medium	BiGG iamoh = isoamyl alcohol
+3-Methyl-2-Oxobutanoic Acid	3mob	high
+3-methyl-2-oxopentanoic acid	3mop	high
+4-Methyl-2-oxovaleric acid	4mop	high
+4-Aminobutyric acid	4abut	high
+5-Aminovaleric acid	5aptn	medium	BiGG 5aptn = 5-aminopentanoate
+4-Hydroxybenzoic Acid	4hbz	high
+Protocatechuic Acid	34dhbz	high
+benzoic acid	bz	high
+Phenylacetic acid	pac	high
+Vanillic Acid	vanlt	high
+Vanillin	vanln	high
+Ferulic Acid	fer	medium	BiGG fer = ferulate
+p-Coumaric acid	T4hcinnm	medium	BiGG T4hcinnm = trans-4-hydroxycinnamate
+Hexanoic acid	hxa	high
+Octanoic acid	octa	high
+Decanoic acid	dca	high
+Lauric acid	ddca	high
+Myristic acid	ttdca	high
+Oleic acid	ocdcea	high
+Hydroxy-L-Proline	4hpro_LT	medium	BiGG 4hpro_LT = trans-4-hydroxy-L-proline
+L-Arginine	arg__L	high
+L-Glutamic acid monopotassium salt monohydrate	glu__L	high
+L-Glutamine	gln__L	high
+L-Histidine	his__L	high
+L-Isoleucine	ile__L	high
+L-Leucine	leu__L	high
+L-Lysine	lys__L	high
+L-Valine	val__L	high
+L-Proline	pro__L	high
+L-Alanine	ala__L	high
+D-Alanine	ala__D	high
+D-Serine	ser__D	high
+D-Lysine	lys__D	high
+Adenosine	adn	high
+Inosine	ins	high
+Cytidine	cytd	high
+Uridine	uri	high
+2'-Deoxycytidine	dcyt	high
+2'-Deoxyinosine	din	high
+2-Deoxyadenosine monohydrate	dad_2	high
+2-Deoxyadenosine 5-monophosphate	damp	high
+casamino acids	ala__L;arg__L;asn__L;asp__L;cys__L;glu__L;gln__L;gly;his__L;ile__L;leu__L;lys__L;met__L;phe__L;pro__L;ser__L;thr__L;tyr__L;val__L	medium	acid hydrolysate of casein: all amino acids except tryptophan; each opened at the carbon uptake rate
+(+)-Arabinogalactan		none	polysaccharide without a BiGG identifier
+1,4-B-D-Galactobiose		none	no BiGG identifier
+6-O-Acetyl-D-glucose		none	no BiGG identifier
+Agro_defined_trehalose		none	different base medium (Agrobacterium defined medium); excluded
+Chondroitin sulfate A sodium salt from bovine trachea		none	glycosaminoglycan without a BiGG identifier in these models
+D-Leucrose		none	no BiGG identifier
+Fructooligosaccharides (FOS)		none	mixture without a BiGG identifier
+Heparin sodium salt from porcine intestinal mucosa		none	no BiGG identifier
+Hyaluronic acid sodium salt from Streptococcus equi		none	no BiGG identifier
+Isomaltose		none	no BiGG identifier in these models
+Lactulose		none	no BiGG identifier
+Levan - from Erwinia herbicola		none	no BiGG identifier
+Maltitol		none	no BiGG identifier
+Mannan from Saccharomyces cerevisiae		none	no BiGG identifier
+Pectin		none	no BiGG identifier in these models
+Rhamnogalacturonan - from potato		none	no BiGG identifier
+Supernatant; Agrobacterium rhizogenes K599 grown in Agro_defined_trehalose (~7.5 mM 3-keto-trehalose)		none	undefined; excluded
+a-Cyclodextrin		none	no BiGG identifier
+amylopectin from maize		none	no BiGG identifier
+dextran, Mw ~200,000		none	no BiGG identifier (alpha-1,6 glucan; BiGG dextrin is alpha-1,4)
+palatinose hydrate		none	no BiGG identifier
+polygalacturonic acid		none	no BiGG identifier
+1,3-Butandiol		none	no BiGG identifier
+1,4-Butanediol		none	no BiGG identifier
+1,5-Pentanediol		none	no BiGG identifier
+1-Pentanol		none	no BiGG identifier
+2-Piperidinone		none	no BiGG identifier
+2-methyl-1-butanol		none	no BiGG identifier
+3-methyl-3-butenol		none	no BiGG identifier
+4-Hydroxyvalerate		none	no BiGG identifier
+Butyl stearate		none	no BiGG identifier
+Heptanoic acid		none	no BiGG identifier
+Levulinic Acid		none	no BiGG identifier
+Nonanoic acid		none	no BiGG identifier
+Tween 20		none	undefined polymer; excluded
+Valeric acid		none	no BiGG identifier
+Gelatin		none	undefined protein; excluded
+Gly-DL-Asp		none	dipeptide without a BiGG identifier in these models
+Gly-Glu		none	dipeptide without a BiGG identifier in these models
+2-Deoxy-D-ribonic acid lithium salt		none	no BiGG identifier
