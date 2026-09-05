@@ -24,6 +24,7 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--iems", nargs="*", default=None)
     ap.add_argument("--min-flux-healthy", type=float, default=1.0)
+    ap.add_argument("--out-suffix", default="", help="suffix for the results/summary files (to run disjoint --iems shards in parallel)")
     args = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
     protocol = json.load(open(os.path.join(ROOT, "results", "iem_ground_truth", "iem_protocol_v0.json")))
@@ -39,7 +40,7 @@ def main() -> None:
     print(f"== {args.model}: {m.n_rxns} rxns; global constraints {g}; setup {time.time()-t0:.0f}s", flush=True)
 
     results = []
-    out_json = os.path.join(OUT, f"{args.model}_iem_results.json")
+    out_json = os.path.join(OUT, f"{args.model}_iem_results{args.out_suffix}.json")
     if os.path.exists(out_json):          # resume: keep IEMs already computed
         results = json.load(open(out_json))
         done = {(r["iem"], r["call_index"]) for r in results}
@@ -85,7 +86,7 @@ def main() -> None:
                            "(applied in runIEM_HH.m before the IEMs) are NOT yet ported, so this is not the published protocol",
                            "global reaction constraints from the top of runIEM_HH.m and per-block lb/ub tweaks are applied",
                            "solver: HiGHS (IPM+crossover cold start, dual simplex warm starts), feasibility 1e-7"]}
-    with open(os.path.join(OUT, f"{args.model}_iem_summary.json"), "w") as fh:
+    with open(os.path.join(OUT, f"{args.model}_iem_summary{args.out_suffix}.json"), "w") as fh:
         json.dump(summary, fh, indent=2)
     print(json.dumps(summary, indent=2))
 

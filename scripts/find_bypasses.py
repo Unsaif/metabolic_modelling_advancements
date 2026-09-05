@@ -70,7 +70,7 @@ def main() -> None:
                     rows.append({"gene": bg, "model_gene": mg, "n_conditions_important": nimp, "desc": desc.get(bg, ""),
                                  "gene_reactions": ";".join(rxn_ids), "ko_growth": float("nan"), "bypass": f"error {e}"})
                     continue
-                growth = sol.fluxes[m.objective.expression.args[0].args[1].name] if False else sol.objective_value
+                growth = float(sol.fluxes["Growth"]) if "Growth" in sol.fluxes.index else float("nan")
                 bypass = []
                 for rid in rxn_ids:
                     r = m.reactions.get_by_id(rid)
@@ -85,12 +85,14 @@ def main() -> None:
                             if rx.id == rid or rx.id in rxn_ids:
                                 continue
                             v = sol.fluxes[rx.id]
-                            if abs(v) > 1e-6 and rx.metabolites[met] * v * (-coef) > 0:   # produces what r consumed / consumes what r produced
+                            # a bypass produces what r produced (coef > 0) or consumes what r consumed (coef < 0):
+                            # sign(stoichiometry * flux) must equal sign(coef)
+                            if abs(v) > 1e-6 and rx.metabolites[met] * v * coef > 0:
                                 role = "makes" if coef > 0 else "uses"
                                 bypass.append(f"{rx.id}[{role} {met.id}; v={v:.3g}; rev={rx.reversibility}; gpr={'yes' if rx.gene_reaction_rule else 'none'}]")
                 bypass = list(dict.fromkeys(bypass))
                 rows.append({"gene": bg, "model_gene": mg, "n_conditions_important": nimp, "desc": desc.get(bg, ""),
-                             "gene_reactions": ";".join(rxn_ids), "ko_growth": float(sol.objective_value),
+                             "gene_reactions": ";".join(rxn_ids), "ko_growth": growth,
                              "bypass": " | ".join(bypass)})
                 for b in bypass:
                     rid = b.split("[")[0].split(":")[0]

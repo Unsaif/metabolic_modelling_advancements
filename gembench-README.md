@@ -52,6 +52,10 @@ python scripts/compare_models_paired.py Putida <dir_A> <dir_B> draft iJN1463    
 python scripts/find_bypasses.py                              # which reactions/gene rules protect persistently important genes
 python scripts/run_carbon_fitness_generic.py --variant gapfilled --patch data/reference/universe_patches_v0.1.json
 python scripts/evaluate_patch.py v0.1                        # verifier step of the fix-at-source loop
+python scripts/run_carbon_fitness_generic.py --variant gapfilled --no-drop-rich --patch data/reference/universe_patches_v0.1.json --gpr-patch data/reference/gpr_patches_v0.2.json
+python scripts/evaluate_patch.py "v0.1+gpr-v0.2__nodroprich"  # gene-rule patches, all genes with fitness data
+python scripts/check_gene_rules.py Putida                    # annotation-based screen of OR gene rules (recall 36/51 on the hand-adjudicated set)
+python scripts/run_wbm_iem.py Harvey_1_03d --iems GA2 OXOP --out-suffix _shard2   # IEM protocol in disjoint shards
 ```
 Gene maps need data/genpept/<org>_genpept_map.tsv (NCBI efetch GenPept, parsed by tools/genpept_parse.js; see data/genpept/PROVENANCE.md).
 
