@@ -26,6 +26,22 @@
       "rationale": "Glutamine-dependent carbamoyl-phosphate synthetase is an obligate heterodimer of the small glutaminase subunit (carA) and the large synthetase subunit (carB); mutants in either subunit are arginine/pyrimidine auxotrophs in E. coli, P. aeruginosa and B. subtilis. CarveMe merges gene rules from several source models and produces 'carA or carB or (carA and carB)', under which no single-subunit knockout removes the reaction.",
       "flagged_by": "benchmark: carA and carB important in every carbon-source condition but predicted dispensable in S. meliloti and S. oneidensis after the CBMKr patch; the rule shape '(A and B) or A or B' occurs in 7-30 reactions per draft model",
       "caveat": "Applies to the glutamine-dependent enzyme (carAB); ammonia-dependent single-chain CPS (as in some archaea or the mammalian CPS1) is a different enzyme."
+    },
+    {
+      "reaction": "URIC",
+      "name": "urate oxidase",
+      "bigg_reaction": "2 h2o_c + o2_c + urate_c --> alltn_c + co2_c + h2o2_c",
+      "change": {
+        "lower_bound": 0.0,
+        "upper_bound": 0.0
+      },
+      "scope_orgs": [
+        "Keio"
+      ],
+      "effect": "closed",
+      "rationale": "iML1515 carries urate oxidase without a gene. E. coli K-12 has no uricase and cannot degrade urate; its allantoin utilisation genes (allABCD, ybbY/allP) act on exogenous allantoin. With URIC open the model routes de novo purines through urate, allantoin and oxalurate to oxamate carbamoyltransferase and so makes carbamoyl-phosphate synthetase (carAB) dispensable on every carbon source, contradicting the auxotrophy of carAB mutants and their strong fitness defects.",
+      "flagged_by": "benchmark: carA (b0032) and carB (b0033) important in 30 of 32 conditions but never predicted essential by iML1515; pFBA after carA knockout with carbamate kinase restricted routes all carbamoyl phosphate through URIC -> ... -> OXAMTC",
+      "caveat": "scoped to E. coli; organisms with a genuine uricase keep the reaction"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Keio",
-  "created": "2026-09-05T13:44:49Z",
+  "created": "2026-09-05T20:51:46Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Keio'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -23,6 +23,7 @@
     "variant": "shipped",
     "patches": {
       "file": "data/reference/universe_patches_v0.1.json",
+      "gpr_file": null,
       "applied": [
         {
           "reaction": "CBMKr",
@@ -32,6 +33,17 @@
           ],
           "bounds_after": [
             -1000.0,
+            0.0
+          ]
+        },
+        {
+          "reaction": "URIC",
+          "bounds_before": [
+            0.0,
+            1000.0
+          ],
+          "bounds_after": [
+            0.0,
             0.0
           ]
         }
@@ -54,7 +66,12 @@
       ],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol"
+      ]
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -85,51 +102,51 @@
       "n_conditions": 32,
       "n_gene_condition_pairs": 42528,
       "aucpr_bernstein": {
-        "point": 0.6127971195004045,
+        "point": 0.6288231372296793,
         "ci95": [
-          0.4999654276678661,
-          0.7059915142091723
+          0.5166895301837996,
+          0.7168712114360852
         ]
       },
       "aucpr_standard": {
-        "point": 0.4804503150735567,
+        "point": 0.4954397337076016,
         "ci95": [
-          0.39809140729071657,
-          0.5551638202671696
+          0.4105951189690477,
+          0.5725639813999346
         ]
       },
       "auroc_standard": {
-        "point": 0.7969700152392704,
+        "point": 0.8035253401787277,
         "ci95": [
-          0.7612202757773644,
-          0.8292378475590296
+          0.7670792206280584,
+          0.8347212257844107
         ]
       },
       "mcc": {
-        "point": 0.5979467707330253,
+        "point": 0.6108788863025738,
         "ci95": [
-          0.5225102146894457,
-          0.6645600325629192
+          0.5355200866892069,
+          0.673955637059722
         ]
       },
       "balanced_accuracy": {
-        "point": 0.7573885714680344,
+        "point": 0.7657966432169132,
         "ci95": [
-          0.7155573838292357,
-          0.7923775525544392
+          0.7240882502393068,
+          0.7998648789515724
         ]
       },
       "accuracy": {
-        "point": 0.9447658013544018,
+        "point": 0.9461766365688488,
         "ci95": [
-          0.9349299285176824,
-          0.9549126457863055
+          0.9362179034988714,
+          0.9561547686230248
         ]
       },
       "confusion": {
         "tp": 38280,
-        "tn": 1899,
-        "fp": 1669,
+        "tn": 1959,
+        "fp": 1609,
         "fn": 680
       }
     },
@@ -138,51 +155,51 @@
       "n_conditions": 32,
       "n_gene_condition_pairs": 42528,
       "aucpr_bernstein": {
-        "point": 0.6127971195004045,
+        "point": 0.6288231372296793,
         "ci95": [
-          0.4999654276678661,
-          0.7059915142091723
+          0.5166895301837996,
+          0.7168712114360852
         ]
       },
       "aucpr_standard": {
-        "point": 0.4804503150735567,
+        "point": 0.4954397337076016,
         "ci95": [
-          0.39809140729071657,
-          0.5551638202671696
+          0.4105951189690477,
+          0.5725639813999346
         ]
       },
       "auroc_standard": {
-        "point": 0.7969700152392704,
+        "point": 0.8035253401787277,
         "ci95": [
-          0.7612202757773644,
-          0.8292378475590296
+          0.7670792206280584,
+          0.8347212257844107
         ]
       },
       "mcc": {
-        "point": 0.5979467707330253,
+        "point": 0.6108788863025738,
         "ci95": [
-          0.5225102146894457,
-          0.6645600325629192
+          0.5355200866892069,
+          0.673955637059722
         ]
       },
       "balanced_accuracy": {
-        "point": 0.7573885714680344,
+        "point": 0.7657966432169132,
         "ci95": [
-          0.7155573838292357,
-          0.7923775525544392
+          0.7240882502393068,
+          0.7998648789515724
         ]
       },
       "accuracy": {
-        "point": 0.9447658013544018,
+        "point": 0.9461766365688488,
         "ci95": [
-          0.9349299285176824,
-          0.9549126457863055
+          0.9362179034988714,
+          0.9561547686230248
         ]
       },
       "confusion": {
         "tp": 38280,
-        "tn": 1899,
-        "fp": 1669,
+        "tn": 1959,
+        "fp": 1609,
         "fn": 680
       }
     },
@@ -198,12 +215,13 @@
       "genes_after_adjustment": 1329,
       "conditions_total": 32,
       "conditions_mapped": 32,
-      "conditions_wt_grows": 32
+      "conditions_wt_grows": 32,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 11.129954814910889,
-      "knockout_simulation_s": 335.17593336105347,
-      "total_s": 346.9295029640198
+      "rich_medium_essentials_s": 9.148398160934448,
+      "knockout_simulation_s": 276.61549258232117,
+      "total_s": 286.22033524513245
     },
     "dropped_rich_medium_essentials": 10
   },
