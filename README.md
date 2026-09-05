@@ -23,6 +23,7 @@ data/
   reference/         curated mapping tables: Fitness Browser media and carbon sources -> BiGG identifiers
   iem/               inborn-error-of-metabolism biomarker ground truth v0.1 (linked to Orphanet/OMIM/HPO/HMDB)
 models/gapfilled/  the four EMBL draft models minimally gap-filled for their experimental media (added reactions in *_gapfill.json)
+models/bigg/       curated BiGG models used in comparisons (iJN1463, CC-BY-SA 4.0 per bigg.ucsd.edu)
 tools/         small helpers (browser-download collectors, GenPept parser)
 external/      (git-ignored) clones of public repositories used as data/model sources — see gembench-README.md
 ```

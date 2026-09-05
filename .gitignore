@@ -6,6 +6,7 @@ __pycache__/
 # large reference data fetched by scripts (see gembench-README.md); curated mapping tables in data/reference/ are kept
 models/*
 !models/gapfilled/
+!models/bigg/
 # solver fixtures are large; comparison summaries are kept
 results/frog_cross_solver/*/cobrapy_*/
 .DS_Store

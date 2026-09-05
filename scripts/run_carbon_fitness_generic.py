@@ -40,7 +40,13 @@ EMBL = {"Btheta": "Bacteroides_thetaiotaomicron_VPI_5482", "Putida": "Pseudomona
 OUT = os.path.join(ROOT, "results", "carbon_fitness_multi")
 
 
+CURATED = {"Putida": ("models/bigg/iJN1463.xml", "BiGG iJN1463 (Nogales et al. 2020), downloaded from bigg.ucsd.edu/static/models/iJN1463.xml on 5 Sept 2026")}
+
+
 def load_model(org: str, variant: str = "shipped"):
+    if variant == "curated" and org in CURATED:
+        path = os.path.join(ROOT, CURATED[org][0])
+        return cobra.io.read_sbml_model(path), path, CURATED[org][1]
     if org != "Keio" and variant == "gapfilled":
         path = os.path.join(ROOT, "models", "gapfilled", f"{org}.xml.gz")
         with gzip.open(path, "rt") as fh:
@@ -63,12 +69,12 @@ def load_model(org: str, variant: str = "shipped"):
     return m, path, "EMBL GEMs (CarveMe draft, Machado et al. 2018; github.com/cdanielmachado/embl_gems)"
 
 
-def gene_map_for(org: str, model, browser_sysnames) -> GeneMap:
-    if org == "Keio":   # iML1515 gene ids are b-numbers = Fitness Browser sysName
+def gene_map_for(org: str, model, browser_sysnames, variant: str = "shipped") -> GeneMap:
+    if org == "Keio" or variant == "curated":   # BiGG gene ids are locus tags = Fitness Browser sysName
         ids = [g.id for g in model.genes]
         mp = {g: g for g in ids if g in browser_sysnames}
         return GeneMap(org_id=org, model_to_browser=mp, unmapped_model_genes=[g for g in ids if g not in mp],
-                       stats={"model_genes": len(ids), "mapped": len(mp)}, provenance={"method": "identity (b-numbers)"})
+                       stats={"model_genes": len(ids), "mapped": len(mp)}, provenance={"method": "identity (BiGG gene ids are locus tags)"})
     return build_gene_map(org, [g.id for g in model.genes], browser_sysnames)
 
 
@@ -121,14 +127,14 @@ def main() -> None:
     ap.add_argument("--no-drop-rich", action="store_true")
     ap.add_argument("--processes", type=int, default=2)
     ap.add_argument("--solver", default="glpk")
-    ap.add_argument("--variant", default="shipped", choices=["shipped", "gapfilled"])
+    ap.add_argument("--variant", default="shipped", choices=["shipped", "gapfilled", "curated"])
     args = ap.parse_args()
 
     for org in args.orgs.split(","):
         t0 = time.time()
         fb = load_organism(org)
         model, mpath, msource = load_model(org, args.variant)
-        gm = gene_map_for(org, model, set(fb.genes["sysName"]))
+        gm = gene_map_for(org, model, set(fb.genes["sysName"]), args.variant)
         gm.stats["mapped_with_fitness_data"] = sum(1 for v in gm.model_to_browser.values() if v in set(fb.fitness.index))
         conds = carbon_source_conditions(fb)
         print(f"== {org}: model {model.id} ({len(model.genes)} genes); gene map {gm.stats}; "
@@ -167,7 +173,8 @@ def main() -> None:
                                  "condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"},
             leakage=LeakageCard(
                 ground_truth_used_in_model_curation="no for EMBL draft models (automated reconstruction from genome annotation); "
-                                                    "for iML1515: partly (E. coli curation used phenotype data)",
+                                                    "for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly "
+                                                    "(Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
                 ground_truth_public_since="Fitness Browser releases 2015-2018 (Price et al. 2018)",
                 frontier_model_training_exposure="Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
                 held_out_recommendation="unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
