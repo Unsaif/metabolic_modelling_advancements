@@ -1,0 +1,31 @@
+{
+  "version": "0.1",
+  "created": "2026-09-05",
+  "scope": "reaction-level corrections proposed for the CarveMe/BiGG universe, applied to every model that contains the reaction; each patch is justified on biochemical grounds independent of the fitness data and then verified by the carbon-source fitness benchmark across organisms (fix-at-source loop, roadmap WS1)",
+  "patches": [
+    {
+      "reaction": "CBMKr",
+      "name": "carbamate kinase",
+      "bigg_reaction": "atp_c + co2_c + nh4_c <=> adp_c + cbp_c + 2 h_c",
+      "change": {
+        "lower_bound": -1000.0,
+        "upper_bound": 0.0
+      },
+      "effect": "catabolic direction only (carbamoyl phosphate + ADP -> ATP + CO2 + NH4)",
+      "rationale": "Carbamate kinase (EC 2.7.2.2) functions in the arginine deiminase and allantoin degradation pathways, where it phosphorylates ADP at the expense of carbamoyl phosphate; the synthetic direction is not a physiological route to carbamoyl phosphate in bacteria that possess glutamine-dependent carbamoyl-phosphate synthetase (carAB), and with the reaction reversible every such model predicts carAB dispensable on minimal medium, contradicting the classic arginine/pyrimidine auxotrophy of carAB mutants.",
+      "flagged_by": "benchmark: carbamoyl-phosphate synthase genes important in nearly every carbon-source condition but predicted dispensable in P. putida, S. meliloti and E. coli (iML1515); pFBA after carAB knockout routes all carbamoyl-phosphate synthesis through CBMKr",
+      "caveat": "Some archaea and a few bacteria use carbamate-kinase-like enzymes for carbamoyl-phosphate synthesis; the patch should not be applied to models without carAB."
+    },
+    {
+      "reaction": "CBPS",
+      "name": "carbamoyl-phosphate synthase (glutamine-hydrolysing)",
+      "change": {
+        "gpr": "keep_only_conjunctions"
+      },
+      "effect": "the gene rule keeps only the subunit conjunctions: 'A or B or C or (A and B)' becomes '(A and B)'; standalone genes are dropped because no single polypeptide catalyses the glutamine-dependent reaction (in S. oneidensis the standalone gene was the aspartate carbamoyltransferase pyrB, a mis-assignment)",
+      "rationale": "Glutamine-dependent carbamoyl-phosphate synthetase is an obligate heterodimer of the small glutaminase subunit (carA) and the large synthetase subunit (carB); mutants in either subunit are arginine/pyrimidine auxotrophs in E. coli, P. aeruginosa and B. subtilis. CarveMe merges gene rules from several source models and produces 'carA or carB or (carA and carB)', under which no single-subunit knockout removes the reaction.",
+      "flagged_by": "benchmark: carA and carB important in every carbon-source condition but predicted dispensable in S. meliloti and S. oneidensis after the CBMKr patch; the rule shape '(A and B) or A or B' occurs in 7-30 reactions per draft model",
+      "caveat": "Applies to the glutamine-dependent enzyme (carAB); ammonia-dependent single-chain CPS (as in some archaea or the mammalian CPS1) is a different enzyme."
+    }
+  ]
+}

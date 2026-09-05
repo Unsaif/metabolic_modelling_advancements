@@ -47,6 +47,11 @@ python scripts/gapfill_embl_models.py                       # -> models/gapfille
 python scripts/run_carbon_fitness_generic.py --variant gapfilled --orgs Btheta,Putida,MR1,Smeli
 python scripts/run_carbon_fitness_generic.py --variant shipped   --orgs Btheta,Putida,MR1,Smeli,Keio
 python scripts/verify_carbon_fitness_multi.py               # independent recomputation of every card
+python scripts/run_carbon_fitness_generic.py --orgs Putida --variant curated     # iJN1463 (models/bigg/)
+python scripts/compare_models_paired.py Putida <dir_A> <dir_B> draft iJN1463     # paired comparison on common genes/conditions
+python scripts/find_bypasses.py                              # which reactions/gene rules protect persistently important genes
+python scripts/run_carbon_fitness_generic.py --variant gapfilled --patch data/reference/universe_patches_v0.1.json
+python scripts/evaluate_patch.py v0.1                        # verifier step of the fix-at-source loop
 ```
 Gene maps need data/genpept/<org>_genpept_map.tsv (NCBI efetch GenPept, parsed by tools/genpept_parse.js; see data/genpept/PROVENANCE.md).
 

@@ -128,12 +128,40 @@ def main() -> None:
     ap.add_argument("--processes", type=int, default=2)
     ap.add_argument("--solver", default="glpk")
     ap.add_argument("--variant", default="shipped", choices=["shipped", "gapfilled", "curated"])
+    ap.add_argument("--patch", default=None, help="JSON of universe-level reaction patches to apply (data/reference/universe_patches_*.json)")
     args = ap.parse_args()
+    patches = json.load(open(args.patch)) if args.patch else None
 
     for org in args.orgs.split(","):
         t0 = time.time()
         fb = load_organism(org)
         model, mpath, msource = load_model(org, args.variant)
+        applied = []
+        if patches:
+            for pt in patches["patches"]:
+                if pt["reaction"] not in model.reactions:
+                    continue
+                r = model.reactions.get_by_id(pt["reaction"])
+                if "gpr" in pt["change"]:
+                    import re as _re
+                    rule = r.gene_reaction_rule
+                    alts = [a.strip() for a in _re.split(r"\s+or\s+(?![^()]*\))", rule)]
+                    conj = [a for a in alts if " and " in a]
+                    members = set()
+                    for a in conj:
+                        members |= set(a.strip("()").split(" and "))
+                    if pt["change"]["gpr"] == "keep_only_conjunctions":
+                        keep = [a for a in alts if " and " in a]
+                    else:
+                        keep = [a for a in alts if " and " in a or a.strip("()") not in members]
+                    if conj and len(keep) < len(alts):
+                        r.gene_reaction_rule = " or ".join(keep)
+                        applied.append({"reaction": pt["reaction"], "gpr_before": rule, "gpr_after": r.gene_reaction_rule})
+                elif pt["reaction"] != "CBMKr" or "CBPS" in model.reactions:
+                    before = r.bounds
+                    r.bounds = (pt["change"]["lower_bound"], pt["change"]["upper_bound"])
+                    applied.append({"reaction": pt["reaction"], "bounds_before": list(before), "bounds_after": list(r.bounds)})
+            print(f"   patches applied: {applied}", flush=True)
         gm = gene_map_for(org, model, set(fb.genes["sysName"]), args.variant)
         gm.stats["mapped_with_fitness_data"] = sum(1 for v in gm.model_to_browser.values() if v in set(fb.fitness.index))
         conds = carbon_source_conditions(fb)
@@ -144,7 +172,8 @@ def main() -> None:
                                  knockout_genes=BW25113_DELETED_GENES if org == "Keio" else [])
         res = P.run(model, fb, conds, gm, params)
 
-        outdir = os.path.join(OUT, org, f"{model.id}__{args.variant}" if org != "Keio" else model.id)
+        suffix = f"__patched-v{patches['version']}" if patches else ""
+        outdir = os.path.join(OUT, org, (f"{model.id}__{args.variant}" if org != "Keio" else model.id) + suffix)
         os.makedirs(outdir, exist_ok=True)
         grows = res.wt_growth >= params.growth_threshold
         results = {
@@ -165,7 +194,8 @@ def main() -> None:
             model=ModelProvenance(model_id=model.id, file=os.path.relpath(mpath, ROOT), source=msource,
                                   n_reactions=len(model.reactions), n_metabolites=len(model.metabolites),
                                   n_genes=len(model.genes), sha256=sha256_of(mpath)),
-            protocol={"variant": args.variant, "params": res.params.__dict__, "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
+            protocol={"variant": args.variant, "patches": {"file": args.patch, "applied": applied} if patches else None,
+                      "params": res.params.__dict__, "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
                       "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
                       "gene_mapping": gm.provenance,
                       "condition_selection": "expGroup == 'carbon source'; condition_2 empty or DMSO; media with a BiGG mapping; replicates averaged per condition x medium",
