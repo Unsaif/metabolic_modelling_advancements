@@ -1,0 +1,401 @@
+{
+  "version": "0.2",
+  "created": "2026-09-05",
+  "scope": "gene-rule corrections for the four EMBL draft models, one per (organism, reaction). Each was adjudicated from the RefSeq product annotation of the genes in the rule and general enzymology only \u2014 never from the fitness data \u2014 under three written rules: (1) a gene whose product name denotes a different enzyme, a protein family or domain, or a non-enzymatic protein is removed from an OR rule; (2) genes annotated as subunits of one heteromeric enzyme are joined with AND; (3) paralogs carrying the same product name (plasmid copies, isozymes, promiscuous relatives) are left alone even where the fitness data suggest one is not functional, because annotation cannot tell them apart. The fitness benchmark then judges (scripts/evaluate_patch.py). Gene identifiers are Fitness Browser locus tags; they are translated to model gene ids when applied.",
+  "rules": {
+    "R1": "remove genes annotated as a different enzyme, a family/domain, or a non-enzymatic protein",
+    "R2": "join annotated subunits of one complex with AND",
+    "R3": "leave same-name paralogs",
+    "R4": "add an annotated isozyme that the draft omitted (gene present in the genome annotation, absent from the model)"
+  },
+  "patches": [
+    {
+      "org": "Btheta",
+      "reaction": "ACLS",
+      "new_rule": "BT2076 and BT2077",
+      "rule": "R1+R2",
+      "note": "hypothetical protein BT0572 removed; acetohydroxyacid synthase small (BT2076) and large (BT2077) subunits joined"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "ACHBS",
+      "new_rule": "BT2076 and BT2077",
+      "rule": "R1+R2",
+      "note": "as ACLS"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "ANS",
+      "new_rule": "BT0531 and BT0532",
+      "rule": "R1+R2",
+      "note": "para-aminobenzoate synthase component I (BT0767, pabB) removed; anthranilate synthase components I and II joined"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "ANPRT",
+      "new_rule": "BT0530",
+      "rule": "R1",
+      "note": "anthranilate synthase components (BT0531, BT0532) are not anthranilate phosphoribosyltransferases"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "ASPTA",
+      "new_rule": "BT1476 or BT2415 or BT3375",
+      "rule": "R1",
+      "note": "L,L-diaminopimelate aminotransferase (BT0547) and 2-aminoethylphosphonate-pyruvate aminotransferase (BT1718) removed; three aspartate aminotransferases kept (R3)"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "PHETA1",
+      "new_rule": "BT2415 or BT3375 or BT3935",
+      "rule": "R1",
+      "note": "DapL (BT0547) removed; generic 'aminotransferase' BT3935 kept"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "TYRTA",
+      "new_rule": "BT2415 or BT3375 or BT3935",
+      "rule": "R1",
+      "note": "as PHETA1"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "FTHFLi",
+      "new_rule": "BT0737",
+      "rule": "R1",
+      "note": "BT1607 is the bifunctional methylene-THF dehydrogenase/cyclohydrolase, not a formate-THF ligase"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "IPPMIa",
+      "new_rule": "BT1859 and BT1860",
+      "rule": "R2",
+      "note": "3-isopropylmalate dehydratase small (LeuD) and large (LeuC) subunits"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "IPPMIb",
+      "new_rule": "BT1859 and BT1860",
+      "rule": "R2",
+      "note": "as IPPMIa"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "PDX5PS",
+      "new_rule": "BT3918",
+      "rule": "R1",
+      "note": "4-hydroxythreonine-4-phosphate dehydrogenase (BT4374, PdxA) catalyses the preceding step, not PNP synthase"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "PGM",
+      "new_rule": "BT1660 or BT2402 or BT3419",
+      "rule": "R1",
+      "note": "transcriptional regulator BT4599 removed"
+    },
+    {
+      "org": "Putida",
+      "reaction": "ANPRT",
+      "new_rule": "PP_0421",
+      "rule": "R1",
+      "note": "generic 'glycosyl transferase' PP_3997 removed"
+    },
+    {
+      "org": "Putida",
+      "reaction": "ANS",
+      "new_rule": "PP_0417",
+      "rule": "R1",
+      "note": "para-aminobenzoate synthase complex protein PP_0420 and hypothetical PP_0727 removed; anthranilate synthase component 1 kept (component 2 not in the rule)"
+    },
+    {
+      "org": "Putida",
+      "reaction": "DHAD1",
+      "new_rule": "PP_5128",
+      "rule": "R1",
+      "note": "pterin-4-alpha-carbinolamine dehydratase PP_4491 is unrelated to dihydroxy-acid dehydratase"
+    },
+    {
+      "org": "Putida",
+      "reaction": "DHAD2",
+      "new_rule": "PP_5128",
+      "rule": "R1",
+      "note": "as DHAD1"
+    },
+    {
+      "org": "Putida",
+      "reaction": "DHORTS",
+      "new_rule": "PP_1086",
+      "rule": "R1",
+      "note": "'dihydroorotase-like protein' PP_4999 is the non-catalytic PyrC' homologue of pseudomonads; expected to be contradicted by fitness because PyrC' has a structural role in the ATCase complex"
+    },
+    {
+      "org": "Putida",
+      "reaction": "PGCD",
+      "new_rule": "PP_5155",
+      "rule": "R1",
+      "note": "family-level 'D-isomer specific 2-hydroxyacid dehydrogenase' annotations (PP_1707, PP_2533, PP_4316) removed"
+    },
+    {
+      "org": "Putida",
+      "reaction": "PSP_L",
+      "new_rule": "PP_4909",
+      "rule": "R1",
+      "note": "purine nucleotidase PP_0259 and HAD-like hydrolase PP_5147 removed"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ACLS",
+      "new_rule": "(SO2278 and SO2279) or (SO4346 and SO4347)",
+      "rule": "R2",
+      "note": "acetolactate synthase III (IlvH+IlvI) and II (IlvM+large subunit) as two complexes"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ACHBS",
+      "new_rule": "(SO2278 and SO2279) or (SO4346 and SO4347)",
+      "rule": "R2",
+      "note": "as ACLS"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ADCL",
+      "new_rule": "SO2615",
+      "rule": "R1",
+      "note": "protein YceG (SO2614) removed"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ADSK",
+      "new_rule": "SO3723",
+      "rule": "R1",
+      "note": "scaffold protein SO2618 removed"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ARGSS",
+      "new_rule": "SO0278",
+      "rule": "R1",
+      "note": "argininosuccinate lyase ArgH (SO0279) catalyses the next step"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ASNS1",
+      "new_rule": "SO2767",
+      "rule": "R1",
+      "note": "WbpS (SO3175) is an O-antigen amidotransferase annotated as asparagine-synthase-like"
+    },
+    {
+      "org": "MR1",
+      "reaction": "DHORTS",
+      "new_rule": "SO3695",
+      "rule": "R1",
+      "note": "aspartate carbamoyltransferase PyrB (SO1301) and 'periplasmic amidohydrolase family protein' (SO3148) removed"
+    },
+    {
+      "org": "MR1",
+      "reaction": "SULR",
+      "new_rule": "SO3737 and SO3738",
+      "rule": "R1+R2",
+      "note": "tRNA-pseudouridine-synthase-associated flavoprotein SO1622 removed; sulfite reductase hemoprotein (CysI) and flavoprotein (CysJ) joined"
+    },
+    {
+      "org": "MR1",
+      "reaction": "GARFT",
+      "new_rule": "SO2761",
+      "rule": "R1",
+      "note": "'formyltransferase domain protein' SO3177 and uncharacterised SO3265 removed"
+    },
+    {
+      "org": "MR1",
+      "reaction": "GLNS",
+      "new_rule": "SO4410",
+      "rule": "R1",
+      "note": "gamma-glutamyl-putrescine synthase PuuA (SO1268) is not a glutamine synthetase"
+    },
+    {
+      "org": "MR1",
+      "reaction": "HSERTA",
+      "new_rule": "SO1676",
+      "rule": "R1",
+      "note": "CBS-domain protein SO0805 removed"
+    },
+    {
+      "org": "MR1",
+      "reaction": "IMPD",
+      "new_rule": "SO3293",
+      "rule": "R1",
+      "note": "CBS-domain protein SO2228 and DUF294 nucleotidyltransferase SO2856 removed (IMPDH carries CBS domains, hence the homology hits)"
+    },
+    {
+      "org": "MR1",
+      "reaction": "PPA",
+      "new_rule": "SO4190",
+      "rule": "R1",
+      "note": "exopolyphosphatase Ppx (SO2185) and 5'/3'-nucleotidase SurE (SO3435) are not inorganic pyrophosphatases"
+    },
+    {
+      "org": "MR1",
+      "reaction": "PAPSR",
+      "new_rule": "SO3736",
+      "rule": "R1",
+      "note": "thioredoxins TrxA/TrxC (SO0406, SO0452) are the electron donors, not the reductase"
+    },
+    {
+      "org": "MR1",
+      "reaction": "PSP_L",
+      "new_rule": "SO_1223",
+      "rule": "R1",
+      "note": "HAD-superfamily hydrolase SO0177 removed"
+    },
+    {
+      "org": "MR1",
+      "reaction": "SADT2",
+      "new_rule": "SO3726 and SO3727",
+      "rule": "R1+R2",
+      "note": "elongation factor Tu (SO0229) removed (CysN is an EF-Tu-like GTPase, hence the hit); CysN and CysD joined"
+    },
+    {
+      "org": "MR1",
+      "reaction": "THRD_L",
+      "new_rule": "SO4344",
+      "rule": "R1",
+      "note": "L-serine ammonia-lyase SdaA (SO2248) annotated as a different enzyme"
+    },
+    {
+      "org": "MR1",
+      "reaction": "TMPK",
+      "new_rule": "SO3464",
+      "rule": "R1",
+      "note": "ThiI (SO1531, thiazole biosynthesis/tRNA modification) is not thiamine-phosphate kinase"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "UMPK",
+      "new_rule": "SMc02099",
+      "rule": "R1",
+      "note": "cytidylate kinase SMc00334 removed; uridylate kinase PyrH kept"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "GARFT",
+      "new_rule": "SMc00614",
+      "rule": "R1",
+      "note": "generic 'formyltransferase' SMc04334 removed"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "PGCD",
+      "new_rule": "SMc00641",
+      "rule": "R1",
+      "note": "generic 'oxidoreductase' (SMc00340, SMc01622, SMc02045) and plasmid 'dehydrogenase' (SMa2137) removed"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "HSERTA",
+      "new_rule": "SMc03797",
+      "rule": "R1",
+      "note": "O-acetylhomoserine aminocarboxypropyltransferase (SMc01809, MetY) and plasmid IMP dehydrogenase (SM_b21441) removed"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "IMPD",
+      "new_rule": "SMc00815",
+      "rule": "R1",
+      "note": "hypothetical plasmid proteins SMa0636 and SMa1086 removed"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "IPPMIa",
+      "new_rule": "SMc03795 and SMc03823",
+      "rule": "R2",
+      "note": "isopropylmalate isomerase small and large subunits"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "IPPMIb",
+      "new_rule": "SMc03795 and SMc03823",
+      "rule": "R2",
+      "note": "as IPPMIa"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "IPPS",
+      "new_rule": "SMc02717",
+      "rule": "R1",
+      "note": "family-level 'alpha-isopropylmalate/homocitrate synthase family' SMc02546 removed"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "METS",
+      "new_rule": "SMc03112",
+      "rule": "R1",
+      "note": "methyltetrahydrofolate:corrinoid/iron-sulfur protein methyltransferase (SMc04342) is an acetogenesis enzyme"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "PPND",
+      "new_rule": "SMc00711",
+      "rule": "R1",
+      "note": "3-phosphoshikimate 1-carboxyvinyltransferase (SMc00333) and chorismate mutase (SMc03858) removed"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "PRAGSr",
+      "new_rule": "SMc00993",
+      "rule": "R1",
+      "note": "phosphoribosylaminoimidazole synthetase PurM (SMc00615) removed"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "PRATPP",
+      "new_rule": "SMc02568",
+      "rule": "R1",
+      "note": "phosphoribosyl-AMP cyclohydrolase HisI (SMc01004) catalyses the next step; HisE kept"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "PYK",
+      "new_rule": "SMc04005",
+      "rule": "R1",
+      "note": "3-oxoacyl-ACP synthase SMc00574 removed"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "SADT2",
+      "new_rule": "SMc00090 and SMc00091",
+      "rule": "R1+R2",
+      "note": "elongation factor Tu (SMc01311) removed; CysD and CysN joined; plasmid 'subunit 2' (SMa0855) not kept as an alternative"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "CBPS",
+      "new_rule": "(BT0556 and BT0557) or BT3866",
+      "rule": "R4",
+      "note": "the genome annotates a second, glutamine-dependent carbamoyl-phosphate synthetase (BT3866, 'glutamine-dependent carbamyl phosphate synthetase') and a putative third (BT3374) that CarveMe did not assign; BT0556/BT0557 form the CPS-III-like pair. Resolves the v0.1 rejection: with two CPS systems, single knockouts of BT0556 or BT0557 are expected to be silent. BT3374 not added (annotation 'putative')."
+    }
+  ],
+  "left_alone_by_R3": [
+    "Btheta ALATA_L (three aspartate aminotransferases)",
+    "Btheta ASPK (aspartokinase and bifunctional AK/HSD)",
+    "Btheta IPPS (two 2-isopropylmalate synthases)",
+    "Btheta P5CRx (two P5C reductases)",
+    "Putida OCBT (anabolic ArgF and catabolic ArcB)",
+    "MR1 THRAi (threonine aldolase LtaE and GlyA)",
+    "MR1 ASPK/HSDy (aspartokinases, homoserine dehydrogenases)",
+    "MR1 BPNT (two CysQ)",
+    "MR1 CHORM (TyrA and PheA)",
+    "MR1 CYSS (CysK and CysM)",
+    "MR1 HPPK2 (two HPPK)",
+    "MR1 DPR (PanE and IlvC \u2014 IlvC has ketopantoate reductase activity)",
+    "MR1 E4PD (Epd and GapA)",
+    "MR1 METS_1 (MetE and MetH)",
+    "MR1 THZPSN (lumped multi-protein rule)",
+    "Smeli GHMT2r (GlyA and plasmid GlyA2)",
+    "Smeli ALATA_L",
+    "Smeli DHAD1 (chromosomal and two plasmid IlvD)",
+    "Smeli DHORTS (two dihydroorotases)",
+    "Smeli GLU5K (two ProB)",
+    "Smeli HISTD (chromosomal and plasmid HisD)",
+    "Smeli OCBT (chromosomal and plasmid ArgF)"
+  ]
+}

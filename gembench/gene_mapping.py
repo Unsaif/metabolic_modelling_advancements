@@ -66,6 +66,9 @@ def build_gene_map(org_id: str, model_gene_ids: List[str], browser_sysnames: Set
     unmapped: List[str] = []
     n_version, n_accession_only, n_no_record, n_no_sysname = 0, 0, 0, 0
     for gid in model_gene_ids:
+        if gid in browser_sysnames:            # genes added by gene-rule patches carry the Browser locus tag directly
+            mapping[gid] = gid
+            continue
         acc = accession_from_model_gene(gid)
         tags = by_version.get(acc)
         if tags is None:

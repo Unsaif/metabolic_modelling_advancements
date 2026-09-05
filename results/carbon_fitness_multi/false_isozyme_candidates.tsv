@@ -1,0 +1,76 @@
+org	target_gene	reaction	rule	genes_in_rule (browser id : RefSeq definition : mean fitness)
+Btheta	BT2076	ACLS	NP_810990_1 or (NP_809485_1 and NP_810990_1) or (NP_810989_1 and NP_81	BT0572:hypothetical protein BT_0572:fit=-0.5 || BT2076:acetohydroxyacid synthase small subunit:fit=-4.4 || BT2077:acetolactate synthase large subunit:fit=nan
+Btheta	BT2076	ACHBS	(NP_809485_1 and NP_810990_1) or (NP_810989_1 and NP_810990_1)	BT0572:hypothetical protein BT_0572:fit=-0.5 || BT2076:acetohydroxyacid synthase small subunit:fit=-4.4 || BT2077:acetolactate synthase large subunit:fit=nan
+Btheta	BT0531	ANS	NP_809444_1 or NP_809445_1 or (NP_809444_1 and NP_809445_1) or (NP_809	BT0531:anthranilate synthase component II:fit=-2.3 || BT0532:anthranilate synthase component I:fit=-3.6 || BT0767:para-aminobenzoate synthase component I:fit=nan
+Btheta	BT0531	ANPRT	NP_809443_1 or NP_809444_1 or NP_809445_1	BT0530:anthranilate phosphoribosyltransferase:fit=-4.2 || BT0531:anthranilate synthase component II:fit=-2.3 || BT0532:anthranilate synthase component I:fit=-3.6
+Btheta	BT1476	ALATA_L	NP_810389_1 or NP_812287_1 or NP_812631_1	BT1476:aspartate aminotransferase:fit=-3.4 || BT3375:aspartate aminotransferase:fit=-0.4 || BT3720:aspartate aminotransferase:fit=-0.0
+Btheta	BT1476	ASPTA	NP_809460_1 or NP_810389_1 or NP_810631_1 or NP_811328_1 or NP_812287_	BT0547:L,L-diaminopimelate aminotransferase:fit=-0.1 || BT1476:aspartate aminotransferase:fit=-3.4 || BT1718:2-aminoethylphosphonate pyruvate aminotransfe:fit=-0.4 || BT2415:aspartate aminotransferase:fit=-4.5 || BT3375:aspartate aminotransferase:fit=-0.4 || BT3935:aminotransferase:fit=nan
+Btheta	BT1375	ASPK	NP_810288_1 or NP_811316_1	BT1375:aspartokinase:fit=-2.0 || BT2403:bifunctional aspartokinase I/homoserine dehyd:fit=nan
+Btheta	BT2415	PHETA1	NP_809460_1 or NP_811328_1 or NP_812287_1 or NP_812846_1	BT0547:L,L-diaminopimelate aminotransferase:fit=-0.1 || BT2415:aspartate aminotransferase:fit=-4.5 || BT3375:aspartate aminotransferase:fit=-0.4 || BT3935:aminotransferase:fit=nan
+Btheta	BT2415	TYRTA	NP_809460_1 or NP_811328_1 or NP_812287_1 or NP_812846_1	BT0547:L,L-diaminopimelate aminotransferase:fit=-0.1 || BT2415:aspartate aminotransferase:fit=-4.5 || BT3375:aspartate aminotransferase:fit=-0.4 || BT3935:aminotransferase:fit=nan
+Btheta	BT1607	FTHFLi	NP_809650_1 or NP_810520_1	BT0737:formate--tetrahydrofolate ligase:fit=0.1 || BT1607:bifunctional 5,10-methylene-tetrahydrofolate :fit=-4.3
+Btheta	BT1859	IPPMIb	NP_810773_1 or (NP_810772_1 and NP_810773_1)	BT1859:3-isopropylmalate dehydratase small subunit:fit=-4.4 || BT1860:isopropylmalate isomerase large subunit:fit=-4.1
+Btheta	BT1859	IPPMIa	NP_810773_1 or (NP_810772_1 and NP_810773_1)	BT1859:3-isopropylmalate dehydratase small subunit:fit=-4.4 || BT1860:isopropylmalate isomerase large subunit:fit=-4.1
+Btheta	BT1861	IPPS	NP_810771_1 or NP_810774_1	BT1858:2-isopropylmalate synthase:fit=-3.9 || BT1861:2-isopropylmalate synthase:fit=-4.1
+Btheta	BT3757	P5CRx	NP_810815_1 or NP_812668_1	BT1902:pyrroline-5-carboxylate reductase:fit=0.0 || BT3757:pyrroline-5-carboxylate reductase:fit=-4.2
+Btheta	BT3918	PDX5PS	NP_813285_1 or (NP_812829_1 and NP_813285_1)	BT3918:pyridoxine 5'-phosphate synthase:fit=-3.3 || BT4374:4-hydroxythreonine-4-phosphate dehydrogenase:fit=nan
+Btheta	BT2402	PGM	NP_810573_1 or NP_811315_1 or NP_812331_1 or NP_813510_1	BT1660:phosphoglyceromutase:fit=0.1 || BT2402:cofactor-independent phosphoglycerate mutase:fit=-4.3 || BT3419:phosphoglyceromutase:fit=nan || BT4599:transcriptional regulator:fit=-0.1
+Putida	PP_0421	ANPRT	NP_742587_1 or NP_746127_1	PP_0421:anthranilate phosphoribosyltransferase:fit=-3.9 || PP_3997:glycosyl transferase:fit=-0.0
+Putida	PP_0420	ANS	NP_742888_1 or (NP_742583_1 and NP_742586_1)	PP_0417:anthranilate synthase component 1:fit=-4.5 || PP_0420:para-aminobenzoate synthase multi-enzyme comp:fit=-3.8 || PP_0727:hypothetical protein PP_0727:fit=-0.0
+Putida	PP_5128	DHAD1	NP_746602_1 or NP_747229_1	PP_4491:pterin-4-alpha-carbinolamine dehydratase:fit=nan || PP_5128:dihydroxy-acid dehydratase:fit=-4.2
+Putida	PP_5128	DHAD2	NP_746602_1 or NP_747229_1	PP_4491:pterin-4-alpha-carbinolamine dehydratase:fit=nan || PP_5128:dihydroxy-acid dehydratase:fit=-4.2
+Putida	PP_4999	DHORTS	NP_743247_1 or NP_747101_1	PP_1086:dihydroorotase:fit=nan || PP_4999:dihydroorotase-like protein:fit=-3.6
+Putida	PP_1079	OCBT	NP_743161_1 or NP_743240_1	PP_1000:ornithine carbamoyltransferase:fit=0.0 || PP_1079:ornithine carbamoyltransferase:fit=-4.5
+Putida	PP_5155	PGCD	NP_743864_1 or NP_744678_1 or NP_746432_1 or NP_747256_1	PP_1707:D-isomer specific 2-hydroxyacid dehydrogenase:fit=-0.0 || PP_2533:D-isomer specific 2-hydroxyacid dehydrogenase:fit=0.0 || PP_4316:D-isomer specific 2-hydroxyacid dehydrogenase:fit=-0.1 || PP_5155:bifunctional D-3-phosphoglycerate dehydrogena:fit=-4.0
+Putida	PP_4909	PSP_L	NP_742426_1 or NP_747012_1 or NP_747248_1	PP_0259:purine nucleotidase:fit=-0.0 || PP_4909:phosphoserine phosphatase:fit=-5.1 || PP_5147:haloacid dehalogenase-like family hydrolase:fit=-0.1
+MR1	SO4347	ACLS	(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)	SO2278:acetolactate synthase III small subunit IlvH:fit=nan || SO2279:acetolactate synthase III large subunit IlvI:fit=-1.9 || SO4346:acetolactate synthase II small subunit IlvM:fit=-0.8 || SO4347:acetolactate synthase II large subunit IlvG:fit=-2.1
+MR1	SO4347	ACHBS	(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)	SO2278:acetolactate synthase III small subunit IlvH:fit=nan || SO2279:acetolactate synthase III large subunit IlvI:fit=-1.9 || SO4346:acetolactate synthase II small subunit IlvM:fit=-0.8 || SO4347:acetolactate synthase II large subunit IlvG:fit=-2.1
+MR1	SO2615	ADCL	NP_718199_1 or NP_718200_1	SO2614:protein YceG:fit=0.3 || SO2615:aminodeoxychorismate lyase PabC:fit=-2.4
+MR1	SO3723	ADSK	NP_718203_1 or NP_719263_1	SO2618:scaffold protein for:fit=0.1 || SO3723:adenylylsulfate kinase CysC:fit=-4.6
+MR1	SO3471	THRAi	NP_718892_1 or NP_719020_1	SO3338:threonine aldolase YbjU:fit=-0.0 || SO3471:serine hydroxymethyltransferase GlyA:fit=-4.4
+MR1	SO0278	ARGSS	NP_715918_1 or NP_715919_1	SO0278:argininosuccinate synthase ArgG:fit=-5.2 || SO0279:argininosuccinate lyase ArgH:fit=nan
+MR1	SO2767	ASNS1	NP_718348_1 or NP_718731_1	SO2767:asparagine synthase glutamine-hydrolyzing Asn:fit=-5.3 || SO3175:asparagine synthase glutamine-hydrolyzing Wbp:fit=-0.6
+MR1	SO3415	ASPK	NP_718968_1 or NP_718980_1 or NP_719516_1 or NP_719585_1	SO3415:bifunctional aspartokinase I / homoserine deh:fit=-3.1 || SO3427:lysine-sensitive monofunctional aspartokinase:fit=nan || SO3986:lysine-sensitive aspartokinase III LysC:fit=-1.0 || SO4055:bifunctional aspartokinase II/homoserine dehy:fit=1.0
+MR1	SO3415	HSDy	NP_718968_1 or NP_719585_1	SO3415:bifunctional aspartokinase I / homoserine deh:fit=-3.1 || SO4055:bifunctional aspartokinase II/homoserine dehy:fit=1.0
+MR1	SO1655	BPNT	NP_715833_1 or NP_717266_2	SO0191:3'(2')5'-bisphosphate nucleotidase CysQ:fit=-0.7 || SO1655:3'(2')5'-bisphosphate nucleotidase CysQ:fit=-5.5
+MR1	SO1142	CBPS	NP_716766_1 or NP_716767_1 or NP_716921_1 or (NP_716766_1 and NP_71676	SO1141:carbamoyl-phosphate synthase small subunit Ca:fit=-5.4 || SO1142:carbamoyl-phosphate synthase large subunit Ca:fit=-5.7 || SO1301:aspartate carbamoyltransferase PyrB:fit=-2.7
+MR1	SO1362	CHORM	NP_716982_1 or NP_716987_1	SO1362:bifunctional chorismate mutase T/prephenate d:fit=-5.3 || SO1367:multifunctional chorismate mutase P/prephenat:fit=nan
+MR1	SO2903	CYSS	NP_718475_1 or NP_719141_2	SO2903:cysteine synthase CysK:fit=-4.7 || SO3598:cysteine synthase B CysM:fit=-0.3
+MR1	SO1292	HPPK2	NP_716502_1 or NP_716914_1	SO0871:2-amino-4-hydroxy-6-hydroxymethyldihydropteri:fit=-4.3 || SO1292:2-amino-4-hydroxy-6-hydroxymethyldihydropteri:fit=-4.5
+MR1	SO3695	DHORTS	NP_716921_1 or NP_718704_2 or NP_719235_1	SO1301:aspartate carbamoyltransferase PyrB:fit=-2.7 || SO3148:periplasmic amidohydrolase family protein:fit=-0.2 || SO3695:dihydroorotase homodimeric type PyrC:fit=-3.6
+MR1	SO3817	DPR	NP_719353_1 or NP_719873_1	SO3817:2-dehydropantoate 2-reductase PanE:fit=-3.9 || SO4349:ketol-acid reductoisomerase IlvC:fit=-5.1
+MR1	SO0931	E4PD	NP_716174_1 or NP_716560_1	SO0538:glyceraldehyde-3-phosphate dehydrogenase (NAD:fit=-0.1 || SO0931:D-erythrose-4-phosphate dehydrogenase E4pd:fit=-2.8
+MR1	SO3737	SULR	NP_717233_1 or (NP_719276_1 and NP_719277_1)	SO1622:tRNA pseudouridine synthase C-associated flav:fit=-0.1 || SO3737:sulfite reductase (NADPH) siroheme FeS subuni:fit=-5.8 || SO3738:sulfite reductase (NADPH) flavoprotein subuni:fit=-4.2
+MR1	SO2761	GARFT	NP_718343_1 or NP_718733_1 or NP_718819_1	SO2761:phosphoribosylglycinamide formyltransferase P:fit=-1.6 || SO3177:formyltransferase domain protein:fit=-0.4 || SO3265:uncharacterized protein SO_3265:fit=1.7
+MR1	SO4410	GLNS	NP_716891_1 or NP_719933_1	SO1268:gamma-glutamyl-putrescine synthase PuuA:fit=-0.3 || SO4410:glutamine synthetase GlnA:fit=-3.1
+MR1	SO1676	HSERTA	NP_716436_2 or NP_717287_1	SO0805:CBS domain containing protein:fit=0.0 || SO1676:homoserine O-succinyltransferase MetA:fit=-5.6
+MR1	SO3293	IMPD	NP_717825_1 or NP_718428_1 or NP_718847_1	SO2228:CBS domain containing protein:fit=0.2 || SO2856:putative nucleotidyltransferase DUF294:fit=0.1 || SO3293:inosine-5-monophosphate dehydrogenase GuaB:fit=-4.3
+MR1	SO0818	METS_1	NP_716449_1 or NP_716658_1	SO0818:B12-independent 5-methyltetrahydropteroyltrig:fit=-5.1 || SO1030:B12-dependent 5-methyltetrahydrofolate--homoc:fit=-1.4
+MR1	SO3435	PPA	NP_717785_1 or NP_718988_2 or NP_719718_1	SO2185:exopolyphosphatase Ppx:fit=0.0 || SO3435:5'/3'-nucleotidase SurE:fit=-5.1 || SO4190:inorganic pyrophosphatase manganese-dependent:fit=nan
+MR1	SO3736	PAPSR	NP_716044_1 or NP_719275_2 or (NP_716044_1 and NP_719275_2) or (NP_716	SO0406:thioredoxin 1 TrxA:fit=nan || SO0452:thioredoxin 2 TrxC:fit=0.0 || SO3736:phosphoadenylyl-sulfate reductase thioredoxin:fit=-3.5
+MR1	SO_1223	PSP_L	NP_715819_1 or NP_716846_2	SO0177:HAD-superfamily hydrolase subfamily IA varian:fit=0.2 || SO_1223:phosphoserine phosphatase SerB:fit=-5.4
+MR1	SO3726	SADT2	NP_715869_1 or (NP_719266_2 and NP_719267_1)	SO0229:translation elongation factor Tu TufA:fit=0.8 || SO3726:sulfate adenylyltransferase large subunit Cys:fit=-5.3 || SO3727:sulfate adenylyltransferase small subunit Cys:fit=-5.2
+MR1	SO4344	THRD_L	NP_717844_1 or NP_719868_1	SO2248:L-serine ammonia-lyase SdaA:fit=0.7 || SO4344:threonine dehydratase IlvA:fit=-2.4
+MR1	SO1531	THZPSN	NP_719013_1 or NP_719454_1 or (NP_717147_1 and NP_717860_1 and NP_7180	SO1531:thiazole biosynthesis/tRNA modification prote:fit=-2.0 || SO2264:cysteine desulfurase IscS:fit=nan || SO2440:thiazole biosynthesis protein ThiH:fit=0.1 || SO2441:thiazole-phosphate synthase ThiG:fit=0.0 || SO2442:sulphur carrier protein ThiS:fit=-0.2 || SO2443:adenylyltransferase ThiF:fit=-0.0 || SO3464:thiamine-phosphate kinase ThiL:fit=nan || SO3923:Fe hydrogenase maturation rSAM protein HydG:fit=0.0
+MR1	SO1531	TMPK	NP_717147_1 or NP_719013_1	SO1531:thiazole biosynthesis/tRNA modification prote:fit=-2.0 || SO3464:thiamine-phosphate kinase ThiL:fit=nan
+Smeli	SMc01770	GHMT2r	NP_385314_1 or NP_436409_1	SMc01770:serine hydroxymethyltransferase:fit=-4.5 || SMa2135:GlyA2 serine hydroxymethyltransferase, SHMT (:fit=-0.1
+Smeli	SMc00294	ALATA_L	NP_384661_1 or NP_385829_1	SMc02251:aspartate aminotransferase:fit=-0.0 || SMc00294:aminotransferase:fit=-3.8
+Smeli	SMc00334	UMPK	NP_384360_1 or NP_385603_1	SMc00334:cytidylate kinase:fit=-2.7 || SMc02099:uridylate kinase:fit=nan
+Smeli	SMc04045	DHAD1	NP_386934_1 or NP_436655_1 or NP_437724_1	SMc04045:dihydroxy-acid dehydratase:fit=-7.3 || SM_b20115:dihydroxy-acid dehydratase (plasmid):fit=-0.0 || SM_b20890:dihydroxy-acid dehydratase (plasmid):fit=-0.0
+Smeli	SMc01361	DHORTS	NP_384586_1 or NP_385409_1	SMc02166:dihydroorotase:fit=-5.1 || SMc01361:dihydroorotase:fit=-6.0
+Smeli	SMc00614	GARFT	NP_385289_1 or NP_386086_1	SMc00614:phosphoribosylglycinamide formyltransferase:fit=-7.0 || SMc04334:formyltransferase:fit=-0.1
+Smeli	SMc03776	GLU5K	NP_387212_1 or NP_387266_1	SMc03252:gamma-glutamyl kinase:fit=-0.0 || SMc03776:gamma-glutamyl kinase:fit=-5.1
+Smeli	SMc02307	HISTD	NP_384717_1 or NP_435458_3	SMc02307:histidinol dehydrogenase:fit=-4.8 || SMa0398:histidinol dehydrogenase (plasmid):fit=0.1
+Smeli	SMc00641	PGCD	NP_384366_1 or NP_386340_1 or NP_386663_1 or NP_386836_1 or NP_436410_	SMc00340:oxidoreductase:fit=-0.1 || SMc01622:oxidoreductase:fit=-0.5 || SMc02045:oxidoreductase:fit=-0.2 || SMc00641:D-3-phosphoglycerate dehydrogenase:fit=-4.0 || SMa2137:dehydrogenase (plasmid):fit=-0.0
+Smeli	SMc03797	HSERTA	NP_385354_1 or NP_387286_1 or NP_437810_2	SMc01809:O-acetylhomoserine aminocarboxypropyltransfer:fit=0.0 || SMc03797:homoserine O-succinyltransferase:fit=-7.7 || SM_b21441:inosine-5'-monophosphate dehydrogenase (plasm:fit=0.1
+Smeli	SMc00815	IMPD	NP_384866_1 or NP_435580_1 or NP_435834_1	SMc00815:inosine 5'-monophosphate dehydrogenase:fit=-4.7 || SMa0636:hypothetical protein SMa0636 (plasmid):fit=0.1 || SMa1086:hypothetical protein SMa1086 (plasmid):fit=-0.0
+Smeli	SMc03795	IPPMIa	NP_387312_1 or (NP_387284_1 and NP_387312_1)	SMc03795:isopropylmalate isomerase small subunit:fit=-4.2 || SMc03823:isopropylmalate isomerase large subunit:fit=-6.9
+Smeli	SMc03795	IPPMIb	NP_387312_1 or (NP_387284_1 and NP_387312_1)	SMc03795:isopropylmalate isomerase small subunit:fit=-4.2 || SMc03823:isopropylmalate isomerase large subunit:fit=-6.9
+Smeli	SMc02717	IPPS	NP_385222_1 or NP_386485_3	SMc02546:alpha-isopropylmalate/homocitrate synthase fa:fit=-0.1 || SMc02717:2-isopropylmalate synthase:fit=-7.3
+Smeli	SMc03112	METS	NP_386092_1 or NP_387087_1	SMc04342:methyltetrahydrofolate:corrinoid/iron-sulfur :fit=-0.2 || SMc03112:B12-dependent methionine synthase:fit=-6.4
+Smeli	SMc02137	OCBT	NP_384624_1 or NP_435614_1	SMc02137:ornithine carbamoyltransferase:fit=-6.8 || SMa0695:ornithine carbamoyltransferase (plasmid):fit=-0.1
+Smeli	SMc00711	PPND	NP_384359_1 or NP_386767_1 or NP_387347_1	SMc00333:3-phosphoshikimate 1-carboxyvinyltransferase:fit=nan || SMc00711:cyclohexadienyl dehydrogenase:fit=-6.3 || SMc03858:chorismate mutase:fit=nan
+Smeli	SMc00993	PRAGSr	NP_384964_1 or NP_385290_1	SMc00993:phosphoribosylamine--glycine ligase:fit=-6.8 || SMc00615:phosphoribosylaminoimidazole synthetase:fit=nan
+Smeli	SMc01004	PRATPP	NP_384156_1 or NP_385525_1	SMc02568:phosphoribosyl-ATP pyrophosphatase:fit=nan || SMc01004:phosphoribosyl-AMP cyclohydrolase:fit=-6.2
+Smeli	SMc04005	PYK	NP_385250_1 or NP_386895_1	SMc00574:3-oxoacyl-ACP synthase:fit=nan || SMc04005:pyruvate kinase:fit=-1.8
+Smeli	SMc00091	SADT2	NP_385460_1 or (NP_385048_1 and NP_385049_1) or (NP_385048_1 and NP_43	SMc00090:sulfate adenylyltransferase:fit=-4.9 || SMc00091:sulfate adenylyltransferase:fit=-4.3 || SMc01311:elongation factor Tu:fit=nan || SMa0855:sulfate adenylyltransferase subunit 2 (plasmi:fit=nan

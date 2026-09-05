@@ -1,0 +1,205 @@
+{
+  "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism MR1",
+  "created": "2026-09-05T17:21:01Z",
+  "dataset_provenance": {
+    "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'MR1'",
+    "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
+    "download": "5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)",
+    "n_genes_with_fitness": "3782",
+    "n_experiments": "176",
+    "conditions_unmapped": "Gelatin; Gly-DL-Asp; Gly-Glu; Tween 20"
+  },
+  "model": {
+    "model_id": "Shewanella_oneidensis_MR_1_xml_gapfilled",
+    "file": "models/gapfilled/MR1.xml.gz",
+    "source": "EMBL GEMs (CarveMe draft, Machado et al. 2018) minimally gap-filled by gembench.gapfill for growth on ShewMM_noCarbon + EX_lac__L_e: added ['CITACt', 'LDH_L', 'ORNCD']",
+    "version_note": "",
+    "n_reactions": 1975,
+    "n_metabolites": 1362,
+    "n_genes": 895,
+    "sha256": "7aae2a3ea5b644241d66bd719fd8a5d5a20d6e2d612ff9706f689a91fa75bdc5"
+  },
+  "protocol": {
+    "variant": "gapfilled",
+    "patches": null,
+    "params": {
+      "carbon_uptake": -10.0,
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "drop_rich_medium_essentials": false,
+      "rich_medium_uptake": -1000.0,
+      "knockout_genes": [],
+      "processes": 2,
+      "solver": "glpk",
+      "max_conditions": null
+    },
+    "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
+    "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+    "gene_mapping": {
+      "method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed",
+      "genpept_table": "data/genpept/MR1_genpept_map.tsv"
+    },
+    "condition_selection": "expGroup == 'carbon source'; condition_2 empty or DMSO; media with a BiGG mapping; replicates averaged per condition x medium",
+    "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"
+  },
+  "leakage": {
+    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly (Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
+    "ground_truth_public_since": "Fitness Browser releases 2015-2018 (Price et al. 2018)",
+    "frontier_model_training_exposure": "Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
+    "held_out_recommendation": "unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
+    "notes": [
+      "Draft models are untouched by any phenotype data, so this is a true prospective test of automated reconstruction."
+    ]
+  },
+  "results": {
+    "condition_level": {
+      "n_conditions_mapped": 12,
+      "n_conditions_wt_grows": 8,
+      "wt_growth_recall": 0.6666666666666666,
+      "conditions_with_absent_exchange": 1
+    },
+    "gene_level_conditions_where_wt_grows": {
+      "n_genes": 713,
+      "n_conditions": 8,
+      "n_gene_condition_pairs": 5704,
+      "aucpr_bernstein": {
+        "point": 0.41488264091550453,
+        "ci95": [
+          0.31307020064221885,
+          0.5190483811826216
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.4405333062412359,
+        "ci95": [
+          0.3627461103796932,
+          0.5135126312723066
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.6903682049567759,
+        "ci95": [
+          0.6568452716404458,
+          0.727247992709356
+        ]
+      },
+      "mcc": {
+        "point": 0.45750456968190467,
+        "ci95": [
+          0.3769054390249274,
+          0.532281091460694
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.6668776997395061,
+        "ci95": [
+          0.6308852635629706,
+          0.7051761258627147
+        ]
+      },
+      "accuracy": {
+        "point": 0.8762272089761571,
+        "ci95": [
+          0.8553646563814866,
+          0.8951612903225806
+        ]
+      },
+      "confusion": {
+        "tp": 4669,
+        "tn": 329,
+        "fp": 590,
+        "fn": 116
+      }
+    },
+    "gene_level_all_mapped_conditions": {
+      "n_genes": 713,
+      "n_conditions": 12,
+      "n_gene_condition_pairs": 8556,
+      "aucpr_bernstein": {
+        "point": 0.5019184602941323,
+        "ci95": [
+          0.46399032105152654,
+          0.5398257462564015
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.2854561294649832,
+        "ci95": [
+          0.24502070052436214,
+          0.3274403721458759
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.6413977892051359,
+        "ci95": [
+          0.6204028809103315,
+          0.664918220601468
+        ]
+      },
+      "mcc": {
+        "point": 0.20633908899399633,
+        "ci95": [
+          0.17181764159498836,
+          0.24526060234184563
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.63239836479445,
+        "ci95": [
+          0.6105140130805441,
+          0.6559399519446065
+        ]
+      },
+      "accuracy": {
+        "point": 0.6508882655446471,
+        "ci95": [
+          0.6414153810191678,
+          0.6601215521271622
+        ]
+      },
+      "confusion": {
+        "tp": 4669,
+        "tn": 900,
+        "fp": 590,
+        "fn": 2397
+      }
+    },
+    "gene_map": {
+      "model_genes": 895,
+      "mapped": 891,
+      "matched_by_version": 894,
+      "matched_by_accession_only": 0,
+      "no_genpept_record": 1,
+      "locus_tag_not_in_browser": 3,
+      "browser_genes_hit": 891,
+      "mapped_with_fitness_data": 713
+    },
+    "counts": {
+      "model_genes": 895,
+      "model_genes_mapped": 891,
+      "genes_with_fitness": 713,
+      "genes_after_adjustment": 713,
+      "conditions_total": 16,
+      "conditions_mapped": 12,
+      "conditions_wt_grows": 8
+    },
+    "timings_s": {
+      "rich_medium_essentials_s": 7.152557373046875e-07,
+      "knockout_simulation_s": 10.5742027759552,
+      "total_s": 10.861448526382446
+    },
+    "dropped_rich_medium_essentials": 0
+  },
+  "software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "warnings": [
+    "4 of 16 conditions have no BiGG mapping",
+    "medium 'ShewMM_noCarbon' components absent from the model: ['EX_na1_e', 'EX_ni2_e', 'EX_sel_e', 'EX_slnt_e', 'EX_tungs_e', 'EX_4abz_e', 'EX_lipoate_e', 'EX_ribflv_e', 'EX_thm_e', 'EX_pnto__R_e', 'EX_btn_e', 'EX_fol_e', 'EX_cbl1_e', 'EX_adocbl_e']"
+  ]
+}

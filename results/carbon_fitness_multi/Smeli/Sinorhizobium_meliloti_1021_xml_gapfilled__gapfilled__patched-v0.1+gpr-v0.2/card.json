@@ -1,0 +1,310 @@
+{
+  "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Smeli",
+  "created": "2026-09-05T17:12:43Z",
+  "dataset_provenance": {
+    "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Smeli'",
+    "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
+    "download": "5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)",
+    "n_genes_with_fitness": "5133",
+    "n_experiments": "90",
+    "conditions_unmapped": ""
+  },
+  "model": {
+    "model_id": "Sinorhizobium_meliloti_1021_xml_gapfilled",
+    "file": "models/gapfilled/Smeli.xml.gz",
+    "source": "EMBL GEMs (CarveMe draft, Machado et al. 2018) minimally gap-filled by gembench.gapfill for growth on RCH2_defined_noCarbon + EX_glc__D_e: added ['DXPS']",
+    "version_note": "",
+    "n_reactions": 1993,
+    "n_metabolites": 1373,
+    "n_genes": 1196,
+    "sha256": "aed3446b54ecac8a7a48e22c94e75fc57d32c35666a6431ae41678183cf85dfa"
+  },
+  "protocol": {
+    "variant": "gapfilled",
+    "patches": {
+      "file": "data/reference/universe_patches_v0.1.json",
+      "gpr_file": "data/reference/gpr_patches_v0.2.json",
+      "applied": [
+        {
+          "reaction": "CBMKr",
+          "bounds_before": [
+            -1000.0,
+            1000.0
+          ],
+          "bounds_after": [
+            -1000.0,
+            0.0
+          ]
+        },
+        {
+          "reaction": "CBPS",
+          "gpr_before": "NP_385682_1 or NP_386426_1 or (NP_385682_1 and NP_386426_1)",
+          "gpr_after": "NP_385682_1 and NP_386426_1"
+        },
+        {
+          "reaction": "UMPK",
+          "gpr_before": "NP_384360_1 or NP_385603_1",
+          "gpr_after": "NP_385603_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "GARFT",
+          "gpr_before": "NP_385289_1 or NP_386086_1",
+          "gpr_after": "NP_385289_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "PGCD",
+          "gpr_before": "NP_384366_1 or NP_386340_1 or NP_386663_1 or NP_386836_1 or NP_436410_1",
+          "gpr_after": "NP_386836_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "HSERTA",
+          "gpr_before": "NP_385354_1 or NP_387286_1 or NP_437810_2",
+          "gpr_after": "NP_387286_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "IMPD",
+          "gpr_before": "NP_384866_1 or NP_435580_1 or NP_435834_1",
+          "gpr_after": "NP_384866_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "IPPMIa",
+          "gpr_before": "NP_387312_1 or (NP_387284_1 and NP_387312_1)",
+          "gpr_after": "NP_387284_1 and NP_387312_1",
+          "rule": "R2"
+        },
+        {
+          "reaction": "IPPMIb",
+          "gpr_before": "NP_387312_1 or (NP_387284_1 and NP_387312_1)",
+          "gpr_after": "NP_387284_1 and NP_387312_1",
+          "rule": "R2"
+        },
+        {
+          "reaction": "IPPS",
+          "gpr_before": "NP_385222_1 or NP_386485_3",
+          "gpr_after": "NP_386485_3",
+          "rule": "R1"
+        },
+        {
+          "reaction": "METS",
+          "gpr_before": "NP_386092_1 or NP_387087_1",
+          "gpr_after": "NP_387087_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "PPND",
+          "gpr_before": "NP_384359_1 or NP_386767_1 or NP_387347_1",
+          "gpr_after": "NP_386767_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "PRAGSr",
+          "gpr_before": "NP_384964_1 or NP_385290_1",
+          "gpr_after": "NP_384964_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "PRATPP",
+          "gpr_before": "NP_384156_1 or NP_385525_1",
+          "gpr_after": "NP_384156_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "PYK",
+          "gpr_before": "NP_385250_1 or NP_386895_1",
+          "gpr_after": "NP_386895_1",
+          "rule": "R1"
+        },
+        {
+          "reaction": "SADT2",
+          "gpr_before": "NP_385460_1 or (NP_385048_1 and NP_385049_1) or (NP_385048_1 and NP_435714_1)",
+          "gpr_after": "NP_385048_1 and NP_385049_1",
+          "rule": "R1+R2"
+        }
+      ]
+    },
+    "params": {
+      "carbon_uptake": -10.0,
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "drop_rich_medium_essentials": true,
+      "rich_medium_uptake": -1000.0,
+      "knockout_genes": [],
+      "processes": 2,
+      "solver": "glpk",
+      "max_conditions": null
+    },
+    "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
+    "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+    "gene_mapping": {
+      "method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed",
+      "genpept_table": "data/genpept/Smeli_genpept_map.tsv"
+    },
+    "condition_selection": "expGroup == 'carbon source'; condition_2 empty or DMSO; media with a BiGG mapping; replicates averaged per condition x medium",
+    "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"
+  },
+  "leakage": {
+    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly (Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
+    "ground_truth_public_since": "Fitness Browser releases 2015-2018 (Price et al. 2018)",
+    "frontier_model_training_exposure": "Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
+    "held_out_recommendation": "unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
+    "notes": [
+      "Draft models are untouched by any phenotype data, so this is a true prospective test of automated reconstruction."
+    ]
+  },
+  "results": {
+    "condition_level": {
+      "n_conditions_mapped": 33,
+      "n_conditions_wt_grows": 21,
+      "wt_growth_recall": 0.6363636363636364,
+      "conditions_with_absent_exchange": 6
+    },
+    "gene_level_conditions_where_wt_grows": {
+      "n_genes": 954,
+      "n_conditions": 21,
+      "n_gene_condition_pairs": 20034,
+      "aucpr_bernstein": {
+        "point": 0.5891940373660133,
+        "ci95": [
+          0.4217242408289087,
+          0.7250426871713316
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.5104674902231718,
+        "ci95": [
+          0.38977875294264225,
+          0.6007469428806456
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.7332013371878415,
+        "ci95": [
+          0.6730495986982353,
+          0.7817660723629484
+        ]
+      },
+      "mcc": {
+        "point": 0.6280381093665964,
+        "ci95": [
+          0.5211318449030632,
+          0.701164127378376
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.7283737755653114,
+        "ci95": [
+          0.6706796995513328,
+          0.7769773023820072
+        ]
+      },
+      "accuracy": {
+        "point": 0.9583208545472697,
+        "ci95": [
+          0.9460105320954377,
+          0.9676387641010283
+        ]
+      },
+      "confusion": {
+        "tp": 18546,
+        "tn": 653,
+        "fp": 765,
+        "fn": 70
+      }
+    },
+    "gene_level_all_mapped_conditions": {
+      "n_genes": 954,
+      "n_conditions": 33,
+      "n_gene_condition_pairs": 31482,
+      "aucpr_bernstein": {
+        "point": 0.46694223614978725,
+        "ci95": [
+          0.435717367291273,
+          0.49472300239469097
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.22618387927558664,
+        "ci95": [
+          0.17458883005483417,
+          0.26878999504565865
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.656436558291865,
+        "ci95": [
+          0.6160483209186215,
+          0.688671944408139
+        ]
+      },
+      "mcc": {
+        "point": 0.15735970128401672,
+        "ci95": [
+          0.11475546326207596,
+          0.1948506880704278
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.6483385702470216,
+        "ci95": [
+          0.6102187601909165,
+          0.6796279162369552
+        ]
+      },
+      "accuracy": {
+        "point": 0.6366812781907122,
+        "ci95": [
+          0.6309756368718633,
+          0.641494345975478
+        ]
+      },
+      "confusion": {
+        "tp": 18546,
+        "tn": 1498,
+        "fp": 765,
+        "fn": 10673
+      }
+    },
+    "gene_map": {
+      "model_genes": 1196,
+      "mapped": 1195,
+      "matched_by_version": 1195,
+      "matched_by_accession_only": 0,
+      "no_genpept_record": 1,
+      "locus_tag_not_in_browser": 0,
+      "browser_genes_hit": 1195,
+      "mapped_with_fitness_data": 979
+    },
+    "counts": {
+      "model_genes": 1196,
+      "model_genes_mapped": 1195,
+      "genes_with_fitness": 979,
+      "genes_after_adjustment": 954,
+      "conditions_total": 33,
+      "conditions_mapped": 33,
+      "conditions_wt_grows": 21
+    },
+    "timings_s": {
+      "rich_medium_essentials_s": 2.3804290294647217,
+      "knockout_simulation_s": 39.57770085334778,
+      "total_s": 42.3326952457428
+    },
+    "dropped_rich_medium_essentials": 25
+  },
+  "software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "warnings": [
+    "0 of 33 conditions have no BiGG mapping",
+    "medium 'RCH2_defined_noCarbon' components absent from the model: ['EX_na1_e', 'EX_ni2_e', 'EX_sel_e', 'EX_slnt_e', 'EX_tungs_e', 'EX_4abz_e', 'EX_lipoate_e', 'EX_nac_e', 'EX_ribflv_e', 'EX_thm_e', 'EX_pnto__R_e', 'EX_btn_e', 'EX_fol_e', 'EX_cbl1_e', 'EX_adocbl_e']"
+  ]
+}
