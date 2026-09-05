@@ -1,0 +1,5 @@
+org	model	genes_compared	genes_dropped_by_rich_medium_step	wt_grows_before	wt_grows_after	pairs_changed_to_essential	to_essential_experimentally_important	pairs_changed_to_dispensable	to_dispensable_experimentally_important	aucpr_bernstein_before	aucpr_bernstein_after	mcc_before	mcc_after	balanced_accuracy_before	balanced_accuracy_after	fp_before	fp_after	fn_before	fn_after
+Btheta	Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2__nodroprich	508		14	14	0	0	0	0	0.5491	0.5491	0.5604	0.5604	0.7636	0.7636	403	403	278	278
+MR1	Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2__nodroprich	713		8	8	0	0	0	0	0.512	0.512	0.5243	0.5243	0.7072	0.7072	514	514	126	126
+Putida	Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2__nodroprich	1038		28	28	8	8	0	0	0.4752	0.4811	0.5525	0.5561	0.7588	0.7611	797	789	573	573
+Smeli	Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2__nodroprich	979		21	21	0	0	0	0	0.5865	0.5865	0.6216	0.6216	0.7686	0.7686	765	765	301	301

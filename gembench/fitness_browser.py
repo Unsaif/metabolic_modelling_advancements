@@ -91,7 +91,8 @@ def load_media_map(path: str = os.path.join(REF_DIR, "fitness_browser_media_bigg
     return pd.read_table(path, dtype=str, keep_default_na=False)
 
 
-def base_medium(media_name: str, media_map: Optional[pd.DataFrame] = None, uptake: float = -1000.0) -> Medium:
+def base_medium(media_name: str, media_map: Optional[pd.DataFrame] = None, uptake: float = -1000.0,
+                trace_uptake: float = -0.001) -> Medium:
     mm = media_map if media_map is not None else load_media_map()
     row = mm[mm["media"] == media_name]
     if row.empty:
@@ -101,7 +102,9 @@ def base_medium(media_name: str, media_map: Optional[pd.DataFrame] = None, uptak
     aerobic = row["aerobic"].strip().lower() in ("yes", "true", "1")
     if aerobic and "o2" not in comps:
         comps.append("o2")
-    return Medium(name=media_name, description=row["note"], uptakes={bigg_exchange(c): uptake for c in comps},
+    trace = set(str(row.get("trace_components", "")).split(";")) - {""}
+    return Medium(name=media_name, description=row["note"],
+                  uptakes={bigg_exchange(c): (trace_uptake if c in trace else uptake) for c in comps},
                   provenance="Fitness Browser media definition (bitbucket.org/berkeleylab/feba metadata/media, mixes) "
                              "mapped to BiGG ids in data/reference/fitness_browser_media_bigg.tsv",
                   notes=[f"aerobic={aerobic}"])

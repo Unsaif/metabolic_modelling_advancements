@@ -130,9 +130,13 @@ def main() -> None:
     ap.add_argument("--variant", default="shipped", choices=["shipped", "gapfilled", "curated"])
     ap.add_argument("--patch", default=None, help="JSON of universe-level reaction patches to apply (data/reference/universe_patches_*.json)")
     ap.add_argument("--gpr-patch", default=None, help="JSON of per-organism gene-rule patches (data/reference/gpr_patches_*.json)")
+    ap.add_argument("--complete-medium-transport", action="store_true", help="add exchange+uptake for medium components the model lacks")
     args = ap.parse_args()
     patches = json.load(open(args.patch)) if args.patch else None
-    gpr_patches = json.load(open(args.gpr_patch)) if args.gpr_patch else None
+    gpr_patches = None
+    if args.gpr_patch:   # one or several files, comma-separated; applied in order
+        parts = [json.load(open(f)) for f in args.gpr_patch.split(",")]
+        gpr_patches = {"version": "+".join(p["version"] for p in parts), "patches": [x for p in parts for x in p["patches"]]}
 
     for org in args.orgs.split(","):
         t0 = time.time()
@@ -168,17 +172,20 @@ def main() -> None:
         if gpr_patches:
             inv = {b: m_ for m_, b in gm.model_to_browser.items()}
             import re as _re
-            for pt in [x for x in gpr_patches["patches"] if x["org"] == org]:
+            for pt in [x for x in gpr_patches["patches"] if x["org"] == org and x.get("status", "accepted") != "held"]:
                 if pt["reaction"] not in model.reactions:
                     continue
                 r = model.reactions.get_by_id(pt["reaction"])
                 rule = pt["new_rule"]
-                new_genes = [g for g in _re.findall(r"[A-Za-z][A-Za-z0-9_]*", rule) if g not in ("and", "or") and g not in inv]
+                model_ids = {g.id for g in model.genes}
+                toks = [g for g in _re.findall(r"[A-Za-z][A-Za-z0-9_]*", rule) if g not in ("and", "or")]
+                new_genes = [g for g in toks if g not in inv and g not in model_ids]
                 if new_genes and pt.get("rule") != "R4":
                     print(f"   gpr patch {pt['reaction']}: genes not in model map {new_genes}; skipped", flush=True)
                     continue
-                # R4 patches may introduce genes absent from the draft; they keep the Browser locus tag as model id
-                new_rule = _re.sub(r"[A-Za-z][A-Za-z0-9_]*", lambda mm: mm.group(0) if mm.group(0) in ("and", "or") else inv.get(mm.group(0), mm.group(0)), rule)
+                # R4 patches may introduce genes absent from the draft; they keep the Browser locus tag as model id.
+                # Tokens that are already model gene ids are used as they are.
+                new_rule = _re.sub(r"[A-Za-z][A-Za-z0-9_]*", lambda mm: mm.group(0) if (mm.group(0) in ("and", "or") or mm.group(0) in model_ids) else inv.get(mm.group(0), mm.group(0)), rule)
                 applied.append({"reaction": pt["reaction"], "gpr_before": r.gene_reaction_rule, "gpr_after": new_rule, "rule": pt["rule"], "genes_added": new_genes})
                 r.gene_reaction_rule = new_rule
             print(f"   gpr patches applied: {len([a for a in applied if 'rule' in a])}", flush=True)
@@ -190,10 +197,11 @@ def main() -> None:
               f"{len(conds)} carbon-source conditions, {sum(1 for c in conds if c.bigg_ids)} mapped", flush=True)
         params = P.GenericParams(drop_rich_medium_essentials=not args.no_drop_rich, processes=args.processes,
                                  solver=args.solver, max_conditions=args.max_conditions,
-                                 knockout_genes=BW25113_DELETED_GENES if org == "Keio" else [])
+                                 knockout_genes=BW25113_DELETED_GENES if org == "Keio" else [],
+                                 complete_medium_transport=args.complete_medium_transport)
         res = P.run(model, fb, conds, gm, params)
 
-        suffix = (f"__patched-v{patches['version']}" if patches else "") + (f"+gpr-v{gpr_patches['version']}" if gpr_patches else "") + ("__nodroprich" if args.no_drop_rich else "")
+        suffix = (f"__patched-v{patches['version']}" if patches else "") + (f"+gpr-v{gpr_patches['version']}" if gpr_patches else "") + ("+medium" if args.complete_medium_transport else "") + ("__nodroprich" if args.no_drop_rich else "")
         outdir = os.path.join(OUT, org, (f"{model.id}__{args.variant}" if org != "Keio" else model.id) + suffix)
         os.makedirs(outdir, exist_ok=True)
         grows = res.wt_growth >= params.growth_threshold
@@ -232,7 +240,8 @@ def main() -> None:
                 notes=["Draft models are untouched by any phenotype data, so this is a true prospective test of automated reconstruction."]),
             results=results,
             warnings=[f"{len(unmapped)} of {len(conds)} conditions have no BiGG mapping"] +
-                     [f"medium '{m}' components absent from the model: {v}" for m, v in res.missing_medium_components.items() if v],
+                     [f"medium '{m}' components absent from the model: {v}" for m, v in res.missing_medium_components.items() if v and not m.startswith("_")] +
+                     ([f"medium completion added exchange+uptake for: {res.missing_medium_components.get('_medium_completion_added')}"] if args.complete_medium_transport else []),
         )
         card.write(os.path.join(outdir, "card.json"), os.path.join(outdir, "card.md"))
         np.savez_compressed(os.path.join(outdir, "matrices.npz"), sim_growth=res.sim_growth, wt_growth=res.wt_growth,

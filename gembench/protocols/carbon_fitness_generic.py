@@ -35,6 +35,10 @@ class GenericParams:
     processes: int = 2
     solver: str = "glpk"
     max_conditions: Optional[int] = None    # for smoke tests
+    complete_medium_transport: bool = False  # add exchange + uptake for medium components the model has no exchange for
+    # vitamins whose uptake is not assumed: pantothenate transport (PanF, SSS family) is largely restricted to
+    # enterobacteria, and folate uptake is rare in bacteria (4-aminobenzoate covers the folate branch)
+    medium_completion_exclude: List[str] = field(default_factory=lambda: ["pnto__R", "fol"])
 
 
 @dataclass
@@ -96,6 +100,36 @@ def run(model: cobra.Model, org: FitnessBrowserOrganism, conditions: List[Condit
         if gid in model.genes:
             model.genes.get_by_id(gid).knock_out()
 
+    # 2b. medium completion: every component of every base medium must be importable. Draft models often lack
+    # exchanges for vitamins the recipe contains (riboflavin, thiamine, folate ...); without them the model must
+    # synthesise what the organism takes up, and biosynthesis genes are predicted essential for the wrong reason.
+    added_transport: List[str] = []
+    if p.complete_medium_transport:
+        media_needed = sorted({c.media for c in conditions if c.bigg_ids})
+        for medname in media_needed:
+            med = base_medium(medname)
+            for ex_id in med.uptakes:
+                if ex_id in model.reactions:
+                    continue
+                met_id = ex_id[3:]                       # EX_<met>_e
+                base = met_id[:-2]
+                cyt = f"{base}_c"
+                if cyt not in model.metabolites or base in p.medium_completion_exclude:
+                    continue                             # the model has no use for it, or uptake is not assumed
+                if met_id not in model.metabolites:
+                    m_e = cobra.Metabolite(met_id, name=model.metabolites.get_by_id(cyt).name, compartment="e",
+                                           formula=model.metabolites.get_by_id(cyt).formula, charge=model.metabolites.get_by_id(cyt).charge)
+                    model.add_metabolites([m_e])
+                ex = cobra.Reaction(ex_id, name=f"{base} exchange (medium completion)", lower_bound=0.0, upper_bound=1000.0)
+                ex.add_metabolites({model.metabolites.get_by_id(met_id): -1.0})
+                tr = cobra.Reaction(f"MEDt_{base}", name=f"{base} uptake (medium completion, no gene)", lower_bound=-1000.0, upper_bound=1000.0)
+                tr.add_metabolites({model.metabolites.get_by_id(met_id): -1.0, model.metabolites.get_by_id(cyt): 1.0})
+                model.add_reactions([ex, tr])
+                added_transport.append(ex_id)
+        added_transport = sorted(set(added_transport))
+        for ex in model.exchanges:
+            ex.lower_bound = 0.0; ex.upper_bound = 1000.0
+
     # 3. rich-medium essentials
     dropped_rich: List[str] = []
     t1 = time.time()
@@ -154,6 +188,8 @@ def run(model: cobra.Model, org: FitnessBrowserOrganism, conditions: List[Condit
     timings["knockout_simulation_s"] = time.time() - t2
     timings["total_s"] = time.time() - t0
     counts["conditions_wt_grows"] = int((wt >= p.growth_threshold).sum())
+    counts["medium_completion_exchanges_added"] = len(added_transport)
+    missing_medium["_medium_completion_added"] = added_transport
 
     return GenericResult(model_id=model.id, org_id=org.org_id, model_genes=model_genes, browser_genes=browser_genes,
                          conditions=conds, sim_growth=sim, wt_growth=wt, fitness=fitness,

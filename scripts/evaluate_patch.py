@@ -33,7 +33,7 @@ def main() -> None:
     rows, changes = [], []
     for pd_dir in sorted(glob.glob(os.path.join(RES, "*", f"*__patched-{ver}"))):
         core = ver.replace("__nodroprich", "")
-        base = pd_dir.replace(f"__patched-{core}", f"__patched-{base_ver}" if base_ver else "")
+        base = pd_dir.replace(f"__patched-{core}", f"__patched-{base_ver.replace('__nodroprich', '')}" if base_ver else "")
         if not os.path.exists(os.path.join(base, "matrices.npz")):
             continue
         org = os.path.basename(os.path.dirname(pd_dir)); label = os.path.basename(base)
