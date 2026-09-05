@@ -11,3 +11,8 @@ models/*
 results/frog_cross_solver/*/cobrapy_*/
 .DS_Store
 _to_delete*/
+# device-side housekeeping
+_repo/
+data/fitness_browser/used_temp_ids.txt
+data/scratch/
+data/models/
