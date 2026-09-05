@@ -1,0 +1,86 @@
+[
+  {
+    "iem": "HIS",
+    "call_index": 1,
+    "iem_reactions": [
+      "sIEC_HISD",
+      "Colon_HISD",
+      "Liver_HISD",
+      "Gall_HISD",
+      "Pancreas_HISD",
+      "Kidney_HISD",
+      "Spleen_HISD",
+      "Brain_HISD",
+      "Lung_HISD",
+      "Muscle_HISD",
+      "Skin_HISD",
+      "Adipocytes_HISD",
+      "Heart_HISD",
+      "Agland_HISD",
+      "Urinarybladder_HISD",
+      "Thyroidgland_HISD",
+      "Pthyroidgland_HISD",
+      "Stomach_HISD",
+      "Testis_HISD",
+      "Prostate_HISD"
+    ],
+    "vmax_healthy": 66.71328228510875,
+    "vmax_disease": 0.0,
+    "wb_objective_disease_feasible": true,
+    "n_solves": 13,
+    "time_s": 227.29684686660767,
+    "notes": [],
+    "biomarkers": [
+      {
+        "reaction": "EX_hista[u]",
+        "expected": "Increased",
+        "healthy": 0.00041132978029567724,
+        "disease": 41.833551753807434,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_hista[bc]",
+        "expected": "Increased",
+        "healthy": 50.00000028513372,
+        "disease": 116.71328228506928,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_im4ac[u]",
+        "expected": "Increased",
+        "healthy": 0.020963565971093334,
+        "disease": 11.622590120104457,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "EX_his_L[u]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 41.833140709084546,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      },
+      {
+        "reaction": "DM_his_L[bc]",
+        "expected": "Increased",
+        "healthy": 0.0,
+        "disease": 66.71328228510329,
+        "predicted": "Increased",
+        "correct": true,
+        "status_healthy": "Optimal",
+        "status_disease": "Optimal"
+      }
+    ]
+  }
+]

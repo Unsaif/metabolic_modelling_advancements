@@ -1,0 +1,100 @@
+iem_abbr	orpha_code	orpha_name	hpo_id	hpo_term	frequency	metabolite_parsed	biofluid	direction
+AGAT	35704	L-Arginine:glycine amidinotransferase deficiency	HP:0012101	Decreased serum creatinine	Frequent (79-30%)	creatinine	blood	Decreased
+AGAT	35704	L-Arginine:glycine amidinotransferase deficiency	HP:0034292	Reduced circulating creatine concentration	Frequent (79-30%)	creatine	blood	Decreased
+AGAT	35704	L-Arginine:glycine amidinotransferase deficiency	HP:0034597	Decreased CSF creatinine concentration	Frequent (79-30%)	creatinine	csf	Decreased
+AGAT	35704	L-Arginine:glycine amidinotransferase deficiency	HP:6000115	Decreased urine creatinine level	Frequent (79-30%)	creatinine	urine	Decreased
+ARG	90	Argininemia	HP:0001987	Hyperammonemia	Frequent (79-30%)	ammonia	blood	Increased
+ARG	90	Argininemia	HP:0008339	Diaminoaciduria	Very frequent (99-80%)	diamino acid	urine	Increased
+CPS1	147	Carbamoyl-phosphate synthetase 1 deficiency	HP:0001987	Hyperammonemia	Very frequent (99-80%)	ammonia	blood	Increased
+CPS1	147	Carbamoyl-phosphate synthetase 1 deficiency	HP:0003355	Aminoaciduria	Very frequent (99-80%)	amino acid	urine	Increased
+CPS1	147	Carbamoyl-phosphate synthetase 1 deficiency	HP:0005961	Hypoargininemia	Very frequent (99-80%)	arginin	blood	Decreased
+3MGA	67046	3-methylglutaconic aciduria type 1	HP:0001943	Hypoglycemia	Occasional (29-5%)	glucose	blood	Decreased
+AADC	35708	Aromatic L-amino acid decarboxylase deficiency	HP:0003785	Decreased CSF homovanillic acid concentration	Very frequent (99-80%)	homovanillic acid	csf	Decreased
+AADC	35708	Aromatic L-amino acid decarboxylase deficiency	HP:0025455	Decreased CSF 5-hydroxyindolacetic acid concentration	Very frequent (99-80%)	5-hydroxyindolacetic acid	csf	Decreased
+AADC	35708	Aromatic L-amino acid decarboxylase deficiency	HP:0000870	Increased circulating prolactin concentration	Occasional (29-5%)	prolactin	blood	Increased
+AADC	35708	Aromatic L-amino acid decarboxylase deficiency	HP:0001943	Hypoglycemia	Occasional (29-5%)	glucose	blood	Decreased
+3MCC	6	3-methylcrotonyl-CoA carboxylase deficiency	HP:0001943	Hypoglycemia	Very frequent (99-80%)	glucose	blood	Decreased
+3MCC	6	3-methylcrotonyl-CoA carboxylase deficiency	HP:0001987	Hyperammonemia	Frequent (79-30%)	ammonia	blood	Increased
+3MCC	6	3-methylcrotonyl-CoA carboxylase deficiency	HP:0001992	Organic aciduria	Very frequent (99-80%)	organic acid	urine	Increased
+BTD	79241	Biotinidase deficiency	HP:0001992	Organic aciduria	Very frequent (99-80%)	organic acid	urine	Increased
+BTD	79241	Biotinidase deficiency	HP:0001987	Hyperammonemia	Frequent (79-30%)	ammonia	blood	Increased
+CMO1	556030	Early-onset familial hypoaldosteronism	HP:0002153	Hyperkalemia	Very frequent (99-80%)	potassium	blood	Increased
+CMO1	556030	Early-onset familial hypoaldosteronism	HP:0002902	Hyponatremia	Very frequent (99-80%)	sodium	blood	Decreased
+CMO1	556030	Early-onset familial hypoaldosteronism	HP:0000848	Increased circulating renin level	Frequent (79-30%)	renin	blood	Increased
+CMO1	556030	Early-onset familial hypoaldosteronism	HP:0025436	Elevated serum 11-deoxycortisol	Frequent (79-30%)	11-deoxycortisol	blood	Increased
+EF	2056	Essential fructosuria	HP:0003074	Hyperglycemia	Excluded (0%)	glucose	blood	Increased
+FIGLU	51208	Formiminoglutamic aciduria	HP:0032164	Increased blood folate concentration	Frequent (79-30%)	folate	blood	Increased
+GSD6	366	Glycogen storage disease due to glycogen debranching enzyme deficiency	HP:0001943	Hypoglycemia	Very frequent (99-80%)	glucose	blood	Decreased
+GSD6	366	Glycogen storage disease due to glycogen debranching enzyme deficiency	HP:0002155	Hypertriglyceridemia	Very frequent (99-80%)	triglyceride	blood	Increased
+GACR	414	Gyrate atrophy of choroid and retina	HP:0003355	Aminoaciduria	Frequent (79-30%)	amino acid	urine	Increased
+HFI	469	Hereditary fructose intolerance	HP:0002148	Hypophosphatemia	Occasional (29-5%)	phosphate	blood	Decreased
+HFI	469	Hereditary fructose intolerance	HP:0002149	Hyperuricemia	Occasional (29-5%)	uric acid	blood	Increased
+HFI	469	Hereditary fructose intolerance	HP:0002918	Hypermagnesemia	Occasional (29-5%)	magnesium	blood	Increased
+HMG	20	3-hydroxy-3-methylglutaric aciduria	HP:0001987	Hyperammonemia	Very frequent (99-80%)	ammonia	blood	Increased
+HMG	20	3-hydroxy-3-methylglutaric aciduria	HP:0003344	3-Methylglutaric aciduria	Very frequent (99-80%)	3-methylglutaric acid	urine	Increased
+HMG	20	3-hydroxy-3-methylglutaric aciduria	HP:0002149	Hyperuricemia	Frequent (79-30%)	uric acid	blood	Increased
+HMG	20	3-hydroxy-3-methylglutaric aciduria	HP:0002151	Increased circulating lactate concentration	Frequent (79-30%)	lactate	blood	Increased
+HMG	20	3-hydroxy-3-methylglutaric aciduria	HP:0002910	Elevated circulating hepatic transaminase concentration	Frequent (79-30%)	hepatic transaminase	blood	Increased
+HCYS	394	Homocystinuria due to cystathionine beta-synthase deficiency	HP:0002910	Elevated circulating hepatic transaminase concentration	Occasional (29-5%)	hepatic transaminase	blood	Increased
+HLYS1	3124	Saccharopinuria	HP:0003297	Hyperlysinuria	Frequent (79-30%)	hyperlysin	urine	Increased
+HLYS1	3124	Saccharopinuria	HP:0001987	Hyperammonemia	Occasional (29-5%)	ammonia	blood	Increased
+HLYS1	3124	Saccharopinuria	HP:0003131	Cystinuria	Occasional (29-5%)	cystin	urine	Increased
+HLYS1	3124	Saccharopinuria	HP:0500151	Hypercystinemia	Occasional (29-5%)	cystine	blood	Increased
+HLYS1	3124	Saccharopinuria	HP:0003297	Hyperlysinuria	Frequent (79-30%)	hyperlysin	urine	Increased
+HLYS1	3124	Saccharopinuria	HP:0001987	Hyperammonemia	Occasional (29-5%)	ammonia	blood	Increased
+HLYS1	3124	Saccharopinuria	HP:0003131	Cystinuria	Occasional (29-5%)	cystin	urine	Increased
+HLYS1	3124	Saccharopinuria	HP:0500151	Hypercystinemia	Occasional (29-5%)	cystine	blood	Increased
+HLYS2	3124	Saccharopinuria	HP:0003297	Hyperlysinuria	Frequent (79-30%)	hyperlysin	urine	Increased
+HLYS2	3124	Saccharopinuria	HP:0001987	Hyperammonemia	Occasional (29-5%)	ammonia	blood	Increased
+HLYS2	3124	Saccharopinuria	HP:0003131	Cystinuria	Occasional (29-5%)	cystin	urine	Increased
+HLYS2	3124	Saccharopinuria	HP:0500151	Hypercystinemia	Occasional (29-5%)	cystine	blood	Increased
+HLYS2	3124	Saccharopinuria	HP:0003297	Hyperlysinuria	Frequent (79-30%)	hyperlysin	urine	Increased
+HLYS2	3124	Saccharopinuria	HP:0001987	Hyperammonemia	Occasional (29-5%)	ammonia	blood	Increased
+HLYS2	3124	Saccharopinuria	HP:0003131	Cystinuria	Occasional (29-5%)	cystin	urine	Increased
+HLYS2	3124	Saccharopinuria	HP:0500151	Hypercystinemia	Occasional (29-5%)	cystine	blood	Increased
+HPII	79101	Hyperprolinemia type 2	HP:0003080	Hydroxyprolinuria	Very frequent (99-80%)	hydroxyprolin	urine	Increased
+HPII	79101	Hyperprolinemia type 2	HP:0012402	Increased urine alpha-ketoglutarate concentration	Very frequent (99-80%)	alpha-ketoglutarate	urine	Increased
+HPII	79101	Hyperprolinemia type 2	HP:0002154	Hyperglycinemia	Frequent (79-30%)	glycine	blood	Increased
+HPII	79101	Hyperprolinemia type 2	HP:0002922	Increased CSF protein concentration	Frequent (79-30%)	protein	csf	Increased
+HPII	79101	Hyperprolinemia type 2	HP:0003348	Hyperalaninemia	Frequent (79-30%)	alanine	blood	Increased
+HPII	79101	Hyperprolinemia type 2	HP:0008326	Reduced circulating vitamin B6 level	Frequent (79-30%)	vitamin b6	blood	Decreased
+HPII	79101	Hyperprolinemia type 2	HP:0002490	Increased CSF lactate	Occasional (29-5%)	lactate	csf	Increased
+IVA	33	Isovaleric acidemia	HP:0001987	Hyperammonemia	Frequent (79-30%)	ammonia	blood	Increased
+IVA	33	Isovaleric acidemia	HP:0031962	Elevated serum anion gap	Frequent (79-30%)	anion gap	blood	Increased
+IVA	33	Isovaleric acidemia	HP:0002901	Hypocalcemia	Occasional (29-5%)	calcium	blood	Decreased
+LNS	510	Lesch-Nyhan syndrome	HP:0002149	Hyperuricemia	Very frequent (99-80%)	uric acid	blood	Increased
+MMA	79312	Vitamin B12-unresponsive methylmalonic acidemia type mut-	HP:0001987	Hyperammonemia	Very frequent (99-80%)	ammonia	blood	Increased
+NAGS	927	Hyperammonemia due to N-acetylglutamate synthase deficiency	HP:0001987	Hyperammonemia	Very frequent (99-80%)	ammonia	blood	Increased
+OTC	664	Ornithine transcarbamylase deficiency	HP:0001943	Hypoglycemia	Very frequent (99-80%)	glucose	blood	Decreased
+OTC	664	Ornithine transcarbamylase deficiency	HP:0001987	Hyperammonemia	Very frequent (99-80%)	ammonia	blood	Increased
+OTC	664	Ornithine transcarbamylase deficiency	HP:0003355	Aminoaciduria	Very frequent (99-80%)	amino acid	urine	Increased
+OTC	664	Ornithine transcarbamylase deficiency	HP:0002910	Elevated circulating hepatic transaminase concentration	Frequent (79-30%)	hepatic transaminase	blood	Increased
+OTC	664	Ornithine transcarbamylase deficiency	HP:0005961	Hypoargininemia	Frequent (79-30%)	arginin	blood	Decreased
+OROA	30	Hereditary orotic aciduria	HP:0003355	Aminoaciduria	Very frequent (99-80%)	amino acid	urine	Increased
+MNGIE	298	Mitochondrial neurogastrointestinal encephalomyopathy	HP:0002910	Elevated circulating hepatic transaminase concentration	Frequent (79-30%)	hepatic transaminase	blood	Increased
+MNGIE	298	Mitochondrial neurogastrointestinal encephalomyopathy	HP:0002922	Increased CSF protein concentration	Frequent (79-30%)	protein	csf	Increased
+MNGIE	298	Mitochondrial neurogastrointestinal encephalomyopathy	HP:0003348	Hyperalaninemia	Frequent (79-30%)	alanine	blood	Increased
+SUCLA	1933	Mitochondrial DNA depletion syndrome, encephalomyopathic form with methylmalonic aciduria	HP:0003236	Elevated circulating creatine kinase concentration	Very frequent (99-80%)	creatine kinase	blood	Increased
+SUCLA	1933	Mitochondrial DNA depletion syndrome, encephalomyopathic form with methylmalonic aciduria	HP:0003355	Aminoaciduria	Very frequent (99-80%)	amino acid	urine	Increased
+SUCLA	1933	Mitochondrial DNA depletion syndrome, encephalomyopathic form with methylmalonic aciduria	HP:0012120	Methylmalonic aciduria	Very frequent (99-80%)	methylmalonic acid	urine	Increased
+TYR1	882	Tyrosinemia type 1	HP:0002909	Generalized aminoaciduria	Very frequent (99-80%)	generalized amino acid	urine	Increased
+TYR3	69723	Tyrosinemia type 3	HP:0003637	Reduced circulating 4-Hydroxyphenylpyruvate dioxygenase activity	Obligate (100%)	4-hydroxyphenylpyruvate dioxygenase activity	blood	Decreased
+TYR3	69723	Tyrosinemia type 3	HP:0003607	4-hydroxyphenylacetic aciduria	Frequent (79-30%)	4-hydroxyphenylacetic acid	urine	Increased
+TYR3	69723	Tyrosinemia type 3	HP:6000479	Elevated urine N-acetyltyrosine level	Occasional (29-5%)	n-acetyltyrosine	urine	Increased
+TYR3	69723	Tyrosinemia type 3	HP:6000598	Elevated urinary succinylacetone level	Excluded (0%)	succinylacetone	urine	Increased
+ASA	23	Argininosuccinic aciduria	HP:0002910	Elevated circulating hepatic transaminase concentration	Frequent (79-30%)	hepatic transaminase	blood	Increased
+ASA	23	Argininosuccinic aciduria	HP:0025630	Argininosuccinic aciduria	Frequent (79-30%)	argininosuccinic acid	urine	Increased
+ASA	23	Argininosuccinic aciduria	HP:0032491	Increased circulating argininosuccinic acid	Frequent (79-30%)	argininosuccinic acid	blood	Increased
+ASA	23	Argininosuccinic aciduria	HP:0002155	Hypertriglyceridemia	Occasional (29-5%)	triglyceride	blood	Increased
+ASA	23	Argininosuccinic aciduria	HP:0002900	Hypokalemia	Occasional (29-5%)	potassium	blood	Decreased
+ASA	23	Argininosuccinic aciduria	HP:0001987	Hyperammonemia	Very frequent (99-80%)	ammonia	blood	Increased
+ASA	23	Argininosuccinic aciduria	HP:0003355	Aminoaciduria	Very frequent (99-80%)	amino acid	urine	Increased
+ASA	23	Argininosuccinic aciduria	HP:0005961	Hypoargininemia	Very frequent (99-80%)	arginin	blood	Decreased
+HPC	79273	Hereditary coproporphyria	HP:0003163	Elevated urinary delta-aminolevulinic acid	Very frequent (99-80%)	delta-aminolevulinic acid	urine	Increased
+HPC	79273	Hereditary coproporphyria	HP:0012217	Increased urinary porphobilinogen	Frequent (79-30%)	porphobilinogen	urine	Increased
+HPC	79273	Hereditary coproporphyria	HP:0002902	Hyponatremia	Occasional (29-5%)	sodium	blood	Decreased
+HMET	88618	S-adenosylhomocysteine hydrolase deficiency	HP:0002160	Hyperhomocystinemia	Very frequent (99-80%)	homocystin	blood	Increased
+HMET	88618	S-adenosylhomocysteine hydrolase deficiency	HP:0002910	Elevated circulating hepatic transaminase concentration	Very frequent (99-80%)	hepatic transaminase	blood	Increased
+HMET	88618	S-adenosylhomocysteine hydrolase deficiency	HP:0003073	Hypoalbuminemia	Very frequent (99-80%)	albumin	blood	Decreased
+HMET	88618	S-adenosylhomocysteine hydrolase deficiency	HP:0003236	Elevated circulating creatine kinase concentration	Frequent (79-30%)	creatine kinase	blood	Increased
+HMET	88618	S-adenosylhomocysteine hydrolase deficiency	HP:0011900	Hypofibrinogenemia	Frequent (79-30%)	fibrinogen	blood	Decreased

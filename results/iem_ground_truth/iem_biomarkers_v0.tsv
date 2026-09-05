@@ -1,0 +1,280 @@
+iem_abbr	call_index	iem_name	entrez_gene_ids	knockout_reaction_patterns	biomarker_reaction	vmh_metabolite	model_compartment	biofluid_tested	expected_direction	reported_biofluids_raw	label_raw	also_in_recon3d_branch	source_header_line	source_call_line
+HIS	1	Histidinemia HIS	3034.1	_HISD	EX_hista[u]	hista	u	urine	Increased	blood/urine	Increased (blood/urine)	True	186	220
+HIS	1	Histidinemia HIS	3034.1	_HISD	DM_hista[bc]	hista	bc	blood	Increased	blood/urine	Increased (blood/urine)	False	186	220
+HIS	1	Histidinemia HIS	3034.1	_HISD	EX_im4ac[u]	im4ac	u	urine	Increased	urine	Increased (urine)	True	186	220
+HIS	1	Histidinemia HIS	3034.1	_HISD	EX_his_L[u]	his_L	u	urine	Increased	blood/urine	Increased (blood/urine)	True	186	220
+HIS	1	Histidinemia HIS	3034.1	_HISD	DM_his_L[bc]	his_L	bc	blood	Increased	blood/urine	Increased (blood/urine)	False	186	220
+AGAT	2	AGAT def	2628.1	_GLYAMDTRc	EX_creat[u]	creat	u	urine	Decreased	urine	Decreased (urine)	False	222	238
+AGAT	2	AGAT def	2628.1	_GLYAMDTRc	EX_gudac[u]	gudac	u	urine	Decreased	urine	Decreased (urine)	False	222	238
+ARG	3	Arginase def ARG	383.1	_ARGN	EX_argsuc[u]	argsuc	u	urine	Increased	urine	Increased (urine)	True	240	284
+ARG	3	Arginase def ARG	383.1	_ARGN	EX_orot[u]	orot	u	urine	Increased	urine	Increased (urine)	True	240	284
+ARG	3	Arginase def ARG	383.1	_ARGN	EX_ura[u]	ura	u	urine	Increased	urine	Increased  (urine)	True	240	284
+ARG	3	Arginase def ARG	383.1	_ARGN	DM_creat[bc]	creat	bc	blood	Increased	blood	Increased (blood)	False	240	284
+ARG	3	Arginase def ARG	383.1	_ARGN	DM_arg_L[bc]	arg_L	bc	blood	Increased	blood	Increased (blood)	False	240	284
+ARG	3	Arginase def ARG	383.1	_ARGN	DM_gudac[bc]	gudac	bc	blood	Increased	blood	Increased (blood)	False	240	284
+CPS1	4	CPS1 'Carbamoyl phosphate synthetase I deficiency	1373.1	_CBPSam;_r0034	EX_lys_L[u]	lys_L	u	urine	Increased	urine	Increased (urine)	True	287	324
+CPS1	4	CPS1 'Carbamoyl phosphate synthetase I deficiency	1373.1	_CBPSam;_r0034	EX_gly[u]	gly	u	urine	Increased	urine	Increased (urine)	True	287	324
+CPS1	4	CPS1 'Carbamoyl phosphate synthetase I deficiency	1373.1	_CBPSam;_r0034	EX_ura[u]	ura	u	urine	Increased	urine	Increased (urine)	True	287	324
+CPS1	4	CPS1 'Carbamoyl phosphate synthetase I deficiency	1373.1	_CBPSam;_r0034	EX_5oxpro[u]	5oxpro	u	urine	Increased	urine	Increased (urine)	True	287	324
+CPS1	4	CPS1 'Carbamoyl phosphate synthetase I deficiency	1373.1	_CBPSam;_r0034	DM_citr_L[bc]	citr_L	bc	blood	Decreased	blood	Decreased (blood)	False	287	324
+CPS1	4	CPS1 'Carbamoyl phosphate synthetase I deficiency	1373.1	_CBPSam;_r0034	DM_gln_L[bc]	gln_L	bc	blood	Increased	blood	Increased (blood)	False	287	324
+3MGA	5	3MGA 3-Methylglutaconic Aciduria Type I	549.1	_MGCHrm	EX_3ivcrn[u]	3ivcrn	u	urine	Increased	urine	Increased (urine)	False	326	338
+3MGA	5	3MGA 3-Methylglutaconic Aciduria Type I	549.1	_MGCHrm	EX_3mglutac[u]	3mglutac	u	urine	Increased	urine	Increased (urine)	False	326	338
+3MGA	5	3MGA 3-Methylglutaconic Aciduria Type I	549.1	_MGCHrm	EX_3mglutr[u]	3mglutr	u	urine	Increased	urine	Increased (urine)	False	326	338
+AMA1	6	AMA1 Aminoacylase 1 Deficiency	95.1	_ACODA;_RE2640C	EX_acglu[u]	acglu	u	urine	Increased	urine	Increased (urine)	False	340	354
+AMA1	6	AMA1 Aminoacylase 1 Deficiency	95.1	_ACODA;_RE2640C	EX_acgly[u]	acgly	u	urine	Increased	urine	Increased (urine)	False	340	354
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	EX_34dhphe[u]	34dhphe	u	urine	Increased	urine/blood	Increased (urine/blood)	True	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	DM_34dhphe[bc]	34dhphe	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	EX_5htrp[u]	5htrp	u	urine	Increased	urine/blood	Increased (urine/blood)	True	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	DM_5htrp[bc]	5htrp	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	DM_adrnl[bc]	adrnl	bc	blood	Decreased	blood	Decreased (blood)	False	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	EX_dopa[u]	dopa	u	urine	Increased	urine	Increased (urine)	True	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	EX_CE2176[u]	CE2176	u	urine	Increased	urine/blood	Increased (urine/blood)	True	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	DM_CE2176[bc]	CE2176	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	DM_nrpphr[bc]	nrpphr	bc	blood	Decreased	blood	Decreased (blood)	False	356	405
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	1644.1	_3HLYTCL;_3HXKYNDCL;_5HLTDL;_5HXKYNDCL;_LTDCL;_PHYCBOXL;_TYRCBOX	EX_3moxtyr[u]	3moxtyr	u	urine	Increased	urine	Increased (urine)	True	356	405
+3MCC	8	3-methylcrotonyl coA carboxylase deficiency	56922.1	_MCCCrm;_RE2453M;_RE2454M	EX_3ivcrn[u]	3ivcrn	u	urine	Increased	urine	Increased (urine)	False	407	428
+3MCC	8	3-methylcrotonyl coA carboxylase deficiency	56922.1	_MCCCrm;_RE2453M;_RE2454M	EX_acac[u]	acac	u	urine	Increased	urine	Increased (urine)	False	407	428
+3MCC	8	3-methylcrotonyl coA carboxylase deficiency	56922.1	_MCCCrm;_RE2453M;_RE2454M	EX_acetone[u]	acetone	u	urine	Increased	urine	Increased (urine)	False	407	428
+3MCC	8	3-methylcrotonyl coA carboxylase deficiency	56922.1	_MCCCrm;_RE2453M;_RE2454M	EX_bhb[u]	bhb	u	urine	Increased	urine	Increased (urine)	False	407	428
+3MCC	8	3-methylcrotonyl coA carboxylase deficiency	56922.1	_MCCCrm;_RE2453M;_RE2454M	EX_CE2026[u]	CE2026	u	urine	Increased	urine	Increased (urine)	False	407	428
+3MCC	8	3-methylcrotonyl coA carboxylase deficiency	56922.1	_MCCCrm;_RE2453M;_RE2454M	EX_3hivac[u]	3hivac	u	urine	Increased	urine	Increased (urine)	False	407	428
+CYP21D	9	CYP21D '21-hydroxylase deficiency	1589.1	_P45021A1r;_P45021A2r;_RE2155R;_21HPRGNLONE;_HMR_1940;_HMR_1948;_HMR_1988;_HMR_1990;_HMR_1992;_HMR_2007	DM_aldstrn[bc]	aldstrn	bc	blood	Increased	blood	Increased (blood)	False	430	480
+CYP21D	9	CYP21D '21-hydroxylase deficiency	1589.1	_P45021A1r;_P45021A2r;_RE2155R;_21HPRGNLONE;_HMR_1940;_HMR_1948;_HMR_1988;_HMR_1990;_HMR_1992;_HMR_2007	DM_crtsl[bc]	crtsl	bc	blood	Decreased	blood	Decreased (blood)	False	430	480
+CYP21D	9	CYP21D '21-hydroxylase deficiency	1589.1	_P45021A1r;_P45021A2r;_RE2155R;_21HPRGNLONE;_HMR_1940;_HMR_1948;_HMR_1988;_HMR_1990;_HMR_1992;_HMR_2007	DM_prgstrn[bc]	prgstrn	bc	blood	Increased	blood	Increased (blood)	False	430	480
+CYP21D	9	CYP21D '21-hydroxylase deficiency	1589.1	_P45021A1r;_P45021A2r;_RE2155R;_21HPRGNLONE;_HMR_1940;_HMR_1948;_HMR_1988;_HMR_1990;_HMR_1992;_HMR_2007	DM_andrstndn[bc]	andrstndn	bc	blood	Increased	blood	Increased (blood)	False	430	480
+CYP21D	9	CYP21D '21-hydroxylase deficiency	1589.1	_P45021A1r;_P45021A2r;_RE2155R;_21HPRGNLONE;_HMR_1940;_HMR_1948;_HMR_1988;_HMR_1990;_HMR_1992;_HMR_2007	DM_andrstrn[bc]	andrstrn	bc	blood	Increased	blood	Increased (blood)	False	430	480
+CYP21D	9	CYP21D '21-hydroxylase deficiency	1589.1	_P45021A1r;_P45021A2r;_RE2155R;_21HPRGNLONE;_HMR_1940;_HMR_1948;_HMR_1988;_HMR_1990;_HMR_1992;_HMR_2007	DM_dhea[bc]	dhea	bc	blood	Increased	blood	Increased (blood)	False	430	480
+HYCARO	10	Autosomal Dominant Hypercarotenemia And Vitamin A Deficiency	53630.1	_BCDO	DM_caro[bc]	caro	bc	blood	Increased	blood	Increased (blood)	False	482	511
+BTD	11	BTD Biotinidase Deficiency	686.1		DM_3ivcrn[bc]	3ivcrn	bc	blood	Increased	blood	Increased (blood)	False	513	574
+BTD	11	BTD Biotinidase Deficiency	686.1		DM_acac[bc]	acac	bc	blood	Increased	blood	Increased (blood)	False	513	574
+BTD	11	BTD Biotinidase Deficiency	686.1		DM_acetone[bc]	acetone	bc	blood	Increased	blood	Increased (blood)	False	513	574
+BTD	11	BTD Biotinidase Deficiency	686.1		DM_bhb[bc]	bhb	bc	blood	Increased	blood	Increased (blood)	False	513	574
+BTD	11	BTD Biotinidase Deficiency	686.1		EX_lac_L[u]	lac_L	u	urine	Increased	urine	Increased (urine)	True	513	574
+BTD	11	BTD Biotinidase Deficiency	686.1		EX_nh4[u]	nh4	u	urine	Increased	urine	Increased (urine)	True	513	574
+BTD	11	BTD Biotinidase Deficiency	686.1		EX_3hpp[u]	3hpp	u	urine	Increased	urine	Increased (urine)	True	513	574
+BTD	11	BTD Biotinidase Deficiency	686.1		EX_CE2026[u]	CE2026	u	urine	Increased	urine	Increased (urine)	True	513	574
+BTD	11	BTD Biotinidase Deficiency	686.1		EX_2mcit[u]	2mcit	u	urine	Increased	urine	Increased (urine)	True	513	574
+CRFD	12	CRFD Classic Refsum Disease	5264.1	_PHYHx;_RE3066X	DM_phyt[bc]	phyt	bc	blood	Increased	blood	Increased (blood)	False	577	608
+CRFD	12	CRFD Classic Refsum Disease	5264.1	_PHYHx;_RE3066X	DM_prist[bc]	prist	bc	blood	Decreased	blood	Decreased (blood)	False	577	608
+STAR	13	STAR Congenital Lipoid Adrenal Hyperplasia (Clah)/ Star Deficiency	1538.1	_P45011A1m;_HMR_1928;_HMR_1929;_HMR_1932;_HMR_1934;_HMR_1935	DM_crtsl[bc]	crtsl	bc	blood	Decreased	blood	Decreased (blood)	False	611	654
+STAR	13	STAR Congenital Lipoid Adrenal Hyperplasia (Clah)/ Star Deficiency	1538.1	_P45011A1m;_HMR_1928;_HMR_1929;_HMR_1932;_HMR_1934;_HMR_1935	DM_crtstrn[bc]	crtstrn	bc	blood	Decreased	blood	Decreased (blood)	False	611	654
+STAR	13	STAR Congenital Lipoid Adrenal Hyperplasia (Clah)/ Star Deficiency	1538.1	_P45011A1m;_HMR_1928;_HMR_1929;_HMR_1932;_HMR_1934;_HMR_1935	DM_andrstndn[bc]	andrstndn	bc	blood	Decreased	blood	Decreased (blood)	False	611	654
+STAR	13	STAR Congenital Lipoid Adrenal Hyperplasia (Clah)/ Star Deficiency	1538.1	_P45011A1m;_HMR_1928;_HMR_1929;_HMR_1932;_HMR_1934;_HMR_1935	DM_dhea[bc]	dhea	bc	blood	Decreased	blood	Decreased (blood)	False	611	654
+STAR	13	STAR Congenital Lipoid Adrenal Hyperplasia (Clah)/ Star Deficiency	1538.1	_P45011A1m;_HMR_1928;_HMR_1929;_HMR_1932;_HMR_1934;_HMR_1935	DM_11docrtstrn[bc]	11docrtstrn	bc	blood	Decreased	blood	Decreased (blood)	False	611	654
+CMO1	14	CMO1 Corticosterone Methyloxidase Type I Deficiency	1585.1	_P45011B21m	DM_aldstrn[bc]	aldstrn	bc	blood	Decreased	not detectable, blood	Decreased (Not detectable, blood)	False	656	686
+DGK	15	DGK Deoxyguanosine Kinase Deficiency	1716.1	_r0456	DM_lac_L[bc]	lac_L	bc	blood	Increased	blood	Increased (blood)	False	688	720
+DPYR	16	DPYR Dihydropyrimidinuria	1807.1	_DHPM2	EX_thym[u]	thym	u	urine	Increased	urine	Increased (urine)	False	722	741
+DPYR	16	DPYR Dihydropyrimidinuria	1807.1	_DHPM2	EX_ura[u]	ura	u	urine	Increased	urine	Increased (urine)	False	722	741
+DPYR	16	DPYR Dihydropyrimidinuria	1807.1	_DHPM2	EX_56dura[u]	56dura	u	urine	Increased	urine	Increased (urine)	False	722	741
+DPYR	16	DPYR Dihydropyrimidinuria	1807.1	_DHPM2	EX_56dthm[u]	56dthm	u	urine	Increased	urine	Increased (urine)	False	722	741
+FED	17	FED Fish-Eye Disease/ Lcat Deficiency	3931.1		DM_chsterol[bc]	chsterol	bc	blood	Decreased	blood	Decreased (blood)	False	743	782
+FED	17	FED Fish-Eye Disease/ Lcat Deficiency	3931.1		DM_tag_hs[bc]	tag_hs	bc	blood	Increased	blood	Increased (blood)	False	743	782
+EF	18	EF Fructosuria(Essential Fructosuria)	3795.1	_HMR_8761;_HMR_9800;_KHK;_KHK2;_KHK3	EX_fru[u]	fru	u	urine	Increased	urine	Increased (urine)	False	784	800
+FIGLU	19	FIGLU Glutamate Formiminotransferase Deficiency	10841.1	_FORTHFC;_GluForTx;_HMR_9726	EX_forglu[u]	forglu	u	urine	Increased	urine	Increased (urine)	False	802	818
+GA1	20	GA1 Glutaric Acidemia Type I.	2639.1	_GLUTCOADHm;_r0541	EX_c5dc[u]	c5dc	u	urine	Increased	blood/urine	Increased (blood/urine)	True	820	852
+GA1	20	GA1 Glutaric Acidemia Type I.	2639.1	_GLUTCOADHm;_r0541	DM_c5dc[bc]	c5dc	bc	blood	Increased	blood/urine	Increased (blood/urine)	False	820	852
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	DM_c10crn[bc]	c10crn	bc	blood	Increased	blood	Increased (blood)	False	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	DM_c4crn[bc]	c4crn	bc	blood	Increased	blood	Increased (blood)	False	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	DM_ddeccrn[bc]	ddeccrn	bc	blood	Increased	blood	Increased (blood)	False	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	DM_ttdcrn[bc]	ttdcrn	bc	blood	Increased	blood	Increased (blood)	False	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	DM_pmtcrn[bc]	pmtcrn	bc	blood	Increased	blood	Increased (blood)	False	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_4hpro_LT[u]	4hpro_LT	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_3hivac[u]	3hivac	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_CE4970[u]	CE4970	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_CE4969[u]	CE4969	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_CE4968[u]	CE4968	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_ethmalac[u]	ethmalac	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_adpac[u]	adpac	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_subeac[u]	subeac	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_sebacid[u]	sebacid	u	urine	Increased	urine	Increased (urine)	True	854	917
+GA2	21	GA2 Glutaric Acidemia Type II	2108.1	_ETF;_FADH2ETC	EX_pro_L[u]	pro_L	u	urine	Increased	urine	Increased (urine)	True	854	917
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	2937.1	_GTHS	EX_5oxpro[u]	5oxpro	u	urine	Increased	urine	Increased (urine)	False	919	966
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	2937.1	_GTHS	EX_leuktrE4[u]	leuktrE4	u	urine	Increased	urine/blood	Increased (urine/blood)	True	919	966
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	2937.1	_GTHS	EX_leuktrC4[u]	leuktrC4	u	urine	Increased	urine/blood	Increased (urine/blood)	True	919	966
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	2937.1	_GTHS	DM_5oxpro[bc]	5oxpro	bc	blood	Decreased	blood	Decreased (blood)	False	919	966
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	2937.1	_GTHS	DM_leuktrE4[bc]	leuktrE4	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	919	966
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	2937.1	_GTHS	DM_leuktrC4[bc]	leuktrC4	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	919	966
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	2937.1	_GTHS	DM_leuktrD4[bc]	leuktrD4	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	919	966
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	2937.1	_GTHS	DM_pro_L[bc]	pro_L	bc	blood	Increased	blood	Increased (blood)	False	919	966
+GSD6	23	GSD6 Glycogen Storage Disease Type 6/Hers Disease	178.1	_r1393	EX_acac[u]	acac	u	urine	Increased	urine	Increased (urine)	True	968	1012
+GSD6	23	GSD6 Glycogen Storage Disease Type 6/Hers Disease	178.1	_r1393	EX_acetone[u]	acetone	u	urine	Increased	urine	Increased (urine)	True	968	1012
+GSD6	23	GSD6 Glycogen Storage Disease Type 6/Hers Disease	178.1	_r1393	EX_bhb[u]	bhb	u	urine	Increased	urine	Increased (urine)	True	968	1012
+GSD6	23	GSD6 Glycogen Storage Disease Type 6/Hers Disease	178.1	_r1393	DM_chsterol[bc]	chsterol	bc	blood	Increased	blood	Increased (blood)	False	968	1012
+GSD6	23	GSD6 Glycogen Storage Disease Type 6/Hers Disease	178.1	_r1393	DM_glc_D[bc]	glc_D	bc	blood	Increased	blood	Increased (blood)	False	968	1012
+GSD6	23	GSD6 Glycogen Storage Disease Type 6/Hers Disease	178.1	_r1393	DM_lac_L[bc]	lac_L	bc	blood	Increased	blood	Increased (blood)	False	968	1012
+GMT	24	GMT Guanidinoacetate Methyltransferase Deficiency	2593.1	_GACMTRc	EX_creat[u]	creat	u	urine	Decreased	urine/blood	Decreased (urine/blood)	True	1015	1054
+GMT	24	GMT Guanidinoacetate Methyltransferase Deficiency	2593.1	_GACMTRc	DM_creat[bc]	creat	bc	blood	Decreased	urine/blood	Decreased (urine/blood)	False	1015	1054
+GMT	24	GMT Guanidinoacetate Methyltransferase Deficiency	2593.1	_GACMTRc	DM_crtn[bc]	crtn	bc	blood	Increased	blood	Increased (blood)	False	1015	1054
+GMT	24	GMT Guanidinoacetate Methyltransferase Deficiency	2593.1	_GACMTRc	EX_urate[u]	urate	u	urine	Increased	urine	Increased (urine)	True	1015	1054
+GMT	24	GMT Guanidinoacetate Methyltransferase Deficiency	2593.1	_GACMTRc	EX_gudac[u]	gudac	u	urine	Increased	urine	Increased (urine)	True	1015	1054
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	4942.1	_ORNTArm	EX_arg_L[u]	arg_L	u	urine	Increased	urine	Increased (urine)	False	1055	1100
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	4942.1	_ORNTArm	DM_gln_L[bc]	gln_L	bc	blood	Decreased	blood	Decreased (blood)	False	1055	1100
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	4942.1	_ORNTArm	EX_glu_L[u]	glu_L	u	urine	Decreased	blood	Decreased (blood)	True	1055	1100
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	4942.1	_ORNTArm	EX_lys_L[u]	lys_L	u	urine	Decreased	urine/blood	Decreased (urine/blood)	True	1055	1100
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	4942.1	_ORNTArm	DM_lys_L[bc]	lys_L	bc	blood	Decreased	urine/blood	Decreased (urine/blood)	False	1055	1100
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	4942.1	_ORNTArm	EX_orn[u]	orn	u	urine	Increased	urine/blood/csf	Increased (urine/blood/CSF)	True	1055	1100
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	4942.1	_ORNTArm	DM_orn[bc]	orn	bc	blood	Increased	urine/blood/csf	Increased (urine/blood/CSF)	False	1055	1100
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	4942.1	_ORNTArm	DM_orn[csf]	orn	csf	csf	Increased	csf	Increased (CSF)	False	1055	1100
+HFI	26	HFI Hereditary Fructose Intolerance	229.1	_FBA5	EX_fru[u]	fru	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1102	1135
+HFI	26	HFI Hereditary Fructose Intolerance	229.1	_FBA5	DM_fru[bc]	fru	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1102	1135
+HMG	27	HMG Hmg-Coa Lyase Deficiency	3155.1	_HMGLx	DM_c6dc[bc]	c6dc	bc	blood	Increased	blood	Increased (blood)	False	1137	1170
+HMG	27	HMG Hmg-Coa Lyase Deficiency	3155.1	_HMGLx	EX_adpac[u]	adpac	u	urine	Increased	urine	Increased (urine)	True	1137	1170
+HCYS	28	HCYS Homocystinuria	875.1	_CYSTS;_SELCYSTS	DM_met_L[bc]	met_L	bc	blood	Increased	blood	Increased (blood)	False	1172	1218
+HCYS	28	HCYS Homocystinuria	875.1	_CYSTS;_SELCYSTS	DM_orn[bc]	orn	bc	blood	Increased	blood	Increased (blood)	False	1172	1218
+HCYS	28	HCYS Homocystinuria	875.1	_CYSTS;_SELCYSTS	EX_Lhcystin[u]	Lhcystin	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1172	1218
+HCYS	28	HCYS Homocystinuria	875.1	_CYSTS;_SELCYSTS	DM_Lhcystin[bc]	Lhcystin	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1172	1218
+HCYS	28	HCYS Homocystinuria	875.1	_CYSTS;_SELCYSTS	EX_hcys_L[u]	hcys_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1172	1218
+HCYS	28	HCYS Homocystinuria	875.1	_CYSTS;_SELCYSTS	DM_hcys_L[bc]	hcys_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1172	1218
+HCYS	28	HCYS Homocystinuria	875.1	_CYSTS;_SELCYSTS	EX_cyst_L[u]	cyst_L	u	urine	Decreased	urine	Decreased (urine)	True	1172	1218
+HLYS1	29	HLYS1 Hyperlysinemia I, Familial	10157.1	_SACCD3m;_SACCD4m;_r0525	EX_lys_L[u]	lys_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1219	1253
+HLYS1	29	HLYS1 Hyperlysinemia I, Familial	10157.1	_SACCD3m;_SACCD4m;_r0525	DM_lys_L[bc]	lys_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1219	1253
+HLYS1	29	HLYS1 Hyperlysinemia I, Familial	10157.1	_SACCD3m;_SACCD4m;_r0525	DM_Lpipecol[bc]	Lpipecol	bc	blood	Increased	blood	Increased (blood)	False	1219	1253
+HLYS2	30	HLYS2 Hyperlysinemia II Or Saccharopinuria	10157.1	_SACCD3m;_SACCD4m;_r0525	EX_citr_L[u]	citr_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1255	1292
+HLYS2	30	HLYS2 Hyperlysinemia II Or Saccharopinuria	10157.1	_SACCD3m;_SACCD4m;_r0525	EX_lys_L[u]	lys_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1255	1292
+HLYS2	30	HLYS2 Hyperlysinemia II Or Saccharopinuria	10157.1	_SACCD3m;_SACCD4m;_r0525	DM_citr_L[bc]	citr_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1255	1292
+HLYS2	30	HLYS2 Hyperlysinemia II Or Saccharopinuria	10157.1	_SACCD3m;_SACCD4m;_r0525	DM_lys_L[bc]	lys_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1255	1292
+HYPRO1	31	HYPRO1 Hyperprolinemia Type I	5625.1	_r1453;_PROD2m;_PRO1xm	EX_4hpro_LT[u]	4hpro_LT	u	urine	Increased	urine	Increased (urine)	True	1294	1331
+HYPRO1	31	HYPRO1 Hyperprolinemia Type I	5625.1	_r1453;_PROD2m;_PRO1xm	EX_gly[u]	gly	u	urine	Increased	urine	Increased (urine)	True	1294	1331
+HYPRO1	31	HYPRO1 Hyperprolinemia Type I	5625.1	_r1453;_PROD2m;_PRO1xm	EX_pro_L[u]	pro_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1294	1331
+HYPRO1	31	HYPRO1 Hyperprolinemia Type I	5625.1	_r1453;_PROD2m;_PRO1xm	DM_pro_L[bc]	pro_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1294	1331
+HPII	32	HPII Hyperprolinemia Type Ii	8659.1	_P5CDm;_PHCDm;_r0686;_4HGLSDm;_r0074	EX_4hpro_LT[u]	4hpro_LT	u	urine	Increased	urine	Increased (urine)	False	1333	1373
+HPII	32	HPII Hyperprolinemia Type Ii	8659.1	_P5CDm;_PHCDm;_r0686;_4HGLSDm;_r0074	EX_gly[u]	gly	u	urine	Increased	urine	Increased (urine)	True	1333	1373
+HPII	32	HPII Hyperprolinemia Type Ii	8659.1	_P5CDm;_PHCDm;_r0686;_4HGLSDm;_r0074	EX_orn[u]	orn	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1333	1373
+HPII	32	HPII Hyperprolinemia Type Ii	8659.1	_P5CDm;_PHCDm;_r0686;_4HGLSDm;_r0074	EX_pro_L[u]	pro_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1333	1373
+HPII	32	HPII Hyperprolinemia Type Ii	8659.1	_P5CDm;_PHCDm;_r0686;_4HGLSDm;_r0074	DM_orn[bc]	orn	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1333	1373
+HPII	32	HPII Hyperprolinemia Type Ii	8659.1	_P5CDm;_PHCDm;_r0686;_4HGLSDm;_r0074	DM_pro_L[bc]	pro_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1333	1373
+IVA	33	IVA Isovaleric Acidemia	3712.1	_ACOAD8m	EX_3bcrn[u]	3bcrn	u	urine	Increased	urine	Increased (urine)	True	1375	1412
+IVA	33	IVA Isovaleric Acidemia	3712.1	_ACOAD8m	EX_3ivcrn[u]	3ivcrn	u	urine	Increased	urine	Increased (urine)	True	1375	1412
+IVA	33	IVA Isovaleric Acidemia	3712.1	_ACOAD8m	DM_ivcrn[bc]	ivcrn	bc	blood	Increased	blood	Increased (blood)	False	1375	1412
+LNS	34	LNS Lesch-Nyhan Syndrome	3251.1	_GUAPRT;_HXPRT	DM_fol[bc]	fol	bc	blood	Decreased	blood	Decreased (blood)	False	1414	1449
+LNS	34	LNS Lesch-Nyhan Syndrome	3251.1	_GUAPRT;_HXPRT	EX_urate[u]	urate	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1414	1449
+LNS	34	LNS Lesch-Nyhan Syndrome	3251.1	_GUAPRT;_HXPRT	DM_urate[bc]	urate	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1414	1449
+LTC4S	35	LTC4S Leukotriene C4 Synthase Deficiency (Ltc4 Synthase Deficiency)	4056.1	_HMR_1081;_LTC4Sr	EX_leuktrE4[u]	leuktrE4	u	urine	Decreased	urine/blood/csf	Decreased (urine/blood/CSF)	True	1451	1495
+LTC4S	35	LTC4S Leukotriene C4 Synthase Deficiency (Ltc4 Synthase Deficiency)	4056.1	_HMR_1081;_LTC4Sr	EX_leuktrC4[u]	leuktrC4	u	urine	Decreased	urine/blood/csf	Decreased (urine/blood/CSF)	True	1451	1495
+LTC4S	35	LTC4S Leukotriene C4 Synthase Deficiency (Ltc4 Synthase Deficiency)	4056.1	_HMR_1081;_LTC4Sr	DM_leuktrE4[bc]	leuktrE4	bc	blood	Decreased	urine/blood/csf	Decreased (urine/blood/CSF)	False	1451	1495
+LTC4S	35	LTC4S Leukotriene C4 Synthase Deficiency (Ltc4 Synthase Deficiency)	4056.1	_HMR_1081;_LTC4Sr	DM_leuktrC4[bc]	leuktrC4	bc	blood	Decreased	urine/blood/csf	Decreased (urine/blood/CSF)	False	1451	1495
+LTC4S	35	LTC4S Leukotriene C4 Synthase Deficiency (Ltc4 Synthase Deficiency)	4056.1	_HMR_1081;_LTC4Sr	DM_leuktrD4[bc]	leuktrD4	bc	blood	Decreased	urine/blood/csf	Decreased (urine/blood/CSF)	False	1451	1495
+LTC4S	35	LTC4S Leukotriene C4 Synthase Deficiency (Ltc4 Synthase Deficiency)	4056.1	_HMR_1081;_LTC4Sr	DM_leuktrE4[csf]	leuktrE4	csf	csf	Decreased	urine/blood/csf	Decreased (urine/blood/CSF)	False	1451	1495
+MSUD	36	MSUD Maple Syrup Urine Disease	593.1	_r0670;_OIVD1m;_OIVD2m;_OIVD3m;_r0385;_r0386;_r1154	EX_ile_L[u]	ile_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1497	1539
+MSUD	36	MSUD Maple Syrup Urine Disease	593.1	_r0670;_OIVD1m;_OIVD2m;_OIVD3m;_r0385;_r0386;_r1154	EX_3mop[u]	3mop	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1497	1539
+MSUD	36	MSUD Maple Syrup Urine Disease	593.1	_r0670;_OIVD1m;_OIVD2m;_OIVD3m;_r0385;_r0386;_r1154	DM_ile_L[bc]	ile_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1497	1539
+MSUD	36	MSUD Maple Syrup Urine Disease	593.1	_r0670;_OIVD1m;_OIVD2m;_OIVD3m;_r0385;_r0386;_r1154	DM_leu_L[bc]	leu_L	bc	blood	Increased	blood	Increased (blood)	False	1497	1539
+MSUD	36	MSUD Maple Syrup Urine Disease	593.1	_r0670;_OIVD1m;_OIVD2m;_OIVD3m;_r0385;_r0386;_r1154	DM_val_L[bc]	val_L	bc	blood	Increased	blood	Increased (blood)	False	1497	1539
+MSUD	36	MSUD Maple Syrup Urine Disease	593.1	_r0670;_OIVD1m;_OIVD2m;_OIVD3m;_r0385;_r0386;_r1154	DM_3mop[bc]	3mop	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1497	1539
+MMA	37	MMA Methylmalonic Acidemia (Mma)	4594.1	_MMMm	EX_3aib[u]	3aib	u	urine	Increased	urine	Increased (urine)	True	1541	1590
+MMA	37	MMA Methylmalonic Acidemia (Mma)	4594.1	_MMMm	DM_c4dc[bc]	c4dc	bc	blood	Increased	blood	Increased (blood)	False	1541	1590
+MMA	37	MMA Methylmalonic Acidemia (Mma)	4594.1	_MMMm	DM_crn[bc]	crn	bc	blood	Decreased	blood	Decreased (blood)	False	1541	1590
+MMA	37	MMA Methylmalonic Acidemia (Mma)	4594.1	_MMMm	DM_HC00900[bc]	HC00900	bc	blood	Increased	blood	Increased (blood)	False	1541	1590
+MMA	37	MMA Methylmalonic Acidemia (Mma)	4594.1	_MMMm	DM_3hpp[bc]	3hpp	bc	blood	Increased	blood	Increased (blood)	False	1541	1590
+MMA	37	MMA Methylmalonic Acidemia (Mma)	4594.1	_MMMm	DM_pcrn[bc]	pcrn	bc	blood	Increased	blood	Increased (blood)	False	1541	1590
+MMA	37	MMA Methylmalonic Acidemia (Mma)	4594.1	_MMMm	DM_3hdececrn[bc]	3hdececrn	bc	blood	Increased	blood	Increased (blood)	False	1541	1590
+NAGS	38	NAGS N-Acetylglutamate Synthase Deficiency	162417.1	_RE2030M;_RE2031M;_RE2032M;_RE2156M;_RE2223M;_ACGSm	DM_ala_L[bc]	ala_L	bc	blood	Increased	blood	Increased (blood)	False	1592	1636
+NAGS	38	NAGS N-Acetylglutamate Synthase Deficiency	162417.1	_RE2030M;_RE2031M;_RE2032M;_RE2156M;_RE2223M;_ACGSm	DM_citr_L[bc]	citr_L	bc	blood	Decreased	blood	Decreased (blood)	False	1592	1636
+NAGS	38	NAGS N-Acetylglutamate Synthase Deficiency	162417.1	_RE2030M;_RE2031M;_RE2032M;_RE2156M;_RE2223M;_ACGSm	DM_gln_L[bc]	gln_L	bc	blood	Increased	blood	Increased (blood)	False	1592	1636
+NAGS	38	NAGS N-Acetylglutamate Synthase Deficiency	162417.1	_RE2030M;_RE2031M;_RE2032M;_RE2156M;_RE2223M;_ACGSm	DM_nh4[bc]	nh4	bc	blood	Increased	blood	Increased (blood)	False	1592	1636
+NAGS	38	NAGS N-Acetylglutamate Synthase Deficiency	162417.1	_RE2030M;_RE2031M;_RE2032M;_RE2156M;_RE2223M;_ACGSm	DM_orn[bc]	orn	bc	blood	Increased	blood	Increased (blood)	False	1592	1636
+NAGS	38	NAGS N-Acetylglutamate Synthase Deficiency	162417.1	_RE2030M;_RE2031M;_RE2032M;_RE2156M;_RE2223M;_ACGSm	EX_orot[u]	orot	u	urine	Decreased	urine	Decreased (urine)	True	1592	1636
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	EX_5oxpro[u]	5oxpro	u	urine	Increased	transient, urine	Increased (transient, urine)	True	1637	1710
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	EX_gly[u]	gly	u	urine	Increased	urine	Increased (urine)	True	1637	1710
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	EX_lys_L[u]	lys_L	u	urine	Increased	urine	Increased (urine)	True	1637	1710
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	EX_orot[u]	orot	u	urine	Increased	urine	Increased (urine)	True	1637	1710
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	DM_citr_L[bc]	citr_L	bc	blood	Decreased	blood	Decreased (blood)	False	1637	1710
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	DM_gln_L[bc]	gln_L	bc	blood	Increased	blood	Increased (blood)	False	1637	1710
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	DM_ura[bc]	ura	bc	blood	Increased	urine	Increased (urine)	False	1637	1710
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	DM_nh4[bc]	nh4	bc	blood	Increased	blood	Increased (blood)	False	1637	1710
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	5009.1	_OCBTm	DM_orn[bc]	orn	bc	blood	Increased	blood	Increased (blood)	False	1637	1710
+OROA	40	OROA Orotic Aciduria	7372.1	_ORPT;_OMPDC	EX_orot[u]	orot	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1712	1745
+OROA	40	OROA Orotic Aciduria	7372.1	_ORPT;_OMPDC	DM_orot[bc]	orot	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1712	1745
+PKU	41	PKU Phenylketonuria	5053.1	_PHETHPTOX2;_r0399	DM_phe_L[bc]	phe_L	bc	blood	Increased	blood	Increased (blood)	False	1747	1782
+PKU	41	PKU Phenylketonuria	5053.1	_PHETHPTOX2;_r0399	EX_2hyoxplac[u]	2hyoxplac	u	urine	Increased	urine	Increased (urine)	True	1747	1782
+PKU	41	PKU Phenylketonuria	5053.1	_PHETHPTOX2;_r0399	EX_phpyr[u]	phpyr	u	urine	Increased	urine	Increased (urine)	True	1747	1782
+MNGIE	42	MNGIE Mitochondrial Neurogastrointestinal Encephalopathy (Mngie) Disease	1890.1	_TMDPP	DM_duri[bc]	duri	bc	blood	Increased	blood	Increased (blood)	False	1784	1818
+MNGIE	42	MNGIE Mitochondrial Neurogastrointestinal Encephalopathy (Mngie) Disease	1890.1	_TMDPP	DM_thymd[bc]	thymd	bc	blood	Increased	blood	Increased (blood)	False	1784	1818
+SUCLA	43	SUCLA Succinate-Coenzyme A (Coa) Ligase Deficiency/Lactic Acidosis, Fatal Infantile	8803.1	_ITCOALm;_MECOALm;_SUCOASm;_ITCOAL1m;_MECOAS1m;_SUCOAS1m	DM_lac_L[bc]	lac_L	bc	blood	Increased	blood	Increased (blood)	False	1820	1854
+SUCLA	43	SUCLA Succinate-Coenzyme A (Coa) Ligase Deficiency/Lactic Acidosis, Fatal Infantile	8803.1	_ITCOALm;_MECOALm;_SUCOASm;_ITCOAL1m;_MECOAS1m;_SUCOAS1m	DM_pyr[bc]	pyr	bc	blood	Increased	blood	Increased (blood)	False	1820	1854
+SSADHD	44	SSADHD Succinic Semialdehyde Dehydrogenase Deficiency	7915.1	_r0178	EX_gly[u]	gly	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1856	1896
+SSADHD	44	SSADHD Succinic Semialdehyde Dehydrogenase Deficiency	7915.1	_r0178	EX_sucsal[u]	sucsal	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1856	1896
+SSADHD	44	SSADHD Succinic Semialdehyde Dehydrogenase Deficiency	7915.1	_r0178	DM_gly[bc]	gly	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1856	1896
+SSADHD	44	SSADHD Succinic Semialdehyde Dehydrogenase Deficiency	7915.1	_r0178	DM_sucsal[bc]	sucsal	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1856	1896
+SSADHD	44	SSADHD Succinic Semialdehyde Dehydrogenase Deficiency	7915.1	_r0178	DM_4abut[csf]	4abut	csf	csf	Increased	csf	Increased (CSF)	False	1856	1896
+TETB	45	TETB Tetrahydrobiopterin Deficiency	2643.1		DM_phe_L[bc]	phe_L	bc	blood	Increased	blood	Increased (blood)	False	1898	1934
+CIT1	46	CIT1 Type I Citrullinemia	445.1	_ARGSS	DM_citr_L[bc]	citr_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1936	1978
+CIT1	46	CIT1 Type I Citrullinemia	445.1	_ARGSS	DM_gly[bc]	gly	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	1936	1978
+CIT1	46	CIT1 Type I Citrullinemia	445.1	_ARGSS	DM_nh4[bc]	nh4	bc	blood	Increased	blood	Increased (blood)	False	1936	1978
+CIT1	46	CIT1 Type I Citrullinemia	445.1	_ARGSS	EX_orot[u]	orot	u	urine	Increased	urine	Increased (urine)	True	1936	1978
+CIT1	46	CIT1 Type I Citrullinemia	445.1	_ARGSS	EX_citr_L[u]	citr_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1936	1978
+CIT1	46	CIT1 Type I Citrullinemia	445.1	_ARGSS	EX_gly[u]	gly	u	urine	Increased	urine/blood	Increased (urine/blood)	True	1936	1978
+TYR1	47	TYR1 Tyrosinemia Type I	2184.1	_FUMAC	DM_met_L[bc]	met_L	bc	blood	Increased	blood	Increased (blood)	False	1980	2018
+TYR1	47	TYR1 Tyrosinemia Type I	2184.1	_FUMAC	DM_tyr_L[bc]	tyr_L	bc	blood	Increased	blood	Increased (blood)	False	1980	2018
+TYR1	47	TYR1 Tyrosinemia Type I	2184.1	_FUMAC	EX_34hpl[u]	34hpl	u	urine	Increased	urine	Increased (urine)	True	1980	2018
+TYR1	47	TYR1 Tyrosinemia Type I	2184.1	_FUMAC	EX_34hpp[u]	34hpp	u	urine	Increased	urine	Increased (urine)	True	1980	2018
+TYR3	48	TYR3 Tyrosinemia Type III	3242.1	_34HPPOR;_PPOR	DM_tyr_L[bc]	tyr_L	bc	blood	Increased	blood	Increased (blood)	False	2020	2054
+TYR3	48	TYR3 Tyrosinemia Type III	3242.1	_34HPPOR;_PPOR	EX_34hpl[u]	34hpl	u	urine	Increased	urine	Increased (urine)	True	2020	2054
+TYR3	48	TYR3 Tyrosinemia Type III	3242.1	_34HPPOR;_PPOR	EX_34hpp[u]	34hpp	u	urine	Increased	urine	Increased (urine)	True	2020	2054
+XAN1	49	XAN1 Xanthinuria Type 1	7498.1	_r0395;_XANDp;_XAO2x;_XAOx;_r0394;_r0502;_r0504	EX_hxan[u]	hxan	u	urine	Increased	urine	Increased (urine)	True	2056	2093
+XAN1	49	XAN1 Xanthinuria Type 1	7498.1	_r0395;_XANDp;_XAO2x;_XAOx;_r0394;_r0502;_r0504	EX_xan[u]	xan	u	urine	Increased	blood/urine	Increased (blood/urine)	True	2056	2093
+XAN1	49	XAN1 Xanthinuria Type 1	7498.1	_r0395;_XANDp;_XAO2x;_XAOx;_r0394;_r0502;_r0504	EX_urate[u]	urate	u	urine	Decreased	blood/urine	Decreased (blood/urine)	True	2056	2093
+XAN1	49	XAN1 Xanthinuria Type 1	7498.1	_r0395;_XANDp;_XAO2x;_XAOx;_r0394;_r0502;_r0504	DM_xan[bc]	xan	bc	blood	Increased	blood/urine	Increased (blood/urine)	False	2056	2093
+XAN1	49	XAN1 Xanthinuria Type 1	7498.1	_r0395;_XANDp;_XAO2x;_XAOx;_r0394;_r0502;_r0504	DM_urate[bc]	urate	bc	blood	Decreased	blood/urine	Decreased (blood/urine)	False	2056	2093
+AKGD	50	AKGD Alpha-Ketoglutarate Dehydrogenase Deficiency	4967.1	_AKGDm;_2OXOADOXm;_r0163;_r0384;_r0451;_r0620	EX_akg[u]	akg	u	urine	Increased	urine	Increased (urine)	True	2095	2134
+AKGD	50	AKGD Alpha-Ketoglutarate Dehydrogenase Deficiency	4967.1	_AKGDm;_2OXOADOXm;_r0163;_r0384;_r0451;_r0620	EX_lac_L[u]	lac_L	u	urine	Increased	blood/urine	Increased (blood/urine)	True	2095	2134
+AKGD	50	AKGD Alpha-Ketoglutarate Dehydrogenase Deficiency	4967.1	_AKGDm;_2OXOADOXm;_r0163;_r0384;_r0451;_r0620	DM_lac_L[bc]	lac_L	bc	blood	Increased	blood/urine	Increased (blood/urine)	False	2095	2134
+AKGD	50	AKGD Alpha-Ketoglutarate Dehydrogenase Deficiency	4967.1	_AKGDm;_2OXOADOXm;_r0163;_r0384;_r0451;_r0620	DM_glu_L[bc]	glu_L	bc	blood	Increased	blood	Increased (blood)	False	2095	2134
+AKGD	50	AKGD Alpha-Ketoglutarate Dehydrogenase Deficiency	4967.1	_AKGDm;_2OXOADOXm;_r0163;_r0384;_r0451;_r0620	DM_gln_L[bc]	gln_L	bc	blood	Increased	blood	Increased (blood)	False	2095	2134
+EP	51	EP Essential Pentosuria	1181.1	_XYLUR	EX_xylu_L[u]	xylu_L	u	urine	Increased	urine	Increased (urine)	True	2136	2182
+HYPVLI	52	HYPVLI Hypervalinemia And Hyperleucine-Isoleucinemia	587.1	_ILETAm;_LEUTAm;_VALTAm	DM_val_L[bc]	val_L	bc	blood	Increased	blood/urine	Increased (blood/urine)	False	2185	2221
+HYPVLI	52	HYPVLI Hypervalinemia And Hyperleucine-Isoleucinemia	587.1	_ILETAm;_LEUTAm;_VALTAm	EX_val_L[u]	val_L	u	urine	Increased	blood/urine	Increased (blood/urine)	True	2185	2221
+HYPVLI	52	HYPVLI Hypervalinemia And Hyperleucine-Isoleucinemia	587.1	_ILETAm;_LEUTAm;_VALTAm	EX_leu_L[u]	leu_L	u	urine	Increased	blood/urine	Increased (blood/urine)	True	2185	2221
+ASNSD	53	ASNSD Asparagine Synthetase Deficiency	440.1	_ASNS1	DM_asn_L[bc]	asn_L	bc	blood	Decreased	blood/csf	Decreased (blood/csf)	False	2225	2265
+ASNSD	53	ASNSD Asparagine Synthetase Deficiency	440.1	_ASNS1	DM_asn_L[csf]	asn_L	csf	csf	Decreased	blood/csf	Decreased (blood/csf)	False	2225	2265
+ASNSD	53	ASNSD Asparagine Synthetase Deficiency	440.1	_ASNS1	DM_gln_L[bc]	gln_L	bc	blood	Increased	blood/csf	Increased (blood/csf)	False	2225	2265
+ASNSD	53	ASNSD Asparagine Synthetase Deficiency	440.1	_ASNS1	DM_gln_L[csf]	gln_L	csf	csf	Increased	blood/csf	Increased (blood/csf)	False	2225	2265
+ASA	54	Argininosuccinic Aciduria	435.1	_ARGSL	EX_argsuc[u]	argsuc	u	urine	Increased	urine	Increased (urine)	True	2270	2311
+ASA	54	Argininosuccinic Aciduria	435.1	_ARGSL	EX_gly[u]	gly	u	urine	Increased	urine	Increased (urine)	True	2270	2311
+ASA	54	Argininosuccinic Aciduria	435.1	_ARGSL	EX_orot[u]	orot	u	urine	Increased	urine	Increased (urine)	True	2270	2311
+ASA	54	Argininosuccinic Aciduria	435.1	_ARGSL	EX_lys_L[u]	lys_L	u	urine	Increased	urine	Increased (urine)	True	2270	2311
+ASA	54	Argininosuccinic Aciduria	435.1	_ARGSL	EX_ura[u]	ura	u	urine	Increased	urine	Increased (urine)	True	2270	2311
+ASA	54	Argininosuccinic Aciduria	435.1	_ARGSL	DM_gln_L[bc]	gln_L	bc	blood	Increased	blood	Increased (blood)	False	2270	2311
+ASA	54	Argininosuccinic Aciduria	435.1	_ARGSL	DM_citr_L[bc]	citr_L	bc	blood	Increased	blood	Increased (blood)	False	2270	2311
+MMA	55	MMA Methylmalonic Acidemia (Mma)	166785.1	_CBLATm	EX_3aib[u]	3aib	u	urine	Increased	urine	Increased (urine)	True	2314	2357
+MMA	55	MMA Methylmalonic Acidemia (Mma)	166785.1	_CBLATm	DM_c4dc[bc]	c4dc	bc	blood	Increased	blood	Increased (blood)	False	2314	2357
+MMA	55	MMA Methylmalonic Acidemia (Mma)	166785.1	_CBLATm	DM_crn[bc]	crn	bc	blood	Decreased	blood	Decreased (blood)	False	2314	2357
+MMA	55	MMA Methylmalonic Acidemia (Mma)	166785.1	_CBLATm	DM_HC00900[bc]	HC00900	bc	blood	Increased	blood	Increased (blood)	False	2314	2357
+MMA	55	MMA Methylmalonic Acidemia (Mma)	166785.1	_CBLATm	DM_3hpp[bc]	3hpp	bc	blood	Increased	blood	Increased (blood)	False	2314	2357
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_acac[bc]	acac	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_ala_L[bc]	ala_L	bc	blood	Increased	blood	Increased (blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_bhb[bc]	bhb	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_citr_L[bc]	citr_L	bc	blood	Increased	blood	Increased (blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_lys_L[bc]	lys_L	bc	blood	Increased	blood	Increased (blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_pro_L[bc]	pro_L	bc	blood	Increased	blood	Increased (blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_lac_L[bc]	lac_L	bc	blood	Increased	blood	Increased (blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_nh4[bc]	nh4	bc	blood	Increased	blood	Increased (blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	DM_glc_D[bc]	glc_D	bc	blood	Decreased	blood	Decreased (blood)	False	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	EX_fum[u]	fum	u	urine	Increased	urine	Increased (urine)	True	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	EX_succ[u]	succ	u	urine	Increased	urine	Increased (urine)	True	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	EX_acetone[u]	acetone	u	urine	Increased	urine	Increased (urine)	True	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	EX_akg[u]	akg	u	urine	Increased	urine	Increased (urine)	True	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	EX_acac[u]	acac	u	urine	Increased	urine/blood	Increased (urine/blood)	True	2359	2425
+PC	56	PC Pyruvate Carboxylase Deficiency	5091.1	_PCm	EX_bhb[u]	bhb	u	urine	Increased	urine/blood	Increased (urine/blood)	True	2359	2425
+PHOX1	57	PHOX1 Primary Hyperoxaluria-Type 1	189.1	_AGTix;_SPTix;_r0160	EX_oxa[u]	oxa	u	urine	Increased	urine	Increased (urine)	False	2427	2446
+PHOX1	57	PHOX1 Primary Hyperoxaluria-Type 1	189.1	_AGTix;_SPTix;_r0160	EX_glyclt[u]	glyclt	u	urine	Increased	urine	Increased (urine)	False	2427	2446
+PHOX1	57	PHOX1 Primary Hyperoxaluria-Type 1	189.1	_AGTix;_SPTix;_r0160	EX_glx[u]	glx	u	urine	Increased	urine	Increased (urine)	False	2427	2446
+ADSL	58	ADSL Adenylosuccinase Deficiency	4967.1	_ADSL1;_ADSL2	EX_25aics[u]	25aics	u	urine	Increased	urine/csf	Increased (urine/csf)	True	2449	2481
+ADSL	58	ADSL Adenylosuccinase Deficiency	4967.1	_ADSL1;_ADSL2	DM_Brain_25aics[c]	Brain_25aics	c	cytosol	Increased	urine/csf	Increased (urine/csf)	False	2449	2481
+CD	59	CD Canavan Disease - only milder forms of this disease have been reported (there is an isozyme in Recon -- due to mild form report I included this IEM anyway)	443.1	_NACASPAH	EX_25aics[u]	25aics	u	urine	Increased	urine/csf	Increased (urine/csf)	False	2485	2520
+CD	59	CD Canavan Disease - only milder forms of this disease have been reported (there is an isozyme in Recon -- due to mild form report I included this IEM anyway)	443.1	_NACASPAH	EX_Nacasp[u]	Nacasp	u	urine	Increased	urine/csf/blood	Increased (urine/csf/blood)	True	2485	2520
+CD	59	CD Canavan Disease - only milder forms of this disease have been reported (there is an isozyme in Recon -- due to mild form report I included this IEM anyway)	443.1	_NACASPAH	DM_Nacasp[bc]	Nacasp	bc	blood	Increased	urine/csf/blood	Increased (urine/csf/blood)	False	2485	2520
+CD	59	CD Canavan Disease - only milder forms of this disease have been reported (there is an isozyme in Recon -- due to mild form report I included this IEM anyway)	443.1	_NACASPAH	DM_Nacasp[csf]	Nacasp	csf	csf	Increased	urine/csf/blood	Increased (urine/csf/blood)	False	2485	2520
+HPC	60	HPC Hereditary Coproporphyria	1371.1	_CPPPGO	EX_25aics[u]	25aics	u	urine	Increased	urine/csf	Increased (urine/csf)	False	2522	2557
+HPC	60	HPC Hereditary Coproporphyria	1371.1	_CPPPGO	EX_C05770[u]	C05770	u	urine	Increased	urine/csf/blood	Increased (urine/csf/blood)	True	2522	2557
+HPC	60	HPC Hereditary Coproporphyria	1371.1	_CPPPGO	DM_C05770[bc]	C05770	bc	blood	Increased	urine/csf/blood	Increased (urine/csf/blood)	False	2522	2557
+HPC	60	HPC Hereditary Coproporphyria	1371.1	_CPPPGO	DM_C05770[csf]	C05770	csf	csf	Increased	urine/csf/blood	Increased (urine/csf/blood)	False	2522	2557
+HMET	61	HMET Hypermethioninemia	191.1	_GNMT	EX_met_L[u]	met_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	2560	2597
+HMET	61	HMET Hypermethioninemia	191.1	_GNMT	EX_hcys_L[u]	hcys_L	u	urine	Increased	urine/blood	Increased (urine/blood)	True	2560	2597
+HMET	61	HMET Hypermethioninemia	191.1	_GNMT	DM_hcys_L[bc]	hcys_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	2560	2597
+HMET	61	HMET Hypermethioninemia	191.1	_GNMT	DM_met_L[bc]	met_L	bc	blood	Increased	urine/blood	Increased (urine/blood)	False	2560	2597
+DESMO	62	DESMO Desmosterolosis	1718.1	_DHCR241r;_DHCR243r;_r0783;_r1380;_DSREDUCr;_HMR_1526;_RE3129N	DM_dsmsterol[bc]	dsmsterol	bc	blood	Increased	blood	Increased (blood)	False	2600	2643
+2OAA	63	2OAA 2-Oxoadipate Acidemia	89874.1	_2OXOADPTm;_2AMADPTm;_r0879	DM_L2aadp[bc]	L2aadp	bc	blood	Increased	blood	Increased (blood)	False	2647	2683
+2OAA	63	2OAA 2-Oxoadipate Acidemia	89874.1	_2OXOADPTm;_2AMADPTm;_r0879	EX_2oxoadp[u]	2oxoadp	u	urine	Increased	urine	Increased (urine)	True	2647	2683
+2OAA	63	2OAA 2-Oxoadipate Acidemia	89874.1	_2OXOADPTm;_2AMADPTm;_r0879	EX_adpoh[u]	adpoh	u	urine	Increased	urine	Increased (urine)	True	2647	2683

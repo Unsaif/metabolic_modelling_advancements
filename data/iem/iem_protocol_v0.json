@@ -1,0 +1,2176 @@
+[
+  {
+    "iem": "HIS",
+    "call_index": 1,
+    "include_patterns": [
+      "_HISD"
+    ],
+    "exclude_patterns": [
+      "Micro_",
+      "_HISDC"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_hista[u]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "DM_hista[bc]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "EX_im4ac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_his_L[u]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "DM_his_L[bc]",
+        "Increased (blood/urine)"
+      ]
+    ],
+    "source_call_line": 220
+  },
+  {
+    "iem": "AGAT",
+    "call_index": 2,
+    "include_patterns": [
+      "_GLYAMDTRc"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [
+      {
+        "pattern": "_GACMTRc",
+        "bound": "lb",
+        "value": 0.0
+      }
+    ],
+    "biomarkers": [
+      [
+        "EX_creat[u]",
+        "Decreased (urine)"
+      ],
+      [
+        "EX_gudac[u]",
+        "Decreased (urine)"
+      ]
+    ],
+    "source_call_line": 238
+  },
+  {
+    "iem": "ARG",
+    "call_index": 3,
+    "include_patterns": [
+      "_ARGN"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [
+      {
+        "pattern": "_GACMTRc",
+        "bound": "lb",
+        "value": 0.0
+      }
+    ],
+    "biomarkers": [
+      [
+        "EX_argsuc[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_orot[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_ura[u]",
+        "Increased  (urine)"
+      ],
+      [
+        "DM_creat[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_arg_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_gudac[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 284
+  },
+  {
+    "iem": "CPS1",
+    "call_index": 4,
+    "include_patterns": [
+      "_CBPSam",
+      "_r0034"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_lys_L[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_gly[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_ura[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_5oxpro[u]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_citr_L[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_gln_L[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 324
+  },
+  {
+    "iem": "3MGA",
+    "call_index": 5,
+    "include_patterns": [
+      "_MGCHrm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_3ivcrn[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_3mglutac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_3mglutr[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 338
+  },
+  {
+    "iem": "AMA1",
+    "call_index": 6,
+    "include_patterns": [
+      "_ACODA",
+      "_RE2640C"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_acglu[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_acgly[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 354
+  },
+  {
+    "iem": "AADC",
+    "call_index": 7,
+    "include_patterns": [
+      "_3HLYTCL",
+      "_3HXKYNDCL",
+      "_5HLTDL",
+      "_5HXKYNDCL",
+      "_LTDCL",
+      "_PHYCBOXL",
+      "_TYRCBOX"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_34dhphe[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_34dhphe[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_5htrp[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_5htrp[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_adrnl[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "EX_dopa[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_CE2176[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_CE2176[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_nrpphr[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "EX_3moxtyr[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 405
+  },
+  {
+    "iem": "3MCC",
+    "call_index": 8,
+    "include_patterns": [
+      "_MCCCrm",
+      "_RE2453M",
+      "_RE2454M"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_3ivcrn[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_acac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_acetone[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_bhb[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_CE2026[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_3hivac[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 428
+  },
+  {
+    "iem": "CYP21D",
+    "call_index": 9,
+    "include_patterns": [
+      "_P45021A1r",
+      "_P45021A2r",
+      "_RE2155R",
+      "_21HPRGNLONE",
+      "_HMR_1940",
+      "_HMR_1948",
+      "_HMR_1988",
+      "_HMR_1990",
+      "_HMR_1992",
+      "_HMR_2007"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_aldstrn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_crtsl[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_prgstrn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_andrstndn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_andrstrn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_dhea[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 480
+  },
+  {
+    "iem": "HYCARO",
+    "call_index": 10,
+    "include_patterns": [
+      "_BCDO"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_caro[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 511
+  },
+  {
+    "iem": "BTD",
+    "call_index": 11,
+    "include_patterns": [
+      "_BTND1",
+      "_BTND1n",
+      "_BTNDe",
+      "_BTNDm",
+      "_ACCOACm",
+      "_ACCOAC",
+      "_PCm",
+      "_MCCCrm",
+      "_RE2453M",
+      "_RE2454M",
+      "_PPCOACm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_3ivcrn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_acac[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_acetone[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_bhb[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_lac_L[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_nh4[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_3hpp[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_CE2026[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_2mcit[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 574
+  },
+  {
+    "iem": "CRFD",
+    "call_index": 12,
+    "include_patterns": [
+      "_PHYHx",
+      "_RE3066X"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_phyt[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_prist[bc]",
+        "Decreased (blood)"
+      ]
+    ],
+    "source_call_line": 608
+  },
+  {
+    "iem": "STAR",
+    "call_index": 13,
+    "include_patterns": [
+      "_P45011A1m",
+      "_HMR_1928",
+      "_HMR_1929",
+      "_HMR_1932",
+      "_HMR_1934",
+      "_HMR_1935"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_crtsl[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_crtstrn[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_andrstndn[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_dhea[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_11docrtstrn[bc]",
+        "Decreased (blood)"
+      ]
+    ],
+    "source_call_line": 654
+  },
+  {
+    "iem": "CMO1",
+    "call_index": 14,
+    "include_patterns": [
+      "_P45011B21m"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_aldstrn[bc]",
+        "Decreased (Not detectable, blood)"
+      ]
+    ],
+    "source_call_line": 686
+  },
+  {
+    "iem": "DGK",
+    "call_index": 15,
+    "include_patterns": [
+      "_r0456"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_lac_L[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 720
+  },
+  {
+    "iem": "DPYR",
+    "call_index": 16,
+    "include_patterns": [
+      "_DHPM2"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_thym[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_ura[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_56dura[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_56dthm[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 741
+  },
+  {
+    "iem": "FED",
+    "call_index": 17,
+    "include_patterns": [
+      "_HMR_0634",
+      "_LCAT1e",
+      "_LCAT10e",
+      "_LCAT11e",
+      "_LCAT12e",
+      "_LCAT13e",
+      "_LCAT14e",
+      "_LCAT15e",
+      "_LCAT16e",
+      "_LCAT17e",
+      "_LCAT18e",
+      "_LCAT19e",
+      "_LCAT2e",
+      "_LCAT20e",
+      "_LCAT21e",
+      "_LCAT22e",
+      "_LCAT23e",
+      "_LCAT24e",
+      "_LCAT25e",
+      "_LCAT26e",
+      "_LCAT27e",
+      "_LCAT28e",
+      "_LCAT29e",
+      "_LCAT3e",
+      "_LCAT30e",
+      "_LCAT31e",
+      "_LCAT32e",
+      "_LCAT33e",
+      "_LCAT34e",
+      "_LCAT35e",
+      "_LCAT36e",
+      "_LCAT37e",
+      "_LCAT38e",
+      "_LCAT39e",
+      "_LCAT4e",
+      "_LCAT40e",
+      "_LCAT41e",
+      "_LCAT42e",
+      "_LCAT43e",
+      "_LCAT44e",
+      "_LCAT45e",
+      "_LCAT46e",
+      "_LCAT47e",
+      "_LCAT48e",
+      "_LCAT49e",
+      "_LCAT5e",
+      "_LCAT50e",
+      "_LCAT51e",
+      "_LCAT52e",
+      "_LCAT53e",
+      "_LCAT54e",
+      "_LCAT55e",
+      "_LCAT56e",
+      "_LCAT57e",
+      "_LCAT58e",
+      "_LCAT59e"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_chsterol[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_tag_hs[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 782
+  },
+  {
+    "iem": "EF",
+    "call_index": 18,
+    "include_patterns": [
+      "_HMR_8761",
+      "_HMR_9800",
+      "_KHK",
+      "_KHK2",
+      "_KHK3"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_fru[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 800
+  },
+  {
+    "iem": "FIGLU",
+    "call_index": 19,
+    "include_patterns": [
+      "_FORTHFC",
+      "_GluForTx",
+      "_HMR_9726"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_forglu[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 818
+  },
+  {
+    "iem": "GA1",
+    "call_index": 20,
+    "include_patterns": [
+      "_GLUTCOADHm",
+      "_r0541"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_c5dc[u]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "DM_c5dc[bc]",
+        "Increased (blood/urine)"
+      ]
+    ],
+    "source_call_line": 852
+  },
+  {
+    "iem": "GA2",
+    "call_index": 21,
+    "include_patterns": [
+      "_ETF",
+      "_FADH2ETC"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_c10crn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_c4crn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_ddeccrn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_ttdcrn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_pmtcrn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_4hpro_LT[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_3hivac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_CE4970[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_CE4969[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_CE4968[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_ethmalac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_adpac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_subeac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_sebacid[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_pro_L[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 917
+  },
+  {
+    "iem": "OXOP",
+    "call_index": 22,
+    "include_patterns": [
+      "_GTHS"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_5oxpro[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_leuktrE4[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_leuktrC4[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_5oxpro[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_leuktrE4[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_leuktrC4[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_leuktrD4[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_pro_L[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 966
+  },
+  {
+    "iem": "GSD6",
+    "call_index": 23,
+    "include_patterns": [
+      "_r1393"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_acac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_acetone[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_bhb[u]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_chsterol[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_glc_D[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_lac_L[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 1012
+  },
+  {
+    "iem": "GMT",
+    "call_index": 24,
+    "include_patterns": [
+      "_GACMTRc"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_creat[u]",
+        "Decreased (urine/blood)"
+      ],
+      [
+        "DM_creat[bc]",
+        "Decreased (urine/blood)"
+      ],
+      [
+        "DM_crtn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_urate[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_gudac[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 1054
+  },
+  {
+    "iem": "GACR",
+    "call_index": 25,
+    "include_patterns": [
+      "_ORNTArm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_arg_L[u]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_gln_L[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "EX_glu_L[u]",
+        "Decreased (blood)"
+      ],
+      [
+        "EX_lys_L[u]",
+        "Decreased (urine/blood)"
+      ],
+      [
+        "DM_lys_L[bc]",
+        "Decreased (urine/blood)"
+      ],
+      [
+        "EX_orn[u]",
+        "Increased (urine/blood/CSF)"
+      ],
+      [
+        "DM_orn[bc]",
+        "Increased (urine/blood/CSF)"
+      ],
+      [
+        "DM_orn[csf]",
+        "Increased (CSF)"
+      ]
+    ],
+    "source_call_line": 1100
+  },
+  {
+    "iem": "HFI",
+    "call_index": 26,
+    "include_patterns": [
+      "_FBA5"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_fru[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_fru[bc]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 1135
+  },
+  {
+    "iem": "HMG",
+    "call_index": 27,
+    "include_patterns": [
+      "_HMGLx"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_c6dc[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_adpac[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 1170
+  },
+  {
+    "iem": "HCYS",
+    "call_index": 28,
+    "include_patterns": [
+      "_CYSTS",
+      "_SELCYSTS"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_met_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_orn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_Lhcystin[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_Lhcystin[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_hcys_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_hcys_L[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_cyst_L[u]",
+        "Decreased (urine)"
+      ]
+    ],
+    "source_call_line": 1218
+  },
+  {
+    "iem": "HLYS1",
+    "call_index": 29,
+    "include_patterns": [
+      "_SACCD3m",
+      "_SACCD4m",
+      "_r0525"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_lys_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_lys_L[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_Lpipecol[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 1253
+  },
+  {
+    "iem": "HLYS2",
+    "call_index": 30,
+    "include_patterns": [
+      "_SACCD3m",
+      "_SACCD4m",
+      "_r0525"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_citr_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_lys_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_citr_L[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_lys_L[bc]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 1292
+  },
+  {
+    "iem": "HYPRO1",
+    "call_index": 31,
+    "include_patterns": [
+      "_r1453",
+      "_PROD2m",
+      "_PRO1xm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_4hpro_LT[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_gly[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_pro_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_pro_L[bc]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 1331
+  },
+  {
+    "iem": "HPII",
+    "call_index": 32,
+    "include_patterns": [
+      "_P5CDm",
+      "_PHCDm",
+      "_r0686",
+      "_4HGLSDm",
+      "_r0074"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_4hpro_LT[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_gly[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_orn[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_pro_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_orn[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_pro_L[bc]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 1373
+  },
+  {
+    "iem": "IVA",
+    "call_index": 33,
+    "include_patterns": [
+      "_ACOAD8m"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_3bcrn[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_3ivcrn[u]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_ivcrn[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 1412
+  },
+  {
+    "iem": "LNS",
+    "call_index": 34,
+    "include_patterns": [
+      "_GUAPRT",
+      "_HXPRT"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_fol[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "EX_urate[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_urate[bc]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 1449
+  },
+  {
+    "iem": "LTC4S",
+    "call_index": 35,
+    "include_patterns": [
+      "_HMR_1081",
+      "_LTC4Sr"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_leuktrE4[u]",
+        "Decreased (urine/blood/CSF)"
+      ],
+      [
+        "EX_leuktrC4[u]",
+        "Decreased (urine/blood/CSF)"
+      ],
+      [
+        "DM_leuktrE4[bc]",
+        "Decreased (urine/blood/CSF)"
+      ],
+      [
+        "DM_leuktrC4[bc]",
+        "Decreased (urine/blood/CSF)"
+      ],
+      [
+        "DM_leuktrD4[bc]",
+        "Decreased (urine/blood/CSF)"
+      ],
+      [
+        "DM_leuktrE4[csf]",
+        "Decreased (urine/blood/CSF)"
+      ]
+    ],
+    "source_call_line": 1495
+  },
+  {
+    "iem": "MSUD",
+    "call_index": 36,
+    "include_patterns": [
+      "_r0670",
+      "_OIVD1m",
+      "_OIVD2m",
+      "_OIVD3m",
+      "_r0385",
+      "_r0386",
+      "_r1154"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_ile_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_3mop[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_ile_L[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_leu_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_val_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_3mop[bc]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 1539
+  },
+  {
+    "iem": "MMA",
+    "call_index": 37,
+    "include_patterns": [
+      "_MMMm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_3aib[u]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_c4dc[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_crn[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_HC00900[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_3hpp[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_pcrn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_3hdececrn[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 1590
+  },
+  {
+    "iem": "NAGS",
+    "call_index": 38,
+    "include_patterns": [
+      "_RE2030M",
+      "_RE2031M",
+      "_RE2032M",
+      "_RE2156M",
+      "_RE2223M",
+      "_ACGSm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_ala_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_citr_L[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_gln_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_nh4[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_orn[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_orot[u]",
+        "Decreased (urine)"
+      ]
+    ],
+    "source_call_line": 1636
+  },
+  {
+    "iem": "OTC",
+    "call_index": 39,
+    "include_patterns": [
+      "_OCBTm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_5oxpro[u]",
+        "Increased (transient, urine)"
+      ],
+      [
+        "EX_gly[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_lys_L[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_orot[u]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_citr_L[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_gln_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_ura[bc]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_nh4[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_orn[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 1710
+  },
+  {
+    "iem": "OROA",
+    "call_index": 40,
+    "include_patterns": [
+      "_ORPT",
+      "_OMPDC"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_orot[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_orot[bc]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 1745
+  },
+  {
+    "iem": "PKU",
+    "call_index": 41,
+    "include_patterns": [
+      "_PHETHPTOX2",
+      "_r0399"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_phe_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_2hyoxplac[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_phpyr[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 1782
+  },
+  {
+    "iem": "MNGIE",
+    "call_index": 42,
+    "include_patterns": [
+      "_TMDPP"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_duri[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_thymd[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 1818
+  },
+  {
+    "iem": "SUCLA",
+    "call_index": 43,
+    "include_patterns": [
+      "_ITCOALm",
+      "_MECOALm",
+      "_SUCOASm",
+      "_ITCOAL1m",
+      "_MECOAS1m",
+      "_SUCOAS1m"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_lac_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_pyr[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 1854
+  },
+  {
+    "iem": "SSADHD",
+    "call_index": 44,
+    "include_patterns": [
+      "_r0178"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_gly[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_sucsal[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_gly[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_sucsal[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_4abut[csf]",
+        "Increased (CSF)"
+      ]
+    ],
+    "source_call_line": 1896
+  },
+  {
+    "iem": "TETB",
+    "call_index": 45,
+    "include_patterns": [
+      "_GTPCIn",
+      "_r0120",
+      "_r0121",
+      "_r0708",
+      "_r0775",
+      "_r0777",
+      "_GTPCI",
+      "_TYR3MO2",
+      "_PHETHPTOX2",
+      "_Tetrahydrobiopterin"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_phe_L[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 1934
+  },
+  {
+    "iem": "CIT1",
+    "call_index": 46,
+    "include_patterns": [
+      "_ARGSS"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_citr_L[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_gly[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_nh4[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_orot[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_citr_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_gly[u]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 1978
+  },
+  {
+    "iem": "TYR1",
+    "call_index": 47,
+    "include_patterns": [
+      "_FUMAC"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_met_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_tyr_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_34hpl[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_34hpp[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 2018
+  },
+  {
+    "iem": "TYR3",
+    "call_index": 48,
+    "include_patterns": [
+      "_34HPPOR",
+      "_PPOR"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_tyr_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_34hpl[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_34hpp[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 2054
+  },
+  {
+    "iem": "XAN1",
+    "call_index": 49,
+    "include_patterns": [
+      "_r0395",
+      "_XANDp",
+      "_XAO2x",
+      "_XAOx",
+      "_r0394",
+      "_r0502",
+      "_r0504"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_hxan[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_xan[u]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "EX_urate[u]",
+        "Decreased (blood/urine)"
+      ],
+      [
+        "DM_xan[bc]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "DM_urate[bc]",
+        "Decreased (blood/urine)"
+      ]
+    ],
+    "source_call_line": 2093
+  },
+  {
+    "iem": "AKGD",
+    "call_index": 50,
+    "include_patterns": [
+      "_AKGDm",
+      "_2OXOADOXm",
+      "_r0163",
+      "_r0384",
+      "_r0451",
+      "_r0620"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_akg[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_lac_L[u]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "DM_lac_L[bc]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "DM_glu_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_gln_L[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 2134
+  },
+  {
+    "iem": "EP",
+    "call_index": 51,
+    "include_patterns": [
+      "_XYLUR"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_xylu_L[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 2182
+  },
+  {
+    "iem": "HYPVLI",
+    "call_index": 52,
+    "include_patterns": [
+      "_ILETAm",
+      "_LEUTAm",
+      "_VALTAm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_val_L[bc]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "EX_val_L[u]",
+        "Increased (blood/urine)"
+      ],
+      [
+        "EX_leu_L[u]",
+        "Increased (blood/urine)"
+      ]
+    ],
+    "source_call_line": 2221
+  },
+  {
+    "iem": "ASNSD",
+    "call_index": 53,
+    "include_patterns": [
+      "_ASNS1"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_asn_L[bc]",
+        "Decreased (blood/csf)"
+      ],
+      [
+        "DM_asn_L[csf]",
+        "Decreased (blood/csf)"
+      ],
+      [
+        "DM_gln_L[bc]",
+        "Increased (blood/csf)"
+      ],
+      [
+        "DM_gln_L[csf]",
+        "Increased (blood/csf)"
+      ]
+    ],
+    "source_call_line": 2265
+  },
+  {
+    "iem": "ASA",
+    "call_index": 54,
+    "include_patterns": [
+      "_ARGSL"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_argsuc[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_gly[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_orot[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_lys_L[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_ura[u]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_gln_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_citr_L[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 2311
+  },
+  {
+    "iem": "MMA",
+    "call_index": 55,
+    "include_patterns": [
+      "_CBLATm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_3aib[u]",
+        "Increased (urine)"
+      ],
+      [
+        "DM_c4dc[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_crn[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "DM_HC00900[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_3hpp[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 2357
+  },
+  {
+    "iem": "PC",
+    "call_index": 56,
+    "include_patterns": [
+      "_PCm"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_acac[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_ala_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_bhb[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_citr_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_lys_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_pro_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_lac_L[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_nh4[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "DM_glc_D[bc]",
+        "Decreased (blood)"
+      ],
+      [
+        "EX_fum[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_succ[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_acetone[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_akg[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_acac[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_bhb[u]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 2425
+  },
+  {
+    "iem": "PHOX1",
+    "call_index": 57,
+    "include_patterns": [
+      "_AGTix",
+      "_SPTix",
+      "_r0160"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_oxa[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_glyclt[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_glx[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 2446
+  },
+  {
+    "iem": "ADSL",
+    "call_index": 58,
+    "include_patterns": [
+      "_ADSL1",
+      "_ADSL2"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_25aics[u]",
+        "Increased (urine/csf)"
+      ],
+      [
+        "DM_Brain_25aics[c]",
+        "Increased (urine/csf)"
+      ]
+    ],
+    "source_call_line": 2481
+  },
+  {
+    "iem": "CD",
+    "call_index": 59,
+    "include_patterns": [
+      "_NACASPAH"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_25aics[u]",
+        "Increased (urine/csf)"
+      ],
+      [
+        "EX_Nacasp[u]",
+        "Increased (urine/csf/blood)"
+      ],
+      [
+        "DM_Nacasp[bc]",
+        "Increased (urine/csf/blood)"
+      ],
+      [
+        "DM_Nacasp[csf]",
+        "Increased (urine/csf/blood)"
+      ]
+    ],
+    "source_call_line": 2520
+  },
+  {
+    "iem": "HPC",
+    "call_index": 60,
+    "include_patterns": [
+      "_CPPPGO"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_25aics[u]",
+        "Increased (urine/csf)"
+      ],
+      [
+        "EX_C05770[u]",
+        "Increased (urine/csf/blood)"
+      ],
+      [
+        "DM_C05770[bc]",
+        "Increased (urine/csf/blood)"
+      ],
+      [
+        "DM_C05770[csf]",
+        "Increased (urine/csf/blood)"
+      ]
+    ],
+    "source_call_line": 2557
+  },
+  {
+    "iem": "HMET",
+    "call_index": 61,
+    "include_patterns": [
+      "_GNMT"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "EX_met_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "EX_hcys_L[u]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_hcys_L[bc]",
+        "Increased (urine/blood)"
+      ],
+      [
+        "DM_met_L[bc]",
+        "Increased (urine/blood)"
+      ]
+    ],
+    "source_call_line": 2597
+  },
+  {
+    "iem": "DESMO",
+    "call_index": 62,
+    "include_patterns": [
+      "_DHCR241r",
+      "_DHCR243r",
+      "_r0783",
+      "_r1380",
+      "_DSREDUCr",
+      "_HMR_1526",
+      "_RE3129N"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_dsmsterol[bc]",
+        "Increased (blood)"
+      ]
+    ],
+    "source_call_line": 2643
+  },
+  {
+    "iem": "2OAA",
+    "call_index": 63,
+    "include_patterns": [
+      "_2OXOADPTm",
+      "_2AMADPTm",
+      "_r0879"
+    ],
+    "exclude_patterns": [
+      "Micro_"
+    ],
+    "bound_tweaks": [],
+    "biomarkers": [
+      [
+        "DM_L2aadp[bc]",
+        "Increased (blood)"
+      ],
+      [
+        "EX_2oxoadp[u]",
+        "Increased (urine)"
+      ],
+      [
+        "EX_adpoh[u]",
+        "Increased (urine)"
+      ]
+    ],
+    "source_call_line": 2683
+  }
+]

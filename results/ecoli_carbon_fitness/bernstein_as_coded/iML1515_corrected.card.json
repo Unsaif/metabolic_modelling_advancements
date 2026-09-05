@@ -1,0 +1,315 @@
+{
+  "benchmark": "ecoli_carbon_fitness_v0 (Bernstein et al. 2023 protocol)",
+  "created": "2026-09-04T15:38:15Z",
+  "dataset_provenance": {
+    "dataset": "Fitness Browser RB-TnSeq gene fitness, E. coli BW25113 (orgId 'Keio')",
+    "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
+    "copy_obtained_from": "github.com/dbernste/E_coli_GEM_validation (MIT-licensed code; data redistributed there)",
+    "copy_commit": "7e34a7df9bc16b613ac9776e2cee27133528e4c2",
+    "selection": "bernstein2023",
+    "n_genes": "3789",
+    "n_carbon_sources": "27",
+    "n_experiments": "54",
+    "units": "log2 gene fitness (Fitness Browser convention); replicates averaged per carbon source",
+    "licence_note": "Fitness Browser data are publicly available; check fit.genomics.lbl.gov terms before redistribution."
+  },
+  "model": {
+    "model_id": "iML1515_corrected",
+    "file": "external/E_coli_GEM_validation/Analysis/iML1515_model_adjusted_all_corrections.xml",
+    "source": "Bernstein et al. 2023 iML1515 with all corrections (Analysis/iML1515_model_adjusted_all_corrections.xml)",
+    "version_note": "",
+    "n_reactions": 2714,
+    "n_metabolites": 1877,
+    "n_genes": 1516,
+    "sha256": "df10ea412e87327d08dda737934d8be64cfb0378e9faa3441b40f857f18e9707"
+  },
+  "protocol": {
+    "variant": "bernstein_as_coded",
+    "base_medium": {
+      "medium": "M9_minimal_noCarbon_BiGG",
+      "n_components": 23
+    },
+    "carbon_uptake": -10.0,
+    "growth_threshold": 0.001,
+    "fitness_threshold": -2.0,
+    "strain_adjustment": true,
+    "drop_rich_medium_essentials": true,
+    "rich_medium_uptake": -1000.0,
+    "carbon_sources_to_remove": [
+      "man",
+      "sucr"
+    ],
+    "keep_atpm": true,
+    "processes": 2,
+    "solver": "glpk"
+  },
+  "leakage": {
+    "ground_truth_used_in_model_curation": "yes \u2014 this model was corrected against this dataset (in-sample)",
+    "ground_truth_public_since": "2018 (Price et al., Nature; Fitness Browser)",
+    "frontier_model_training_exposure": "almost certainly present in pre-2026 training corpora (public TSVs, GitHub copies)",
+    "held_out_recommendation": "for any claim about model-driven curation, hold out organisms/conditions absent from the Fitness Browser at training cut-off, or use newly generated phenotypes",
+    "notes": [
+      "Sucrose/'man' exclusion: notebook comment says mannitol, code removes D-mannose ('man'); variant flag records which was used."
+    ]
+  },
+  "results": {
+    "aucpr_bernstein": {
+      "point": 0.7642940162026393,
+      "ci95": [
+        0.6853601561829478,
+        0.8309291000380492
+      ]
+    },
+    "aucpr_standard": {
+      "point": 0.5668779208878092,
+      "ci95": [
+        0.4859853814537711,
+        0.6462389998491415
+      ]
+    },
+    "auroc_standard": {
+      "point": 0.8186639065845487,
+      "ci95": [
+        0.7818875767351581,
+        0.8525744666833056
+      ]
+    },
+    "mcc": {
+      "point": 0.6642491670361856,
+      "ci95": [
+        0.596903229644515,
+        0.7257940574114938
+      ]
+    },
+    "balanced_accuracy": {
+      "point": 0.7917015817076392,
+      "ci95": [
+        0.7545253179587057,
+        0.8276013789401655
+      ]
+    },
+    "accuracy": {
+      "point": 0.9490196078431372,
+      "ci95": [
+        0.9394871794871795,
+        0.957317496229261
+      ]
+    },
+    "confusion_growth_vs_important": {
+      "tp": 29635,
+      "tn": 1825,
+      "fp": 1222,
+      "fn": 468
+    },
+    "counts": {
+      "model_genes": 1516,
+      "genes_matched": 1339,
+      "carbon_sources_in_data": 27,
+      "genes_after_adjustment": 1326,
+      "carbon_sources_after_adjustment": 25
+    },
+    "dropped_strain_genes": [
+      "b0061",
+      "b0344",
+      "b3902"
+    ],
+    "n_dropped_rich_medium_essentials": 10,
+    "dropped_carbon_sources": [
+      "man",
+      "sucr"
+    ],
+    "missing_medium_components": [],
+    "missing_carbon_exchanges": [],
+    "per_carbon_source": {
+      "ac": {
+        "aucpr_bernstein": 0.6841594117648498,
+        "mcc": 0.5875705139504301,
+        "wt_growth": 0.2103301248920697,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 145
+      },
+      "acgam": {
+        "aucpr_bernstein": 0.821905529396446,
+        "mcc": 0.696231872757012,
+        "wt_growth": 1.132495021667263,
+        "n_pred_no_growth": 92,
+        "n_exp_important": 115
+      },
+      "akg": {
+        "aucpr_bernstein": 0.6989860315780024,
+        "mcc": 0.5881771016267502,
+        "wt_growth": 0.5479681188785945,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 161
+      },
+      "fru": {
+        "aucpr_bernstein": 0.8425622010173524,
+        "mcc": 0.7203218090355493,
+        "wt_growth": 0.8779136052550914,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 105
+      },
+      "fuc__L": {
+        "aucpr_bernstein": 0.8074276350843961,
+        "mcc": 0.699287904273124,
+        "wt_growth": 0.8630311564716268,
+        "n_pred_no_growth": 93,
+        "n_exp_important": 107
+      },
+      "g6p": {
+        "aucpr_bernstein": 0.8558296127268207,
+        "mcc": 0.7357694952117583,
+        "wt_growth": 0.9061556574100683,
+        "n_pred_no_growth": 91,
+        "n_exp_important": 120
+      },
+      "gal": {
+        "aucpr_bernstein": 0.8135930355331392,
+        "mcc": 0.7327104272731548,
+        "wt_growth": 0.8684995878701002,
+        "n_pred_no_growth": 93,
+        "n_exp_important": 104
+      },
+      "galur": {
+        "aucpr_bernstein": 0.8398318146423648,
+        "mcc": 0.7618155564380585,
+        "wt_growth": 0.7054304339778888,
+        "n_pred_no_growth": 96,
+        "n_exp_important": 115
+      },
+      "gam": {
+        "aucpr_bernstein": 0.8379539264825754,
+        "mcc": 0.7234973246676616,
+        "wt_growth": 0.8782260821963465,
+        "n_pred_no_growth": 94,
+        "n_exp_important": 108
+      },
+      "glc__D": {
+        "aucpr_bernstein": 0.8183278571443495,
+        "mcc": 0.7242373418493859,
+        "wt_growth": 0.8779136052550812,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 104
+      },
+      "glcn": {
+        "aucpr_bernstein": 0.8271011964664949,
+        "mcc": 0.7363156541090093,
+        "wt_growth": 0.7979711039106979,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 101
+      },
+      "glcur": {
+        "aucpr_bernstein": 0.808753940281307,
+        "mcc": 0.8045361848185129,
+        "wt_growth": 0.7054304339777439,
+        "n_pred_no_growth": 95,
+        "n_exp_important": 98
+      },
+      "glyc": {
+        "aucpr_bernstein": 0.6570895752110734,
+        "mcc": 0.6269119464619014,
+        "wt_growth": 0.49523110614017946,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 100
+      },
+      "glyclt": {
+        "aucpr_bernstein": 0.6695069660809211,
+        "mcc": 0.6144290639387698,
+        "wt_growth": 0.15325242572260148,
+        "n_pred_no_growth": 93,
+        "n_exp_important": 164
+      },
+      "lac__D": {
+        "aucpr_bernstein": 0.7403392471254617,
+        "mcc": 0.6257595950716895,
+        "wt_growth": 0.37776834859818703,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 134
+      },
+      "mal__L": {
+        "aucpr_bernstein": 0.7414202581235169,
+        "mcc": 0.5642344656953223,
+        "wt_growth": 0.41159948861159706,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 168
+      },
+      "malt": {
+        "aucpr_bernstein": 0.7422209393305618,
+        "mcc": 0.6516517881677832,
+        "wt_growth": 1.7816592742146145,
+        "n_pred_no_growth": 96,
+        "n_exp_important": 130
+      },
+      "mnl": {
+        "aucpr_bernstein": 0.8254606389280127,
+        "mcc": 0.6934362886869432,
+        "wt_growth": 0.9438117269500472,
+        "n_pred_no_growth": 91,
+        "n_exp_important": 111
+      },
+      "pyr": {
+        "aucpr_bernstein": 0.7044499869128573,
+        "mcc": 0.6990299122725002,
+        "wt_growth": 0.31428552450589214,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 99
+      },
+      "rib__D": {
+        "aucpr_bernstein": 0.790214087998868,
+        "mcc": 0.6270975101167986,
+        "wt_growth": 0.6896332575551863,
+        "n_pred_no_growth": 91,
+        "n_exp_important": 132
+      },
+      "sbt__D": {
+        "aucpr_bernstein": 0.793511221730214,
+        "mcc": 0.6703659173297066,
+        "wt_growth": 0.943811726950036,
+        "n_pred_no_growth": 94,
+        "n_exp_important": 117
+      },
+      "ser__D": {
+        "aucpr_bernstein": 0.5938734410074936,
+        "mcc": 0.6072986287822036,
+        "wt_growth": 0.3183947727337138,
+        "n_pred_no_growth": 88,
+        "n_exp_important": 95
+      },
+      "succ": {
+        "aucpr_bernstein": 0.7189726804211589,
+        "mcc": 0.5764663958379557,
+        "wt_growth": 0.4505619544022241,
+        "n_pred_no_growth": 94,
+        "n_exp_important": 159
+      },
+      "tre": {
+        "aucpr_bernstein": 0.8086781635009053,
+        "mcc": 0.6738405193375201,
+        "wt_growth": 1.7816592829824585,
+        "n_pred_no_growth": 90,
+        "n_exp_important": 118
+      },
+      "xyl__D": {
+        "aucpr_bernstein": 0.7869890277222943,
+        "mcc": 0.6288759520249889,
+        "wt_growth": 0.7178753107145289,
+        "n_pred_no_growth": 92,
+        "n_exp_important": 137
+      }
+    },
+    "timings_s": {
+      "rich_medium_essentials_s": 4.684260129928589,
+      "knockout_simulation_s": 105.56063747406006,
+      "total_s": 110.49606323242188
+    }
+  },
+  "software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "warnings": []
+}

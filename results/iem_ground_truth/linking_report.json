@@ -1,0 +1,85 @@
+{
+  "n_rows": 279,
+  "n_iem_calls": 63,
+  "n_iem_calls_with_gene_symbol": 61,
+  "n_iem_calls_with_orpha": 58,
+  "n_iem_calls_with_omim": 57,
+  "n_iem_calls_with_hpo_metabolite_terms": 36,
+  "orpha_match_score_below_0.5": [
+    [
+      "CYP21D",
+      "Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency, salt wasting form",
+      0.488
+    ],
+    [
+      "DGK",
+      "Adult-onset multiple mitochondrial DNA deletion syndrome due to DGUOK deficiency",
+      0.404
+    ],
+    [
+      "SUCLA",
+      "Mitochondrial DNA depletion syndrome, encephalomyopathic form with methylmalonic aciduria",
+      0.288
+    ],
+    [
+      "CD",
+      "Mild Canavan disease",
+      0.191
+    ],
+    [
+      "HMET",
+      "S-adenosylhomocysteine hydrolase deficiency",
+      0.303
+    ]
+  ],
+  "unmapped_entrez": [
+    "1181",
+    "1538"
+  ],
+  "hpo_check_counts": {
+    "not_in_hpo_annotations": 106,
+    "corroborated": 39,
+    "no_hpo_metabolite_term_for_disorder": 122,
+    "corroborated_other_biofluid": 11,
+    "direction_conflict": 1
+  },
+  "n_hpo_tuples_not_in_lab_table": 99,
+  "vmh_metabolites_without_hmdb": [
+    "11docrtstrn",
+    "25aics",
+    "3bcrn",
+    "3hdececrn",
+    "3hivac",
+    "3ivcrn",
+    "3mglutac",
+    "3mglutr",
+    "Brain_25aics",
+    "CE2026",
+    "Lhcystin",
+    "acgly",
+    "adpoh",
+    "c4dc",
+    "c5dc",
+    "c6dc",
+    "caro",
+    "crtstrn",
+    "ddeccrn",
+    "ethmalac",
+    "ivcrn",
+    "leuktrD4",
+    "oxa",
+    "tag_hs",
+    "ttdcrn"
+  ],
+  "sources": {
+    "orphanet": "Orphadata (github.com/Orphanet/Orphadata_aggregated, CC-BY-4.0; product1/4/6 dated in file headers)",
+    "hpo": "HPO release 2026-09-01 (hp.obo) and phenotype.hpoa 2026-09-02",
+    "gene_mapping": "Human-GEM 2.0.0 model/genes.tsv (Entrez -> symbol)",
+    "metabolite_ids": "Recon3DModel_301.mat (opencobra/COBRA.models) metabolite annotations"
+  },
+  "method_caveats": [
+    "Orphanet disorder chosen per IEM by best name similarity among disorders linked to the causal gene; low scores flagged.",
+    "HPO term parsing is heuristic (regex on term names); 'corroborated' means an HPO term for the chosen disorder names the same metabolite with the same biofluid and direction; absence is not evidence against the lab's tuple.",
+    "HPO annotations describe patients; the model tests exchange/demand reactions \u2014 a biofluid mismatch is expected for some."
+  ]
+}

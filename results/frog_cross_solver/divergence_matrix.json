@@ -1,0 +1,29 @@
+[
+  {
+    "model_id": "iJR904",
+    "a": "cobrapy/glpk",
+    "b": "cobrapy/hybrid",
+    "objective_abs_diff": 5.325739849126876e-13,
+    "objective_rel_diff": 5.776615709404154e-13,
+    "objective_agree": true,
+    "gene_deletion_n": 904,
+    "gene_deletion_max_abs_diff": 2.994716530313468e-09,
+    "gene_deletion_n_exceeding_tol": 0,
+    "gene_deletion_growth_call_disagreements": 0,
+    "reaction_deletion_n": 600,
+    "reaction_deletion_max_abs_diff": 2.4611943378340746e-10,
+    "reaction_deletion_n_exceeding_tol": 0,
+    "reaction_deletion_growth_call_disagreements": 0,
+    "fva_n": 300,
+    "fva_max_abs_diff": 4.5614481680722463e-07,
+    "fva_n_exceeding_1e-6": 0,
+    "fva_n_exceeding_1e-3": 0,
+    "file": "models/iJR904.xml",
+    "n_reactions": 1075,
+    "n_genes": 904,
+    "objective_glpk": 0.9219480950504734,
+    "objective_hybrid": 0.921948095051006,
+    "seconds": 71.82163739204407,
+    "error": ""
+  }
+]
