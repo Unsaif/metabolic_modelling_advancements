@@ -1,0 +1,371 @@
+{
+  "role": "Post-outcome numerical sensitivity prompted by parent rerun; not a replacement primary analysis.",
+  "input_sha256": {
+    "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/scripts/audit_growth_rank_stability.py": "109c67da8a6ef4876431dfa1c132b7904ad0f21f3766c93886a1e3fd75e5fd08",
+    "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/scripts/verify_quinone_repair.py": "3c755f688addb6021c0452e32964af62b88a8c708aebc6b07d18212a8cc9ec5b",
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/matrices.npz": "beb0968c872bf07109e043802b6fbfa2b2b2e9c99aaa695a2ee464edf813c4d6",
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/card.json": "a2eb91d981614486bf419f1f51ca04f79bc1b72a355fb7255ecc318b287339bc",
+    "results/ppnp_repair_2026_09_06/runs/main/parent/matrices.npz": "f3d1fe3e9f81c3608ebd2362a3249a456758cdb6fb6288bf1d8d0b7c6c0d9cf2",
+    "results/ppnp_repair_2026_09_06/runs/main/parent/card.json": "118cc401b87c8e468c855e37c0c10386a641bd1c1e9a7b3c8b8474721e5f4f4f"
+  },
+  "quanta": [
+    1e-12,
+    1e-10,
+    1e-09,
+    1e-08,
+    1e-07,
+    1e-06
+  ],
+  "runs": [
+    {
+      "run": "results/quinone_repair_2026_09_06/runs/main/curated_path_template",
+      "sensitivity": [
+        {
+          "policy": "raw",
+          "quantum": null,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4068463340637922,
+            "auroc_standard": 0.7612254584454324,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-12,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41761131427953285,
+            "auroc_standard": 0.7613598043732144,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-10,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4167031378863282,
+            "auroc_standard": 0.7613874555237508,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-09,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4167031378863282,
+            "auroc_standard": 0.7613874555237508,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-08,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4167031378863282,
+            "auroc_standard": 0.7613874555237508,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-07,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4167031378863282,
+            "auroc_standard": 0.7613874555237508,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-06,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4167031378863282,
+            "auroc_standard": 0.7613874555237508,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-12,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41560023730235923,
+            "auroc_standard": 0.76139432667899,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-10,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4148101301817112,
+            "auroc_standard": 0.7614613512143431,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-09,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41481013018171126,
+            "auroc_standard": 0.7614613584547596,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-08,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41481013018171126,
+            "auroc_standard": 0.7614613584547596,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-07,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41481013018171137,
+            "auroc_standard": 0.7614613584547596,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-06,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41481012223715547,
+            "auroc_standard": 0.7614629658272181,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        }
+      ]
+    },
+    {
+      "run": "results/ppnp_repair_2026_09_06/runs/main/parent",
+      "sensitivity": [
+        {
+          "policy": "raw",
+          "quantum": null,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4015875293193779,
+            "auroc_standard": 0.7612094716058451,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-12,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4200542495910419,
+            "auroc_standard": 0.7614824570283816,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-10,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4168719627316294,
+            "auroc_standard": 0.7614965758405172,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-09,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4168719627316294,
+            "auroc_standard": 0.7614965758405172,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-08,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4168719627316294,
+            "auroc_standard": 0.7614965758405172,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-07,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4168719627316294,
+            "auroc_standard": 0.7614965758405172,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "zero_band",
+          "quantum": 1e-06,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4168719627316294,
+            "auroc_standard": 0.7614965758405172,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-12,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4174456342498729,
+            "auroc_standard": 0.761444596890609,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-10,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.4149782849382454,
+            "auroc_standard": 0.7614656737429816,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-09,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41481013018171126,
+            "auroc_standard": 0.7614613584547596,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-08,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41481013018171126,
+            "auroc_standard": 0.7614613584547596,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-07,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41481013018171137,
+            "auroc_standard": 0.7614613584547596,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        },
+        {
+          "policy": "round_to_quantum",
+          "quantum": 1e-06,
+          "metrics": {
+            "aucpr_bernstein": 0.4993917181792725,
+            "aucpr_standard": 0.41481012223715547,
+            "auroc_standard": 0.7614629658272181,
+            "mcc": 0.5743840077803017,
+            "balanced_accuracy": 0.7635920899376731,
+            "accuracy": 0.9569638743749649
+          },
+          "changed_binary_predictions": 0
+        }
+      ]
+    }
+  ],
+  "interpretation": "No precision policy is selected using these scores. Small growth perturbations can reorder tied or nearly tied examples; binary threshold decisions are audited separately. Neither rounding nor near-zero clamping establishes biochemical validity.",
+  "bootstrap_intervals_recomputed": false
+}

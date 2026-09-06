@@ -1,0 +1,732 @@
+{
+  "study": {
+    "evaluation_role": "development",
+    "organism": "Putida",
+    "protocol": {
+      "processes": 2,
+      "solver": "glpk",
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "carbon_uptake": -10.0,
+      "complete_medium_transport": true,
+      "drop_rich_medium_essentials": false
+    },
+    "physical_condition": {
+      "name": "D-Glucose",
+      "media": "MOPS minimal media_noCarbon"
+    },
+    "physical_settings": {
+      "feasibility_tolerance": 1e-09,
+      "production_capacity": 1000.0,
+      "production_threshold": 1e-06,
+      "egc_threshold": 1e-06,
+      "residual_tolerance": 1e-08
+    },
+    "pool_weights": {
+      "q8_c": 1.0,
+      "q8h2_c": 1.0
+    },
+    "study_id": "putida-ppnp-repair-v1",
+    "question": "Does a homology-supported nucleoside phosphorolysis route remove the structural ribokinase requirement while retaining quinone demand, and which unsupported assumptions remain?",
+    "base_model": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+    "base_model_sha256": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+    "parent_manifest": "results/quinone_repair_2026_09_06/runs/main/manifest.json",
+    "candidate_path": "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json",
+    "evidence_directory": "results/ppnp_repair_2026_09_06/evidence",
+    "sequence_evidence": "docs/evidence/11-putida-ppnp-candidate.md",
+    "study_definition": "docs/studies/ppnp-repair-v1.md",
+    "configurations": [
+      {
+        "id": "parent",
+        "substrates": [],
+        "close_rhcys": false,
+        "direction": "forward",
+        "run_benchmark": true
+      },
+      {
+        "id": "adenosine_forward",
+        "substrates": [
+          "adenosine"
+        ],
+        "close_rhcys": false,
+        "direction": "forward",
+        "run_benchmark": false
+      },
+      {
+        "id": "inosine_forward",
+        "substrates": [
+          "inosine"
+        ],
+        "close_rhcys": false,
+        "direction": "forward",
+        "run_benchmark": false
+      },
+      {
+        "id": "both_forward",
+        "substrates": [
+          "adenosine",
+          "inosine"
+        ],
+        "close_rhcys": false,
+        "direction": "forward",
+        "run_benchmark": true
+      },
+      {
+        "id": "parent_rhcys_closed",
+        "substrates": [],
+        "close_rhcys": true,
+        "direction": "forward",
+        "run_benchmark": false
+      },
+      {
+        "id": "both_forward_rhcys_closed",
+        "substrates": [
+          "adenosine",
+          "inosine"
+        ],
+        "close_rhcys": true,
+        "direction": "forward",
+        "run_benchmark": true
+      },
+      {
+        "id": "both_reversible",
+        "substrates": [
+          "adenosine",
+          "inosine"
+        ],
+        "close_rhcys": false,
+        "direction": "reversible",
+        "run_benchmark": true
+      }
+    ],
+    "targeted_gene_loci": [
+      "PP_2458",
+      "PP_4248",
+      "PP_1777",
+      "PP_4976",
+      "PP_0591",
+      "PP_2460",
+      "PP_3254",
+      "PP_5317"
+    ],
+    "mechanistic_cases": [
+      {
+        "id": "wild_type",
+        "loci": []
+      },
+      {
+        "id": "rbk",
+        "loci": [
+          "PP_2458"
+        ],
+        "probe_quinone": true
+      },
+      {
+        "id": "rbk_ppnp",
+        "loci": [
+          "PP_2458",
+          "PP_4248"
+        ]
+      },
+      {
+        "id": "rbk_ppm",
+        "loci": [
+          "PP_2458",
+          "PP_1777"
+        ]
+      },
+      {
+        "id": "rbk_ahcy",
+        "loci": [
+          "PP_2458",
+          "PP_4976"
+        ]
+      },
+      {
+        "id": "rbk_ada",
+        "loci": [
+          "PP_2458",
+          "PP_0591"
+        ]
+      },
+      {
+        "id": "rbk_insh",
+        "loci": [
+          "PP_2458",
+          "PP_2460"
+        ]
+      },
+      {
+        "id": "rbk_added_closed",
+        "loci": [
+          "PP_2458"
+        ],
+        "close_added_reactions": true
+      }
+    ],
+    "witness_reactions": [
+      "Growth",
+      "RBK",
+      "AHCi",
+      "AHCYSNS",
+      "RHCYS",
+      "ADA",
+      "INSH",
+      "PUNP1",
+      "PUNP5",
+      "PPM",
+      "PNP",
+      "RNMK",
+      "NMNN",
+      "PYNP2r",
+      "NP1",
+      "OHPHM",
+      "OMBZLM",
+      "DMQMT",
+      "CHRPL",
+      "ATPM",
+      "EX_pi_e"
+    ],
+    "comparison": {
+      "primary": "Both forward phosphorolyses versus the fresh parent rerun; other scored arms are predeclared sensitivity comparisons on common finite observations where both wild types grow.",
+      "resamples": 500,
+      "seed": 0,
+      "bootstrap_unit": "gene"
+    },
+    "benchmark_scope": "Four complete benchmark reruns. Single-substrate and parent-RHCYS-closure arms are physical diagnostics only; no benchmark equivalence is asserted for unscored arms.",
+    "decision_rule": "Preserve every arm and failure. Do not alter reactions, bounds, gene assignments, biomass or media in response to these outcomes. Do not promote a provisional model to the historical patch series. Report prediction changes, new gene coverage and mechanisms including adverse changes.",
+    "caveats": [
+      "Hypothesis selected after inspecting previous development errors; all phenotype data remain exposed development data, not independent validation.",
+      "PpnP substrate assays concern E. coli; KT2440 PP_4248 is an exact sequence match to a homology-only annotation, not direct catalytic validation.",
+      "Primary PUNP1/PUNP5 directions permit phosphorolysis only; source reversibility is a separate sensitivity because the original supplement contradicts itself about reverse catalysis.",
+      "Existing PPM PP_1777 substrate assignment is provisional; another pre-existing ATP-dependent salvage route may bypass it.",
+      "RHCYS closure is a sensitivity to questionable historical chemistry, not proof that KT2440 lacks all relevant enzymatic activity.",
+      "Parent quinone tail length, demand amount, hydroxylase reducing donors, upstream assumptions and zero ATP-maintenance lower bound are inherited unresolved limitations.",
+      "Reaction capacities of 1000 are modelling conventions, not measured enzyme capacities.",
+      "Missing exported fitness rows do not establish mutant-library absence, essentiality or dispensability."
+    ]
+  },
+  "study_fingerprint": "ec7dc1dfdb7eed71276dd3c84d33984340c44d68203bf18b5aeb46efecdb2ede",
+  "runs": [
+    {
+      "arm": "parent",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.49939171817927247,
+          "ci95": [
+            0.37068562579727654,
+            0.6129579853699584
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.4015875293193779,
+          "ci95": [
+            0.30155842576315894,
+            0.5137033774925877
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7612094716058451,
+          "ci95": [
+            0.706722238547088,
+            0.8104559470164255
+          ]
+        },
+        "mcc": {
+          "point": 0.5743840077803017,
+          "ci95": [
+            0.4732650060238629,
+            0.6638506181132247
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7635920899376731,
+          "ci95": [
+            0.7113446599802316,
+            0.810082289393381
+          ]
+        },
+        "accuracy": {
+          "point": 0.9569638743749649,
+          "ci95": [
+            0.9467743974380584,
+            0.9658850216304287
+          ]
+        },
+        "confusion": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "counts": {
+        "model_genes": 1305,
+        "model_genes_mapped": 1304,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "arm": "both_forward",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5081152768302855,
+          "ci95": [
+            0.3865200114755869,
+            0.6266372910169251
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.42093393048979577,
+          "ci95": [
+            0.3195217660707329,
+            0.5383910942221558
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7618373170804713,
+          "ci95": [
+            0.7076102839784454,
+            0.8117904581996614
+          ]
+        },
+        "mcc": {
+          "point": 0.5809810273578062,
+          "ci95": [
+            0.47880462645824307,
+            0.6753080722899805
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7640989625337553,
+          "ci95": [
+            0.712351250391891,
+            0.8105645084970208
+          ]
+        },
+        "accuracy": {
+          "point": 0.9579189842125962,
+          "ci95": [
+            0.9482112759143773,
+            0.9673886173380527
+          ]
+        },
+        "confusion": {
+          "tp": 32978,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 561
+        }
+      },
+      "counts": {
+        "model_genes": 1306,
+        "model_genes_mapped": 1305,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "arm": "both_forward_rhcys_closed",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5081152768302855,
+          "ci95": [
+            0.3865200114755869,
+            0.6266372910169251
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.41107900535196257,
+          "ci95": [
+            0.3089711146953494,
+            0.5268684473600408
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7617802046752788,
+          "ci95": [
+            0.7075729503003891,
+            0.8118054802191582
+          ]
+        },
+        "mcc": {
+          "point": 0.5809810273578062,
+          "ci95": [
+            0.47880462645824307,
+            0.6753080722899805
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7640989625337553,
+          "ci95": [
+            0.712351250391891,
+            0.8105645084970208
+          ]
+        },
+        "accuracy": {
+          "point": 0.9579189842125962,
+          "ci95": [
+            0.9482112759143773,
+            0.9673886173380527
+          ]
+        },
+        "confusion": {
+          "tp": 32978,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 561
+        }
+      },
+      "counts": {
+        "model_genes": 1306,
+        "model_genes_mapped": 1305,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "arm": "both_reversible",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5081152768302855,
+          "ci95": [
+            0.3865200114755869,
+            0.6266372910169251
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.4145224420894052,
+          "ci95": [
+            0.31304766700472036,
+            0.5373942414450098
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7617163948848427,
+          "ci95": [
+            0.7075918336851593,
+            0.8117279846713484
+          ]
+        },
+        "mcc": {
+          "point": 0.5809810273578062,
+          "ci95": [
+            0.47880462645824307,
+            0.6753080722899805
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7640989625337553,
+          "ci95": [
+            0.712351250391891,
+            0.8105645084970208
+          ]
+        },
+        "accuracy": {
+          "point": 0.9579189842125962,
+          "ci95": [
+            0.9482112759143773,
+            0.9673886173380527
+          ]
+        },
+        "confusion": {
+          "tp": 32978,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 561
+        }
+      },
+      "counts": {
+        "model_genes": 1306,
+        "model_genes_mapped": 1305,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "arm": "both_forward",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5743840077803017,
+        "B": 0.5809810273578062
+      },
+      "confusion": {
+        "A": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        },
+        "B": {
+          "tp": 32978,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 561
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.00659701957750447,
+        "ci95": [
+          0.0,
+          0.022116646864455032
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    },
+    {
+      "arm": "both_forward_rhcys_closed",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5743840077803017,
+        "B": 0.5809810273578062
+      },
+      "confusion": {
+        "A": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        },
+        "B": {
+          "tp": 32978,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 561
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.00659701957750447,
+        "ci95": [
+          0.0,
+          0.022116646864455032
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    },
+    {
+      "arm": "both_reversible",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5743840077803017,
+        "B": 0.5809810273578062
+      },
+      "confusion": {
+        "A": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        },
+        "B": {
+          "tp": 32978,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 561
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.00659701957750447,
+        "ci95": [
+          0.0,
+          0.022116646864455032
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    }
+  ],
+  "n_changed_gene_condition_predictions": 102,
+  "seconds": 776.4281659126282
+}

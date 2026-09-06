@@ -1,0 +1,775 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-09-06T12:43:10Z",
+  "plan": {
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_role": "development",
+    "note": "Frozen before real model interventions/solves. Hypothesis arose after previous development outcomes; this is not preregistration or independent validation.",
+    "paths": [
+      "data/fitness_browser/Putida/experiments.tsv",
+      "data/fitness_browser/Putida/fit_logratios.tsv",
+      "data/fitness_browser/Putida/genes.tsv",
+      "data/fitness_browser/Putida/specific_phenotypes.tsv",
+      "data/genpept/Putida_genpept_map.tsv",
+      "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz",
+      "data/reference/feba_media_extract.tsv",
+      "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "data/reference/fitness_browser_media_bigg.tsv",
+      "data/reference/gpr_patches_v0.2.json",
+      "data/reference/gpr_patches_v0.3.json",
+      "data/reference/gpr_patches_v0.4.json",
+      "data/reference/model_patches_v0.4.json",
+      "data/reference/universe_patches_v0.1.json",
+      "data/studies/exposure_registry_v1.json",
+      "data/studies/ppnp_repair_v1.json",
+      "data/studies/quinone_repair_v1.json",
+      "docs/evidence/10-putida-ribosyl-disposal-sources.md",
+      "docs/evidence/11-putida-ppnp-candidate.md",
+      "docs/studies/ppnp-repair-v1.md",
+      "gembench/__init__.py",
+      "gembench/cards.py",
+      "gembench/checks.py",
+      "gembench/cofactor.py",
+      "gembench/comparison.py",
+      "gembench/datasets.py",
+      "gembench/fitness_browser.py",
+      "gembench/frog.py",
+      "gembench/gapfill.py",
+      "gembench/gene_mapping.py",
+      "gembench/media.py",
+      "gembench/metrics.py",
+      "gembench/patches.py",
+      "gembench/protocols/__init__.py",
+      "gembench/protocols/carbon_fitness_generic.py",
+      "gembench/protocols/ecoli_carbon_fitness.py",
+      "gembench/protocols/yeast_essential.py",
+      "gembench/study.py",
+      "gembench/survey.py",
+      "gembench/wbm.py",
+      "gembench/wbm_iem.py",
+      "models/bigg/iJN1463.xml",
+      "models/gapfilled/Putida.xml.gz",
+      "models/gapfilled/Putida_gapfill.json",
+      "requirements-audit.txt",
+      "results/ppnp_repair_2026_09_06/evidence/design_review.md",
+      "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.py",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537.html",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_rule.txt",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_signature.html",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/P0C037.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_NC0029474.gb",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_uniprot.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP4248_NC0029474.gb",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Q88F51.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0032542781_retry.fasta",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0109528141.fasta",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Ye1994_pubmed.xml",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals_followup.json",
+      "results/ppnp_repair_2026_09_06/evidence/source/APACHE-2.0.txt",
+      "results/ppnp_repair_2026_09_06/evidence/source/CARVEME_LICENSE",
+      "results/ppnp_repair_2026_09_06/evidence/source/NOTICE",
+      "results/ppnp_repair_2026_09_06/evidence/source/license_sources.json",
+      "results/ppnp_repair_2026_09_06/evidence/source/universe_bacteria.xml.gz",
+      "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.json",
+      "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.md",
+      "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+      "results/quinone_repair_2026_09_06/evidence/postrun_dependency_trace.json",
+      "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+      "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+      "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json",
+      "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+      "results/quinone_repair_2026_09_06/runs/main/manifest.json",
+      "results/ribosyl_disposal_2026_09_06/evidence/source_evidence.json",
+      "scripts/diagnose_quinone_producibility.py",
+      "scripts/map_ppnp_candidates.py",
+      "scripts/map_quinone_pathway.py",
+      "scripts/run_carbon_fitness_generic.py",
+      "scripts/run_ppnp_repair.py",
+      "scripts/run_quinone_biomass_sensitivity.py",
+      "scripts/run_quinone_repair.py",
+      "scripts/verify_quinone_repair_solvers.py",
+      "tests/test_ppnp_repair.py"
+    ],
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "recipe": {
+      "base_model": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+      "base_model_sha256": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+      "benchmark_scope": "Four complete benchmark reruns. Single-substrate and parent-RHCYS-closure arms are physical diagnostics only; no benchmark equivalence is asserted for unscored arms.",
+      "candidate_path": "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json",
+      "caveats": [
+        "Hypothesis selected after inspecting previous development errors; all phenotype data remain exposed development data, not independent validation.",
+        "PpnP substrate assays concern E. coli; KT2440 PP_4248 is an exact sequence match to a homology-only annotation, not direct catalytic validation.",
+        "Primary PUNP1/PUNP5 directions permit phosphorolysis only; source reversibility is a separate sensitivity because the original supplement contradicts itself about reverse catalysis.",
+        "Existing PPM PP_1777 substrate assignment is provisional; another pre-existing ATP-dependent salvage route may bypass it.",
+        "RHCYS closure is a sensitivity to questionable historical chemistry, not proof that KT2440 lacks all relevant enzymatic activity.",
+        "Parent quinone tail length, demand amount, hydroxylase reducing donors, upstream assumptions and zero ATP-maintenance lower bound are inherited unresolved limitations.",
+        "Reaction capacities of 1000 are modelling conventions, not measured enzyme capacities.",
+        "Missing exported fitness rows do not establish mutant-library absence, essentiality or dispensability."
+      ],
+      "comparison": {
+        "bootstrap_unit": "gene",
+        "primary": "Both forward phosphorolyses versus the fresh parent rerun; other scored arms are predeclared sensitivity comparisons on common finite observations where both wild types grow.",
+        "resamples": 500,
+        "seed": 0
+      },
+      "configurations": [
+        {
+          "close_rhcys": false,
+          "direction": "forward",
+          "id": "parent",
+          "run_benchmark": true,
+          "substrates": []
+        },
+        {
+          "close_rhcys": false,
+          "direction": "forward",
+          "id": "adenosine_forward",
+          "run_benchmark": false,
+          "substrates": [
+            "adenosine"
+          ]
+        },
+        {
+          "close_rhcys": false,
+          "direction": "forward",
+          "id": "inosine_forward",
+          "run_benchmark": false,
+          "substrates": [
+            "inosine"
+          ]
+        },
+        {
+          "close_rhcys": false,
+          "direction": "forward",
+          "id": "both_forward",
+          "run_benchmark": true,
+          "substrates": [
+            "adenosine",
+            "inosine"
+          ]
+        },
+        {
+          "close_rhcys": true,
+          "direction": "forward",
+          "id": "parent_rhcys_closed",
+          "run_benchmark": false,
+          "substrates": []
+        },
+        {
+          "close_rhcys": true,
+          "direction": "forward",
+          "id": "both_forward_rhcys_closed",
+          "run_benchmark": true,
+          "substrates": [
+            "adenosine",
+            "inosine"
+          ]
+        },
+        {
+          "close_rhcys": false,
+          "direction": "reversible",
+          "id": "both_reversible",
+          "run_benchmark": true,
+          "substrates": [
+            "adenosine",
+            "inosine"
+          ]
+        }
+      ],
+      "decision_rule": "Preserve every arm and failure. Do not alter reactions, bounds, gene assignments, biomass or media in response to these outcomes. Do not promote a provisional model to the historical patch series. Report prediction changes, new gene coverage and mechanisms including adverse changes.",
+      "evaluation_role": "development",
+      "evidence_directory": "results/ppnp_repair_2026_09_06/evidence",
+      "mechanistic_cases": [
+        {
+          "id": "wild_type",
+          "loci": []
+        },
+        {
+          "id": "rbk",
+          "loci": [
+            "PP_2458"
+          ],
+          "probe_quinone": true
+        },
+        {
+          "id": "rbk_ppnp",
+          "loci": [
+            "PP_2458",
+            "PP_4248"
+          ]
+        },
+        {
+          "id": "rbk_ppm",
+          "loci": [
+            "PP_2458",
+            "PP_1777"
+          ]
+        },
+        {
+          "id": "rbk_ahcy",
+          "loci": [
+            "PP_2458",
+            "PP_4976"
+          ]
+        },
+        {
+          "id": "rbk_ada",
+          "loci": [
+            "PP_2458",
+            "PP_0591"
+          ]
+        },
+        {
+          "id": "rbk_insh",
+          "loci": [
+            "PP_2458",
+            "PP_2460"
+          ]
+        },
+        {
+          "close_added_reactions": true,
+          "id": "rbk_added_closed",
+          "loci": [
+            "PP_2458"
+          ]
+        }
+      ],
+      "organism": "Putida",
+      "parent_manifest": "results/quinone_repair_2026_09_06/runs/main/manifest.json",
+      "physical_condition": {
+        "media": "MOPS minimal media_noCarbon",
+        "name": "D-Glucose"
+      },
+      "physical_settings": {
+        "egc_threshold": 1e-06,
+        "feasibility_tolerance": 1e-09,
+        "production_capacity": 1000.0,
+        "production_threshold": 1e-06,
+        "residual_tolerance": 1e-08
+      },
+      "pool_weights": {
+        "q8_c": 1.0,
+        "q8h2_c": 1.0
+      },
+      "protocol": {
+        "carbon_uptake": -10.0,
+        "complete_medium_transport": true,
+        "drop_rich_medium_essentials": false,
+        "fitness_threshold": -2.0,
+        "growth_threshold": 0.001,
+        "processes": 2,
+        "solver": "glpk"
+      },
+      "question": "Does a homology-supported nucleoside phosphorolysis route remove the structural ribokinase requirement while retaining quinone demand, and which unsupported assumptions remain?",
+      "sequence_evidence": "docs/evidence/11-putida-ppnp-candidate.md",
+      "study_definition": "docs/studies/ppnp-repair-v1.md",
+      "study_id": "putida-ppnp-repair-v1",
+      "targeted_gene_loci": [
+        "PP_2458",
+        "PP_4248",
+        "PP_1777",
+        "PP_4976",
+        "PP_0591",
+        "PP_2460",
+        "PP_3254",
+        "PP_5317"
+      ],
+      "witness_reactions": [
+        "Growth",
+        "RBK",
+        "AHCi",
+        "AHCYSNS",
+        "RHCYS",
+        "ADA",
+        "INSH",
+        "PUNP1",
+        "PUNP5",
+        "PPM",
+        "PNP",
+        "RNMK",
+        "NMNN",
+        "PYNP2r",
+        "NP1",
+        "OHPHM",
+        "OMBZLM",
+        "DMQMT",
+        "CHRPL",
+        "ATPM",
+        "EX_pi_e"
+      ]
+    },
+    "runtime_versions": {
+      "cobra": "0.32.1",
+      "glpk": "5.0",
+      "highs": "1.15.1",
+      "numpy": "2.5.2",
+      "optlang": "1.9.1",
+      "python": "3.14.3",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.1"
+    },
+    "schema_version": 1,
+    "study_id": "putida-ppnp-repair-v1"
+  },
+  "files": [
+    {
+      "path": "data/fitness_browser/Putida/experiments.tsv",
+      "size_bytes": 159990,
+      "sha256": "6f1ba8542a731706fff59b121ccd51306fcd249d3cfeb9fa4d3f4c23970794c8"
+    },
+    {
+      "path": "data/fitness_browser/Putida/fit_logratios.tsv",
+      "size_bytes": 10099508,
+      "sha256": "28f422b3aca5e0e4a8730bb7efbb97c177c7fe672b5180455d3494f474ca170e"
+    },
+    {
+      "path": "data/fitness_browser/Putida/genes.tsv",
+      "size_bytes": 464829,
+      "sha256": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e"
+    },
+    {
+      "path": "data/fitness_browser/Putida/specific_phenotypes.tsv",
+      "size_bytes": 346478,
+      "sha256": "31d857c63073569a6b01a4b6a121bf2ebc5f8226ba201c440b528835a0fca37d"
+    },
+    {
+      "path": "data/genpept/Putida_genpept_map.tsv",
+      "size_bytes": 160473,
+      "sha256": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128"
+    },
+    {
+      "path": "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz",
+      "size_bytes": 262118,
+      "sha256": "bea517eccadcaa280228c75551ee4d641e7eadb3509532377943e7ca89355f0e"
+    },
+    {
+      "path": "data/reference/feba_media_extract.tsv",
+      "size_bytes": 5517,
+      "sha256": "365168bd92db7aa049b20b2f5ad45f79740bd0f7a52e8d650332c80bdd409225"
+    },
+    {
+      "path": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "size_bytes": 5499,
+      "sha256": "43ed695ca0201e778bc738d2d582dad7e7a498b64d5ccf64c3b496be686e4da4"
+    },
+    {
+      "path": "data/reference/fitness_browser_media_bigg.tsv",
+      "size_bytes": 3452,
+      "sha256": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.2.json",
+      "size_bytes": 13517,
+      "sha256": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.3.json",
+      "size_bytes": 43124,
+      "sha256": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.4.json",
+      "size_bytes": 5205,
+      "sha256": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7"
+    },
+    {
+      "path": "data/reference/model_patches_v0.4.json",
+      "size_bytes": 36453,
+      "sha256": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190"
+    },
+    {
+      "path": "data/reference/universe_patches_v0.1.json",
+      "size_bytes": 7146,
+      "sha256": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe"
+    },
+    {
+      "path": "data/studies/exposure_registry_v1.json",
+      "size_bytes": 1192,
+      "sha256": "7519f099a63c95b6b5a9cdc8e14066255e72016a1c577ea92b4b231714823fc4"
+    },
+    {
+      "path": "data/studies/ppnp_repair_v1.json",
+      "size_bytes": 5915,
+      "sha256": "68bb055c36f7b475c293824f1d362d132faa70fbd97bb8bb95b4902db9985b92"
+    },
+    {
+      "path": "data/studies/quinone_repair_v1.json",
+      "size_bytes": 4979,
+      "sha256": "1e809398f565b1104feb0a8d0aa88ca18c323097aa191ecb4ec23692342d7d79"
+    },
+    {
+      "path": "docs/evidence/10-putida-ribosyl-disposal-sources.md",
+      "size_bytes": 9204,
+      "sha256": "40157bcb05db6403e4ccdd9354d908e473118847147081614f717caba0a1c4de"
+    },
+    {
+      "path": "docs/evidence/11-putida-ppnp-candidate.md",
+      "size_bytes": 8020,
+      "sha256": "7921237dbf755b0aba4eb5dd0d5f70eece94c8399131ce3c81a0be1d085e73d2"
+    },
+    {
+      "path": "docs/studies/ppnp-repair-v1.md",
+      "size_bytes": 4939,
+      "sha256": "7ccad99046f42310f4334a63e3f1f08f90ee02e2484d0e3d8176ea35abfdb108"
+    },
+    {
+      "path": "gembench/__init__.py",
+      "size_bytes": 368,
+      "sha256": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9"
+    },
+    {
+      "path": "gembench/cards.py",
+      "size_bytes": 6172,
+      "sha256": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d"
+    },
+    {
+      "path": "gembench/checks.py",
+      "size_bytes": 2761,
+      "sha256": "0c1bcb3ed1b55379533374bc5d481247dbf9c40a01efb9a495fb92d3a356a51a"
+    },
+    {
+      "path": "gembench/cofactor.py",
+      "size_bytes": 7428,
+      "sha256": "f8e428196dae2ab37b8c5b9fdf95907fd3f904c5ac8f59f7fd2a1a5eb97aa334"
+    },
+    {
+      "path": "gembench/comparison.py",
+      "size_bytes": 4052,
+      "sha256": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8"
+    },
+    {
+      "path": "gembench/datasets.py",
+      "size_bytes": 6578,
+      "sha256": "1223ac48c5f31fabf93d9a48f21211e2739f34385b879d531b1cdc261279f490"
+    },
+    {
+      "path": "gembench/fitness_browser.py",
+      "size_bytes": 8512,
+      "sha256": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c"
+    },
+    {
+      "path": "gembench/frog.py",
+      "size_bytes": 6840,
+      "sha256": "883b0b90e8c8c84377b72a34ca486cc9a6909d343c444c3972dbe94113c95308"
+    },
+    {
+      "path": "gembench/gapfill.py",
+      "size_bytes": 13625,
+      "sha256": "eaf202021dbc1f0d2a76668f5da11e992d7b0a374c264dd056866b448165ab63"
+    },
+    {
+      "path": "gembench/gene_mapping.py",
+      "size_bytes": 4495,
+      "sha256": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2"
+    },
+    {
+      "path": "gembench/media.py",
+      "size_bytes": 2920,
+      "sha256": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe"
+    },
+    {
+      "path": "gembench/metrics.py",
+      "size_bytes": 5535,
+      "sha256": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3"
+    },
+    {
+      "path": "gembench/patches.py",
+      "size_bytes": 8733,
+      "sha256": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8"
+    },
+    {
+      "path": "gembench/protocols/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gembench/protocols/carbon_fitness_generic.py",
+      "size_bytes": 12798,
+      "sha256": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303"
+    },
+    {
+      "path": "gembench/protocols/ecoli_carbon_fitness.py",
+      "size_bytes": 6930,
+      "sha256": "5a8994541a2248b575f64bdda58dfed939b69af0bbe0cc9a7bb9ef254163f31a"
+    },
+    {
+      "path": "gembench/protocols/yeast_essential.py",
+      "size_bytes": 4629,
+      "sha256": "e9e156ad108fd26185940ef10663ad3bb78dd13c7d3fa084bcbd3ac019c1e517"
+    },
+    {
+      "path": "gembench/study.py",
+      "size_bytes": 17496,
+      "sha256": "b3911b98e65dbaaf2635cc5a8d3aacd4c71ab614dafc44e2817f5df8b0742733"
+    },
+    {
+      "path": "gembench/survey.py",
+      "size_bytes": 4910,
+      "sha256": "2699d790764a1a3ee1de686b800d1be63fb20fb39d312f9cb695f843ac879019"
+    },
+    {
+      "path": "gembench/wbm.py",
+      "size_bytes": 10661,
+      "sha256": "c525a92e917a58d440c4d38544dc1aecdfd44b51e847f8eaae3e6d53ceaf67fb"
+    },
+    {
+      "path": "gembench/wbm_iem.py",
+      "size_bytes": 17337,
+      "sha256": "a525260933ddbf0fd6124475a972b546d0dac95636b426b505c8328106129b72"
+    },
+    {
+      "path": "models/bigg/iJN1463.xml",
+      "size_bytes": 10702784,
+      "sha256": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1"
+    },
+    {
+      "path": "models/gapfilled/Putida.xml.gz",
+      "size_bytes": 189469,
+      "sha256": "378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739"
+    },
+    {
+      "path": "models/gapfilled/Putida_gapfill.json",
+      "size_bytes": 969,
+      "sha256": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2"
+    },
+    {
+      "path": "requirements-audit.txt",
+      "size_bytes": 708,
+      "sha256": "f242faf03ecdd36f9dfbbc54838318556badc4cd653461460a2e3e3866b36260"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/design_review.md",
+      "size_bytes": 11102,
+      "sha256": "f959eae34352834da44ec5d2f5bc6daf77d2c81a62660639fc8d6ed268f38493"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json",
+      "size_bytes": 48066,
+      "sha256": "2f120fd6e75614659898566c51b47dac135b286b67a3587a93b34b314ee0d9c8"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.json",
+      "size_bytes": 31986,
+      "sha256": "beaca4312a88f122fa33b5c1ea50d59a09e31f44dbf47569e0135a85e676d3f7"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.py",
+      "size_bytes": 10620,
+      "sha256": "ed40298a453dbdcfc3327f068548f04b77e6956e99b7a486039ac3a152f579e1"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537.html",
+      "size_bytes": 23015,
+      "sha256": "808a98748f0b4f4596c2e19907de1c7114ab5d7310db5dbcf264d6a1ade6200f"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_rule.txt",
+      "size_bytes": 3347,
+      "sha256": "d8c91ec49545a79b26006121744b42836a3542e813fba918a83e6d4925c58dac"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_signature.html",
+      "size_bytes": 15642,
+      "sha256": "f084877e64b139bdc12062b68751e218f085478e203d8e6bd41f970049e8ee77"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/P0C037.json",
+      "size_bytes": 21357,
+      "sha256": "01548b1e3468c516ccabfcde565b6ed539b90004bf11a5829d287399115a72ee"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_NC0029474.gb",
+      "size_bytes": 8821,
+      "sha256": "51c6b8ebcffd442decff4259d330af35fb15e3d4d86bc35123be1f23db8dc494"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_uniprot.json",
+      "size_bytes": 12108,
+      "sha256": "7ea18def652a7709c6ca54268751e1a90403e8cc569fb701df3f3a5ea4cbebee"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP4248_NC0029474.gb",
+      "size_bytes": 7329,
+      "sha256": "8dbe67ac46e84eceadbca4177b81c2a750d52609a59869256ab3162e0eed3b15"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Q88F51.json",
+      "size_bytes": 11955,
+      "sha256": "701bfc29b0aece76f5f2eef3a0eff67868c14b764a46243ed65976e97e7c47d6"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0032542781_retry.fasta",
+      "size_bytes": 184,
+      "sha256": "cd08a9591e040873f362d3ac3911db3eeb9e57bf2518709c5250a2a391b30de5"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0109528141.fasta",
+      "size_bytes": 549,
+      "sha256": "8ba2e1ed5debafdc559e25863426266936ca640a3e0a47b7f4149dd6ee8a342f"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Ye1994_pubmed.xml",
+      "size_bytes": 14392,
+      "sha256": "02a3b4ecc1606a75b846feeb1a9bcd9ef775d457864238cf39039584be17ab34"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals.json",
+      "size_bytes": 3539,
+      "sha256": "49c9709b4afba2db418795ea4ea43f2cc25761e736ca40ebed9f24428a9abda6"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals_followup.json",
+      "size_bytes": 1739,
+      "sha256": "44ff88dc71dcf68ee7eefccbaf309a824366537a426ca9fe993d5d03c1e1bc13"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/APACHE-2.0.txt",
+      "size_bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/CARVEME_LICENSE",
+      "size_bytes": 587,
+      "sha256": "998d33f42059ebf207638e19fd77dd5f119708723224b3738e366d43973a6276"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/NOTICE",
+      "size_bytes": 3748,
+      "sha256": "e131408c9a4ab421dcbe8654b3004e00b135b490336cab44944b2e48b839a9a8"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/license_sources.json",
+      "size_bytes": 666,
+      "sha256": "ddfd3bf76790750eb5bffbd977e3bfb3f12e4e4a400a4e6168cca3d7846e6724"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/universe_bacteria.xml.gz",
+      "size_bytes": 595770,
+      "sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.json",
+      "size_bytes": 11798,
+      "sha256": "6cb63b0f2b679b000bdfa1aaa6fa778496eb6aac02f1ea8f91e89282b1d144bf"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.md",
+      "size_bytes": 5650,
+      "sha256": "6e2c570c6499f4c40c19de1c155bec68456ac10d2db93594bfe7803b668a68bc"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+      "size_bytes": 29523,
+      "sha256": "bee13fe5ebcc6f7ba98bf93c2ab99cccbf978f7308ddba0c8361a99a7ffcdb87"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/postrun_dependency_trace.json",
+      "size_bytes": 41760,
+      "sha256": "9851f802242512435a0882d437d36c6e12edfe79959a5715bea4363fb6507555"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+      "size_bytes": 28431,
+      "sha256": "ff58aaaf7e9eb57c793042e934a34ea264c4ad9430d13978d5a44b706599d65f"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+      "size_bytes": 244380,
+      "sha256": "49014f81058862e3a24a57f060b03f44dc635d85a08c977b1ea9c88de9218709"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json",
+      "size_bytes": 39722,
+      "sha256": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+      "size_bytes": 206220,
+      "sha256": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/manifest.json",
+      "size_bytes": 18024,
+      "sha256": "65a92c2a37def7f5c32c6a5bf177f277fcd874df63a84b5be33725c08c21d92d"
+    },
+    {
+      "path": "results/ribosyl_disposal_2026_09_06/evidence/source_evidence.json",
+      "size_bytes": 38936,
+      "sha256": "5518bd06c30777f1297947d95a9329f2f13356a7131637f8afdf7515e481c9f6"
+    },
+    {
+      "path": "scripts/diagnose_quinone_producibility.py",
+      "size_bytes": 18852,
+      "sha256": "7cf4282cfed98ba5e0ca64e1373dcc94c0a024f2870878f8056f60157c306bed"
+    },
+    {
+      "path": "scripts/map_ppnp_candidates.py",
+      "size_bytes": 13959,
+      "sha256": "00934f12059487d7ae2a0d953e47f4c03d6ade342addf10fbef5d7710d3da452"
+    },
+    {
+      "path": "scripts/map_quinone_pathway.py",
+      "size_bytes": 16101,
+      "sha256": "07a690e749e6ff05b318fab8c0cc05e6d20a1b15a502f8b275b569927e1e2088"
+    },
+    {
+      "path": "scripts/run_carbon_fitness_generic.py",
+      "size_bytes": 16091,
+      "sha256": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc"
+    },
+    {
+      "path": "scripts/run_ppnp_repair.py",
+      "size_bytes": 19428,
+      "sha256": "9796085083bd1a70e9fafc146a676885d5b6d743e841899ab948771d5bb224bc"
+    },
+    {
+      "path": "scripts/run_quinone_biomass_sensitivity.py",
+      "size_bytes": 8778,
+      "sha256": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d"
+    },
+    {
+      "path": "scripts/run_quinone_repair.py",
+      "size_bytes": 29176,
+      "sha256": "4bf0e9992d07001143a86189d8f969ddd5b821e3a158ae9fc7e1af4706e6782c"
+    },
+    {
+      "path": "scripts/verify_quinone_repair_solvers.py",
+      "size_bytes": 19124,
+      "sha256": "03fe1447d6a162c46ef02a43955ea734eeb71fd53d303d1dd62b13e867ee2cc0"
+    },
+    {
+      "path": "tests/test_ppnp_repair.py",
+      "size_bytes": 5570,
+      "sha256": "12a96a6a24190af27c3addefaafb4b13dce7d3ec77a19e80ba611e59985f7361"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "b5c540d45230cf542a4e35dff9f89fd1021df0a5",
+    "dirty": true,
+    "tracked_changes": [],
+    "untracked_paths": [
+      "scripts/verify_ppnp_repair.py"
+    ],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "ec7dc1dfdb7eed71276dd3c84d33984340c44d68203bf18b5aeb46efecdb2ede",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}

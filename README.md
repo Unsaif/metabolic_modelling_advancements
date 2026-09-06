@@ -10,6 +10,8 @@ The follow-up development sprint completes both existing patch configurations ac
 
 The **[quinone repair sprint](docs/sprints/2026-09-06-quinone-repair.md)** supplies a source-derived five-reaction candidate that restores net synthesis and permits growth with a quinone requirement. That requirement also creates 65 new disagreements with measured gene fitness, so the candidate is not accepted as a biological correction. The sprint includes explicit gene-evidence grades, a coverage audit, saved candidate models, independent numerical/metric verification and reusable [cofactor checks](docs/studies/cofactor-audit-method.md).
 
+The **[PpnP recycling sprint](docs/sprints/2026-09-06-ppnp-repair.md)** tests a source-supported explanation for 34 of those disagreements. Two provisional nucleoside recycling reactions remove the ribokinase dependency while preserving quinone demand; all 34 changed predictions agree with the exposed development measurements. The other 31 quinone-related disagreements remain. Controls recover the predicted dependency when the new route is disabled. The enzyme assignment remains inferred from homology, and neither the new gene nor a key upstream gene has an exported fitness row. A separate [numerical audit](docs/studies/growth-rank-numerics.md) shows why small changes in raw ranking scores require caution even when all binary predictions reproduce.
+
 Then read **`docs/roadmap/00-landscape-and-roadmap.md`** — the standing charter: where the field
 stands in 2026, the diagnosis, the workstreams, the decision log, and the current sprint. The
 `docs/evidence/` briefs hold the sourced findings behind it; `docs/sprints/` holds the results of

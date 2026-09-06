@@ -1,0 +1,18 @@
+{
+  "configuration": {
+    "id": "parent",
+    "substrates": [],
+    "close_rhcys": false,
+    "direction": "forward",
+    "run_benchmark": true
+  },
+  "source_reactions": [],
+  "added_reaction_records": [],
+  "closed_reactions": [],
+  "gene_aliases": {
+    "PP_4248": "PP_4248"
+  },
+  "evidence_grade": "KT2440 function by homology; E. coli substrate assays",
+  "target_charge_note": "Preserved historical zero placeholders; source Pi and r1p charges are -2.",
+  "biomass_unchanged": true
+}

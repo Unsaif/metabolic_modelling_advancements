@@ -1,0 +1,13 @@
+{
+  "valid": true,
+  "n_arms": 7,
+  "n_cases": 147,
+  "n_skipped": 4,
+  "n_solver_runs": 286,
+  "failed_cases": [],
+  "max_solver_objective_disagreement": 2.6677438036415424e-11,
+  "max_independent_mass_balance_residual": 8.066615864860127e-10,
+  "max_independent_bound_violation": 5.884814767955954e-11,
+  "n_solver_runs_without_full_finite_certificate": 0,
+  "limitations": "Independent GLPK/HiGHS agreement and primal feasibility for seven saved physical arms, represented single-gene deletions, mechanistic restrictions and production probes. No fitness values parsed or energy probes re-solved; no exact optimality, enzyme validation or independent biological performance claim. Saved partial flux witnesses do not permit reconstruction of their whole-model residual; selected fluxes can differ between equally optimal solutions."
+}

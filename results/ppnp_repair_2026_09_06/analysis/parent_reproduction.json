@@ -1,0 +1,44 @@
+{
+  "role": "Numerical reproducibility of an exposed development parent, not independent biological validation",
+  "source_paths": [
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template",
+    "results/ppnp_repair_2026_09_06/runs/main/parent"
+  ],
+  "inputs": {
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/matrices.npz": "beb0968c872bf07109e043802b6fbfa2b2b2e9c99aaa695a2ee464edf813c4d6",
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/card.json": "a2eb91d981614486bf419f1f51ca04f79bc1b72a355fb7255ecc318b287339bc",
+    "results/ppnp_repair_2026_09_06/runs/main/parent/matrices.npz": "f3d1fe3e9f81c3608ebd2362a3249a456758cdb6fb6288bf1d8d0b7c6c0d9cf2",
+    "results/ppnp_repair_2026_09_06/runs/main/parent/card.json": "118cc401b87c8e468c855e37c0c10386a641bd1c1e9a7b3c8b8474721e5f4f4f"
+  },
+  "arrays": {
+    "sim_growth": {
+      "shape_equal": true,
+      "finite_mask_equal": true,
+      "maximum_absolute_difference": 6.001776853281626e-11,
+      "equal_with_atol_1e-9": true
+    },
+    "wt_growth": {
+      "shape_equal": true,
+      "finite_mask_equal": true,
+      "maximum_absolute_difference": 0.0,
+      "equal_with_atol_1e-9": true
+    },
+    "fitness": {
+      "shape_equal": true,
+      "finite_mask_equal": true,
+      "maximum_absolute_difference": 0.0,
+      "equal_with_atol_1e-9": true
+    },
+    "model_genes": {
+      "identical_labels": true
+    },
+    "browser_genes": {
+      "identical_labels": true
+    },
+    "conditions": {
+      "identical_labels": true
+    }
+  },
+  "binary_growth_predictions_identical": true,
+  "gene_score_identical": false
+}

@@ -1,0 +1,141 @@
+{
+  "role": "Post-outcome cross-study attribution, exposed development observations",
+  "input_sha256": {
+    "results/quinone_repair_2026_09_06/runs/main/changed_predictions.json": "755357c0017112e76b3d7c849d5092398e1568a016e7e4a94d57b95a15bfc2e2",
+    "results/ppnp_repair_2026_09_06/runs/main/changed_predictions.json": "080c99891dfca639584d040f86d5d3f464ef731f71d60a55107cbeb5d676ad26"
+  },
+  "previous_arm": "curated_path_template",
+  "new_primary_arm": "both_forward",
+  "n_previous_changes": 65,
+  "n_reversed_to_original_binary_prediction": 34,
+  "n_all_reversals_agree_with_measured_fitness": 34,
+  "recovered_gene": "PP_2458",
+  "remaining_previous_disagreements": [
+    {
+      "gene": "PP_5317",
+      "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Butanol | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "D-Glucose | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "D-Glucose | RCH2_defined_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Decanoic acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Ethanol | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Hexanoic acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "L-Arginine | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "L-Histidine | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "L-Isoleucine | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "L-Leucine | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "L-Lysine | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "L-Valine | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Lauric acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Myristic acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Octanoic acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Oleic acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Phenylacetic acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Potassium acetate | RCH2_defined_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Protocatechuic Acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Sodium butyrate | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Sodium propionate | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Vanillic Acid | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Vanillin | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "Vanillin | RCH2_defined_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon"
+    },
+    {
+      "gene": "PP_5317",
+      "condition": "benzoic acid | MOPS minimal media_noCarbon"
+    }
+  ],
+  "no_additional_primary_binary_changes": true,
+  "note": "The 34 recoveries concern one gene across 34 conditions, not 34 independent genes."
+}

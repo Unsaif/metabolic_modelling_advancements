@@ -1,0 +1,818 @@
+[
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+    "before": -5.864921817692707e-16,
+    "after": 0.6742982156523446,
+    "fitness": -0.182
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+    "before": 0.0,
+    "after": 0.7157983324390675,
+    "fitness": 0.2705
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Butanol | MOPS minimal media_noCarbon",
+    "before": -1.080591207463534e-16,
+    "after": 0.7277443887695567,
+    "fitness": 0.0475
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+    "before": -5.086334413392545e-16,
+    "after": 0.7649047922107448,
+    "fitness": 0.3735
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "D-Glucose | MOPS minimal media_noCarbon",
+    "before": 2.908478200422921e-16,
+    "after": 0.919264794238936,
+    "fitness": 0.04800000000000001
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "D-Glucose | RCH2_defined_noCarbon",
+    "before": 2.7591057492999715e-15,
+    "after": 0.9197612011769951,
+    "fitness": 0.036833333333333336
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+    "before": -6.45420121735275e-16,
+    "after": 0.7649047922107497,
+    "fitness": 0.07
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Decanoic acid | MOPS minimal media_noCarbon",
+    "before": -8.866125150893786e-16,
+    "after": 1.7932526016390467,
+    "fitness": -0.07150000000000001
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Ethanol | MOPS minimal media_noCarbon",
+    "before": 6.594718591050422e-17,
+    "after": 0.36387219438478086,
+    "fitness": -0.013500000000000005
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+    "before": 3.994080449160207e-16,
+    "after": 1.000654766660462,
+    "fitness": -0.128
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "L-Arginine | MOPS minimal media_noCarbon",
+    "before": 1.0239367130262827e-15,
+    "after": 0.8941814045533987,
+    "fitness": 0.168
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+    "before": 2.16137704001132e-16,
+    "after": 0.6846720343546692,
+    "fitness": 0.09533333333333334
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "L-Histidine | MOPS minimal media_noCarbon",
+    "before": 4.678078333722094e-15,
+    "after": 0.771961875687953,
+    "fitness": 0.072
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "L-Isoleucine | MOPS minimal media_noCarbon",
+    "before": 5.388143863449182e-16,
+    "after": 0.9990610404133888,
+    "fitness": 0.4125
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "L-Leucine | MOPS minimal media_noCarbon",
+    "before": 2.0860009007248962e-17,
+    "after": 0.9728525814150815,
+    "fitness": 0.48650000000000004
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "L-Lysine | MOPS minimal media_noCarbon",
+    "before": 2.1026521163890014e-15,
+    "after": 0.745780849398163,
+    "fitness": 0.3133333333333333
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "L-Valine | MOPS minimal media_noCarbon",
+    "before": 7.697594512432755e-16,
+    "after": 0.7770254376414568,
+    "fitness": 0.6335
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Lauric acid | MOPS minimal media_noCarbon",
+    "before": -1.376618042067174e-15,
+    "after": 2.1832331663086757,
+    "fitness": 0.026500000000000003
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Myristic acid | MOPS minimal media_noCarbon",
+    "before": -2.344465015356386e-16,
+    "after": 2.547105360693452,
+    "fitness": 0.1255
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Octanoic acid | MOPS minimal media_noCarbon",
+    "before": -9.274017877326934e-16,
+    "after": 1.3969536841497363,
+    "fitness": -0.048
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Oleic acid | MOPS minimal media_noCarbon",
+    "before": 7.563272803419972e-16,
+    "after": 3.2748497494630304,
+    "fitness": 0.036
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Phenylacetic acid | MOPS minimal media_noCarbon",
+    "before": -3.1876396827914993e-16,
+    "after": 1.1193031892249201,
+    "fitness": 0.3045
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Potassium acetate | RCH2_defined_noCarbon",
+    "before": -8.216234403727642e-18,
+    "after": 0.24775048355708174,
+    "fitness": 0.13874999999999998
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Protocatechuic Acid | MOPS minimal media_noCarbon",
+    "before": -2.8777222848778035e-16,
+    "after": 0.7879655553373315,
+    "fitness": 0.2755
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+    "before": -1.2886979631414265e-16,
+    "after": 0.6043558491711691,
+    "fitness": 0.26999999999999996
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Sodium propionate | MOPS minimal media_noCarbon",
+    "before": 3.8267754964035066e-16,
+    "after": 0.3995999839176498,
+    "fitness": 0.30400000000000005
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+    "before": -9.531865380117099e-17,
+    "after": 0.4979432977124976,
+    "fitness": 0.017
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Vanillic Acid | MOPS minimal media_noCarbon",
+    "before": 1.1384521234597933e-15,
+    "after": 0.8612053884989123,
+    "fitness": 0.387
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Vanillin | MOPS minimal media_noCarbon",
+    "before": -4.091044063027217e-16,
+    "after": 0.9212894853709179,
+    "fitness": 0.4355
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "Vanillin | RCH2_defined_noCarbon",
+    "before": 2.1540570162852002e-15,
+    "after": 0.9218157571925245,
+    "fitness": 0.265
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+    "before": -5.210424399614351e-16,
+    "after": 0.6120553034382855,
+    "fitness": 0.06
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "benzoic acid | MOPS minimal media_noCarbon",
+    "before": 1.229396583461506e-16,
+    "after": 0.7984952110750577,
+    "fitness": 0.09766666666666668
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "p-Coumaric acid | MOPS minimal media_noCarbon",
+    "before": -2.682635098962502e-16,
+    "after": 1.0074059424219761,
+    "fitness": 0.2775
+  },
+  {
+    "arm": "both_forward",
+    "gene": "PP_2458",
+    "condition": "p-Coumaric acid | RCH2_defined_noCarbon",
+    "before": -7.418326210963235e-16,
+    "after": 1.0079710711601195,
+    "fitness": 0.2895
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+    "before": -5.864921817692707e-16,
+    "after": 0.6742982156523429,
+    "fitness": -0.182
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+    "before": 0.0,
+    "after": 0.7157983324390507,
+    "fitness": 0.2705
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Butanol | MOPS minimal media_noCarbon",
+    "before": -1.080591207463534e-16,
+    "after": 0.7277443887695649,
+    "fitness": 0.0475
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+    "before": -5.086334413392545e-16,
+    "after": 0.7649047922107485,
+    "fitness": 0.3735
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "D-Glucose | MOPS minimal media_noCarbon",
+    "before": 2.908478200422921e-16,
+    "after": 0.9192647942389238,
+    "fitness": 0.04800000000000001
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "D-Glucose | RCH2_defined_noCarbon",
+    "before": 2.7591057492999715e-15,
+    "after": 0.9197612011769895,
+    "fitness": 0.036833333333333336
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+    "before": -6.45420121735275e-16,
+    "after": 0.7649047922107371,
+    "fitness": 0.07
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Decanoic acid | MOPS minimal media_noCarbon",
+    "before": -8.866125150893786e-16,
+    "after": 1.7932526016390236,
+    "fitness": -0.07150000000000001
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Ethanol | MOPS minimal media_noCarbon",
+    "before": 6.594718591050422e-17,
+    "after": 0.3638721943847819,
+    "fitness": -0.013500000000000005
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+    "before": 3.994080449160207e-16,
+    "after": 1.0006547666604482,
+    "fitness": -0.128
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "L-Arginine | MOPS minimal media_noCarbon",
+    "before": 1.0239367130262827e-15,
+    "after": 0.8941814045533835,
+    "fitness": 0.168
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+    "before": 2.16137704001132e-16,
+    "after": 0.6846720343546694,
+    "fitness": 0.09533333333333334
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "L-Histidine | MOPS minimal media_noCarbon",
+    "before": 4.678078333722094e-15,
+    "after": 0.7719618756879355,
+    "fitness": 0.072
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "L-Isoleucine | MOPS minimal media_noCarbon",
+    "before": 5.388143863449182e-16,
+    "after": 0.9990610404133893,
+    "fitness": 0.4125
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "L-Leucine | MOPS minimal media_noCarbon",
+    "before": 2.0860009007248962e-17,
+    "after": 0.9728525814151667,
+    "fitness": 0.48650000000000004
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "L-Lysine | MOPS minimal media_noCarbon",
+    "before": 2.1026521163890014e-15,
+    "after": 0.7457808493981833,
+    "fitness": 0.3133333333333333
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "L-Valine | MOPS minimal media_noCarbon",
+    "before": 7.697594512432755e-16,
+    "after": 0.7770254376414446,
+    "fitness": 0.6335
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Lauric acid | MOPS minimal media_noCarbon",
+    "before": -1.376618042067174e-15,
+    "after": 2.183233166308677,
+    "fitness": 0.026500000000000003
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Myristic acid | MOPS minimal media_noCarbon",
+    "before": -2.344465015356386e-16,
+    "after": 2.5471053606934753,
+    "fitness": 0.1255
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Octanoic acid | MOPS minimal media_noCarbon",
+    "before": -9.274017877326934e-16,
+    "after": 1.396953684149756,
+    "fitness": -0.048
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Oleic acid | MOPS minimal media_noCarbon",
+    "before": 7.563272803419972e-16,
+    "after": 3.2748497494630526,
+    "fitness": 0.036
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Phenylacetic acid | MOPS minimal media_noCarbon",
+    "before": -3.1876396827914993e-16,
+    "after": 1.1193031892249268,
+    "fitness": 0.3045
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Potassium acetate | RCH2_defined_noCarbon",
+    "before": -8.216234403727642e-18,
+    "after": 0.24775048355708246,
+    "fitness": 0.13874999999999998
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Protocatechuic Acid | MOPS minimal media_noCarbon",
+    "before": -2.8777222848778035e-16,
+    "after": 0.7879655553373258,
+    "fitness": 0.2755
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+    "before": -1.2886979631414265e-16,
+    "after": 0.6043558491711659,
+    "fitness": 0.26999999999999996
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Sodium propionate | MOPS minimal media_noCarbon",
+    "before": 3.8267754964035066e-16,
+    "after": 0.3995999839176494,
+    "fitness": 0.30400000000000005
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+    "before": -9.531865380117099e-17,
+    "after": 0.4979432977125016,
+    "fitness": 0.017
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Vanillic Acid | MOPS minimal media_noCarbon",
+    "before": 1.1384521234597933e-15,
+    "after": 0.8612053884989125,
+    "fitness": 0.387
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Vanillin | MOPS minimal media_noCarbon",
+    "before": -4.091044063027217e-16,
+    "after": 0.9212894853709428,
+    "fitness": 0.4355
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "Vanillin | RCH2_defined_noCarbon",
+    "before": 2.1540570162852002e-15,
+    "after": 0.9218157571925375,
+    "fitness": 0.265
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+    "before": -5.210424399614351e-16,
+    "after": 0.6120553034382844,
+    "fitness": 0.06
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "benzoic acid | MOPS minimal media_noCarbon",
+    "before": 1.229396583461506e-16,
+    "after": 0.7984952110750495,
+    "fitness": 0.09766666666666668
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "p-Coumaric acid | MOPS minimal media_noCarbon",
+    "before": -2.682635098962502e-16,
+    "after": 1.0074059424219592,
+    "fitness": 0.2775
+  },
+  {
+    "arm": "both_forward_rhcys_closed",
+    "gene": "PP_2458",
+    "condition": "p-Coumaric acid | RCH2_defined_noCarbon",
+    "before": -7.418326210963235e-16,
+    "after": 1.007971071160084,
+    "fitness": 0.2895
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+    "before": -5.864921817692707e-16,
+    "after": 0.674298215652346,
+    "fitness": -0.182
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+    "before": 0.0,
+    "after": 0.7157983324390464,
+    "fitness": 0.2705
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Butanol | MOPS minimal media_noCarbon",
+    "before": -1.080591207463534e-16,
+    "after": 0.7277443887695606,
+    "fitness": 0.0475
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+    "before": -5.086334413392545e-16,
+    "after": 0.7649047922107517,
+    "fitness": 0.3735
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "D-Glucose | MOPS minimal media_noCarbon",
+    "before": 2.908478200422921e-16,
+    "after": 0.9192647942389413,
+    "fitness": 0.04800000000000001
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "D-Glucose | RCH2_defined_noCarbon",
+    "before": 2.7591057492999715e-15,
+    "after": 0.919761201176999,
+    "fitness": 0.036833333333333336
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+    "before": -6.45420121735275e-16,
+    "after": 0.7649047922107323,
+    "fitness": 0.07
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Decanoic acid | MOPS minimal media_noCarbon",
+    "before": -8.866125150893786e-16,
+    "after": 1.7932526016390333,
+    "fitness": -0.07150000000000001
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Ethanol | MOPS minimal media_noCarbon",
+    "before": 6.594718591050422e-17,
+    "after": 0.36387219438477963,
+    "fitness": -0.013500000000000005
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+    "before": 3.994080449160207e-16,
+    "after": 1.0006547666604584,
+    "fitness": -0.128
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "L-Arginine | MOPS minimal media_noCarbon",
+    "before": 1.0239367130262827e-15,
+    "after": 0.8941814045533842,
+    "fitness": 0.168
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+    "before": 2.16137704001132e-16,
+    "after": 0.6846720343546647,
+    "fitness": 0.09533333333333334
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "L-Histidine | MOPS minimal media_noCarbon",
+    "before": 4.678078333722094e-15,
+    "after": 0.7719618756879555,
+    "fitness": 0.072
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "L-Isoleucine | MOPS minimal media_noCarbon",
+    "before": 5.388143863449182e-16,
+    "after": 0.9990610404133805,
+    "fitness": 0.4125
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "L-Leucine | MOPS minimal media_noCarbon",
+    "before": 2.0860009007248962e-17,
+    "after": 0.9728525814150756,
+    "fitness": 0.48650000000000004
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "L-Lysine | MOPS minimal media_noCarbon",
+    "before": 2.1026521163890014e-15,
+    "after": 0.7457808493981746,
+    "fitness": 0.3133333333333333
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "L-Valine | MOPS minimal media_noCarbon",
+    "before": 7.697594512432755e-16,
+    "after": 0.7770254376414543,
+    "fitness": 0.6335
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Lauric acid | MOPS minimal media_noCarbon",
+    "before": -1.376618042067174e-15,
+    "after": 2.1832331663086846,
+    "fitness": 0.026500000000000003
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Myristic acid | MOPS minimal media_noCarbon",
+    "before": -2.344465015356386e-16,
+    "after": 2.5471053606934464,
+    "fitness": 0.1255
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Octanoic acid | MOPS minimal media_noCarbon",
+    "before": -9.274017877326934e-16,
+    "after": 1.3969536841497352,
+    "fitness": -0.048
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Oleic acid | MOPS minimal media_noCarbon",
+    "before": 7.563272803419972e-16,
+    "after": 3.274849749463007,
+    "fitness": 0.036
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Phenylacetic acid | MOPS minimal media_noCarbon",
+    "before": -3.1876396827914993e-16,
+    "after": 1.1193031892249141,
+    "fitness": 0.3045
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Potassium acetate | RCH2_defined_noCarbon",
+    "before": -8.216234403727642e-18,
+    "after": 0.24775048355708598,
+    "fitness": 0.13874999999999998
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Protocatechuic Acid | MOPS minimal media_noCarbon",
+    "before": -2.8777222848778035e-16,
+    "after": 0.7879655553373169,
+    "fitness": 0.2755
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+    "before": -1.2886979631414265e-16,
+    "after": 0.6043558491711607,
+    "fitness": 0.26999999999999996
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Sodium propionate | MOPS minimal media_noCarbon",
+    "before": 3.8267754964035066e-16,
+    "after": 0.3995999839176509,
+    "fitness": 0.30400000000000005
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+    "before": -9.531865380117099e-17,
+    "after": 0.4979432977125015,
+    "fitness": 0.017
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Vanillic Acid | MOPS minimal media_noCarbon",
+    "before": 1.1384521234597933e-15,
+    "after": 0.8612053884989194,
+    "fitness": 0.387
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Vanillin | MOPS minimal media_noCarbon",
+    "before": -4.091044063027217e-16,
+    "after": 0.9212894853709316,
+    "fitness": 0.4355
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "Vanillin | RCH2_defined_noCarbon",
+    "before": 2.1540570162852002e-15,
+    "after": 0.9218157571925414,
+    "fitness": 0.265
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+    "before": -5.210424399614351e-16,
+    "after": 0.6120553034382669,
+    "fitness": 0.06
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "benzoic acid | MOPS minimal media_noCarbon",
+    "before": 1.229396583461506e-16,
+    "after": 0.798495211075054,
+    "fitness": 0.09766666666666668
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "p-Coumaric acid | MOPS minimal media_noCarbon",
+    "before": -2.682635098962502e-16,
+    "after": 1.007405942421974,
+    "fitness": 0.2775
+  },
+  {
+    "arm": "both_reversible",
+    "gene": "PP_2458",
+    "condition": "p-Coumaric acid | RCH2_defined_noCarbon",
+    "before": -7.418326210963235e-16,
+    "after": 1.007971071160122,
+    "fitness": 0.2895
+  }
+]

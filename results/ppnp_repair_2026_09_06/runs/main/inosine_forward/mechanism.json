@@ -1,0 +1,674 @@
+{
+  "cases": [
+    {
+      "id": "wild_type",
+      "loci": [],
+      "close_added_reactions": false,
+      "status": "optimal",
+      "growth": 0.9192636654674674,
+      "mass_balance_max_abs": 4.696243394164412e-14,
+      "bound_violation_max": 1.398455382704992e-17,
+      "selected_fluxes": {
+        "Growth": 0.9192636654674674,
+        "RBK": 0.0002670697194189959,
+        "AHCi": 0.0,
+        "AHCYSNS": 0.0002670697194189958,
+        "RHCYS": 0.0002670697194189958,
+        "ADA": 0.0,
+        "INSH": 0.0,
+        "PUNP5": 0.0,
+        "PPM": 0.0,
+        "PNP": 0.0,
+        "RNMK": 0.0,
+        "NMNN": 0.0,
+        "PYNP2r": 0.0,
+        "NP1": 0.0,
+        "OHPHM": 8.902323980633193e-05,
+        "OMBZLM": 8.902323980633193e-05,
+        "DMQMT": 8.902323980633194e-05,
+        "CHRPL": 8.902323980633191e-05,
+        "ATPM": 0.0,
+        "EX_pi_e": -0.8778519361035568
+      },
+      "witness_note": "One optimal solution; selected fluxes are not unique or measured."
+    },
+    {
+      "id": "rbk",
+      "loci": [
+        "PP_2458"
+      ],
+      "close_added_reactions": false,
+      "status": "optimal",
+      "growth": 0.9192636654674771,
+      "mass_balance_max_abs": 6.716849298982197e-14,
+      "bound_violation_max": 9.494457327395381e-20,
+      "selected_fluxes": {
+        "Growth": 0.9192636654674771,
+        "RBK": -9.494457327395381e-20,
+        "AHCi": 0.00026706971941899864,
+        "AHCYSNS": -5.634778407804205e-20,
+        "RHCYS": 0.0,
+        "ADA": 0.00026706971941899864,
+        "INSH": 0.0,
+        "PUNP5": 0.00026706971941899864,
+        "PPM": 0.0002670697194189986,
+        "PNP": 0.0,
+        "RNMK": 0.0,
+        "NMNN": 0.0,
+        "PYNP2r": 0.0,
+        "NP1": 0.0,
+        "OHPHM": 8.902323980633284e-05,
+        "OMBZLM": 8.902323980633284e-05,
+        "DMQMT": 8.902323980633285e-05,
+        "CHRPL": 8.902323980633282e-05,
+        "ATPM": 0.0,
+        "EX_pi_e": -0.8778519361033984
+      },
+      "witness_note": "One optimal solution; selected fluxes are not unique or measured.",
+      "quinone_production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.768551236749119,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225364,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "id": "rbk_ppnp",
+      "loci": [
+        "PP_2458",
+        "PP_4248"
+      ],
+      "close_added_reactions": false,
+      "status": "optimal",
+      "growth": 0.0,
+      "mass_balance_max_abs": 0.0,
+      "bound_violation_max": 0.0,
+      "selected_fluxes": {
+        "Growth": 0.0,
+        "RBK": 0.0,
+        "AHCi": 0.0,
+        "AHCYSNS": 0.0,
+        "RHCYS": 0.0,
+        "ADA": 0.0,
+        "INSH": 0.0,
+        "PUNP5": 0.0,
+        "PPM": 0.0,
+        "PNP": 0.0,
+        "RNMK": 0.0,
+        "NMNN": 0.0,
+        "PYNP2r": 0.0,
+        "NP1": 0.0,
+        "OHPHM": 0.0,
+        "OMBZLM": 0.0,
+        "DMQMT": 0.0,
+        "CHRPL": 0.0,
+        "ATPM": 0.0,
+        "EX_pi_e": 0.0
+      },
+      "witness_note": "One optimal solution; selected fluxes are not unique or measured."
+    },
+    {
+      "id": "rbk_ppm",
+      "loci": [
+        "PP_2458",
+        "PP_1777"
+      ],
+      "close_added_reactions": false,
+      "status": "optimal",
+      "growth": 0.9192625366987907,
+      "mass_balance_max_abs": 6.061817714453355e-14,
+      "bound_violation_max": 3.535899614982336e-16,
+      "selected_fluxes": {
+        "Growth": 0.9192625366987907,
+        "RBK": 0.0,
+        "AHCi": 0.0002670693914826863,
+        "AHCYSNS": -4.489201475460545e-20,
+        "RHCYS": 0.0,
+        "ADA": 0.00026706939148268637,
+        "INSH": 0.0,
+        "PUNP5": 0.00026706939148268637,
+        "PPM": 0.0,
+        "PNP": -0.00026706939148268637,
+        "RNMK": 0.00026706939148268637,
+        "NMNN": 0.00026706939148268637,
+        "PYNP2r": 0.0,
+        "NP1": 0.0,
+        "OHPHM": 8.902313049422876e-05,
+        "OMBZLM": 8.902313049422876e-05,
+        "DMQMT": 8.902313049422879e-05,
+        "CHRPL": 8.902313049422874e-05,
+        "ATPM": 0.0,
+        "EX_pi_e": -0.8778508581845239
+      },
+      "witness_note": "One optimal solution; selected fluxes are not unique or measured."
+    },
+    {
+      "id": "rbk_ahcy",
+      "loci": [
+        "PP_2458",
+        "PP_4976"
+      ],
+      "close_added_reactions": false,
+      "status": "optimal",
+      "growth": -6.68387762174536e-16,
+      "mass_balance_max_abs": 5.5067062021407764e-14,
+      "bound_violation_max": 6.68387762174536e-16,
+      "selected_fluxes": {
+        "Growth": -6.68387762174536e-16,
+        "RBK": 0.0,
+        "AHCi": 0.0,
+        "AHCYSNS": 0.0,
+        "RHCYS": 0.0,
+        "ADA": -1.9418382213145483e-19,
+        "INSH": 0.0,
+        "PUNP5": -1.941838221314548e-19,
+        "PPM": 0.0,
+        "PNP": 1.9418382213145475e-19,
+        "RNMK": -1.9418382213145478e-19,
+        "NMNN": -1.9418382213145478e-19,
+        "PYNP2r": 0.0,
+        "NP1": 0.0,
+        "OHPHM": -6.472794071048492e-20,
+        "OMBZLM": -6.472794071048492e-20,
+        "DMQMT": -6.472794071048491e-20,
+        "CHRPL": 0.4109589041095901,
+        "ATPM": 0.0,
+        "EX_pi_e": -7.01619330464958e-14
+      },
+      "witness_note": "One optimal solution; selected fluxes are not unique or measured."
+    },
+    {
+      "id": "rbk_ada",
+      "loci": [
+        "PP_2458",
+        "PP_0591"
+      ],
+      "close_added_reactions": false,
+      "status": "optimal",
+      "growth": 0.0,
+      "mass_balance_max_abs": 7.327471962526033e-14,
+      "bound_violation_max": 1.4381912228954913e-14,
+      "selected_fluxes": {
+        "Growth": 0.0,
+        "RBK": 0.0,
+        "AHCi": 0.0,
+        "AHCYSNS": 0.0,
+        "RHCYS": 0.0,
+        "ADA": 0.0,
+        "INSH": 0.0,
+        "PUNP5": 0.0,
+        "PPM": 0.0,
+        "PNP": 0.0,
+        "RNMK": 0.0,
+        "NMNN": 0.0,
+        "PYNP2r": 0.0,
+        "NP1": 0.0,
+        "OHPHM": 0.0,
+        "OMBZLM": 0.0,
+        "DMQMT": 0.0,
+        "CHRPL": 0.41095890410958824,
+        "ATPM": 0.0,
+        "EX_pi_e": 2.5344537661716797e-14
+      },
+      "witness_note": "One optimal solution; selected fluxes are not unique or measured."
+    },
+    {
+      "id": "rbk_insh",
+      "loci": [
+        "PP_2458",
+        "PP_2460"
+      ],
+      "close_added_reactions": false,
+      "status": "optimal",
+      "growth": 0.9192636654674718,
+      "mass_balance_max_abs": 3.83026943495679e-14,
+      "bound_violation_max": 2.1677280475736616e-15,
+      "selected_fluxes": {
+        "Growth": 0.9192636654674718,
+        "RBK": 0.0,
+        "AHCi": 0.00026706971941899696,
+        "AHCYSNS": 0.0,
+        "RHCYS": 0.0,
+        "ADA": 0.000267069719418997,
+        "INSH": 0.0,
+        "PUNP5": 0.00026706971941899696,
+        "PPM": 0.00026706971941899696,
+        "PNP": 7.144617962674152e-21,
+        "RNMK": 0.0,
+        "NMNN": -7.144617962674152e-21,
+        "PYNP2r": 0.0,
+        "NP1": 0.0,
+        "OHPHM": 8.902323980633232e-05,
+        "OMBZLM": 8.902323980633232e-05,
+        "DMQMT": 8.902323980633233e-05,
+        "CHRPL": 8.902323980620238e-05,
+        "ATPM": 0.0,
+        "EX_pi_e": -0.8778519361034829
+      },
+      "witness_note": "One optimal solution; selected fluxes are not unique or measured."
+    },
+    {
+      "id": "rbk_added_closed",
+      "loci": [
+        "PP_2458"
+      ],
+      "close_added_reactions": true,
+      "status": "optimal",
+      "growth": 1.7564129829100486e-15,
+      "mass_balance_max_abs": 4.8405723873656825e-14,
+      "bound_violation_max": 9.526506263519487e-16,
+      "selected_fluxes": {
+        "Growth": 1.7564129829100486e-15,
+        "RBK": 0.0,
+        "AHCi": 5.102831104404931e-19,
+        "AHCYSNS": 0.0,
+        "RHCYS": 0.0,
+        "ADA": 5.102831104404931e-19,
+        "INSH": 0.0,
+        "PUNP5": 0.0,
+        "PPM": 0.0,
+        "PNP": 0.0,
+        "RNMK": 0.0,
+        "NMNN": 0.0,
+        "PYNP2r": 0.0,
+        "NP1": 0.0,
+        "OHPHM": 1.7009437014683102e-19,
+        "OMBZLM": 1.7009437014683102e-19,
+        "DMQMT": 1.70094370146831e-19,
+        "CHRPL": 0.434782608695654,
+        "ATPM": 0.0,
+        "EX_pi_e": -6.577316259536723e-14
+      },
+      "witness_note": "One optimal solution; selected fluxes are not unique or measured."
+    }
+  ],
+  "ribosyl_pool_certificate": {
+    "pool_weights": {
+      "ahcys_c": 1.0,
+      "rhcys_c": 1.0,
+      "adn_c": 1.0,
+      "ins_c": 1.0,
+      "rib__D_c": 1.0
+    },
+    "exactly_conserved_in_stoichiometry": false,
+    "n_incident_reactions": 21,
+    "reactions": [
+      {
+        "reaction": "ADA",
+        "pool_terms": {
+          "adn_c": -1.0,
+          "ins_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "ADNt2",
+        "pool_terms": {
+          "adn_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "AHCYSNS",
+        "pool_terms": {
+          "ahcys_c": -1.0,
+          "rhcys_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "AHCi",
+        "pool_terms": {
+          "ahcys_c": -1.0,
+          "adn_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "AMMQLT8",
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "AMMQT8_2",
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "DMQMT",
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "GNNUC",
+        "pool_terms": {
+          "rib__D_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "HCYSMT",
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "INSH",
+        "pool_terms": {
+          "ins_c": -1.0,
+          "rib__D_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "INSt2",
+        "pool_terms": {
+          "ins_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "NTD11",
+        "pool_terms": {
+          "ins_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "NTD7",
+        "pool_terms": {
+          "adn_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "OHPHM",
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "OMBZLM",
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "PUNP5",
+        "pool_terms": {
+          "ins_c": -1.0
+        },
+        "net_pool_coefficient": -1.0,
+        "exact_numerator": "-1",
+        "exact_denominator": "1",
+        "bounds": [
+          0,
+          1000
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": true
+      },
+      {
+        "reaction": "RBK",
+        "pool_terms": {
+          "rib__D_c": -1.0
+        },
+        "net_pool_coefficient": -1.0,
+        "exact_numerator": "-1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": true
+      },
+      {
+        "reaction": "RHCYS",
+        "pool_terms": {
+          "rhcys_c": -1.0,
+          "rib__D_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "RIBabcpp",
+        "pool_terms": {
+          "rib__D_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "UPP3MT",
+        "pool_terms": {
+          "ahcys_c": 2.0
+        },
+        "net_pool_coefficient": 2.0,
+        "exact_numerator": "2",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "XTSNH",
+        "pool_terms": {
+          "rib__D_c": 1.0
+        },
+        "net_pool_coefficient": 1.0,
+        "exact_numerator": "1",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": true,
+        "can_consume_by_direction": false
+      }
+    ],
+    "direction_compatible_supply_reactions": [
+      "ADNt2",
+      "AMMQLT8",
+      "AMMQT8_2",
+      "DMQMT",
+      "GNNUC",
+      "HCYSMT",
+      "INSt2",
+      "NTD11",
+      "NTD7",
+      "OHPHM",
+      "OMBZLM",
+      "RIBabcpp",
+      "UPP3MT",
+      "XTSNH"
+    ],
+    "scope": "Declared metabolite pool and ordinary zero-balance FBA rows; no automatic moiety discovery or biological validation."
+  },
+  "role": "Diagnostic model predictions only. Missing genes are not interpreted as dispensable.",
+  "ppm_note": "PPM deletion need not block rescue: reverse PNP + RNMK + NMNN can convert r1p to r5p."
+}
