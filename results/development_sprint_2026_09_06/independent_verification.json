@@ -1,0 +1,110 @@
+{
+  "verifier": "scripts/verify_carbon_fitness_multi.py",
+  "verifier_sha256": "9e7560c701df625c640c0138de1e056d00ffb724cce6d7bb39798d18d02a90a1",
+  "checks": [
+    {
+      "run_id": "Btheta_cycle6",
+      "checked_utc": "2026-09-06T10:31:14.312879+00:00",
+      "command": [
+        "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+        "scripts/verify_carbon_fitness_multi.py",
+        "--results-dir",
+        "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "Btheta  Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfil WT grows 16/25 | AUC-PR 0.569 (card 0.569) MCC 0.573 (card 0.573) | pairs 8160 exp-important 1094 pred-no-growth 979\nproblems: 0\n",
+      "stderr": ""
+    },
+    {
+      "run_id": "MR1_cycle6",
+      "checked_utc": "2026-09-06T10:31:15.856082+00:00",
+      "command": [
+        "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+        "scripts/verify_carbon_fitness_multi.py",
+        "--results-dir",
+        "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "MR1     Shewanella_oneidensis_MR_1_xml_gapfilled__gapfil WT grows 11/12 | AUC-PR 0.532 (card 0.532) MCC 0.529 (card 0.529) | pairs 7843 exp-important 1315 pred-no-growth 708\nproblems: 0\n",
+      "stderr": ""
+    },
+    {
+      "run_id": "Putida_cycle6",
+      "checked_utc": "2026-09-06T10:31:17.644414+00:00",
+      "command": [
+        "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+        "scripts/verify_carbon_fitness_multi.py",
+        "--results-dir",
+        "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "Putida  Pseudomonas_putida_KT2440_xml_gapfilled__gapfill WT grows 34/43 | AUC-PR 0.483 (card 0.483) MCC 0.561 (card 0.561) | pairs 35598 exp-important 2059 pred-no-growth 1787\nproblems: 0\n",
+      "stderr": ""
+    },
+    {
+      "run_id": "Smeli_cycle6",
+      "checked_utc": "2026-09-06T10:31:19.149077+00:00",
+      "command": [
+        "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+        "scripts/verify_carbon_fitness_multi.py",
+        "--results-dir",
+        "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "Smeli   Sinorhizobium_meliloti_1021_xml_gapfilled__gapfi WT grows 27/33 | AUC-PR 0.647 (card 0.647) MCC 0.675 (card 0.675) | pairs 26703 exp-important 2240 pred-no-growth 1399\nproblems: 0\n",
+      "stderr": ""
+    },
+    {
+      "run_id": "Btheta_cycle7",
+      "checked_utc": "2026-09-06T10:40:44.992013+00:00",
+      "command": [
+        "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+        "scripts/verify_carbon_fitness_multi.py",
+        "--results-dir",
+        "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "Btheta  Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfil WT grows 16/25 | AUC-PR 0.569 (card 0.569) MCC 0.573 (card 0.573) | pairs 8160 exp-important 1094 pred-no-growth 979\nproblems: 0\n",
+      "stderr": ""
+    },
+    {
+      "run_id": "MR1_cycle7",
+      "checked_utc": "2026-09-06T10:40:46.429953+00:00",
+      "command": [
+        "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+        "scripts/verify_carbon_fitness_multi.py",
+        "--results-dir",
+        "results/development_sprint_2026_09_06/runs/MR1_cycle7/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "MR1     Shewanella_oneidensis_MR_1_xml_gapfilled__gapfil WT grows 11/12 | AUC-PR 0.553 (card 0.553) MCC 0.536 (card 0.536) | pairs 7909 exp-important 1330 pred-no-growth 777\nproblems: 0\n",
+      "stderr": ""
+    },
+    {
+      "run_id": "Putida_cycle7",
+      "checked_utc": "2026-09-06T10:40:48.095222+00:00",
+      "command": [
+        "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+        "scripts/verify_carbon_fitness_multi.py",
+        "--results-dir",
+        "results/development_sprint_2026_09_06/runs/Putida_cycle7/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "Putida  Pseudomonas_putida_KT2440_xml_gapfilled__gapfill WT grows 34/43 | AUC-PR 0.514 (card 0.514) MCC 0.587 (card 0.587) | pairs 35598 exp-important 2059 pred-no-growth 1652\nproblems: 0\n",
+      "stderr": ""
+    },
+    {
+      "run_id": "Smeli_cycle7",
+      "checked_utc": "2026-09-06T10:40:49.481847+00:00",
+      "command": [
+        "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+        "scripts/verify_carbon_fitness_multi.py",
+        "--results-dir",
+        "results/development_sprint_2026_09_06/runs/Smeli_cycle7/artifacts"
+      ],
+      "exit_code": 0,
+      "stdout": "Smeli   Sinorhizobium_meliloti_1021_xml_gapfilled__gapfi WT grows 27/33 | AUC-PR 0.669 (card 0.669) MCC 0.689 (card 0.689) | pairs 26703 exp-important 2240 pred-no-growth 1345\nproblems: 0\n",
+      "stderr": ""
+    }
+  ]
+}

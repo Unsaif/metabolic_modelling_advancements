@@ -1,0 +1,157 @@
+{
+  "status": "recomputed_from_saved_matrices",
+  "method": "Independent confusion counts and closed-form MCC; no new phenotype simulation",
+  "arms": [
+    {
+      "arm": "no_quinone_demand",
+      "n_conditions_wt_grows": 34,
+      "n_finite_pairs": 35598,
+      "confusion": {
+        "tp": 33009,
+        "tn": 1122,
+        "fp": 937,
+        "fn": 530
+      },
+      "mcc": 0.5871646546465976,
+      "conditions_both_grow": [
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon"
+      ],
+      "matched_baseline_mcc": 0.5871646546465976,
+      "matched_arm_mcc": 0.5871646546465976,
+      "max_wt_flux": 3.275307564407741,
+      "wt_rates_in_0.0005_to_0.002": 0
+    },
+    {
+      "arm": "ubiquinol_template_amount",
+      "n_conditions_wt_grows": 0,
+      "n_finite_pairs": 0,
+      "confusion": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "mcc": null,
+      "conditions_both_grow": [],
+      "matched_baseline_mcc": null,
+      "matched_arm_mcc": null,
+      "max_wt_flux": 0.0,
+      "wt_rates_in_0.0005_to_0.002": 0
+    },
+    {
+      "arm": "ubiquinol_curated_amount",
+      "n_conditions_wt_grows": 0,
+      "n_finite_pairs": 0,
+      "confusion": {
+        "tp": 0,
+        "tn": 0,
+        "fp": 0,
+        "fn": 0
+      },
+      "mcc": null,
+      "conditions_both_grow": [],
+      "matched_baseline_mcc": null,
+      "matched_arm_mcc": null,
+      "max_wt_flux": 0.0,
+      "wt_rates_in_0.0005_to_0.002": 0
+    },
+    {
+      "arm": "menaquinol_restored_control",
+      "n_conditions_wt_grows": 1,
+      "n_finite_pairs": 1047,
+      "confusion": {
+        "tp": 964,
+        "tn": 38,
+        "fp": 28,
+        "fn": 17
+      },
+      "mcc": 0.6083264856661195,
+      "conditions_both_grow": [
+        "benzoic acid | MOPS minimal media_noCarbon"
+      ],
+      "matched_baseline_mcc": 0.6281053885111924,
+      "matched_arm_mcc": 0.6083264856661195,
+      "max_wt_flux": 0.7985011218348157,
+      "wt_rates_in_0.0005_to_0.002": 0
+    }
+  ],
+  "changed_predictions": [
+    {
+      "arm": "menaquinol_restored_control",
+      "gene": "PP_1658",
+      "condition": "benzoic acid | MOPS minimal media_noCarbon",
+      "before": 0.7985900312737343,
+      "after": -3.9550042893042254e-16,
+      "fitness": 0.13666666666666666
+    },
+    {
+      "arm": "menaquinol_restored_control",
+      "gene": "PP_2458",
+      "condition": "benzoic acid | MOPS minimal media_noCarbon",
+      "before": 0.7985900312737395,
+      "after": 2.138976053075353e-15,
+      "fitness": 0.09766666666666668
+    },
+    {
+      "arm": "menaquinol_restored_control",
+      "gene": "PP_3232",
+      "condition": "benzoic acid | MOPS minimal media_noCarbon",
+      "before": 0.7985900312737424,
+      "after": -2.1753117995776985e-16,
+      "fitness": -0.07033333333333333
+    }
+  ],
+  "baseline_comparisons": [
+    {
+      "comparison": "incomplete_attempt_baseline",
+      "available": true,
+      "path": "results/quinone_biomass_2026_09_06_attempt01/no_quinone_demand/matrices.npz",
+      "sha256": "ca0bd4295953e24b2f484dbc97604cfa684927ce19837776653d5607b820f8be",
+      "same_gene_condition_labels": true,
+      "max_abs_wt_difference": 0.0,
+      "max_abs_ko_difference": 2.208362399891417e-08,
+      "n_changed_binary_ko_predictions": 0,
+      "same_experimental_fitness": true
+    },
+    {
+      "comparison": "archived_cycle7",
+      "available": true,
+      "path": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/matrices.npz",
+      "sha256": "899473727594e9e1fb00eca3eacb9b9bcb3d1340f96f19f2b99019a37a1650fe",
+      "same_gene_condition_labels": false
+    }
+  ]
+}

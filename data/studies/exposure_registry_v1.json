@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "recorded_date": "2026-09-06",
+  "scope": "Fitness Browser organisms downloaded before the scientific audit",
+  "development_organisms": ["Btheta", "Putida", "MR1", "Smeli", "Keio"],
+  "development_basis": "Archived model and protocol development used fitness observations, prediction errors or benchmark scores from these organisms. Exact exposure is not restricted to the currently accepted patch list.",
+  "quarantined_organisms": ["Bvulgatus_CL09T03C04", "Koxy", "SynE", "DvH"],
+  "quarantine_basis": "Prior phenotype inspection is undocumented. This sprint did not inspect their phenotype file contents; they are not claimed as held-out or independent data.",
+  "established_independent_datasets": [],
+  "prior_artifact_sources": [
+    "data/fitness_browser/PROVENANCE.md",
+    "docs/HANDOVER.md",
+    "docs/sprints/2026-09-05-sprint-3-multi-organism-benchmark.md",
+    "data/reference/gpr_patches_v0.3.json",
+    "data/reference/gpr_patches_v0.4.json"
+  ],
+  "interpretation": "This is a conservative exposure declaration, not an access log or proof of non-exposure. A prospective external evaluation requires a separate documented custodian and protocol."
+}

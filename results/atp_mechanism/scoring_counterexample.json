@@ -1,0 +1,96 @@
+{
+  "experiment": "Synthetic alignment/GPR perturbation; not an organism reconstruction",
+  "pandas_version": "2.3.3",
+  "scoring_checks_passed": true,
+  "before": {
+    "commit": "86e1ef8a39f3f1af32309162894e4f8d999bf955",
+    "source_sha256": "d91b2b06f5b4dacca789582f6feaee175bd682b5d1aa24be765ce6ae98c53fba",
+    "url": "https://github.com/cdanielmachado/carveme/blob/86e1ef8a39f3f1af32309162894e4f8d999bf955/carveme/reconstruction/scoring.py",
+    "scenarios": [
+      {
+        "scenario": "complete",
+        "reaction_scored": true,
+        "raw_score": 80.0,
+        "gpr": "(target_subunit0 and target_subunit1 and target_subunit2 and target_subunit3 and target_subunit4 and target_subunit5 and target_subunit6 and target_subunit7)"
+      },
+      {
+        "scenario": "one_missing",
+        "reaction_scored": false,
+        "raw_score": null,
+        "gpr": null
+      },
+      {
+        "scenario": "one_weak",
+        "reaction_scored": true,
+        "raw_score": 1.0,
+        "gpr": "(target_subunit0 and target_subunit1 and target_subunit2 and target_subunit3 and target_subunit4 and target_subunit5 and target_subunit6 and target_subunit7)"
+      },
+      {
+        "scenario": "all_missing",
+        "reaction_scored": false,
+        "raw_score": null,
+        "gpr": null
+      },
+      {
+        "scenario": "alternative_complete",
+        "reaction_scored": true,
+        "raw_score": 80.0,
+        "gpr": "(target_subunit0 and target_subunit1 and target_subunit2 and target_subunit3 and target_subunit4 and target_subunit5 and target_subunit6 and target_subunit7)"
+      }
+    ]
+  },
+  "after": {
+    "commit": "5038ece6e445862eb5e73ddf1bb9258e67a780ff",
+    "source_sha256": "10b03ea83e3ed8bfc004c07851645bea996b0f77bdd4e8c7c341bb2536790f20",
+    "url": "https://github.com/cdanielmachado/carveme/blob/5038ece6e445862eb5e73ddf1bb9258e67a780ff/carveme/reconstruction/scoring.py",
+    "scenarios": [
+      {
+        "scenario": "complete",
+        "reaction_scored": true,
+        "raw_score": 80.0,
+        "gpr": "(target_subunit0 and target_subunit1 and target_subunit2 and target_subunit3 and target_subunit4 and target_subunit5 and target_subunit6 and target_subunit7)"
+      },
+      {
+        "scenario": "one_missing",
+        "reaction_scored": true,
+        "raw_score": 70.0,
+        "gpr": "(target_subunit0 and target_subunit1 and target_subunit2 and target_subunit3 and target_subunit4 and target_subunit5 and target_subunit6)"
+      },
+      {
+        "scenario": "one_weak",
+        "reaction_scored": true,
+        "raw_score": 70.125,
+        "gpr": "(target_subunit0 and target_subunit1 and target_subunit2 and target_subunit3 and target_subunit4 and target_subunit5 and target_subunit6 and target_subunit7)"
+      },
+      {
+        "scenario": "all_missing",
+        "reaction_scored": false,
+        "raw_score": null,
+        "gpr": null
+      },
+      {
+        "scenario": "alternative_complete",
+        "reaction_scored": true,
+        "raw_score": 80.0,
+        "gpr": "((target_subunit0 and target_subunit1 and target_subunit2 and target_subunit3 and target_subunit4 and target_subunit5 and target_subunit6 and target_subunit7) or (target_subunit0 and target_subunit1 and target_subunit2 and target_subunit3 and target_subunit4 and target_subunit5 and target_subunit6))"
+      }
+    ]
+  },
+  "historical_atps_templates": {
+    "commit": "86e1ef8a39f3f1af32309162894e4f8d999bf955",
+    "gpr_file_sha256": "463e1fc313cc2611d6bd7c48fda105193d49ec9df9994a7e56e95696d9be8c73",
+    "model_metadata_sha256": "47fedcd0470f502c666c0b556172a51cb56031641feedd0cbab453608f1c5a8b",
+    "gene_rows": 1011,
+    "models": 60,
+    "complexes": 119,
+    "models_per_genus": {
+      "Escherichia": 49,
+      "Klebsiella": 1,
+      "Pseudomonas": 1,
+      "Salmonella": 1,
+      "Shigella": 7,
+      "Yersinia": 1
+    },
+    "templates_include_development_organism": true
+  }
+}

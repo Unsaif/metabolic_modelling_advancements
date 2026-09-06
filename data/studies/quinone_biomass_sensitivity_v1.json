@@ -1,0 +1,18 @@
+{
+  "study_id": "putida-quinone-biomass-sensitivity-v1",
+  "evaluation_role": "retrospective_development",
+  "question": "Does deleting the template menaquinol demand also remove the biosynthetic requirement for a replacement respiratory quinone?",
+  "organism": "Putida",
+  "base_model_patch_version": "0.4",
+  "configurations": [
+    {"id": "no_quinone_demand", "metabolite": null, "coefficient": 0.0},
+    {"id": "ubiquinol_template_amount", "metabolite": "q8h2_c", "coefficient_source": "negative original mql8_c coefficient in models/gapfilled/Putida.xml.gz"},
+    {"id": "ubiquinol_curated_amount", "metabolite": "q8h2_c", "coefficient_source": "q8h2_c coefficient in models/bigg/iJN1463.xml biomass BIOMASS_KT2440_WT3"},
+    {"id": "menaquinol_restored_control", "metabolite": "mql8_c", "coefficient_source": "original mql8_c coefficient in models/gapfilled/Putida.xml.gz"}
+  ],
+  "protocol": {"processes": 2, "solver": "glpk", "growth_threshold": 0.001, "fitness_threshold": -2.0, "carbon_uptake": -10.0, "complete_medium_transport": true, "drop_rich_medium_essentials": false},
+  "decision_rule": "Report all arms, growth coverage, common-observation MCC, changed gene calls and both replacement amounts. Do not select coefficient by fitness score. Any proposed replacement remains provisional, with source-model rather than strain-specific concentration evidence.",
+  "basis": ["data/reference/model_patches_v0.4.json removes mql8_c without a replacement quinone", "local iJN1463 biomass consumes q8h2_c at 0.000223", "metabolite dilution in FBA and the specific ubiquinone example were described by Benyamini et al. 2010"],
+  "sources": ["https://pmc.ncbi.nlm.nih.gov/articles/PMC2884546/", "https://doi.org/10.1111/1462-2920.14843"],
+  "caveats": ["This uses an already exposed development organism and outcomes.", "The metabolite-dilution mechanism is established prior work; this is a test of its relevance to these patches.", "Replacing a biomass coefficient does not by itself establish biochemical truth or independent predictive improvement."]
+}

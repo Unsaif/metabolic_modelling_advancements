@@ -1,0 +1,833 @@
+{
+  "analysis_role": "Descriptive follow-up to the prespecified eight runs. No patches were changed, accepted or rejected from these observations.",
+  "organisms": [
+    {
+      "organism": "Btheta",
+      "native_gene_counts": [
+        510,
+        510
+      ],
+      "new_browser_genes": [],
+      "removed_browser_genes": [],
+      "new_gene_pairs": [],
+      "new_gene_pair_count": 0,
+      "new_gene_pairs_disagree": 0,
+      "shared_pair_change_summary": [],
+      "shared_pair_changes": 0,
+      "shared_pair_changes_agree": 0,
+      "shared_pair_changes_disagree": 0,
+      "remaining_no_growth_conditions": [
+        "Maltotetraose | Varel_Bryant_medium",
+        "Maltohexaose | Varel_Bryant_medium",
+        "Stachyose - 70% | Varel_Bryant_medium",
+        "Melibiose | Varel_Bryant_medium",
+        "D-Trehalose dihydrate | Varel_Bryant_medium",
+        "D-Maltose monohydrate | Varel_Bryant_medium",
+        "D-Mannose | Varel_Bryant_medium",
+        "N-Acetyl-D-Glucosamine | Varel_Bryant_medium",
+        "D-Glucosamine Hydrochloride | Varel_Bryant_medium"
+      ],
+      "biomass_removals": []
+    },
+    {
+      "organism": "Putida",
+      "native_gene_counts": [
+        1047,
+        1047
+      ],
+      "new_browser_genes": [],
+      "removed_browser_genes": [],
+      "new_gene_pairs": [],
+      "new_gene_pair_count": 0,
+      "new_gene_pairs_disagree": 0,
+      "shared_pair_change_summary": [
+        {
+          "browser_gene": "PP_1658",
+          "description": "conserved protein of unknown function",
+          "n_changes": 34,
+          "n_agree": 34,
+          "n_disagree": 0,
+          "changes": [
+            "to_growth"
+          ],
+          "fitness_min": -0.404,
+          "fitness_max": 0.211
+        },
+        {
+          "browser_gene": "PP_2458",
+          "description": "ribokinase",
+          "n_changes": 34,
+          "n_agree": 34,
+          "n_disagree": 0,
+          "changes": [
+            "to_growth"
+          ],
+          "fitness_min": -0.182,
+          "fitness_max": 0.6335
+        },
+        {
+          "browser_gene": "PP_3232",
+          "description": "Acetyltransferase, GNAT family",
+          "n_changes": 34,
+          "n_agree": 34,
+          "n_disagree": 0,
+          "changes": [
+            "to_growth"
+          ],
+          "fitness_min": -0.5615,
+          "fitness_max": 0.21300000000000002
+        },
+        {
+          "browser_gene": "PP_0665",
+          "description": "putative glyceraldehyde-3-phosphate dehydrogenase",
+          "n_changes": 33,
+          "n_agree": 33,
+          "n_disagree": 0,
+          "changes": [
+            "to_growth"
+          ],
+          "fitness_min": -0.185,
+          "fitness_max": 0.2
+        }
+      ],
+      "shared_pair_changes": 135,
+      "shared_pair_changes_agree": 135,
+      "shared_pair_changes_disagree": 0,
+      "remaining_no_growth_conditions": [
+        "1,2-Propanediol | MOPS minimal media_noCarbon",
+        "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+        "Ferulic Acid | MOPS minimal media_noCarbon",
+        "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+        "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+        "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+        "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+        "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+        "D-Lysine | MOPS minimal media_noCarbon"
+      ],
+      "biomass_removals": [
+        {
+          "reaction": "Growth",
+          "biomass_removed": {
+            "mql8_c": -9.68418998275772e-05
+          }
+        }
+      ]
+    },
+    {
+      "organism": "MR1",
+      "native_gene_counts": [
+        713,
+        719
+      ],
+      "new_browser_genes": [
+        "SO0565",
+        "SO0566",
+        "SO1518",
+        "SO1519",
+        "SO1520",
+        "SO3749"
+      ],
+      "removed_browser_genes": [],
+      "new_gene_pairs": [
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "Sodium L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 5.644849207470818e-16,
+          "fitness": 0.031,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "Sodium pyruvate | ShewMM_noCarbon",
+          "predicted_growth": -3.7804196870277184e-17,
+          "fitness": -0.1615,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "Sodium propionate | ShewMM_noCarbon",
+          "predicted_growth": -5.878359697480838e-17,
+          "fitness": -0.33399999999999996,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+          "predicted_growth": 7.790127640746469e-16,
+          "fitness": -0.0465,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "Adenosine | ShewMM_noCarbon",
+          "predicted_growth": 2.0722038280944785e-16,
+          "fitness": 0.086,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "Uridine | ShewMM_noCarbon",
+          "predicted_growth": 8.35588087501108e-16,
+          "fitness": -0.09000000000000001,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "Inosine | ShewMM_noCarbon",
+          "predicted_growth": -2.0965822154425916e-16,
+          "fitness": 0.0675,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "Cytidine | ShewMM_noCarbon",
+          "predicted_growth": 2.9840585110574725e-15,
+          "fitness": 0.26749999999999996,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "Sodium D,L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": -8.072211962453775e-15,
+          "fitness": -0.144,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "L-Glutamine | ShewMM_noCarbon",
+          "predicted_growth": 8.79401090071227e-17,
+          "fitness": 0.2425,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0565",
+          "description": "adhesion protein, putative (NCBI ptt file)",
+          "condition": "casamino acids | ShewMM_noCarbon",
+          "predicted_growth": -6.850413892164842e-15,
+          "fitness": 0.0785,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "Sodium L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 1.2028764835999324e-18,
+          "fitness": 0.14700000000000002,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "Sodium pyruvate | ShewMM_noCarbon",
+          "predicted_growth": 7.410145077999833e-17,
+          "fitness": 0.07,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "Sodium propionate | ShewMM_noCarbon",
+          "predicted_growth": -4.982558298280408e-16,
+          "fitness": -0.123,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+          "predicted_growth": -4.164879490353187e-16,
+          "fitness": 0.044000000000000004,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "Adenosine | ShewMM_noCarbon",
+          "predicted_growth": -2.5922373611989806e-17,
+          "fitness": 0.11050000000000001,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "Uridine | ShewMM_noCarbon",
+          "predicted_growth": 2.5207678086765404e-16,
+          "fitness": 0.28,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "Inosine | ShewMM_noCarbon",
+          "predicted_growth": -6.100892978916508e-16,
+          "fitness": 0.0985,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "Cytidine | ShewMM_noCarbon",
+          "predicted_growth": -1.4710938298769597e-16,
+          "fitness": 0.1075,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "Sodium D,L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 3.129102592498007e-17,
+          "fitness": 0.52,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "L-Glutamine | ShewMM_noCarbon",
+          "predicted_growth": -1.0736730538714548e-15,
+          "fitness": 0.4515,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO0566",
+          "description": "ABC 3 transport family protein (NCBI ptt file)",
+          "condition": "casamino acids | ShewMM_noCarbon",
+          "predicted_growth": 1.063895221185316e-14,
+          "fitness": 0.12400000000000001,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 4.5521289949412735e-15,
+          "fitness": -4.938000000000001,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium pyruvate | ShewMM_noCarbon",
+          "predicted_growth": 0.35889682076102913,
+          "fitness": 0.0675,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium propionate | ShewMM_noCarbon",
+          "predicted_growth": 0.41167576499059594,
+          "fitness": -0.2325,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+          "predicted_growth": 1.1849273647530172,
+          "fitness": -0.23099999999999998,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Adenosine | ShewMM_noCarbon",
+          "predicted_growth": 1.1482314549057244,
+          "fitness": -0.2515,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Uridine | ShewMM_noCarbon",
+          "predicted_growth": 0.8435233912896741,
+          "fitness": -0.2595,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Inosine | ShewMM_noCarbon",
+          "predicted_growth": 1.1356182566646826,
+          "fitness": -0.5215,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Cytidine | ShewMM_noCarbon",
+          "predicted_growth": 0.8556424350202898,
+          "fitness": -0.4165,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium D,L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 0.43278734268241953,
+          "fitness": -4.631,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "L-Glutamine | ShewMM_noCarbon",
+          "predicted_growth": 0.6792515292425835,
+          "fitness": -0.604,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1518",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "casamino acids | ShewMM_noCarbon",
+          "predicted_growth": 5.3518743002706515,
+          "fitness": -0.1375,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "Sodium L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": -3.0454051641695977e-15,
+          "fitness": -5.6485,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "Sodium pyruvate | ShewMM_noCarbon",
+          "predicted_growth": 0.3588968207610259,
+          "fitness": -0.2235,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "Sodium propionate | ShewMM_noCarbon",
+          "predicted_growth": 0.41167576499059294,
+          "fitness": -0.078,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+          "predicted_growth": 1.1849273647530145,
+          "fitness": -0.222,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "Adenosine | ShewMM_noCarbon",
+          "predicted_growth": 1.1482314549057242,
+          "fitness": -0.018,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "Uridine | ShewMM_noCarbon",
+          "predicted_growth": 0.843523391289658,
+          "fitness": -0.482,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "Inosine | ShewMM_noCarbon",
+          "predicted_growth": 1.1356182566646909,
+          "fitness": -0.4825,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "Cytidine | ShewMM_noCarbon",
+          "predicted_growth": 0.8556424350202732,
+          "fitness": -0.7305,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "Sodium D,L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 0.43278734268241575,
+          "fitness": -4.644,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "L-Glutamine | ShewMM_noCarbon",
+          "predicted_growth": 0.6792515292425817,
+          "fitness": 0.029,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1519",
+          "description": "iron-sulfur cluster-binding protein (NCBI ptt file)",
+          "condition": "casamino acids | ShewMM_noCarbon",
+          "predicted_growth": 5.351874300270605,
+          "fitness": -0.053,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 3.2105572944145685e-15,
+          "fitness": -5.308,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium pyruvate | ShewMM_noCarbon",
+          "predicted_growth": 0.35889682076102636,
+          "fitness": -0.1185,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium propionate | ShewMM_noCarbon",
+          "predicted_growth": 0.41167576499060116,
+          "fitness": -0.127,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+          "predicted_growth": 1.1849273647530203,
+          "fitness": -0.1755,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Adenosine | ShewMM_noCarbon",
+          "predicted_growth": 1.1482314549057224,
+          "fitness": -0.001,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Uridine | ShewMM_noCarbon",
+          "predicted_growth": 0.843523391289657,
+          "fitness": -0.3305,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Inosine | ShewMM_noCarbon",
+          "predicted_growth": 1.1356182566646842,
+          "fitness": -0.213,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Cytidine | ShewMM_noCarbon",
+          "predicted_growth": 0.8556424350202844,
+          "fitness": -0.6020000000000001,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium D,L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 0.43278734268242675,
+          "fitness": -4.013,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "L-Glutamine | ShewMM_noCarbon",
+          "predicted_growth": 0.6792515292425779,
+          "fitness": 0.084,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO1520",
+          "description": "conserved hypothetical protein (NCBI ptt file)",
+          "condition": "casamino acids | ShewMM_noCarbon",
+          "predicted_growth": 5.351874300270512,
+          "fitness": 0.0585,
+          "predicted_no_growth": false,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 3.890344662823425e-16,
+          "fitness": -5.822,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium pyruvate | ShewMM_noCarbon",
+          "predicted_growth": -5.995611045486188e-17,
+          "fitness": -5.3065,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium propionate | ShewMM_noCarbon",
+          "predicted_growth": -1.457959211514778e-16,
+          "fitness": -5.318,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+          "predicted_growth": 1.649670548852116e-17,
+          "fitness": -5.468,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "Adenosine | ShewMM_noCarbon",
+          "predicted_growth": 5.590101402301659e-16,
+          "fitness": -6.0205,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "Uridine | ShewMM_noCarbon",
+          "predicted_growth": 8.282499544316403e-16,
+          "fitness": -5.6,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "Inosine | ShewMM_noCarbon",
+          "predicted_growth": -8.57757674345855e-17,
+          "fitness": -5.318,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "Cytidine | ShewMM_noCarbon",
+          "predicted_growth": 1.181778188071058e-16,
+          "fitness": -5.6114999999999995,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "Sodium D,L-Lactate | ShewMM_noCarbon",
+          "predicted_growth": 2.9633997404867675e-15,
+          "fitness": -2.619,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": true
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "L-Glutamine | ShewMM_noCarbon",
+          "predicted_growth": 5.875126586891541e-17,
+          "fitness": -1.279,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        },
+        {
+          "browser_gene": "SO3749",
+          "description": "hypothetical protein (NCBI ptt file)",
+          "condition": "casamino acids | ShewMM_noCarbon",
+          "predicted_growth": -5.518834583336684e-15,
+          "fitness": -0.1575,
+          "predicted_no_growth": true,
+          "agrees_with_fitness_threshold": false
+        }
+      ],
+      "new_gene_pair_count": 66,
+      "new_gene_pairs_disagree": 27,
+      "shared_pair_change_summary": [
+        {
+          "browser_gene": "SO4245",
+          "description": "amino-acid acetyltransferase (NCBI ptt file)",
+          "n_changes": 11,
+          "n_agree": 8,
+          "n_disagree": 3,
+          "changes": [
+            "to_no_growth"
+          ],
+          "fitness_min": -6.0425,
+          "fitness_max": -0.041
+        },
+        {
+          "browser_gene": "SO0275",
+          "description": "N-acetyl-gamma-glutamyl-phosphate reductase (NCBI ptt file)",
+          "n_changes": 11,
+          "n_agree": 10,
+          "n_disagree": 1,
+          "changes": [
+            "to_no_growth"
+          ],
+          "fitness_min": -6.866,
+          "fitness_max": -0.015000000000000001
+        },
+        {
+          "browser_gene": "SO0276",
+          "description": "acetylglutamate kinase (NCBI ptt file)",
+          "n_changes": 11,
+          "n_agree": 10,
+          "n_disagree": 1,
+          "changes": [
+            "to_no_growth"
+          ],
+          "fitness_min": -7.001,
+          "fitness_max": 0.046
+        }
+      ],
+      "shared_pair_changes": 33,
+      "shared_pair_changes_agree": 28,
+      "shared_pair_changes_disagree": 5,
+      "remaining_no_growth_conditions": [
+        "L-Isoleucine | ShewMM_noCarbon"
+      ],
+      "biomass_removals": []
+    },
+    {
+      "organism": "Smeli",
+      "native_gene_counts": [
+        989,
+        989
+      ],
+      "new_browser_genes": [],
+      "removed_browser_genes": [],
+      "new_gene_pairs": [],
+      "new_gene_pair_count": 0,
+      "new_gene_pairs_disagree": 0,
+      "shared_pair_change_summary": [
+        {
+          "browser_gene": "SM_b21107",
+          "description": "mandelate racemase or evolutionary related enzyme of the mandelate racemase muconate lactonizing enzyme family protein",
+          "n_changes": 27,
+          "n_agree": 26,
+          "n_disagree": 1,
+          "changes": [
+            "to_growth"
+          ],
+          "fitness_min": -3.477,
+          "fitness_max": 0.643
+        },
+        {
+          "browser_gene": "SMc03960",
+          "description": "hypothetical protein",
+          "n_changes": 27,
+          "n_agree": 27,
+          "n_disagree": 0,
+          "changes": [
+            "to_growth"
+          ],
+          "fitness_min": -0.21,
+          "fitness_max": 0.355
+        }
+      ],
+      "shared_pair_changes": 54,
+      "shared_pair_changes_agree": 53,
+      "shared_pair_changes_disagree": 1,
+      "remaining_no_growth_conditions": [
+        "L-Arabinose | RCH2_defined_noCarbon",
+        "L-Leucine | RCH2_defined_noCarbon",
+        "D-Glucosamine Hydrochloride | RCH2_defined_noCarbon",
+        "Uridine | RCH2_defined_noCarbon",
+        "D-Mannose | RCH2_defined_noCarbon",
+        "D-(-)-tagatose | RCH2_defined_noCarbon"
+      ],
+      "biomass_removals": [
+        {
+          "reaction": "Growth",
+          "biomass_removed": {
+            "mql8_c": -9.68418998275772e-05
+          }
+        }
+      ]
+    }
+  ]
+}

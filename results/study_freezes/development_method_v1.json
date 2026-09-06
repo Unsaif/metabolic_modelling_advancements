@@ -1,0 +1,353 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-09-06T10:34:02Z",
+  "plan": {
+    "decision_rule": "Report every arm, wild-type coverage and common-observation comparisons; retain failures, undefined results and conservative exposure declarations. Biological acceptance requires source evidence separate from development fitness agreement.",
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_role": "development",
+    "independent_evaluation_established": false,
+    "paths": [
+      "data/reference/feba_media_extract.tsv",
+      "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "data/reference/fitness_browser_media_bigg.tsv",
+      "data/reference/gpr_patches_v0.2.json",
+      "data/reference/gpr_patches_v0.3.json",
+      "data/reference/gpr_patches_v0.4.json",
+      "data/reference/model_patches_v0.3.json",
+      "data/reference/model_patches_v0.4.json",
+      "data/reference/universe_patches_v0.1.json",
+      "data/studies/exposure_registry_v1.json",
+      "data/studies/quinone_biomass_sensitivity_v1.json",
+      "docs/studies/evaluation-protocol-v1.md",
+      "gembench/__init__.py",
+      "gembench/cards.py",
+      "gembench/checks.py",
+      "gembench/comparison.py",
+      "gembench/datasets.py",
+      "gembench/fitness_browser.py",
+      "gembench/frog.py",
+      "gembench/gapfill.py",
+      "gembench/gene_mapping.py",
+      "gembench/media.py",
+      "gembench/metrics.py",
+      "gembench/patches.py",
+      "gembench/protocols/__init__.py",
+      "gembench/protocols/carbon_fitness_generic.py",
+      "gembench/study.py",
+      "requirements-audit.txt",
+      "scripts/audit_saved_results.py",
+      "scripts/compare_models_paired.py",
+      "scripts/freeze_study.py",
+      "scripts/run_carbon_fitness_generic.py",
+      "scripts/run_development_sprint.py",
+      "scripts/run_quinone_biomass_sensitivity.py",
+      "scripts/verify_carbon_fitness_multi.py"
+    ],
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "question": "Package the reviewed development evaluation procedure and existing intervention rules without claiming independent validation.",
+    "schema_version": 1,
+    "study_id": "development-method-v1",
+    "time_ordering_note": "This package is frozen during development. Each simulation study has its own prior-input manifest; this package is not a retrospective preregistration."
+  },
+  "files": [
+    {
+      "path": "data/reference/feba_media_extract.tsv",
+      "size_bytes": 5517,
+      "sha256": "365168bd92db7aa049b20b2f5ad45f79740bd0f7a52e8d650332c80bdd409225"
+    },
+    {
+      "path": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "size_bytes": 5499,
+      "sha256": "43ed695ca0201e778bc738d2d582dad7e7a498b64d5ccf64c3b496be686e4da4"
+    },
+    {
+      "path": "data/reference/fitness_browser_media_bigg.tsv",
+      "size_bytes": 3452,
+      "sha256": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.2.json",
+      "size_bytes": 13517,
+      "sha256": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.3.json",
+      "size_bytes": 43124,
+      "sha256": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.4.json",
+      "size_bytes": 5205,
+      "sha256": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7"
+    },
+    {
+      "path": "data/reference/model_patches_v0.3.json",
+      "size_bytes": 29973,
+      "sha256": "e883f39adc230ea134e2070aaac7aaf7f58a84246fad7a0a4e3ac853747c90a5"
+    },
+    {
+      "path": "data/reference/model_patches_v0.4.json",
+      "size_bytes": 36453,
+      "sha256": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190"
+    },
+    {
+      "path": "data/reference/universe_patches_v0.1.json",
+      "size_bytes": 7146,
+      "sha256": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe"
+    },
+    {
+      "path": "data/studies/exposure_registry_v1.json",
+      "size_bytes": 1192,
+      "sha256": "7519f099a63c95b6b5a9cdc8e14066255e72016a1c577ea92b4b231714823fc4"
+    },
+    {
+      "path": "data/studies/quinone_biomass_sensitivity_v1.json",
+      "size_bytes": 2064,
+      "sha256": "4d5e20ee4c5f71dd59dbfc4417d132ad65f3f8feb9949b5de1dbb9e83d422b34"
+    },
+    {
+      "path": "docs/studies/evaluation-protocol-v1.md",
+      "size_bytes": 7026,
+      "sha256": "dab9ebd9fb489e873997066f46c1e81c027de5635810bb2fa1992834640eeaf2"
+    },
+    {
+      "path": "gembench/__init__.py",
+      "size_bytes": 368,
+      "sha256": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9"
+    },
+    {
+      "path": "gembench/cards.py",
+      "size_bytes": 6172,
+      "sha256": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d"
+    },
+    {
+      "path": "gembench/checks.py",
+      "size_bytes": 2761,
+      "sha256": "0c1bcb3ed1b55379533374bc5d481247dbf9c40a01efb9a495fb92d3a356a51a"
+    },
+    {
+      "path": "gembench/comparison.py",
+      "size_bytes": 4052,
+      "sha256": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8"
+    },
+    {
+      "path": "gembench/datasets.py",
+      "size_bytes": 6578,
+      "sha256": "1223ac48c5f31fabf93d9a48f21211e2739f34385b879d531b1cdc261279f490"
+    },
+    {
+      "path": "gembench/fitness_browser.py",
+      "size_bytes": 8512,
+      "sha256": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c"
+    },
+    {
+      "path": "gembench/frog.py",
+      "size_bytes": 6840,
+      "sha256": "883b0b90e8c8c84377b72a34ca486cc9a6909d343c444c3972dbe94113c95308"
+    },
+    {
+      "path": "gembench/gapfill.py",
+      "size_bytes": 13625,
+      "sha256": "eaf202021dbc1f0d2a76668f5da11e992d7b0a374c264dd056866b448165ab63"
+    },
+    {
+      "path": "gembench/gene_mapping.py",
+      "size_bytes": 4495,
+      "sha256": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2"
+    },
+    {
+      "path": "gembench/media.py",
+      "size_bytes": 2920,
+      "sha256": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe"
+    },
+    {
+      "path": "gembench/metrics.py",
+      "size_bytes": 5535,
+      "sha256": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3"
+    },
+    {
+      "path": "gembench/patches.py",
+      "size_bytes": 8733,
+      "sha256": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8"
+    },
+    {
+      "path": "gembench/protocols/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gembench/protocols/carbon_fitness_generic.py",
+      "size_bytes": 12798,
+      "sha256": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303"
+    },
+    {
+      "path": "gembench/study.py",
+      "size_bytes": 17496,
+      "sha256": "b3911b98e65dbaaf2635cc5a8d3aacd4c71ab614dafc44e2817f5df8b0742733"
+    },
+    {
+      "path": "requirements-audit.txt",
+      "size_bytes": 708,
+      "sha256": "f242faf03ecdd36f9dfbbc54838318556badc4cd653461460a2e3e3866b36260"
+    },
+    {
+      "path": "scripts/audit_saved_results.py",
+      "size_bytes": 5540,
+      "sha256": "eeff2e1ac4b43fb06a3070c4369ff1fcb0749e32829bd00d7315404255442c9e"
+    },
+    {
+      "path": "scripts/compare_models_paired.py",
+      "size_bytes": 3739,
+      "sha256": "2049c6becc4120feaaa746aa24cd4922a375d9c343a8bc2fceee0c9384950fbf"
+    },
+    {
+      "path": "scripts/freeze_study.py",
+      "size_bytes": 3547,
+      "sha256": "620ebb61febd71dd71221a130da3fc6b39f2c8c9d4a4c60ae5f07bcbd7c401a8"
+    },
+    {
+      "path": "scripts/run_carbon_fitness_generic.py",
+      "size_bytes": 16091,
+      "sha256": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc"
+    },
+    {
+      "path": "scripts/run_development_sprint.py",
+      "size_bytes": 15463,
+      "sha256": "d189acdccdc9d96b1927cfcf5c2ae4e048372fd16b721fdee3a1f428ef4c1463"
+    },
+    {
+      "path": "scripts/run_quinone_biomass_sensitivity.py",
+      "size_bytes": 8778,
+      "sha256": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d"
+    },
+    {
+      "path": "scripts/verify_carbon_fitness_multi.py",
+      "size_bytes": 4847,
+      "sha256": "9e7560c701df625c640c0138de1e056d00ffb724cce6d7bb39798d18d02a90a1"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "e4193ad5f31543ea3577867ec61e3a6c611b4ebc",
+    "dirty": true,
+    "tracked_changes": [],
+    "untracked_paths": [
+      "data/studies/development_method_v1.json",
+      "data/studies/exposure_registry_v1.json",
+      "data/studies/quinone_biomass_sensitivity_v1.json",
+      "docs/evidence/07-atp-synthase-mechanism-audit.md",
+      "docs/studies/evaluation-protocol-v1.md",
+      "gembench/study.py",
+      "results/atp_mechanism/model_snapshot_comparison.json",
+      "results/atp_mechanism/scoring_counterexample.json",
+      "results/development_sprint_2026_09_06/attempts/Putida_cycle7_1788690731950498000/invocation.json",
+      "results/development_sprint_2026_09_06/expected_model_patch_delta.json",
+      "results/development_sprint_2026_09_06/independent_verification.json",
+      "results/development_sprint_2026_09_06/prespecified_manifest.json",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/card.json",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/card.md",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/conditions.tsv",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/dropped_rich_medium_essentials.txt",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map.tsv",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map_unmapped.txt",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/matrices.npz",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/per_condition_metrics.tsv",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/completion.json",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle6/invocation.json",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich/card.json",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich/card.md",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich/conditions.tsv",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich/dropped_rich_medium_essentials.txt",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map.tsv",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map_unmapped.txt",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich/matrices.npz",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich/per_condition_metrics.tsv",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/completion.json",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/invocation.json",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/card.json",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/card.md",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/conditions.tsv",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/dropped_rich_medium_essentials.txt",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map.tsv",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map_unmapped.txt",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/matrices.npz",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/per_condition_metrics.tsv",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/completion.json",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle6/invocation.json",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/card.json",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/card.md",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/conditions.tsv",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/dropped_rich_medium_essentials.txt",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map.tsv",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map_unmapped.txt",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/matrices.npz",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/per_condition_metrics.tsv",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/completion.json",
+      "results/development_sprint_2026_09_06/runs/Putida_cycle6/invocation.json",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/card.json",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/card.md",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/conditions.tsv",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/dropped_rich_medium_essentials.txt",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map.tsv",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/gene_map_unmapped.txt",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/matrices.npz",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich/per_condition_metrics.tsv",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/completion.json",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle6/invocation.json",
+      "results/quinone_biomass_2026_09_06/changed_predictions.json",
+      "results/quinone_biomass_2026_09_06/menaquinol_restored_control/card.json",
+      "results/quinone_biomass_2026_09_06/menaquinol_restored_control/card.md",
+      "results/quinone_biomass_2026_09_06/menaquinol_restored_control/conditions.tsv",
+      "results/quinone_biomass_2026_09_06/menaquinol_restored_control/matrices.npz",
+      "results/quinone_biomass_2026_09_06/menaquinol_restored_control/per_condition_metrics.tsv",
+      "results/quinone_biomass_2026_09_06/no_quinone_demand/card.json",
+      "results/quinone_biomass_2026_09_06/no_quinone_demand/card.md",
+      "results/quinone_biomass_2026_09_06/no_quinone_demand/conditions.tsv",
+      "results/quinone_biomass_2026_09_06/no_quinone_demand/matrices.npz",
+      "results/quinone_biomass_2026_09_06/no_quinone_demand/per_condition_metrics.tsv",
+      "results/quinone_biomass_2026_09_06/prespecified_manifest.json",
+      "results/quinone_biomass_2026_09_06/summary.json",
+      "results/quinone_biomass_2026_09_06/ubiquinol_curated_amount/card.json",
+      "results/quinone_biomass_2026_09_06/ubiquinol_curated_amount/card.md",
+      "results/quinone_biomass_2026_09_06/ubiquinol_curated_amount/conditions.tsv",
+      "results/quinone_biomass_2026_09_06/ubiquinol_curated_amount/matrices.npz",
+      "results/quinone_biomass_2026_09_06/ubiquinol_curated_amount/per_condition_metrics.tsv",
+      "results/quinone_biomass_2026_09_06/ubiquinol_template_amount/card.json",
+      "results/quinone_biomass_2026_09_06/ubiquinol_template_amount/card.md",
+      "results/quinone_biomass_2026_09_06/ubiquinol_template_amount/conditions.tsv",
+      "results/quinone_biomass_2026_09_06/ubiquinol_template_amount/matrices.npz",
+      "results/quinone_biomass_2026_09_06/ubiquinol_template_amount/per_condition_metrics.tsv",
+      "results/quinone_biomass_2026_09_06_attempt01/README.md",
+      "results/quinone_biomass_2026_09_06_attempt01/no_quinone_demand/card.json",
+      "results/quinone_biomass_2026_09_06_attempt01/no_quinone_demand/card.md",
+      "results/quinone_biomass_2026_09_06_attempt01/no_quinone_demand/conditions.tsv",
+      "results/quinone_biomass_2026_09_06_attempt01/no_quinone_demand/matrices.npz",
+      "results/quinone_biomass_2026_09_06_attempt01/no_quinone_demand/per_condition_metrics.tsv",
+      "results/quinone_biomass_2026_09_06_attempt01/prespecified_manifest.json",
+      "results/quinone_biomass_2026_09_06_attempt01/runner.py",
+      "scripts/diagnose_atp_subunit_scoring.py",
+      "scripts/freeze_study.py",
+      "scripts/run_development_sprint.py",
+      "scripts/run_quinone_biomass_sensitivity.py",
+      "tests/test_quinone_sensitivity.py",
+      "tests/test_study.py"
+    ],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "e8952e492e0df9f8cc5da6a123499e3822385036c91c7b4f4863f0c8b344e5f3",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}

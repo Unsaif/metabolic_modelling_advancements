@@ -1,0 +1,27 @@
+{
+  "command": [
+    "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/.venv/bin/python",
+    "scripts/run_carbon_fitness_generic.py",
+    "--processes",
+    "2",
+    "--solver",
+    "glpk",
+    "--orgs",
+    "MR1",
+    "--variant",
+    "gapfilled",
+    "--no-drop-rich",
+    "--complete-medium-transport",
+    "--patch",
+    "data/reference/universe_patches_v0.1.json",
+    "--model-patch",
+    "data/reference/model_patches_v0.4.json",
+    "--gpr-patch",
+    "data/reference/gpr_patches_v0.2.json,data/reference/gpr_patches_v0.3.json,data/reference/gpr_patches_v0.4.json",
+    "--output-dir",
+    "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/results/development_sprint_2026_09_06/attempts/MR1_cycle7_1788690930313571000/artifacts"
+  ],
+  "cwd": "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements",
+  "started_utc": "2026-09-06T10:35:30.313677+00:00",
+  "manifest_sha256": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809"
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "org": "Btheta",
+    "sources": [
+      {
+        "commit": "e14497c154dfb6e9e003729e58f9dffdf8f65579",
+        "url": "https://raw.githubusercontent.com/cdanielmachado/embl_gems/e14497c154dfb6e9e003729e58f9dffdf8f65579/models/b/bacteroides/Bacteroides_thetaiotaomicron_VPI_5482.xml.gz",
+        "sha256": "c5cdd68ff4db06c04a21f5d9427ad6d06d6bcedf39f44ee68ec4543a83363f7d",
+        "n_reactions": 1487,
+        "atps_ids": []
+      },
+      {
+        "commit": "260d0f133802adbc151de4d7b14fb34722e1d9f4",
+        "url": "https://raw.githubusercontent.com/cdanielmachado/embl_gems/260d0f133802adbc151de4d7b14fb34722e1d9f4/models/b/bacteroides/Bacteroides_thetaiotaomicron_VPI_5482.xml.gz",
+        "sha256": "0d38cb19d7e2deba4224c12eb114ec4b9f812678284091dd6a30cb5f394cd985",
+        "n_reactions": 1487,
+        "atps_ids": []
+      }
+    ],
+    "reaction_id_sets_equal": true,
+    "reaction_equations_equal": true
+  },
+  {
+    "org": "MR1",
+    "sources": [
+      {
+        "commit": "e14497c154dfb6e9e003729e58f9dffdf8f65579",
+        "url": "https://raw.githubusercontent.com/cdanielmachado/embl_gems/e14497c154dfb6e9e003729e58f9dffdf8f65579/models/s/shewanella/Shewanella_oneidensis_MR_1.xml.gz",
+        "sha256": "1bc60651c5422eda8da5b4ae95c4d79467bfa1891fd93747ebbb3c4847ac547a",
+        "n_reactions": 1972,
+        "atps_ids": []
+      },
+      {
+        "commit": "260d0f133802adbc151de4d7b14fb34722e1d9f4",
+        "url": "https://raw.githubusercontent.com/cdanielmachado/embl_gems/260d0f133802adbc151de4d7b14fb34722e1d9f4/models/s/shewanella/Shewanella_oneidensis_MR_1.xml.gz",
+        "sha256": "591d8e5b5fdd1124a4e78a947b0ad9907398c9a64f1c4028c6dee92452f1220e",
+        "n_reactions": 1972,
+        "atps_ids": []
+      }
+    ],
+    "reaction_id_sets_equal": true,
+    "reaction_equations_equal": true
+  },
+  {
+    "org": "Putida",
+    "sources": [
+      {
+        "commit": "e14497c154dfb6e9e003729e58f9dffdf8f65579",
+        "url": "https://raw.githubusercontent.com/cdanielmachado/embl_gems/e14497c154dfb6e9e003729e58f9dffdf8f65579/models/p/pseudomonas/Pseudomonas_putida_KT2440.xml.gz",
+        "sha256": "d24379cd4bbe08a84d11ce18233a56eb0523494c2609e0f8b7b5c9c386b8a6ae",
+        "n_reactions": 1895,
+        "atps_ids": [
+          "R_ATPS4rpp"
+        ]
+      },
+      {
+        "commit": "260d0f133802adbc151de4d7b14fb34722e1d9f4",
+        "url": "https://raw.githubusercontent.com/cdanielmachado/embl_gems/260d0f133802adbc151de4d7b14fb34722e1d9f4/models/p/pseudomonas/Pseudomonas_putida_KT2440.xml.gz",
+        "sha256": "5b69bf07cf15fdecb7cf5a6c87e35271cd94e97c7d16747aee62f4c7594fd7c1",
+        "n_reactions": 1895,
+        "atps_ids": [
+          "R_ATPS4rpp"
+        ]
+      }
+    ],
+    "reaction_id_sets_equal": true,
+    "reaction_equations_equal": true
+  },
+  {
+    "org": "Smeli",
+    "sources": [
+      {
+        "commit": "e14497c154dfb6e9e003729e58f9dffdf8f65579",
+        "url": "https://raw.githubusercontent.com/cdanielmachado/embl_gems/e14497c154dfb6e9e003729e58f9dffdf8f65579/models/s/sinorhizobium/Sinorhizobium_meliloti_1021.xml.gz",
+        "sha256": "372ebe2ff29feed152e1b88812c69d19eb01b877ae12bdf11e6bfff35db75e4f",
+        "n_reactions": 1992,
+        "atps_ids": []
+      },
+      {
+        "commit": "260d0f133802adbc151de4d7b14fb34722e1d9f4",
+        "url": "https://raw.githubusercontent.com/cdanielmachado/embl_gems/260d0f133802adbc151de4d7b14fb34722e1d9f4/models/s/sinorhizobium/Sinorhizobium_meliloti_1021.xml.gz",
+        "sha256": "9881183f0104a2966fa81e80e471c3ab26c948ac2206911e9363da0ec2341362",
+        "n_reactions": 1992,
+        "atps_ids": []
+      }
+    ],
+    "reaction_id_sets_equal": true,
+    "reaction_equations_equal": true
+  }
+]

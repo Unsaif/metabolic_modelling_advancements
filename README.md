@@ -6,8 +6,10 @@ University of Galway), with AI-assisted research and independent review.
 
 Start with the **[6 September scientific audit](docs/reviews/2026-09-06-scientific-audit.md)** and its **[reproducible artifacts](results/audit_2026_09_06/)**. The benchmark improvements are retrospective development results; independent validation remains to be done. The IEM port required corrections and its legacy results must not be used as validation.
 
+The follow-up development sprint completes both existing patch configurations across all four draft organisms. Read the **[new sprint results](docs/sprints/2026-09-06-development-sprint.md)** together with two mechanism investigations: the **[historical ATP-synthase scoring issue](docs/evidence/07-atp-synthase-mechanism-audit.md)** and the **[closed quinone pool hidden by a biomass deletion](docs/evidence/08-quinone-biomass-audit.md)**. A higher development score does not resolve these biological questions. The **[evaluation protocol](docs/studies/evaluation-protocol-v1.md)** records exposure and the procedure for a future independent test; its file-freeze utility is available now.
+
 Then read **`docs/roadmap/00-landscape-and-roadmap.md`** — the standing charter: where the field
-stands in 2026, the diagnosis, the workstreams, the decision log, and the current sprint. The six
+stands in 2026, the diagnosis, the workstreams, the decision log, and the current sprint. The
 `docs/evidence/` briefs hold the sourced findings behind it; `docs/sprints/` holds the results of
 each sprint.
 

@@ -1,0 +1,346 @@
+{
+  "study": {
+    "study_id": "putida-quinone-biomass-sensitivity-v1",
+    "evaluation_role": "retrospective_development",
+    "question": "Does deleting the template menaquinol demand also remove the biosynthetic requirement for a replacement respiratory quinone?",
+    "organism": "Putida",
+    "base_model_patch_version": "0.4",
+    "configurations": [
+      {
+        "id": "no_quinone_demand",
+        "metabolite": null,
+        "coefficient": 0.0
+      },
+      {
+        "id": "ubiquinol_template_amount",
+        "metabolite": "q8h2_c",
+        "coefficient_source": "negative original mql8_c coefficient in models/gapfilled/Putida.xml.gz"
+      },
+      {
+        "id": "ubiquinol_curated_amount",
+        "metabolite": "q8h2_c",
+        "coefficient_source": "q8h2_c coefficient in models/bigg/iJN1463.xml biomass BIOMASS_KT2440_WT3"
+      },
+      {
+        "id": "menaquinol_restored_control",
+        "metabolite": "mql8_c",
+        "coefficient_source": "original mql8_c coefficient in models/gapfilled/Putida.xml.gz"
+      }
+    ],
+    "protocol": {
+      "processes": 2,
+      "solver": "glpk",
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "carbon_uptake": -10.0,
+      "complete_medium_transport": true,
+      "drop_rich_medium_essentials": false
+    },
+    "decision_rule": "Report all arms, growth coverage, common-observation MCC, changed gene calls and both replacement amounts. Do not select coefficient by fitness score. Any proposed replacement remains provisional, with source-model rather than strain-specific concentration evidence.",
+    "basis": [
+      "data/reference/model_patches_v0.4.json removes mql8_c without a replacement quinone",
+      "local iJN1463 biomass consumes q8h2_c at 0.000223",
+      "metabolite dilution in FBA and the specific ubiquinone example were described by Benyamini et al. 2010"
+    ],
+    "sources": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC2884546/",
+      "https://doi.org/10.1111/1462-2920.14843"
+    ],
+    "caveats": [
+      "This uses an already exposed development organism and outcomes.",
+      "The metabolite-dilution mechanism is established prior work; this is a test of its relevance to these patches.",
+      "Replacing a biomass coefficient does not by itself establish biochemical truth or independent predictive improvement."
+    ]
+  },
+  "runs": [
+    {
+      "arm": "no_quinone_demand",
+      "coefficient": 0.0,
+      "seconds": 186.28111219406128,
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5138583932136408,
+          "ci95": [
+            0.3907322481870705,
+            0.6305298352706259
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.44122422516814125,
+          "ci95": [
+            0.3326131874200818,
+            0.5550993078120824
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7627692745280802,
+          "ci95": [
+            0.7082186395893892,
+            0.8126323559327419
+          ]
+        },
+        "mcc": {
+          "point": 0.5871646546465976,
+          "ci95": [
+            0.4888396321666528,
+            0.6782066370560209
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.764561111077242,
+          "ci95": [
+            0.71303232336582,
+            0.8108073392093241
+          ]
+        },
+        "accuracy": {
+          "point": 0.9587898196527895,
+          "ci95": [
+            0.9492450418562841,
+            0.9679637901005674
+          ]
+        },
+        "confusion": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      }
+    },
+    {
+      "arm": "ubiquinol_template_amount",
+      "coefficient": -9.68418998275772e-05,
+      "seconds": 1.0181849002838135,
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 0
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 0,
+        "n_conditions": 0,
+        "n_gene_condition_pairs": 0,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0
+      }
+    },
+    {
+      "arm": "ubiquinol_curated_amount",
+      "coefficient": -0.000223,
+      "seconds": 0.9322023391723633,
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 0
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 0,
+        "n_conditions": 0,
+        "n_gene_condition_pairs": 0,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0
+      }
+    },
+    {
+      "arm": "menaquinol_restored_control",
+      "coefficient": -9.68418998275772e-05,
+      "seconds": 7.943165063858032,
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 1
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 1,
+        "n_gene_condition_pairs": 1047,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.4584760166508362,
+          "ci95": [
+            0.32863016844333365,
+            0.6098242840484651
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.5706202339177925,
+          "ci95": [
+            0.44567240522737694,
+            0.7058759485336702
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.8616285175918204,
+          "ci95": [
+            0.7974306723202973,
+            0.9156300587953442
+          ]
+        },
+        "mcc": {
+          "point": 0.6083264856661195,
+          "ci95": [
+            0.5041586740745788,
+            0.7112977603676084
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.779214159948105,
+          "ci95": [
+            0.7187978612321805,
+            0.8389213690801574
+          ]
+        },
+        "accuracy": {
+          "point": 0.9570200573065902,
+          "ci95": [
+            0.9441021967526265,
+            0.9684813753581661
+          ]
+        },
+        "confusion": {
+          "tp": 964,
+          "tn": 38,
+          "fp": 28,
+          "fn": 17
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "arm": "ubiquinol_template_amount",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 0,
+      "conditions_both_grow": [],
+      "n_shared_finite_pairs": 0,
+      "wt_grows": {
+        "A": 34,
+        "B": 0
+      },
+      "mcc": {
+        "A": null,
+        "B": null
+      },
+      "confusion": {
+        "A": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "B": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": null,
+        "ci95": [
+          null,
+          null
+        ],
+        "finite_bootstrap_samples": 0,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    },
+    {
+      "arm": "ubiquinol_curated_amount",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 0,
+      "conditions_both_grow": [],
+      "n_shared_finite_pairs": 0,
+      "wt_grows": {
+        "A": 34,
+        "B": 0
+      },
+      "mcc": {
+        "A": null,
+        "B": null
+      },
+      "confusion": {
+        "A": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "B": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": null,
+        "ci95": [
+          null,
+          null
+        ],
+        "finite_bootstrap_samples": 0,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    },
+    {
+      "arm": "menaquinol_restored_control",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 1,
+      "conditions_both_grow": [
+        "benzoic acid | MOPS minimal media_noCarbon"
+      ],
+      "n_shared_finite_pairs": 1047,
+      "wt_grows": {
+        "A": 34,
+        "B": 1
+      },
+      "mcc": {
+        "A": 0.6281053885111924,
+        "B": 0.6083264856661195
+      },
+      "confusion": {
+        "A": {
+          "tp": 967,
+          "tn": 38,
+          "fp": 28,
+          "fn": 14
+        },
+        "B": {
+          "tp": 964,
+          "tn": 38,
+          "fp": 28,
+          "fn": 17
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": -0.019778902845072888,
+        "ci95": [
+          -0.04471328131093098,
+          0.0
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    }
+  ],
+  "n_changed_gene_condition_predictions": 3,
+  "interpretation": "Retrospective sensitivity analysis; coefficient values not fitted to fitness."
+}

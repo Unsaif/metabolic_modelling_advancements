@@ -1,0 +1,1 @@
+Completed diagnostic attempt 2 is preserved here. The numerical and structural diagnostic passed. The matrix comparison reported differing axis order and did not align the identical gene and condition sets. The final diagnostic adds explicit label alignment; no main study inputs or outputs were changed.

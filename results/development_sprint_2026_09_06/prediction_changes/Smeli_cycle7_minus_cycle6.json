@@ -1,0 +1,488 @@
+[
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "Beta-Lactose | RCH2_defined_noCarbon",
+    "cycle6_growth": -1.5641724151127975e-15,
+    "cycle7_growth": 1.6010146664186282,
+    "fitness": -0.055,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Arabinose | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.795630769302506e-16,
+    "cycle7_growth": 0.6441426921325453,
+    "fitness": 0.643,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Cellobiose | RCH2_defined_noCarbon",
+    "cycle6_growth": 4.72764964056522e-16,
+    "cycle7_growth": 1.7114144972291085,
+    "fitness": -0.019,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Fructose | RCH2_defined_noCarbon",
+    "cycle6_growth": -9.603660861489238e-16,
+    "cycle7_growth": 0.8744994037427262,
+    "fitness": -0.03,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Galactose | RCH2_defined_noCarbon",
+    "cycle6_growth": 3.451704879122015e-16,
+    "cycle7_growth": 0.7729530130993554,
+    "fitness": -0.127,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Glucose | RCH2_defined_noCarbon",
+    "cycle6_growth": -3.5350525560893225e-16,
+    "cycle7_growth": 0.7729530130993787,
+    "fitness": -0.103,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Maltose monohydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": -1.5954554641022595e-15,
+    "cycle7_growth": 1.6010146664186633,
+    "fitness": 0.11,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Raffinose pentahydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": -4.2575119085661275e-15,
+    "cycle7_growth": 2.48419045786145,
+    "fitness": 0.001,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Ribose | RCH2_defined_noCarbon",
+    "cycle6_growth": -3.83398523828707e-16,
+    "cycle7_growth": 0.6441426921325304,
+    "fitness": -0.172,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Salicin | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.1750219131310134e-15,
+    "cycle7_growth": 0.8318312990736432,
+    "fitness": 0.0,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Sorbitol | RCH2_defined_noCarbon",
+    "cycle6_growth": 5.737307409837705e-17,
+    "cycle7_growth": 0.8695607538244983,
+    "fitness": -0.099,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Trehalose dihydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": 2.859234407116962e-16,
+    "cycle7_growth": 1.6010146664186389,
+    "fitness": 0.068,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "D-Xylose | RCH2_defined_noCarbon",
+    "cycle6_growth": 2.5692559852428976e-15,
+    "cycle7_growth": 0.6855460095861611,
+    "fitness": 0.08,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "Glycerol | RCH2_defined_noCarbon",
+    "cycle6_growth": 5.68480528214144e-16,
+    "cycle7_growth": 0.49194536549048506,
+    "fitness": -0.043,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "L-Fucose | RCH2_defined_noCarbon",
+    "cycle6_growth": 2.5011260200960825e-15,
+    "cycle7_growth": 0.8608367595194412,
+    "fitness": -3.477,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": false
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "L-Glutamine | RCH2_defined_noCarbon",
+    "cycle6_growth": 2.2007453630632e-17,
+    "cycle7_growth": 0.5910497470949633,
+    "fitness": 0.043,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "L-Histidine | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.4393140515598505e-15,
+    "cycle7_growth": 0.6837758107691382,
+    "fitness": 0.19,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "L-Lysine | RCH2_defined_noCarbon",
+    "cycle6_growth": 0.0,
+    "cycle7_growth": 0.35301091564043946,
+    "fitness": -0.057,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "L-Malic acid disodium salt monohydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": 0.0,
+    "cycle7_growth": 0.3890109105829499,
+    "fitness": -0.008,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "L-Proline | RCH2_defined_noCarbon",
+    "cycle6_growth": 2.6815351044957788e-17,
+    "cycle7_growth": 0.40989555758198376,
+    "fitness": -0.142,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "L-Rhamnose monohydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": 4.863616546252153e-16,
+    "cycle7_growth": 0.8198488268495528,
+    "fitness": -0.023,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "N-Acetyl-D-Glucosamine | RCH2_defined_noCarbon",
+    "cycle6_growth": -1.2105207725125654e-15,
+    "cycle7_growth": 1.0086502813047922,
+    "fitness": -0.082,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "Sodium D,L-Lactate | RCH2_defined_noCarbon",
+    "cycle6_growth": 2.9974900173666774e-16,
+    "cycle7_growth": 0.37611559642521875,
+    "fitness": 0.012,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "Sodium L-Lactate | RCH2_defined_noCarbon",
+    "cycle6_growth": 2.9974900173666774e-16,
+    "cycle7_growth": 0.37611559642521875,
+    "fitness": 0.142,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "Sodium pyruvate | RCH2_defined_noCarbon",
+    "cycle6_growth": -2.620141154611558e-15,
+    "cycle7_growth": 0.3223847969359043,
+    "fitness": -0.002,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "Sodium succinate dibasic hexahydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": -3.443188522205309e-16,
+    "cycle7_growth": 0.44458389780908564,
+    "fitness": 0.212,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SM_b21107",
+    "condition": "m-Inositol | RCH2_defined_noCarbon",
+    "cycle6_growth": 3.613708778440795e-16,
+    "cycle7_growth": 0.8061861826262631,
+    "fitness": 0.064,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "Beta-Lactose | RCH2_defined_noCarbon",
+    "cycle6_growth": 0.0,
+    "cycle7_growth": 1.6010146664186282,
+    "fitness": 0.035,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Arabinose | RCH2_defined_noCarbon",
+    "cycle6_growth": 6.483884911105597e-16,
+    "cycle7_growth": 0.6441426921325453,
+    "fitness": 0.113,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Cellobiose | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.6950789649685948e-15,
+    "cycle7_growth": 1.7114144972291085,
+    "fitness": 0.032,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Fructose | RCH2_defined_noCarbon",
+    "cycle6_growth": -1.8763830441892386e-16,
+    "cycle7_growth": 0.8744994037427262,
+    "fitness": 0.355,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Galactose | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.302934291254511e-15,
+    "cycle7_growth": 0.7729530130993554,
+    "fitness": 0.022,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Glucose | RCH2_defined_noCarbon",
+    "cycle6_growth": -1.8855242952151397e-15,
+    "cycle7_growth": 0.7729530130993787,
+    "fitness": 0.075,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Maltose monohydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.5252257173421258e-15,
+    "cycle7_growth": 1.6010146664186633,
+    "fitness": 0.07,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Raffinose pentahydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": -4.077689430754947e-15,
+    "cycle7_growth": 2.4841904578613905,
+    "fitness": 0.29,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Ribose | RCH2_defined_noCarbon",
+    "cycle6_growth": 6.339724271560392e-16,
+    "cycle7_growth": 0.6441426921325304,
+    "fitness": 0.147,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Salicin | RCH2_defined_noCarbon",
+    "cycle6_growth": -9.728347569470967e-16,
+    "cycle7_growth": 0.8318312990736432,
+    "fitness": 0.091,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Sorbitol | RCH2_defined_noCarbon",
+    "cycle6_growth": 4.0414692904432783e-16,
+    "cycle7_growth": 0.8695607538244983,
+    "fitness": 0.023,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Trehalose dihydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": 0.0,
+    "cycle7_growth": 1.6010146664186389,
+    "fitness": 0.046,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "D-Xylose | RCH2_defined_noCarbon",
+    "cycle6_growth": -1.0497751352211066e-15,
+    "cycle7_growth": 0.6855460095861611,
+    "fitness": 0.228,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "Glycerol | RCH2_defined_noCarbon",
+    "cycle6_growth": -5.729461181479873e-17,
+    "cycle7_growth": 0.49194536549048506,
+    "fitness": 0.211,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "L-Fucose | RCH2_defined_noCarbon",
+    "cycle6_growth": -5.023174494713249e-16,
+    "cycle7_growth": 0.8608367595194412,
+    "fitness": 0.004,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "L-Glutamine | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.7067196848339895e-16,
+    "cycle7_growth": 0.5910497470949633,
+    "fitness": 0.044,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "L-Histidine | RCH2_defined_noCarbon",
+    "cycle6_growth": 6.313473905195848e-16,
+    "cycle7_growth": 0.6837758107691382,
+    "fitness": 0.007,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "L-Lysine | RCH2_defined_noCarbon",
+    "cycle6_growth": -4.570685550481906e-15,
+    "cycle7_growth": 0.35301091564041226,
+    "fitness": 0.063,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "L-Malic acid disodium salt monohydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": 3.918572010261092e-15,
+    "cycle7_growth": 0.3890109105829499,
+    "fitness": -0.011,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "L-Proline | RCH2_defined_noCarbon",
+    "cycle6_growth": 0.0,
+    "cycle7_growth": 0.40989555758198243,
+    "fitness": -0.006,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "L-Rhamnose monohydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.6933701401560033e-15,
+    "cycle7_growth": 0.8198488268495528,
+    "fitness": 0.036,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "N-Acetyl-D-Glucosamine | RCH2_defined_noCarbon",
+    "cycle6_growth": 1.4076508313440797e-15,
+    "cycle7_growth": 1.0086502813047922,
+    "fitness": 0.27,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "Sodium D,L-Lactate | RCH2_defined_noCarbon",
+    "cycle6_growth": -6.388011194848388e-17,
+    "cycle7_growth": 0.37611559642521875,
+    "fitness": 0.003,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "Sodium L-Lactate | RCH2_defined_noCarbon",
+    "cycle6_growth": -6.388011194848388e-17,
+    "cycle7_growth": 0.37611559642521875,
+    "fitness": -0.08,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "Sodium pyruvate | RCH2_defined_noCarbon",
+    "cycle6_growth": 0.0,
+    "cycle7_growth": 0.3223847969359043,
+    "fitness": 0.325,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "Sodium succinate dibasic hexahydrate | RCH2_defined_noCarbon",
+    "cycle6_growth": 8.557674738080262e-17,
+    "cycle7_growth": 0.44458389780908564,
+    "fitness": 0.043,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  },
+  {
+    "browser_gene": "SMc03960",
+    "condition": "m-Inositol | RCH2_defined_noCarbon",
+    "cycle6_growth": -3.231064587640785e-16,
+    "cycle7_growth": 0.8061861826262631,
+    "fitness": -0.21,
+    "change": "to_growth",
+    "cycle7_agrees_with_threshold": true
+  }
+]

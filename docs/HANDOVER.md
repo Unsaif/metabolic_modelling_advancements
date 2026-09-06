@@ -2,6 +2,8 @@
 
 > **Audit update, 6 September 2026:** Read [the scientific audit](reviews/2026-09-06-scientific-audit.md) before continuing. This is the historical Claude handover; its transfer recipes and claimed prior permissions are not the current workflow. The fitness-selected arms are development evaluations, and the legacy IEM results require a corrected rerun.
 
+> **Development continuation, 6 September 2026:** Both cycle-6 and cycle-7 configurations are now covered by the [completion sprint](sprints/2026-09-06-development-sprint.md). The [ATP mechanism audit](evidence/07-atp-synthase-mechanism-audit.md) traces a missing-subunit scoring issue fixed upstream in January 2018, after the original model upload. The [quinone experiment](evidence/08-quinone-biomass-audit.md) shows that v0.4's biomass deletion leaves the model unable to synthesize its represented ubiquinone pool; this correction remains unresolved. Use the [evaluation protocol and exposure registry](studies/evaluation-protocol-v1.md) for subsequent studies. The maintained branch is `codex/scientific-audit`; completed commits are pushed through ordinary Git without rewriting the historical main branch.
+
 This note is written for whoever (or whichever model) picks the project up. It says what exists, where it lives, what was running when the session ended, what was found, and what to do next — with exact commands. Read it together with the roadmap (`docs/roadmap/00-landscape-and-roadmap.md`, project doc `roadmap/00-landscape-and-roadmap.md`) and the Sprint 3 note (`docs/sprints/2026-09-05-sprint-3-multi-organism-benchmark.md`, project doc `sprints/2026-09-05-sprint-3-multi-organism-benchmark.md`).
 
 ## 1. The working arrangement

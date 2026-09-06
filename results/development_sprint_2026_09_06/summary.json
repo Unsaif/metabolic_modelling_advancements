@@ -1,0 +1,914 @@
+{
+  "manifest_sha256": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809",
+  "generated_utc": "2026-09-06T10:39:27.991652+00:00",
+  "evaluation_role": "retrospective_development",
+  "runs": [
+    {
+      "run_id": "Btheta_cycle6",
+      "organism": "Btheta",
+      "cycle": 6,
+      "status": "complete",
+      "seconds": 69.3309412500239,
+      "run_dir": "results/development_sprint_2026_09_06/runs/Btheta_cycle6/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "coverage": {
+        "n_conditions_mapped": 25,
+        "n_conditions_wt_grows": 16,
+        "wt_growth_recall": 0.64,
+        "conditions_with_absent_exchange": 8
+      },
+      "gene_metrics": {
+        "n_genes": 510,
+        "n_conditions": 16,
+        "n_gene_condition_pairs": 8160,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5694308457034167,
+          "ci95": [
+            0.46527704767374484,
+            0.6878599107433634
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.49838832343826595,
+          "ci95": [
+            0.3982117494325721,
+            0.602628122787176
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7901354220406085,
+          "ci95": [
+            0.7435554864637288,
+            0.846174423728654
+          ]
+        },
+        "mcc": {
+          "point": 0.5730972266550152,
+          "ci95": [
+            0.4804782671044145,
+            0.6637669565487667
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.773266656352148,
+          "ci95": [
+            0.7226297924601305,
+            0.8305950314730449
+          ]
+        },
+        "accuracy": {
+          "point": 0.9050245098039216,
+          "ci95": [
+            0.8821660539215685,
+            0.9272702205882353
+          ]
+        },
+        "confusion": {
+          "tp": 6736,
+          "tn": 649,
+          "fp": 445,
+          "fn": 330
+        }
+      },
+      "counts": {
+        "model_genes": 686,
+        "model_genes_mapped": 685,
+        "genes_with_fitness": 510,
+        "genes_after_adjustment": 510,
+        "conditions_total": 47,
+        "conditions_mapped": 25,
+        "conditions_wt_grows": 16,
+        "medium_completion_exchanges_added": 4
+      }
+    },
+    {
+      "run_id": "Putida_cycle6",
+      "organism": "Putida",
+      "cycle": 6,
+      "status": "complete",
+      "seconds": 216.7487968330388,
+      "run_dir": "results/development_sprint_2026_09_06/runs/Putida_cycle6/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "coverage": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34,
+        "wt_growth_recall": 0.7906976744186046,
+        "conditions_with_absent_exchange": 9
+      },
+      "gene_metrics": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.48325729559103753,
+          "ci95": [
+            0.3635804438111142,
+            0.5957785775524521
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.40183656786513355,
+          "ci95": [
+            0.30627619727889477,
+            0.5010713624440343
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7602170204785477,
+          "ci95": [
+            0.706004705558675,
+            0.8101249800857313
+          ]
+        },
+        "mcc": {
+          "point": 0.5613730099550528,
+          "ci95": [
+            0.46716778860382113,
+            0.6459749569573858
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7625485287104452,
+          "ci95": [
+            0.711524884619043,
+            0.8086002513578685
+          ]
+        },
+        "accuracy": {
+          "point": 0.9549974717680768,
+          "ci95": [
+            0.944417523456374,
+            0.9640162368672397
+          ]
+        },
+        "confusion": {
+          "tp": 32874,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 665
+        }
+      },
+      "counts": {
+        "model_genes": 1301,
+        "model_genes_mapped": 1300,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "run_id": "MR1_cycle6",
+      "organism": "MR1",
+      "cycle": 6,
+      "status": "complete",
+      "seconds": 63.09608466702048,
+      "run_dir": "results/development_sprint_2026_09_06/runs/MR1_cycle6/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "coverage": {
+        "n_conditions_mapped": 12,
+        "n_conditions_wt_grows": 11,
+        "wt_growth_recall": 0.9166666666666666,
+        "conditions_with_absent_exchange": 1
+      },
+      "gene_metrics": {
+        "n_genes": 713,
+        "n_conditions": 11,
+        "n_gene_condition_pairs": 7843,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5319703445081962,
+          "ci95": [
+            0.43273080730656244,
+            0.6392777514958424
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.5101123238443853,
+          "ci95": [
+            0.43793421944113614,
+            0.5809548743643128
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7271475783754566,
+          "ci95": [
+            0.6918643606257364,
+            0.762868631078511
+          ]
+        },
+        "mcc": {
+          "point": 0.5291575469135111,
+          "ci95": [
+            0.4615920261034666,
+            0.5966239367763544
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7029624361626781,
+          "ci95": [
+            0.6643291786143182,
+            0.7413554743816188
+          ]
+        },
+        "accuracy": {
+          "point": 0.8856304985337243,
+          "ci95": [
+            0.8663649113859493,
+            0.9043255131964809
+          ]
+        },
+        "confusion": {
+          "tp": 6383,
+          "tn": 563,
+          "fp": 752,
+          "fn": 145
+        }
+      },
+      "counts": {
+        "model_genes": 903,
+        "model_genes_mapped": 899,
+        "genes_with_fitness": 713,
+        "genes_after_adjustment": 713,
+        "conditions_total": 16,
+        "conditions_mapped": 12,
+        "conditions_wt_grows": 11,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "run_id": "Smeli_cycle6",
+      "organism": "Smeli",
+      "cycle": 6,
+      "status": "complete",
+      "seconds": 164.2510108749848,
+      "run_dir": "results/development_sprint_2026_09_06/runs/Smeli_cycle6/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "coverage": {
+        "n_conditions_mapped": 33,
+        "n_conditions_wt_grows": 27,
+        "wt_growth_recall": 0.8181818181818182,
+        "conditions_with_absent_exchange": 5
+      },
+      "gene_metrics": {
+        "n_genes": 989,
+        "n_conditions": 27,
+        "n_gene_condition_pairs": 26703,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.6471958133719691,
+          "ci95": [
+            0.514502685132323,
+            0.7607937501444602
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.570508049815148,
+          "ci95": [
+            0.4684175935336115,
+            0.6547351377000259
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7711105346412366,
+          "ci95": [
+            0.7182817765975549,
+            0.8176761957032816
+          ]
+        },
+        "mcc": {
+          "point": 0.6745807324669105,
+          "ci95": [
+            0.5891078324084031,
+            0.7422790794569294
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.771099375295636,
+          "ci95": [
+            0.7207634327803313,
+            0.8160245009695939
+          ]
+        },
+        "accuracy": {
+          "point": 0.9558476575665655,
+          "ci95": [
+            0.9449762199003857,
+            0.9666956896228888
+          ]
+        },
+        "confusion": {
+          "tp": 24294,
+          "tn": 1230,
+          "fp": 1010,
+          "fn": 169
+        }
+      },
+      "counts": {
+        "model_genes": 1220,
+        "model_genes_mapped": 1219,
+        "genes_with_fitness": 989,
+        "genes_after_adjustment": 989,
+        "conditions_total": 33,
+        "conditions_mapped": 33,
+        "conditions_wt_grows": 27,
+        "medium_completion_exchanges_added": 6
+      }
+    },
+    {
+      "run_id": "Btheta_cycle7",
+      "organism": "Btheta",
+      "cycle": 7,
+      "status": "complete",
+      "seconds": 71.81946908298414,
+      "run_dir": "results/development_sprint_2026_09_06/runs/Btheta_cycle7/artifacts/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "coverage": {
+        "n_conditions_mapped": 25,
+        "n_conditions_wt_grows": 16,
+        "wt_growth_recall": 0.64,
+        "conditions_with_absent_exchange": 8
+      },
+      "gene_metrics": {
+        "n_genes": 510,
+        "n_conditions": 16,
+        "n_gene_condition_pairs": 8160,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5694308457034167,
+          "ci95": [
+            0.46527704767374484,
+            0.6878599107433634
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.49570319216793873,
+          "ci95": [
+            0.40352834762389833,
+            0.6012364842648762
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7890949579079672,
+          "ci95": [
+            0.7429358999163671,
+            0.846119615120871
+          ]
+        },
+        "mcc": {
+          "point": 0.5730972266550152,
+          "ci95": [
+            0.4804782671044145,
+            0.6637669565487667
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.773266656352148,
+          "ci95": [
+            0.7226297924601305,
+            0.8305950314730449
+          ]
+        },
+        "accuracy": {
+          "point": 0.9050245098039216,
+          "ci95": [
+            0.8821660539215685,
+            0.9272702205882353
+          ]
+        },
+        "confusion": {
+          "tp": 6736,
+          "tn": 649,
+          "fp": 445,
+          "fn": 330
+        }
+      },
+      "counts": {
+        "model_genes": 686,
+        "model_genes_mapped": 685,
+        "genes_with_fitness": 510,
+        "genes_after_adjustment": 510,
+        "conditions_total": 47,
+        "conditions_mapped": 25,
+        "conditions_wt_grows": 16,
+        "medium_completion_exchanges_added": 4
+      }
+    },
+    {
+      "run_id": "Putida_cycle7",
+      "organism": "Putida",
+      "cycle": 7,
+      "status": "complete",
+      "seconds": 198.2821152919787,
+      "run_dir": "results/development_sprint_2026_09_06/runs/Putida_cycle7/artifacts/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "coverage": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34,
+        "wt_growth_recall": 0.7906976744186046,
+        "conditions_with_absent_exchange": 9
+      },
+      "gene_metrics": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5138583932136408,
+          "ci95": [
+            0.39082686445499215,
+            0.6304530465670097
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.43307370091348685,
+          "ci95": [
+            0.3225018295694106,
+            0.5424491671576653
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7625983500162424,
+          "ci95": [
+            0.7083253759011672,
+            0.8124937230084229
+          ]
+        },
+        "mcc": {
+          "point": 0.5871646546465976,
+          "ci95": [
+            0.4888396321666528,
+            0.6782066370560209
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.764561111077242,
+          "ci95": [
+            0.71303232336582,
+            0.8108073392093241
+          ]
+        },
+        "accuracy": {
+          "point": 0.9587898196527895,
+          "ci95": [
+            0.9492450418562841,
+            0.9679637901005674
+          ]
+        },
+        "confusion": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      },
+      "counts": {
+        "model_genes": 1301,
+        "model_genes_mapped": 1300,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "run_id": "MR1_cycle7",
+      "organism": "MR1",
+      "cycle": 7,
+      "status": "complete",
+      "seconds": 63.351052374986466,
+      "run_dir": "results/development_sprint_2026_09_06/runs/MR1_cycle7/artifacts/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "coverage": {
+        "n_conditions_mapped": 12,
+        "n_conditions_wt_grows": 11,
+        "wt_growth_recall": 0.9166666666666666,
+        "conditions_with_absent_exchange": 1
+      },
+      "gene_metrics": {
+        "n_genes": 719,
+        "n_conditions": 11,
+        "n_gene_condition_pairs": 7909,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.552943302453307,
+          "ci95": [
+            0.45227232414359436,
+            0.654291074218981
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.5163723781751439,
+          "ci95": [
+            0.4465540791381551,
+            0.5886873406640762
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7366320498007445,
+          "ci95": [
+            0.7014637675667552,
+            0.773371913123058
+          ]
+        },
+        "mcc": {
+          "point": 0.536478137578067,
+          "ci95": [
+            0.4604047799046566,
+            0.6094366543740907
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7134678351144619,
+          "ci95": [
+            0.6740556690517596,
+            0.752757077552974
+          ]
+        },
+        "accuracy": {
+          "point": 0.8860791503350613,
+          "ci95": [
+            0.8660766215703629,
+            0.9053641421165761
+          ]
+        },
+        "confusion": {
+          "tp": 6405,
+          "tn": 603,
+          "fp": 727,
+          "fn": 174
+        }
+      },
+      "counts": {
+        "model_genes": 910,
+        "model_genes_mapped": 905,
+        "genes_with_fitness": 719,
+        "genes_after_adjustment": 719,
+        "conditions_total": 16,
+        "conditions_mapped": 12,
+        "conditions_wt_grows": 11,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "run_id": "Smeli_cycle7",
+      "organism": "Smeli",
+      "cycle": 7,
+      "status": "complete",
+      "seconds": 161.0270133750164,
+      "run_dir": "results/development_sprint_2026_09_06/runs/Smeli_cycle7/artifacts/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.4+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "coverage": {
+        "n_conditions_mapped": 33,
+        "n_conditions_wt_grows": 27,
+        "wt_growth_recall": 0.8181818181818182,
+        "conditions_with_absent_exchange": 5
+      },
+      "gene_metrics": {
+        "n_genes": 989,
+        "n_conditions": 27,
+        "n_gene_condition_pairs": 26703,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.6692229118454969,
+          "ci95": [
+            0.535502423483713,
+            0.7792823134951639
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.5899675970804311,
+          "ci95": [
+            0.49003748615283166,
+            0.6743556399342774
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7719803978749248,
+          "ci95": [
+            0.7185619877363413,
+            0.8186628709930601
+          ]
+        },
+        "mcc": {
+          "point": 0.6894366130570477,
+          "ci95": [
+            0.6087699397484696,
+            0.752739405738051
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7719594296196588,
+          "ci95": [
+            0.721035479638898,
+            0.8171157731920761
+          ]
+        },
+        "accuracy": {
+          "point": 0.9577950043066322,
+          "ci95": [
+            0.9475461558626372,
+            0.9677264726809721
+          ]
+        },
+        "confusion": {
+          "tp": 24347,
+          "tn": 1229,
+          "fp": 1011,
+          "fn": 116
+        }
+      },
+      "counts": {
+        "model_genes": 1220,
+        "model_genes_mapped": 1219,
+        "genes_with_fitness": 989,
+        "genes_after_adjustment": 989,
+        "conditions_total": 33,
+        "conditions_mapped": 33,
+        "conditions_wt_grows": 27,
+        "medium_completion_exchanges_added": 6
+      }
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 510,
+      "n_common_conditions": 25,
+      "n_conditions_both_grow": 16,
+      "conditions_both_grow": [
+        "Amylose from potato | Varel_Bryant_medium",
+        "Beta-Lactose | Varel_Bryant_medium",
+        "D-Arabinose | Varel_Bryant_medium",
+        "D-Fructose | Varel_Bryant_medium",
+        "D-Galactose | Varel_Bryant_medium",
+        "D-Galacturonic Acid monohydrate | Varel_Bryant_medium",
+        "D-Glucose | Varel_Bryant_medium",
+        "D-Raffinose pentahydrate | Varel_Bryant_medium",
+        "D-Ribose | Varel_Bryant_medium",
+        "D-Xylose | Varel_Bryant_medium",
+        "L-Arabinose | Varel_Bryant_medium",
+        "L-Fucose | Varel_Bryant_medium",
+        "L-Rhamnose monohydrate | Varel_Bryant_medium",
+        "Laminaribiose | Varel_Bryant_medium",
+        "Red Arabinan from sugar-beet | Varel_Bryant_medium",
+        "Starch | Varel_Bryant_medium"
+      ],
+      "n_shared_finite_pairs": 8160,
+      "wt_grows": {
+        "A": 16,
+        "B": 16
+      },
+      "mcc": {
+        "A": 0.5730972266550152,
+        "B": 0.5730972266550152
+      },
+      "confusion": {
+        "A": {
+          "tp": 6736,
+          "tn": 649,
+          "fp": 445,
+          "fn": 330
+        },
+        "B": {
+          "tp": 6736,
+          "tn": 649,
+          "fp": 445,
+          "fn": 330
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance.",
+      "organism": "Btheta",
+      "conditions_gained": [],
+      "conditions_lost": [],
+      "n_prediction_changes_on_shared_pairs": 0,
+      "n_changes_agree_with_fitness_threshold": 0
+    },
+    {
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5613730099550528,
+        "B": 0.5871646546465976
+      },
+      "confusion": {
+        "A": {
+          "tp": 32874,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 665
+        },
+        "B": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.025791644691544824,
+        "ci95": [
+          0.006263194341009848,
+          0.051458442652882345
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance.",
+      "organism": "Putida",
+      "conditions_gained": [],
+      "conditions_lost": [],
+      "n_prediction_changes_on_shared_pairs": 135,
+      "n_changes_agree_with_fitness_threshold": 135
+    },
+    {
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 713,
+      "n_common_conditions": 12,
+      "n_conditions_both_grow": 11,
+      "conditions_both_grow": [
+        "Adenosine | ShewMM_noCarbon",
+        "Cytidine | ShewMM_noCarbon",
+        "Inosine | ShewMM_noCarbon",
+        "L-Glutamine | ShewMM_noCarbon",
+        "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+        "Sodium D,L-Lactate | ShewMM_noCarbon",
+        "Sodium L-Lactate | ShewMM_noCarbon",
+        "Sodium propionate | ShewMM_noCarbon",
+        "Sodium pyruvate | ShewMM_noCarbon",
+        "Uridine | ShewMM_noCarbon",
+        "casamino acids | ShewMM_noCarbon"
+      ],
+      "n_shared_finite_pairs": 7843,
+      "wt_grows": {
+        "A": 11,
+        "B": 11
+      },
+      "mcc": {
+        "A": 0.5291575469135111,
+        "B": 0.5446573619884693
+      },
+      "confusion": {
+        "A": {
+          "tp": 6383,
+          "tn": 563,
+          "fp": 752,
+          "fn": 145
+        },
+        "B": {
+          "tp": 6378,
+          "tn": 591,
+          "fp": 724,
+          "fn": 150
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.015499815074958123,
+        "ci95": [
+          0.0,
+          0.0344059779833888
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance.",
+      "organism": "MR1",
+      "conditions_gained": [],
+      "conditions_lost": [],
+      "n_prediction_changes_on_shared_pairs": 33,
+      "n_changes_agree_with_fitness_threshold": 28
+    },
+    {
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 989,
+      "n_common_conditions": 33,
+      "n_conditions_both_grow": 27,
+      "conditions_both_grow": [
+        "Beta-Lactose | RCH2_defined_noCarbon",
+        "D-Arabinose | RCH2_defined_noCarbon",
+        "D-Cellobiose | RCH2_defined_noCarbon",
+        "D-Fructose | RCH2_defined_noCarbon",
+        "D-Galactose | RCH2_defined_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Maltose monohydrate | RCH2_defined_noCarbon",
+        "D-Raffinose pentahydrate | RCH2_defined_noCarbon",
+        "D-Ribose | RCH2_defined_noCarbon",
+        "D-Salicin | RCH2_defined_noCarbon",
+        "D-Sorbitol | RCH2_defined_noCarbon",
+        "D-Trehalose dihydrate | RCH2_defined_noCarbon",
+        "D-Xylose | RCH2_defined_noCarbon",
+        "Glycerol | RCH2_defined_noCarbon",
+        "L-Fucose | RCH2_defined_noCarbon",
+        "L-Glutamine | RCH2_defined_noCarbon",
+        "L-Histidine | RCH2_defined_noCarbon",
+        "L-Lysine | RCH2_defined_noCarbon",
+        "L-Malic acid disodium salt monohydrate | RCH2_defined_noCarbon",
+        "L-Proline | RCH2_defined_noCarbon",
+        "L-Rhamnose monohydrate | RCH2_defined_noCarbon",
+        "N-Acetyl-D-Glucosamine | RCH2_defined_noCarbon",
+        "Sodium D,L-Lactate | RCH2_defined_noCarbon",
+        "Sodium L-Lactate | RCH2_defined_noCarbon",
+        "Sodium pyruvate | RCH2_defined_noCarbon",
+        "Sodium succinate dibasic hexahydrate | RCH2_defined_noCarbon",
+        "m-Inositol | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 26703,
+      "wt_grows": {
+        "A": 27,
+        "B": 27
+      },
+      "mcc": {
+        "A": 0.6745807324669105,
+        "B": 0.6894366130570477
+      },
+      "confusion": {
+        "A": {
+          "tp": 24294,
+          "tn": 1230,
+          "fp": 1010,
+          "fn": 169
+        },
+        "B": {
+          "tp": 24347,
+          "tn": 1229,
+          "fp": 1011,
+          "fn": 116
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.014855880590137205,
+        "ci95": [
+          0.0,
+          0.03767000585571044
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance.",
+      "organism": "Smeli",
+      "conditions_gained": [],
+      "conditions_lost": [],
+      "n_prediction_changes_on_shared_pairs": 54,
+      "n_changes_agree_with_fitness_threshold": 53
+    }
+  ],
+  "interpretation": "All prespecified results are retained. Confidence intervals condition on previously selected patches and fixed conditions; they do not establish independent predictive improvement."
+}

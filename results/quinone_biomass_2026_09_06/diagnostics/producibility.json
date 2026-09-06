@@ -1,0 +1,1267 @@
+{
+  "created_at": "2026-09-06T10:46:07.419393+00:00",
+  "role": "Post-run structural and numerical diagnostic; not prespecified model selection or external validation",
+  "script_sha256": "7cf4282cfed98ba5e0ca64e1373dcc94c0a024f2870878f8056f60157c306bed",
+  "main_manifest_sha256": "1b69a3dded15e6487e6a58c80785c3ad0097c98839cd09c1b59ce69537cce95f",
+  "source_metadata_omission": {
+    "path": "models/gapfilled/Putida_gapfill.json",
+    "sha256_now": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2",
+    "note": "Read by load_model for source text but omitted from the main manifest; hash captured only during this post-run diagnostic. Numerical model bytes were frozen."
+  },
+  "versions": {
+    "cobra": "0.32.1",
+    "glpk": "5.0",
+    "highs": "1.15.1"
+  },
+  "condition": "D-Glucose | MOPS minimal media_noCarbon",
+  "carbon_uptake": -10.0,
+  "medium_completion_added": [
+    "EX_4abz_e",
+    "EX_btn_e",
+    "EX_na1_e",
+    "EX_nac_e",
+    "EX_ni2_e",
+    "EX_ribflv_e",
+    "EX_thm_e"
+  ],
+  "coefficients": {
+    "template_menaquinol": -9.68418998275772e-05,
+    "curated_ubiquinol": -0.000223
+  },
+  "baseline_quinone_pool_certificate": {
+    "metabolite_rows": [
+      "q8_c",
+      "q8h2_c"
+    ],
+    "row_weights": [
+      1,
+      1
+    ],
+    "n_incident_reactions": 10,
+    "incident_reactions": [
+      "CYO1_KT",
+      "CYTBDpp",
+      "CYTBO3_4pp",
+      "GLCDpp",
+      "L_LACD2",
+      "MDH2",
+      "NADH16pp",
+      "NADH5",
+      "NADPHQR2",
+      "SUCDi"
+    ],
+    "nonzero_summed_row_coefficients": [],
+    "max_abs_summed_row_coefficient": 0.0,
+    "exactly_conserved_pool": true
+  },
+  "structural_conclusion": "The q8_c and q8h2_c balance rows sum to zero in the prepared baseline. Adding only -epsilon q8h2_c to Growth makes their sum -epsilon*v_Growth=0, forcing zero growth for any nonzero epsilon. This is a model-structure property, not a statement that P. putida lacks quinone synthesis.",
+  "source_rescue_caveat": "An ideal source bypasses missing pool synthesis for diagnosis and is not an accepted biological reaction or patch.",
+  "cases": [
+    {
+      "case": "glucose_growth_without_quinone_demand",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 10,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [],
+        "max_abs_summed_row_coefficient": 0.0,
+        "exactly_conserved_pool": true
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.9193705347896576,
+          "primal_certificate": {
+            "max_abs_S_residual": 1.4833939222349556e-12,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 9.070503297790056e-17,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896576,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 2.6645352591003757e-15,
+            "q8h2_c": -2.6645352591003757e-15
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.9193705347896576,
+          "primal_certificate": {
+            "max_abs_S_residual": 1.4833939222349556e-12,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 9.070503297790056e-17,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896576,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 2.6645352591003757e-15,
+            "q8h2_c": -2.6645352591003757e-15
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.9193705347896706,
+          "primal_certificate": {
+            "max_abs_S_residual": 1.1264194866757322e-11,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896706,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 8.881784197001252e-16,
+            "q8h2_c": -8.881784197001252e-16
+          }
+        }
+      ]
+    },
+    {
+      "case": "glucose_growth_ubiquinol_template_amount",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 11,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "Growth",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [
+          {
+            "reaction": "Growth",
+            "coefficient": -9.68418998275772e-05
+          }
+        ],
+        "max_abs_summed_row_coefficient": 9.68418998275772e-05,
+        "exactly_conserved_pool": false
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": -0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "glucose_growth_ubiquinol_template_amount_ideal_source_rescue",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 12,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "DIAG_SOURCE_q8h2_c",
+          "GLCDpp",
+          "Growth",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [
+          {
+            "reaction": "Growth",
+            "coefficient": -9.68418998275772e-05
+          },
+          {
+            "reaction": "DIAG_SOURCE_q8h2_c",
+            "coefficient": 1.0
+          }
+        ],
+        "max_abs_summed_row_coefficient": 1.0,
+        "exactly_conserved_pool": false
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.9193705347896788,
+          "primal_certificate": {
+            "max_abs_S_residual": 1.228942752084819e-13,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896788,
+          "diagnostic_fluxes": {
+            "DIAG_SOURCE_q8h2_c": 8.903358923416672e-05
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 3.552713678800501e-15,
+            "q8h2_c": -3.9141460255257e-15
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.9193705347896788,
+          "primal_certificate": {
+            "max_abs_S_residual": 1.228942752084819e-13,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896788,
+          "diagnostic_fluxes": {
+            "DIAG_SOURCE_q8h2_c": 8.903358923416672e-05
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 3.552713678800501e-15,
+            "q8h2_c": -3.9141460255257e-15
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.9193705347896709,
+          "primal_certificate": {
+            "max_abs_S_residual": 3.384005717423389e-12,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896709,
+          "diagnostic_fluxes": {
+            "DIAG_SOURCE_q8h2_c": 8.903358923362248e-05
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": -9.049157907378702e-16
+          }
+        }
+      ]
+    },
+    {
+      "case": "glucose_growth_ubiquinol_template_amount_forced_0.1",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 11,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "Growth",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [
+          {
+            "reaction": "Growth",
+            "coefficient": -9.68418998275772e-05
+          }
+        ],
+        "max_abs_summed_row_coefficient": 9.68418998275772e-05,
+        "exactly_conserved_pool": false
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "infeasible",
+          "objective": null
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "infeasible",
+          "objective": null
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Infeasible",
+          "objective": null
+        }
+      ]
+    },
+    {
+      "case": "glucose_growth_ubiquinol_curated_amount",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 11,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "Growth",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [
+          {
+            "reaction": "Growth",
+            "coefficient": -0.000223
+          }
+        ],
+        "max_abs_summed_row_coefficient": 0.000223,
+        "exactly_conserved_pool": false
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": -0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "glucose_growth_ubiquinol_curated_amount_ideal_source_rescue",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 12,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "DIAG_SOURCE_q8h2_c",
+          "GLCDpp",
+          "Growth",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [
+          {
+            "reaction": "Growth",
+            "coefficient": -0.000223
+          },
+          {
+            "reaction": "DIAG_SOURCE_q8h2_c",
+            "coefficient": 1.0
+          }
+        ],
+        "max_abs_summed_row_coefficient": 1.0,
+        "exactly_conserved_pool": false
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.9193705347896696,
+          "primal_certificate": {
+            "max_abs_S_residual": 7.551891849572613e-14,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 2.198587593465215e-16,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896696,
+          "diagnostic_fluxes": {
+            "DIAG_SOURCE_q8h2_c": 0.000205019629258452
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 3.5569962773818187e-16
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.9193705347896696,
+          "primal_certificate": {
+            "max_abs_S_residual": 7.551891849572613e-14,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 2.198587593465215e-16,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896696,
+          "diagnostic_fluxes": {
+            "DIAG_SOURCE_q8h2_c": 0.000205019629258452
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 4.440892098500626e-15,
+            "q8h2_c": -4.085192470762444e-15
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.9193705347896711,
+          "primal_certificate": {
+            "max_abs_S_residual": 2.462910027711956e-12,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.9193705347896711,
+          "diagnostic_fluxes": {
+            "DIAG_SOURCE_q8h2_c": 0.0002050196292593398
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 8.881784197001252e-16,
+            "q8h2_c": 3.5496779127175415e-16
+          }
+        }
+      ]
+    },
+    {
+      "case": "glucose_growth_ubiquinol_curated_amount_forced_0.1",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 11,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "Growth",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [
+          {
+            "reaction": "Growth",
+            "coefficient": -0.000223
+          }
+        ],
+        "max_abs_summed_row_coefficient": 0.000223,
+        "exactly_conserved_pool": false
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "infeasible",
+          "objective": null
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "infeasible",
+          "objective": null
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Infeasible",
+          "objective": null
+        }
+      ]
+    },
+    {
+      "case": "glucose_growth_menaquinol_restored_control",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 10,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [],
+        "max_abs_summed_row_coefficient": 0.0,
+        "exactly_conserved_pool": true
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 4.547473508864641e-13,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": -0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "glucose_max_q8_c_demand_no_growth_requirement",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 11,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "DIAG_DEMAND_q8_c",
+          "GLCDpp",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [
+          {
+            "reaction": "DIAG_DEMAND_q8_c",
+            "coefficient": -1.0
+          }
+        ],
+        "max_abs_summed_row_coefficient": 1.0,
+        "exactly_conserved_pool": false
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_q8_c": 0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_q8_c": 0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_q8_c": -0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "glucose_max_q8h2_c_demand_no_growth_requirement",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 11,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "DIAG_DEMAND_q8h2_c",
+          "GLCDpp",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [
+          {
+            "reaction": "DIAG_DEMAND_q8h2_c",
+            "coefficient": -1.0
+          }
+        ],
+        "max_abs_summed_row_coefficient": 1.0,
+        "exactly_conserved_pool": false
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_q8h2_c": 0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_q8h2_c": 0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_q8h2_c": -0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "glucose_max_mql8_c_demand_no_growth_requirement",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 10,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [],
+        "max_abs_summed_row_coefficient": 0.0,
+        "exactly_conserved_pool": true
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_mql8_c": 0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_mql8_c": 0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 3.7903014060702844e-13,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {
+            "DIAG_DEMAND_mql8_c": -0.0
+          },
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "saved_changed_call_PP_1658",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 10,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [],
+        "max_abs_summed_row_coefficient": 0.0,
+        "exactly_conserved_pool": true
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": -0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "saved_changed_call_PP_2458",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 10,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [],
+        "max_abs_summed_row_coefficient": 0.0,
+        "exactly_conserved_pool": true
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 4.547473508864641e-13,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": -0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "case": "saved_changed_call_PP_3232",
+      "quinone_pool_certificate": {
+        "metabolite_rows": [
+          "q8_c",
+          "q8h2_c"
+        ],
+        "row_weights": [
+          1,
+          1
+        ],
+        "n_incident_reactions": 10,
+        "incident_reactions": [
+          "CYO1_KT",
+          "CYTBDpp",
+          "CYTBO3_4pp",
+          "GLCDpp",
+          "L_LACD2",
+          "MDH2",
+          "NADH16pp",
+          "NADH5",
+          "NADPHQR2",
+          "SUCDi"
+        ],
+        "nonzero_summed_row_coefficients": [],
+        "max_abs_summed_row_coefficient": 0.0,
+        "exactly_conserved_pool": true
+      },
+      "solves": [
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-07,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "glpk",
+          "feasibility_tolerance": 1e-09,
+          "status": "optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": 0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        },
+        {
+          "solver": "highs",
+          "feasibility_tolerance": 1e-09,
+          "status": "Optimal",
+          "objective": 0.0,
+          "primal_certificate": {
+            "max_abs_S_residual": 0.0,
+            "n_S_rows_over_1e-6": 0,
+            "max_bound_violation": 0.0,
+            "n_bounds_over_1e-6": 0
+          },
+          "growth_flux": -0.0,
+          "diagnostic_fluxes": {},
+          "quinone_balance_residuals": {
+            "q8_c": 0.0,
+            "q8h2_c": 0.0
+          }
+        }
+      ]
+    }
+  ]
+}

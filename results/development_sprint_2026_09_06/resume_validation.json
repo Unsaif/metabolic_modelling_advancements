@@ -1,0 +1,23 @@
+{
+  "verified_utc": "2026-09-06T10:44:17.361991+00:00",
+  "manifest_sha256": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809",
+  "command": [
+    ".venv/bin/python",
+    "scripts/run_development_sprint.py",
+    "--mode",
+    "run"
+  ],
+  "exit_code": 0,
+  "validated_without_rerunning": [
+    "Btheta_cycle6",
+    "Putida_cycle6",
+    "MR1_cycle6",
+    "Smeli_cycle6",
+    "Btheta_cycle7",
+    "Putida_cycle7",
+    "MR1_cycle7",
+    "Smeli_cycle7"
+  ],
+  "frozen_inputs_unchanged": true,
+  "all_recorded_artifact_hashes_match": true
+}

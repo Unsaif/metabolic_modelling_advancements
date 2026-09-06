@@ -1,0 +1,127 @@
+{
+  "recorded_utc": "2026-09-06T10:23:24.109148+00:00",
+  "source": "Literal comparison of the frozen model patch files, before cycle7 simulation.",
+  "new_v04_entries": [
+    {
+      "org": "Putida",
+      "biomass_remove": [
+        "mql8_c"
+      ],
+      "biomass_id": "Growth",
+      "rationale": "The CarveMe universal gram-negative biomass demands menaquinol (mql8), but P. putida KT2440 has no menaquinone biosynthesis genes (no menF, menD, menH, menB, menC, menE; only the bifunctional ubiE/menG methyltransferase annotation) and uses ubiquinone; to satisfy the demand the reference gap-fill had invented a route to the naphthoquinone ring through oxalyl-CoA decarboxylase and a phenylpyruvate oxidation (OXCDC, PHPYROX), which with the demand removed are no longer needed.",
+      "flagged_by": "reference gap-fill: OXCDC and PHPYROX were each necessary only for mql8_c (biomass precursor test); genome-wide feature table: no men genes"
+    },
+    {
+      "org": "Putida",
+      "remove_reaction": "OXCDC",
+      "rationale": "gene-less gap-fill reaction made unnecessary by the biomass correction above",
+      "flagged_by": "as biomass_remove"
+    },
+    {
+      "org": "Putida",
+      "remove_reaction": "PHPYROX",
+      "rationale": "as OXCDC",
+      "flagged_by": "as biomass_remove"
+    },
+    {
+      "org": "Smeli",
+      "biomass_remove": [
+        "mql8_c"
+      ],
+      "biomass_id": "Growth",
+      "rationale": "S. meliloti 1021 is a ubiquinone organism with no menaquinone pathway in the genome (the only hit is the bifunctional ubiE methyltransferase); the draft satisfies the template's menaquinol demand through the last step alone (AMMQLT8) from a 2-demethylmenaquinol it has no way to make properly.",
+      "flagged_by": "biomass-template review after the P. putida case; genome-wide feature table"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ACODA",
+      "name": "Acetylornithine deacetylase",
+      "metabolites": {
+        "acorn_c": -1,
+        "h2o_c": -1,
+        "ac_c": 1,
+        "orn_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "SO3749",
+      "rationale": "The draft has every arginine-pathway step except the one that releases ornithine from N-acetylornithine (no ACODA, no ORNTAC), so the reference gap-fill made ornithine by running an ornithine cyclodeaminase backwards from proline (ORNCD). SO3749 (SO_RS17460, 'N-acetyl-ornithine deacetylase', argE) is the annotated enzyme.",
+      "flagged_by": "reference gap-fill: ORNCD was necessary only for arg__L_c; genome annotation argE"
+    },
+    {
+      "org": "MR1",
+      "remove_reaction": "ORNCD",
+      "rationale": "gene-less gap-fill replaced by ACODA (argE)",
+      "flagged_by": "as ACODA"
+    },
+    {
+      "org": "MR1",
+      "reaction": "L_LACD2",
+      "name": "L-Lactate dehydrogenase (ubiquinone)",
+      "metabolites": {
+        "lac__L_c": -1,
+        "q8_c": -1,
+        "pyr_c": 1,
+        "q8h2_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "SO1518 and SO1519 and SO1520",
+      "rationale": "S. oneidensis oxidises L-lactate with the membrane-associated, quinone-linked LldEFG complex (SO_1518 LutC/YkgG family, SO_1519 lactate utilization protein B, SO_1520 Fe-S-binding protein; the L-lactate permease SO_1522 is next to them), not with an NAD-dependent dehydrogenase; the reference gap-fill had added the NAD-dependent LDH_L without a gene. The quinone-linked form is the annotated one and, for an aerobe, the physiologically right one.",
+      "flagged_by": "reference gap-fill: LDH_L was the gene-less fill for the lactate reference condition; the fitness data on lactate can now score SO1518-SO1520"
+    },
+    {
+      "org": "MR1",
+      "remove_reaction": "LDH_L",
+      "rationale": "gene-less gap-fill replaced by L_LACD2 (lldEFG)",
+      "flagged_by": "as L_LACD2"
+    },
+    {
+      "org": "MR1",
+      "reaction": "Zn2tex",
+      "name": "Zinc (Zn+2) transport via diffusion (extracellular to periplasm)",
+      "metabolites": {
+        "zn2_e": -1,
+        "zn2_p": 1
+      },
+      "lower_bound": -1000,
+      "upper_bound": 1000,
+      "gpr": "",
+      "rationale": "outer-membrane diffusion of zinc, gene-less (rule R5); needed for ZNabcpp below",
+      "flagged_by": "as ZNabcpp"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ZNabcpp",
+      "name": "Zinc (Zn+2) transport via ABC system (periplasm)",
+      "metabolites": {
+        "atp_c": -1,
+        "h2o_c": -1,
+        "zn2_p": -1,
+        "adp_c": 1,
+        "h_c": 1,
+        "pi_c": 1,
+        "zn2_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "SO0565 and SO0566 and SO4820",
+      "rationale": "The draft has no zinc uptake system (only a citrate-coupled zinc reaction, CITt15, and an exporter), so the reference gap-fill took zinc in through a citrate/acetate antiport (CITACt); the genome carries the znuABC-type ABC transporter (SO_0565 Zn/Mn-family substrate-binding protein, SO_0566 permease, SO_4820 'zinc ABC transporter' ATP-binding).",
+      "flagged_by": "reference gap-fill: CITACt was necessary only for zn2_c"
+    },
+    {
+      "org": "MR1",
+      "remove_reaction": "CITACt",
+      "rationale": "gene-less gap-fill replaced by the zinc ABC transporter",
+      "flagged_by": "as ZNabcpp"
+    }
+  ],
+  "removed_or_replaced_v03_entries": [],
+  "expected_scope": {
+    "Btheta": "No model-patch difference; gene/condition predictions should be unchanged.",
+    "Putida": "Remove biomass menaquinol demand and OXCDC/PHPYROX gap-fill reactions.",
+    "Smeli": "Remove biomass menaquinol demand.",
+    "MR1": "Replace ORNCD, LDH_L and CITACt gap-fills with annotated ACODA, L_LACD2 and zinc ABC uptake."
+  },
+  "interpretation": "These are the earlier author's patch rationales, not independently confirmed biological conclusions."
+}
