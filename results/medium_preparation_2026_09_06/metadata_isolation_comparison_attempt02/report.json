@@ -1,0 +1,1269 @@
+{
+  "additional_input_sha256": {
+    "gembench/medium_preparation_v2.py": "c53cdd85e229ce85e37b24ed64b48d10677067f68807f1dee6c3dd8d44afc96c",
+    "gembench/medium_preparation_v3.py": "a8e39db3cb092fe888a9f979d3859ff811e2248530e1fe21388f2ab87020f96a",
+    "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b",
+    "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json": "514382db16ecef951cd96517d7028dc218f039b3a43cea7c7f85ac7938db8735",
+    "scripts/compare_medium_metadata_isolation.py": "fa4a0d1d8b6ef7560a9927040c9fd5f34031dce1283d623bd538ff9e74201d03",
+    "scripts/verify_medium_preparation.py": "7aa1087262ce19a1a99021e6c8f76cf2c409078782d236b6d05e22a86727fdb7",
+    "tests/test_medium_preparation_v2.py": "539ca2f8c71edc13224262e8c88817ab7b9f3e17c85ed89d41639a63ef80859e",
+    "tests/test_medium_preparation_v3.py": "6773da14310c33d1c78ba2a0a73842b89beb36dd05d98d6a4698e6b9aa896aa8",
+    "tests/test_verify_medium_preparation.py": "3afd306f8168a52a7fa3d7f09d861d0c8f9ac75937be7920a9c8fd1c151e9241"
+  },
+  "cases": [
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "L-Arginine | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ff5be139caf511fac0231eabcfc78e2b408fec06cbce44c466f839696ac60881"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3590c31ef05bcc807a7fbf2fe175fc5b6cd236e33c304ab7f26752061686b6e7"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "L-Histidine | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1e5889500010e6923a543a3b270180235794e649068330d3104742f458864140"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "24310763b664dead248b5025ea02eca39db191c124a6210629a4f81e7f7569ed"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "00c3d353dc74a4e22d3f7f5f45c94b8d9f4eda2e80d34e2ddbde0a16e412807d"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1fdbcbe4bbf46a807991608db4cd7eefef395f286815c470a466bac631f24c79"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Vanillin | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "0bc43e451aa9659b70ab9432f66bfabda02260094c819f055e13430bf6a7ba0d"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "1,2-Propanediol | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Sodium propionate | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "a527e3cd0548df410a55892d7c565d7997c05c1e0722e83dcf66e92f815228d9"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Vanillic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "bd2bccb11a7b750ea3fc043c4b57371df9c3ce989eb2820149563cd73b2312f5"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Protocatechuic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "198c333e4ff4bab9c1cc36eb54ee5f7710985e184fc0af85518986db13e1ad99"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "48cfcbb0652c3bc3a2c34d4d76ca3a0ee638a2ca98d1ba3918b333410af2ed30"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "L-Lysine | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "66a3e6e4cbb8f8a490e93a31e704ca1519c75a95bfff5991113554bfbe2c144e"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "p-Coumaric acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "2ab3764492e382d2aa288c4fbbfd02ae7009b539ca61bb4ad737706a0b15c0ad"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "benzoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "538aad22f31d687ce03e479660c7fe15a1e5ef8fb76f42cf1d6d951bb8206f1d"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Ferulic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "D-Glucose | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3d992422c56665dcb5e1446d01dc631f4faf91784a1bd40f9c3cf37d438482ab"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Phenylacetic acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1e4e17e27701377ff04df8a0e5047e04079fdb6e7cc7ec47b2dc40c3aaff8ef0"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "429cd161f7174e6ddd2d1d7871bf6485d78b9805748ff1693bfcc7c6dec461d5"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Decanoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "00f255e05b41d0afb31d1db8e91f7e3714cdd20f19a0b9b24c271506c6e38314"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Lauric acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c310fdd907e6be63437cbf492cd194a532abfd2a69745ba63632c639fb293196"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Octanoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "a6a5e11a3ce21a3c5e826252856a346b1a02ef8191820a9124668edf539290b2"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Myristic acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "2ce35f933c7c48aa5e004c3df0e4c15cb909674d67f7a7d2223cb5ab1e26a0ce"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Oleic acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "6eb5b7b378ad37ca4f77eb166ad367d3e3c9abe62a10f0fe64b5205539d69923"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Butanol | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "d996fc463233c6f699674999683cb7517dba638b91c0a273c02ba83ff295e39a"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Ethanol | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1da6408268e5c83fb8d5ab218ede1ddb07693723247b2751ddae7908827bc630"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "L-Valine | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "40314066f69ae7c60dd6b649b330638c5feb5ff1148d6c8689cb9f672f20db4a"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "L-Leucine | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b0168a8fe915568da0f5badf1d9d1b3da56aec4c54824832b6aecbfd0d1be75d"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "L-Isoleucine | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "768f4da476fa35ddd49fe46d2d5c39b3712043b94cf381debe4c18e2c3a77780"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "D-Glucose | RCH2_defined_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "0a9bf7a16a9f5dd17a20cd4f1e242a6f9fdfaef04d7b51fb695218f95f4fb6fd"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Potassium acetate | RCH2_defined_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "68afe87d989fdfa38cdb06e9b3fc168d10ff9e906326bb32cd357798b099ecca"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3b08c8845318badc54f3ff6426de8f78306bc2a026532a4fa7596a02fc16e2ef"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "Vanillin | RCH2_defined_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "aaaf3ac8c00b3437de849c3c67dd70d17a93f93b3e3c9301697563bf8bccb057"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "p-Coumaric acid | RCH2_defined_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "f956c676200de34a0765288144b614319dc3d0d0bdb18a486f53f92b7ceab04b"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "38e1946c91994a6cbc2ebd725ac5031e89b83af7692cdb0ce1e8eceb065733ec"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "06df487897ef7466039904341e023a3959cf87808fe9d8f675b28cf13817f84e"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 199,
+      "condition": "D-Lysine | MOPS minimal media_noCarbon",
+      "model": "Putida",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c6d8ac19c9c3bae4c186e775dc8425d4c5c71fea0ddd307b1309409251f2c598"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Maltotetraose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "64e60856067f145ea0d0915411a00c3369638d20987f5abf03019b0d50137c6c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Maltohexaose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "64e60856067f145ea0d0915411a00c3369638d20987f5abf03019b0d50137c6c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Laminaribiose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4626a7d36a9cd4e4364fcc63ef163e133efdac0cdfc3653514993edc20f65a65"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Stachyose - 70% | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "64e60856067f145ea0d0915411a00c3369638d20987f5abf03019b0d50137c6c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Melibiose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "64e60856067f145ea0d0915411a00c3369638d20987f5abf03019b0d50137c6c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Glucose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b3012d4ab3815ae36a4a715f106b32fced1e121dc5ac141a179e432b5245cff2"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Trehalose dihydrate | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "64e60856067f145ea0d0915411a00c3369638d20987f5abf03019b0d50137c6c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Arabinose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "46ce8d62d497605feb523fdfdcea143ba79aa27e6d302d02452fb97082bcf99c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Raffinose pentahydrate | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "77fe03e5518c3e013a7f697be3fd09610f0266cd1b69862630e09117cd670e3c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "L-Fucose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "bd5a45b9ec48518e0d7bdd7976c7da342728156cfafd6006ef870ddfe431ec1f"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Beta-Lactose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "54e03a4d0424047c186b856440acafd153104bfcd31ac1a4deb2d11275c9caee"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Fructose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "71a7c7a0e544b75ba51f96aea64f421f85e4f81d59eca0f3e7adc6b4e74adf77"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Maltose monohydrate | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3f8465bf614c89b773ffad4c5d72824137fdb810eb7efb9d179ad9106127e047"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "L-Rhamnose monohydrate | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "333fdd612a46cd5a881c4d9f7f8fadfc82d7ad20cacfb434bdec82460717970a"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Mannose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "64e60856067f145ea0d0915411a00c3369638d20987f5abf03019b0d50137c6c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Xylose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "f7e00274c356460b669b0891c33bd04053699f37cda4bc6f3d754aacef873983"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Galacturonic Acid monohydrate | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "6377fa63809c1a11e82e157084991aa4ce41368959b941d81a642827f0d2a2b0"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "N-Acetyl-D-Glucosamine | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "64e60856067f145ea0d0915411a00c3369638d20987f5abf03019b0d50137c6c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "L-Arabinose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "dc8e2bf1018c508fde9422da8d068aba9cca95d4b42d9c610795da854702a8cd"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Galactose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "01b34786a6c469eb303709d5896a45db4043baf7511e42f9f9c9713ed96d2ec7"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Glucosamine Hydrochloride | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "64e60856067f145ea0d0915411a00c3369638d20987f5abf03019b0d50137c6c"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "D-Ribose | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "8f64354933f4d0fefc8f6e32d648713d1f06eb9b085dab5df468fdbc7d91b419"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Red Arabinan from sugar-beet | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ed65ae31efd60a9ba1b2620ba36dd79d14a0321de5f6bc43d8347001470d7be9"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Amylose from potato | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "6547b03cfe8afb368758250131d978eb6d3a77906b809764fb532fd735c102f9"
+    },
+    {
+      "boundary_reactions_checked": 161,
+      "condition": "Starch | Varel_Bryant_medium",
+      "model": "Btheta",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "6fcaea76e7c3c9a84eb5a7dbfea98b2ebb587206e2eb994191db06b8369ff325"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "Sodium L-Lactate | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1a133ae9e61c3e0af1c68bdff34af4d7e25d3e3b127a8095839f0a716ea8c102"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "Sodium pyruvate | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4d50cbb0e77cb3e8c44e0aa780935c044f327029bd041b68ec6b85cd16ef4ee0"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "Sodium propionate | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "0e33801b6147033afd307ac2ec5b3b7e9ab37bd8c1f66b17f1232fb034cf54d4"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b035ae33e5ac80b010d6bab975bda27710218d9f9f40979f167e6302700928e5"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "Adenosine | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "f74d0fc5af26dd4584383984abdde800c2825ecb6fd00d3019404f81090387ac"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "Uridine | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "188a62d11f2ec573bfef5f62b5ecbdb02cb71d107c5c603563c31aefe82bcb17"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "Inosine | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "a2aeafddaf014974d28134e9288b7b2059ee011cae0f6472b92f341e075f527b"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "Cytidine | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ff91f2b8108ee98928e0c506f14c6a75b99fef788e5015be9a84803f528a6708"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "Sodium D,L-Lactate | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "cb6b30f0d6c76e76294a74021b3b2da2857d5285408520545340cb4bd042fa25"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "L-Glutamine | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "e3368c345c13aed0f1f0dbbce2199f941af0b2d237ef96a28983dbacb4f1a372"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "L-Isoleucine | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "62952554b81a14b79a34f5bcada8f5358895ae2470277c72440e09c28e1897a9"
+    },
+    {
+      "boundary_reactions_checked": 245,
+      "condition": "casamino acids | ShewMM_noCarbon",
+      "model": "MR1",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "2a3e9fef94ffaa0dcd1a380aab7395171c6b52172c6d6e535fa18a9cdabb7d9e"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Glucose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "f20bd1103ee30c30d703505b1b0970233921f5812d98f423e0ba7b77ee7bceb3"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Fructose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ada87f4d63f3ba5b6e2634b3072e7a1df5c973d21ee49481b169fd79234e043d"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Arabinose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1c3387c2b432bb84a31fc78dfa77a9c97f06bd41163e4f35704fa5aa8047a76a"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Arabinose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3d1dec4eccee6e50aa8fc6cbd1f675616d3d1f6f00e2df045f00512e39b0eda2"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Maltose monohydrate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3434903a2e63980a8b609fd925ea70459cf08c80e62f999e0c219c9b6125150d"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Xylose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3c83989c9448b872051cd84d62dcf7ebac862482b4538be7f30f1311884a42df"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Galactose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ab3c7cadbc4439a85e4c79634573b029e00422a6db12c524572b703877a6ca33"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Raffinose pentahydrate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "efc3c5b22d1ea286df6de817a4ad5880dcd9b123807a9b9209fff364be7115b1"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Rhamnose monohydrate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "cdfec4b6cf017ad63804c22163594e84bebb408b4ebb59976084ec5eebd9ab59"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Ribose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "0894a7e6c0b23110926c0e6e9e9869283bff1b7537006906718b822cd02b0f6c"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Fucose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ef64a8a17c493a4f89637be32067b3bdbd53df18d3223af68239c4c46084a8be"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Cellobiose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "7daf6090ca3abda005ca89c9d7ac6b5250ea5648dd3c302ca228a61b9713615d"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "Sodium L-Lactate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "94671ccc2ad6e5792552f091fbb885ae3ccce19a332f1f5f0ef2ad8b920e44c9"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "Sodium D,L-Lactate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "94671ccc2ad6e5792552f091fbb885ae3ccce19a332f1f5f0ef2ad8b920e44c9"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "Sodium pyruvate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c1f78e3aa1a030ae7c6844cb2466ee4c472c630f38353ee974383fd32bd1782b"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "Sodium succinate dibasic hexahydrate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ee58aff0ccc52bfc98f8845e17770f74be88eaaf9f8f4dcf71f7e62c142d4ecc"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "m-Inositol | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "d6f57097f4b91915c863e26d5f5af73f99166e6d7809cfea30c328facf2511e7"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "Glycerol | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3d7d0d45b414d1af72120833cf05664d8267209089b44727f9bfd657b48b513d"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Sorbitol | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "7d613cf51b60c076be035c8cbed95d5195ceef606271aff1b3667f972f4d3971"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Malic acid disodium salt monohydrate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1624bd4a4cad52c3ea15e2dfc85560cb091e50fbc0f98dd1d640a736599ad379"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Trehalose dihydrate | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "9ae6eef0b313d4d679ad77a54867e70c5aaa5617d0525ec1b4bf1529495a03e0"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Histidine | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b29d1643808cccb7fea516e0cbf240a5af6d9c0dc52a5ba66cd893b1e996c458"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Lysine | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "584ba3153e57a2b2007d129005eafbbe4c192529b23f4af920efc57842b903d7"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Glutamine | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "9eaaf4cc222c65252422fd008d56149786254f166bb94cf8ebedc72a463be72b"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Proline | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1b5b39df9d9223a80db36a04fbbcd5e2a5abc92bbef1cb5225f87d3ad66b9572"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "L-Leucine | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1f3c81fa48cb968fbe5ee5e9325e3b236ea67ae2945b5c270ffd20560773c80e"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "N-Acetyl-D-Glucosamine | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "5cc0dd389ecf5d082732c202b4cf4e837fc116c5c0f257fb9d3930f33d141d0e"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Glucosamine Hydrochloride | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b84609a4a9dac49c85b967c1725aae527bb827d9a3f70b6c183f4c5fac1aae92"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "Uridine | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b84609a4a9dac49c85b967c1725aae527bb827d9a3f70b6c183f4c5fac1aae92"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Salicin | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "79a9d059af021ab5a79d178558ed1d6280cd2d98246f78308737fe72cac7e322"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "Beta-Lactose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c66a78652484141c46bb465c255c3c4a4b6e58347c55e2dfac6f6a92fed26795"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-Mannose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b84609a4a9dac49c85b967c1725aae527bb827d9a3f70b6c183f4c5fac1aae92"
+    },
+    {
+      "boundary_reactions_checked": 203,
+      "condition": "D-(-)-tagatose | RCH2_defined_noCarbon",
+      "model": "Smeli",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b84609a4a9dac49c85b967c1725aae527bb827d9a3f70b6c183f4c5fac1aae92"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "L-Arginine | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "02846ba4df763b730fca86e26330fc51d465a90c720388d09e4099c694ff9626"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "8a64663d74ca905530a4d07403e9d3c14603113808a7d7ec9f3bb0d552de6726"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "L-Histidine | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "15dea77caa1b6d353158bfa789a0eeb8d23d813922854cdf44fb396f63d182d3"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "059724ac5b11c3176f47f93e7887480a5c38a194bc151cc1d0ce6b46e416944c"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c98c9ea05f20b482da892ade2aefb0eec9380b01a4ff9e78cec2709adb2aa62d"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4e6a47fe7f6567d89822ec7a4f2bce77b2006f375f9db36e61295ccefad58942"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Vanillin | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "c3ad1ca95baca660d1788a1c76d62165ce748af89bc2ce4e2e1a1dae5fabc960"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "1,2-Propanediol | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4e6a47fe7f6567d89822ec7a4f2bce77b2006f375f9db36e61295ccefad58942"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Sodium propionate | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ca5d2b0b6e6aacace9cfc41a2f66cb9ec27591eb54459022ac6c14139fdcaeae"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "491fbbb8b2221ed67c40f17994659c0309bb0799b42404006a94da47e6595d01"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Vanillic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "235da5b96d84573090100925f783805ab4debd99c36d5bbfa1a2d182dd8ef368"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Protocatechuic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "a3845ab1fe7fe75fd4814e232156c5107e381f3eb17f519649da4b2b0c72d247"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ecf742645b192a5e1ff979c3dfdf6fd8723edc532a69bb6bca638e356d607fe3"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "L-Lysine | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "5d3f2ac9ea2e5f2497e56ad49323a098aa71390a104397f57ecd6d288e7dd353"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "p-Coumaric acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "e63ea3a7383c3970745261b7103f02086183b8feba8c62b8adbf81e2e5b21633"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "benzoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "18b29c6e7b6a8dda7e26c715511f535c7feecfb44417e0085777b02075d5e327"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Ferulic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "e5bbf1ca1ae786f560a714e03febbed141cdc4d403b175b1989f689e7e1fc73d"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "D-Glucose | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1813739cd2aeed9fa54a511da555b581e417965e121ad7b099d25b570d47aebf"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Phenylacetic acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "67e1314da42c087a5603709f7e092f6a6c8af480244e6c8c50660cac94bf37ce"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4e6a47fe7f6567d89822ec7a4f2bce77b2006f375f9db36e61295ccefad58942"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4e6a47fe7f6567d89822ec7a4f2bce77b2006f375f9db36e61295ccefad58942"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "f80d64e053dce64be6e413bdf597f9824c56efb6c720305ba8e9281a3439df77"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Decanoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "d40a76be37c7ca55bbebcce4133cf365d3fe987da2938961c6eb9a2900450f1d"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Lauric acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "edf1c73e9823f2bc54ea1d921ab403cba13bc41ae3ccd0a847d668059fa7b416"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Octanoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "3d2136b34444ca2ac186caff1052dda472699bc4535afc563f0d7ce89e849320"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Myristic acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "079621462c6eec3917e0d12c90ba31adc6eb818f7bff80901637c4755b42384c"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Oleic acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "8cd27cde786b75246368281db8554b903aeb68bce2222def34586804a1fedba8"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Butanol | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4e6a47fe7f6567d89822ec7a4f2bce77b2006f375f9db36e61295ccefad58942"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4e6a47fe7f6567d89822ec7a4f2bce77b2006f375f9db36e61295ccefad58942"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Ethanol | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "763ef60525442c6edafe784ff111f47dc863c3f6b680d48c0903dfe01fb40a23"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "L-Valine | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4ff82882898353c81c2545c5555f34b2eedd9e32bed06e74d9d4ed06507c1114"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "L-Leucine | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "90df7cbf67c212a94d1eb3376b923eadd08c155de51973d9b058b16c38227896"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "L-Isoleucine | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ab978199fd4ca1289b167d8a789d9f0efe96abc55483558f451270fe199e6728"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "4e6a47fe7f6567d89822ec7a4f2bce77b2006f375f9db36e61295ccefad58942"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "D-Glucose | RCH2_defined_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "1632dfcbea630ad52c3f14ef0bdf5ebcbb15fe6ea877ac8e5c47e6e1b6ac4f4b"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Potassium acetate | RCH2_defined_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "2223c70e9678b3b65b2826c915209ddad6cdbfe2136d4aee9d4ff6adb9fa8520"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ff3ae38cc76c390470d826f7c04d999801cb63153927239bd5f71a7e36ac1269"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "Vanillin | RCH2_defined_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "a05136e14083d1c34b64f453102f53329faa298bdc377d424d00b8c39cb696c0"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "p-Coumaric acid | RCH2_defined_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "0b3bdd962577b7b1675aac0347d9bfe421cb6d7a25f037ddb0dfda764454b15a"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "b0536b762fbea972b7fd455ed77b8cda0387161eeb6146bd8157851b7c0d2594"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "72390112c25f0ae90fe0aab4cc0e736be78f8bef78168ac35aac8ad7e9709553"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "ea459a13bcd5a5701ef367215ae90e5ec547e11f46d902492e504d97057839f4"
+    },
+    {
+      "boundary_reactions_checked": 385,
+      "condition": "D-Lysine | MOPS minimal media_noCarbon",
+      "model": "Putida_iJN1463",
+      "reports_exactly_equal": true,
+      "v2_v3_oracle_signature_sha256": "362c88eff5405e9b5499191583f104b616f3c9dda81bb336f73801bd1051d9c9"
+    }
+  ],
+  "cases_compared": 156,
+  "elapsed_seconds": 125.46730494499207,
+  "frozen_input_files_verified": 159,
+  "scope": "Algebra/GPR/chemistry and preparation-report identity for the metadata-isolation revision; no optimization, fitness rescore, or biological validation. Metadata nonaliasing is tested separately in the snapshotted v3 tests.",
+  "status": "passed",
+  "study_fingerprint": "f9a4464851589820ffd524d9ccaf39be51ff0bd159c1e13724f7281dff546e97",
+  "version_reports_checked_against_oracle": 332,
+  "withdrawal_controls": [
+    {
+      "fresh_and_reuse_reports_match_v2_and_oracle": true,
+      "model": "Putida",
+      "reference_condition": "D-Glucose | MOPS minimal media_noCarbon",
+      "reuse_fresh_v2_v3_oracle_signature_sha256": "547ea68da72a654af5de0f02e709d2d43c2285f3874353a0c4bb01985e5b2748",
+      "withdrawn_exchange_bounds": {
+        "EX_4abz_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_btn_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_na1_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_nac_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_ni2_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_ribflv_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_thm_e": [
+          0.0,
+          1000.0
+        ]
+      }
+    },
+    {
+      "fresh_and_reuse_reports_match_v2_and_oracle": true,
+      "model": "Btheta",
+      "reference_condition": "D-Glucose | Varel_Bryant_medium",
+      "reuse_fresh_v2_v3_oracle_signature_sha256": "912d1e6fea4092afafe25afa89c443f537097dfb0026c7c1e973d31af58f3b71",
+      "withdrawn_exchange_bounds": {
+        "EX_cys__L_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_met__L_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_na1_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_ni2_e": [
+          0.0,
+          1000.0
+        ]
+      }
+    },
+    {
+      "fresh_and_reuse_reports_match_v2_and_oracle": true,
+      "model": "MR1",
+      "reference_condition": "Sodium L-Lactate | ShewMM_noCarbon",
+      "reuse_fresh_v2_v3_oracle_signature_sha256": "f14ef22fa6024fd97b096022aaebcf53742e8226f64b4ea4a3905567e07c9028",
+      "withdrawn_exchange_bounds": {
+        "EX_4abz_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_adocbl_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_btn_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_cbl1_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_na1_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_ni2_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_ribflv_e": [
+          0.0,
+          1000.0
+        ]
+      }
+    },
+    {
+      "fresh_and_reuse_reports_match_v2_and_oracle": true,
+      "model": "Smeli",
+      "reference_condition": "D-Glucose | RCH2_defined_noCarbon",
+      "reuse_fresh_v2_v3_oracle_signature_sha256": "61d41533141276ff1fbc6f6f25981150cf74e2246fabc56a50109c8ee3df4260",
+      "withdrawn_exchange_bounds": {
+        "EX_4abz_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_btn_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_na1_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_nac_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_ni2_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_ribflv_e": [
+          0.0,
+          1000.0
+        ]
+      }
+    },
+    {
+      "fresh_and_reuse_reports_match_v2_and_oracle": true,
+      "model": "Putida_iJN1463",
+      "reference_condition": "D-Glucose | MOPS minimal media_noCarbon",
+      "reuse_fresh_v2_v3_oracle_signature_sha256": "c3322c6c32ff17a9612a8e06a4664c4526b48cd486e8e45e0d603daa7fe423c9",
+      "withdrawn_exchange_bounds": {
+        "EX_4abz_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_pydxn_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_ribflv_e": [
+          0.0,
+          1000.0
+        ],
+        "EX_slnt_e": [
+          0.0,
+          1000.0
+        ]
+      }
+    }
+  ],
+  "withdrawal_controls_compared": 5
+}

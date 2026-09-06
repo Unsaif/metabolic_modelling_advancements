@@ -1,0 +1,237 @@
+{
+  "highs_primal_simplex": {
+    "output_flag": {
+      "type": "HighsOptionType.kBool",
+      "requested": false,
+      "effective": false
+    },
+    "solver": {
+      "type": "HighsOptionType.kString",
+      "requested": "simplex",
+      "effective": "simplex"
+    },
+    "presolve": {
+      "type": "HighsOptionType.kString",
+      "requested": "choose",
+      "effective": "choose"
+    },
+    "parallel": {
+      "type": "HighsOptionType.kString",
+      "requested": "off",
+      "effective": "off"
+    },
+    "primal_feasibility_tolerance": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 1e-09,
+      "effective": 1e-09
+    },
+    "dual_feasibility_tolerance": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 1e-09,
+      "effective": 1e-09
+    },
+    "time_limit": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 60.0,
+      "effective": 60.0
+    },
+    "threads": {
+      "type": "HighsOptionType.kInt",
+      "requested": 0,
+      "effective": 0
+    },
+    "simplex_strategy": {
+      "type": "HighsOptionType.kInt",
+      "requested": 4,
+      "effective": 4
+    },
+    "simplex_scale_strategy": {
+      "effective": 2,
+      "source": "unchanged default"
+    },
+    "primal_residual_tolerance": {
+      "effective": 1e-07,
+      "source": "unchanged default"
+    },
+    "dual_residual_tolerance": {
+      "effective": 1e-07,
+      "source": "unchanged default"
+    }
+  },
+  "highs_dual_no_presolve": {
+    "output_flag": {
+      "type": "HighsOptionType.kBool",
+      "requested": false,
+      "effective": false
+    },
+    "solver": {
+      "type": "HighsOptionType.kString",
+      "requested": "simplex",
+      "effective": "simplex"
+    },
+    "presolve": {
+      "type": "HighsOptionType.kString",
+      "requested": "off",
+      "effective": "off"
+    },
+    "parallel": {
+      "type": "HighsOptionType.kString",
+      "requested": "off",
+      "effective": "off"
+    },
+    "primal_feasibility_tolerance": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 1e-09,
+      "effective": 1e-09
+    },
+    "dual_feasibility_tolerance": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 1e-09,
+      "effective": 1e-09
+    },
+    "time_limit": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 60.0,
+      "effective": 60.0
+    },
+    "threads": {
+      "type": "HighsOptionType.kInt",
+      "requested": 0,
+      "effective": 0
+    },
+    "simplex_strategy": {
+      "type": "HighsOptionType.kInt",
+      "requested": 1,
+      "effective": 1
+    },
+    "simplex_scale_strategy": {
+      "effective": 2,
+      "source": "unchanged default"
+    },
+    "primal_residual_tolerance": {
+      "effective": 1e-07,
+      "source": "unchanged default"
+    },
+    "dual_residual_tolerance": {
+      "effective": 1e-07,
+      "source": "unchanged default"
+    }
+  },
+  "highs_simplex_tighter": {
+    "output_flag": {
+      "type": "HighsOptionType.kBool",
+      "requested": false,
+      "effective": false
+    },
+    "solver": {
+      "type": "HighsOptionType.kString",
+      "requested": "simplex",
+      "effective": "simplex"
+    },
+    "presolve": {
+      "type": "HighsOptionType.kString",
+      "requested": "choose",
+      "effective": "choose"
+    },
+    "parallel": {
+      "type": "HighsOptionType.kString",
+      "requested": "off",
+      "effective": "off"
+    },
+    "primal_feasibility_tolerance": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 1e-10,
+      "effective": 1e-10
+    },
+    "dual_feasibility_tolerance": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 1e-10,
+      "effective": 1e-10
+    },
+    "time_limit": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 60.0,
+      "effective": 60.0
+    },
+    "threads": {
+      "type": "HighsOptionType.kInt",
+      "requested": 0,
+      "effective": 0
+    },
+    "simplex_strategy": {
+      "effective": 1,
+      "source": "unchanged default"
+    },
+    "simplex_scale_strategy": {
+      "effective": 2,
+      "source": "unchanged default"
+    },
+    "primal_residual_tolerance": {
+      "effective": 1e-07,
+      "source": "unchanged default"
+    },
+    "dual_residual_tolerance": {
+      "effective": 1e-07,
+      "source": "unchanged default"
+    }
+  },
+  "highs_simplex_no_scaling": {
+    "output_flag": {
+      "type": "HighsOptionType.kBool",
+      "requested": false,
+      "effective": false
+    },
+    "solver": {
+      "type": "HighsOptionType.kString",
+      "requested": "simplex",
+      "effective": "simplex"
+    },
+    "presolve": {
+      "type": "HighsOptionType.kString",
+      "requested": "choose",
+      "effective": "choose"
+    },
+    "parallel": {
+      "type": "HighsOptionType.kString",
+      "requested": "off",
+      "effective": "off"
+    },
+    "primal_feasibility_tolerance": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 1e-09,
+      "effective": 1e-09
+    },
+    "dual_feasibility_tolerance": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 1e-09,
+      "effective": 1e-09
+    },
+    "time_limit": {
+      "type": "HighsOptionType.kDouble",
+      "requested": 60.0,
+      "effective": 60.0
+    },
+    "threads": {
+      "type": "HighsOptionType.kInt",
+      "requested": 0,
+      "effective": 0
+    },
+    "simplex_scale_strategy": {
+      "type": "HighsOptionType.kInt",
+      "requested": 0,
+      "effective": 0
+    },
+    "simplex_strategy": {
+      "effective": 1,
+      "source": "unchanged default"
+    },
+    "primal_residual_tolerance": {
+      "effective": 1e-07,
+      "source": "unchanged default"
+    },
+    "dual_residual_tolerance": {
+      "effective": 1e-07,
+      "source": "unchanged default"
+    }
+  }
+}

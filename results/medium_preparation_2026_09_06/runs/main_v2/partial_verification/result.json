@@ -1,0 +1,3346 @@
+{
+  "boundary_records_verified": 22221,
+  "boundary_reports_verified": 113,
+  "cases_verified": 113,
+  "coverage": "Only saved cases verified; the 156-case study remains incomplete.",
+  "declared_cases": 156,
+  "direct_artifact_sha256": {
+    "results/medium_preparation_2026_09_06/runs/main_v2/cases.jsonl.gz": "5dcd58738b86deca49cff5b1c41b0d80dd89824bac430c9340e076e18d351554",
+    "results/medium_preparation_2026_09_06/runs/main_v2/failure.json": "e8b2f617cb2a12500d994891112a0fa09023588ec0727412e2259d48d2e9ee0e",
+    "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json": "514382db16ecef951cd96517d7028dc218f039b3a43cea7c7f85ac7938db8735"
+  },
+  "elapsed_seconds": 35.918237924575806,
+  "failure_preserved": {
+    "message": "Numerical certificate exceeds tolerance",
+    "seconds": 158.5429801940918,
+    "type": "RuntimeError"
+  },
+  "finite_primal_vectors_verified": 226,
+  "frozen_input_files_verified": 159,
+  "frozen_input_sha256": {
+    "data/fitness_browser/Btheta/experiments.tsv": "15a8cb914608482957fb605bfdc76448b06e0e716bb3bb1e042eaa7a18f10e4f",
+    "data/fitness_browser/Btheta/fit_logratios.tsv": "5c700c1681ec0b4940aa95dd967575e19f6fbeb92f70382f39d103f3a6160d64",
+    "data/fitness_browser/Btheta/genes.tsv": "17dc5676cef4911b3ba3a1ef5bca1bc926bbc427f618042f213c405c8ef238db",
+    "data/fitness_browser/MR1/experiments.tsv": "5c16b10c64bbafa9cdcfa914e7683c505ecd22785f97f4aa56e67eead1955ef0",
+    "data/fitness_browser/MR1/fit_logratios.tsv": "3d6677312ff34d6dcc2cb3966181fe10bfc3806f59b0fe42353bead8f584d2d8",
+    "data/fitness_browser/MR1/genes.tsv": "c4ee5eb901accc6459bf50ba2f55a3c4f9772928f9c663cadf9a513fcc733d1d",
+    "data/fitness_browser/Putida/experiments.tsv": "6f1ba8542a731706fff59b121ccd51306fcd249d3cfeb9fa4d3f4c23970794c8",
+    "data/fitness_browser/Putida/fit_logratios.tsv": "28f422b3aca5e0e4a8730bb7efbb97c177c7fe672b5180455d3494f474ca170e",
+    "data/fitness_browser/Putida/genes.tsv": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e",
+    "data/fitness_browser/Putida/specific_phenotypes.tsv": "31d857c63073569a6b01a4b6a121bf2ebc5f8226ba201c440b528835a0fca37d",
+    "data/fitness_browser/Smeli/experiments.tsv": "3c09d633f61e18afa480e69547cc2791fb2aaa93b708058689455ae295c20ea2",
+    "data/fitness_browser/Smeli/fit_logratios.tsv": "f16dbe9b13da71a9583e4ca0a7345bc6abfb114a9aab0b3f9f4cf33a345d640e",
+    "data/fitness_browser/Smeli/genes.tsv": "4f587c69af42b451f7d99519398ab0444cf989c7f9371087fb3691338f07798e",
+    "data/genpept/Btheta_genpept_map.tsv": "ca60023137da305901755abe7b1df0f118c45e5284893d12e052adcfc034bee5",
+    "data/genpept/MR1_genpept_map.tsv": "e380ac438948d5c56bea457ee27cd3ce6612da0e9d42a0d9ea3906516b061f67",
+    "data/genpept/Putida_genpept_map.tsv": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128",
+    "data/genpept/Smeli_genpept_map.tsv": "74b32adcc980040e38cd2c036cfc5d480a55ead29e28e8c291aedf47e5ced16b",
+    "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz": "bea517eccadcaa280228c75551ee4d641e7eadb3509532377943e7ca89355f0e",
+    "data/reference/feba_media_extract.tsv": "365168bd92db7aa049b20b2f5ad45f79740bd0f7a52e8d650332c80bdd409225",
+    "data/reference/fitness_browser_carbon_sources_bigg.tsv": "43ed695ca0201e778bc738d2d582dad7e7a498b64d5ccf64c3b496be686e4da4",
+    "data/reference/fitness_browser_media_bigg.tsv": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d",
+    "data/reference/gpr_patches_v0.2.json": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284",
+    "data/reference/gpr_patches_v0.3.json": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885",
+    "data/reference/gpr_patches_v0.4.json": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7",
+    "data/reference/model_patches_v0.4.json": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190",
+    "data/reference/universe_patches_v0.1.json": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe",
+    "data/studies/exposure_registry_v1.json": "7519f099a63c95b6b5a9cdc8e14066255e72016a1c577ea92b4b231714823fc4",
+    "data/studies/medium_preparation_v1.json": "6ff1f0a29e4e1e20bcd9383035cacf72540113e6af7d877936057e7733e66ed0",
+    "data/studies/medium_preparation_v2.json": "91d318f24c6334c9ac188fd82af0b428c46ee542c4028067088361463da91a27",
+    "data/studies/ppnp_repair_v1.json": "68bb055c36f7b475c293824f1d362d132faa70fbd97bb8bb95b4902db9985b92",
+    "data/studies/precursor_supply_v1.json": "b35f05f50d7a81c42d01d5d1c1a2c14f24e077f8fbe82331b6d2386ce62616dd",
+    "data/studies/quinone_repair_v1.json": "1e809398f565b1104feb0a8d0aa88ca18c323097aa191ecb4ec23692342d7d79",
+    "docs/evidence/10-putida-ribosyl-disposal-sources.md": "40157bcb05db6403e4ccdd9354d908e473118847147081614f717caba0a1c4de",
+    "docs/evidence/11-putida-ppnp-candidate.md": "7921237dbf755b0aba4eb5dd0d5f70eece94c8399131ce3c81a0be1d085e73d2",
+    "docs/studies/medium-preparation-v1.md": "e9bb2e277f8a73fd91e5f3d6b91e28998b4933665968be3f1fb40506ab6885ac",
+    "docs/studies/medium-preparation-v2.md": "324b2bd1bcbaa975a83830a8d1a497e73c72cd8c22a2c049c66594976900bfed",
+    "docs/studies/ppnp-repair-v1.md": "7ccad99046f42310f4334a63e3f1f08f90ee02e2484d0e3d8176ea35abfdb108",
+    "docs/studies/precursor-supply-v1.md": "e98ae14c3d0ce6367b0bb06fc5e4b454f5b24c38b905545be0f628e4211d3beb",
+    "gembench/__init__.py": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9",
+    "gembench/cards.py": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d",
+    "gembench/checks.py": "0c1bcb3ed1b55379533374bc5d481247dbf9c40a01efb9a495fb92d3a356a51a",
+    "gembench/cofactor.py": "f8e428196dae2ab37b8c5b9fdf95907fd3f904c5ac8f59f7fd2a1a5eb97aa334",
+    "gembench/comparison.py": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8",
+    "gembench/datasets.py": "1223ac48c5f31fabf93d9a48f21211e2739f34385b879d531b1cdc261279f490",
+    "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+    "gembench/frog.py": "883b0b90e8c8c84377b72a34ca486cc9a6909d343c444c3972dbe94113c95308",
+    "gembench/gapfill.py": "eaf202021dbc1f0d2a76668f5da11e992d7b0a374c264dd056866b448165ab63",
+    "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+    "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+    "gembench/medium_preparation.py": "369cb966e53f2532fe37c04ad372fdd6d99d200f9e89d69e74977b699e5276ad",
+    "gembench/medium_preparation_v2.py": "c53cdd85e229ce85e37b24ed64b48d10677067f68807f1dee6c3dd8d44afc96c",
+    "gembench/metrics.py": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3",
+    "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+    "gembench/protocols/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+    "gembench/protocols/ecoli_carbon_fitness.py": "5a8994541a2248b575f64bdda58dfed939b69af0bbe0cc9a7bb9ef254163f31a",
+    "gembench/protocols/yeast_essential.py": "e9e156ad108fd26185940ef10663ad3bb78dd13c7d3fa084bcbd3ac019c1e517",
+    "gembench/study.py": "b3911b98e65dbaaf2635cc5a8d3aacd4c71ab614dafc44e2817f5df8b0742733",
+    "gembench/survey.py": "2699d790764a1a3ee1de686b800d1be63fb20fb39d312f9cb695f843ac879019",
+    "gembench/wbm.py": "c525a92e917a58d440c4d38544dc1aecdfd44b51e847f8eaae3e6d53ceaf67fb",
+    "gembench/wbm_iem.py": "a525260933ddbf0fd6124475a972b546d0dac95636b426b505c8328106129b72",
+    "models/bigg/iJN1463.xml": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+    "models/gapfilled/Btheta.xml.gz": "ce97c05e8bed2f682cb9ef744c8f5a447d536f6555fff2a5ca6bfa62d00436b6",
+    "models/gapfilled/MR1.xml.gz": "7aae2a3ea5b644241d66bd719fd8a5d5a20d6e2d612ff9706f689a91fa75bdc5",
+    "models/gapfilled/Putida.xml.gz": "378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739",
+    "models/gapfilled/Putida_gapfill.json": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2",
+    "models/gapfilled/Smeli.xml.gz": "aed3446b54ecac8a7a48e22c94e75fc57d32c35666a6431ae41678183cf85dfa",
+    "requirements-audit.txt": "f242faf03ecdd36f9dfbbc54838318556badc4cd653461460a2e3e3866b36260",
+    "results/development_sprint_2026_09_06/prespecified_manifest.json": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809",
+    "results/development_sprint_2026_09_06/runs/Btheta_cycle7/invocation.json": "a7cb892bf21482f9c64d7c5ce57c754ff22c5c0938e60a5794221d4d2fb88b22",
+    "results/development_sprint_2026_09_06/runs/MR1_cycle7/invocation.json": "c3399cf46bb0844f5c6a2322a96d9186ae0123e3efadf6deda1f6eb3ec63e8f7",
+    "results/development_sprint_2026_09_06/runs/Smeli_cycle7/invocation.json": "5baa25913feb68567eb13e4eb0e8d1a359e19f366a996a979c6827ccd4dd2d63",
+    "results/medium_preparation_2026_09_06/evidence/__pycache__/inventory_medium_structure.cpython-314.pyc": "15e7e6fc05c46b5012f4709d6dda3972bc17e465c3b87b16c112efd4d956b210",
+    "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.json": "f60cad793070a6d2703d51e048f58ab3fbf2323eb0d243f66b0445f8069455e9",
+    "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.md": "281a6695f3337c8d8b9a86e17aaa76689188fc91c6e3f095638ed1ea55d9cb15",
+    "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.py": "99f18492603d0266abac8d8c0420673c5a6e31163e5984dd012522925419aec5",
+    "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b",
+    "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.json": "0dab92178f666601915e863855397d2efdaee10f037d03117cffade4adcbceb8",
+    "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.md": "c8976e78ec00e0bcd85def3ce078f2f8647c9c9ca5cc4f8619bc0532177f714d",
+    "results/medium_preparation_2026_09_06/runs/main/cases.jsonl.gz": "9cdb2f2e9f0928816413c30d6cd0410765d5449f85ae86e1b2e44c0a4e17ca02",
+    "results/medium_preparation_2026_09_06/runs/main/failure.json": "7956218b351533c437d6177a8e37ef3211a7f01423780c48a9ea405f50ba68ac",
+    "results/medium_preparation_2026_09_06/runs/main/manifest.json": "6a023386b070c791546eefe18b3f0ac0293db1543a300bd90584664390afbb22",
+    "results/ppnp_repair_2026_09_06/evidence/design_review.md": "f959eae34352834da44ec5d2f5bc6daf77d2c81a62660639fc8d6ed268f38493",
+    "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json": "2f120fd6e75614659898566c51b47dac135b286b67a3587a93b34b314ee0d9c8",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.json": "beaca4312a88f122fa33b5c1ea50d59a09e31f44dbf47569e0135a85e676d3f7",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.py": "ed40298a453dbdcfc3327f068548f04b77e6956e99b7a486039ac3a152f579e1",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537.html": "808a98748f0b4f4596c2e19907de1c7114ab5d7310db5dbcf264d6a1ade6200f",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_rule.txt": "d8c91ec49545a79b26006121744b42836a3542e813fba918a83e6d4925c58dac",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_signature.html": "f084877e64b139bdc12062b68751e218f085478e203d8e6bd41f970049e8ee77",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/P0C037.json": "01548b1e3468c516ccabfcde565b6ed539b90004bf11a5829d287399115a72ee",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_NC0029474.gb": "51c6b8ebcffd442decff4259d330af35fb15e3d4d86bc35123be1f23db8dc494",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_uniprot.json": "7ea18def652a7709c6ca54268751e1a90403e8cc569fb701df3f3a5ea4cbebee",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP4248_NC0029474.gb": "8dbe67ac46e84eceadbca4177b81c2a750d52609a59869256ab3162e0eed3b15",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Q88F51.json": "701bfc29b0aece76f5f2eef3a0eff67868c14b764a46243ed65976e97e7c47d6",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0032542781_retry.fasta": "cd08a9591e040873f362d3ac3911db3eeb9e57bf2518709c5250a2a391b30de5",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0109528141.fasta": "8ba2e1ed5debafdc559e25863426266936ca640a3e0a47b7f4149dd6ee8a342f",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Ye1994_pubmed.xml": "02a3b4ecc1606a75b846feeb1a9bcd9ef775d457864238cf39039584be17ab34",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals.json": "49c9709b4afba2db418795ea4ea43f2cc25761e736ca40ebed9f24428a9abda6",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals_followup.json": "44ff88dc71dcf68ee7eefccbaf309a824366537a426ca9fe993d5d03c1e1bc13",
+    "results/ppnp_repair_2026_09_06/evidence/source/APACHE-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "results/ppnp_repair_2026_09_06/evidence/source/CARVEME_LICENSE": "998d33f42059ebf207638e19fd77dd5f119708723224b3738e366d43973a6276",
+    "results/ppnp_repair_2026_09_06/evidence/source/NOTICE": "e131408c9a4ab421dcbe8654b3004e00b135b490336cab44944b2e48b839a9a8",
+    "results/ppnp_repair_2026_09_06/evidence/source/license_sources.json": "ddfd3bf76790750eb5bffbd977e3bfb3f12e4e4a400a4e6168cca3d7846e6724",
+    "results/ppnp_repair_2026_09_06/evidence/source/universe_bacteria.xml.gz": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+    "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.json": "6cb63b0f2b679b000bdfa1aaa6fa778496eb6aac02f1ea8f91e89282b1d144bf",
+    "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.md": "6e2c570c6499f4c40c19de1c155bec68456ac10d2db93594bfe7803b668a68bc",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/card.json": "bdbc78ace4c10ba240efb359f4c818e987f55d01a49af813fe4002db75cce115",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/conditions.tsv": "0b3031b3817e1d7cb73f069edb16c792a1c22d8d6276da0fc3d40812dcac9d2a",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/gene_map.json": "8bad604921ee04f28761a332a8951c0452b276b0cec3a0595a37bfa76506df54",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/matrices.npz": "63f156cf258643037efd9271e7cd0aca6494b46009e4dbf5fb8bd5b8b6fee455",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/physical.json": "d48a73d40b5b2f29d9519ccc14ad2bb63cf925887a2d82943519c48113dee342",
+    "results/ppnp_repair_2026_09_06/runs/main/manifest.json": "ccd833163eee8d2b14a2ecd0af90452f2e46a05c8292ca0bf5534b5d26dc6de7",
+    "results/quinone_precursor_2026_09_06/evidence/fitness_context.json": "a7a4cb83d6517ba44f177eead741849982e11ffdeb291e0eb3151ebef6af3459",
+    "results/quinone_precursor_2026_09_06/evidence/fitness_context.md": "acee42ad3865dbb5094621d40bfb77f1f4dd3cb9e4122ca0eff41ac10182449e",
+    "results/quinone_precursor_2026_09_06/evidence/model_context.json": "8cbb9a4985e6b5a1ada00da18cda3c17936f5c7f130a18b27c48570d6b1bd9eb",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.json": "1a8d00087ee99c6c308036f77a673e06a9772bb5224f87d52f141dfe97bcbaa8",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.md": "70859cd1072b2f18070083196930a902b16abf695314714267cd11bbd47a2dd0",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.py": "d331628fed6ba526aa61b6b1a3e7b1f1f193643b5c507ce04dafa68429a9ede9",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/IPR049368.json": "4b7a0626ab46e5b87babde0d3a556111dfbaffd3fa7dda0b29fe408c6ff715f7",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/KT2440_ubiC_chorismatase_search.json": "9fbe7234d54c34a8936f78e09e480b6f03acd31637ce6badc301ca02ca9f356c",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/MF01632_rule.txt": "0a65ab2349f99ad9e9c4f19835d93b78806fff2cfd9bab62655c1497923c64ad",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/NP7474181.fasta": "d0b5879a558dbba3ac4f4365202a5a79e27ae22cb5d1b232729f804f73b0e7ca",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/P26602.json": "dc3e8abf1ee4f033d1237b7e3dabfdea25f3d53bea6c28201a7aac4251fab235",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_NC0029474.gb": "0b74b0bab8f54b6e063998a2ccb44e0c07778ee379816587a6f720c7f004a401",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_uniprot.json": "4f60ee4973bffb0fcb3965f1c7aae6f6c423c9902bbe565a1eebee4cbe8b9ea8",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/WP0109558101.fasta": "c00a440cedfb03755cc0ba41833a6d61f9f802992d7229fa70de09689803e99f",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/primary_references.xml": "6bfeee2cf78d47269b1fdb9fbd9c8464d54193b29980250ffa39e16408050fcc",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals.json": "0036c959ff4a4304b03be8bfe4188bf5ab50bd5be37e86a3ee06ac14107c90f3",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_article.json": "b10a3da7b8ab3b57d6a8dd9128cf19518243f36294cb922d0c2a892664feebed",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_final.json": "002f14a56794d950bd5191516c4257acb3202309319f876abe94b4b5f10901af",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_followup.json": "6a9412e783d42b903741ddd905e9ab4edb1242c80e2651c08e6d28cd39053f5a",
+    "results/quinone_precursor_2026_09_06/runs/main/manifest.json": "2b1a686097b678946703af549db1fb9c2505f37708097d5296f9b855dbdd62b5",
+    "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json": "bee13fe5ebcc6f7ba98bf93c2ab99cccbf978f7308ddba0c8361a99a7ffcdb87",
+    "results/quinone_repair_2026_09_06/evidence/postrun_dependency_trace.json": "9851f802242512435a0882d437d36c6e12edfe79959a5715bea4363fb6507555",
+    "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json": "ff58aaaf7e9eb57c793042e934a34ea264c4ad9430d13978d5a44b706599d65f",
+    "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json": "49014f81058862e3a24a57f060b03f44dc635d85a08c977b1ea9c88de9218709",
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885",
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+    "results/quinone_repair_2026_09_06/runs/main/manifest.json": "65a92c2a37def7f5c32c6a5bf177f277fcd874df63a84b5be33725c08c21d92d",
+    "results/ribosyl_disposal_2026_09_06/evidence/source_evidence.json": "5518bd06c30777f1297947d95a9329f2f13356a7131637f8afdf7515e481c9f6",
+    "scripts/diagnose_quinone_producibility.py": "7cf4282cfed98ba5e0ca64e1373dcc94c0a024f2870878f8056f60157c306bed",
+    "scripts/extract_quinone_precursor_fitness_context.py": "566c1a5819c523a2b449e256ad06d13d66ce988553048e55ddc882621d3f052f",
+    "scripts/map_ppnp_candidates.py": "00934f12059487d7ae2a0d953e47f4c03d6ade342addf10fbef5d7710d3da452",
+    "scripts/map_quinone_pathway.py": "07a690e749e6ff05b318fab8c0cc05e6d20a1b15a502f8b275b569927e1e2088",
+    "scripts/map_quinone_precursor.py": "d345a56632dd96a20cfc3d8b51b4eafda6ef68ace921d582d450be7221352ce0",
+    "scripts/run_carbon_fitness_generic.py": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc",
+    "scripts/run_medium_preparation.py": "a2ba61fca0fd6f24672775e8a03dc6e388122f58bf07140ce2c8fd3f3657e7e5",
+    "scripts/run_medium_preparation_v2.py": "47767a8e173a82f574a903aef42374f181fd10677d2fe58901710227548b1c00",
+    "scripts/run_ppnp_repair.py": "9796085083bd1a70e9fafc146a676885d5b6d743e841899ab948771d5bb224bc",
+    "scripts/run_precursor_supply.py": "d4c271ffdc83289858852ee4c8e480e9444595a4cc50070de4c7a652a03153e8",
+    "scripts/run_quinone_biomass_sensitivity.py": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d",
+    "scripts/run_quinone_repair.py": "4bf0e9992d07001143a86189d8f969ddd5b821e3a158ae9fc7e1af4706e6782c",
+    "scripts/verify_quinone_repair_solvers.py": "03fe1447d6a162c46ef02a43955ea734eeb71fd53d303d1dd62b13e867ee2cc0",
+    "tests/test_medium_preparation.py": "7c8a1aad2f5533f91354e52da0014308280d8bf2a4ba3993bcffd9206b731109",
+    "tests/test_medium_preparation_runner.py": "5daa8d27b9b5dd7bafec18a2dd23be22839e1846b59beb4a4d819786b8c65bf8",
+    "tests/test_medium_preparation_v2.py": "539ca2f8c71edc13224262e8c88817ab7b9f3e17c85ed89d41639a63ef80859e",
+    "tests/test_ppnp_repair.py": "12a96a6a24190af27c3addefaafb4b13dce7d3ec77a19e80ba611e59985f7361",
+    "tests/test_precursor_supply.py": "db16a5b67f4d2db36bf952f8607a6102488cae5fea41cdb3b1114d289469858e"
+  },
+  "infeasible_solver_reports_retained": 0,
+  "limitations": [
+    "The failing curated-model case has no saved vector in these attempts and is not verified here.",
+    "Synthetic reuse reports were not saved before the failure; this partial audit cannot verify them.",
+    "Primal feasibility is not a dual optimality certificate; an infeasible solver status without a Farkas ray is not independently proved.",
+    "No mutant fitness, measured nutrient availability or biological transport validation is evaluated."
+  ],
+  "mass_balance_rows_verified": 291858,
+  "maxima": {
+    "S_residual": 8.621236473574515e-09,
+    "bound_violation": 1.8273339909427683e-09,
+    "solver_objective_difference": 5.721179086037864e-11
+  },
+  "method": "Independent legacy parent/media reconstruction, explicit reset oracle, complete boundary reports, exact canonical signatures and full-primal math.fsum residuals; no new helper/runner imported and no optimizer called.",
+  "models": [
+    {
+      "added_exchanges": [
+        "EX_4abz_e",
+        "EX_btn_e",
+        "EX_na1_e",
+        "EX_nac_e",
+        "EX_ni2_e",
+        "EX_ribflv_e",
+        "EX_thm_e"
+      ],
+      "boundary_records": 8557,
+      "conditions": 43,
+      "finite_primal_vectors": 86,
+      "infeasible": 0,
+      "label": "Putida",
+      "mass_balance_rows": 114380,
+      "optimal": 43,
+      "prepared_sizes": [
+        {
+          "metabolites": 1330,
+          "reactions": 1928
+        }
+      ],
+      "primal_values": 165808,
+      "source_provenance": {
+        "applied_historical_changes": [],
+        "excluded_operations": [
+          "optimization",
+          "energy probe",
+          "knockout simulation",
+          "fitness value parsing",
+          "metric calculation",
+          "medium completion",
+          "new patch selection"
+        ],
+        "input_sha256": {
+          "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+          "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+          "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+          "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+          "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+          "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b",
+          "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812",
+          "results/ppnp_repair_2026_09_06/runs/main/manifest.json": "ccd833163eee8d2b14a2ecd0af90452f2e46a05c8292ca0bf5534b5d26dc6de7"
+        },
+        "label": "Putida",
+        "mode": "exact_saved_PpnP_both_forward_model",
+        "source_path": "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz",
+        "source_sha256": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812"
+      }
+    },
+    {
+      "added_exchanges": [
+        "EX_cys__L_e",
+        "EX_met__L_e",
+        "EX_na1_e",
+        "EX_ni2_e"
+      ],
+      "boundary_records": 4025,
+      "conditions": 25,
+      "finite_primal_vectors": 50,
+      "infeasible": 0,
+      "label": "Btheta",
+      "mass_balance_rows": 53500,
+      "optimal": 25,
+      "prepared_sizes": [
+        {
+          "metabolites": 1070,
+          "reactions": 1506
+        }
+      ],
+      "primal_values": 75300,
+      "source_provenance": {
+        "applied_historical_changes": [
+          {
+            "gpr_after": "NP_809469_1 and NP_809470_1",
+            "gpr_before": "NP_809470_1 or (NP_809469_1 and NP_809470_1)",
+            "reaction": "CBPS"
+          },
+          {
+            "bounds_after": [
+              -1000.0,
+              1000.0
+            ],
+            "bounds_before": [
+              0.0,
+              1000.0
+            ],
+            "reaction": "PPCK"
+          },
+          {
+            "added": "gcald_e <=> gcald_c",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ],
+            "gpr": "",
+            "reaction": "GCALDt"
+          },
+          {
+            "added": "gcald_e --> ",
+            "bounds": [
+              0.0,
+              1000.0
+            ],
+            "gpr": "",
+            "reaction": "EX_gcald_e"
+          },
+          {
+            "added": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ],
+            "gpr": "BT0711 and BT0712 and BT0714 and BT0715 and BT0716 and BT0717 and BT0718 and BT0719",
+            "reaction": "ATPS4rpp"
+          },
+          {
+            "added": "fru_e --> ",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "",
+            "reaction": "EX_fru_e"
+          },
+          {
+            "added": "fru_e + h_e --> fru_c + h_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "BT1758",
+            "reaction": "FRUt2r"
+          },
+          {
+            "added": "atp_c + rbl__D_c --> adp_c + h_c + ru5p__D_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "NP_809263_1",
+            "reaction": "RBK_Dr"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810989_1 and NP_810990_1",
+            "gpr_before": "NP_810990_1 or (NP_809485_1 and NP_810990_1) or (NP_810989_1 and NP_810990_1)",
+            "reaction": "ACLS",
+            "rule": "R1+R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810989_1 and NP_810990_1",
+            "gpr_before": "(NP_809485_1 and NP_810990_1) or (NP_810989_1 and NP_810990_1)",
+            "reaction": "ACHBS",
+            "rule": "R1+R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809444_1 and NP_809445_1",
+            "gpr_before": "NP_809444_1 or NP_809445_1 or (NP_809444_1 and NP_809445_1) or (NP_809444_1 and NP_809680_1)",
+            "reaction": "ANS",
+            "rule": "R1+R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809443_1",
+            "gpr_before": "NP_809443_1 or NP_809444_1 or NP_809445_1",
+            "reaction": "ANPRT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810389_1 or NP_811328_1 or NP_812287_1",
+            "gpr_before": "NP_809460_1 or NP_810389_1 or NP_810631_1 or NP_811328_1 or NP_812287_1 or NP_812846_1",
+            "reaction": "ASPTA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_811328_1 or NP_812287_1 or NP_812846_1",
+            "gpr_before": "NP_809460_1 or NP_811328_1 or NP_812287_1 or NP_812846_1",
+            "reaction": "PHETA1",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_811328_1 or NP_812287_1 or NP_812846_1",
+            "gpr_before": "NP_809460_1 or NP_811328_1 or NP_812287_1 or NP_812846_1",
+            "reaction": "TYRTA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809650_1",
+            "gpr_before": "NP_809650_1 or NP_810520_1",
+            "reaction": "FTHFLi",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810772_1 and NP_810773_1",
+            "gpr_before": "NP_810773_1 or (NP_810772_1 and NP_810773_1)",
+            "reaction": "IPPMIa",
+            "rule": "R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810772_1 and NP_810773_1",
+            "gpr_before": "NP_810773_1 or (NP_810772_1 and NP_810773_1)",
+            "reaction": "IPPMIb",
+            "rule": "R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_812829_1",
+            "gpr_before": "NP_813285_1 or (NP_812829_1 and NP_813285_1)",
+            "reaction": "PDX5PS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810573_1 or NP_811315_1 or NP_812331_1",
+            "gpr_before": "NP_810573_1 or NP_811315_1 or NP_812331_1 or NP_813510_1",
+            "reaction": "PGM",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [
+              "BT3866"
+            ],
+            "gpr_after": "(NP_809469_1 and NP_809470_1) or BT3866",
+            "gpr_before": "NP_809469_1 and NP_809470_1",
+            "reaction": "CBPS",
+            "rule": "R4",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "(NP_810610_1 and NP_810828_1 and NP_810361_1) or (NP_810610_1 and NP_810828_1 and NP_810601_1)",
+            "gpr_before": "NP_810361_1 or NP_810601_1 or (NP_810610_1 and NP_810828_1)",
+            "reaction": "PC",
+            "rule": "R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_812844_1",
+            "gpr_before": "NP_812844_1 or NP_812845_1 or NP_812847_1",
+            "reaction": "CHORM",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809324_1",
+            "gpr_before": "NP_809324_1 or NP_812914_1",
+            "reaction": "BPNT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809163_1",
+            "gpr_before": "NP_809163_1 or NP_809470_1",
+            "reaction": "DHORTS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810971_1",
+            "gpr_before": "NP_810971_1 or NP_812173_1",
+            "reaction": "GRTT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810971_1",
+            "gpr_before": "NP_810971_1 or NP_812173_1",
+            "reaction": "DMATT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810924_1",
+            "gpr_before": "NP_810924_1 or NP_811727_1",
+            "reaction": "NNATr",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810230_1",
+            "gpr_before": "NP_813164_2 or (NP_810230_1 and NP_813164_2)",
+            "reaction": "RBFSa",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_813164_2",
+            "gpr_before": "NP_813164_2 or (NP_810230_1 and NP_813164_2)",
+            "reaction": "RBFSb",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_813277_2",
+            "gpr_before": "NP_809097_1 or NP_813277_2",
+            "reaction": "PNTK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [
+              "BT0647"
+            ],
+            "gpr_after": "NP_809565_1 or BT0647",
+            "gpr_before": "NP_809565_1 or NP_809703_1",
+            "reaction": "TMPPP",
+            "rule": "R4",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_811155_1",
+            "gpr_before": "NP_810973_1 or NP_811155_1 or NP_813219_1",
+            "reaction": "UMPK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809326_1",
+            "gpr_before": "NP_809326_1 or NP_809527_1",
+            "reaction": "ADSK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_812842_1",
+            "gpr_before": "NP_810477_1 or NP_812842_1",
+            "reaction": "GTPCI",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_811793_1 or NP_812834_1",
+            "gpr_before": "NP_810564_1 or NP_811793_1 or NP_812834_1",
+            "reaction": "MEPCT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809116_1 or NP_813168_1",
+            "gpr_before": "NP_809116_1 or NP_811713_1 or NP_813168_1",
+            "reaction": "HISTP",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809655_1",
+            "gpr_before": "NP_809470_1 or NP_809655_1 or (NP_809654_1 and NP_809655_1)",
+            "reaction": "ASPCT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "",
+            "gpr_before": "NP_810107_1 or NP_812041_1",
+            "reaction": "CU2tex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "",
+            "gpr_before": "NP_810107_1 or NP_812041_1",
+            "reaction": "CLtex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_813247_1",
+            "gpr_before": "NP_809131_1 or NP_809132_1 or NP_811723_1 or NP_811981_1 or NP_813247_1 or (NP_809131_1 and NP_813247_1) or (NP_810369_1 and NP_813247_1) or (NP_811142_1 and NP_813247_1) or (NP_811981_1 and NP_813247_1)",
+            "reaction": "TRDR",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "",
+            "gpr_before": "NP_809344_1 or NP_809680_1",
+            "reaction": "ADCL",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "",
+            "gpr_before": "NP_809131_1 or NP_811142_1 or NP_811224_1",
+            "reaction": "PAPSR",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_812840_1",
+            "gpr_before": "NP_810585_1 or NP_812840_1",
+            "reaction": "TPI",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809536_1",
+            "gpr_before": "NP_809294_1 or NP_809536_1 or NP_810283_1",
+            "reaction": "UDPG4E",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809401_1",
+            "gpr_before": "NP_809401_1 or NP_811711_1",
+            "reaction": "DDGLK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_809805_1 and NP_809804_1",
+            "gpr_before": "",
+            "reaction": "DHORD6",
+            "rule": "R6",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_810490_1",
+            "gpr_before": "",
+            "reaction": "PDX5PO2",
+            "rule": "R6",
+            "status": "accepted"
+          }
+        ],
+        "excluded_operations": [
+          "optimization",
+          "energy probe",
+          "knockout simulation",
+          "fitness value parsing",
+          "metric calculation",
+          "medium completion",
+          "new patch selection"
+        ],
+        "input_sha256": {
+          "data/fitness_browser/Btheta/genes.tsv": "17dc5676cef4911b3ba3a1ef5bca1bc926bbc427f618042f213c405c8ef238db",
+          "data/genpept/Btheta_genpept_map.tsv": "ca60023137da305901755abe7b1df0f118c45e5284893d12e052adcfc034bee5",
+          "data/reference/gpr_patches_v0.2.json": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284",
+          "data/reference/gpr_patches_v0.3.json": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885",
+          "data/reference/gpr_patches_v0.4.json": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7",
+          "data/reference/model_patches_v0.4.json": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190",
+          "data/reference/universe_patches_v0.1.json": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe",
+          "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+          "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+          "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+          "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+          "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+          "models/gapfilled/Btheta.xml.gz": "ce97c05e8bed2f682cb9ef744c8f5a447d536f6555fff2a5ca6bfa62d00436b6",
+          "results/development_sprint_2026_09_06/prespecified_manifest.json": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809",
+          "results/development_sprint_2026_09_06/runs/Btheta_cycle7/invocation.json": "a7cb892bf21482f9c64d7c5ce57c754ff22c5c0938e60a5794221d4d2fb88b22",
+          "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b"
+        },
+        "label": "Btheta",
+        "mode": "reconstructed_cycle7_before_medium_completion_no_serialized_cycle7_SBML_available",
+        "source_path": "models/gapfilled/Btheta.xml.gz",
+        "source_sha256": "ce97c05e8bed2f682cb9ef744c8f5a447d536f6555fff2a5ca6bfa62d00436b6"
+      }
+    },
+    {
+      "added_exchanges": [
+        "EX_4abz_e",
+        "EX_adocbl_e",
+        "EX_btn_e",
+        "EX_cbl1_e",
+        "EX_na1_e",
+        "EX_ni2_e",
+        "EX_ribflv_e"
+      ],
+      "boundary_records": 2940,
+      "conditions": 12,
+      "finite_primal_vectors": 24,
+      "infeasible": 0,
+      "label": "MR1",
+      "mass_balance_rows": 32832,
+      "optimal": 12,
+      "prepared_sizes": [
+        {
+          "metabolites": 1368,
+          "reactions": 1994
+        }
+      ],
+      "primal_values": 47856,
+      "source_provenance": {
+        "applied_historical_changes": [
+          {
+            "gpr_after": "NP_716766_1 and NP_716767_1",
+            "gpr_before": "NP_716766_1 or NP_716767_1 or NP_716921_1 or (NP_716766_1 and NP_716767_1)",
+            "reaction": "CBPS"
+          },
+          {
+            "added": "gcald_e <=> gcald_c",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ],
+            "gpr": "",
+            "reaction": "GCALDt"
+          },
+          {
+            "added": "gcald_e --> ",
+            "bounds": [
+              0.0,
+              1000.0
+            ],
+            "gpr": "",
+            "reaction": "EX_gcald_e"
+          },
+          {
+            "added": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ],
+            "gpr": "SO4746 and SO4747 and SO4748 and SO4749 and SO4750 and SO4751 and SO4752 and SO4753",
+            "reaction": "ATPS4rpp"
+          },
+          {
+            "added": "gam6p_c + h2o_c --> f6p_c + nh4_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "NP_719053_1",
+            "reaction": "G6PDA"
+          },
+          {
+            "added": "h_e + ins_e --> h_c + ins_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "NP_716837_1",
+            "reaction": "INSt2"
+          },
+          {
+            "added": "acorn_c + h2o_c --> ac_c + orn_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "SO3749",
+            "reaction": "ACODA"
+          },
+          {
+            "reaction": "ORNCD",
+            "removed": "orn_c <=> nh4_c + pro__L_c"
+          },
+          {
+            "added": "lac__L_c + q8_c --> pyr_c + q8h2_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "SO1518 and SO1519 and SO1520",
+            "reaction": "L_LACD2"
+          },
+          {
+            "reaction": "LDH_L",
+            "removed": "lac__L_c + nad_c <=> h_c + nadh_c + pyr_c"
+          },
+          {
+            "added": "atp_c + h2o_c + zn2_p --> adp_c + h_c + pi_c + zn2_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "SO0565 and SO0566 and SO4820",
+            "reaction": "ZNabcpp"
+          },
+          {
+            "reaction": "CITACt",
+            "removed": "ac_c + cit_e <-- ac_e + cit_c"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+            "gpr_before": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+            "reaction": "ACLS",
+            "rule": "R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+            "gpr_before": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+            "reaction": "ACHBS",
+            "rule": "R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_718200_1",
+            "gpr_before": "NP_718199_1 or NP_718200_1",
+            "reaction": "ADCL",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719263_1",
+            "gpr_before": "NP_718203_1 or NP_719263_1",
+            "reaction": "ADSK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_715918_1",
+            "gpr_before": "NP_715918_1 or NP_715919_1",
+            "reaction": "ARGSS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_718348_1",
+            "gpr_before": "NP_718348_1 or NP_718731_1",
+            "reaction": "ASNS1",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719235_1",
+            "gpr_before": "NP_716921_1 or NP_718704_2 or NP_719235_1",
+            "reaction": "DHORTS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719276_1 and NP_719277_1",
+            "gpr_before": "NP_717233_1 or (NP_719276_1 and NP_719277_1)",
+            "reaction": "SULR",
+            "rule": "R1+R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_718343_1",
+            "gpr_before": "NP_718343_1 or NP_718733_1 or NP_718819_1",
+            "reaction": "GARFT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719933_1",
+            "gpr_before": "NP_716891_1 or NP_719933_1",
+            "reaction": "GLNS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_717287_1",
+            "gpr_before": "NP_716436_2 or NP_717287_1",
+            "reaction": "HSERTA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_718847_1",
+            "gpr_before": "NP_717825_1 or NP_718428_1 or NP_718847_1",
+            "reaction": "IMPD",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719718_1",
+            "gpr_before": "NP_717785_1 or NP_718988_2 or NP_719718_1",
+            "reaction": "PPA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719275_2",
+            "gpr_before": "NP_716044_1 or NP_719275_2 or (NP_716044_1 and NP_719275_2) or (NP_716089_1 and NP_719275_2)",
+            "reaction": "PAPSR",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_716846_2",
+            "gpr_before": "NP_715819_1 or NP_716846_2",
+            "reaction": "PSP_L",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719266_2 and NP_719267_1",
+            "gpr_before": "NP_715869_1 or (NP_719266_2 and NP_719267_1)",
+            "reaction": "SADT2",
+            "rule": "R1+R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719868_1",
+            "gpr_before": "NP_717844_1 or NP_719868_1",
+            "reaction": "THRD_L",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719013_1",
+            "gpr_before": "NP_717147_1 or NP_719013_1",
+            "reaction": "TMPK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_716824_1",
+            "gpr_before": "NP_716824_1 or NP_717926_1",
+            "reaction": "PGAMT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+            "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+            "reaction": "ACtex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+            "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+            "reaction": "CA2tex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+            "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+            "reaction": "COBALT2tex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+            "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+            "reaction": "CU2tex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+            "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+            "reaction": "CLtex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+            "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+            "reaction": "PYRtex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_717870_1",
+            "gpr_before": "NP_717624_1 or NP_717870_1",
+            "reaction": "NDPK2",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_717870_1",
+            "gpr_before": "NP_717624_1 or NP_717870_1",
+            "reaction": "NDPK4",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719015_1",
+            "gpr_before": "NP_719015_1 or NP_719017_1",
+            "reaction": "RBFSb",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_717892_1 or NP_719017_1",
+            "gpr_before": "NP_717892_1 or NP_719015_1",
+            "reaction": "RBFSa",
+            "rule": "R4",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_717858_1",
+            "gpr_before": "NP_717858_1 or YP_007001387_1",
+            "reaction": "SERAT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_717242_1",
+            "gpr_before": "NP_717242_1 or NP_717993_1",
+            "reaction": "UMPK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719076_1",
+            "gpr_before": "NP_717992_1 or NP_719076_1",
+            "reaction": "IPDPS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719076_1",
+            "gpr_before": "NP_717992_1 or NP_719076_1",
+            "reaction": "DMPPS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_716955_1",
+            "gpr_before": "NP_716955_1 or NP_718009_1",
+            "reaction": "TMDS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719370_1",
+            "gpr_before": "NP_717587_1 or NP_719370_1",
+            "reaction": "PRPPS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_720257_1",
+            "gpr_before": "NP_719053_1 or NP_720257_1",
+            "reaction": "GF6PTA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_719080_1",
+            "gpr_before": "NP_716068_1 or NP_719080_1",
+            "reaction": "RBFK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_720257_1",
+            "gpr_before": "NP_720257_1",
+            "reaction": "GF6PTA",
+            "rule": "R1",
+            "status": "accepted"
+          }
+        ],
+        "excluded_operations": [
+          "optimization",
+          "energy probe",
+          "knockout simulation",
+          "fitness value parsing",
+          "metric calculation",
+          "medium completion",
+          "new patch selection"
+        ],
+        "input_sha256": {
+          "data/fitness_browser/MR1/genes.tsv": "c4ee5eb901accc6459bf50ba2f55a3c4f9772928f9c663cadf9a513fcc733d1d",
+          "data/genpept/MR1_genpept_map.tsv": "e380ac438948d5c56bea457ee27cd3ce6612da0e9d42a0d9ea3906516b061f67",
+          "data/reference/gpr_patches_v0.2.json": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284",
+          "data/reference/gpr_patches_v0.3.json": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885",
+          "data/reference/gpr_patches_v0.4.json": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7",
+          "data/reference/model_patches_v0.4.json": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190",
+          "data/reference/universe_patches_v0.1.json": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe",
+          "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+          "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+          "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+          "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+          "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+          "models/gapfilled/MR1.xml.gz": "7aae2a3ea5b644241d66bd719fd8a5d5a20d6e2d612ff9706f689a91fa75bdc5",
+          "results/development_sprint_2026_09_06/prespecified_manifest.json": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809",
+          "results/development_sprint_2026_09_06/runs/MR1_cycle7/invocation.json": "c3399cf46bb0844f5c6a2322a96d9186ae0123e3efadf6deda1f6eb3ec63e8f7",
+          "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b"
+        },
+        "label": "MR1",
+        "mode": "reconstructed_cycle7_before_medium_completion_no_serialized_cycle7_SBML_available",
+        "source_path": "models/gapfilled/MR1.xml.gz",
+        "source_sha256": "7aae2a3ea5b644241d66bd719fd8a5d5a20d6e2d612ff9706f689a91fa75bdc5"
+      }
+    },
+    {
+      "added_exchanges": [
+        "EX_4abz_e",
+        "EX_btn_e",
+        "EX_na1_e",
+        "EX_nac_e",
+        "EX_ni2_e",
+        "EX_ribflv_e"
+      ],
+      "boundary_records": 6699,
+      "conditions": 33,
+      "finite_primal_vectors": 66,
+      "infeasible": 0,
+      "label": "Smeli",
+      "mass_balance_rows": 91146,
+      "optimal": 33,
+      "prepared_sizes": [
+        {
+          "metabolites": 1381,
+          "reactions": 2015
+        }
+      ],
+      "primal_values": 132990,
+      "source_provenance": {
+        "applied_historical_changes": [
+          {
+            "bounds_after": [
+              -1000.0,
+              0.0
+            ],
+            "bounds_before": [
+              -1000.0,
+              1000.0
+            ],
+            "reaction": "CBMKr"
+          },
+          {
+            "gpr_after": "NP_385682_1 and NP_386426_1",
+            "gpr_before": "NP_385682_1 or NP_386426_1 or (NP_385682_1 and NP_386426_1)",
+            "reaction": "CBPS"
+          },
+          {
+            "added": "thm_e --> ",
+            "bounds": [
+              0.0,
+              1000.0
+            ],
+            "gpr": "",
+            "reaction": "EX_thm_e"
+          },
+          {
+            "added": "atp_c + h2o_c + thm_e --> adp_c + h_c + pi_c + thm_c",
+            "bounds": [
+              0.0,
+              1000.0
+            ],
+            "gpr": "SMc03869 and SMc03870 and SMc03871",
+            "reaction": "THMabc"
+          },
+          {
+            "added": "atp_c + thm_c --> amp_c + h_c + thmpp_c",
+            "bounds": [
+              0.0,
+              1000.0
+            ],
+            "gpr": "SMc03867",
+            "reaction": "TMDPK"
+          },
+          {
+            "added": "gcald_e <=> gcald_c",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ],
+            "gpr": "",
+            "reaction": "GCALDt"
+          },
+          {
+            "added": "gcald_e --> ",
+            "bounds": [
+              0.0,
+              1000.0
+            ],
+            "gpr": "",
+            "reaction": "EX_gcald_e"
+          },
+          {
+            "added": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ],
+            "gpr": "SMc00871 and SMc00870 and SMc00869 and SMc00868 and SMc02498 and SMc02499 and SMc02500 and SMc02501 and SMc02502",
+            "reaction": "ATPS4rpp"
+          },
+          {
+            "added": "q8_c + succ_c --> fum_c + q8h2_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "SMc02463 and SMc02464 and SMc02465 and SMc02466",
+            "reaction": "SUCDi"
+          },
+          {
+            "added": "acgam_e --> ",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "",
+            "reaction": "EX_acgam_e"
+          },
+          {
+            "added": "acgam_e + atp_c + h2o_c --> acgam_c + adp_c + h_c + pi_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "SMc02869 and SMc02871 and SMc02872 and SMc02873",
+            "reaction": "ACGAMabc"
+          },
+          {
+            "added": "gam6p_c + h2o_c --> f6p_c + nh4_c",
+            "bounds": [
+              0,
+              1000
+            ],
+            "gpr": "NP_384308_1",
+            "reaction": "G6PDA"
+          },
+          {
+            "biomass_removed": {
+              "mql8_c": -9.68418998275772e-05
+            },
+            "reaction": "Growth"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385603_1",
+            "gpr_before": "NP_384360_1 or NP_385603_1",
+            "reaction": "UMPK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385289_1",
+            "gpr_before": "NP_385289_1 or NP_386086_1",
+            "reaction": "GARFT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386836_1",
+            "gpr_before": "NP_384366_1 or NP_386340_1 or NP_386663_1 or NP_386836_1 or NP_436410_1",
+            "reaction": "PGCD",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_387286_1",
+            "gpr_before": "NP_385354_1 or NP_387286_1 or NP_437810_2",
+            "reaction": "HSERTA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384866_1",
+            "gpr_before": "NP_384866_1 or NP_435580_1 or NP_435834_1",
+            "reaction": "IMPD",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_387284_1 and NP_387312_1",
+            "gpr_before": "NP_387312_1 or (NP_387284_1 and NP_387312_1)",
+            "reaction": "IPPMIa",
+            "rule": "R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_387284_1 and NP_387312_1",
+            "gpr_before": "NP_387312_1 or (NP_387284_1 and NP_387312_1)",
+            "reaction": "IPPMIb",
+            "rule": "R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386485_3",
+            "gpr_before": "NP_385222_1 or NP_386485_3",
+            "reaction": "IPPS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_387087_1",
+            "gpr_before": "NP_386092_1 or NP_387087_1",
+            "reaction": "METS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386767_1",
+            "gpr_before": "NP_384359_1 or NP_386767_1 or NP_387347_1",
+            "reaction": "PPND",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384964_1",
+            "gpr_before": "NP_384964_1 or NP_385290_1",
+            "reaction": "PRAGSr",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384156_1",
+            "gpr_before": "NP_384156_1 or NP_385525_1",
+            "reaction": "PRATPP",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386895_1",
+            "gpr_before": "NP_385250_1 or NP_386895_1",
+            "reaction": "PYK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385048_1 and NP_385049_1",
+            "gpr_before": "NP_385460_1 or (NP_385048_1 and NP_385049_1) or (NP_385048_1 and NP_435714_1)",
+            "reaction": "SADT2",
+            "rule": "R1+R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386729_1 or NP_387274_1",
+            "gpr_before": "NP_385214_1 or NP_386423_1 or NP_386729_1 or NP_387274_1 or NP_435571_1 or NP_435905_1",
+            "reaction": "DNTPPA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384193_1 or NP_435728_1",
+            "gpr_before": "NP_384193_1 or NP_384308_1 or NP_435728_1",
+            "reaction": "GF6PTA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385018_1",
+            "gpr_before": "NP_384361_1 or NP_385018_1",
+            "reaction": "DMPPS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385018_1",
+            "gpr_before": "NP_384361_1 or NP_385018_1",
+            "reaction": "IPDPS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385270_1",
+            "gpr_before": "NP_385270_1 or NP_385483_2",
+            "reaction": "NDPK2",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385270_1",
+            "gpr_before": "NP_385270_1 or NP_385483_2",
+            "reaction": "NDPK4",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385270_1",
+            "gpr_before": "NP_385270_1 or NP_385483_2",
+            "reaction": "NDPK5",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385270_1",
+            "gpr_before": "NP_385270_1 or NP_385483_2",
+            "reaction": "NDPK7",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384413_1 or NP_384661_1 or NP_385077_2 or NP_386078_1 or NP_386168_1 or NP_386431_1 or NP_387397_1",
+            "gpr_before": "NP_384413_1 or NP_384661_1 or NP_385077_2 or NP_385155_1 or NP_386078_1 or NP_386168_1 or NP_386431_1 or NP_386609_1 or NP_387397_1 or NP_435452_1",
+            "reaction": "PHETA1",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384413_1 or NP_384661_1 or NP_386078_1 or NP_386431_1 or NP_387397_1",
+            "gpr_before": "NP_384413_1 or NP_384661_1 or NP_385155_1 or NP_386078_1 or NP_386431_1 or NP_386609_1 or NP_387397_1 or NP_435452_1",
+            "reaction": "TYRTA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384413_1 or NP_384661_1 or NP_384672_1 or NP_385430_1 or NP_386431_1 or NP_387397_1",
+            "gpr_before": "NP_384413_1 or NP_384661_1 or NP_384672_1 or NP_385430_1 or NP_386431_1 or NP_386609_1 or NP_387397_1 or NP_437517_1",
+            "reaction": "ASPTA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "",
+            "gpr_before": "NP_385251_1 or NP_386903_1",
+            "reaction": "ADCL",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_387373_1",
+            "gpr_before": "NP_384952_1 or NP_387373_1",
+            "reaction": "DMATT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_387373_1",
+            "gpr_before": "NP_384952_1 or NP_387373_1",
+            "reaction": "GRTT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384902_1",
+            "gpr_before": "NP_384902_1 or NP_386545_1",
+            "reaction": "RBFK",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386840_1",
+            "gpr_before": "NP_386840_1 or NP_437200_1",
+            "reaction": "PGAMT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385763_1",
+            "gpr_before": "NP_385763_1 or NP_385854_1",
+            "reaction": "G1PACT",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385763_1",
+            "gpr_before": "NP_385763_1 or NP_385854_1",
+            "reaction": "UAGDP",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385661_1",
+            "gpr_before": "NP_384139_1 or NP_385661_1",
+            "reaction": "RNDR2",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385661_1",
+            "gpr_before": "NP_384139_1 or NP_385661_1",
+            "reaction": "RNDR3",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_387268_2",
+            "gpr_before": "NP_386479_1 or NP_387268_2",
+            "reaction": "NNATr",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_436440_1",
+            "gpr_before": "NP_387408_1 or NP_436440_1",
+            "reaction": "GCALDD",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386219_1 and NP_386220_1",
+            "gpr_before": "NP_436439_1 or (NP_386219_1 and NP_386220_1)",
+            "reaction": "ACLS",
+            "rule": "R1+R2",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386327_1 or NP_385321_1",
+            "gpr_before": "NP_385317_1 or NP_386327_1",
+            "reaction": "RBFSb",
+            "rule": "R4",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [
+              "SMc03996",
+              "SMc01559"
+            ],
+            "gpr_after": "NP_438070_1 or SMc03996 or SMc01559",
+            "gpr_before": "NP_437627_1 or NP_438070_1",
+            "reaction": "TMPPP",
+            "rule": "R4",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385526_1",
+            "gpr_before": "NP_385526_1 or NP_386491_1",
+            "reaction": "GTPCI",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386233_1",
+            "gpr_before": "NP_386233_1 or NP_437550_1",
+            "reaction": "TMDS",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_438069_1",
+            "gpr_before": "NP_437711_1 or NP_438069_1",
+            "reaction": "THZPSN",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384425_1",
+            "gpr_before": "NP_384425_1 or NP_436554_1",
+            "reaction": "COBALT2tpp",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_436732_1 or NP_437398_1",
+            "gpr_before": "NP_436732_1 or NP_437020_1 or NP_437398_1",
+            "reaction": "FBA",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_385544_1 or NP_386332_1",
+            "gpr_before": "NP_385544_1 or NP_386332_1 or NP_386871_1",
+            "reaction": "TPI",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_384662_1 or NP_435374_1 or NP_436775_1 or NP_436981_1 or NP_437171_1 or NP_437605_1",
+            "gpr_before": "NP_384662_1 or NP_386853_1 or NP_435374_1 or NP_436774_1 or NP_436775_1 or NP_436981_1 or NP_437171_1 or NP_437605_1",
+            "reaction": "UDPG4E",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_386457_1 or NP_436440_1",
+            "gpr_before": "NP_386457_1 or NP_435677_1 or NP_436440_1 or NP_436710_1",
+            "reaction": "LCADi",
+            "rule": "R1",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "",
+            "gpr_before": "NP_387090_1 or NP_437471_1",
+            "reaction": "DARBtex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "",
+            "gpr_before": "NP_387090_1 or NP_437471_1",
+            "reaction": "SALCNtex",
+            "rule": "R5",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [
+              "SMc02875"
+            ],
+            "gpr_after": "NP_384311_1 or SMc02875",
+            "gpr_before": "NP_384311_1",
+            "reaction": "ACGAMK",
+            "rule": "R4",
+            "status": "accepted"
+          },
+          {
+            "genes_added": [],
+            "gpr_after": "NP_435728_1",
+            "gpr_before": "NP_384193_1 or NP_435728_1",
+            "reaction": "GF6PTA",
+            "rule": "R1",
+            "status": "accepted"
+          }
+        ],
+        "excluded_operations": [
+          "optimization",
+          "energy probe",
+          "knockout simulation",
+          "fitness value parsing",
+          "metric calculation",
+          "medium completion",
+          "new patch selection"
+        ],
+        "input_sha256": {
+          "data/fitness_browser/Smeli/genes.tsv": "4f587c69af42b451f7d99519398ab0444cf989c7f9371087fb3691338f07798e",
+          "data/genpept/Smeli_genpept_map.tsv": "74b32adcc980040e38cd2c036cfc5d480a55ead29e28e8c291aedf47e5ced16b",
+          "data/reference/gpr_patches_v0.2.json": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284",
+          "data/reference/gpr_patches_v0.3.json": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885",
+          "data/reference/gpr_patches_v0.4.json": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7",
+          "data/reference/model_patches_v0.4.json": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190",
+          "data/reference/universe_patches_v0.1.json": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe",
+          "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+          "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+          "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+          "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+          "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+          "models/gapfilled/Smeli.xml.gz": "aed3446b54ecac8a7a48e22c94e75fc57d32c35666a6431ae41678183cf85dfa",
+          "results/development_sprint_2026_09_06/prespecified_manifest.json": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809",
+          "results/development_sprint_2026_09_06/runs/Smeli_cycle7/invocation.json": "5baa25913feb68567eb13e4eb0e8d1a359e19f366a996a979c6827ccd4dd2d63",
+          "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b"
+        },
+        "label": "Smeli",
+        "mode": "reconstructed_cycle7_before_medium_completion_no_serialized_cycle7_SBML_available",
+        "source_path": "models/gapfilled/Smeli.xml.gz",
+        "source_sha256": "aed3446b54ecac8a7a48e22c94e75fc57d32c35666a6431ae41678183cf85dfa"
+      }
+    }
+  ],
+  "numeric_serialization_differences": [
+    {
+      "condition": "Maltotetraose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "Maltohexaose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "Laminaribiose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "Stachyose - 70% | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "Melibiose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Glucose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Trehalose dihydrate | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Arabinose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Raffinose pentahydrate | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "L-Fucose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "Beta-Lactose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Fructose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Maltose monohydrate | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "L-Rhamnose monohydrate | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Mannose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Xylose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Galacturonic Acid monohydrate | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "N-Acetyl-D-Glucosamine | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "L-Arabinose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Galactose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Glucosamine Hydrochloride | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Ribose | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "Red Arabinan from sugar-beet | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "Amylose from potato | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "Starch | Varel_Bryant_medium",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_fru_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Btheta"
+    },
+    {
+      "condition": "D-Glucose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Fructose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Arabinose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Arabinose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Maltose monohydrate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Xylose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Galactose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Raffinose pentahydrate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Rhamnose monohydrate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Ribose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Fucose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Cellobiose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "Sodium L-Lactate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "Sodium D,L-Lactate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "Sodium pyruvate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "Sodium succinate dibasic hexahydrate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "m-Inositol | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "Glycerol | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Sorbitol | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Malic acid disodium salt monohydrate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Trehalose dihydrate | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Histidine | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Lysine | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Glutamine | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Proline | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "L-Leucine | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "N-Acetyl-D-Glucosamine | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Glucosamine Hydrochloride | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "Uridine | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Salicin | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "Beta-Lactose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-Mannose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    },
+    {
+      "condition": "D-(-)-tagatose | RCH2_defined_noCarbon",
+      "equal_numeric_value_type_changes": [
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            0
+          ],
+          "prepared_type": "float",
+          "value": 0
+        },
+        {
+          "legacy_type": "int",
+          "path": [
+            "reactions",
+            "EX_acgam_e",
+            "bounds",
+            1
+          ],
+          "prepared_type": "float",
+          "value": 1000
+        }
+      ],
+      "model": "Smeli"
+    }
+  ],
+  "reaction_flux_values_verified": 421954,
+  "source_sha256": "7aa1087262ce19a1a99021e6c8f76cf2c409078782d236b6d05e22a86727fdb7",
+  "status": "passed_partial",
+  "strict_prefix_inventory_verified": true,
+  "study_fingerprint": "f9a4464851589820ffd524d9ccaf39be51ff0bd159c1e13724f7281dff546e97",
+  "unsaved_cases": 43
+}

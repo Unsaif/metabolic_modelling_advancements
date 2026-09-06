@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "study": "post_failure_single_curated_condition_numerical_diagnosis",
+    "model_label": "Putida_iJN1463",
+    "condition": "L-Arginine | MOPS minimal media_noCarbon",
+    "solver_tolerance": 1e-09,
+    "residual_tolerance": 1e-08,
+    "objective_tolerance": 1e-08,
+    "methods": [
+      {
+        "id": "glpk_native",
+        "solver": "glpk",
+        "basis": "native",
+        "scaling": "GLP_SF_AUTO already performed by optlang.Model._optimize"
+      },
+      {
+        "id": "glpk_advanced_basis",
+        "solver": "glpk",
+        "basis": "glp_adv_basis(problem,0)",
+        "scaling": "GLP_SF_AUTO already performed by optlang.Model._optimize"
+      },
+      {
+        "id": "highs_simplex",
+        "solver": "highs",
+        "method": "simplex",
+        "extra_options": {
+          "parallel": "off"
+        },
+        "time_limit_seconds": 60.0,
+        "threads": 0
+      },
+      {
+        "id": "highs_ipm",
+        "solver": "highs",
+        "method": "ipm",
+        "extra_options": {
+          "parallel": "off",
+          "ipm_optimality_tolerance": 1e-09,
+          "run_crossover": "on"
+        },
+        "time_limit_seconds": 60.0,
+        "threads": 0
+      }
+    ],
+    "scope": "Exactly one already failed model/condition. Methods predeclared before these solves; no changed coefficients, bounds, medium, GPRs or acceptance thresholds. Source metadata/fitness headers only; no numeric fitness access. Baseline failures remain failures."
+  },
+  "methods": [
+    {
+      "method": {
+        "id": "glpk_native",
+        "solver": "glpk",
+        "basis": "native",
+        "scaling": "GLP_SF_AUTO already performed by optlang.Model._optimize"
+      },
+      "status": "optimal",
+      "objective": 0.9342340398861894,
+      "seconds": 0.5504987239837646,
+      "primal_certificate": {
+        "max_abs_S_residual": 7.133356405564228e-14,
+        "n_S_rows_over_1e-6": 0,
+        "max_bound_violation": 3.352654680947668e-16,
+        "n_bounds_over_1e-6": 0
+      },
+      "max_fsum_residual": 4.290195851444311e-14,
+      "n_sparse_rows_above_original_tolerance": 0,
+      "n_fsum_rows_above_original_tolerance": 0,
+      "passes_original_case_gate": true,
+      "exception": null
+    },
+    {
+      "method": {
+        "id": "glpk_advanced_basis",
+        "solver": "glpk",
+        "basis": "glp_adv_basis(problem,0)",
+        "scaling": "GLP_SF_AUTO already performed by optlang.Model._optimize"
+      },
+      "status": "optimal",
+      "objective": 0.9342340398861897,
+      "seconds": 0.3128843307495117,
+      "primal_certificate": {
+        "max_abs_S_residual": 7.137519741906573e-14,
+        "n_S_rows_over_1e-6": 0,
+        "max_bound_violation": 8.222443316214614e-16,
+        "n_bounds_over_1e-6": 0
+      },
+      "max_fsum_residual": 7.01238412678658e-14,
+      "n_sparse_rows_above_original_tolerance": 0,
+      "n_fsum_rows_above_original_tolerance": 0,
+      "passes_original_case_gate": true,
+      "exception": null
+    },
+    {
+      "method": {
+        "id": "highs_simplex",
+        "solver": "highs",
+        "method": "simplex",
+        "extra_options": {
+          "parallel": "off"
+        },
+        "time_limit_seconds": 60.0,
+        "threads": 0
+      },
+      "status": "Optimal",
+      "objective": 0.9342340368888348,
+      "seconds": 0.06056690216064453,
+      "primal_certificate": {
+        "max_abs_S_residual": 7.182024094613457e-08,
+        "n_S_rows_over_1e-6": 0,
+        "max_bound_violation": 0.0,
+        "n_bounds_over_1e-6": 0
+      },
+      "max_fsum_residual": 7.300900420497861e-08,
+      "n_sparse_rows_above_original_tolerance": 2,
+      "n_fsum_rows_above_original_tolerance": 2,
+      "passes_original_case_gate": false,
+      "exception": null
+    },
+    {
+      "method": {
+        "id": "highs_ipm",
+        "solver": "highs",
+        "method": "ipm",
+        "extra_options": {
+          "parallel": "off",
+          "ipm_optimality_tolerance": 1e-09,
+          "run_crossover": "on"
+        },
+        "time_limit_seconds": 60.0,
+        "threads": 0
+      },
+      "status": "Time limit reached",
+      "objective": "nan",
+      "seconds": 60.00336217880249,
+      "primal_certificate": null,
+      "max_fsum_residual": null,
+      "n_sparse_rows_above_original_tolerance": null,
+      "n_fsum_rows_above_original_tolerance": null,
+      "passes_original_case_gate": false,
+      "exception": null
+    }
+  ],
+  "max_optimal_objective_spread": 2.9973549198203386e-09,
+  "input_verification_after": {
+    "valid": true,
+    "checked_files": 159,
+    "missing": [],
+    "changed": [],
+    "errors": [],
+    "content_fingerprint": "f9a4464851589820ffd524d9ccaf39be51ff0bd159c1e13724f7281dff546e97"
+  },
+  "source_and_pre_solve_artifacts_unchanged": true,
+  "scope": "Post-failure numerical diagnosis for one condition; full primal vectors retained whether accepted or rejected. Solver-method success does not rewrite the failed primary run, demonstrate all-panel reliability, or validate model biology."
+}

@@ -1,0 +1,4544 @@
+{
+  "condition": "L-Arginine | MOPS minimal media_noCarbon",
+  "medium_report": {
+    "schema_version": 1,
+    "policy": {
+      "external": "e",
+      "cytoplasm": "c",
+      "external_aliases": [],
+      "cytoplasm_aliases": [],
+      "completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "secretion_capacity": 1000.0,
+      "exchange_metabolites": {
+        "EX_AEP_e": "2ameph_e"
+      }
+    },
+    "missing_policy": "report",
+    "medium": {
+      "name": "MOPS minimal media_noCarbon+EX_arg__L_e",
+      "description": "FEBA recipe: K2HPO4, FeSO4, NH4Cl, AlK(SO4)2, CaCl2, MgCl2, NaCl, molybdate, boric acid, CoCl2, CuSO4, MnCl2, ZnSO4; MOPS and tricine buffers have no BiGG ids; no vitamins; Ni/Se/W added for parity with the M9 set; carbon source EX_arg__L_e at -10.0",
+      "uptakes": {
+        "EX_h2o_e": -1000.0,
+        "EX_h_e": -1000.0,
+        "EX_co2_e": -1000.0,
+        "EX_pi_e": -1000.0,
+        "EX_nh4_e": -1000.0,
+        "EX_so4_e": -1000.0,
+        "EX_k_e": -1000.0,
+        "EX_na1_e": -1000.0,
+        "EX_cl_e": -1000.0,
+        "EX_mg2_e": -1000.0,
+        "EX_ca2_e": -1000.0,
+        "EX_fe2_e": -0.1,
+        "EX_fe3_e": -0.1,
+        "EX_mn2_e": -0.1,
+        "EX_zn2_e": -0.1,
+        "EX_cu2_e": -0.1,
+        "EX_cobalt2_e": -0.1,
+        "EX_mobd_e": -0.1,
+        "EX_ni2_e": -0.1,
+        "EX_sel_e": -0.1,
+        "EX_slnt_e": -0.1,
+        "EX_tungs_e": -0.1,
+        "EX_o2_e": -1000.0,
+        "EX_arg__L_e": -10.0
+      },
+      "provenance": "Fitness Browser media definition (bitbucket.org/berkeleylab/feba metadata/media, mixes) mapped to BiGG ids in data/reference/fitness_browser_media_bigg.tsv",
+      "notes": [
+        "aerobic=True",
+        "trace organics -0.001, trace metals -0.1 mmol/gDW/h"
+      ]
+    },
+    "completion_media": [
+      {
+        "name": "MOPS minimal media_noCarbon",
+        "description": "FEBA recipe: K2HPO4, FeSO4, NH4Cl, AlK(SO4)2, CaCl2, MgCl2, NaCl, molybdate, boric acid, CoCl2, CuSO4, MnCl2, ZnSO4; MOPS and tricine buffers have no BiGG ids; no vitamins; Ni/Se/W added for parity with the M9 set",
+        "uptakes": {
+          "EX_h2o_e": -1000.0,
+          "EX_h_e": -1000.0,
+          "EX_co2_e": -1000.0,
+          "EX_pi_e": -1000.0,
+          "EX_nh4_e": -1000.0,
+          "EX_so4_e": -1000.0,
+          "EX_k_e": -1000.0,
+          "EX_na1_e": -1000.0,
+          "EX_cl_e": -1000.0,
+          "EX_mg2_e": -1000.0,
+          "EX_ca2_e": -1000.0,
+          "EX_fe2_e": -0.1,
+          "EX_fe3_e": -0.1,
+          "EX_mn2_e": -0.1,
+          "EX_zn2_e": -0.1,
+          "EX_cu2_e": -0.1,
+          "EX_cobalt2_e": -0.1,
+          "EX_mobd_e": -0.1,
+          "EX_ni2_e": -0.1,
+          "EX_sel_e": -0.1,
+          "EX_slnt_e": -0.1,
+          "EX_tungs_e": -0.1,
+          "EX_o2_e": -1000.0
+        },
+        "provenance": "Fitness Browser media definition (bitbucket.org/berkeleylab/feba metadata/media, mixes) mapped to BiGG ids in data/reference/fitness_browser_media_bigg.tsv",
+        "notes": [
+          "aerobic=True",
+          "trace organics -0.001, trace metals -0.1 mmol/gDW/h"
+        ]
+      },
+      {
+        "name": "RCH2_defined_noCarbon",
+        "description": "FEBA recipe: NH4Cl, KCl, NaH2PO4, PIPES (no BiGG id), Wolfe's mineral mix (Mg, NTA, Na, Mn, Co, Zn, Ca, Fe, Ni, Al, Cu, B, Mo, Se) and Wolfe's vitamin mix (pyridoxine, 4-aminobenzoate, lipoate, nicotinate, riboflavin, thiamine, pantothenate, biotin, folate, cyanocobalamin \u2014 represented by cbl1 and adocbl) Organic components listed under trace_components (vitamins, hemin, reductant amino acids, nucleobases) are limited to 0.001 mmol/gDW/h (ample for cofactor demands, negligible as carbon) so that they cannot act as carbon sources.",
+        "uptakes": {
+          "EX_h2o_e": -1000.0,
+          "EX_h_e": -1000.0,
+          "EX_co2_e": -1000.0,
+          "EX_pi_e": -1000.0,
+          "EX_nh4_e": -1000.0,
+          "EX_so4_e": -1000.0,
+          "EX_k_e": -1000.0,
+          "EX_na1_e": -1000.0,
+          "EX_cl_e": -1000.0,
+          "EX_mg2_e": -1000.0,
+          "EX_ca2_e": -1000.0,
+          "EX_fe2_e": -0.1,
+          "EX_fe3_e": -0.1,
+          "EX_mn2_e": -0.1,
+          "EX_zn2_e": -0.1,
+          "EX_cu2_e": -0.1,
+          "EX_cobalt2_e": -0.1,
+          "EX_mobd_e": -0.1,
+          "EX_ni2_e": -0.1,
+          "EX_sel_e": -0.1,
+          "EX_slnt_e": -0.1,
+          "EX_tungs_e": -0.1,
+          "EX_pydxn_e": -0.001,
+          "EX_4abz_e": -0.001,
+          "EX_lipoate_e": -0.001,
+          "EX_nac_e": -0.001,
+          "EX_ribflv_e": -0.001,
+          "EX_thm_e": -0.001,
+          "EX_pnto__R_e": -0.001,
+          "EX_btn_e": -0.001,
+          "EX_fol_e": -0.001,
+          "EX_cbl1_e": -0.001,
+          "EX_adocbl_e": -0.001,
+          "EX_o2_e": -1000.0
+        },
+        "provenance": "Fitness Browser media definition (bitbucket.org/berkeleylab/feba metadata/media, mixes) mapped to BiGG ids in data/reference/fitness_browser_media_bigg.tsv",
+        "notes": [
+          "aerobic=True",
+          "trace organics -0.001, trace metals -0.1 mmol/gDW/h"
+        ]
+      }
+    ],
+    "added_exchanges": [
+      "EX_4abz_e",
+      "EX_pydxn_e",
+      "EX_ribflv_e",
+      "EX_slnt_e"
+    ],
+    "completion_skips": [
+      {
+        "exchange": "EX_adocbl_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_btn_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_ca2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_cbl1_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_cl_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_co2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_cobalt2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_cu2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_fe2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_fe3_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_fol_e",
+        "reason": "excluded"
+      },
+      {
+        "exchange": "EX_h2o_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_h_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_k_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_lipoate_e",
+        "reason": "no_cytoplasmic_metabolite"
+      },
+      {
+        "exchange": "EX_mg2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_mn2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_mobd_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_na1_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_nac_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_nh4_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_ni2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_o2_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_pi_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_pnto__R_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_sel_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_so4_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_thm_e",
+        "reason": "no_cytoplasmic_metabolite"
+      },
+      {
+        "exchange": "EX_tungs_e",
+        "reason": "exchange_already_exists"
+      },
+      {
+        "exchange": "EX_zn2_e",
+        "reason": "exchange_already_exists"
+      }
+    ],
+    "normalized_compartments": [],
+    "completion_chemistry": [
+      {
+        "extracellular": "4abz_e",
+        "cytoplasm": "4abz_c",
+        "formula_metadata_known": true,
+        "charge_metadata_known": true,
+        "note": "Known metadata must agree; agreement or placeholders do not establish chemically correct annotation."
+      },
+      {
+        "extracellular": "pydxn_e",
+        "cytoplasm": "pydxn_c",
+        "formula_metadata_known": true,
+        "charge_metadata_known": true,
+        "note": "Known metadata must agree; agreement or placeholders do not establish chemically correct annotation."
+      },
+      {
+        "extracellular": "ribflv_e",
+        "cytoplasm": "ribflv_c",
+        "formula_metadata_known": true,
+        "charge_metadata_known": true,
+        "note": "Known metadata must agree; agreement or placeholders do not establish chemically correct annotation."
+      },
+      {
+        "extracellular": "slnt_e",
+        "cytoplasm": "slnt_c",
+        "formula_metadata_known": true,
+        "charge_metadata_known": true,
+        "note": "Known metadata must agree; agreement or placeholders do not establish chemically correct annotation."
+      }
+    ],
+    "missing_medium": [],
+    "exchanges_without_network_connection": [
+      "EX_2ddglcn_e",
+      "EX_hco3_e"
+    ],
+    "exchange_ids": [
+      "EX_12dgr160_e",
+      "EX_12dgr180_e",
+      "EX_13dampp_e",
+      "EX_15dap_e",
+      "EX_1ag160_e",
+      "EX_1ag180_e",
+      "EX_1ag181d9_e",
+      "EX_1ag182d9d12_e",
+      "EX_25dkglcn_e",
+      "EX_26dap__M_e",
+      "EX_2ddglcn_e",
+      "EX_2dhglcn_e",
+      "EX_2m35mdntha_e",
+      "EX_34dhbz_e",
+      "EX_34dhcinm_e",
+      "EX_34dhphe_e",
+      "EX_35dnta_e",
+      "EX_3h4atb_e",
+      "EX_3mb_e",
+      "EX_3oxoadp_e",
+      "EX_4abut_e",
+      "EX_4abz_e",
+      "EX_4hbz_e",
+      "EX_4hpro_DC_e",
+      "EX_4hpro_LT_e",
+      "EX_4hptn_e",
+      "EX_4oxptn_e",
+      "EX_5aptn_e",
+      "EX_5g2oxpt_e",
+      "EX_5mcsn_e",
+      "EX_5oxpro_e",
+      "EX_6atha_e",
+      "EX_6hnac_e",
+      "EX_AEP_e",
+      "EX_LalaLglu_e",
+      "EX_Ncbmpts_e",
+      "EX_R3hdec4e_e",
+      "EX_R_3h4atba_e",
+      "EX_R_3h6atha_e",
+      "EX_R_3hcmrs7e_e",
+      "EX_R_3hdcaa_e",
+      "EX_R_3hdd5ea_e",
+      "EX_R_3hdd6e_e",
+      "EX_R_3hdda_e",
+      "EX_R_3hhdca_e",
+      "EX_R_3hhpa_e",
+      "EX_R_3hhxa_e",
+      "EX_R_3hnonaa_e",
+      "EX_R_3hocta_e",
+      "EX_R_3hpba_e",
+      "EX_R_3hpdeca_e",
+      "EX_R_3hphpa_e",
+      "EX_R_3hphxa_e",
+      "EX_R_3hpnona_e",
+      "EX_R_3hpocta_e",
+      "EX_R_3hppta_e",
+      "EX_R_3hpt_e",
+      "EX_R_3htd58e_e",
+      "EX_R_3htd5e_e",
+      "EX_R_3httdca_e",
+      "EX_T4hcinnm_e",
+      "EX_ac_e",
+      "EX_acac_e",
+      "EX_acald_e",
+      "EX_acmtsoxin_e",
+      "EX_acon_C_e",
+      "EX_acpptrn_e",
+      "EX_acser_e",
+      "EX_actn__R_e",
+      "EX_ade_e",
+      "EX_adn_e",
+      "EX_adocbl_e",
+      "EX_ag_e",
+      "EX_agm_e",
+      "EX_akg_e",
+      "EX_ala_B_e",
+      "EX_ala__D_e",
+      "EX_ala__L_e",
+      "EX_alaala_e",
+      "EX_alahis_e",
+      "EX_alaleu_e",
+      "EX_alathr_e",
+      "EX_alatrp_e",
+      "EX_algac_MG_14_e",
+      "EX_algac_MG_23_e",
+      "EX_algac_MG_32_e",
+      "EX_algac_MG_41_e",
+      "EX_algac__M_e",
+      "EX_alltn_e",
+      "EX_apc_e",
+      "EX_arbtn_e",
+      "EX_arbtn_fe3_e",
+      "EX_arg__D_e",
+      "EX_arg__L_e",
+      "EX_asn__D_e",
+      "EX_asn__L_e",
+      "EX_aso3_e",
+      "EX_aso4_e",
+      "EX_asp__L_e",
+      "EX_balaala_e",
+      "EX_balabala_e",
+      "EX_balagly_e",
+      "EX_balaleu_e",
+      "EX_balamd_e",
+      "EX_bhb_e",
+      "EX_biliverd_e",
+      "EX_btd_RR_e",
+      "EX_btn_e",
+      "EX_butso3_e",
+      "EX_bz_e",
+      "EX_ca2_e",
+      "EX_carn_e",
+      "EX_catechol_e",
+      "EX_cbi_e",
+      "EX_cbl1_e",
+      "EX_cd2_e",
+      "EX_cell4_e",
+      "EX_cgly_e",
+      "EX_chol_e",
+      "EX_chols_e",
+      "EX_chor_e",
+      "EX_cinnm_e",
+      "EX_cit_e",
+      "EX_cl_e",
+      "EX_cm_e",
+      "EX_cmcbtt_e",
+      "EX_co2_e",
+      "EX_co_e",
+      "EX_cobalt2_e",
+      "EX_confrl_e",
+      "EX_creat_e",
+      "EX_crn_e",
+      "EX_cro2_e",
+      "EX_cro4_e",
+      "EX_crtn_e",
+      "EX_csn_e",
+      "EX_cu2_e",
+      "EX_cu_e",
+      "EX_cyan_e",
+      "EX_cys__D_e",
+      "EX_cys__L_e",
+      "EX_d2one_e",
+      "EX_d3one_e",
+      "EX_d4one_e",
+      "EX_dag181d9_e",
+      "EX_dag182d9d12_e",
+      "EX_dca_e",
+      "EX_ddca_e",
+      "EX_dgudbutn_e",
+      "EX_dmanur_e",
+      "EX_dmgly_e",
+      "EX_dmso2_e",
+      "EX_dopa_e",
+      "EX_ecto__L_e",
+      "EX_enter_e",
+      "EX_etha_e",
+      "EX_ethso3_e",
+      "EX_etoh_e",
+      "EX_fald_e",
+      "EX_fcmcbtt_e",
+      "EX_fe2_e",
+      "EX_fe3_e",
+      "EX_fe3dcit_e",
+      "EX_fe3mcbtt_e",
+      "EX_fe3pyovd_e",
+      "EX_fe3pyovd_kt_e",
+      "EX_fecrm_e",
+      "EX_fecrm_un_e",
+      "EX_feenter_e",
+      "EX_feoxam_e",
+      "EX_feoxam_un_e",
+      "EX_fer_e",
+      "EX_for_e",
+      "EX_fru_e",
+      "EX_fum_e",
+      "EX_ga_e",
+      "EX_galct__D_e",
+      "EX_galur_e",
+      "EX_glc__D_e",
+      "EX_glcn_e",
+      "EX_glcr_e",
+      "EX_glcur_e",
+      "EX_gln__L_e",
+      "EX_glu__L_e",
+      "EX_glutar_e",
+      "EX_gly_e",
+      "EX_glyald_e",
+      "EX_glyb_e",
+      "EX_glyc__R_e",
+      "EX_glyc_e",
+      "EX_glyclt_e",
+      "EX_glycol_e",
+      "EX_glygln_e",
+      "EX_glyglu_e",
+      "EX_glygly_e",
+      "EX_glymet_e",
+      "EX_glyphe_e",
+      "EX_glyser_e",
+      "EX_gua_e",
+      "EX_gudac_e",
+      "EX_gudptn_e",
+      "EX_h2o2_e",
+      "EX_h2o_e",
+      "EX_h2s_e",
+      "EX_h_e",
+      "EX_hco3_e",
+      "EX_hcys__L_e",
+      "EX_hdca_e",
+      "EX_hdcea_e",
+      "EX_hg2_e",
+      "EX_hgentis_e",
+      "EX_his__L_e",
+      "EX_hisgly_e",
+      "EX_hishis_e",
+      "EX_hom__L_e",
+      "EX_hpta_e",
+      "EX_hxa_e",
+      "EX_hxan_e",
+      "EX_icit_e",
+      "EX_ile__L_e",
+      "EX_ind3ac_e",
+      "EX_indole_e",
+      "EX_ins_e",
+      "EX_isetac_e",
+      "EX_k_e",
+      "EX_lac__D_e",
+      "EX_lac__L_e",
+      "EX_leu__D_e",
+      "EX_leu__L_e",
+      "EX_leuleu_e",
+      "EX_lnlc_e",
+      "EX_lpspput_e",
+      "EX_lys__D_e",
+      "EX_lys__L_e",
+      "EX_m_xyl_e",
+      "EX_mal__D_e",
+      "EX_mal__L_e",
+      "EX_man_e",
+      "EX_manur_e",
+      "EX_mcbtt_e",
+      "EX_meoh_e",
+      "EX_met__D_e",
+      "EX_met__L_e",
+      "EX_mg2_e",
+      "EX_mmet_e",
+      "EX_mn2_e",
+      "EX_mobd_e",
+      "EX_mso3_e",
+      "EX_mtsoxin_e",
+      "EX_n2one_e",
+      "EX_na1_e",
+      "EX_nac_e",
+      "EX_nh4_e",
+      "EX_ni2_e",
+      "EX_no2_e",
+      "EX_no3_e",
+      "EX_no_e",
+      "EX_nona_e",
+      "EX_o2_e",
+      "EX_o_xyl_e",
+      "EX_oaa_e",
+      "EX_ocdca_e",
+      "EX_ocdcea_e",
+      "EX_octa_e",
+      "EX_orn__D_e",
+      "EX_orn_e",
+      "EX_orot_e",
+      "EX_oxa_e",
+      "EX_p_xyl_e",
+      "EX_pac_e",
+      "EX_pacald_e",
+      "EX_pb2_e",
+      "EX_pea_e",
+      "EX_peamn_e",
+      "EX_pentso3_e",
+      "EX_phe__D_e",
+      "EX_phe__L_e",
+      "EX_phedca_e",
+      "EX_phehpa_e",
+      "EX_phehxa_e",
+      "EX_pheme_e",
+      "EX_phenona_e",
+      "EX_pheocta_e",
+      "EX_phept_e",
+      "EX_phpyr_e",
+      "EX_pi_e",
+      "EX_pnto__R_e",
+      "EX_ppa_e",
+      "EX_ppi_e",
+      "EX_pptrn_e",
+      "EX_prealg_MG_14_e",
+      "EX_prealg_MG_23_e",
+      "EX_prealg_MG_32_e",
+      "EX_prealg_MG_41_e",
+      "EX_prealginate_G_e",
+      "EX_pro__D_e",
+      "EX_pro__L_e",
+      "EX_progly_e",
+      "EX_pta_e",
+      "EX_ptrc_e",
+      "EX_ptsla_e",
+      "EX_pydam_e",
+      "EX_pydxn_e",
+      "EX_pyovd_e",
+      "EX_pyovd_kt_e",
+      "EX_pyr_e",
+      "EX_quin_e",
+      "EX_rib__D_e",
+      "EX_ribflv_e",
+      "EX_sbo3_e",
+      "EX_sel_e",
+      "EX_ser__D_e",
+      "EX_ser__L_e",
+      "EX_sheme_e",
+      "EX_skm_e",
+      "EX_slnt_e",
+      "EX_so2_e",
+      "EX_so3_e",
+      "EX_so4_e",
+      "EX_spmd_e",
+      "EX_succ_e",
+      "EX_sulfac_e",
+      "EX_tag160_e",
+      "EX_tag180_e",
+      "EX_tag181d9_e",
+      "EX_tag182d9d12_e",
+      "EX_taur_e",
+      "EX_tcynt_e",
+      "EX_thr__L_e",
+      "EX_thym_e",
+      "EX_tmanur_e",
+      "EX_tnt_e",
+      "EX_tol_e",
+      "EX_trp__L_e",
+      "EX_tsul_e",
+      "EX_ttdca_e",
+      "EX_ttdcea_e",
+      "EX_ttrcyc_e",
+      "EX_tungs_e",
+      "EX_tyr__D_e",
+      "EX_tyr__L_e",
+      "EX_und2one_e",
+      "EX_ura_e",
+      "EX_urea_e",
+      "EX_uri_e",
+      "EX_vacc_e",
+      "EX_val__D_e",
+      "EX_val__L_e",
+      "EX_vanln_e",
+      "EX_vanlt_e",
+      "EX_xan_e",
+      "EX_zn2_e"
+    ],
+    "boundary_reactions": {
+      "DM_5drib_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "5drib_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C100aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C100aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C100pPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C100pPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C101PAH_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C101PAH_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C120aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C120aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C121aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C121aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C121d6PHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C121d6PHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C140aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C140aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C141aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C141aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C141d5PHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C141d5PHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C142PHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C142PHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C40aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C40aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C40atPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C40atPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C40pPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C40pPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C50aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C50aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C50pPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C50pPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C60aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C60aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C60atPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C60atPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C60pPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C60pPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C70aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C70aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C70pPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C70pPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C80aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C80aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C80pPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C80pPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C90aPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C90aPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_C90pPHA_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "C90pPHA_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_acgam_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "acgam_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_acmum6p_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "acmum6p_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_amob_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "amob_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_doxopa_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "doxopa_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_ppi50_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "ppi50_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "DM_tripeptide_c": {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "tripeptide_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "EX_12dgr160_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "12dgr160_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_12dgr180_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "12dgr180_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_13dampp_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "13dampp_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_15dap_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "15dap_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_1ag160_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "1ag160_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_1ag180_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "1ag180_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_1ag181d9_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "1ag181d9_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_1ag182d9d12_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "1ag182d9d12_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_25dkglcn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "25dkglcn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_26dap__M_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "26dap__M_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_2ddglcn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "2ddglcn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_2dhglcn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "2dhglcn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_2m35mdntha_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "2m35mdntha_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_34dhbz_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "34dhbz_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_34dhcinm_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "34dhcinm_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_34dhphe_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "34dhphe_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_35dnta_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "35dnta_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_3h4atb_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "3h4atb_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_3mb_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "3mb_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_3oxoadp_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "3oxoadp_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_4abut_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "4abut_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_4abz_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "4abz_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_4hbz_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "4hbz_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_4hpro_DC_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "4hpro_DC_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_4hpro_LT_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "4hpro_LT_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_4hptn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "4hptn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_4oxptn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "4oxptn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_5aptn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "5aptn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_5g2oxpt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "5g2oxpt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_5mcsn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "5mcsn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_5oxpro_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "5oxpro_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_6atha_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "6atha_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_6hnac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "6hnac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_AEP_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "2ameph_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_LalaLglu_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "LalaLglu_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_Ncbmpts_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "Ncbmpts_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R3hdec4e_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R3hdec4e_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3h4atba_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3h4atba_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3h6atha_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3h6atha_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hcmrs7e_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hcmrs7e_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hdcaa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hdcaa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hdd5ea_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hdd5ea_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hdd6e_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hdd6e_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hdda_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hdda_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hhdca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hhdca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hhpa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hhpa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hhxa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hhxa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hnonaa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hnonaa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hocta_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hocta_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hpba_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hpba_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hpdeca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hpdeca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hphpa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hphpa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hphxa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hphxa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hpnona_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hpnona_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hpocta_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hpocta_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hppta_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hppta_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3hpt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3hpt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3htd58e_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3htd58e_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3htd5e_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3htd5e_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_R_3httdca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "R_3httdca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_T4hcinnm_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "T4hcinnm_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_acac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "acac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_acald_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "acald_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_acmtsoxin_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "acmtsoxin_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_acon_C_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "acon_C_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_acpptrn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "acpptrn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_acser_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "acser_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_actn__R_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "actn__R_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ade_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ade_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_adn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "adn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_adocbl_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "adocbl_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ag_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ag_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_agm_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "agm_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_akg_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "akg_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ala_B_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ala_B_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ala__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ala__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ala__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ala__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_alaala_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "alaala_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_alahis_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "alahis_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_alaleu_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "alaleu_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_alathr_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "alathr_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_alatrp_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "alatrp_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_algac_MG_14_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "algac_MG_14_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_algac_MG_23_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "algac_MG_23_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_algac_MG_32_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "algac_MG_32_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_algac_MG_41_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "algac_MG_41_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_algac__M_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "algac__M_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_alltn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "alltn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_apc_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "apc_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_arbtn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "arbtn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_arbtn_fe3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "arbtn_fe3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_arg__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "arg__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_arg__L_e": {
+        "bounds": [
+          -10.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "arg__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_asn__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "asn__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_asn__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "asn__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_aso3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "aso3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_aso4_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "aso4_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_asp__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "asp__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_balaala_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "balaala_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_balabala_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "balabala_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_balagly_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "balagly_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_balaleu_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "balaleu_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_balamd_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "balamd_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_bhb_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "bhb_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_biliverd_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "biliverd_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_btd_RR_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "btd_RR_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_btn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "btn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_butso3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "butso3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_bz_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "bz_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ca2_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ca2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_carn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "carn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_catechol_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "catechol_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cbi_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cbi_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cbl1_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cbl1_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cd2_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cd2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cell4_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cell4_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cgly_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cgly_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_chol_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "chol_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_chols_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "chols_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_chor_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "chor_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cinnm_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cinnm_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cit_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cit_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cl_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cl_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cm_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cm_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cmcbtt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cmcbtt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_co2_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "co2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_co_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "co_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cobalt2_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cobalt2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_confrl_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "confrl_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_creat_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "creat_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_crn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "crn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cro2_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cro2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cro4_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cro4_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_crtn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "crtn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_csn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "csn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cu2_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cu2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cu_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cu_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cyan_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cyan_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cys__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cys__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_cys__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "cys__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_d2one_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "d2one_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_d3one_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "d3one_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_d4one_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "d4one_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_dag181d9_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "dag181d9_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_dag182d9d12_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "dag182d9d12_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_dca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "dca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ddca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ddca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_dgudbutn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "dgudbutn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_dmanur_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "dmanur_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_dmgly_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "dmgly_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_dmso2_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "dmso2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_dopa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "dopa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ecto__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ecto__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_enter_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "enter_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_etha_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "etha_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ethso3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ethso3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_etoh_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "etoh_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fald_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fald_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fcmcbtt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fcmcbtt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fe2_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fe2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fe3_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fe3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fe3dcit_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fe3dcit_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fe3mcbtt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fe3mcbtt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fe3pyovd_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fe3pyovd_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fe3pyovd_kt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fe3pyovd_kt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fecrm_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fecrm_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fecrm_un_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fecrm_un_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_feenter_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "feenter_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_feoxam_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "feoxam_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_feoxam_un_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "feoxam_un_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fer_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fer_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_for_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "for_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fru_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fru_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_fum_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "fum_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ga_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ga_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_galct__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "galct__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_galur_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "galur_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glc__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glc__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glcn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glcn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glcr_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glcr_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glcur_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glcur_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_gln__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "gln__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glu__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glu__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glutar_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glutar_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_gly_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "gly_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glyald_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glyald_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glyb_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glyb_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glyc__R_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glyc__R_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glyc_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glyc_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glyclt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glyclt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glycol_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glycol_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glygln_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glygln_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glyglu_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glyglu_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glygly_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glygly_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glymet_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glymet_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glyphe_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glyphe_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_glyser_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "glyser_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_gua_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "gua_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_gudac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "gudac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_gudptn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "gudptn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_h2o2_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "h2o2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_h2o_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "h2o_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_h2s_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "h2s_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_h_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "h_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hco3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hco3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hcys__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hcys__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hdca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hdca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hdcea_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hdcea_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hg2_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hg2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hgentis_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hgentis_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_his__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "his__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hisgly_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hisgly_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hishis_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hishis_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hom__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hom__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hpta_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hpta_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hxa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hxa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_hxan_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "hxan_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_icit_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "icit_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ile__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ile__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ind3ac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ind3ac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_indole_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "indole_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ins_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ins_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_isetac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "isetac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_k_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "k_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_lac__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "lac__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_lac__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "lac__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_leu__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "leu__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_leu__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "leu__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_leuleu_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "leuleu_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_lnlc_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "lnlc_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_lpspput_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "lpspput_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_lys__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "lys__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_lys__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "lys__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_m_xyl_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "m_xyl_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mal__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mal__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mal__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mal__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_man_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "man_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_manur_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "manur_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mcbtt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mcbtt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_meoh_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "meoh_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_met__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "met__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_met__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "met__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mg2_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mg2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mmet_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mmet_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mn2_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mn2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mobd_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mobd_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mso3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mso3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_mtsoxin_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "mtsoxin_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_n2one_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "n2one_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_na1_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "na1_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_nac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "nac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_nh4_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "nh4_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ni2_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ni2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_no2_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "no2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_no3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "no3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_no_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "no_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_nona_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "nona_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_o2_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "o2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_o_xyl_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "o_xyl_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_oaa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "oaa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ocdca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ocdca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ocdcea_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ocdcea_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_octa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "octa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_orn__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "orn__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_orn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "orn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_orot_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "orot_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_oxa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "oxa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_p_xyl_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "p_xyl_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pacald_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pacald_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pb2_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pb2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pea_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pea_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_peamn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "peamn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pentso3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pentso3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_phe__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "phe__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_phe__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "phe__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_phedca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "phedca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_phehpa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "phehpa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_phehxa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "phehxa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pheme_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pheme_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_phenona_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "phenona_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pheocta_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pheocta_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_phept_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "phept_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_phpyr_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "phpyr_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pi_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pi_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pnto__R_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pnto__R_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ppa_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ppa_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ppi_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ppi_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pptrn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pptrn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_prealg_MG_14_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "prealg_MG_14_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_prealg_MG_23_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "prealg_MG_23_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_prealg_MG_32_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "prealg_MG_32_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_prealg_MG_41_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "prealg_MG_41_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_prealginate_G_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "prealginate_G_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pro__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pro__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pro__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pro__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_progly_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "progly_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pta_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pta_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ptrc_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ptrc_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ptsla_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ptsla_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pydam_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pydam_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pydxn_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pydxn_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pyovd_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pyovd_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pyovd_kt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pyovd_kt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_pyr_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "pyr_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_quin_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "quin_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_rib__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "rib__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ribflv_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ribflv_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_sbo3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "sbo3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_sel_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "sel_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ser__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ser__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ser__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ser__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_sheme_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "sheme_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_skm_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "skm_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_slnt_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "slnt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_so2_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "so2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_so3_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "so3_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_so4_e": {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "so4_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_spmd_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "spmd_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_succ_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "succ_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_sulfac_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "sulfac_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tag160_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tag160_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tag180_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tag180_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tag181d9_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tag181d9_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tag182d9d12_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tag182d9d12_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_taur_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "taur_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tcynt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tcynt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_thr__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "thr__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_thym_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "thym_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tmanur_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tmanur_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tnt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tnt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tol_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tol_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_trp__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "trp__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tsul_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tsul_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ttdca_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ttdca_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ttdcea_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ttdcea_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ttrcyc_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ttrcyc_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tungs_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tungs_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tyr__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tyr__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_tyr__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "tyr__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_und2one_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "und2one_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_ura_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "ura_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_urea_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "urea_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_uri_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "uri_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_vacc_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "vacc_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_val__D_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "val__D_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_val__L_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "val__L_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_vanln_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "vanln_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_vanlt_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "vanlt_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_xan_e": {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "stoichiometry": {
+          "xan_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "EX_zn2_e": {
+        "bounds": [
+          -0.1,
+          1000.0
+        ],
+        "stoichiometry": {
+          "zn2_e": -1.0
+        },
+        "role": "exchange"
+      },
+      "SK_PHAg_c": {
+        "bounds": [
+          -999999.0,
+          999999.0
+        ],
+        "stoichiometry": {
+          "PHAg_c": -1.0
+        },
+        "role": "internal_boundary"
+      },
+      "SK_pqqA_kt_c": {
+        "bounds": [
+          -1.0,
+          0.0
+        ],
+        "stoichiometry": {
+          "pqqA_kt_c": -1.0
+        },
+        "role": "internal_boundary"
+      }
+    },
+    "internal_supply_capable_boundaries": [
+      "SK_PHAg_c",
+      "SK_pqqA_kt_c"
+    ],
+    "scope": "Canonical BiGG exchange preparation; internal boundaries retained and disclosed. No biological transport validation, optimization or concentration conversion."
+  },
+  "provenance": {
+    "label": "Putida_iJN1463",
+    "mode": "unmodified_local_curated_structural_reference_already_exposed_Putida",
+    "source_path": "models/bigg/iJN1463.xml",
+    "source_sha256": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+    "applied_historical_changes": [],
+    "input_sha256": {
+      "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+      "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+      "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+      "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+      "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+      "models/bigg/iJN1463.xml": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+      "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b"
+    },
+    "excluded_operations": [
+      "optimization",
+      "energy probe",
+      "knockout simulation",
+      "fitness value parsing",
+      "metric calculation",
+      "medium completion",
+      "new patch selection"
+    ]
+  },
+  "algebra_and_chemistry_sha256": "02846ba4df763b730fca86e26330fc51d465a90c720388d09e4099c694ff9626",
+  "n_reactions": 2935,
+  "n_metabolites": 2157,
+  "bound_max_abs": 999999.0,
+  "coefficient_min_abs": 3e-06,
+  "coefficient_max_abs": 47.0
+}

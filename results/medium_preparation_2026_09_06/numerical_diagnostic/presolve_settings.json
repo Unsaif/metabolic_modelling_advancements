@@ -1,0 +1,45 @@
+{
+  "study": "post_failure_single_curated_condition_numerical_diagnosis",
+  "model_label": "Putida_iJN1463",
+  "condition": "L-Arginine | MOPS minimal media_noCarbon",
+  "solver_tolerance": 1e-09,
+  "residual_tolerance": 1e-08,
+  "objective_tolerance": 1e-08,
+  "methods": [
+    {
+      "id": "glpk_native",
+      "solver": "glpk",
+      "basis": "native",
+      "scaling": "GLP_SF_AUTO already performed by optlang.Model._optimize"
+    },
+    {
+      "id": "glpk_advanced_basis",
+      "solver": "glpk",
+      "basis": "glp_adv_basis(problem,0)",
+      "scaling": "GLP_SF_AUTO already performed by optlang.Model._optimize"
+    },
+    {
+      "id": "highs_simplex",
+      "solver": "highs",
+      "method": "simplex",
+      "extra_options": {
+        "parallel": "off"
+      },
+      "time_limit_seconds": 60.0,
+      "threads": 0
+    },
+    {
+      "id": "highs_ipm",
+      "solver": "highs",
+      "method": "ipm",
+      "extra_options": {
+        "parallel": "off",
+        "ipm_optimality_tolerance": 1e-09,
+        "run_crossover": "on"
+      },
+      "time_limit_seconds": 60.0,
+      "threads": 0
+    }
+  ],
+  "scope": "Exactly one already failed model/condition. Methods predeclared before these solves; no changed coefficients, bounds, medium, GPRs or acceptance thresholds. Source metadata/fitness headers only; no numeric fitness access. Baseline failures remain failures."
+}

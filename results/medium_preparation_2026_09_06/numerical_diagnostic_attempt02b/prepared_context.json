@@ -1,0 +1,33 @@
+{
+  "source_model": {
+    "label": "Putida_iJN1463",
+    "mode": "unmodified_local_curated_structural_reference_already_exposed_Putida",
+    "source_path": "models/bigg/iJN1463.xml",
+    "source_sha256": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+    "applied_historical_changes": [],
+    "input_sha256": {
+      "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+      "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+      "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+      "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+      "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+      "models/bigg/iJN1463.xml": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+      "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b"
+    },
+    "excluded_operations": [
+      "optimization",
+      "energy probe",
+      "knockout simulation",
+      "fitness value parsing",
+      "metric calculation",
+      "medium completion",
+      "new patch selection"
+    ]
+  },
+  "preparation": "Rebuilt from frozen original sources; SBML GPR string normalization not used",
+  "algebra_and_chemistry_sha256": "02846ba4df763b730fca86e26330fc51d465a90c720388d09e4099c694ff9626",
+  "n_reactions": 2935,
+  "n_metabolites": 2157,
+  "condition": "L-Arginine | MOPS minimal media_noCarbon",
+  "exact_signature_matches_attempt01": true
+}

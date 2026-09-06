@@ -1,0 +1,30 @@
+{
+  "method": {
+    "id": "highs_ipm",
+    "solver": "highs",
+    "method": "ipm",
+    "extra_options": {
+      "parallel": "off",
+      "ipm_optimality_tolerance": 1e-09,
+      "run_crossover": "on"
+    },
+    "time_limit_seconds": 60.0,
+    "threads": 0
+  },
+  "started_at": "2026-09-06T14:37:28.161577+00:00",
+  "status": "Time limit reached",
+  "objective": "nan",
+  "solver_info": {
+    "simplex_iterations": "0",
+    "ipm_iterations": "84479",
+    "max_primal_infeasibility": "inf",
+    "max_dual_infeasibility": "inf",
+    "presolve": "choose",
+    "feas_tol": "1e-09"
+  },
+  "full_primal_fluxes": null,
+  "finite_primal_vector": false,
+  "passes_original_primal_gate": false,
+  "passes_original_case_gate": false,
+  "seconds": 60.00336217880249
+}

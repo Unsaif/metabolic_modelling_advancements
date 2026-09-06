@@ -22,6 +22,35 @@ external/            git clones used as data/model sources — re-fetch, see bel
 models/              symlinks/copies of the models used
 ```
 
+## Explicit medium preparation for new studies
+
+The opt-in `gembench.medium_preparation_v3` API returns a copy and a boundary
+report. It closes validated environmental exchanges independently of inferred
+compartment labels. Declare the model's compartment roles from its source:
+
+```python
+from gembench.media import Medium
+from gembench.medium_preparation_v3 import CompartmentPolicy, prepare_medium
+
+policy = CompartmentPolicy(external="C_e", cytoplasm="C_c",
+                           external_aliases=("e",), cytoplasm_aliases=("c",))
+medium = Medium("example", "Illustrative uptake capacities", {"EX_glc__D_e": -10.0})
+prepared = prepare_medium(model, medium, policy=policy)
+model_for_deletions = prepared.model
+boundary_report = prepared.report
+```
+
+This example is not a biological medium recipe. Uptake values are flux bounds,
+not concentrations. Missing components raise by default; `missing_policy="report"`
+must be selected explicitly to allow them. Optional `completion_media` requires
+an explicit protocol because adding transport changes the model. Prepare media
+before gene deletion. Unsupported exchange orientations and undeclared naming
+exceptions raise without changing the input. Internal demands/sinks are retained
+and disclosed. The historical benchmark commands below retain their frozen
+helpers; they have not been migrated. See the
+[conformance sprint](docs/sprints/2026-09-06-medium-preparation.md), including
+the curated-model numerical limitation.
+
 ## Reproducing the environment
 
 ```

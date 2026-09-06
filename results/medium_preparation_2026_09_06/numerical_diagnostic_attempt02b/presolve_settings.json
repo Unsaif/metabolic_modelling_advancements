@@ -1,0 +1,49 @@
+{
+  "scope": "Second post-failure numerical diagnosis, limited to four specified options on the exact saved LP.",
+  "condition": "L-Arginine | MOPS minimal media_noCarbon",
+  "model_label": "Putida_iJN1463",
+  "acceptance_residual_tolerance": 1e-08,
+  "objective_tolerance": 1e-08,
+  "methods": [
+    {
+      "id": "highs_primal_simplex",
+      "tolerance": 1e-09,
+      "presolve": "choose",
+      "extra_options": {
+        "simplex_strategy": 4
+      }
+    },
+    {
+      "id": "highs_dual_no_presolve",
+      "tolerance": 1e-09,
+      "presolve": "off",
+      "extra_options": {
+        "simplex_strategy": 1
+      }
+    },
+    {
+      "id": "highs_simplex_tighter",
+      "tolerance": 1e-10,
+      "presolve": "choose",
+      "extra_options": {}
+    },
+    {
+      "id": "highs_simplex_no_scaling",
+      "tolerance": 1e-09,
+      "presolve": "choose",
+      "extra_options": {
+        "simplex_scale_strategy": 0
+      }
+    }
+  ],
+  "option_documentation": "https://ergo-code.github.io/HiGHS/dev/options/definitions/",
+  "no_changes": [
+    "stoichiometry",
+    "reaction bounds",
+    "objective coefficients",
+    "GPRs",
+    "medium",
+    "1e-8 acceptance gate"
+  ],
+  "changes": "Solver algorithm options only; one declared arm tightens solver tolerances from1e-9 to1e-10."
+}
