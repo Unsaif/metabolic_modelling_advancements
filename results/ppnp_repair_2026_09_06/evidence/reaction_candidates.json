@@ -1,0 +1,1925 @@
+{
+  "schema_version": 1,
+  "candidate_id": "ppnp_phosphorolysis_v1",
+  "status": "provisional_source_only_not_applied",
+  "source_model": {
+    "path": "results/ppnp_repair_2026_09_06/evidence/source/universe_bacteria.xml.gz",
+    "sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+    "model_id": "bigg_universe"
+  },
+  "source_origin": {
+    "url": "https://raw.githubusercontent.com/cdanielmachado/carveme/master/carveme/data/generated/universe_bacteria.xml.gz",
+    "repository_page": "https://github.com/cdanielmachado/carveme/blob/master/carveme/data/generated/universe_bacteria.xml.gz",
+    "recovery_note": "Original local external universe was absent. Downloaded bytes exactly match the pre-existing Putida gapfill universe_sha256; no changed-source substitution.",
+    "original_record": "models/gapfilled/Putida_gapfill.json",
+    "scope": "Universal reaction chemistry, not KT2440-specific gene or activity evidence."
+  },
+  "baseline_model": {
+    "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+    "sha256": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+    "model_id": "Pseudomonas_putida_KT2440_xml_gapfilled__curated_path_template",
+    "quinone_biomass_coefficient": -9.68418998275772e-05
+  },
+  "reaction_records": [
+    {
+      "id": "PUNP1",
+      "name": "Purine-nucleoside phosphorylase (Adenosine)",
+      "equation": "adn_c + pi_c <=> ade_c + r1p_c",
+      "metabolites": {
+        "ade_c": 1.0,
+        "adn_c": -1.0,
+        "pi_c": -1.0,
+        "r1p_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "ec-code": "2.4.2.1",
+        "rhea": [
+          "27642",
+          "27643",
+          "27644",
+          "27645"
+        ],
+        "biocyc": "META:ADENPHOSPHOR-RXN",
+        "metanetx.reaction": "MNXR103343",
+        "kegg.reaction": "R01561",
+        "seed.reaction": "rxn01138"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    {
+      "id": "PUNP5",
+      "name": "Purine-nucleoside phosphorylase (Inosine)",
+      "equation": "ins_c + pi_c <=> hxan_c + r1p_c",
+      "metabolites": {
+        "hxan_c": 1.0,
+        "ins_c": -1.0,
+        "pi_c": -1.0,
+        "r1p_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "ec-code": [
+          "2.4.2.1",
+          "2.4.2.15"
+        ],
+        "rhea": [
+          "27646",
+          "27647",
+          "27648",
+          "27649"
+        ],
+        "biocyc": "META:INOPHOSPHOR-RXN",
+        "metanetx.reaction": "MNXR103347",
+        "reactome": "R-GGA-421174",
+        "kegg.reaction": "R01863",
+        "seed.reaction": "rxn01358"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    }
+  ],
+  "all_involved_metabolites": {
+    "adn_c": {
+      "id": "adn_c",
+      "name": "Adenosine",
+      "formula": "C10H13N5O4",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "reactome": [
+          "R-ALL-83908",
+          "R-ALL-83909",
+          "R-ALL-8857850"
+        ],
+        "kegg.compound": "C00212",
+        "chebi": [
+          "CHEBI:13734",
+          "CHEBI:16335",
+          "CHEBI:22237",
+          "CHEBI:2472",
+          "CHEBI:40558",
+          "CHEBI:40825",
+          "CHEBI:40906",
+          "CHEBI:40911"
+        ],
+        "kegg.drug": "D00045",
+        "hmdb": [
+          "HMDB00050",
+          "HMDB04401",
+          "HMDB04402",
+          "HMDB04421"
+        ],
+        "biocyc": "META:ADENOSINE",
+        "metanetx.chemical": "MNXM212",
+        "inchikey": "OIRDTQYFTABQOQ-KQYNXXCUSA-N",
+        "seed.compound": "cpd00182"
+      }
+    },
+    "pi_c": {
+      "id": "pi_c",
+      "name": "Phosphate",
+      "formula": "HO4P",
+      "charge": -2,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "reactome": [
+          "R-ALL-109277",
+          "R-ALL-113548",
+          "R-ALL-113550",
+          "R-ALL-113551",
+          "R-ALL-29372",
+          "R-ALL-5228339",
+          "R-ALL-8851226",
+          "R-ALL-8851513"
+        ],
+        "kegg.compound": "C00009",
+        "chebi": [
+          "CHEBI:14791",
+          "CHEBI:18367",
+          "CHEBI:26020",
+          "CHEBI:26078",
+          "CHEBI:29137",
+          "CHEBI:29139",
+          "CHEBI:35780",
+          "CHEBI:39739",
+          "CHEBI:39745",
+          "CHEBI:43470",
+          "CHEBI:43474",
+          "CHEBI:45024",
+          "CHEBI:7793"
+        ],
+        "kegg.drug": "D05467",
+        "hmdb": [
+          "HMDB00973",
+          "HMDB01429",
+          "HMDB02105",
+          "HMDB02142",
+          "HMDB05947"
+        ],
+        "biocyc": [
+          "META:CPD-16459",
+          "META:PHOSPHATE-GROUP",
+          "META:Pi"
+        ],
+        "metanetx.chemical": "MNXM9",
+        "inchikey": "NBIIXXVUZAFLBC-UHFFFAOYSA-L",
+        "seed.compound": [
+          "cpd00009",
+          "cpd27787"
+        ]
+      }
+    },
+    "ade_c": {
+      "id": "ade_c",
+      "name": "Adenine",
+      "formula": "C5H5N5",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "reactome": "R-ALL-83951",
+        "kegg.compound": "C00147",
+        "chebi": [
+          "CHEBI:13733",
+          "CHEBI:16708",
+          "CHEBI:22236",
+          "CHEBI:2470",
+          "CHEBI:40579"
+        ],
+        "kegg.drug": "D00034",
+        "inchikey": "GFFGJBXGBJISGV-UHFFFAOYSA-N",
+        "hmdb": "HMDB00034",
+        "biocyc": [
+          "META:ADENINE",
+          "META:ADENINE-RING"
+        ],
+        "metanetx.chemical": "MNXM168",
+        "seed.compound": [
+          "cpd00128",
+          "cpd22238"
+        ]
+      }
+    },
+    "r1p_c": {
+      "id": "r1p_c",
+      "name": "Alpha-D-Ribose 1-phosphate",
+      "formula": "C5H9O8P",
+      "charge": -2,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "reactome": "R-ALL-112016",
+        "kegg.compound": "C00620",
+        "chebi": [
+          "CHEBI:10269",
+          "CHEBI:12329",
+          "CHEBI:12330",
+          "CHEBI:16300",
+          "CHEBI:22412",
+          "CHEBI:45429",
+          "CHEBI:45482",
+          "CHEBI:57720"
+        ],
+        "hmdb": "HMDB01489",
+        "biocyc": "META:RIBOSE-1P",
+        "metanetx.chemical": "MNXM295",
+        "inchikey": "YXJDFQJKERBOBM-TXICZTDVSA-L",
+        "seed.compound": "cpd00475"
+      }
+    },
+    "ins_c": {
+      "id": "ins_c",
+      "name": "Inosine",
+      "formula": "C10H12N4O5",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "reactome": [
+          "R-ALL-83921",
+          "R-ALL-83927"
+        ],
+        "kegg.compound": "C00294",
+        "chebi": [
+          "CHEBI:14456",
+          "CHEBI:17596",
+          "CHEBI:24841",
+          "CHEBI:44407",
+          "CHEBI:5927"
+        ],
+        "kegg.drug": "D00054",
+        "hmdb": "HMDB00195",
+        "biocyc": "META:INOSINE",
+        "metanetx.chemical": "MNXM334",
+        "inchikey": "UGQMRVRMYYASKQ-KQYNXXCUSA-N",
+        "seed.compound": "cpd00246"
+      }
+    },
+    "hxan_c": {
+      "id": "hxan_c",
+      "name": "Hypoxanthine",
+      "formula": "C5H4N4O",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "reactome": "R-ALL-113599",
+        "kegg.compound": "C00262",
+        "chebi": [
+          "CHEBI:14431",
+          "CHEBI:17368",
+          "CHEBI:24762",
+          "CHEBI:43237",
+          "CHEBI:5841"
+        ],
+        "inchikey": "FDGQSTZJBFJUBT-UHFFFAOYSA-N",
+        "hmdb": "HMDB00157",
+        "biocyc": "META:HYPOXANTHINE",
+        "metanetx.chemical": "MNXM213",
+        "seed.compound": "cpd00226"
+      }
+    }
+  },
+  "target_metabolite_map": {
+    "adn_c": "adn_c",
+    "pi_c": "pi_c",
+    "ade_c": "ade_c",
+    "r1p_c": "r1p_c",
+    "ins_c": "ins_c",
+    "hxan_c": "hxan_c"
+  },
+  "expected_target_metabolites": {
+    "adn_c": {
+      "id": "adn_c",
+      "name": "Adenosine",
+      "formula": "C10H13N5O4",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "pi_c": {
+      "id": "pi_c",
+      "name": "Phosphate",
+      "formula": "HO4P",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "ade_c": {
+      "id": "ade_c",
+      "name": "Adenine",
+      "formula": "C5H5N5",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "r1p_c": {
+      "id": "r1p_c",
+      "name": "Alpha-D-Ribose 1-phosphate",
+      "formula": "C5H9O8P",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "ins_c": {
+      "id": "ins_c",
+      "name": "Inosine",
+      "formula": "C10H12N4O5",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "hxan_c": {
+      "id": "hxan_c",
+      "name": "Hypoxanthine",
+      "formula": "C5H4N4O",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    }
+  },
+  "proposed_reactions": [
+    {
+      "id": "PUNP1",
+      "source_id": "PUNP1",
+      "substrate": "adenosine",
+      "metabolites": {
+        "adn_c": -1.0,
+        "pi_c": -1.0,
+        "ade_c": 1.0,
+        "r1p_c": 1.0
+      }
+    },
+    {
+      "id": "PUNP5",
+      "source_id": "PUNP5",
+      "substrate": "inosine",
+      "metabolites": {
+        "ins_c": -1.0,
+        "pi_c": -1.0,
+        "hxan_c": 1.0,
+        "r1p_c": 1.0
+      }
+    }
+  ],
+  "gene_aliases": {
+    "PP_4248": "PP_4248"
+  },
+  "proposed_gene_rule": "PP_4248",
+  "proposed_direction_policy": {
+    "primary_forward_only_bounds": [
+      0.0,
+      1000.0
+    ],
+    "separate_reversibility_sensitivity_bounds": [
+      -1000.0,
+      1000.0
+    ],
+    "basis": "Original Sevin Fig S8 and Table 9 agree on forward adenosine/inosine phosphorolysis but conflict on reverse synthesis. Source reversibility is not sufficient evidence to transfer it into the primary arm.",
+    "primary_source_doi": "10.1038/nmeth.4103",
+    "supplement_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnmeth.4103/MediaObjects/41592_2017_BFnmeth4103_MOESM62_ESM.pdf"
+  },
+  "metadata_policy": {
+    "preserve_existing_target_metadata": true,
+    "new_metabolites": [],
+    "compartment_aliases_required": {},
+    "expected_charge_differences": {
+      "pi_c": {
+        "source": -2,
+        "target": 0
+      },
+      "r1p_c": {
+        "source": -2,
+        "target": 0
+      }
+    },
+    "all_record_differences": {
+      "adn_c": {
+        "annotation": {
+          "source": {
+            "sbo": "SBO:0000247",
+            "reactome": [
+              "R-ALL-83908",
+              "R-ALL-83909",
+              "R-ALL-8857850"
+            ],
+            "kegg.compound": "C00212",
+            "chebi": [
+              "CHEBI:13734",
+              "CHEBI:16335",
+              "CHEBI:22237",
+              "CHEBI:2472",
+              "CHEBI:40558",
+              "CHEBI:40825",
+              "CHEBI:40906",
+              "CHEBI:40911"
+            ],
+            "kegg.drug": "D00045",
+            "hmdb": [
+              "HMDB00050",
+              "HMDB04401",
+              "HMDB04402",
+              "HMDB04421"
+            ],
+            "biocyc": "META:ADENOSINE",
+            "metanetx.chemical": "MNXM212",
+            "inchikey": "OIRDTQYFTABQOQ-KQYNXXCUSA-N",
+            "seed.compound": "cpd00182"
+          },
+          "target": {}
+        }
+      },
+      "pi_c": {
+        "charge": {
+          "source": -2,
+          "target": 0
+        },
+        "annotation": {
+          "source": {
+            "sbo": "SBO:0000247",
+            "reactome": [
+              "R-ALL-109277",
+              "R-ALL-113548",
+              "R-ALL-113550",
+              "R-ALL-113551",
+              "R-ALL-29372",
+              "R-ALL-5228339",
+              "R-ALL-8851226",
+              "R-ALL-8851513"
+            ],
+            "kegg.compound": "C00009",
+            "chebi": [
+              "CHEBI:14791",
+              "CHEBI:18367",
+              "CHEBI:26020",
+              "CHEBI:26078",
+              "CHEBI:29137",
+              "CHEBI:29139",
+              "CHEBI:35780",
+              "CHEBI:39739",
+              "CHEBI:39745",
+              "CHEBI:43470",
+              "CHEBI:43474",
+              "CHEBI:45024",
+              "CHEBI:7793"
+            ],
+            "kegg.drug": "D05467",
+            "hmdb": [
+              "HMDB00973",
+              "HMDB01429",
+              "HMDB02105",
+              "HMDB02142",
+              "HMDB05947"
+            ],
+            "biocyc": [
+              "META:CPD-16459",
+              "META:PHOSPHATE-GROUP",
+              "META:Pi"
+            ],
+            "metanetx.chemical": "MNXM9",
+            "inchikey": "NBIIXXVUZAFLBC-UHFFFAOYSA-L",
+            "seed.compound": [
+              "cpd00009",
+              "cpd27787"
+            ]
+          },
+          "target": {}
+        }
+      },
+      "ade_c": {
+        "annotation": {
+          "source": {
+            "sbo": "SBO:0000247",
+            "reactome": "R-ALL-83951",
+            "kegg.compound": "C00147",
+            "chebi": [
+              "CHEBI:13733",
+              "CHEBI:16708",
+              "CHEBI:22236",
+              "CHEBI:2470",
+              "CHEBI:40579"
+            ],
+            "kegg.drug": "D00034",
+            "inchikey": "GFFGJBXGBJISGV-UHFFFAOYSA-N",
+            "hmdb": "HMDB00034",
+            "biocyc": [
+              "META:ADENINE",
+              "META:ADENINE-RING"
+            ],
+            "metanetx.chemical": "MNXM168",
+            "seed.compound": [
+              "cpd00128",
+              "cpd22238"
+            ]
+          },
+          "target": {}
+        }
+      },
+      "r1p_c": {
+        "charge": {
+          "source": -2,
+          "target": 0
+        },
+        "annotation": {
+          "source": {
+            "sbo": "SBO:0000247",
+            "reactome": "R-ALL-112016",
+            "kegg.compound": "C00620",
+            "chebi": [
+              "CHEBI:10269",
+              "CHEBI:12329",
+              "CHEBI:12330",
+              "CHEBI:16300",
+              "CHEBI:22412",
+              "CHEBI:45429",
+              "CHEBI:45482",
+              "CHEBI:57720"
+            ],
+            "hmdb": "HMDB01489",
+            "biocyc": "META:RIBOSE-1P",
+            "metanetx.chemical": "MNXM295",
+            "inchikey": "YXJDFQJKERBOBM-TXICZTDVSA-L",
+            "seed.compound": "cpd00475"
+          },
+          "target": {}
+        }
+      },
+      "ins_c": {
+        "annotation": {
+          "source": {
+            "sbo": "SBO:0000247",
+            "reactome": [
+              "R-ALL-83921",
+              "R-ALL-83927"
+            ],
+            "kegg.compound": "C00294",
+            "chebi": [
+              "CHEBI:14456",
+              "CHEBI:17596",
+              "CHEBI:24841",
+              "CHEBI:44407",
+              "CHEBI:5927"
+            ],
+            "kegg.drug": "D00054",
+            "hmdb": "HMDB00195",
+            "biocyc": "META:INOSINE",
+            "metanetx.chemical": "MNXM334",
+            "inchikey": "UGQMRVRMYYASKQ-KQYNXXCUSA-N",
+            "seed.compound": "cpd00246"
+          },
+          "target": {}
+        }
+      },
+      "hxan_c": {
+        "annotation": {
+          "source": {
+            "sbo": "SBO:0000247",
+            "reactome": "R-ALL-113599",
+            "kegg.compound": "C00262",
+            "chebi": [
+              "CHEBI:14431",
+              "CHEBI:17368",
+              "CHEBI:24762",
+              "CHEBI:43237",
+              "CHEBI:5841"
+            ],
+            "inchikey": "FDGQSTZJBFJUBT-UHFFFAOYSA-N",
+            "hmdb": "HMDB00157",
+            "biocyc": "META:HYPOXANTHINE",
+            "metanetx.chemical": "MNXM213",
+            "seed.compound": "cpd00226"
+          },
+          "target": {}
+        }
+      }
+    },
+    "caveat": "Source reactions are atom/charge balanced. Target zero charges are inherited placeholders, and their cancellation does not validate charge metadata."
+  },
+  "equivalent_reaction_audit": {
+    "PUNP1": {
+      "saved_target": [],
+      "local_iJN1463": []
+    },
+    "PUNP5": {
+      "saved_target": [],
+      "local_iJN1463": []
+    }
+  },
+  "source_duplicates_not_selected": {
+    "PUNP1": [
+      {
+        "id": "PUNP1_1",
+        "name": "Purine-nucleoside phosphorylase (Adenosine)",
+        "equation": "adn_c + pi_c <=> ade_c + r1p_c",
+        "metabolites": {
+          "ade_c": 1.0,
+          "adn_c": -1.0,
+          "pi_c": -1.0,
+          "r1p_c": 1.0
+        },
+        "lower_bound": -1000.0,
+        "upper_bound": 1000.0,
+        "gene_reaction_rule": "",
+        "gene_ids": [],
+        "annotation": {
+          "sbo": "SBO:0000176"
+        },
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": []
+      }
+    ],
+    "PUNP5": [
+      {
+        "id": "PUNP5_1",
+        "name": "Purine-nucleoside phosphorylase (Inosine)",
+        "equation": "ins_c + pi_c <=> hxan_c + r1p_c",
+        "metabolites": {
+          "hxan_c": 1.0,
+          "ins_c": -1.0,
+          "pi_c": -1.0,
+          "r1p_c": 1.0
+        },
+        "lower_bound": -1000.0,
+        "upper_bound": 1000.0,
+        "gene_reaction_rule": "",
+        "gene_ids": [],
+        "annotation": {
+          "sbo": "SBO:0000176"
+        },
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": []
+      }
+    ]
+  },
+  "canonical_id_selection": "PUNP1/PUNP5 carry database identifiers; exact _1 duplicates add no chemistry and are excluded before outcomes.",
+  "candidate_identity": {
+    "locus": "PP_4248",
+    "existing_model_gene_ids": [],
+    "target_model_gene_id": "PP_4248",
+    "current_refseq_model_style_id_absent": "WP_003254278_1",
+    "current_gene_records": [
+      {
+        "# feature": "gene",
+        "class": "protein_coding",
+        "assembly": "GCF_000007565.2",
+        "assembly_unit": "Primary Assembly",
+        "seq_type": "chromosome",
+        "chromosome": "",
+        "genomic_accession": "NC_002947.4",
+        "start": "4834852",
+        "end": "4835136",
+        "strand": "+",
+        "product_accession": "",
+        "non-redundant_refseq": "",
+        "related_accession": "",
+        "name": "",
+        "symbol": "",
+        "GeneID": "",
+        "locus_tag": "PP_RS22065",
+        "feature_interval_length": "285",
+        "product_length": "",
+        "attributes": "old_locus_tag=PP_4248"
+      }
+    ],
+    "current_cds_records": [
+      {
+        "# feature": "CDS",
+        "class": "with_protein",
+        "assembly": "GCF_000007565.2",
+        "assembly_unit": "Primary Assembly",
+        "seq_type": "chromosome",
+        "chromosome": "",
+        "genomic_accession": "NC_002947.4",
+        "start": "4834852",
+        "end": "4835136",
+        "strand": "+",
+        "product_accession": "WP_003254278.1",
+        "non-redundant_refseq": "WP_003254278.1",
+        "related_accession": "",
+        "name": "pyrimidine/purine nucleoside phosphorylase",
+        "symbol": "",
+        "GeneID": "",
+        "locus_tag": "PP_RS22065",
+        "feature_interval_length": "285",
+        "product_length": "94",
+        "attributes": ""
+      }
+    ],
+    "caveat": "These prove the unambiguous local alias choice, not enzyme function or sequence equality to Q88F51; the independent sequence audit is separate."
+  },
+  "control_gene_records": {
+    "PP_4248": {
+      "existing_model_gene_ids": [],
+      "annotation_records": [
+        {
+          "locusId": "PP_4248",
+          "sysName": "PP_4248",
+          "scaffoldId": "AE015451",
+          "begin": "4834852",
+          "end": "4835136",
+          "strand": "+",
+          "type": "1",
+          "desc": "conserved protein of unknown function, UPF0345 family"
+        }
+      ],
+      "associated_reactions": {}
+    },
+    "PP_2458": {
+      "existing_model_gene_ids": [
+        "NP_744606_1"
+      ],
+      "annotation_records": [
+        {
+          "locusId": "PP_2458",
+          "sysName": "PP_2458",
+          "scaffoldId": "AE015451",
+          "begin": "2805226",
+          "end": "2806134",
+          "strand": "+",
+          "type": "1",
+          "desc": "ribokinase"
+        }
+      ],
+      "associated_reactions": {
+        "NP_744606_1": [
+          "RBK"
+        ]
+      }
+    },
+    "PP_1777": {
+      "existing_model_gene_ids": [
+        "NP_743933_1"
+      ],
+      "annotation_records": [
+        {
+          "locusId": "PP_1777",
+          "sysName": "PP_1777",
+          "scaffoldId": "AE015451",
+          "begin": "1985382",
+          "end": "1986743",
+          "strand": "+",
+          "type": "1",
+          "desc": "phosphomannomutase"
+        }
+      ],
+      "associated_reactions": {
+        "NP_743933_1": [
+          "PGMT",
+          "PPM"
+        ]
+      }
+    },
+    "PP_5288": {
+      "existing_model_gene_ids": [
+        "NP_747389_1"
+      ],
+      "annotation_records": [
+        {
+          "locusId": "PP_5288",
+          "sysName": "PP_5288",
+          "scaffoldId": "AE015451",
+          "begin": "6035471",
+          "end": "6036862",
+          "strand": "+",
+          "type": "1",
+          "desc": "Phosphomannomutase/phosphoglucomutase"
+        }
+      ],
+      "associated_reactions": {
+        "NP_747389_1": [
+          "PMANM"
+        ]
+      }
+    },
+    "PP_4976": {
+      "existing_model_gene_ids": [
+        "YP_009237194_1"
+      ],
+      "annotation_records": [
+        {
+          "locusId": "PP_4976",
+          "sysName": "PP_4976",
+          "scaffoldId": "AE015451",
+          "begin": "5668005",
+          "end": "5669399",
+          "strand": "+",
+          "type": "1",
+          "desc": "Adenosylhomocysteinase"
+        }
+      ],
+      "associated_reactions": {
+        "YP_009237194_1": [
+          "AHCi"
+        ]
+      }
+    },
+    "PP_0591": {
+      "existing_model_gene_ids": [
+        "NP_742754_1"
+      ],
+      "annotation_records": [
+        {
+          "locusId": "PP_0591",
+          "sysName": "PP_0591",
+          "scaffoldId": "AE015451",
+          "begin": "689689",
+          "end": "690636",
+          "strand": "-",
+          "type": "1",
+          "desc": "Adenine deaminase"
+        }
+      ],
+      "associated_reactions": {
+        "NP_742754_1": [
+          "ADA",
+          "DADA"
+        ]
+      }
+    },
+    "PP_3254": {
+      "existing_model_gene_ids": [
+        "NP_745397_1"
+      ],
+      "annotation_records": [
+        {
+          "locusId": "PP_3254",
+          "sysName": "PP_3254",
+          "scaffoldId": "AE015451",
+          "begin": "3688981",
+          "end": "3689634",
+          "strand": "+",
+          "type": "1",
+          "desc": "putative Nucleosidase"
+        }
+      ],
+      "associated_reactions": {
+        "NP_745397_1": [
+          "5DOAN",
+          "AHCYSNS"
+        ]
+      }
+    },
+    "PP_2460": {
+      "existing_model_gene_ids": [
+        "NP_744608_1"
+      ],
+      "annotation_records": [
+        {
+          "locusId": "PP_2460",
+          "sysName": "PP_2460",
+          "scaffoldId": "AE015451",
+          "begin": "2806627",
+          "end": "2807595",
+          "strand": "+",
+          "type": "1",
+          "desc": "ribonucleoside hydrolase"
+        }
+      ],
+      "associated_reactions": {
+        "NP_744608_1": [
+          "GNNUC",
+          "INSH",
+          "XTSNH"
+        ]
+      }
+    },
+    "PP_4218": {
+      "existing_model_gene_ids": [
+        "NP_746335_1"
+      ],
+      "annotation_records": [
+        {
+          "locusId": "PP_4218",
+          "sysName": "PP_4218",
+          "scaffoldId": "AE015451",
+          "begin": "4767855",
+          "end": "4768811",
+          "strand": "-",
+          "type": "1",
+          "desc": "Lipase/esterase family protein"
+        }
+      ],
+      "associated_reactions": {
+        "NP_746335_1": [
+          "RNMK"
+        ]
+      }
+    }
+  },
+  "existing_relevant_reactions": [
+    {
+      "id": "AHCi",
+      "name": "Adenosylhomocysteinase",
+      "equation": "ahcys_c + h2o_c <=> adn_c + hcys__L_c",
+      "metabolites": {
+        "adn_c": 1.0,
+        "ahcys_c": -1.0,
+        "h2o_c": -1.0,
+        "hcys__L_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "YP_009237194_1",
+      "gene_ids": [
+        "YP_009237194_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "YP_009237194_1": "PP_4976"
+      }
+    },
+    {
+      "id": "AHCYSNS",
+      "name": "S-adenosylhomocysteine nucleosidase",
+      "equation": "ahcys_c + h2o_c --> ade_c + rhcys_c",
+      "metabolites": {
+        "ade_c": 1.0,
+        "ahcys_c": -1.0,
+        "h2o_c": -1.0,
+        "rhcys_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_745397_1",
+      "gene_ids": [
+        "NP_745397_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_745397_1": "PP_3254"
+      }
+    },
+    {
+      "id": "RHCYS",
+      "name": "5 deoxyribos 5 ylhomocysteinase",
+      "equation": "h2o_c + rhcys_c --> hcys__L_c + rib__D_c",
+      "metabolites": {
+        "h2o_c": -1.0,
+        "hcys__L_c": 1.0,
+        "rhcys_c": -1.0,
+        "rib__D_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {}
+    },
+    {
+      "id": "ADA",
+      "name": "Adenosine deaminase",
+      "equation": "adn_c + h2o_c + h_c --> ins_c + nh4_c",
+      "metabolites": {
+        "adn_c": -1.0,
+        "h2o_c": -1.0,
+        "h_c": -1.0,
+        "ins_c": 1.0,
+        "nh4_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_742754_1",
+      "gene_ids": [
+        "NP_742754_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_742754_1": "PP_0591"
+      }
+    },
+    {
+      "id": "RBK",
+      "name": "Ribokinase",
+      "equation": "atp_c + rib__D_c --> adp_c + h_c + r5p_c",
+      "metabolites": {
+        "adp_c": 1.0,
+        "atp_c": -1.0,
+        "h_c": 1.0,
+        "r5p_c": 1.0,
+        "rib__D_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_744606_1",
+      "gene_ids": [
+        "NP_744606_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_744606_1": "PP_2458"
+      }
+    },
+    {
+      "id": "PPM",
+      "name": "Phosphopentomutase",
+      "equation": "r1p_c <=> r5p_c",
+      "metabolites": {
+        "r1p_c": -1.0,
+        "r5p_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743933_1",
+      "gene_ids": [
+        "NP_743933_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_743933_1": "PP_1777"
+      }
+    },
+    {
+      "id": "PGMT",
+      "name": "Phosphoglucomutase",
+      "equation": "g1p_c <=> g6p_c",
+      "metabolites": {
+        "g1p_c": -1.0,
+        "g6p_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743933_1 or NP_745715_1",
+      "gene_ids": [
+        "NP_743933_1",
+        "NP_745715_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_745715_1": "PP_3578",
+        "NP_743933_1": "PP_1777"
+      }
+    },
+    {
+      "id": "PNP",
+      "name": "Purine nucleoside phosphorylase",
+      "equation": "pi_c + rnam_c <=> h_c + ncam_c + r1p_c",
+      "metabolites": {
+        "h_c": 1.0,
+        "ncam_c": 1.0,
+        "pi_c": -1.0,
+        "r1p_c": 1.0,
+        "rnam_c": -1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {
+        "H": 1.0
+      },
+      "missing_formula_or_charge": [],
+      "model_to_locus": {}
+    },
+    {
+      "id": "PYNP2r",
+      "name": "Pyrimidine-nucleoside phosphorylase (uracil)",
+      "equation": "pi_c + uri_c <=> r1p_c + ura_c",
+      "metabolites": {
+        "pi_c": -1.0,
+        "r1p_c": 1.0,
+        "ura_c": 1.0,
+        "uri_c": -1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {}
+    },
+    {
+      "id": "NP1",
+      "name": "NP1",
+      "equation": "h_c + nac_c + r1p_c --> nicrns_c + pi_c",
+      "metabolites": {
+        "h_c": -1.0,
+        "nac_c": -1.0,
+        "nicrns_c": 1.0,
+        "pi_c": 1.0,
+        "r1p_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {}
+    },
+    {
+      "id": "RNMK",
+      "name": "Ribosylnicotinamide kinase",
+      "equation": "atp_c + rnam_c --> adp_c + h_c + nmn_c",
+      "metabolites": {
+        "adp_c": 1.0,
+        "atp_c": -1.0,
+        "h_c": 1.0,
+        "nmn_c": 1.0,
+        "rnam_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_746335_1",
+      "gene_ids": [
+        "NP_746335_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_746335_1": "PP_4218"
+      }
+    },
+    {
+      "id": "NMNN",
+      "name": "NMN nucleosidase",
+      "equation": "h2o_c + nmn_c --> h_c + ncam_c + r5p_c",
+      "metabolites": {
+        "h2o_c": -1.0,
+        "h_c": 1.0,
+        "ncam_c": 1.0,
+        "nmn_c": -1.0,
+        "r5p_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {
+        "H": 1.0
+      },
+      "missing_formula_or_charge": [],
+      "model_to_locus": {}
+    },
+    {
+      "id": "NICRNS",
+      "name": "NICRNS",
+      "equation": "atp_c + nicrns_c --> adp_c + h_c + nicrnt_c",
+      "metabolites": {
+        "adp_c": 1.0,
+        "atp_c": -1.0,
+        "h_c": 1.0,
+        "nicrns_c": -1.0,
+        "nicrnt_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_744676_1",
+      "gene_ids": [
+        "NP_744676_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_744676_1": "PP_2531"
+      }
+    },
+    {
+      "id": "NNATr",
+      "name": "Nicotinate-nucleotide adenylyltransferase",
+      "equation": "atp_c + h_c + nicrnt_c <=> dnad_c + ppi_c",
+      "metabolites": {
+        "atp_c": -1.0,
+        "dnad_c": 1.0,
+        "h_c": -1.0,
+        "nicrnt_c": -1.0,
+        "ppi_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_746915_1",
+      "gene_ids": [
+        "NP_746915_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_746915_1": "PP_4810"
+      }
+    },
+    {
+      "id": "NADS1",
+      "name": "NAD synthase (nh3)",
+      "equation": "atp_c + dnad_c + nh4_c --> amp_c + h_c + nad_c + ppi_c",
+      "metabolites": {
+        "amp_c": 1.0,
+        "atp_c": -1.0,
+        "dnad_c": -1.0,
+        "h_c": 1.0,
+        "nad_c": 1.0,
+        "nh4_c": -1.0,
+        "ppi_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_745163_1",
+      "gene_ids": [
+        "NP_745163_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_745163_1": "PP_3019"
+      }
+    },
+    {
+      "id": "NTD2",
+      "name": "5'-nucleotidase (UMP)",
+      "equation": "h2o_c + ump_c --> pi_c + uri_c",
+      "metabolites": {
+        "h2o_c": -1.0,
+        "pi_c": 1.0,
+        "ump_c": -1.0,
+        "uri_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743777_1 or NP_747332_1",
+      "gene_ids": [
+        "NP_743777_1",
+        "NP_747332_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_747332_1": "PP_5231",
+        "NP_743777_1": "PP_1620"
+      }
+    },
+    {
+      "id": "NTD7",
+      "name": "5'-nucleotidase (AMP)",
+      "equation": "amp_c + h2o_c --> adn_c + pi_c",
+      "metabolites": {
+        "adn_c": 1.0,
+        "amp_c": -1.0,
+        "h2o_c": -1.0,
+        "pi_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743777_1",
+      "gene_ids": [
+        "NP_743777_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_743777_1": "PP_1620"
+      }
+    },
+    {
+      "id": "NTD11",
+      "name": "5'-nucleotidase (IMP)",
+      "equation": "h2o_c + imp_c --> ins_c + pi_c",
+      "metabolites": {
+        "h2o_c": -1.0,
+        "imp_c": -1.0,
+        "ins_c": 1.0,
+        "pi_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743777_1",
+      "gene_ids": [
+        "NP_743777_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_743777_1": "PP_1620"
+      }
+    },
+    {
+      "id": "INSH",
+      "name": "Inosine hydrolase",
+      "equation": "h2o_c + ins_c --> hxan_c + rib__D_c",
+      "metabolites": {
+        "h2o_c": -1.0,
+        "hxan_c": 1.0,
+        "ins_c": -1.0,
+        "rib__D_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_744608_1",
+      "gene_ids": [
+        "NP_744608_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_744608_1": "PP_2460"
+      }
+    },
+    {
+      "id": "RIBabcpp",
+      "name": "D-ribose transport via ABC system (periplasm)",
+      "equation": "atp_c + h2o_c + rib__D_p --> adp_c + h_c + pi_c + rib__D_c",
+      "metabolites": {
+        "adp_c": 1.0,
+        "atp_c": -1.0,
+        "h2o_c": -1.0,
+        "h_c": 1.0,
+        "pi_c": 1.0,
+        "rib__D_c": 1.0,
+        "rib__D_p": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_744602_1 and NP_744603_1 and NP_744604_1 and NP_744607_1",
+      "gene_ids": [
+        "NP_744602_1",
+        "NP_744603_1",
+        "NP_744604_1",
+        "NP_744607_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {
+        "NP_744602_1": "PP_2454",
+        "NP_744607_1": "PP_2459",
+        "NP_744604_1": "PP_2456",
+        "NP_744603_1": "PP_2455"
+      }
+    },
+    {
+      "id": "RIBtex",
+      "name": "Ribose transport via diffusion (extracellular to periplasm)",
+      "equation": "rib__D_e <=> rib__D_p",
+      "metabolites": {
+        "rib__D_e": -1.0,
+        "rib__D_p": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": [],
+      "model_to_locus": {}
+    },
+    {
+      "id": "EX_rib__D_e",
+      "name": "R_EX_rib__D_e",
+      "equation": "rib__D_e <=> ",
+      "metabolites": {
+        "rib__D_e": -1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {
+        "C": -5.0,
+        "H": -10.0,
+        "O": -5.0
+      },
+      "missing_formula_or_charge": [],
+      "model_to_locus": {}
+    }
+  ],
+  "relevant_complete_adjacency": {
+    "ahcys_c": [
+      {
+        "reaction": "AHCYSNS",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "AHCi",
+        "coefficient": -1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "AMMQLT8",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "AMMQT8_2",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "DMQMT",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          999999.0
+        ]
+      },
+      {
+        "reaction": "HCYSMT",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "OHPHM",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          999999.0
+        ]
+      },
+      {
+        "reaction": "OMBZLM",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          999999.0
+        ]
+      },
+      {
+        "reaction": "UPP3MT",
+        "coefficient": 2.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      }
+    ],
+    "rhcys_c": [
+      {
+        "reaction": "AHCYSNS",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "RHCYS",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      }
+    ],
+    "adn_c": [
+      {
+        "reaction": "ADA",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "ADNt2",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "AHCi",
+        "coefficient": 1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "NTD7",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      }
+    ],
+    "ins_c": [
+      {
+        "reaction": "ADA",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "INSH",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "INSt2",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "NTD11",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      }
+    ],
+    "rib__D_c": [
+      {
+        "reaction": "GNNUC",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "INSH",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "RBK",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "RHCYS",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "RIBabcpp",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "XTSNH",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      }
+    ],
+    "r1p_c": [
+      {
+        "reaction": "NP1",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "PNP",
+        "coefficient": 1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "PPM",
+        "coefficient": -1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "PYNP2r",
+        "coefficient": 1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      }
+    ],
+    "r5p_c": [
+      {
+        "reaction": "AMPN",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "NMNN",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "PPM",
+        "coefficient": 1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "PRPPS",
+        "coefficient": -1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "RBK",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "RPI",
+        "coefficient": -1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "TKT1",
+        "coefficient": -1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      }
+    ],
+    "rnam_c": [
+      {
+        "reaction": "NMNHYD",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "PNP",
+        "coefficient": -1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "RNMK",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      }
+    ],
+    "nmn_c": [
+      {
+        "reaction": "NADDP",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "NMNHYD",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "NMNN",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "NMNP",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "RNMK",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      }
+    ],
+    "nicrns_c": [
+      {
+        "reaction": "NICRNS",
+        "coefficient": -1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "NP1",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      }
+    ],
+    "uri_c": [
+      {
+        "reaction": "NTD2",
+        "coefficient": 1.0,
+        "bounds": [
+          0.0,
+          1000.0
+        ]
+      },
+      {
+        "reaction": "PYNP2r",
+        "coefficient": -1.0,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ]
+      }
+    ]
+  },
+  "ppm_assignment_discrepancy": {
+    "saved_target": {
+      "id": "PPM",
+      "name": "Phosphopentomutase",
+      "equation": "r1p_c <=> r5p_c",
+      "metabolites": {
+        "r1p_c": -1.0,
+        "r5p_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743933_1",
+      "gene_ids": [
+        "NP_743933_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "local_iJN1463": {
+      "id": "PPM",
+      "name": "Phosphopentomutase",
+      "equation": "r1p_c <=> r5p_c",
+      "metabolites": {
+        "r1p_c": -1.0,
+        "r5p_c": 1.0
+      },
+      "lower_bound": -999999.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_1777 or PP_5288",
+      "gene_ids": [
+        "PP_1777",
+        "PP_5288"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "PPM",
+        "biocyc": "META:RXN-14456",
+        "ec-code": [
+          "5.4.2.7",
+          "5.4.2.2",
+          "5.4.2"
+        ],
+        "metanetx.reaction": "MNXR103115",
+        "sabiork": "2261"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "interpretation": "Target PPM is PP_1777 only, curated PPM is PP_1777 or PP_5288; no GPR change is proposed. PP_1777 local annotation says phosphomannomutase. Functional ribose-P mutase assignment remains provisional."
+  },
+  "ppm_bypass": {
+    "signed_reaction_combination": {
+      "PNP": -1,
+      "RNMK": 1,
+      "NMNN": 1
+    },
+    "summed_stoichiometry": {
+      "adp_c": 1.0,
+      "atp_c": -1.0,
+      "h2o_c": -1.0,
+      "h_c": 1.0,
+      "pi_c": 1.0,
+      "r1p_c": -1.0,
+      "r5p_c": 1.0
+    },
+    "interpretation": "Permitted reaction directions yield an ATP-consuming r1p-to-r5p path. This symbolic route does not prove an optimized feasible state, but PPM deletion cannot be assumed to eliminate ribosyl disposal."
+  },
+  "phosphate_control_limit": "Closing external phosphate limits general biomass synthesis and is not a specific PpnP control. The exact phosphorolysis coefficient and a separately declared substrate-only enzyme module/assay with and without phosphate discriminate specificity; do not remove phosphate from the reaction equation.",
+  "design_review": "results/ppnp_repair_2026_09_06/evidence/design_review.md",
+  "provenance": {
+    "created_utc": "2026-09-06T12:35:18.122266+00:00",
+    "base_commit": "dc8532d3903846f4917e99676653af19cfa7560d",
+    "input_sha256": {
+      "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+      "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885",
+      "results/ppnp_repair_2026_09_06/evidence/source/universe_bacteria.xml.gz": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+      "models/bigg/iJN1463.xml": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+      "data/fitness_browser/Putida/genes.tsv": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e",
+      "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz": "bea517eccadcaa280228c75551ee4d641e7eadb3509532377943e7ca89355f0e",
+      "models/gapfilled/Putida_gapfill.json": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2",
+      "data/genpept/Putida_genpept_map.tsv": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128",
+      "scripts/map_quinone_pathway.py": "07a690e749e6ff05b318fab8c0cc05e6d20a1b15a502f8b275b569927e1e2088",
+      "scripts/map_ppnp_candidates.py": "00934f12059487d7ae2a0d953e47f4c03d6ade342addf10fbef5d7710d3da452",
+      "docs/evidence/10-putida-ribosyl-disposal-sources.md": "40157bcb05db6403e4ccdd9354d908e473118847147081614f717caba0a1c4de",
+      "results/ribosyl_disposal_2026_09_06/evidence/source_evidence.json": "5518bd06c30777f1297947d95a9329f2f13356a7131637f8afdf7515e481c9f6",
+      "results/quinone_repair_2026_09_06/evidence/postrun_dependency_trace.json": "9851f802242512435a0882d437d36c6e12edfe79959a5715bea4363fb6507555"
+    },
+    "numeric_fitness_values_accessed": false,
+    "model_intervention_performed": false,
+    "optimization_performed": false,
+    "role": "Post-outcome source-driven hypothesis design on exposed development organism; not an independent evaluation."
+  }
+}

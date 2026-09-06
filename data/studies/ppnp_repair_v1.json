@@ -1,0 +1,207 @@
+{
+  "evaluation_role": "development",
+  "organism": "Putida",
+  "protocol": {
+    "processes": 2,
+    "solver": "glpk",
+    "growth_threshold": 0.001,
+    "fitness_threshold": -2.0,
+    "carbon_uptake": -10.0,
+    "complete_medium_transport": true,
+    "drop_rich_medium_essentials": false
+  },
+  "physical_condition": {
+    "name": "D-Glucose",
+    "media": "MOPS minimal media_noCarbon"
+  },
+  "physical_settings": {
+    "feasibility_tolerance": 1e-09,
+    "production_capacity": 1000.0,
+    "production_threshold": 1e-06,
+    "egc_threshold": 1e-06,
+    "residual_tolerance": 1e-08
+  },
+  "pool_weights": {
+    "q8_c": 1.0,
+    "q8h2_c": 1.0
+  },
+  "study_id": "putida-ppnp-repair-v1",
+  "question": "Does a homology-supported nucleoside phosphorolysis route remove the structural ribokinase requirement while retaining quinone demand, and which unsupported assumptions remain?",
+  "base_model": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+  "base_model_sha256": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+  "parent_manifest": "results/quinone_repair_2026_09_06/runs/main/manifest.json",
+  "candidate_path": "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json",
+  "evidence_directory": "results/ppnp_repair_2026_09_06/evidence",
+  "sequence_evidence": "docs/evidence/11-putida-ppnp-candidate.md",
+  "study_definition": "docs/studies/ppnp-repair-v1.md",
+  "configurations": [
+    {
+      "id": "parent",
+      "substrates": [],
+      "close_rhcys": false,
+      "direction": "forward",
+      "run_benchmark": true
+    },
+    {
+      "id": "adenosine_forward",
+      "substrates": [
+        "adenosine"
+      ],
+      "close_rhcys": false,
+      "direction": "forward",
+      "run_benchmark": false
+    },
+    {
+      "id": "inosine_forward",
+      "substrates": [
+        "inosine"
+      ],
+      "close_rhcys": false,
+      "direction": "forward",
+      "run_benchmark": false
+    },
+    {
+      "id": "both_forward",
+      "substrates": [
+        "adenosine",
+        "inosine"
+      ],
+      "close_rhcys": false,
+      "direction": "forward",
+      "run_benchmark": true
+    },
+    {
+      "id": "parent_rhcys_closed",
+      "substrates": [],
+      "close_rhcys": true,
+      "direction": "forward",
+      "run_benchmark": false
+    },
+    {
+      "id": "both_forward_rhcys_closed",
+      "substrates": [
+        "adenosine",
+        "inosine"
+      ],
+      "close_rhcys": true,
+      "direction": "forward",
+      "run_benchmark": true
+    },
+    {
+      "id": "both_reversible",
+      "substrates": [
+        "adenosine",
+        "inosine"
+      ],
+      "close_rhcys": false,
+      "direction": "reversible",
+      "run_benchmark": true
+    }
+  ],
+  "targeted_gene_loci": [
+    "PP_2458",
+    "PP_4248",
+    "PP_1777",
+    "PP_4976",
+    "PP_0591",
+    "PP_2460",
+    "PP_3254",
+    "PP_5317"
+  ],
+  "mechanistic_cases": [
+    {
+      "id": "wild_type",
+      "loci": []
+    },
+    {
+      "id": "rbk",
+      "loci": [
+        "PP_2458"
+      ],
+      "probe_quinone": true
+    },
+    {
+      "id": "rbk_ppnp",
+      "loci": [
+        "PP_2458",
+        "PP_4248"
+      ]
+    },
+    {
+      "id": "rbk_ppm",
+      "loci": [
+        "PP_2458",
+        "PP_1777"
+      ]
+    },
+    {
+      "id": "rbk_ahcy",
+      "loci": [
+        "PP_2458",
+        "PP_4976"
+      ]
+    },
+    {
+      "id": "rbk_ada",
+      "loci": [
+        "PP_2458",
+        "PP_0591"
+      ]
+    },
+    {
+      "id": "rbk_insh",
+      "loci": [
+        "PP_2458",
+        "PP_2460"
+      ]
+    },
+    {
+      "id": "rbk_added_closed",
+      "loci": [
+        "PP_2458"
+      ],
+      "close_added_reactions": true
+    }
+  ],
+  "witness_reactions": [
+    "Growth",
+    "RBK",
+    "AHCi",
+    "AHCYSNS",
+    "RHCYS",
+    "ADA",
+    "INSH",
+    "PUNP1",
+    "PUNP5",
+    "PPM",
+    "PNP",
+    "RNMK",
+    "NMNN",
+    "PYNP2r",
+    "NP1",
+    "OHPHM",
+    "OMBZLM",
+    "DMQMT",
+    "CHRPL",
+    "ATPM",
+    "EX_pi_e"
+  ],
+  "comparison": {
+    "primary": "Both forward phosphorolyses versus the fresh parent rerun; other scored arms are predeclared sensitivity comparisons on common finite observations where both wild types grow.",
+    "resamples": 500,
+    "seed": 0,
+    "bootstrap_unit": "gene"
+  },
+  "benchmark_scope": "Four complete benchmark reruns. Single-substrate and parent-RHCYS-closure arms are physical diagnostics only; no benchmark equivalence is asserted for unscored arms.",
+  "decision_rule": "Preserve every arm and failure. Do not alter reactions, bounds, gene assignments, biomass or media in response to these outcomes. Do not promote a provisional model to the historical patch series. Report prediction changes, new gene coverage and mechanisms including adverse changes.",
+  "caveats": [
+    "Hypothesis selected after inspecting previous development errors; all phenotype data remain exposed development data, not independent validation.",
+    "PpnP substrate assays concern E. coli; KT2440 PP_4248 is an exact sequence match to a homology-only annotation, not direct catalytic validation.",
+    "Primary PUNP1/PUNP5 directions permit phosphorolysis only; source reversibility is a separate sensitivity because the original supplement contradicts itself about reverse catalysis.",
+    "Existing PPM PP_1777 substrate assignment is provisional; another pre-existing ATP-dependent salvage route may bypass it.",
+    "RHCYS closure is a sensitivity to questionable historical chemistry, not proof that KT2440 lacks all relevant enzymatic activity.",
+    "Parent quinone tail length, demand amount, hydroxylase reducing donors, upstream assumptions and zero ATP-maintenance lower bound are inherited unresolved limitations.",
+    "Reaction capacities of 1000 are modelling conventions, not measured enzyme capacities.",
+    "Missing exported fitness rows do not establish mutant-library absence, essentiality or dispensability."
+  ]
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "file": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP4248_NC0029474.gb",
+    "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_002947.4&seq_start=4834852&seq_stop=4835136&rettype=gbwithparts&retmode=text",
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_002947.4&seq_start=4834852&seq_stop=4835136&rettype=gbwithparts&retmode=text",
+    "sha256": "8dbe67ac46e84eceadbca4177b81c2a750d52609a59869256ab3162e0eed3b15",
+    "size": 7329,
+    "retrieved_on": "2026-09-06"
+  },
+  {
+    "file": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_NC0029474.gb",
+    "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_002947.4&seq_start=1985382&seq_stop=1986743&rettype=gbwithparts&retmode=text",
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_002947.4&seq_start=1985382&seq_stop=1986743&rettype=gbwithparts&retmode=text",
+    "sha256": "51c6b8ebcffd442decff4259d330af35fb15e3d4d86bc35123be1f23db8dc494",
+    "size": 8821,
+    "retrieved_on": "2026-09-06"
+  },
+  {
+    "file": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0032542781.fasta",
+    "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=WP_003254278.1&rettype=fasta&retmode=text",
+    "error": "HTTP Error 429: Too Many Requests"
+  },
+  {
+    "file": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0109528141.fasta",
+    "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=WP_010952814.1&rettype=fasta&retmode=text",
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=WP_010952814.1&rettype=fasta&retmode=text",
+    "sha256": "8ba2e1ed5debafdc559e25863426266936ca640a3e0a47b7f4149dd6ee8a342f",
+    "size": 549,
+    "retrieved_on": "2026-09-06"
+  },
+  {
+    "file": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Q88F51.json",
+    "requested_url": "https://rest.uniprot.org/uniprotkb/Q88F51.json",
+    "final_url": "https://rest.uniprot.org/uniprotkb/Q88F51.json",
+    "sha256": "701bfc29b0aece76f5f2eef3a0eff67868c14b764a46243ed65976e97e7c47d6",
+    "size": 11955,
+    "retrieved_on": "2026-09-06"
+  },
+  {
+    "file": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_uniprot.json",
+    "requested_url": "https://rest.uniprot.org/uniprotkb/search?query=gene%3APP_1777&format=json",
+    "final_url": "https://rest.uniprot.org/uniprotkb/search?query=gene%3APP_1777&format=json",
+    "sha256": "7ea18def652a7709c6ca54268751e1a90403e8cc569fb701df3f3a5ea4cbebee",
+    "size": 12108,
+    "retrieved_on": "2026-09-06"
+  },
+  {
+    "file": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537.html",
+    "requested_url": "https://hamap.expasy.org/rule/MF_01537",
+    "final_url": "https://hamap.expasy.org/rule/MF_01537",
+    "sha256": "808a98748f0b4f4596c2e19907de1c7114ab5d7310db5dbcf264d6a1ade6200f",
+    "size": 23015,
+    "retrieved_on": "2026-09-06"
+  },
+  {
+    "file": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/P0C037.json",
+    "requested_url": "https://rest.uniprot.org/uniprotkb/P0C037.json",
+    "final_url": "https://rest.uniprot.org/uniprotkb/P0C037.json",
+    "sha256": "01548b1e3468c516ccabfcde565b6ed539b90004bf11a5829d287399115a72ee",
+    "size": 21357,
+    "retrieved_on": "2026-09-06"
+  }
+]

@@ -1,0 +1,907 @@
+{
+  "all_identity_checks_passed": true,
+  "hamap_basis": {
+    "claim_limit": "A family-rule inference from an experimentally characterized E. coli template, not direct KT2440 catalysis. Original forward/reverse assay evidence is audited separately in substrate_evidence.json.",
+    "profile_data_update": "2017-05-10",
+    "profile_info_update": "2025-02-05",
+    "profile_version": 6,
+    "rule": "MF_01537",
+    "rule_last_updated": "2024-09-03",
+    "rule_version": 25,
+    "target_annotation_evidence": "ECO:0000255 / HAMAP-Rule:MF_01537",
+    "target_matching_basis": "Q88F51 explicitly records the MF_01537 profile match and propagates its catalytic annotations; no independent profile scan or inferred match score was performed.",
+    "template": "P0C037",
+    "template_catalytic_evidence": "ECO:0000269 / PubMed:27941785",
+    "template_gene": "ppnP/yaiE/b0391",
+    "template_organism": "Escherichia coli K-12"
+  },
+  "identities": [
+    {
+      "all_three_protein_sequences_exactly_identical": true,
+      "comparison_sources": [
+        "PP4248_NC0029474.gb",
+        "Q88F51.json",
+        "WP0032542781_retry.fasta"
+      ],
+      "dna": "ATGTTCCAGGTCAACGAGTACTTCAACGGCACCGTCAAGTCGATCGCATTCTCGGGCGAAGAAGGCCCGGCCACTGTCGGCGTCATGGCTCCGGGCGAATACGAATTCGGCACTGCCAAGCGCGAGATCATGCATGTGGTATCGGGCGCGCTGACCGTGAAACTGCCAGGTAGCGACAACTGGGAAACCTTCAACGCCGGTGACAAGTTCAACGTGCCGGCTGACAGCAAGTTCCAGCTGCAGGTGAAGGTGGATACCGCTTACCTGTGCGAATACCGCGACTAA",
+      "dna_sha256_uppercase_no_whitespace": "b7595cdfae6ceacce57dd882b20c0827b2fca95b72b49dfd055f265b97eb5b6b",
+      "end": 4835136,
+      "grade": "Exact reference-sequence identity and local metadata identity; enzymatic function is evaluated separately.",
+      "local_cds_feature": {
+        "# feature": "CDS",
+        "GeneID": "",
+        "assembly": "GCF_000007565.2",
+        "assembly_unit": "Primary Assembly",
+        "attributes": "",
+        "chromosome": "",
+        "class": "with_protein",
+        "end": "4835136",
+        "feature_interval_length": "285",
+        "genomic_accession": "NC_002947.4",
+        "locus_tag": "PP_RS22065",
+        "name": "pyrimidine/purine nucleoside phosphorylase",
+        "non-redundant_refseq": "WP_003254278.1",
+        "product_accession": "WP_003254278.1",
+        "product_length": "94",
+        "related_accession": "",
+        "seq_type": "chromosome",
+        "start": "4834852",
+        "strand": "+",
+        "symbol": ""
+      },
+      "local_gene_feature": {
+        "# feature": "gene",
+        "GeneID": "",
+        "assembly": "GCF_000007565.2",
+        "assembly_unit": "Primary Assembly",
+        "attributes": "old_locus_tag=PP_4248",
+        "chromosome": "",
+        "class": "protein_coding",
+        "end": "4835136",
+        "feature_interval_length": "285",
+        "genomic_accession": "NC_002947.4",
+        "locus_tag": "PP_RS22065",
+        "name": "",
+        "non-redundant_refseq": "",
+        "product_accession": "",
+        "product_length": "",
+        "related_accession": "",
+        "seq_type": "chromosome",
+        "start": "4834852",
+        "strand": "+",
+        "symbol": ""
+      },
+      "local_gene_metadata": {
+        "begin": "4834852",
+        "desc": "conserved protein of unknown function, UPF0345 family",
+        "end": "4835136",
+        "locusId": "PP_4248",
+        "scaffoldId": "AE015451",
+        "strand": "+",
+        "sysName": "PP_4248",
+        "type": "1"
+      },
+      "local_scaffold_note": "genes.tsv uses unversioned AE015451; the archived feature table and newly retrieved CDS use NC_002947.4. Coordinates and old_locus_tag match. No pre-existing local genomic/CDS FASTA was available for a separate original-genome comparison.",
+      "locus_tag": "PP_RS22065",
+      "model_gene_identities": [],
+      "nucleotide_length_including_stop": 285,
+      "old_locus_tag": "PP_4248",
+      "product": "pyrimidine/purine nucleoside phosphorylase",
+      "protein_accession": "WP_003254278.1",
+      "protein_length": 94,
+      "protein_sha256_uppercase_no_whitespace": "022a781fd5b0305503d7a71bd5ee175bf37f9a5bdabd99f870ee8a10ef12da9d",
+      "reference_version": "NC_002947.4",
+      "start": 4834852,
+      "strand": "+",
+      "terminal_stop": "TAA",
+      "translation": "MFQVNEYFNGTVKSIAFSGEEGPATVGVMAPGEYEFGTAKREIMHVVSGALTVKLPGSDNWETFNAGDKFNVPADSKFQLQVKVDTAYLCEYRD",
+      "translation_matches_genbank": true,
+      "translation_table": 11,
+      "uniprot_accession": "Q88F51",
+      "uniprot_audit": {
+        "entryVersion": 99,
+        "firstPublicDate": "2005-07-05",
+        "lastAnnotationUpdateDate": "2026-06-10",
+        "lastSequenceUpdateDate": "2003-06-01",
+        "sequenceVersion": 1
+      },
+      "uniprot_catalytic_annotations": [
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "2.4.2.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "name": "a purine D-ribonucleoside + phosphate = a purine nucleobase + alpha-D-ribose 1-phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:19805"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:26386"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57720"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:142355"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "2.4.2.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "name": "adenosine + phosphate = alpha-D-ribose 1-phosphate + adenine",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:27642"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:16335"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:16708"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57720"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "2.4.2.2",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "name": "cytidine + phosphate = cytosine + alpha-D-ribose 1-phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:52540"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:16040"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:17562"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57720"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "2.4.2.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "name": "guanosine + phosphate = alpha-D-ribose 1-phosphate + guanine",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:13233"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:16235"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:16750"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57720"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "2.4.2.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "name": "inosine + phosphate = alpha-D-ribose 1-phosphate + hypoxanthine",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:27646"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:17368"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:17596"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57720"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "2.4.2.2",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "name": "thymidine + phosphate = 2-deoxy-alpha-D-ribose 1-phosphate + thymine",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:16037"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:17748"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:17821"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57259"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "2.4.2.2",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "name": "uridine + phosphate = alpha-D-ribose 1-phosphate + uracil",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:24388"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:16704"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:17568"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57720"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "2.4.2.1",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "name": "xanthosine + phosphate = alpha-D-ribose 1-phosphate + xanthine",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:27638"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:17712"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:18107"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57720"
+              }
+            ]
+          }
+        }
+      ],
+      "uniprot_entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "uniprot_protein_existence": "3: Inferred from homology",
+      "uniprot_references": [
+        {
+          "citation": {
+            "authors": [
+              "Nelson K.E.",
+              "Weinel C.",
+              "Paulsen I.T.",
+              "Dodson R.J.",
+              "Hilbert H.",
+              "Martins dos Santos V.A.P.",
+              "Fouts D.E.",
+              "Gill S.R.",
+              "Pop M.",
+              "Holmes M.",
+              "Brinkac L.M.",
+              "Beanan M.J.",
+              "DeBoy R.T.",
+              "Daugherty S.C.",
+              "Kolonay J.F.",
+              "Madupu R.",
+              "Nelson W.C.",
+              "White O.",
+              "Peterson J.D.",
+              "Khouri H.M.",
+              "Hance I.",
+              "Chris Lee P.",
+              "Holtzapple E.K.",
+              "Scanlan D.",
+              "Tran K.",
+              "Moazzez A.",
+              "Utterback T.R.",
+              "Rizzo M.",
+              "Lee K.",
+              "Kosack D.",
+              "Moestl D.",
+              "Wedler H.",
+              "Lauber J.",
+              "Stjepandic D.",
+              "Hoheisel J.",
+              "Straetz M.",
+              "Heim S.",
+              "Kiewitz C.",
+              "Eisen J.A.",
+              "Timmis K.N.",
+              "Duesterhoeft A.",
+              "Tuemmler B.",
+              "Fraser C.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12534463"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1046/j.1462-2920.2002.00366.x"
+              }
+            ],
+            "citationType": "journal article",
+            "firstPage": "799",
+            "id": "12534463",
+            "journal": "Environ. Microbiol.",
+            "lastPage": "808",
+            "publicationDate": "2002",
+            "title": "Complete genome sequence and comparative analysis of the metabolically versatile Pseudomonas putida KT2440.",
+            "volume": "4"
+          },
+          "referenceComments": [
+            {
+              "type": "STRAIN",
+              "value": "ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440"
+            }
+          ],
+          "referenceNumber": 1,
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ]
+        }
+      ]
+    },
+    {
+      "all_three_protein_sequences_exactly_identical": true,
+      "comparison_sources": [
+        "PP1777_NC0029474.gb",
+        "PP1777_uniprot.json",
+        "WP0109528141.fasta"
+      ],
+      "dna": "ATGTACCCACCCATTCAGACCCGCTGCTTCAAAGCCTATGACATTCGCGGCCAAGTGCCGGCTGATCTCAATGAGGATATTGCCTATCGTATTGGTCGTGCCTTGGTGGCTGAGCTGGGTGGGCGCAGCTACGTGGTAGGTCGTGACATGCGCTTGGAAAGTCCGACTCTTTCCCAAGCATTGATGAGGGGCCTTACTGAAGGCGGCGCCGACGTTATAGATATTGGCCTTTGTGGCACCGAGGAAGTGTACTTCGCTACCAGCCACTATCAGGCCGACGGTGGCATCATGGTAACCGCCAGCCATAATCCCAAAGGCTATAACGGCATGAAACTGGTGCGCGAGCAGTCGCGACCTATCAGTGGTGACACGGGCCTCAAGGATATTCGCCAGCGGGTGGAATCCGGTGATTTGGGGACCGCAGCCCCGGCCGCAGGCAGTGTTCGCCTGGCGTCCGACAAAAGCGCTTACATCGACCACCTGCTGACCTATGTGGACCTGGCTACCCTCAAGCCATTGAAAGTTCTGGCGGATCCGGGTAATGGTGCTGTCGGCCCGGTGCTGGAGTTGTTGAAGGCGCGCCTGCCACTGAAGCTCACTGTTATCAATGGGGAACCAGATGGCAACTTCCCTAATGGCATCCCCAACCCGCTGCTACCGGAAAACCGTGACCTTACACGCCAAGCTGTCCTGGATACCGGTGCAGACATGGGTATTGCCTTCGATGGTGATTTCGATCGCTGCTTCTTCTTCGACAATCAGGGGCGTTTCATCGAGGGCTACTATGTAGTTGGCCTGTTGGCTGAAATGCTGCTGGCCAAGCACCCAGGCAGCAAAATCATTCACGACCCGCGCCTGACCTGGAACACCATCAAACAGGTCGAAGAAGCAGGGGGAATGGCAATCCAGAGCAAGACCGGCCATGCCTTCATAAAAGAGCGTATGCGCGCCGAAGATGCTGTATATGGCGGCGAAATGAGCGCCCACCATTACTTCCGTGACTTTGCCTACTGCGACAGCGGTAACATCCCTTGGCTCCTGGTCGCTCAGTTGATGAGCGTAACGGGCAAAAGCCTGGGGCAACTGGTGGACGAACGTATTGCAGCGTTCCCGTGCAGTGGCGAAATCAACTACGAAGTGGAGGATGTTAAAGACACTATCGAGAAGATTCTTGCTCACTACTTGCCGCGAAACCCCAGCATCGACCGCACCGACGGTATCAGCGTAGAGTTCGCTGACTGGCGTTTCAGCCTGCGTGGGTCCAACACCGAGCCATTGCTGCGCCTCAATGTCGAGAGCCGAGGCGATCAGGCTTTGGTTGAGCGCCAGGTTGCACAAATCGCCGGCTTAATCAGAGGTTAA",
+      "dna_sha256_uppercase_no_whitespace": "cb2b9464b2e51964fc94a2c83972f35421ceb5a25d81d497ac743fd668782f05",
+      "end": 1986743,
+      "grade": "Exact reference-sequence identity and local metadata identity; enzymatic function is evaluated separately.",
+      "local_cds_feature": {
+        "# feature": "CDS",
+        "GeneID": "",
+        "assembly": "GCF_000007565.2",
+        "assembly_unit": "Primary Assembly",
+        "attributes": "",
+        "chromosome": "",
+        "class": "with_protein",
+        "end": "1986743",
+        "feature_interval_length": "1362",
+        "genomic_accession": "NC_002947.4",
+        "locus_tag": "PP_RS09130",
+        "name": "phosphomannomutase/phosphoglucomutase",
+        "non-redundant_refseq": "WP_010952814.1",
+        "product_accession": "WP_010952814.1",
+        "product_length": "453",
+        "related_accession": "",
+        "seq_type": "chromosome",
+        "start": "1985382",
+        "strand": "+",
+        "symbol": ""
+      },
+      "local_gene_feature": {
+        "# feature": "gene",
+        "GeneID": "",
+        "assembly": "GCF_000007565.2",
+        "assembly_unit": "Primary Assembly",
+        "attributes": "old_locus_tag=PP_1777",
+        "chromosome": "",
+        "class": "protein_coding",
+        "end": "1986743",
+        "feature_interval_length": "1362",
+        "genomic_accession": "NC_002947.4",
+        "locus_tag": "PP_RS09130",
+        "name": "",
+        "non-redundant_refseq": "",
+        "product_accession": "",
+        "product_length": "",
+        "related_accession": "",
+        "seq_type": "chromosome",
+        "start": "1985382",
+        "strand": "+",
+        "symbol": ""
+      },
+      "local_gene_metadata": {
+        "begin": "1985382",
+        "desc": "phosphomannomutase",
+        "end": "1986743",
+        "locusId": "PP_1777",
+        "scaffoldId": "AE015451",
+        "strand": "+",
+        "sysName": "PP_1777",
+        "type": "1"
+      },
+      "local_scaffold_note": "genes.tsv uses unversioned AE015451; the archived feature table and newly retrieved CDS use NC_002947.4. Coordinates and old_locus_tag match. No pre-existing local genomic/CDS FASTA was available for a separate original-genome comparison.",
+      "locus_tag": "PP_RS09130",
+      "model_gene_identities": [
+        "NP_743933_1"
+      ],
+      "nucleotide_length_including_stop": 1362,
+      "old_locus_tag": "PP_1777",
+      "product": "phosphohexomutase domain-containing protein",
+      "protein_accession": "WP_010952814.1",
+      "protein_length": 453,
+      "protein_sha256_uppercase_no_whitespace": "47e45c9f00e09cf1d72df6506e0fb5f102a8509ba694814fba5cd0bb67a4c13d",
+      "reference_version": "NC_002947.4",
+      "start": 1985382,
+      "strand": "+",
+      "terminal_stop": "TAA",
+      "translation": "MYPPIQTRCFKAYDIRGQVPADLNEDIAYRIGRALVAELGGRSYVVGRDMRLESPTLSQALMRGLTEGGADVIDIGLCGTEEVYFATSHYQADGGIMVTASHNPKGYNGMKLVREQSRPISGDTGLKDIRQRVESGDLGTAAPAAGSVRLASDKSAYIDHLLTYVDLATLKPLKVLADPGNGAVGPVLELLKARLPLKLTVINGEPDGNFPNGIPNPLLPENRDLTRQAVLDTGADMGIAFDGDFDRCFFFDNQGRFIEGYYVVGLLAEMLLAKHPGSKIIHDPRLTWNTIKQVEEAGGMAIQSKTGHAFIKERMRAEDAVYGGEMSAHHYFRDFAYCDSGNIPWLLVAQLMSVTGKSLGQLVDERIAAFPCSGEINYEVEDVKDTIEKILAHYLPRNPSIDRTDGISVEFADWRFSLRGSNTEPLLRLNVESRGDQALVERQVAQIAGLIRG",
+      "translation_matches_genbank": true,
+      "translation_table": 11,
+      "uniprot_accession": "Q88LZ9",
+      "uniprot_audit": {
+        "entryVersion": 123,
+        "firstPublicDate": "2003-06-01",
+        "lastAnnotationUpdateDate": "2026-01-28",
+        "lastSequenceUpdateDate": "2003-06-01",
+        "sequenceVersion": 1
+      },
+      "uniprot_catalytic_annotations": [
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "ecNumber": "5.4.2.8",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000256",
+                "id": "ARBA00000586",
+                "source": "ARBA"
+              }
+            ],
+            "name": "alpha-D-mannose 1-phosphate = D-mannose 6-phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:11140"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58409"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:58735"
+              }
+            ]
+          }
+        }
+      ],
+      "uniprot_entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "uniprot_protein_existence": "3: Inferred from homology",
+      "uniprot_references": [
+        {
+          "citation": {
+            "authors": [
+              "Nelson K.E.",
+              "Weinel C.",
+              "Paulsen I.T.",
+              "Dodson R.J.",
+              "Hilbert H.",
+              "Martins dos Santos V.A.",
+              "Fouts D.E.",
+              "Gill S.R.",
+              "Pop M.",
+              "Holmes M.",
+              "Brinkac L.",
+              "Beanan M.",
+              "DeBoy R.T.",
+              "Daugherty S.",
+              "Kolonay J.",
+              "Madupu R.",
+              "Nelson W.",
+              "White O.",
+              "Peterson J.",
+              "Khouri H.",
+              "Hance I.",
+              "Chris Lee P.",
+              "Holtzapple E.",
+              "Scanlan D.",
+              "Tran K.",
+              "Moazzez A.",
+              "Utterback T.",
+              "Rizzo M.",
+              "Lee K.",
+              "Kosack D.",
+              "Moestl D.",
+              "Wedler H.",
+              "Lauber J.",
+              "Stjepandic D.",
+              "Hoheisel J.",
+              "Straetz M.",
+              "Heim S.",
+              "Kiewitz C.",
+              "Eisen J.A.",
+              "Timmis K.N.",
+              "Dusterhoft A.",
+              "Tummler B.",
+              "Fraser C.M."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12534463"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1046/j.1462-2920.2002.00366.x"
+              }
+            ],
+            "citationType": "journal article",
+            "firstPage": "799",
+            "id": "12534463",
+            "journal": "Environ. Microbiol.",
+            "lastPage": "808",
+            "publicationDate": "2002",
+            "title": "Complete genome sequence and comparative analysis of the metabolically versatile Pseudomonas putida KT2440.",
+            "volume": "4"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000313",
+              "id": "AAN67397.1",
+              "source": "EMBL"
+            },
+            {
+              "evidenceCode": "ECO:0000313",
+              "id": "UP000000556",
+              "source": "Proteomes"
+            }
+          ],
+          "referenceComments": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "id": "UP000000556",
+                  "source": "Proteomes"
+                }
+              ],
+              "type": "STRAIN",
+              "value": "ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440"
+            }
+          ],
+          "referenceNumber": 1,
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ]
+        },
+        {
+          "citation": {
+            "authors": [
+              "Belda E.",
+              "van Heck R.G.",
+              "Lopez-Sanchez M.J.",
+              "Cruveiller S.",
+              "Barbe V.",
+              "Fraser C.",
+              "Klenk H.P.",
+              "Petersen J.",
+              "Morgat A.",
+              "Nikel P.I.",
+              "Vallenet D.",
+              "Rouy Z.",
+              "Sekowska A.",
+              "Martins Dos Santos V.A.",
+              "de Lorenzo V.",
+              "Danchin A.",
+              "Medigue C."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "26913973"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1111/1462-2920.13230"
+              }
+            ],
+            "citationType": "journal article",
+            "firstPage": "3403",
+            "id": "26913973",
+            "journal": "Environ. Microbiol.",
+            "lastPage": "3424",
+            "publicationDate": "2016",
+            "title": "The revisited genome of Pseudomonas putida KT2440 enlightens its value as a robust metabolic chassis.",
+            "volume": "18"
+          },
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000313",
+              "id": "AAN67397.1",
+              "source": "EMBL"
+            },
+            {
+              "evidenceCode": "ECO:0000313",
+              "id": "UP000000556",
+              "source": "Proteomes"
+            }
+          ],
+          "referenceComments": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "id": "UP000000556",
+                  "source": "Proteomes"
+                }
+              ],
+              "type": "STRAIN",
+              "value": "ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440"
+            }
+          ],
+          "referenceNumber": 2,
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ]
+        }
+      ]
+    }
+  ],
+  "input_files": [
+    {
+      "path": "data/fitness_browser/Putida/genes.tsv",
+      "sha256": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e",
+      "size": 464829
+    },
+    {
+      "path": "data/genpept/Putida_genpept_map.tsv",
+      "sha256": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128",
+      "size": 160473
+    },
+    {
+      "path": "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz",
+      "sha256": "bea517eccadcaa280228c75551ee4d641e7eadb3509532377943e7ca89355f0e",
+      "size": 262118
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.py",
+      "sha256": "ed40298a453dbdcfc3327f068548f04b77e6956e99b7a486039ac3a152f579e1",
+      "size": 10620
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537.html",
+      "sha256": "808a98748f0b4f4596c2e19907de1c7114ab5d7310db5dbcf264d6a1ade6200f",
+      "size": 23015
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_rule.txt",
+      "sha256": "d8c91ec49545a79b26006121744b42836a3542e813fba918a83e6d4925c58dac",
+      "size": 3347
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_signature.html",
+      "sha256": "f084877e64b139bdc12062b68751e218f085478e203d8e6bd41f970049e8ee77",
+      "size": 15642
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/P0C037.json",
+      "sha256": "01548b1e3468c516ccabfcde565b6ed539b90004bf11a5829d287399115a72ee",
+      "size": 21357
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_NC0029474.gb",
+      "sha256": "51c6b8ebcffd442decff4259d330af35fb15e3d4d86bc35123be1f23db8dc494",
+      "size": 8821
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_uniprot.json",
+      "sha256": "7ea18def652a7709c6ca54268751e1a90403e8cc569fb701df3f3a5ea4cbebee",
+      "size": 12108
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP4248_NC0029474.gb",
+      "sha256": "8dbe67ac46e84eceadbca4177b81c2a750d52609a59869256ab3162e0eed3b15",
+      "size": 7329
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Q88F51.json",
+      "sha256": "701bfc29b0aece76f5f2eef3a0eff67868c14b764a46243ed65976e97e7c47d6",
+      "size": 11955
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0032542781_retry.fasta",
+      "sha256": "cd08a9591e040873f362d3ac3911db3eeb9e57bf2518709c5250a2a391b30de5",
+      "size": 184
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0109528141.fasta",
+      "sha256": "8ba2e1ed5debafdc559e25863426266936ca640a3e0a47b7f4149dd6ee8a342f",
+      "size": 549
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Ye1994_pubmed.xml",
+      "sha256": "02a3b4ecc1606a75b846feeb1a9bcd9ef775d457864238cf39039584be17ab34",
+      "size": 14392
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals.json",
+      "sha256": "49c9709b4afba2db418795ea4ea43f2cc25761e736ca40ebed9f24428a9abda6",
+      "size": 3539
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals_followup.json",
+      "sha256": "44ff88dc71dcf68ee7eefccbaf309a824366537a426ca9fe993d5d03c1e1bc13",
+      "size": 1739
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json",
+      "sha256": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885",
+      "size": 39722
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+      "sha256": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+      "size": 206220
+    },
+    {
+      "path": "results/ribosyl_disposal_2026_09_06/evidence/model_context.json",
+      "sha256": "2f094931556754905bb6b6d697f683bf5785d8dd8f62981f1acd00b1dfbbf0bd",
+      "size": 21932
+    }
+  ],
+  "ppm_evidence_limit": {
+    "decision": "Existing PPM substrate/GPR assignment remains provisional. A PPM-blocking control can establish dependence of a model rescue on this edge, but cannot validate PP_1777 enzymology.",
+    "existing_model_reaction": {
+      "annotation": {},
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "equation": "r1p_c <=> r5p_c",
+      "gene_rule": "NP_743933_1",
+      "id": "PPM",
+      "loci": [
+        "PP_1777"
+      ],
+      "metabolites": {
+        "r1p_c": -1.0,
+        "r5p_c": 1.0
+      },
+      "name": "Phosphopentomutase"
+    },
+    "kt2440_annotation": "Q88LZ9/cpsG/PP_1777 is an unreviewed phosphomannomutase EC 5.4.2.8; its ARBA catalytic annotation supports mannose-1-P to mannose-6-P, not ribose-1-P to ribose-5-P.",
+    "related_experiment": {
+      "doi": "10.1128/jb.176.16.4851-4857.1994",
+      "evidence_read": "Original primary-paper abstract reports purified AlgC converts ribose-1-P at much lower activity than its preferred substrates. This is another protein/species; neither identity nor KT2440 physiological flux is established.",
+      "gene": "algC",
+      "organism": "Pseudomonas aeruginosa",
+      "pubmed": "8050998"
+    }
+  },
+  "schema_version": 1,
+  "scope": "Sequence/annotation metadata only. No numeric phenotype data, optimization, or model changes.",
+  "study_role": "post-outcome source-driven candidate development"
+}

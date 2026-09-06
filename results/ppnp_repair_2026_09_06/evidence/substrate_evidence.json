@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "audit_date": "2026-09-06",
+  "scope": "Bounded primary-source audit of PpnP substrate chemistry before a separately declared model experiment; no model edits, simulations, or phenotype-value inspection.",
+  "candidate": {
+    "organism": "Pseudomonas putida KT2440",
+    "locus": "PP_4248",
+    "uniprot": "Q88F51",
+    "assignment_grade": "homology_annotation",
+    "annotation_rule": "HAMAP MF_01537 / ECO:0000255",
+    "direct_strain_specific_catalytic_experiment_found": false,
+    "sequence_identity_check": "Separate sequence audit; gene-name equality is not used as identity evidence."
+  },
+  "evidence_grades": {
+    "direct_other_organism_assay": "Original purified-protein substrate-conversion assay from E. coli; not KT2440 function.",
+    "original_author_report_without_displayed_trace": "Explicit original assay-table or figure statement, without a separate displayed time course for that control.",
+    "conflicting_primary_evidence": "Different components of the same original publication disagree; unresolved here.",
+    "direct_structure_only": "Author-deposited structure or original structural experiment; not a catalytic substrate assay.",
+    "homology_annotation": "Sequence/rule-based functional assignment; not direct catalytic validation."
+  },
+  "experimental_identity": {
+    "organism": "Escherichia coli",
+    "original_name": "YaiE",
+    "current_name": "PpnP",
+    "locus": "b0391",
+    "uniprot": "P0C037",
+    "identity_source": "sevin_table3, sheet1 row270; UniProt accession mapping in previously retrieved source ledger",
+    "purification": "Figure S8k documents His6-tagged protein, TALON affinity purification and anion-exchange chromatography."
+  },
+  "assay_context": {
+    "source": "sevin_supplement_figures",
+    "locator": "PDF page9, Supplementary Figure8 caption and panels a-j",
+    "purified_enzyme_micrograms_per_ml": 50,
+    "each_substrate_millimolar": 10,
+    "replicates": 3,
+    "replicate_type": "Not identified as biological versus technical in the caption",
+    "displayed_summary": "Mean and standard deviation",
+    "displayed_control": "Heat-inactivated YaiE",
+    "measurement": "Mass-spectrometric ion abundance versus time, not calibrated molar rates",
+    "buffer_temperature_and_metal_omission_protocol": "Not established from the inspected caption/table; the paywalled full-text methods were not available."
+  },
+  "reaction_hypotheses": [
+    {
+      "id": "adenosine_phosphorolysis",
+      "forward_equation": "adenosine + orthophosphate -> adenine + D-ribose 1-phosphate",
+      "forward_grade": "direct_other_organism_assay",
+      "forward_sources": ["sevin_supplement_figures:S8b,S8l", "sevin_table9:sheet1,row2"],
+      "displayed_forward_observation": "Ribose-phosphate ion assigned as D-ribose1-phosphate, [M-H]- m/z229.012, rises with active YaiE relative to heat-inactivated control.",
+      "reverse_grade": "conflicting_primary_evidence",
+      "reverse_positive_locator": "sevin_supplement_figures:S8i shows adenosine [M+F]- m/z286.096 accumulating with ribose1-phosphate plus adenine; S8l uses a reversible arrow",
+      "reverse_negative_locator": "sevin_table9:sheet1,row2,D2 states reverse reactions were not catalyzed",
+      "kt2440_gene_assignment_grade": "homology_annotation"
+    },
+    {
+      "id": "inosine_phosphorolysis",
+      "forward_equation": "inosine + orthophosphate -> hypoxanthine + D-ribose 1-phosphate",
+      "forward_grade": "direct_other_organism_assay",
+      "forward_sources": ["sevin_supplement_figures:S8f,S8l", "sevin_table9:sheet1,row2"],
+      "displayed_forward_observation": "Ribose-phosphate ion assigned as D-ribose1-phosphate, [M-H]- m/z229.012, rises with active YaiE relative to heat-inactivated control.",
+      "reverse_grade": "conflicting_primary_evidence",
+      "reverse_positive_locator": "sevin_supplement_figures:S8j shows inosine [M+F]- m/z287.079 accumulating with ribose1-phosphate plus hypoxanthine; S8l uses a reversible arrow",
+      "reverse_negative_locator": "sevin_table9:sheet1,row2,D2 states reverse reactions were not catalyzed",
+      "kt2440_gene_assignment_grade": "homology_annotation"
+    }
+  ],
+  "controls_and_specificity": {
+    "phosphate_omission": {
+      "grade": "original_author_report_without_displayed_trace",
+      "source": "sevin_table9:sheet1,row2,C2-D2",
+      "finding": "Nucleosides were tested with and without orthophosphate; no cleavage was reported without it.",
+      "short_extract": "No cleavage occurred in absence of orthophosphate",
+      "interpretation": "Supports phosphorolysis instead of a nucleoside-hydrolase assignment under the tested conditions."
+    },
+    "free_ribose_plus_phosphate": {
+      "grade": "original_author_report_without_displayed_trace",
+      "sources": ["sevin_table9:sheet1,row2,C2-D2", "sevin_supplement_figures:S8l"],
+      "finding": "Ribose and orthophosphate alone were tested; condensation to ribose1-phosphate was reported absent and crossed out in the figure scheme.",
+      "interpretation": "Do not introduce a free-ribose phosphorylation reaction as PpnP activity. This control does not establish an absolute zero rate across all conditions or homologs."
+    },
+    "other_substrates": {
+      "reported_positive_nucleosides": ["uridine", "guanosine", "cytidine", "thymidine", "xanthosine"],
+      "source": "sevin_table9:sheet1,row2; sevin_supplement_figures:S8a,c,d,e,g",
+      "scope_limit": "Family breadth is reported; this audit proposes no additional substrate reactions. The generic ribose1-phosphate labeling for thymidine does not resolve its expected deoxy-sugar product and should not be copied as chemistry."
+    },
+    "analytical_limits": "Mass alone does not distinguish ribose1-phosphate from isomeric sugar phosphates. Reverse assays starting with authentic ribose1-phosphate add support, but conflict with the assay-table direction statement. No kinetic parameters, equilibrium constants, physiological flux capacity, or comprehensive specificity ranking were established here."
+  },
+  "directionality_conflict": {
+    "status": "unresolved",
+    "negative_short_extract": "The reverse reactions were not found to be catalyzed.",
+    "negative_source": "sevin_table9:sheet1,row2,D2",
+    "positive_source": "sevin_supplement_figures:page9,S8i-j,S8l",
+    "not_resolved_by": "The Wen author manuscript describes reversible PpnP activity while citing Sevin; this is not an independent conversion experiment.",
+    "recommended_declaration": "Use forward phosphorolysis for the primary conservative hypothesis. If reverse flux is examined, predeclare a separate reversible sensitivity and preserve the source inconsistency. Neither is a claim that KT2440 directionality has been experimentally established."
+  },
+  "accessory_requirements": {
+    "purified_protein_evidence": "Sevin's targeted assay uses purified YaiE; no accessory enzyme is named in FigureS8 or Table9. This supports a single-polypeptide catalytic assignment in E. coli, but does not prove the absence of every accessory requirement in KT2440.",
+    "oligomerization": "Wen's author manuscript and deposited structures support homodimers. A homodimer does not require a second distinct gene in a GPR.",
+    "metal_evidence": "Wen's author manuscript reports no modeled catalytic metal and absence of the metal-chelating residues seen in compared cupins. This structural observation is not a metal-depletion/activity assay.",
+    "unsupported_additions": ["ATP-dependent phosphorylation of free ribose", "hydrolysis producing free ribose", "an invented heteromeric accessory GPR", "a specified metal/redox donor requirement inferred solely from the cupin fold"]
+  },
+  "wen_structural_scope": {
+    "published_doi": "10.1002/prot.26309",
+    "author_manuscript_doi": "10.22541/au.163768486.60510150/v1",
+    "accessed": "Full author preprint text, published abstract, and original deposited PDB records; published Wiley full text was inaccessible.",
+    "new_experiments_in_accessed_manuscript": ["protein purification", "X-ray crystallography", "size-exclusion chromatography", "dimer-interface mutant stability"],
+    "new_substrate_conversion_assay_in_accessed_manuscript": false,
+    "substrate_bound_structure_obtained": false,
+    "ecoli_structure": {"pdb": "7EYJ", "uniprot": "P0C037", "resolution_angstrom": 1.38, "unique_nonpolymer_ligand": "sulfate"},
+    "pseudomonas_structure": {"pdb": "7EYP", "uniprot": "Q9I3E3", "organism": "Pseudomonas aeruginosa PAO1 according to deposited accession mapping", "resolution_angstrom": 1.5, "is_kt2440": false},
+    "identity_caveat": "The preprint prose calls the Pseudomonas source strain PA0750, whereas the deposited sequence maps to PAO1 Q9I3E3. Use the sequence/accession audit rather than resolving identity from that prose label."
+  },
+  "sources": [
+    {"id": "sevin_paper", "doi": "10.1038/nmeth.4103", "url": "https://www.nature.com/articles/nmeth.4103", "access": "Public abstract and supplement links; original full-text methods not available"},
+    {"id": "sevin_supplement_figures", "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnmeth.4103/MediaObjects/41592_2017_BFnmeth4103_MOESM62_ESM.pdf", "inspected": "Page9, Supplementary Figure8, visually rendered and text extracted", "sha256": "75db3e0bab299056065528dd1f72d29ca3957b141d6c5129693e2c28aef7069a", "size_bytes": 7116291},
+    {"id": "sevin_table3", "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnmeth.4103/MediaObjects/41592_2017_BFnmeth4103_MOESM65_ESM.xlsx", "inspected": "Sheet1 header and YaiE/b0391 row270; identity/protein-preparation metadata only", "sha256": "9519d82a8219cbe3f518ab251b3c59182a5a2184adc3ed5352590428516d78d9", "size_bytes": 102606},
+    {"id": "sevin_table9", "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnmeth.4103/MediaObjects/41592_2017_BFnmeth4103_MOESM71_ESM.xlsx", "inspected": "Sheet1 header and YaiE/b0391 row2; in-vitro reaction-validation table, not a growth/fitness dataset", "sha256": "e51339d9b215547e224b874f1d19251353326d55de20069bfc1894e7934f93c3", "size_bytes": 14992},
+    {"id": "wen_published", "url": "https://pubmed.ncbi.nlm.nih.gov/35094440/", "doi": "10.1002/prot.26309", "access": "Published abstract"},
+    {"id": "wen_author_manuscript", "url": "https://doi.org/10.22541/au.163768486.60510150/v1", "read_url": "https://www.researchgate.net/publication/356479157_Crystal_structures_of_a_new_class_of_pyrimidinepurine_nucleoside_phosphorylase_ppnP_revealed_a_Cupin_fold", "version": "Authorea v1, 2021-11-23, author-uploaded full text; preprint status retained", "inspected": "Methods, Results/Discussion and Conclusions; no full copyrighted text is copied into this repository"},
+    {"id": "wen_ecoli_structure", "url": "https://www.rcsb.org/structure/7EYJ", "version": "1.3, 2024-05-29", "access": "Author-deposited experimental structure record"},
+    {"id": "wen_pseudomonas_structure", "url": "https://www.rcsb.org/structure/7EYP", "version": "1.3, 2023-11-29", "access": "Author-deposited experimental structure record"}
+  ],
+  "local_input_fingerprints": [
+    {"path": "docs/evidence/10-putida-ribosyl-disposal-sources.md", "sha256": "40157bcb05db6403e4ccdd9354d908e473118847147081614f717caba0a1c4de"},
+    {"path": "results/ribosyl_disposal_2026_09_06/evidence/source_evidence.json", "sha256": "5518bd06c30777f1297947d95a9329f2f13356a7131637f8afdf7515e481c9f6"}
+  ],
+  "storage_and_limits": "Public PDFs/XLSX were read from temporary files outside the repository. Only this evidence summary, short extracts and source fingerprints are retained. No full paper/supplement is redistributed. Bounded search is not proof that no other biochemical evidence exists."
+}

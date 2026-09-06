@@ -1,0 +1,81 @@
+AC   MF_01537;
+DC   Protein; auto
+TR   HAMAP; MF_01537; -; 1; level=0
+XX
+Names: Nucleos_phosphorylase_PpnP
+XX
+ID   PPNP
+DE   RecName: Full=Pyrimidine/purine nucleoside phosphorylase;
+DE            EC=2.4.2.1;
+DE            EC=2.4.2.2;
+DE   AltName: Full=Adenosine phosphorylase;
+DE   AltName: Full=Cytidine phosphorylase;
+DE   AltName: Full=Guanosine phosphorylase;
+DE   AltName: Full=Inosine phosphorylase;
+DE   AltName: Full=Thymidine phosphorylase;
+DE   AltName: Full=Uridine phosphorylase;
+DE   AltName: Full=Xanthosine phosphorylase;
+GN   Name=ppnP;
+XX
+CC   -!- FUNCTION: Catalyzes the phosphorolysis of diverse nucleosides, yielding
+CC       D-ribose 1-phosphate and the respective free bases. Can use uridine,
+CC       adenosine, guanosine, cytidine, thymidine, inosine and xanthosine as
+CC       substrates. Also catalyzes the reverse reactions.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=a purine D-ribonucleoside + phosphate = a purine nucleobase +
+CC         alpha-D-ribose 1-phosphate; Xref=Rhea:RHEA:19805, ChEBI:CHEBI:26386,
+CC         ChEBI:CHEBI:43474, ChEBI:CHEBI:57720, ChEBI:CHEBI:142355; EC=2.4.2.1;
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=adenosine + phosphate = alpha-D-ribose 1-phosphate + adenine;
+CC         Xref=Rhea:RHEA:27642, ChEBI:CHEBI:16335, ChEBI:CHEBI:16708,
+CC         ChEBI:CHEBI:43474, ChEBI:CHEBI:57720; EC=2.4.2.1;
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=cytidine + phosphate = cytosine + alpha-D-ribose 1-phosphate;
+CC         Xref=Rhea:RHEA:52540, ChEBI:CHEBI:16040, ChEBI:CHEBI:17562,
+CC         ChEBI:CHEBI:43474, ChEBI:CHEBI:57720; EC=2.4.2.2;
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=guanosine + phosphate = alpha-D-ribose 1-phosphate + guanine;
+CC         Xref=Rhea:RHEA:13233, ChEBI:CHEBI:16235, ChEBI:CHEBI:16750,
+CC         ChEBI:CHEBI:43474, ChEBI:CHEBI:57720; EC=2.4.2.1;
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=inosine + phosphate = alpha-D-ribose 1-phosphate +
+CC         hypoxanthine; Xref=Rhea:RHEA:27646, ChEBI:CHEBI:17368,
+CC         ChEBI:CHEBI:17596, ChEBI:CHEBI:43474, ChEBI:CHEBI:57720; EC=2.4.2.1;
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=thymidine + phosphate = 2-deoxy-alpha-D-ribose 1-phosphate +
+CC         thymine; Xref=Rhea:RHEA:16037, ChEBI:CHEBI:17748, ChEBI:CHEBI:17821,
+CC         ChEBI:CHEBI:43474, ChEBI:CHEBI:57259; EC=2.4.2.2;
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=uridine + phosphate = alpha-D-ribose 1-phosphate + uracil;
+CC         Xref=Rhea:RHEA:24388, ChEBI:CHEBI:16704, ChEBI:CHEBI:17568,
+CC         ChEBI:CHEBI:43474, ChEBI:CHEBI:57720; EC=2.4.2.2;
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=xanthosine + phosphate = alpha-D-ribose 1-phosphate +
+CC         xanthine; Xref=Rhea:RHEA:27638, ChEBI:CHEBI:17712, ChEBI:CHEBI:18107,
+CC         ChEBI:CHEBI:43474, ChEBI:CHEBI:57720; EC=2.4.2.1;
+CC   -!- SIMILARITY: Belongs to the nucleoside phosphorylase PpnP family.
+XX
+DR   Pfam; PF06865; DUF1255; 1; trigger=no
+XX
+KW   Glycosyltransferase
+KW   Transferase
+XX
+GO   GO:0004731; F:purine-nucleoside phosphorylase activity
+GO   GO:0016154; F:pyrimidine-nucleoside phosphorylase activity
+XX
+Size: 92-111;
+Related: None;
+Template: P0C037;
+Scope:
+ Bacteria
+Fusion:
+ Nter: None
+ Cter: None
+Duplicate: in PSYA2, PSYCK
+Plasmid: None
+Comments: None
+XX
+# Version: 25
+# Last updated date: 2024-09-03
+# Created date: 2005-06-15
+//

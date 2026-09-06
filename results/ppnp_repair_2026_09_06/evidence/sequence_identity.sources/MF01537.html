@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" prefix="bioschema: https://bioschemas.org/">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+    <!-- automatically added by Apache -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- automatically added by Apache -->
+    <script type="application/ld+json">
+        {
+            "@context": [ "https://schema.org/" ],
+            "@type": "Organization",
+            "url": "https://hamap.expasy.org",
+            "name": "HAMAP",
+            "logo": "https://hamap.expasy.org/images/hamap/HAMAP_Red_Logo_trans.png",
+            "memberof": {
+                "@type": "NGO",
+                "name": "SIB Swiss Institute of Bioinformatics",
+                "url": "https://sib.swiss/"
+            },
+            "parentOrganization": {
+                "@type": "Organization",
+                "name": "Expasy",
+                "url": "https://www.expasy.org/"
+            }
+        }
+    </script>
+    <!-- automatically added by Apache -->
+    <link rel="stylesheet" href="/css/normalize.css?v=1.1" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="/css/expasy_geneva.css?v=1.1" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="/css/cite.css?v=1.1" type="text/css" charset="utf-8">
+    <link rel="stylesheet" href="/css/unirule/unirule.css" type="text/css">
+    <!-- automatically added by Apache -->
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+    <script type="text/javascript" src="/js/cite.js"></script>
+    <script type="text/javascript" src="/js/unirule/unirule.js"></script>
+    <!-- automatically added by Apache -->
+    <script type="text/javascript" src="/js/hamap/matomo-hamap-tracking.js"></script>
+    <script type="text/javascript" defer="defer" src="https://matomo.sib.swiss/matomo.js"></script>
+    <!-- automatically added by Apache -->
+
+    <style type='text/css'>
+    .case {
+        background-color:#f6f7f7;
+    }
+    .else {
+        background-color:#f6f7f7;
+    }
+    .end_case {
+        background-color:#f6f7f7;
+    }
+    .docu {
+        font-size:medium;
+    }
+    .from {
+        background-color:#f6f7f7;
+        font-weight: bold;
+    }
+    .in_case
+    {
+        border-left: 3em solid #f6f7f7;
+        
+    }
+    .no_case
+    {
+        padding-left: 3em !important;
+    }
+    table {
+        width: 100%;
+    }
+    </style>
+	<title>HAMAP rule MF_01537</title>
+</head>
+<body class="hamap"  typeof="schema:WebPage"> 
+<!-- start of header -->
+<header class="header-grid">
+    <div class="header-elmt">
+        <a href="/">
+        <img alt="HAMAP logo" src="/images/hamap/HAMAP_Red_Logo_trans.png">
+        </a>
+    </div>
+    <nav class="header-elmt" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+        <ul class="menu-9-items">
+            <li>
+                <img src="/images/icons/home.svg" alt="home"> 
+                <a itemprop="url" href="/"><span itemprop="name">Home</span></a>
+            </li>
+            <li class="with-submenu">
+                <img src="/images/icons/browse.svg" alt="browse"> 
+                <a itemprop="url" href="/cgi-bin/unirule/unirule_browse.cgi?browse=description&context=HAMAP"><span itemprop="name">Browse</span></a>
+                <ul>
+                    <li><a itemprop="url" href="/cgi-bin/unirule/unirule_browse.cgi?browse=description&context=HAMAP"><span itemprop="name">List all rules</span></a></li>
+                    <li><a itemprop="url" href="/cgi-bin/unirule/unirule_browse.cgi?browse=enzyme&context=HAMAP"><span itemprop="name">Browse by enzyme class</span></a></li>
+                    <li><a itemprop="url" href="/cgi-bin/unirule/unirule_browse.cgi?browse=ft&context=HAMAP"><span itemprop="name">Browse by feature key</span></a></li>
+                    <li><a itemprop="url" href="/cgi-bin/unirule/unirule_browse.cgi?browse=go&context=HAMAP"><span itemprop="name">Browse by GO terms</span></a></li>
+                    <li><a itemprop="url" href="/cgi-bin/unirule/unirule_browse.cgi?browse=keyword&context=HAMAP"><span itemprop="name">Browse by keyword</span></a></li>
+                    <li><a itemprop="url" href="/cgi-bin/unirule/unirule_browse.cgi?browse=taxonomy&context=HAMAP"><span itemprop="name">Browse by taxonomic scope</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <img src="/images/icons/tool.svg" alt="tool"> 
+                <a itemprop="url" href="/hamap-scan/"><span itemprop="name">HAMAP-Scan</span></a>
+            </li>
+            <li class="with-submenu">
+                <img src="/images/icons/protein.svg" alt="protein"> 
+                <a itemprop="url" href="/proteomes.html"><span itemprop="name">Proteomes</span></a>
+                <ul>
+                    <li><a itemprop="url" href="/proteomes.html"><span itemprop="name">Summary page</span></a></li>
+                    <li><a itemprop="url" href="/archaea.html"><span itemprop="name">Archaea</span></a></li>
+                    <li><a itemprop="url" href="/bacteria.html"><span itemprop="name">Bacteria</span></a></li>
+                </ul>
+            </li>
+            <li>
+                <img src="/images/icons/documents.svg" alt="documents"> 
+                <a itemprop="url" href="/hamap_doc.html"><span itemprop="name">Documentation</span></a>
+            </li>
+            <li>
+                <img src="/images/icons/sparql_black_and_white.svg" alt="tool"> 
+                <a itemprop="url" href="/sparql/"><span itemprop="name">SPARQL</span></a>
+            </li>
+            <li>
+                <img src="/images/icons/download.svg" alt="download"> 
+                <a itemprop="url" href="https://ftp.expasy.org/databases/hamap/"><span itemprop="name">Download</span></a>
+            </li>
+            <li>
+                <img src="/images/icons/help.svg" alt="help"> 
+                <a itemprop="url" href="/hamap_about.html"><span itemprop="name">About</span></a>
+            </li>
+            <li>
+                <img src="/images/icons/contact.svg" alt="contact"> 
+                <a itemprop="url" href="/contact"><span itemprop="name">Contact</span></a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<!-- end of header, start of main -->
+<main class="main-grid">
+    <form class="main-elmt" property="schema:potentialAction" typeof="schema:SearchAction" action="/cgi-bin/unirule/unirule_search.cgi" method="get" name="searchForm" id="searchForm">
+        <meta property="schema:target" content="/cgi-bin/unirule/unirule_search.cgi?search={search}&context=HAMAP"/>
+        <input property="schema:query-input" type="text" name="search" placeholder="Search HAMAP"/>
+        <input property="schema:name" type="submit" value="Search"/>
+        <input type="hidden" name="context" value="HAMAP" />
+    </form>
+    <!-- automatically added by Apache -->
+    <div class="main-elmt">
+        <h1>HAMAP rule MF_01537</h1>
+        <div style="margin-right:50px; text-align:right;"><a href="/cgi-bin/hamap/submit_updates.cgi?ac=MF_01537">Send feedback</a></div>
+    <div>
+    <br />
+    <!-- General rule information -->
+    <div class="section-3-type-1">
+        <a name="general"></a>General rule information
+        <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#general" target="_blank" onClick="window_open('/unirule_web_view_HAMAP_rules.html#general'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <div class="margin">
+    <table class="type-1">
+        <tr>
+            <td>PURL</td>
+            <td itemscope itemtype="http://schema.org/PropertyValue">
+                <meta itemprop="propertyID" content="PURL">
+                <a itemprop="value" href="https://purl.expasy.org/hamap/rule/MF_01537">https://purl.expasy.org/hamap/rule/MF_01537</a>
+            </td>
+        </tr>
+        <tr>
+            <td>Accession</td>
+            <td property="schema:alternateName">MF_01537</td>
+        </tr>
+        <tr>
+            <td valign="top">Dates</td>
+            <td><span property="schema:dateCreated">15-JUN-2005</span> (Created)
+                <br>
+                <span property="schema:dateModified">03-SEP-2024</span> (Last updated, Version <span property="schema:version"></span>)
+            </td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><span property="schema:name">Nucleos_phosphorylase_PpnP</span></td>
+        </tr>
+        <tr>
+            <td>Scope(s)</td>
+            <td>
+             
+            <span property="schema:name">Bacteria</span><br />
+            
+            </td>
+        </tr>
+        
+        <tr>
+            <td>Template(s)</td>
+            <td>
+            
+                 
+                    <span property="schema:name">
+                        <a href="https://www.uniprot.org/uniprot/P0C037" target="_blank">P0C037</a> (PPNP_ECOLI);
+                    </span>
+                
+                [ <a href="https://www.uniprot.org/uniprotkb?query=(accession:P0C037) OR (accession:P0C037)">Recover all</a> ]
+            
+            </td>
+        </tr>
+        
+        
+        <tr>
+            <td>Triggered by</td>
+            <td>
+            
+             
+            
+            <span property="schema:name">HAMAP; <a href="/signature/MF_01537">MF_01537 (Get profile general information and statistics)</a> </span><br />
+            
+            
+            </td>
+        </tr>
+    </table>
+    <br/>
+    
+    <!-- Propagated annotation -->
+    <div class="section-3-type-1">
+        <a name="general"></a>Propagated annotation
+        <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#propagated" target="_blank" onClick="window_open('/unirule_web_view_HAMAP_rules.html#propagated'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <div class="section-4-type-1">
+        <a name="identifier"></a>
+        Identifier, protein and gene names
+        <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#identifier" target="_blank" onclick="window_open('/unirule_web_view_HAMAP_rules.html#identifier'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <div class="margin">
+        <table class="type-1"">
+            
+            
+                
+                    
+                        
+                    
+                    <tr>
+                        <td class="no_case">Identifier</td>
+                        <td>PPNP</td>
+                    </tr>
+                
+            
+                
+                    
+                        
+                    
+                    <tr>
+                        <td class="no_case">Protein name</td>
+                        <td>RecName: Full=Pyrimidine/purine nucleoside phosphorylase;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EC=<a href="https://enzyme.expasy.org/EC/2.4.2.1">2.4.2.1</a>;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EC=<a href="https://enzyme.expasy.org/EC/2.4.2.2">2.4.2.2</a>;<br />
+AltName: Full=Adenosine phosphorylase;<br />
+AltName: Full=Cytidine phosphorylase;<br />
+AltName: Full=Guanosine phosphorylase;<br />
+AltName: Full=Inosine phosphorylase;<br />
+AltName: Full=Thymidine phosphorylase;<br />
+AltName: Full=Uridine phosphorylase;<br />
+AltName: Full=Xanthosine phosphorylase;</td>
+                    </tr>
+                
+            
+                
+                    
+                        
+                    
+                    <tr>
+                        <td class="no_case">Gene name</td>
+                        <td>Name=ppnP;</td>
+                    </tr>
+                
+            
+        </table>
+    </div>
+    <br/>
+    <div class="section-4-type-1">
+        <a name="comments"></a>
+        Comments
+        <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#comments" target="_blank" onclick="window_open('/unirule_web_view_HAMAP_rules.html#comments'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <div class="margin">
+    <table class="type-1">
+            
+             
+                
+                <tr><td class="no_case">FUNCTION</td><td>Catalyzes the phosphorolysis of diverse nucleosides, yielding D-ribose 1-phosphate and the respective free bases. Can use uridine, adenosine, guanosine, cytidine, thymidine, inosine and xanthosine as substrates. Also catalyzes the reverse reactions.</td></tr>
+                
+             
+                
+                <tr><td class="no_case">CATALYTIC ACTIVITY</td><td> Reaction=a purine D-ribonucleoside + phosphate = a purine nucleobase + alpha-D-ribose 1-phosphate; Xref=<a href="https://www.rhea-db.org/rhea/19805">Rhea:RHEA:19805</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:26386">ChEBI:CHEBI:26386</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43474">ChEBI:CHEBI:43474</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57720">ChEBI:CHEBI:57720</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:142355">ChEBI:CHEBI:142355</a>; EC=<a href="https://enzyme.expasy.org/EC/2.4.2.1">2.4.2.1</a>;</td></tr>
+                
+             
+                
+                <tr><td class="no_case">CATALYTIC ACTIVITY</td><td> Reaction=adenosine + phosphate = alpha-D-ribose 1-phosphate + adenine; Xref=<a href="https://www.rhea-db.org/rhea/27642">Rhea:RHEA:27642</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16335">ChEBI:CHEBI:16335</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16708">ChEBI:CHEBI:16708</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43474">ChEBI:CHEBI:43474</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57720">ChEBI:CHEBI:57720</a>; EC=<a href="https://enzyme.expasy.org/EC/2.4.2.1">2.4.2.1</a>;</td></tr>
+                
+             
+                
+                <tr><td class="no_case">CATALYTIC ACTIVITY</td><td> Reaction=cytidine + phosphate = cytosine + alpha-D-ribose 1-phosphate; Xref=<a href="https://www.rhea-db.org/rhea/52540">Rhea:RHEA:52540</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16040">ChEBI:CHEBI:16040</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17562">ChEBI:CHEBI:17562</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43474">ChEBI:CHEBI:43474</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57720">ChEBI:CHEBI:57720</a>; EC=<a href="https://enzyme.expasy.org/EC/2.4.2.2">2.4.2.2</a>;</td></tr>
+                
+             
+                
+                <tr><td class="no_case">CATALYTIC ACTIVITY</td><td> Reaction=guanosine + phosphate = alpha-D-ribose 1-phosphate + guanine; Xref=<a href="https://www.rhea-db.org/rhea/13233">Rhea:RHEA:13233</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16235">ChEBI:CHEBI:16235</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16750">ChEBI:CHEBI:16750</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43474">ChEBI:CHEBI:43474</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57720">ChEBI:CHEBI:57720</a>; EC=<a href="https://enzyme.expasy.org/EC/2.4.2.1">2.4.2.1</a>;</td></tr>
+                
+             
+                
+                <tr><td class="no_case">CATALYTIC ACTIVITY</td><td> Reaction=inosine + phosphate = alpha-D-ribose 1-phosphate + hypoxanthine; Xref=<a href="https://www.rhea-db.org/rhea/27646">Rhea:RHEA:27646</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17368">ChEBI:CHEBI:17368</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17596">ChEBI:CHEBI:17596</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43474">ChEBI:CHEBI:43474</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57720">ChEBI:CHEBI:57720</a>; EC=<a href="https://enzyme.expasy.org/EC/2.4.2.1">2.4.2.1</a>;</td></tr>
+                
+             
+                
+                <tr><td class="no_case">CATALYTIC ACTIVITY</td><td> Reaction=thymidine + phosphate = 2-deoxy-alpha-D-ribose 1-phosphate + thymine; Xref=<a href="https://www.rhea-db.org/rhea/16037">Rhea:RHEA:16037</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17748">ChEBI:CHEBI:17748</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17821">ChEBI:CHEBI:17821</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43474">ChEBI:CHEBI:43474</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57259">ChEBI:CHEBI:57259</a>; EC=<a href="https://enzyme.expasy.org/EC/2.4.2.2">2.4.2.2</a>;</td></tr>
+                
+             
+                
+                <tr><td class="no_case">CATALYTIC ACTIVITY</td><td> Reaction=uridine + phosphate = alpha-D-ribose 1-phosphate + uracil; Xref=<a href="https://www.rhea-db.org/rhea/24388">Rhea:RHEA:24388</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:16704">ChEBI:CHEBI:16704</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17568">ChEBI:CHEBI:17568</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43474">ChEBI:CHEBI:43474</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57720">ChEBI:CHEBI:57720</a>; EC=<a href="https://enzyme.expasy.org/EC/2.4.2.2">2.4.2.2</a>;</td></tr>
+                
+             
+                
+                <tr><td class="no_case">CATALYTIC ACTIVITY</td><td> Reaction=xanthosine + phosphate = alpha-D-ribose 1-phosphate + xanthine; Xref=<a href="https://www.rhea-db.org/rhea/27638">Rhea:RHEA:27638</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:17712">ChEBI:CHEBI:17712</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:18107">ChEBI:CHEBI:18107</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:43474">ChEBI:CHEBI:43474</a>, <a href="http://www.ebi.ac.uk/chebi/searchId.do?chebiId=CHEBI:57720">ChEBI:CHEBI:57720</a>; EC=<a href="https://enzyme.expasy.org/EC/2.4.2.1">2.4.2.1</a>;</td></tr>
+                
+             
+                
+                <tr><td class="no_case">SIMILARITY</td><td>Belongs to the nucleoside phosphorylase PpnP family.</td></tr>
+                
+            
+    </table>
+    </div>
+    <br/>
+    <div class="section-4-type-1">
+    <a name="keywords"></a>
+    Keywords
+    <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#keywords" target="_blank" onclick="window_open('/unirule_web_view_HAMAP_rules.html#keywords'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <div class="margin">
+    <table class="type-1">
+            
+            
+                
+                    <tr><td class="no_case"><a href="https://www.uniprot.org/keywords?query=(name=Glycosyltransferase)">Glycosyltransferase</a></td></tr>
+                                
+            
+                
+                    <tr><td class="no_case"><a href="https://www.uniprot.org/keywords?query=(name=Transferase)">Transferase</a></td></tr>
+                                
+            
+    </table>
+    </div>
+    <br />
+    <div class="section-4-type-1">
+    <a name="gene_ontology"></a>
+    Gene Ontology
+    <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#gene_ontology" target="_blank" onclick="window_open('/unirule_web_view_HAMAP_rules.html#gene_ontology'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <div class="margin">
+        <table class="type-1">
+            
+             
+                
+                <tr><td class="no_case"><a href="https://www.ebi.ac.uk/QuickGO/term/GO:0004731">GO:0004731</a>; Molecular function:purine-nucleoside phosphorylase activity</td></tr>
+                                
+             
+                
+                <tr><td class="no_case"><a href="https://www.ebi.ac.uk/QuickGO/term/GO:0016154">GO:0016154</a>; Molecular function:pyrimidine-nucleoside phosphorylase activity</td></tr>
+                                
+            
+    </table>
+    </div>
+    <br />
+    <div class="section-4-type-1">
+    <a name="crossrefs"></a>
+    Cross-references
+    <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#crossrefs" target="_blank" onclick="window_open('/unirule_web_view_HAMAP_rules.html#crossrefs'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <div class="margin">
+    <table class="type-1">
+     
+    <tr>
+        <td valign="top">Pfam</td>
+        <td><a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF06865" target="_blank">PF06865</a>; DUF1255; 1;</td>
+    </tr>
+    
+    </table>
+    </div>
+    <br />
+    <div class="section-4-type-1">
+    <a name="features"></a>
+    Features
+    <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#features" target="_blank" onclick="window_open('/unirule_web_view_HAMAP_rules.html#features'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <table class="type-1">
+    
+    </table>
+    <br />
+    <div class="section-3-type-1">
+    <a name="additional"></a>
+    Additional information
+    <span class="docu"> [<a href="/unirule_web_view_HAMAP_rules.html#additional" target="_blank" onclick="window_open('/unirule_web_view_HAMAP_rules.html#additional'); return false;">?</a>]</span>
+    </div>
+    <br />
+    <div class="margin">
+        <table class="type-1">
+            <tr>
+                <td>Size range</td>
+                <td property="schema:alternateName">92-111 amino acids</td>
+            </tr>
+            <tr>
+                <td>Related rules</td>
+                <td property="schema:alternateName">
+                 
+                None<br />
+                
+                </td>
+            </tr>
+            <tr>
+                <td>Fusion</td>
+                <td property="schema:alternateName"> Nter: None Cter: None</td>
+            </tr>
+            
+        </table>
+    </div>
+    <br/>
+    <div class="section-3-type-1"><br /></div>
+    <div><br /><a href="/rule/MF_01537.txt">View rule in raw text format (no links)</a></div>    </main>
+    <!-- end of main, start of footer -->
+    <footer class="footer-grid">
+	    <div class="footer-elmt">
+            <img alt="SIB logo" src="/images/sib_images/sib-mark.svg">
+		</div>
+		<div class="footer-elmt" property="schema:creator" typeof="schema:NGO">
+           <a href="https://www.expasy.org" target="_blank">Expasy</a> 
+		   is operated by the <a property="schema:url" href="https://sib.swiss" target="_blank">SIB Swiss Institute of Bioinformatics</a>
+		   <br>
+		   <a href="https://www.expasy.org/terms-of-use" target="_blank">Terms of Use</a>
+           |
+           <a href="https://www.sib.swiss/privacy-policy" target="_blank">Privacy policy</a>
+	    </div>
+	    <div class="footer-elmt">
+	        <a href="#top">Back to the top</a>
+	    </div>
+    </footer>
+    <!-- end of footer -->
+</body>
+</html>
