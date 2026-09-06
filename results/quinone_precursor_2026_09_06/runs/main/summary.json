@@ -1,0 +1,1169 @@
+{
+  "study": {
+    "study_id": "putida-precursor-supply-diagnostic-v1",
+    "evaluation_role": "development",
+    "organism": "Putida",
+    "question": "How sensitive is isolated PP_5317 deletion growth to a hypothetical external 4HBZ supply, and does the existing model permit donor secretion without adding transport?",
+    "base_model": "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz",
+    "base_model_sha256": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812",
+    "parent_manifest": "results/ppnp_repair_2026_09_06/runs/main/manifest.json",
+    "parent_gene_map": "results/ppnp_repair_2026_09_06/runs/main/both_forward/gene_map.json",
+    "model_context": "results/quinone_precursor_2026_09_06/evidence/model_context.json",
+    "evidence_directory": "results/quinone_precursor_2026_09_06/evidence",
+    "evidence_inputs": [
+      "results/quinone_precursor_2026_09_06/evidence/model_context.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.json",
+      "results/quinone_precursor_2026_09_06/evidence/fitness_context.json"
+    ],
+    "protocol": {
+      "processes": 2,
+      "solver": "glpk",
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "carbon_uptake": -10.0,
+      "complete_medium_transport": true,
+      "drop_rich_medium_essentials": false
+    },
+    "gene_loci": [
+      "PP_5317",
+      "PP_5318",
+      "PP_1376"
+    ],
+    "solver_tolerance": 1e-09,
+    "residual_tolerance": 1e-08,
+    "objective_tolerance": 1e-08,
+    "production_threshold": 1e-06,
+    "growth_fractions": [
+      0.1,
+      0.5,
+      0.95
+    ],
+    "uptake_capacity": 0.001,
+    "diagnostic_condition": {
+      "name": "D-Glucose",
+      "media": "MOPS minimal media_noCarbon"
+    },
+    "dose_multipliers": [
+      0,
+      0.1,
+      0.5,
+      1,
+      2
+    ],
+    "growth_controls": [
+      {
+        "id": "supply_wild_type",
+        "loci": []
+      },
+      {
+        "id": "supply_pp5317",
+        "loci": [
+          "PP_5317"
+        ]
+      },
+      {
+        "id": "supply_pp5317_pcaK",
+        "loci": [
+          "PP_5317",
+          "PP_1376"
+        ]
+      },
+      {
+        "id": "supply_pp5317_inner_transport_closed",
+        "loci": [
+          "PP_5317"
+        ],
+        "close_reactions": [
+          "UHBZ1t_pp"
+        ]
+      },
+      {
+        "id": "supply_pp5317_outer_transport_closed",
+        "loci": [
+          "PP_5317"
+        ],
+        "close_reactions": [
+          "4HBZtex"
+        ]
+      },
+      {
+        "id": "supply_pp5317_ubiA",
+        "loci": [
+          "PP_5317",
+          "PP_5318"
+        ]
+      },
+      {
+        "id": "supply_pp5317_catabolism_closed",
+        "loci": [
+          "PP_5317"
+        ],
+        "close_reactions": [
+          "4HBHYOX"
+        ]
+      }
+    ],
+    "donor_growth_fraction": 0.95,
+    "donor_controls": [
+      {
+        "id": "donor_wild_type"
+      },
+      {
+        "id": "donor_transport_closed",
+        "close_reactions": [
+          "UHBZ1t_pp"
+        ]
+      }
+    ],
+    "witness_reactions": [
+      "Growth",
+      "CHRPL",
+      "EX_4hbz_e",
+      "EX_T4hcinnm_e",
+      "4HBHYOX",
+      "sink_2ohph_c",
+      "HBZOPT",
+      "UHBZ1t_pp",
+      "4HBZtex",
+      "DMQMT",
+      "ATPM"
+    ],
+    "decision_rule": "No reaction, gene assignment, biomass demand or historical medium definition is changed. Do not rescore the fitness benchmark or call hypothetical supply a correction. Preserve every result and failed attempt. Require independently agreeing solver objectives and primal certificates; failure never means zero growth.",
+    "interpretation_limits": [
+      "No extracellular precursor concentration, donor secretion rate, mutant-specific uptake rate, or observed cross-feeding is established by this diagnostic.",
+      "Uptake/secretion units are mmol/gDW/h, not medium concentration. Population composition, biomass and elapsed time are unavailable for a concentration conversion.",
+      "Minimum uptake holds the mutant at a specified fraction of parental model growth and forbids simultaneous net secretion; this is a diagnostic LP, not a new physiological growth model.",
+      "A 4HBZ carbon-source condition is excluded from trace-uptake optimization because reducing its uptake would also remove the main carbon substrate. Coumarate conditions remain included as natural precursor-supply controls.",
+      "Donor secretion is maximized while retaining at least 95% of parental model growth. It establishes possible flux under inherited assumptions without regulation, not secretion that occurs in cells.",
+      "Pooled transposon relative fitness is not identical to isolated complete-gene-deletion growth; exact generations, insertion-specific effects and metabolite exchange remain unresolved.",
+      "Inherited PpnP/quinone/donor/maintenance assumptions persist; ATP maintenance lower bound is zero.",
+      "Energy tests close all boundaries, so the two energy contexts are not independent tests of metabolite sharing."
+    ]
+  },
+  "study_fingerprint": "769a9a4cb904ebbaac48caf4a15b43d0bef78f170c519a3b21c22a546f8813e4",
+  "condition_results": [
+    {
+      "condition": "L-Arginine | MOPS minimal media_noCarbon",
+      "wild_type": 0.8941814045533211,
+      "pp5317": -5.805909612319903e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.08941814045533211,
+          "minimum_uptake": 8.659422600743497e-06,
+          "epsilon_times_target": 8.6594226007435e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.44709070227666053,
+          "minimum_uptake": 4.329711300371751e-05,
+          "epsilon_times_target": 4.3297113003717504e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.8494723343256549,
+          "minimum_uptake": 8.226451470706326e-05,
+          "epsilon_times_target": 8.226451470706325e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+      "wild_type": 0.6846720343546814,
+      "pp5317": 3.674047353957551e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.06846720343546814,
+          "minimum_uptake": 6.6304940565719504e-06,
+          "epsilon_times_target": 6.630494056571955e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.3423360171773407,
+          "minimum_uptake": 3.315247028285978e-05,
+          "epsilon_times_target": 3.315247028285978e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.6504384326369472,
+          "minimum_uptake": 6.298969353743357e-05,
+          "epsilon_times_target": 6.298969353743357e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "L-Histidine | MOPS minimal media_noCarbon",
+      "wild_type": 0.7719618756866111,
+      "pp5317": -1.9766287218862427e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.07719618756866112,
+          "minimum_uptake": 7.4758254635951366e-06,
+          "epsilon_times_target": 7.47582546359514e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.38598093784330556,
+          "minimum_uptake": 3.737912731797569e-05,
+          "epsilon_times_target": 3.73791273179757e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.7333637819022806,
+          "minimum_uptake": 7.102034190415379e-05,
+          "epsilon_times_target": 7.102034190415383e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+      "wild_type": 0.49794329771249984,
+      "pp5317": -1.2231490840667195e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.049794329771249986,
+          "minimum_uptake": 4.822177495688733e-06,
+          "epsilon_times_target": 4.8221774956887364e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.24897164885624992,
+          "minimum_uptake": 2.411088747844367e-05,
+          "epsilon_times_target": 2.411088747844368e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.47304613282687485,
+          "minimum_uptake": 4.581068620904298e-05,
+          "epsilon_times_target": 4.5810686209042995e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+      "wild_type": 0.6120553034432874,
+      "pp5317": -5.135456225545738e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.06120553034432874,
+          "minimum_uptake": 5.927259838499217e-06,
+          "epsilon_times_target": 5.92725983849922e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.3060276517216437,
+          "minimum_uptake": 2.9636299192496094e-05,
+          "epsilon_times_target": 2.96362991924961e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.581452538271123,
+          "minimum_uptake": 5.630896846574256e-05,
+          "epsilon_times_target": 5.630896846574259e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+      "wild_type": 0.6043558491711588,
+      "pp5317": -1.9899841743967942e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.060435584917115884,
+          "minimum_uptake": 5.852696860564369e-06,
+          "epsilon_times_target": 5.852696860564372e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.3021779245855794,
+          "minimum_uptake": 2.9263484302821853e-05,
+          "epsilon_times_target": 2.926348430282186e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.5741380567126009,
+          "minimum_uptake": 5.560062017536152e-05,
+          "epsilon_times_target": 5.560062017536153e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Vanillin | MOPS minimal media_noCarbon",
+      "wild_type": 0.9212894853709135,
+      "pp5317": -1.148005366323864e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.09212894853709136,
+          "minimum_uptake": 8.921942405449012e-06,
+          "epsilon_times_target": 8.921942405449017e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.46064474268545674,
+          "minimum_uptake": 4.460971202724506e-05,
+          "epsilon_times_target": 4.460971202724508e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.8752250111023677,
+          "minimum_uptake": 8.475845285176564e-05,
+          "epsilon_times_target": 8.475845285176564e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "1,2-Propanediol | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    },
+    {
+      "condition": "Sodium propionate | MOPS minimal media_noCarbon",
+      "wild_type": 0.399599983917652,
+      "pp5317": 9.564279018032893e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.0399599983917652,
+          "minimum_uptake": 3.86980216136547e-06,
+          "epsilon_times_target": 3.869802161365471e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.199799991958826,
+          "minimum_uptake": 1.9349010806827354e-05,
+          "epsilon_times_target": 1.9349010806827357e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.3796199847217694,
+          "minimum_uptake": 3.6763120532971963e-05,
+          "epsilon_times_target": 3.676312053297198e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    },
+    {
+      "condition": "Vanillic Acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.8612053884933981,
+      "pp5317": 2.6209544423337993e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.08612053884933982,
+          "minimum_uptake": 8.340076596344732e-06,
+          "epsilon_times_target": 8.340076596344737e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.43060269424669906,
+          "minimum_uptake": 4.1700382981723683e-05,
+          "epsilon_times_target": 4.1700382981723683e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.8181451190687282,
+          "minimum_uptake": 7.92307276666427e-05,
+          "epsilon_times_target": 7.9230727665275e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Protocatechuic Acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.7879655553373216,
+      "pp5317": -5.585666351602061e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.07879655553373216,
+          "minimum_uptake": 7.630808137755811e-06,
+          "epsilon_times_target": 7.630808137755814e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.3939827776686608,
+          "minimum_uptake": 3.815404068940544e-05,
+          "epsilon_times_target": 3.815404068877907e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.7485672775704555,
+          "minimum_uptake": 7.249267730816548e-05,
+          "epsilon_times_target": 7.249267730868022e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.715798332439044,
+      "pp5317": 0.715798332439048,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "4HBZ is already a main carbon substrate; a trace-only cap would confound carbon starvation with precursor supply"
+    },
+    {
+      "condition": "L-Lysine | MOPS minimal media_noCarbon",
+      "wild_type": 0.745780849398173,
+      "pp5317": 9.313306752955398e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.07457808493981731,
+          "minimum_uptake": 7.222283431074328e-06,
+          "epsilon_times_target": 7.222283431074331e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.3728904246990865,
+          "minimum_uptake": 3.611141715537164e-05,
+          "epsilon_times_target": 3.6111417155371654e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.7084918069282643,
+          "minimum_uptake": 6.861169259520609e-05,
+          "epsilon_times_target": 6.861169259520613e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "p-Coumaric acid | MOPS minimal media_noCarbon",
+      "wild_type": 1.0074059424209485,
+      "pp5317": 1.0074059424219604,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.10074059424209486,
+          "minimum_uptake": 0,
+          "epsilon_times_target": 9.755910536163551e-06,
+          "coumarate_uptake_allowed": true
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.5037029712104742,
+          "minimum_uptake": 0,
+          "epsilon_times_target": 4.8779552680817746e-05,
+          "coumarate_uptake_allowed": true
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.957035645299901,
+          "minimum_uptake": 0,
+          "epsilon_times_target": 9.268115009355372e-05,
+          "coumarate_uptake_allowed": true
+        }
+      ]
+    },
+    {
+      "condition": "benzoic acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.7984952110750468,
+      "pp5317": -5.91211205094159e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.07984952110750469,
+          "minimum_uptake": 7.732779324372977e-06,
+          "epsilon_times_target": 7.73277932437298e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.3992476055375234,
+          "minimum_uptake": 3.8663896621864895e-05,
+          "epsilon_times_target": 3.86638966218649e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.7585704505212945,
+          "minimum_uptake": 7.346140358154329e-05,
+          "epsilon_times_target": 7.34614035815433e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Ferulic Acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    },
+    {
+      "condition": "D-Glucose | MOPS minimal media_noCarbon",
+      "wild_type": 0.919264794239079,
+      "pp5317": -2.882822201756378e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.09192647942390791,
+          "minimum_uptake": 8.902334912244187e-06,
+          "epsilon_times_target": 8.902334911871926e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.4596323971195395,
+          "minimum_uptake": 4.4511674559326665e-05,
+          "epsilon_times_target": 4.451167455935963e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.873301554527125,
+          "minimum_uptake": 8.457218166253123e-05,
+          "epsilon_times_target": 8.457218166278329e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Phenylacetic acid | MOPS minimal media_noCarbon",
+      "wild_type": 1.1193031892249183,
+      "pp5317": 1.289384002072797e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.11193031892249183,
+          "minimum_uptake": 1.0839544732760717e-05,
+          "epsilon_times_target": 1.0839544732760722e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.5596515946124592,
+          "minimum_uptake": 5.419772366380863e-05,
+          "epsilon_times_target": 5.4197723663803614e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 1.0633380297636723,
+          "minimum_uptake": 0.00010297567496131928,
+          "epsilon_times_target": 0.00010297567496122685,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    },
+    {
+      "condition": "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    },
+    {
+      "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+      "wild_type": 1.0006547666604337,
+      "pp5317": -1.1806304809587825e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.10006547666604337,
+          "minimum_uptake": 9.690530867491732e-06,
+          "epsilon_times_target": 9.690530867491736e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.5003273833302169,
+          "minimum_uptake": 4.8452654337458663e-05,
+          "epsilon_times_target": 4.845265433745868e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.950622028327412,
+          "minimum_uptake": 9.206004324117148e-05,
+          "epsilon_times_target": 9.206004324117149e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Decanoic acid | MOPS minimal media_noCarbon",
+      "wild_type": 1.793252601639021,
+      "pp5317": 3.3006770080321253e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.1793252601639021,
+          "minimum_uptake": 1.7366198881346815e-05,
+          "epsilon_times_target": 1.7366198881346826e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.8966263008195104,
+          "minimum_uptake": 8.683099440673411e-05,
+          "epsilon_times_target": 8.683099440673413e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 1.7035899715570697,
+          "minimum_uptake": 0.00016497888937279482,
+          "epsilon_times_target": 0.00016497888937279484,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Lauric acid | MOPS minimal media_noCarbon",
+      "wild_type": 2.1832331663086513,
+      "pp5317": -9.576049846639353e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.21832331663086513,
+          "minimum_uptake": 2.114284475919065e-05,
+          "epsilon_times_target": 2.114284475919066e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 1.0916165831543256,
+          "minimum_uptake": 0.00010571422379593522,
+          "epsilon_times_target": 0.0001057142237959533,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 2.0740715079932186,
+          "minimum_uptake": 0.00020085702521230236,
+          "epsilon_times_target": 0.00020085702521231125,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Octanoic acid | MOPS minimal media_noCarbon",
+      "wild_type": 1.3969536841497237,
+      "pp5317": -1.0270380397476394e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.13969536841497238,
+          "minimum_uptake": 1.352836487441924e-05,
+          "epsilon_times_target": 1.3528364874419246e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.6984768420748618,
+          "minimum_uptake": 6.764182437209622e-05,
+          "epsilon_times_target": 6.764182437209623e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 1.3271059999422374,
+          "minimum_uptake": 0.00012851946630698278,
+          "epsilon_times_target": 0.00012851946630698283,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Myristic acid | MOPS minimal media_noCarbon",
+      "wild_type": 2.5471053606934424,
+      "pp5317": 2.7629929503345816e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.25471053606934424,
+          "minimum_uptake": 2.4666652219055914e-05,
+          "epsilon_times_target": 2.4666652219055925e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 1.2735526803467212,
+          "minimum_uptake": 0.00012333326109527959,
+          "epsilon_times_target": 0.0001233332610952796,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 2.41975009265877,
+          "minimum_uptake": 0.00023433319608103117,
+          "epsilon_times_target": 0.00023433319608103125,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Oleic acid | MOPS minimal media_noCarbon",
+      "wild_type": 3.2748497494629882,
+      "pp5317": -4.0632547885227706e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.32748497494629886,
+          "minimum_uptake": 3.171426713878609e-05,
+          "epsilon_times_target": 3.17142671387861e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 1.6374248747314941,
+          "minimum_uptake": 0.0001585713356939305,
+          "epsilon_times_target": 0.0001585713356939305,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 3.111107261989839,
+          "minimum_uptake": 0.0003012855378186302,
+          "epsilon_times_target": 0.0003012855378184679,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Butanol | MOPS minimal media_noCarbon",
+      "wild_type": 0.7277443887695597,
+      "pp5317": -7.816363501663194e-17,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.07277443887695598,
+          "minimum_uptake": 7.047614919730308e-06,
+          "epsilon_times_target": 7.047614919730311e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.36387219438477986,
+          "minimum_uptake": 3.523807459865153e-05,
+          "epsilon_times_target": 3.5238074598651546e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.6913571693310817,
+          "minimum_uptake": 6.695234173743793e-05,
+          "epsilon_times_target": 6.695234173743794e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    },
+    {
+      "condition": "Ethanol | MOPS minimal media_noCarbon",
+      "wild_type": 0.36387219438477664,
+      "pp5317": -7.813527111350643e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.03638721943847766,
+          "minimum_uptake": 3.5238074598651223e-06,
+          "epsilon_times_target": 3.5238074598651236e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.18193609719238832,
+          "minimum_uptake": 1.7619037299325617e-05,
+          "epsilon_times_target": 1.7619037299325617e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.3456785846655378,
+          "minimum_uptake": 3.347617086871868e-05,
+          "epsilon_times_target": 3.347617086871867e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "L-Valine | MOPS minimal media_noCarbon",
+      "wild_type": 0.7770254376414333,
+      "pp5317": -9.10461518038082e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.07770254376414333,
+          "minimum_uptake": 7.524861959555098e-06,
+          "epsilon_times_target": 7.524861959555102e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.38851271882071664,
+          "minimum_uptake": 3.7624309797775504e-05,
+          "epsilon_times_target": 3.762430979777551e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.7381741657593616,
+          "minimum_uptake": 7.148618861577347e-05,
+          "epsilon_times_target": 7.148618861577346e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "L-Leucine | MOPS minimal media_noCarbon",
+      "wild_type": 0.9728525814151051,
+      "pp5317": 1.6792332806229771e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.09728525814151051,
+          "minimum_uptake": 9.421289223640146e-06,
+          "epsilon_times_target": 9.42128922364015e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.48642629070755256,
+          "minimum_uptake": 4.710644611820074e-05,
+          "epsilon_times_target": 4.710644611820075e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.9242099523443498,
+          "minimum_uptake": 8.950224762458143e-05,
+          "epsilon_times_target": 8.950224762458141e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "L-Isoleucine | MOPS minimal media_noCarbon",
+      "wild_type": 0.9990610404133805,
+      "pp5317": -4.842067424812599e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.09990610404133805,
+          "minimum_uptake": 9.675096919734762e-06,
+          "epsilon_times_target": 9.675096919734765e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.49953052020669025,
+          "minimum_uptake": 4.83754845986644e-05,
+          "epsilon_times_target": 4.837548459867383e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.9491079883927115,
+          "minimum_uptake": 9.191342073749111e-05,
+          "epsilon_times_target": 9.191342073748027e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    },
+    {
+      "condition": "D-Glucose | RCH2_defined_noCarbon",
+      "wild_type": 0.9197612011782107,
+      "pp5317": -9.392198668070472e-17,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.09197612011782108,
+          "minimum_uptake": 8.907142211181743e-06,
+          "epsilon_times_target": 8.907142210979237e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.45988060058910535,
+          "minimum_uptake": 4.453571105401445e-05,
+          "epsilon_times_target": 4.453571105489618e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.8737731411193002,
+          "minimum_uptake": 8.461785100433232e-05,
+          "epsilon_times_target": 8.461785100430275e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Potassium acetate | RCH2_defined_noCarbon",
+      "wild_type": 0.24775048355707902,
+      "pp5317": 4.545733749088376e-17,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.0247750483557079,
+          "minimum_uptake": 2.3992627510868447e-06,
+          "epsilon_times_target": 2.399262751086846e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.12387524177853951,
+          "minimum_uptake": 1.1996313755434226e-05,
+          "epsilon_times_target": 1.199631375543423e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.23536295937922505,
+          "minimum_uptake": 2.279299613532503e-05,
+          "epsilon_times_target": 2.2792996135325032e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+      "wild_type": 0.7649047922107323,
+      "pp5317": 2.6529144493918805e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.07649047922107323,
+          "minimum_uptake": 7.407483326490544e-06,
+          "epsilon_times_target": 7.407483326490549e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.38245239610536613,
+          "minimum_uptake": 3.703741663245515e-05,
+          "epsilon_times_target": 3.7037416632452745e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.7266595526001957,
+          "minimum_uptake": 7.03710916016602e-05,
+          "epsilon_times_target": 7.037109160166021e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "Vanillin | RCH2_defined_noCarbon",
+      "wild_type": 0.9218157571925315,
+      "pp5317": -1.6301032395114707e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.09218157571925316,
+          "minimum_uptake": 8.927038921752133e-06,
+          "epsilon_times_target": 8.927038921752138e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.46090787859626575,
+          "minimum_uptake": 4.463519460942586e-05,
+          "epsilon_times_target": 4.463519460876068e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.8757249693329049,
+          "minimum_uptake": 8.48068697566453e-05,
+          "epsilon_times_target": 8.480686975664529e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "p-Coumaric acid | RCH2_defined_noCarbon",
+      "wild_type": 1.0079710711601053,
+      "pp5317": 1.007971071160112,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.10079710711601053,
+          "minimum_uptake": 0,
+          "epsilon_times_target": 9.76138335023826e-06,
+          "coumarate_uptake_allowed": true
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.5039855355800527,
+          "minimum_uptake": 0,
+          "epsilon_times_target": 4.8806916751191304e-05,
+          "coumarate_uptake_allowed": true
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.9575725176021,
+          "minimum_uptake": 0,
+          "epsilon_times_target": 9.273314182726348e-05,
+          "coumarate_uptake_allowed": true
+        }
+      ]
+    },
+    {
+      "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.764904792210214,
+      "pp5317": -1.27978386706276e-15,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.07649047922102141,
+          "minimum_uptake": 7.407483326485527e-06,
+          "epsilon_times_target": 7.407483326485531e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.382452396105107,
+          "minimum_uptake": 3.703741663243164e-05,
+          "epsilon_times_target": 3.7037416632427646e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.7266595525997033,
+          "minimum_uptake": 7.03710916016204e-05,
+          "epsilon_times_target": 7.037109160161253e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.6742982156523499,
+      "pp5317": -1.8298413922280855e-16,
+      "minimum_uptake": [
+        {
+          "fraction": 0.1,
+          "target_growth": 0.067429821565235,
+          "minimum_uptake": 6.53003202541189e-06,
+          "epsilon_times_target": 6.530032025411892e-06,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.5,
+          "target_growth": 0.33714910782617497,
+          "minimum_uptake": 3.265016012705945e-05,
+          "epsilon_times_target": 3.265016012705946e-05,
+          "coumarate_uptake_allowed": false
+        },
+        {
+          "fraction": 0.95,
+          "target_growth": 0.6405833048697324,
+          "minimum_uptake": 6.203530424141294e-05,
+          "epsilon_times_target": 6.203530424141297e-05,
+          "coumarate_uptake_allowed": false
+        }
+      ]
+    },
+    {
+      "condition": "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    },
+    {
+      "condition": "D-Lysine | MOPS minimal media_noCarbon",
+      "wild_type": 0.0,
+      "pp5317": 0.0,
+      "minimum_uptake": [],
+      "minimum_uptake_omission": "Wild-type model does not grow at the declared threshold"
+    }
+  ],
+  "energy_checks": [
+    {
+      "context": "parent",
+      "values": {
+        "atp": 0.0,
+        "nadh": 0.0,
+        "nadph": 0.0,
+        "q8h2": 0.0,
+        "h_p": 0.0
+      },
+      "note": "The energy test itself closes all boundaries, including the hypothetical supply."
+    },
+    {
+      "context": "hypothetical_supply",
+      "values": {
+        "atp": 0.0,
+        "nadh": 0.0,
+        "nadph": 0.0,
+        "q8h2": 0.0,
+        "h_p": 0.0
+      },
+      "note": "The energy test itself closes all boundaries, including the hypothetical supply."
+    }
+  ],
+  "n_cases": 199,
+  "n_solver_runs": 398,
+  "epsilon": 9.68418998275772e-05,
+  "seconds": 77.45123410224915,
+  "scope": "Hypothetical supply and secretion feasibility only. No model patch, new reaction, fitness rescore, concentration estimate or evidence of observed cross-feeding."
+}
