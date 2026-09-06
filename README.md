@@ -8,6 +8,8 @@ Start with the **[6 September scientific audit](docs/reviews/2026-09-06-scientif
 
 The follow-up development sprint completes both existing patch configurations across all four draft organisms. Read the **[new sprint results](docs/sprints/2026-09-06-development-sprint.md)** together with two mechanism investigations: the **[historical ATP-synthase scoring issue](docs/evidence/07-atp-synthase-mechanism-audit.md)** and the **[closed quinone pool hidden by a biomass deletion](docs/evidence/08-quinone-biomass-audit.md)**. A higher development score does not resolve these biological questions. The **[evaluation protocol](docs/studies/evaluation-protocol-v1.md)** records exposure and the procedure for a future independent test; its file-freeze utility is available now.
 
+The **[quinone repair sprint](docs/sprints/2026-09-06-quinone-repair.md)** supplies a source-derived five-reaction candidate that restores net synthesis and permits growth with a quinone requirement. That requirement also creates 65 new disagreements with measured gene fitness, so the candidate is not accepted as a biological correction. The sprint includes explicit gene-evidence grades, a coverage audit, saved candidate models, independent numerical/metric verification and reusable [cofactor checks](docs/studies/cofactor-audit-method.md).
+
 Then read **`docs/roadmap/00-landscape-and-roadmap.md`** — the standing charter: where the field
 stands in 2026, the diagnosis, the workstreams, the decision log, and the current sprint. The
 `docs/evidence/` briefs hold the sourced findings behind it; `docs/sprints/` holds the results of
@@ -27,7 +29,7 @@ data/
   reference/         curated mapping tables: Fitness Browser media and carbon sources -> BiGG identifiers
   iem/               inborn-error-of-metabolism biomarker ground truth v0.1 (linked to Orphanet/OMIM/HPO/HMDB)
 models/gapfilled/  the four EMBL draft models minimally gap-filled for their experimental media (added reactions in *_gapfill.json)
-models/bigg/       curated BiGG models used in comparisons (iJN1463, CC-BY-SA 4.0 per bigg.ucsd.edu)
+models/bigg/       curated BiGG source model iJN1463 (UC Regents research/non-profit terms; see models/bigg/NOTICE)
 tools/         small helpers (browser-download collectors, GenPept parser)
 external/      (git-ignored) clones of public repositories used as data/model sources — see gembench-README.md
 ```

@@ -1,0 +1,475 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-09-06T11:29:46Z",
+  "plan": {
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_role": "development",
+    "note": "Frozen before model preparation or interventions; hashing does not establish independence.",
+    "paths": [
+      "data/fitness_browser/Putida/experiments.tsv",
+      "data/fitness_browser/Putida/fit_logratios.tsv",
+      "data/fitness_browser/Putida/genes.tsv",
+      "data/fitness_browser/Putida/specific_phenotypes.tsv",
+      "data/genpept/Putida_genpept_map.tsv",
+      "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz",
+      "data/reference/feba_media_extract.tsv",
+      "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "data/reference/fitness_browser_media_bigg.tsv",
+      "data/reference/gpr_patches_v0.2.json",
+      "data/reference/gpr_patches_v0.3.json",
+      "data/reference/gpr_patches_v0.4.json",
+      "data/reference/model_patches_v0.4.json",
+      "data/reference/universe_patches_v0.1.json",
+      "data/studies/exposure_registry_v1.json",
+      "data/studies/quinone_repair_v1.json",
+      "gembench/__init__.py",
+      "gembench/cards.py",
+      "gembench/checks.py",
+      "gembench/cofactor.py",
+      "gembench/comparison.py",
+      "gembench/datasets.py",
+      "gembench/fitness_browser.py",
+      "gembench/frog.py",
+      "gembench/gapfill.py",
+      "gembench/gene_mapping.py",
+      "gembench/media.py",
+      "gembench/metrics.py",
+      "gembench/patches.py",
+      "gembench/protocols/__init__.py",
+      "gembench/protocols/carbon_fitness_generic.py",
+      "gembench/protocols/ecoli_carbon_fitness.py",
+      "gembench/protocols/yeast_essential.py",
+      "gembench/study.py",
+      "gembench/survey.py",
+      "gembench/wbm.py",
+      "gembench/wbm_iem.py",
+      "models/bigg/iJN1463.xml",
+      "models/gapfilled/Putida.xml.gz",
+      "models/gapfilled/Putida_gapfill.json",
+      "requirements-audit.txt",
+      "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+      "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+      "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+      "scripts/map_quinone_pathway.py",
+      "scripts/run_carbon_fitness_generic.py",
+      "scripts/run_quinone_biomass_sensitivity.py",
+      "scripts/run_quinone_repair.py"
+    ],
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "recipe": {
+      "base_model_patch_version": "0.4",
+      "candidate_path": "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+      "caveats": [
+        "These are exposed development data; no independent validation set exists.",
+        "Source-model reaction transfer retains its bounds, oxygenase abstractions, Q8 representation and unmodified upstream assumptions.",
+        "The sequence-informed GPR arm encodes an inferred UbiD/UbiX cofactor dependency, not a heteromeric catalyst; UbiB accessory requirements are not represented.",
+        "No exported fitness row does not establish mutant-library absence, essentiality or dispensability.",
+        "Native KT2440 quinone tail length, pool size and reducing-donor specificity remain unresolved."
+      ],
+      "comparison": {
+        "bootstrap_unit": "gene",
+        "coverage": "Report every mapped condition, growing conditions, and scored/annotated gene counts separately",
+        "primary": "Each scored arm versus baseline on aligned common finite gene-condition observations where both wild types grow",
+        "resamples": 500,
+        "seed": 0
+      },
+      "configurations": [
+        {
+          "add_pathway": false,
+          "biomass_coefficient_source": "none",
+          "gpr_overrides": {},
+          "id": "baseline",
+          "run_benchmark": true
+        },
+        {
+          "add_pathway": false,
+          "biomass_coefficient_source": "template",
+          "gpr_overrides": {},
+          "id": "demand_only",
+          "run_benchmark": true
+        },
+        {
+          "add_pathway": true,
+          "biomass_coefficient_source": "none",
+          "gpr_overrides": {},
+          "id": "curated_path_only",
+          "run_benchmark": true
+        },
+        {
+          "add_pathway": true,
+          "biomass_coefficient_source": "template",
+          "gpr_overrides": {},
+          "id": "curated_path_template",
+          "run_benchmark": true
+        },
+        {
+          "add_pathway": true,
+          "biomass_coefficient_source": "curated",
+          "gpr_overrides": {},
+          "id": "curated_path_curated",
+          "run_benchmark": true
+        },
+        {
+          "add_pathway": true,
+          "biomass_coefficient_source": "template",
+          "gpr_overrides": {
+            "OMMBLHX": "PP_0427",
+            "OPHBDC": "PP_5213 and PP_0548",
+            "OPHHX": "PP_5197"
+          },
+          "id": "sequence_path_template",
+          "run_benchmark": false
+        }
+      ],
+      "decision_rule": "Retain every arm, failure and adverse result. Restore synthesis and assess model consistency before interpreting benchmark agreement. Do not choose reactions, gene rules, coefficients or reducing donors using fitness outcomes. Both transfer and sequence-informed variants remain candidates with source/evidence grades, not accepted physiological corrections.",
+      "evaluation_role": "development",
+      "gene_evidence_path": "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+      "organism": "Putida",
+      "physical_checks": [
+        "Source reaction and gene-alias agreement",
+        "Net cofactor production under the fixed glucose medium",
+        "Exact declared-pool row-sum certificate",
+        "Wild-type glucose growth",
+        "Energy-from-nothing checks for all available standard currencies",
+        "Source-versus-target elemental and charge balance with incomplete metadata disclosed",
+        "Single-gene deletions of declared pathway/support loci including unscored genes; absent genes remain unrepresented"
+      ],
+      "physical_condition": {
+        "media": "MOPS minimal media_noCarbon",
+        "name": "D-Glucose"
+      },
+      "physical_settings": {
+        "egc_threshold": 1e-06,
+        "feasibility_tolerance": 1e-09,
+        "production_capacity": 1000.0,
+        "production_threshold": 1e-06
+      },
+      "pool_weights": {
+        "q8_c": 1.0,
+        "q8h2_c": 1.0
+      },
+      "protocol": {
+        "carbon_uptake": -10.0,
+        "complete_medium_transport": true,
+        "drop_rich_medium_essentials": false,
+        "fitness_threshold": -2.0,
+        "growth_threshold": 0.001,
+        "processes": 2,
+        "solver": "glpk"
+      },
+      "question": "Can a declared five-reaction source-model transfer restore net ubiquinone production and growth-associated demand, and which gene hypotheses remain invisible to the exported fitness benchmark?",
+      "sequence_arm_benchmark_rule": "Do not repeat the fitness simulation only if all changed gene rules involve exclusively loci without exported fitness rows and the full stoichiometry and bounds equal curated_path_template. Record the check. Otherwise stop for a documented new plan before evaluating an additional benchmark arm. Its targeted gene-deletion predictions are separate unvalidated hypotheses.",
+      "study_id": "putida-quinone-repair-v1",
+      "targeted_gene_loci": [
+        "PP_5317",
+        "PP_0528",
+        "PP_0687",
+        "PP_5318",
+        "PP_5213",
+        "PP_0548",
+        "PP_5197",
+        "PP_1765",
+        "PP_5199",
+        "PP_5011",
+        "PP_0427",
+        "PP_5012",
+        "PP_5013"
+      ],
+      "transfer_metadata_policy": {
+        "basis_path": "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+        "compartment_aliases": {
+          "c": "C_c"
+        },
+        "expected_shared_charge_differences": {
+          "amet_c": {
+            "source": 1,
+            "target": 0
+          },
+          "h_c": {
+            "source": 1,
+            "target": 0
+          }
+        },
+        "note": "Existing target metabolite metadata are preserved. Source c and target C_c both denote the cytosol; only copied new-metabolite compartment labels are normalized. Stored source and target metabolite metadata are therefore not byte-identical. Shared target charges of zero are placeholders, not newly validated chemical charges. Any undeclared formula, compartment, or charge difference aborts the transfer."
+      }
+    },
+    "runtime_versions": {
+      "cobra": "0.32.1",
+      "glpk": "5.0",
+      "highs": "1.15.1",
+      "numpy": "2.5.2",
+      "optlang": "1.9.1",
+      "python": "3.14.3",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.1"
+    },
+    "schema_version": 1,
+    "study_id": "putida-quinone-repair-v1"
+  },
+  "files": [
+    {
+      "path": "data/fitness_browser/Putida/experiments.tsv",
+      "size_bytes": 159990,
+      "sha256": "6f1ba8542a731706fff59b121ccd51306fcd249d3cfeb9fa4d3f4c23970794c8"
+    },
+    {
+      "path": "data/fitness_browser/Putida/fit_logratios.tsv",
+      "size_bytes": 10099508,
+      "sha256": "28f422b3aca5e0e4a8730bb7efbb97c177c7fe672b5180455d3494f474ca170e"
+    },
+    {
+      "path": "data/fitness_browser/Putida/genes.tsv",
+      "size_bytes": 464829,
+      "sha256": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e"
+    },
+    {
+      "path": "data/fitness_browser/Putida/specific_phenotypes.tsv",
+      "size_bytes": 346478,
+      "sha256": "31d857c63073569a6b01a4b6a121bf2ebc5f8226ba201c440b528835a0fca37d"
+    },
+    {
+      "path": "data/genpept/Putida_genpept_map.tsv",
+      "size_bytes": 160473,
+      "sha256": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128"
+    },
+    {
+      "path": "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz",
+      "size_bytes": 262118,
+      "sha256": "bea517eccadcaa280228c75551ee4d641e7eadb3509532377943e7ca89355f0e"
+    },
+    {
+      "path": "data/reference/feba_media_extract.tsv",
+      "size_bytes": 5517,
+      "sha256": "365168bd92db7aa049b20b2f5ad45f79740bd0f7a52e8d650332c80bdd409225"
+    },
+    {
+      "path": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "size_bytes": 5499,
+      "sha256": "43ed695ca0201e778bc738d2d582dad7e7a498b64d5ccf64c3b496be686e4da4"
+    },
+    {
+      "path": "data/reference/fitness_browser_media_bigg.tsv",
+      "size_bytes": 3452,
+      "sha256": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.2.json",
+      "size_bytes": 13517,
+      "sha256": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.3.json",
+      "size_bytes": 43124,
+      "sha256": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.4.json",
+      "size_bytes": 5205,
+      "sha256": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7"
+    },
+    {
+      "path": "data/reference/model_patches_v0.4.json",
+      "size_bytes": 36453,
+      "sha256": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190"
+    },
+    {
+      "path": "data/reference/universe_patches_v0.1.json",
+      "size_bytes": 7146,
+      "sha256": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe"
+    },
+    {
+      "path": "data/studies/exposure_registry_v1.json",
+      "size_bytes": 1192,
+      "sha256": "7519f099a63c95b6b5a9cdc8e14066255e72016a1c577ea92b4b231714823fc4"
+    },
+    {
+      "path": "data/studies/quinone_repair_v1.json",
+      "size_bytes": 4979,
+      "sha256": "1e809398f565b1104feb0a8d0aa88ca18c323097aa191ecb4ec23692342d7d79"
+    },
+    {
+      "path": "gembench/__init__.py",
+      "size_bytes": 368,
+      "sha256": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9"
+    },
+    {
+      "path": "gembench/cards.py",
+      "size_bytes": 6172,
+      "sha256": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d"
+    },
+    {
+      "path": "gembench/checks.py",
+      "size_bytes": 2761,
+      "sha256": "0c1bcb3ed1b55379533374bc5d481247dbf9c40a01efb9a495fb92d3a356a51a"
+    },
+    {
+      "path": "gembench/cofactor.py",
+      "size_bytes": 7428,
+      "sha256": "f8e428196dae2ab37b8c5b9fdf95907fd3f904c5ac8f59f7fd2a1a5eb97aa334"
+    },
+    {
+      "path": "gembench/comparison.py",
+      "size_bytes": 4052,
+      "sha256": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8"
+    },
+    {
+      "path": "gembench/datasets.py",
+      "size_bytes": 6578,
+      "sha256": "1223ac48c5f31fabf93d9a48f21211e2739f34385b879d531b1cdc261279f490"
+    },
+    {
+      "path": "gembench/fitness_browser.py",
+      "size_bytes": 8512,
+      "sha256": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c"
+    },
+    {
+      "path": "gembench/frog.py",
+      "size_bytes": 6840,
+      "sha256": "883b0b90e8c8c84377b72a34ca486cc9a6909d343c444c3972dbe94113c95308"
+    },
+    {
+      "path": "gembench/gapfill.py",
+      "size_bytes": 13625,
+      "sha256": "eaf202021dbc1f0d2a76668f5da11e992d7b0a374c264dd056866b448165ab63"
+    },
+    {
+      "path": "gembench/gene_mapping.py",
+      "size_bytes": 4495,
+      "sha256": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2"
+    },
+    {
+      "path": "gembench/media.py",
+      "size_bytes": 2920,
+      "sha256": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe"
+    },
+    {
+      "path": "gembench/metrics.py",
+      "size_bytes": 5535,
+      "sha256": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3"
+    },
+    {
+      "path": "gembench/patches.py",
+      "size_bytes": 8733,
+      "sha256": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8"
+    },
+    {
+      "path": "gembench/protocols/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gembench/protocols/carbon_fitness_generic.py",
+      "size_bytes": 12798,
+      "sha256": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303"
+    },
+    {
+      "path": "gembench/protocols/ecoli_carbon_fitness.py",
+      "size_bytes": 6930,
+      "sha256": "5a8994541a2248b575f64bdda58dfed939b69af0bbe0cc9a7bb9ef254163f31a"
+    },
+    {
+      "path": "gembench/protocols/yeast_essential.py",
+      "size_bytes": 4629,
+      "sha256": "e9e156ad108fd26185940ef10663ad3bb78dd13c7d3fa084bcbd3ac019c1e517"
+    },
+    {
+      "path": "gembench/study.py",
+      "size_bytes": 17496,
+      "sha256": "b3911b98e65dbaaf2635cc5a8d3aacd4c71ab614dafc44e2817f5df8b0742733"
+    },
+    {
+      "path": "gembench/survey.py",
+      "size_bytes": 4910,
+      "sha256": "2699d790764a1a3ee1de686b800d1be63fb20fb39d312f9cb695f843ac879019"
+    },
+    {
+      "path": "gembench/wbm.py",
+      "size_bytes": 10661,
+      "sha256": "c525a92e917a58d440c4d38544dc1aecdfd44b51e847f8eaae3e6d53ceaf67fb"
+    },
+    {
+      "path": "gembench/wbm_iem.py",
+      "size_bytes": 17337,
+      "sha256": "a525260933ddbf0fd6124475a972b546d0dac95636b426b505c8328106129b72"
+    },
+    {
+      "path": "models/bigg/iJN1463.xml",
+      "size_bytes": 10702784,
+      "sha256": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1"
+    },
+    {
+      "path": "models/gapfilled/Putida.xml.gz",
+      "size_bytes": 189469,
+      "sha256": "378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739"
+    },
+    {
+      "path": "models/gapfilled/Putida_gapfill.json",
+      "size_bytes": 969,
+      "sha256": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2"
+    },
+    {
+      "path": "requirements-audit.txt",
+      "size_bytes": 708,
+      "sha256": "f242faf03ecdd36f9dfbbc54838318556badc4cd653461460a2e3e3866b36260"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+      "size_bytes": 29523,
+      "sha256": "bee13fe5ebcc6f7ba98bf93c2ab99cccbf978f7308ddba0c8361a99a7ffcdb87"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+      "size_bytes": 28431,
+      "sha256": "ff58aaaf7e9eb57c793042e934a34ea264c4ad9430d13978d5a44b706599d65f"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+      "size_bytes": 244380,
+      "sha256": "49014f81058862e3a24a57f060b03f44dc635d85a08c977b1ea9c88de9218709"
+    },
+    {
+      "path": "scripts/map_quinone_pathway.py",
+      "size_bytes": 16101,
+      "sha256": "07a690e749e6ff05b318fab8c0cc05e6d20a1b15a502f8b275b569927e1e2088"
+    },
+    {
+      "path": "scripts/run_carbon_fitness_generic.py",
+      "size_bytes": 16091,
+      "sha256": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc"
+    },
+    {
+      "path": "scripts/run_quinone_biomass_sensitivity.py",
+      "size_bytes": 8778,
+      "sha256": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d"
+    },
+    {
+      "path": "scripts/run_quinone_repair.py",
+      "size_bytes": 29176,
+      "sha256": "4bf0e9992d07001143a86189d8f969ddd5b821e3a158ae9fc7e1af4706e6782c"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "78e12fdce19013205c3c7ca7f3c3c9a784bfd661",
+    "dirty": false,
+    "tracked_changes": [],
+    "untracked_paths": [],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "d4a72ef731a9fa0451e0b1c9a0463837872e07dc1007772ce7ed2d1b53820734",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}

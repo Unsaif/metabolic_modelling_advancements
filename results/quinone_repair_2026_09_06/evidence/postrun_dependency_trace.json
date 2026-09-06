@@ -1,0 +1,1842 @@
+{
+  "actual_saved_glucose_metadata": {
+    "atp_maintenance_bounds": [
+      0.0,
+      1000.0
+    ],
+    "condition": "D-Glucose | MOPS minimal media_noCarbon",
+    "growth_bounds": [
+      0.0,
+      1000.0
+    ],
+    "maintenance_note": "No positive ATP-maintenance lower bound is imposed."
+  },
+  "actual_saved_glucose_metadata_source": {
+    "derivation": "Exact subset for the four displayed exchange IDs; no optimization or model reapplication.",
+    "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/physical.json",
+    "selected_exchange_bounds_field": "final_exchange_bounds"
+  },
+  "actual_saved_glucose_selected_exchange_bounds": {
+    "EX_4hbz_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_T4hcinnm_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glc__D_e": [
+      -10.0,
+      1000.0
+    ],
+    "EX_rib__D_e": [
+      0.0,
+      1000.0
+    ]
+  },
+  "analysis_role": "post-outcome structural diagnostic; exposed Putida development data",
+  "chorismate_bypass": {
+    "catabolic_direction": "4HBHYOX consumes 4hbz_c and has no permitted reverse flux.",
+    "coumarate_route": [
+      "EX_T4hcinnm_e",
+      "T4HCINNMtex",
+      "T4HCINNMtpp",
+      "4CMCOAS",
+      "COCOAHA",
+      "VNDH_2"
+    ],
+    "endogenous_source": "CHRPL",
+    "false_alternative": "SUCBZT2 is reversible, but 4hbzcoa_c occurs only in SUCBZT2, so its own zero-balance row forces the net reaction flux to zero.",
+    "import_route": [
+      "EX_4hbz_e",
+      "4HBZtex",
+      "UHBZ1t_pp"
+    ],
+    "interpretation": "These are direction-compatible structural bypass routes when their substrate is supplied. Their presence alone does not prove an achievable flux or explain the measured mutant phenotype.",
+    "matched_condition_metadata": [
+      {
+        "bigg_ids": "4hbz",
+        "condition": "4-Hydroxybenzoic Acid",
+        "mapping_confidence": "high",
+        "media": "MOPS minimal media_noCarbon"
+      },
+      {
+        "bigg_ids": "T4hcinnm",
+        "condition": "p-Coumaric acid",
+        "mapping_confidence": "medium",
+        "media": "MOPS minimal media_noCarbon"
+      },
+      {
+        "bigg_ids": "T4hcinnm",
+        "condition": "p-Coumaric acid",
+        "mapping_confidence": "medium",
+        "media": "RCH2_defined_noCarbon"
+      }
+    ]
+  },
+  "confirmed_gene_annotation": [
+    {
+      "begin": "2805226",
+      "desc": "ribokinase",
+      "end": "2806134",
+      "locusId": "PP_2458",
+      "scaffoldId": "AE015451",
+      "strand": "+",
+      "sysName": "PP_2458",
+      "type": "1"
+    },
+    {
+      "begin": "6063112",
+      "desc": "Probable chorismate pyruvate-lyase",
+      "end": "6063669",
+      "locusId": "PP_5317",
+      "scaffoldId": "AE015451",
+      "strand": "+",
+      "sysName": "PP_5317",
+      "type": "1"
+    }
+  ],
+  "confirmed_gene_reactions": [
+    {
+      "associated_reactions": [
+        "RBK"
+      ],
+      "locus": "PP_2458",
+      "model_gene_id": "NP_744606_1"
+    },
+    {
+      "associated_reactions": [
+        "CHRPL"
+      ],
+      "locus": "PP_5317",
+      "model_gene_id": "NP_747418_1"
+    }
+  ],
+  "date": "2026-09-06",
+  "inputs": [
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+      "sha256": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json",
+      "sha256": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/conditions.tsv",
+      "sha256": "9c57133feeea96b82e3a6785a3e122c37067a9f1b4a79078c64fee168c290651"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/physical.json",
+      "sha256": "3d0a0aa8135a9720d9be74cc5cd42050d560ccaf59edd26b64ad073e87ae39db"
+    },
+    {
+      "path": "data/fitness_browser/Putida/genes.tsv",
+      "sha256": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e"
+    },
+    {
+      "path": "gembench/cofactor.py",
+      "sha256": "f8e428196dae2ab37b8c5b9fdf95907fd3f904c5ac8f59f7fd2a1a5eb97aa334"
+    }
+  ],
+  "limitations": [
+    "Post-outcome explanatory analysis; not a preregistered validation or a newly accepted repair.",
+    "The declared algebraic pool is not an independently established chemical-moiety model of living P. putida.",
+    "Gene-less RHCYS and both modeled SAH-disposal routes require species-specific biochemical review; a missing modeled reaction is not a biologically absent activity.",
+    "Alternative biology, transport, transient carryover and pooled-assay crossfeeding are hypotheses without evidence in this trace.",
+    "Candidate half-oxygen hydroxylation chemistry, generic biomass dilution coefficient and zero positive maintenance requirement remain limitations.",
+    "No coefficients, reactions, GPRs, media or phenotype thresholds were changed to recover agreement."
+  ],
+  "method": {
+    "arithmetic_scope": "Exact necessary implications of the stored coefficients and zero steady-state balances, not a guarantee about finite-tolerance numerical feasibility or biological physiology.",
+    "model_changed": false,
+    "numeric_benchmark_matrices_read": false,
+    "optimization_performed": false,
+    "procedure": "Read saved SBML, enumerate complete metabolite adjacency and bounds, verify declared zero-balance rows match stored stoichiometry, sum selected rows with exact Fraction arithmetic on stored floats. Read gene identity and condition metadata only; no new fitness analysis.",
+    "source_model_stage": "Saved intervention model before per-condition medium application/completion; its original exchange bounds do not describe benchmark media."
+  },
+  "other_relevant_complete_adjacency": {
+    "2ohph_c": [
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "OHPHM"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "OPHHX"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "sink_2ohph_c"
+      }
+    ],
+    "2oph_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "OPHBDC"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "OPHHX"
+      }
+    ],
+    "3ophb_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "HBZOPT"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "OPHBDC"
+      }
+    ],
+    "4hbald_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "COCOAHA"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "VNDH_2"
+      }
+    ],
+    "4hbz_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "4HBHYOX"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "CHRPL"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "HBZOPT"
+      },
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "SUCBZT2"
+      },
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "UHBZ1t_pp"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "VNDH_2"
+      }
+    ],
+    "4hbzcoa_c": [
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "SUCBZT2"
+      }
+    ],
+    "T4hcinnm_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "4CMCOAS"
+      },
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "T4HCINNMtpp"
+      }
+    ],
+    "adn_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "ADA"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "ADNt2"
+      },
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "AHCi"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "NTD7"
+      }
+    ],
+    "ahcys_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "AHCYSNS"
+      },
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "AHCi"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "AMMQLT8"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "AMMQT8_2"
+      },
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "DMQMT"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "HCYSMT"
+      },
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "OHPHM"
+      },
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "OMBZLM"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 2.0,
+        "reaction": "UPP3MT"
+      }
+    ],
+    "coucoa_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "4CMCOAS"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "COCOAHA"
+      }
+    ],
+    "ins_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "ADA"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "INSH"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "INSt2"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "NTD11"
+      }
+    ],
+    "rhcys_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "AHCYSNS"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "RHCYS"
+      }
+    ],
+    "rib__D_c": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "GNNUC"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "INSH"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "RBK"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "RHCYS"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "RIBabcpp"
+      },
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "XTSNH"
+      }
+    ],
+    "rib__D_e": [
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "EX_rib__D_e"
+      },
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "RIBtex"
+      }
+    ],
+    "rib__D_p": [
+      {
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "RIBabcpp"
+      },
+      {
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "RIBtex"
+      }
+    ]
+  },
+  "quinone_pool_row_sum": {
+    "direction_compatible_supply_reactions": [
+      "DMQMT"
+    ],
+    "exactly_conserved_in_stoichiometry": false,
+    "n_incident_reactions": 12,
+    "pool_weights": {
+      "q8_c": 1.0,
+      "q8h2_c": 1.0
+    },
+    "reactions": [
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": 1.0,
+          "q8h2_c": -1.0
+        },
+        "reaction": "CYO1_KT"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": 1.0,
+          "q8h2_c": -1.0
+        },
+        "reaction": "CYTBDpp"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": 1.0,
+          "q8h2_c": -1.0
+        },
+        "reaction": "CYTBO3_4pp"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "q8h2_c": 1.0
+        },
+        "reaction": "DMQMT"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "reaction": "GLCDpp"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": true,
+        "can_supply_by_direction": false,
+        "exact_denominator": "73786976294838206464",
+        "exact_numerator": "-7145670966924535",
+        "net_pool_coefficient": -9.68418998275772e-05,
+        "pool_terms": {
+          "q8h2_c": -9.68418998275772e-05
+        },
+        "reaction": "Growth"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "reaction": "L_LACD2"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "reaction": "MDH2"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "reaction": "NADH16pp"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "reaction": "NADH5"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "reaction": "NADPHQR2"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "reaction": "SUCDi"
+      }
+    ],
+    "scope": "Declared metabolite pool and ordinary zero-balance FBA rows; no automatic moiety discovery or biological validation."
+  },
+  "reaction_records": [
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_745496_2": "PP_3356"
+      },
+      "gene_reaction_rule": "NP_745496_2",
+      "id": "4CMCOAS",
+      "name": "4CMCOAS",
+      "stoichiometry": {
+        "T4hcinnm_c": -1.0,
+        "amp_c": 1.0,
+        "atp_c": -1.0,
+        "coa_c": -1.0,
+        "coucoa_c": 1.0,
+        "ppi_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_745674_1": "PP_3537"
+      },
+      "gene_reaction_rule": "NP_745674_1",
+      "id": "4HBHYOX",
+      "name": "4HBHYOX",
+      "stoichiometry": {
+        "34dhbz_c": 1.0,
+        "4hbz_c": -1.0,
+        "h2o_c": 1.0,
+        "h_c": -1.0,
+        "nadp_c": 1.0,
+        "nadph_c": -1.0,
+        "o2_c": -1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_743282_1": "PP_1121",
+        "NP_746315_1": "PP_4198"
+      },
+      "gene_reaction_rule": "NP_743282_1 or NP_746315_1",
+      "id": "4HBZtex",
+      "name": "4HBZtex",
+      "stoichiometry": {
+        "4hbz_e": -1.0,
+        "4hbz_p": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_742754_1": "PP_0591"
+      },
+      "gene_reaction_rule": "NP_742754_1",
+      "id": "ADA",
+      "name": "Adenosine deaminase",
+      "stoichiometry": {
+        "adn_c": -1.0,
+        "h2o_c": -1.0,
+        "h_c": -1.0,
+        "ins_c": 1.0,
+        "nh4_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_745397_1": "PP_3254"
+      },
+      "gene_reaction_rule": "NP_745397_1",
+      "id": "AHCYSNS",
+      "name": "S-adenosylhomocysteine nucleosidase",
+      "stoichiometry": {
+        "ade_c": 1.0,
+        "ahcys_c": -1.0,
+        "h2o_c": -1.0,
+        "rhcys_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "YP_009237194_1": "PP_4976"
+      },
+      "gene_reaction_rule": "YP_009237194_1",
+      "id": "AHCi",
+      "name": "Adenosylhomocysteinase",
+      "stoichiometry": {
+        "adn_c": 1.0,
+        "ahcys_c": -1.0,
+        "h2o_c": -1.0,
+        "hcys__L_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_747418_1": "PP_5317"
+      },
+      "gene_reaction_rule": "NP_747418_1",
+      "id": "CHRPL",
+      "name": "Chorismate pyruvate lyase",
+      "stoichiometry": {
+        "4hbz_c": 1.0,
+        "chor_c": -1.0,
+        "pyr_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_745498_1": "PP_3358"
+      },
+      "gene_reaction_rule": "NP_745498_1",
+      "id": "COCOAHA",
+      "name": "COCOAHA",
+      "stoichiometry": {
+        "4hbald_c": 1.0,
+        "accoa_c": 1.0,
+        "coucoa_c": -1.0,
+        "h2o_c": -1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        999999.0
+      ],
+      "gene_locus_mapping": {
+        "PP_1765": "PP_1765"
+      },
+      "gene_reaction_rule": "PP_1765",
+      "id": "DMQMT",
+      "name": "3-Dimethylubiquinonol 3-methyltransferase",
+      "stoichiometry": {
+        "2omhmbl_c": -1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0,
+        "q8h2_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {},
+      "gene_reaction_rule": "",
+      "id": "EX_4hbz_e",
+      "name": "R_EX_4hbz_e",
+      "stoichiometry": {
+        "4hbz_e": -1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {},
+      "gene_reaction_rule": "",
+      "id": "EX_T4hcinnm_e",
+      "name": "R_EX_T4hcinnm_e",
+      "stoichiometry": {
+        "T4hcinnm_e": -1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {},
+      "gene_reaction_rule": "",
+      "id": "EX_rib__D_e",
+      "name": "R_EX_rib__D_e",
+      "stoichiometry": {
+        "rib__D_e": -1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_744608_1": "PP_2460"
+      },
+      "gene_reaction_rule": "NP_744608_1",
+      "id": "GNNUC",
+      "name": "Gnnuc",
+      "stoichiometry": {
+        "gsn_c": -1.0,
+        "gua_c": 1.0,
+        "h2o_c": -1.0,
+        "rib__D_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_747419_1": "PP_5318"
+      },
+      "gene_reaction_rule": "NP_747419_1",
+      "id": "HBZOPT",
+      "name": "Hydroxybenzoate octaprenyltransferase",
+      "stoichiometry": {
+        "3ophb_c": 1.0,
+        "4hbz_c": -1.0,
+        "octdp_c": -1.0,
+        "ppi_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_744608_1": "PP_2460"
+      },
+      "gene_reaction_rule": "NP_744608_1",
+      "id": "INSH",
+      "name": "Inosine hydrolase",
+      "stoichiometry": {
+        "h2o_c": -1.0,
+        "hxan_c": 1.0,
+        "ins_c": -1.0,
+        "rib__D_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_747070_1": "PP_4967"
+      },
+      "gene_reaction_rule": "NP_747070_1",
+      "id": "METAT",
+      "name": "Methionine adenosyltransferase",
+      "stoichiometry": {
+        "amet_c": 1.0,
+        "atp_c": -1.0,
+        "h2o_c": -1.0,
+        "met__L_c": -1.0,
+        "pi_c": 1.0,
+        "ppi_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        999999.0
+      ],
+      "gene_locus_mapping": {
+        "PP_1765": "PP_1765"
+      },
+      "gene_reaction_rule": "PP_1765",
+      "id": "OHPHM",
+      "name": "2-octaprenyl-6-hydroxyphenol methylase",
+      "stoichiometry": {
+        "2ohph_c": -1.0,
+        "2omph_c": 1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        999999.0
+      ],
+      "gene_locus_mapping": {
+        "NP_747113_1": "PP_5011"
+      },
+      "gene_reaction_rule": "NP_747113_1",
+      "id": "OMBZLM",
+      "name": "2-Octaprenyl-6-methoxy-benzoquinol methylase",
+      "stoichiometry": {
+        "2ombzl_c": -1.0,
+        "2ommbl_c": 1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        999999.0
+      ],
+      "gene_locus_mapping": {
+        "PP_0427": "PP_0427",
+        "PP_5197": "PP_5197"
+      },
+      "gene_reaction_rule": "PP_0427 or PP_5197",
+      "id": "OMMBLHX",
+      "name": "2-Octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase",
+      "stoichiometry": {
+        "2omhmbl_c": 1.0,
+        "2ommbl_c": -1.0,
+        "o2_c": -0.5
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        999999.0
+      ],
+      "gene_locus_mapping": {
+        "PP_5199": "PP_5199"
+      },
+      "gene_reaction_rule": "PP_5199",
+      "id": "OMPHHX",
+      "name": "2-octaprenyl-6-methoxyphenol hydroxylase",
+      "stoichiometry": {
+        "2ombzl_c": 1.0,
+        "2omph_c": -1.0,
+        "o2_c": -0.5
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_747314_2": "PP_5213"
+      },
+      "gene_reaction_rule": "NP_747314_2",
+      "id": "OPHBDC",
+      "name": "Octaprenyl-hydroxybenzoate decarboxylase",
+      "stoichiometry": {
+        "2oph_c": 1.0,
+        "3ophb_c": -1.0,
+        "co2_c": 1.0,
+        "h_c": -1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "YP_009237195_1": "PP_5013"
+      },
+      "gene_reaction_rule": "YP_009237195_1",
+      "id": "OPHHX",
+      "name": "2-Octaprenylphenol hydroxylase",
+      "stoichiometry": {
+        "2ohph_c": 1.0,
+        "2oph_c": -1.0,
+        "o2_c": -0.5
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_744606_1": "PP_2458"
+      },
+      "gene_reaction_rule": "NP_744606_1",
+      "id": "RBK",
+      "name": "Ribokinase",
+      "stoichiometry": {
+        "adp_c": 1.0,
+        "atp_c": -1.0,
+        "h_c": 1.0,
+        "r5p_c": 1.0,
+        "rib__D_c": -1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {},
+      "gene_reaction_rule": "",
+      "id": "RHCYS",
+      "name": "5 deoxyribos 5 ylhomocysteinase",
+      "stoichiometry": {
+        "h2o_c": -1.0,
+        "hcys__L_c": 1.0,
+        "rhcys_c": -1.0,
+        "rib__D_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_744602_1": "PP_2454",
+        "NP_744603_1": "PP_2455",
+        "NP_744604_1": "PP_2456",
+        "NP_744607_1": "PP_2459"
+      },
+      "gene_reaction_rule": "NP_744602_1 and NP_744603_1 and NP_744604_1 and NP_744607_1",
+      "id": "RIBabcpp",
+      "name": "D-ribose transport via ABC system (periplasm)",
+      "stoichiometry": {
+        "adp_c": 1.0,
+        "atp_c": -1.0,
+        "h2o_c": -1.0,
+        "h_c": 1.0,
+        "pi_c": 1.0,
+        "rib__D_c": 1.0,
+        "rib__D_p": -1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {},
+      "gene_reaction_rule": "",
+      "id": "RIBtex",
+      "name": "Ribose transport via diffusion (extracellular to periplasm)",
+      "stoichiometry": {
+        "rib__D_e": -1.0,
+        "rib__D_p": 1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_745375_1": "PP_3232"
+      },
+      "gene_reaction_rule": "NP_745375_1",
+      "id": "SUCBZT2",
+      "name": "Succinyl:4-hydroxybenzoate CoA transferase",
+      "stoichiometry": {
+        "4hbz_c": -1.0,
+        "4hbzcoa_c": 1.0,
+        "succ_c": 1.0,
+        "succoa_c": -1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {},
+      "gene_reaction_rule": "",
+      "id": "T4HCINNMtex",
+      "name": "T4HCINNMtex",
+      "stoichiometry": {
+        "T4hcinnm_e": -1.0,
+        "T4hcinnm_p": 1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {},
+      "gene_reaction_rule": "",
+      "id": "T4HCINNMtpp",
+      "name": "T4HCINNMtpp",
+      "stoichiometry": {
+        "T4hcinnm_c": 1.0,
+        "T4hcinnm_p": -1.0
+      }
+    },
+    {
+      "bounds": [
+        -1000.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_743535_1": "PP_1376"
+      },
+      "gene_reaction_rule": "NP_743535_1",
+      "id": "UHBZ1t_pp",
+      "name": "UHBZ1t LPAREN pp RPAREN",
+      "stoichiometry": {
+        "4hbz_c": 1.0,
+        "4hbz_p": -1.0,
+        "h_c": 1.0,
+        "h_p": -1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_745497_1": "PP_3357"
+      },
+      "gene_reaction_rule": "NP_745497_1",
+      "id": "VNDH_2",
+      "name": "VNDH 2",
+      "stoichiometry": {
+        "4hbald_c": -1.0,
+        "4hbz_c": 1.0,
+        "h2o_c": -1.0,
+        "h_c": 2.0,
+        "nad_c": -1.0,
+        "nadh_c": 1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {
+        "NP_744608_1": "PP_2460"
+      },
+      "gene_reaction_rule": "NP_744608_1",
+      "id": "XTSNH",
+      "name": "Xanthosine hydrolase",
+      "stoichiometry": {
+        "h2o_c": -1.0,
+        "rib__D_c": 1.0,
+        "xan_c": 1.0,
+        "xtsn_c": -1.0
+      }
+    },
+    {
+      "bounds": [
+        0.0,
+        1000.0
+      ],
+      "gene_locus_mapping": {},
+      "gene_reaction_rule": "",
+      "id": "sink_2ohph_c",
+      "name": "R_sink_2ohph_c",
+      "stoichiometry": {
+        "2ohph_c": -1.0
+      }
+    }
+  ],
+  "ribokinase_proof": {
+    "conclusion": "With epsilon > 0 and RBK knocked out, positive exact steady-state growth is impossible in this stored model. This implication persists under medium restrictions that neither add a consuming route for the declared disposal pool nor alter the certified balances.",
+    "epsilon_exact": "7145670966924535/73786976294838206464",
+    "equal_tail_fluxes": [
+      "OHPHM",
+      "OMPHHX",
+      "OMBZLM",
+      "OMMBLHX",
+      "DMQMT"
+    ],
+    "equalities": [
+      "v_OHPHM = v_OMPHHX = v_OMBZLM = v_OMMBLHX = v_DMQMT",
+      "v_DMQMT = epsilon * v_Growth",
+      "v_RBK = sum of all 14 nonnegative supply terms in the declared disposal row sum"
+    ],
+    "methylation_reactions_each_producing_one_ahcys": [
+      "OHPHM",
+      "OMBZLM",
+      "DMQMT"
+    ],
+    "minimum_ribokinase_per_growth": 0.0002905256994827316,
+    "minimum_ribokinase_per_growth_exact": "21437012900773605/73786976294838206464",
+    "necessary_inequality": "v_RBK >= 3 * epsilon * v_Growth",
+    "precursor_sink_check": "sink_2ohph_c consumes only quinone precursor and does not drain the disposal pool or supply quinone.",
+    "quinone_coefficient_epsilon": 9.68418998275772e-05,
+    "ribose_boundary_check": "EX_rib__D_e and RIBtex do not supply a cytoplasmic efflux route: RIBabcpp is inward-only."
+  },
+  "ribose_disposal_row_sum": {
+    "direction_compatible_supply_reactions": [
+      "ADNt2",
+      "AMMQLT8",
+      "AMMQT8_2",
+      "DMQMT",
+      "GNNUC",
+      "HCYSMT",
+      "INSt2",
+      "NTD11",
+      "NTD7",
+      "OHPHM",
+      "OMBZLM",
+      "RIBabcpp",
+      "UPP3MT",
+      "XTSNH"
+    ],
+    "exactly_conserved_in_stoichiometry": false,
+    "n_incident_reactions": 20,
+    "pool_weights": {
+      "adn_c": 1.0,
+      "ahcys_c": 1.0,
+      "ins_c": 1.0,
+      "rhcys_c": 1.0,
+      "rib__D_c": 1.0
+    },
+    "reactions": [
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "adn_c": -1.0,
+          "ins_c": 1.0
+        },
+        "reaction": "ADA"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "adn_c": 1.0
+        },
+        "reaction": "ADNt2"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "ahcys_c": -1.0,
+          "rhcys_c": 1.0
+        },
+        "reaction": "AHCYSNS"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          -1000.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "adn_c": 1.0,
+          "ahcys_c": -1.0
+        },
+        "reaction": "AHCi"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "reaction": "AMMQLT8"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "reaction": "AMMQT8_2"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "reaction": "DMQMT"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "rib__D_c": 1.0
+        },
+        "reaction": "GNNUC"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "reaction": "HCYSMT"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "ins_c": -1.0,
+          "rib__D_c": 1.0
+        },
+        "reaction": "INSH"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "ins_c": 1.0
+        },
+        "reaction": "INSt2"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "ins_c": 1.0
+        },
+        "reaction": "NTD11"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "adn_c": 1.0
+        },
+        "reaction": "NTD7"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "reaction": "OHPHM"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "ahcys_c": 1.0
+        },
+        "reaction": "OMBZLM"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": true,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "-1",
+        "net_pool_coefficient": -1.0,
+        "pool_terms": {
+          "rib__D_c": -1.0
+        },
+        "reaction": "RBK"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": false,
+        "exact_denominator": "1",
+        "exact_numerator": "0",
+        "net_pool_coefficient": 0.0,
+        "pool_terms": {
+          "rhcys_c": -1.0,
+          "rib__D_c": 1.0
+        },
+        "reaction": "RHCYS"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "rib__D_c": 1.0
+        },
+        "reaction": "RIBabcpp"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "2",
+        "net_pool_coefficient": 2.0,
+        "pool_terms": {
+          "ahcys_c": 2.0
+        },
+        "reaction": "UPP3MT"
+      },
+      {
+        "boundary": false,
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "can_consume_by_direction": false,
+        "can_supply_by_direction": true,
+        "exact_denominator": "1",
+        "exact_numerator": "1",
+        "net_pool_coefficient": 1.0,
+        "pool_terms": {
+          "rib__D_c": 1.0
+        },
+        "reaction": "XTSNH"
+      }
+    ],
+    "scope": "Declared metabolite pool and ordinary zero-balance FBA rows; no automatic moiety discovery or biological validation."
+  },
+  "schema_version": 1,
+  "tail_intermediate_adjacency": {
+    "2ombzl_c": [
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "OMBZLM"
+      },
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "OMPHHX"
+      }
+    ],
+    "2omhmbl_c": [
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "DMQMT"
+      },
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "OMMBLHX"
+      }
+    ],
+    "2ommbl_c": [
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "OMBZLM"
+      },
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "OMMBLHX"
+      }
+    ],
+    "2omph_c": [
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": 1.0,
+        "reaction": "OHPHM"
+      },
+      {
+        "bounds": [
+          0.0,
+          999999.0
+        ],
+        "coefficient": -1.0,
+        "reaction": "OMPHHX"
+      }
+    ]
+  },
+  "trigger": {
+    "both_positive_quinone_demand_pathway_arms": {
+      "PP_2458": 34,
+      "PP_5317": 31,
+      "binary_changes": 65,
+      "direction": "all adverse relative to baseline"
+    },
+    "source": "Completed benchmark disagreements reported by the parent analysis; not recomputed by this trace"
+  }
+}

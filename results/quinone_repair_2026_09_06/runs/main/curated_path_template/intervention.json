@@ -1,0 +1,585 @@
+{
+  "configuration": {
+    "id": "curated_path_template",
+    "add_pathway": true,
+    "biomass_coefficient_source": "template",
+    "gpr_overrides": {},
+    "run_benchmark": true
+  },
+  "transfer": {
+    "source_reaction_ids": [
+      "OHPHM",
+      "OMPHHX",
+      "OMBZLM",
+      "OMMBLHX",
+      "DMQMT"
+    ],
+    "gene_aliases": {
+      "PP_0427": "PP_0427",
+      "PP_1765": "PP_1765",
+      "PP_5011": "NP_747113_1",
+      "PP_5197": "PP_5197",
+      "PP_5199": "PP_5199"
+    },
+    "new_metabolites": [
+      "2ombzl_c",
+      "2omhmbl_c",
+      "2ommbl_c",
+      "2omph_c"
+    ],
+    "metadata_policy": {
+      "compartment_aliases": {
+        "c": "C_c"
+      },
+      "expected_shared_charge_differences": {
+        "amet_c": {
+          "source": 1,
+          "target": 0
+        },
+        "h_c": {
+          "source": 1,
+          "target": 0
+        }
+      },
+      "basis_path": "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+      "note": "Existing target metabolite metadata are preserved. Source c and target C_c both denote the cytosol; only copied new-metabolite compartment labels are normalized. Stored source and target metabolite metadata are therefore not byte-identical. Shared target charges of zero are placeholders, not newly validated chemical charges. Any undeclared formula, compartment, or charge difference aborts the transfer."
+    },
+    "shared_metabolite_metadata": [
+      {
+        "metabolite": "2ohph_c",
+        "source": {
+          "id": "2ohph_c",
+          "name": "2-Octaprenyl-6-hydroxyphenol",
+          "formula": "C46H70O2",
+          "charge": 0,
+          "compartment": "c",
+          "annotation": {
+            "sbo": "SBO:0000247",
+            "bigg.metabolite": "2ohph",
+            "biocyc": "META:2-OCTAPRENYL-6-HYDROXYPHENOL",
+            "chebi": [
+              "CHEBI:62730",
+              "CHEBI:1233"
+            ],
+            "inchi_key": "YGTMSXVYLRCOLD-MGDAWYEDSA-N",
+            "kegg.compound": "C05811",
+            "metanetx.chemical": "MNXM1635",
+            "seed.compound": "cpd03445"
+          }
+        },
+        "preserved_target": {
+          "id": "2ohph_c",
+          "name": "2-Octaprenyl-6-hydroxyphenol",
+          "formula": "C46H70O2",
+          "charge": 0,
+          "compartment": "C_c",
+          "annotation": {}
+        }
+      },
+      {
+        "metabolite": "amet_c",
+        "source": {
+          "id": "amet_c",
+          "name": "S-Adenosyl-L-methionine",
+          "formula": "C15H23N6O5S",
+          "charge": 1,
+          "compartment": "c",
+          "annotation": {
+            "sbo": "SBO:0000247",
+            "bigg.metabolite": "amet",
+            "biocyc": "META:S-ADENOSYLMETHIONINE",
+            "chebi": [
+              "CHEBI:33442",
+              "CHEBI:12757",
+              "CHEBI:10833",
+              "CHEBI:59789",
+              "CHEBI:67040",
+              "CHEBI:8946",
+              "CHEBI:12742",
+              "CHEBI:12760",
+              "CHEBI:10786",
+              "CHEBI:22036",
+              "CHEBI:527887",
+              "CHEBI:15414",
+              "CHEBI:45607"
+            ],
+            "hmdb": [
+              "HMDB01185",
+              "HMDB62709"
+            ],
+            "inchi_key": "MEFKEPWMEQBLKI-AIRLBKTGSA-O",
+            "kegg.compound": "C00019",
+            "metanetx.chemical": "MNXM16",
+            "reactome.compound": [
+              "2162265",
+              "5279190",
+              "77087",
+              "71284",
+              "353113"
+            ],
+            "sabiork": "1272",
+            "seed.compound": "cpd00017"
+          }
+        },
+        "preserved_target": {
+          "id": "amet_c",
+          "name": "S-Adenosyl-L-methionine",
+          "formula": "C15H23N6O5S",
+          "charge": 0,
+          "compartment": "C_c",
+          "annotation": {}
+        }
+      },
+      {
+        "metabolite": "ahcys_c",
+        "source": {
+          "id": "ahcys_c",
+          "name": "S-Adenosyl-L-homocysteine",
+          "formula": "C14H20N6O5S",
+          "charge": 0,
+          "compartment": "c",
+          "annotation": {
+            "sbo": "SBO:0000247",
+            "bigg.metabolite": "ahcys",
+            "biocyc": "META:ADENOSYL-HOMO-CYS",
+            "chebi": [
+              "CHEBI:12741",
+              "CHEBI:45495",
+              "CHEBI:8945",
+              "CHEBI:16680",
+              "CHEBI:67009",
+              "CHEBI:22034",
+              "CHEBI:57856",
+              "CHEBI:12761",
+              "CHEBI:12759"
+            ],
+            "hmdb": "HMDB00939",
+            "inchi_key": "ZJUKTBDSGOFHSH-WFMPWKQPSA-N",
+            "kegg.compound": "C00021",
+            "metanetx.chemical": "MNXM19",
+            "reactome.compound": [
+              "2162252",
+              "77502",
+              "5278409",
+              "71285"
+            ],
+            "sabiork": "1274",
+            "seed.compound": "cpd00019"
+          }
+        },
+        "preserved_target": {
+          "id": "ahcys_c",
+          "name": "S-Adenosyl-L-homocysteine",
+          "formula": "C14H20N6O5S",
+          "charge": 0,
+          "compartment": "C_c",
+          "annotation": {}
+        }
+      },
+      {
+        "metabolite": "h_c",
+        "source": {
+          "id": "h_c",
+          "name": "H+",
+          "formula": "H",
+          "charge": 1,
+          "compartment": "c",
+          "annotation": {
+            "sbo": "SBO:0000247",
+            "bigg.metabolite": "h",
+            "biocyc": "META:PROTON",
+            "chebi": [
+              "CHEBI:5584",
+              "CHEBI:13357",
+              "CHEBI:15378",
+              "CHEBI:10744"
+            ],
+            "hmdb": "HMDB59597",
+            "inchi_key": "GPRLSGONYQIRFK-UHFFFAOYSA-N",
+            "kegg.compound": "C00080",
+            "metanetx.chemical": "MNXM1",
+            "reactome.compound": [
+              "2000349",
+              "425978",
+              "74722",
+              "428040",
+              "427899",
+              "428548",
+              "156540",
+              "70106",
+              "425969",
+              "1132304",
+              "5668577",
+              "1470067",
+              "163953",
+              "193465",
+              "113529",
+              "351626",
+              "425999",
+              "194688",
+              "374900",
+              "2872447",
+              "372511"
+            ],
+            "sabiork": "39",
+            "seed.compound": "cpd00067"
+          }
+        },
+        "preserved_target": {
+          "id": "h_c",
+          "name": "H+",
+          "formula": "H",
+          "charge": 0,
+          "compartment": "C_c",
+          "annotation": {}
+        }
+      },
+      {
+        "metabolite": "o2_c",
+        "source": {
+          "id": "o2_c",
+          "name": "O2 O2",
+          "formula": "O2",
+          "charge": 0,
+          "compartment": "c",
+          "annotation": {
+            "sbo": "SBO:0000247",
+            "bigg.metabolite": "o2",
+            "biocyc": "META:OXYGEN-MOLECULE",
+            "chebi": [
+              "CHEBI:7860",
+              "CHEBI:26689",
+              "CHEBI:29097",
+              "CHEBI:15379",
+              "CHEBI:13416",
+              "CHEBI:27140",
+              "CHEBI:29793",
+              "CHEBI:30491",
+              "CHEBI:44742",
+              "CHEBI:23833",
+              "CHEBI:25366",
+              "CHEBI:10745"
+            ],
+            "envipath": "5882df9c-dae1-4d80-a40e-db4724271456/compound/d5d12248-82d3-4cf3-b7d0-2e3d096768b4",
+            "hmdb": "HMDB01377",
+            "inchi_key": "MYMOFIZGZYHOMD-UHFFFAOYSA-N",
+            "kegg.compound": "C00007",
+            "kegg.drug": "D00003",
+            "metanetx.chemical": "MNXM4",
+            "reactome.compound": [
+              "113534",
+              "113535",
+              "113685",
+              "5668566",
+              "189461",
+              "113533",
+              "1131511",
+              "352327",
+              "351593",
+              "29368",
+              "1236709"
+            ],
+            "sabiork": "1264",
+            "seed.compound": "cpd00007"
+          }
+        },
+        "preserved_target": {
+          "id": "o2_c",
+          "name": "O2",
+          "formula": "O2",
+          "charge": 0,
+          "compartment": "C_c",
+          "annotation": {}
+        }
+      },
+      {
+        "metabolite": "q8h2_c",
+        "source": {
+          "id": "q8h2_c",
+          "name": "Ubiquinol-8",
+          "formula": "C49H76O4",
+          "charge": 0,
+          "compartment": "c",
+          "annotation": {
+            "sbo": "SBO:0000247",
+            "bigg.metabolite": "q8h2",
+            "biocyc": "META:CPD-9956",
+            "chebi": "CHEBI:61682",
+            "hmdb": "HMDB01060",
+            "inchi_key": "LOJUQFSPYHMHEO-SGHXUWJISA-N",
+            "metanetx.chemical": "MNXM191",
+            "seed.compound": [
+              "cpd29608",
+              "cpd15561"
+            ]
+          }
+        },
+        "preserved_target": {
+          "id": "q8h2_c",
+          "name": "Ubiquinol-8",
+          "formula": "C49H76O4",
+          "charge": 0,
+          "compartment": "C_c",
+          "annotation": {}
+        }
+      }
+    ],
+    "preserved_charge_differences": {
+      "amet_c": {
+        "source": 1,
+        "target": 0
+      },
+      "h_c": {
+        "source": 1,
+        "target": 0
+      }
+    },
+    "new_metabolite_records": {
+      "2omph_c": {
+        "id": "2omph_c",
+        "name": "2-Octaprenyl-6-methoxyphenol",
+        "formula": "C47H72O2",
+        "charge": 0,
+        "compartment": "C_c",
+        "annotation": {
+          "sbo": "SBO:0000247",
+          "bigg.metabolite": "2omph",
+          "biocyc": "META:2-OCTAPRENYL-6-METHOXYPHENOL",
+          "chebi": "CHEBI:1235",
+          "inchi_key": "MYNOBJRQIKYBRD-MGHGRUFNSA-N",
+          "kegg.compound": "C05812",
+          "metanetx.chemical": "MNXM1707",
+          "seed.compound": "cpd03446"
+        }
+      },
+      "2ombzl_c": {
+        "id": "2ombzl_c",
+        "name": "2-Octaprenyl-6-methoxy-1,4-benzoquinol",
+        "formula": "C47H72O3",
+        "charge": 0,
+        "compartment": "C_c",
+        "annotation": {
+          "sbo": "SBO:0000247",
+          "bigg.metabolite": "2ombzl",
+          "biocyc": "META:OCTAPRENYL-METHOXY-BENZOQUINONE",
+          "chebi": "CHEBI:60655",
+          "inchi_key": "CZFRMASEEPTBAQ-MYCGWMCTSA-N",
+          "metanetx.chemical": "MNXM90444",
+          "seed.compound": "cpd15359"
+        }
+      },
+      "2ommbl_c": {
+        "id": "2ommbl_c",
+        "name": "2-Octaprenyl-3-methyl-6-methoxy- 1,4-benzoquinol",
+        "formula": "C48H74O3",
+        "charge": 0,
+        "compartment": "C_c",
+        "annotation": {
+          "sbo": "SBO:0000247",
+          "bigg.metabolite": "2ommbl",
+          "biocyc": "META:OCTAPRENYL-METHYL-METHOXY-BENZQ",
+          "chebi": "CHEBI:60656",
+          "hmdb": "HMDB11661",
+          "inchi_key": "HDSGDGSLNMIMKU-KFSSTAEESA-N",
+          "metanetx.chemical": "MNXM1899",
+          "seed.compound": "cpd15361"
+        }
+      },
+      "2omhmbl_c": {
+        "id": "2omhmbl_c",
+        "name": "2-Octaprenyl-3-methyl-5-hydroxy-6-methoxy-1,4-benzoquinol",
+        "formula": "C48H74O4",
+        "charge": 0,
+        "compartment": "C_c",
+        "annotation": {
+          "sbo": "SBO:0000247",
+          "bigg.metabolite": "2omhmbl",
+          "biocyc": "META:OCTAPRENYL-METHYL-OH-METHOXY-BENZQ",
+          "chebi": [
+            "CHEBI:61705",
+            "CHEBI:19728",
+            "CHEBI:27688",
+            "CHEBI:1231"
+          ],
+          "inchi_key": "QURLIMHPCRKMJP-WDXILIIOSA-N",
+          "metanetx.chemical": "MNXM2187",
+          "seed.compound": "cpd15360"
+        }
+      }
+    },
+    "applied_reactions": [
+      {
+        "id": "OHPHM",
+        "name": "2-octaprenyl-6-hydroxyphenol methylase",
+        "equation": "2ohph_c + amet_c --> 2omph_c + ahcys_c + h_c",
+        "metabolites": {
+          "2ohph_c": -1.0,
+          "2omph_c": 1.0,
+          "ahcys_c": 1.0,
+          "amet_c": -1.0,
+          "h_c": 1.0
+        },
+        "lower_bound": 0.0,
+        "upper_bound": 999999.0,
+        "gene_reaction_rule": "PP_1765",
+        "gene_ids": [
+          "PP_1765"
+        ],
+        "annotation": {
+          "sbo": "SBO:0000176",
+          "bigg.reaction": "OHPHM",
+          "biocyc": "META:2-OCTAPRENYL-6-OHPHENOL-METHY-RXN",
+          "ec-code": "2.1.1.222",
+          "kegg.reaction": "R04988",
+          "metanetx.reaction": "MNXR102170",
+          "rhea": [
+            "27772",
+            "27773",
+            "27771",
+            "27770"
+          ],
+          "seed.reaction": "rxn03395"
+        },
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": []
+      },
+      {
+        "id": "OMPHHX",
+        "name": "2-octaprenyl-6-methoxyphenol hydroxylase",
+        "equation": "2omph_c + 0.5 o2_c --> 2ombzl_c",
+        "metabolites": {
+          "2ombzl_c": 1.0,
+          "2omph_c": -1.0,
+          "o2_c": -0.5
+        },
+        "lower_bound": 0.0,
+        "upper_bound": 999999.0,
+        "gene_reaction_rule": "PP_5199",
+        "gene_ids": [
+          "PP_5199"
+        ],
+        "annotation": {
+          "sbo": "SBO:0000176",
+          "bigg.reaction": "OMPHHX",
+          "metanetx.reaction": "MNXR138671",
+          "seed.reaction": "rxn09042"
+        },
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": []
+      },
+      {
+        "id": "OMBZLM",
+        "name": "2-Octaprenyl-6-methoxy-benzoquinol methylase",
+        "equation": "2ombzl_c + amet_c --> 2ommbl_c + ahcys_c + h_c",
+        "metabolites": {
+          "2ombzl_c": -1.0,
+          "2ommbl_c": 1.0,
+          "ahcys_c": 1.0,
+          "amet_c": -1.0,
+          "h_c": 1.0
+        },
+        "lower_bound": 0.0,
+        "upper_bound": 999999.0,
+        "gene_reaction_rule": "NP_747113_1",
+        "gene_ids": [
+          "NP_747113_1"
+        ],
+        "annotation": {
+          "sbo": "SBO:0000176",
+          "bigg.reaction": "OMBZLM",
+          "biocyc": "META:2-OCTAPRENYL-METHOXY-BENZOQ-METH-RXN",
+          "ec-code": "2.1.1.201",
+          "metanetx.reaction": "MNXR115030",
+          "rhea": [
+            "27774",
+            "27777",
+            "27776",
+            "27775"
+          ],
+          "seed.reaction": "rxn09039"
+        },
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": []
+      },
+      {
+        "id": "OMMBLHX",
+        "name": "2-Octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase",
+        "equation": "2ommbl_c + 0.5 o2_c --> 2omhmbl_c",
+        "metabolites": {
+          "2omhmbl_c": 1.0,
+          "2ommbl_c": -1.0,
+          "o2_c": -0.5
+        },
+        "lower_bound": 0.0,
+        "upper_bound": 999999.0,
+        "gene_reaction_rule": "PP_0427 or PP_5197",
+        "gene_ids": [
+          "PP_0427",
+          "PP_5197"
+        ],
+        "annotation": {
+          "sbo": "SBO:0000176",
+          "bigg.reaction": "OMMBLHX",
+          "metanetx.reaction": "MNXR138669",
+          "seed.reaction": "rxn09040"
+        },
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": []
+      },
+      {
+        "id": "DMQMT",
+        "name": "3-Dimethylubiquinonol 3-methyltransferase",
+        "equation": "2omhmbl_c + amet_c --> ahcys_c + h_c + q8h2_c",
+        "metabolites": {
+          "2omhmbl_c": -1.0,
+          "ahcys_c": 1.0,
+          "amet_c": -1.0,
+          "h_c": 1.0,
+          "q8h2_c": 1.0
+        },
+        "lower_bound": 0.0,
+        "upper_bound": 999999.0,
+        "gene_reaction_rule": "PP_1765",
+        "gene_ids": [
+          "PP_1765"
+        ],
+        "annotation": {
+          "sbo": "SBO:0000176",
+          "bigg.reaction": "DMQMT",
+          "biocyc": "META:DHHB-METHYLTRANSFER-RXN",
+          "ec-code": "2.1.1.64",
+          "metanetx.reaction": "MNXR97527",
+          "rhea": [
+            "28682",
+            "28680",
+            "28679",
+            "28681"
+          ],
+          "seed.reaction": "rxn08353"
+        },
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": []
+      }
+    ],
+    "source_balance": {
+      "OHPHM": {},
+      "OMPHHX": {},
+      "OMBZLM": {},
+      "OMMBLHX": {},
+      "DMQMT": {}
+    },
+    "balance_caveat": "Source balance is checked separately. Preserved target charge placeholders do not establish target chemical correctness.",
+    "caveats": [
+      "Exact local iJN1463 transfer is a provisional chemistry arm, not an independently validated KT2440 pathway or GPR correction.",
+      "OMPHHX and OMMBLHX retain the source half-O2 equations without explicit reductant/flavin costs. Atom balance does not establish enzyme-level energetic stoichiometry. Existing OPHHX has the same simplification.",
+      "Existing OPHHX is assigned to PP_5013 in both models, but the local current CDS annotation calls this protein regulatory kinase UbiB; the catalytic GPR is unresolved here.",
+      "Source OPHBDC uses PP_5213 or PP_0548; current annotations identify UbiD and flavin prenyltransferase UbiX, respectively. This OR is not independent evidence of interchangeable catalytic enzymes. The draft currently retains PP_5213 alone.",
+      "Source OMMBLHX uses PP_0427 or PP_5197. Their substrate/hydroxylation-site equivalence is not established by this transfer; see the separate biological-source audit before revising GPRs.",
+      "q8/q8h2 is retained solely as the existing source/draft representation. Native KT2440 quinone chain length and quantitative dilution requirement remain separate questions.",
+      "Source reaction upper bounds are preserved exactly (999999), not interpreted as measured capacities. No phenotype fit or numerical gap-fill selected this reaction set.",
+      "Current RefSeq WP accessions are identity evidence, not automatically interchangeable model IDs. Reuse an existing draft ID when unique; otherwise the source PP locus is a new ID supported by the existing mapper."
+    ]
+  },
+  "gpr_changes": [],
+  "applied_biomass_coefficient": -9.68418998275772e-05
+}

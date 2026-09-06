@@ -1,0 +1,184 @@
+{
+  "arms": [
+    {
+      "arm": "baseline",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.9193705347896828
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.0,
+          "producible_at_threshold": false,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.0,
+          "producible_at_threshold": false,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "demand_only",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.0
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.0,
+          "producible_at_threshold": false,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.0,
+          "producible_at_threshold": false,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "curated_path_only",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.9193705347906251
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7685512367491207,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225327,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "curated_path_template",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.919263665467463
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7685512367491167,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225364,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "curated_path_curated",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.9191244816808207
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7685512367491238,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225329,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "sequence_path_template",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.919263665467463
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7685512367491167,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225364,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    }
+  ],
+  "coefficients": {
+    "none": 0.0,
+    "template": -9.68418998275772e-05,
+    "curated": -0.000223
+  },
+  "role": "physical model predictions, not biological validation"
+}

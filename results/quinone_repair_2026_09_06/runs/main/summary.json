@@ -1,0 +1,903 @@
+{
+  "study": {
+    "study_id": "putida-quinone-repair-v1",
+    "evaluation_role": "development",
+    "question": "Can a declared five-reaction source-model transfer restore net ubiquinone production and growth-associated demand, and which gene hypotheses remain invisible to the exported fitness benchmark?",
+    "organism": "Putida",
+    "candidate_path": "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+    "gene_evidence_path": "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+    "base_model_patch_version": "0.4",
+    "configurations": [
+      {
+        "id": "baseline",
+        "add_pathway": false,
+        "biomass_coefficient_source": "none",
+        "gpr_overrides": {},
+        "run_benchmark": true
+      },
+      {
+        "id": "demand_only",
+        "add_pathway": false,
+        "biomass_coefficient_source": "template",
+        "gpr_overrides": {},
+        "run_benchmark": true
+      },
+      {
+        "id": "curated_path_only",
+        "add_pathway": true,
+        "biomass_coefficient_source": "none",
+        "gpr_overrides": {},
+        "run_benchmark": true
+      },
+      {
+        "id": "curated_path_template",
+        "add_pathway": true,
+        "biomass_coefficient_source": "template",
+        "gpr_overrides": {},
+        "run_benchmark": true
+      },
+      {
+        "id": "curated_path_curated",
+        "add_pathway": true,
+        "biomass_coefficient_source": "curated",
+        "gpr_overrides": {},
+        "run_benchmark": true
+      },
+      {
+        "id": "sequence_path_template",
+        "add_pathway": true,
+        "biomass_coefficient_source": "template",
+        "gpr_overrides": {
+          "OPHHX": "PP_5197",
+          "OMMBLHX": "PP_0427",
+          "OPHBDC": "PP_5213 and PP_0548"
+        },
+        "run_benchmark": false
+      }
+    ],
+    "protocol": {
+      "processes": 2,
+      "solver": "glpk",
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "carbon_uptake": -10.0,
+      "complete_medium_transport": true,
+      "drop_rich_medium_essentials": false
+    },
+    "physical_condition": {
+      "name": "D-Glucose",
+      "media": "MOPS minimal media_noCarbon"
+    },
+    "physical_settings": {
+      "feasibility_tolerance": 1e-09,
+      "production_capacity": 1000.0,
+      "production_threshold": 1e-06,
+      "egc_threshold": 1e-06
+    },
+    "transfer_metadata_policy": {
+      "compartment_aliases": {
+        "c": "C_c"
+      },
+      "expected_shared_charge_differences": {
+        "amet_c": {
+          "source": 1,
+          "target": 0
+        },
+        "h_c": {
+          "source": 1,
+          "target": 0
+        }
+      },
+      "basis_path": "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+      "note": "Existing target metabolite metadata are preserved. Source c and target C_c both denote the cytosol; only copied new-metabolite compartment labels are normalized. Stored source and target metabolite metadata are therefore not byte-identical. Shared target charges of zero are placeholders, not newly validated chemical charges. Any undeclared formula, compartment, or charge difference aborts the transfer."
+    },
+    "pool_weights": {
+      "q8_c": 1.0,
+      "q8h2_c": 1.0
+    },
+    "targeted_gene_loci": [
+      "PP_5317",
+      "PP_0528",
+      "PP_0687",
+      "PP_5318",
+      "PP_5213",
+      "PP_0548",
+      "PP_5197",
+      "PP_1765",
+      "PP_5199",
+      "PP_5011",
+      "PP_0427",
+      "PP_5012",
+      "PP_5013"
+    ],
+    "physical_checks": [
+      "Source reaction and gene-alias agreement",
+      "Net cofactor production under the fixed glucose medium",
+      "Exact declared-pool row-sum certificate",
+      "Wild-type glucose growth",
+      "Energy-from-nothing checks for all available standard currencies",
+      "Source-versus-target elemental and charge balance with incomplete metadata disclosed",
+      "Single-gene deletions of declared pathway/support loci including unscored genes; absent genes remain unrepresented"
+    ],
+    "sequence_arm_benchmark_rule": "Do not repeat the fitness simulation only if all changed gene rules involve exclusively loci without exported fitness rows and the full stoichiometry and bounds equal curated_path_template. Record the check. Otherwise stop for a documented new plan before evaluating an additional benchmark arm. Its targeted gene-deletion predictions are separate unvalidated hypotheses.",
+    "decision_rule": "Retain every arm, failure and adverse result. Restore synthesis and assess model consistency before interpreting benchmark agreement. Do not choose reactions, gene rules, coefficients or reducing donors using fitness outcomes. Both transfer and sequence-informed variants remain candidates with source/evidence grades, not accepted physiological corrections.",
+    "comparison": {
+      "primary": "Each scored arm versus baseline on aligned common finite gene-condition observations where both wild types grow",
+      "bootstrap_unit": "gene",
+      "resamples": 500,
+      "seed": 0,
+      "coverage": "Report every mapped condition, growing conditions, and scored/annotated gene counts separately"
+    },
+    "caveats": [
+      "These are exposed development data; no independent validation set exists.",
+      "Source-model reaction transfer retains its bounds, oxygenase abstractions, Q8 representation and unmodified upstream assumptions.",
+      "The sequence-informed GPR arm encodes an inferred UbiD/UbiX cofactor dependency, not a heteromeric catalyst; UbiB accessory requirements are not represented.",
+      "No exported fitness row does not establish mutant-library absence, essentiality or dispensability.",
+      "Native KT2440 quinone tail length, pool size and reducing-donor specificity remain unresolved."
+    ]
+  },
+  "study_fingerprint": "d4a72ef731a9fa0451e0b1c9a0463837872e07dc1007772ce7ed2d1b53820734",
+  "runs": [
+    {
+      "arm": "baseline",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5138583932136408,
+          "ci95": [
+            0.39082686445499215,
+            0.6304530465670097
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.42879974899088785,
+          "ci95": [
+            0.319304765160858,
+            0.5388529313154024
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7625839995107795,
+          "ci95": [
+            0.7080815514904726,
+            0.8124936861068005
+          ]
+        },
+        "mcc": {
+          "point": 0.5871646546465976,
+          "ci95": [
+            0.4888396321666528,
+            0.6782066370560209
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.764561111077242,
+          "ci95": [
+            0.71303232336582,
+            0.8108073392093241
+          ]
+        },
+        "accuracy": {
+          "point": 0.9587898196527895,
+          "ci95": [
+            0.9492450418562841,
+            0.9679637901005674
+          ]
+        },
+        "confusion": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      },
+      "counts": {
+        "model_genes": 1301,
+        "model_genes_mapped": 1300,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "arm": "demand_only",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 0
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 0,
+        "n_conditions": 0,
+        "n_gene_condition_pairs": 0,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0
+      },
+      "counts": {
+        "model_genes": 1301,
+        "model_genes_mapped": 1300,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 0,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "arm": "curated_path_only",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5138583932136408,
+          "ci95": [
+            0.39082686445499215,
+            0.6304530465670097
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.43156929785046694,
+          "ci95": [
+            0.3264466460324794,
+            0.5412176013780823
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7626071471222653,
+          "ci95": [
+            0.7082935860836238,
+            0.8125680052518676
+          ]
+        },
+        "mcc": {
+          "point": 0.5871646546465976,
+          "ci95": [
+            0.4888396321666528,
+            0.6782066370560209
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.764561111077242,
+          "ci95": [
+            0.71303232336582,
+            0.8108073392093241
+          ]
+        },
+        "accuracy": {
+          "point": 0.9587898196527895,
+          "ci95": [
+            0.9492450418562841,
+            0.9679637901005674
+          ]
+        },
+        "confusion": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      },
+      "counts": {
+        "model_genes": 1305,
+        "model_genes_mapped": 1304,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "arm": "curated_path_template",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.49939171817927247,
+          "ci95": [
+            0.37068562579727654,
+            0.6129579853699584
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.4068463340637922,
+          "ci95": [
+            0.30375152540861206,
+            0.5178694515842628
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7612254584454324,
+          "ci95": [
+            0.7065898341367514,
+            0.810805035004177
+          ]
+        },
+        "mcc": {
+          "point": 0.5743840077803017,
+          "ci95": [
+            0.4732650060238629,
+            0.6638506181132247
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7635920899376731,
+          "ci95": [
+            0.7113446599802316,
+            0.810082289393381
+          ]
+        },
+        "accuracy": {
+          "point": 0.9569638743749649,
+          "ci95": [
+            0.9467743974380584,
+            0.9658850216304287
+          ]
+        },
+        "confusion": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "counts": {
+        "model_genes": 1305,
+        "model_genes_mapped": 1304,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    },
+    {
+      "arm": "curated_path_curated",
+      "condition_level": {
+        "n_conditions_mapped": 43,
+        "n_conditions_wt_grows": 34
+      },
+      "gene_level_conditions_where_wt_grows": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.49939171817927247,
+          "ci95": [
+            0.37068562579727654,
+            0.6129579853699584
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.4191074341941406,
+          "ci95": [
+            0.3173110558461196,
+            0.5281404044504849
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7616274970513042,
+          "ci95": [
+            0.7069403023194689,
+            0.8112827243696482
+          ]
+        },
+        "mcc": {
+          "point": 0.5743840077803017,
+          "ci95": [
+            0.4732650060238629,
+            0.6638506181132247
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7635920899376731,
+          "ci95": [
+            0.7113446599802316,
+            0.810082289393381
+          ]
+        },
+        "accuracy": {
+          "point": 0.9569638743749649,
+          "ci95": [
+            0.9467743974380584,
+            0.9658850216304287
+          ]
+        },
+        "confusion": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "counts": {
+        "model_genes": 1305,
+        "model_genes_mapped": 1304,
+        "genes_with_fitness": 1047,
+        "genes_after_adjustment": 1047,
+        "conditions_total": 57,
+        "conditions_mapped": 43,
+        "conditions_wt_grows": 34,
+        "medium_completion_exchanges_added": 7
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "arm": "demand_only",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 0,
+      "conditions_both_grow": [],
+      "n_shared_finite_pairs": 0,
+      "wt_grows": {
+        "A": 34,
+        "B": 0
+      },
+      "mcc": {
+        "A": null,
+        "B": null
+      },
+      "confusion": {
+        "A": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "B": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": null,
+        "ci95": [
+          null,
+          null
+        ],
+        "finite_bootstrap_samples": 0,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    },
+    {
+      "arm": "curated_path_only",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5871646546465976,
+        "B": 0.5871646546465976
+      },
+      "confusion": {
+        "A": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        },
+        "B": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    },
+    {
+      "arm": "curated_path_template",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5871646546465976,
+        "B": 0.5743840077803017
+      },
+      "confusion": {
+        "A": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        },
+        "B": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": -0.012780646866295875,
+        "ci95": [
+          -0.03190500139141876,
+          0.0
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    },
+    {
+      "arm": "curated_path_curated",
+      "evaluation_role": "retrospective_development",
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5871646546465976,
+        "B": 0.5743840077803017
+      },
+      "confusion": {
+        "A": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        },
+        "B": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": -0.012780646866295875,
+        "ci95": [
+          -0.03190500139141876,
+          0.0
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      },
+      "uncertainty_note": "Paired percentile bootstrap over genes; conditions are fixed. This does not account for adaptive patch selection or establish held-out performance."
+    }
+  ],
+  "physical_arms": [
+    {
+      "arm": "baseline",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.9193705347896828
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.0,
+          "producible_at_threshold": false,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.0,
+          "producible_at_threshold": false,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "demand_only",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.0
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.0,
+          "producible_at_threshold": false,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.0,
+          "producible_at_threshold": false,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "curated_path_only",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.9193705347906251
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7685512367491207,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225327,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "curated_path_template",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.919263665467463
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7685512367491167,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225364,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "curated_path_curated",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.9191244816808207
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7685512367491238,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225329,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    },
+    {
+      "arm": "sequence_path_template",
+      "wild_type": {
+        "status": "optimal",
+        "growth": 0.919263665467463
+      },
+      "production": [
+        {
+          "metabolite": "q8_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7685512367491167,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        },
+        {
+          "metabolite": "q8h2_c",
+          "status": "optimal",
+          "maximum_demand_flux": 0.7658450704225364,
+          "producible_at_threshold": true,
+          "threshold": 1e-06,
+          "probe_capacity": 1000.0,
+          "capacity_reached": false,
+          "solver": "optlang.glpk_interface"
+        }
+      ]
+    }
+  ],
+  "n_changed_gene_condition_predictions": 130,
+  "seconds": 771.6318371295929
+}

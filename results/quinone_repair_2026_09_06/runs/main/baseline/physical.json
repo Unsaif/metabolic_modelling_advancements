@@ -1,0 +1,1197 @@
+{
+  "condition": "D-Glucose | MOPS minimal media_noCarbon",
+  "settings": {
+    "feasibility_tolerance": 1e-09,
+    "production_capacity": 1000.0,
+    "production_threshold": 1e-06,
+    "egc_threshold": 1e-06
+  },
+  "solver": "optlang.glpk_interface",
+  "effective_feasibility_tolerance": 1e-09,
+  "objective": {
+    "expression": "1.0*Growth - 1.0*Growth_reverse_699ae",
+    "direction": "max"
+  },
+  "growth_bounds": [
+    0.0,
+    1000.0
+  ],
+  "atp_maintenance_bounds": [
+    0.0,
+    1000.0
+  ],
+  "maintenance_note": "No positive ATP-maintenance lower bound is imposed.",
+  "mandatory_flux_bounds": {},
+  "final_exchange_bounds": {
+    "EX_15dap_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_2pglyc_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_34dhbz_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_34dhcinm_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_3hcinnm_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_3hpppn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_3mb_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_3oxoadp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_4abut_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_4hbz_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_4hphac_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_T4hcinnm_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ac_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_acac_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_acald_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_acon_C_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ade_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_adn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_akg_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ala_B_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ala__D_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ala__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_alltn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_amp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_arab__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_arg__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_asn__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_aso3_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_aso4_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_asp__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_btoh_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_but_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_butso3_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_bz_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_bzal_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ca2_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_chol_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_chols_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_cit_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_cl_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_cmp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_co2_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_cobalt2_e": [
+      -0.1,
+      1000.0
+    ],
+    "EX_colipa_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_confrl_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_csn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_cu2_e": [
+      -0.1,
+      1000.0
+    ],
+    "EX_cu_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_cytd_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dad_2_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_damp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dca_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dcmp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dcyt_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ddca_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dgmp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dgsn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dms_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dmso_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_dtmp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_enlipa_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_enter_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_etha_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ethso3_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_etoh_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_fe2_e": [
+      -0.1,
+      1000.0
+    ],
+    "EX_fe3_e": [
+      -0.1,
+      1000.0
+    ],
+    "EX_feenter_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_for_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_fru_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_fum_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_g3pe_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_gal_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_galct__D_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_galctn__D_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_galctr__D_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_galur_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glc__D_e": [
+      -10.0,
+      1000.0
+    ],
+    "EX_glcn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glcr_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glcur_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_gln__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glu__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_gly_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glyald_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glyb_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glyc__R_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_glyc_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_gm1lipa_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_gmp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_gsn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_gua_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_h2_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_h2o_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_h2s_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_h_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_hdca_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_hdcea_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_hexs_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_his__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_hxan_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_icit_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ile__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_imp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_inost_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ins_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_isetac_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_k_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_lac__D_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_lac__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_lcts_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_leu__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_lys__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_mal__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_malthp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_meoh_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_met__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_mg2_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_mmet_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_mn2_e": [
+      -0.1,
+      1000.0
+    ],
+    "EX_mobd_e": [
+      -0.1,
+      1000.0
+    ],
+    "EX_mso3_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_na1_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_nh4_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_ni2_e": [
+      -0.1,
+      1000.0
+    ],
+    "EX_nmn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_no2_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_no3_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_no_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_o2_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_oaa_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ocdca_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ocdcea_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_octa_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_orn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_orot_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_oxa_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_pac_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_phe__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_pi_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_pnto__R_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ppa_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ppoh_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_pro__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_progly_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ptrc_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_pydxn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_pyr_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_quin_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_rib__D_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_rnam_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_s_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_salchs4_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_salchs4fe_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ser__D_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ser__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_skm_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_so3_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_so4_e": [
+      -1000.0,
+      1000.0
+    ],
+    "EX_spmd_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_succ_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_sulfac_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_tartr__D_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_taur_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_thr__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_thymd_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_tol_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_tre_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_trp__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_tsul_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ttdca_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ttdcea_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_tyr__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ump_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_ura_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_urate_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_urea_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_uri_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_val__L_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_vanln_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_vanlt_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_xan_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_xmp_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_xtsn_e": [
+      0.0,
+      1000.0
+    ],
+    "EX_zn2_e": [
+      -0.1,
+      1000.0
+    ]
+  },
+  "declared_carbon_source_ids": [
+    "glc__D"
+  ],
+  "declared_carbon_exchanges": [
+    "EX_glc__D_e"
+  ],
+  "declared_carbon_uptake": -10.0,
+  "medium_completion_added": [
+    "EX_4abz_e",
+    "EX_btn_e",
+    "EX_na1_e",
+    "EX_nac_e",
+    "EX_ni2_e",
+    "EX_ribflv_e",
+    "EX_thm_e"
+  ],
+  "missing_medium_components": [
+    "EX_sel_e",
+    "EX_slnt_e",
+    "EX_tungs_e"
+  ],
+  "energy_from_nothing": {
+    "atp": 0.0,
+    "nadh": 0.0,
+    "nadph": 0.0,
+    "q8h2": 0.0,
+    "h_p": 0.0
+  },
+  "tested_energy_currencies": [
+    "atp",
+    "h_p",
+    "nadh",
+    "nadph",
+    "q8h2"
+  ],
+  "pool_certificate": {
+    "pool_weights": {
+      "q8_c": 1.0,
+      "q8h2_c": 1.0
+    },
+    "exactly_conserved_in_stoichiometry": true,
+    "n_incident_reactions": 10,
+    "reactions": [
+      {
+        "reaction": "CYO1_KT",
+        "pool_terms": {
+          "q8_c": 1.0,
+          "q8h2_c": -1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "CYTBDpp",
+        "pool_terms": {
+          "q8_c": 1.0,
+          "q8h2_c": -1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "CYTBO3_4pp",
+        "pool_terms": {
+          "q8_c": 1.0,
+          "q8h2_c": -1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "GLCDpp",
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "L_LACD2",
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "MDH2",
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "NADH16pp",
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "NADH5",
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "NADPHQR2",
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      },
+      {
+        "reaction": "SUCDi",
+        "pool_terms": {
+          "q8_c": -1.0,
+          "q8h2_c": 1.0
+        },
+        "net_pool_coefficient": 0.0,
+        "exact_numerator": "0",
+        "exact_denominator": "1",
+        "bounds": [
+          0.0,
+          1000.0
+        ],
+        "boundary": false,
+        "can_supply_by_direction": false,
+        "can_consume_by_direction": false
+      }
+    ],
+    "direction_compatible_supply_reactions": [],
+    "scope": "Declared metabolite pool and ordinary zero-balance FBA rows; no automatic moiety discovery or biological validation."
+  },
+  "wild_type": {
+    "status": "optimal",
+    "growth": 0.9193705347896828
+  },
+  "production_at_growth_lower_bound_zero": [
+    {
+      "metabolite": "q8_c",
+      "status": "optimal",
+      "maximum_demand_flux": 0.0,
+      "producible_at_threshold": false,
+      "threshold": 1e-06,
+      "probe_capacity": 1000.0,
+      "capacity_reached": false,
+      "solver": "optlang.glpk_interface"
+    },
+    {
+      "metabolite": "q8h2_c",
+      "status": "optimal",
+      "maximum_demand_flux": 0.0,
+      "producible_at_threshold": false,
+      "threshold": 1e-06,
+      "probe_capacity": 1000.0,
+      "capacity_reached": false,
+      "solver": "optlang.glpk_interface"
+    }
+  ],
+  "targeted_gene_predictions": [
+    {
+      "locus": "PP_5317",
+      "model_gene_id": "NP_747418_1",
+      "exported_fitness_row_present": true,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "associated_reactions": [
+        "CHRPL"
+      ],
+      "status": "optimal",
+      "growth": 0.9193705347924586
+    },
+    {
+      "locus": "PP_0528",
+      "model_gene_id": "NP_742691_1",
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "associated_reactions": [
+        "DMATT",
+        "GRTT"
+      ],
+      "status": "optimal",
+      "growth": 8.95112001124675e-16
+    },
+    {
+      "locus": "PP_0687",
+      "model_gene_id": "NP_742848_1",
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "associated_reactions": [
+        "OCTDPS"
+      ],
+      "status": "optimal",
+      "growth": 0.9193705347896624
+    },
+    {
+      "locus": "PP_5318",
+      "model_gene_id": "NP_747419_1",
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "associated_reactions": [
+        "HBZOPT"
+      ],
+      "status": "optimal",
+      "growth": 0.9193705347896931
+    },
+    {
+      "locus": "PP_5213",
+      "model_gene_id": "NP_747314_2",
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "associated_reactions": [
+        "OPHBDC"
+      ],
+      "status": "optimal",
+      "growth": 0.9193705347896931
+    },
+    {
+      "locus": "PP_0548",
+      "model_gene_id": null,
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "status": "unrepresented_gene",
+      "growth": null,
+      "associated_reactions": []
+    },
+    {
+      "locus": "PP_5197",
+      "model_gene_id": null,
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "status": "unrepresented_gene",
+      "growth": null,
+      "associated_reactions": []
+    },
+    {
+      "locus": "PP_1765",
+      "model_gene_id": null,
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "status": "unrepresented_gene",
+      "growth": null,
+      "associated_reactions": []
+    },
+    {
+      "locus": "PP_5199",
+      "model_gene_id": null,
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "status": "unrepresented_gene",
+      "growth": null,
+      "associated_reactions": []
+    },
+    {
+      "locus": "PP_5011",
+      "model_gene_id": "NP_747113_1",
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "associated_reactions": [
+        "AMMQLT8",
+        "AMMQT8_2"
+      ],
+      "status": "optimal",
+      "growth": 0.9193705347896931
+    },
+    {
+      "locus": "PP_0427",
+      "model_gene_id": null,
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "status": "unrepresented_gene",
+      "growth": null,
+      "associated_reactions": []
+    },
+    {
+      "locus": "PP_5012",
+      "model_gene_id": null,
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "status": "unrepresented_gene",
+      "growth": null,
+      "associated_reactions": []
+    },
+    {
+      "locus": "PP_5013",
+      "model_gene_id": "YP_009237195_1",
+      "exported_fitness_row_present": false,
+      "role": "model prediction only; no experimental validation",
+      "wild_type_grows_at_threshold": true,
+      "growth_threshold": 0.001,
+      "wild_type_growth": 0.9193705347896828,
+      "interpretation": "Conditional model prediction only",
+      "associated_reactions": [
+        "OPHHX"
+      ],
+      "status": "optimal",
+      "growth": 0.9193705347896931
+    }
+  ]
+}

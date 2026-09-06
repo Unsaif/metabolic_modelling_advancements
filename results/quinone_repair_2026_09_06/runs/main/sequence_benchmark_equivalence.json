@@ -1,0 +1,29 @@
+{
+  "stoichiometry_bounds_objective_constraints_identical": true,
+  "changed_gprs_use_exclusively_unscored_loci": true,
+  "changed_reactions": [
+    {
+      "reaction": "OPHBDC",
+      "loci": [
+        "PP_0548",
+        "PP_5213"
+      ]
+    },
+    {
+      "reaction": "OPHHX",
+      "loci": [
+        "PP_5013",
+        "PP_5197"
+      ]
+    },
+    {
+      "reaction": "OMMBLHX",
+      "loci": [
+        "PP_0427",
+        "PP_5197"
+      ]
+    }
+  ],
+  "benchmark_omitted_for_sequence_arm": true,
+  "interpretation": "Identical LP for wild type and every covered single-gene deletion; targeted unscored predictions remain distinct hypotheses."
+}

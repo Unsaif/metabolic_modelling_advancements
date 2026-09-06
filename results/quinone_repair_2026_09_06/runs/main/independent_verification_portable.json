@@ -1,0 +1,674 @@
+{
+  "created_utc": "2026-09-06T11:51:58.866978+00:00",
+  "passed": true,
+  "verification_script": {
+    "path": "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/scripts/verify_quinone_repair.py",
+    "sha256": "3c755f688addb6021c0452e32964af62b88a8c708aebc6b07d18212a8cc9ec5b"
+  },
+  "model_path_policy": "Original card checkout prefixes are retained as provenance; arm/filename suffix and current exported model hash/identity are verified, allowing relocation.",
+  "runtime": {
+    "python": "3.14.3",
+    "platform": "macOS-14.2.1-arm64-arm-64bit-Mach-O",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "cobra": "0.32.1"
+  },
+  "run_directory": "/Users/timhulshof/.codex/.chatgpt-projects/g-p-6a9d1896e28881919f06af51e1e3c459/metabolic_modelling_advancements/results/quinone_repair_2026_09_06/runs/main",
+  "result_input_sha256": {
+    "baseline/card.json": "ba714249fd585e0caa1a6474ea05faa2a0150b3e3800373d50a46fc2dbb0e753",
+    "baseline/card.md": "0dc6de0fe76c6c25418eb939e0d9e4d55a5520adf40f4424af762d5a18bbcc89",
+    "baseline/conditions.tsv": "0a86e7ea6ed9fcb5199834e21a2b397de66e5b7f6059d28c8923f9ad9b2711e6",
+    "baseline/gene_map.json": "76ea997de091bb015ce6b372966d09ae333476ac12772c0a66a2bfad88ec9ab2",
+    "baseline/intervention.json": "645cd7716999d5467afd5ed048ac29f69faf1bb3ae04b5465261fd0d3776795a",
+    "baseline/matrices.npz": "503f152da34948fbd4c129e1d38ca3e8ca3b1424e0ff52df0f912de33566d16f",
+    "baseline/model.xml.gz": "c147610f9f2063af7517c5f25810beeec109effa6176b52ccde8c71f1d963b83",
+    "baseline/per_condition_metrics.tsv": "ccd2dab884c2c9bbfc822b7f2bfc0886997f77fc2e97e1f7f8699cf1f022c48b",
+    "baseline/physical.json": "2c2651393203d7d5584c31461b467542152420ab4a45247699b13a6931f8bd3c",
+    "changed_predictions.json": "755357c0017112e76b3d7c849d5092398e1568a016e7e4a94d57b95a15bfc2e2",
+    "curated_path_curated/card.json": "9a3b2f47b4b525a6f86cb75f3728aed19c8083626f3ad1a5f085b9c90f25c379",
+    "curated_path_curated/card.md": "ad9a67e8bc9566d1dce5ac7d842eb2ff37f1d0b2dd60541f85bc590d1fa9c852",
+    "curated_path_curated/conditions.tsv": "81817e4bafa7a392425741fec10b3fe9d5902d7d6e9117b18d4dd37ab2bea672",
+    "curated_path_curated/gene_map.json": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885",
+    "curated_path_curated/intervention.json": "6831faa0fbc547e5ff8cc7aab8a6bcd012d78b69c4376e68b3307e6f457afdf0",
+    "curated_path_curated/matrices.npz": "62b9e10ebd89bbee6ee4ff956b49d519fc12342d12e2723e5b1120a0e3808298",
+    "curated_path_curated/model.xml.gz": "76e8d8a5b962e023a1f686782eb43eb0d40a12da45e4b5844db325bf7b20a198",
+    "curated_path_curated/per_condition_metrics.tsv": "21ed6adb426fce0bca2f408baeec590f6a034d49b83cebca2a3da68c2a0f3344",
+    "curated_path_curated/physical.json": "85f0fd24728419e20c6f6e1018f957fbe448e2fd4a16e7f3755c301dca3dec3c",
+    "curated_path_only/card.json": "0f4a2ea5883f8179bad362be06476430c4ef684dcf966fa2aeb68dfe406aa93f",
+    "curated_path_only/card.md": "30173fd31be7eaf53954ac7fb1d9fe30458895e2b8dc8a505d2c7c1b27761e3b",
+    "curated_path_only/conditions.tsv": "e4c5f95a08f09fbeec4f84bec54f350ce18eaf88d4aab27bbf54f319c3dba562",
+    "curated_path_only/gene_map.json": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885",
+    "curated_path_only/intervention.json": "d3146a40a59b5bded6005bdafc930f02c47af00c3dbdd3fe9373bb9c3c5b6964",
+    "curated_path_only/matrices.npz": "a1b92aa36a6e4e087a1332c12b3446c93c18385acc466713c50a23aa0399566d",
+    "curated_path_only/model.xml.gz": "d8959d2cca76e0127fc53d86fe6a5360055a1d42d192e2ba4e7d33f9827b31b3",
+    "curated_path_only/per_condition_metrics.tsv": "60b603dd78c7a31c30be7ca90c007717c9121b49f5f0986c92ff2260c81a5eab",
+    "curated_path_only/physical.json": "3d29e5cf3affad314837e08f645cd677c10603e104b80927bc6199faefb1e400",
+    "curated_path_template/card.json": "a2eb91d981614486bf419f1f51ca04f79bc1b72a355fb7255ecc318b287339bc",
+    "curated_path_template/card.md": "16883d91d3659a3467401e211649174d6acf8c3a0142ed93729f69011bfcda9a",
+    "curated_path_template/conditions.tsv": "9c57133feeea96b82e3a6785a3e122c37067a9f1b4a79078c64fee168c290651",
+    "curated_path_template/gene_map.json": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885",
+    "curated_path_template/intervention.json": "4e13fd006071de0c7165110efcddace266b950f9be3eb4098cc824ae08dc1813",
+    "curated_path_template/matrices.npz": "beb0968c872bf07109e043802b6fbfa2b2b2e9c99aaa695a2ee464edf813c4d6",
+    "curated_path_template/model.xml.gz": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+    "curated_path_template/per_condition_metrics.tsv": "5935a5267dae4f846b775777c4ece84608bedbdc09ad35544e71f9f1d1842458",
+    "curated_path_template/physical.json": "3d0a0aa8135a9720d9be74cc5cd42050d560ccaf59edd26b64ad073e87ae39db",
+    "demand_only/card.json": "5c6911659497abfaf9de7cfaf0a9896da0f031b7804718719e79d94c0c79f62c",
+    "demand_only/card.md": "ac1686239ee55bef264bc570752cfec1babe81b08016b20b0a3354eee386d784",
+    "demand_only/conditions.tsv": "273c9da76010008a54d53220fc85cc0ab80979dc3923c2349c619db59f26b827",
+    "demand_only/gene_map.json": "76ea997de091bb015ce6b372966d09ae333476ac12772c0a66a2bfad88ec9ab2",
+    "demand_only/intervention.json": "d247d7bfb13ac900ef37cde478650a79a4ed29db900e5c8f9611b1b43cbc29f3",
+    "demand_only/matrices.npz": "9a7a793e1a76a3d0e07b2f26e63b6b2aa69dcec5f8ed3b86be0d82346ff91088",
+    "demand_only/model.xml.gz": "3ebb0a81e7a37ef42717cb5806bd492c8349b90108f30a1d3f6ec8ca9d8cf055",
+    "demand_only/per_condition_metrics.tsv": "e62af9d14a9c0c34dfc8474b396ba3ad3a32c903367a44824eceef31bce1d24a",
+    "demand_only/physical.json": "5d540630dc767f8f2c36aa5ad0bee5951d05873920dcbc688f7c5ef88ede9cf3",
+    "execution.txt": "b3366cc44d40d5cf0e5e770ba5c9f74dcd8c831ff14cddcd230e4fa69b507011",
+    "independent_verification.json": "f34289a696b34880116a858e3113eb8bc5b5617f6ad2e6b6fa608d8b8f9ef3ed",
+    "input_verification_after_run.json": "dd2845b9a85915b581c28bedd80e50267a1934d2e8809b200f1427a83084c87f",
+    "manifest.json": "65a92c2a37def7f5c32c6a5bf177f277fcd874df63a84b5be33725c08c21d92d",
+    "physical_summary.json": "bd97966ebbb09759767c1ab479a34e6cd33d629ace9c6271f7f585fbb609ab6d",
+    "sequence_benchmark_equivalence.json": "ad73ad8fe8e30d29309e71ce242c83a1e0d8febb6ba1cb0bf5a2ea5674c4d575",
+    "sequence_path_template/gene_map.json": "a2104af86c6a08a177155222068576123f3271749626ee8c1a62b4e10584f647",
+    "sequence_path_template/intervention.json": "b504928a17b097614edf99b7eae6a5055b7d0afd9256a85c133ad391cfe833a2",
+    "sequence_path_template/model.xml.gz": "b705644735454c67049b761b19ac2154cdec5f689e4b82ba8409e5b6f5af5a79",
+    "sequence_path_template/physical.json": "9fd042c9d8aaf795c2df121ec7d5002d270e233eb67de7afb6df5373f8a2b833",
+    "solver_verification/baseline_context.json": "5c442e9688121ea117b9bf1b3dd35c6cb77d1fc3d2ac7a1d081a0d446e238eb2",
+    "solver_verification/cases.jsonl": "641fbe871ae6da64f35d2b8057a5d18f5f948b806976387ea2de14f5ee7f6e3c",
+    "solver_verification/curated_path_curated_context.json": "5c442e9688121ea117b9bf1b3dd35c6cb77d1fc3d2ac7a1d081a0d446e238eb2",
+    "solver_verification/curated_path_only_context.json": "5c442e9688121ea117b9bf1b3dd35c6cb77d1fc3d2ac7a1d081a0d446e238eb2",
+    "solver_verification/curated_path_template_context.json": "5c442e9688121ea117b9bf1b3dd35c6cb77d1fc3d2ac7a1d081a0d446e238eb2",
+    "solver_verification/demand_only_context.json": "5c442e9688121ea117b9bf1b3dd35c6cb77d1fc3d2ac7a1d081a0d446e238eb2",
+    "solver_verification/main_input_verification_after.json": "dd2845b9a85915b581c28bedd80e50267a1934d2e8809b200f1427a83084c87f",
+    "solver_verification/main_input_verification_before.json": "dd2845b9a85915b581c28bedd80e50267a1934d2e8809b200f1427a83084c87f",
+    "solver_verification/provenance.json": "4bc59f0d7b3699c7066f2c189cd1c04a1f325b9576f3c2b1f701e58b388f2dc1",
+    "solver_verification/sequence_path_template_context.json": "5c442e9688121ea117b9bf1b3dd35c6cb77d1fc3d2ac7a1d081a0d446e238eb2",
+    "solver_verification/source_snapshot/gembench/__init__.py": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9",
+    "solver_verification/source_snapshot/gembench/cards.py": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d",
+    "solver_verification/source_snapshot/gembench/comparison.py": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8",
+    "solver_verification/source_snapshot/gembench/datasets.py": "1223ac48c5f31fabf93d9a48f21211e2739f34385b879d531b1cdc261279f490",
+    "solver_verification/source_snapshot/gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+    "solver_verification/source_snapshot/gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+    "solver_verification/source_snapshot/gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+    "solver_verification/source_snapshot/gembench/metrics.py": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3",
+    "solver_verification/source_snapshot/gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+    "solver_verification/source_snapshot/gembench/protocols/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solver_verification/source_snapshot/gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+    "solver_verification/source_snapshot/gembench/protocols/ecoli_carbon_fitness.py": "5a8994541a2248b575f64bdda58dfed939b69af0bbe0cc9a7bb9ef254163f31a",
+    "solver_verification/source_snapshot/gembench/study.py": "b3911b98e65dbaaf2635cc5a8d3aacd4c71ab614dafc44e2817f5df8b0742733",
+    "solver_verification/source_snapshot/gembench/wbm.py": "c525a92e917a58d440c4d38544dc1aecdfd44b51e847f8eaae3e6d53ceaf67fb",
+    "solver_verification/source_snapshot/scripts/audit_saved_results.py": "eeff2e1ac4b43fb06a3070c4369ff1fcb0749e32829bd00d7315404255442c9e",
+    "solver_verification/source_snapshot/scripts/diagnose_quinone_producibility.py": "7cf4282cfed98ba5e0ca64e1373dcc94c0a024f2870878f8056f60157c306bed",
+    "solver_verification/source_snapshot/scripts/run_carbon_fitness_generic.py": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc",
+    "solver_verification/source_snapshot/scripts/run_quinone_biomass_sensitivity.py": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d",
+    "solver_verification/source_snapshot/scripts/verify_quinone_repair_solvers.py": "03fe1447d6a162c46ef02a43955ea734eeb71fd53d303d1dd62b13e867ee2cc0",
+    "solver_verification/summary.json": "7fad1bcce603f9b11c5034c67dcc8640a86ce0ba17e26e9ccb2589b89a0d3d1a",
+    "summary.json": "e2e3e27288fa9c78c7bbc04c639692b428eb502509a15d2f75b7c9634b90e6d4"
+  },
+  "study_fingerprint": "d4a72ef731a9fa0451e0b1c9a0463837872e07dc1007772ce7ed2d1b53820734",
+  "verified_arms": [
+    "baseline",
+    "demand_only",
+    "curated_path_only",
+    "curated_path_template",
+    "curated_path_curated",
+    "sequence_path_template"
+  ],
+  "fitness_coverage": {
+    "annotated_genes": 5661,
+    "exported_fitness_rows": 4778
+  },
+  "native": {
+    "baseline": {
+      "n_mapped_genes_with_exported_fitness": 1047,
+      "n_conditions_mapped": 43,
+      "native_scored": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5138583932136409,
+          "ci95": [
+            0.3908268644549922,
+            0.6304530465670098
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.4287997489908879,
+          "ci95": [
+            0.319304765160858,
+            0.5388529313154024
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7625839995107796,
+          "ci95": [
+            0.7080815514904726,
+            0.8124936861068006
+          ]
+        },
+        "mcc": {
+          "point": 0.5871646546465976,
+          "ci95": [
+            0.4888396321666528,
+            0.6782066370560209
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.764561111077242,
+          "ci95": [
+            0.71303232336582,
+            0.8108073392093241
+          ]
+        },
+        "accuracy": {
+          "point": 0.9587898196527895,
+          "ci95": [
+            0.9492450418562841,
+            0.9679637901005674
+          ]
+        },
+        "confusion": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      },
+      "mcc": 0.5871646546465976,
+      "mcc_defined": true
+    },
+    "demand_only": {
+      "n_mapped_genes_with_exported_fitness": 1047,
+      "n_conditions_mapped": 43,
+      "native_scored": {
+        "n_genes": 0,
+        "n_conditions": 0,
+        "n_gene_condition_pairs": 0,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0
+      },
+      "mcc": null,
+      "mcc_defined": false
+    },
+    "curated_path_only": {
+      "n_mapped_genes_with_exported_fitness": 1047,
+      "n_conditions_mapped": 43,
+      "native_scored": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.5138583932136409,
+          "ci95": [
+            0.3908268644549922,
+            0.6304530465670098
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.43156929785046694,
+          "ci95": [
+            0.3264466460324794,
+            0.5412176013780823
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7626071471222654,
+          "ci95": [
+            0.7082935860836237,
+            0.8125680052518676
+          ]
+        },
+        "mcc": {
+          "point": 0.5871646546465976,
+          "ci95": [
+            0.4888396321666528,
+            0.6782066370560209
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.764561111077242,
+          "ci95": [
+            0.71303232336582,
+            0.8108073392093241
+          ]
+        },
+        "accuracy": {
+          "point": 0.9587898196527895,
+          "ci95": [
+            0.9492450418562841,
+            0.9679637901005674
+          ]
+        },
+        "confusion": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      },
+      "mcc": 0.5871646546465976,
+      "mcc_defined": true
+    },
+    "curated_path_template": {
+      "n_mapped_genes_with_exported_fitness": 1047,
+      "n_conditions_mapped": 43,
+      "native_scored": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.4993917181792725,
+          "ci95": [
+            0.37068562579727654,
+            0.6129579853699584
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.4068463340637922,
+          "ci95": [
+            0.3037515254086121,
+            0.5178694515842628
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7612254584454324,
+          "ci95": [
+            0.7065898341367514,
+            0.8108050350041772
+          ]
+        },
+        "mcc": {
+          "point": 0.5743840077803017,
+          "ci95": [
+            0.4732650060238629,
+            0.6638506181132247
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7635920899376731,
+          "ci95": [
+            0.7113446599802316,
+            0.810082289393381
+          ]
+        },
+        "accuracy": {
+          "point": 0.9569638743749649,
+          "ci95": [
+            0.9467743974380584,
+            0.9658850216304287
+          ]
+        },
+        "confusion": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "mcc": 0.5743840077803017,
+      "mcc_defined": true
+    },
+    "curated_path_curated": {
+      "n_mapped_genes_with_exported_fitness": 1047,
+      "n_conditions_mapped": 43,
+      "native_scored": {
+        "n_genes": 1047,
+        "n_conditions": 34,
+        "n_gene_condition_pairs": 35598,
+        "n_missing_fitness": 0,
+        "n_nonfinite_simulation": 0,
+        "aucpr_bernstein": {
+          "point": 0.4993917181792725,
+          "ci95": [
+            0.37068562579727654,
+            0.6129579853699584
+          ]
+        },
+        "aucpr_standard": {
+          "point": 0.4191074341941406,
+          "ci95": [
+            0.3173110558461196,
+            0.5281404044504849
+          ]
+        },
+        "auroc_standard": {
+          "point": 0.7616274970513042,
+          "ci95": [
+            0.706940302319469,
+            0.8112827243696482
+          ]
+        },
+        "mcc": {
+          "point": 0.5743840077803017,
+          "ci95": [
+            0.4732650060238629,
+            0.6638506181132247
+          ]
+        },
+        "balanced_accuracy": {
+          "point": 0.7635920899376731,
+          "ci95": [
+            0.7113446599802316,
+            0.810082289393381
+          ]
+        },
+        "accuracy": {
+          "point": 0.9569638743749649,
+          "ci95": [
+            0.9467743974380584,
+            0.9658850216304287
+          ]
+        },
+        "confusion": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "mcc": 0.5743840077803017,
+      "mcc_defined": true
+    }
+  },
+  "aligned_comparisons": {
+    "demand_only": {
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 0,
+      "conditions_both_grow": [],
+      "n_shared_finite_pairs": 0,
+      "wt_grows": {
+        "A": 34,
+        "B": 0
+      },
+      "mcc": {
+        "A": null,
+        "B": null
+      },
+      "confusion": {
+        "A": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        },
+        "B": {
+          "tp": 0,
+          "tn": 0,
+          "fp": 0,
+          "fn": 0
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": null,
+        "ci95": [
+          null,
+          null
+        ],
+        "finite_bootstrap_samples": 0,
+        "requested_bootstrap_samples": 500
+      }
+    },
+    "curated_path_only": {
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5871646546465976,
+        "B": 0.5871646546465976
+      },
+      "confusion": {
+        "A": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        },
+        "B": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      }
+    },
+    "curated_path_template": {
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5871646546465976,
+        "B": 0.5743840077803017
+      },
+      "confusion": {
+        "A": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        },
+        "B": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": -0.012780646866295875,
+        "ci95": [
+          -0.03190500139141876,
+          0.0
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      }
+    },
+    "curated_path_curated": {
+      "n_common_genes": 1047,
+      "n_common_conditions": 43,
+      "n_conditions_both_grow": 34,
+      "conditions_both_grow": [
+        "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+        "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+        "Butanol | MOPS minimal media_noCarbon",
+        "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+        "D-Glucose | MOPS minimal media_noCarbon",
+        "D-Glucose | RCH2_defined_noCarbon",
+        "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+        "Decanoic acid | MOPS minimal media_noCarbon",
+        "Ethanol | MOPS minimal media_noCarbon",
+        "Hexanoic acid | MOPS minimal media_noCarbon",
+        "L-Arginine | MOPS minimal media_noCarbon",
+        "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+        "L-Histidine | MOPS minimal media_noCarbon",
+        "L-Isoleucine | MOPS minimal media_noCarbon",
+        "L-Leucine | MOPS minimal media_noCarbon",
+        "L-Lysine | MOPS minimal media_noCarbon",
+        "L-Valine | MOPS minimal media_noCarbon",
+        "Lauric acid | MOPS minimal media_noCarbon",
+        "Myristic acid | MOPS minimal media_noCarbon",
+        "Octanoic acid | MOPS minimal media_noCarbon",
+        "Oleic acid | MOPS minimal media_noCarbon",
+        "Phenylacetic acid | MOPS minimal media_noCarbon",
+        "Potassium acetate | RCH2_defined_noCarbon",
+        "Protocatechuic Acid | MOPS minimal media_noCarbon",
+        "Sodium butyrate | MOPS minimal media_noCarbon",
+        "Sodium propionate | MOPS minimal media_noCarbon",
+        "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+        "Vanillic Acid | MOPS minimal media_noCarbon",
+        "Vanillin | MOPS minimal media_noCarbon",
+        "Vanillin | RCH2_defined_noCarbon",
+        "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+        "benzoic acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | MOPS minimal media_noCarbon",
+        "p-Coumaric acid | RCH2_defined_noCarbon"
+      ],
+      "n_shared_finite_pairs": 35598,
+      "wt_grows": {
+        "A": 34,
+        "B": 34
+      },
+      "mcc": {
+        "A": 0.5871646546465976,
+        "B": 0.5743840077803017
+      },
+      "confusion": {
+        "A": {
+          "tp": 33009,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 530
+        },
+        "B": {
+          "tp": 32944,
+          "tn": 1122,
+          "fp": 937,
+          "fn": 595
+        }
+      },
+      "paired_mcc_difference_B_minus_A": {
+        "point": -0.012780646866295875,
+        "ci95": [
+          -0.03190500139141876,
+          0.0
+        ],
+        "finite_bootstrap_samples": 500,
+        "requested_bootstrap_samples": 500
+      }
+    }
+  },
+  "changed_prediction_count": 130,
+  "model_inventories": {
+    "baseline": {
+      "n_reactions": 1907,
+      "n_metabolites": 1321,
+      "n_genes": 1301
+    },
+    "demand_only": {
+      "n_reactions": 1907,
+      "n_metabolites": 1321,
+      "n_genes": 1301
+    },
+    "curated_path_only": {
+      "n_reactions": 1912,
+      "n_metabolites": 1325,
+      "n_genes": 1305
+    },
+    "curated_path_template": {
+      "n_reactions": 1912,
+      "n_metabolites": 1325,
+      "n_genes": 1305
+    },
+    "curated_path_curated": {
+      "n_reactions": 1912,
+      "n_metabolites": 1325,
+      "n_genes": 1305
+    },
+    "sequence_path_template": {
+      "n_reactions": 1912,
+      "n_metabolites": 1325,
+      "n_genes": 1306
+    }
+  },
+  "physical_checks_scope": "Stored solver statuses, finite values, threshold labels, pool row arithmetic, gene/reaction inventories, and cross-artifact agreement only; physical optima and energy probes were not independently re-solved.",
+  "baseline_scope": "All interventions checked against the saved baseline and hashed source candidate. Baseline preparation itself was not independently reconstructed.",
+  "scientific_scope": "Internal reproducibility on exposed development data; no physiological or independent predictive validation.",
+  "seconds": 19.49780511856079
+}

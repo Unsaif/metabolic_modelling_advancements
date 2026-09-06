@@ -71,3 +71,17 @@ python scripts/parse_iem_ground_truth.py && python scripts/link_iem_ground_truth
 ```
 
 See docs/sprints/ for what each run found. Paths in the scripts assume this repository root as the working directory (external/, models/, data/, results/ alongside gembench/).
+
+## Quinone development experiment and cofactor checks
+
+The [fixed experiment definition](docs/studies/quinone-repair-v1.md) separates source-model chemistry, sequence-informed gene hypotheses, growth demand and benchmark coverage. Its [results](docs/sprints/2026-09-06-quinone-repair.md) remain a development evaluation. Use the pinned audit environment in `requirements-audit.txt` and fresh output paths:
+
+```sh
+.venv/bin/python scripts/run_quinone_repair.py --out results/quinone_repair_new
+.venv/bin/python scripts/verify_quinone_repair.py --run-dir results/quinone_repair_new
+.venv/bin/python scripts/verify_quinone_repair_solvers.py --study results/quinone_repair_new --out results/quinone_repair_new/solver_verification
+```
+
+The runner freezes its inputs before preparation, saves six candidate models and physical reports, and computes five benchmark arms. `--physical-only` omits numeric fitness-data loading. The source transfer is provisional; historical patch v0.4 is preserved. Candidate-model source terms and attribution are recorded separately from software in [MODEL_SOURCES.md](results/quinone_repair_2026_09_06/MODEL_SOURCES.md).
+
+For other explicitly configured COBRApy models, `gembench.cofactor.pool_balance_certificate` checks a declared weighted pool and `probe_metabolite_production` maximizes separate outward demands under the existing constraints. See the [method and limitations](docs/studies/cofactor-audit-method.md); these helpers do not infer biological cofactor requirements.

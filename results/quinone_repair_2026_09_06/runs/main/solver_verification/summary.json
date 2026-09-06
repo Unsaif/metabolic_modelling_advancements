@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "n_arms": 6,
+  "n_cases": 96,
+  "n_skipped": 20,
+  "n_solver_runs": 152,
+  "failed_cases": [],
+  "limitations": "Independent solver agreement and primal feasibility for saved ordinary LPs. No fitness values parsed, enzyme validation, or exact optimality proof."
+}
