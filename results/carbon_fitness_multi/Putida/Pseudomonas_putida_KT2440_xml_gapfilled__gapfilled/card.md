@@ -1,6 +1,6 @@
 # Benchmark card — carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Putida
 
-Created: 2026-09-05T12:12:12Z
+Created: 2026-09-06T08:56:59Z
 
 ## Model
 
@@ -11,7 +11,7 @@ Created: 2026-09-05T12:12:12Z
 - n_reactions: 1897
 - n_metabolites: 1316
 - n_genes: 1292
-- sha256: a35a98597ebebc1e4d3bb3b0885942e1b4ea174befca90f62e9594dc41114e87
+- sha256: 378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739
 
 ## Dataset provenance
 
@@ -25,7 +25,8 @@ Created: 2026-09-05T12:12:12Z
 ## Protocol
 
 - variant: gapfilled
-- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": true, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null}
+- patches: null
+- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": true, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null, "complete_medium_transport": false, "medium_completion_exclude": ["pnto__R", "fol", "hco3"], "genes_subset": null}
 - media_mapping: data/reference/fitness_browser_media_bigg.tsv
 - carbon_source_mapping: data/reference/fitness_browser_carbon_sources_bigg.tsv
 - gene_mapping: {"method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed", "genpept_table": "data/genpept/Putida_genpept_map.tsv"}
@@ -34,7 +35,7 @@ Created: 2026-09-05T12:12:12Z
 
 ## Leakage
 
-- ground_truth_used_in_model_curation: no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data)
+- ground_truth_used_in_model_curation: no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly (Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)
 - ground_truth_public_since: Fitness Browser releases 2015-2018 (Price et al. 2018)
 - frontier_model_training_exposure: Fitness Browser tables are public and partly in training corpora; the mapping tables here are new
 - held_out_recommendation: unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off
@@ -43,11 +44,11 @@ Created: 2026-09-05T12:12:12Z
 ## Results
 
 - condition_level: {"n_conditions_mapped": 43, "n_conditions_wt_grows": 28, "wt_growth_recall": 0.6511627906976745, "conditions_with_absent_exchange": 10}
-- gene_level_conditions_where_wt_grows: {"n_genes": 1021, "n_conditions": 28, "n_gene_condition_pairs": 28588, "aucpr_bernstein": {"point": 0.5489547900498687, "ci95": [0.41930824059130706, 0.6745638885080155]}, "aucpr_standard": {"point": 0.4726408697632057, "ci95": [0.3714253791805504, 0.575426394742284]}, "auroc_standard": {"point": 0.7185214710332339, "ci95": [0.6644220090781764, 0.7747759605383846]}, "mcc": {"point": 0.620775292074 …
-- gene_level_all_mapped_conditions: {"n_genes": 1021, "n_conditions": 43, "n_gene_condition_pairs": 43903, "aucpr_bernstein": {"point": 0.44341176514714725, "ci95": [0.4137543100591534, 0.47449609956627564]}, "aucpr_standard": {"point": 0.19217556007430145, "ci95": [0.1526679547211345, 0.23557344581202025]}, "auroc_standard": {"point": 0.6404341413363748, "ci95": [0.6039736118699679, 0.6805135519219123]}, "mcc": {"point": 0.13526093 …
+- gene_level_conditions_where_wt_grows: {"n_genes": 1021, "n_conditions": 28, "n_gene_condition_pairs": 28588, "aucpr_bernstein": {"point": 0.5489547900498687, "ci95": [0.41930824059130706, 0.6745638885080155]}, "aucpr_standard": {"point": 0.4730100698240214, "ci95": [0.3676747215031472, 0.5783818161353966]}, "auroc_standard": {"point": 0.718297464607331, "ci95": [0.6643354594962935, 0.7748849568018059]}, "mcc": {"point": 0.620775292074 …
+- gene_level_all_mapped_conditions: {"n_genes": 1021, "n_conditions": 43, "n_gene_condition_pairs": 43903, "aucpr_bernstein": {"point": 0.44341176514714725, "ci95": [0.4137543100591534, 0.47449609956627564]}, "aucpr_standard": {"point": 0.1889820586173847, "ci95": [0.14584223360755919, 0.23498772507504262]}, "auroc_standard": {"point": 0.6378767783801389, "ci95": [0.6020697953497208, 0.6767239796782164]}, "mcc": {"point": 0.13526093 …
 - gene_map: {"model_genes": 1292, "mapped": 1291, "matched_by_version": 1291, "matched_by_accession_only": 0, "no_genpept_record": 1, "locus_tag_not_in_browser": 0, "browser_genes_hit": 1291, "mapped_with_fitness_data": 1038}
-- counts: {"model_genes": 1292, "model_genes_mapped": 1291, "genes_with_fitness": 1038, "genes_after_adjustment": 1021, "conditions_total": 57, "conditions_mapped": 43, "conditions_wt_grows": 28}
-- timings_s: {"rich_medium_essentials_s": 2.5366196632385254, "knockout_simulation_s": 72.83400344848633, "total_s": 75.67546367645264}
+- counts: {"model_genes": 1292, "model_genes_mapped": 1291, "genes_with_fitness": 1038, "genes_after_adjustment": 1021, "conditions_total": 57, "conditions_mapped": 43, "conditions_wt_grows": 28, "medium_completion_exchanges_added": 0}
+- timings_s: {"rich_medium_essentials_s": 4.258382081985474, "knockout_simulation_s": 117.92868065834045, "total_s": 122.6834659576416}
 - dropped_rich_medium_essentials: 17
 
 ## Warnings

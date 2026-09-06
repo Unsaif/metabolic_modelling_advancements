@@ -1,6 +1,6 @@
 # Benchmark card — carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Smeli
 
-Created: 2026-09-05T17:22:05Z
+Created: 2026-09-06T08:53:38Z
 
 ## Model
 
@@ -26,7 +26,7 @@ Created: 2026-09-05T17:22:05Z
 
 - variant: gapfilled
 - patches: null
-- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": false, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null}
+- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": false, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null, "complete_medium_transport": false, "medium_completion_exclude": ["pnto__R", "fol", "hco3"], "genes_subset": null}
 - media_mapping: data/reference/fitness_browser_media_bigg.tsv
 - carbon_source_mapping: data/reference/fitness_browser_carbon_sources_bigg.tsv
 - gene_mapping: {"method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed", "genpept_table": "data/genpept/Smeli_genpept_map.tsv"}
@@ -44,11 +44,11 @@ Created: 2026-09-05T17:22:05Z
 ## Results
 
 - condition_level: {"n_conditions_mapped": 33, "n_conditions_wt_grows": 21, "wt_growth_recall": 0.6363636363636364, "conditions_with_absent_exchange": 6}
-- gene_level_conditions_where_wt_grows: {"n_genes": 979, "n_conditions": 21, "n_gene_condition_pairs": 20559, "aucpr_bernstein": {"point": 0.4738901932916663, "ci95": [0.3369685375494005, 0.6142250372794259]}, "aucpr_standard": {"point": 0.4125099085463879, "ci95": [0.31552390890735893, 0.5181985243263529]}, "auroc_standard": {"point": 0.7091463495516528, "ci95": [0.6588161795874731, 0.762891461206183]}, "mcc": {"point": 0.5230807254746 …
-- gene_level_all_mapped_conditions: {"n_genes": 979, "n_conditions": 33, "n_gene_condition_pairs": 32307, "aucpr_bernstein": {"point": 0.4765427213542025, "ci95": [0.44655019408372953, 0.5089146673438488]}, "aucpr_standard": {"point": 0.20638746661478286, "ci95": [0.15881573172367425, 0.2535224322716019]}, "auroc_standard": {"point": 0.6393978919737331, "ci95": [0.6074856272991053, 0.674168190352418]}, "mcc": {"point": 0.15295097902 …
+- gene_level_conditions_where_wt_grows: {"n_genes": 979, "n_conditions": 21, "n_gene_condition_pairs": 20559, "aucpr_bernstein": {"point": 0.4738901932916663, "ci95": [0.3369685375494005, 0.6142250372794259]}, "aucpr_standard": {"point": 0.39225554179336164, "ci95": [0.29307598174899374, 0.5006372421770907]}, "auroc_standard": {"point": 0.7095280663919838, "ci95": [0.6601896331277197, 0.7626207512411303]}, "mcc": {"point": 0.52308072547 …
+- gene_level_all_mapped_conditions: {"n_genes": 979, "n_conditions": 33, "n_gene_condition_pairs": 32307, "aucpr_bernstein": {"point": 0.4765427213542025, "ci95": [0.44655019408372953, 0.5089146673438488]}, "aucpr_standard": {"point": 0.18509805656451372, "ci95": [0.13934772137409163, 0.22623755383205799]}, "auroc_standard": {"point": 0.6357753940376587, "ci95": [0.6045353230582785, 0.6688724700861383]}, "mcc": {"point": 0.152950979 …
 - gene_map: {"model_genes": 1196, "mapped": 1195, "matched_by_version": 1195, "matched_by_accession_only": 0, "no_genpept_record": 1, "locus_tag_not_in_browser": 0, "browser_genes_hit": 1195, "mapped_with_fitness_data": 979}
-- counts: {"model_genes": 1196, "model_genes_mapped": 1195, "genes_with_fitness": 979, "genes_after_adjustment": 979, "conditions_total": 33, "conditions_mapped": 33, "conditions_wt_grows": 21}
-- timings_s: {"rich_medium_essentials_s": 7.152557373046875e-07, "knockout_simulation_s": 39.64643740653992, "total_s": 40.002668619155884}
+- counts: {"model_genes": 1196, "model_genes_mapped": 1195, "genes_with_fitness": 979, "genes_after_adjustment": 979, "conditions_total": 33, "conditions_mapped": 33, "conditions_wt_grows": 21, "medium_completion_exchanges_added": 0}
+- timings_s: {"rich_medium_essentials_s": 9.5367431640625e-07, "knockout_simulation_s": 91.43115377426147, "total_s": 92.15915489196777}
 - dropped_rich_medium_essentials: 0
 
 ## Warnings

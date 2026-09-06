@@ -32,15 +32,19 @@ class GapfillResult:
     n_candidates: int
     seconds: float
     weights_used: Dict[str, float] = field(default_factory=dict)
+    rejected_energy_cycles: List[List[str]] = field(default_factory=list)   # added sets cut off for creating an EGC
 
 
 def gapfill(model: cobra.Model, universe: cobra.Model, medium: Medium, extra_uptakes: Optional[Dict[str, float]] = None,
             biomass_id: str = "Growth", min_growth: float = 0.05, transport_weight: float = 1.5,
             time_limit_s: float = 600.0, mip_gap: float = 0.0, forbid_o2_production: bool = True,
-            verbose: bool = True) -> GapfillResult:
+            forbid_energy_cycles: bool = True, max_rounds: int = 6, verbose: bool = True) -> GapfillResult:
     """Return the minimal reaction set from `universe` that lets `model` grow on `medium` (+ extra uptakes).
 
     The model is not modified; use `apply_gapfill` to add the reactions.
+    With `forbid_energy_cycles`, a solution whose added set creates an energy-generating cycle (ATP, NAD(P)H, quinol or a
+    proton gradient from nothing with every exchange closed; gembench.checks.energy_from_nothing) is cut off with a
+    no-good constraint and the MILP is re-solved, up to `max_rounds` times; the rejected sets are reported.
     """
     t0 = time.time()
     m = model.copy()
@@ -113,22 +117,38 @@ def gapfill(model: cobra.Model, universe: cobra.Model, medium: Medium, extra_upt
         c[n_v + k] = w; weights[r.id] = w
     if verbose:
         print(f"  gapfill MILP: {n_v + n_c} vars ({n_c} binaries), {len(mets)} metabolites; solving...", flush=True)
-    x, status = _solve_highs(c, constraints, lb, ub, n_v, time_limit_s, mip_gap)
-    if x is None:
-        return GapfillResult([], growth_before, growth_before, float("nan"), f"failed: {status}", n_c, time.time() - t0)
-    y = x[n_v:]
-    added = [cands[k].id for k in range(n_c) if y[k] > 0.5]
-    res_fun = float(np.dot(c, x))
-    # verify in cobra
-    m2 = model.copy()
-    m2.add_reactions([universe.reactions.get_by_id(a).copy() for a in added])
-    apply_medium(m2, medium, close_all=True)
-    for ex_id, lbv in (extra_uptakes or {}).items():
-        if ex_id in m2.reactions:
-            m2.reactions.get_by_id(ex_id).lower_bound = lbv
-    growth_after = _nan0(m2.slim_optimize())
-    return GapfillResult(added, growth_before, growth_after, res_fun, status, n_c, time.time() - t0,
-                         {a: weights[a] for a in added})
+    rejected: List[List[str]] = []
+    for _round in range(max_rounds):
+        x, status = _solve_highs(c, constraints, lb, ub, n_v, time_limit_s, mip_gap)
+        if x is None:
+            return GapfillResult([], growth_before, growth_before, float("nan"), f"failed: {status}", n_c, time.time() - t0,
+                                 rejected_energy_cycles=rejected)
+        y = x[n_v:]
+        added = [cands[k].id for k in range(n_c) if y[k] > 0.5]
+        res_fun = float(np.dot(c, x))
+        # verify in cobra
+        m2 = model.copy()
+        m2.add_reactions([universe.reactions.get_by_id(a).copy() for a in added])
+        if forbid_energy_cycles and added:
+            from .checks import energy_from_nothing
+            egc = {k: v for k, v in energy_from_nothing(m2).items() if v > 1e-6}
+            if egc:
+                rejected.append(added)
+                if verbose:
+                    print(f"  gapfill: added set {added} creates an energy-generating cycle {egc}; cutting it off", flush=True)
+                idx = [n_v + k for k in range(n_c) if y[k] > 0.5]
+                cut = sp.csr_matrix(([1.0] * len(idx), ([0] * len(idx), idx)), shape=(1, n_v + n_c))
+                constraints.append(LinearConstraint(cut, np.array([-np.inf]), np.array([len(idx) - 1.0])))
+                continue
+        apply_medium(m2, medium, close_all=True)
+        for ex_id, lbv in (extra_uptakes or {}).items():
+            if ex_id in m2.reactions:
+                m2.reactions.get_by_id(ex_id).lower_bound = lbv
+        growth_after = _nan0(m2.slim_optimize())
+        return GapfillResult(added, growth_before, growth_after, res_fun, status, n_c, time.time() - t0,
+                             {a: weights[a] for a in added}, rejected_energy_cycles=rejected)
+    return GapfillResult([], growth_before, growth_before, float("nan"), "failed: every solution creates an energy-generating cycle",
+                         n_c, time.time() - t0, rejected_energy_cycles=rejected)
 
 
 def _solve_highs(c, constraints, lb, ub, n_v, time_limit_s, mip_gap):

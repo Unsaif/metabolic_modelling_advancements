@@ -1,0 +1,574 @@
+{
+  "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism MR1",
+  "created": "2026-09-06T09:48:47Z",
+  "dataset_provenance": {
+    "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'MR1'",
+    "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
+    "download": "5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)",
+    "n_genes_with_fitness": "3782",
+    "n_experiments": "176",
+    "conditions_unmapped": "Gelatin; Gly-DL-Asp; Gly-Glu; Tween 20"
+  },
+  "model": {
+    "model_id": "Shewanella_oneidensis_MR_1_xml_gapfilled",
+    "file": "models/gapfilled/MR1.xml.gz",
+    "source": "EMBL GEMs (CarveMe draft, Machado et al. 2018) minimally gap-filled by gembench.gapfill for growth on ShewMM_noCarbon + EX_lac__L_e: added ['CITACt', 'LDH_L', 'ORNCD']",
+    "version_note": "",
+    "n_reactions": 1980,
+    "n_metabolites": 1363,
+    "n_genes": 903,
+    "sha256": "7aae2a3ea5b644241d66bd719fd8a5d5a20d6e2d612ff9706f689a91fa75bdc5"
+  },
+  "protocol": {
+    "variant": "gapfilled",
+    "patches": {
+      "file": "data/reference/universe_patches_v0.1.json",
+      "model_file": "data/reference/model_patches_v0.3.json",
+      "gpr_file": "data/reference/gpr_patches_v0.2.json,data/reference/gpr_patches_v0.3.json,data/reference/gpr_patches_v0.4.json",
+      "applied": [
+        {
+          "reaction": "CBPS",
+          "gpr_before": "NP_716766_1 or NP_716767_1 or NP_716921_1 or (NP_716766_1 and NP_716767_1)",
+          "gpr_after": "NP_716766_1 and NP_716767_1"
+        },
+        {
+          "reaction": "GCALDt",
+          "added": "gcald_e <=> gcald_c",
+          "gpr": "",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ]
+        },
+        {
+          "reaction": "EX_gcald_e",
+          "added": "gcald_e --> ",
+          "gpr": "",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        {
+          "reaction": "ATPS4rpp",
+          "added": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+          "gpr": "SO4746 and SO4747 and SO4748 and SO4749 and SO4750 and SO4751 and SO4752 and SO4753",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ]
+        },
+        {
+          "reaction": "G6PDA",
+          "added": "gam6p_c + h2o_c --> f6p_c + nh4_c",
+          "gpr": "NP_719053_1",
+          "bounds": [
+            0,
+            1000
+          ]
+        },
+        {
+          "reaction": "INSt2",
+          "added": "h_e + ins_e --> h_c + ins_c",
+          "gpr": "NP_716837_1",
+          "bounds": [
+            0,
+            1000
+          ]
+        },
+        {
+          "reaction": "ACLS",
+          "gpr_before": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+          "gpr_after": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+          "rule": "R2",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "ACHBS",
+          "gpr_before": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+          "gpr_after": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+          "rule": "R2",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "ADCL",
+          "gpr_before": "NP_718199_1 or NP_718200_1",
+          "gpr_after": "NP_718200_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "ADSK",
+          "gpr_before": "NP_718203_1 or NP_719263_1",
+          "gpr_after": "NP_719263_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "ARGSS",
+          "gpr_before": "NP_715918_1 or NP_715919_1",
+          "gpr_after": "NP_715918_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "ASNS1",
+          "gpr_before": "NP_718348_1 or NP_718731_1",
+          "gpr_after": "NP_718348_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "DHORTS",
+          "gpr_before": "NP_716921_1 or NP_718704_2 or NP_719235_1",
+          "gpr_after": "NP_719235_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "SULR",
+          "gpr_before": "NP_717233_1 or (NP_719276_1 and NP_719277_1)",
+          "gpr_after": "NP_719276_1 and NP_719277_1",
+          "rule": "R1+R2",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "GARFT",
+          "gpr_before": "NP_718343_1 or NP_718733_1 or NP_718819_1",
+          "gpr_after": "NP_718343_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "GLNS",
+          "gpr_before": "NP_716891_1 or NP_719933_1",
+          "gpr_after": "NP_719933_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "HSERTA",
+          "gpr_before": "NP_716436_2 or NP_717287_1",
+          "gpr_after": "NP_717287_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "IMPD",
+          "gpr_before": "NP_717825_1 or NP_718428_1 or NP_718847_1",
+          "gpr_after": "NP_718847_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "PPA",
+          "gpr_before": "NP_717785_1 or NP_718988_2 or NP_719718_1",
+          "gpr_after": "NP_719718_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "PAPSR",
+          "gpr_before": "NP_716044_1 or NP_719275_2 or (NP_716044_1 and NP_719275_2) or (NP_716089_1 and NP_719275_2)",
+          "gpr_after": "NP_719275_2",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "PSP_L",
+          "gpr_before": "NP_715819_1 or NP_716846_2",
+          "gpr_after": "NP_716846_2",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "SADT2",
+          "gpr_before": "NP_715869_1 or (NP_719266_2 and NP_719267_1)",
+          "gpr_after": "NP_719266_2 and NP_719267_1",
+          "rule": "R1+R2",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "THRD_L",
+          "gpr_before": "NP_717844_1 or NP_719868_1",
+          "gpr_after": "NP_719868_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "TMPK",
+          "gpr_before": "NP_717147_1 or NP_719013_1",
+          "gpr_after": "NP_719013_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "PGAMT",
+          "gpr_before": "NP_716824_1 or NP_717926_1",
+          "gpr_after": "NP_716824_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "ACtex",
+          "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+          "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+          "rule": "R5",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "CA2tex",
+          "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+          "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+          "rule": "R5",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "COBALT2tex",
+          "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+          "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+          "rule": "R5",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "CU2tex",
+          "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+          "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+          "rule": "R5",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "CLtex",
+          "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+          "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+          "rule": "R5",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "PYRtex",
+          "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+          "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+          "rule": "R5",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "NDPK2",
+          "gpr_before": "NP_717624_1 or NP_717870_1",
+          "gpr_after": "NP_717870_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "NDPK4",
+          "gpr_before": "NP_717624_1 or NP_717870_1",
+          "gpr_after": "NP_717870_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "RBFSb",
+          "gpr_before": "NP_719015_1 or NP_719017_1",
+          "gpr_after": "NP_719015_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "RBFSa",
+          "gpr_before": "NP_717892_1 or NP_719015_1",
+          "gpr_after": "NP_717892_1 or NP_719017_1",
+          "rule": "R4",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "SERAT",
+          "gpr_before": "NP_717858_1 or YP_007001387_1",
+          "gpr_after": "NP_717858_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "UMPK",
+          "gpr_before": "NP_717242_1 or NP_717993_1",
+          "gpr_after": "NP_717242_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "IPDPS",
+          "gpr_before": "NP_717992_1 or NP_719076_1",
+          "gpr_after": "NP_719076_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "DMPPS",
+          "gpr_before": "NP_717992_1 or NP_719076_1",
+          "gpr_after": "NP_719076_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "TMDS",
+          "gpr_before": "NP_716955_1 or NP_718009_1",
+          "gpr_after": "NP_716955_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "PRPPS",
+          "gpr_before": "NP_717587_1 or NP_719370_1",
+          "gpr_after": "NP_719370_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "GF6PTA",
+          "gpr_before": "NP_719053_1 or NP_720257_1",
+          "gpr_after": "NP_720257_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "RBFK",
+          "gpr_before": "NP_716068_1 or NP_719080_1",
+          "gpr_after": "NP_719080_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "GF6PTA",
+          "gpr_before": "NP_720257_1",
+          "gpr_after": "NP_720257_1",
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        }
+      ]
+    },
+    "params": {
+      "carbon_uptake": -10.0,
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "drop_rich_medium_essentials": false,
+      "rich_medium_uptake": -1000.0,
+      "knockout_genes": [],
+      "processes": 2,
+      "solver": "glpk",
+      "max_conditions": null,
+      "complete_medium_transport": true,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
+    },
+    "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
+    "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+    "gene_mapping": {
+      "method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed",
+      "genpept_table": "data/genpept/MR1_genpept_map.tsv"
+    },
+    "condition_selection": "expGroup == 'carbon source'; condition_2 empty or DMSO; media with a BiGG mapping; replicates averaged per condition x medium",
+    "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"
+  },
+  "leakage": {
+    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly (Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
+    "ground_truth_public_since": "Fitness Browser releases 2015-2018 (Price et al. 2018)",
+    "frontier_model_training_exposure": "Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
+    "held_out_recommendation": "unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
+    "notes": [
+      "Draft models are untouched by any phenotype data, so this is a true prospective test of automated reconstruction."
+    ]
+  },
+  "results": {
+    "condition_level": {
+      "n_conditions_mapped": 12,
+      "n_conditions_wt_grows": 11,
+      "wt_growth_recall": 0.9166666666666666,
+      "conditions_with_absent_exchange": 1
+    },
+    "gene_level_conditions_where_wt_grows": {
+      "n_genes": 713,
+      "n_conditions": 11,
+      "n_gene_condition_pairs": 7843,
+      "aucpr_bernstein": {
+        "point": 0.5319703445081962,
+        "ci95": [
+          0.43273080730656244,
+          0.6392777514958424
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.513566784733714,
+        "ci95": [
+          0.44258089388688776,
+          0.5859704455845333
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.7280115373145456,
+        "ci95": [
+          0.6933246565910339,
+          0.7628619117794757
+        ]
+      },
+      "mcc": {
+        "point": 0.5291575469135111,
+        "ci95": [
+          0.4615920261034666,
+          0.5966239367763544
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.7029624361626781,
+        "ci95": [
+          0.6643291786143182,
+          0.7413554743816188
+        ]
+      },
+      "accuracy": {
+        "point": 0.8856304985337243,
+        "ci95": [
+          0.8663649113859493,
+          0.9043255131964809
+        ]
+      },
+      "confusion": {
+        "tp": 6383,
+        "tn": 563,
+        "fp": 752,
+        "fn": 145
+      }
+    },
+    "gene_level_all_mapped_conditions": {
+      "n_genes": 713,
+      "n_conditions": 12,
+      "n_gene_condition_pairs": 8556,
+      "aucpr_bernstein": {
+        "point": 0.449802477286639,
+        "ci95": [
+          0.3763066918081864,
+          0.5304547193922844
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.4316932834792755,
+        "ci95": [
+          0.3725783452734147,
+          0.49674344710605817
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.7207086777212741,
+        "ci95": [
+          0.6899323483801977,
+          0.7517374745003579
+        ]
+      },
+      "mcc": {
+        "point": 0.4062271284706058,
+        "ci95": [
+          0.347997997668369,
+          0.46543633951106644
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.6993209755763967,
+        "ci95": [
+          0.6659258331342673,
+          0.7342307382549921
+        ]
+      },
+      "accuracy": {
+        "point": 0.8322814399251987,
+        "ci95": [
+          0.8162634408602151,
+          0.8480598410472183
+        ]
+      },
+      "confusion": {
+        "tp": 6383,
+        "tn": 738,
+        "fp": 752,
+        "fn": 683
+      }
+    },
+    "gene_map": {
+      "model_genes": 903,
+      "mapped": 899,
+      "matched_by_version": 894,
+      "matched_by_accession_only": 0,
+      "no_genpept_record": 1,
+      "locus_tag_not_in_browser": 3,
+      "browser_genes_hit": 899,
+      "mapped_with_fitness_data": 713
+    },
+    "counts": {
+      "model_genes": 903,
+      "model_genes_mapped": 899,
+      "genes_with_fitness": 713,
+      "genes_after_adjustment": 713,
+      "conditions_total": 16,
+      "conditions_mapped": 12,
+      "conditions_wt_grows": 11,
+      "medium_completion_exchanges_added": 7
+    },
+    "timings_s": {
+      "rich_medium_essentials_s": 1.1920928955078125e-06,
+      "knockout_simulation_s": 37.33661699295044,
+      "total_s": 37.83776259422302
+    },
+    "dropped_rich_medium_essentials": 0
+  },
+  "software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "warnings": [
+    "4 of 16 conditions have no BiGG mapping",
+    "medium 'ShewMM_noCarbon' components absent from the model: ['EX_sel_e', 'EX_slnt_e', 'EX_tungs_e', 'EX_lipoate_e', 'EX_thm_e', 'EX_pnto__R_e', 'EX_fol_e']",
+    "medium completion added exchange+uptake for: ['EX_4abz_e', 'EX_adocbl_e', 'EX_btn_e', 'EX_cbl1_e', 'EX_na1_e', 'EX_ni2_e', 'EX_ribflv_e']"
+  ]
+}

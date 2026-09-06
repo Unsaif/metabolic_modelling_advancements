@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Smeli",
-  "created": "2026-09-05T17:25:25Z",
+  "created": "2026-09-06T08:47:33Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Smeli'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -23,6 +23,7 @@
     "variant": "gapfilled",
     "patches": {
       "file": "data/reference/universe_patches_v0.1.json",
+      "model_file": null,
       "gpr_file": "data/reference/gpr_patches_v0.2.json",
       "applied": [
         {
@@ -46,6 +47,7 @@
           "gpr_before": "NP_384360_1 or NP_385603_1",
           "gpr_after": "NP_385603_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -53,6 +55,7 @@
           "gpr_before": "NP_385289_1 or NP_386086_1",
           "gpr_after": "NP_385289_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -60,6 +63,7 @@
           "gpr_before": "NP_384366_1 or NP_386340_1 or NP_386663_1 or NP_386836_1 or NP_436410_1",
           "gpr_after": "NP_386836_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -67,6 +71,7 @@
           "gpr_before": "NP_385354_1 or NP_387286_1 or NP_437810_2",
           "gpr_after": "NP_387286_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -74,6 +79,7 @@
           "gpr_before": "NP_384866_1 or NP_435580_1 or NP_435834_1",
           "gpr_after": "NP_384866_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -81,6 +87,7 @@
           "gpr_before": "NP_387312_1 or (NP_387284_1 and NP_387312_1)",
           "gpr_after": "NP_387284_1 and NP_387312_1",
           "rule": "R2",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -88,6 +95,7 @@
           "gpr_before": "NP_387312_1 or (NP_387284_1 and NP_387312_1)",
           "gpr_after": "NP_387284_1 and NP_387312_1",
           "rule": "R2",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -95,6 +103,7 @@
           "gpr_before": "NP_385222_1 or NP_386485_3",
           "gpr_after": "NP_386485_3",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -102,6 +111,7 @@
           "gpr_before": "NP_386092_1 or NP_387087_1",
           "gpr_after": "NP_387087_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -109,6 +119,7 @@
           "gpr_before": "NP_384359_1 or NP_386767_1 or NP_387347_1",
           "gpr_after": "NP_386767_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -116,6 +127,7 @@
           "gpr_before": "NP_384964_1 or NP_385290_1",
           "gpr_after": "NP_384964_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -123,6 +135,7 @@
           "gpr_before": "NP_384156_1 or NP_385525_1",
           "gpr_after": "NP_384156_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -130,6 +143,7 @@
           "gpr_before": "NP_385250_1 or NP_386895_1",
           "gpr_after": "NP_386895_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -137,6 +151,7 @@
           "gpr_before": "NP_385460_1 or (NP_385048_1 and NP_385049_1) or (NP_385048_1 and NP_435714_1)",
           "gpr_after": "NP_385048_1 and NP_385049_1",
           "rule": "R1+R2",
+          "status": "accepted",
           "genes_added": []
         }
       ]
@@ -150,7 +165,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -189,17 +211,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.5156760060807432,
+        "point": 0.49865818390310673,
         "ci95": [
-          0.4092393109058502,
-          0.6174541256074956
+          0.3921396351585154,
+          0.6064045431199819
         ]
       },
       "auroc_standard": {
-        "point": 0.7730671612130937,
+        "point": 0.7712055613600717,
         "ci95": [
-          0.7223490244192419,
-          0.8211330730335062
+          0.7209802598935788,
+          0.819407543785374
         ]
       },
       "mcc": {
@@ -242,17 +264,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.2529745958255316,
+        "point": 0.22477490933159294,
         "ci95": [
-          0.20109932099448277,
-          0.29882191395612806
+          0.17759214039168483,
+          0.2693812780254545
         ]
       },
       "auroc_standard": {
-        "point": 0.6844187111056252,
+        "point": 0.6751054540357111,
         "ci95": [
-          0.6509488369671789,
-          0.71671216984041
+          0.6416219910456086,
+          0.7050364111976333
         ]
       },
       "mcc": {
@@ -300,12 +322,13 @@
       "genes_after_adjustment": 979,
       "conditions_total": 33,
       "conditions_mapped": 33,
-      "conditions_wt_grows": 21
+      "conditions_wt_grows": 21,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
       "rich_medium_essentials_s": 1.430511474609375e-06,
-      "knockout_simulation_s": 44.26628518104553,
-      "total_s": 44.60889267921448
+      "knockout_simulation_s": 91.32223057746887,
+      "total_s": 92.01289296150208
     },
     "dropped_rich_medium_essentials": 0
   },

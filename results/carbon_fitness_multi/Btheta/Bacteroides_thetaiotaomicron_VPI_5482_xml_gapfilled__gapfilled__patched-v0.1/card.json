@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Btheta",
-  "created": "2026-09-05T13:23:18Z",
+  "created": "2026-09-06T09:00:21Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Btheta'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -23,11 +23,24 @@
     "variant": "gapfilled",
     "patches": {
       "file": "data/reference/universe_patches_v0.1.json",
+      "model_file": null,
+      "gpr_file": null,
       "applied": [
         {
           "reaction": "CBPS",
           "gpr_before": "NP_809470_1 or (NP_809469_1 and NP_809470_1)",
           "gpr_after": "NP_809469_1 and NP_809470_1"
+        },
+        {
+          "reaction": "PPCK",
+          "bounds_before": [
+            0.0,
+            1000.0
+          ],
+          "bounds_after": [
+            -1000.0,
+            1000.0
+          ]
         }
       ]
     },
@@ -40,7 +53,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -79,17 +99,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.38337519681831245,
+        "point": 0.3814573997929846,
         "ci95": [
-          0.25909105402419813,
-          0.5033104512632477
+          0.2541559488282417,
+          0.5059645044677468
         ]
       },
       "auroc_standard": {
-        "point": 0.6766233154064545,
+        "point": 0.6780609948233176,
         "ci95": [
-          0.6190600233066528,
-          0.7394720523955904
+          0.6217538025447568,
+          0.7404115657224681
         ]
       },
       "mcc": {
@@ -132,17 +152,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.17893745004885336,
+        "point": 0.16855488258542947,
         "ci95": [
-          0.1332358252872171,
-          0.2266810241373569
+          0.1245844216265448,
+          0.21391846333002926
         ]
       },
       "auroc_standard": {
-        "point": 0.5908424596035197,
+        "point": 0.5878348495558483,
         "ci95": [
-          0.5576066147010692,
-          0.6249225402728327
+          0.5570986484532585,
+          0.6214735485927109
         ]
       },
       "mcc": {
@@ -190,12 +210,13 @@
       "genes_after_adjustment": 472,
       "conditions_total": 47,
       "conditions_mapped": 25,
-      "conditions_wt_grows": 14
+      "conditions_wt_grows": 14,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 2.0727407932281494,
-      "knockout_simulation_s": 22.79492449760437,
-      "total_s": 25.296568393707275
+      "rich_medium_essentials_s": 1.9006290435791016,
+      "knockout_simulation_s": 21.02701187133789,
+      "total_s": 23.44043278694153
     },
     "dropped_rich_medium_essentials": 35
   },

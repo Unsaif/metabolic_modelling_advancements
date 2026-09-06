@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Btheta",
-  "created": "2026-09-06T07:36:20Z",
+  "created": "2026-09-06T08:23:08Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Btheta'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -383,7 +383,8 @@
       "complete_medium_transport": true,
       "medium_completion_exclude": [
         "pnto__R",
-        "fol"
+        "fol",
+        "hco3"
       ],
       "genes_subset": null
     },
@@ -424,17 +425,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.4781074277291829,
+        "point": 0.4600345778445129,
         "ci95": [
-          0.37549728446602476,
-          0.5865034453204304
+          0.36012322732817004,
+          0.5712907516620341
         ]
       },
       "auroc_standard": {
-        "point": 0.7774754059166438,
+        "point": 0.7784287434039456,
         "ci95": [
-          0.7267095123370473,
-          0.8331438492550299
+          0.7290172023014636,
+          0.8335200245695963
         ]
       },
       "mcc": {
@@ -477,17 +478,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.23645957782218233,
+        "point": 0.20879604384029263,
         "ci95": [
-          0.18875727240721518,
-          0.2868038507705342
+          0.16491377191014647,
+          0.2545794548667142
         ]
       },
       "auroc_standard": {
-        "point": 0.6503025106833054,
+        "point": 0.6360912896495017,
         "ci95": [
-          0.6215314061417274,
-          0.6822278938714378
+          0.6087935292280559,
+          0.6657398991340435
         ]
       },
       "mcc": {
@@ -536,12 +537,12 @@
       "conditions_total": 47,
       "conditions_mapped": 25,
       "conditions_wt_grows": 14,
-      "medium_completion_exchanges_added": 5
+      "medium_completion_exchanges_added": 4
     },
     "timings_s": {
-      "rich_medium_essentials_s": 1.430511474609375e-06,
-      "knockout_simulation_s": 11.964756965637207,
-      "total_s": 12.258149862289429
+      "rich_medium_essentials_s": 2.6226043701171875e-06,
+      "knockout_simulation_s": 25.412383794784546,
+      "total_s": 25.8966965675354
     },
     "dropped_rich_medium_essentials": 0
   },
@@ -555,7 +556,7 @@
   },
   "warnings": [
     "22 of 47 conditions have no BiGG mapping",
-    "medium 'Varel_Bryant_medium' components absent from the model: ['EX_mobd_e', 'EX_sel_e', 'EX_slnt_e', 'EX_tungs_e', 'EX_pheme_e']",
-    "medium completion added exchange+uptake for: ['EX_cys__L_e', 'EX_hco3_e', 'EX_met__L_e', 'EX_na1_e', 'EX_ni2_e']"
+    "medium 'Varel_Bryant_medium' components absent from the model: ['EX_hco3_e', 'EX_mobd_e', 'EX_sel_e', 'EX_slnt_e', 'EX_tungs_e', 'EX_pheme_e']",
+    "medium completion added exchange+uptake for: ['EX_cys__L_e', 'EX_met__L_e', 'EX_na1_e', 'EX_ni2_e']"
   ]
 }

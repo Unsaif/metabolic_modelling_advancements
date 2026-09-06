@@ -58,6 +58,19 @@
       "rationale": "The CarveMe universe carries PEP carboxykinase only in the gluconeogenic direction inherited from E. coli. Bacteroides species run PckA carboxylating as the entry to the succinate-propionate pathway (PEP -> oxaloacetate -> malate -> fumarate -> succinate -> propionate), their principal anaplerotic and fermentative route; B. thetaiotaomicron has no PEP carboxylase, and its draft therefore had to route all oxaloacetate formation through pyruvate carboxylase, whose subunits have no fitness phenotype.",
       "flagged_by": "benchmark: the v0.3 pyruvate-carboxylase subunit rule (R2) made PC essential in every B. thetaiotaomicron condition although the PC subunit genes have no phenotype; a false isozyme in the shipped rule had masked the missing anaplerotic route",
       "caveat": "scoped to B. thetaiotaomicron (and applicable to other Bacteroidetes with a succinate-propionate pathway); in E. coli and most aerobes PckA is gluconeogenic and the reaction should stay irreversible"
+    },
+    {
+      "reaction": "MECDPDH4E",
+      "name": "2-C-methyl-D-erythritol 2,4-cyclodiphosphate reductase (ferredoxin), IspG",
+      "bigg_reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+      "change": {
+        "lower_bound": 0.0,
+        "upper_bound": 1000.0
+      },
+      "effect": "irreversible (MEcPP + reduced ferredoxin -> HMBPP + oxidised ferredoxin)",
+      "rationale": "IspG (EC 1.17.7.3) is a [4Fe-4S] enzyme that reduces the cyclodiphosphate MEcPP to HMBPP with two electrons from reduced ferredoxin or flavodoxin, releasing water; the reverse — re-forming a cyclic diphosphate from HMBPP and water while reducing ferredoxin — is not a physiological reaction. The universe carries the reaction reversible next to the NADH-dependent variant MECDPDH2 (irreversible); together they make a loop that turns NADH into reduced ferredoxin, from which the ferredoxin-NADP reductase and quinone reductases of a draft generate NADPH, quinol and NADH from nothing.",
+      "flagged_by": "gap-filling: the cheapest fill for nine P. putida conditions was MECDPDH4E plus a formate lyase, giving growth rates of 3.7 per hour; gembench.checks.energy_from_nothing then showed 500 mmol/gDW/h of NADH, NADPH and quinol with every exchange closed. The universe reaction is now irreversible and the gap-filler cuts off any added set that creates an energy-generating cycle.",
+      "caveat": "universal; no model in the benchmark carried MECDPDH4E before gap-filling, so this patch changes only what the gap-filler may add"
     }
   ]
 }

@@ -1,0 +1,772 @@
+[
+ {
+  "condition": "Maltotetraose",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "maltttr"
+  ],
+  "exchange_added": [
+   "maltttr"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 1.6999238620706185,
+   "added": [
+    {
+     "id": "MALTTTRabc",
+     "name": "Maltotetraose transport via ABC system",
+     "reaction": "atp_c + h2o_c + maltttr_e --> adp_c + h_c + maltttr_c + pi_c",
+     "transport": true
+    }
+   ],
+   "seconds": 4.084356784820557
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT0490",
+    "fitness": -2.51,
+    "median_other": -0.07,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT4098",
+    "fitness": -2.51,
+    "median_other": -0.86,
+    "in_model": true,
+    "desc": "Trk system K+ uptake protein trkA (NCBI ptt file)"
+   },
+   {
+    "gene": "BT4102",
+    "fitness": -2.02,
+    "median_other": -0.29,
+    "in_model": false,
+    "desc": "putative Sec-independent protein translocase (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "Maltohexaose",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "malthx"
+  ],
+  "exchange_added": [
+   "malthx"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 2.606483440774328,
+   "added": [
+    {
+     "id": "MALTHXabc",
+     "name": "Maltohexaose transport via ABC system",
+     "reaction": "atp_c + h2o_c + malthx_e --> adp_c + h_c + malthx_c + pi_c",
+     "transport": true
+    }
+   ],
+   "seconds": 4.154721260070801
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT1561",
+    "fitness": -2.46,
+    "median_other": -0.99,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1976",
+    "fitness": -2.23,
+    "median_other": -0.44,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3702",
+    "fitness": -2.11,
+    "median_other": -0.06,
+    "in_model": false,
+    "desc": "SusC, outer membrane protein involved in starch binding (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "Stachyose - 70%",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "stys"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 9.313476136003832,
+   "added": [
+    {
+     "id": "ATPS4rpp",
+     "name": "ATP synthase (four protons for one ATP) (periplasm)",
+     "reaction": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+     "transport": true
+    },
+    {
+     "id": "G3PD",
+     "name": "Glycerol-3-phosphate dehydrogenase (FAD)",
+     "reaction": "fad_c + glyc3p_c <=> dhap_c + fadh2_c",
+     "transport": false
+    },
+    {
+     "id": "GCDH",
+     "name": "",
+     "reaction": "glutcoa_c <=> b2coa_c + co2_c + h_c",
+     "transport": false
+    },
+    {
+     "id": "OIVD1r",
+     "name": "2-oxoisovalerate dehydrogenase (acylating; 4-methyl-2-oxopentaoate)",
+     "reaction": "4mop_c + coa_c + nad_c <=> co2_c + ivcoa_c + nadh_c",
+     "transport": false
+    }
+   ],
+   "seconds": 15.886138677597046
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT0652",
+    "fitness": -3.12,
+    "median_other": -0.95,
+    "in_model": true,
+    "desc": "putative thiamine-phosphate pyrophosphorylase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0771",
+    "fitness": -2.98,
+    "median_other": -0.65,
+    "in_model": false,
+    "desc": "1,4-alpha-glucan branching enzyme (isoamylase or pullulanase type II) (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0790",
+    "fitness": -2.23,
+    "median_other": -0.65,
+    "in_model": true,
+    "desc": "phosphomethylpyrimidine kinase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1363",
+    "fitness": -2.05,
+    "median_other": -0.69,
+    "in_model": false,
+    "desc": "DNA Pol III Epsilon Chain (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "Melibiose",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "melib"
+  ],
+  "exchange_added": [
+   "melib"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.7933642833359092,
+   "added": [
+    {
+     "id": "MELIB_Et",
+     "name": "Melibiose transport (transport mechanism unknown - evidence from biolog data)",
+     "reaction": "melib_e <=> melib_c",
+     "transport": true
+    }
+   ],
+   "seconds": 0.9361460208892822
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT0944",
+    "fitness": -2.55,
+    "median_other": -0.09,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1680",
+    "fitness": -2.43,
+    "median_other": 0.14,
+    "in_model": false,
+    "desc": "putative NADH dehydrogenase/NAD(P)H nitroreductase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0572",
+    "fitness": -2.25,
+    "median_other": -0.44,
+    "in_model": true,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2449",
+    "fitness": -2.07,
+    "median_other": -0.24,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "D-Trehalose dihydrate",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "tre"
+  ],
+  "exchange_added": [
+   "tre"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.906684230676867,
+   "added": [
+    {
+     "id": "TREpts",
+     "name": "Trehalose transport via PEP:Pyr PTS",
+     "reaction": "pep_c + tre_e --> pyr_c + tre6p_c",
+     "transport": true
+    }
+   ],
+   "seconds": 5.898843288421631
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT4102",
+    "fitness": -3.4,
+    "median_other": -0.29,
+    "in_model": false,
+    "desc": "putative Sec-independent protein translocase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT4103",
+    "fitness": -2.66,
+    "median_other": -0.56,
+    "in_model": false,
+    "desc": "putative Sec-independent protein translocase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2160",
+    "fitness": -2.55,
+    "median_other": -0.21,
+    "in_model": false,
+    "desc": "putative regulatory protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2157",
+    "fitness": -2.39,
+    "median_other": -0.33,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2159",
+    "fitness": -2.32,
+    "median_other": -0.18,
+    "in_model": false,
+    "desc": "putative oxidoreductase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0652",
+    "fitness": -2.08,
+    "median_other": -0.95,
+    "in_model": true,
+    "desc": "putative thiamine-phosphate pyrophosphorylase (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "D-Arabinose",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "arab__D"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.37785780974850947,
+   "added": [
+    {
+     "id": "RBK_Dr_1",
+     "name": "D-ribulokinase (reversible)",
+     "reaction": "atp_c + rbl__D_c --> adp_c + h_c + ru5p__D_c",
+     "transport": false
+    }
+   ],
+   "seconds": 0.9320785999298096
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT0350",
+    "fitness": -5.31,
+    "median_other": 0.08,
+    "in_model": true,
+    "desc": "xylulose kinase (xylulokinase) (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0352",
+    "fitness": -5.05,
+    "median_other": -0.16,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1273",
+    "fitness": -4.59,
+    "median_other": -0.04,
+    "in_model": true,
+    "desc": "L-fucose isomerase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0351",
+    "fitness": -4.16,
+    "median_other": -0.15,
+    "in_model": true,
+    "desc": "L-arabinose isomerase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1275",
+    "fitness": -3.82,
+    "median_other": 0.11,
+    "in_model": false,
+    "desc": "L-fuculose kinase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1274",
+    "fitness": -3.76,
+    "median_other": 0.13,
+    "in_model": true,
+    "desc": "L-fuculose-1-phosphate aldolase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1277",
+    "fitness": -3.72,
+    "median_other": -0.05,
+    "in_model": false,
+    "desc": "L-fucose permease (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0652",
+    "fitness": -3.11,
+    "median_other": -0.95,
+    "in_model": true,
+    "desc": "putative thiamine-phosphate pyrophosphorylase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3729",
+    "fitness": -3.08,
+    "median_other": -0.34,
+    "in_model": false,
+    "desc": "putative protoporphyrinogen oxidase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1276",
+    "fitness": -3.06,
+    "median_other": -0.04,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0356",
+    "fitness": -2.62,
+    "median_other": -0.44,
+    "in_model": false,
+    "desc": "aldose 1-epimerase precursor (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0173",
+    "fitness": -2.4,
+    "median_other": -0.95,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2843",
+    "fitness": -2.35,
+    "median_other": -0.92,
+    "in_model": false,
+    "desc": "integrase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0790",
+    "fitness": -2.34,
+    "median_other": -0.65,
+    "in_model": true,
+    "desc": "phosphomethylpyrimidine kinase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0618",
+    "fitness": -2.31,
+    "median_other": -0.62,
+    "in_model": true,
+    "desc": "Na+-transporting NADH:ubiquinone oxidoreductase, Electron transport complex protein rnfC (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0355",
+    "fitness": -2.13,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "Na+/glucose cotransporter (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0621",
+    "fitness": -2.01,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "Na+-transporting NADH:ubiquinone oxidoreductase, Electron transport complex protein rnfE (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "D-Fructose",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "fru"
+  ],
+  "exchange_added": [
+   "fru"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.4534044413098322,
+   "added": [
+    {
+     "id": "FRUpts2",
+     "name": "Fructose transport via PEP:Pyr PTS (f6p generating)",
+     "reaction": "fru_e + pep_c --> f6p_c + pyr_c",
+     "transport": true
+    }
+   ],
+   "seconds": 6.656232833862305
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT1758",
+    "fitness": -4.96,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "glucose/galactose transporter (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1754",
+    "fitness": -4.09,
+    "median_other": -0.01,
+    "in_model": true,
+    "desc": "two-component system sensor histidine kinase/response regulator, hybrid ('one component system') (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1757",
+    "fitness": -3.83,
+    "median_other": -0.18,
+    "in_model": true,
+    "desc": "fructokinase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1759",
+    "fitness": -2.95,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "levanase precursor (2,6-beta-D-fructofuranosidase) (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2417",
+    "fitness": -2.29,
+    "median_other": -0.66,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2006",
+    "fitness": -2.2,
+    "median_other": -0.28,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3911",
+    "fitness": -2.02,
+    "median_other": -0.98,
+    "in_model": true,
+    "desc": "malate dehydrogenase (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "D-Maltose monohydrate",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "malt"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.7933642833471949,
+   "added": [
+    {
+     "id": "MALTabc",
+     "name": "Maltose transport via ABC system",
+     "reaction": "atp_c + h2o_c + malt_e --> adp_c + h_c + malt_c + pi_c",
+     "transport": true
+    }
+   ],
+   "seconds": 5.12295937538147
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT3197",
+    "fitness": -2.57,
+    "median_other": -0.56,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1363",
+    "fitness": -2.3,
+    "median_other": -0.69,
+    "in_model": false,
+    "desc": "DNA Pol III Epsilon Chain (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1976",
+    "fitness": -2.3,
+    "median_other": -0.44,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT4610",
+    "fitness": -2.16,
+    "median_other": -0.41,
+    "in_model": false,
+    "desc": "RecA (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3911",
+    "fitness": -2.11,
+    "median_other": -0.98,
+    "in_model": true,
+    "desc": "malate dehydrogenase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0185",
+    "fitness": -2.06,
+    "median_other": -0.5,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "D-Mannose",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "man"
+  ],
+  "exchange_added": [
+   "man"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.45340444130988,
+   "added": [
+    {
+     "id": "MANt2",
+     "name": "D mannose transport in via proton symport",
+     "reaction": "h_e + man_e --> h_c + man_c",
+     "transport": true
+    }
+   ],
+   "seconds": 6.937938213348389
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT2006",
+    "fitness": -3.0,
+    "median_other": -0.28,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1363",
+    "fitness": -2.96,
+    "median_other": -0.69,
+    "in_model": false,
+    "desc": "DNA Pol III Epsilon Chain (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3915",
+    "fitness": -2.93,
+    "median_other": -0.27,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0322",
+    "fitness": -2.25,
+    "median_other": -0.85,
+    "in_model": false,
+    "desc": "putative oxidoreductase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3077",
+    "fitness": -2.19,
+    "median_other": -0.89,
+    "in_model": false,
+    "desc": "ribonuclease R (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3168",
+    "fitness": -2.17,
+    "median_other": -0.61,
+    "in_model": false,
+    "desc": "putative Fe-S oxidoreductase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2299",
+    "fitness": -2.15,
+    "median_other": -0.9,
+    "in_model": false,
+    "desc": "conserved protein found in conjugate transposon (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3911",
+    "fitness": -2.11,
+    "median_other": -0.98,
+    "in_model": true,
+    "desc": "malate dehydrogenase (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "N-Acetyl-D-Glucosamine",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "acgam"
+  ],
+  "exchange_added": [
+   "acgam"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.4544017731302208,
+   "added": [
+    {
+     "id": "ACGApts",
+     "name": "N-Acetyl-D-glucosamine transport via PEP:Pyr PTS",
+     "reaction": "acgam_e + pep_c --> acgam6p_c + pyr_c",
+     "transport": true
+    }
+   ],
+   "seconds": 3.8739013671875
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT0258",
+    "fitness": -4.38,
+    "median_other": 0.26,
+    "in_model": true,
+    "desc": "glucosamine-6-phosphate isomerase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3911",
+    "fitness": -2.19,
+    "median_other": -0.98,
+    "in_model": true,
+    "desc": "malate dehydrogenase (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "D-Glucosamine Hydrochloride",
+  "media": "Varel_Bryant_medium",
+  "bigg_ids": [
+   "gam"
+  ],
+  "exchange_added": [
+   "gam"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.4544017731341978,
+   "added": [
+    {
+     "id": "GAMpts",
+     "name": "D-glucosamine transport via PEP:Pyr PTS",
+     "reaction": "gam_e + pep_c --> gam6p_c + pyr_c",
+     "transport": true
+    }
+   ],
+   "seconds": 6.102646589279175
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "BT0585",
+    "fitness": -4.47,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2430",
+    "fitness": -3.81,
+    "median_other": -0.56,
+    "in_model": true,
+    "desc": "hexokinase type III (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1854",
+    "fitness": -3.46,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "putative membrane-associated phospholipid phosphatase (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1363",
+    "fitness": -3.31,
+    "median_other": -0.69,
+    "in_model": false,
+    "desc": "DNA Pol III Epsilon Chain (NCBI ptt file)"
+   },
+   {
+    "gene": "BT3077",
+    "fitness": -2.84,
+    "median_other": -0.89,
+    "in_model": false,
+    "desc": "ribonuclease R (NCBI ptt file)"
+   },
+   {
+    "gene": "BT2299",
+    "fitness": -2.33,
+    "median_other": -0.9,
+    "in_model": false,
+    "desc": "conserved protein found in conjugate transposon (NCBI ptt file)"
+   },
+   {
+    "gene": "BT0443",
+    "fitness": -2.24,
+    "median_other": -0.21,
+    "in_model": false,
+    "desc": "thermostable beta-glucosidase B (NCBI ptt file)"
+   },
+   {
+    "gene": "BT4753",
+    "fitness": -2.13,
+    "median_other": -0.52,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "BT1229",
+    "fitness": -2.1,
+    "median_other": -0.36,
+    "in_model": false,
+    "desc": "conserved hypothetical protein, putative membrane protein (NCBI ptt file)"
+   }
+  ]
+ }
+]

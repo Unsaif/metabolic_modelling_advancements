@@ -91,8 +91,19 @@ def load_media_map(path: str = os.path.join(REF_DIR, "fitness_browser_media_bigg
     return pd.read_table(path, dtype=str, keep_default_na=False)
 
 
+TRACE_METALS = ("fe2", "fe3", "mn2", "zn2", "cu2", "cobalt2", "mobd", "ni2", "sel", "slnt", "tungs")
+
+
 def base_medium(media_name: str, media_map: Optional[pd.DataFrame] = None, uptake: float = -1000.0,
-                trace_uptake: float = -0.001) -> Medium:
+                trace_uptake: float = -0.001, trace_metal_uptake: float = -0.1) -> Medium:
+    """Medium of a Fitness Browser experiment as BiGG exchange bounds.
+
+    Bulk components are unlimited; organic trace components (vitamins, hemin, reductant amino acids, nucleobases)
+    are limited to `trace_uptake` so that they cannot serve as carbon sources; trace metals are limited to
+    `trace_metal_uptake` (0.1 mmol/gDW/h, ten times the biomass demand at a growth rate of 1/h) so that an
+    unlimited metal cannot act as an unlimited electron acceptor — with unlimited Fe(III) a draft carrying a
+    gene-less extracellular ferric reductase respires iron and, once it has an ATP synthase, grows on the
+    proton gradient that produces (decision D17, Sprint 3 note)."""
     mm = media_map if media_map is not None else load_media_map()
     row = mm[mm["media"] == media_name]
     if row.empty:
@@ -103,11 +114,19 @@ def base_medium(media_name: str, media_map: Optional[pd.DataFrame] = None, uptak
     if aerobic and "o2" not in comps:
         comps.append("o2")
     trace = set(str(row.get("trace_components", "")).split(";")) - {""}
+
+    def bound(c: str) -> float:
+        if c in trace:
+            return trace_uptake
+        if c in TRACE_METALS:
+            return trace_metal_uptake
+        return uptake
+
     return Medium(name=media_name, description=row["note"],
-                  uptakes={bigg_exchange(c): (trace_uptake if c in trace else uptake) for c in comps},
+                  uptakes={bigg_exchange(c): bound(c) for c in comps},
                   provenance="Fitness Browser media definition (bitbucket.org/berkeleylab/feba metadata/media, mixes) "
                              "mapped to BiGG ids in data/reference/fitness_browser_media_bigg.tsv",
-                  notes=[f"aerobic={aerobic}"])
+                  notes=[f"aerobic={aerobic}", f"trace organics {trace_uptake}, trace metals {trace_metal_uptake} mmol/gDW/h"])
 
 
 def carbon_source_conditions(org: FitnessBrowserOrganism, cs_map: Optional[pd.DataFrame] = None,

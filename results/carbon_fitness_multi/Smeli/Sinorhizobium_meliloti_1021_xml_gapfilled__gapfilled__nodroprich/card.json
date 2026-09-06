@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Smeli",
-  "created": "2026-09-05T17:22:05Z",
+  "created": "2026-09-06T08:53:38Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Smeli'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -31,7 +31,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -70,17 +77,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.4125099085463879,
+        "point": 0.39225554179336164,
         "ci95": [
-          0.31552390890735893,
-          0.5181985243263529
+          0.29307598174899374,
+          0.5006372421770907
         ]
       },
       "auroc_standard": {
-        "point": 0.7091463495516528,
+        "point": 0.7095280663919838,
         "ci95": [
-          0.6588161795874731,
-          0.762891461206183
+          0.6601896331277197,
+          0.7626207512411303
         ]
       },
       "mcc": {
@@ -123,17 +130,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.20638746661478286,
+        "point": 0.18509805656451372,
         "ci95": [
-          0.15881573172367425,
-          0.2535224322716019
+          0.13934772137409163,
+          0.22623755383205799
         ]
       },
       "auroc_standard": {
-        "point": 0.6393978919737331,
+        "point": 0.6357753940376587,
         "ci95": [
-          0.6074856272991053,
-          0.674168190352418
+          0.6045353230582785,
+          0.6688724700861383
         ]
       },
       "mcc": {
@@ -181,12 +188,13 @@
       "genes_after_adjustment": 979,
       "conditions_total": 33,
       "conditions_mapped": 33,
-      "conditions_wt_grows": 21
+      "conditions_wt_grows": 21,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 7.152557373046875e-07,
-      "knockout_simulation_s": 39.64643740653992,
-      "total_s": 40.002668619155884
+      "rich_medium_essentials_s": 9.5367431640625e-07,
+      "knockout_simulation_s": 91.43115377426147,
+      "total_s": 92.15915489196777
     },
     "dropped_rich_medium_essentials": 0
   },

@@ -1,0 +1,620 @@
+{
+  "version": "0.3",
+  "created": "2026-09-06",
+  "scope": "reaction additions to models that the automated reconstruction missed, of two kinds: (i) per-organism enzymes or transporters that the genome annotation supplies (annotated but not reconstructed), each naming its genes and evidence; (ii) gene-less passive-diffusion reactions for small uncharged by-products (org '*', conditional on the metabolite being present), which give a dead-end by-product a sink instead of forcing flux through a single downstream pathway. Unlike the minimal gap-fill (models/gapfilled/, gene-less, chosen by parsimony for one condition), every addition here is written with its rationale before re-scoring; the fitness benchmark then verifies it (fix-at-source loop, roadmap WS1). Reaction ids, stoichiometry, formulas and charges follow BiGG / the CarveMe universe (external/carveme/universe_bacteria.xml.gz). Gene ids are Fitness Browser locus tags; the runner translates them to model gene ids where the draft already carries the gene and otherwise adds the gene under its locus tag (as for gene-rule patches of class R4). v0.2 adds the F0F1 ATP synthase (ATPS4rpp) with its subunit genes to the three drafts that ship without any ATP synthase reaction (S. oneidensis, B. thetaiotaomicron, S. meliloti); v0.1 is the set used for the cycle-4 arm. v0.3 (cycle 6) adds condition-level reactions for carbon sources on which a draft's wild type fails to grow although the organism grew: each is proposed by the gap-filler (scripts/condition_gapfill.py) or by the pathway the condition-specific fitness genes name, and adopted only where the RefSeq annotation of those genes supports the reaction; the fitness data then verify the genes.",
+  "patches": [
+    {
+      "org": "Smeli",
+      "reaction": "EX_thm_e",
+      "name": "Thiamin exchange",
+      "metabolites": {
+        "thm_e": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gpr": "",
+      "rationale": "Boundary reaction for thiamine, which the RCH2 defined medium contains (Wolfe's vitamin mix); the draft has no thiamine metabolite at all (thm_c, thm_e absent), so the medium's thiamine could not be represented."
+    },
+    {
+      "org": "Smeli",
+      "reaction": "THMabc",
+      "name": "Thiamine transport via ABC system",
+      "metabolites": {
+        "atp_c": -1.0,
+        "h2o_c": -1.0,
+        "thm_e": -1.0,
+        "adp_c": 1.0,
+        "h_c": 1.0,
+        "pi_c": 1.0,
+        "thm_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gpr": "SMc03869 and SMc03870 and SMc03871",
+      "rationale": "S. meliloti 1021 carries a thiamine ABC transporter (thiB substrate-binding SMc03869 = SM_RS16675, thiP permease SMc03870 = SM_RS16680, thiQ ATP-binding SMc03871 = SM_RS16685; RefSeq products 'thiamine ABC transporter substrate binding subunit', 'thiamine/thiamine pyrophosphate ABC transporter permease ThiP', 'thiamine ABC transporter ATP-binding protein'), absent from the draft. With it, the thiamine in the RCH2 medium reaches the cell and thiamine-biosynthesis genes are no longer required for the wrong reason.",
+      "flagged_by": "benchmark: the v0.3 thiamine-phosphate synthase rule (TMPPP) made SM_b20618 essential in all 21 growth conditions although it has no phenotype on RCH2 (mean fitness -0.05); medium completion could not supply thiamine because the draft has no thiamine metabolite"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "TMDPK",
+      "name": "Thiamine diphosphokinase",
+      "metabolites": {
+        "atp_c": -1.0,
+        "thm_c": -1.0,
+        "amp_c": 1.0,
+        "h_c": 1.0,
+        "thmpp_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gpr": "SMc03867",
+      "rationale": "Thiamine diphosphokinase (EC 2.7.6.2; SMc03867 = SM_RS16665, RefSeq 'thiamine diphosphokinase'), next to the transporter genes, converts imported thiamine directly to the cofactor thiamine diphosphate; without it the imported vitamin would be a dead end.",
+      "flagged_by": "as THMabc"
+    },
+    {
+      "org": "*",
+      "reaction": "GCALDt",
+      "name": "Glycolaldehyde transport (passive diffusion)",
+      "metabolites": {
+        "gcald_e": -1.0,
+        "gcald_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gpr": "",
+      "requires_metabolites": [
+        "gcald_c"
+      ],
+      "skip_if_reactions": [
+        "GCALDt",
+        "GCALDtex",
+        "GCALDtabcpp"
+      ],
+      "rationale": "Glycolaldehyde is a small uncharged aldehyde (60 Da) that crosses membranes passively, as acetaldehyde does (ACALDt, a gene-less diffusion reaction in every BiGG model). Dihydroneopterin aldolase (DHNPA), the second step of the folate branch, releases one glycolaldehyde per molecule of 6-hydroxymethyldihydropterin, so every model that makes its own folate produces a trickle of it; the CarveMe drafts give it a single sink (glycolaldehyde dehydrogenase, then glycolate oxidase and malate synthase in P. putida), which the steady-state constraint then makes essential in every condition although the flux is ~0.0006 mmol/gDW/h. E. coli's iML1515 avoids the artefact through reversible aldolases (4HTHRA, 2DDARAA) and glycolate excretion; the drafts have neither. Letting the by-product leave the cell removes a false essentiality without asserting any enzyme.",
+      "flagged_by": "benchmark: glycolaldehyde dehydrogenase (PP_3646, no phenotype) predicted essential in all 28 P. putida conditions; the glycolate-oxidase subunit rule (GLYCTO1, held in gpr_patches_v0.3) and the glycolaldehyde-dehydrogenase rule (GCALDD, S. meliloti, held) both unmasked the same dead-end by-product",
+      "caveat": "applies to any model with glycolaldehyde; the exchange is secretion-only in the benchmark (uptake closed unless the medium contains it)"
+    },
+    {
+      "org": "*",
+      "reaction": "EX_gcald_e",
+      "name": "Glycolaldehyde exchange",
+      "metabolites": {
+        "gcald_e": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gpr": "",
+      "requires_metabolites": [
+        "gcald_c"
+      ],
+      "skip_if_reactions": [
+        "EX_gcald_e"
+      ],
+      "rationale": "Boundary reaction for GCALDt (see that patch)."
+    },
+    {
+      "org": "MR1",
+      "reaction": "ATPS4rpp",
+      "name": "ATP synthase (four protons for one ATP) (periplasm)",
+      "metabolites": {
+        "adp_c": -1.0,
+        "h_p": -4.0,
+        "pi_c": -1.0,
+        "atp_c": 1.0,
+        "h2o_c": 1.0,
+        "h_c": 3.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gpr": "SO4746 and SO4747 and SO4748 and SO4749 and SO4750 and SO4751 and SO4752 and SO4753",
+      "rationale": "The shipped EMBL draft has no ATP synthase reaction at all (no ATPS* id), although the genome carries the complete F0F1 operon: atpCDGAHFEB, SO_4746-SO_4753 (SO_RS22070-SO_RS22105), RefSeq 'F0F1 ATP synthase subunit epsilon/beta/gamma/alpha/delta/B/C/A'. Without it the model makes ATP only by substrate-level phosphorylation and its proton-pumping respiratory reactions (NADH dehydrogenases, cytochrome oxidases, in B. thetaiotaomicron the anaerobic Nqr/fumarate-reductase gradient) are energetically pointless; adding the universe reaction (BiGG ATPS4rpp, reversible as in the CarveMe universe and iML1515) raises the reference-condition growth rate (S. oneidensis on lactate 0.10 to 0.43 per hour, S. meliloti on glucose 0.21 to 0.73, B. thetaiotaomicron on glucose 0.44 to 0.59) and creates no energy-generating cycle (gembench.checks.energy_from_nothing: zero ATP, NADH, NADPH, quinol or proton-gradient production with every exchange closed).",
+      "flagged_by": "condition-level gap-filling (scripts/condition_gapfill.py): the cheapest fill for S. oneidensis on propionate and isoleucine and for B. thetaiotaomicron on stachyose was ATP synthase itself; the survey in results/embl_atp_synthase_survey.tsv shows how widespread the omission is in the EMBL GEMs collection",
+      "caveat": "the stoichiometry (4 H+ per ATP) is the BiGG convention; the gene rule joins the eight (nine in S. meliloti) subunits with AND, so any subunit knockout removes the reaction"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "ATPS4rpp",
+      "name": "ATP synthase (four protons for one ATP) (periplasm)",
+      "metabolites": {
+        "adp_c": -1.0,
+        "h_p": -4.0,
+        "pi_c": -1.0,
+        "atp_c": 1.0,
+        "h2o_c": 1.0,
+        "h_c": 3.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gpr": "BT0711 and BT0712 and BT0714 and BT0715 and BT0716 and BT0717 and BT0718 and BT0719",
+      "rationale": "The shipped EMBL draft has no ATP synthase reaction at all (no ATPS* id), although the genome carries the complete F0F1 operon: atpDCBEF + delta, alpha, gamma: BT_0711-BT_0719 (BT_RS03560-BT_RS03600), RefSeq 'F0F1 ATP synthase subunit ...'; the organism also carries a V-type ATPase (BT_RS06535-...), not modelled. Without it the model makes ATP only by substrate-level phosphorylation and its proton-pumping respiratory reactions (NADH dehydrogenases, cytochrome oxidases, in B. thetaiotaomicron the anaerobic Nqr/fumarate-reductase gradient) are energetically pointless; adding the universe reaction (BiGG ATPS4rpp, reversible as in the CarveMe universe and iML1515) raises the reference-condition growth rate (S. oneidensis on lactate 0.10 to 0.43 per hour, S. meliloti on glucose 0.21 to 0.73, B. thetaiotaomicron on glucose 0.44 to 0.59) and creates no energy-generating cycle (gembench.checks.energy_from_nothing: zero ATP, NADH, NADPH, quinol or proton-gradient production with every exchange closed).",
+      "flagged_by": "condition-level gap-filling (scripts/condition_gapfill.py): the cheapest fill for S. oneidensis on propionate and isoleucine and for B. thetaiotaomicron on stachyose was ATP synthase itself; the survey in results/embl_atp_synthase_survey.tsv shows how widespread the omission is in the EMBL GEMs collection",
+      "caveat": "the stoichiometry (4 H+ per ATP) is the BiGG convention; the gene rule joins the eight (nine in S. meliloti) subunits with AND, so any subunit knockout removes the reaction"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "ATPS4rpp",
+      "name": "ATP synthase (four protons for one ATP) (periplasm)",
+      "metabolites": {
+        "adp_c": -1.0,
+        "h_p": -4.0,
+        "pi_c": -1.0,
+        "atp_c": 1.0,
+        "h2o_c": 1.0,
+        "h_c": 3.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gpr": "SMc00871 and SMc00870 and SMc00869 and SMc00868 and SMc02498 and SMc02499 and SMc02500 and SMc02501 and SMc02502",
+      "rationale": "The shipped EMBL draft has no ATP synthase reaction at all (no ATPS* id), although the genome carries the complete F0F1 operon: F0 subunits a, c, b, b' SMc00868-SMc00871 (SM_RS04260-SM_RS04275) and F1 subunits delta, alpha, gamma, beta, epsilon SMc02498-SMc02502 (SM_RS15535-SM_RS15555), RefSeq 'F0F1 ATP synthase subunit ...'. Without it the model makes ATP only by substrate-level phosphorylation and its proton-pumping respiratory reactions (NADH dehydrogenases, cytochrome oxidases, in B. thetaiotaomicron the anaerobic Nqr/fumarate-reductase gradient) are energetically pointless; adding the universe reaction (BiGG ATPS4rpp, reversible as in the CarveMe universe and iML1515) raises the reference-condition growth rate (S. oneidensis on lactate 0.10 to 0.43 per hour, S. meliloti on glucose 0.21 to 0.73, B. thetaiotaomicron on glucose 0.44 to 0.59) and creates no energy-generating cycle (gembench.checks.energy_from_nothing: zero ATP, NADH, NADPH, quinol or proton-gradient production with every exchange closed).",
+      "flagged_by": "condition-level gap-filling (scripts/condition_gapfill.py): the cheapest fill for S. oneidensis on propionate and isoleucine and for B. thetaiotaomicron on stachyose was ATP synthase itself; the survey in results/embl_atp_synthase_survey.tsv shows how widespread the omission is in the EMBL GEMs collection",
+      "caveat": "the stoichiometry (4 H+ per ATP) is the BiGG convention; the gene rule joins the eight (nine in S. meliloti) subunits with AND, so any subunit knockout removes the reaction"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "SUCDi",
+      "name": "Succinate dehydrogenase (irreversible)",
+      "metabolites": {
+        "q8_c": -1,
+        "succ_c": -1,
+        "fum_c": 1,
+        "q8h2_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "SMc02463 and SMc02464 and SMc02465 and SMc02466",
+      "rationale": "The draft has no succinate dehydrogenase (no SUCDi, SUCD1 or FRD reaction) although the genome carries sdhCDAB (SMc02463 sdhC cytochrome b556, SMc02464 sdhD membrane anchor, SMc02465 sdhA flavoprotein, SMc02466 iron-sulfur subunit; SM_RS15730-SM_RS15715) — for an obligate aerobe whose preferred carbon source is succinate, the central reaction of the TCA cycle. Without it succinate, and every substrate entering the cycle at 2-oxoglutarate or succinate (histidine, glutamine, proline), cannot be oxidised and the model does not grow on them.",
+      "flagged_by": "condition gap-filling: SUCDi is the single cheapest fill for succinate, histidine, glutamine and proline; the succinate-specific fitness genes are pckA and the DctA transporter and its regulators (dctBD), i.e. the organism uses succinate exactly as expected"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "EX_acgam_e",
+      "name": "N-Acetyl-D-glucosamine exchange",
+      "metabolites": {
+        "acgam_e": -1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "",
+      "rationale": "Boundary reaction for the transporter below.",
+      "flagged_by": "as ACGAMabc"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "ACGAMabc",
+      "name": "N-Acetyl-D-glucosamine transport via ABC system",
+      "metabolites": {
+        "atp_c": -1,
+        "h2o_c": -1,
+        "acgam_e": -1,
+        "adp_c": 1,
+        "h_c": 1,
+        "pi_c": 1,
+        "acgam_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "SMc02869 and SMc02871 and SMc02872 and SMc02873",
+      "rationale": "The N-acetylglucosamine-specific fitness genes on RCH2 + GlcNAc form one chromosomal cluster (SMc02869-SMc02877): an ABC transporter (SMc02869 ATP-binding, SMc02871 and SMc02872 carbohydrate permeases, SMc02873 substrate-binding protein), an N-acetylglucosamine kinase (SMc02875) and a SIS-domain glucosamine-6-phosphate deaminase (SMc02877). The draft has neither an exchange nor a transporter for GlcNAc; S. meliloti has no sugar PTS, so the gap-filler's PTS proposal is replaced by the annotated ABC system.",
+      "flagged_by": "condition gap-filling (ACGApts + G6PDA proposed); fitness genes SMc02869-SMc02877 specific to the GlcNAc condition (fitness -3.5 to -7.3, no phenotype elsewhere)"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "G6PDA",
+      "name": "Glucosamine-6-phosphate deaminase",
+      "metabolites": {
+        "gam6p_c": -1,
+        "h2o_c": -1,
+        "f6p_c": 1,
+        "nh4_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "SMc02877",
+      "rationale": "SMc02877 (SM_RS01040, 'SIS domain-containing protein', in the nag cluster) is the strongest GlcNAc-specific gene (fitness -7.3); the draft had assigned it to glucosamine-6-phosphate synthase (GF6PTA, the anabolic direction) and lacks the catabolic deaminase altogether. The same mis-assignment occurs in the S. oneidensis draft (SO3506, RefSeq 'glucosamine-6-phosphate deaminase NagB-II').",
+      "flagged_by": "condition gap-filling (G6PDA); fitness of SMc02877"
+    },
+    {
+      "org": "MR1",
+      "reaction": "G6PDA",
+      "name": "Glucosamine-6-phosphate deaminase",
+      "metabolites": {
+        "gam6p_c": -1,
+        "h2o_c": -1,
+        "f6p_c": 1,
+        "nh4_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "SO3506",
+      "rationale": "SO3506 (SO_RS16390, RefSeq 'glucosamine-6-phosphate deaminase NagB-II') sits in the nag operon with nagA (SO3505, deacetylase, in the draft), nagK (SO3507, kinase) and nagP (SO3503, MFS transporter); the draft assigned it to glucosamine-6-phosphate synthase (GF6PTA) and has no deaminase, so GlcNAc-6-phosphate cannot enter glycolysis.",
+      "flagged_by": "condition gap-filling: G6PDA is the single cheapest fill for N-acetylglucosamine; SO3505, SO3506, SO3507 and SO3503 are the top GlcNAc-specific fitness genes (-4.8 to -6.7)"
+    },
+    {
+      "org": "MR1",
+      "reaction": "INSt2",
+      "name": "Inosine transport in via proton symport",
+      "metabolites": {
+        "h_e": -1,
+        "ins_e": -1,
+        "h_c": 1,
+        "ins_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "SO1214",
+      "rationale": "SO1214 (SO_RS05655, 'NupC/NupG family nucleoside CNT transporter') carries the draft's other nucleoside symports (adenosine, uridine, cytidine, thymidine ...) but not inosine; it is the inosine-specific fitness gene (-4.6), together with the purine-nucleoside phosphorylase / phosphopentomutase / deoxyribose-phosphate aldolase genes that the draft already has.",
+      "flagged_by": "condition gap-filling: INSt2 is the single cheapest fill for inosine"
+    },
+    {
+      "org": "Putida",
+      "reaction": "GALURDH",
+      "name": "D-Galacturonate dehydrogenase (NAD)",
+      "metabolites": {
+        "galur_c": -1,
+        "h2o_c": -1,
+        "nad_c": -1,
+        "galct__D_c": 1,
+        "h_c": 2,
+        "nadh_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "PP_1171",
+      "rationale": "P. putida oxidises hexuronates through uronate dehydrogenase (Udh, PP_1171, 'NAD-dependent epimerase/dehydratase family protein', with the glucurono-1,5-lactonase PP_1170 hydrolysing the lactone product, lumped here as in BiGG) to galactarate/glucarate, then galactarate dehydratase (PP_3601 garD, in the draft), 5-dehydro-4-deoxyglucarate dehydratase (PP_3599 kdgD) and 2-oxoglutarate-semialdehyde dehydrogenase (PP_3602) to 2-oxoglutarate; uptake is by the TRAP transporter PP_1167-PP_1169. The draft had assigned PP_1171 to dTDP-glucose 4,6-dehydratase and PP_1169 to a succinate ABC transporter, and has no uronate dehydrogenase. Irreversible: the reaction is a dehydrogenase releasing the lactone.",
+      "flagged_by": "condition gap-filling: GALURDH / GLCURDH are the single cheapest fills for galacturonate and glucuronate; PP_1167-PP_1171 and PP_3599/PP_3601 are the condition-specific fitness genes (-5.2 to -6.2)"
+    },
+    {
+      "org": "Putida",
+      "reaction": "GLCURDH",
+      "name": "D-Glucuronate dehydrogenase (NAD)",
+      "metabolites": {
+        "glcur_c": -1,
+        "h2o_c": -1,
+        "nad_c": -1,
+        "glcr_c": 1,
+        "h_c": 2,
+        "nadh_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "PP_1171",
+      "rationale": "as GALURDH (uronate dehydrogenase acts on both hexuronates).",
+      "flagged_by": "as GALURDH"
+    },
+    {
+      "org": "Putida",
+      "reaction": "5DH4DGLCD",
+      "name": "5-Dehydro-4-deoxyglucarate dehydratase (decarboxylating)",
+      "metabolites": {
+        "5dh4dglc_c": -1,
+        "h_c": -1,
+        "25dop_c": 1,
+        "co2_c": 1,
+        "h2o_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "PP_3599",
+      "rationale": "PP_3599 (kdgD, '5-dehydro-4-deoxyglucarate dehydratase') is a galacturonate- and glucuronate-specific fitness gene (-6.1 / -3.5) absent from the draft, which routes 5-dehydro-4-deoxyglucarate only through the aldolase (GLCRAL, gene-less).",
+      "flagged_by": "as GALURDH"
+    },
+    {
+      "org": "Putida",
+      "reaction": "DOPDH",
+      "name": "2-Oxoglutarate semialdehyde dehydrogenase (NADP)",
+      "metabolites": {
+        "25dop_c": -1,
+        "h2o_c": -1,
+        "nadp_c": -1,
+        "akg_c": 1,
+        "h_c": 2,
+        "nadph_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "PP_3602",
+      "rationale": "PP_3602 ('aldehyde dehydrogenase (NADP+)', next to garD and kdgD) completes the pathway from 2,5-dioxopentanoate to 2-oxoglutarate.",
+      "flagged_by": "as GALURDH",
+      "skip_if_reactions": [
+        "DOPDH",
+        "KGSADH"
+      ]
+    },
+    {
+      "org": "Putida",
+      "reaction": "FACOAL40t2pp",
+      "name": "Fatty-acid-CoA ligase (butanoate transport via vectorial CoA coupling)",
+      "metabolites": {
+        "atp_c": -1,
+        "but_p": -1,
+        "coa_c": -1,
+        "h_p": -1,
+        "amp_c": 1,
+        "btcoa_c": 1,
+        "h_c": 1,
+        "ppi_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "PP_3553",
+      "rationale": "The draft takes butyrate up (BUTtex, BUTt2rpp) but cannot activate it: PP_3553 ('acyl-CoA synthetase'), with the acyl-CoA dehydrogenase PP_3554 next to it, is the butyrate- and butanol-specific fitness gene (-4.2 / -2.9), together with the glyoxylate-shunt genes aceA and glcB that growth on a C4 acid requires. The vectorial form of the ligase is used as for the other fatty acids in the CarveMe universe.",
+      "flagged_by": "condition gap-filling proposed the gene-less CoA-transferase BUTCT; the annotation supports a CoA ligase"
+    },
+    {
+      "org": "Putida",
+      "reaction": "EX_hxa_e",
+      "name": "Hexanoate exchange",
+      "metabolites": {
+        "hxa_e": -1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "",
+      "rationale": "Boundary reaction for HXAtex.",
+      "flagged_by": "as HXAtex"
+    },
+    {
+      "org": "Putida",
+      "reaction": "HXAtex",
+      "name": "Hexanoate transport via diffusion (extracellular to periplasm)",
+      "metabolites": {
+        "hxa_e": -1,
+        "hxa_p": 1
+      },
+      "lower_bound": -1000,
+      "upper_bound": 1000,
+      "gpr": "",
+      "rationale": "The draft has the periplasmic hexanoate steps (HEXt2rpp, FACOAL60t2pp) but no outer-membrane diffusion or exchange for hexanoate; porin diffusion carries no gene (rule R5).",
+      "flagged_by": "condition gap-filling: HXAtex is the single cheapest fill for hexanoate; the fitness genes are the fatty-acid-CoA ligase PP_4549 and the glyoxylate shunt"
+    },
+    {
+      "org": "Putida",
+      "reaction": "MBCOAi",
+      "name": "Isovaleryl-CoA dehydrogenase",
+      "metabolites": {
+        "fad_c": -1,
+        "ivcoa_c": -1,
+        "3mb2coa_c": 1,
+        "fadh2_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "PP_4064",
+      "rationale": "Leucine degradation: the draft has the branched-chain keto-acid dehydrogenase (OIVD1r, bkd) and HMG-CoA lyase but none of the liu steps between them; PP_4064 (isovaleryl-CoA dehydrogenase), PP_4065/PP_4067 (methylcrotonyl-CoA carboxylase subunits) and PP_4066 (methylglutaconyl-CoA hydratase, 'gamma-carboxygeranoyl-CoA hydratase') are the leucine-, 4-methyl-2-oxovalerate- and 3-methylbutanol-specific fitness genes. Irreversible (the universe form is reversible).",
+      "flagged_by": "condition gap-filling: the cheapest fills for six branched-chain conditions were energy-cycle artefacts (MECDPDH4E + OBTFL), cut off once the gap-filler tested for energy-generating cycles; the fitness genes name the liu pathway"
+    },
+    {
+      "org": "Putida",
+      "reaction": "MCCC",
+      "name": "Methylcrotonoyl-CoA carboxylase",
+      "metabolites": {
+        "3mb2coa_c": -1,
+        "atp_c": -1,
+        "hco3_c": -1,
+        "3mgcoa_c": 1,
+        "adp_c": 1,
+        "h_c": 1,
+        "pi_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "PP_4065 and PP_4067",
+      "rationale": "as MBCOAi (liuB PP_4065 beta subunit, liuD PP_4067 biotin-containing alpha subunit).",
+      "flagged_by": "as MBCOAi"
+    },
+    {
+      "org": "Putida",
+      "reaction": "MGCH",
+      "name": "Methylglutaconyl-CoA hydratase",
+      "metabolites": {
+        "3mgcoa_c": -1,
+        "h2o_c": -1,
+        "hmgcoa_c": 1
+      },
+      "lower_bound": -1000,
+      "upper_bound": 1000,
+      "gpr": "PP_4066",
+      "rationale": "as MBCOAi (liuC PP_4066).",
+      "flagged_by": "as MBCOAi"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "EX_fru_e",
+      "name": "D-Fructose exchange",
+      "metabolites": {
+        "fru_e": -1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "",
+      "rationale": "Boundary reaction for FRUt2r.",
+      "flagged_by": "as FRUt2r"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "FRUt2r",
+      "name": "D-Fructose transport in via proton symport",
+      "metabolites": {
+        "fru_e": -1,
+        "h_e": -1,
+        "fru_c": 1,
+        "h_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "BT1758",
+      "rationale": "The draft has fructokinase (HEX7, BT1757) but no fructose exchange or transporter. BT1758 (BT_RS08910, 'sugar MFS transporter') is the strongest fructose-specific fitness gene (-5.0) and sits in the fructan utilisation locus BT1754-BT1765 with the kinase BT1757 and the hybrid two-component regulator BT1754; Bacteroides use MFS symporters and SusC/SusD systems rather than PTS, so a proton symport replaces the gap-filler's PTS proposal.",
+      "flagged_by": "condition gap-filling (FRUpts2 proposed); fitness genes BT1758, BT1754, BT1757, BT1759"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "RBK_Dr",
+      "name": "D-Ribulokinase",
+      "metabolites": {
+        "atp_c": -1,
+        "rbl__D_c": -1,
+        "adp_c": 1,
+        "h_c": 1,
+        "ru5p__D_c": 1
+      },
+      "lower_bound": 0,
+      "upper_bound": 1000,
+      "gpr": "BT0350",
+      "rationale": "D-arabinose is isomerised to D-ribulose (ARABDI, in the draft with the fucose isomerase BT1273 and the arabinose isomerase BT0351, both important on D-arabinose) and the draft then lacks a D-ribulokinase. BT0350 (BT_RS01710, 'xylulokinase', in the arabinose operon next to araA BT0351) is the strongest D-arabinose-specific fitness gene (-5.3) and is assigned the D-ribulokinase activity on that evidence — a phenotype-supported extension of a sugar-kinase annotation, not a product-name match, recorded as such.",
+      "flagged_by": "condition gap-filling: RBK_Dr_1 is the single cheapest fill; fitness genes BT0350, BT0351, BT1273 (the fucose-pathway genes BT1274, BT1275, BT1277 are also important, so part of the flux may take the fuculose-1-phosphate route, which the universe lacks)",
+      "evidence_grade": "phenotype-supported activity extension"
+    }
+  ],
+  "new_metabolites": {
+    "thm_c": {
+      "name": "Thiamin",
+      "formula": "C12H17N4OS",
+      "charge": 1,
+      "compartment": "c"
+    },
+    "thm_e": {
+      "name": "Thiamin",
+      "formula": "C12H17N4OS",
+      "charge": 1,
+      "compartment": "e"
+    },
+    "gcald_e": {
+      "name": "Glycolaldehyde",
+      "formula": "C2H4O2",
+      "charge": 0,
+      "compartment": "e"
+    },
+    "acgam_e": {
+      "name": "N-Acetyl-D-glucosamine",
+      "formula": "C8H15NO6",
+      "charge": 0,
+      "compartment": "e"
+    },
+    "fru_e": {
+      "name": "D-Fructose",
+      "formula": "C6H12O6",
+      "charge": 0,
+      "compartment": "e"
+    },
+    "hxa_e": {
+      "name": "Hexanoate (n-C6:0)",
+      "formula": "C6H11O2",
+      "charge": -1,
+      "compartment": "e"
+    },
+    "galct__D_c": {
+      "name": "D-Galactarate",
+      "formula": "C6H8O8",
+      "charge": -2,
+      "compartment": "c"
+    },
+    "glcr_c": {
+      "name": "D-Glucarate",
+      "formula": "C6H8O8",
+      "charge": -2,
+      "compartment": "c"
+    },
+    "5dh4dglc_c": {
+      "name": "5-Dehydro-4-deoxy-D-glucarate",
+      "formula": "C6H6O7",
+      "charge": -2,
+      "compartment": "c"
+    },
+    "25dop_c": {
+      "name": "2 5 Dioxopentanoate C5H5O4",
+      "formula": "C5H5O4",
+      "charge": -1,
+      "compartment": "c"
+    },
+    "ivcoa_c": {
+      "name": "Isovaleryl-CoA",
+      "formula": "C26H40N7O17P3S",
+      "charge": -4,
+      "compartment": "c"
+    },
+    "3mb2coa_c": {
+      "name": "3-Methylbut-2-enoyl-CoA",
+      "formula": "C26H38N7O17P3S",
+      "charge": -4,
+      "compartment": "c"
+    },
+    "3mgcoa_c": {
+      "name": "3-Methylglutaconyl-CoA",
+      "formula": "C27H37N7O19P3S",
+      "charge": 0,
+      "compartment": "c"
+    },
+    "hmgcoa_c": {
+      "name": "Hydroxymethylglutaryl CoA C27H39N7O20P3S",
+      "formula": "C27H39N7O20P3S",
+      "charge": -5,
+      "compartment": "c"
+    },
+    "btcoa_c": {
+      "name": "Butanoyl-CoA",
+      "formula": "C25H38N7O17P3S",
+      "charge": -4,
+      "compartment": "c"
+    },
+    "but_p": {
+      "name": "Butyrate (n-C4:0)",
+      "formula": "C4H7O2",
+      "charge": -1,
+      "compartment": "p"
+    },
+    "hxa_p": {
+      "name": "Hexanoate (n-C6:0)",
+      "formula": "C6H11O2",
+      "charge": -1,
+      "compartment": "p"
+    },
+    "rbl__D_c": {
+      "name": "D-Ribulose",
+      "formula": "C5H10O5",
+      "charge": 0,
+      "compartment": "c"
+    },
+    "ru5p__D_c": {
+      "name": "D-Ribulose 5-phosphate",
+      "formula": "C5H9O8P",
+      "charge": -2,
+      "compartment": "c"
+    },
+    "gam6p_c": {
+      "name": "D-Glucosamine 6-phosphate",
+      "formula": "C6H13NO8P",
+      "charge": -1,
+      "compartment": "c"
+    },
+    "ins_e": {
+      "name": "Inosine",
+      "formula": "C10H12N4O5",
+      "charge": 0,
+      "compartment": "e"
+    },
+    "ins_c": {
+      "name": "Inosine",
+      "formula": "C10H12N4O5",
+      "charge": 0,
+      "compartment": "c"
+    },
+    "q8_c": {
+      "name": "Ubiquinone-8",
+      "formula": "C49H74O4",
+      "charge": 0,
+      "compartment": "c"
+    },
+    "q8h2_c": {
+      "name": "Ubiquinol-8",
+      "formula": "C49H76O4",
+      "charge": 0,
+      "compartment": "c"
+    },
+    "fum_c": {
+      "name": "Fumarate",
+      "formula": "C4H2O4",
+      "charge": -2,
+      "compartment": "c"
+    }
+  }
+}

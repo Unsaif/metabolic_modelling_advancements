@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism MR1",
-  "created": "2026-09-05T12:29:12Z",
+  "created": "2026-09-06T08:57:38Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'MR1'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -21,6 +21,7 @@
   },
   "protocol": {
     "variant": "gapfilled",
+    "patches": null,
     "params": {
       "carbon_uptake": -10.0,
       "growth_threshold": 0.001,
@@ -30,7 +31,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -42,7 +50,7 @@
     "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"
   },
   "leakage": {
-    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data)",
+    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly (Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
     "ground_truth_public_since": "Fitness Browser releases 2015-2018 (Price et al. 2018)",
     "frontier_model_training_exposure": "Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
     "held_out_recommendation": "unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
@@ -69,17 +77,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.3668387681682019,
+        "point": 0.378075613809954,
         "ci95": [
-          0.2845333691265353,
-          0.4495890992026629
+          0.295348100877939,
+          0.4571061594620214
         ]
       },
       "auroc_standard": {
-        "point": 0.6302739285313954,
+        "point": 0.6356424444376509,
         "ci95": [
-          0.5932529171531037,
-          0.6715880335434625
+          0.5997153343994522,
+          0.6759527397019015
         ]
       },
       "mcc": {
@@ -122,17 +130,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.2264447823116211,
+        "point": 0.23185677932777954,
         "ci95": [
-          0.18749749573734248,
-          0.2621679392839616
+          0.19369588179425157,
+          0.26907983173369093
         ]
       },
       "auroc_standard": {
-        "point": 0.6066817785916074,
+        "point": 0.6095107712006396,
         "ci95": [
-          0.585005117158289,
-          0.632640194995355
+          0.5876666702913984,
+          0.6329840206893037
         ]
       },
       "mcc": {
@@ -180,12 +188,13 @@
       "genes_after_adjustment": 676,
       "conditions_total": 16,
       "conditions_mapped": 12,
-      "conditions_wt_grows": 8
+      "conditions_wt_grows": 8,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 4.49224853515625,
-      "knockout_simulation_s": 29.03495693206787,
-      "total_s": 33.8312246799469
+      "rich_medium_essentials_s": 3.4911227226257324,
+      "knockout_simulation_s": 23.576125621795654,
+      "total_s": 27.77778387069702
     },
     "dropped_rich_medium_essentials": 37
   },

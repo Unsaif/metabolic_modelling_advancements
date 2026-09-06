@@ -1,0 +1,13 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+Sodium L-Lactate	ShewMM_noCarbon	lac__L	high	2	0.4333120311760006	True		66	113
+Sodium pyruvate	ShewMM_noCarbon	pyr	high	2	0.3593319282922962	True		66	123
+Sodium propionate	ShewMM_noCarbon	ppa	high	2	0.4121748589235229	True		68	146
+N-Acetyl-D-Glucosamine	ShewMM_noCarbon	acgam	high	2	0.0	False		713	124
+Adenosine	ShewMM_noCarbon	adn	high	2	1.1497015594591957	True		64	126
+Uridine	ShewMM_noCarbon	uri	high	2	0.8445846101379919	True		61	132
+Inosine	ShewMM_noCarbon	ins	high	2	0.0	False		713	126
+Cytidine	ShewMM_noCarbon	cytd	high	2	0.8567203708286749	True		61	130
+Sodium D,L-Lactate	ShewMM_noCarbon	lac__D;lac__L	high	1	0.8665286802930899	True		65	149
+L-Glutamine	ShewMM_noCarbon	gln__L	high	2	0.6801061274605311	True		66	97
+L-Isoleucine	ShewMM_noCarbon	ile__L	high	2	-9.084209204835968e-15	False		713	175
+casamino acids	ShewMM_noCarbon	ala__L;arg__L;asn__L;asp__L;cys__L;glu__L;gln__L;gly;his__L;ile__L;leu__L;lys__L;met__L;phe__L;pro__L;ser__L;thr__L;tyr__L;val__L	medium	2	5.359472252236709	True	EX_met__L_e;EX_phe__L_e	58	49

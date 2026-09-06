@@ -1,0 +1,1691 @@
+[
+ {
+  "condition": "L-Arabinose",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "arab__L"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.28038530855850996,
+   "added": [
+    {
+     "id": "ARAI",
+     "name": "L-arabinose isomerase",
+     "reaction": "arab__L_c <=> rbl__L_c",
+     "transport": false
+    },
+    {
+     "id": "RBK_L1",
+     "name": "L-ribulokinase (L-ribulose)",
+     "reaction": "atp_c + rbl__L_c --> adp_c + h_c + ru5p__L_c",
+     "transport": false
+    }
+   ],
+   "seconds": 13.677798986434937
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc02562",
+    "fitness": -6.48,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "phosphoenolpyruvate carboxykinase"
+   },
+   {
+    "gene": "SM_b20890",
+    "fitness": -5.45,
+    "median_other": -0.01,
+    "in_model": true,
+    "desc": "dihydroxy-acid dehydratase"
+   },
+   {
+    "gene": "SM_b20892",
+    "fitness": -5.0,
+    "median_other": -0.02,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc00588",
+    "fitness": -4.38,
+    "median_other": 0.09,
+    "in_model": false,
+    "desc": "D-galactose 1-dehydrogenase"
+   },
+   {
+    "gene": "SM_b20895",
+    "fitness": -4.22,
+    "median_other": -0.02,
+    "in_model": false,
+    "desc": "sugar uptake ABC transporter substrate-binding protein precursor"
+   },
+   {
+    "gene": "SMc00296",
+    "fitness": -3.94,
+    "median_other": -0.87,
+    "in_model": true,
+    "desc": "POLY3-hydroxybutyrate polymerase"
+   },
+   {
+    "gene": "SM_b20891",
+    "fitness": -3.72,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "dehydrogenase"
+   },
+   {
+    "gene": "SMc02975",
+    "fitness": -3.19,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "phosphoenolpyruvate carboxykinase regulator transcription regulator protein"
+   },
+   {
+    "gene": "SM_b20894",
+    "fitness": -3.03,
+    "median_other": -0.01,
+    "in_model": true,
+    "desc": "sugar uptake ABC transporter ATP-binding protein"
+   },
+   {
+    "gene": "SMc03878",
+    "fitness": -2.82,
+    "median_other": -0.63,
+    "in_model": true,
+    "desc": "acetoacetyl-CoA reductase"
+   },
+   {
+    "gene": "SM_b20893",
+    "fitness": -2.61,
+    "median_other": -0.07,
+    "in_model": true,
+    "desc": "sugar uptake ABC transporter permease"
+   },
+   {
+    "gene": "SMc02683",
+    "fitness": -2.59,
+    "median_other": -0.86,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02906",
+    "fitness": -2.17,
+    "median_other": 0.52,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc00712",
+    "fitness": -2.1,
+    "median_other": 0.24,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc00053",
+    "fitness": -2.09,
+    "median_other": -0.38,
+    "in_model": true,
+    "desc": "monovalent cation/H+ antiporter subunit C"
+   },
+   {
+    "gene": "SM_b20293",
+    "fitness": -2.06,
+    "median_other": -0.32,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc00580",
+    "fitness": -2.06,
+    "median_other": -0.25,
+    "in_model": false,
+    "desc": "4-hydroxythreonine-4-phosphate dehydrogenase"
+   }
+  ]
+ },
+ {
+  "condition": "Sodium succinate dibasic hexahydrate",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "succ"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.10644841057084056,
+   "added": [
+    {
+     "id": "SUCDi",
+     "name": "Succinate dehydrogenase (irreversible)",
+     "reaction": "q8_c + succ_c --> fum_c + q8h2_c",
+     "transport": false
+    }
+   ],
+   "seconds": 3.361532688140869
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc02562",
+    "fitness": -6.66,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "phosphoenolpyruvate carboxykinase"
+   },
+   {
+    "gene": "SMc01139",
+    "fitness": -4.4,
+    "median_other": -0.06,
+    "in_model": false,
+    "desc": "RNA polymerase factor sigma-54"
+   },
+   {
+    "gene": "SM_b20611",
+    "fitness": -3.85,
+    "median_other": -0.0,
+    "in_model": true,
+    "desc": "C4-dicarboxylate transporter DctA"
+   },
+   {
+    "gene": "SM_b20612",
+    "fitness": -3.73,
+    "median_other": -0.09,
+    "in_model": false,
+    "desc": "C4-dicarboxylate transport sensor protein"
+   },
+   {
+    "gene": "SM_b20613",
+    "fitness": -3.57,
+    "median_other": 0.08,
+    "in_model": false,
+    "desc": "C4-dicarboxylate transport transcriptional regulator"
+   }
+  ]
+ },
+ {
+  "condition": "L-Histidine",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "his__L"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.10749826271549595,
+   "added": [
+    {
+     "id": "SUCDi",
+     "name": "Succinate dehydrogenase (irreversible)",
+     "reaction": "q8_c + succ_c --> fum_c + q8h2_c",
+     "transport": false
+    }
+   ],
+   "seconds": 2.044990062713623
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc00673",
+    "fitness": -6.49,
+    "median_other": 0.13,
+    "in_model": true,
+    "desc": "N-formimino-L-glutamate deiminase"
+   },
+   {
+    "gene": "SM_b21166",
+    "fitness": -6.28,
+    "median_other": 0.02,
+    "in_model": true,
+    "desc": "imidazolonepropionase"
+   },
+   {
+    "gene": "SMc02562",
+    "fitness": -6.23,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "phosphoenolpyruvate carboxykinase"
+   },
+   {
+    "gene": "SM_b20048",
+    "fitness": -6.11,
+    "median_other": -0.18,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SMc02975",
+    "fitness": -6.0,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "phosphoenolpyruvate carboxykinase regulator transcription regulator protein"
+   },
+   {
+    "gene": "SMc00012",
+    "fitness": -5.48,
+    "median_other": -0.16,
+    "in_model": true,
+    "desc": "cytochrome C oxidase assembly protein"
+   },
+   {
+    "gene": "SM_b21163",
+    "fitness": -5.43,
+    "median_other": 0.1,
+    "in_model": true,
+    "desc": "urocanate hydratase"
+   },
+   {
+    "gene": "SMc04085",
+    "fitness": -5.3,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc03974",
+    "fitness": -5.13,
+    "median_other": -0.58,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SM_b21165",
+    "fitness": -4.86,
+    "median_other": 0.0,
+    "in_model": true,
+    "desc": "histidine ammonia-lyase"
+   },
+   {
+    "gene": "SM_b21164",
+    "fitness": -4.44,
+    "median_other": 0.16,
+    "in_model": true,
+    "desc": "formiminoglutamase"
+   },
+   {
+    "gene": "SMc01495",
+    "fitness": -3.42,
+    "median_other": -0.48,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SMc02102",
+    "fitness": -3.22,
+    "median_other": -0.93,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02362",
+    "fitness": -3.15,
+    "median_other": -0.61,
+    "in_model": false,
+    "desc": "cytochrome c-type biogenesis protein CcmE"
+   },
+   {
+    "gene": "SMc00419",
+    "fitness": -2.82,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "glutathione synthetase"
+   },
+   {
+    "gene": "SMa0789",
+    "fitness": -2.81,
+    "median_other": -0.96,
+    "in_model": false,
+    "desc": "GntR family transcriptional regulator"
+   },
+   {
+    "gene": "SMc02435",
+    "fitness": -2.78,
+    "median_other": -0.63,
+    "in_model": true,
+    "desc": "methyltransferase"
+   },
+   {
+    "gene": "SMc01438",
+    "fitness": -2.7,
+    "median_other": -0.74,
+    "in_model": false,
+    "desc": "protease precursor signal peptide protein"
+   },
+   {
+    "gene": "SMc02227",
+    "fitness": -2.69,
+    "median_other": -0.93,
+    "in_model": false,
+    "desc": "fatty oxidation complex enoyl-COA hydratase/3-hydroxyacyl-COA dehydrogenase/3-hydroxybutyryl-COA epimerase"
+   },
+   {
+    "gene": "SMc00981",
+    "fitness": -2.65,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "ferredoxin protein"
+   },
+   {
+    "gene": "SMc02118",
+    "fitness": -2.63,
+    "median_other": 0.01,
+    "in_model": true,
+    "desc": "general L-amino acid-binding periplasmic ABC transporter protein"
+   },
+   {
+    "gene": "SMc01948",
+    "fitness": -2.63,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter ATP-binding protein"
+   },
+   {
+    "gene": "SMc02229",
+    "fitness": -2.62,
+    "median_other": -0.59,
+    "in_model": true,
+    "desc": "acyl-CoA dehydrogenase"
+   },
+   {
+    "gene": "SMc03849",
+    "fitness": -2.61,
+    "median_other": -0.13,
+    "in_model": false,
+    "desc": "heme exporter C (cytochrome C-type biogenesis protein) transmembrane"
+   },
+   {
+    "gene": "SMc02308",
+    "fitness": -2.58,
+    "median_other": -0.7,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   }
+  ]
+ },
+ {
+  "condition": "L-Lysine",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "lys__L"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.0849819627433338,
+   "added": [
+    {
+     "id": "ACOAD4",
+     "name": "Acyl-CoA dehydrogenase (decanoyl-CoA)",
+     "reaction": "dcacoa_c + nad_c --> dc2coa_c + h_c + nadh_c",
+     "transport": false
+    }
+   ],
+   "seconds": 4.245649099349976
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc02048",
+    "fitness": -10.99,
+    "median_other": -0.36,
+    "in_model": true,
+    "desc": "glycine cleavage system protein H"
+   },
+   {
+    "gene": "SMc04882",
+    "fitness": -9.39,
+    "median_other": 0.05,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SMc02562",
+    "fitness": -7.27,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "phosphoenolpyruvate carboxykinase"
+   },
+   {
+    "gene": "SMc03974",
+    "fitness": -6.53,
+    "median_other": -0.58,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02503",
+    "fitness": -6.42,
+    "median_other": 0.26,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02049",
+    "fitness": -6.1,
+    "median_other": -0.34,
+    "in_model": false,
+    "desc": "glycine dehydrogenase"
+   },
+   {
+    "gene": "SMc00768",
+    "fitness": -5.97,
+    "median_other": -0.05,
+    "in_model": true,
+    "desc": "isocitrate lyase"
+   },
+   {
+    "gene": "SMc02047",
+    "fitness": -5.95,
+    "median_other": -0.25,
+    "in_model": true,
+    "desc": "glycine cleavage system aminomethyltransferase T"
+   },
+   {
+    "gene": "SMc00025",
+    "fitness": -5.91,
+    "median_other": -0.46,
+    "in_model": true,
+    "desc": "pyruvate phosphate dikinase"
+   },
+   {
+    "gene": "SMc04385",
+    "fitness": -5.67,
+    "median_other": 0.4,
+    "in_model": true,
+    "desc": "aldehyde dehydrogenase transmembrane protein"
+   },
+   {
+    "gene": "SMc04085",
+    "fitness": -5.58,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02504",
+    "fitness": -5.57,
+    "median_other": 0.28,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SM_b21181",
+    "fitness": -5.48,
+    "median_other": -0.13,
+    "in_model": true,
+    "desc": "glutaryl-CoA dehydrogenase"
+   },
+   {
+    "gene": "SMc00769",
+    "fitness": -5.4,
+    "median_other": -0.04,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SM_b21182",
+    "fitness": -5.38,
+    "median_other": -0.17,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc04384",
+    "fitness": -5.23,
+    "median_other": -0.0,
+    "in_model": false,
+    "desc": "oxidoreductase"
+   },
+   {
+    "gene": "SMc03879",
+    "fitness": -4.99,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "acetyl-CoA acetyltransferase"
+   },
+   {
+    "gene": "SMc00296",
+    "fitness": -4.77,
+    "median_other": -0.87,
+    "in_model": true,
+    "desc": "POLY3-hydroxybutyrate polymerase"
+   },
+   {
+    "gene": "SMc02227",
+    "fitness": -4.69,
+    "median_other": -0.93,
+    "in_model": false,
+    "desc": "fatty oxidation complex enoyl-COA hydratase/3-hydroxyacyl-COA dehydrogenase/3-hydroxybutyryl-COA epimerase"
+   },
+   {
+    "gene": "SMc04386",
+    "fitness": -3.94,
+    "median_other": -0.23,
+    "in_model": true,
+    "desc": "aspartate aminotransferase B protein"
+   },
+   {
+    "gene": "SMc02228",
+    "fitness": -3.84,
+    "median_other": -0.7,
+    "in_model": true,
+    "desc": "acetyl-CoA acetyltransferase"
+   },
+   {
+    "gene": "SMc04383",
+    "fitness": -3.65,
+    "median_other": 0.18,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02229",
+    "fitness": -3.26,
+    "median_other": -0.59,
+    "in_model": true,
+    "desc": "acyl-CoA dehydrogenase"
+   },
+   {
+    "gene": "SMc02308",
+    "fitness": -3.12,
+    "median_other": -0.7,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02121",
+    "fitness": -2.66,
+    "median_other": -0.11,
+    "in_model": true,
+    "desc": "general L-amino acid transport ATP-binding ABC transporter protein"
+   }
+  ]
+ },
+ {
+  "condition": "L-Glutamine",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "gln__L"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.10912178162317701,
+   "added": [
+    {
+     "id": "SUCDi",
+     "name": "Succinate dehydrogenase (irreversible)",
+     "reaction": "q8_c + succ_c --> fum_c + q8h2_c",
+     "transport": false
+    }
+   ],
+   "seconds": 3.0114731788635254
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc02562",
+    "fitness": -7.61,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "phosphoenolpyruvate carboxykinase"
+   },
+   {
+    "gene": "SMc02975",
+    "fitness": -5.88,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "phosphoenolpyruvate carboxykinase regulator transcription regulator protein"
+   },
+   {
+    "gene": "SMc04085",
+    "fitness": -5.65,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc00486",
+    "fitness": -5.48,
+    "median_other": -0.0,
+    "in_model": true,
+    "desc": "glutaminase"
+   },
+   {
+    "gene": "SMc03974",
+    "fitness": -3.35,
+    "median_other": -0.58,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc01592",
+    "fitness": -3.29,
+    "median_other": -0.09,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SMc02308",
+    "fitness": -3.21,
+    "median_other": -0.7,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc01951",
+    "fitness": -2.96,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter permease"
+   },
+   {
+    "gene": "SMc02119",
+    "fitness": -2.93,
+    "median_other": 0.1,
+    "in_model": true,
+    "desc": "general L-amino acid transport permease ABC transporter protein"
+   },
+   {
+    "gene": "SMc02118",
+    "fitness": -2.86,
+    "median_other": 0.01,
+    "in_model": true,
+    "desc": "general L-amino acid-binding periplasmic ABC transporter protein"
+   },
+   {
+    "gene": "SMc01950",
+    "fitness": -2.82,
+    "median_other": -0.1,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter permease"
+   },
+   {
+    "gene": "SMc02120",
+    "fitness": -2.78,
+    "median_other": 0.1,
+    "in_model": true,
+    "desc": "general L-amino acid transport permease ABC transporter protein"
+   },
+   {
+    "gene": "SMc01495",
+    "fitness": -2.71,
+    "median_other": -0.48,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SMc01207",
+    "fitness": -2.69,
+    "median_other": -0.96,
+    "in_model": false,
+    "desc": "S-adenosylmethionine--tRNA ribosyltransferase-isomerase"
+   },
+   {
+    "gene": "SMc01948",
+    "fitness": -2.6,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter ATP-binding protein"
+   },
+   {
+    "gene": "SMc01949",
+    "fitness": -2.36,
+    "median_other": -0.07,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter ATP-binding protein"
+   },
+   {
+    "gene": "SMc00191",
+    "fitness": -2.19,
+    "median_other": -0.15,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02812",
+    "fitness": -2.19,
+    "median_other": -0.75,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc04093",
+    "fitness": -2.1,
+    "median_other": -0.31,
+    "in_model": true,
+    "desc": "acetyl-CoA synthetase"
+   },
+   {
+    "gene": "SMc02460",
+    "fitness": -2.04,
+    "median_other": -0.33,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc00321",
+    "fitness": -2.02,
+    "median_other": -0.47,
+    "in_model": false,
+    "desc": "tRNA pseudouridine synthase B"
+   },
+   {
+    "gene": "SMc01126",
+    "fitness": -2.0,
+    "median_other": 0.06,
+    "in_model": true,
+    "desc": "malic enzyme"
+   }
+  ]
+ },
+ {
+  "condition": "L-Proline",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "pro__L"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.2133830747008942,
+   "added": [
+    {
+     "id": "FE3Ri",
+     "name": "Fe(III) reduction",
+     "reaction": "fadh2_c + 2.0 fe3_c --> fad_c + 2.0 fe2_c + 2.0 h_c",
+     "transport": false
+    },
+    {
+     "id": "SUCDi",
+     "name": "Succinate dehydrogenase (irreversible)",
+     "reaction": "q8_c + succ_c --> fum_c + q8h2_c",
+     "transport": false
+    }
+   ],
+   "seconds": 11.56851315498352
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc02562",
+    "fitness": -7.51,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "phosphoenolpyruvate carboxykinase"
+   },
+   {
+    "gene": "SM_b20198",
+    "fitness": -6.6,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "ribulose bisophosphate carboxylase"
+   },
+   {
+    "gene": "SMc00681",
+    "fitness": -6.27,
+    "median_other": 0.17,
+    "in_model": false,
+    "desc": "leucine-responsive regulatory protein"
+   },
+   {
+    "gene": "SMc03974",
+    "fitness": -6.17,
+    "median_other": -0.58,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02181",
+    "fitness": -5.66,
+    "median_other": 0.17,
+    "in_model": true,
+    "desc": "bifunctional proline dehydrogenase/pyrroline-5-carboxylate dehydrogenase"
+   },
+   {
+    "gene": "SMc04085",
+    "fitness": -5.57,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SM_b20197",
+    "fitness": -5.52,
+    "median_other": -0.07,
+    "in_model": true,
+    "desc": "ribulose-1,5-bisphosphate carboxylase small subunit protein"
+   },
+   {
+    "gene": "SM_b20200",
+    "fitness": -5.09,
+    "median_other": -0.04,
+    "in_model": true,
+    "desc": "transketolase"
+   },
+   {
+    "gene": "SM_b20196",
+    "fitness": -4.86,
+    "median_other": -0.07,
+    "in_model": false,
+    "desc": "CbbX protein"
+   },
+   {
+    "gene": "SMc02975",
+    "fitness": -4.64,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "phosphoenolpyruvate carboxykinase regulator transcription regulator protein"
+   },
+   {
+    "gene": "SMc02048",
+    "fitness": -4.3,
+    "median_other": -0.36,
+    "in_model": true,
+    "desc": "glycine cleavage system protein H"
+   },
+   {
+    "gene": "SMc02049",
+    "fitness": -4.23,
+    "median_other": -0.34,
+    "in_model": false,
+    "desc": "glycine dehydrogenase"
+   },
+   {
+    "gene": "SMc01592",
+    "fitness": -4.18,
+    "median_other": -0.09,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SMc02047",
+    "fitness": -3.76,
+    "median_other": -0.25,
+    "in_model": true,
+    "desc": "glycine cleavage system aminomethyltransferase T"
+   },
+   {
+    "gene": "SM_b20199",
+    "fitness": -3.71,
+    "median_other": 0.01,
+    "in_model": true,
+    "desc": "fructose-1,6-bisphosphate aldolase"
+   },
+   {
+    "gene": "SMc02812",
+    "fitness": -3.32,
+    "median_other": -0.75,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc01950",
+    "fitness": -2.98,
+    "median_other": -0.1,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter permease"
+   },
+   {
+    "gene": "SMc00682",
+    "fitness": -2.82,
+    "median_other": -0.04,
+    "in_model": false,
+    "desc": "hippurate hydrolase"
+   },
+   {
+    "gene": "SMc01949",
+    "fitness": -2.61,
+    "median_other": -0.07,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter ATP-binding protein"
+   },
+   {
+    "gene": "SMc01948",
+    "fitness": -2.49,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter ATP-binding protein"
+   },
+   {
+    "gene": "SMc01951",
+    "fitness": -2.47,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "high-affinity branched-chain amino acid ABC transporter permease"
+   },
+   {
+    "gene": "SMc01126",
+    "fitness": -2.21,
+    "median_other": 0.06,
+    "in_model": true,
+    "desc": "malic enzyme"
+   },
+   {
+    "gene": "SMc00151",
+    "fitness": -2.16,
+    "median_other": -0.09,
+    "in_model": true,
+    "desc": "phosphoglycolate phosphatase"
+   },
+   {
+    "gene": "SMa2020",
+    "fitness": -2.08,
+    "median_other": -0.83,
+    "in_model": false,
+    "desc": "Transcriptional regulator"
+   },
+   {
+    "gene": "SMc01845",
+    "fitness": -2.06,
+    "median_other": -0.81,
+    "in_model": true,
+    "desc": "transglycosylase transmembrane protein"
+   }
+  ]
+ },
+ {
+  "condition": "L-Leucine",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "leu__L"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 1.1684274810328537,
+   "added": [
+    {
+     "id": "CYS",
+     "name": "L-cysteine",
+     "reaction": "h2s_c + ser__L_c <=> cys__L_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "FNOR",
+     "name": "Ferredoxin---NADP+ reductase",
+     "reaction": "2.0 fdxrd_c + h_c + nadp_c <=> 2.0 fdxo_2_2_c + nadph_c",
+     "transport": false
+    },
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    }
+   ],
+   "seconds": 15.22524905204773
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc00768",
+    "fitness": -6.99,
+    "median_other": -0.05,
+    "in_model": true,
+    "desc": "isocitrate lyase"
+   },
+   {
+    "gene": "SM_b21125",
+    "fitness": -6.75,
+    "median_other": -0.03,
+    "in_model": true,
+    "desc": "hydroxymethylglutaryl-CoA lyase"
+   },
+   {
+    "gene": "SMc02562",
+    "fitness": -6.11,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "phosphoenolpyruvate carboxykinase"
+   },
+   {
+    "gene": "SMc00769",
+    "fitness": -5.5,
+    "median_other": -0.04,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SM_b21124",
+    "fitness": -5.13,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "methylcrotonoyl-CoA carboxylase biotinylated subunit"
+   },
+   {
+    "gene": "SM_b21126",
+    "fitness": -4.94,
+    "median_other": -0.01,
+    "in_model": false,
+    "desc": "enoyl-CoA hydratase"
+   },
+   {
+    "gene": "SM_b21122",
+    "fitness": -4.7,
+    "median_other": 0.03,
+    "in_model": false,
+    "desc": "methylcrotonoyl-CoA carboxylase non-biotinylated subunit protein"
+   },
+   {
+    "gene": "SM_b20757",
+    "fitness": -4.67,
+    "median_other": 0.17,
+    "in_model": true,
+    "desc": "methylmalonyl-CoA mutase"
+   },
+   {
+    "gene": "SMc00025",
+    "fitness": -4.2,
+    "median_other": -0.46,
+    "in_model": true,
+    "desc": "pyruvate phosphate dikinase"
+   },
+   {
+    "gene": "SMc01930",
+    "fitness": -4.18,
+    "median_other": 0.32,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc03201",
+    "fitness": -4.04,
+    "median_other": 0.04,
+    "in_model": true,
+    "desc": "2-oxoisovalerate dehydrogenase subunit alpha"
+   },
+   {
+    "gene": "SMc03203",
+    "fitness": -3.81,
+    "median_other": 0.1,
+    "in_model": true,
+    "desc": "branched-chain alpha-keto acid dehydrogenase E2 subunit"
+   },
+   {
+    "gene": "SM_b21121",
+    "fitness": -3.79,
+    "median_other": -0.01,
+    "in_model": false,
+    "desc": "isovaleryl-CoA dehydrogenase"
+   },
+   {
+    "gene": "SMc03202",
+    "fitness": -3.58,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "2-oxoisovalerate dehydrogenase subunit beta"
+   },
+   {
+    "gene": "SMc02308",
+    "fitness": -3.15,
+    "median_other": -0.7,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SM_b21120",
+    "fitness": -3.07,
+    "median_other": 0.13,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc01223",
+    "fitness": -3.02,
+    "median_other": 0.35,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SMc00774",
+    "fitness": -2.96,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "acetoacetyl-CoA synthetase"
+   },
+   {
+    "gene": "SMc03204",
+    "fitness": -2.86,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "dihydrolipoamide dehydrogenase"
+   },
+   {
+    "gene": "SMc02581",
+    "fitness": -2.53,
+    "median_other": -0.22,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "SMc02975",
+    "fitness": -2.38,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "phosphoenolpyruvate carboxykinase regulator transcription regulator protein"
+   },
+   {
+    "gene": "SMc03974",
+    "fitness": -2.33,
+    "median_other": -0.58,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc03880",
+    "fitness": -2.15,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02047",
+    "fitness": -2.12,
+    "median_other": -0.25,
+    "in_model": true,
+    "desc": "glycine cleavage system aminomethyltransferase T"
+   },
+   {
+    "gene": "SMc04296",
+    "fitness": -2.11,
+    "median_other": -0.94,
+    "in_model": false,
+    "desc": "cell division protein FtsZ"
+   }
+  ]
+ },
+ {
+  "condition": "N-Acetyl-D-Glucosamine",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "acgam"
+  ],
+  "exchange_added": [
+   "acgam"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.30589211020459606,
+   "added": [
+    {
+     "id": "ACGApts",
+     "name": "N-Acetyl-D-glucosamine transport via PEP:Pyr PTS",
+     "reaction": "acgam_e + pep_c --> acgam6p_c + pyr_c",
+     "transport": true
+    },
+    {
+     "id": "G6PDA",
+     "name": "Glucosamine-6-phosphate deaminase",
+     "reaction": "gam6p_c + h2o_c --> f6p_c + nh4_c",
+     "transport": false
+    }
+   ],
+   "seconds": 8.516551494598389
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc02877",
+    "fitness": -7.31,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02875",
+    "fitness": -5.22,
+    "median_other": -0.12,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc02874",
+    "fitness": -4.51,
+    "median_other": 0.19,
+    "in_model": true,
+    "desc": "N-acetylmuramic acid 6-phosphate etherase"
+   },
+   {
+    "gene": "SMc02873",
+    "fitness": -3.9,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "periplasmic binding (signal peptide) ABC transporter protein"
+   },
+   {
+    "gene": "SMc02871",
+    "fitness": -3.88,
+    "median_other": 0.08,
+    "in_model": false,
+    "desc": "ABC transporter permease"
+   },
+   {
+    "gene": "SMc02869",
+    "fitness": -3.55,
+    "median_other": -0.03,
+    "in_model": false,
+    "desc": "ABC transporter ATP-binding protein"
+   },
+   {
+    "gene": "SMc02872",
+    "fitness": -3.48,
+    "median_other": 0.04,
+    "in_model": false,
+    "desc": "ABC transporter permease"
+   },
+   {
+    "gene": "SMc00010",
+    "fitness": -3.26,
+    "median_other": -0.31,
+    "in_model": true,
+    "desc": "cytochrome C oxidase polypeptide I transmembrane protein"
+   },
+   {
+    "gene": "SMc02870",
+    "fitness": -2.95,
+    "median_other": -0.13,
+    "in_model": false,
+    "desc": "oxidoreductase"
+   },
+   {
+    "gene": "SMa1924",
+    "fitness": -2.93,
+    "median_other": -0.29,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc03068",
+    "fitness": -2.87,
+    "median_other": -0.53,
+    "in_model": true,
+    "desc": "phosphogluconate dehydratase"
+   },
+   {
+    "gene": "SMc02683",
+    "fitness": -2.67,
+    "median_other": -0.86,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc01613",
+    "fitness": -2.21,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "ribose-5-phosphate isomerase B"
+   },
+   {
+    "gene": "SMc02434",
+    "fitness": -2.08,
+    "median_other": -0.61,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc03887",
+    "fitness": -2.04,
+    "median_other": -0.09,
+    "in_model": false,
+    "desc": "amino acid efflux protein"
+   }
+  ]
+ },
+ {
+  "condition": "D-Glucosamine Hydrochloride",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "gam"
+  ],
+  "exchange_added": [
+   "gam"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.3058921102045999,
+   "added": [
+    {
+     "id": "G6PDA",
+     "name": "Glucosamine-6-phosphate deaminase",
+     "reaction": "gam6p_c + h2o_c --> f6p_c + nh4_c",
+     "transport": false
+    },
+    {
+     "id": "GAMpts",
+     "name": "D-glucosamine transport via PEP:Pyr PTS",
+     "reaction": "gam_e + pep_c --> gam6p_c + pyr_c",
+     "transport": true
+    }
+   ],
+   "seconds": 16.017953634262085
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc02877",
+    "fitness": -7.43,
+    "median_other": 0.09,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc01495",
+    "fitness": -4.5,
+    "median_other": -0.48,
+    "in_model": false,
+    "desc": "transcriptional regulator"
+   },
+   {
+    "gene": "SMc02690",
+    "fitness": -3.02,
+    "median_other": -0.21,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc03068",
+    "fitness": -2.7,
+    "median_other": -0.53,
+    "in_model": true,
+    "desc": "phosphogluconate dehydratase"
+   },
+   {
+    "gene": "SM_b20903",
+    "fitness": -2.43,
+    "median_other": 0.04,
+    "in_model": false,
+    "desc": "sugar uptake ABC transporter permease"
+   },
+   {
+    "gene": "SM_b20902",
+    "fitness": -2.28,
+    "median_other": -0.1,
+    "in_model": true,
+    "desc": "sugar uptake ABC transporter substrate-binding protein precursor"
+   },
+   {
+    "gene": "SMc02835",
+    "fitness": -2.13,
+    "median_other": 0.02,
+    "in_model": true,
+    "desc": "glucokinase"
+   },
+   {
+    "gene": "SMc02683",
+    "fitness": -2.01,
+    "median_other": -0.86,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc00492",
+    "fitness": -2.01,
+    "median_other": -0.87,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   }
+  ]
+ },
+ {
+  "condition": "Uridine",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "uri"
+  ],
+  "exchange_added": [
+   "uri"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.3907973579570428,
+   "added": [
+    {
+     "id": "3A2OA",
+     "name": "3-Aminopropanoate 2-oxoglutarate aminotransferase",
+     "reaction": "akg_c + ala_B_c <=> glu__L_c + msa_c",
+     "transport": false
+    },
+    {
+     "id": "URIt2",
+     "name": "Uridine transport in via proton symport",
+     "reaction": "h_e + uri_e --> h_c + uri_c",
+     "transport": true
+    }
+   ],
+   "seconds": 9.64779257774353
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc01103",
+    "fitness": -5.27,
+    "median_other": 0.1,
+    "in_model": true,
+    "desc": "ribokinase"
+   },
+   {
+    "gene": "SMc00511",
+    "fitness": -4.48,
+    "median_other": -0.46,
+    "in_model": false,
+    "desc": "D-ribulose-5-phosphate 3-epimerase"
+   },
+   {
+    "gene": "SMc02407",
+    "fitness": -2.97,
+    "median_other": -0.76,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc03850",
+    "fitness": -2.96,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "heme exporter D (cytochrome C-type biogenesis protein) transmembrane"
+   },
+   {
+    "gene": "SMc00781",
+    "fitness": -2.41,
+    "median_other": -0.05,
+    "in_model": true,
+    "desc": "malonic semialdehyde oxidative decarboxylase"
+   },
+   {
+    "gene": "SMc02171",
+    "fitness": -2.13,
+    "median_other": -0.06,
+    "in_model": false,
+    "desc": "periplasmic binding ABC transporter protein"
+   }
+  ]
+ },
+ {
+  "condition": "D-Mannose",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "man"
+  ],
+  "exchange_added": [
+   "man"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.3052892012145029,
+   "added": [
+    {
+     "id": "MANpts",
+     "name": "D-mannose transport via PEP:Pyr PTS",
+     "reaction": "man_e + pep_c --> man6p_c + pyr_c",
+     "transport": true
+    }
+   ],
+   "seconds": 6.602833986282349
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SMc03111",
+    "fitness": -7.29,
+    "median_other": 0.1,
+    "in_model": false,
+    "desc": "mannose-6-phosphate isomerase"
+   },
+   {
+    "gene": "SMc02978",
+    "fitness": -5.72,
+    "median_other": -0.33,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc03109",
+    "fitness": -5.39,
+    "median_other": 0.06,
+    "in_model": true,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc04245",
+    "fitness": -3.8,
+    "median_other": -0.62,
+    "in_model": true,
+    "desc": "high-affinity zinc uptake system ABC transporter protein"
+   },
+   {
+    "gene": "SMc04243",
+    "fitness": -3.6,
+    "median_other": -0.72,
+    "in_model": true,
+    "desc": "high-affinity zinc uptake system membrane ABC transporter protein"
+   },
+   {
+    "gene": "SMc04244",
+    "fitness": -3.31,
+    "median_other": -0.59,
+    "in_model": true,
+    "desc": "high-affinity zinc uptake system ATP-binding ABC transporter protein"
+   },
+   {
+    "gene": "SMc03068",
+    "fitness": -2.91,
+    "median_other": -0.53,
+    "in_model": true,
+    "desc": "phosphogluconate dehydratase"
+   },
+   {
+    "gene": "SMc02979",
+    "fitness": -2.29,
+    "median_other": -0.15,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "SMc00882",
+    "fitness": -2.26,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "2-dehydro-3-deoxy-6-phosphogalactonate aldolase"
+   },
+   {
+    "gene": "SMc02055",
+    "fitness": -2.26,
+    "median_other": -0.38,
+    "in_model": false,
+    "desc": "phytoene synthase"
+   }
+  ]
+ },
+ {
+  "condition": "D-(-)-tagatose",
+  "media": "RCH2_defined_noCarbon",
+  "bigg_ids": [
+   "tagat__D"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 1.119793776230088,
+   "added": [
+    {
+     "id": "ACOAD7",
+     "name": "Acyl-CoA dehydrogenase (hexadecanoyl-CoA)",
+     "reaction": "nad_c + pmtcoa_c <=> h_c + hdd2coa_c + nadh_c",
+     "transport": false
+    },
+    {
+     "id": "CYS",
+     "name": "L-cysteine",
+     "reaction": "h2s_c + ser__L_c <=> cys__L_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "GCDH",
+     "name": "",
+     "reaction": "glutcoa_c <=> b2coa_c + co2_c + h_c",
+     "transport": false
+    }
+   ],
+   "seconds": 18.7583327293396
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SM_b21374",
+    "fitness": -6.82,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "sugar kinase"
+   },
+   {
+    "gene": "SM_b21373",
+    "fitness": -5.2,
+    "median_other": -0.11,
+    "in_model": false,
+    "desc": "sugar kinase"
+   },
+   {
+    "gene": "SMc03068",
+    "fitness": -4.29,
+    "median_other": -0.53,
+    "in_model": true,
+    "desc": "phosphogluconate dehydratase"
+   },
+   {
+    "gene": "SM_b21377",
+    "fitness": -4.03,
+    "median_other": 0.1,
+    "in_model": false,
+    "desc": "sugar uptake ABC transporter substrate-binding protein precursor"
+   },
+   {
+    "gene": "SM_b21376",
+    "fitness": -3.07,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "sugar uptake ABC transporter ATP-binding protein"
+   },
+   {
+    "gene": "SM_b21375",
+    "fitness": -2.73,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "sugar uptake ABC transporter permease"
+   },
+   {
+    "gene": "SMc01207",
+    "fitness": -2.5,
+    "median_other": -0.96,
+    "in_model": false,
+    "desc": "S-adenosylmethionine--tRNA ribosyltransferase-isomerase"
+   },
+   {
+    "gene": "SMc03153",
+    "fitness": -2.36,
+    "median_other": -0.44,
+    "in_model": true,
+    "desc": "keto-hydroxyglutarate-aldolase/keto-deoxy- phosphogluconate aldolase"
+   },
+   {
+    "gene": "SMc02055",
+    "fitness": -2.19,
+    "median_other": -0.38,
+    "in_model": false,
+    "desc": "phytoene synthase"
+   }
+  ]
+ }
+]

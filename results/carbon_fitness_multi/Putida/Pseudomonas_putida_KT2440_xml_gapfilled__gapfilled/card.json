@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Putida",
-  "created": "2026-09-05T12:12:12Z",
+  "created": "2026-09-06T08:56:59Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Putida'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -17,10 +17,11 @@
     "n_reactions": 1897,
     "n_metabolites": 1316,
     "n_genes": 1292,
-    "sha256": "a35a98597ebebc1e4d3bb3b0885942e1b4ea174befca90f62e9594dc41114e87"
+    "sha256": "378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739"
   },
   "protocol": {
     "variant": "gapfilled",
+    "patches": null,
     "params": {
       "carbon_uptake": -10.0,
       "growth_threshold": 0.001,
@@ -30,7 +31,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -42,7 +50,7 @@
     "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"
   },
   "leakage": {
-    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data)",
+    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly (Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
     "ground_truth_public_since": "Fitness Browser releases 2015-2018 (Price et al. 2018)",
     "frontier_model_training_exposure": "Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
     "held_out_recommendation": "unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
@@ -69,17 +77,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.4726408697632057,
+        "point": 0.4730100698240214,
         "ci95": [
-          0.3714253791805504,
-          0.575426394742284
+          0.3676747215031472,
+          0.5783818161353966
         ]
       },
       "auroc_standard": {
-        "point": 0.7185214710332339,
+        "point": 0.718297464607331,
         "ci95": [
-          0.6644220090781764,
-          0.7747759605383846
+          0.6643354594962935,
+          0.7748849568018059
         ]
       },
       "mcc": {
@@ -122,17 +130,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.19217556007430145,
+        "point": 0.1889820586173847,
         "ci95": [
-          0.1526679547211345,
-          0.23557344581202025
+          0.14584223360755919,
+          0.23498772507504262
         ]
       },
       "auroc_standard": {
-        "point": 0.6404341413363748,
+        "point": 0.6378767783801389,
         "ci95": [
-          0.6039736118699679,
-          0.6805135519219123
+          0.6020697953497208,
+          0.6767239796782164
         ]
       },
       "mcc": {
@@ -180,12 +188,13 @@
       "genes_after_adjustment": 1021,
       "conditions_total": 57,
       "conditions_mapped": 43,
-      "conditions_wt_grows": 28
+      "conditions_wt_grows": 28,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 2.5366196632385254,
-      "knockout_simulation_s": 72.83400344848633,
-      "total_s": 75.67546367645264
+      "rich_medium_essentials_s": 4.258382081985474,
+      "knockout_simulation_s": 117.92868065834045,
+      "total_s": 122.6834659576416
     },
     "dropped_rich_medium_essentials": 17
   },

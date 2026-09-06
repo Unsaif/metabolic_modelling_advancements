@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Btheta",
-  "created": "2026-09-05T12:15:48Z",
+  "created": "2026-09-06T09:12:09Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Btheta'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -21,6 +21,7 @@
   },
   "protocol": {
     "variant": "shipped",
+    "patches": null,
     "params": {
       "carbon_uptake": -10.0,
       "growth_threshold": 0.001,
@@ -30,7 +31,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -42,7 +50,7 @@
     "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"
   },
   "leakage": {
-    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data)",
+    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly (Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
     "ground_truth_public_since": "Fitness Browser releases 2015-2018 (Price et al. 2018)",
     "frontier_model_training_exposure": "Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
     "held_out_recommendation": "unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
@@ -132,12 +140,13 @@
       "genes_after_adjustment": 469,
       "conditions_total": 47,
       "conditions_mapped": 25,
-      "conditions_wt_grows": 0
+      "conditions_wt_grows": 0,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 2.201889753341675,
-      "knockout_simulation_s": 0.3440845012664795,
-      "total_s": 2.9485666751861572
+      "rich_medium_essentials_s": 1.8030610084533691,
+      "knockout_simulation_s": 0.2824249267578125,
+      "total_s": 2.589014768600464
     },
     "dropped_rich_medium_essentials": 38
   },

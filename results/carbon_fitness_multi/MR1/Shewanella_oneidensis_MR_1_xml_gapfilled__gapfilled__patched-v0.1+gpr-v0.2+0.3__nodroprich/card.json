@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism MR1",
-  "created": "2026-09-05T20:05:39Z",
+  "created": "2026-09-06T08:39:36Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'MR1'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -23,6 +23,7 @@
     "variant": "gapfilled",
     "patches": {
       "file": "data/reference/universe_patches_v0.1.json",
+      "model_file": null,
       "gpr_file": "data/reference/gpr_patches_v0.2.json,data/reference/gpr_patches_v0.3.json",
       "applied": [
         {
@@ -35,6 +36,7 @@
           "gpr_before": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
           "gpr_after": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
           "rule": "R2",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -42,6 +44,7 @@
           "gpr_before": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
           "gpr_after": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
           "rule": "R2",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -49,6 +52,7 @@
           "gpr_before": "NP_718199_1 or NP_718200_1",
           "gpr_after": "NP_718200_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -56,6 +60,7 @@
           "gpr_before": "NP_718203_1 or NP_719263_1",
           "gpr_after": "NP_719263_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -63,6 +68,7 @@
           "gpr_before": "NP_715918_1 or NP_715919_1",
           "gpr_after": "NP_715918_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -70,6 +76,7 @@
           "gpr_before": "NP_718348_1 or NP_718731_1",
           "gpr_after": "NP_718348_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -77,6 +84,7 @@
           "gpr_before": "NP_716921_1 or NP_718704_2 or NP_719235_1",
           "gpr_after": "NP_719235_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -84,6 +92,7 @@
           "gpr_before": "NP_717233_1 or (NP_719276_1 and NP_719277_1)",
           "gpr_after": "NP_719276_1 and NP_719277_1",
           "rule": "R1+R2",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -91,6 +100,7 @@
           "gpr_before": "NP_718343_1 or NP_718733_1 or NP_718819_1",
           "gpr_after": "NP_718343_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -98,6 +108,7 @@
           "gpr_before": "NP_716891_1 or NP_719933_1",
           "gpr_after": "NP_719933_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -105,6 +116,7 @@
           "gpr_before": "NP_716436_2 or NP_717287_1",
           "gpr_after": "NP_717287_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -112,6 +124,7 @@
           "gpr_before": "NP_717825_1 or NP_718428_1 or NP_718847_1",
           "gpr_after": "NP_718847_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -119,6 +132,7 @@
           "gpr_before": "NP_717785_1 or NP_718988_2 or NP_719718_1",
           "gpr_after": "NP_719718_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -126,6 +140,7 @@
           "gpr_before": "NP_716044_1 or NP_719275_2 or (NP_716044_1 and NP_719275_2) or (NP_716089_1 and NP_719275_2)",
           "gpr_after": "NP_719275_2",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -133,6 +148,7 @@
           "gpr_before": "NP_715819_1 or NP_716846_2",
           "gpr_after": "NP_716846_2",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -140,6 +156,7 @@
           "gpr_before": "NP_715869_1 or (NP_719266_2 and NP_719267_1)",
           "gpr_after": "NP_719266_2 and NP_719267_1",
           "rule": "R1+R2",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -147,6 +164,7 @@
           "gpr_before": "NP_717844_1 or NP_719868_1",
           "gpr_after": "NP_719868_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -154,6 +172,7 @@
           "gpr_before": "NP_717147_1 or NP_719013_1",
           "gpr_after": "NP_719013_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -161,6 +180,7 @@
           "gpr_before": "NP_716824_1 or NP_717926_1",
           "gpr_after": "NP_716824_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -168,6 +188,7 @@
           "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
           "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
           "rule": "R5",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -175,6 +196,7 @@
           "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
           "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
           "rule": "R5",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -182,6 +204,7 @@
           "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
           "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
           "rule": "R5",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -189,6 +212,7 @@
           "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
           "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
           "rule": "R5",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -196,6 +220,7 @@
           "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
           "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
           "rule": "R5",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -203,6 +228,7 @@
           "gpr_before": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
           "gpr_after": "NP_715952_1 or NP_717429_1 or NP_718625_1",
           "rule": "R5",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -210,6 +236,7 @@
           "gpr_before": "NP_717624_1 or NP_717870_1",
           "gpr_after": "NP_717870_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -217,6 +244,7 @@
           "gpr_before": "NP_717624_1 or NP_717870_1",
           "gpr_after": "NP_717870_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -224,6 +252,15 @@
           "gpr_before": "NP_719015_1 or NP_719017_1",
           "gpr_after": "NP_719015_1",
           "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
+        },
+        {
+          "reaction": "RBFSa",
+          "gpr_before": "NP_717892_1 or NP_719015_1",
+          "gpr_after": "NP_717892_1 or NP_719017_1",
+          "rule": "R4",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -231,6 +268,7 @@
           "gpr_before": "NP_717858_1 or YP_007001387_1",
           "gpr_after": "NP_717858_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -238,6 +276,7 @@
           "gpr_before": "NP_717242_1 or NP_717993_1",
           "gpr_after": "NP_717242_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -245,6 +284,7 @@
           "gpr_before": "NP_717992_1 or NP_719076_1",
           "gpr_after": "NP_719076_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -252,6 +292,7 @@
           "gpr_before": "NP_717992_1 or NP_719076_1",
           "gpr_after": "NP_719076_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -259,6 +300,7 @@
           "gpr_before": "NP_716955_1 or NP_718009_1",
           "gpr_after": "NP_716955_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -266,6 +308,7 @@
           "gpr_before": "NP_717587_1 or NP_719370_1",
           "gpr_after": "NP_719370_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -273,6 +316,7 @@
           "gpr_before": "NP_719053_1 or NP_720257_1",
           "gpr_after": "NP_720257_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -280,6 +324,7 @@
           "gpr_before": "NP_716068_1 or NP_719080_1",
           "gpr_after": "NP_719080_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         }
       ]
@@ -293,7 +338,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -332,17 +384,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.4826237539771279,
+        "point": 0.5129685598764632,
         "ci95": [
-          0.4072020326204877,
-          0.5585197999656962
+          0.4367942461106167,
+          0.5834360381368736
         ]
       },
       "auroc_standard": {
-        "point": 0.7274138328995559,
+        "point": 0.7307162276018979,
         "ci95": [
-          0.6897857255487878,
-          0.7628291066286617
+          0.6932153289577818,
+          0.7665969068983507
         ]
       },
       "mcc": {
@@ -385,17 +437,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.3042686259719701,
+        "point": 0.3180219154613734,
         "ci95": [
-          0.2606323566063886,
-          0.34825938598277706
+          0.2764582117365124,
+          0.35985875854898586
         ]
       },
       "auroc_standard": {
-        "point": 0.6645599876143817,
+        "point": 0.6677281983674539,
         "ci95": [
-          0.6425854740416301,
-          0.6887049946928804
+          0.6458393368298728,
+          0.6903280099615191
         ]
       },
       "mcc": {
@@ -443,12 +495,13 @@
       "genes_after_adjustment": 713,
       "conditions_total": 16,
       "conditions_mapped": 12,
-      "conditions_wt_grows": 8
+      "conditions_wt_grows": 8,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 4.76837158203125e-07,
-      "knockout_simulation_s": 22.41031813621521,
-      "total_s": 22.785168170928955
+      "rich_medium_essentials_s": 1.6689300537109375e-06,
+      "knockout_simulation_s": 24.674508810043335,
+      "total_s": 25.340834617614746
     },
     "dropped_rich_medium_essentials": 0
   },

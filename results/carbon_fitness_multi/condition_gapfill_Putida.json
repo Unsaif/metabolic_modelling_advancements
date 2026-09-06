@@ -1,0 +1,2396 @@
+[
+ {
+  "condition": "Sodium butyrate",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "but"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.7277418243474786,
+   "added": [
+    {
+     "id": "BUTCT",
+     "name": "Acetyl-CoA:butyrate-CoA transferase",
+     "reaction": "accoa_c + but_c --> ac_c + btcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 2.7988312244415283
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_4116",
+    "fitness": -4.5,
+    "median_other": -0.11,
+    "in_model": true,
+    "desc": "isocitrate lyase"
+   },
+   {
+    "gene": "PP_0356",
+    "fitness": -4.26,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "PP_3553",
+    "fitness": -4.21,
+    "median_other": -0.06,
+    "in_model": false,
+    "desc": "AMP-binding domain protein"
+   },
+   {
+    "gene": "PP_3754",
+    "fitness": -3.71,
+    "median_other": 0.01,
+    "in_model": true,
+    "desc": "Beta-ketothiolase BktB"
+   },
+   {
+    "gene": "PP_1826",
+    "fitness": -3.7,
+    "median_other": -0.88,
+    "in_model": false,
+    "desc": "Hydrolase, isochorismatase family"
+   },
+   {
+    "gene": "PP_2217",
+    "fitness": -3.61,
+    "median_other": -0.09,
+    "in_model": true,
+    "desc": "enoyl-CoA hydratase"
+   },
+   {
+    "gene": "PP_5659",
+    "fitness": -3.55,
+    "median_other": -0.19,
+    "in_model": false,
+    "desc": "protein of unknown function"
+   },
+   {
+    "gene": "PP_3756",
+    "fitness": -3.54,
+    "median_other": -0.07,
+    "in_model": false,
+    "desc": "TetR family transcriptional regulator"
+   },
+   {
+    "gene": "PP_3552",
+    "fitness": -3.04,
+    "median_other": -0.03,
+    "in_model": false,
+    "desc": "Sensory box histidine kinase"
+   },
+   {
+    "gene": "PP_2414",
+    "fitness": -3.0,
+    "median_other": -0.92,
+    "in_model": false,
+    "desc": "conserved exported protein of unknown function"
+   },
+   {
+    "gene": "PP_3554",
+    "fitness": -2.98,
+    "median_other": -0.01,
+    "in_model": false,
+    "desc": "Acyl-CoA dehydrogenase family protein"
+   },
+   {
+    "gene": "PP_3755",
+    "fitness": -2.8,
+    "median_other": 0.0,
+    "in_model": true,
+    "desc": "3-hydroxybutyryl-CoA dehydrogenase"
+   },
+   {
+    "gene": "PP_1716",
+    "fitness": -2.54,
+    "median_other": -0.19,
+    "in_model": false,
+    "desc": "Transcriptional regulator, Cro/CI family"
+   },
+   {
+    "gene": "PP_0048",
+    "fitness": -2.54,
+    "median_other": -0.23,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_0025",
+    "fitness": -2.45,
+    "median_other": -0.21,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "PP_2402",
+    "fitness": -2.43,
+    "median_other": -0.99,
+    "in_model": false,
+    "desc": "putative Sensor histidine kinase"
+   },
+   {
+    "gene": "PP_3551",
+    "fitness": -2.4,
+    "median_other": -0.09,
+    "in_model": false,
+    "desc": "DNA-binding response regulator, LuxR family"
+   },
+   {
+    "gene": "PP_3753",
+    "fitness": -2.23,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "Transcriptional regulator, AraC family"
+   },
+   {
+    "gene": "PP_1589",
+    "fitness": -2.22,
+    "median_other": -0.75,
+    "in_model": false,
+    "desc": "uridylyltransferase"
+   },
+   {
+    "gene": "PP_4058",
+    "fitness": -2.13,
+    "median_other": -0.57,
+    "in_model": true,
+    "desc": "1,4-alpha-glucan branching enzyme"
+   },
+   {
+    "gene": "PP_3833",
+    "fitness": -2.08,
+    "median_other": -0.34,
+    "in_model": false,
+    "desc": "Response regulator"
+   },
+   {
+    "gene": "PP_5217",
+    "fitness": -2.04,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "Polyphosphate kinase"
+   },
+   {
+    "gene": "PP_3286",
+    "fitness": -2.02,
+    "median_other": -0.52,
+    "in_model": false,
+    "desc": "DNA-binding transcriptional repressor PaaX(phenylacetyl-CoA)"
+   }
+  ]
+ },
+ {
+  "condition": "1,2-Propanediol",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "12ppd__S",
+   "12ppd__R"
+  ],
+  "exchange_added": [
+   "12ppd__S",
+   "12ppd__R"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.7277418243474914,
+   "added": [
+    {
+     "id": "12PPDt",
+     "name": "S-Propane-1,2-diol facilitated transport",
+     "reaction": "12ppd__S_e <=> 12ppd__S_c",
+     "transport": true
+    }
+   ],
+   "seconds": 2.1235485076904297
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_4736",
+    "fitness": -4.99,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "L-lactate dehydrogenase"
+   },
+   {
+    "gene": "PP_5348",
+    "fitness": -4.73,
+    "median_other": -0.95,
+    "in_model": false,
+    "desc": "Transcriptional regulator, LysR family"
+   },
+   {
+    "gene": "PP_4735",
+    "fitness": -4.32,
+    "median_other": -0.0,
+    "in_model": true,
+    "desc": "L-lactate permease"
+   },
+   {
+    "gene": "PP_3484",
+    "fitness": -4.22,
+    "median_other": -0.83,
+    "in_model": false,
+    "desc": "Response regulator receiver protein"
+   },
+   {
+    "gene": "PP_4994",
+    "fitness": -2.92,
+    "median_other": 0.78,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_0362",
+    "fitness": -2.78,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "Biotin synthase"
+   },
+   {
+    "gene": "PP_5217",
+    "fitness": -2.74,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "Polyphosphate kinase"
+   },
+   {
+    "gene": "PP_1898",
+    "fitness": -2.54,
+    "median_other": 0.76,
+    "in_model": false,
+    "desc": "MotA/TolQ/ExbB proton channel family protein"
+   },
+   {
+    "gene": "PP_2414",
+    "fitness": -2.36,
+    "median_other": -0.92,
+    "in_model": false,
+    "desc": "conserved exported protein of unknown function"
+   },
+   {
+    "gene": "PP_0363",
+    "fitness": -2.33,
+    "median_other": -0.36,
+    "in_model": false,
+    "desc": "8-amino-7-oxononanoate synthase"
+   },
+   {
+    "gene": "PP_0356",
+    "fitness": -2.25,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "PP_0365",
+    "fitness": -2.21,
+    "median_other": -0.42,
+    "in_model": false,
+    "desc": "Malonyl-[acyl-carrier protein] O-methyltransferase"
+   },
+   {
+    "gene": "PP_4984",
+    "fitness": -2.21,
+    "median_other": -0.32,
+    "in_model": false,
+    "desc": "Adenosylmethionine-8-amino-7-oxononanoate aminotransferase"
+   },
+   {
+    "gene": "PP_1348",
+    "fitness": -2.2,
+    "median_other": -0.7,
+    "in_model": true,
+    "desc": "putative MutT/nudix family protein/thiamine-phosphate pyrophosphorylase"
+   },
+   {
+    "gene": "PP_3821",
+    "fitness": -2.17,
+    "median_other": -0.8,
+    "in_model": true,
+    "desc": "UTP-glucose-1-phosphate uridylyltransferase"
+   },
+   {
+    "gene": "PP_0364",
+    "fitness": -2.12,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "pimeloyl-[acp] methyl ester esterase"
+   },
+   {
+    "gene": "PP_2433",
+    "fitness": -2.02,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_2682",
+    "fitness": -2.0,
+    "median_other": -0.11,
+    "in_model": true,
+    "desc": "Fe-containing alcohol dehydrogenase"
+   }
+  ]
+ },
+ {
+  "condition": "Hydroxy-L-Proline",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "4hpro_LT"
+  ],
+  "exchange_added": [
+   "4hpro_LT"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.651041298103448,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 8.025714635848999
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_1255",
+    "fitness": -8.57,
+    "median_other": 0.06,
+    "in_model": false,
+    "desc": "putative cis-4-hydroxy-D-proline oxidase"
+   },
+   {
+    "gene": "PP_1257",
+    "fitness": -7.54,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "putative 1-pyrroline-4-hydroxy-2-carboxylate deaminase"
+   },
+   {
+    "gene": "PP_1259",
+    "fitness": -7.23,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "Aspartate-proton symporter"
+   },
+   {
+    "gene": "PP_4602",
+    "fitness": -7.17,
+    "median_other": -0.03,
+    "in_model": false,
+    "desc": "Transcriptional regulator, AraC family"
+   },
+   {
+    "gene": "PP_1258",
+    "fitness": -6.92,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "4-hydroxyproline epimerase"
+   },
+   {
+    "gene": "PP_1256",
+    "fitness": -5.95,
+    "median_other": -0.04,
+    "in_model": true,
+    "desc": "putative alpha-ketoglutarate semialdehyde dehydrogenase"
+   },
+   {
+    "gene": "PP_1215",
+    "fitness": -3.02,
+    "median_other": -0.99,
+    "in_model": false,
+    "desc": "Crossover junction endodeoxyribonuclease RuvC"
+   },
+   {
+    "gene": "PP_5217",
+    "fitness": -2.64,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "Polyphosphate kinase"
+   },
+   {
+    "gene": "PP_0888",
+    "fitness": -2.6,
+    "median_other": -0.94,
+    "in_model": false,
+    "desc": "Photosynthetic apparatus regulatory protein RegA"
+   },
+   {
+    "gene": "PP_4828",
+    "fitness": -2.27,
+    "median_other": -0.56,
+    "in_model": false,
+    "desc": "Precorrin-8X methylmutase"
+   },
+   {
+    "gene": "PP_1679",
+    "fitness": -2.25,
+    "median_other": -0.51,
+    "in_model": false,
+    "desc": "Nicotinate-nucleotide--dimethylbenzimidazole phosphoribosyltransferase"
+   },
+   {
+    "gene": "PP_2414",
+    "fitness": -2.16,
+    "median_other": -0.92,
+    "in_model": false,
+    "desc": "conserved exported protein of unknown function"
+   },
+   {
+    "gene": "PP_3484",
+    "fitness": -2.1,
+    "median_other": -0.83,
+    "in_model": false,
+    "desc": "Response regulator receiver protein"
+   },
+   {
+    "gene": "PP_4829",
+    "fitness": -2.04,
+    "median_other": -0.44,
+    "in_model": false,
+    "desc": "putative precorrin-3B synthase"
+   },
+   {
+    "gene": "PP_3506",
+    "fitness": -2.02,
+    "median_other": -0.46,
+    "in_model": false,
+    "desc": "Magnesium chelatase, subunit ChII"
+   }
+  ]
+ },
+ {
+  "condition": "Ferulic Acid",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "fer"
+  ],
+  "exchange_added": [
+   "fer"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.651041298103448,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 6.913776874542236
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_3952",
+    "fitness": -6.12,
+    "median_other": -0.15,
+    "in_model": true,
+    "desc": "3-oxoadipate CoA-transferase subunit A"
+   },
+   {
+    "gene": "PP_1377",
+    "fitness": -6.07,
+    "median_other": -0.18,
+    "in_model": true,
+    "desc": "beta-ketoadipyl-CoA thiolase"
+   },
+   {
+    "gene": "PP_3951",
+    "fitness": -5.74,
+    "median_other": -0.13,
+    "in_model": true,
+    "desc": "3-oxoadipate CoA-transferase subunit A"
+   },
+   {
+    "gene": "PP_1379",
+    "fitness": -4.75,
+    "median_other": -0.13,
+    "in_model": true,
+    "desc": "3-carboxy-cis,cis-muconate cycloisomerase"
+   },
+   {
+    "gene": "PP_1381",
+    "fitness": -4.57,
+    "median_other": -0.07,
+    "in_model": true,
+    "desc": "4-carboxymuconolactone decarboxylase"
+   },
+   {
+    "gene": "PP_4656",
+    "fitness": -4.57,
+    "median_other": -0.03,
+    "in_model": true,
+    "desc": "protocatechuate 3,4-dioxygenase beta chain"
+   },
+   {
+    "gene": "PP_3736",
+    "fitness": -4.52,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "vanillate O-demethylase oxygenase subunit"
+   },
+   {
+    "gene": "PP_1380",
+    "fitness": -4.21,
+    "median_other": -0.08,
+    "in_model": true,
+    "desc": "3-oxoadipate enol-lactonase 2"
+   },
+   {
+    "gene": "PP_1375",
+    "fitness": -4.1,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "transcription regulatory protein (pca regulon)"
+   },
+   {
+    "gene": "PP_4655",
+    "fitness": -3.92,
+    "median_other": -0.06,
+    "in_model": true,
+    "desc": "protocatechuate 3,4-dioxygenase alpha chain"
+   },
+   {
+    "gene": "PP_3737",
+    "fitness": -3.55,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "vanillate O-demethylase oxidoreductase"
+   },
+   {
+    "gene": "PP_1616",
+    "fitness": -3.31,
+    "median_other": -0.2,
+    "in_model": true,
+    "desc": "formaldehyde dehydrogenase, glutathione-dependent"
+   },
+   {
+    "gene": "PP_1826",
+    "fitness": -3.29,
+    "median_other": -0.88,
+    "in_model": false,
+    "desc": "Hydrolase, isochorismatase family"
+   },
+   {
+    "gene": "PP_1713",
+    "fitness": -3.24,
+    "median_other": -0.25,
+    "in_model": false,
+    "desc": "Transcriptional regulator PcaQ"
+   },
+   {
+    "gene": "PP_0356",
+    "fitness": -3.17,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "PP_0406",
+    "fitness": -2.59,
+    "median_other": -0.86,
+    "in_model": true,
+    "desc": "Nucleotidyltransferase family protein"
+   },
+   {
+    "gene": "PP_3590",
+    "fitness": -2.56,
+    "median_other": -0.52,
+    "in_model": true,
+    "desc": "D-lysine aminotransferase"
+   },
+   {
+    "gene": "PP_3356",
+    "fitness": -2.52,
+    "median_other": -0.01,
+    "in_model": true,
+    "desc": "feruloyl-CoA-synthetase"
+   },
+   {
+    "gene": "PP_2433",
+    "fitness": -2.3,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_2356",
+    "fitness": -2.28,
+    "median_other": -0.97,
+    "in_model": false,
+    "desc": "putative Phytochrome family protein"
+   },
+   {
+    "gene": "PP_2145",
+    "fitness": -2.17,
+    "median_other": -0.68,
+    "in_model": true,
+    "desc": "beta-N-acetylglucosaminidase"
+   },
+   {
+    "gene": "PP_3357",
+    "fitness": -2.17,
+    "median_other": 0.02,
+    "in_model": true,
+    "desc": "vanillin dehydrogenase"
+   },
+   {
+    "gene": "PP_0888",
+    "fitness": -2.13,
+    "median_other": -0.94,
+    "in_model": false,
+    "desc": "Photosynthetic apparatus regulatory protein RegA"
+   },
+   {
+    "gene": "PP_1355",
+    "fitness": -2.05,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "Muropeptide permease AmpG"
+   },
+   {
+    "gene": "PP_4993",
+    "fitness": -2.03,
+    "median_other": -0.75,
+    "in_model": true,
+    "desc": "Glutathione synthetase"
+   }
+  ]
+ },
+ {
+  "condition": "3-Methyl-2-Oxobutanoic Acid",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "3mob"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.651041298103495,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 3.7162606716156006
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_2217",
+    "fitness": -6.62,
+    "median_other": -0.09,
+    "in_model": true,
+    "desc": "enoyl-CoA hydratase"
+   },
+   {
+    "gene": "PP_4666",
+    "fitness": -6.41,
+    "median_other": -0.15,
+    "in_model": true,
+    "desc": "3-hydroxyisobutyrate dehydrogenase"
+   },
+   {
+    "gene": "PP_4403",
+    "fitness": -6.03,
+    "median_other": -0.0,
+    "in_model": true,
+    "desc": "Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex"
+   },
+   {
+    "gene": "PP_4667",
+    "fitness": -5.35,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "methylmalonate-semialdehyde dehydrogenase"
+   },
+   {
+    "gene": "PP_4401",
+    "fitness": -5.29,
+    "median_other": 0.02,
+    "in_model": true,
+    "desc": "branched-chain alpha-keto acid dehydrogenase complex, alpha subunit"
+   },
+   {
+    "gene": "PP_5348",
+    "fitness": -5.19,
+    "median_other": -0.95,
+    "in_model": false,
+    "desc": "Transcriptional regulator, LysR family"
+   },
+   {
+    "gene": "PP_4400",
+    "fitness": -5.16,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "Bkd operon transcriptional regulator"
+   },
+   {
+    "gene": "PP_2335",
+    "fitness": -5.06,
+    "median_other": 0.04,
+    "in_model": true,
+    "desc": "methylcitrate synthase"
+   },
+   {
+    "gene": "PP_4668",
+    "fitness": -5.01,
+    "median_other": 0.05,
+    "in_model": false,
+    "desc": "Transcriptional regulator, LysR family"
+   },
+   {
+    "gene": "PP_4402",
+    "fitness": -4.69,
+    "median_other": 0.07,
+    "in_model": true,
+    "desc": "branched-chain alpha-keto acid dehydrogenase complex, beta subunit"
+   },
+   {
+    "gene": "PP_3491",
+    "fitness": -4.69,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "Enoly-coenzyme A hydratase/isomerase family protein"
+   },
+   {
+    "gene": "PP_2334",
+    "fitness": -4.59,
+    "median_other": -0.04,
+    "in_model": true,
+    "desc": "2-methylisocitrate lyase"
+   },
+   {
+    "gene": "PP_2868",
+    "fitness": -4.34,
+    "median_other": -0.23,
+    "in_model": false,
+    "desc": "Transcriptional regulator, Cro/CI family"
+   },
+   {
+    "gene": "PP_3492",
+    "fitness": -4.33,
+    "median_other": -0.04,
+    "in_model": false,
+    "desc": "short-chain acyl-CoA dehydrogenase"
+   },
+   {
+    "gene": "PP_3756",
+    "fitness": -4.32,
+    "median_other": -0.07,
+    "in_model": false,
+    "desc": "TetR family transcriptional regulator"
+   },
+   {
+    "gene": "PP_4404",
+    "fitness": -3.89,
+    "median_other": 0.06,
+    "in_model": true,
+    "desc": "dihydrolipoyl dehydrogenase component of branched-chain alpha-keto acid dehydrogenase complex"
+   },
+   {
+    "gene": "PP_5188",
+    "fitness": -3.61,
+    "median_other": -0.04,
+    "in_model": false,
+    "desc": "putative transcriptional regulator (AsnC/Lrp family)"
+   },
+   {
+    "gene": "PP_2337",
+    "fitness": -3.61,
+    "median_other": -0.5,
+    "in_model": false,
+    "desc": "aconitate isomerase"
+   },
+   {
+    "gene": "PP_2433",
+    "fitness": -3.38,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_0362",
+    "fitness": -3.35,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "Biotin synthase"
+   },
+   {
+    "gene": "PP_2214",
+    "fitness": -2.45,
+    "median_other": -0.16,
+    "in_model": true,
+    "desc": "3-hydroxyacyl-CoA dehydrogenase type-2"
+   },
+   {
+    "gene": "PP_0364",
+    "fitness": -2.42,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "pimeloyl-[acp] methyl ester esterase"
+   },
+   {
+    "gene": "PP_4058",
+    "fitness": -2.37,
+    "median_other": -0.57,
+    "in_model": true,
+    "desc": "1,4-alpha-glucan branching enzyme"
+   },
+   {
+    "gene": "PP_1428",
+    "fitness": -2.33,
+    "median_other": -0.28,
+    "in_model": false,
+    "desc": "Sigma factor AlgU negative regulatory protein"
+   },
+   {
+    "gene": "PP_1764",
+    "fitness": -2.26,
+    "median_other": -0.99,
+    "in_model": false,
+    "desc": "Phosphoglycolate phosphatase 2"
+   }
+  ]
+ },
+ {
+  "condition": "4-Methyl-2-oxovaleric acid",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "4mop"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.651041298103495,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 4.15749979019165
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_2433",
+    "fitness": -6.02,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_4066",
+    "fitness": -5.85,
+    "median_other": -0.17,
+    "in_model": false,
+    "desc": "methylglutaconyl-CoA hydratase"
+   },
+   {
+    "gene": "PP_4400",
+    "fitness": -5.61,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "Bkd operon transcriptional regulator"
+   },
+   {
+    "gene": "PP_4116",
+    "fitness": -5.59,
+    "median_other": -0.11,
+    "in_model": true,
+    "desc": "isocitrate lyase"
+   },
+   {
+    "gene": "PP_4402",
+    "fitness": -5.44,
+    "median_other": 0.07,
+    "in_model": true,
+    "desc": "branched-chain alpha-keto acid dehydrogenase complex, beta subunit"
+   },
+   {
+    "gene": "PP_4067",
+    "fitness": -5.4,
+    "median_other": -0.02,
+    "in_model": false,
+    "desc": "methylcrotonyl-CoA carboxylase biotin-containing subunit alpha"
+   },
+   {
+    "gene": "PP_4065",
+    "fitness": -5.03,
+    "median_other": -0.1,
+    "in_model": false,
+    "desc": "methylcrotonyl-CoA carboxylase biotin-containing subunit beta"
+   },
+   {
+    "gene": "PP_0356",
+    "fitness": -5.02,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "PP_4401",
+    "fitness": -4.99,
+    "median_other": 0.02,
+    "in_model": true,
+    "desc": "branched-chain alpha-keto acid dehydrogenase complex, alpha subunit"
+   },
+   {
+    "gene": "PP_4064",
+    "fitness": -4.95,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "isovaleryl-CoA dehydrogenase"
+   },
+   {
+    "gene": "PP_5659",
+    "fitness": -4.52,
+    "median_other": -0.19,
+    "in_model": false,
+    "desc": "protein of unknown function"
+   },
+   {
+    "gene": "PP_4403",
+    "fitness": -4.45,
+    "median_other": -0.0,
+    "in_model": true,
+    "desc": "Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex"
+   },
+   {
+    "gene": "PP_0362",
+    "fitness": -4.44,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "Biotin synthase"
+   },
+   {
+    "gene": "PP_0364",
+    "fitness": -3.93,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "pimeloyl-[acp] methyl ester esterase"
+   },
+   {
+    "gene": "PP_0366",
+    "fitness": -3.76,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "dethiobiotin synthetase"
+   },
+   {
+    "gene": "PP_0365",
+    "fitness": -3.33,
+    "median_other": -0.42,
+    "in_model": false,
+    "desc": "Malonyl-[acyl-carrier protein] O-methyltransferase"
+   },
+   {
+    "gene": "PP_4984",
+    "fitness": -3.0,
+    "median_other": -0.32,
+    "in_model": false,
+    "desc": "Adenosylmethionine-8-amino-7-oxononanoate aminotransferase"
+   },
+   {
+    "gene": "PP_0834",
+    "fitness": -2.91,
+    "median_other": -0.35,
+    "in_model": false,
+    "desc": "Sec translocation complex subunit YajC"
+   },
+   {
+    "gene": "PP_2378",
+    "fitness": -2.86,
+    "median_other": -0.6,
+    "in_model": false,
+    "desc": "Fe/S biogenesis protein NfuA"
+   },
+   {
+    "gene": "PP_1428",
+    "fitness": -2.8,
+    "median_other": -0.28,
+    "in_model": false,
+    "desc": "Sigma factor AlgU negative regulatory protein"
+   },
+   {
+    "gene": "PP_0363",
+    "fitness": -2.7,
+    "median_other": -0.36,
+    "in_model": false,
+    "desc": "8-amino-7-oxononanoate synthase"
+   },
+   {
+    "gene": "PP_2302",
+    "fitness": -2.53,
+    "median_other": -0.97,
+    "in_model": false,
+    "desc": "DNA-binding, ATP-dependent protease"
+   },
+   {
+    "gene": "PP_1186",
+    "fitness": -2.47,
+    "median_other": 0.0,
+    "in_model": false,
+    "desc": "two component system DNA-binding transcriptional dual regulator"
+   },
+   {
+    "gene": "PP_4482",
+    "fitness": -2.45,
+    "median_other": -0.38,
+    "in_model": false,
+    "desc": "Transcriptional regulator, AraC family"
+   },
+   {
+    "gene": "PP_1348",
+    "fitness": -2.4,
+    "median_other": -0.7,
+    "in_model": true,
+    "desc": "putative MutT/nudix family protein/thiamine-phosphate pyrophosphorylase"
+   }
+  ]
+ },
+ {
+  "condition": "Hexanoic acid",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "hxa"
+  ],
+  "exchange_added": [
+   "hxa"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 1.0916127365212565,
+   "added": [
+    {
+     "id": "HXAtex",
+     "name": "Hexanoate transport via diffusion (extracellular to periplasm)",
+     "reaction": "hxa_e <=> hxa_p",
+     "transport": true
+    }
+   ],
+   "seconds": 5.336428165435791
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_2903",
+    "fitness": -4.5,
+    "median_other": -0.41,
+    "in_model": false,
+    "desc": "peptidyl-prolyl cis-trans isomerase B (rotamase B)"
+   },
+   {
+    "gene": "PP_4116",
+    "fitness": -4.37,
+    "median_other": -0.11,
+    "in_model": true,
+    "desc": "isocitrate lyase"
+   },
+   {
+    "gene": "PP_2433",
+    "fitness": -4.19,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_0356",
+    "fitness": -3.84,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "PP_5659",
+    "fitness": -3.76,
+    "median_other": -0.19,
+    "in_model": false,
+    "desc": "protein of unknown function"
+   },
+   {
+    "gene": "PP_3286",
+    "fitness": -2.82,
+    "median_other": -0.52,
+    "in_model": false,
+    "desc": "DNA-binding transcriptional repressor PaaX(phenylacetyl-CoA)"
+   },
+   {
+    "gene": "PP_3946",
+    "fitness": -2.8,
+    "median_other": -0.63,
+    "in_model": false,
+    "desc": "HTH-type transcriptional repressor NicR"
+   },
+   {
+    "gene": "PP_5216",
+    "fitness": -2.66,
+    "median_other": -0.82,
+    "in_model": true,
+    "desc": "exopolyphosphatase"
+   },
+   {
+    "gene": "PP_4549",
+    "fitness": -2.55,
+    "median_other": -0.17,
+    "in_model": true,
+    "desc": "long-chain-fatty-acid/CoA ligase"
+   },
+   {
+    "gene": "PP_0763",
+    "fitness": -2.5,
+    "median_other": -0.05,
+    "in_model": true,
+    "desc": "Medium-chain-fatty-acid CoA ligase"
+   },
+   {
+    "gene": "PP_0370",
+    "fitness": -2.36,
+    "median_other": 0.05,
+    "in_model": true,
+    "desc": "Acyl-CoA dehydrogenase family protein"
+   },
+   {
+    "gene": "PP_2302",
+    "fitness": -2.22,
+    "median_other": -0.97,
+    "in_model": false,
+    "desc": "DNA-binding, ATP-dependent protease"
+   },
+   {
+    "gene": "PP_2356",
+    "fitness": -2.14,
+    "median_other": -0.97,
+    "in_model": false,
+    "desc": "putative Phytochrome family protein"
+   },
+   {
+    "gene": "PP_2087",
+    "fitness": -2.04,
+    "median_other": -0.84,
+    "in_model": false,
+    "desc": "CmpX protein"
+   }
+  ]
+ },
+ {
+  "condition": "Butanol",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "btoh"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.727741824347482,
+   "added": [
+    {
+     "id": "BUTCT",
+     "name": "Acetyl-CoA:butyrate-CoA transferase",
+     "reaction": "accoa_c + but_c --> ac_c + btcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 1.9338526725769043
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_5659",
+    "fitness": -4.36,
+    "median_other": -0.19,
+    "in_model": false,
+    "desc": "protein of unknown function"
+   },
+   {
+    "gene": "PP_0356",
+    "fitness": -4.03,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "PP_4116",
+    "fitness": -4.01,
+    "median_other": -0.11,
+    "in_model": true,
+    "desc": "isocitrate lyase"
+   },
+   {
+    "gene": "PP_5217",
+    "fitness": -3.29,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "Polyphosphate kinase"
+   },
+   {
+    "gene": "PP_3553",
+    "fitness": -2.9,
+    "median_other": -0.06,
+    "in_model": false,
+    "desc": "AMP-binding domain protein"
+   },
+   {
+    "gene": "PP_3554",
+    "fitness": -2.46,
+    "median_other": -0.01,
+    "in_model": false,
+    "desc": "Acyl-CoA dehydrogenase family protein"
+   },
+   {
+    "gene": "PP_3484",
+    "fitness": -2.32,
+    "median_other": -0.83,
+    "in_model": false,
+    "desc": "Response regulator receiver protein"
+   },
+   {
+    "gene": "PP_1656",
+    "fitness": -2.29,
+    "median_other": 0.14,
+    "in_model": true,
+    "desc": "ATP:GTP 3'-pyrophosphotransferase"
+   },
+   {
+    "gene": "PP_5348",
+    "fitness": -2.21,
+    "median_other": -0.95,
+    "in_model": false,
+    "desc": "Transcriptional regulator, LysR family"
+   },
+   {
+    "gene": "PP_3754",
+    "fitness": -2.21,
+    "median_other": 0.01,
+    "in_model": true,
+    "desc": "Beta-ketothiolase BktB"
+   },
+   {
+    "gene": "PP_3755",
+    "fitness": -2.17,
+    "median_other": 0.0,
+    "in_model": true,
+    "desc": "3-hydroxybutyryl-CoA dehydrogenase"
+   },
+   {
+    "gene": "PP_3551",
+    "fitness": -2.13,
+    "median_other": -0.09,
+    "in_model": false,
+    "desc": "DNA-binding response regulator, LuxR family"
+   },
+   {
+    "gene": "PP_1110",
+    "fitness": -2.11,
+    "median_other": -0.19,
+    "in_model": true,
+    "desc": "serine acetyltransferase"
+   },
+   {
+    "gene": "PP_1109",
+    "fitness": -2.08,
+    "median_other": 0.05,
+    "in_model": false,
+    "desc": "Transcriptional regulator, GntR family"
+   },
+   {
+    "gene": "PP_1826",
+    "fitness": -2.02,
+    "median_other": -0.88,
+    "in_model": false,
+    "desc": "Hydrolase, isochorismatase family"
+   }
+  ]
+ },
+ {
+  "condition": "3-methyl-1-butanol",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "iamoh"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.651041298103495,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 6.537526845932007
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_4065",
+    "fitness": -5.93,
+    "median_other": -0.1,
+    "in_model": false,
+    "desc": "methylcrotonyl-CoA carboxylase biotin-containing subunit beta"
+   },
+   {
+    "gene": "PP_5659",
+    "fitness": -5.93,
+    "median_other": -0.19,
+    "in_model": false,
+    "desc": "protein of unknown function"
+   },
+   {
+    "gene": "PP_4116",
+    "fitness": -5.57,
+    "median_other": -0.11,
+    "in_model": true,
+    "desc": "isocitrate lyase"
+   },
+   {
+    "gene": "PP_4067",
+    "fitness": -5.13,
+    "median_other": -0.02,
+    "in_model": false,
+    "desc": "methylcrotonyl-CoA carboxylase biotin-containing subunit alpha"
+   },
+   {
+    "gene": "PP_0356",
+    "fitness": -4.88,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "PP_3505",
+    "fitness": -4.76,
+    "median_other": -0.5,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_4066",
+    "fitness": -4.72,
+    "median_other": -0.17,
+    "in_model": false,
+    "desc": "methylglutaconyl-CoA hydratase"
+   },
+   {
+    "gene": "PP_1428",
+    "fitness": -4.66,
+    "median_other": -0.28,
+    "in_model": false,
+    "desc": "Sigma factor AlgU negative regulatory protein"
+   },
+   {
+    "gene": "PP_4064",
+    "fitness": -4.6,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "isovaleryl-CoA dehydrogenase"
+   },
+   {
+    "gene": "PP_2475",
+    "fitness": -4.42,
+    "median_other": -0.27,
+    "in_model": false,
+    "desc": "Transcriptional regulator, TetR family"
+   },
+   {
+    "gene": "PP_0949",
+    "fitness": -4.4,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "putative ATP-binding protein UPF0042"
+   },
+   {
+    "gene": "PP_0366",
+    "fitness": -4.29,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "dethiobiotin synthetase"
+   },
+   {
+    "gene": "PP_3123",
+    "fitness": -4.23,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "acetoacetyl CoA-transferase (subunit B)"
+   },
+   {
+    "gene": "PP_1215",
+    "fitness": -4.11,
+    "median_other": -0.99,
+    "in_model": false,
+    "desc": "Crossover junction endodeoxyribonuclease RuvC"
+   },
+   {
+    "gene": "PP_0363",
+    "fitness": -4.05,
+    "median_other": -0.36,
+    "in_model": false,
+    "desc": "8-amino-7-oxononanoate synthase"
+   },
+   {
+    "gene": "PP_3248",
+    "fitness": -3.98,
+    "median_other": -0.56,
+    "in_model": false,
+    "desc": "Dyp-type peroxidase family protein"
+   },
+   {
+    "gene": "PP_0362",
+    "fitness": -3.92,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "Biotin synthase"
+   },
+   {
+    "gene": "PP_0364",
+    "fitness": -3.87,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "pimeloyl-[acp] methyl ester esterase"
+   },
+   {
+    "gene": "PP_2302",
+    "fitness": -3.85,
+    "median_other": -0.97,
+    "in_model": false,
+    "desc": "DNA-binding, ATP-dependent protease"
+   },
+   {
+    "gene": "PP_1826",
+    "fitness": -3.79,
+    "median_other": -0.88,
+    "in_model": false,
+    "desc": "Hydrolase, isochorismatase family"
+   },
+   {
+    "gene": "PP_0365",
+    "fitness": -3.75,
+    "median_other": -0.42,
+    "in_model": false,
+    "desc": "Malonyl-[acyl-carrier protein] O-methyltransferase"
+   },
+   {
+    "gene": "PP_4984",
+    "fitness": -3.67,
+    "median_other": -0.32,
+    "in_model": false,
+    "desc": "Adenosylmethionine-8-amino-7-oxononanoate aminotransferase"
+   },
+   {
+    "gene": "PP_5035",
+    "fitness": -3.56,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "Histidine utilization repressor"
+   },
+   {
+    "gene": "PP_4482",
+    "fitness": -3.54,
+    "median_other": -0.38,
+    "in_model": false,
+    "desc": "Transcriptional regulator, AraC family"
+   },
+   {
+    "gene": "PP_0123",
+    "fitness": -3.29,
+    "median_other": -0.06,
+    "in_model": false,
+    "desc": "DNA polymerase I, 5"
+   }
+  ]
+ },
+ {
+  "condition": "L-Leucine",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "leu__L"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.894692741305502,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 9.84270715713501
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_4403",
+    "fitness": -4.2,
+    "median_other": -0.0,
+    "in_model": true,
+    "desc": "Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex"
+   },
+   {
+    "gene": "PP_4067",
+    "fitness": -3.99,
+    "median_other": -0.02,
+    "in_model": false,
+    "desc": "methylcrotonyl-CoA carboxylase biotin-containing subunit alpha"
+   },
+   {
+    "gene": "PP_4065",
+    "fitness": -3.91,
+    "median_other": -0.1,
+    "in_model": false,
+    "desc": "methylcrotonyl-CoA carboxylase biotin-containing subunit beta"
+   },
+   {
+    "gene": "PP_4116",
+    "fitness": -3.84,
+    "median_other": -0.11,
+    "in_model": true,
+    "desc": "isocitrate lyase"
+   },
+   {
+    "gene": "PP_4400",
+    "fitness": -3.64,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "Bkd operon transcriptional regulator"
+   },
+   {
+    "gene": "PP_4064",
+    "fitness": -3.48,
+    "median_other": -0.08,
+    "in_model": false,
+    "desc": "isovaleryl-CoA dehydrogenase"
+   },
+   {
+    "gene": "PP_0356",
+    "fitness": -3.44,
+    "median_other": -0.99,
+    "in_model": true,
+    "desc": "malate synthase G"
+   },
+   {
+    "gene": "PP_4402",
+    "fitness": -3.4,
+    "median_other": 0.07,
+    "in_model": true,
+    "desc": "branched-chain alpha-keto acid dehydrogenase complex, beta subunit"
+   },
+   {
+    "gene": "PP_4401",
+    "fitness": -3.33,
+    "median_other": 0.02,
+    "in_model": true,
+    "desc": "branched-chain alpha-keto acid dehydrogenase complex, alpha subunit"
+   },
+   {
+    "gene": "PP_0949",
+    "fitness": -3.28,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "putative ATP-binding protein UPF0042"
+   },
+   {
+    "gene": "PP_2868",
+    "fitness": -3.2,
+    "median_other": -0.23,
+    "in_model": false,
+    "desc": "Transcriptional regulator, Cro/CI family"
+   },
+   {
+    "gene": "PP_4814",
+    "fitness": -2.9,
+    "median_other": -0.1,
+    "in_model": false,
+    "desc": "ATP-dependent protease La domain protein"
+   },
+   {
+    "gene": "PP_5145",
+    "fitness": -2.77,
+    "median_other": 1.01,
+    "in_model": false,
+    "desc": "phosphoenolpyruvate-dependent regulator (with NPR and NTR proteins)"
+   },
+   {
+    "gene": "PP_2217",
+    "fitness": -2.73,
+    "median_other": -0.09,
+    "in_model": true,
+    "desc": "enoyl-CoA hydratase"
+   },
+   {
+    "gene": "PP_2302",
+    "fitness": -2.72,
+    "median_other": -0.97,
+    "in_model": false,
+    "desc": "DNA-binding, ATP-dependent protease"
+   },
+   {
+    "gene": "PP_1319",
+    "fitness": -2.61,
+    "median_other": 0.05,
+    "in_model": true,
+    "desc": "Ubiquinol--cytochrome c reductase, cytochrome c1"
+   },
+   {
+    "gene": "PP_5659",
+    "fitness": -2.55,
+    "median_other": -0.19,
+    "in_model": false,
+    "desc": "protein of unknown function"
+   },
+   {
+    "gene": "PP_0362",
+    "fitness": -2.55,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "Biotin synthase"
+   },
+   {
+    "gene": "PP_2433",
+    "fitness": -2.4,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_1317",
+    "fitness": -2.4,
+    "median_other": -0.03,
+    "in_model": true,
+    "desc": "Ubiquinol-cytochrome c reductase iron-sulfur subunit"
+   },
+   {
+    "gene": "PP_4066",
+    "fitness": -2.28,
+    "median_other": -0.17,
+    "in_model": false,
+    "desc": "methylglutaconyl-CoA hydratase"
+   },
+   {
+    "gene": "PP_1328",
+    "fitness": -2.25,
+    "median_other": -0.14,
+    "in_model": false,
+    "desc": "Protein MraZ"
+   },
+   {
+    "gene": "PP_1318",
+    "fitness": -2.1,
+    "median_other": -0.04,
+    "in_model": true,
+    "desc": "Cytochrome b"
+   },
+   {
+    "gene": "PP_1215",
+    "fitness": -2.02,
+    "median_other": -0.99,
+    "in_model": false,
+    "desc": "Crossover junction endodeoxyribonuclease RuvC"
+   }
+  ]
+ },
+ {
+  "condition": "3-methyl-2-oxopentanoic acid",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "3mop"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.651041298103495,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 3.8216161727905273
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_2214",
+    "fitness": -2.39,
+    "median_other": -0.16,
+    "in_model": true,
+    "desc": "3-hydroxyacyl-CoA dehydrogenase type-2"
+   },
+   {
+    "gene": "PP_2215",
+    "fitness": -2.33,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "acetyl-CoA acetyltransferase"
+   },
+   {
+    "gene": "PP_4401",
+    "fitness": -2.33,
+    "median_other": 0.02,
+    "in_model": true,
+    "desc": "branched-chain alpha-keto acid dehydrogenase complex, alpha subunit"
+   },
+   {
+    "gene": "PP_2337",
+    "fitness": -2.2,
+    "median_other": -0.5,
+    "in_model": false,
+    "desc": "aconitate isomerase"
+   },
+   {
+    "gene": "PP_4400",
+    "fitness": -2.17,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "Bkd operon transcriptional regulator"
+   },
+   {
+    "gene": "PP_2217",
+    "fitness": -2.06,
+    "median_other": -0.09,
+    "in_model": true,
+    "desc": "enoyl-CoA hydratase"
+   },
+   {
+    "gene": "PP_4403",
+    "fitness": -2.05,
+    "median_other": -0.0,
+    "in_model": true,
+    "desc": "Lipoamide acyltransferase component of branched-chain alpha-keto acid dehydrogenase complex"
+   }
+  ]
+ },
+ {
+  "condition": "D-Galacturonic Acid monohydrate",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "galur"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 1.1648005739710232,
+   "added": [
+    {
+     "id": "GALURDH",
+     "name": "Galacturonate dehydrogenase",
+     "reaction": "galur_c + h2o_c + nad_c <=> galct__D_c + 2.0 h_c + nadh_c",
+     "transport": false
+    }
+   ],
+   "seconds": 7.686828851699829
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_1167",
+    "fitness": -6.19,
+    "median_other": -0.02,
+    "in_model": false,
+    "desc": "putative TRAP dicarboxylate transporter, DctM subunit"
+   },
+   {
+    "gene": "PP_3599",
+    "fitness": -6.14,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "5-dehydro-4-deoxyglucarate dehydratase"
+   },
+   {
+    "gene": "PP_3601",
+    "fitness": -6.04,
+    "median_other": 0.02,
+    "in_model": true,
+    "desc": "galactarate dehydratase"
+   },
+   {
+    "gene": "PP_1171",
+    "fitness": -5.99,
+    "median_other": -0.03,
+    "in_model": true,
+    "desc": "uronate dehydrogenase"
+   },
+   {
+    "gene": "PP_1169",
+    "fitness": -5.97,
+    "median_other": 0.0,
+    "in_model": true,
+    "desc": "TRAP dicarboxylate transporter, DctP subunit"
+   },
+   {
+    "gene": "PP_1170",
+    "fitness": -5.59,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "Gluconolactonase"
+   },
+   {
+    "gene": "PP_1168",
+    "fitness": -5.2,
+    "median_other": -0.0,
+    "in_model": false,
+    "desc": "putative TRAP dicarboxylate transporter, DctQ subunit"
+   },
+   {
+    "gene": "PP_5322",
+    "fitness": -4.97,
+    "median_other": 0.06,
+    "in_model": false,
+    "desc": "putative metal ion transporter"
+   },
+   {
+    "gene": "PP_1165",
+    "fitness": -4.61,
+    "median_other": 0.02,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_5075",
+    "fitness": -3.95,
+    "median_other": -0.04,
+    "in_model": true,
+    "desc": "glutamate synthase (NADPH) beta subunit"
+   },
+   {
+    "gene": "PP_3600",
+    "fitness": -3.51,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "glucarate transporter"
+   },
+   {
+    "gene": "PP_1826",
+    "fitness": -3.47,
+    "median_other": -0.88,
+    "in_model": false,
+    "desc": "Hydrolase, isochorismatase family"
+   },
+   {
+    "gene": "PP_0435",
+    "fitness": -3.46,
+    "median_other": -0.94,
+    "in_model": true,
+    "desc": "Peptidase, M23/M37 family"
+   },
+   {
+    "gene": "PP_4789",
+    "fitness": -3.41,
+    "median_other": 0.06,
+    "in_model": false,
+    "desc": "heat shock protein, Co2+ and Mg2+ efflux protein"
+   },
+   {
+    "gene": "PP_0025",
+    "fitness": -3.06,
+    "median_other": -0.21,
+    "in_model": false,
+    "desc": "hypothetical protein"
+   },
+   {
+    "gene": "PP_4891",
+    "fitness": -3.04,
+    "median_other": -0.03,
+    "in_model": false,
+    "desc": "integral membrane ATP-dependent zinc metallopeptidase / HflK-HflC complex"
+   },
+   {
+    "gene": "PP_1110",
+    "fitness": -2.75,
+    "median_other": -0.19,
+    "in_model": true,
+    "desc": "serine acetyltransferase"
+   },
+   {
+    "gene": "PP_5076",
+    "fitness": -2.72,
+    "median_other": 0.04,
+    "in_model": true,
+    "desc": "L-glutamate synthase(NADPH) alpha subunit"
+   },
+   {
+    "gene": "PP_4099",
+    "fitness": -2.7,
+    "median_other": 1.87,
+    "in_model": false,
+    "desc": "two-componenent system BarA/UvrY - regulatory subunit"
+   },
+   {
+    "gene": "PP_3105",
+    "fitness": -2.59,
+    "median_other": -0.65,
+    "in_model": false,
+    "desc": "conserved membrane protein of unknown function"
+   },
+   {
+    "gene": "PP_5146",
+    "fitness": -2.53,
+    "median_other": -0.26,
+    "in_model": true,
+    "desc": "RNA pyrophosphohydrolase"
+   },
+   {
+    "gene": "PP_4892",
+    "fitness": -2.5,
+    "median_other": -0.13,
+    "in_model": false,
+    "desc": "integral membrane ATP-dependent zinc metallopeptidase / HflK-HflC complex"
+   },
+   {
+    "gene": "PP_1650",
+    "fitness": -2.44,
+    "median_other": 1.9,
+    "in_model": false,
+    "desc": "Sensor protein GacS"
+   },
+   {
+    "gene": "PP_0246",
+    "fitness": -2.4,
+    "median_other": -0.13,
+    "in_model": false,
+    "desc": "two-component system DNA-binding response transcriptional dual regulator"
+   },
+   {
+    "gene": "PP_1224",
+    "fitness": -2.34,
+    "median_other": 0.09,
+    "in_model": false,
+    "desc": "periplasmic subunit of the TolQRA transport system"
+   }
+  ]
+ },
+ {
+  "condition": "D-Glucuronic Acid",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "glcur"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 1.1648005739710434,
+   "added": [
+    {
+     "id": "GLCURDH",
+     "name": "Glucoronate dehydrogenase",
+     "reaction": "glcur_c + h2o_c + nad_c <=> glcr_c + 2.0 h_c + nadh_c",
+     "transport": false
+    }
+   ],
+   "seconds": 1.1801834106445312
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_3599",
+    "fitness": -3.51,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "5-dehydro-4-deoxyglucarate dehydratase"
+   },
+   {
+    "gene": "PP_4757",
+    "fitness": -3.05,
+    "median_other": -0.03,
+    "in_model": true,
+    "desc": "D-glucarate dehydratase / L-idarate epimerase"
+   },
+   {
+    "gene": "PP_2337",
+    "fitness": -2.81,
+    "median_other": -0.5,
+    "in_model": false,
+    "desc": "aconitate isomerase"
+   },
+   {
+    "gene": "PP_1168",
+    "fitness": -2.77,
+    "median_other": -0.0,
+    "in_model": false,
+    "desc": "putative TRAP dicarboxylate transporter, DctQ subunit"
+   },
+   {
+    "gene": "PP_1171",
+    "fitness": -2.72,
+    "median_other": -0.03,
+    "in_model": true,
+    "desc": "uronate dehydrogenase"
+   },
+   {
+    "gene": "PP_1111",
+    "fitness": -2.64,
+    "median_other": -0.14,
+    "in_model": false,
+    "desc": "putative Synthetase"
+   },
+   {
+    "gene": "PP_1167",
+    "fitness": -2.63,
+    "median_other": -0.02,
+    "in_model": false,
+    "desc": "putative TRAP dicarboxylate transporter, DctM subunit"
+   },
+   {
+    "gene": "PP_1169",
+    "fitness": -2.63,
+    "median_other": 0.0,
+    "in_model": true,
+    "desc": "TRAP dicarboxylate transporter, DctP subunit"
+   },
+   {
+    "gene": "PP_4758",
+    "fitness": -2.56,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "Major facilitator family transporter"
+   },
+   {
+    "gene": "PP_1170",
+    "fitness": -2.5,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "Gluconolactonase"
+   },
+   {
+    "gene": "PP_4759",
+    "fitness": -2.34,
+    "median_other": -0.0,
+    "in_model": false,
+    "desc": "transcriptional regulator, GntR family"
+   },
+   {
+    "gene": "PP_1110",
+    "fitness": -2.3,
+    "median_other": -0.19,
+    "in_model": true,
+    "desc": "serine acetyltransferase"
+   },
+   {
+    "gene": "PP_1109",
+    "fitness": -2.17,
+    "median_other": 0.05,
+    "in_model": false,
+    "desc": "Transcriptional regulator, GntR family"
+   }
+  ]
+ },
+ {
+  "condition": "5-Aminovaleric acid",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "5aptn"
+  ],
+  "exchange_added": [
+   "5aptn"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.651041298103448,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 6.463562965393066
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_2910",
+    "fitness": -3.9,
+    "median_other": -0.03,
+    "in_model": true,
+    "desc": "L-2-hydroxyglutarate oxidase"
+   },
+   {
+    "gene": "PP_0213",
+    "fitness": -3.51,
+    "median_other": 0.01,
+    "in_model": true,
+    "desc": "succinate-semialdehyde dehydrogenase (NADP+)"
+   },
+   {
+    "gene": "PP_0214",
+    "fitness": -2.98,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "4-aminobutyrate aminotransferase"
+   },
+   {
+    "gene": "PP_1568",
+    "fitness": -2.66,
+    "median_other": 0.14,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_3790",
+    "fitness": -2.48,
+    "median_other": -0.95,
+    "in_model": true,
+    "desc": "diaminopimelate epimerase"
+   },
+   {
+    "gene": "PP_1366",
+    "fitness": -2.39,
+    "median_other": -0.34,
+    "in_model": false,
+    "desc": "Transcriptional regulator MvaT, P16 subunit"
+   },
+   {
+    "gene": "PP_3505",
+    "fitness": -2.26,
+    "median_other": -0.5,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_2909",
+    "fitness": -2.22,
+    "median_other": -0.02,
+    "in_model": false,
+    "desc": "carbon starvation induced protein"
+   },
+   {
+    "gene": "PP_0127",
+    "fitness": -2.14,
+    "median_other": -0.45,
+    "in_model": false,
+    "desc": "Thiol:disulfide interchange protein"
+   },
+   {
+    "gene": "PP_0001",
+    "fitness": -2.08,
+    "median_other": -0.48,
+    "in_model": false,
+    "desc": "probable chromosome-partitioning protein"
+   }
+  ]
+ },
+ {
+  "condition": "D-Lysine",
+  "media": "MOPS minimal media_noCarbon",
+  "bigg_ids": [
+   "lys__D"
+  ],
+  "exchange_added": [
+   "lys__D"
+  ],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 3.651041298103448,
+   "added": [
+    {
+     "id": "MECDPDH4E",
+     "name": "",
+     "reaction": "2mecdp_c + fdxrd_c + h_c <=> fdxo_2_2_c + h2mb4p_c + h2o_c",
+     "transport": false
+    },
+    {
+     "id": "OBTFL",
+     "name": "2-Oxobutanoate formate lyase",
+     "reaction": "2obut_c + coa_c --> for_c + ppcoa_c",
+     "transport": false
+    }
+   ],
+   "seconds": 10.901084899902344
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "PP_3591",
+    "fitness": -6.24,
+    "median_other": 0.0,
+    "in_model": true,
+    "desc": "Delta 1-piperideine-2-carboxylate reductase"
+   },
+   {
+    "gene": "PP_4108",
+    "fitness": -5.27,
+    "median_other": 0.13,
+    "in_model": true,
+    "desc": "putative 4-aminobutyrate aminotransferase"
+   },
+   {
+    "gene": "PP_3594",
+    "fitness": -5.12,
+    "median_other": 0.01,
+    "in_model": true,
+    "desc": "Amino acid ABC transporter, membrane protein"
+   },
+   {
+    "gene": "PP_4493",
+    "fitness": -5.12,
+    "median_other": -0.17,
+    "in_model": true,
+    "desc": "putative oxidoreductase"
+   },
+   {
+    "gene": "PP_3593",
+    "fitness": -4.97,
+    "median_other": 0.04,
+    "in_model": true,
+    "desc": "Amino acid ABC transporter, periplasmic binding protein"
+   },
+   {
+    "gene": "PP_3592",
+    "fitness": -4.68,
+    "median_other": 0.01,
+    "in_model": false,
+    "desc": "Transcriptional regulator, RpiR family"
+   },
+   {
+    "gene": "PP_3595",
+    "fitness": -4.53,
+    "median_other": -0.03,
+    "in_model": false,
+    "desc": "Amino acid ABC transporter, membrane protein"
+   },
+   {
+    "gene": "PP_5258",
+    "fitness": -4.36,
+    "median_other": -0.03,
+    "in_model": true,
+    "desc": "L-piperidine-6-carboxylate dehydrogenase"
+   },
+   {
+    "gene": "PP_2088",
+    "fitness": -4.17,
+    "median_other": -0.22,
+    "in_model": false,
+    "desc": "RNA polymerase sigma factor SigX"
+   },
+   {
+    "gene": "PP_5257",
+    "fitness": -3.9,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "L-pipecolate oxidase"
+   },
+   {
+    "gene": "PP_3597",
+    "fitness": -3.84,
+    "median_other": 0.05,
+    "in_model": true,
+    "desc": "Amino-acid ABC transporter, ATP-binding protein"
+   },
+   {
+    "gene": "PP_3596",
+    "fitness": -3.79,
+    "median_other": -0.08,
+    "in_model": true,
+    "desc": "D-lysine oxidase"
+   },
+   {
+    "gene": "PP_0653",
+    "fitness": -3.19,
+    "median_other": -0.12,
+    "in_model": false,
+    "desc": "conserved protein of unknown function"
+   },
+   {
+    "gene": "PP_5260",
+    "fitness": -3.0,
+    "median_other": -0.04,
+    "in_model": false,
+    "desc": "metalloprotein, putative enzyme"
+   },
+   {
+    "gene": "PP_5348",
+    "fitness": -2.58,
+    "median_other": -0.95,
+    "in_model": false,
+    "desc": "Transcriptional regulator, LysR family"
+   },
+   {
+    "gene": "PP_1428",
+    "fitness": -2.41,
+    "median_other": -0.28,
+    "in_model": false,
+    "desc": "Sigma factor AlgU negative regulatory protein"
+   },
+   {
+    "gene": "PP_1109",
+    "fitness": -2.36,
+    "median_other": 0.05,
+    "in_model": false,
+    "desc": "Transcriptional regulator, GntR family"
+   },
+   {
+    "gene": "PP_1111",
+    "fitness": -2.14,
+    "median_other": -0.14,
+    "in_model": false,
+    "desc": "putative Synthetase"
+   },
+   {
+    "gene": "PP_0213",
+    "fitness": -2.03,
+    "median_other": 0.01,
+    "in_model": true,
+    "desc": "succinate-semialdehyde dehydrogenase (NADP+)"
+   }
+  ]
+ }
+]

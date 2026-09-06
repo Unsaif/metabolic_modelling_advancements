@@ -1,0 +1,119 @@
+{
+  "version": "0.4",
+  "created": "2026-09-06",
+  "scope": "gene-rule corrections found while tracing the carbon-source conditions on which the drafts fail to grow (cycle 6, scripts/condition_gapfill.py): genes that the condition-specific fitness data and the RefSeq annotation place in a catabolic pathway but that the draft had assigned to a different reaction (R1 removal there, R4/R6 assignment here). R6 (new): assign an annotated gene to a reaction the draft carries without a gene. Same verifier as v0.2/v0.3: status 'accepted' unless the fitness data contradict the change.",
+  "patches": [
+    {
+      "org": "Smeli",
+      "reaction": "MAN6PI",
+      "new_rule": "SMc03111",
+      "rule": "R1+R4",
+      "note": "the draft's gene SM_b21581 is a 'glycosyltransferase family 4 protein'; SMc03111 (SM_RS15275, pmi, 'mannose-6-phosphate isomerase Pmi') is the strongest mannose-specific fitness gene (-7.3) and was absent from the draft",
+      "status": "accepted"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "ACGAMK",
+      "new_rule": "SMc02880 or SMc02875",
+      "rule": "R4",
+      "note": "SMc02875 (SM_RS01030, 'N-acetylglucosamine kinase', nag cluster) added next to the ROK-family kinase SMc02880 the draft had",
+      "status": "accepted"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "GF6PTA",
+      "new_rule": "SMa0878",
+      "rule": "R1",
+      "note": "glutamine-fructose-6-phosphate transaminase is glmS (SMa0878); SMc02877 is the SIS-domain glucosamine-6-phosphate deaminase of the nag cluster (now on G6PDA, model_patches_v0.3) and SMc02610 a generic class II glutamine amidotransferase",
+      "status": "accepted"
+    },
+    {
+      "org": "MR1",
+      "reaction": "GF6PTA",
+      "new_rule": "SO4741",
+      "rule": "R1",
+      "note": "glmS is SO4741; SO3506 is nagB-II (glucosamine-6-phosphate deaminase, now on G6PDA)",
+      "status": "accepted"
+    },
+    {
+      "org": "MR1",
+      "reaction": "ACGAMK",
+      "new_rule": "SO3507",
+      "rule": "R6",
+      "note": "the draft carries N-acetylglucosamine kinase without a gene; SO3507 (SO_RS16395, nagK, 'N-acetylglucosamine kinase') is a GlcNAc-specific fitness gene (-6.1)",
+      "status": "accepted"
+    },
+    {
+      "org": "Putida",
+      "reaction": "TDPGDH",
+      "new_rule": "PP_1785",
+      "rule": "R1",
+      "note": "dTDP-glucose 4,6-dehydratase is rfbB (PP_1785); PP_1171 is the uronate dehydrogenase (now on GALURDH/GLCURDH) and PP_1779 an ABC-transporter ATP-binding protein",
+      "status": "accepted"
+    },
+    {
+      "org": "Putida",
+      "reaction": "GALURt2rpp",
+      "new_rule": "PP_2366 or PP_2604 or (PP_1167 and PP_1168 and PP_1169)",
+      "rule": "R4",
+      "note": "the TRAP transporter PP_1167 (large permease), PP_1168 (small permease), PP_1169 (substrate-binding protein) is the galacturonate/glucuronate uptake system the fitness data name (-5.2 to -6.2 on galacturonate); kept next to the two MFS transporters the draft had",
+      "status": "accepted"
+    },
+    {
+      "org": "Putida",
+      "reaction": "GLCURt2rpp",
+      "new_rule": "PP_2366 or PP_2604 or (PP_1167 and PP_1168 and PP_1169)",
+      "rule": "R4",
+      "note": "as GALURt2rpp",
+      "status": "accepted"
+    },
+    {
+      "org": "Putida",
+      "reaction": "SUCCabc",
+      "new_rule": "",
+      "rule": "R1/R5",
+      "note": "PP_1169 is the substrate-binding protein of the hexuronate TRAP transporter, not a succinate ABC transporter; the reaction keeps no gene",
+      "status": "accepted"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "ASPO2y",
+      "new_rule": "BT3184",
+      "rule": "R6",
+      "note": "gene-less reference gap-fill (L-aspartate oxidase, NAD synthesis); BT3184 (BT_RS16120, nadB, 'L-aspartate oxidase')",
+      "status": "accepted"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "DHORD6",
+      "new_rule": "BT0892 and BT0891",
+      "rule": "R6",
+      "note": "gene-less reference gap-fill (NAD-dependent dihydroorotate dehydrogenase); BT0892 (BT_RS04470, 'dihydroorotate dehydrogenase') with its electron-transfer subunit BT0891 (BT_RS04465), the two-subunit PyrDB/PyrK type that the NAD-dependent reaction describes",
+      "status": "accepted"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "PDX5PO2",
+      "new_rule": "BT1577",
+      "rule": "R6",
+      "note": "gene-less reference gap-fill (pyridoxine 5'-phosphate oxidase); BT1577 (BT_RS07975, pdxH)",
+      "status": "accepted"
+    },
+    {
+      "org": "Btheta",
+      "reaction": "OCBT_2",
+      "new_rule": "BT3717",
+      "rule": "R6",
+      "note": "gene-less reference gap-fill (ornithine carbamoyltransferase); Bacteroides carbamoylate N-acetylornithine (BT3717, BT_RS18740, 'acetylornithine carbamoyltransferase', argF') and deacetylate afterwards — the universe lacks the acetylated intermediates, so the gene is placed on the lumped ornithine step (recorded as a lumping)",
+      "status": "accepted"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "DXPS",
+      "new_rule": "SMc00972",
+      "rule": "R6",
+      "note": "gene-less reference gap-fill (1-deoxy-D-xylulose-5-phosphate synthase); SMc00972 (SM_RS04490, dxs)",
+      "status": "accepted"
+    }
+  ]
+}

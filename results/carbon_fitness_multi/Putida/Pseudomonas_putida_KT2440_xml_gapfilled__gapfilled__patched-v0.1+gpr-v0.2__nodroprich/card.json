@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Putida",
-  "created": "2026-09-05T17:23:55Z",
+  "created": "2026-09-06T08:44:57Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Putida'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -23,6 +23,7 @@
     "variant": "gapfilled",
     "patches": {
       "file": "data/reference/universe_patches_v0.1.json",
+      "model_file": null,
       "gpr_file": "data/reference/gpr_patches_v0.2.json",
       "applied": [
         {
@@ -41,6 +42,7 @@
           "gpr_before": "NP_742587_1 or NP_746127_1",
           "gpr_after": "NP_742587_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -48,6 +50,7 @@
           "gpr_before": "NP_742888_1 or (NP_742583_1 and NP_742586_1)",
           "gpr_after": "NP_742583_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -55,6 +58,7 @@
           "gpr_before": "NP_746602_1 or NP_747229_1",
           "gpr_after": "NP_747229_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -62,6 +66,7 @@
           "gpr_before": "NP_746602_1 or NP_747229_1",
           "gpr_after": "NP_747229_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -69,6 +74,7 @@
           "gpr_before": "NP_743247_1 or NP_747101_1",
           "gpr_after": "NP_743247_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -76,6 +82,7 @@
           "gpr_before": "NP_743864_1 or NP_744678_1 or NP_746432_1 or NP_747256_1",
           "gpr_after": "NP_747256_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         },
         {
@@ -83,6 +90,7 @@
           "gpr_before": "NP_742426_1 or NP_747012_1 or NP_747248_1",
           "gpr_after": "NP_747012_1",
           "rule": "R1",
+          "status": "accepted",
           "genes_added": []
         }
       ]
@@ -96,7 +104,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -135,17 +150,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.3886526570561616,
+        "point": 0.3862018564902992,
         "ci95": [
-          0.27882310769862256,
-          0.49108333476955995
+          0.2779561062352728,
+          0.4844925826631181
         ]
       },
       "auroc_standard": {
-        "point": 0.7513022230264605,
+        "point": 0.7512609190921802,
         "ci95": [
-          0.6908194413114243,
-          0.800707116416656
+          0.6909305775626354,
+          0.8006515416360906
         ]
       },
       "mcc": {
@@ -188,17 +203,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.16479966074599914,
+        "point": 0.16637538750605765,
         "ci95": [
-          0.1203248284392067,
-          0.20912813546078726
+          0.12334656665729563,
+          0.21168831293515533
         ]
       },
       "auroc_standard": {
-        "point": 0.658215942668434,
+        "point": 0.6587464927036766,
         "ci95": [
-          0.6162162900494034,
-          0.6902983816475108
+          0.6169865261072919,
+          0.6927002010111306
         ]
       },
       "mcc": {
@@ -246,12 +261,13 @@
       "genes_after_adjustment": 1038,
       "conditions_total": 57,
       "conditions_mapped": 43,
-      "conditions_wt_grows": 28
+      "conditions_wt_grows": 28,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
       "rich_medium_essentials_s": 1.430511474609375e-06,
-      "knockout_simulation_s": 53.41127634048462,
-      "total_s": 53.63790845870972
+      "knockout_simulation_s": 117.26300048828125,
+      "total_s": 117.88946962356567
     },
     "dropped_rich_medium_essentials": 0
   },

@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Smeli",
-  "created": "2026-09-05T17:12:43Z",
+  "created": "2026-09-06T09:11:53Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Smeli'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -23,6 +23,7 @@
     "variant": "gapfilled",
     "patches": {
       "file": "data/reference/universe_patches_v0.1.json",
+      "model_file": null,
       "gpr_file": "data/reference/gpr_patches_v0.2.json",
       "applied": [
         {
@@ -45,85 +46,113 @@
           "reaction": "UMPK",
           "gpr_before": "NP_384360_1 or NP_385603_1",
           "gpr_after": "NP_385603_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "GARFT",
           "gpr_before": "NP_385289_1 or NP_386086_1",
           "gpr_after": "NP_385289_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "PGCD",
           "gpr_before": "NP_384366_1 or NP_386340_1 or NP_386663_1 or NP_386836_1 or NP_436410_1",
           "gpr_after": "NP_386836_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "HSERTA",
           "gpr_before": "NP_385354_1 or NP_387286_1 or NP_437810_2",
           "gpr_after": "NP_387286_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "IMPD",
           "gpr_before": "NP_384866_1 or NP_435580_1 or NP_435834_1",
           "gpr_after": "NP_384866_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "IPPMIa",
           "gpr_before": "NP_387312_1 or (NP_387284_1 and NP_387312_1)",
           "gpr_after": "NP_387284_1 and NP_387312_1",
-          "rule": "R2"
+          "rule": "R2",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "IPPMIb",
           "gpr_before": "NP_387312_1 or (NP_387284_1 and NP_387312_1)",
           "gpr_after": "NP_387284_1 and NP_387312_1",
-          "rule": "R2"
+          "rule": "R2",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "IPPS",
           "gpr_before": "NP_385222_1 or NP_386485_3",
           "gpr_after": "NP_386485_3",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "METS",
           "gpr_before": "NP_386092_1 or NP_387087_1",
           "gpr_after": "NP_387087_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "PPND",
           "gpr_before": "NP_384359_1 or NP_386767_1 or NP_387347_1",
           "gpr_after": "NP_386767_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "PRAGSr",
           "gpr_before": "NP_384964_1 or NP_385290_1",
           "gpr_after": "NP_384964_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "PRATPP",
           "gpr_before": "NP_384156_1 or NP_385525_1",
           "gpr_after": "NP_384156_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "PYK",
           "gpr_before": "NP_385250_1 or NP_386895_1",
           "gpr_after": "NP_386895_1",
-          "rule": "R1"
+          "rule": "R1",
+          "status": "accepted",
+          "genes_added": []
         },
         {
           "reaction": "SADT2",
           "gpr_before": "NP_385460_1 or (NP_385048_1 and NP_385049_1) or (NP_385048_1 and NP_435714_1)",
           "gpr_after": "NP_385048_1 and NP_385049_1",
-          "rule": "R1+R2"
+          "rule": "R1+R2",
+          "status": "accepted",
+          "genes_added": []
         }
       ]
     },
@@ -136,7 +165,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -175,17 +211,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.5104674902231718,
+        "point": 0.5087386152911402,
         "ci95": [
-          0.38977875294264225,
-          0.6007469428806456
+          0.3899723588205477,
+          0.601243277047567
         ]
       },
       "auroc_standard": {
-        "point": 0.7332013371878415,
+        "point": 0.7325862407816986,
         "ci95": [
-          0.6730495986982353,
-          0.7817660723629484
+          0.6727597791816604,
+          0.7811172009664493
         ]
       },
       "mcc": {
@@ -228,17 +264,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.22618387927558664,
+        "point": 0.21070146179123556,
         "ci95": [
-          0.17458883005483417,
-          0.26878999504565865
+          0.15620814384983628,
+          0.2567213630426936
         ]
       },
       "auroc_standard": {
-        "point": 0.656436558291865,
+        "point": 0.6549174482665888,
         "ci95": [
-          0.6160483209186215,
-          0.688671944408139
+          0.6142770046696513,
+          0.6865000879447881
         ]
       },
       "mcc": {
@@ -286,12 +322,13 @@
       "genes_after_adjustment": 954,
       "conditions_total": 33,
       "conditions_mapped": 33,
-      "conditions_wt_grows": 21
+      "conditions_wt_grows": 21,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 2.3804290294647217,
-      "knockout_simulation_s": 39.57770085334778,
-      "total_s": 42.3326952457428
+      "rich_medium_essentials_s": 5.266183614730835,
+      "knockout_simulation_s": 88.56570768356323,
+      "total_s": 94.5303041934967
     },
     "dropped_rich_medium_essentials": 25
   },

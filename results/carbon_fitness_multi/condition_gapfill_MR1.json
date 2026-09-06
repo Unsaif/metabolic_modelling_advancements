@@ -1,0 +1,723 @@
+[
+ {
+  "condition": "Sodium propionate",
+  "media": "ShewMM_noCarbon",
+  "bigg_ids": [
+   "ppa"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.7020290719867579,
+   "added": [
+    {
+     "id": "ATPS4rpp",
+     "name": "ATP synthase (four protons for one ATP) (periplasm)",
+     "reaction": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+     "transport": true
+    }
+   ],
+   "seconds": 5.0275914669036865
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SO2648",
+    "fitness": -6.25,
+    "median_other": 0.39,
+    "in_model": false,
+    "desc": "DNA-binding response regulator, LuxR family (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0344",
+    "fitness": -6.16,
+    "median_other": -0.25,
+    "in_model": true,
+    "desc": "methylcitrate synthase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0346",
+    "fitness": -5.84,
+    "median_other": 0.06,
+    "in_model": false,
+    "desc": "transcriptional regulator. GntR family (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0345",
+    "fitness": -5.51,
+    "median_other": -0.32,
+    "in_model": true,
+    "desc": "methylisocitrate lyase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3173",
+    "fitness": -5.33,
+    "median_other": -0.91,
+    "in_model": true,
+    "desc": "UDP-galactose 4-epimerase, putative (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1622",
+    "fitness": -5.32,
+    "median_other": -0.18,
+    "in_model": true,
+    "desc": "hypothetical flavodoxin (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3189",
+    "fitness": -5.3,
+    "median_other": -0.14,
+    "in_model": false,
+    "desc": "polysaccharide biosynthesis protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3191",
+    "fitness": -5.28,
+    "median_other": -0.66,
+    "in_model": false,
+    "desc": "chain length determinant protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0617",
+    "fitness": -5.23,
+    "median_other": -0.91,
+    "in_model": true,
+    "desc": "acetylornithine aminotransferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3171",
+    "fitness": -5.11,
+    "median_other": -0.35,
+    "in_model": false,
+    "desc": "polysaccharide biosynthesis protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1938",
+    "fitness": -5.01,
+    "median_other": -0.06,
+    "in_model": false,
+    "desc": "cobB protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO_A0177",
+    "fitness": -4.96,
+    "median_other": -0.11,
+    "in_model": false,
+    "desc": "bacteriocin-like peptide (NCBI)"
+   },
+   {
+    "gene": "SO3172",
+    "fitness": -4.95,
+    "median_other": 1.1,
+    "in_model": false,
+    "desc": "galactosyl transferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3177",
+    "fitness": -4.89,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "formyl transferase domain protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1681",
+    "fitness": -4.87,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "enoyl-CoA hydratase/isomerase family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3176",
+    "fitness": -4.68,
+    "median_other": -0.58,
+    "in_model": false,
+    "desc": "glycosyl transferase, group 1 family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3184",
+    "fitness": -4.61,
+    "median_other": -0.2,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3179",
+    "fitness": -4.57,
+    "median_other": 0.38,
+    "in_model": false,
+    "desc": "lipopolysaccharide biosynthesis polymerase, putative (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3180",
+    "fitness": -4.57,
+    "median_other": -0.55,
+    "in_model": false,
+    "desc": "glycosyl transferase, group 2 family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3175",
+    "fitness": -4.56,
+    "median_other": -0.46,
+    "in_model": true,
+    "desc": "asparagine synthetase, glutamine-hydrolyzing (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3190",
+    "fitness": -4.49,
+    "median_other": -0.43,
+    "in_model": false,
+    "desc": "polysaccharide biosynthesis protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2238",
+    "fitness": -4.49,
+    "median_other": 0.92,
+    "in_model": true,
+    "desc": "phosphocarrier protein HPr (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3183",
+    "fitness": -4.48,
+    "median_other": -0.66,
+    "in_model": false,
+    "desc": "perosamine synthetase-related protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2742",
+    "fitness": -4.41,
+    "median_other": 0.46,
+    "in_model": false,
+    "desc": "sensor histidine kinase/response regulator (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3174",
+    "fitness": -4.37,
+    "median_other": -0.23,
+    "in_model": false,
+    "desc": "glycosyl transferase, group 1 family protein (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "N-Acetyl-D-Glucosamine",
+  "media": "ShewMM_noCarbon",
+  "bigg_ids": [
+   "acgam"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.29886536404447306,
+   "added": [
+    {
+     "id": "G6PDA",
+     "name": "Glucosamine-6-phosphate deaminase",
+     "reaction": "gam6p_c + h2o_c --> f6p_c + nh4_c",
+     "transport": false
+    }
+   ],
+   "seconds": 4.613306999206543
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SO3506",
+    "fitness": -6.67,
+    "median_other": -0.1,
+    "in_model": true,
+    "desc": "SIS domain protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3189",
+    "fitness": -6.43,
+    "median_other": -0.14,
+    "in_model": false,
+    "desc": "polysaccharide biosynthesis protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3505",
+    "fitness": -6.11,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "N-acetylglucosamine-6-phosphate deacetylase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3507",
+    "fitness": -6.05,
+    "median_other": -0.06,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3172",
+    "fitness": -5.49,
+    "median_other": 1.1,
+    "in_model": false,
+    "desc": "galactosyl transferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3175",
+    "fitness": -5.37,
+    "median_other": -0.46,
+    "in_model": true,
+    "desc": "asparagine synthetase, glutamine-hydrolyzing (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2489",
+    "fitness": -5.12,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "glucose-6-phosphate 1-dehydrogenase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3179",
+    "fitness": -5.0,
+    "median_other": 0.38,
+    "in_model": false,
+    "desc": "lipopolysaccharide biosynthesis polymerase, putative (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3503",
+    "fitness": -4.75,
+    "median_other": 0.07,
+    "in_model": true,
+    "desc": "glucose/galactose transporter (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3191",
+    "fitness": -4.6,
+    "median_other": -0.66,
+    "in_model": false,
+    "desc": "chain length determinant protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0617",
+    "fitness": -4.3,
+    "median_other": -0.91,
+    "in_model": true,
+    "desc": "acetylornithine aminotransferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3193",
+    "fitness": -4.17,
+    "median_other": -0.29,
+    "in_model": false,
+    "desc": "polysaccharide biosynthesis protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3176",
+    "fitness": -4.09,
+    "median_other": -0.58,
+    "in_model": false,
+    "desc": "glycosyl transferase, group 1 family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1346",
+    "fitness": -3.82,
+    "median_other": -0.99,
+    "in_model": false,
+    "desc": "GTP-binding protein LepA (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3185",
+    "fitness": -3.78,
+    "median_other": -0.25,
+    "in_model": false,
+    "desc": "polysaccharide biosynthesis protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3173",
+    "fitness": -3.75,
+    "median_other": -0.91,
+    "in_model": true,
+    "desc": "UDP-galactose 4-epimerase, putative (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3182",
+    "fitness": -3.64,
+    "median_other": -0.17,
+    "in_model": false,
+    "desc": "acetyltransferase, GNAT family (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2640",
+    "fitness": -3.63,
+    "median_other": -0.91,
+    "in_model": false,
+    "desc": "transcriptional regulator, MarR family (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3180",
+    "fitness": -3.59,
+    "median_other": -0.55,
+    "in_model": false,
+    "desc": "glycosyl transferase, group 2 family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2487",
+    "fitness": -3.5,
+    "median_other": 0.55,
+    "in_model": true,
+    "desc": "6-phosphogluconate dehydratase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3184",
+    "fitness": -3.46,
+    "median_other": -0.2,
+    "in_model": false,
+    "desc": "conserved hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3639",
+    "fitness": -3.39,
+    "median_other": -0.71,
+    "in_model": false,
+    "desc": "dimethyladenosine transferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3177",
+    "fitness": -3.38,
+    "median_other": -0.64,
+    "in_model": true,
+    "desc": "formyl transferase domain protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3186",
+    "fitness": -3.35,
+    "median_other": -0.19,
+    "in_model": true,
+    "desc": "glucose-1-phosphate-thymidylyltransferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0872",
+    "fitness": -3.35,
+    "median_other": -0.43,
+    "in_model": false,
+    "desc": "polyA polymerase (NCBI ptt file)"
+   }
+  ]
+ },
+ {
+  "condition": "Inosine",
+  "media": "ShewMM_noCarbon",
+  "bigg_ids": [
+   "ins"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.46241206416329905,
+   "added": [
+    {
+     "id": "INSt2",
+     "name": "Inosine transport in via proton symport",
+     "reaction": "h_e + ins_e --> h_c + ins_c",
+     "transport": true
+    }
+   ],
+   "seconds": 1.7008721828460693
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SO1039",
+    "fitness": -5.09,
+    "median_other": -0.96,
+    "in_model": true,
+    "desc": "cob(I)alamin adenosyltransferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2489",
+    "fitness": -5.0,
+    "median_other": 0.03,
+    "in_model": true,
+    "desc": "glucose-6-phosphate 1-dehydrogenase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1214",
+    "fitness": -4.55,
+    "median_other": -0.02,
+    "in_model": true,
+    "desc": "NupC family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2772",
+    "fitness": -3.41,
+    "median_other": -0.63,
+    "in_model": true,
+    "desc": "cytosolic long-chain acyl-CoA thioester hydrolase family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2629",
+    "fitness": -3.38,
+    "median_other": -0.45,
+    "in_model": true,
+    "desc": "isocitrate dehydrogenase, NADP-dependent (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1219",
+    "fitness": -3.28,
+    "median_other": -0.27,
+    "in_model": true,
+    "desc": "phosphopentomutase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2487",
+    "fitness": -3.26,
+    "median_other": 0.55,
+    "in_model": true,
+    "desc": "6-phosphogluconate dehydratase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1218",
+    "fitness": -3.11,
+    "median_other": -0.28,
+    "in_model": true,
+    "desc": "thymidine phosphorylase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2712",
+    "fitness": -3.11,
+    "median_other": -0.53,
+    "in_model": false,
+    "desc": "hypothetical protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0617",
+    "fitness": -2.9,
+    "median_other": -0.91,
+    "in_model": true,
+    "desc": "acetylornithine aminotransferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3986",
+    "fitness": -2.44,
+    "median_other": -0.59,
+    "in_model": true,
+    "desc": "aspartokinase III, lysine-sensitive (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1217",
+    "fitness": -2.32,
+    "median_other": -0.37,
+    "in_model": true,
+    "desc": "deoxyribose-phosphate aldolase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1215",
+    "fitness": -2.19,
+    "median_other": 0.5,
+    "in_model": true,
+    "desc": "outer membrane protein OmpK, putative (NCBI ptt file)"
+   },
+   {
+    "gene": "SO_3068",
+    "fitness": -2.0,
+    "median_other": -0.77,
+    "in_model": false,
+    "desc": ""
+   }
+  ]
+ },
+ {
+  "condition": "L-Isoleucine",
+  "media": "ShewMM_noCarbon",
+  "bigg_ids": [
+   "ile__L"
+  ],
+  "exchange_added": [],
+  "gapfill": {
+   "status": "Optimal",
+   "growth_after": 0.7257600233489555,
+   "added": [
+    {
+     "id": "ATPS4rpp",
+     "name": "ATP synthase (four protons for one ATP) (periplasm)",
+     "reaction": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+     "transport": true
+    },
+    {
+     "id": "GCDH",
+     "name": "",
+     "reaction": "glutcoa_c <=> b2coa_c + co2_c + h_c",
+     "transport": false
+    }
+   ],
+   "seconds": 14.22822642326355
+  },
+  "condition_specific_genes": [
+   {
+    "gene": "SO1265",
+    "fitness": -6.49,
+    "median_other": -0.52,
+    "in_model": false,
+    "desc": "transcriptional regulator, putative (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3986",
+    "fitness": -5.93,
+    "median_other": -0.59,
+    "in_model": true,
+    "desc": "aspartokinase III, lysine-sensitive (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1484",
+    "fitness": -5.74,
+    "median_other": -0.07,
+    "in_model": true,
+    "desc": "isocitrate lyase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2638",
+    "fitness": -5.65,
+    "median_other": 0.63,
+    "in_model": true,
+    "desc": "leucine dehydrogenase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2333",
+    "fitness": -5.64,
+    "median_other": -0.72,
+    "in_model": false,
+    "desc": "hydrolase, alpha/beta fold family (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0344",
+    "fitness": -5.42,
+    "median_other": -0.25,
+    "in_model": true,
+    "desc": "methylcitrate synthase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2280",
+    "fitness": -5.3,
+    "median_other": 0.07,
+    "in_model": false,
+    "desc": "bicyclomycin resistance protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1678",
+    "fitness": -5.26,
+    "median_other": 0.19,
+    "in_model": true,
+    "desc": "methylmalonate-semialdehyde dehydrogenase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2339",
+    "fitness": -5.24,
+    "median_other": 0.11,
+    "in_model": false,
+    "desc": "alpha keto acid dehydrogenase complex, E1 component, alpha subunit (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1679",
+    "fitness": -5.2,
+    "median_other": 0.04,
+    "in_model": true,
+    "desc": "acyl-CoA dehydrogenase family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO2340",
+    "fitness": -5.2,
+    "median_other": 0.1,
+    "in_model": false,
+    "desc": "alpha keto acid dehydrogenase complex, E1 component, beta subunit (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3145",
+    "fitness": -5.12,
+    "median_other": 0.3,
+    "in_model": false,
+    "desc": "electron transfer flavoprotein, beta subunit (NCBI ptt file)"
+   },
+   {
+    "gene": "SO4488",
+    "fitness": -5.11,
+    "median_other": -0.56,
+    "in_model": false,
+    "desc": "sensor histidine kinase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3144",
+    "fitness": -5.04,
+    "median_other": 0.29,
+    "in_model": false,
+    "desc": "electron transfer flavoprotein, alpha subunit (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3363",
+    "fitness": -5.01,
+    "median_other": -0.63,
+    "in_model": false,
+    "desc": "transcriptional regulator, LysR family (NCBI ptt file)"
+   },
+   {
+    "gene": "SO3799",
+    "fitness": -5.01,
+    "median_other": -0.46,
+    "in_model": false,
+    "desc": "regulatory protein AsnC (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1681",
+    "fitness": -4.99,
+    "median_other": -0.98,
+    "in_model": false,
+    "desc": "enoyl-CoA hydratase/isomerase family protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO4453",
+    "fitness": -4.99,
+    "median_other": 0.44,
+    "in_model": false,
+    "desc": "electron transfer flavoprotein-ubiquinone oxidoreductase, putative (NCBI ptt file)"
+   },
+   {
+    "gene": "SO_1206",
+    "fitness": -4.97,
+    "median_other": -0.28,
+    "in_model": false,
+    "desc": ""
+   },
+   {
+    "gene": "SO0346",
+    "fitness": -4.94,
+    "median_other": 0.06,
+    "in_model": false,
+    "desc": "transcriptional regulator. GntR family (NCBI ptt file)"
+   },
+   {
+    "gene": "SO4672",
+    "fitness": -4.89,
+    "median_other": -0.4,
+    "in_model": false,
+    "desc": "glpE protein (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1677",
+    "fitness": -4.87,
+    "median_other": -0.08,
+    "in_model": true,
+    "desc": "acetyl-CoA acetyltransferase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO1878",
+    "fitness": -4.86,
+    "median_other": 1.13,
+    "in_model": false,
+    "desc": "glycine cleavage system transcriptional repressor, putative (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0345",
+    "fitness": -4.85,
+    "median_other": -0.32,
+    "in_model": true,
+    "desc": "methylisocitrate lyase (NCBI ptt file)"
+   },
+   {
+    "gene": "SO0878",
+    "fitness": -4.79,
+    "median_other": -0.29,
+    "in_model": false,
+    "desc": "phosphoribulokinase (NCBI ptt file)"
+   }
+  ]
+ }
+]

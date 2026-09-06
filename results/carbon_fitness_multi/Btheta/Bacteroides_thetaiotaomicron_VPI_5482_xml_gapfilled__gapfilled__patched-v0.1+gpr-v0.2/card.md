@@ -1,6 +1,6 @@
 # Benchmark card — carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Btheta
 
-Created: 2026-09-05T17:27:34Z
+Created: 2026-09-06T09:06:25Z
 
 ## Model
 
@@ -25,8 +25,8 @@ Created: 2026-09-05T17:27:34Z
 ## Protocol
 
 - variant: gapfilled
-- patches: {"file": "data/reference/universe_patches_v0.1.json", "gpr_file": "data/reference/gpr_patches_v0.2.json", "applied": [{"reaction": "CBPS", "gpr_before": "NP_809470_1 or (NP_809469_1 and NP_809470_1)", "gpr_after": "NP_809469_1 and NP_809470_1"}, {"reaction": "ACLS", "gpr_before": "NP_810990_1 or (NP_809485_1 and NP_810990_1) or (NP_810989_1 and NP_810990_1)", "gpr_after": "NP_810989_1 and NP_81099 …
-- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": true, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null}
+- patches: {"file": "data/reference/universe_patches_v0.1.json", "model_file": null, "gpr_file": "data/reference/gpr_patches_v0.2.json", "applied": [{"reaction": "CBPS", "gpr_before": "NP_809470_1 or (NP_809469_1 and NP_809470_1)", "gpr_after": "NP_809469_1 and NP_809470_1"}, {"reaction": "PPCK", "bounds_before": [0.0, 1000.0], "bounds_after": [-1000.0, 1000.0]}, {"reaction": "ACLS", "gpr_before": "NP_810990 …
+- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": true, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null, "complete_medium_transport": false, "medium_completion_exclude": ["pnto__R", "fol", "hco3"], "genes_subset": null}
 - media_mapping: data/reference/fitness_browser_media_bigg.tsv
 - carbon_source_mapping: data/reference/fitness_browser_carbon_sources_bigg.tsv
 - gene_mapping: {"method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed", "genpept_table": "data/genpept/Btheta_genpept_map.tsv"}
@@ -44,11 +44,11 @@ Created: 2026-09-05T17:27:34Z
 ## Results
 
 - condition_level: {"n_conditions_mapped": 25, "n_conditions_wt_grows": 14, "wt_growth_recall": 0.56, "conditions_with_absent_exchange": 9}
-- gene_level_conditions_where_wt_grows: {"n_genes": 471, "n_conditions": 14, "n_gene_condition_pairs": 6594, "aucpr_bernstein": {"point": 0.5262221070900049, "ci95": [0.3484262611587561, 0.672198596619809]}, "aucpr_standard": {"point": 0.46717998117297654, "ci95": [0.3411975742562835, 0.5826322257827595]}, "auroc_standard": {"point": 0.7143093783931893, "ci95": [0.6516333591436061, 0.7786233820021334]}, "mcc": {"point": 0.55537644840696 …
-- gene_level_all_mapped_conditions: {"n_genes": 471, "n_conditions": 25, "n_gene_condition_pairs": 11775, "aucpr_bernstein": {"point": 0.5293650259833411, "ci95": [0.4950948425691736, 0.5672803984578797]}, "aucpr_standard": {"point": 0.20675756479570143, "ci95": [0.15593931324987775, 0.2547480310431204]}, "auroc_standard": {"point": 0.6143916552827444, "ci95": [0.5762770572123638, 0.6526521134262915]}, "mcc": {"point": 0.12662978466 …
+- gene_level_conditions_where_wt_grows: {"n_genes": 471, "n_conditions": 14, "n_gene_condition_pairs": 6594, "aucpr_bernstein": {"point": 0.5262221070900049, "ci95": [0.3484262611587561, 0.672198596619809]}, "aucpr_standard": {"point": 0.4705858102207794, "ci95": [0.34879132875484176, 0.5878662088669443]}, "auroc_standard": {"point": 0.7156634709996272, "ci95": [0.6537376787655648, 0.7783820270769267]}, "mcc": {"point": 0.55537644840696 …
+- gene_level_all_mapped_conditions: {"n_genes": 471, "n_conditions": 25, "n_gene_condition_pairs": 11775, "aucpr_bernstein": {"point": 0.5293650259833411, "ci95": [0.4950948425691736, 0.5672803984578797]}, "aucpr_standard": {"point": 0.18972363891927416, "ci95": [0.1422560700597043, 0.235136510917394]}, "auroc_standard": {"point": 0.607979706395548, "ci95": [0.5706939989966442, 0.6434527361009333]}, "mcc": {"point": 0.12662978466933 …
 - gene_map: {"model_genes": 676, "mapped": 675, "matched_by_version": 674, "matched_by_accession_only": 0, "no_genpept_record": 1, "locus_tag_not_in_browser": 0, "browser_genes_hit": 675, "mapped_with_fitness_data": 508}
-- counts: {"model_genes": 676, "model_genes_mapped": 675, "genes_with_fitness": 508, "genes_after_adjustment": 471, "conditions_total": 47, "conditions_mapped": 25, "conditions_wt_grows": 14}
-- timings_s: {"rich_medium_essentials_s": 0.8765828609466553, "knockout_simulation_s": 9.056827306747437, "total_s": 10.194560289382935}
+- counts: {"model_genes": 676, "model_genes_mapped": 675, "genes_with_fitness": 508, "genes_after_adjustment": 471, "conditions_total": 47, "conditions_mapped": 25, "conditions_wt_grows": 14, "medium_completion_exchanges_added": 0}
+- timings_s: {"rich_medium_essentials_s": 1.8704700469970703, "knockout_simulation_s": 21.009132862091064, "total_s": 23.340235233306885}
 - dropped_rich_medium_essentials: 37
 
 ## Warnings

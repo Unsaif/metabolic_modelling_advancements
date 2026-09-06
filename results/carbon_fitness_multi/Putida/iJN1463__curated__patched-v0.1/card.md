@@ -1,6 +1,6 @@
 # Benchmark card — carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Putida
 
-Created: 2026-09-05T13:38:00Z
+Created: 2026-09-06T09:26:29Z
 
 ## Model
 
@@ -25,8 +25,8 @@ Created: 2026-09-05T13:38:00Z
 ## Protocol
 
 - variant: curated
-- patches: {"file": "data/reference/universe_patches_v0.1.json", "applied": [{"reaction": "CBMKr", "bounds_before": [-999999.0, 999999.0], "bounds_after": [-1000.0, 0.0]}]}
-- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": true, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null}
+- patches: {"file": "data/reference/universe_patches_v0.1.json", "model_file": null, "gpr_file": null, "applied": [{"reaction": "CBMKr", "bounds_before": [-999999.0, 999999.0], "bounds_after": [-1000.0, 0.0]}]}
+- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": true, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null, "complete_medium_transport": false, "medium_completion_exclude": ["pnto__R", "fol", "hco3"], "genes_subset": null}
 - media_mapping: data/reference/fitness_browser_media_bigg.tsv
 - carbon_source_mapping: data/reference/fitness_browser_carbon_sources_bigg.tsv
 - gene_mapping: {"method": "identity (BiGG gene ids are locus tags)"}
@@ -44,11 +44,11 @@ Created: 2026-09-05T13:38:00Z
 ## Results
 
 - condition_level: {"n_conditions_mapped": 43, "n_conditions_wt_grows": 36, "wt_growth_recall": 0.8372093023255814, "conditions_with_absent_exchange": 7}
-- gene_level_conditions_where_wt_grows: {"n_genes": 1121, "n_conditions": 36, "n_gene_condition_pairs": 40356, "aucpr_bernstein": {"point": 0.49998820949575395, "ci95": [0.4104442657004319, 0.5862601737833001]}, "aucpr_standard": {"point": 0.36293822951592036, "ci95": [0.27381530009633565, 0.449138773860322]}, "auroc_standard": {"point": 0.8063023490319169, "ci95": [0.75779725614836, 0.8501060274473815]}, "mcc": {"point": 0.509707353713 …
-- gene_level_all_mapped_conditions: {"n_genes": 1121, "n_conditions": 43, "n_gene_condition_pairs": 48203, "aucpr_bernstein": {"point": 0.4206787302060703, "ci95": [0.3704394555818997, 0.46652739806576987]}, "aucpr_standard": {"point": 0.22963757130391227, "ci95": [0.17551654671349087, 0.28452504742685686]}, "auroc_standard": {"point": 0.7606376684729996, "ci95": [0.7193046019363278, 0.7967457172387744]}, "mcc": {"point": 0.28265966 …
+- gene_level_conditions_where_wt_grows: {"n_genes": 1121, "n_conditions": 36, "n_gene_condition_pairs": 40356, "aucpr_bernstein": {"point": 0.5009953950860434, "ci95": [0.41258784716636177, 0.5868120867116539]}, "aucpr_standard": {"point": 0.35002560387217935, "ci95": [0.26523129567606485, 0.4331280690199715]}, "auroc_standard": {"point": 0.8170263320830541, "ci95": [0.7703116179273342, 0.8579430372601052]}, "mcc": {"point": 0.510432116 …
+- gene_level_all_mapped_conditions: {"n_genes": 1121, "n_conditions": 43, "n_gene_condition_pairs": 48203, "aucpr_bernstein": {"point": 0.42121033655554885, "ci95": [0.3709302009130014, 0.4668266954535731]}, "aucpr_standard": {"point": 0.21011567425840708, "ci95": [0.15870945159008892, 0.2634850410476984]}, "auroc_standard": {"point": 0.7663650515458043, "ci95": [0.7284489944554523, 0.8000204224920153]}, "mcc": {"point": 0.283203807 …
 - gene_map: {"model_genes": 1462, "mapped": 1440, "mapped_with_fitness_data": 1148}
-- counts: {"model_genes": 1462, "model_genes_mapped": 1440, "genes_with_fitness": 1148, "genes_after_adjustment": 1121, "conditions_total": 57, "conditions_mapped": 43, "conditions_wt_grows": 36}
-- timings_s: {"rich_medium_essentials_s": 9.491255760192871, "knockout_simulation_s": 421.93748354911804, "total_s": 432.0900192260742}
+- counts: {"model_genes": 1462, "model_genes_mapped": 1440, "genes_with_fitness": 1148, "genes_after_adjustment": 1121, "conditions_total": 57, "conditions_mapped": 43, "conditions_wt_grows": 36, "medium_completion_exchanges_added": 0}
+- timings_s: {"rich_medium_essentials_s": 8.025354623794556, "knockout_simulation_s": 343.6924481391907, "total_s": 352.7361581325531}
 - dropped_rich_medium_essentials: 27
 
 ## Warnings

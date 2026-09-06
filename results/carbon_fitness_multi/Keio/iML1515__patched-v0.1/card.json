@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Keio",
-  "created": "2026-09-05T20:51:46Z",
+  "created": "2026-09-06T09:37:28Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Keio'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -23,6 +23,7 @@
     "variant": "shipped",
     "patches": {
       "file": "data/reference/universe_patches_v0.1.json",
+      "model_file": null,
       "gpr_file": null,
       "applied": [
         {
@@ -70,8 +71,10 @@
       "complete_medium_transport": false,
       "medium_completion_exclude": [
         "pnto__R",
-        "fol"
-      ]
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -109,17 +112,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.4954397337076016,
+        "point": 0.4938518713939732,
         "ci95": [
-          0.4105951189690477,
-          0.5725639813999346
+          0.4138461289208688,
+          0.569962572308297
         ]
       },
       "auroc_standard": {
-        "point": 0.8035253401787277,
+        "point": 0.8034111499606357,
         "ci95": [
-          0.7670792206280584,
-          0.8347212257844107
+          0.7669560556707868,
+          0.8349488684203229
         ]
       },
       "mcc": {
@@ -162,17 +165,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.4954397337076016,
+        "point": 0.4938518713939732,
         "ci95": [
-          0.4105951189690477,
-          0.5725639813999346
+          0.4138461289208688,
+          0.569962572308297
         ]
       },
       "auroc_standard": {
-        "point": 0.8035253401787277,
+        "point": 0.8034111499606357,
         "ci95": [
-          0.7670792206280584,
-          0.8347212257844107
+          0.7669560556707868,
+          0.8349488684203229
         ]
       },
       "mcc": {
@@ -219,9 +222,9 @@
       "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 9.148398160934448,
-      "knockout_simulation_s": 276.61549258232117,
-      "total_s": 286.22033524513245
+      "rich_medium_essentials_s": 8.94233775138855,
+      "knockout_simulation_s": 267.2051486968994,
+      "total_s": 277.06986689567566
     },
     "dropped_rich_medium_essentials": 10
   },

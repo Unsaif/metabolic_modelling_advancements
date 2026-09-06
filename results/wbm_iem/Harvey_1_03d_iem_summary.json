@@ -1,0 +1,18 @@
+{
+  "model": "Harvey_1_03d",
+  "n_iems_run": 63,
+  "n_biomarkers_scored": 19,
+  "n_correct": 16,
+  "accuracy": 0.8421052631578947,
+  "increased_correct": "14/16",
+  "decreased_correct": "2/3",
+  "predicted_unchanged": 3,
+  "total_solves": 93,
+  "total_solve_time_s": 1800.3,
+  "wall_s": 1816.2,
+  "caveats": [
+    "shipped bounds only: physiologicalConstraintsHMDBbased, standard physiological parameters and the EU average diet (applied in runIEM_HH.m before the IEMs) are NOT yet ported, so this is not the published protocol",
+    "global reaction constraints from the top of runIEM_HH.m and per-block lb/ub tweaks are applied",
+    "solver: HiGHS (IPM+crossover cold start, dual simplex warm starts), feasibility 1e-7"
+  ]
+}

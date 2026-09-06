@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Putida",
-  "created": "2026-09-06T07:44:00Z",
+  "created": "2026-09-06T08:26:09Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Putida'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -470,7 +470,8 @@
       "complete_medium_transport": true,
       "medium_completion_exclude": [
         "pnto__R",
-        "fol"
+        "fol",
+        "hco3"
       ],
       "genes_subset": null
     },
@@ -511,17 +512,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.41273009130824306,
+        "point": 0.41187006213796384,
         "ci95": [
-          0.30793230266225435,
-          0.511603790417187
+          0.30384634972432,
+          0.5084079138085063
         ]
       },
       "auroc_standard": {
-        "point": 0.759029733727939,
+        "point": 0.7594440439610269,
         "ci95": [
-          0.6951057364351646,
-          0.8079506090480995
+          0.6974270801012544,
+          0.807792547428445
         ]
       },
       "mcc": {
@@ -564,17 +565,17 @@
         ]
       },
       "aucpr_standard": {
-        "point": 0.17902642380107736,
+        "point": 0.1695160129382617,
         "ci95": [
-          0.1268679223100824,
-          0.22343663593295643
+          0.12818745465506654,
+          0.20981432416960027
         ]
       },
       "auroc_standard": {
-        "point": 0.6631204495283801,
+        "point": 0.6650946655276256,
         "ci95": [
-          0.6215711799947716,
-          0.6973959317843981
+          0.623443800628677,
+          0.6983109288845321
         ]
       },
       "mcc": {
@@ -626,9 +627,9 @@
       "medium_completion_exchanges_added": 7
     },
     "timings_s": {
-      "rich_medium_essentials_s": 1.1920928955078125e-06,
-      "knockout_simulation_s": 59.1686372756958,
-      "total_s": 59.540881872177124
+      "rich_medium_essentials_s": 1.430511474609375e-06,
+      "knockout_simulation_s": 143.08242082595825,
+      "total_s": 143.68316173553467
     },
     "dropped_rich_medium_essentials": 0
   },

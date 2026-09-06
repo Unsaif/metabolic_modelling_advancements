@@ -1,6 +1,6 @@
 {
   "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Putida",
-  "created": "2026-09-05T13:38:00Z",
+  "created": "2026-09-06T09:26:29Z",
   "dataset_provenance": {
     "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Putida'",
     "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
@@ -23,6 +23,8 @@
     "variant": "curated",
     "patches": {
       "file": "data/reference/universe_patches_v0.1.json",
+      "model_file": null,
+      "gpr_file": null,
       "applied": [
         {
           "reaction": "CBMKr",
@@ -46,7 +48,14 @@
       "knockout_genes": [],
       "processes": 2,
       "solver": "glpk",
-      "max_conditions": null
+      "max_conditions": null,
+      "complete_medium_transport": false,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
     },
     "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
     "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
@@ -77,52 +86,52 @@
       "n_conditions": 36,
       "n_gene_condition_pairs": 40356,
       "aucpr_bernstein": {
-        "point": 0.49998820949575395,
+        "point": 0.5009953950860434,
         "ci95": [
-          0.4104442657004319,
-          0.5862601737833001
+          0.41258784716636177,
+          0.5868120867116539
         ]
       },
       "aucpr_standard": {
-        "point": 0.36293822951592036,
+        "point": 0.35002560387217935,
         "ci95": [
-          0.27381530009633565,
-          0.449138773860322
+          0.26523129567606485,
+          0.4331280690199715
         ]
       },
       "auroc_standard": {
-        "point": 0.8063023490319169,
+        "point": 0.8170263320830541,
         "ci95": [
-          0.75779725614836,
-          0.8501060274473815
+          0.7703116179273342,
+          0.8579430372601052
         ]
       },
       "mcc": {
-        "point": 0.5097073537139898,
+        "point": 0.5104321169455132,
         "ci95": [
-          0.42763883575104383,
-          0.5869102679654908
+          0.42830640488171745,
+          0.5873023131514338
         ]
       },
       "balanced_accuracy": {
-        "point": 0.8166472485878797,
+        "point": 0.8173003827199329,
         "ci95": [
-          0.7709768532623527,
-          0.8559215120355447
+          0.7717619503952211,
+          0.8561565529246117
         ]
       },
       "accuracy": {
-        "point": 0.9328724353256022,
+        "point": 0.9328972147883834,
         "ci95": [
-          0.9221404499950441,
-          0.945786252354049
+          0.9221392110219051,
+          0.9458252800079294
         ]
       },
       "confusion": {
-        "tp": 36132,
-        "tn": 1515,
-        "fp": 693,
-        "fn": 2016
+        "tp": 36130,
+        "tn": 1518,
+        "fp": 690,
+        "fn": 2018
       }
     },
     "gene_level_all_mapped_conditions": {
@@ -130,52 +139,52 @@
       "n_conditions": 43,
       "n_gene_condition_pairs": 48203,
       "aucpr_bernstein": {
-        "point": 0.4206787302060703,
+        "point": 0.42121033655554885,
         "ci95": [
-          0.3704394555818997,
-          0.46652739806576987
+          0.3709302009130014,
+          0.4668266954535731
         ]
       },
       "aucpr_standard": {
-        "point": 0.22963757130391227,
+        "point": 0.21011567425840708,
         "ci95": [
-          0.17551654671349087,
-          0.28452504742685686
+          0.15870945159008892,
+          0.2634850410476984
         ]
       },
       "auroc_standard": {
-        "point": 0.7606376684729996,
+        "point": 0.7663650515458043,
         "ci95": [
-          0.7193046019363278,
-          0.7967457172387744
+          0.7284489944554523,
+          0.8000204224920153
         ]
       },
       "mcc": {
-        "point": 0.28265966882675586,
+        "point": 0.283203807369545,
         "ci95": [
-          0.22922663927734957,
-          0.3261016381175866
+          0.22972942825552428,
+          0.32646470791413645
         ]
       },
       "balanced_accuracy": {
-        "point": 0.7644344076889305,
+        "point": 0.7649836777649421,
         "ci95": [
-          0.725714817601443,
-          0.7974019377849523
+          0.7267019041941756,
+          0.7976530357285818
         ]
       },
       "accuracy": {
-        "point": 0.7896811401779972,
+        "point": 0.7897018857747443,
         "ci95": [
-          0.7808938240358484,
-          0.7997329004418812
+          0.7809363525091799,
+          0.7997655747567579
         ]
       },
       "confusion": {
-        "tp": 36132,
-        "tn": 1933,
-        "fp": 693,
-        "fn": 9445
+        "tp": 36130,
+        "tn": 1936,
+        "fp": 690,
+        "fn": 9447
       }
     },
     "gene_map": {
@@ -190,12 +199,13 @@
       "genes_after_adjustment": 1121,
       "conditions_total": 57,
       "conditions_mapped": 43,
-      "conditions_wt_grows": 36
+      "conditions_wt_grows": 36,
+      "medium_completion_exchanges_added": 0
     },
     "timings_s": {
-      "rich_medium_essentials_s": 9.491255760192871,
-      "knockout_simulation_s": 421.93748354911804,
-      "total_s": 432.0900192260742
+      "rich_medium_essentials_s": 8.025354623794556,
+      "knockout_simulation_s": 343.6924481391907,
+      "total_s": 352.7361581325531
     },
     "dropped_rich_medium_essentials": 27
   },

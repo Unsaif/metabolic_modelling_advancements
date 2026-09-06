@@ -97,13 +97,31 @@ def apply_model_patches(model: cobra.Model, org: str, model_patches: Dict, gm: G
     Metabolites missing from the model are created from the file's `new_metabolites` table; gene ids in the
     patch are Fitness Browser locus tags, translated to model ids where the draft carries the gene and otherwise
     added under the locus tag. `org` may be one organism, a list, or "*" (every model); a patch may be
-    conditional on `requires_metabolites` (all present) and `skip_if_reactions` (none present)."""
+    conditional on `requires_metabolites` (all present) and `skip_if_reactions` (none present). Two other
+    patch shapes: {"biomass_remove": [met ids]} drops biomass components, {"remove_reaction": id} drops a reaction."""
     applied: List[dict] = []
     new_mets = model_patches.get("new_metabolites", {})
     model_ids = {g.id for g in model.genes}
     for pt in model_patches["patches"]:
         orgs = pt["org"] if isinstance(pt["org"], list) else [pt["org"]]
         if "*" not in orgs and org not in orgs:
+            continue
+        if "biomass_remove" in pt:      # drop biomass components the organism does not make (template errors)
+            bm = model.reactions.get_by_id(pt.get("biomass_id", "Growth"))
+            removed = {}
+            for mid in pt["biomass_remove"]:
+                if mid in model.metabolites and model.metabolites.get_by_id(mid) in bm.metabolites:
+                    met = model.metabolites.get_by_id(mid)
+                    removed[mid] = bm.metabolites[met]
+                    bm.add_metabolites({met: -bm.metabolites[met]})
+            if removed:
+                applied.append({"reaction": bm.id, "biomass_removed": removed})
+            continue
+        if "remove_reaction" in pt:      # drop a reaction (e.g. a gene-less gap-fill replaced by an annotated route)
+            if pt["remove_reaction"] in model.reactions:
+                r = model.reactions.get_by_id(pt["remove_reaction"])
+                applied.append({"reaction": r.id, "removed": r.reaction})
+                model.remove_reactions([r])
             continue
         if pt["reaction"] in model.reactions:
             if verbose:
