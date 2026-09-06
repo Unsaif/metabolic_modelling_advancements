@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://hamap.expasy.org/rule/MF_01632.txt",
+    "retrieved_on": "2026-09-06",
+    "committed_snapshot": true,
+    "final_url": "https://hamap.expasy.org/rule/MF_01632.txt",
+    "size": 1949,
+    "sha256": "0a65ab2349f99ad9e9c4f19835d93b78806fff2cfd9bab62655c1497923c64ad",
+    "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/MF01632_rule.txt"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5835730/fullTextXML",
+    "retrieved_on": "2026-09-06",
+    "committed_snapshot": false,
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23113660&format=xml",
+    "retrieved_on": "2026-09-06",
+    "committed_snapshot": false,
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:23113660&format=xml",
+    "size": 1581,
+    "sha256": "88e1e7239e5eaa84e54aae3fd64f184b34d7ffbdd7f65ff07dd9fc8ef26fa112",
+    "path": "/private/tmp/pp5317_XanB2_2013.xml"
+  }
+]

@@ -1,0 +1,141 @@
+{
+  "study_id": "putida-precursor-supply-diagnostic-v1",
+  "evaluation_role": "development",
+  "organism": "Putida",
+  "question": "How sensitive is isolated PP_5317 deletion growth to a hypothetical external 4HBZ supply, and does the existing model permit donor secretion without adding transport?",
+  "base_model": "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz",
+  "base_model_sha256": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812",
+  "parent_manifest": "results/ppnp_repair_2026_09_06/runs/main/manifest.json",
+  "parent_gene_map": "results/ppnp_repair_2026_09_06/runs/main/both_forward/gene_map.json",
+  "model_context": "results/quinone_precursor_2026_09_06/evidence/model_context.json",
+  "evidence_directory": "results/quinone_precursor_2026_09_06/evidence",
+  "evidence_inputs": [
+    "results/quinone_precursor_2026_09_06/evidence/model_context.json",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.json",
+    "results/quinone_precursor_2026_09_06/evidence/fitness_context.json"
+  ],
+  "protocol": {
+    "processes": 2,
+    "solver": "glpk",
+    "growth_threshold": 0.001,
+    "fitness_threshold": -2.0,
+    "carbon_uptake": -10.0,
+    "complete_medium_transport": true,
+    "drop_rich_medium_essentials": false
+  },
+  "gene_loci": [
+    "PP_5317",
+    "PP_5318",
+    "PP_1376"
+  ],
+  "solver_tolerance": 1e-09,
+  "residual_tolerance": 1e-08,
+  "objective_tolerance": 1e-08,
+  "production_threshold": 1e-06,
+  "growth_fractions": [
+    0.1,
+    0.5,
+    0.95
+  ],
+  "uptake_capacity": 0.001,
+  "diagnostic_condition": {
+    "name": "D-Glucose",
+    "media": "MOPS minimal media_noCarbon"
+  },
+  "dose_multipliers": [
+    0,
+    0.1,
+    0.5,
+    1,
+    2
+  ],
+  "growth_controls": [
+    {
+      "id": "supply_wild_type",
+      "loci": []
+    },
+    {
+      "id": "supply_pp5317",
+      "loci": [
+        "PP_5317"
+      ]
+    },
+    {
+      "id": "supply_pp5317_pcaK",
+      "loci": [
+        "PP_5317",
+        "PP_1376"
+      ]
+    },
+    {
+      "id": "supply_pp5317_inner_transport_closed",
+      "loci": [
+        "PP_5317"
+      ],
+      "close_reactions": [
+        "UHBZ1t_pp"
+      ]
+    },
+    {
+      "id": "supply_pp5317_outer_transport_closed",
+      "loci": [
+        "PP_5317"
+      ],
+      "close_reactions": [
+        "4HBZtex"
+      ]
+    },
+    {
+      "id": "supply_pp5317_ubiA",
+      "loci": [
+        "PP_5317",
+        "PP_5318"
+      ]
+    },
+    {
+      "id": "supply_pp5317_catabolism_closed",
+      "loci": [
+        "PP_5317"
+      ],
+      "close_reactions": [
+        "4HBHYOX"
+      ]
+    }
+  ],
+  "donor_growth_fraction": 0.95,
+  "donor_controls": [
+    {
+      "id": "donor_wild_type"
+    },
+    {
+      "id": "donor_transport_closed",
+      "close_reactions": [
+        "UHBZ1t_pp"
+      ]
+    }
+  ],
+  "witness_reactions": [
+    "Growth",
+    "CHRPL",
+    "EX_4hbz_e",
+    "EX_T4hcinnm_e",
+    "4HBHYOX",
+    "sink_2ohph_c",
+    "HBZOPT",
+    "UHBZ1t_pp",
+    "4HBZtex",
+    "DMQMT",
+    "ATPM"
+  ],
+  "decision_rule": "No reaction, gene assignment, biomass demand or historical medium definition is changed. Do not rescore the fitness benchmark or call hypothetical supply a correction. Preserve every result and failed attempt. Require independently agreeing solver objectives and primal certificates; failure never means zero growth.",
+  "interpretation_limits": [
+    "No extracellular precursor concentration, donor secretion rate, mutant-specific uptake rate, or observed cross-feeding is established by this diagnostic.",
+    "Uptake/secretion units are mmol/gDW/h, not medium concentration. Population composition, biomass and elapsed time are unavailable for a concentration conversion.",
+    "Minimum uptake holds the mutant at a specified fraction of parental model growth and forbids simultaneous net secretion; this is a diagnostic LP, not a new physiological growth model.",
+    "A 4HBZ carbon-source condition is excluded from trace-uptake optimization because reducing its uptake would also remove the main carbon substrate. Coumarate conditions remain included as natural precursor-supply controls.",
+    "Donor secretion is maximized while retaining at least 95% of parental model growth. It establishes possible flux under inherited assumptions without regulation, not secretion that occurs in cells.",
+    "Pooled transposon relative fitness is not identical to isolated complete-gene-deletion growth; exact generations, insertion-specific effects and metabolite exchange remain unresolved.",
+    "Inherited PpnP/quinone/donor/maintenance assumptions persist; ATP maintenance lower bound is zero.",
+    "Energy tests close all boundaries, so the two energy contexts are not independent tests of metabolite sharing."
+  ]
+}

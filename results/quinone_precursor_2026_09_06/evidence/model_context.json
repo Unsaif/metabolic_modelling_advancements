@@ -1,0 +1,1344 @@
+{
+  "created_utc": "2026-09-06T13:17:19.746975+00:00",
+  "base_model": {
+    "path": "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz",
+    "sha256": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812",
+    "id": "Pseudomonas_putida_KT2440_xml_gapfilled__curated_path_template__ppnp_both_forward"
+  },
+  "evaluation_role": "development diagnostic design; not an intervention or validation",
+  "input_sha256": {
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/gene_map.json": "8bad604921ee04f28761a332a8951c0452b276b0cec3a0595a37bfa76506df54",
+    "data/reference/fitness_browser_media_bigg.tsv": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d",
+    "scripts/map_quinone_precursor.py": "d345a56632dd96a20cfc3d8b51b4eafda6ef68ace921d582d450be7221352ce0",
+    "scripts/map_quinone_pathway.py": "07a690e749e6ff05b318fab8c0cc05e6d20a1b15a502f8b275b569927e1e2088"
+  },
+  "gene_aliases": {
+    "PP_5317": {
+      "model_gene": "NP_747418_1",
+      "reactions": [
+        "CHRPL"
+      ]
+    },
+    "PP_5318": {
+      "model_gene": "NP_747419_1",
+      "reactions": [
+        "HBZOPT"
+      ]
+    },
+    "PP_1376": {
+      "model_gene": "NP_743535_1",
+      "reactions": [
+        "3_4DHBZ1t_pp",
+        "UHBZ1t_pp"
+      ]
+    },
+    "PP_1121": {
+      "model_gene": "NP_743282_1",
+      "reactions": [
+        "3MBtex",
+        "4HBZtex",
+        "ACtex",
+        "ASO4tex",
+        "BTOHtex",
+        "BUTSO3tex",
+        "BUTtex",
+        "BZALtex",
+        "BZtex",
+        "CA2tex",
+        "CD2tex",
+        "CLtex",
+        "CO2tex",
+        "COBALT2tex",
+        "CU2tex",
+        "CUtex",
+        "ETHSO3tex",
+        "ETOHtex",
+        "FE2tex",
+        "FE3tex",
+        "FORtex",
+        "GALURtex",
+        "GLCURtex",
+        "GLYCtex",
+        "GUAtex",
+        "H2Otex",
+        "H2tex",
+        "HYXNtex",
+        "Htex",
+        "ILEtex",
+        "ISETACtex",
+        "Ktex",
+        "LEUtex",
+        "LYStex",
+        "MEOHtex",
+        "MG2tex",
+        "MNtex",
+        "MOBDtex",
+        "MSO3tex",
+        "NAtex",
+        "NH4tex",
+        "NI2tex",
+        "NO2tex",
+        "NO3tex",
+        "OXFOtex",
+        "PItex",
+        "PPAtex",
+        "PPOHtex",
+        "PYRtex",
+        "SO3tex",
+        "SO4tex",
+        "SULFACtex",
+        "TAURtex",
+        "TOLtex",
+        "TSULtex",
+        "VALtex",
+        "Zn2tex"
+      ]
+    },
+    "PP_4198": {
+      "model_gene": "NP_746315_1",
+      "reactions": [
+        "3MBtex",
+        "4HBZtex",
+        "ACtex",
+        "ASO4tex",
+        "BTOHtex",
+        "BUTSO3tex",
+        "BUTtex",
+        "BZALtex",
+        "BZtex",
+        "CA2tex",
+        "CD2tex",
+        "CLtex",
+        "CO2tex",
+        "COBALT2tex",
+        "CU2tex",
+        "CUtex",
+        "ETHSO3tex",
+        "ETOHtex",
+        "FE2tex",
+        "FE3tex",
+        "FORtex",
+        "GALURtex",
+        "GLCURtex",
+        "GLYCtex",
+        "GUAtex",
+        "H2Otex",
+        "H2tex",
+        "HYXNtex",
+        "Htex",
+        "ILEtex",
+        "ISETACtex",
+        "Ktex",
+        "LEUtex",
+        "LYStex",
+        "MEOHtex",
+        "MG2tex",
+        "MNtex",
+        "MOBDtex",
+        "MSO3tex",
+        "NAtex",
+        "NH4tex",
+        "NI2tex",
+        "NO2tex",
+        "NO3tex",
+        "OXFOtex",
+        "PItex",
+        "PPAtex",
+        "PPOHtex",
+        "PYRtex",
+        "SO3tex",
+        "SO4tex",
+        "SULFACtex",
+        "TAURtex",
+        "TOLtex",
+        "TSULtex",
+        "VALtex",
+        "Zn2tex"
+      ]
+    }
+  },
+  "quinone_biomass_coefficient_mmol_per_gDW": 9.68418998275772e-05,
+  "metabolites": {
+    "2ohph_c": {
+      "id": "2ohph_c",
+      "name": "2-Octaprenyl-6-hydroxyphenol",
+      "formula": "C46H70O2",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "2ombzl_c": {
+      "id": "2ombzl_c",
+      "name": "2-Octaprenyl-6-methoxy-1,4-benzoquinol",
+      "formula": "C47H72O3",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2ombzl",
+        "biocyc": "META:OCTAPRENYL-METHOXY-BENZOQUINONE",
+        "chebi": "CHEBI:60655",
+        "inchi_key": "CZFRMASEEPTBAQ-MYCGWMCTSA-N",
+        "metanetx.chemical": "MNXM90444",
+        "seed.compound": "cpd15359"
+      }
+    },
+    "2omhmbl_c": {
+      "id": "2omhmbl_c",
+      "name": "2-Octaprenyl-3-methyl-5-hydroxy-6-methoxy-1,4-benzoquinol",
+      "formula": "C48H74O4",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2omhmbl",
+        "biocyc": "META:OCTAPRENYL-METHYL-OH-METHOXY-BENZQ",
+        "chebi": [
+          "CHEBI:61705",
+          "CHEBI:19728",
+          "CHEBI:27688",
+          "CHEBI:1231"
+        ],
+        "inchi_key": "QURLIMHPCRKMJP-WDXILIIOSA-N",
+        "metanetx.chemical": "MNXM2187",
+        "seed.compound": "cpd15360"
+      }
+    },
+    "2ommbl_c": {
+      "id": "2ommbl_c",
+      "name": "2-Octaprenyl-3-methyl-6-methoxy- 1,4-benzoquinol",
+      "formula": "C48H74O3",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2ommbl",
+        "biocyc": "META:OCTAPRENYL-METHYL-METHOXY-BENZQ",
+        "chebi": "CHEBI:60656",
+        "hmdb": "HMDB11661",
+        "inchi_key": "HDSGDGSLNMIMKU-KFSSTAEESA-N",
+        "metanetx.chemical": "MNXM1899",
+        "seed.compound": "cpd15361"
+      }
+    },
+    "2omph_c": {
+      "id": "2omph_c",
+      "name": "2-Octaprenyl-6-methoxyphenol",
+      "formula": "C47H72O2",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2omph",
+        "biocyc": "META:2-OCTAPRENYL-6-METHOXYPHENOL",
+        "chebi": "CHEBI:1235",
+        "inchi_key": "MYNOBJRQIKYBRD-MGHGRUFNSA-N",
+        "kegg.compound": "C05812",
+        "metanetx.chemical": "MNXM1707",
+        "seed.compound": "cpd03446"
+      }
+    },
+    "2oph_c": {
+      "id": "2oph_c",
+      "name": "2-Octaprenylphenol",
+      "formula": "C46H70O",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "3ophb_c": {
+      "id": "3ophb_c",
+      "name": "3-Octaprenyl-4-hydroxybenzoate",
+      "formula": "C47H69O3",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "4hbald_c": {
+      "id": "4hbald_c",
+      "name": "4-Hydroxybenzaldehyde",
+      "formula": "C7H6O2",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "4hbz_c": {
+      "id": "4hbz_c",
+      "name": "4-Hydroxybenzoate",
+      "formula": "C7H5O3",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "4hbz_e": {
+      "id": "4hbz_e",
+      "name": "4-Hydroxybenzoate",
+      "formula": "C7H5O3",
+      "charge": 0,
+      "compartment": "C_e",
+      "annotation": {}
+    },
+    "4hbz_p": {
+      "id": "4hbz_p",
+      "name": "4-Hydroxybenzoate",
+      "formula": "C7H5O3",
+      "charge": 0,
+      "compartment": "C_p",
+      "annotation": {}
+    },
+    "4hbzcoa_c": {
+      "id": "4hbzcoa_c",
+      "name": "4 hydroxybenoyl CoA C28H36N7O18P3S",
+      "formula": "C28H36N7O18P3S",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "T4hcinnm_c": {
+      "id": "T4hcinnm_c",
+      "name": "Trans 4 Hydroxycinnamate C9H7O3",
+      "formula": "C9H7O3",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "T4hcinnm_e": {
+      "id": "T4hcinnm_e",
+      "name": "Trans 4 Hydroxycinnamate C9H7O3",
+      "formula": "C9H7O3",
+      "charge": 0,
+      "compartment": "C_e",
+      "annotation": {}
+    },
+    "T4hcinnm_p": {
+      "id": "T4hcinnm_p",
+      "name": "Trans 4 Hydroxycinnamate C9H7O3",
+      "formula": "C9H7O3",
+      "charge": 0,
+      "compartment": "C_p",
+      "annotation": {}
+    },
+    "coucoa_c": {
+      "id": "coucoa_c",
+      "name": "P coumaroyl CoA C30H38N7O18P3S1",
+      "formula": "C30H38N7O18P3S",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "q8_c": {
+      "id": "q8_c",
+      "name": "Ubiquinone-8",
+      "formula": "C49H74O4",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    },
+    "q8h2_c": {
+      "id": "q8h2_c",
+      "name": "Ubiquinol-8",
+      "formula": "C49H76O4",
+      "charge": 0,
+      "compartment": "C_c",
+      "annotation": {}
+    }
+  },
+  "reactions": {
+    "4CMCOAS": {
+      "id": "4CMCOAS",
+      "name": "4CMCOAS",
+      "equation": "T4hcinnm_c + atp_c + coa_c --> amp_c + coucoa_c + ppi_c",
+      "metabolites": {
+        "T4hcinnm_c": -1.0,
+        "amp_c": 1.0,
+        "atp_c": -1.0,
+        "coa_c": -1.0,
+        "coucoa_c": 1.0,
+        "ppi_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_745496_2",
+      "gene_ids": [
+        "NP_745496_2"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "4HBHYOX": {
+      "id": "4HBHYOX",
+      "name": "4HBHYOX",
+      "equation": "4hbz_c + h_c + nadph_c + o2_c --> 34dhbz_c + h2o_c + nadp_c",
+      "metabolites": {
+        "34dhbz_c": 1.0,
+        "4hbz_c": -1.0,
+        "h2o_c": 1.0,
+        "h_c": -1.0,
+        "nadp_c": 1.0,
+        "nadph_c": -1.0,
+        "o2_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_745674_1",
+      "gene_ids": [
+        "NP_745674_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "4HBZtex": {
+      "id": "4HBZtex",
+      "name": "4HBZtex",
+      "equation": "4hbz_e <=> 4hbz_p",
+      "metabolites": {
+        "4hbz_e": -1.0,
+        "4hbz_p": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743282_1 or NP_746315_1",
+      "gene_ids": [
+        "NP_743282_1",
+        "NP_746315_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "CHRPL": {
+      "id": "CHRPL",
+      "name": "Chorismate pyruvate lyase",
+      "equation": "chor_c --> 4hbz_c + pyr_c",
+      "metabolites": {
+        "4hbz_c": 1.0,
+        "chor_c": -1.0,
+        "pyr_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_747418_1",
+      "gene_ids": [
+        "NP_747418_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "COCOAHA": {
+      "id": "COCOAHA",
+      "name": "COCOAHA",
+      "equation": "coucoa_c + h2o_c --> 4hbald_c + accoa_c",
+      "metabolites": {
+        "4hbald_c": 1.0,
+        "accoa_c": 1.0,
+        "coucoa_c": -1.0,
+        "h2o_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_745498_1",
+      "gene_ids": [
+        "NP_745498_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "CYO1_KT": {
+      "id": "CYO1_KT",
+      "name": "CYO1 KT",
+      "equation": "2.0 ficytc_c + 2.0 h_c + q8h2_c --> 2.0 focytc_c + 2.0 h_p + q8_c",
+      "metabolites": {
+        "ficytc_c": -2.0,
+        "focytc_c": 2.0,
+        "h_c": -2.0,
+        "h_p": 2.0,
+        "q8_c": 1.0,
+        "q8h2_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743477_1 and NP_743478_1 and NP_743479_1",
+      "gene_ids": [
+        "NP_743477_1",
+        "NP_743478_1",
+        "NP_743479_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {
+        "H": -42.0,
+        "C": -16.0,
+        "O": -4.0,
+        "N": -8.0,
+        "S": -4.0
+      },
+      "missing_formula_or_charge": []
+    },
+    "CYTBDpp": {
+      "id": "CYTBDpp",
+      "name": "Cytochrome oxidase bd (ubiquinol-8: 2 protons) (periplasm)",
+      "equation": "2.0 h_c + 0.5 o2_c + q8h2_c --> h2o_c + 2.0 h_p + q8_c",
+      "metabolites": {
+        "h2o_c": 1.0,
+        "h_c": -2.0,
+        "h_p": 2.0,
+        "o2_c": -0.5,
+        "q8_c": 1.0,
+        "q8h2_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_746759_1 and NP_746760_1",
+      "gene_ids": [
+        "NP_746759_1",
+        "NP_746760_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "CYTBO3_4pp": {
+      "id": "CYTBO3_4pp",
+      "name": "Cytochrome oxidase bo3 (ubiquinol-8: 4 protons) (periplasm)",
+      "equation": "4.0 h_c + 0.5 o2_c + q8h2_c --> h2o_c + 4.0 h_p + q8_c",
+      "metabolites": {
+        "h2o_c": 1.0,
+        "h_c": -4.0,
+        "h_p": 4.0,
+        "o2_c": -0.5,
+        "q8_c": 1.0,
+        "q8h2_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_742973_1 and NP_742974_1 and NP_742975_1 and NP_742976_1",
+      "gene_ids": [
+        "NP_742973_1",
+        "NP_742974_1",
+        "NP_742975_1",
+        "NP_742976_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "DMQMT": {
+      "id": "DMQMT",
+      "name": "3-Dimethylubiquinonol 3-methyltransferase",
+      "equation": "2omhmbl_c + amet_c --> ahcys_c + h_c + q8h2_c",
+      "metabolites": {
+        "2omhmbl_c": -1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0,
+        "q8h2_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_1765",
+      "gene_ids": [
+        "PP_1765"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "DMQMT",
+        "biocyc": "META:DHHB-METHYLTRANSFER-RXN",
+        "ec-code": "2.1.1.64",
+        "metanetx.reaction": "MNXR97527",
+        "rhea": [
+          "28682",
+          "28680",
+          "28679",
+          "28681"
+        ],
+        "seed.reaction": "rxn08353"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "EX_4hbz_e": {
+      "id": "EX_4hbz_e",
+      "name": "R_EX_4hbz_e",
+      "equation": "4hbz_e <=> ",
+      "metabolites": {
+        "4hbz_e": -1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {
+        "C": -7.0,
+        "H": -5.0,
+        "O": -3.0
+      },
+      "missing_formula_or_charge": []
+    },
+    "EX_T4hcinnm_e": {
+      "id": "EX_T4hcinnm_e",
+      "name": "R_EX_T4hcinnm_e",
+      "equation": "T4hcinnm_e <=> ",
+      "metabolites": {
+        "T4hcinnm_e": -1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {
+        "C": -9.0,
+        "H": -7.0,
+        "O": -3.0
+      },
+      "missing_formula_or_charge": []
+    },
+    "GLCDpp": {
+      "id": "GLCDpp",
+      "name": "Glucose dehydrogenase (ubiquinone-8 as acceptor) (periplasm)",
+      "equation": "glc__D_p + h2o_p + q8_c --> glcn_p + h_p + q8h2_c",
+      "metabolites": {
+        "glc__D_p": -1.0,
+        "glcn_p": 1.0,
+        "h2o_p": -1.0,
+        "h_p": 1.0,
+        "q8_c": -1.0,
+        "q8h2_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743602_1 or NP_744347_1",
+      "gene_ids": [
+        "NP_743602_1",
+        "NP_744347_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "Growth": {
+      "id": "Growth",
+      "name": "Biomass reaction",
+      "equation": "0.000215957436615497 10fthf_c + 0.497466186805283 ala__L_c + 0.000215957436615497 amet_c + 0.286450592337987 arg__L_c + 0.233442241629366 asn__L_c + 0.233442241629366 asp__L_c + 52.4155146188655 atp_c + 0.00504062088602539 ca2_c + 0.00504062088602539 cl_c + 0.000557809343006845 coa_c + 9.68418998275772e-05 cobalt2_c + 0.129291683621802 ctp_c + 0.000686609069777522 cu2_c + 0.0886878118620952 cys__L_c + 0.0253396515088839 datp_c + 0.0261637760764165 dctp_c + 0.0261637760764165 dgtp_c + 0.0253396515088839 dttp_c + 0.000215957436615497 fad_c + 0.00650293357342181 fe2_c + 0.00756141553853723 fe3_c + 0.254849143586252 gln__L_c + 0.254849143586252 glu__L_c + 0.593290278265672 gly_c + 0.208303052853126 gtp_c + 47.0666420920129 h2o_c + 0.0917460790586501 his__L_c + 0.281353803150062 ile__L_c + 0.189028609530443 k_c + 0.436302779712182 leu__L_c + 0.332323631867312 lys__L_c + 0.14883244216901 met__L_c + 0.00840103481004232 mg2_c + 0.000215957436615497 mlthf_c + 0.000669177527808559 mn2_c + 0.00177317518584294 nad_c + 0.00043288329222927 nadp_c + 0.179414145715561 phe__L_c + 0.214073861663851 pro__L_c + 0.000215957436615497 pydx5p_c + 9.68418998275772e-05 q8h2_c + 0.000215957436615497 ribflv_c + 0.208977072475925 ser__L_c + 0.0042010016145203 so4_c + 0.000215957436615497 thf_c + 0.000215957436615497 thmpp_c + 0.245675310415586 thr__L_c + 0.0550478411189897 trp__L_c + 0.133541106186236 tyr__L_c + 0.0968418998275772 uaagmda_c + 0.139553051327532 utp_c + 0.409798120148372 val__L_c + 0.000330230878412038 zn2_c --> 52.2462049569779 adp_c + 52.2462049569779 h_c + 52.2420039553634 pi_c + 0.749462368022615 ppi_c",
+      "metabolites": {
+        "10fthf_c": -0.000215957436615497,
+        "adp_c": 52.2462049569779,
+        "ala__L_c": -0.497466186805283,
+        "amet_c": -0.000215957436615497,
+        "arg__L_c": -0.286450592337987,
+        "asn__L_c": -0.233442241629366,
+        "asp__L_c": -0.233442241629366,
+        "atp_c": -52.4155146188655,
+        "ca2_c": -0.00504062088602539,
+        "cl_c": -0.00504062088602539,
+        "coa_c": -0.000557809343006845,
+        "cobalt2_c": -9.68418998275772e-05,
+        "ctp_c": -0.129291683621802,
+        "cu2_c": -0.000686609069777522,
+        "cys__L_c": -0.0886878118620952,
+        "datp_c": -0.0253396515088839,
+        "dctp_c": -0.0261637760764165,
+        "dgtp_c": -0.0261637760764165,
+        "dttp_c": -0.0253396515088839,
+        "fad_c": -0.000215957436615497,
+        "fe2_c": -0.00650293357342181,
+        "fe3_c": -0.00756141553853723,
+        "gln__L_c": -0.254849143586252,
+        "glu__L_c": -0.254849143586252,
+        "gly_c": -0.593290278265672,
+        "gtp_c": -0.208303052853126,
+        "h2o_c": -47.0666420920129,
+        "h_c": 52.2462049569779,
+        "his__L_c": -0.0917460790586501,
+        "ile__L_c": -0.281353803150062,
+        "k_c": -0.189028609530443,
+        "leu__L_c": -0.436302779712182,
+        "lys__L_c": -0.332323631867312,
+        "met__L_c": -0.14883244216901,
+        "mg2_c": -0.00840103481004232,
+        "mlthf_c": -0.000215957436615497,
+        "mn2_c": -0.000669177527808559,
+        "nad_c": -0.00177317518584294,
+        "nadp_c": -0.00043288329222927,
+        "phe__L_c": -0.179414145715561,
+        "pi_c": 52.2420039553634,
+        "ppi_c": 0.749462368022615,
+        "pro__L_c": -0.214073861663851,
+        "pydx5p_c": -0.000215957436615497,
+        "q8h2_c": -9.68418998275772e-05,
+        "ribflv_c": -0.000215957436615497,
+        "ser__L_c": -0.208977072475925,
+        "so4_c": -0.0042010016145203,
+        "thf_c": -0.000215957436615497,
+        "thmpp_c": -0.000215957436615497,
+        "thr__L_c": -0.245675310415586,
+        "trp__L_c": -0.0550478411189897,
+        "tyr__L_c": -0.133541106186236,
+        "uaagmda_c": -0.0968418998275772,
+        "utp_c": -0.139553051327532,
+        "val__L_c": -0.409798120148372,
+        "zn2_c": -0.000330230878412038
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {
+        "C": -41.317614961397,
+        "H": -62.82188079595128,
+        "N": -10.843603481130629,
+        "O": -15.145335197757225,
+        "S": -0.24271097986186338,
+        "P": -0.9549511952668819,
+        "Ca": -0.00504062088602539,
+        "Cl": -0.00504062088602539,
+        "Co": -9.68418998275772e-05,
+        "Cu": -0.000686609069777522,
+        "Fe": -0.01406434911195904,
+        "K": -0.189028609530443,
+        "Mg": -0.00840103481004232,
+        "Mn": -0.000669177527808559,
+        "Zn": -0.000330230878412038
+      },
+      "missing_formula_or_charge": []
+    },
+    "HBZOPT": {
+      "id": "HBZOPT",
+      "name": "Hydroxybenzoate octaprenyltransferase",
+      "equation": "4hbz_c + octdp_c --> 3ophb_c + ppi_c",
+      "metabolites": {
+        "3ophb_c": 1.0,
+        "4hbz_c": -1.0,
+        "octdp_c": -1.0,
+        "ppi_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_747419_1",
+      "gene_ids": [
+        "NP_747419_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "L_LACD2": {
+      "id": "L_LACD2",
+      "name": "L-Lactate dehydrogenase (ubiquinone)",
+      "equation": "lac__L_c + q8_c --> pyr_c + q8h2_c",
+      "metabolites": {
+        "lac__L_c": -1.0,
+        "pyr_c": 1.0,
+        "q8_c": -1.0,
+        "q8h2_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_746844_1",
+      "gene_ids": [
+        "NP_746844_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "MDH2": {
+      "id": "MDH2",
+      "name": "Malate dehydrogenase (ubiquinone 8 as acceptor)",
+      "equation": "mal__L_c + q8_c --> oaa_c + q8h2_c",
+      "metabolites": {
+        "mal__L_c": -1.0,
+        "oaa_c": 1.0,
+        "q8_c": -1.0,
+        "q8h2_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_742912_1 or NP_743411_3 or NP_745069_1",
+      "gene_ids": [
+        "NP_742912_1",
+        "NP_743411_3",
+        "NP_745069_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "NADH16pp": {
+      "id": "NADH16pp",
+      "name": "NADH dehydrogenase (ubiquinone-8 & 3 protons) (periplasm)",
+      "equation": "4.0 h_c + nadh_c + q8_c --> 3.0 h_p + nad_c + q8h2_c",
+      "metabolites": {
+        "h_c": -4.0,
+        "h_p": 3.0,
+        "nad_c": 1.0,
+        "nadh_c": -1.0,
+        "q8_c": -1.0,
+        "q8h2_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_746238_1 and NP_746239_1 and NP_746240_1 and NP_746241_1 and NP_746242_1 and NP_746243_1 and NP_746244_1 and NP_746245_1 and NP_746246_1 and NP_746247_1 and NP_746248_1 and NP_746249_1 and NP_746250_1",
+      "gene_ids": [
+        "NP_746238_1",
+        "NP_746239_1",
+        "NP_746240_1",
+        "NP_746241_1",
+        "NP_746242_1",
+        "NP_746243_1",
+        "NP_746244_1",
+        "NP_746245_1",
+        "NP_746246_1",
+        "NP_746247_1",
+        "NP_746248_1",
+        "NP_746249_1",
+        "NP_746250_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "NADH5": {
+      "id": "NADH5",
+      "name": "NADH dehydrogenase (ubiquinone-8 )",
+      "equation": "h_c + nadh_c + q8_c --> nad_c + q8h2_c",
+      "metabolites": {
+        "h_c": -1.0,
+        "nad_c": 1.0,
+        "nadh_c": -1.0,
+        "q8_c": -1.0,
+        "q8h2_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_742787_1 or NP_745011_1",
+      "gene_ids": [
+        "NP_742787_1",
+        "NP_745011_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "NADPHQR2": {
+      "id": "NADPHQR2",
+      "name": "NADPH Quinone Reductase (Ubiquinone-8)",
+      "equation": "h_c + nadph_c + q8_c --> nadp_c + q8h2_c",
+      "metabolites": {
+        "h_c": -1.0,
+        "nadp_c": 1.0,
+        "nadph_c": -1.0,
+        "q8_c": -1.0,
+        "q8h2_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_742242_1 or NP_745742_1 or NP_746770_1",
+      "gene_ids": [
+        "NP_742242_1",
+        "NP_745742_1",
+        "NP_746770_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "OHPHM": {
+      "id": "OHPHM",
+      "name": "2-octaprenyl-6-hydroxyphenol methylase",
+      "equation": "2ohph_c + amet_c --> 2omph_c + ahcys_c + h_c",
+      "metabolites": {
+        "2ohph_c": -1.0,
+        "2omph_c": 1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_1765",
+      "gene_ids": [
+        "PP_1765"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "OHPHM",
+        "biocyc": "META:2-OCTAPRENYL-6-OHPHENOL-METHY-RXN",
+        "ec-code": "2.1.1.222",
+        "kegg.reaction": "R04988",
+        "metanetx.reaction": "MNXR102170",
+        "rhea": [
+          "27772",
+          "27773",
+          "27771",
+          "27770"
+        ],
+        "seed.reaction": "rxn03395"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "OMBZLM": {
+      "id": "OMBZLM",
+      "name": "2-Octaprenyl-6-methoxy-benzoquinol methylase",
+      "equation": "2ombzl_c + amet_c --> 2ommbl_c + ahcys_c + h_c",
+      "metabolites": {
+        "2ombzl_c": -1.0,
+        "2ommbl_c": 1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "NP_747113_1",
+      "gene_ids": [
+        "NP_747113_1"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "OMBZLM",
+        "biocyc": "META:2-OCTAPRENYL-METHOXY-BENZOQ-METH-RXN",
+        "ec-code": "2.1.1.201",
+        "metanetx.reaction": "MNXR115030",
+        "rhea": [
+          "27774",
+          "27777",
+          "27776",
+          "27775"
+        ],
+        "seed.reaction": "rxn09039"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "OMMBLHX": {
+      "id": "OMMBLHX",
+      "name": "2-Octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase",
+      "equation": "2ommbl_c + 0.5 o2_c --> 2omhmbl_c",
+      "metabolites": {
+        "2omhmbl_c": 1.0,
+        "2ommbl_c": -1.0,
+        "o2_c": -0.5
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_0427 or PP_5197",
+      "gene_ids": [
+        "PP_0427",
+        "PP_5197"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "OMMBLHX",
+        "metanetx.reaction": "MNXR138669",
+        "seed.reaction": "rxn09040"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "OMPHHX": {
+      "id": "OMPHHX",
+      "name": "2-octaprenyl-6-methoxyphenol hydroxylase",
+      "equation": "2omph_c + 0.5 o2_c --> 2ombzl_c",
+      "metabolites": {
+        "2ombzl_c": 1.0,
+        "2omph_c": -1.0,
+        "o2_c": -0.5
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_5199",
+      "gene_ids": [
+        "PP_5199"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "OMPHHX",
+        "metanetx.reaction": "MNXR138671",
+        "seed.reaction": "rxn09042"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "OPHBDC": {
+      "id": "OPHBDC",
+      "name": "Octaprenyl-hydroxybenzoate decarboxylase",
+      "equation": "3ophb_c + h_c --> 2oph_c + co2_c",
+      "metabolites": {
+        "2oph_c": 1.0,
+        "3ophb_c": -1.0,
+        "co2_c": 1.0,
+        "h_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_747314_2",
+      "gene_ids": [
+        "NP_747314_2"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "OPHHX": {
+      "id": "OPHHX",
+      "name": "2-Octaprenylphenol hydroxylase",
+      "equation": "2oph_c + 0.5 o2_c --> 2ohph_c",
+      "metabolites": {
+        "2ohph_c": 1.0,
+        "2oph_c": -1.0,
+        "o2_c": -0.5
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "YP_009237195_1",
+      "gene_ids": [
+        "YP_009237195_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "SUCBZT2": {
+      "id": "SUCBZT2",
+      "name": "Succinyl:4-hydroxybenzoate CoA transferase",
+      "equation": "4hbz_c + succoa_c <=> 4hbzcoa_c + succ_c",
+      "metabolites": {
+        "4hbz_c": -1.0,
+        "4hbzcoa_c": 1.0,
+        "succ_c": 1.0,
+        "succoa_c": -1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_745375_1",
+      "gene_ids": [
+        "NP_745375_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "SUCDi": {
+      "id": "SUCDi",
+      "name": "Succinate dehydrogenase (irreversible)",
+      "equation": "q8_c + succ_c --> fum_c + q8h2_c",
+      "metabolites": {
+        "fum_c": 1.0,
+        "q8_c": -1.0,
+        "q8h2_c": 1.0,
+        "succ_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_746307_1 and NP_746308_1 and NP_746309_1 and NP_746310_1",
+      "gene_ids": [
+        "NP_746307_1",
+        "NP_746308_1",
+        "NP_746309_1",
+        "NP_746310_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "T4HCINNMtex": {
+      "id": "T4HCINNMtex",
+      "name": "T4HCINNMtex",
+      "equation": "T4hcinnm_e <=> T4hcinnm_p",
+      "metabolites": {
+        "T4hcinnm_e": -1.0,
+        "T4hcinnm_p": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "T4HCINNMtpp": {
+      "id": "T4HCINNMtpp",
+      "name": "T4HCINNMtpp",
+      "equation": "T4hcinnm_p <=> T4hcinnm_c",
+      "metabolites": {
+        "T4hcinnm_c": 1.0,
+        "T4hcinnm_p": -1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "UHBZ1t_pp": {
+      "id": "UHBZ1t_pp",
+      "name": "UHBZ1t LPAREN pp RPAREN",
+      "equation": "4hbz_p + h_p <=> 4hbz_c + h_c",
+      "metabolites": {
+        "4hbz_c": 1.0,
+        "4hbz_p": -1.0,
+        "h_c": 1.0,
+        "h_p": -1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_743535_1",
+      "gene_ids": [
+        "NP_743535_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "VNDH_2": {
+      "id": "VNDH_2",
+      "name": "VNDH 2",
+      "equation": "4hbald_c + h2o_c + nad_c --> 4hbz_c + 2.0 h_c + nadh_c",
+      "metabolites": {
+        "4hbald_c": -1.0,
+        "4hbz_c": 1.0,
+        "h2o_c": -1.0,
+        "h_c": 2.0,
+        "nad_c": -1.0,
+        "nadh_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "NP_745497_1",
+      "gene_ids": [
+        "NP_745497_1"
+      ],
+      "annotation": {},
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    "sink_2ohph_c": {
+      "id": "sink_2ohph_c",
+      "name": "R_sink_2ohph_c",
+      "equation": "2ohph_c --> ",
+      "metabolites": {
+        "2ohph_c": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gene_reaction_rule": "",
+      "gene_ids": [],
+      "annotation": {},
+      "mass_charge_imbalance": {
+        "C": -46.0,
+        "H": -70.0,
+        "O": -2.0
+      },
+      "missing_formula_or_charge": []
+    }
+  },
+  "row_combinations": {
+    "precursor": {
+      "metabolites": [
+        "4hbz_c",
+        "4hbz_p",
+        "4hbz_e",
+        "4hbzcoa_c"
+      ],
+      "nonzero_rows": {
+        "4HBHYOX": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "CHRPL": {
+          "coefficient": 1.0,
+          "exact": "1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "HBZOPT": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "VNDH_2": {
+          "coefficient": 1.0,
+          "exact": "1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "EX_4hbz_e": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ]
+        }
+      }
+    },
+    "tail": {
+      "metabolites": [
+        "3ophb_c",
+        "2oph_c",
+        "2ohph_c",
+        "2omph_c",
+        "2ombzl_c",
+        "2ommbl_c",
+        "2omhmbl_c",
+        "q8_c",
+        "q8h2_c"
+      ],
+      "nonzero_rows": {
+        "HBZOPT": {
+          "coefficient": 1.0,
+          "exact": "1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "sink_2ohph_c": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "Growth": {
+          "coefficient": -9.68418998275772e-05,
+          "exact": "-7145670966924535/73786976294838206464",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        }
+      }
+    },
+    "coumarate": {
+      "metabolites": [
+        "T4hcinnm_c",
+        "T4hcinnm_p",
+        "T4hcinnm_e",
+        "coucoa_c",
+        "4hbald_c"
+      ],
+      "nonzero_rows": {
+        "VNDH_2": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "EX_T4hcinnm_e": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ]
+        }
+      }
+    },
+    "total": {
+      "metabolites": [
+        "4hbz_c",
+        "4hbz_p",
+        "4hbz_e",
+        "4hbzcoa_c",
+        "3ophb_c",
+        "2oph_c",
+        "2ohph_c",
+        "2omph_c",
+        "2ombzl_c",
+        "2ommbl_c",
+        "2omhmbl_c",
+        "q8_c",
+        "q8h2_c",
+        "T4hcinnm_c",
+        "T4hcinnm_p",
+        "T4hcinnm_e",
+        "coucoa_c",
+        "4hbald_c"
+      ],
+      "nonzero_rows": {
+        "4HBHYOX": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "CHRPL": {
+          "coefficient": 1.0,
+          "exact": "1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "EX_4hbz_e": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ]
+        },
+        "EX_T4hcinnm_e": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ]
+        },
+        "sink_2ohph_c": {
+          "coefficient": -1.0,
+          "exact": "-1",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        },
+        "Growth": {
+          "coefficient": -9.68418998275772e-05,
+          "exact": "-7145670966924535/73786976294838206464",
+          "bounds": [
+            0.0,
+            1000.0
+          ]
+        }
+      }
+    }
+  },
+  "necessary_balance": "CHRPL - EX_4hbz_e - EX_T4hcinnm_e = epsilon*Growth + 4HBHYOX + sink_2ohph_c",
+  "implication": "With CHRPL disabled and no coumarate import, net 4HBZ uptake must be at least epsilon*Growth. Equality is an LP feasibility question, not guaranteed by this row sum.",
+  "transport_note": "Both pre-existing 4HBZtex and UHBZ1t_pp are reversible. Secretion directions are permitted in the saved model, not experimentally established secretion rates.",
+  "chemical_note": "This is a declared equal-weight combination of stored rows, not atom-mapped proof of a chemical conserved moiety.",
+  "units_note": "Exchange bounds are fluxes per dry biomass per time. They are not extracellular concentrations; no concentration is inferred without a biomass/time balance.",
+  "optimization_performed": false,
+  "numeric_fitness_values_accessed": false,
+  "model_intervention_performed": false
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_NC0029474.gb",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_002947.4&seq_start=6063112&seq_stop=6063669&rettype=gbwithparts&retmode=text",
+    "retrieved_on": "2026-09-06",
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_002947.4&seq_start=6063112&seq_stop=6063669&rettype=gbwithparts&retmode=text",
+    "size": 9253,
+    "sha256": "0b74b0bab8f54b6e063998a2ccb44e0c07778ee379816587a6f720c7f004a401"
+  },
+  {
+    "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/WP0109558101.fasta",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=WP_010955810.1&rettype=fasta&retmode=text",
+    "retrieved_on": "2026-09-06",
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=WP_010955810.1&rettype=fasta&retmode=text",
+    "size": 275,
+    "sha256": "c00a440cedfb03755cc0ba41833a6d61f9f802992d7229fa70de09689803e99f"
+  },
+  {
+    "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/NP7474181.fasta",
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=NP_747418.1&rettype=fasta&retmode=text",
+    "retrieved_on": "2026-09-06",
+    "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=protein&id=NP_747418.1&rettype=fasta&retmode=text",
+    "size": 256,
+    "sha256": "d0b5879a558dbba3ac4f4365202a5a79e27ae22cb5d1b232729f804f73b0e7ca"
+  },
+  {
+    "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_uniprot.json",
+    "url": "https://rest.uniprot.org/uniprotkb/search?query=gene%3APP_5317&format=json",
+    "retrieved_on": "2026-09-06",
+    "final_url": "https://rest.uniprot.org/uniprotkb/search?query=gene%3APP_5317&format=json",
+    "size": 8848,
+    "sha256": "4f60ee4973bffb0fcb3965f1c7aae6f6c423c9902bbe565a1eebee4cbe8b9ea8"
+  },
+  {
+    "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/KT2440_ubiC_chorismatase_search.json",
+    "url": "https://rest.uniprot.org/uniprotkb/search?query=organism_id%3A160488+AND+%28gene%3AubiC+OR+protein_name%3Achorismatase+OR+ec%3A4.1.3.40%29&format=json",
+    "retrieved_on": "2026-09-06",
+    "final_url": "https://rest.uniprot.org/uniprotkb/search?query=organism_id%3A160488+AND+%28gene%3AubiC+OR+protein_name%3Achorismatase+OR+ec%3A4.1.3.40%29&format=json",
+    "size": 16770,
+    "sha256": "9fbe7234d54c34a8936f78e09e480b6f03acd31637ce6badc301ca02ca9f356c"
+  }
+]

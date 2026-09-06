@@ -1,0 +1,76 @@
+AC   MF_01632;
+DC   Protein; auto
+TR   HAMAP; MF_01632; -; 1; level=0
+XX
+Names: UbiC
+XX
+ID   UBIC
+case <OC:Enterobacterales>
+DE   RecName: Full=Chorismate pyruvate-lyase;
+DE            Short=CL;
+DE            Short=CPL;
+DE            EC=4.1.3.40;
+else
+DE   RecName: Full=Probable chorismate pyruvate-lyase;
+DE            Short=CL;
+DE            Short=CPL;
+DE            EC=4.1.3.40;
+end case
+GN   Name=ubiC;
+XX
+CC   -!- FUNCTION: Removes the pyruvyl group from chorismate, with concomitant
+CC       aromatization of the ring, to provide 4-hydroxybenzoate (4HB) for the
+CC       ubiquinone pathway.
+CC   -!- CATALYTIC ACTIVITY:
+CC       Reaction=chorismate = 4-hydroxybenzoate + pyruvate;
+CC         Xref=Rhea:RHEA:16505, ChEBI:CHEBI:15361, ChEBI:CHEBI:17879,
+CC         ChEBI:CHEBI:29748; EC=4.1.3.40;
+CC   -!- PATHWAY: Cofactor biosynthesis; ubiquinone biosynthesis.
+case <OC:Enterobacterales>
+CC   -!- SUBUNIT: Monomer.
+end case
+CC   -!- SUBCELLULAR LOCATION: Cytoplasm.
+CC   -!- SIMILARITY: Belongs to the UbiC family.
+XX
+DR   Pfam; PF04345; Chor_lyase; 1; trigger=no
+XX
+KW   Cytoplasm
+KW   Lyase
+KW   Pyruvate
+KW   Ubiquinone biosynthesis
+XX
+GO   GO:0008813; F:chorismate lyase activity
+GO   GO:0006744; P:ubiquinone biosynthetic process
+GO   GO:0042866; P:pyruvate biosynthetic process
+GO   GO:0005737; C:cytoplasm
+XX
+FT   From: UBIC_ECOLI (P26602)
+FT   BINDING         35
+FT                   /ligand="substrate"
+FT   Condition: M
+FT   BINDING         77
+FT                   /ligand="substrate"
+FT   Condition: R
+FT   BINDING         115
+FT                   /ligand="substrate"
+FT   Condition: [LI]
+FT   BINDING         156
+FT                   /ligand="substrate"
+FT   Condition: E
+XX
+Size: 162-227;
+Related: None;
+Template: P26602;
+Scope:
+ Bacteria; Pseudomonadota
+Fusion:
+ Nter: None
+ Cter: None
+Duplicate: in BURP1, PSEE4, PSEPF
+Plasmid: None
+Comments: None
+XX
+# Version: 27
+# Last updated date: 2023-01-26
+# Created date: 2006-06-06
+//
