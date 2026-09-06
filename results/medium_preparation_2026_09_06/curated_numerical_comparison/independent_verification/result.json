@@ -1,0 +1,981 @@
+{
+  "artifact_sha256": {
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/cases.jsonl.gz": "227913b9a8c204af25d003bd2e42c5b97ec04b393bf3a2aeaaef1c5f9702ad3e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/manifest.json": "8c74dfc696cd5bbcce17444be627ba1370e37191e91b78014471fc18e9f8966e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/00/glpk_native.json.gz": "2ae42fd0cefb65c2a13cd562a9e16a1da2b30905bb9881cd318aa4da7f7e3494",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/00/highs_primal_simplex.json.gz": "817e556f68e9b3b99466d98f1c185d426aa5bbe4b688e46af2b30d4182cfd8bd",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/00/highs_simplex_tighter.json.gz": "eecfc41eace94c9f69b4ba13bf4eae3ba998f8c5fb602abd35cfe1ac5e363f6d",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/00/prepared_signature.json.gz": "9ed02a1fb1be6dd01f14be3ce41aee779b3db114f60afef0afa365d38cbf901f",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/01/glpk_native.json.gz": "75ffc530e16f1552021517c2267c4d28dd3cd60d3fe0d011b5db1c074395a675",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/01/highs_primal_simplex.json.gz": "795b2d410c57ffe93e830eb5f6e369405fb104d490d0b7761ad3341dff226d0e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/01/highs_simplex_tighter.json.gz": "ff62ece2899da9f5c9a8310811e16b0ba014178f478b52779b41dd234ea0ce37",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/01/prepared_signature.json.gz": "f046b5918e59397c3308cf96adfb61b61ca027621bffa0ab629da4e9cb9478cf",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/02/glpk_native.json.gz": "664a0ea90818c6516da5d3d36c19361205aa43f692731d2388b21b8094964342",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/02/highs_primal_simplex.json.gz": "be4e73401940345c4e4ea2b872cbc34e265b66cf4597f97fe34b093dc2b7dc54",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/02/highs_simplex_tighter.json.gz": "1d1f3be1fb0411bfc202f3141426f8f14d00b0d0248aeb17510f8ab13a390e5e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/02/prepared_signature.json.gz": "ea5fee952873511fc8fe00b10a1c798d766fde362bca288de03110aefc41bebf",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/03/glpk_native.json.gz": "8504c82b084544bdc4476cb8f766c74b449102c5c143bcf74cd2a3488dc4a36d",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/03/highs_primal_simplex.json.gz": "b0e17fbc48a1ab413c9d1f95881a127195170cccab10979527817afd06ee9deb",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/03/highs_simplex_tighter.json.gz": "72d2604ba69c203c3b0af2a88a5dd13d180870eddd156d98bb7389d8873f8975",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/03/prepared_signature.json.gz": "7afafb78b95a104532301d9895a6afd5d9fd45e5845c3b7f9666a7d5a8674dc1",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/04/glpk_native.json.gz": "9a1a40c1cf176aea9626b7f82929df4f948f6755a6e73afd05960b7baf7e0f55",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/04/highs_primal_simplex.json.gz": "64cd430f0cee08db5282133fce2ba26fc094b9d556e218c00132dfbd08c1f73b",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/04/highs_simplex_tighter.json.gz": "311bda0c7290e502a2772bac1eac8667f5dcc779173287400d99c586b88b346e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/04/prepared_signature.json.gz": "2e9f41e35d666085edc24f20da6299ccdc48c53f4e14156ac39a7e9395399377",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/05/glpk_native.json.gz": "18c0692bd174e11d9b66971889f1f3ac295e135a742cf589eaf60b5ff5dd85dc",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/05/highs_primal_simplex.json.gz": "c1a46dba8363143dbb70b02d047f5e3b6b831ef506c09c95d2f2f55fee17ee8a",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/05/highs_simplex_tighter.json.gz": "0f2165d48cb7724dcf0c3970680ff35bb4e5ac0afd190c47a6742dc0ee83fc3a",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/05/prepared_signature.json.gz": "deca9d4ad872377017756a22cd5c977e8fa53807e94c7e85566e6c5c67301728",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/06/glpk_native.json.gz": "465254a5693c086476461527c2c732c27a06f5f0224d18bffc068d854301c550",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/06/highs_primal_simplex.json.gz": "e261bfdc328a8e1d2c9283b3b8c38b932a937470ba023f93b0221b83b223eae7",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/06/highs_simplex_tighter.json.gz": "11ab51c94802eeaa0e3ff8fb1a3fd5faa5ddd6b5e91fc81f7e659152c98b900d",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/06/prepared_signature.json.gz": "93410e7a2a85407b9e9cc1dc098d3c54887682ebe10639c34e9270d8e88c6467",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/07/glpk_native.json.gz": "69f4a8ea2e2faf6bbac83039a62ec22f86803d8bd2b92a1d3758c382f921aeb9",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/07/highs_primal_simplex.json.gz": "a329f39955aad74a132a04dedf3c67ba2e19fb7e8902638a9a816d60a3f00247",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/07/highs_simplex_tighter.json.gz": "9271f4a3615ba014aa5c42a897e341e3d81a938fead569a2096d7ab16fd9c203",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/07/prepared_signature.json.gz": "d0f5616a9fdd081f3b1ef58d50c351855de477fdf57eee5c76ab14a594417345",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/08/glpk_native.json.gz": "c475eb94264815b26c17a8859b69310ca84a100eb217bac9fa23e22c37f0cfbc",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/08/highs_primal_simplex.json.gz": "c965d0ce1808b96aacfb39a92d3ac0bd05e9567962759b9a5f0b41a2f5ab9cc2",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/08/highs_simplex_tighter.json.gz": "03f1a9c859d6ca4175aa5c4fce42e950aeda2d2cc7f8625eeae79f82827148aa",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/08/prepared_signature.json.gz": "b62502f4855f77d87f37b87d0ef25299b874734f226690a78a0f9985bb3af35b",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/09/glpk_native.json.gz": "39f7027160ac055bb935c65a43fc3a78b5cf750a33e199a5ff9135adfbddcd36",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/09/highs_primal_simplex.json.gz": "c0da5a553924a47aad40a1583b31461bde5e3ae48ddcbef12c6bb6b9d689c0e0",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/09/highs_simplex_tighter.json.gz": "9892003fd0d9a7e9bface56c4c19383557097d94c178e4cc9f6dc6b94ca93a2e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/09/prepared_signature.json.gz": "ae45912ece942a66afc1ca0f994dc0fded0e3c0147934ba72be127ccac35db22",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/10/glpk_native.json.gz": "5b9cd7fa10f03ded2c81ed77dfa9309bd155e1c64237a09723b2b8b758f6b6f1",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/10/highs_primal_simplex.json.gz": "dab901909282028da8cd4ac271c8c9ec8d4cc52806e962567fcf22b81a06eaeb",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/10/highs_simplex_tighter.json.gz": "b0429e70c8decf1ad56c466e8ee046eb8cb8592a121bb25d81ba42a793ff45b1",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/10/prepared_signature.json.gz": "07f601519dad9c235ab438cbb3f1bb8fb27a1967fde7fb0bdc4d2ef2be102b27",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/11/glpk_native.json.gz": "c93b0684390a1a4e3c6c2c1e6358ec87811c2e29d9fa0fd12a7ebf2cf8c8d68a",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/11/highs_primal_simplex.json.gz": "b8130f510a77061d75821bb1b1f73c44cd2e4f27688bf1599d0e2cd9f3748a5d",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/11/highs_simplex_tighter.json.gz": "6e8edf22dc0a746849736ec733a77e5d43d4a722e62898c8e24ed4f49e92d4ff",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/11/prepared_signature.json.gz": "2e023f59e64f795eb427338fd28e7d149a8fc2c9d6aa286f35e802a5bda1a688",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/12/glpk_native.json.gz": "0489fc69595bbb7f82f15431931f210b7b9701f4ad7b09b68dec8ec93bf85d44",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/12/highs_primal_simplex.json.gz": "27a58d3182b4da5e447dd228cafb413c2b4ca03257430dd0e7a9025a70fa01d6",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/12/highs_simplex_tighter.json.gz": "e0580f1723b3ee7b5b6f999dd88670eb16e3846b4999ec2b94ef3b3093eeec28",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/12/prepared_signature.json.gz": "a68e97e712cd9a01780536f14fc22594757991a49b622b369bb00dd700a27c0c",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/13/glpk_native.json.gz": "895d5de88326a60e2b7c0a38f66562dc3231acbef7cdf667c012d47a50df4264",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/13/highs_primal_simplex.json.gz": "bc5571529cb07f580103b612845370fce298ee44f3a2877e4442166b192e75a0",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/13/highs_simplex_tighter.json.gz": "66767ebb3b79270fc2e1712f2d73508319f76dd2411f9a4ca9118939306f3195",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/13/prepared_signature.json.gz": "b1b57be833b902da02a47fc476cc77f6adc666ecb3ca52c618826f69e4947ffb",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/14/glpk_native.json.gz": "a9485a6cf130b8769bf91796ecb7f8dad0d0299283c87bc46b42e1f1cf40facb",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/14/highs_primal_simplex.json.gz": "a47fcab51bec7a26d2565628f1001c767ba37f08bbe7de52d7faad2f2fb3356f",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/14/highs_simplex_tighter.json.gz": "9893ff08093610ed8e1abbd53715c2f669e554a855cff1061f704b2a5a26ec94",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/14/prepared_signature.json.gz": "f8a7f23129d8f8bbe57eb703c4f6c5add414f05deba3d3df2383887776631e86",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/15/glpk_native.json.gz": "56d7edcde8f78062f2799e83b12ab98fb3c2a65ed4e33a6428a7448609b234bb",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/15/highs_primal_simplex.json.gz": "b3871a66a30a1a9a113a2620f085030752a4d8048990330dd3bc802f009b7626",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/15/highs_simplex_tighter.json.gz": "becf12250a2bebb7d01961a7e240931c0522fdc4206a10521319c1c21d0894e9",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/15/prepared_signature.json.gz": "16f841219a066fc9b244e6d0471c5152c981a4a353ae32dd1c29d10402a774ae",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/16/glpk_native.json.gz": "5091409389d31459734d00eeedb16d30e26b6cc5a8f0cafaaf6e850983dbbcff",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/16/highs_primal_simplex.json.gz": "9d9dc3ff2f5385d6bb211c8a8caad0e618a80eb5b8245e5b143d498a872785af",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/16/highs_simplex_tighter.json.gz": "1e953ab998a9b2876708a540e78a775e55493bdf43018f1f3b02804637b18654",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/16/prepared_signature.json.gz": "94f2e94ee072081fb9493a55d393beede7806cd98266912c4056b9c888490bc6",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/17/glpk_native.json.gz": "a84216d4c5201f3c96fbae5d389c45d8d002f99c9ab8c2f4a062670fe7ef748a",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/17/highs_primal_simplex.json.gz": "3f3bb4d515b6093e223ca38848a0e7995163c2929b8654ab2e30050bc76f4bc8",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/17/highs_simplex_tighter.json.gz": "505cfde5f2c0771cba2768f8d4d3e1560d3dbec5199c5792c5594ddad0324e5e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/17/prepared_signature.json.gz": "e79c626a41447585b411dd6770c373dc7f1dbaf73eeda700206f909cc280562a",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/18/glpk_native.json.gz": "6921d06b571bbe31c02cfa7177794b81d3d91eb6b166b7ede99c720135274168",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/18/highs_primal_simplex.json.gz": "b00732d96b12b64fb3903fdff280f3695097d5b2ae33af2077982ab5826ff65f",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/18/highs_simplex_tighter.json.gz": "4377dc781360914000bc94bc13e1cad090c9516898ddf57d09e340ef1c18acda",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/18/prepared_signature.json.gz": "27d2a2da8bf9541c1c06b4809808ab5c13f24b68be5e386608e61b7592acaf36",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/19/glpk_native.json.gz": "8e44e8a51698f397cf6f37ea0ef72f375b3d32731009b5c60c69e76f64e327c3",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/19/highs_primal_simplex.json.gz": "c97a9ad68c7165ddc6f27f50525c9c5d8e88a4fd7f3a605a6663eb61b5e28ef4",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/19/highs_simplex_tighter.json.gz": "33e483dfc85d351d059c8140f14cac9e28dd1427dfc6418221fe15937afe1f49",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/19/prepared_signature.json.gz": "4c524753857626270634b7fe95a50f5fafe5b22aa947a9a3fe057b0718f68de6",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/20/glpk_native.json.gz": "7b575590dcd34d3fc7c70c383042f4d18d171689e2d02dbccac1a7a78068be9d",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/20/highs_primal_simplex.json.gz": "584fb9278b06fdf490a258c8b93f22a49f0104c9927c4383374dff50508e74b6",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/20/highs_simplex_tighter.json.gz": "210d03a3dde93dc83ec13357f2eed73bf043371ed5c930c129f46a4b9013dee7",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/20/prepared_signature.json.gz": "50c4b4afbc0a933094b09b48e8963ce52b76ca18dda7c328bbaf4aeb822f841e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/21/glpk_native.json.gz": "e5cf89f21aabcd08e82d6a1c765ff1ce516b8071b364167ffea66d3f3541c3df",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/21/highs_primal_simplex.json.gz": "a7dbcff029d8df89c2ed99f35a56c464553f2c28385fdf511646aee3d725bbba",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/21/highs_simplex_tighter.json.gz": "79bc924f55fead31b2f733cf90f9818c744fea54db49baf331f58c0c02719dbc",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/21/prepared_signature.json.gz": "26f95040ec73377f8753c0908add1e70278b854b6c676882d5cec25e602cb8db",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/22/glpk_native.json.gz": "9d74ed44ef93415b7ec89da1c865760431938a735ae7d71a6059f63488dedba5",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/22/highs_primal_simplex.json.gz": "9c5b595c30aedcc013af842ec2d3a664202fa9430f34a31de850bddc4fe38d84",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/22/highs_simplex_tighter.json.gz": "e62fa55ff386a2ff32ad608b4145fbd8f71ba2319c92fc1000b28f15eb256e88",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/22/prepared_signature.json.gz": "2ad3f2b480db59bb328e15cde7aa02d555ecc401632fa60141ae4b006eaad172",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/23/glpk_native.json.gz": "cbcfef72b623b555660aa1d22c14339a5143fadbe3f2fc870f8fe886f6ae4c2c",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/23/highs_primal_simplex.json.gz": "daaec41c3b8f0f138765118bd537e6f3d8a306986c34c4f2cae849faf759c9d3",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/23/highs_simplex_tighter.json.gz": "4535cebc54c22dce73deff8c3fb466ae26b8d56289c5c38700b9cd548837dbea",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/23/prepared_signature.json.gz": "ff5b8ebe6873dcaa2995bd9f352a3aa80ae05dfba9ddaa6d130d2a78a5f90131",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/24/glpk_native.json.gz": "ab074088eaed597d462636ec2b6ba5751f05dfb03ea72311e03e09b92c48236a",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/24/highs_primal_simplex.json.gz": "d9d69e155f98342a840bbfc673ef4ea48568677f33162d75d7d8158b56c09f33",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/24/highs_simplex_tighter.json.gz": "d3b6c1601e847f86aad32585f9eaeaac90f4436cceec00357cb75224e080f43f",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/24/prepared_signature.json.gz": "2a5a74cdeeae2f744c94136dd7b3fccd58b872d59bed294690a5964f8353eb04",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/25/glpk_native.json.gz": "e5c2f5f05d6017d13ae43441f4022fe085c8874f2ad36c9ade5441a6c43c8ef2",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/25/highs_primal_simplex.json.gz": "1367c6d92470723e67cc1cc0981cbc4b23e36f97e8cad6e31fb6921ecc2b1474",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/25/highs_simplex_tighter.json.gz": "bccd393facff0347ee4f0bc1e16d7df25555d71c084a09837ec0d0532f502c42",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/25/prepared_signature.json.gz": "643301d90dd787bfc9269a3b5cd037ac009b3f19c020340b46d9dd0b84bd9dcb",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/26/glpk_native.json.gz": "a9938b81d4f7943c943f8b5ad7bd091b5eeda0019412a567bc39d50dc751a3d2",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/26/highs_primal_simplex.json.gz": "58dea9b0115d978ab7e5d8183c9c6f4f916e91508abdec9bb9a03d167310ceee",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/26/highs_simplex_tighter.json.gz": "48efb80a62427c27866ab983c63f45b8bbd29fcc23ff338047d284ceb545dc79",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/26/prepared_signature.json.gz": "03ae16b98d7ac4ff00c05d731677670e2ebbcfa69de38cba5d00305887906fbb",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/27/glpk_native.json.gz": "4dd00aa865a8973e932ccb3afbef67825fc2ad0dc2a03bfd233bc88308518e22",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/27/highs_primal_simplex.json.gz": "fdd70fd175e4fa2602286540aa696d821a9c01df544bc53d36e7246eff742db2",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/27/highs_simplex_tighter.json.gz": "97b3e744f40d45701be15944576ddd9553b1b93082ff78408786f74e1d486165",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/27/prepared_signature.json.gz": "ed1340deb4ded658e2d932069e56cf3c87487adb692f112fb5fe6298ed8f9e74",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/28/glpk_native.json.gz": "789a7303c251df8b6bbe7f700df2e7f9c728eedeff5ca0ad8ff2f8426473cef3",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/28/highs_primal_simplex.json.gz": "fae9ca367f1a0a3c4c9a7e5f84dac4eb64d76a89375b1e46b6664154b0cd7d38",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/28/highs_simplex_tighter.json.gz": "4617129affaa90add26c75127d0e32a51c6097260544b2054ab433112f93f476",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/28/prepared_signature.json.gz": "c85db374407b5d0288e600a8667a26c311e374d6649ec1d46098813db08f9662",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/29/glpk_native.json.gz": "14aae5832db6d80684b5edf588c2571fa561da280b25dde3c34f181d8fa9bd2e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/29/highs_primal_simplex.json.gz": "5b5eb52da3abfb9823e846ddbe67bf9c6c6c4c2ea9b5137555e4377eb882cee0",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/29/highs_simplex_tighter.json.gz": "195ecaef8c7809ec37699ef6099eb9378a7f19d0431b1dbb339c0ad01f5cb11c",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/29/prepared_signature.json.gz": "1cfca73352c626d5f86f72f61f1a31dd313dade19550ea2697eecf113f930a41",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/30/glpk_native.json.gz": "65ab7875a1d3c4601fab845c4da3bea323fb6fe2a9fb4461efc795f04a0fd77e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/30/highs_primal_simplex.json.gz": "b6ac84b80772e178404c249e2c8fdf80fa297444691a40c8a11f2292d77b5cba",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/30/highs_simplex_tighter.json.gz": "1910b8dc380240c75f3bbf7f2c318713ac6cdd7348cebcbf8d9ed64aecd42509",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/30/prepared_signature.json.gz": "2af69351531cb556894855b1416e09ddd1cbb31d1e404b34850c0dd6758f407d",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/31/glpk_native.json.gz": "a0d29a9c4465ff708b1b5526ba75661ebcec8d23313b235a512674282aaf5716",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/31/highs_primal_simplex.json.gz": "9e0ba88e5b8c0885e45cb71ef7477f1fd85570e2a6699bda419df8892d7310f8",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/31/highs_simplex_tighter.json.gz": "216dca3568cff71cae2a307253da0675aeecfbc80b647cd3c2882d8e8b41173a",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/31/prepared_signature.json.gz": "191414570ca8d8a0bd163d990ae8eaa36c48cabd4baa7caaa05d6e36d42a1d0f",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/32/glpk_native.json.gz": "8ca17004a843ccc8c1932af23d16fdb05c6a84f9f081832d6a21793bcf6aec97",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/32/highs_primal_simplex.json.gz": "82d4314c10ebc7ce1943dfe8ef9e4eaadccec75eac353f08332ce53e6ef75479",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/32/highs_simplex_tighter.json.gz": "851a9e60f291839a2e594d7a620323ef8631e4368051d4bfd871096fb061c9e5",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/32/prepared_signature.json.gz": "5e9dfe4ca8fda57913371c98cb2764473ade7036ca96090019a1aeb096c0d4a0",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/33/glpk_native.json.gz": "d513c6e3e9e3132e63647781ad05a62cee1e54b23164f56331c71bdb941f9d8f",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/33/highs_primal_simplex.json.gz": "277c40f04aa448d46de8e2dcbdc2f6d78fb51bb5d153b26434a04cc79ee669d3",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/33/highs_simplex_tighter.json.gz": "6779e58fcaf13553d4c646e103295e84216f6c004082258b8526da3f44ffb562",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/33/prepared_signature.json.gz": "b63700940425571f5ca590fd2763473d3f81d00a9c6c31e48b242ada18759a5e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/34/glpk_native.json.gz": "debda503ac0277b05c57be2966ddb8cbe8d67bcc64c59c90ee273afb0de03090",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/34/highs_primal_simplex.json.gz": "a58c488a2547376a9dfa0564a30825858d5dd65e3e80219efad695335e3d8ef7",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/34/highs_simplex_tighter.json.gz": "55bd995af7edbc3463a0f505ae48f5d5bcab7af05828bd470b9ecec30e228a8b",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/34/prepared_signature.json.gz": "f9da8bb2d2acc264dd17aee8f962fbfe8d969f970e1b0736451d3b26f168e92e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/35/glpk_native.json.gz": "2dd82fc15d1ec0e18b6d1e996cb5409aad58bbea3f53b653bfce497784b2e2ac",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/35/highs_primal_simplex.json.gz": "fc30aab27858e6fa1c9befff3f4ea62d5172ab4041c9ac38971c659f26ad75f2",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/35/highs_simplex_tighter.json.gz": "a4e690600d61fe00f3f9d90660e3235aca4b5c8ccf786a46da470cb42a46b3b7",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/35/prepared_signature.json.gz": "eec18a878843da4856cad044369a4f498cc508daa0ec2da850d023a2e9bd4b96",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/36/glpk_native.json.gz": "db80304da0ecfdf04b7e487650aaa7466307d1ea1c0dfe21fb90cc4eb4c4e6db",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/36/highs_primal_simplex.json.gz": "9f49d82993292e6317b18b4299fc179306b08bd31f17303e25e6a1e260c825bf",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/36/highs_simplex_tighter.json.gz": "29359ad40056c98f838932dca89faee34eef92921ab9fda78001cd8051fc4aad",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/36/prepared_signature.json.gz": "cfd19060b207cb1424f6ee6aaf8438e8472882a6e9fb20a6deeb2203a09104a8",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/37/glpk_native.json.gz": "47da8cbefdae8db94331370b9d473ace86126463a5d9a8bccb72e9f6b2a4b62d",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/37/highs_primal_simplex.json.gz": "1b34902b86a8a549e81e6f2f6e13876901259a2a54e2dd7bc3d66212eda2f551",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/37/highs_simplex_tighter.json.gz": "f5d3df16496193a954f9aa42e0f183902a9570744ccab56ed3e1a2adf86b9deb",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/37/prepared_signature.json.gz": "68cd035062a9290ca6a75e8deb8d422e79bd951e51e101b29372dbaa286bc63e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/38/glpk_native.json.gz": "2d44f84ecbde3a4f0046ab9c85771141619a51468dea5904aa006bd08b20fb3f",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/38/highs_primal_simplex.json.gz": "dbd6c4af2315080b24bad887cd9e609d5828d9ad3b1b461381fa815d82bd7f4a",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/38/highs_simplex_tighter.json.gz": "4af2976d213c581449094e8d40bcac63639c2df1abb43382215ede7bb129b929",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/38/prepared_signature.json.gz": "6cdcdfbbedc7e7528f81f8d037ed4ce9a2feab20bfd00cfbf19729a362853ffa",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/39/glpk_native.json.gz": "27eccd1bb99bdc5bffa008cef9b195f7d07e2dc90ffeb8f4744b686bc45a738d",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/39/highs_primal_simplex.json.gz": "9030407b1308b463eb96249fcc5d35a2e0c0e30b29823d990715ba544fc14502",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/39/highs_simplex_tighter.json.gz": "41e14e79b1561d798073a6c7e513f24bebcceb2f2c829c32ba71844b7458d14f",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/39/prepared_signature.json.gz": "8550ee682dc5c45d0333b3c386b9b1ceff5523171906662f0639e4aeb42913bc",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/40/glpk_native.json.gz": "ac749c779d6051433ab6592bbf95a0ba5291edf11a90f9af09a594f886dff65e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/40/highs_primal_simplex.json.gz": "1779cc21b58428965cc16ba55b2e66ad4071e6220c06650a5b4a59b0aa7f044b",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/40/highs_simplex_tighter.json.gz": "1677e6ac12a35d439c4ccc8656145bb526505dbddd4fe6dc43daea59c635c2c6",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/40/prepared_signature.json.gz": "0be2463a068b10ce191111034dd8a53a351919ff70e1e82329f74049acca0ff9",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/41/glpk_native.json.gz": "d2493aabd507cf2ff757a7bc23550ebafa12e9b55ffba8a134dcfba28c2f12e0",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/41/highs_primal_simplex.json.gz": "a77dc99e22f4fc1857fdb1acad207ac8089e15e8b72fa07798bb13fae2cb704e",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/41/highs_simplex_tighter.json.gz": "ae5bccaaafe3a540e9790b68ae15330cb69bd7cbfc7f406c800a7f9d46126ffd",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/41/prepared_signature.json.gz": "f020885fa55c0a08fbb411c9c88c5f8224a02c0f447501f9ebdd1d354addd5b1",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/42/glpk_native.json.gz": "14a7f7bd023c0c6f4738d540d10a73ff442009a1483a0c3ad90904ec65bae052",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/42/highs_primal_simplex.json.gz": "46814ff3beaf731a52619c7ec0d746fb2c2674b32fbdf1e5a848edd804b782c1",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/42/highs_simplex_tighter.json.gz": "01c9da4e7bad08cfebd7cd4286e56f9125c9c97cea7ee31bc2b7baa3b7d930e3",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/raw_methods/42/prepared_signature.json.gz": "6f35f07409be6a072b92263a856fde2dda6179a41885f121f88d6bdff0398db9",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/source_context.json": "b572e13946a41f8266345927ea63e9ae418e803661deab34bae16ebccb20efef",
+    "results/medium_preparation_2026_09_06/curated_numerical_comparison/summary.json": "6610aa4c8d42ff23fe75e48912151a6e0f4a0941dd88377873ec53812cb61a90"
+  },
+  "boundary_records_verified": 16555,
+  "cases_verified": 43,
+  "complete_finite_vectors_verified": 115,
+  "conditions_all_three_methods_accepted": 7,
+  "conditions_with_cross_solver_evidence": 28,
+  "elapsed_seconds": 25.906178951263428,
+  "frozen_input_files_verified": 204,
+  "frozen_input_sha256": {
+    "data/fitness_browser/Btheta/experiments.tsv": "15a8cb914608482957fb605bfdc76448b06e0e716bb3bb1e042eaa7a18f10e4f",
+    "data/fitness_browser/Btheta/fit_logratios.tsv": "5c700c1681ec0b4940aa95dd967575e19f6fbeb92f70382f39d103f3a6160d64",
+    "data/fitness_browser/Btheta/genes.tsv": "17dc5676cef4911b3ba3a1ef5bca1bc926bbc427f618042f213c405c8ef238db",
+    "data/fitness_browser/MR1/experiments.tsv": "5c16b10c64bbafa9cdcfa914e7683c505ecd22785f97f4aa56e67eead1955ef0",
+    "data/fitness_browser/MR1/fit_logratios.tsv": "3d6677312ff34d6dcc2cb3966181fe10bfc3806f59b0fe42353bead8f584d2d8",
+    "data/fitness_browser/MR1/genes.tsv": "c4ee5eb901accc6459bf50ba2f55a3c4f9772928f9c663cadf9a513fcc733d1d",
+    "data/fitness_browser/Putida/experiments.tsv": "6f1ba8542a731706fff59b121ccd51306fcd249d3cfeb9fa4d3f4c23970794c8",
+    "data/fitness_browser/Putida/fit_logratios.tsv": "28f422b3aca5e0e4a8730bb7efbb97c177c7fe672b5180455d3494f474ca170e",
+    "data/fitness_browser/Putida/genes.tsv": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e",
+    "data/fitness_browser/Putida/specific_phenotypes.tsv": "31d857c63073569a6b01a4b6a121bf2ebc5f8226ba201c440b528835a0fca37d",
+    "data/fitness_browser/Smeli/experiments.tsv": "3c09d633f61e18afa480e69547cc2791fb2aaa93b708058689455ae295c20ea2",
+    "data/fitness_browser/Smeli/fit_logratios.tsv": "f16dbe9b13da71a9583e4ca0a7345bc6abfb114a9aab0b3f9f4cf33a345d640e",
+    "data/fitness_browser/Smeli/genes.tsv": "4f587c69af42b451f7d99519398ab0444cf989c7f9371087fb3691338f07798e",
+    "data/genpept/Btheta_genpept_map.tsv": "ca60023137da305901755abe7b1df0f118c45e5284893d12e052adcfc034bee5",
+    "data/genpept/MR1_genpept_map.tsv": "e380ac438948d5c56bea457ee27cd3ce6612da0e9d42a0d9ea3906516b061f67",
+    "data/genpept/Putida_genpept_map.tsv": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128",
+    "data/genpept/Smeli_genpept_map.tsv": "74b32adcc980040e38cd2c036cfc5d480a55ead29e28e8c291aedf47e5ced16b",
+    "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz": "bea517eccadcaa280228c75551ee4d641e7eadb3509532377943e7ca89355f0e",
+    "data/reference/feba_media_extract.tsv": "365168bd92db7aa049b20b2f5ad45f79740bd0f7a52e8d650332c80bdd409225",
+    "data/reference/fitness_browser_carbon_sources_bigg.tsv": "43ed695ca0201e778bc738d2d582dad7e7a498b64d5ccf64c3b496be686e4da4",
+    "data/reference/fitness_browser_media_bigg.tsv": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d",
+    "data/reference/gpr_patches_v0.2.json": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284",
+    "data/reference/gpr_patches_v0.3.json": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885",
+    "data/reference/gpr_patches_v0.4.json": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7",
+    "data/reference/model_patches_v0.4.json": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190",
+    "data/reference/universe_patches_v0.1.json": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe",
+    "data/studies/exposure_registry_v1.json": "7519f099a63c95b6b5a9cdc8e14066255e72016a1c577ea92b4b231714823fc4",
+    "data/studies/medium_curated_numerics_v1.json": "fde1175dabf4dff9c834b4a3c9937f074219f4c0d9a08111504682dbb3f52ce5",
+    "data/studies/medium_preparation_v1.json": "6ff1f0a29e4e1e20bcd9383035cacf72540113e6af7d877936057e7733e66ed0",
+    "data/studies/medium_preparation_v2.json": "91d318f24c6334c9ac188fd82af0b428c46ee542c4028067088361463da91a27",
+    "data/studies/ppnp_repair_v1.json": "68bb055c36f7b475c293824f1d362d132faa70fbd97bb8bb95b4902db9985b92",
+    "data/studies/precursor_supply_v1.json": "b35f05f50d7a81c42d01d5d1c1a2c14f24e077f8fbe82331b6d2386ce62616dd",
+    "data/studies/quinone_repair_v1.json": "1e809398f565b1104feb0a8d0aa88ca18c323097aa191ecb4ec23692342d7d79",
+    "docs/evidence/10-putida-ribosyl-disposal-sources.md": "40157bcb05db6403e4ccdd9354d908e473118847147081614f717caba0a1c4de",
+    "docs/evidence/11-putida-ppnp-candidate.md": "7921237dbf755b0aba4eb5dd0d5f70eece94c8399131ce3c81a0be1d085e73d2",
+    "docs/studies/medium-curated-numerics-v1.md": "c1aa0184b03aef99407baf6119d3777eaea5681c61623d149a9edc058fb5021d",
+    "docs/studies/medium-preparation-v1.md": "e9bb2e277f8a73fd91e5f3d6b91e28998b4933665968be3f1fb40506ab6885ac",
+    "docs/studies/medium-preparation-v2.md": "324b2bd1bcbaa975a83830a8d1a497e73c72cd8c22a2c049c66594976900bfed",
+    "docs/studies/ppnp-repair-v1.md": "7ccad99046f42310f4334a63e3f1f08f90ee02e2484d0e3d8176ea35abfdb108",
+    "docs/studies/precursor-supply-v1.md": "e98ae14c3d0ce6367b0bb06fc5e4b454f5b24c38b905545be0f628e4211d3beb",
+    "gembench/__init__.py": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9",
+    "gembench/cards.py": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d",
+    "gembench/checks.py": "0c1bcb3ed1b55379533374bc5d481247dbf9c40a01efb9a495fb92d3a356a51a",
+    "gembench/cofactor.py": "f8e428196dae2ab37b8c5b9fdf95907fd3f904c5ac8f59f7fd2a1a5eb97aa334",
+    "gembench/comparison.py": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8",
+    "gembench/datasets.py": "1223ac48c5f31fabf93d9a48f21211e2739f34385b879d531b1cdc261279f490",
+    "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+    "gembench/frog.py": "883b0b90e8c8c84377b72a34ca486cc9a6909d343c444c3972dbe94113c95308",
+    "gembench/gapfill.py": "eaf202021dbc1f0d2a76668f5da11e992d7b0a374c264dd056866b448165ab63",
+    "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+    "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+    "gembench/medium_preparation.py": "369cb966e53f2532fe37c04ad372fdd6d99d200f9e89d69e74977b699e5276ad",
+    "gembench/medium_preparation_v2.py": "c53cdd85e229ce85e37b24ed64b48d10677067f68807f1dee6c3dd8d44afc96c",
+    "gembench/metrics.py": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3",
+    "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+    "gembench/protocols/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+    "gembench/protocols/ecoli_carbon_fitness.py": "5a8994541a2248b575f64bdda58dfed939b69af0bbe0cc9a7bb9ef254163f31a",
+    "gembench/protocols/yeast_essential.py": "e9e156ad108fd26185940ef10663ad3bb78dd13c7d3fa084bcbd3ac019c1e517",
+    "gembench/study.py": "b3911b98e65dbaaf2635cc5a8d3aacd4c71ab614dafc44e2817f5df8b0742733",
+    "gembench/survey.py": "2699d790764a1a3ee1de686b800d1be63fb20fb39d312f9cb695f843ac879019",
+    "gembench/wbm.py": "c525a92e917a58d440c4d38544dc1aecdfd44b51e847f8eaae3e6d53ceaf67fb",
+    "gembench/wbm_iem.py": "a525260933ddbf0fd6124475a972b546d0dac95636b426b505c8328106129b72",
+    "models/bigg/iJN1463.xml": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+    "models/gapfilled/Btheta.xml.gz": "ce97c05e8bed2f682cb9ef744c8f5a447d536f6555fff2a5ca6bfa62d00436b6",
+    "models/gapfilled/MR1.xml.gz": "7aae2a3ea5b644241d66bd719fd8a5d5a20d6e2d612ff9706f689a91fa75bdc5",
+    "models/gapfilled/Putida.xml.gz": "378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739",
+    "models/gapfilled/Putida_gapfill.json": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2",
+    "models/gapfilled/Smeli.xml.gz": "aed3446b54ecac8a7a48e22c94e75fc57d32c35666a6431ae41678183cf85dfa",
+    "requirements-audit.txt": "f242faf03ecdd36f9dfbbc54838318556badc4cd653461460a2e3e3866b36260",
+    "results/development_sprint_2026_09_06/prespecified_manifest.json": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809",
+    "results/development_sprint_2026_09_06/runs/Btheta_cycle7/invocation.json": "a7cb892bf21482f9c64d7c5ce57c754ff22c5c0938e60a5794221d4d2fb88b22",
+    "results/development_sprint_2026_09_06/runs/MR1_cycle7/invocation.json": "c3399cf46bb0844f5c6a2322a96d9186ae0123e3efadf6deda1f6eb3ec63e8f7",
+    "results/development_sprint_2026_09_06/runs/Smeli_cycle7/invocation.json": "5baa25913feb68567eb13e4eb0e8d1a359e19f366a996a979c6827ccd4dd2d63",
+    "results/medium_preparation_2026_09_06/evidence/__pycache__/inventory_medium_structure.cpython-314.pyc": "15e7e6fc05c46b5012f4709d6dda3972bc17e465c3b87b16c112efd4d956b210",
+    "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.json": "f60cad793070a6d2703d51e048f58ab3fbf2323eb0d243f66b0445f8069455e9",
+    "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.md": "281a6695f3337c8d8b9a86e17aaa76689188fc91c6e3f095638ed1ea55d9cb15",
+    "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.py": "99f18492603d0266abac8d8c0420673c5a6e31163e5984dd012522925419aec5",
+    "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b",
+    "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.json": "0dab92178f666601915e863855397d2efdaee10f037d03117cffade4adcbceb8",
+    "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.md": "c8976e78ec00e0bcd85def3ce078f2f8647c9c9ca5cc4f8619bc0532177f714d",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/README.md": "d95b42996cff3092f8643029646ea35c2dfafa6c6c729368879f00b8c125e61c",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/diagnostic_source.py": "d0ee761c0de03ec99bbba16433e0071dc03318bb962b8d3865087957d48de1da",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_advanced_basis.json": "a47ee08368e2c9b2f8bb98284adf69a6582592f342f60908d2bfbbe8d9aa48b5",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_native.json": "32375b64c575265b05fcf366bbfb169002b883a507345a32df015d9654e5c89c",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_ipm.json": "c9f5f5f92267950c26accdf2a00e5d7b91a93cfff54e9e0fe97275ebda4af513",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_simplex.json": "15f1999e79a77956784fe12a8023bcb8daf2ef4e17a2c54fd24e13323d7f7e06",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/input_hashes.json": "c0ff18dea5b9d43b160b10b4839f40436c923a44f8fe6df6ec54b4582b4926b8",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/optlang_glpk_interface_source.py": "7932237d98ee07c344cc6cf12d067aa8b0496132a46d83fce5c45893e500b8e8",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_context.json": "f92c8afb3de96f3014f27905e6f1ce459adde9f3856d66ce4ae91d70e1387c83",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_model.xml.gz": "c1812f8d2ac0393000fe4ad7326fe7cf6d98f24ebe6cb9049768a04ffb101e3b",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_signature.json.gz": "954bfec3f6a927d5f0bc9f9e675ba236807e2962dd17ce848edd37ffdbb8eeb0",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_artifact_hashes.json": "f4d310aa525638e7ff752a68084a169ad53f923e83b1dab5da39502190467255",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_settings.json": "52a0adf86c3dae67e3058895e752143158c450bbb80821ba4b42a0a2cf633465",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/runtime.json": "22a4188dd1a4820f17ad845003a760a5b4af2b91c4f7a79e9ac4e784acc27f7a",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/summary.json": "258e23f65450f2bf08e9a5e6f8429ccace4ebf8b9e5807d95f07d90328eb35d6",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/attempt01_helpers_source.py": "d0ee761c0de03ec99bbba16433e0071dc03318bb962b8d3865087957d48de1da",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/diagnostic_source.py": "66460084c3bc31bf0c69679e8a990709c98003fa60832a0800ec468029994a3a",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/failure.json": "a5689f0fbe54dd2cb0869257cd70d8e0669cca4a2dd2663590006b5b5416fdb8",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/input_hashes.json": "3f30456b223a94573d5bd0249b673ac7fd30c476d707d8c37f41e9c1956973a2",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/presolve_settings.json": "46f56e5f55651a9b146f209f272192f76f7ad3d105fe5a5041e1f0d98c3b1fa1",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/runtime.json": "af8844d54fd14af4e22bb7dc021bac701d9468e4b11f12b7b30764fbb7f288be",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/supported_effective_options.json": "f9a09c079de28a89f8913c14e0a129d99f808c8ec7b7f6844a9f7bf3b09ad4e3",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/attempt01_helpers_source.py": "d0ee761c0de03ec99bbba16433e0071dc03318bb962b8d3865087957d48de1da",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/diagnostic_source.py": "7673cbe75743eb3f0df317376dc793a7a0f05b3ec08f5aa240dd719202b68a4c",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_dual_no_presolve.json": "8fefe1987da7fe2332457d797e4a2ac836ac917a356764fe4811133825c6343d",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_primal_simplex.json": "f606ef04b6b27e18ed30df6a29d3da0589e23043ec7d678e69755d3c2790385d",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_no_scaling.json": "296652975b074933cb4d5809b1c1674b8a7f3749fd739b4bc7ecae0ba43fd6a7",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_tighter.json": "22f4d6c6559f024b4d54a332ab45a2fdb7a7610d862d1ef4a60d6af68ea8a06e",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/input_hashes.json": "484132ca60398554077aa01dc727ceb5e65730a39839714c70abae03f5c12ac7",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/prepared_context.json": "500d9e8e687bb1a82ee3d10edfbca5b2952f59437a002bf350789833bc538fa9",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_artifact_hashes.json": "de140c167254da705cbe5a2d92cd658100e15d0d8071e3ccdae21a9d1ef0c007",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_settings.json": "46f56e5f55651a9b146f209f272192f76f7ad3d105fe5a5041e1f0d98c3b1fa1",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/runtime.json": "42926c1728f5455e8bb29896bb06fb9873cd14ce9a77258c5b5f08085b53d9d5",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/summary.json": "e61fe5a63639636646fb33d4427fa53de905dc67c4fce3a27d4c6f1afb545ceb",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/supported_effective_options.json": "f9a09c079de28a89f8913c14e0a129d99f808c8ec7b7f6844a9f7bf3b09ad4e3",
+    "results/medium_preparation_2026_09_06/runs/main/cases.jsonl.gz": "9cdb2f2e9f0928816413c30d6cd0410765d5449f85ae86e1b2e44c0a4e17ca02",
+    "results/medium_preparation_2026_09_06/runs/main/failure.json": "7956218b351533c437d6177a8e37ef3211a7f01423780c48a9ea405f50ba68ac",
+    "results/medium_preparation_2026_09_06/runs/main/manifest.json": "6a023386b070c791546eefe18b3f0ac0293db1543a300bd90584664390afbb22",
+    "results/medium_preparation_2026_09_06/runs/main_v2/cases.jsonl.gz": "5dcd58738b86deca49cff5b1c41b0d80dd89824bac430c9340e076e18d351554",
+    "results/medium_preparation_2026_09_06/runs/main_v2/failure.json": "e8b2f617cb2a12500d994891112a0fa09023588ec0727412e2259d48d2e9ee0e",
+    "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json": "514382db16ecef951cd96517d7028dc218f039b3a43cea7c7f85ac7938db8735",
+    "results/ppnp_repair_2026_09_06/evidence/design_review.md": "f959eae34352834da44ec5d2f5bc6daf77d2c81a62660639fc8d6ed268f38493",
+    "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json": "2f120fd6e75614659898566c51b47dac135b286b67a3587a93b34b314ee0d9c8",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.json": "beaca4312a88f122fa33b5c1ea50d59a09e31f44dbf47569e0135a85e676d3f7",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.py": "ed40298a453dbdcfc3327f068548f04b77e6956e99b7a486039ac3a152f579e1",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537.html": "808a98748f0b4f4596c2e19907de1c7114ab5d7310db5dbcf264d6a1ade6200f",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_rule.txt": "d8c91ec49545a79b26006121744b42836a3542e813fba918a83e6d4925c58dac",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_signature.html": "f084877e64b139bdc12062b68751e218f085478e203d8e6bd41f970049e8ee77",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/P0C037.json": "01548b1e3468c516ccabfcde565b6ed539b90004bf11a5829d287399115a72ee",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_NC0029474.gb": "51c6b8ebcffd442decff4259d330af35fb15e3d4d86bc35123be1f23db8dc494",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_uniprot.json": "7ea18def652a7709c6ca54268751e1a90403e8cc569fb701df3f3a5ea4cbebee",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP4248_NC0029474.gb": "8dbe67ac46e84eceadbca4177b81c2a750d52609a59869256ab3162e0eed3b15",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Q88F51.json": "701bfc29b0aece76f5f2eef3a0eff67868c14b764a46243ed65976e97e7c47d6",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0032542781_retry.fasta": "cd08a9591e040873f362d3ac3911db3eeb9e57bf2518709c5250a2a391b30de5",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0109528141.fasta": "8ba2e1ed5debafdc559e25863426266936ca640a3e0a47b7f4149dd6ee8a342f",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Ye1994_pubmed.xml": "02a3b4ecc1606a75b846feeb1a9bcd9ef775d457864238cf39039584be17ab34",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals.json": "49c9709b4afba2db418795ea4ea43f2cc25761e736ca40ebed9f24428a9abda6",
+    "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals_followup.json": "44ff88dc71dcf68ee7eefccbaf309a824366537a426ca9fe993d5d03c1e1bc13",
+    "results/ppnp_repair_2026_09_06/evidence/source/APACHE-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "results/ppnp_repair_2026_09_06/evidence/source/CARVEME_LICENSE": "998d33f42059ebf207638e19fd77dd5f119708723224b3738e366d43973a6276",
+    "results/ppnp_repair_2026_09_06/evidence/source/NOTICE": "e131408c9a4ab421dcbe8654b3004e00b135b490336cab44944b2e48b839a9a8",
+    "results/ppnp_repair_2026_09_06/evidence/source/license_sources.json": "ddfd3bf76790750eb5bffbd977e3bfb3f12e4e4a400a4e6168cca3d7846e6724",
+    "results/ppnp_repair_2026_09_06/evidence/source/universe_bacteria.xml.gz": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+    "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.json": "6cb63b0f2b679b000bdfa1aaa6fa778496eb6aac02f1ea8f91e89282b1d144bf",
+    "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.md": "6e2c570c6499f4c40c19de1c155bec68456ac10d2db93594bfe7803b668a68bc",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/card.json": "bdbc78ace4c10ba240efb359f4c818e987f55d01a49af813fe4002db75cce115",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/conditions.tsv": "0b3031b3817e1d7cb73f069edb16c792a1c22d8d6276da0fc3d40812dcac9d2a",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/gene_map.json": "8bad604921ee04f28761a332a8951c0452b276b0cec3a0595a37bfa76506df54",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/matrices.npz": "63f156cf258643037efd9271e7cd0aca6494b46009e4dbf5fb8bd5b8b6fee455",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812",
+    "results/ppnp_repair_2026_09_06/runs/main/both_forward/physical.json": "d48a73d40b5b2f29d9519ccc14ad2bb63cf925887a2d82943519c48113dee342",
+    "results/ppnp_repair_2026_09_06/runs/main/manifest.json": "ccd833163eee8d2b14a2ecd0af90452f2e46a05c8292ca0bf5534b5d26dc6de7",
+    "results/quinone_precursor_2026_09_06/evidence/fitness_context.json": "a7a4cb83d6517ba44f177eead741849982e11ffdeb291e0eb3151ebef6af3459",
+    "results/quinone_precursor_2026_09_06/evidence/fitness_context.md": "acee42ad3865dbb5094621d40bfb77f1f4dd3cb9e4122ca0eff41ac10182449e",
+    "results/quinone_precursor_2026_09_06/evidence/model_context.json": "8cbb9a4985e6b5a1ada00da18cda3c17936f5c7f130a18b27c48570d6b1bd9eb",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.json": "1a8d00087ee99c6c308036f77a673e06a9772bb5224f87d52f141dfe97bcbaa8",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.md": "70859cd1072b2f18070083196930a902b16abf695314714267cd11bbd47a2dd0",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.py": "d331628fed6ba526aa61b6b1a3e7b1f1f193643b5c507ce04dafa68429a9ede9",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/IPR049368.json": "4b7a0626ab46e5b87babde0d3a556111dfbaffd3fa7dda0b29fe408c6ff715f7",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/KT2440_ubiC_chorismatase_search.json": "9fbe7234d54c34a8936f78e09e480b6f03acd31637ce6badc301ca02ca9f356c",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/MF01632_rule.txt": "0a65ab2349f99ad9e9c4f19835d93b78806fff2cfd9bab62655c1497923c64ad",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/NP7474181.fasta": "d0b5879a558dbba3ac4f4365202a5a79e27ae22cb5d1b232729f804f73b0e7ca",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/P26602.json": "dc3e8abf1ee4f033d1237b7e3dabfdea25f3d53bea6c28201a7aac4251fab235",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_NC0029474.gb": "0b74b0bab8f54b6e063998a2ccb44e0c07778ee379816587a6f720c7f004a401",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_uniprot.json": "4f60ee4973bffb0fcb3965f1c7aae6f6c423c9902bbe565a1eebee4cbe8b9ea8",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/WP0109558101.fasta": "c00a440cedfb03755cc0ba41833a6d61f9f802992d7229fa70de09689803e99f",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/primary_references.xml": "6bfeee2cf78d47269b1fdb9fbd9c8464d54193b29980250ffa39e16408050fcc",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals.json": "0036c959ff4a4304b03be8bfe4188bf5ab50bd5be37e86a3ee06ac14107c90f3",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_article.json": "b10a3da7b8ab3b57d6a8dd9128cf19518243f36294cb922d0c2a892664feebed",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_final.json": "002f14a56794d950bd5191516c4257acb3202309319f876abe94b4b5f10901af",
+    "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_followup.json": "6a9412e783d42b903741ddd905e9ab4edb1242c80e2651c08e6d28cd39053f5a",
+    "results/quinone_precursor_2026_09_06/runs/main/manifest.json": "2b1a686097b678946703af549db1fb9c2505f37708097d5296f9b855dbdd62b5",
+    "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json": "bee13fe5ebcc6f7ba98bf93c2ab99cccbf978f7308ddba0c8361a99a7ffcdb87",
+    "results/quinone_repair_2026_09_06/evidence/postrun_dependency_trace.json": "9851f802242512435a0882d437d36c6e12edfe79959a5715bea4363fb6507555",
+    "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json": "ff58aaaf7e9eb57c793042e934a34ea264c4ad9430d13978d5a44b706599d65f",
+    "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json": "49014f81058862e3a24a57f060b03f44dc635d85a08c977b1ea9c88de9218709",
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885",
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+    "results/quinone_repair_2026_09_06/runs/main/manifest.json": "65a92c2a37def7f5c32c6a5bf177f277fcd874df63a84b5be33725c08c21d92d",
+    "results/ribosyl_disposal_2026_09_06/evidence/source_evidence.json": "5518bd06c30777f1297947d95a9329f2f13356a7131637f8afdf7515e481c9f6",
+    "scripts/compare_curated_medium_solvers.py": "a1076e110ffd7ab9466cf4c2548e4c36d08c583214df202077c8db353f182d7d",
+    "scripts/diagnose_medium_numerics.py": "d0ee761c0de03ec99bbba16433e0071dc03318bb962b8d3865087957d48de1da",
+    "scripts/diagnose_medium_numerics_attempt02.py": "66460084c3bc31bf0c69679e8a990709c98003fa60832a0800ec468029994a3a",
+    "scripts/diagnose_medium_numerics_attempt02b.py": "7673cbe75743eb3f0df317376dc793a7a0f05b3ec08f5aa240dd719202b68a4c",
+    "scripts/diagnose_quinone_producibility.py": "7cf4282cfed98ba5e0ca64e1373dcc94c0a024f2870878f8056f60157c306bed",
+    "scripts/extract_quinone_precursor_fitness_context.py": "566c1a5819c523a2b449e256ad06d13d66ce988553048e55ddc882621d3f052f",
+    "scripts/map_ppnp_candidates.py": "00934f12059487d7ae2a0d953e47f4c03d6ade342addf10fbef5d7710d3da452",
+    "scripts/map_quinone_pathway.py": "07a690e749e6ff05b318fab8c0cc05e6d20a1b15a502f8b275b569927e1e2088",
+    "scripts/map_quinone_precursor.py": "d345a56632dd96a20cfc3d8b51b4eafda6ef68ace921d582d450be7221352ce0",
+    "scripts/run_carbon_fitness_generic.py": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc",
+    "scripts/run_medium_preparation.py": "a2ba61fca0fd6f24672775e8a03dc6e388122f58bf07140ce2c8fd3f3657e7e5",
+    "scripts/run_medium_preparation_v2.py": "47767a8e173a82f574a903aef42374f181fd10677d2fe58901710227548b1c00",
+    "scripts/run_ppnp_repair.py": "9796085083bd1a70e9fafc146a676885d5b6d743e841899ab948771d5bb224bc",
+    "scripts/run_precursor_supply.py": "d4c271ffdc83289858852ee4c8e480e9444595a4cc50070de4c7a652a03153e8",
+    "scripts/run_quinone_biomass_sensitivity.py": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d",
+    "scripts/run_quinone_repair.py": "4bf0e9992d07001143a86189d8f969ddd5b821e3a158ae9fc7e1af4706e6782c",
+    "scripts/verify_quinone_repair_solvers.py": "03fe1447d6a162c46ef02a43955ea734eeb71fd53d303d1dd62b13e867ee2cc0",
+    "tests/test_compare_curated_medium_solvers.py": "695643b3164547993d8a0353b96f2cbce81f52a9b96967a87c4332c14405ea77",
+    "tests/test_medium_preparation.py": "7c8a1aad2f5533f91354e52da0014308280d8bf2a4ba3993bcffd9206b731109",
+    "tests/test_medium_preparation_runner.py": "5daa8d27b9b5dd7bafec18a2dd23be22839e1846b59beb4a4d819786b8c65bf8",
+    "tests/test_medium_preparation_v2.py": "539ca2f8c71edc13224262e8c88817ab7b9f3e17c85ed89d41639a63ef80859e",
+    "tests/test_ppnp_repair.py": "12a96a6a24190af27c3addefaafb4b13dce7d3ec77a19e80ba611e59985f7361",
+    "tests/test_precursor_supply.py": "db16a5b67f4d2db36bf952f8607a6102488cae5fea41cdb3b1114d289469858e"
+  },
+  "infeasible_status_with_tolerance_feasible_witness": [],
+  "mass_balance_rows_verified": 248055,
+  "maxima": {
+    "bound_violation": 2.883053021038718e-10,
+    "fsum_residual": 0.02963758389261785,
+    "objective_spread": 7.916757027714993e-09,
+    "sparse_residual": 0.029637583892617836
+  },
+  "method_records_verified": 129,
+  "methods": {
+    "glpk_native": {
+      "accepted_for_comparison": 36,
+      "not_accepted_for_comparison": 7,
+      "original_primal_gate_passes": 36,
+      "status_counts": {
+        "infeasible": 7,
+        "optimal": 36
+      }
+    },
+    "highs_primal_simplex": {
+      "accepted_for_comparison": 26,
+      "not_accepted_for_comparison": 17,
+      "original_primal_gate_passes": 26,
+      "status_counts": {
+        "Infeasible": 7,
+        "Optimal": 36
+      }
+    },
+    "highs_simplex_tighter": {
+      "accepted_for_comparison": 9,
+      "not_accepted_for_comparison": 34,
+      "original_primal_gate_passes": 10,
+      "status_counts": {
+        "Infeasible": 7,
+        "Optimal": 36
+      }
+    }
+  },
+  "n_unanimous_infeasible_conditions": 7,
+  "per_method_maxima": {
+    "glpk_native": {
+      "bound_violation": 1.0480275864041502e-12,
+      "fsum_residual": 0.02963758389261785,
+      "sparse_residual": 0.029637583892617836
+    },
+    "highs_primal_simplex": {
+      "bound_violation": 1.8024629293040373e-11,
+      "fsum_residual": 2.105468154143389e-07,
+      "sparse_residual": 2.1119461278865472e-07
+    },
+    "highs_simplex_tighter": {
+      "bound_violation": 2.883053021038718e-10,
+      "fsum_residual": 2.725267283382532e-07,
+      "sparse_residual": 2.7182596140586275e-07
+    }
+  },
+  "raw_files_verified": 172,
+  "reaction_flux_values_verified": 337525,
+  "rejected_method_records": [
+    {
+      "condition": "L-Histidine | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "L-Histidine | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "glpk_native"
+    },
+    {
+      "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Vanillin | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "Vanillin | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "1,2-Propanediol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "glpk_native"
+    },
+    {
+      "condition": "1,2-Propanediol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "1,2-Propanediol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Sodium propionate | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Vanillic Acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "L-Lysine | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "p-Coumaric acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "benzoic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "Ferulic Acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "D-Glucose | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Phenylacetic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "glpk_native"
+    },
+    {
+      "condition": "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "glpk_native"
+    },
+    {
+      "condition": "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Decanoic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Lauric acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Octanoic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Myristic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Oleic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "Oleic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Butanol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "glpk_native"
+    },
+    {
+      "condition": "Butanol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "Butanol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "glpk_native"
+    },
+    {
+      "condition": "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "L-Leucine | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "glpk_native"
+    },
+    {
+      "condition": "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "optimal_status",
+        "complete_finite_vector",
+        "original_primal_gate",
+        "compensated_residual_gate",
+        "objective_matches_vector"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "D-Glucose | RCH2_defined_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "D-Glucose | RCH2_defined_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "Potassium acetate | RCH2_defined_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_primal_simplex"
+    },
+    {
+      "condition": "Potassium acetate | RCH2_defined_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "p-Coumaric acid | RCH2_defined_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    },
+    {
+      "condition": "D-Lysine | MOPS minimal media_noCarbon",
+      "failed_requirements": [
+        "original_primal_gate",
+        "compensated_residual_gate"
+      ],
+      "method": "highs_simplex_tighter"
+    }
+  ],
+  "scope": "Independent artifact reconstruction and numerical-decision verification; no optimizer called. Unanimous infeasible statuses lack independent ray certificates and are separate from accepted optimal evidence. Stale or zero vectors are not growth evidence. A passed audit does not make rejected vectors acceptable, prove dual optimality, validate biology, or rewrite failed primary studies.",
+  "source_sha256": {
+    "scripts/verify_curated_medium_numerics.py": "e7ba0b51724ff62823d1c4c005e070e63c6d494737c1cfcba97b94e4142b5fdb",
+    "scripts/verify_medium_preparation.py": "7aa1087262ce19a1a99021e6c8f76cf2c409078782d236b6d05e22a86727fdb7"
+  },
+  "status": "passed",
+  "study_fingerprint": "80d563f29315ee764d39abf24c76582e0500912e323c6165a2fdaa157bbb354b",
+  "unanimous_infeasible_conditions": [
+    "Sodium butyrate | MOPS minimal media_noCarbon",
+    "1,2-Propanediol | MOPS minimal media_noCarbon",
+    "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+    "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+    "Butanol | MOPS minimal media_noCarbon",
+    "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+    "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon"
+  ]
+}

@@ -1,0 +1,2803 @@
+{
+  "completed": true,
+  "study": {
+    "study_id": "medium-curated-numerics-v1",
+    "evaluation_role": "development",
+    "model_label": "Putida_iJN1463",
+    "parent_manifest": "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json",
+    "inventory_record": "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.json",
+    "preparation_version": "frozen gembench.medium_preparation_v2, following failed primary v2 protocol",
+    "compartments": {
+      "external": "e",
+      "cytoplasm": "c",
+      "exchange_metabolites": {
+        "EX_AEP_e": "2ameph_e"
+      }
+    },
+    "condition_count": 43,
+    "solve_count": 129,
+    "residual_tolerance": 1e-08,
+    "objective_tolerance": 1e-08,
+    "methods": [
+      {
+        "id": "glpk_native",
+        "solver": "glpk",
+        "basis": "native",
+        "solver_tolerance": 1e-09,
+        "scaling": "native optlang GLP_SF_AUTO"
+      },
+      {
+        "id": "highs_primal_simplex",
+        "solver": "highs",
+        "method": "simplex",
+        "solver_tolerance": 1e-09,
+        "threads": 0,
+        "time_limit_seconds": 60.0,
+        "extra_options": {
+          "parallel": "off",
+          "simplex_strategy": 4
+        }
+      },
+      {
+        "id": "highs_simplex_tighter",
+        "solver": "highs",
+        "method": "simplex",
+        "solver_tolerance": 1e-10,
+        "threads": 0,
+        "time_limit_seconds": 60.0,
+        "extra_options": {
+          "parallel": "off"
+        }
+      }
+    ],
+    "input_paths": [
+      "data/studies/medium_curated_numerics_v1.json",
+      "docs/studies/medium-curated-numerics-v1.md",
+      "scripts/compare_curated_medium_solvers.py",
+      "tests/test_compare_curated_medium_solvers.py",
+      "scripts/diagnose_medium_numerics.py",
+      "scripts/diagnose_medium_numerics_attempt02.py",
+      "scripts/diagnose_medium_numerics_attempt02b.py",
+      "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json",
+      "results/medium_preparation_2026_09_06/runs/main_v2/failure.json",
+      "results/medium_preparation_2026_09_06/runs/main_v2/cases.jsonl.gz"
+    ],
+    "diagnostic_inputs": [
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/README.md",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/diagnostic_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/optlang_glpk_interface_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/input_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_settings.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/runtime.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_model.xml.gz",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_signature.json.gz",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_context.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_artifact_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_native.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_advanced_basis.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_simplex.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_ipm.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/summary.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/diagnostic_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/attempt01_helpers_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/input_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/presolve_settings.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/supported_effective_options.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/runtime.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/failure.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/diagnostic_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/attempt01_helpers_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/input_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_settings.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/supported_effective_options.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/runtime.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/prepared_context.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_artifact_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_primal_simplex.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_dual_no_presolve.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_tighter.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_no_scaling.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/summary.json"
+    ],
+    "selection": "All43 mapped curated Putida conditions from the frozen inventory, exact order, same three fixed methods on every case. No numerical fitness values or gene scores read.",
+    "acceptance": "Retain original sparse primal gate at1e-8. accepted_for_comparison additionally requires optimal status, complete finite vector, finite compensated max residual<=1e-8, and reported objective consistent with the vector under original1e-8 absolute/relative tolerances. All reported optimal objectives must agree, including records with rejected primal vectors; Contradictory optimal versus infeasible, unbounded or combined infeasible-or-unbounded status blocks accepted cross-solver evidence. Capture-exception records are never accepted. A third-method timeout or exception without a contradictory status remains reported but does not invalidate two other accepted methods.",
+    "cross_solver_evidence": "Require accepted native GLPK and at least one accepted HiGHS method plus agreement among all reported optimal objectives. Report each method separately; never hide the third method failure. This is numerical evidence, not a mathematical optimality proof.",
+    "failure_policy": "Persist raw vectors/statuses before structural or acceptance checks. Continue all43 cases despite numerical certificate failures, time limits or objective disagreements. Stop only for provenance, unsupported input or changed LP algebra. No automatic option/model/gate changes.",
+    "scope": "Post-failure numerical comparison. The failed primary runs remain failed; this does not complete or rewrite them, rescore fitness, establish biochemical validity or provide independent biological validation."
+  },
+  "study_fingerprint": "80d563f29315ee764d39abf24c76582e0500912e323c6165a2fdaa157bbb354b",
+  "n_conditions": 43,
+  "n_solves": 129,
+  "n_complete_finite_vectors": 115,
+  "methods": {
+    "glpk_native": {
+      "status_counts": {
+        "optimal": 36,
+        "infeasible": 7
+      },
+      "original_primal_gate_passes": 36,
+      "accepted_for_comparison": 36,
+      "not_accepted_for_comparison": 7
+    },
+    "highs_primal_simplex": {
+      "status_counts": {
+        "Optimal": 36,
+        "Infeasible": 7
+      },
+      "original_primal_gate_passes": 26,
+      "accepted_for_comparison": 26,
+      "not_accepted_for_comparison": 17
+    },
+    "highs_simplex_tighter": {
+      "status_counts": {
+        "Optimal": 36,
+        "Infeasible": 7
+      },
+      "original_primal_gate_passes": 10,
+      "accepted_for_comparison": 9,
+      "not_accepted_for_comparison": 34
+    }
+  },
+  "conditions": [
+    {
+      "condition": "L-Arginine | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.9342340398861894,
+          "second_objective": 0.9342340398875792,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9342340398861894,
+          "second_objective": 0.9342340399439224,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9342340398875792,
+          "second_objective": 0.9342340399439224,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": true
+    },
+    {
+      "condition": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.7429518743862713,
+          "second_objective": 0.7429518743865936,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.7429518743862713,
+          "second_objective": 0.7429518743878151,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.7429518743865936,
+          "second_objective": 0.7429518743878151,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": true
+    },
+    {
+      "condition": "L-Histidine | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.8330837064553335,
+          "second_objective": 0.8330837064556587,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8330837064553335,
+          "second_objective": 0.8330837064568825,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8330837064556587,
+          "second_objective": 0.8330837064568825,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.5288375134650721,
+          "second_objective": 0.5288375134648846,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.5288375134650721,
+          "second_objective": 0.5288375088103324,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.5288375134648846,
+          "second_objective": 0.5288375088103324,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.6649253964977729,
+          "second_objective": 0.6649253964981121,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.6649253964977729,
+          "second_objective": 0.6649253964584118,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.6649253964981121,
+          "second_objective": 0.6649253964584118,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Sodium butyrate | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        }
+      },
+      "n_reported_optimal": 0,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [],
+      "all_reported_optimal_objectives_agree": false,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Vanillin | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.002839963716261,
+          "second_objective": 1.0028399611755157,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.002839963716261,
+          "second_objective": 1.0028399628418476,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.0028399611755157,
+          "second_objective": 1.0028399628418476,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "1,2-Propanediol | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        }
+      },
+      "n_reported_optimal": 0,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [],
+      "all_reported_optimal_objectives_agree": false,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Sodium propionate | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.4700666011005811,
+          "second_objective": 0.4700666010926934,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.4700666011005811,
+          "second_objective": 0.4700665952847311,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.4700666010926934,
+          "second_objective": 0.4700665952847311,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.7213015691529607,
+          "second_objective": 0.7213015691545435,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.7213015691529607,
+          "second_objective": 0.7213015633781938,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.7213015691545435,
+          "second_objective": 0.7213015633781938,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Vanillic Acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.9371011625631713,
+          "second_objective": 0.9371011625635132,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9371011625631713,
+          "second_objective": 0.9371011578828982,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9371011625635132,
+          "second_objective": 0.9371011578828982,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Protocatechuic Acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.8577165641274285,
+          "second_objective": 0.8577165641277715,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8577165641274285,
+          "second_objective": 0.8577165641282073,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8577165641277715,
+          "second_objective": 0.8577165641282073,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": true
+    },
+    {
+      "condition": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.7783319656916898,
+          "second_objective": 0.7783319656518387,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.7783319656916898,
+          "second_objective": 0.7783319656745084,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.7783319656518387,
+          "second_objective": 0.7783319656745084,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "L-Lysine | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.9826296399645029,
+          "second_objective": 0.9826296399791293,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9826296399645029,
+          "second_objective": 0.9826296320623723,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9826296399791293,
+          "second_objective": 0.9826296320623723,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "p-Coumaric acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.1451147097472556,
+          "second_objective": 1.1451147097231134,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.1451147097472556,
+          "second_objective": 1.1451147069461651,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.1451147097231134,
+          "second_objective": 1.1451147069461651,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "benzoic acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.8693149336977045,
+          "second_objective": 0.8693149336925929,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8693149336977045,
+          "second_objective": 0.8693149336705333,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8693149336925929,
+          "second_objective": 0.8693149336705333,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Ferulic Acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.2983336670115873,
+          "second_objective": 1.2983336670049195,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.2983336670115873,
+          "second_objective": 1.298333667069858,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.2983336670049195,
+          "second_objective": 1.298333667069858,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "D-Glucose | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.9796368101803977,
+          "second_objective": 0.9796368101930129,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9796368101803977,
+          "second_objective": 0.9796368101715628,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9796368101930129,
+          "second_objective": 0.9796368101715628,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Phenylacetic acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.2545568220787722,
+          "second_objective": 1.254556822032713,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.2545568220787722,
+          "second_objective": 1.2545568221105148,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.254556822032713,
+          "second_objective": 1.2545568221105148,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        }
+      },
+      "n_reported_optimal": 0,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [],
+      "all_reported_optimal_objectives_agree": false,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        }
+      },
+      "n_reported_optimal": 0,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [],
+      "all_reported_optimal_objectives_agree": false,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Hexanoic acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.1460129939923993,
+          "second_objective": 1.1460129933782723,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.1460129939923993,
+          "second_objective": 1.1460129941188641,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.1460129933782723,
+          "second_objective": 1.1460129941188641,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Decanoic acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 2.0310758923797123,
+          "second_objective": 2.0310758923779924,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 2.0310758923797123,
+          "second_objective": 2.031075885861696,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 2.0310758923779924,
+          "second_objective": 2.031075885861696,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Lauric acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 2.472162441929854,
+          "second_objective": 2.4721624419281256,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 2.472162441929854,
+          "second_objective": 2.472162435272154,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 2.4721624419281256,
+          "second_objective": 2.472162435272154,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Octanoic acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.5875807611406423,
+          "second_objective": 1.5875807611205344,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.5875807611406423,
+          "second_objective": 1.5875807546564265,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.5875807611205344,
+          "second_objective": 1.5875807546564265,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Myristic acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 2.9131981270282177,
+          "second_objective": 2.913198127028554,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 2.9131981270282177,
+          "second_objective": 2.913198121565074,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 2.913198127028554,
+          "second_objective": 2.913198121565074,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Oleic acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 3.7498431951006514,
+          "second_objective": 3.749843189080528,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 3.7498431951006514,
+          "second_objective": 3.749843189450824,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 3.749843189080528,
+          "second_objective": 3.749843189450824,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Butanol | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        }
+      },
+      "n_reported_optimal": 0,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [],
+      "all_reported_optimal_objectives_agree": false,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        }
+      },
+      "n_reported_optimal": 0,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [],
+      "all_reported_optimal_objectives_agree": false,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Ethanol | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.46534777815101186,
+          "second_objective": 0.4653477781513391,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.46534777815101186,
+          "second_objective": 0.4653477781588378,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.4653477781513391,
+          "second_objective": 0.4653477781588378,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": true
+    },
+    {
+      "condition": "L-Valine | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.8331945689785256,
+          "second_objective": 0.8331945689783383,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8331945689785256,
+          "second_objective": 0.8331945689492634,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8331945689783383,
+          "second_objective": 0.8331945689492634,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": true
+    },
+    {
+      "condition": "L-Leucine | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.0672345543158772,
+          "second_objective": 1.0672345613015675,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.0672345543158772,
+          "second_objective": 1.0672345543165898,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.0672345613015675,
+          "second_objective": 1.0672345543165898,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "L-Isoleucine | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.1137875829305641,
+          "second_objective": 1.1137875828979478,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.1137875829305641,
+          "second_objective": 1.1137875829276802,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.1137875828979478,
+          "second_objective": 1.1137875829276802,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": true
+    },
+    {
+      "condition": "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": false,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": false,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "optimal_status",
+            "complete_finite_vector",
+            "original_primal_gate",
+            "compensated_residual_gate",
+            "objective_matches_vector"
+          ]
+        }
+      },
+      "n_reported_optimal": 0,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [],
+      "all_reported_optimal_objectives_agree": false,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "D-Glucose | RCH2_defined_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.9806704787008376,
+          "second_objective": 0.98067047740807,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9806704787008376,
+          "second_objective": 0.980670482221918,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.98067047740807,
+          "second_objective": 0.980670482221918,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Potassium acetate | RCH2_defined_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.26921314082197534,
+          "second_objective": 0.26921314053257783,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.26921314082197534,
+          "second_objective": 0.2692131429395018,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.26921314053257783,
+          "second_objective": 0.2692131429395018,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": false,
+      "accepted_cross_solver_evidence": false,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.8079027900861969,
+          "second_objective": 0.8079027900865247,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8079027900861969,
+          "second_objective": 0.8079027900865215,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8079027900865247,
+          "second_objective": 0.8079027900865215,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "Vanillin | RCH2_defined_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.0039124000328963,
+          "second_objective": 1.0039124000316157,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.0039124000328963,
+          "second_objective": 1.003912399945859,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.0039124000316157,
+          "second_objective": 1.003912399945859,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": true
+    },
+    {
+      "condition": "p-Coumaric acid | RCH2_defined_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 1.1463214857510924,
+          "second_objective": 1.1463214857105577,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.1463214857510924,
+          "second_objective": 1.1463214854920778,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 1.1463214857105577,
+          "second_objective": 1.1463214854920778,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.8079027900861966,
+          "second_objective": 0.8079027900633375,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8079027900861966,
+          "second_objective": 0.8079027900865215,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8079027900633375,
+          "second_objective": 0.8079027900865215,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.6876067103365539,
+          "second_objective": 0.6876067103368955,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.6876067103365539,
+          "second_objective": 0.6876067090971237,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.6876067103368955,
+          "second_objective": 0.6876067090971237,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.8255578710151412,
+          "second_objective": 0.8255578710154652,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8255578710151412,
+          "second_objective": 0.825557866403442,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.8255578710154652,
+          "second_objective": 0.825557866403442,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    },
+    {
+      "condition": "D-Lysine | MOPS minimal media_noCarbon",
+      "methods": {
+        "glpk_native": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_primal_simplex": {
+          "original_primal_gate_recomputed": true,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": true,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": true,
+          "failed_requirements": []
+        },
+        "highs_simplex_tighter": {
+          "original_primal_gate_recomputed": false,
+          "complete_finite_vector": true,
+          "compensated_residual_gate": false,
+          "objective_matches_vector": true,
+          "accepted_for_comparison": false,
+          "failed_requirements": [
+            "original_primal_gate",
+            "compensated_residual_gate"
+          ]
+        }
+      },
+      "n_reported_optimal": 3,
+      "all_optimal_objectives_finite": true,
+      "pairwise_reported_optimal_objectives": [
+        {
+          "first": "glpk_native",
+          "second": "highs_primal_simplex",
+          "first_objective": 0.9826296399645058,
+          "second_objective": 0.9826296399625479,
+          "agree": true
+        },
+        {
+          "first": "glpk_native",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9826296399645058,
+          "second_objective": 0.9826296320623723,
+          "agree": true
+        },
+        {
+          "first": "highs_primal_simplex",
+          "second": "highs_simplex_tighter",
+          "first_objective": 0.9826296399625479,
+          "second_objective": 0.9826296320623723,
+          "agree": true
+        }
+      ],
+      "all_reported_optimal_objectives_agree": true,
+      "reported_feasibility_conflict": false,
+      "reported_status_conflict": false,
+      "glpk_and_at_least_one_highs_accepted": true,
+      "accepted_cross_solver_evidence": true,
+      "all_three_methods_accepted": false
+    }
+  ],
+  "n_conditions_with_cross_solver_evidence": 28,
+  "n_conditions_all_three_methods_accepted": 7,
+  "input_verification_after": {
+    "valid": true,
+    "checked_files": 204,
+    "missing": [],
+    "changed": [],
+    "errors": [],
+    "content_fingerprint": "80d563f29315ee764d39abf24c76582e0500912e323c6165a2fdaa157bbb354b"
+  },
+  "seconds": 193.5953757762909,
+  "scope": "Fixed post-failure numerical comparison. Primal feasibility and cross-method objective agreement are not a mathematical optimality proof, biochemical validation, phenotype rescore or rewrite of failed primary runs."
+}

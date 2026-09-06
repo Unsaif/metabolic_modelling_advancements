@@ -51,8 +51,10 @@ BiGG exchange model and returns an isolated copy plus a report. It:
 - Validates single-metabolite, coefficient −1 exchanges and their annotations.
 - Resets every validated environmental exchange independently of COBRA's
   compartment heuristic and records every boundary bound.
-- Rejects malformed nutrient bounds, inactive gene flags, conflicting carrier
-  definitions and known transport-metabolite chemistry disagreements.
+- Rejects malformed nutrient bounds, inactive gene flags, conflicting completion
+  carrier definitions and known formula/charge disagreements between metabolite
+  pairs inspected by the completion recipe. Other existing transport reactions
+  are not chemically validated by this helper.
 - Reports missing components only when the caller explicitly allows this;
   otherwise it raises without changing the input model.
 - Retains and discloses internal demands/sinks, including any able to supply
@@ -129,7 +131,8 @@ Exact equality compares numbers, so an integer bound `0` and floating-point
 bound `0.0` are equal even though their serialized JSON hashes can differ.
 
 The [one-condition numerical diagnosis](../../results/medium_preparation_2026_09_06/numerical_diagnostic/summary.json)
-preserves the rejected vector and predeclares four numerical methods. Native
+reproduces the failure and preserves its newly returned rejected vector; the
+primary run's failed vector was not saved. It predeclares four numerical methods. Native
 GLPK has maximum mass-balance residual 7.13e-14. HiGHS simplex reports an optimum
 within 3.00e-9 of GLPK but has residual 7.18e-8, above the unchanged 1e-8 gate.
 An independent compensated sum also rejects two metabolite rows. Its solution
@@ -163,6 +166,59 @@ failures. Checker development attempts stopped on relative-path handling and
 integer/float serialization assumptions; their source and failures are retained
 beside the passing verification, rather than overwritten.
 
+## Full curated numerical comparison
+
+The [post-failure comparison definition](../studies/medium-curated-numerics-v1.md)
+was pushed as `54b145d` before execution. It applies native GLPK, HiGHS primal
+simplex and tighter default simplex to every one of the 43 curated conditions,
+with no adaptive choice inside the run. The clean manifest freezes 204 inputs,
+fingerprint `80d563f29315ee764d39abf24c76582e0500912e323c6165a2fdaa157bbb354b`.
+Its acceptance check retains the original 1e-8 bounds/balance gate and adds a
+compensated-sum check at the same tolerance. All reported optimal objectives
+must agree, including those whose vectors fail feasibility checks. Rejected
+vectors are written before any acceptance or post-solve integrity check.
+
+The [complete results](../../results/medium_preparation_2026_09_06/curated_numerical_comparison/summary.json)
+contain all 43 conditions and 129 method records. Every method reports an optimum
+in the same 36 conditions and infeasibility in the same seven. All 36 optimal
+objective triples agree under the declared tolerance; the largest absolute
+difference is 7.92e-9. Numerical feasibility is less consistent:
+
+| Method | Reported optimal | Accepted optimal vectors | Rejected optimal vectors | Reported infeasible |
+|---|---:|---:|---:|---:|
+| Native GLPK | 36 | 36 | 0 | 7 |
+| HiGHS primal simplex | 36 | 26 | 10 | 7 |
+| HiGHS default simplex, tighter tolerances | 36 | 9 | 27 | 7 |
+
+There is accepted GLPK-plus-HiGHS evidence in 28 conditions; all three methods
+pass in seven. Eight reported-optimal conditions remain without that
+cross-solver certificate: L-histidine, vanillin, hydroxy-L-proline,
+4-hydroxybenzoic acid, hexanoic acid and oleic acid in MOPS; glucose and
+potassium acetate in RCH2. GLPK passes all eight, while both HiGHS methods fail
+at least one residual gate. In L-histidine, tighter HiGHS passes the sparse
+gate (8.46e-9) but fails the compensated sum (1.09e-8).
+
+Tighter solver tolerances alone therefore do not provide a reliable remedy
+across this panel. The largest absolute optimal flow is 231.889 for GLPK,
+while both HiGHS methods still reach the inherited 999999 bounds. Maximum
+compensated residuals are 9.64e-11, 2.11e-7 and 2.73e-7, respectively. These
+observations support continued numerical investigation without changing the
+biochemical formulation to force acceptance.
+
+The seven unanimous infeasible reports concern sodium butyrate, 1,2-propanediol,
+3-methyl-2-oxobutanoate, 4-methyl-2-oxovalerate, butanol, 3-methyl-1-butanol and
+3-methyl-2-oxopentanoate in MOPS. They are retained as solver-reported
+infeasibility, with no independent ray proof or fabricated zero-growth value.
+
+The [independent numerical checker](../../results/medium_preparation_2026_09_06/curated_numerical_comparison/independent_verification/result.json)
+passes all 43 cases and 129 records, including rejected results. It reconstructs
+337,525 flux values and 248,055 balance rows in 115 complete finite vectors,
+verifies 172 raw files, 16,555 boundary records and all 204 frozen inputs, and
+recovers every acceptance decision above. None of the saved vectors associated
+with infeasible statuses is independently feasible. This verification confirms
+the classifications and retained limitations; it does not turn rejected vectors
+into accepted solutions or prove biological validity.
+
 ## Metadata isolation found in review
 
 Independent review found that COBRA's `Model.copy()` does not detach all nested
@@ -185,15 +241,21 @@ The maintained suite passes 447 tests plus six subtests at this checkpoint.
 Test discovery now explicitly selects `tests/`, because archived source
 snapshots are evidence and must not be collected as duplicate test modules.
 
+After adding the numerical comparison, its adversarial acceptance tests and the
+independent checker tests, the final maintained suite passes **500 tests plus
+six subtests**. The 18 existing scikit-learn warnings remain unchanged.
+
 ## Reproduction and next use
 
-Use fresh directories with `requirements-audit.txt` installed:
+Use a clean committed checkout, fresh directories and `requirements-audit.txt`:
 
 ```sh
 .venv/bin/python -m pytest -q
 .venv/bin/python scripts/run_medium_preparation_v2.py --out <fresh-run>
 .venv/bin/python scripts/audit_medium_structures.py --run results/medium_preparation_2026_09_06/runs/main_v2 --out <fresh-structural-audit>
 .venv/bin/python scripts/diagnose_medium_numerics.py --out <fresh-numerical-diagnosis>
+.venv/bin/python scripts/compare_curated_medium_solvers.py --out <fresh-curated-comparison>
+.venv/bin/python scripts/verify_curated_medium_numerics.py --run results/medium_preparation_2026_09_06/curated_numerical_comparison --out <fresh-curated-verification>
 ```
 
 The primary v2 command reproduces the declared attempted panel, including its

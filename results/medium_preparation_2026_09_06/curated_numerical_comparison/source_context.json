@@ -1,0 +1,398 @@
+{
+  "provenance": {
+    "label": "Putida_iJN1463",
+    "mode": "unmodified_local_curated_structural_reference_already_exposed_Putida",
+    "source_path": "models/bigg/iJN1463.xml",
+    "source_sha256": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+    "applied_historical_changes": [],
+    "input_sha256": {
+      "gembench/fitness_browser.py": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c",
+      "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+      "gembench/media.py": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe",
+      "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+      "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+      "models/bigg/iJN1463.xml": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+      "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b"
+    },
+    "excluded_operations": [
+      "optimization",
+      "energy probe",
+      "knockout simulation",
+      "fitness value parsing",
+      "metric calculation",
+      "medium completion",
+      "new patch selection"
+    ]
+  },
+  "conditions": [
+    {
+      "key": "L-Arginine | MOPS minimal media_noCarbon",
+      "name": "L-Arginine",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_arg__L_e"
+      ]
+    },
+    {
+      "key": "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+      "name": "L-Glutamic acid monopotassium salt monohydrate",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_glu__L_e"
+      ]
+    },
+    {
+      "key": "L-Histidine | MOPS minimal media_noCarbon",
+      "name": "L-Histidine",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_his__L_e"
+      ]
+    },
+    {
+      "key": "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+      "name": "Sodium succinate dibasic hexahydrate",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_succ_e"
+      ]
+    },
+    {
+      "key": "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+      "name": "a-Ketoglutaric acid disodium salt hydrate",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_akg_e"
+      ]
+    },
+    {
+      "key": "Sodium butyrate | MOPS minimal media_noCarbon",
+      "name": "Sodium butyrate",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_but_e"
+      ]
+    },
+    {
+      "key": "Vanillin | MOPS minimal media_noCarbon",
+      "name": "Vanillin",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_vanln_e"
+      ]
+    },
+    {
+      "key": "1,2-Propanediol | MOPS minimal media_noCarbon",
+      "name": "1,2-Propanediol",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_12ppd__S_e",
+        "EX_12ppd__R_e"
+      ]
+    },
+    {
+      "key": "Sodium propionate | MOPS minimal media_noCarbon",
+      "name": "Sodium propionate",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_ppa_e"
+      ]
+    },
+    {
+      "key": "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+      "name": "Hydroxy-L-Proline",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_4hpro_LT_e"
+      ]
+    },
+    {
+      "key": "Vanillic Acid | MOPS minimal media_noCarbon",
+      "name": "Vanillic Acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_vanlt_e"
+      ]
+    },
+    {
+      "key": "Protocatechuic Acid | MOPS minimal media_noCarbon",
+      "name": "Protocatechuic Acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_34dhbz_e"
+      ]
+    },
+    {
+      "key": "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+      "name": "4-Hydroxybenzoic Acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_4hbz_e"
+      ]
+    },
+    {
+      "key": "L-Lysine | MOPS minimal media_noCarbon",
+      "name": "L-Lysine",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_lys__L_e"
+      ]
+    },
+    {
+      "key": "p-Coumaric acid | MOPS minimal media_noCarbon",
+      "name": "p-Coumaric acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_T4hcinnm_e"
+      ]
+    },
+    {
+      "key": "benzoic acid | MOPS minimal media_noCarbon",
+      "name": "benzoic acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_bz_e"
+      ]
+    },
+    {
+      "key": "Ferulic Acid | MOPS minimal media_noCarbon",
+      "name": "Ferulic Acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_fer_e"
+      ]
+    },
+    {
+      "key": "D-Glucose | MOPS minimal media_noCarbon",
+      "name": "D-Glucose",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_glc__D_e"
+      ]
+    },
+    {
+      "key": "Phenylacetic acid | MOPS minimal media_noCarbon",
+      "name": "Phenylacetic acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_pac_e"
+      ]
+    },
+    {
+      "key": "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+      "name": "3-Methyl-2-Oxobutanoic Acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_3mob_e"
+      ]
+    },
+    {
+      "key": "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+      "name": "4-Methyl-2-oxovaleric acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_4mop_e"
+      ]
+    },
+    {
+      "key": "Hexanoic acid | MOPS minimal media_noCarbon",
+      "name": "Hexanoic acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_hxa_e"
+      ]
+    },
+    {
+      "key": "Decanoic acid | MOPS minimal media_noCarbon",
+      "name": "Decanoic acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_dca_e"
+      ]
+    },
+    {
+      "key": "Lauric acid | MOPS minimal media_noCarbon",
+      "name": "Lauric acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_ddca_e"
+      ]
+    },
+    {
+      "key": "Octanoic acid | MOPS minimal media_noCarbon",
+      "name": "Octanoic acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_octa_e"
+      ]
+    },
+    {
+      "key": "Myristic acid | MOPS minimal media_noCarbon",
+      "name": "Myristic acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_ttdca_e"
+      ]
+    },
+    {
+      "key": "Oleic acid | MOPS minimal media_noCarbon",
+      "name": "Oleic acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_ocdcea_e"
+      ]
+    },
+    {
+      "key": "Butanol | MOPS minimal media_noCarbon",
+      "name": "Butanol",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_btoh_e"
+      ]
+    },
+    {
+      "key": "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+      "name": "3-methyl-1-butanol",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_iamoh_e"
+      ]
+    },
+    {
+      "key": "Ethanol | MOPS minimal media_noCarbon",
+      "name": "Ethanol",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_etoh_e"
+      ]
+    },
+    {
+      "key": "L-Valine | MOPS minimal media_noCarbon",
+      "name": "L-Valine",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_val__L_e"
+      ]
+    },
+    {
+      "key": "L-Leucine | MOPS minimal media_noCarbon",
+      "name": "L-Leucine",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_leu__L_e"
+      ]
+    },
+    {
+      "key": "L-Isoleucine | MOPS minimal media_noCarbon",
+      "name": "L-Isoleucine",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_ile__L_e"
+      ]
+    },
+    {
+      "key": "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+      "name": "3-methyl-2-oxopentanoic acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_3mop_e"
+      ]
+    },
+    {
+      "key": "D-Glucose | RCH2_defined_noCarbon",
+      "name": "D-Glucose",
+      "media": "RCH2_defined_noCarbon",
+      "exchanges": [
+        "EX_glc__D_e"
+      ]
+    },
+    {
+      "key": "Potassium acetate | RCH2_defined_noCarbon",
+      "name": "Potassium acetate",
+      "media": "RCH2_defined_noCarbon",
+      "exchanges": [
+        "EX_ac_e"
+      ]
+    },
+    {
+      "key": "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+      "name": "D-Galacturonic Acid monohydrate",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_galur_e"
+      ]
+    },
+    {
+      "key": "Vanillin | RCH2_defined_noCarbon",
+      "name": "Vanillin",
+      "media": "RCH2_defined_noCarbon",
+      "exchanges": [
+        "EX_vanln_e"
+      ]
+    },
+    {
+      "key": "p-Coumaric acid | RCH2_defined_noCarbon",
+      "name": "p-Coumaric acid",
+      "media": "RCH2_defined_noCarbon",
+      "exchanges": [
+        "EX_T4hcinnm_e"
+      ]
+    },
+    {
+      "key": "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+      "name": "D-Glucuronic Acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_glcur_e"
+      ]
+    },
+    {
+      "key": "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+      "name": "4-Aminobutyric acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_4abut_e"
+      ]
+    },
+    {
+      "key": "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+      "name": "5-Aminovaleric acid",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_5aptn_e"
+      ]
+    },
+    {
+      "key": "D-Lysine | MOPS minimal media_noCarbon",
+      "name": "D-Lysine",
+      "media": "MOPS minimal media_noCarbon",
+      "exchanges": [
+        "EX_lys__D_e"
+      ]
+    }
+  ],
+  "effective_highs_options": {
+    "highs_primal_simplex": {
+      "solver": "simplex",
+      "presolve": "choose",
+      "threads": 0,
+      "time_limit": 60.0,
+      "primal_feasibility_tolerance": 1e-09,
+      "dual_feasibility_tolerance": 1e-09,
+      "parallel": "off",
+      "simplex_strategy": 4,
+      "simplex_scale_strategy": 2
+    },
+    "highs_simplex_tighter": {
+      "solver": "simplex",
+      "presolve": "choose",
+      "threads": 0,
+      "time_limit": 60.0,
+      "primal_feasibility_tolerance": 1e-10,
+      "dual_feasibility_tolerance": 1e-10,
+      "parallel": "off",
+      "simplex_strategy": 1,
+      "simplex_scale_strategy": 2
+    }
+  }
+}

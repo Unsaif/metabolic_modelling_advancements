@@ -1,0 +1,1402 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-09-06T15:01:44Z",
+  "plan": {
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "effective_highs_options": {
+      "highs_primal_simplex": {
+        "dual_feasibility_tolerance": 1e-09,
+        "parallel": "off",
+        "presolve": "choose",
+        "primal_feasibility_tolerance": 1e-09,
+        "simplex_scale_strategy": 2,
+        "simplex_strategy": 4,
+        "solver": "simplex",
+        "threads": 0,
+        "time_limit": 60.0
+      },
+      "highs_simplex_tighter": {
+        "dual_feasibility_tolerance": 1e-10,
+        "parallel": "off",
+        "presolve": "choose",
+        "primal_feasibility_tolerance": 1e-10,
+        "simplex_scale_strategy": 2,
+        "simplex_strategy": 1,
+        "solver": "simplex",
+        "threads": 0,
+        "time_limit": 60.0
+      }
+    },
+    "evaluation_role": "development",
+    "paths": [
+      "data/fitness_browser/Btheta/experiments.tsv",
+      "data/fitness_browser/Btheta/fit_logratios.tsv",
+      "data/fitness_browser/Btheta/genes.tsv",
+      "data/fitness_browser/MR1/experiments.tsv",
+      "data/fitness_browser/MR1/fit_logratios.tsv",
+      "data/fitness_browser/MR1/genes.tsv",
+      "data/fitness_browser/Putida/experiments.tsv",
+      "data/fitness_browser/Putida/fit_logratios.tsv",
+      "data/fitness_browser/Putida/genes.tsv",
+      "data/fitness_browser/Putida/specific_phenotypes.tsv",
+      "data/fitness_browser/Smeli/experiments.tsv",
+      "data/fitness_browser/Smeli/fit_logratios.tsv",
+      "data/fitness_browser/Smeli/genes.tsv",
+      "data/genpept/Btheta_genpept_map.tsv",
+      "data/genpept/MR1_genpept_map.tsv",
+      "data/genpept/Putida_genpept_map.tsv",
+      "data/genpept/Smeli_genpept_map.tsv",
+      "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz",
+      "data/reference/feba_media_extract.tsv",
+      "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "data/reference/fitness_browser_media_bigg.tsv",
+      "data/reference/gpr_patches_v0.2.json",
+      "data/reference/gpr_patches_v0.3.json",
+      "data/reference/gpr_patches_v0.4.json",
+      "data/reference/model_patches_v0.4.json",
+      "data/reference/universe_patches_v0.1.json",
+      "data/studies/exposure_registry_v1.json",
+      "data/studies/medium_curated_numerics_v1.json",
+      "data/studies/medium_preparation_v1.json",
+      "data/studies/medium_preparation_v2.json",
+      "data/studies/ppnp_repair_v1.json",
+      "data/studies/precursor_supply_v1.json",
+      "data/studies/quinone_repair_v1.json",
+      "docs/evidence/10-putida-ribosyl-disposal-sources.md",
+      "docs/evidence/11-putida-ppnp-candidate.md",
+      "docs/studies/medium-curated-numerics-v1.md",
+      "docs/studies/medium-preparation-v1.md",
+      "docs/studies/medium-preparation-v2.md",
+      "docs/studies/ppnp-repair-v1.md",
+      "docs/studies/precursor-supply-v1.md",
+      "gembench/__init__.py",
+      "gembench/cards.py",
+      "gembench/checks.py",
+      "gembench/cofactor.py",
+      "gembench/comparison.py",
+      "gembench/datasets.py",
+      "gembench/fitness_browser.py",
+      "gembench/frog.py",
+      "gembench/gapfill.py",
+      "gembench/gene_mapping.py",
+      "gembench/media.py",
+      "gembench/medium_preparation.py",
+      "gembench/medium_preparation_v2.py",
+      "gembench/metrics.py",
+      "gembench/patches.py",
+      "gembench/protocols/__init__.py",
+      "gembench/protocols/carbon_fitness_generic.py",
+      "gembench/protocols/ecoli_carbon_fitness.py",
+      "gembench/protocols/yeast_essential.py",
+      "gembench/study.py",
+      "gembench/survey.py",
+      "gembench/wbm.py",
+      "gembench/wbm_iem.py",
+      "models/bigg/iJN1463.xml",
+      "models/gapfilled/Btheta.xml.gz",
+      "models/gapfilled/MR1.xml.gz",
+      "models/gapfilled/Putida.xml.gz",
+      "models/gapfilled/Putida_gapfill.json",
+      "models/gapfilled/Smeli.xml.gz",
+      "requirements-audit.txt",
+      "results/development_sprint_2026_09_06/prespecified_manifest.json",
+      "results/development_sprint_2026_09_06/runs/Btheta_cycle7/invocation.json",
+      "results/development_sprint_2026_09_06/runs/MR1_cycle7/invocation.json",
+      "results/development_sprint_2026_09_06/runs/Smeli_cycle7/invocation.json",
+      "results/medium_preparation_2026_09_06/evidence/__pycache__/inventory_medium_structure.cpython-314.pyc",
+      "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.json",
+      "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.md",
+      "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.py",
+      "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py",
+      "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.json",
+      "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.md",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/README.md",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/diagnostic_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_advanced_basis.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_native.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_ipm.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_simplex.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/input_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/optlang_glpk_interface_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_context.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_model.xml.gz",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_signature.json.gz",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_artifact_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_settings.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/runtime.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic/summary.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/attempt01_helpers_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/diagnostic_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/failure.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/input_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/presolve_settings.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/runtime.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/supported_effective_options.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/attempt01_helpers_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/diagnostic_source.py",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_dual_no_presolve.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_primal_simplex.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_no_scaling.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_tighter.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/input_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/prepared_context.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_artifact_hashes.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_settings.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/runtime.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/summary.json",
+      "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/supported_effective_options.json",
+      "results/medium_preparation_2026_09_06/runs/main/cases.jsonl.gz",
+      "results/medium_preparation_2026_09_06/runs/main/failure.json",
+      "results/medium_preparation_2026_09_06/runs/main/manifest.json",
+      "results/medium_preparation_2026_09_06/runs/main_v2/cases.jsonl.gz",
+      "results/medium_preparation_2026_09_06/runs/main_v2/failure.json",
+      "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json",
+      "results/ppnp_repair_2026_09_06/evidence/design_review.md",
+      "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.py",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537.html",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_rule.txt",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_signature.html",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/P0C037.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_NC0029474.gb",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_uniprot.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP4248_NC0029474.gb",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Q88F51.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0032542781_retry.fasta",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0109528141.fasta",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Ye1994_pubmed.xml",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals.json",
+      "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals_followup.json",
+      "results/ppnp_repair_2026_09_06/evidence/source/APACHE-2.0.txt",
+      "results/ppnp_repair_2026_09_06/evidence/source/CARVEME_LICENSE",
+      "results/ppnp_repair_2026_09_06/evidence/source/NOTICE",
+      "results/ppnp_repair_2026_09_06/evidence/source/license_sources.json",
+      "results/ppnp_repair_2026_09_06/evidence/source/universe_bacteria.xml.gz",
+      "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.json",
+      "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.md",
+      "results/ppnp_repair_2026_09_06/runs/main/both_forward/card.json",
+      "results/ppnp_repair_2026_09_06/runs/main/both_forward/conditions.tsv",
+      "results/ppnp_repair_2026_09_06/runs/main/both_forward/gene_map.json",
+      "results/ppnp_repair_2026_09_06/runs/main/both_forward/matrices.npz",
+      "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz",
+      "results/ppnp_repair_2026_09_06/runs/main/both_forward/physical.json",
+      "results/ppnp_repair_2026_09_06/runs/main/manifest.json",
+      "results/quinone_precursor_2026_09_06/evidence/fitness_context.json",
+      "results/quinone_precursor_2026_09_06/evidence/fitness_context.md",
+      "results/quinone_precursor_2026_09_06/evidence/model_context.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.md",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.py",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/IPR049368.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/KT2440_ubiC_chorismatase_search.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/MF01632_rule.txt",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/NP7474181.fasta",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/P26602.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_NC0029474.gb",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_uniprot.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/WP0109558101.fasta",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/primary_references.xml",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_article.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_final.json",
+      "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_followup.json",
+      "results/quinone_precursor_2026_09_06/runs/main/manifest.json",
+      "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+      "results/quinone_repair_2026_09_06/evidence/postrun_dependency_trace.json",
+      "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+      "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+      "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json",
+      "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+      "results/quinone_repair_2026_09_06/runs/main/manifest.json",
+      "results/ribosyl_disposal_2026_09_06/evidence/source_evidence.json",
+      "scripts/compare_curated_medium_solvers.py",
+      "scripts/diagnose_medium_numerics.py",
+      "scripts/diagnose_medium_numerics_attempt02.py",
+      "scripts/diagnose_medium_numerics_attempt02b.py",
+      "scripts/diagnose_quinone_producibility.py",
+      "scripts/extract_quinone_precursor_fitness_context.py",
+      "scripts/map_ppnp_candidates.py",
+      "scripts/map_quinone_pathway.py",
+      "scripts/map_quinone_precursor.py",
+      "scripts/run_carbon_fitness_generic.py",
+      "scripts/run_medium_preparation.py",
+      "scripts/run_medium_preparation_v2.py",
+      "scripts/run_ppnp_repair.py",
+      "scripts/run_precursor_supply.py",
+      "scripts/run_quinone_biomass_sensitivity.py",
+      "scripts/run_quinone_repair.py",
+      "scripts/verify_quinone_repair_solvers.py",
+      "tests/test_compare_curated_medium_solvers.py",
+      "tests/test_medium_preparation.py",
+      "tests/test_medium_preparation_runner.py",
+      "tests/test_medium_preparation_v2.py",
+      "tests/test_ppnp_repair.py",
+      "tests/test_precursor_supply.py"
+    ],
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "recipe": {
+      "acceptance": "Retain original sparse primal gate at1e-8. accepted_for_comparison additionally requires optimal status, complete finite vector, finite compensated max residual<=1e-8, and reported objective consistent with the vector under original1e-8 absolute/relative tolerances. All reported optimal objectives must agree, including records with rejected primal vectors; Contradictory optimal versus infeasible, unbounded or combined infeasible-or-unbounded status blocks accepted cross-solver evidence. Capture-exception records are never accepted. A third-method timeout or exception without a contradictory status remains reported but does not invalidate two other accepted methods.",
+      "compartments": {
+        "cytoplasm": "c",
+        "exchange_metabolites": {
+          "EX_AEP_e": "2ameph_e"
+        },
+        "external": "e"
+      },
+      "condition_count": 43,
+      "cross_solver_evidence": "Require accepted native GLPK and at least one accepted HiGHS method plus agreement among all reported optimal objectives. Report each method separately; never hide the third method failure. This is numerical evidence, not a mathematical optimality proof.",
+      "diagnostic_inputs": [
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/README.md",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/diagnostic_source.py",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/optlang_glpk_interface_source.py",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/input_hashes.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_settings.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/runtime.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_model.xml.gz",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_signature.json.gz",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_context.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_artifact_hashes.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_native.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_advanced_basis.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_simplex.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_ipm.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic/summary.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/diagnostic_source.py",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/attempt01_helpers_source.py",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/input_hashes.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/presolve_settings.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/supported_effective_options.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/runtime.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/failure.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/diagnostic_source.py",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/attempt01_helpers_source.py",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/input_hashes.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_settings.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/supported_effective_options.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/runtime.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/prepared_context.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_artifact_hashes.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_primal_simplex.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_dual_no_presolve.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_tighter.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_no_scaling.json",
+        "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/summary.json"
+      ],
+      "evaluation_role": "development",
+      "failure_policy": "Persist raw vectors/statuses before structural or acceptance checks. Continue all43 cases despite numerical certificate failures, time limits or objective disagreements. Stop only for provenance, unsupported input or changed LP algebra. No automatic option/model/gate changes.",
+      "input_paths": [
+        "data/studies/medium_curated_numerics_v1.json",
+        "docs/studies/medium-curated-numerics-v1.md",
+        "scripts/compare_curated_medium_solvers.py",
+        "tests/test_compare_curated_medium_solvers.py",
+        "scripts/diagnose_medium_numerics.py",
+        "scripts/diagnose_medium_numerics_attempt02.py",
+        "scripts/diagnose_medium_numerics_attempt02b.py",
+        "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json",
+        "results/medium_preparation_2026_09_06/runs/main_v2/failure.json",
+        "results/medium_preparation_2026_09_06/runs/main_v2/cases.jsonl.gz"
+      ],
+      "inventory_record": "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.json",
+      "methods": [
+        {
+          "basis": "native",
+          "id": "glpk_native",
+          "scaling": "native optlang GLP_SF_AUTO",
+          "solver": "glpk",
+          "solver_tolerance": 1e-09
+        },
+        {
+          "extra_options": {
+            "parallel": "off",
+            "simplex_strategy": 4
+          },
+          "id": "highs_primal_simplex",
+          "method": "simplex",
+          "solver": "highs",
+          "solver_tolerance": 1e-09,
+          "threads": 0,
+          "time_limit_seconds": 60.0
+        },
+        {
+          "extra_options": {
+            "parallel": "off"
+          },
+          "id": "highs_simplex_tighter",
+          "method": "simplex",
+          "solver": "highs",
+          "solver_tolerance": 1e-10,
+          "threads": 0,
+          "time_limit_seconds": 60.0
+        }
+      ],
+      "model_label": "Putida_iJN1463",
+      "objective_tolerance": 1e-08,
+      "parent_manifest": "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json",
+      "preparation_version": "frozen gembench.medium_preparation_v2, following failed primary v2 protocol",
+      "residual_tolerance": 1e-08,
+      "scope": "Post-failure numerical comparison. The failed primary runs remain failed; this does not complete or rewrite them, rescore fitness, establish biochemical validity or provide independent biological validation.",
+      "selection": "All43 mapped curated Putida conditions from the frozen inventory, exact order, same three fixed methods on every case. No numerical fitness values or gene scores read.",
+      "solve_count": 129,
+      "study_id": "medium-curated-numerics-v1"
+    },
+    "runtime": {
+      "cobra": "0.32.1",
+      "glpk": "5.0",
+      "highs": "1.15.1",
+      "numpy": "2.5.2",
+      "optlang": "1.9.1",
+      "python": "3.14.3",
+      "scikit-learn": "1.9.0",
+      "scipy": "1.18.1"
+    },
+    "schema_version": 1,
+    "study_id": "medium-curated-numerics-v1"
+  },
+  "files": [
+    {
+      "path": "data/fitness_browser/Btheta/experiments.tsv",
+      "size_bytes": 287836,
+      "sha256": "15a8cb914608482957fb605bfdc76448b06e0e716bb3bb1e042eaa7a18f10e4f"
+    },
+    {
+      "path": "data/fitness_browser/Btheta/fit_logratios.tsv",
+      "size_bytes": 14678227,
+      "sha256": "5c700c1681ec0b4940aa95dd967575e19f6fbeb92f70382f39d103f3a6160d64"
+    },
+    {
+      "path": "data/fitness_browser/Btheta/genes.tsv",
+      "size_bytes": 419153,
+      "sha256": "17dc5676cef4911b3ba3a1ef5bca1bc926bbc427f618042f213c405c8ef238db"
+    },
+    {
+      "path": "data/fitness_browser/MR1/experiments.tsv",
+      "size_bytes": 77123,
+      "sha256": "5c16b10c64bbafa9cdcfa914e7683c505ecd22785f97f4aa56e67eead1955ef0"
+    },
+    {
+      "path": "data/fitness_browser/MR1/fit_logratios.tsv",
+      "size_bytes": 4605357,
+      "sha256": "3d6677312ff34d6dcc2cb3966181fe10bfc3806f59b0fe42353bead8f584d2d8"
+    },
+    {
+      "path": "data/fitness_browser/MR1/genes.tsv",
+      "size_bytes": 391285,
+      "sha256": "c4ee5eb901accc6459bf50ba2f55a3c4f9772928f9c663cadf9a513fcc733d1d"
+    },
+    {
+      "path": "data/fitness_browser/Putida/experiments.tsv",
+      "size_bytes": 159990,
+      "sha256": "6f1ba8542a731706fff59b121ccd51306fcd249d3cfeb9fa4d3f4c23970794c8"
+    },
+    {
+      "path": "data/fitness_browser/Putida/fit_logratios.tsv",
+      "size_bytes": 10099508,
+      "sha256": "28f422b3aca5e0e4a8730bb7efbb97c177c7fe672b5180455d3494f474ca170e"
+    },
+    {
+      "path": "data/fitness_browser/Putida/genes.tsv",
+      "size_bytes": 464829,
+      "sha256": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e"
+    },
+    {
+      "path": "data/fitness_browser/Putida/specific_phenotypes.tsv",
+      "size_bytes": 346478,
+      "sha256": "31d857c63073569a6b01a4b6a121bf2ebc5f8226ba201c440b528835a0fca37d"
+    },
+    {
+      "path": "data/fitness_browser/Smeli/experiments.tsv",
+      "size_bytes": 42017,
+      "sha256": "3c09d633f61e18afa480e69547cc2791fb2aaa93b708058689455ae295c20ea2"
+    },
+    {
+      "path": "data/fitness_browser/Smeli/fit_logratios.tsv",
+      "size_bytes": 3287631,
+      "sha256": "f16dbe9b13da71a9583e4ca0a7345bc6abfb114a9aab0b3f9f4cf33a345d640e"
+    },
+    {
+      "path": "data/fitness_browser/Smeli/genes.tsv",
+      "size_bytes": 470839,
+      "sha256": "4f587c69af42b451f7d99519398ab0444cf989c7f9371087fb3691338f07798e"
+    },
+    {
+      "path": "data/genpept/Btheta_genpept_map.tsv",
+      "size_bytes": 87642,
+      "sha256": "ca60023137da305901755abe7b1df0f118c45e5284893d12e052adcfc034bee5"
+    },
+    {
+      "path": "data/genpept/MR1_genpept_map.tsv",
+      "size_bytes": 120705,
+      "sha256": "e380ac438948d5c56bea457ee27cd3ce6612da0e9d42a0d9ea3906516b061f67"
+    },
+    {
+      "path": "data/genpept/Putida_genpept_map.tsv",
+      "size_bytes": 160473,
+      "sha256": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128"
+    },
+    {
+      "path": "data/genpept/Smeli_genpept_map.tsv",
+      "size_bytes": 155251,
+      "sha256": "74b32adcc980040e38cd2c036cfc5d480a55ead29e28e8c291aedf47e5ced16b"
+    },
+    {
+      "path": "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz",
+      "size_bytes": 262118,
+      "sha256": "bea517eccadcaa280228c75551ee4d641e7eadb3509532377943e7ca89355f0e"
+    },
+    {
+      "path": "data/reference/feba_media_extract.tsv",
+      "size_bytes": 5517,
+      "sha256": "365168bd92db7aa049b20b2f5ad45f79740bd0f7a52e8d650332c80bdd409225"
+    },
+    {
+      "path": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "size_bytes": 5499,
+      "sha256": "43ed695ca0201e778bc738d2d582dad7e7a498b64d5ccf64c3b496be686e4da4"
+    },
+    {
+      "path": "data/reference/fitness_browser_media_bigg.tsv",
+      "size_bytes": 3452,
+      "sha256": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.2.json",
+      "size_bytes": 13517,
+      "sha256": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.3.json",
+      "size_bytes": 43124,
+      "sha256": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885"
+    },
+    {
+      "path": "data/reference/gpr_patches_v0.4.json",
+      "size_bytes": 5205,
+      "sha256": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7"
+    },
+    {
+      "path": "data/reference/model_patches_v0.4.json",
+      "size_bytes": 36453,
+      "sha256": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190"
+    },
+    {
+      "path": "data/reference/universe_patches_v0.1.json",
+      "size_bytes": 7146,
+      "sha256": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe"
+    },
+    {
+      "path": "data/studies/exposure_registry_v1.json",
+      "size_bytes": 1192,
+      "sha256": "7519f099a63c95b6b5a9cdc8e14066255e72016a1c577ea92b4b231714823fc4"
+    },
+    {
+      "path": "data/studies/medium_curated_numerics_v1.json",
+      "size_bytes": 6970,
+      "sha256": "fde1175dabf4dff9c834b4a3c9937f074219f4c0d9a08111504682dbb3f52ce5"
+    },
+    {
+      "path": "data/studies/medium_preparation_v1.json",
+      "size_bytes": 3439,
+      "sha256": "6ff1f0a29e4e1e20bcd9383035cacf72540113e6af7d877936057e7733e66ed0"
+    },
+    {
+      "path": "data/studies/medium_preparation_v2.json",
+      "size_bytes": 4252,
+      "sha256": "91d318f24c6334c9ac188fd82af0b428c46ee542c4028067088361463da91a27"
+    },
+    {
+      "path": "data/studies/ppnp_repair_v1.json",
+      "size_bytes": 5915,
+      "sha256": "68bb055c36f7b475c293824f1d362d132faa70fbd97bb8bb95b4902db9985b92"
+    },
+    {
+      "path": "data/studies/precursor_supply_v1.json",
+      "size_bytes": 4751,
+      "sha256": "b35f05f50d7a81c42d01d5d1c1a2c14f24e077f8fbe82331b6d2386ce62616dd"
+    },
+    {
+      "path": "data/studies/quinone_repair_v1.json",
+      "size_bytes": 4979,
+      "sha256": "1e809398f565b1104feb0a8d0aa88ca18c323097aa191ecb4ec23692342d7d79"
+    },
+    {
+      "path": "docs/evidence/10-putida-ribosyl-disposal-sources.md",
+      "size_bytes": 9204,
+      "sha256": "40157bcb05db6403e4ccdd9354d908e473118847147081614f717caba0a1c4de"
+    },
+    {
+      "path": "docs/evidence/11-putida-ppnp-candidate.md",
+      "size_bytes": 8020,
+      "sha256": "7921237dbf755b0aba4eb5dd0d5f70eece94c8399131ce3c81a0be1d085e73d2"
+    },
+    {
+      "path": "docs/studies/medium-curated-numerics-v1.md",
+      "size_bytes": 4817,
+      "sha256": "c1aa0184b03aef99407baf6119d3777eaea5681c61623d149a9edc058fb5021d"
+    },
+    {
+      "path": "docs/studies/medium-preparation-v1.md",
+      "size_bytes": 5930,
+      "sha256": "e9bb2e277f8a73fd91e5f3d6b91e28998b4933665968be3f1fb40506ab6885ac"
+    },
+    {
+      "path": "docs/studies/medium-preparation-v2.md",
+      "size_bytes": 2305,
+      "sha256": "324b2bd1bcbaa975a83830a8d1a497e73c72cd8c22a2c049c66594976900bfed"
+    },
+    {
+      "path": "docs/studies/ppnp-repair-v1.md",
+      "size_bytes": 4939,
+      "sha256": "7ccad99046f42310f4334a63e3f1f08f90ee02e2484d0e3d8176ea35abfdb108"
+    },
+    {
+      "path": "docs/studies/precursor-supply-v1.md",
+      "size_bytes": 4753,
+      "sha256": "e98ae14c3d0ce6367b0bb06fc5e4b454f5b24c38b905545be0f628e4211d3beb"
+    },
+    {
+      "path": "gembench/__init__.py",
+      "size_bytes": 368,
+      "sha256": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9"
+    },
+    {
+      "path": "gembench/cards.py",
+      "size_bytes": 6172,
+      "sha256": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d"
+    },
+    {
+      "path": "gembench/checks.py",
+      "size_bytes": 2761,
+      "sha256": "0c1bcb3ed1b55379533374bc5d481247dbf9c40a01efb9a495fb92d3a356a51a"
+    },
+    {
+      "path": "gembench/cofactor.py",
+      "size_bytes": 7428,
+      "sha256": "f8e428196dae2ab37b8c5b9fdf95907fd3f904c5ac8f59f7fd2a1a5eb97aa334"
+    },
+    {
+      "path": "gembench/comparison.py",
+      "size_bytes": 4052,
+      "sha256": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8"
+    },
+    {
+      "path": "gembench/datasets.py",
+      "size_bytes": 6578,
+      "sha256": "1223ac48c5f31fabf93d9a48f21211e2739f34385b879d531b1cdc261279f490"
+    },
+    {
+      "path": "gembench/fitness_browser.py",
+      "size_bytes": 8512,
+      "sha256": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c"
+    },
+    {
+      "path": "gembench/frog.py",
+      "size_bytes": 6840,
+      "sha256": "883b0b90e8c8c84377b72a34ca486cc9a6909d343c444c3972dbe94113c95308"
+    },
+    {
+      "path": "gembench/gapfill.py",
+      "size_bytes": 13625,
+      "sha256": "eaf202021dbc1f0d2a76668f5da11e992d7b0a374c264dd056866b448165ab63"
+    },
+    {
+      "path": "gembench/gene_mapping.py",
+      "size_bytes": 4495,
+      "sha256": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2"
+    },
+    {
+      "path": "gembench/media.py",
+      "size_bytes": 2920,
+      "sha256": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe"
+    },
+    {
+      "path": "gembench/medium_preparation.py",
+      "size_bytes": 12100,
+      "sha256": "369cb966e53f2532fe37c04ad372fdd6d99d200f9e89d69e74977b699e5276ad"
+    },
+    {
+      "path": "gembench/medium_preparation_v2.py",
+      "size_bytes": 12836,
+      "sha256": "c53cdd85e229ce85e37b24ed64b48d10677067f68807f1dee6c3dd8d44afc96c"
+    },
+    {
+      "path": "gembench/metrics.py",
+      "size_bytes": 5535,
+      "sha256": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3"
+    },
+    {
+      "path": "gembench/patches.py",
+      "size_bytes": 8733,
+      "sha256": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8"
+    },
+    {
+      "path": "gembench/protocols/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gembench/protocols/carbon_fitness_generic.py",
+      "size_bytes": 12798,
+      "sha256": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303"
+    },
+    {
+      "path": "gembench/protocols/ecoli_carbon_fitness.py",
+      "size_bytes": 6930,
+      "sha256": "5a8994541a2248b575f64bdda58dfed939b69af0bbe0cc9a7bb9ef254163f31a"
+    },
+    {
+      "path": "gembench/protocols/yeast_essential.py",
+      "size_bytes": 4629,
+      "sha256": "e9e156ad108fd26185940ef10663ad3bb78dd13c7d3fa084bcbd3ac019c1e517"
+    },
+    {
+      "path": "gembench/study.py",
+      "size_bytes": 17496,
+      "sha256": "b3911b98e65dbaaf2635cc5a8d3aacd4c71ab614dafc44e2817f5df8b0742733"
+    },
+    {
+      "path": "gembench/survey.py",
+      "size_bytes": 4910,
+      "sha256": "2699d790764a1a3ee1de686b800d1be63fb20fb39d312f9cb695f843ac879019"
+    },
+    {
+      "path": "gembench/wbm.py",
+      "size_bytes": 10661,
+      "sha256": "c525a92e917a58d440c4d38544dc1aecdfd44b51e847f8eaae3e6d53ceaf67fb"
+    },
+    {
+      "path": "gembench/wbm_iem.py",
+      "size_bytes": 17337,
+      "sha256": "a525260933ddbf0fd6124475a972b546d0dac95636b426b505c8328106129b72"
+    },
+    {
+      "path": "models/bigg/iJN1463.xml",
+      "size_bytes": 10702784,
+      "sha256": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1"
+    },
+    {
+      "path": "models/gapfilled/Btheta.xml.gz",
+      "size_bytes": 146531,
+      "sha256": "ce97c05e8bed2f682cb9ef744c8f5a447d536f6555fff2a5ca6bfa62d00436b6"
+    },
+    {
+      "path": "models/gapfilled/MR1.xml.gz",
+      "size_bytes": 183090,
+      "sha256": "7aae2a3ea5b644241d66bd719fd8a5d5a20d6e2d612ff9706f689a91fa75bdc5"
+    },
+    {
+      "path": "models/gapfilled/Putida.xml.gz",
+      "size_bytes": 189469,
+      "sha256": "378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739"
+    },
+    {
+      "path": "models/gapfilled/Putida_gapfill.json",
+      "size_bytes": 969,
+      "sha256": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2"
+    },
+    {
+      "path": "models/gapfilled/Smeli.xml.gz",
+      "size_bytes": 196466,
+      "sha256": "aed3446b54ecac8a7a48e22c94e75fc57d32c35666a6431ae41678183cf85dfa"
+    },
+    {
+      "path": "requirements-audit.txt",
+      "size_bytes": 708,
+      "sha256": "f242faf03ecdd36f9dfbbc54838318556badc4cd653461460a2e3e3866b36260"
+    },
+    {
+      "path": "results/development_sprint_2026_09_06/prespecified_manifest.json",
+      "size_bytes": 18199,
+      "sha256": "393352467b6dfee213d246c0196e04421854da01decd211f16128be0d9a67809"
+    },
+    {
+      "path": "results/development_sprint_2026_09_06/runs/Btheta_cycle7/invocation.json",
+      "size_bytes": 1145,
+      "sha256": "a7cb892bf21482f9c64d7c5ce57c754ff22c5c0938e60a5794221d4d2fb88b22"
+    },
+    {
+      "path": "results/development_sprint_2026_09_06/runs/MR1_cycle7/invocation.json",
+      "size_bytes": 1139,
+      "sha256": "c3399cf46bb0844f5c6a2322a96d9186ae0123e3efadf6deda1f6eb3ec63e8f7"
+    },
+    {
+      "path": "results/development_sprint_2026_09_06/runs/Smeli_cycle7/invocation.json",
+      "size_bytes": 1143,
+      "sha256": "5baa25913feb68567eb13e4eb0e8d1a359e19f366a996a979c6827ccd4dd2d63"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/evidence/__pycache__/inventory_medium_structure.cpython-314.pyc",
+      "size_bytes": 26537,
+      "sha256": "15e7e6fc05c46b5012f4709d6dda3972bc17e465c3b87b16c112efd4d956b210"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.json",
+      "size_bytes": 38262,
+      "sha256": "f60cad793070a6d2703d51e048f58ab3fbf2323eb0d243f66b0445f8069455e9"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.md",
+      "size_bytes": 2643,
+      "sha256": "281a6695f3337c8d8b9a86e17aaa76689188fc91c6e3f095638ed1ea55d9cb15"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/evidence/ijn1463_exchange_alias_audit.py",
+      "size_bytes": 5619,
+      "sha256": "99f18492603d0266abac8d8c0420673c5a6e31163e5984dd012522925419aec5"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/evidence/inventory_medium_structure.py",
+      "size_bytes": 16450,
+      "sha256": "3172f4685dab8550b4940403019fc244f3af5b6a4b156f92f59ee3a3cd8e622b"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.json",
+      "size_bytes": 602918,
+      "sha256": "0dab92178f666601915e863855397d2efdaee10f037d03117cffade4adcbceb8"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.md",
+      "size_bytes": 5931,
+      "sha256": "c8976e78ec00e0bcd85def3ce078f2f8647c9c9ca5cc4f8619bc0532177f714d"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/README.md",
+      "size_bytes": 2280,
+      "sha256": "d95b42996cff3092f8643029646ea35c2dfafa6c6c729368879f00b8c125e61c"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/diagnostic_source.py",
+      "size_bytes": 15348,
+      "sha256": "d0ee761c0de03ec99bbba16433e0071dc03318bb962b8d3865087957d48de1da"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_advanced_basis.json",
+      "size_bytes": 289280,
+      "sha256": "a47ee08368e2c9b2f8bb98284adf69a6582592f342f60908d2bfbbe8d9aa48b5"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_native.json",
+      "size_bytes": 291054,
+      "sha256": "32375b64c575265b05fcf366bbfb169002b883a507345a32df015d9654e5c89c"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_ipm.json",
+      "size_bytes": 755,
+      "sha256": "c9f5f5f92267950c26accdf2a00e5d7b91a93cfff54e9e0fe97275ebda4af513"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_simplex.json",
+      "size_bytes": 281324,
+      "sha256": "15f1999e79a77956784fe12a8023bcb8daf2ef4e17a2c54fd24e13323d7f7e06"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/input_hashes.json",
+      "size_bytes": 48547,
+      "sha256": "c0ff18dea5b9d43b160b10b4839f40436c923a44f8fe6df6ec54b4582b4926b8"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/optlang_glpk_interface_source.py",
+      "size_bytes": 35610,
+      "sha256": "7932237d98ee07c344cc6cf12d067aa8b0496132a46d83fce5c45893e500b8e8"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_context.json",
+      "size_bytes": 90663,
+      "sha256": "f92c8afb3de96f3014f27905e6f1ce459adde9f3856d66ce4ae91d70e1387c83"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_model.xml.gz",
+      "size_bytes": 548824,
+      "sha256": "c1812f8d2ac0393000fe4ad7326fe7cf6d98f24ebe6cb9049768a04ffb101e3b"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_signature.json.gz",
+      "size_bytes": 67133,
+      "sha256": "954bfec3f6a927d5f0bc9f9e675ba236807e2962dd17ce848edd37ffdbb8eeb0"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_artifact_hashes.json",
+      "size_bytes": 2597,
+      "sha256": "f4d310aa525638e7ff752a68084a169ad53f923e83b1dab5da39502190467255"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_settings.json",
+      "size_bytes": 1387,
+      "sha256": "52a0adf86c3dae67e3058895e752143158c450bbb80821ba4b42a0a2cf633465"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/runtime.json",
+      "size_bytes": 1945,
+      "sha256": "22a4188dd1a4820f17ad845003a760a5b4af2b91c4f7a79e9ac4e784acc27f7a"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic/summary.json",
+      "size_bytes": 5009,
+      "sha256": "258e23f65450f2bf08e9a5e6f8429ccace4ebf8b9e5807d95f07d90328eb35d6"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/attempt01_helpers_source.py",
+      "size_bytes": 15348,
+      "sha256": "d0ee761c0de03ec99bbba16433e0071dc03318bb962b8d3865087957d48de1da"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/diagnostic_source.py",
+      "size_bytes": 9315,
+      "sha256": "66460084c3bc31bf0c69679e8a990709c98003fa60832a0800ec468029994a3a"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/failure.json",
+      "size_bytes": 113,
+      "sha256": "a5689f0fbe54dd2cb0869257cd70d8e0669cca4a2dd2663590006b5b5416fdb8"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/input_hashes.json",
+      "size_bytes": 53670,
+      "sha256": "3f30456b223a94573d5bd0249b673ac7fd30c476d707d8c37f41e9c1956973a2"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/presolve_settings.json",
+      "size_bytes": 1286,
+      "sha256": "46f56e5f55651a9b146f209f272192f76f7ad3d105fe5a5041e1f0d98c3b1fa1"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/runtime.json",
+      "size_bytes": 513,
+      "sha256": "af8844d54fd14af4e22bb7dc021bac701d9468e4b11f12b7b30764fbb7f288be"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/supported_effective_options.json",
+      "size_bytes": 5677,
+      "sha256": "f9a09c079de28a89f8913c14e0a129d99f808c8ec7b7f6844a9f7bf3b09ad4e3"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/attempt01_helpers_source.py",
+      "size_bytes": 15348,
+      "sha256": "d0ee761c0de03ec99bbba16433e0071dc03318bb962b8d3865087957d48de1da"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/diagnostic_source.py",
+      "size_bytes": 10257,
+      "sha256": "7673cbe75743eb3f0df317376dc793a7a0f05b3ec08f5aa240dd719202b68a4c"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_dual_no_presolve.json",
+      "size_bytes": 279778,
+      "sha256": "8fefe1987da7fe2332457d797e4a2ac836ac917a356764fe4811133825c6343d"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_primal_simplex.json",
+      "size_bytes": 280846,
+      "sha256": "f606ef04b6b27e18ed30df6a29d3da0589e23043ec7d678e69755d3c2790385d"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_no_scaling.json",
+      "size_bytes": 279453,
+      "sha256": "296652975b074933cb4d5809b1c1674b8a7f3749fd739b4bc7ecae0ba43fd6a7"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_tighter.json",
+      "size_bytes": 280610,
+      "sha256": "22f4d6c6559f024b4d54a332ab45a2fdb7a7610d862d1ef4a60d6af68ea8a06e"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/input_hashes.json",
+      "size_bytes": 53672,
+      "sha256": "484132ca60398554077aa01dc727ceb5e65730a39839714c70abae03f5c12ac7"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/prepared_context.json",
+      "size_bytes": 1693,
+      "sha256": "500d9e8e687bb1a82ee3d10edfbca5b2952f59437a002bf350789833bc538fa9"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_artifact_hashes.json",
+      "size_bytes": 2347,
+      "sha256": "de140c167254da705cbe5a2d92cd658100e15d0d8071e3ccdae21a9d1ef0c007"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_settings.json",
+      "size_bytes": 1286,
+      "sha256": "46f56e5f55651a9b146f209f272192f76f7ad3d105fe5a5041e1f0d98c3b1fa1"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/runtime.json",
+      "size_bytes": 513,
+      "sha256": "42926c1728f5455e8bb29896bb06fb9873cd14ce9a77258c5b5f08085b53d9d5"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/summary.json",
+      "size_bytes": 4884,
+      "sha256": "e61fe5a63639636646fb33d4427fa53de905dc67c4fce3a27d4c6f1afb545ceb"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/supported_effective_options.json",
+      "size_bytes": 5677,
+      "sha256": "f9a09c079de28a89f8913c14e0a129d99f808c8ec7b7f6844a9f7bf3b09ad4e3"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/runs/main/cases.jsonl.gz",
+      "size_bytes": 2347108,
+      "sha256": "9cdb2f2e9f0928816413c30d6cd0410765d5449f85ae86e1b2e44c0a4e17ca02"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/runs/main/failure.json",
+      "size_bytes": 129,
+      "sha256": "7956218b351533c437d6177a8e37ef3211a7f01423780c48a9ea405f50ba68ac"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/runs/main/manifest.json",
+      "size_bytes": 42881,
+      "sha256": "6a023386b070c791546eefe18b3f0ac0293db1543a300bd90584664390afbb22"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/runs/main_v2/cases.jsonl.gz",
+      "size_bytes": 2347989,
+      "sha256": "5dcd58738b86deca49cff5b1c41b0d80dd89824bac430c9340e076e18d351554"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/runs/main_v2/failure.json",
+      "size_bytes": 117,
+      "sha256": "e8b2f617cb2a12500d994891112a0fa09023588ec0727412e2259d48d2e9ee0e"
+    },
+    {
+      "path": "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json",
+      "size_bytes": 46596,
+      "sha256": "514382db16ecef951cd96517d7028dc218f039b3a43cea7c7f85ac7938db8735"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/design_review.md",
+      "size_bytes": 11102,
+      "sha256": "f959eae34352834da44ec5d2f5bc6daf77d2c81a62660639fc8d6ed268f38493"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/reaction_candidates.json",
+      "size_bytes": 48066,
+      "sha256": "2f120fd6e75614659898566c51b47dac135b286b67a3587a93b34b314ee0d9c8"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.json",
+      "size_bytes": 31986,
+      "sha256": "beaca4312a88f122fa33b5c1ea50d59a09e31f44dbf47569e0135a85e676d3f7"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.py",
+      "size_bytes": 10620,
+      "sha256": "ed40298a453dbdcfc3327f068548f04b77e6956e99b7a486039ac3a152f579e1"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537.html",
+      "size_bytes": 23015,
+      "sha256": "808a98748f0b4f4596c2e19907de1c7114ab5d7310db5dbcf264d6a1ade6200f"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_rule.txt",
+      "size_bytes": 3347,
+      "sha256": "d8c91ec49545a79b26006121744b42836a3542e813fba918a83e6d4925c58dac"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/MF01537_signature.html",
+      "size_bytes": 15642,
+      "sha256": "f084877e64b139bdc12062b68751e218f085478e203d8e6bd41f970049e8ee77"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/P0C037.json",
+      "size_bytes": 21357,
+      "sha256": "01548b1e3468c516ccabfcde565b6ed539b90004bf11a5829d287399115a72ee"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_NC0029474.gb",
+      "size_bytes": 8821,
+      "sha256": "51c6b8ebcffd442decff4259d330af35fb15e3d4d86bc35123be1f23db8dc494"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP1777_uniprot.json",
+      "size_bytes": 12108,
+      "sha256": "7ea18def652a7709c6ca54268751e1a90403e8cc569fb701df3f3a5ea4cbebee"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/PP4248_NC0029474.gb",
+      "size_bytes": 7329,
+      "sha256": "8dbe67ac46e84eceadbca4177b81c2a750d52609a59869256ab3162e0eed3b15"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Q88F51.json",
+      "size_bytes": 11955,
+      "sha256": "701bfc29b0aece76f5f2eef3a0eff67868c14b764a46243ed65976e97e7c47d6"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0032542781_retry.fasta",
+      "size_bytes": 184,
+      "sha256": "cd08a9591e040873f362d3ac3911db3eeb9e57bf2518709c5250a2a391b30de5"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/WP0109528141.fasta",
+      "size_bytes": 549,
+      "sha256": "8ba2e1ed5debafdc559e25863426266936ca640a3e0a47b7f4149dd6ee8a342f"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/Ye1994_pubmed.xml",
+      "size_bytes": 14392,
+      "sha256": "02a3b4ecc1606a75b846feeb1a9bcd9ef775d457864238cf39039584be17ab34"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals.json",
+      "size_bytes": 3539,
+      "sha256": "49c9709b4afba2db418795ea4ea43f2cc25761e736ca40ebed9f24428a9abda6"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/sequence_identity.sources/retrievals_followup.json",
+      "size_bytes": 1739,
+      "sha256": "44ff88dc71dcf68ee7eefccbaf309a824366537a426ca9fe993d5d03c1e1bc13"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/APACHE-2.0.txt",
+      "size_bytes": 11358,
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/CARVEME_LICENSE",
+      "size_bytes": 587,
+      "sha256": "998d33f42059ebf207638e19fd77dd5f119708723224b3738e366d43973a6276"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/NOTICE",
+      "size_bytes": 3748,
+      "sha256": "e131408c9a4ab421dcbe8654b3004e00b135b490336cab44944b2e48b839a9a8"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/license_sources.json",
+      "size_bytes": 666,
+      "sha256": "ddfd3bf76790750eb5bffbd977e3bfb3f12e4e4a400a4e6168cca3d7846e6724"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/source/universe_bacteria.xml.gz",
+      "size_bytes": 595770,
+      "sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.json",
+      "size_bytes": 11798,
+      "sha256": "6cb63b0f2b679b000bdfa1aaa6fa778496eb6aac02f1ea8f91e89282b1d144bf"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/evidence/substrate_evidence.md",
+      "size_bytes": 5650,
+      "sha256": "6e2c570c6499f4c40c19de1c155bec68456ac10d2db93594bfe7803b668a68bc"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/runs/main/both_forward/card.json",
+      "size_bytes": 8636,
+      "sha256": "bdbc78ace4c10ba240efb359f4c818e987f55d01a49af813fe4002db75cce115"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/runs/main/both_forward/conditions.tsv",
+      "size_bytes": 3972,
+      "sha256": "0b3031b3817e1d7cb73f069edb16c792a1c22d8d6276da0fc3d40812dcac9d2a"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/runs/main/both_forward/gene_map.json",
+      "size_bytes": 39748,
+      "sha256": "8bad604921ee04f28761a332a8951c0452b276b0cec3a0595a37bfa76506df54"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/runs/main/both_forward/matrices.npz",
+      "size_bytes": 188725,
+      "sha256": "63f156cf258643037efd9271e7cd0aca6494b46009e4dbf5fb8bd5b8b6fee455"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/runs/main/both_forward/model.xml.gz",
+      "size_bytes": 206470,
+      "sha256": "b053283adf1257675b771439e99bb0dcaf2ee044c89e8df34096888c26d7f812"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/runs/main/both_forward/physical.json",
+      "size_bytes": 20736,
+      "sha256": "d48a73d40b5b2f29d9519ccc14ad2bb63cf925887a2d82943519c48113dee342"
+    },
+    {
+      "path": "results/ppnp_repair_2026_09_06/runs/main/manifest.json",
+      "size_bytes": 29387,
+      "sha256": "ccd833163eee8d2b14a2ecd0af90452f2e46a05c8292ca0bf5534b5d26dc6de7"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/fitness_context.json",
+      "size_bytes": 311596,
+      "sha256": "a7a4cb83d6517ba44f177eead741849982e11ffdeb291e0eb3151ebef6af3459"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/fitness_context.md",
+      "size_bytes": 8461,
+      "sha256": "acee42ad3865dbb5094621d40bfb77f1f4dd3cb9e4122ca0eff41ac10182449e"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/model_context.json",
+      "size_bytes": 36927,
+      "sha256": "8cbb9a4985e6b5a1ada00da18cda3c17936f5c7f130a18b27c48570d6b1bd9eb"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.json",
+      "size_bytes": 18896,
+      "sha256": "1a8d00087ee99c6c308036f77a673e06a9772bb5224f87d52f141dfe97bcbaa8"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.md",
+      "size_bytes": 6991,
+      "sha256": "70859cd1072b2f18070083196930a902b16abf695314714267cd11bbd47a2dd0"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.py",
+      "size_bytes": 12322,
+      "sha256": "d331628fed6ba526aa61b6b1a3e7b1f1f193643b5c507ce04dafa68429a9ede9"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/IPR049368.json",
+      "size_bytes": 3325,
+      "sha256": "4b7a0626ab46e5b87babde0d3a556111dfbaffd3fa7dda0b29fe408c6ff715f7"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/KT2440_ubiC_chorismatase_search.json",
+      "size_bytes": 16770,
+      "sha256": "9fbe7234d54c34a8936f78e09e480b6f03acd31637ce6badc301ca02ca9f356c"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/MF01632_rule.txt",
+      "size_bytes": 1949,
+      "sha256": "0a65ab2349f99ad9e9c4f19835d93b78806fff2cfd9bab62655c1497923c64ad"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/NP7474181.fasta",
+      "size_bytes": 256,
+      "sha256": "d0b5879a558dbba3ac4f4365202a5a79e27ae22cb5d1b232729f804f73b0e7ca"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/P26602.json",
+      "size_bytes": 29209,
+      "sha256": "dc3e8abf1ee4f033d1237b7e3dabfdea25f3d53bea6c28201a7aac4251fab235"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_NC0029474.gb",
+      "size_bytes": 9253,
+      "sha256": "0b74b0bab8f54b6e063998a2ccb44e0c07778ee379816587a6f720c7f004a401"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/PP5317_uniprot.json",
+      "size_bytes": 8848,
+      "sha256": "4f60ee4973bffb0fcb3965f1c7aae6f6c423c9902bbe565a1eebee4cbe8b9ea8"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/WP0109558101.fasta",
+      "size_bytes": 275,
+      "sha256": "c00a440cedfb03755cc0ba41833a6d61f9f802992d7229fa70de09689803e99f"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/primary_references.xml",
+      "size_bytes": 79385,
+      "sha256": "6bfeee2cf78d47269b1fdb9fbd9c8464d54193b29980250ffa39e16408050fcc"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals.json",
+      "size_bytes": 2625,
+      "sha256": "0036c959ff4a4304b03be8bfe4188bf5ab50bd5be37e86a3ee06ac14107c90f3"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_article.json",
+      "size_bytes": 1189,
+      "sha256": "b10a3da7b8ab3b57d6a8dd9128cf19518243f36294cb922d0c2a892664feebed"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_final.json",
+      "size_bytes": 1334,
+      "sha256": "002f14a56794d950bd5191516c4257acb3202309319f876abe94b4b5f10901af"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/evidence/pp5317_identity.sources/retrievals_followup.json",
+      "size_bytes": 1039,
+      "sha256": "6a9412e783d42b903741ddd905e9ab4edb1242c80e2651c08e6d28cd39053f5a"
+    },
+    {
+      "path": "results/quinone_precursor_2026_09_06/runs/main/manifest.json",
+      "size_bytes": 37134,
+      "sha256": "2b1a686097b678946703af549db1fb9c2505f37708097d5296f9b855dbdd62b5"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+      "size_bytes": 29523,
+      "sha256": "bee13fe5ebcc6f7ba98bf93c2ab99cccbf978f7308ddba0c8361a99a7ffcdb87"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/postrun_dependency_trace.json",
+      "size_bytes": 41760,
+      "sha256": "9851f802242512435a0882d437d36c6e12edfe79959a5715bea4363fb6507555"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+      "size_bytes": 28431,
+      "sha256": "ff58aaaf7e9eb57c793042e934a34ea264c4ad9430d13978d5a44b706599d65f"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+      "size_bytes": 244380,
+      "sha256": "49014f81058862e3a24a57f060b03f44dc635d85a08c977b1ea9c88de9218709"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json",
+      "size_bytes": 39722,
+      "sha256": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz",
+      "size_bytes": 206220,
+      "sha256": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d"
+    },
+    {
+      "path": "results/quinone_repair_2026_09_06/runs/main/manifest.json",
+      "size_bytes": 18024,
+      "sha256": "65a92c2a37def7f5c32c6a5bf177f277fcd874df63a84b5be33725c08c21d92d"
+    },
+    {
+      "path": "results/ribosyl_disposal_2026_09_06/evidence/source_evidence.json",
+      "size_bytes": 38936,
+      "sha256": "5518bd06c30777f1297947d95a9329f2f13356a7131637f8afdf7515e481c9f6"
+    },
+    {
+      "path": "scripts/compare_curated_medium_solvers.py",
+      "size_bytes": 13886,
+      "sha256": "a1076e110ffd7ab9466cf4c2548e4c36d08c583214df202077c8db353f182d7d"
+    },
+    {
+      "path": "scripts/diagnose_medium_numerics.py",
+      "size_bytes": 15348,
+      "sha256": "d0ee761c0de03ec99bbba16433e0071dc03318bb962b8d3865087957d48de1da"
+    },
+    {
+      "path": "scripts/diagnose_medium_numerics_attempt02.py",
+      "size_bytes": 9315,
+      "sha256": "66460084c3bc31bf0c69679e8a990709c98003fa60832a0800ec468029994a3a"
+    },
+    {
+      "path": "scripts/diagnose_medium_numerics_attempt02b.py",
+      "size_bytes": 10257,
+      "sha256": "7673cbe75743eb3f0df317376dc793a7a0f05b3ec08f5aa240dd719202b68a4c"
+    },
+    {
+      "path": "scripts/diagnose_quinone_producibility.py",
+      "size_bytes": 18852,
+      "sha256": "7cf4282cfed98ba5e0ca64e1373dcc94c0a024f2870878f8056f60157c306bed"
+    },
+    {
+      "path": "scripts/extract_quinone_precursor_fitness_context.py",
+      "size_bytes": 27667,
+      "sha256": "566c1a5819c523a2b449e256ad06d13d66ce988553048e55ddc882621d3f052f"
+    },
+    {
+      "path": "scripts/map_ppnp_candidates.py",
+      "size_bytes": 13959,
+      "sha256": "00934f12059487d7ae2a0d953e47f4c03d6ade342addf10fbef5d7710d3da452"
+    },
+    {
+      "path": "scripts/map_quinone_pathway.py",
+      "size_bytes": 16101,
+      "sha256": "07a690e749e6ff05b318fab8c0cc05e6d20a1b15a502f8b275b569927e1e2088"
+    },
+    {
+      "path": "scripts/map_quinone_precursor.py",
+      "size_bytes": 5392,
+      "sha256": "d345a56632dd96a20cfc3d8b51b4eafda6ef68ace921d582d450be7221352ce0"
+    },
+    {
+      "path": "scripts/run_carbon_fitness_generic.py",
+      "size_bytes": 16091,
+      "sha256": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc"
+    },
+    {
+      "path": "scripts/run_medium_preparation.py",
+      "size_bytes": 14264,
+      "sha256": "a2ba61fca0fd6f24672775e8a03dc6e388122f58bf07140ce2c8fd3f3657e7e5"
+    },
+    {
+      "path": "scripts/run_medium_preparation_v2.py",
+      "size_bytes": 14267,
+      "sha256": "47767a8e173a82f574a903aef42374f181fd10677d2fe58901710227548b1c00"
+    },
+    {
+      "path": "scripts/run_ppnp_repair.py",
+      "size_bytes": 19428,
+      "sha256": "9796085083bd1a70e9fafc146a676885d5b6d743e841899ab948771d5bb224bc"
+    },
+    {
+      "path": "scripts/run_precursor_supply.py",
+      "size_bytes": 17883,
+      "sha256": "d4c271ffdc83289858852ee4c8e480e9444595a4cc50070de4c7a652a03153e8"
+    },
+    {
+      "path": "scripts/run_quinone_biomass_sensitivity.py",
+      "size_bytes": 8778,
+      "sha256": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d"
+    },
+    {
+      "path": "scripts/run_quinone_repair.py",
+      "size_bytes": 29176,
+      "sha256": "4bf0e9992d07001143a86189d8f969ddd5b821e3a158ae9fc7e1af4706e6782c"
+    },
+    {
+      "path": "scripts/verify_quinone_repair_solvers.py",
+      "size_bytes": 19124,
+      "sha256": "03fe1447d6a162c46ef02a43955ea734eeb71fd53d303d1dd62b13e867ee2cc0"
+    },
+    {
+      "path": "tests/test_compare_curated_medium_solvers.py",
+      "size_bytes": 10872,
+      "sha256": "695643b3164547993d8a0353b96f2cbce81f52a9b96967a87c4332c14405ea77"
+    },
+    {
+      "path": "tests/test_medium_preparation.py",
+      "size_bytes": 18031,
+      "sha256": "7c8a1aad2f5533f91354e52da0014308280d8bf2a4ba3993bcffd9206b731109"
+    },
+    {
+      "path": "tests/test_medium_preparation_runner.py",
+      "size_bytes": 6474,
+      "sha256": "5daa8d27b9b5dd7bafec18a2dd23be22839e1846b59beb4a4d819786b8c65bf8"
+    },
+    {
+      "path": "tests/test_medium_preparation_v2.py",
+      "size_bytes": 8101,
+      "sha256": "539ca2f8c71edc13224262e8c88817ab7b9f3e17c85ed89d41639a63ef80859e"
+    },
+    {
+      "path": "tests/test_ppnp_repair.py",
+      "size_bytes": 5570,
+      "sha256": "12a96a6a24190af27c3addefaafb4b13dce7d3ec77a19e80ba611e59985f7361"
+    },
+    {
+      "path": "tests/test_precursor_supply.py",
+      "size_bytes": 5249,
+      "sha256": "db16a5b67f4d2db36bf952f8607a6102488cae5fea41cdb3b1114d289469858e"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "54b145d3a6b17635364c61aded0227c6b873b679",
+    "dirty": false,
+    "tracked_changes": [],
+    "untracked_paths": [],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "80d563f29315ee764d39abf24c76582e0500912e323c6165a2fdaa157bbb354b",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}
