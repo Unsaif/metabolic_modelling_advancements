@@ -1,0 +1,103 @@
+{
+  "study_id": "explicit-medium-preparation-v2",
+  "evaluation_role": "development",
+  "models": [
+    {
+      "label": "Putida",
+      "organism": "Putida",
+      "compartments": {
+        "external": "C_e",
+        "cytoplasm": "C_c",
+        "external_aliases": [
+          "e"
+        ],
+        "cytoplasm_aliases": [
+          "c"
+        ]
+      }
+    },
+    {
+      "label": "Btheta",
+      "organism": "Btheta",
+      "compartments": {
+        "external": "C_e",
+        "cytoplasm": "C_c",
+        "external_aliases": [
+          "e"
+        ],
+        "cytoplasm_aliases": [
+          "c"
+        ]
+      }
+    },
+    {
+      "label": "MR1",
+      "organism": "MR1",
+      "compartments": {
+        "external": "C_e",
+        "cytoplasm": "C_c",
+        "external_aliases": [
+          "e"
+        ],
+        "cytoplasm_aliases": [
+          "c"
+        ]
+      }
+    },
+    {
+      "label": "Smeli",
+      "organism": "Smeli",
+      "compartments": {
+        "external": "C_e",
+        "cytoplasm": "C_c",
+        "external_aliases": [
+          "e"
+        ],
+        "cytoplasm_aliases": [
+          "c"
+        ]
+      }
+    },
+    {
+      "label": "Putida_iJN1463",
+      "organism": "Putida",
+      "compartments": {
+        "external": "e",
+        "cytoplasm": "c",
+        "exchange_metabolites": {
+          "EX_AEP_e": "2ameph_e"
+        }
+      }
+    }
+  ],
+  "unavailable_control": "Keio/iML1515 absent locally; no new download or phenotype access",
+  "inventory_record": "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.json",
+  "parent_manifest": "results/quinone_precursor_2026_09_06/runs/main/manifest.json",
+  "input_paths": [
+    "data/studies/medium_preparation_v1.json",
+    "docs/studies/medium-preparation-v1.md",
+    "gembench/medium_preparation.py",
+    "scripts/run_medium_preparation.py",
+    "tests/test_medium_preparation.py",
+    "tests/test_medium_preparation_runner.py",
+    "gembench/medium_preparation_v2.py",
+    "scripts/run_medium_preparation_v2.py",
+    "data/studies/medium_preparation_v2.json",
+    "docs/studies/medium-preparation-v2.md",
+    "tests/test_medium_preparation_v2.py",
+    "results/medium_preparation_2026_09_06/runs/main/manifest.json",
+    "results/medium_preparation_2026_09_06/runs/main/failure.json",
+    "results/medium_preparation_2026_09_06/runs/main/cases.jsonl.gz"
+  ],
+  "solver_tolerance": 1e-09,
+  "residual_tolerance": 1e-08,
+  "objective_tolerance": 1e-08,
+  "growth_threshold": 0.001,
+  "case_count_from_source_inventory": 156,
+  "comparison": "Every mapped carbon condition from experiment metadata and fitness headers only. Require exact stoichiometry, bounds, objective, GPR and formula/charge equality of legacy and new fresh preparation immediately before each case solve. Compartment aliases are declared from source structure. No new biological transport assumptions or score calculation.",
+  "solves": "Native GLPK and independently translated HiGHS on the new prepared LP. Optimal cases save full primal vectors; mutually infeasible cases remain infeasible with null objective, never zero growth. Other statuses, numerical disagreement or algebra differences preserve a failed run.",
+  "reuse_stress": "Per model, select first glucose condition if available, otherwise first mapped condition. Open all inherited completion exchanges at -0.001 in a synthetic stress medium, then remove them. Compare legacy reuse with legacy fresh bounds; require new reuse exactly equals new fresh preparation. No optimization or biological claim for this synthetic withdrawal.",
+  "missing_policy": "report explicitly, preserving inherited missing-component information",
+  "interpretation": "Exposed development models; exact LP identity explains unchanged predictions under the same objectives/deletions. It does not validate the inherited biochemical models or medium recipes. Opt-in module only; frozen legacy source/results unchanged.",
+  "revision_reason": "V1 stopped at the known iJN1463 exchange EX_AEP_e containing2ameph_e. V2 permits only this explicitly source-declared identity binding; no names, nutrient recipes, stoichiometry, bounds or gene rules change. V1 completed113draftcases and is retained as an incomplete attempted panel."
+}
