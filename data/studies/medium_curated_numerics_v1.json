@@ -1,0 +1,105 @@
+{
+  "study_id": "medium-curated-numerics-v1",
+  "evaluation_role": "development",
+  "model_label": "Putida_iJN1463",
+  "parent_manifest": "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json",
+  "inventory_record": "results/medium_preparation_2026_09_06/evidence/medium_structure_inventory.json",
+  "preparation_version": "frozen gembench.medium_preparation_v2, following failed primary v2 protocol",
+  "compartments": {
+    "external": "e",
+    "cytoplasm": "c",
+    "exchange_metabolites": {
+      "EX_AEP_e": "2ameph_e"
+    }
+  },
+  "condition_count": 43,
+  "solve_count": 129,
+  "residual_tolerance": 1e-08,
+  "objective_tolerance": 1e-08,
+  "methods": [
+    {
+      "id": "glpk_native",
+      "solver": "glpk",
+      "basis": "native",
+      "solver_tolerance": 1e-09,
+      "scaling": "native optlang GLP_SF_AUTO"
+    },
+    {
+      "id": "highs_primal_simplex",
+      "solver": "highs",
+      "method": "simplex",
+      "solver_tolerance": 1e-09,
+      "threads": 0,
+      "time_limit_seconds": 60.0,
+      "extra_options": {
+        "parallel": "off",
+        "simplex_strategy": 4
+      }
+    },
+    {
+      "id": "highs_simplex_tighter",
+      "solver": "highs",
+      "method": "simplex",
+      "solver_tolerance": 1e-10,
+      "threads": 0,
+      "time_limit_seconds": 60.0,
+      "extra_options": {
+        "parallel": "off"
+      }
+    }
+  ],
+  "input_paths": [
+    "data/studies/medium_curated_numerics_v1.json",
+    "docs/studies/medium-curated-numerics-v1.md",
+    "scripts/compare_curated_medium_solvers.py",
+    "tests/test_compare_curated_medium_solvers.py",
+    "scripts/diagnose_medium_numerics.py",
+    "scripts/diagnose_medium_numerics_attempt02.py",
+    "scripts/diagnose_medium_numerics_attempt02b.py",
+    "results/medium_preparation_2026_09_06/runs/main_v2/manifest.json",
+    "results/medium_preparation_2026_09_06/runs/main_v2/failure.json",
+    "results/medium_preparation_2026_09_06/runs/main_v2/cases.jsonl.gz"
+  ],
+  "diagnostic_inputs": [
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/README.md",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/diagnostic_source.py",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/optlang_glpk_interface_source.py",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/input_hashes.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_settings.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/runtime.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_model.xml.gz",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_signature.json.gz",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/prepared_context.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/presolve_artifact_hashes.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_native.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/glpk_advanced_basis.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_simplex.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/highs_ipm.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic/summary.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/diagnostic_source.py",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/attempt01_helpers_source.py",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/input_hashes.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/presolve_settings.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/supported_effective_options.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/runtime.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02/failure.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/diagnostic_source.py",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/attempt01_helpers_source.py",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/input_hashes.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_settings.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/supported_effective_options.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/runtime.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/prepared_context.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/presolve_artifact_hashes.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_primal_simplex.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_dual_no_presolve.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_tighter.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/highs_simplex_no_scaling.json",
+    "results/medium_preparation_2026_09_06/numerical_diagnostic_attempt02b/summary.json"
+  ],
+  "selection": "All43 mapped curated Putida conditions from the frozen inventory, exact order, same three fixed methods on every case. No numerical fitness values or gene scores read.",
+  "acceptance": "Retain original sparse primal gate at1e-8. accepted_for_comparison additionally requires optimal status, complete finite vector, finite compensated max residual<=1e-8, and reported objective consistent with the vector under original1e-8 absolute/relative tolerances. All reported optimal objectives must agree, including records with rejected primal vectors; Contradictory optimal versus infeasible, unbounded or combined infeasible-or-unbounded status blocks accepted cross-solver evidence. Capture-exception records are never accepted. A third-method timeout or exception without a contradictory status remains reported but does not invalidate two other accepted methods.",
+  "cross_solver_evidence": "Require accepted native GLPK and at least one accepted HiGHS method plus agreement among all reported optimal objectives. Report each method separately; never hide the third method failure. This is numerical evidence, not a mathematical optimality proof.",
+  "failure_policy": "Persist raw vectors/statuses before structural or acceptance checks. Continue all43 cases despite numerical certificate failures, time limits or objective disagreements. Stop only for provenance, unsupported input or changed LP algebra. No automatic option/model/gate changes.",
+  "scope": "Post-failure numerical comparison. The failed primary runs remain failed; this does not complete or rewrite them, rescore fitness, establish biochemical validity or provide independent biological validation."
+}
