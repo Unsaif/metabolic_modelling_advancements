@@ -1,0 +1,93 @@
+{
+  "created_utc": "2026-09-06T11:14:53.101650+00:00",
+  "source_map_sha256": "49014f81058862e3a24a57f060b03f44dc635d85a08c977b1ea9c88de9218709",
+  "candidate_sha256_unchanged": "bee13fe5ebcc6f7ba98bf93c2ab99cccbf978f7308ddba0c8361a99a7ffcdb87",
+  "upstream_redox_checks": [
+    {
+      "draft_reaction": {
+        "id": "MECDPDH",
+        "name": "MECDPDH",
+        "equation": "2mecdp_c + h_c --> h2mb4p_c + h2o_c",
+        "metabolites": {
+          "2mecdp_c": -1.0,
+          "h2mb4p_c": 1.0,
+          "h2o_c": 1.0,
+          "h_c": -1.0
+        },
+        "lower_bound": 0.0,
+        "upper_bound": 1000.0,
+        "gene_reaction_rule": "NP_743014_1",
+        "gene_ids": [
+          "NP_743014_1"
+        ],
+        "annotation": {},
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": [],
+        "browser_gene_ids": [
+          "PP_0853"
+        ]
+      },
+      "charge_residual_using_curated_shared_metabolite_charges": -2.0,
+      "source_charges": {
+        "2mecdp_c": -2,
+        "h2mb4p_c": -3,
+        "h2o_c": 0,
+        "h_c": 1
+      },
+      "interpretation": "An absent explicit reductant is masked by the draft zero-charge metadata."
+    },
+    {
+      "draft_reaction": {
+        "id": "MECDPDH2",
+        "name": "2C-methyl-D-erythritol 2,4 cyclodiphosphate dehydratase",
+        "equation": "2mecdp_c + nadh_c --> h2mb4p_c + h2o_c + nad_c",
+        "metabolites": {
+          "2mecdp_c": -1.0,
+          "h2mb4p_c": 1.0,
+          "h2o_c": 1.0,
+          "nad_c": 1.0,
+          "nadh_c": -1.0
+        },
+        "lower_bound": 0.0,
+        "upper_bound": 1000.0,
+        "gene_reaction_rule": "NP_742706_1",
+        "gene_ids": [
+          "NP_742706_1"
+        ],
+        "annotation": {},
+        "mass_charge_imbalance": {},
+        "missing_formula_or_charge": [],
+        "browser_gene_ids": [
+          "PP_0543"
+        ]
+      },
+      "charge_residual_using_curated_shared_metabolite_charges": 0.0,
+      "source_charges": {
+        "2mecdp_c": -2,
+        "h2mb4p_c": -3,
+        "h2o_c": 0,
+        "nad_c": -1,
+        "nadh_c": -2
+      },
+      "interpretation": "This NADH-coupled alternative balances with the curated shared-metabolite charges; enzyme/GPR specificity is not established by that balance."
+    }
+  ],
+  "curated_duplicate_not_for_transfer": {
+    "reaction_id": "MEPCT_1",
+    "source_imbalance": {
+      "charge": 1,
+      "H": 1
+    },
+    "balanced_route_already_present": "MEPCT"
+  },
+  "all_source_route_metabolites_absent_from_draft": [
+    "2ombzl_c",
+    "2omhmbl_c",
+    "2ommbl_c",
+    "2omph_c",
+    "flxr_c",
+    "flxso_c"
+  ],
+  "flavodoxin_context": "flxr_c and flxso_c belong to the curated MECDPDH5 alternative. They are not required metabolites of the five-step transfer and are not being added.",
+  "scope": "Structural source comparison only. No reaction/metabolite metadata was altered, no optimization performed, and the stable five-step candidate remains unchanged."
+}

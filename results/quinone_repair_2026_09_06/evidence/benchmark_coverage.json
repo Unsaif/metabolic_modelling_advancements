@@ -1,0 +1,598 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-06T11:00:25.301675+00:00",
+  "evaluation_role": "development",
+  "organism": "Putida",
+  "scope": "iJN1463 ubiquinone synthesis from chorismate and prenyl precursors; immediate DMATT/GRTT/OCTDPS support. Not all upstream MEP/shikimate genes or all model cofactors.",
+  "selection_basis": "Local curated reaction identities and GPRs; no fitness values or simulation phenotypes used to choose this list.",
+  "fitness_export_columns_loaded": [
+    "orgId",
+    "locusId",
+    "sysName",
+    "geneName",
+    "desc"
+  ],
+  "saved_matrix_arrays_loaded": [
+    "browser_genes"
+  ],
+  "fitness_score_columns_loaded": false,
+  "repository_commit_at_audit": "43995f3555b9bfbf2d31c6b07f0475439d0859af",
+  "script_sha256": "8f8ba596a279193b8a2d3959414ea53c1d8df0a51a1efc1859463e489c6a64b8",
+  "input_sha256": {
+    "models/bigg/iJN1463.xml": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+    "models/gapfilled/Putida.xml.gz": "378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739",
+    "models/gapfilled/Putida_gapfill.json": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2",
+    "data/fitness_browser/Putida/genes.tsv": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e",
+    "data/fitness_browser/Putida/fit_logratios.tsv": "28f422b3aca5e0e4a8730bb7efbb97c177c7fe672b5180455d3494f474ca170e",
+    "data/genpept/Putida_genpept_map.tsv": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128",
+    "data/reference/universe_patches_v0.1.json": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe",
+    "data/reference/model_patches_v0.4.json": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190",
+    "scripts/run_quinone_biomass_sensitivity.py": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d",
+    "scripts/run_carbon_fitness_generic.py": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc",
+    "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2",
+    "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+    "gembench/protocols/carbon_fitness_generic.py": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303",
+    "results/quinone_biomass_2026_09_06/no_quinone_demand/matrices.npz": "eb1c18ab47747e4f692182745b045e8dba1dc6e70f6fcb1b0051e624b5bf9af9",
+    "data/reference/gpr_patches_v0.2.json": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284",
+    "data/reference/gpr_patches_v0.3.json": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885",
+    "data/reference/gpr_patches_v0.4.json": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7"
+  },
+  "counts": {
+    "annotated_gene_rows": 5661,
+    "exported_fitness_rows": 4778,
+    "annotated_genes_without_exported_fitness_row": 883,
+    "baseline_model_genes": 1301,
+    "baseline_mapped_genes": 1300,
+    "baseline_gene_axis": 1047,
+    "pathway_genes": 12,
+    "pathway_genes_with_fitness_row": 1,
+    "missing_terminal_reaction_genes": 5,
+    "missing_terminal_genes_with_fitness_row": 0
+  },
+  "model_mapping_statistics": {
+    "model_genes": 1301,
+    "mapped": 1300,
+    "matched_by_version": 1291,
+    "matched_by_accession_only": 0,
+    "no_genpept_record": 1,
+    "locus_tag_not_in_browser": 0,
+    "browser_genes_hit": 1300
+  },
+  "reactions": [
+    {
+      "reaction": "CHRPL",
+      "name": "Chorismate pyruvate lyase",
+      "curated_equation": "chor_c --> 4hbz_c + pyr_c",
+      "curated_gpr": "PP_5317",
+      "curated_genes": [
+        "PP_5317"
+      ],
+      "present_in_prepared_baseline": true,
+      "baseline_gpr": "NP_747418_1",
+      "baseline_browser_genes": [
+        "PP_5317"
+      ]
+    },
+    {
+      "reaction": "DMATT",
+      "name": "Dimethylallyltranstransferase",
+      "curated_equation": "dmpp_c + ipdp_c --> grdp_c + ppi_c",
+      "curated_gpr": "PP_0528",
+      "curated_genes": [
+        "PP_0528"
+      ],
+      "present_in_prepared_baseline": true,
+      "baseline_gpr": "NP_742691_1",
+      "baseline_browser_genes": [
+        "PP_0528"
+      ]
+    },
+    {
+      "reaction": "GRTT",
+      "name": "Geranyltranstransferase",
+      "curated_equation": "grdp_c + ipdp_c --> frdp_c + ppi_c",
+      "curated_gpr": "PP_0528",
+      "curated_genes": [
+        "PP_0528"
+      ],
+      "present_in_prepared_baseline": true,
+      "baseline_gpr": "NP_742691_1",
+      "baseline_browser_genes": [
+        "PP_0528"
+      ]
+    },
+    {
+      "reaction": "OCTDPS",
+      "name": "Octaprenyl pyrophosphate synthase",
+      "curated_equation": "frdp_c + 5.0 ipdp_c --> octdp_c + 5.0 ppi_c",
+      "curated_gpr": "PP_0687",
+      "curated_genes": [
+        "PP_0687"
+      ],
+      "present_in_prepared_baseline": true,
+      "baseline_gpr": "NP_742848_1",
+      "baseline_browser_genes": [
+        "PP_0687"
+      ]
+    },
+    {
+      "reaction": "HBZOPT",
+      "name": "Hydroxybenzoate octaprenyltransferase",
+      "curated_equation": "4hbz_c + octdp_c --> 3ophb_c + ppi_c",
+      "curated_gpr": "PP_5318",
+      "curated_genes": [
+        "PP_5318"
+      ],
+      "present_in_prepared_baseline": true,
+      "baseline_gpr": "NP_747419_1",
+      "baseline_browser_genes": [
+        "PP_5318"
+      ]
+    },
+    {
+      "reaction": "OPHBDC",
+      "name": "Octaprenyl-hydroxybenzoate decarboxylase",
+      "curated_equation": "3ophb_c + h_c --> 2oph_c + co2_c",
+      "curated_gpr": "PP_5213 or PP_0548",
+      "curated_genes": [
+        "PP_0548",
+        "PP_5213"
+      ],
+      "present_in_prepared_baseline": true,
+      "baseline_gpr": "NP_747314_2",
+      "baseline_browser_genes": [
+        "PP_5213"
+      ]
+    },
+    {
+      "reaction": "OPHHX",
+      "name": "2-Octaprenylphenol hydroxylase",
+      "curated_equation": "2oph_c + 0.5 o2_c --> 2ohph_c",
+      "curated_gpr": "PP_5013",
+      "curated_genes": [
+        "PP_5013"
+      ],
+      "present_in_prepared_baseline": true,
+      "baseline_gpr": "YP_009237195_1",
+      "baseline_browser_genes": [
+        "PP_5013"
+      ]
+    },
+    {
+      "reaction": "OHPHM",
+      "name": "2-octaprenyl-6-hydroxyphenol methylase",
+      "curated_equation": "2ohph_c + amet_c --> 2omph_c + ahcys_c + h_c",
+      "curated_gpr": "PP_1765",
+      "curated_genes": [
+        "PP_1765"
+      ],
+      "present_in_prepared_baseline": false,
+      "baseline_gpr": null,
+      "baseline_browser_genes": []
+    },
+    {
+      "reaction": "OMPHHX",
+      "name": "2-octaprenyl-6-methoxyphenol hydroxylase",
+      "curated_equation": "2omph_c + 0.5 o2_c --> 2ombzl_c",
+      "curated_gpr": "PP_5199",
+      "curated_genes": [
+        "PP_5199"
+      ],
+      "present_in_prepared_baseline": false,
+      "baseline_gpr": null,
+      "baseline_browser_genes": []
+    },
+    {
+      "reaction": "OMBZLM",
+      "name": "2-Octaprenyl-6-methoxy-benzoquinol methylase",
+      "curated_equation": "2ombzl_c + amet_c --> 2ommbl_c + ahcys_c + h_c",
+      "curated_gpr": "PP_5011",
+      "curated_genes": [
+        "PP_5011"
+      ],
+      "present_in_prepared_baseline": false,
+      "baseline_gpr": null,
+      "baseline_browser_genes": []
+    },
+    {
+      "reaction": "OMMBLHX",
+      "name": "2-Octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase",
+      "curated_equation": "2ommbl_c + 0.5 o2_c --> 2omhmbl_c",
+      "curated_gpr": "PP_0427 or PP_5197",
+      "curated_genes": [
+        "PP_0427",
+        "PP_5197"
+      ],
+      "present_in_prepared_baseline": false,
+      "baseline_gpr": null,
+      "baseline_browser_genes": []
+    },
+    {
+      "reaction": "DMQMT",
+      "name": "3-Dimethylubiquinonol 3-methyltransferase",
+      "curated_equation": "2omhmbl_c + amet_c --> ahcys_c + h_c + q8h2_c",
+      "curated_gpr": "PP_1765",
+      "curated_genes": [
+        "PP_1765"
+      ],
+      "present_in_prepared_baseline": false,
+      "baseline_gpr": null,
+      "baseline_browser_genes": []
+    }
+  ],
+  "genes": [
+    {
+      "gene": "PP_0427",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_0427",
+          "sysName": "PP_0427",
+          "scaffoldId": "AE015451",
+          "begin": "515094",
+          "end": "515741",
+          "strand": "-",
+          "type": "1",
+          "desc": "2-nonaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OMMBLHX"
+      ],
+      "on_missing_terminal_reactions": true,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_0528",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_0528",
+          "sysName": "PP_0528",
+          "scaffoldId": "AE015451",
+          "begin": "614359",
+          "end": "615246",
+          "strand": "-",
+          "type": "1",
+          "desc": "farnesyl diphosphate synthase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "DMATT",
+        "GRTT"
+      ],
+      "on_missing_terminal_reactions": false,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [
+        "NP_742691_1"
+      ],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_0548",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_0548",
+          "sysName": "PP_0548",
+          "scaffoldId": "AE015451",
+          "begin": "637123",
+          "end": "637752",
+          "strand": "+",
+          "type": "1",
+          "desc": "putative phenylacrylic acid decarboxylase, padA1"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OPHBDC"
+      ],
+      "on_missing_terminal_reactions": false,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_0687",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_0687",
+          "sysName": "PP_0687",
+          "scaffoldId": "AE015451",
+          "begin": "799504",
+          "end": "800472",
+          "strand": "-",
+          "type": "1",
+          "desc": "octaprenyl diphosphate synthase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OCTDPS"
+      ],
+      "on_missing_terminal_reactions": false,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [
+        "NP_742848_1"
+      ],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_1765",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_1765",
+          "sysName": "PP_1765",
+          "scaffoldId": "AE015451",
+          "begin": "1968821",
+          "end": "1969519",
+          "strand": "-",
+          "type": "1",
+          "desc": "Ubiquinone biosynthesis O-methyltransferase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OHPHM",
+        "DMQMT"
+      ],
+      "on_missing_terminal_reactions": true,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_5011",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_5011",
+          "sysName": "PP_5011",
+          "scaffoldId": "AE015451",
+          "begin": "5711162",
+          "end": "5711932",
+          "strand": "+",
+          "type": "1",
+          "desc": "Ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OMBZLM"
+      ],
+      "on_missing_terminal_reactions": true,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [
+        "NP_747113_1"
+      ],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_5013",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_5013",
+          "sysName": "PP_5013",
+          "scaffoldId": "AE015451",
+          "begin": "5712552",
+          "end": "5714174",
+          "strand": "+",
+          "type": "1",
+          "desc": "2-octaprenylphenol hydroxylase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OPHHX"
+      ],
+      "on_missing_terminal_reactions": false,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [
+        "YP_009237195_1"
+      ],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_5197",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_5197",
+          "sysName": "PP_5197",
+          "scaffoldId": "AE015451",
+          "begin": "5929164",
+          "end": "5930387",
+          "strand": "-",
+          "type": "1",
+          "desc": "putative oxidoreductase involved in anerobic synthesis of ubiquinone, FAD/NAD(P)-binding domain"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OMMBLHX"
+      ],
+      "on_missing_terminal_reactions": true,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_5199",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_5199",
+          "sysName": "PP_5199",
+          "scaffoldId": "AE015451",
+          "begin": "5930870",
+          "end": "5932069",
+          "strand": "-",
+          "type": "1",
+          "desc": "2-octaprenyl-6-methoxyphenyl hydroxylase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OMPHHX"
+      ],
+      "on_missing_terminal_reactions": true,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_5213",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_5213",
+          "sysName": "PP_5213",
+          "scaffoldId": "AE015451",
+          "begin": "5945542",
+          "end": "5947008",
+          "strand": "-",
+          "type": "1",
+          "desc": "3-octaprenyl-4-hydroxybenzoate carboxy-lyase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "OPHBDC"
+      ],
+      "on_missing_terminal_reactions": false,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [
+        "NP_747314_2"
+      ],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_5317",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_5317",
+          "sysName": "PP_5317",
+          "scaffoldId": "AE015451",
+          "begin": "6063112",
+          "end": "6063669",
+          "strand": "+",
+          "type": "1",
+          "desc": "Probable chorismate pyruvate-lyase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "CHRPL"
+      ],
+      "on_missing_terminal_reactions": false,
+      "exported_fitness_row_present": true,
+      "baseline_model_gene_ids": [
+        "NP_747418_1"
+      ],
+      "eligible_by_current_model_mapping_and_fitness_row": true,
+      "in_saved_baseline_gene_axis": true,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    },
+    {
+      "gene": "PP_5318",
+      "annotated_gene_present": true,
+      "annotation": [
+        {
+          "locusId": "PP_5318",
+          "sysName": "PP_5318",
+          "scaffoldId": "AE015451",
+          "begin": "6063669",
+          "end": "6064559",
+          "strand": "+",
+          "type": "1",
+          "desc": "4-hydroxybenzoate octaprenyltransferase"
+        }
+      ],
+      "curated_reactions_in_scope": [
+        "HBZOPT"
+      ],
+      "on_missing_terminal_reactions": false,
+      "exported_fitness_row_present": false,
+      "baseline_model_gene_ids": [
+        "NP_747419_1"
+      ],
+      "eligible_by_current_model_mapping_and_fitness_row": false,
+      "in_saved_baseline_gene_axis": false,
+      "per_condition_finite_fitness_coverage": "not examined",
+      "original_mutant_library_membership": "unknown; insertion and barcode records unavailable locally",
+      "experimental_essentiality": "not inferred",
+      "knockout_prediction": "not evaluated in this metadata audit"
+    }
+  ],
+  "interpretation": [
+    "An absent fitness row is unscored. It is neither a zero-fitness observation nor evidence of experimental nonessentiality.",
+    "The downloaded gene annotation table is a genome annotation, not a mutant library inventory. Actual absence from the original mutant pool cannot be established from these inputs.",
+    "Fitness row presence is metadata coverage only; it does not guarantee finite or reliable measurements in every benchmark condition.",
+    "Newly adding terminal pathway GPRs cannot create experimental observations for the five distinct genes whose exported fitness rows are absent.",
+    "Any later score change among covered genes measures development-set agreement; it cannot directly validate the unscored terminal pathway genes or establish generalization.",
+    "A pathway patch copied from iJN1463 is supported by that reconstruction; agreement with that same reconstruction is not independent biological validation.",
+    "Biological validation would require pathway/gene-specific evidence such as documented insertion coverage plus an appropriate essentiality analysis, independently measured disruption/complementation, or cofactor measurements. None was inferred here."
+  ],
+  "primary_method_sources": [
+    {
+      "title": "Wetmore et al. 2015, Rapid Quantification of Mutant Fitness in Diverse Bacteria by Sequencing Randomly Bar-Coded Transposons",
+      "url": "https://journals.asm.org/doi/10.1128/mbio.00306-15",
+      "relevance": "Library insertion coverage and genes with fitness estimates are distinct quantities (Table 1). These are general method principles, not Putida-specific insertion evidence."
+    },
+    {
+      "title": "Price et al. 2018 author data page",
+      "url": "https://genomics.lbl.gov/supplemental/bigfit/",
+      "relevance": "Documents separate gene metadata, fitness-gene vectors, strain usage, and likely-essential analysis fields."
+    }
+  ]
+}

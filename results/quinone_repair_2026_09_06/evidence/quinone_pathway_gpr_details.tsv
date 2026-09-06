@@ -1,0 +1,33 @@
+group	source_reaction	source_gpr	draft_equivalent	draft_gpr_model_ids	draft_gpr_browser_ids	source_forward_allowed_by_draft	source_reverse_allowed_by_draft
+aromatic_precursor	DDPA	PP_3080 or PP_2324 or PP_1866	DDPA	NP_744021_1 or NP_744473_1 or NP_745224_1	PP_1866 or PP_2324 or PP_3080	True	False
+aromatic_precursor	DHQS	PP_5078	DHQS	NP_747179_1	PP_5078	True	False
+aromatic_precursor	DHQTi_copy1	PP_0560 or PP_3003 or PP_2407	DHQTi	NP_742723_1 or NP_744555_1 or NP_745147_1	PP_0560 or PP_2407 or PP_3003	True	False
+aromatic_precursor	DHQTi_copy2	PP_0560 or PP_2407 or PP_3003	DHQTi	NP_742723_1 or NP_744555_1 or NP_745147_1	PP_0560 or PP_2407 or PP_3003	True	False
+aromatic_precursor	SHK3Dr	PP_3002 or PP_0074 or PP_2406 or PP_3768	SHK3Dr	NP_742244_1 or NP_744554_1 or NP_745898_2	PP_0074 or PP_2406 or PP_3768	True	True
+aromatic_precursor	SHKK	PP_5079	SHKK	NP_747180_1	PP_5079	True	False
+aromatic_precursor	PSCVT_copy1	PP_1770	PSCVT	NP_743926_1	PP_1770	True	True
+aromatic_precursor	PSCVT_copy2	PP_1770	PSCVT	NP_743926_1	PP_1770	True	True
+aromatic_precursor	CHORS	PP_1830	CHORS	NP_743985_1	PP_1830	True	False
+aromatic_precursor	CHRPL	PP_5317	CHRPL	NP_747418_1	PP_5317	True	False
+MEP_isoprenoid_precursor	DXPS	PP_0527	DXPS	NP_742690_2	PP_0527	True	False
+MEP_isoprenoid_precursor	DXPRIi	PP_1597	DXPRIi	NP_743754_1	PP_1597	True	False
+MEP_isoprenoid_precursor	MEPCT	PP_1614	MEPCT	NP_743771_1	PP_1614	True	False
+MEP_isoprenoid_precursor	MEPCT_1	PP_1614					
+MEP_isoprenoid_precursor	CDPMEK	PP_0723	CDPMEK	NP_742884_1	PP_0723	True	False
+MEP_isoprenoid_precursor	MECDPS_copy1	PP_1618	MECDPS	NP_743775_1	PP_1618	True	False
+MEP_isoprenoid_precursor	MECDPS_copy2	PP_1618	MECDPS	NP_743775_1	PP_1618	True	False
+MEP_isoprenoid_precursor	MECDPDH5	PP_1625 and PP_0853					
+MEP_isoprenoid_precursor	IPDPS	PP_0606	IPDPS	NP_742768_1 or NP_743928_3	PP_0606 or NP_743928_3	True	False
+MEP_isoprenoid_precursor	DMPPS	PP_0606	DMPPS	NP_743928_3	NP_743928_3	True	False
+MEP_isoprenoid_precursor	IPDDI	PP_0565	IPDDI	NP_742728_1	PP_0565	True	True
+prenyl_chain_and_attachment	DMATT	PP_0528	DMATT	NP_742691_1	PP_0528	True	False
+prenyl_chain_and_attachment	GRTT	PP_0528	GRTT	NP_742691_1	PP_0528	True	False
+prenyl_chain_and_attachment	OCTDPS	PP_0687	OCTDPS	NP_742848_1	PP_0687	True	False
+prenyl_chain_and_attachment	HBZOPT	PP_5318	HBZOPT	NP_747419_1	PP_5318	True	False
+quinone_ring_modification	OPHBDC	PP_5213 or PP_0548	OPHBDC	NP_747314_2	PP_5213	True	False
+quinone_ring_modification	OPHHX	PP_5013	OPHHX	YP_009237195_1	PP_5013	True	False
+quinone_ring_modification	OHPHM	PP_1765					
+quinone_ring_modification	OMPHHX	PP_5199					
+quinone_ring_modification	OMBZLM	PP_5011					
+quinone_ring_modification	OMMBLHX	PP_0427 or PP_5197					
+quinone_ring_modification	DMQMT	PP_1765					

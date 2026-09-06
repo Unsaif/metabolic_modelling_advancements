@@ -1,0 +1,733 @@
+{
+  "schema_version": 1,
+  "organism": "Pseudomonas putida KT2440",
+  "created_date": "2026-09-06",
+  "scope": "Biochemical route candidates independent of benchmark outcomes; no model patch or reaction authorization encoded.",
+  "evidence_grades": {
+    "A_strain_experiment": "Direct KT2440 catalytic/native-product measurement; none located for the route genes in this bounded search.",
+    "B_other_organism_experiment": "Primary catalytic or genetic chemistry experiment in another organism; function transfer remains inferred.",
+    "C_strain_annotation": "KT2440 locus annotation by sequence homology, explicitly not an experiment.",
+    "C_sequence_specific_primary_computational": "Exact protein accession classified in primary comparative-genomics data; not assayed here.",
+    "D_model_transfer": "Stoichiometry/GPR copied from existing curated model, provisional."
+  },
+  "sources": {
+    "refseq2026": {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=NC_002947.4&rettype=gbwithparts&retmode=text",
+      "accession": "NC_002947.4",
+      "record_date": "04-FEB-2026",
+      "retrieved_date": "2026-09-06",
+      "sha256": "6f7e8b64ad39178fbeb26ad84a49ca25fe79624c7323e9a4cd72d32e336df0fc",
+      "bytes": 15669272,
+      "evidence": "Automated protein-homology annotation; no functional experiments implied."
+    },
+    "kazemzadeh2023_dataset_s2": {
+      "paper_url": "https://doi.org/10.1093/molbev/msad219",
+      "dataset_url": "https://doi.org/10.6084/m9.figshare.23230562",
+      "download_url": "https://ndownloader.figshare.com/files/42305007",
+      "filename": "Dataset_S2_trees+aln.zip",
+      "sha256": "7cc119f616b64a7a88a91b423403dd1b3f78f357738d7c50487dd804546fcf09",
+      "bytes": 2270597,
+      "retrieved_date": "2026-09-06",
+      "members_used": [
+        "Dataset_S2_trees+aln/iTol_annotations/1_annot_genes_itol.txt",
+        "Dataset_S2_trees+aln/iTol_annotations/5_annot_leaflabels-keep-labels_itol.txt",
+        "Dataset_S2_trees+aln/iTol_annotations/4_annot_highlight_exp_seqs.txt"
+      ],
+      "members_sha256": {
+        "Dataset_S2_trees+aln/iTol_annotations/1_annot_genes_itol.txt": "92a3e6bc5fb901f8f87dd7d94eb735ddbc46ef1f2f118c714aa04b98f4f0dfe4",
+        "Dataset_S2_trees+aln/iTol_annotations/5_annot_leaflabels-keep-labels_itol.txt": "60feb85264be1dea28088d197241b71590de3cf09e2dcf6c0aed6fd0d1db43e2",
+        "Dataset_S2_trees+aln/iTol_annotations/4_annot_highlight_exp_seqs.txt": "df2d4f55fa8a3beb6dd37e974e7e619719fc62b82d9161fdb81127415473cd2e"
+      },
+      "evidence": "Primary computational sequence-family classification. Only annotation metadata inspected for conclusions; no phenotype datasets used."
+    },
+    "pelosi2016": {
+      "url": "https://doi.org/10.1128/mSystems.00091-16",
+      "evidence": "UbiL/UbiM regioselectivity experiments in other species; general flavin monooxygenase chemistry."
+    },
+    "chehade2013": {
+      "url": "https://doi.org/10.1074/jbc.M113.480368",
+      "evidence": "E. coli UbiI/VisC C5 hydroxylation experiments; not KT2440."
+    },
+    "stenmark2001": {
+      "url": "https://doi.org/10.1074/jbc.C100346200",
+      "evidence": "P. aeruginosa and T. ferrooxidans Coq7 heterologous complementation; not KT2440."
+    },
+    "white2015": {
+      "url": "https://doi.org/10.1038/nature14559",
+      "evidence": "P. aeruginosa UbiX biochemical cofactor production and mechanism; not KT2440."
+    },
+    "johnson2016": {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5779730/",
+      "evidence": "Engineered KT2440 muconate work discusses PP_0548 UbiX homologue; does not directly assay native quinone synthesis."
+    },
+    "lee1997": {
+      "url": "https://doi.org/10.1128/jb.179.5.1748-1754.1997",
+      "evidence": "E. coli UbiE genetic and quinone-intermediate evidence; not KT2440."
+    },
+    "hsu1996": {
+      "url": "https://doi.org/10.1021/bi9602932",
+      "evidence": "E. coli UbiG complementation/enzymatic support for two O-methylations; not KT2440."
+    },
+    "kawahara1991": {
+      "url": "https://www.jstage.jst.go.jp/article/bbb1961/55/9/55_9_2307/_pdf",
+      "evidence": "P. putida IAM1219 enzyme assay and extracted Q9, not KT2440."
+    }
+  },
+  "genes": [
+    {
+      "model_locus": "PP_0427",
+      "refseq_locus": "PP_RS02245",
+      "protein_accession": "WP_010951761.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_010951761.1",
+      "location": "complement(515094..515741)",
+      "gene_symbol": "coq7",
+      "product": "2-polyprenyl-3-methyl-6-methoxy-1,4-benzoquinone monooxygenase",
+      "protein_length": 215,
+      "protein_sequence_sha256": "2222a6394acb217c7a2000a3b2ae693d612e65a41d9467cee81a275a19f2166f",
+      "refseq_qualifiers": {
+        "gene": [
+          "coq7"
+        ],
+        "locus_tag": [
+          "PP_RS02245"
+        ],
+        "old_locus_tag": [
+          "PP_0427"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:NP_249346.1"
+        ],
+        "GO_function": [
+          "GO:0004497 - monooxygenase activity [Evidence IEA]"
+        ],
+        "GO_process": [
+          "GO:0006744 - ubiquinone biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "2-polyprenyl-3-methyl-6-methoxy-1,4-benzoquinone monooxygenase"
+        ],
+        "protein_id": [
+          "WP_010951761.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "primary_sequence_classification": {
+        "family": "Coq7",
+        "source_id": "kazemzadeh2023_dataset_s2",
+        "source_member": "Dataset_S2_trees+aln/iTol_annotations/1_annot_genes_itol.txt",
+        "source_member_sha256": "92a3e6bc5fb901f8f87dd7d94eb735ddbc46ef1f2f118c714aa04b98f4f0dfe4",
+        "exact_source_row": "WP_010951761.1\t#f66427",
+        "legend_mapping": {
+          "#f66427": "Coq7"
+        },
+        "source_taxon_label": "Pseudomonas sp. KBS0802 (WP_010951761.1)",
+        "present_in_experimental_highlight_list": false,
+        "evidence_grade": "C_sequence_specific_primary_computational",
+        "interpretation": "Same accession.version in KT2440 RefSeq CDS and published annotation; WP proteins may be shared by several genomes. This is not an assay of the KT2440 protein."
+      },
+      "candidate_reaction_ids": [
+        "OMMBLHX"
+      ],
+      "interpretation": "Coq7 C6 hydroxylase; sequence-informed terminal-step candidate. No evidence here of interchangeable PP_5197 C6 catalysis."
+    },
+    {
+      "model_locus": "PP_0528",
+      "refseq_locus": "PP_RS02795",
+      "protein_accession": "WP_010951810.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_010951810.1",
+      "location": "complement(614359..615246)",
+      "gene_symbol": "ispA",
+      "product": "(2E,6E)-farnesyl diphosphate synthase",
+      "protein_length": 295,
+      "protein_sequence_sha256": "e45fd45ab302a989b74ae71c1d88a4e728d26633c81e5d3130262d89244d7091",
+      "refseq_qualifiers": {
+        "gene": [
+          "ispA"
+        ],
+        "locus_tag": [
+          "PP_RS02795"
+        ],
+        "old_locus_tag": [
+          "PP_0528"
+        ],
+        "EC_number": [
+          "2.5.1.10"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:NP_252732.1"
+        ],
+        "GO_process": [
+          "GO:0008299 - isoprenoid biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "(2E,6E)-farnesyl diphosphate synthase"
+        ],
+        "protein_id": [
+          "WP_010951810.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [
+        "DMATT",
+        "GRTT"
+      ],
+      "interpretation": "IspA precursor synthesis; does not establish terminal quinone tail length."
+    },
+    {
+      "model_locus": "PP_0548",
+      "refseq_locus": "PP_RS02895",
+      "protein_accession": "WP_003255348.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_003255348.1",
+      "location": "637123..637752",
+      "gene_symbol": "ubiX",
+      "product": "flavin prenyltransferase UbiX",
+      "protein_length": 209,
+      "protein_sequence_sha256": "585606e7c8d7934d92dec701a819d81ee2a241d226aabf9d9c4c00fb25689682",
+      "refseq_qualifiers": {
+        "gene": [
+          "ubiX"
+        ],
+        "locus_tag": [
+          "PP_RS02895"
+        ],
+        "old_locus_tag": [
+          "PP_0548"
+        ],
+        "EC_number": [
+          "2.5.1.129"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:NP_252708.1"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "flavin prenyltransferase UbiX"
+        ],
+        "protein_id": [
+          "WP_003255348.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [],
+      "interpretation": "UbiX makes prenyl-FMN for UbiD; not an alternative decarboxylase. A combined UbiD AND UbiX rule would be a cofactor-dependency approximation, not a claim of a catalytic heteromer."
+    },
+    {
+      "model_locus": "PP_0687",
+      "refseq_locus": "PP_RS03670",
+      "protein_accession": "WP_010951940.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_010951940.1",
+      "location": "complement(799504..800472)",
+      "gene_symbol": null,
+      "product": "polyprenyl synthetase family protein",
+      "protein_length": 322,
+      "protein_sequence_sha256": "5b78c85adc52c8004cf0894e9c975c1fbc2c37ea28f57190eab0475fb797c9bd",
+      "refseq_qualifiers": {
+        "locus_tag": [
+          "PP_RS03670"
+        ],
+        "old_locus_tag": [
+          "PP_0687"
+        ],
+        "EC_number": [
+          "2.5.1.-"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:NP_253259.1"
+        ],
+        "GO_function": [
+          "GO:0046872 - metal ion binding [Evidence IEA]; GO:0004659 - prenyltransferase activity [Evidence IEA]"
+        ],
+        "GO_process": [
+          "GO:0008299 - isoprenoid biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "polyprenyl synthetase family protein"
+        ],
+        "protein_id": [
+          "WP_010951940.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [
+        "OCTDPS"
+      ],
+      "interpretation": "Polyprenyl synthetase; exact eight-versus-nine isoprene product unresolved by this generic annotation."
+    },
+    {
+      "model_locus": "PP_1765",
+      "refseq_locus": "PP_RS09070",
+      "protein_accession": "WP_003252662.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_003252662.1",
+      "location": "complement(1968821..1969519)",
+      "gene_symbol": "ubiG",
+      "product": "bifunctional 2-polyprenyl-6-hydroxyphenol methylase/3-demethylubiquinol 3-O-methyltransferase UbiG",
+      "protein_length": 232,
+      "protein_sequence_sha256": "17ea6856b6379d5b140a8f525f8874f568427b2400da847c53ed16a1083db337",
+      "refseq_qualifiers": {
+        "gene": [
+          "ubiG"
+        ],
+        "locus_tag": [
+          "PP_RS09070"
+        ],
+        "old_locus_tag": [
+          "PP_1765"
+        ],
+        "EC_number": [
+          "2.1.1.222",
+          "2.1.1.64"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:WP_003172645.1"
+        ],
+        "GO_function": [
+          "GO:0061542 - 3-demethylubiquinol 3-O-methyltransferase activity [Evidence IEA]"
+        ],
+        "GO_process": [
+          "GO:0006744 - ubiquinone biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "bifunctional 2-polyprenyl-6-hydroxyphenol methylase/3-demethylubiquinol 3-O-methyltransferase UbiG"
+        ],
+        "protein_id": [
+          "WP_003252662.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [
+        "OHPHM",
+        "DMQMT"
+      ],
+      "interpretation": "Bifunctional UbiG O-methylation candidate for both route steps; SAM donor."
+    },
+    {
+      "model_locus": "PP_5011",
+      "refseq_locus": "PP_RS26140",
+      "protein_accession": "WP_004576729.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_004576729.1",
+      "location": "5711162..5711932",
+      "gene_symbol": "ubiE",
+      "product": "bifunctional demethylmenaquinone methyltransferase/2-methoxy-6-polyprenyl-1,4-benzoquinol methylase UbiE",
+      "protein_length": 256,
+      "protein_sequence_sha256": "1d1bb852acecd2c2165ee239e05df3d05a8a170bbb2afbf1568e882e686ab82e",
+      "refseq_qualifiers": {
+        "gene": [
+          "ubiE"
+        ],
+        "locus_tag": [
+          "PP_RS26140"
+        ],
+        "old_locus_tag": [
+          "PP_5011"
+        ],
+        "EC_number": [
+          "2.1.1.163",
+          "2.1.1.201"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:NP_253750.1"
+        ],
+        "GO_function": [
+          "GO:0008168 - methyltransferase activity [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "bifunctional demethylmenaquinone methyltransferase/2-methoxy-6-polyprenyl-1,4-benzoquinol methylase UbiE"
+        ],
+        "protein_id": [
+          "WP_004576729.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [
+        "OMBZLM"
+      ],
+      "interpretation": "UbiE C-methylation candidate; SAM donor. Shared enzyme annotation does not establish a complete native menaquinone route."
+    },
+    {
+      "model_locus": "PP_5012",
+      "refseq_locus": "PP_RS26145",
+      "protein_accession": "WP_010955574.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_010955574.1",
+      "location": "5711932..5712555",
+      "gene_symbol": null,
+      "product": "ubiquinone biosynthesis accessory factor UbiJ",
+      "protein_length": 207,
+      "protein_sequence_sha256": "1bf11c42953933d03fa346a9496e98c7f0a686661d42198c0ea7cceacd958ee9",
+      "refseq_qualifiers": {
+        "locus_tag": [
+          "PP_RS26145"
+        ],
+        "old_locus_tag": [
+          "PP_5012"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:WP_019581841.1"
+        ],
+        "GO_component": [
+          "GO:0110142 - ubiquinone biosynthesis complex [Evidence IEA]"
+        ],
+        "GO_function": [
+          "GO:0008289 - lipid binding [Evidence IEA]"
+        ],
+        "GO_process": [
+          "GO:0006744 - ubiquinone biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "ubiquinone biosynthesis accessory factor UbiJ"
+        ],
+        "protein_id": [
+          "WP_010955574.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [],
+      "interpretation": "UbiJ accessory factor; no direct catalytic stoichiometric reaction assigned."
+    },
+    {
+      "model_locus": "PP_5013",
+      "refseq_locus": "PP_RS26150",
+      "protein_accession": "WP_049587492.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_049587492.1",
+      "location": "5712552..5714174",
+      "gene_symbol": "ubiB",
+      "product": "ubiquinone biosynthesis regulatory protein kinase UbiB",
+      "protein_length": 540,
+      "protein_sequence_sha256": "cfe4ccb2a1d4e56fc81257a652c6a8db8b410d107d5282131ce0bbb70023040e",
+      "refseq_qualifiers": {
+        "gene": [
+          "ubiB"
+        ],
+        "locus_tag": [
+          "PP_RS26150"
+        ],
+        "old_locus_tag": [
+          "PP_5013"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:WP_003220853.1"
+        ],
+        "GO_process": [
+          "GO:0006744 - ubiquinone biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "ubiquinone biosynthesis regulatory protein kinase UbiB"
+        ],
+        "protein_id": [
+          "WP_049587492.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [],
+      "interpretation": "UbiB regulatory kinase annotation; reject treating historical OPHHX association as direct hydroxylase evidence. Accessory requirements remain separate."
+    },
+    {
+      "model_locus": "PP_5197",
+      "refseq_locus": "PP_RS27075",
+      "protein_accession": "WP_164721831.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_164721831.1",
+      "location": "complement(5929164..5930381)",
+      "gene_symbol": null,
+      "product": "2-octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase",
+      "protein_length": 405,
+      "protein_sequence_sha256": "d94e87d69f12124a3e61455a8e8da3e41cfbb51b049331ba84328a78c450c445",
+      "refseq_qualifiers": {
+        "locus_tag": [
+          "PP_RS27075"
+        ],
+        "old_locus_tag": [
+          "PP_5197"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:WP_011064139.1"
+        ],
+        "GO_function": [
+          "GO:0071949 - FAD binding [Evidence IEA]; GO:0016709 - oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, NAD(P)H as one donor, and incorporation of one atom of oxygen [Evidence IEA]"
+        ],
+        "GO_process": [
+          "GO:0006744 - ubiquinone biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "2-octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase"
+        ],
+        "protein_id": [
+          "WP_164721831.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "primary_sequence_classification": {
+        "family": "UbiI",
+        "source_id": "kazemzadeh2023_dataset_s2",
+        "source_member": "Dataset_S2_trees+aln/iTol_annotations/1_annot_genes_itol.txt",
+        "source_member_sha256": "92a3e6bc5fb901f8f87dd7d94eb735ddbc46ef1f2f118c714aa04b98f4f0dfe4",
+        "exact_source_row": "WP_164721831.1\t#ff4ca2",
+        "legend_mapping": {
+          "#ff4ca2": "UbiI"
+        },
+        "source_taxon_label": "Pseudomonas sp. KBS0802 (WP_164721831.1)",
+        "present_in_experimental_highlight_list": false,
+        "evidence_grade": "C_sequence_specific_primary_computational",
+        "interpretation": "Same accession.version in KT2440 RefSeq CDS and published annotation; WP proteins may be shared by several genomes. This is not an assay of the KT2440 protein."
+      },
+      "candidate_reaction_ids": [
+        "OPHHX"
+      ],
+      "interpretation": "UbiI C5 candidate from primary accession-specific classification; RefSeq product remains UbiF-like, an explicit annotation conflict."
+    },
+    {
+      "model_locus": "PP_5199",
+      "refseq_locus": "PP_RS27085",
+      "protein_accession": "WP_010955723.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_010955723.1",
+      "location": "complement(5930870..5932069)",
+      "gene_symbol": "ubiH",
+      "product": "2-octaprenyl-6-methoxyphenyl hydroxylase",
+      "protein_length": 399,
+      "protein_sequence_sha256": "2f72d361cf7df7ba503764c1d8dd5c33cd15a085105e69d87c87c1b5ed608807",
+      "refseq_qualifiers": {
+        "gene": [
+          "ubiH"
+        ],
+        "locus_tag": [
+          "PP_RS27085"
+        ],
+        "old_locus_tag": [
+          "PP_5199"
+        ],
+        "gene_synonym": [
+          "visB"
+        ],
+        "EC_number": [
+          "1.14.13.-"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:WP_014754794.1"
+        ],
+        "GO_function": [
+          "GO:0008681 - 2-octaprenyl-6-methoxyphenol hydroxylase activity [Evidence IEA]; GO:0071949 - FAD binding [Evidence IEA]; GO:0016709 - oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen, NAD(P)H as one donor, and incorporation of one atom of oxygen [Evidence IEA]"
+        ],
+        "GO_process": [
+          "GO:0006744 - ubiquinone biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "2-octaprenyl-6-methoxyphenyl hydroxylase"
+        ],
+        "protein_id": [
+          "WP_010955723.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "primary_sequence_classification": {
+        "family": "UbiH",
+        "source_id": "kazemzadeh2023_dataset_s2",
+        "source_member": "Dataset_S2_trees+aln/iTol_annotations/1_annot_genes_itol.txt",
+        "source_member_sha256": "92a3e6bc5fb901f8f87dd7d94eb735ddbc46ef1f2f118c714aa04b98f4f0dfe4",
+        "exact_source_row": "WP_010955723.1\t#2ed661",
+        "legend_mapping": {
+          "#2ed661": "UbiH"
+        },
+        "source_taxon_label": "Pseudomonas sp. KBS0802 (WP_010955723.1)",
+        "present_in_experimental_highlight_list": false,
+        "evidence_grade": "C_sequence_specific_primary_computational",
+        "interpretation": "Same accession.version in KT2440 RefSeq CDS and published annotation; WP proteins may be shared by several genomes. This is not an assay of the KT2440 protein."
+      },
+      "candidate_reaction_ids": [
+        "OMPHHX"
+      ],
+      "interpretation": "UbiH C1 hydroxylase candidate."
+    },
+    {
+      "model_locus": "PP_5213",
+      "refseq_locus": "PP_RS27165",
+      "protein_accession": "WP_003253663.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_003253663.1",
+      "location": "complement(5945542..5947008)",
+      "gene_symbol": "ubiD",
+      "product": "4-hydroxy-3-polyprenylbenzoate decarboxylase",
+      "protein_length": 488,
+      "protein_sequence_sha256": "4f9f2c990fff7470a55e9758fa0918311fe753446d963759341a2c7a365167d4",
+      "refseq_qualifiers": {
+        "gene": [
+          "ubiD"
+        ],
+        "locus_tag": [
+          "PP_RS27165"
+        ],
+        "old_locus_tag": [
+          "PP_5213"
+        ],
+        "EC_number": [
+          "4.1.1.98"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:NP_253924.1"
+        ],
+        "GO_function": [
+          "GO:0016831 - carboxy-lyase activity [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "4-hydroxy-3-polyprenylbenzoate decarboxylase"
+        ],
+        "protein_id": [
+          "WP_003253663.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [
+        "OPHBDC"
+      ],
+      "interpretation": "UbiD decarboxylase candidate; depends on UbiX-produced prenyl-FMN, not OR redundancy."
+    },
+    {
+      "model_locus": "PP_5317",
+      "refseq_locus": "PP_RS27695",
+      "protein_accession": "WP_010955810.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_010955810.1",
+      "location": "6063112..6063669",
+      "gene_symbol": null,
+      "product": "chorismate--pyruvate lyase family protein",
+      "protein_length": 185,
+      "protein_sequence_sha256": "d1cefac9095587da9997646eab76c98fc5607de3c2676a10da00fe6020bf1264",
+      "refseq_qualifiers": {
+        "locus_tag": [
+          "PP_RS27695"
+        ],
+        "old_locus_tag": [
+          "PP_5317"
+        ],
+        "EC_number": [
+          "4.1.3.40"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:WP_019470231.1"
+        ],
+        "GO_component": [
+          "GO:0005737 - cytoplasm [Evidence IEA]"
+        ],
+        "GO_function": [
+          "GO:0008813 - chorismate lyase activity [Evidence IEA]"
+        ],
+        "GO_process": [
+          "GO:0006744 - ubiquinone biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "chorismate--pyruvate lyase family protein"
+        ],
+        "protein_id": [
+          "WP_010955810.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [
+        "CHRPL"
+      ],
+      "interpretation": "UbiC-family chorismate lyase candidate for 4-hydroxybenzoate precursor."
+    },
+    {
+      "model_locus": "PP_5318",
+      "refseq_locus": "PP_RS27700",
+      "protein_accession": "WP_004575206.1",
+      "protein_url": "https://www.ncbi.nlm.nih.gov/protein/WP_004575206.1",
+      "location": "6063669..6064559",
+      "gene_symbol": "ubiA",
+      "product": "4-hydroxybenzoate octaprenyltransferase",
+      "protein_length": 296,
+      "protein_sequence_sha256": "47efe79afe816aafaf2212f4d4b14cdc6067f1be972577d8f2a0f692a7b591a7",
+      "refseq_qualifiers": {
+        "gene": [
+          "ubiA"
+        ],
+        "locus_tag": [
+          "PP_RS27700"
+        ],
+        "old_locus_tag": [
+          "PP_5318"
+        ],
+        "EC_number": [
+          "2.5.1.39"
+        ],
+        "inference": [
+          "COORDINATES: similar to AA sequence:RefSeq:WP_011536425.1"
+        ],
+        "GO_function": [
+          "GO:0008412 - 4-hydroxybenzoate polyprenyltransferase activity [Evidence IEA]"
+        ],
+        "GO_process": [
+          "GO:0006744 - ubiquinone biosynthetic process [Evidence IEA]"
+        ],
+        "note": [
+          "Derived by automated computational analysis using gene prediction method: Protein Homology."
+        ],
+        "product": [
+          "4-hydroxybenzoate octaprenyltransferase"
+        ],
+        "protein_id": [
+          "WP_004575206.1"
+        ]
+      },
+      "evidence_grade": "C_strain_annotation",
+      "kt2440_direct_catalytic_experiment_found": false,
+      "candidate_reaction_ids": [
+        "HBZOPT"
+      ],
+      "interpretation": "UbiA polyprenyltransferase candidate; sequence annotation does not measure native quinone chain length."
+    }
+  ],
+  "unresolved": [
+    "Native KT2440 quinone chain-length distribution and absolute pool size",
+    "Strain-specific NADH versus NADPH or other donor use at each oxygenase",
+    "Full route/accessory requirements under intended medium and oxygen regime",
+    "Functional effect of PP_5197 at C5 versus any promiscuous C6 activity",
+    "Exhaustive exclusion of alternative hydroxylases is not established"
+  ],
+  "arm_separation": {
+    "exact_source_transfer": "Five missing reactions and original curated GPRs, including known stale associations, remain a D-grade source-transfer diagnostic.",
+    "sequence_informed_hypothesis": "PP_5197 at OPHHX, PP_5199 at OMPHHX, PP_0427 at OMMBLHX, UbiD/UbiX dependency; must be declared as a distinct hypothesis with redox chemistry still under review."
+  }
+}

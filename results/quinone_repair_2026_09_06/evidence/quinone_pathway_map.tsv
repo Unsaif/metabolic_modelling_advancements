@@ -1,0 +1,33 @@
+group	source_reaction	source_equation	source_gpr	source_lower_bound	source_upper_bound	source_imbalance	draft_equivalents	draft_gprs_browser	status
+aromatic_precursor	DDPA	e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c	PP_3080 or PP_2324 or PP_1866	0.0	999999.0	{}	DDPA	PP_1866,PP_2324,PP_3080	represented_by_equivalent_reaction
+aromatic_precursor	DHQS	2dda7p_c --> 3dhq_c + pi_c	PP_5078	0.0	999999.0	{}	DHQS	PP_5078	represented_by_equivalent_reaction
+aromatic_precursor	DHQTi_copy1	3dhq_c <=> 3dhsk_c + h2o_c	PP_0560 or PP_3003 or PP_2407	-999999.0	999999.0	{}	DHQTi	PP_0560,PP_2407,PP_3003	represented_by_equivalent_reaction
+aromatic_precursor	DHQTi_copy2	3dhq_c --> 3dhsk_c + h2o_c	PP_0560 or PP_2407 or PP_3003	0.0	1000.0	{}	DHQTi	PP_0560,PP_2407,PP_3003	represented_by_equivalent_reaction
+aromatic_precursor	SHK3Dr	3dhsk_c + h_c + nadph_c <=> nadp_c + skm_c	PP_3002 or PP_0074 or PP_2406 or PP_3768	-999999.0	999999.0	{}	SHK3Dr	PP_0074,PP_2406,PP_3768	represented_by_equivalent_reaction
+aromatic_precursor	SHKK	atp_c + skm_c --> adp_c + h_c + skm5p_c	PP_5079	0.0	999999.0	{}	SHKK	PP_5079	represented_by_equivalent_reaction
+aromatic_precursor	PSCVT_copy1	pep_c + skm5p_c <=> 3psme_c + pi_c	PP_1770	-999999.0	999999.0	{}	PSCVT	PP_1770	represented_by_equivalent_reaction
+aromatic_precursor	PSCVT_copy2	pep_c + skm5p_c --> 3psme_c + pi_c	PP_1770	0.0	1000.0	{}	PSCVT	PP_1770	represented_by_equivalent_reaction
+aromatic_precursor	CHORS	3psme_c --> chor_c + pi_c	PP_1830	0.0	999999.0	{}	CHORS	PP_1830	represented_by_equivalent_reaction
+aromatic_precursor	CHRPL	chor_c --> 4hbz_c + pyr_c	PP_5317	0.0	999999.0	{}	CHRPL	PP_5317	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	DXPS	g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c	PP_0527	0.0	999999.0	{}	DXPS	PP_0527	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	DXPRIi	dxyl5p_c + h_c + nadph_c --> 2me4p_c + nadp_c	PP_1597	0.0	999999.0	{}	DXPRIi	PP_1597	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	MEPCT	2me4p_c + ctp_c + h_c --> 4c2me_c + ppi_c	PP_1614	0.0	999999.0	{}	MEPCT	PP_1614	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	MEPCT_1	2me4p_c + ctp_c --> 4c2me_c + ppi_c	PP_1614	0.0	1000.0	"{""charge"": 1.0, ""H"": 1.0}"			no_exact_stoichiometric_match
+MEP_isoprenoid_precursor	CDPMEK	4c2me_c + atp_c --> 2p4c2me_c + adp_c + h_c	PP_0723	0.0	999999.0	{}	CDPMEK	PP_0723	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	MECDPS_copy1	2p4c2me_c --> 2mecdp_c + cmp_c	PP_1618	0.0	999999.0	{}	MECDPS	PP_1618	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	MECDPS_copy2	2p4c2me_c --> 2mecdp_c + cmp_c	PP_1618	0.0	1000.0	{}	MECDPS	PP_1618	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	MECDPDH5	2mecdp_c + 2.0 flxr_c + h_c --> 2.0 flxso_c + h2mb4p_c + h2o_c	PP_1625 and PP_0853	0.0	999999.0	{}			no_exact_stoichiometric_match
+MEP_isoprenoid_precursor	IPDPS	h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c	PP_0606	0.0	999999.0	{}	IPDPS	PP_0606,PP_1772	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	DMPPS	h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c	PP_0606	0.0	999999.0	{}	DMPPS	PP_1772	represented_by_equivalent_reaction
+MEP_isoprenoid_precursor	IPDDI	ipdp_c <=> dmpp_c	PP_0565	-999999.0	999999.0	{}	IPDDI	PP_0565	represented_by_equivalent_reaction
+prenyl_chain_and_attachment	DMATT	dmpp_c + ipdp_c --> grdp_c + ppi_c	PP_0528	0.0	999999.0	{}	DMATT	PP_0528	represented_by_equivalent_reaction
+prenyl_chain_and_attachment	GRTT	grdp_c + ipdp_c --> frdp_c + ppi_c	PP_0528	0.0	999999.0	{}	GRTT	PP_0528	represented_by_equivalent_reaction
+prenyl_chain_and_attachment	OCTDPS	frdp_c + 5.0 ipdp_c --> octdp_c + 5.0 ppi_c	PP_0687	0.0	999999.0	{}	OCTDPS	PP_0687	represented_by_equivalent_reaction
+prenyl_chain_and_attachment	HBZOPT	4hbz_c + octdp_c --> 3ophb_c + ppi_c	PP_5318	0.0	999999.0	{}	HBZOPT	PP_5318	represented_by_equivalent_reaction
+quinone_ring_modification	OPHBDC	3ophb_c + h_c --> 2oph_c + co2_c	PP_5213 or PP_0548	0.0	999999.0	{}	OPHBDC	PP_5213	represented_by_equivalent_reaction
+quinone_ring_modification	OPHHX	2oph_c + 0.5 o2_c --> 2ohph_c	PP_5013	0.0	999999.0	{}	OPHHX	PP_5013	represented_by_equivalent_reaction
+quinone_ring_modification	OHPHM	2ohph_c + amet_c --> 2omph_c + ahcys_c + h_c	PP_1765	0.0	999999.0	{}			no_exact_stoichiometric_match
+quinone_ring_modification	OMPHHX	2omph_c + 0.5 o2_c --> 2ombzl_c	PP_5199	0.0	999999.0	{}			no_exact_stoichiometric_match
+quinone_ring_modification	OMBZLM	2ombzl_c + amet_c --> 2ommbl_c + ahcys_c + h_c	PP_5011	0.0	999999.0	{}			no_exact_stoichiometric_match
+quinone_ring_modification	OMMBLHX	2ommbl_c + 0.5 o2_c --> 2omhmbl_c	PP_0427 or PP_5197	0.0	999999.0	{}			no_exact_stoichiometric_match
+quinone_ring_modification	DMQMT	2omhmbl_c + amet_c --> ahcys_c + h_c + q8h2_c	PP_1765	0.0	999999.0	{}			no_exact_stoichiometric_match

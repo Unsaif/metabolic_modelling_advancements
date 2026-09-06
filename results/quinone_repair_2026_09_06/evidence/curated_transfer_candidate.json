@@ -1,0 +1,923 @@
+{
+  "candidate_id": "ijn1463_exact_five_step_quinone_transfer_v1",
+  "status": "provisional_not_applied",
+  "source_model": {
+    "path": "models/bigg/iJN1463.xml",
+    "sha256": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+    "model_id": "iJN1463"
+  },
+  "reaction_ids": [
+    "OHPHM",
+    "OMPHHX",
+    "OMBZLM",
+    "OMMBLHX",
+    "DMQMT"
+  ],
+  "gene_aliases": {
+    "PP_0427": "PP_0427",
+    "PP_1765": "PP_1765",
+    "PP_5011": "NP_747113_1",
+    "PP_5197": "PP_5197",
+    "PP_5199": "PP_5199"
+  },
+  "reaction_records": [
+    {
+      "id": "OHPHM",
+      "name": "2-octaprenyl-6-hydroxyphenol methylase",
+      "equation": "2ohph_c + amet_c --> 2omph_c + ahcys_c + h_c",
+      "metabolites": {
+        "2ohph_c": -1.0,
+        "2omph_c": 1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_1765",
+      "gene_ids": [
+        "PP_1765"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "OHPHM",
+        "biocyc": "META:2-OCTAPRENYL-6-OHPHENOL-METHY-RXN",
+        "ec-code": "2.1.1.222",
+        "kegg.reaction": "R04988",
+        "metanetx.reaction": "MNXR102170",
+        "rhea": [
+          "27772",
+          "27773",
+          "27771",
+          "27770"
+        ],
+        "seed.reaction": "rxn03395"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    {
+      "id": "OMPHHX",
+      "name": "2-octaprenyl-6-methoxyphenol hydroxylase",
+      "equation": "2omph_c + 0.5 o2_c --> 2ombzl_c",
+      "metabolites": {
+        "2ombzl_c": 1.0,
+        "2omph_c": -1.0,
+        "o2_c": -0.5
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_5199",
+      "gene_ids": [
+        "PP_5199"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "OMPHHX",
+        "metanetx.reaction": "MNXR138671",
+        "seed.reaction": "rxn09042"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    {
+      "id": "OMBZLM",
+      "name": "2-Octaprenyl-6-methoxy-benzoquinol methylase",
+      "equation": "2ombzl_c + amet_c --> 2ommbl_c + ahcys_c + h_c",
+      "metabolites": {
+        "2ombzl_c": -1.0,
+        "2ommbl_c": 1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_5011",
+      "gene_ids": [
+        "PP_5011"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "OMBZLM",
+        "biocyc": "META:2-OCTAPRENYL-METHOXY-BENZOQ-METH-RXN",
+        "ec-code": "2.1.1.201",
+        "metanetx.reaction": "MNXR115030",
+        "rhea": [
+          "27774",
+          "27777",
+          "27776",
+          "27775"
+        ],
+        "seed.reaction": "rxn09039"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    {
+      "id": "OMMBLHX",
+      "name": "2-Octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase",
+      "equation": "2ommbl_c + 0.5 o2_c --> 2omhmbl_c",
+      "metabolites": {
+        "2omhmbl_c": 1.0,
+        "2ommbl_c": -1.0,
+        "o2_c": -0.5
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_0427 or PP_5197",
+      "gene_ids": [
+        "PP_0427",
+        "PP_5197"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "OMMBLHX",
+        "metanetx.reaction": "MNXR138669",
+        "seed.reaction": "rxn09040"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    },
+    {
+      "id": "DMQMT",
+      "name": "3-Dimethylubiquinonol 3-methyltransferase",
+      "equation": "2omhmbl_c + amet_c --> ahcys_c + h_c + q8h2_c",
+      "metabolites": {
+        "2omhmbl_c": -1.0,
+        "ahcys_c": 1.0,
+        "amet_c": -1.0,
+        "h_c": 1.0,
+        "q8h2_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 999999.0,
+      "gene_reaction_rule": "PP_1765",
+      "gene_ids": [
+        "PP_1765"
+      ],
+      "annotation": {
+        "sbo": "SBO:0000176",
+        "bigg.reaction": "DMQMT",
+        "biocyc": "META:DHHB-METHYLTRANSFER-RXN",
+        "ec-code": "2.1.1.64",
+        "metanetx.reaction": "MNXR97527",
+        "rhea": [
+          "28682",
+          "28680",
+          "28679",
+          "28681"
+        ],
+        "seed.reaction": "rxn08353"
+      },
+      "mass_charge_imbalance": {},
+      "missing_formula_or_charge": []
+    }
+  ],
+  "new_metabolites": {
+    "2ombzl_c": {
+      "id": "2ombzl_c",
+      "name": "2-Octaprenyl-6-methoxy-1,4-benzoquinol",
+      "formula": "C47H72O3",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2ombzl",
+        "biocyc": "META:OCTAPRENYL-METHOXY-BENZOQUINONE",
+        "chebi": "CHEBI:60655",
+        "inchi_key": "CZFRMASEEPTBAQ-MYCGWMCTSA-N",
+        "metanetx.chemical": "MNXM90444",
+        "seed.compound": "cpd15359"
+      }
+    },
+    "2omhmbl_c": {
+      "id": "2omhmbl_c",
+      "name": "2-Octaprenyl-3-methyl-5-hydroxy-6-methoxy-1,4-benzoquinol",
+      "formula": "C48H74O4",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2omhmbl",
+        "biocyc": "META:OCTAPRENYL-METHYL-OH-METHOXY-BENZQ",
+        "chebi": [
+          "CHEBI:61705",
+          "CHEBI:19728",
+          "CHEBI:27688",
+          "CHEBI:1231"
+        ],
+        "inchi_key": "QURLIMHPCRKMJP-WDXILIIOSA-N",
+        "metanetx.chemical": "MNXM2187",
+        "seed.compound": "cpd15360"
+      }
+    },
+    "2ommbl_c": {
+      "id": "2ommbl_c",
+      "name": "2-Octaprenyl-3-methyl-6-methoxy- 1,4-benzoquinol",
+      "formula": "C48H74O3",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2ommbl",
+        "biocyc": "META:OCTAPRENYL-METHYL-METHOXY-BENZQ",
+        "chebi": "CHEBI:60656",
+        "hmdb": "HMDB11661",
+        "inchi_key": "HDSGDGSLNMIMKU-KFSSTAEESA-N",
+        "metanetx.chemical": "MNXM1899",
+        "seed.compound": "cpd15361"
+      }
+    },
+    "2omph_c": {
+      "id": "2omph_c",
+      "name": "2-Octaprenyl-6-methoxyphenol",
+      "formula": "C47H72O2",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2omph",
+        "biocyc": "META:2-OCTAPRENYL-6-METHOXYPHENOL",
+        "chebi": "CHEBI:1235",
+        "inchi_key": "MYNOBJRQIKYBRD-MGHGRUFNSA-N",
+        "kegg.compound": "C05812",
+        "metanetx.chemical": "MNXM1707",
+        "seed.compound": "cpd03446"
+      }
+    }
+  },
+  "all_involved_metabolites": {
+    "2ohph_c": {
+      "id": "2ohph_c",
+      "name": "2-Octaprenyl-6-hydroxyphenol",
+      "formula": "C46H70O2",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2ohph",
+        "biocyc": "META:2-OCTAPRENYL-6-HYDROXYPHENOL",
+        "chebi": [
+          "CHEBI:62730",
+          "CHEBI:1233"
+        ],
+        "inchi_key": "YGTMSXVYLRCOLD-MGDAWYEDSA-N",
+        "kegg.compound": "C05811",
+        "metanetx.chemical": "MNXM1635",
+        "seed.compound": "cpd03445"
+      }
+    },
+    "amet_c": {
+      "id": "amet_c",
+      "name": "S-Adenosyl-L-methionine",
+      "formula": "C15H23N6O5S",
+      "charge": 1,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "amet",
+        "biocyc": "META:S-ADENOSYLMETHIONINE",
+        "chebi": [
+          "CHEBI:33442",
+          "CHEBI:12757",
+          "CHEBI:10833",
+          "CHEBI:59789",
+          "CHEBI:67040",
+          "CHEBI:8946",
+          "CHEBI:12742",
+          "CHEBI:12760",
+          "CHEBI:10786",
+          "CHEBI:22036",
+          "CHEBI:527887",
+          "CHEBI:15414",
+          "CHEBI:45607"
+        ],
+        "hmdb": [
+          "HMDB01185",
+          "HMDB62709"
+        ],
+        "inchi_key": "MEFKEPWMEQBLKI-AIRLBKTGSA-O",
+        "kegg.compound": "C00019",
+        "metanetx.chemical": "MNXM16",
+        "reactome.compound": [
+          "2162265",
+          "5279190",
+          "77087",
+          "71284",
+          "353113"
+        ],
+        "sabiork": "1272",
+        "seed.compound": "cpd00017"
+      }
+    },
+    "2omph_c": {
+      "id": "2omph_c",
+      "name": "2-Octaprenyl-6-methoxyphenol",
+      "formula": "C47H72O2",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2omph",
+        "biocyc": "META:2-OCTAPRENYL-6-METHOXYPHENOL",
+        "chebi": "CHEBI:1235",
+        "inchi_key": "MYNOBJRQIKYBRD-MGHGRUFNSA-N",
+        "kegg.compound": "C05812",
+        "metanetx.chemical": "MNXM1707",
+        "seed.compound": "cpd03446"
+      }
+    },
+    "ahcys_c": {
+      "id": "ahcys_c",
+      "name": "S-Adenosyl-L-homocysteine",
+      "formula": "C14H20N6O5S",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "ahcys",
+        "biocyc": "META:ADENOSYL-HOMO-CYS",
+        "chebi": [
+          "CHEBI:12741",
+          "CHEBI:45495",
+          "CHEBI:8945",
+          "CHEBI:16680",
+          "CHEBI:67009",
+          "CHEBI:22034",
+          "CHEBI:57856",
+          "CHEBI:12761",
+          "CHEBI:12759"
+        ],
+        "hmdb": "HMDB00939",
+        "inchi_key": "ZJUKTBDSGOFHSH-WFMPWKQPSA-N",
+        "kegg.compound": "C00021",
+        "metanetx.chemical": "MNXM19",
+        "reactome.compound": [
+          "2162252",
+          "77502",
+          "5278409",
+          "71285"
+        ],
+        "sabiork": "1274",
+        "seed.compound": "cpd00019"
+      }
+    },
+    "h_c": {
+      "id": "h_c",
+      "name": "H+",
+      "formula": "H",
+      "charge": 1,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "h",
+        "biocyc": "META:PROTON",
+        "chebi": [
+          "CHEBI:5584",
+          "CHEBI:13357",
+          "CHEBI:15378",
+          "CHEBI:10744"
+        ],
+        "hmdb": "HMDB59597",
+        "inchi_key": "GPRLSGONYQIRFK-UHFFFAOYSA-N",
+        "kegg.compound": "C00080",
+        "metanetx.chemical": "MNXM1",
+        "reactome.compound": [
+          "2000349",
+          "425978",
+          "74722",
+          "428040",
+          "427899",
+          "428548",
+          "156540",
+          "70106",
+          "425969",
+          "1132304",
+          "5668577",
+          "1470067",
+          "163953",
+          "193465",
+          "113529",
+          "351626",
+          "425999",
+          "194688",
+          "374900",
+          "2872447",
+          "372511"
+        ],
+        "sabiork": "39",
+        "seed.compound": "cpd00067"
+      }
+    },
+    "o2_c": {
+      "id": "o2_c",
+      "name": "O2 O2",
+      "formula": "O2",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "o2",
+        "biocyc": "META:OXYGEN-MOLECULE",
+        "chebi": [
+          "CHEBI:7860",
+          "CHEBI:26689",
+          "CHEBI:29097",
+          "CHEBI:15379",
+          "CHEBI:13416",
+          "CHEBI:27140",
+          "CHEBI:29793",
+          "CHEBI:30491",
+          "CHEBI:44742",
+          "CHEBI:23833",
+          "CHEBI:25366",
+          "CHEBI:10745"
+        ],
+        "envipath": "5882df9c-dae1-4d80-a40e-db4724271456/compound/d5d12248-82d3-4cf3-b7d0-2e3d096768b4",
+        "hmdb": "HMDB01377",
+        "inchi_key": "MYMOFIZGZYHOMD-UHFFFAOYSA-N",
+        "kegg.compound": "C00007",
+        "kegg.drug": "D00003",
+        "metanetx.chemical": "MNXM4",
+        "reactome.compound": [
+          "113534",
+          "113535",
+          "113685",
+          "5668566",
+          "189461",
+          "113533",
+          "1131511",
+          "352327",
+          "351593",
+          "29368",
+          "1236709"
+        ],
+        "sabiork": "1264",
+        "seed.compound": "cpd00007"
+      }
+    },
+    "2ombzl_c": {
+      "id": "2ombzl_c",
+      "name": "2-Octaprenyl-6-methoxy-1,4-benzoquinol",
+      "formula": "C47H72O3",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2ombzl",
+        "biocyc": "META:OCTAPRENYL-METHOXY-BENZOQUINONE",
+        "chebi": "CHEBI:60655",
+        "inchi_key": "CZFRMASEEPTBAQ-MYCGWMCTSA-N",
+        "metanetx.chemical": "MNXM90444",
+        "seed.compound": "cpd15359"
+      }
+    },
+    "2ommbl_c": {
+      "id": "2ommbl_c",
+      "name": "2-Octaprenyl-3-methyl-6-methoxy- 1,4-benzoquinol",
+      "formula": "C48H74O3",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2ommbl",
+        "biocyc": "META:OCTAPRENYL-METHYL-METHOXY-BENZQ",
+        "chebi": "CHEBI:60656",
+        "hmdb": "HMDB11661",
+        "inchi_key": "HDSGDGSLNMIMKU-KFSSTAEESA-N",
+        "metanetx.chemical": "MNXM1899",
+        "seed.compound": "cpd15361"
+      }
+    },
+    "2omhmbl_c": {
+      "id": "2omhmbl_c",
+      "name": "2-Octaprenyl-3-methyl-5-hydroxy-6-methoxy-1,4-benzoquinol",
+      "formula": "C48H74O4",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "2omhmbl",
+        "biocyc": "META:OCTAPRENYL-METHYL-OH-METHOXY-BENZQ",
+        "chebi": [
+          "CHEBI:61705",
+          "CHEBI:19728",
+          "CHEBI:27688",
+          "CHEBI:1231"
+        ],
+        "inchi_key": "QURLIMHPCRKMJP-WDXILIIOSA-N",
+        "metanetx.chemical": "MNXM2187",
+        "seed.compound": "cpd15360"
+      }
+    },
+    "q8h2_c": {
+      "id": "q8h2_c",
+      "name": "Ubiquinol-8",
+      "formula": "C49H76O4",
+      "charge": 0,
+      "compartment": "c",
+      "annotation": {
+        "sbo": "SBO:0000247",
+        "bigg.metabolite": "q8h2",
+        "biocyc": "META:CPD-9956",
+        "chebi": "CHEBI:61682",
+        "hmdb": "HMDB01060",
+        "inchi_key": "LOJUQFSPYHMHEO-SGHXUWJISA-N",
+        "metanetx.chemical": "MNXM191",
+        "seed.compound": [
+          "cpd29608",
+          "cpd15561"
+        ]
+      }
+    }
+  },
+  "gene_identity_records": [
+    {
+      "source_locus": "PP_0427",
+      "existing_prepared_model_gene_ids": [],
+      "target_model_gene_id": "PP_0427",
+      "target_choice": "new_locus_tag_id_for_existing_gene_mapper",
+      "current_locus_tags": [
+        "PP_RS02245"
+      ],
+      "current_refseq_protein_accessions": [
+        "WP_010951761.1"
+      ],
+      "current_refseq_model_style_ids": [
+        "WP_010951761_1"
+      ],
+      "refseq_ids_already_in_model": [],
+      "identity_mapping_ambiguous": false,
+      "historical_genpept_records": [],
+      "current_gene_records": [
+        {
+          "# feature": "gene",
+          "class": "protein_coding",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "515094",
+          "end": "515741",
+          "strand": "-",
+          "product_accession": "",
+          "non-redundant_refseq": "",
+          "related_accession": "",
+          "name": "",
+          "symbol": "coq7",
+          "GeneID": "",
+          "locus_tag": "PP_RS02245",
+          "feature_interval_length": "648",
+          "product_length": "",
+          "attributes": "old_locus_tag=PP_0427"
+        }
+      ],
+      "current_CDS_records": [
+        {
+          "# feature": "CDS",
+          "class": "with_protein",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "515094",
+          "end": "515741",
+          "strand": "-",
+          "product_accession": "WP_010951761.1",
+          "non-redundant_refseq": "WP_010951761.1",
+          "related_accession": "",
+          "name": "2-polyprenyl-3-methyl-6-methoxy-1,4-benzoquinone monooxygenase",
+          "symbol": "coq7",
+          "GeneID": "",
+          "locus_tag": "PP_RS02245",
+          "feature_interval_length": "648",
+          "product_length": "215",
+          "attributes": ""
+        }
+      ]
+    },
+    {
+      "source_locus": "PP_1765",
+      "existing_prepared_model_gene_ids": [],
+      "target_model_gene_id": "PP_1765",
+      "target_choice": "new_locus_tag_id_for_existing_gene_mapper",
+      "current_locus_tags": [
+        "PP_RS09070"
+      ],
+      "current_refseq_protein_accessions": [
+        "WP_003252662.1"
+      ],
+      "current_refseq_model_style_ids": [
+        "WP_003252662_1"
+      ],
+      "refseq_ids_already_in_model": [],
+      "identity_mapping_ambiguous": false,
+      "historical_genpept_records": [],
+      "current_gene_records": [
+        {
+          "# feature": "gene",
+          "class": "protein_coding",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "1968821",
+          "end": "1969519",
+          "strand": "-",
+          "product_accession": "",
+          "non-redundant_refseq": "",
+          "related_accession": "",
+          "name": "",
+          "symbol": "ubiG",
+          "GeneID": "",
+          "locus_tag": "PP_RS09070",
+          "feature_interval_length": "699",
+          "product_length": "",
+          "attributes": "old_locus_tag=PP_1765"
+        }
+      ],
+      "current_CDS_records": [
+        {
+          "# feature": "CDS",
+          "class": "with_protein",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "1968821",
+          "end": "1969519",
+          "strand": "-",
+          "product_accession": "WP_003252662.1",
+          "non-redundant_refseq": "WP_003252662.1",
+          "related_accession": "",
+          "name": "bifunctional 2-polyprenyl-6-hydroxyphenol methylase/3-demethylubiquinol 3-O-methyltransferase UbiG",
+          "symbol": "ubiG",
+          "GeneID": "",
+          "locus_tag": "PP_RS09070",
+          "feature_interval_length": "699",
+          "product_length": "232",
+          "attributes": ""
+        }
+      ]
+    },
+    {
+      "source_locus": "PP_5011",
+      "existing_prepared_model_gene_ids": [
+        "NP_747113_1"
+      ],
+      "target_model_gene_id": "NP_747113_1",
+      "target_choice": "reuse_existing_model_gene",
+      "current_locus_tags": [
+        "PP_RS26140"
+      ],
+      "current_refseq_protein_accessions": [
+        "WP_004576729.1"
+      ],
+      "current_refseq_model_style_ids": [
+        "WP_004576729_1"
+      ],
+      "refseq_ids_already_in_model": [],
+      "identity_mapping_ambiguous": false,
+      "historical_genpept_records": [
+        {
+          "version": "NP_747113.1",
+          "locus_tags": "PP_5011",
+          "old_locus_tags": "",
+          "gene_names": "ubiE",
+          "coded_by": "NC_002947.4:5711162..5711932",
+          "definition": "ubiquinone/menaquinone biosynthesis C-methyltransferase UbiE [Pseudomonas putida KT2440].",
+          "accession": "NP_747113"
+        }
+      ],
+      "current_gene_records": [
+        {
+          "# feature": "gene",
+          "class": "protein_coding",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "5711162",
+          "end": "5711932",
+          "strand": "+",
+          "product_accession": "",
+          "non-redundant_refseq": "",
+          "related_accession": "",
+          "name": "",
+          "symbol": "ubiE",
+          "GeneID": "",
+          "locus_tag": "PP_RS26140",
+          "feature_interval_length": "771",
+          "product_length": "",
+          "attributes": "old_locus_tag=PP_5011"
+        }
+      ],
+      "current_CDS_records": [
+        {
+          "# feature": "CDS",
+          "class": "with_protein",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "5711162",
+          "end": "5711932",
+          "strand": "+",
+          "product_accession": "WP_004576729.1",
+          "non-redundant_refseq": "WP_004576729.1",
+          "related_accession": "",
+          "name": "bifunctional demethylmenaquinone methyltransferase/2-methoxy-6-polyprenyl-1,4-benzoquinol methylase UbiE",
+          "symbol": "ubiE",
+          "GeneID": "",
+          "locus_tag": "PP_RS26140",
+          "feature_interval_length": "771",
+          "product_length": "256",
+          "attributes": ""
+        }
+      ]
+    },
+    {
+      "source_locus": "PP_5197",
+      "existing_prepared_model_gene_ids": [],
+      "target_model_gene_id": "PP_5197",
+      "target_choice": "new_locus_tag_id_for_existing_gene_mapper",
+      "current_locus_tags": [
+        "PP_RS27075"
+      ],
+      "current_refseq_protein_accessions": [
+        "WP_164721831.1"
+      ],
+      "current_refseq_model_style_ids": [
+        "WP_164721831_1"
+      ],
+      "refseq_ids_already_in_model": [],
+      "identity_mapping_ambiguous": false,
+      "historical_genpept_records": [],
+      "current_gene_records": [
+        {
+          "# feature": "gene",
+          "class": "protein_coding",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "5929164",
+          "end": "5930381",
+          "strand": "-",
+          "product_accession": "",
+          "non-redundant_refseq": "",
+          "related_accession": "",
+          "name": "",
+          "symbol": "",
+          "GeneID": "",
+          "locus_tag": "PP_RS27075",
+          "feature_interval_length": "1218",
+          "product_length": "",
+          "attributes": "old_locus_tag=PP_5197"
+        }
+      ],
+      "current_CDS_records": [
+        {
+          "# feature": "CDS",
+          "class": "with_protein",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "5929164",
+          "end": "5930381",
+          "strand": "-",
+          "product_accession": "WP_164721831.1",
+          "non-redundant_refseq": "WP_164721831.1",
+          "related_accession": "",
+          "name": "2-octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol hydroxylase",
+          "symbol": "",
+          "GeneID": "",
+          "locus_tag": "PP_RS27075",
+          "feature_interval_length": "1218",
+          "product_length": "405",
+          "attributes": ""
+        }
+      ]
+    },
+    {
+      "source_locus": "PP_5199",
+      "existing_prepared_model_gene_ids": [],
+      "target_model_gene_id": "PP_5199",
+      "target_choice": "new_locus_tag_id_for_existing_gene_mapper",
+      "current_locus_tags": [
+        "PP_RS27085"
+      ],
+      "current_refseq_protein_accessions": [
+        "WP_010955723.1"
+      ],
+      "current_refseq_model_style_ids": [
+        "WP_010955723_1"
+      ],
+      "refseq_ids_already_in_model": [],
+      "identity_mapping_ambiguous": false,
+      "historical_genpept_records": [],
+      "current_gene_records": [
+        {
+          "# feature": "gene",
+          "class": "protein_coding",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "5930870",
+          "end": "5932069",
+          "strand": "-",
+          "product_accession": "",
+          "non-redundant_refseq": "",
+          "related_accession": "",
+          "name": "",
+          "symbol": "ubiH",
+          "GeneID": "",
+          "locus_tag": "PP_RS27085",
+          "feature_interval_length": "1200",
+          "product_length": "",
+          "attributes": "old_locus_tag=PP_5199"
+        }
+      ],
+      "current_CDS_records": [
+        {
+          "# feature": "CDS",
+          "class": "with_protein",
+          "assembly": "GCF_000007565.2",
+          "assembly_unit": "Primary Assembly",
+          "seq_type": "chromosome",
+          "chromosome": "",
+          "genomic_accession": "NC_002947.4",
+          "start": "5930870",
+          "end": "5932069",
+          "strand": "-",
+          "product_accession": "WP_010955723.1",
+          "non-redundant_refseq": "WP_010955723.1",
+          "related_accession": "",
+          "name": "2-octaprenyl-6-methoxyphenyl hydroxylase",
+          "symbol": "ubiH",
+          "GeneID": "",
+          "locus_tag": "PP_RS27085",
+          "feature_interval_length": "1200",
+          "product_length": "399",
+          "attributes": ""
+        }
+      ]
+    }
+  ],
+  "summed_candidate_stoichiometry": {
+    "2ohph_c": -1.0,
+    "ahcys_c": 3.0,
+    "amet_c": -3.0,
+    "h_c": 3.0,
+    "o2_c": -1.0,
+    "q8h2_c": 1.0
+  },
+  "selection_basis": "Five consecutive missing reactions from the existing 2ohph_c intermediate to q8h2_c in the local curated source. All are atom/charge balanced in the source model; no artificial source or boundary reaction is included.",
+  "uncertainties": [
+    "Exact local iJN1463 transfer is a provisional chemistry arm, not an independently validated KT2440 pathway or GPR correction.",
+    "OMPHHX and OMMBLHX retain the source half-O2 equations without explicit reductant/flavin costs. Atom balance does not establish enzyme-level energetic stoichiometry. Existing OPHHX has the same simplification.",
+    "Existing OPHHX is assigned to PP_5013 in both models, but the local current CDS annotation calls this protein regulatory kinase UbiB; the catalytic GPR is unresolved here.",
+    "Source OPHBDC uses PP_5213 or PP_0548; current annotations identify UbiD and flavin prenyltransferase UbiX, respectively. This OR is not independent evidence of interchangeable catalytic enzymes. The draft currently retains PP_5213 alone.",
+    "Source OMMBLHX uses PP_0427 or PP_5197. Their substrate/hydroxylation-site equivalence is not established by this transfer; see the separate biological-source audit before revising GPRs.",
+    "q8/q8h2 is retained solely as the existing source/draft representation. Native KT2440 quinone chain length and quantitative dilution requirement remain separate questions.",
+    "Source reaction upper bounds are preserved exactly (999999), not interpreted as measured capacities. No phenotype fit or numerical gap-fill selected this reaction set.",
+    "Current RefSeq WP accessions are identity evidence, not automatically interchangeable model IDs. Reuse an existing draft ID when unique; otherwise the source PP locus is a new ID supported by the existing mapper."
+  ],
+  "provenance": {
+    "created_utc": "2026-09-06T11:07:54.099493+00:00",
+    "base_commit": "43995f3555b9bfbf2d31c6b07f0475439d0859af",
+    "input_sha256": {
+      "models/bigg/iJN1463.xml": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+      "models/gapfilled/Putida.xml.gz": "378f67c3c8d4642c135942917cd46f3b6109c53c16f7987c9751fb643ade5739",
+      "models/gapfilled/Putida_gapfill.json": "cac57cb8e51ea481d6cf9d523ae85117f198a47de203b8ef90d8176c7beb32a2",
+      "data/ncbi_feature_tables/GCF_000007565.2_Putida_feature_table.txt.gz": "bea517eccadcaa280228c75551ee4d641e7eadb3509532377943e7ca89355f0e",
+      "data/genpept/Putida_genpept_map.tsv": "5796cb79f03576a8321c8f762bb0f2e977bdb705e01b6ddd3fa97061d2f6d128",
+      "data/fitness_browser/Putida/genes.tsv": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e",
+      "data/reference/universe_patches_v0.1.json": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe",
+      "data/reference/model_patches_v0.4.json": "18574ec5561448760a0e9f30239af62c81d3f80529e189cc5250c0ed84a87190",
+      "data/reference/gpr_patches_v0.2.json": "280d408693bb70dc2aed899edd4526f02afcfb6c8a8353fbcb1bb83c8332a284",
+      "data/reference/gpr_patches_v0.3.json": "04f5fa7fb44b9fb6e62cdd272159e597e94be5f2483c5c9a780a95989aea0885",
+      "data/reference/gpr_patches_v0.4.json": "19d73a7fae5c0d277705267cdb5c4696466d8daf7474bf7d0a86d65074758da7",
+      "scripts/map_quinone_pathway.py": "07a690e749e6ff05b318fab8c0cc05e6d20a1b15a502f8b275b569927e1e2088",
+      "scripts/run_quinone_biomass_sensitivity.py": "8b67123ef3f31d15b50436c09170c48de2574288ccaad6d1a0e139174f95d33d",
+      "scripts/run_carbon_fitness_generic.py": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc",
+      "gembench/patches.py": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8",
+      "gembench/gene_mapping.py": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2"
+    },
+    "phenotype_values_or_scores_accessed": false,
+    "optimization_or_gene_deletion_performed": false,
+    "draft_preparation": "scripts.run_quinone_biomass_sensitivity.prepare with gene metadata only; before experimental-medium application/completion"
+  }
+}

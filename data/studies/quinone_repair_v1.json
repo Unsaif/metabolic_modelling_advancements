@@ -1,0 +1,33 @@
+{
+  "study_id": "putida-quinone-repair-v1",
+  "evaluation_role": "development",
+  "question": "Can a declared five-reaction source-model transfer restore net ubiquinone production and growth-associated demand, and which gene hypotheses remain invisible to the exported fitness benchmark?",
+  "organism": "Putida",
+  "candidate_path": "results/quinone_repair_2026_09_06/evidence/curated_transfer_candidate.json",
+  "gene_evidence_path": "results/quinone_repair_2026_09_06/evidence/putida_gene_evidence.json",
+  "base_model_patch_version": "0.4",
+  "configurations": [
+    {"id": "baseline", "add_pathway": false, "biomass_coefficient_source": "none", "gpr_overrides": {}, "run_benchmark": true},
+    {"id": "demand_only", "add_pathway": false, "biomass_coefficient_source": "template", "gpr_overrides": {}, "run_benchmark": true},
+    {"id": "curated_path_only", "add_pathway": true, "biomass_coefficient_source": "none", "gpr_overrides": {}, "run_benchmark": true},
+    {"id": "curated_path_template", "add_pathway": true, "biomass_coefficient_source": "template", "gpr_overrides": {}, "run_benchmark": true},
+    {"id": "curated_path_curated", "add_pathway": true, "biomass_coefficient_source": "curated", "gpr_overrides": {}, "run_benchmark": true},
+    {"id": "sequence_path_template", "add_pathway": true, "biomass_coefficient_source": "template", "gpr_overrides": {"OPHHX": "PP_5197", "OMMBLHX": "PP_0427", "OPHBDC": "PP_5213 and PP_0548"}, "run_benchmark": false}
+  ],
+  "protocol": {"processes": 2, "solver": "glpk", "growth_threshold": 0.001, "fitness_threshold": -2.0, "carbon_uptake": -10.0, "complete_medium_transport": true, "drop_rich_medium_essentials": false},
+  "physical_condition": {"name": "D-Glucose", "media": "MOPS minimal media_noCarbon"},
+  "physical_settings": {"feasibility_tolerance": 1e-9, "production_capacity": 1000.0, "production_threshold": 1e-6, "egc_threshold": 1e-6},
+  "transfer_metadata_policy": {
+    "compartment_aliases": {"c": "C_c"},
+    "expected_shared_charge_differences": {"amet_c": {"source": 1, "target": 0}, "h_c": {"source": 1, "target": 0}},
+    "basis_path": "results/quinone_repair_2026_09_06/evidence/quinone_pathway_map.json",
+    "note": "Existing target metabolite metadata are preserved. Source c and target C_c both denote the cytosol; only copied new-metabolite compartment labels are normalized. Stored source and target metabolite metadata are therefore not byte-identical. Shared target charges of zero are placeholders, not newly validated chemical charges. Any undeclared formula, compartment, or charge difference aborts the transfer."
+  },
+  "pool_weights": {"q8_c": 1.0, "q8h2_c": 1.0},
+  "targeted_gene_loci": ["PP_5317", "PP_0528", "PP_0687", "PP_5318", "PP_5213", "PP_0548", "PP_5197", "PP_1765", "PP_5199", "PP_5011", "PP_0427", "PP_5012", "PP_5013"],
+  "physical_checks": ["Source reaction and gene-alias agreement", "Net cofactor production under the fixed glucose medium", "Exact declared-pool row-sum certificate", "Wild-type glucose growth", "Energy-from-nothing checks for all available standard currencies", "Source-versus-target elemental and charge balance with incomplete metadata disclosed", "Single-gene deletions of declared pathway/support loci including unscored genes; absent genes remain unrepresented"],
+  "sequence_arm_benchmark_rule": "Do not repeat the fitness simulation only if all changed gene rules involve exclusively loci without exported fitness rows and the full stoichiometry and bounds equal curated_path_template. Record the check. Otherwise stop for a documented new plan before evaluating an additional benchmark arm. Its targeted gene-deletion predictions are separate unvalidated hypotheses.",
+  "decision_rule": "Retain every arm, failure and adverse result. Restore synthesis and assess model consistency before interpreting benchmark agreement. Do not choose reactions, gene rules, coefficients or reducing donors using fitness outcomes. Both transfer and sequence-informed variants remain candidates with source/evidence grades, not accepted physiological corrections.",
+  "comparison": {"primary": "Each scored arm versus baseline on aligned common finite gene-condition observations where both wild types grow", "bootstrap_unit": "gene", "resamples": 500, "seed": 0, "coverage": "Report every mapped condition, growing conditions, and scored/annotated gene counts separately"},
+  "caveats": ["These are exposed development data; no independent validation set exists.", "Source-model reaction transfer retains its bounds, oxygenase abstractions, Q8 representation and unmodified upstream assumptions.", "The sequence-informed GPR arm encodes an inferred UbiD/UbiX cofactor dependency, not a heteromeric catalyst; UbiB accessory requirements are not represented.", "No exported fitness row does not establish mutant-library absence, essentiality or dispensability.", "Native KT2440 quinone tail length, pool size and reducing-donor specificity remain unresolved."]
+}

@@ -1,0 +1,234 @@
+Selected CDS feature excerpts from NC_002947.4; translations omitted. Full response provenance is in putida_gene_evidence.json.
+
+     CDS             complement(515094..515741)
+                     /gene="coq7"
+                     /locus_tag="PP_RS02245"
+                     /old_locus_tag="PP_0427"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_249346.1"
+                     /GO_function="GO:0004497 - monooxygenase activity
+                     [Evidence IEA]"
+                     /GO_process="GO:0006744 - ubiquinone biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="2-polyprenyl-3-methyl-6-methoxy-1,4-benzoquinone
+                     monooxygenase"
+                     /protein_id="WP_010951761.1"
+
+     CDS             complement(614359..615246)
+                     /gene="ispA"
+                     /locus_tag="PP_RS02795"
+                     /old_locus_tag="PP_0528"
+                     /EC_number="2.5.1.10"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_252732.1"
+                     /GO_process="GO:0008299 - isoprenoid biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="(2E,6E)-farnesyl diphosphate synthase"
+                     /protein_id="WP_010951810.1"
+
+     CDS             637123..637752
+                     /gene="ubiX"
+                     /locus_tag="PP_RS02895"
+                     /old_locus_tag="PP_0548"
+                     /EC_number="2.5.1.129"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_252708.1"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="flavin prenyltransferase UbiX"
+                     /protein_id="WP_003255348.1"
+
+     CDS             complement(799504..800472)
+                     /locus_tag="PP_RS03670"
+                     /old_locus_tag="PP_0687"
+                     /EC_number="2.5.1.-"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_253259.1"
+                     /GO_function="GO:0046872 - metal ion binding [Evidence
+                     IEA]; GO:0004659 - prenyltransferase activity [Evidence
+                     IEA]"
+                     /GO_process="GO:0008299 - isoprenoid biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="polyprenyl synthetase family protein"
+                     /protein_id="WP_010951940.1"
+
+     CDS             complement(1968821..1969519)
+                     /gene="ubiG"
+                     /locus_tag="PP_RS09070"
+                     /old_locus_tag="PP_1765"
+                     /EC_number="2.1.1.222"
+                     /EC_number="2.1.1.64"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_003172645.1"
+                     /GO_function="GO:0061542 - 3-demethylubiquinol
+                     3-O-methyltransferase activity [Evidence IEA]"
+                     /GO_process="GO:0006744 - ubiquinone biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="bifunctional 2-polyprenyl-6-hydroxyphenol
+                     methylase/3-demethylubiquinol 3-O-methyltransferase UbiG"
+                     /protein_id="WP_003252662.1"
+
+     CDS             5711162..5711932
+                     /gene="ubiE"
+                     /locus_tag="PP_RS26140"
+                     /old_locus_tag="PP_5011"
+                     /EC_number="2.1.1.163"
+                     /EC_number="2.1.1.201"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_253750.1"
+                     /GO_function="GO:0008168 - methyltransferase activity
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="bifunctional demethylmenaquinone
+                     methyltransferase/2-methoxy-6-polyprenyl-1,4-benzoquinol
+                     methylase UbiE"
+                     /protein_id="WP_004576729.1"
+
+     CDS             5711932..5712555
+                     /locus_tag="PP_RS26145"
+                     /old_locus_tag="PP_5012"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_019581841.1"
+                     /GO_component="GO:0110142 - ubiquinone biosynthesis
+                     complex [Evidence IEA]"
+                     /GO_function="GO:0008289 - lipid binding [Evidence IEA]"
+                     /GO_process="GO:0006744 - ubiquinone biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="ubiquinone biosynthesis accessory factor UbiJ"
+                     /protein_id="WP_010955574.1"
+
+     CDS             5712552..5714174
+                     /gene="ubiB"
+                     /locus_tag="PP_RS26150"
+                     /old_locus_tag="PP_5013"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_003220853.1"
+                     /GO_process="GO:0006744 - ubiquinone biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="ubiquinone biosynthesis regulatory protein
+                     kinase UbiB"
+                     /protein_id="WP_049587492.1"
+
+     CDS             complement(5929164..5930381)
+                     /locus_tag="PP_RS27075"
+                     /old_locus_tag="PP_5197"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_011064139.1"
+                     /GO_function="GO:0071949 - FAD binding [Evidence IEA];
+                     GO:0016709 - oxidoreductase activity, acting on paired
+                     donors, with incorporation or reduction of molecular
+                     oxygen, NAD(P)H as one donor, and incorporation of one
+                     atom of oxygen [Evidence IEA]"
+                     /GO_process="GO:0006744 - ubiquinone biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="2-octaprenyl-3-methyl-6-methoxy-1,4-benzoquinol
+                     hydroxylase"
+                     /protein_id="WP_164721831.1"
+
+     CDS             complement(5930870..5932069)
+                     /gene="ubiH"
+                     /locus_tag="PP_RS27085"
+                     /old_locus_tag="PP_5199"
+                     /gene_synonym="visB"
+                     /EC_number="1.14.13.-"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_014754794.1"
+                     /GO_function="GO:0008681 - 2-octaprenyl-6-methoxyphenol
+                     hydroxylase activity [Evidence IEA]; GO:0071949 - FAD
+                     binding [Evidence IEA]; GO:0016709 - oxidoreductase
+                     activity, acting on paired donors, with incorporation or
+                     reduction of molecular oxygen, NAD(P)H as one donor, and
+                     incorporation of one atom of oxygen [Evidence IEA]"
+                     /GO_process="GO:0006744 - ubiquinone biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="2-octaprenyl-6-methoxyphenyl hydroxylase"
+                     /protein_id="WP_010955723.1"
+
+     CDS             complement(5945542..5947008)
+                     /gene="ubiD"
+                     /locus_tag="PP_RS27165"
+                     /old_locus_tag="PP_5213"
+                     /EC_number="4.1.1.98"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:NP_253924.1"
+                     /GO_function="GO:0016831 - carboxy-lyase activity
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="4-hydroxy-3-polyprenylbenzoate decarboxylase"
+                     /protein_id="WP_003253663.1"
+
+     CDS             6063112..6063669
+                     /locus_tag="PP_RS27695"
+                     /old_locus_tag="PP_5317"
+                     /EC_number="4.1.3.40"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_019470231.1"
+                     /GO_component="GO:0005737 - cytoplasm [Evidence IEA]"
+                     /GO_function="GO:0008813 - chorismate lyase activity
+                     [Evidence IEA]"
+                     /GO_process="GO:0006744 - ubiquinone biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="chorismate--pyruvate lyase family protein"
+                     /protein_id="WP_010955810.1"
+
+     CDS             6063669..6064559
+                     /gene="ubiA"
+                     /locus_tag="PP_RS27700"
+                     /old_locus_tag="PP_5318"
+                     /EC_number="2.5.1.39"
+                     /inference="COORDINATES: similar to AA
+                     sequence:RefSeq:WP_011536425.1"
+                     /GO_function="GO:0008412 - 4-hydroxybenzoate
+                     polyprenyltransferase activity [Evidence IEA]"
+                     /GO_process="GO:0006744 - ubiquinone biosynthetic process
+                     [Evidence IEA]"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Protein Homology."
+                     /codon_start=1
+                     /transl_table=11
+                     /product="4-hydroxybenzoate octaprenyltransferase"
+                     /protein_id="WP_004575206.1"
