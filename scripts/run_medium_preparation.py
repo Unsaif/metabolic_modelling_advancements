@@ -218,6 +218,12 @@ def main():
                     'legacy_retained_uptakes': {rid: list(before.reactions.get_by_id(rid).bounds) for rid in added if before.reactions.get_by_id(rid).lower_bound < 0},
                     'legacy_reuse_vs_fresh': differences(signature(fresh), signature(before)),
                     'strict_reuse_equals_fresh': True,
+                    'strict_reuse_signature_sha256': digest(signature(strict_reuse.model)),
+                    'strict_fresh_signature_sha256': digest(signature(strict_fresh.model)),
+                    'legacy_reuse_signature_sha256': digest(signature(before)),
+                    'legacy_fresh_signature_sha256': digest(signature(fresh)),
+                    'strict_reuse_report': strict_reuse.report,
+                    'strict_fresh_report': strict_fresh.report,
                     'strict_withdrawn_bounds': {rid: list(strict_reuse.model.reactions.get_by_id(rid).bounds) for rid in added},
                     'scope': 'Synthetic withdrawal; bounds-only comparison, no growth or phenotype claim.'})
                 stats.append(label_stats)
