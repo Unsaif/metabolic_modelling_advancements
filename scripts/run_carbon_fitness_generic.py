@@ -32,6 +32,7 @@ from gembench import metrics as M  # noqa: E402
 from gembench.cards import BenchmarkCard, LeakageCard, ModelProvenance, now, sha256_of  # noqa: E402
 from gembench.fitness_browser import carbon_source_conditions, load_organism  # noqa: E402
 from gembench.gene_mapping import GeneMap, build_gene_map  # noqa: E402
+from gembench.patches import apply_gpr_patches, apply_model_patches, apply_universe_patches, load_patch_files  # noqa: E402
 from gembench.protocols import carbon_fitness_generic as P  # noqa: E402
 from gembench.protocols.ecoli_carbon_fitness import BW25113_DELETED_GENES  # noqa: E402
 
@@ -131,12 +132,11 @@ def main() -> None:
     ap.add_argument("--patch", default=None, help="JSON of universe-level reaction patches to apply (data/reference/universe_patches_*.json)")
     ap.add_argument("--gpr-patch", default=None, help="JSON of per-organism gene-rule patches (data/reference/gpr_patches_*.json)")
     ap.add_argument("--complete-medium-transport", action="store_true", help="add exchange+uptake for medium components the model lacks")
+    ap.add_argument("--model-patch", default=None, help="JSON of per-organism reaction additions with gene evidence (data/reference/model_patches_*.json)")
     args = ap.parse_args()
     patches = json.load(open(args.patch)) if args.patch else None
-    gpr_patches = None
-    if args.gpr_patch:   # one or several files, comma-separated; applied in order
-        parts = [json.load(open(f)) for f in args.gpr_patch.split(",")]
-        gpr_patches = {"version": "+".join(p["version"] for p in parts), "patches": [x for p in parts for x in p["patches"]]}
+    model_patches = json.load(open(args.model_patch)) if args.model_patch else None
+    gpr_patches = load_patch_files(args.gpr_patch.split(",")) if args.gpr_patch else None   # applied in order
 
     for org in args.orgs.split(","):
         t0 = time.time()
@@ -144,54 +144,21 @@ def main() -> None:
         model, mpath, msource = load_model(org, args.variant)
         applied = []
         if patches:
-            for pt in patches["patches"]:
-                if pt["reaction"] not in model.reactions:
-                    continue
-                if pt.get("scope_orgs") and org not in pt["scope_orgs"]:
-                    continue        # taxon-scoped patch (e.g. URIC closed for E. coli, PPCK reversible for Bacteroides)
-                r = model.reactions.get_by_id(pt["reaction"])
-                if "gpr" in pt["change"]:
-                    import re as _re
-                    rule = r.gene_reaction_rule
-                    alts = [a.strip() for a in _re.split(r"\s+or\s+(?![^()]*\))", rule)]
-                    conj = [a for a in alts if " and " in a]
-                    members = set()
-                    for a in conj:
-                        members |= set(a.strip("()").split(" and "))
-                    if pt["change"]["gpr"] == "keep_only_conjunctions":
-                        keep = [a for a in alts if " and " in a]
-                    else:
-                        keep = [a for a in alts if " and " in a or a.strip("()") not in members]
-                    if conj and len(keep) < len(alts):
-                        r.gene_reaction_rule = " or ".join(keep)
-                        applied.append({"reaction": pt["reaction"], "gpr_before": rule, "gpr_after": r.gene_reaction_rule})
-                elif pt["reaction"] != "CBMKr" or "CBPS" in model.reactions:
-                    before = r.bounds
-                    r.bounds = (pt["change"]["lower_bound"], pt["change"]["upper_bound"])
-                    applied.append({"reaction": pt["reaction"], "bounds_before": list(before), "bounds_after": list(r.bounds)})
+            applied += apply_universe_patches(model, org, patches)
             print(f"   patches applied: {applied}", flush=True)
         gm = gene_map_for(org, model, set(fb.genes["sysName"]), args.variant)
+        if model_patches:
+            mp = apply_model_patches(model, org, model_patches, gm)
+            applied += mp
+            print(f"   model patches applied: {mp}", flush=True)
+            if mp:
+                gm = gene_map_for(org, model, set(fb.genes["sysName"]), args.variant)
         if gpr_patches:
-            inv = {b: m_ for m_, b in gm.model_to_browser.items()}
-            import re as _re
-            for pt in [x for x in gpr_patches["patches"] if x["org"] == org and x.get("status", "accepted") != "held"]:
-                if pt["reaction"] not in model.reactions:
-                    continue
-                r = model.reactions.get_by_id(pt["reaction"])
-                rule = pt["new_rule"]
-                model_ids = {g.id for g in model.genes}
-                toks = [g for g in _re.findall(r"[A-Za-z][A-Za-z0-9_]*", rule) if g not in ("and", "or")]
-                new_genes = [g for g in toks if g not in inv and g not in model_ids]
-                if new_genes and pt.get("rule") != "R4":
-                    print(f"   gpr patch {pt['reaction']}: genes not in model map {new_genes}; skipped", flush=True)
-                    continue
-                # R4 patches may introduce genes absent from the draft; they keep the Browser locus tag as model id.
-                # Tokens that are already model gene ids are used as they are.
-                new_rule = _re.sub(r"[A-Za-z][A-Za-z0-9_]*", lambda mm: mm.group(0) if (mm.group(0) in ("and", "or") or mm.group(0) in model_ids) else inv.get(mm.group(0), mm.group(0)), rule)
-                applied.append({"reaction": pt["reaction"], "gpr_before": r.gene_reaction_rule, "gpr_after": new_rule, "rule": pt["rule"], "genes_added": new_genes})
-                r.gene_reaction_rule = new_rule
-            print(f"   gpr patches applied: {len([a for a in applied if 'rule' in a])}", flush=True)
-            if any(a.get("genes_added") for a in applied):
+            gp = apply_gpr_patches(model, org, gm, gpr_patches)
+            applied += gp
+            print(f"   gpr patches applied: {len(gp)}", flush=True)
+            if any(a.get("genes_added") for a in gp):
+                # R4 patches may introduce genes absent from the draft; they keep the Browser locus tag as model id
                 gm = gene_map_for(org, model, set(fb.genes["sysName"]), args.variant)
         gm.stats["mapped_with_fitness_data"] = sum(1 for v in gm.model_to_browser.values() if v in set(fb.fitness.index))
         conds = carbon_source_conditions(fb)
@@ -203,7 +170,9 @@ def main() -> None:
                                  complete_medium_transport=args.complete_medium_transport)
         res = P.run(model, fb, conds, gm, params)
 
-        suffix = (f"__patched-v{patches['version']}" if patches else "") + (f"+gpr-v{gpr_patches['version']}" if gpr_patches else "") + ("+medium" if args.complete_medium_transport else "") + ("__nodroprich" if args.no_drop_rich else "")
+        suffix = ((f"__patched-v{patches['version']}" if patches else "") + (f"+model-v{model_patches['version']}" if model_patches else "")
+                  + (f"+gpr-v{gpr_patches['version']}" if gpr_patches else "") + ("+medium" if args.complete_medium_transport else "")
+                  + ("__nodroprich" if args.no_drop_rich else ""))
         outdir = os.path.join(OUT, org, (f"{model.id}__{args.variant}" if org != "Keio" else model.id) + suffix)
         os.makedirs(outdir, exist_ok=True)
         grows = res.wt_growth >= params.growth_threshold
@@ -225,7 +194,7 @@ def main() -> None:
             model=ModelProvenance(model_id=model.id, file=os.path.relpath(mpath, ROOT), source=msource,
                                   n_reactions=len(model.reactions), n_metabolites=len(model.metabolites),
                                   n_genes=len(model.genes), sha256=sha256_of(mpath)),
-            protocol={"variant": args.variant, "patches": {"file": args.patch, "gpr_file": args.gpr_patch, "applied": applied} if (patches or gpr_patches) else None,
+            protocol={"variant": args.variant, "patches": {"file": args.patch, "model_file": args.model_patch, "gpr_file": args.gpr_patch, "applied": applied} if (patches or gpr_patches or model_patches) else None,
                       "params": res.params.__dict__, "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
                       "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
                       "gene_mapping": gm.provenance,

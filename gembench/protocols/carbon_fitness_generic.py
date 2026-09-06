@@ -39,6 +39,7 @@ class GenericParams:
     # vitamins whose uptake is not assumed: pantothenate transport (PanF, SSS family) is largely restricted to
     # enterobacteria, and folate uptake is rare in bacteria (4-aminobenzoate covers the folate branch)
     medium_completion_exclude: List[str] = field(default_factory=lambda: ["pnto__R", "fol"])
+    genes_subset: Optional[List[str]] = None   # restrict the knockouts to these model genes (patch attribution, tests)
 
 
 @dataclass
@@ -90,6 +91,9 @@ def run(model: cobra.Model, org: FitnessBrowserOrganism, conditions: List[Condit
     for mg, bg in pairs:
         if bg not in seen:
             uniq.append((mg, bg)); seen.add(bg)
+    if p.genes_subset is not None:
+        keep_set = set(p.genes_subset)
+        uniq = [(mg, bg) for mg, bg in uniq if mg in keep_set]
     model_genes = [mg for mg, _ in uniq]
     browser_genes = [bg for _, bg in uniq]
     counts = {"model_genes": len(model.genes), "model_genes_mapped": len(gene_map.model_to_browser),

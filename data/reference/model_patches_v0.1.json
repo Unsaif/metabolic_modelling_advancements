@@ -1,0 +1,116 @@
+{
+  "version": "0.1",
+  "created": "2026-09-05",
+  "scope": "reaction additions to models that the automated reconstruction missed, of two kinds: (i) per-organism enzymes or transporters that the genome annotation supplies (annotated but not reconstructed), each naming its genes and evidence; (ii) gene-less passive-diffusion reactions for small uncharged by-products (org '*', conditional on the metabolite being present), which give a dead-end by-product a sink instead of forcing flux through a single downstream pathway. Unlike the minimal gap-fill (models/gapfilled/, gene-less, chosen by parsimony for one condition), every addition here is written with its rationale before re-scoring; the fitness benchmark then verifies it (fix-at-source loop, roadmap WS1). Reaction ids, stoichiometry, formulas and charges follow BiGG / the CarveMe universe (external/carveme/universe_bacteria.xml.gz). Gene ids are Fitness Browser locus tags; the runner translates them to model gene ids where the draft already carries the gene and otherwise adds the gene under its locus tag (as for gene-rule patches of class R4).",
+  "patches": [
+    {
+      "org": "Smeli",
+      "reaction": "EX_thm_e",
+      "name": "Thiamin exchange",
+      "metabolites": {
+        "thm_e": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gpr": "",
+      "rationale": "Boundary reaction for thiamine, which the RCH2 defined medium contains (Wolfe's vitamin mix); the draft has no thiamine metabolite at all (thm_c, thm_e absent), so the medium's thiamine could not be represented."
+    },
+    {
+      "org": "Smeli",
+      "reaction": "THMabc",
+      "name": "Thiamine transport via ABC system",
+      "metabolites": {
+        "atp_c": -1.0,
+        "h2o_c": -1.0,
+        "thm_e": -1.0,
+        "adp_c": 1.0,
+        "h_c": 1.0,
+        "pi_c": 1.0,
+        "thm_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gpr": "SMc03869 and SMc03870 and SMc03871",
+      "rationale": "S. meliloti 1021 carries a thiamine ABC transporter (thiB substrate-binding SMc03869 = SM_RS16675, thiP permease SMc03870 = SM_RS16680, thiQ ATP-binding SMc03871 = SM_RS16685; RefSeq products 'thiamine ABC transporter substrate binding subunit', 'thiamine/thiamine pyrophosphate ABC transporter permease ThiP', 'thiamine ABC transporter ATP-binding protein'), absent from the draft. With it, the thiamine in the RCH2 medium reaches the cell and thiamine-biosynthesis genes are no longer required for the wrong reason.",
+      "flagged_by": "benchmark: the v0.3 thiamine-phosphate synthase rule (TMPPP) made SM_b20618 essential in all 21 growth conditions although it has no phenotype on RCH2 (mean fitness -0.05); medium completion could not supply thiamine because the draft has no thiamine metabolite"
+    },
+    {
+      "org": "Smeli",
+      "reaction": "TMDPK",
+      "name": "Thiamine diphosphokinase",
+      "metabolites": {
+        "atp_c": -1.0,
+        "thm_c": -1.0,
+        "amp_c": 1.0,
+        "h_c": 1.0,
+        "thmpp_c": 1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gpr": "SMc03867",
+      "rationale": "Thiamine diphosphokinase (EC 2.7.6.2; SMc03867 = SM_RS16665, RefSeq 'thiamine diphosphokinase'), next to the transporter genes, converts imported thiamine directly to the cofactor thiamine diphosphate; without it the imported vitamin would be a dead end.",
+      "flagged_by": "as THMabc"
+    },
+    {
+      "org": "*",
+      "reaction": "GCALDt",
+      "name": "Glycolaldehyde transport (passive diffusion)",
+      "metabolites": {
+        "gcald_e": -1.0,
+        "gcald_c": 1.0
+      },
+      "lower_bound": -1000.0,
+      "upper_bound": 1000.0,
+      "gpr": "",
+      "requires_metabolites": [
+        "gcald_c"
+      ],
+      "skip_if_reactions": [
+        "GCALDt",
+        "GCALDtex",
+        "GCALDtabcpp"
+      ],
+      "rationale": "Glycolaldehyde is a small uncharged aldehyde (60 Da) that crosses membranes passively, as acetaldehyde does (ACALDt, a gene-less diffusion reaction in every BiGG model). Dihydroneopterin aldolase (DHNPA), the second step of the folate branch, releases one glycolaldehyde per molecule of 6-hydroxymethyldihydropterin, so every model that makes its own folate produces a trickle of it; the CarveMe drafts give it a single sink (glycolaldehyde dehydrogenase, then glycolate oxidase and malate synthase in P. putida), which the steady-state constraint then makes essential in every condition although the flux is ~0.0006 mmol/gDW/h. E. coli's iML1515 avoids the artefact through reversible aldolases (4HTHRA, 2DDARAA) and glycolate excretion; the drafts have neither. Letting the by-product leave the cell removes a false essentiality without asserting any enzyme.",
+      "flagged_by": "benchmark: glycolaldehyde dehydrogenase (PP_3646, no phenotype) predicted essential in all 28 P. putida conditions; the glycolate-oxidase subunit rule (GLYCTO1, held in gpr_patches_v0.3) and the glycolaldehyde-dehydrogenase rule (GCALDD, S. meliloti, held) both unmasked the same dead-end by-product",
+      "caveat": "applies to any model with glycolaldehyde; the exchange is secretion-only in the benchmark (uptake closed unless the medium contains it)"
+    },
+    {
+      "org": "*",
+      "reaction": "EX_gcald_e",
+      "name": "Glycolaldehyde exchange",
+      "metabolites": {
+        "gcald_e": -1.0
+      },
+      "lower_bound": 0.0,
+      "upper_bound": 1000.0,
+      "gpr": "",
+      "requires_metabolites": [
+        "gcald_c"
+      ],
+      "skip_if_reactions": [
+        "EX_gcald_e"
+      ],
+      "rationale": "Boundary reaction for GCALDt (see that patch)."
+    }
+  ],
+  "new_metabolites": {
+    "thm_c": {
+      "name": "Thiamin",
+      "formula": "C12H17N4OS",
+      "charge": 1,
+      "compartment": "c"
+    },
+    "thm_e": {
+      "name": "Thiamin",
+      "formula": "C12H17N4OS",
+      "charge": 1,
+      "compartment": "e"
+    },
+    "gcald_e": {
+      "name": "Glycolaldehyde",
+      "formula": "C2H4O2",
+      "charge": 0,
+      "compartment": "e"
+    }
+  }
+}

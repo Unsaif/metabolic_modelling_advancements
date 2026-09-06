@@ -1,7 +1,7 @@
 {
   "version": "0.3",
   "created": "2026-09-05",
-  "scope": "gene-rule corrections for the OR-rule reactions that are essential in at least one carbon-source condition where the wild-type model grows (scripts/essential_or_rules.py: 55 in B. thetaiotaomicron, 85 in P. putida, 47 in S. oneidensis, 70 in S. meliloti), beyond those already in v0.2. Same rules as v0.2, adjudicated from RefSeq product names and enzymology only: R1 remove genes annotated as a different enzyme, a family/domain, or a non-enzyme (regulators, ribosomal proteins, thioredoxins as substrates, hypotheticals); R2 join annotated subunits with AND; R3 leave same-name paralogs, generic names ('aminotransferase', 'aldolase') and same-family members with no specific alternative; R5 (new) a diffusion or porin reaction keeps only porins, and a rule whose every gene is a different enzyme becomes empty (the reaction then carries no gene, i.e. it can no longer be knocked out) rather than keeping a wrong assignment. ABC-transporter and PTS rules were skipped (complexes lumped across systems). VERIFIER OUTCOME (5 Sept 2026): applied on top of v0.1+v0.2, the full set changed 391 gene-condition predictions to essential of which only 21 were experimentally important, so patches whose changes the fitness data contradict are marked status='held' with the reason; the runner applies only status='accepted' patches. The held reasons fall into three classes: transporter gaps for vitamins that the media contain, reaction-level essentiality artefacts unmasked by removing a false isozyme, and adjudications the data show to be wrong. UPDATE (5 Sept 2026, later): four held patches were re-adjudicated — the B. thetaiotaomicron pyruvate-carboxylase rule is accepted together with a Btheta-scoped PPCK direction patch (universe_patches_v0.1.json), and the three riboflavin-synthase rules held as transporter gaps or unexplained were re-adjudicated under R4 (a second annotated isozyme present in the genome: PP_0515, SMc01777, SO3468) — 24 remain held.",
+  "scope": "gene-rule corrections for the OR-rule reactions that are essential in at least one carbon-source condition where the wild-type model grows (scripts/essential_or_rules.py: 55 in B. thetaiotaomicron, 85 in P. putida, 47 in S. oneidensis, 70 in S. meliloti), beyond those already in v0.2. Same rules as v0.2, adjudicated from RefSeq product names and enzymology only: R1 remove genes annotated as a different enzyme, a family/domain, or a non-enzyme (regulators, ribosomal proteins, thioredoxins as substrates, hypotheticals); R2 join annotated subunits with AND; R3 leave same-name paralogs, generic names ('aminotransferase', 'aldolase') and same-family members with no specific alternative; R5 (new) a diffusion or porin reaction keeps only porins, and a rule whose every gene is a different enzyme becomes empty (the reaction then carries no gene, i.e. it can no longer be knocked out) rather than keeping a wrong assignment. ABC-transporter and PTS rules were skipped (complexes lumped across systems). VERIFIER OUTCOME (5 Sept 2026): applied on top of v0.1+v0.2, the full set changed 391 gene-condition predictions to essential of which only 21 were experimentally important, so patches whose changes the fitness data contradict are marked status='held' with the reason; the runner applies only status='accepted' patches. The held reasons fall into three classes: transporter gaps for vitamins that the media contain, reaction-level essentiality artefacts unmasked by removing a false isozyme, and adjudications the data show to be wrong. UPDATE (5 Sept 2026, later): four held patches were re-adjudicated — the B. thetaiotaomicron pyruvate-carboxylase rule is accepted together with a Btheta-scoped PPCK direction patch (universe_patches_v0.1.json), and the three riboflavin-synthase rules held as transporter gaps or unexplained were re-adjudicated under R4 (a second annotated isozyme present in the genome: PP_0515, SMc01777, SO3468) — 24 remain held. UPDATE (5 Sept 2026, cycle 4): the 24 held patches were re-tested one at a time on top of medium completion and the model patches (scripts/evaluate_held_rules.py, results/carbon_fitness_multi/held_rules_reevaluation.tsv): 11 are now accepted (neutral, or resolved by an R4 isozyme, an R5 empty rule, the thiamine-uptake model patch, or the glycolaldehyde by-product sink; PMPK on the annotation with the verifier's mixed result recorded), 3 are rejected (the annotation adjudication was wrong and the original rule stands: AGPR, HISTP, PHETA1) and 10 remain held (one biomass-template question, the folate-branch dephosphorylation, one unannotated isozyme, and seven single-condition contradictions).",
   "patches": [
     {
       "org": "Btheta",
@@ -26,8 +26,8 @@
       "new_rule": "BT0411",
       "rule": "R1",
       "note": "stationary-phase survival protein SurE (BT4003) is a 5'-nucleotidase, not a 3',5'-bisphosphate nucleotidase",
-      "status": "held",
-      "verifier": "unmasks a transporter gap: the medium supplies cysteine but the draft has no cysteine uptake, so it needs assimilatory sulfate reduction (CysQ) that the organism does not"
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral (cysteine now enters at a trace rate with medium completion, so CysQ is no longer needed to reduce sulfate); the rule itself was right"
     },
     {
       "org": "Btheta",
@@ -88,11 +88,11 @@
     {
       "org": "Btheta",
       "reaction": "TMPPP",
-      "new_rule": "BT0652",
-      "rule": "R1",
-      "note": "phosphomethylpyrimidine kinase ThiD (BT0790) removed",
-      "status": "held",
-      "verifier": "thiamine biosynthesis gene without phenotype: vitamin cross-feeding in pooled assays or an unannotated isozyme; not resolvable from annotation"
+      "new_rule": "BT0652 or BT0647",
+      "rule": "R4",
+      "note": "phosphomethylpyrimidine kinase ThiD (BT0790) removed; BT0647 (BT_RS03200, RefSeq 'thiamine phosphate synthase', in the thi cluster with BT0652) added as a second annotated thiamine-phosphate synthase",
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral once the second annotated thiamine-phosphate synthase BT0647 is in the rule (R4); with BT0652 alone the rule had made it essential in 14 conditions with a phenotype in 1 (mean fitness -1.0)"
     },
     {
       "org": "Btheta",
@@ -145,20 +145,20 @@
     {
       "org": "Btheta",
       "reaction": "CU2tex",
-      "new_rule": "BT1194",
+      "new_rule": "",
       "rule": "R5",
-      "note": "flagellar motor protein MotB (BT3129, OmpA-like domain) is not a porin",
-      "status": "held",
-      "verifier": "a passive porin diffusion reaction should carry no essential gene; to be replaced by an empty rule (R5) once diffusion rules are handled as a class"
+      "note": "passive diffusion through the outer membrane carries no essential gene: the rule is emptied (MotB BT3129, OmpA-like domain, is a flagellar motor protein, and the remaining porin BT1194 has no phenotype, mean fitness 0.00)",
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral with the rule emptied (R5); the earlier form 'BT1194' had made the porin essential in 14 conditions without phenotype"
     },
     {
       "org": "Btheta",
       "reaction": "CLtex",
-      "new_rule": "BT1194",
+      "new_rule": "",
       "rule": "R5",
-      "note": "as CU2tex",
-      "status": "held",
-      "verifier": "as CU2tex"
+      "note": "passive diffusion through the outer membrane carries no essential gene: the rule is emptied (MotB BT3129, OmpA-like domain, is a flagellar motor protein, and the remaining porin BT1194 has no phenotype, mean fitness 0.00)",
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: as CU2tex"
     },
     {
       "org": "Btheta",
@@ -207,7 +207,7 @@
       "rule": "R1",
       "note": "family-level 'iron-containing alcohol dehydrogenase' BT0535 removed; L-1,2-propanediol oxidoreductase FucO kept",
       "status": "held",
-      "verifier": "predicted essential on two carbon sources without phenotype; reaction-level route questionable"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (2 predictions to essential, none important); reaction-level route questionable"
     },
     {
       "org": "Btheta",
@@ -224,7 +224,7 @@
       "rule": "R1",
       "note": "arabinose-proton symporter BT0436 removed",
       "status": "held",
-      "verifier": "galactose transport has other routes in vivo; single-transporter rule contradicted"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (1 to essential, not important); galactose enters by other routes in vivo"
     },
     {
       "org": "Putida",
@@ -336,8 +336,8 @@
       "new_rule": "PP_4782",
       "rule": "R1",
       "note": "thiamine-phosphate synthase ThiE (PP_4783) is the next step",
-      "status": "held",
-      "verifier": "phosphomethylpyrimidine kinase important in 11 of 28 conditions only; thiamine cross-feeding likely in the rest"
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: PP_4782 (ThiD) becomes essential in all 28 growth conditions on thiamine-free MOPS/M9 media; its fitness is graded, -3.3 to +0.3, below -2 in 11 conditions and below -1 in 19 (mean -1.5), the pattern of a thiamine-biosynthesis gene partly rescued by cross-feeding in a pooled assay. The genome has one ThiD and the annotation is unambiguous, so the rule is accepted on that basis; the verifier records it as mixed (11 of 28 below the threshold)"
     },
     {
       "org": "Putida",
@@ -402,8 +402,8 @@
       "new_rule": "PP_3745 and PP_3746 and PP_3747",
       "rule": "R1+R2",
       "note": "glycolate oxidase GlcDEF subunits joined; putative oxidoreductase PP_4493 removed",
-      "status": "held",
-      "verifier": "unmasks a reaction-level artefact: glycolate oxidase is essential in the model in every condition (it should not be); the subunit rule is correct but exposes the wrong essentiality"
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral once glycolaldehyde, the by-product of dihydroneopterin aldolase, can leave the cell (model_patches_v0.1: GCALDt, EX_gcald_e); before that the model forced the folate-branch trickle through glycolaldehyde dehydrogenase, glycolate oxidase and malate synthase, and the subunit rule had made GlcDEF essential in all 28 conditions without phenotype"
     },
     {
       "org": "Putida",
@@ -419,8 +419,8 @@
       "new_rule": "PP_0432",
       "rule": "R1",
       "note": "'ArgC-like' PP_3633 removed",
-      "status": "held",
-      "verifier": "contradicted: the 'ArgC-like' paralog PP_3633 is evidently a functional N-acetyl-gamma-glutamyl-phosphate reductase (PP_0432 has no phenotype); annotation rule R1 wrong here"
+      "status": "rejected",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (27 predictions to essential, none important): PP_0432 has no phenotype, so the 'ArgC-like' paralog PP_3633 is the functional N-acetyl-gamma-glutamyl-phosphate reductase or both are; the annotation rule R1 was wrong here and the original rule stands"
     },
     {
       "org": "Putida",
@@ -557,7 +557,7 @@
       "rule": "R1",
       "note": "'acyl-CoA dehydrogenase-related protein' PP_3226 removed",
       "status": "held",
-      "verifier": "no phenotype on the two conditions affected"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (1 to essential, not important)"
     },
     {
       "org": "Putida",
@@ -566,7 +566,7 @@
       "rule": "R1",
       "note": "as ACOADH2",
       "status": "held",
-      "verifier": "as ACOADH2"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: as ACOADH2"
     },
     {
       "org": "Putida",
@@ -575,7 +575,7 @@
       "rule": "R1",
       "note": "'thiolase family protein' PP_0582 removed",
       "status": "held",
-      "verifier": "no phenotype on the one condition affected"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (1 to essential, not important)"
     },
     {
       "org": "Putida",
@@ -616,7 +616,7 @@
       "rule": "R1",
       "note": "DUF2058 protein SO2396 removed",
       "status": "held",
-      "verifier": "naphthoate synthase without phenotype in 7 of 8 conditions: menaquinone not required aerobically (ubiquinone), a biomass-template artefact"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (8 to essential, 1 important; SO4739 mean fitness -0.35): menaquinone is in the biomass template although ubiquinone serves aerobic growth — a biomass-template question, not a rule error"
     },
     {
       "org": "MR1",
@@ -745,8 +745,8 @@
       "new_rule": "SO2350",
       "rule": "R1",
       "note": "GntR-family repressor/aminotransferase fusion (SO2282) removed",
-      "status": "held",
-      "verifier": "aspartate aminotransferase alone made essential; other aminotransferases evidently transaminate phenylalanine in vivo — generic aminotransferases should have been kept"
+      "status": "rejected",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (8 to essential, none important): other aminotransferases transaminate phenylalanine in vivo; the original rule with the generic aminotransferases stands"
     },
     {
       "org": "MR1",
@@ -787,7 +787,7 @@
       "rule": "R1",
       "note": "hypothetical SMc00521, DNA helicase SMc01566 and FixI cation ATPases removed; dinucleoside polyphosphate hydrolase (Nudix) kept",
       "status": "held",
-      "verifier": "folate-branch gene without phenotype: the medium (RCH2) contains folate that the draft cannot import — transporter gap"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (21 to essential, none important): folate uptake is deliberately not assumed in medium completion, and the dephosphorylation of dihydroneopterin monophosphate is commonly catalysed by nonspecific phosphatases, so a single-gene rule is probably wrong whatever the annotation"
     },
     {
       "org": "Smeli",
@@ -795,8 +795,8 @@
       "new_rule": "SMc02448 or SMc03785",
       "rule": "R1",
       "note": "hypothetical SMc02554, DNA helicase and FixI ATPases removed; Nudix proteins kept",
-      "status": "held",
-      "verifier": "as DNMPPA"
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral"
     },
     {
       "org": "Smeli",
@@ -964,8 +964,8 @@
       "new_rule": "SMa2213",
       "rule": "R1",
       "note": "L-sorbosone dehydrogenase SMc04397 removed",
-      "status": "held",
-      "verifier": "unmasks a reaction-level artefact: the model routes an essential flux through glycolaldehyde dehydrogenase"
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral once glycolaldehyde can leave the cell (model_patches_v0.1: GCALDt, EX_gcald_e); the same dead-end by-product as GLYCTO1 in P. putida"
     },
     {
       "org": "Smeli",
@@ -987,11 +987,11 @@
     {
       "org": "Smeli",
       "reaction": "TMPPP",
-      "new_rule": "SM_b20618",
-      "rule": "R1",
-      "note": "phosphomethylpyrimidine kinase SM_b20962 removed",
-      "status": "held",
-      "verifier": "thiamine in the medium, no uptake in the draft — transporter gap"
+      "new_rule": "SM_b20618 or SMc03996 or SMc01559",
+      "rule": "R4",
+      "note": "phosphomethylpyrimidine kinase SM_b20962 removed; the chromosomal thiamine-phosphate synthase SMc03996 (SM_RS14235, RefSeq 'thiamine phosphate synthase'; Fitness Browser 'thiamine-phosphate pyrophosphorylase') and the secondary thiamine-phosphate synthase SMc01559 (SM_RS11855, RefSeq 'secondary thiamine-phosphate synthase enzyme YjbQ'; YjbQ/TenI-family proteins complement thiE, Morett et al. 2008 Nat Chem Biol) added",
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral once the draft can take up the medium's thiamine (model_patches_v0.1: THMabc, TMDPK, EX_thm_e — the draft had no thiamine metabolite, so medium completion could not help) and the chromosomal ThiE and YjbQ are in the rule (R4); with SM_b20618 alone it had made 21 conditions essential without phenotype"
     },
     {
       "org": "Smeli",
@@ -1023,8 +1023,8 @@
       "new_rule": "SM_b20159",
       "rule": "R1",
       "note": "imidazoleglycerol-phosphate dehydratase (SMc02574, previous step) removed; the inositol-monophosphatase-family protein is the HisN-type histidinol-phosphatase of alpha-proteobacteria",
-      "status": "held",
-      "verifier": "contradicted: the inositol-monophosphatase-family gene SM_b20159 has no phenotype; the histidinol-phosphatase assignment was wrong"
+      "status": "rejected",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (21 to essential, none important): SM_b20159 (inositol-monophosphatase family) has no phenotype; the histidinol-phosphatase assignment was wrong and the original rule stands"
     },
     {
       "org": "Smeli",
@@ -1040,8 +1040,8 @@
       "new_rule": "SM_b20199 or SM_b21192",
       "rule": "R1",
       "note": "hypothetical SM_b20498 removed",
-      "status": "held",
-      "verifier": "as FBP class: other aldolases exist"
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral"
     },
     {
       "org": "Smeli",
@@ -1050,7 +1050,7 @@
       "rule": "R1",
       "note": "hypothetical SM_b20498 removed",
       "status": "held",
-      "verifier": "as FBA"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (1 to essential, not important)"
     },
     {
       "org": "Smeli",
@@ -1059,7 +1059,7 @@
       "rule": "R1",
       "note": "hypothetical SMc00535 removed",
       "status": "held",
-      "verifier": "fructose-1,6-bisphosphatase without phenotype on gluconeogenic carbon sources: an unannotated isozyme (S. meliloti has a GlpX-type FBPase); R1 removal of the hypothetical protein was right but the remaining single gene is not the only enzyme"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (9 to essential on gluconeogenic carbon sources, none important): SM_b20202 is the only annotated fructose-1,6-bisphosphatase in the genome (SM_RS18090, 'class 1 fructose-bisphosphatase', on pSymB) and no phosphatase-annotated gene has a phenotype in any of the 33 carbon-source conditions (only pckA SMc02562 and its regulator are gluconeogenesis-specific), so the activity is redundant or carried by an enzyme the annotation does not name"
     },
     {
       "org": "Smeli",
@@ -1083,8 +1083,8 @@
       "new_rule": "SMc02689 or SMa2213",
       "rule": "R1",
       "note": "hypothetical SMa0796 and glutathione-dependent formaldehyde dehydrogenase SM_b20170 removed",
-      "status": "held",
-      "verifier": "as GCALDD (same gene)"
+      "status": "accepted",
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: neutral"
     },
     {
       "org": "Smeli",
@@ -1093,7 +1093,7 @@
       "rule": "R1",
       "note": "hypotheticals SMc00079, SM_b20747 and 'hydrolase phosphatase' SMc01502 removed",
       "status": "held",
-      "verifier": "no phenotype on the one condition affected"
+      "verifier": "re-tested 5 Sept 2026 (scripts/evaluate_held_rules.py) on top of medium completion, the model patches and the later universe patches: still contradicted (1 to essential, not important)"
     },
     {
       "org": "Smeli",
