@@ -1,0 +1,1171 @@
+{
+  "analysis_date": "2026-09-06",
+  "candidate": {
+    "evidence_level": "KT2440 sequence and rule-based homology assignment; other-organism experimental support",
+    "kt2440_direct_functional_experiment_found": false,
+    "locus": "PP_4248",
+    "next_checks": [
+      "Match local PP_4248 sequence to Q88F51 and examine family conservation.",
+      "Read original substrate assays and independently review PP_1777 ribose-phosphate mutase assignment.",
+      "Discriminate phosphate-dependent ribose-1-phosphate formation from hydrolytic free-ribose formation.",
+      "Require gene-specific evidence or explicitly retain provisional homology status."
+    ],
+    "reaction_hypotheses": [
+      "adenosine + phosphate = adenine + ribose 1-phosphate",
+      "inosine + phosphate = hypoxanthine + ribose 1-phosphate"
+    ],
+    "specificity_caveat": "E. coli PpnP evidence reports that free ribose plus phosphate is not converted to ribose 1-phosphate; candidate intercepts nucleosides before hydrolysis.",
+    "uniprot": "Q88F51"
+  },
+  "conclusion": "PP_4248/PpnP is the strongest specific candidate found. KT2440 assignment is homology-based, with direct enzyme-family evidence in E. coli; it is not yet an accepted repair.",
+  "local_model_context": "results/ribosyl_disposal_2026_09_06/evidence/model_context.json",
+  "role": "post-outcome evidence research on exposed Putida development organism",
+  "schema_version": 1,
+  "scope": {
+    "benchmark_fitness_inspection": false,
+    "completed_objective": "Identify a specific evidence-graded candidate or explain missing evidence; not exhaustive literature review.",
+    "model_changes": false,
+    "new_candidate_acceptance": false,
+    "optimization": false
+  },
+  "search_limits": {
+    "main_query_families": [
+      "Pseudomonas putida or KT2440 with S-adenosylhomocysteine hydrolase, ahcY, PP_4976, PP_3254, nucleosidase",
+      "Pseudomonas putida or KT2440 with ppnP, PP_4248, nucleoside phosphorylase, adenosine kinase, PP_2460",
+      "Pseudomonas putida or KT2440 with ribose/nucleoside export, secretion, efflux or transport",
+      "Ribosylhomocysteinase EC3.3.1.3 versus LuxS EC4.4.1.21 and primary product identification"
+    ],
+    "missing_evidence_is_not_absence": true,
+    "not_established": [
+      "KT2440 PP_4248 catalytic specificity or activity sufficient for native SAM salvage.",
+      "A cytoplasmic ribose or adenosine/inosine exporter in KT2440.",
+      "KT2440 LuxS activity or a valid biological assignment for the gene-less RHCYS reaction.",
+      "Individual complete RBK knockout phenotype from pooled fitness disagreement."
+    ]
+  },
+  "source_annotations": [
+    {
+      "accession": "Q88F51",
+      "catalytic_assignments": [
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "id": "MF_01537",
+              "source": "HAMAP-Rule"
+            }
+          ],
+          "name": "a purine D-ribonucleoside + phosphate = a purine nucleobase + alpha-D-ribose 1-phosphate",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:19805"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:26386"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:142355"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "id": "MF_01537",
+              "source": "HAMAP-Rule"
+            }
+          ],
+          "name": "adenosine + phosphate = alpha-D-ribose 1-phosphate + adenine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:27642"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16335"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16708"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.2",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "id": "MF_01537",
+              "source": "HAMAP-Rule"
+            }
+          ],
+          "name": "cytidine + phosphate = cytosine + alpha-D-ribose 1-phosphate",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:52540"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16040"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17562"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "id": "MF_01537",
+              "source": "HAMAP-Rule"
+            }
+          ],
+          "name": "guanosine + phosphate = alpha-D-ribose 1-phosphate + guanine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:13233"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16235"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16750"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "id": "MF_01537",
+              "source": "HAMAP-Rule"
+            }
+          ],
+          "name": "inosine + phosphate = alpha-D-ribose 1-phosphate + hypoxanthine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:27646"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17368"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17596"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.2",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "id": "MF_01537",
+              "source": "HAMAP-Rule"
+            }
+          ],
+          "name": "thymidine + phosphate = 2-deoxy-alpha-D-ribose 1-phosphate + thymine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:16037"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17748"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17821"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57259"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.2",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "id": "MF_01537",
+              "source": "HAMAP-Rule"
+            }
+          ],
+          "name": "uridine + phosphate = alpha-D-ribose 1-phosphate + uracil",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:24388"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16704"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17568"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000255",
+              "id": "MF_01537",
+              "source": "HAMAP-Rule"
+            }
+          ],
+          "name": "xanthosine + phosphate = alpha-D-ribose 1-phosphate + xanthine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:27638"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17712"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:18107"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        }
+      ],
+      "entry_audit": {
+        "entryVersion": 99,
+        "firstPublicDate": "2005-07-05",
+        "lastAnnotationUpdateDate": "2026-06-10",
+        "lastSequenceUpdateDate": "2003-06-01",
+        "sequenceVersion": 1
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "genes": [
+        {
+          "geneName": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000255",
+                "id": "MF_01537",
+                "source": "HAMAP-Rule"
+              }
+            ],
+            "value": "ppnP"
+          },
+          "orderedLocusNames": [
+            {
+              "value": "PP_4248"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "lineage": [
+          "Bacteria",
+          "Pseudomonadati",
+          "Pseudomonadota",
+          "Gammaproteobacteria",
+          "Pseudomonadales",
+          "Pseudomonadaceae",
+          "Pseudomonas"
+        ],
+        "scientificName": "Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440)",
+        "taxonId": 160488
+      },
+      "protein_existence": "3: Inferred from homology",
+      "publication_evidence": [
+        {
+          "pmid_or_citation_id": "12534463",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "Complete genome sequence and comparative analysis of the metabolically versatile Pseudomonas putida KT2440."
+        }
+      ],
+      "query_identity": "PP_4248",
+      "rest_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene%3APP_4248&format=json",
+      "retrieved_on": "2026-09-06",
+      "retrieved_response_sha256": "68e4d8f5badd1dbf5c2621360e93f6e29deedb24729b04c8abdffc9d270657c8",
+      "sequence": {
+        "crc64": "C691290A3C5996C3",
+        "length": 94,
+        "md5": "92F16BCA062F31F784E22C2C85DA7FC3",
+        "molWeight": 10349,
+        "value": "MFQVNEYFNGTVKSIAFSGEEGPATVGVMAPGEYEFGTAKREIMHVVSGALTVKLPGSDNWETFNAGDKFNVPADSKFQLQVKVDTAYLCEYRD"
+      },
+      "stored_record_scope": "Selected identity, sequence, catalytic and publication-evidence fields; original raw HTTP bytes retained only in temporary workspace.",
+      "url": "https://www.uniprot.org/uniprotkb/Q88F51/entry"
+    },
+    {
+      "accession": "A0A140FWS3",
+      "catalytic_assignments": [
+        {
+          "ecNumber": "3.13.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000256",
+              "id": "MF_00563",
+              "source": "HAMAP-Rule"
+            },
+            {
+              "evidenceCode": "ECO:0000256",
+              "id": "RU000548",
+              "source": "RuleBase"
+            }
+          ],
+          "name": "S-adenosyl-L-homocysteine + H2O = L-homocysteine + adenosine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:21708"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:15377"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16335"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57856"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:58199"
+            }
+          ]
+        }
+      ],
+      "entry_audit": {
+        "entryVersion": 41,
+        "firstPublicDate": "2016-05-11",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2016-05-11",
+        "sequenceVersion": 1
+      },
+      "entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "genes": [
+        {
+          "geneName": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000256",
+                "id": "MF_00563",
+                "source": "HAMAP-Rule"
+              },
+              {
+                "evidenceCode": "ECO:0000313",
+                "id": "AMM03056.1",
+                "source": "EMBL"
+              }
+            ],
+            "value": "ahcY"
+          },
+          "orderedLocusNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "id": "AMM03056.1",
+                  "source": "EMBL"
+                }
+              ],
+              "value": "PP_4976"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "id": "AMM03056.1",
+            "source": "EMBL"
+          },
+          {
+            "evidenceCode": "ECO:0000313",
+            "id": "UP000000556",
+            "source": "Proteomes"
+          }
+        ],
+        "lineage": [
+          "Bacteria",
+          "Pseudomonadati",
+          "Pseudomonadota",
+          "Gammaproteobacteria",
+          "Pseudomonadales",
+          "Pseudomonadaceae",
+          "Pseudomonas"
+        ],
+        "scientificName": "Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440)",
+        "taxonId": 160488
+      },
+      "protein_existence": "3: Inferred from homology",
+      "publication_evidence": [
+        {
+          "pmid_or_citation_id": "12534463",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "Complete genome sequence and comparative analysis of the metabolically versatile Pseudomonas putida KT2440."
+        },
+        {
+          "pmid_or_citation_id": "26913973",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "The revisited genome of Pseudomonas putida KT2440 enlightens its value as a robust metabolic chassis."
+        }
+      ],
+      "query_identity": "PP_4976",
+      "rest_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene%3APP_4976&format=json",
+      "retrieved_on": "2026-09-06",
+      "retrieved_response_sha256": "8ca120b2030fb6f7bce1c34297fa1435714307d3cdcd044bd392f0036f476aaf",
+      "sequence": {
+        "crc64": "1B1A2AAC7FF5A946",
+        "length": 464,
+        "md5": "91F60F8A50A0C0391C225055E9010A4B",
+        "molWeight": 51000,
+        "value": "MPAGFTDYKVADISLAAWGRRETIIAESEMPALMGLRRKYLAEQPLKGAKILGCIHMTIQTAVLIETLVALGAEVRWSSCNIFSTQDQAAASIAAAGIPVFAWKGETEEEYEWCLEQTILKDGQPWDANMILDDGGDLTELLHKKYPQVLDRVHGVTEETTTGVHRLLDMLAKGELKVPAINVNDSVTKSKNDNKYGCRHSLNDAIKRGTDHLLSGKQALVIGYGDVGKGSAQSLRQEGMIVKVSEIDPICAMQACMDGFELVSPFIDGINDGTEASIDKALLGKIDLIVTTTGNVNVCDANMLKALKKRAVVCNIGHFDNEIDTAFMRKNWAWEEVKPQVHKIHRTGAGSFDPQNDDYLILLAEGRLVNLGNATGHPSRIMDGSFANQVLAQIFLFEQKFADLPAEKKAERLTVEVLPKKLDEEVALEMVRGFGGVVTQLTKQQADYIGVTVEGPFKPHAYRY"
+      },
+      "stored_record_scope": "Selected identity, sequence, catalytic and publication-evidence fields; original raw HTTP bytes retained only in temporary workspace.",
+      "url": "https://www.uniprot.org/uniprotkb/A0A140FWS3/entry"
+    },
+    {
+      "accession": "Q88HU9",
+      "catalytic_assignments": [],
+      "entry_audit": {
+        "entryVersion": 103,
+        "firstPublicDate": "2003-06-01",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2003-06-01",
+        "sequenceVersion": 1
+      },
+      "entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "genes": [
+        {
+          "orderedLocusNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "id": "AAN68861.1",
+                  "source": "EMBL"
+                }
+              ],
+              "value": "PP_3254"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "id": "AAN68861.1",
+            "source": "EMBL"
+          },
+          {
+            "evidenceCode": "ECO:0000313",
+            "id": "UP000000556",
+            "source": "Proteomes"
+          }
+        ],
+        "lineage": [
+          "Bacteria",
+          "Pseudomonadati",
+          "Pseudomonadota",
+          "Gammaproteobacteria",
+          "Pseudomonadales",
+          "Pseudomonadaceae",
+          "Pseudomonas"
+        ],
+        "scientificName": "Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440)",
+        "taxonId": 160488
+      },
+      "protein_existence": "4: Predicted",
+      "publication_evidence": [
+        {
+          "pmid_or_citation_id": "12534463",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "Complete genome sequence and comparative analysis of the metabolically versatile Pseudomonas putida KT2440."
+        },
+        {
+          "pmid_or_citation_id": "26913973",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "The revisited genome of Pseudomonas putida KT2440 enlightens its value as a robust metabolic chassis."
+        }
+      ],
+      "query_identity": "PP_3254",
+      "rest_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene%3APP_3254&format=json",
+      "retrieved_on": "2026-09-06",
+      "retrieved_response_sha256": "d8ea2b91c4ae853173557386edc2cef7451d38136ed7e8720d3d10794bef6472",
+      "sequence": {
+        "crc64": "AC1E6D6BA44A7BF3",
+        "length": 217,
+        "md5": "1B1ABE6FD1E16E9BAE4ED930119DA615",
+        "molWeight": 23368,
+        "value": "MHLARVDRQWPRPLQPLGNTCSMMLIKQFPDISLNDTLFVFALEAEAGDVFTEVNTVFTGIGKVNAAIALTKAIATRRPKLIVNLGSAGSQRHGKGEVVCCNRFVQRDMDVTALGFARYETPLSDTPVVLEHGAAIPGLAVETCGSGDSFEINHGDAPYDVVDMEAYVLALIARGEGIPFVCLKYISDDAGSEAAGDWAVQVHLAAEAFKRVLFSQA"
+      },
+      "stored_record_scope": "Selected identity, sequence, catalytic and publication-evidence fields; original raw HTTP bytes retained only in temporary workspace.",
+      "url": "https://www.uniprot.org/uniprotkb/Q88HU9/entry"
+    },
+    {
+      "accession": "Q88K32",
+      "catalytic_assignments": [],
+      "entry_audit": {
+        "entryVersion": 112,
+        "firstPublicDate": "2003-06-01",
+        "lastAnnotationUpdateDate": "2026-01-28",
+        "lastSequenceUpdateDate": "2003-06-01",
+        "sequenceVersion": 1
+      },
+      "entry_type": "UniProtKB unreviewed (TrEMBL)",
+      "genes": [
+        {
+          "geneName": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000313",
+                "id": "AAN68072.1",
+                "source": "EMBL"
+              }
+            ],
+            "value": "Nuh"
+          },
+          "orderedLocusNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000313",
+                  "id": "AAN68072.1",
+                  "source": "EMBL"
+                }
+              ],
+              "value": "PP_2460"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "id": "AAN68072.1",
+            "source": "EMBL"
+          },
+          {
+            "evidenceCode": "ECO:0000313",
+            "id": "UP000000556",
+            "source": "Proteomes"
+          }
+        ],
+        "lineage": [
+          "Bacteria",
+          "Pseudomonadati",
+          "Pseudomonadota",
+          "Gammaproteobacteria",
+          "Pseudomonadales",
+          "Pseudomonadaceae",
+          "Pseudomonas"
+        ],
+        "scientificName": "Pseudomonas putida (strain ATCC 47054 / DSM 6125 / CFBP 8728 / NCIMB 11950 / KT2440)",
+        "taxonId": 160488
+      },
+      "protein_existence": "4: Predicted",
+      "publication_evidence": [
+        {
+          "pmid_or_citation_id": "12534463",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "Complete genome sequence and comparative analysis of the metabolically versatile Pseudomonas putida KT2440."
+        },
+        {
+          "pmid_or_citation_id": "26913973",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "The revisited genome of Pseudomonas putida KT2440 enlightens its value as a robust metabolic chassis."
+        }
+      ],
+      "query_identity": "PP_2460",
+      "rest_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene%3APP_2460&format=json",
+      "retrieved_on": "2026-09-06",
+      "retrieved_response_sha256": "0efc43c6c6cb62639a85c60119ee520cf1a25dcf9594f45970cd8d84eec7aa23",
+      "sequence": {
+        "crc64": "EF46015E205FF4FF",
+        "length": 322,
+        "md5": "A6C1C1271194571A416FE928CA59DE3E",
+        "molWeight": 34388,
+        "value": "MAAASTLQAAPIDLIIDTDPGADDVVALFLAMASPHELSIRAITTVAGNVRLDKTSRNARLAREWAGREDIPVYAGAGRPLVRTPIYAADVHGEEGLTGVQVHEPKAPLAQGNAVQYLVDTLGAAEPHSITVAMLGPQTNLALALIQRPSIVKGIKEVVVMGGAHFNGGNITPVAEFNLYADPHAAEVVLASGVQLTYLPLDVTHKLLTSNARLKQLAAVNNQASKRVVDILNAYITHDMDVYGIPGGPVHDASVIAYLLKPELFSGRRIHMSIDSREGPTFGQTIADWYGVLKRPANVLWVEQGDAQGLFDLLSARLARLE"
+      },
+      "stored_record_scope": "Selected identity, sequence, catalytic and publication-evidence fields; original raw HTTP bytes retained only in temporary workspace.",
+      "url": "https://www.uniprot.org/uniprotkb/Q88K32/entry"
+    },
+    {
+      "accession": "P0C037",
+      "catalytic_assignments": [
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "id": "27941785",
+              "source": "PubMed"
+            }
+          ],
+          "name": "a purine D-ribonucleoside + phosphate = a purine nucleobase + alpha-D-ribose 1-phosphate",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:19805"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:26386"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:142355"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "id": "27941785",
+              "source": "PubMed"
+            }
+          ],
+          "name": "adenosine + phosphate = alpha-D-ribose 1-phosphate + adenine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:27642"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16335"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16708"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.2",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "id": "27941785",
+              "source": "PubMed"
+            }
+          ],
+          "name": "cytidine + phosphate = cytosine + alpha-D-ribose 1-phosphate",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:52540"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16040"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17562"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "id": "27941785",
+              "source": "PubMed"
+            }
+          ],
+          "name": "guanosine + phosphate = alpha-D-ribose 1-phosphate + guanine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:13233"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16235"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16750"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "id": "27941785",
+              "source": "PubMed"
+            }
+          ],
+          "name": "inosine + phosphate = alpha-D-ribose 1-phosphate + hypoxanthine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:27646"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17368"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17596"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.2",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "id": "27941785",
+              "source": "PubMed"
+            }
+          ],
+          "name": "thymidine + phosphate = 2-deoxy-alpha-D-ribose 1-phosphate + thymine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:16037"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17748"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17821"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57259"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.2",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "id": "27941785",
+              "source": "PubMed"
+            }
+          ],
+          "name": "uridine + phosphate = alpha-D-ribose 1-phosphate + uracil",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:24388"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:16704"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17568"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        },
+        {
+          "ecNumber": "2.4.2.1",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "id": "27941785",
+              "source": "PubMed"
+            }
+          ],
+          "name": "xanthosine + phosphate = alpha-D-ribose 1-phosphate + xanthine",
+          "reactionCrossReferences": [
+            {
+              "database": "Rhea",
+              "id": "RHEA:27638"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17712"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:18107"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:43474"
+            },
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:57720"
+            }
+          ]
+        }
+      ],
+      "entry_audit": {
+        "entryVersion": 125,
+        "firstPublicDate": "2005-07-05",
+        "lastAnnotationUpdateDate": "2026-09-02",
+        "lastSequenceUpdateDate": "2005-07-05",
+        "sequenceVersion": 1
+      },
+      "entry_type": "UniProtKB reviewed (Swiss-Prot)",
+      "genes": [
+        {
+          "geneName": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000303",
+                "id": "27941785",
+                "source": "PubMed"
+              }
+            ],
+            "value": "ppnP"
+          },
+          "orderedLocusNames": [
+            {
+              "value": "b0391"
+            },
+            {
+              "value": "JW0382"
+            }
+          ],
+          "synonyms": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000312",
+                  "id": "AAC73494.1",
+                  "source": "EMBL"
+                }
+              ],
+              "value": "yaiE"
+            }
+          ]
+        }
+      ],
+      "organism": {
+        "lineage": [
+          "Bacteria",
+          "Pseudomonadati",
+          "Pseudomonadota",
+          "Gammaproteobacteria",
+          "Enterobacterales",
+          "Enterobacteriaceae",
+          "Escherichia"
+        ],
+        "scientificName": "Escherichia coli (strain K12)",
+        "taxonId": 83333
+      },
+      "protein_existence": "1: Evidence at protein level",
+      "publication_evidence": [
+        {
+          "pmid_or_citation_id": "8807285",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [GENOMIC DNA]"
+          ],
+          "title": "Recombination-dependent growth in exonuclease-depleted recBC sbcBC strains of Escherichia coli K-12."
+        },
+        {
+          "pmid_or_citation_id": "CI-B1UJ6TNQ0SAS1",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "Sequence of minutes 4-25 of Escherichia coli."
+        },
+        {
+          "pmid_or_citation_id": "9278503",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "The complete genome sequence of Escherichia coli K-12."
+        },
+        {
+          "pmid_or_citation_id": "16738553",
+          "positions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "title": "Highly accurate genome sequences of Escherichia coli K-12 strains MG1655 and W3110."
+        },
+        {
+          "pmid_or_citation_id": "27941785",
+          "positions": [
+            "FUNCTION",
+            "CATALYTIC ACTIVITY",
+            "DISRUPTION PHENOTYPE"
+          ],
+          "title": "Nontargeted in vitro metabolomics for high-throughput identification of novel enzymes in Escherichia coli."
+        }
+      ],
+      "query_identity": "E_coli_ppnP",
+      "rest_query_url": "https://rest.uniprot.org/uniprotkb/search?query=gene_exact%3AppnP%20AND%20organism_id%3A83333&format=json",
+      "retrieved_on": "2026-09-06",
+      "retrieved_response_sha256": "deb1f39c6de52a7dbd590f73732c40fbafef749e06d4990c8f272ce15350241c",
+      "sequence": {
+        "crc64": "D7EF5C0AFD86D661",
+        "length": 94,
+        "md5": "2803DFEB0AE7ED649845703D52F5FBB8",
+        "molWeight": 10234,
+        "value": "MLQSNEYFSGKVKSIGFSSSSTGRASVGVMVEGEYTFSTAEPEEMTVISGALNVLLPDATDWQVYEAGSVFNVPGHSEFHLQVAEPTSYLCRYL"
+      },
+      "stored_record_scope": "Selected identity, sequence, catalytic and publication-evidence fields; original raw HTTP bytes retained only in temporary workspace.",
+      "url": "https://www.uniprot.org/uniprotkb/P0C037/entry"
+    }
+  ],
+  "sources": [
+    {
+      "access": "Primary abstract via Europe PMC and author institutional repository; original full text and assay supplement not inspected. Specific substrate attribution also traced through UniProt P0C037 ECO:0000269.",
+      "cannot_establish": "KT2440 substrate specificity, physiological flux or RBK deletion rescue.",
+      "finding": "PpnP discovery and experimentally attributed nucleoside phosphorolysis support an enzyme-family candidate, not KT2440 function.",
+      "id": "ppnp_discovery",
+      "kind": "primary_research",
+      "organism_scope": "Escherichia coli",
+      "pmid": "27941785",
+      "url": "https://doi.org/10.1038/nmeth.4103"
+    },
+    {
+      "access": "Primary article abstract and author-deposited structure record.",
+      "cannot_establish": "KT2440 catalytic activity from a related-species structure.",
+      "doi": "10.1002/prot.26309",
+      "finding": "PpnP proteins have a cupin fold; the primary abstract describes ribose-1-phosphate and base products.",
+      "id": "ppnp_structure",
+      "kind": "primary_research_and_deposited_structure",
+      "organism_scope": "E. coli and other species; deposited Pseudomonas structure is P. aeruginosa, not P. putida KT2440",
+      "pmid": "35094440",
+      "url": "https://www.rcsb.org/structure/7EYP"
+    },
+    {
+      "access": "Publisher PDF at DTU repository; Methods, Table1, methanol RNA-seq section read.",
+      "cannot_establish": "A purified KT2440 AhcY enzyme assay or ribosyl-carbon disposal chemistry.",
+      "finding": "ahcY transcript responds to methanol-containing cultivation.",
+      "id": "ahcy_expression",
+      "kind": "primary_research",
+      "organism_scope": "P. putida EM42, reduced-genome derivative of KT2440",
+      "pmid": "37273222",
+      "url": "https://doi.org/10.1128/msystems.00004-23"
+    },
+    {
+      "access": "Publisher abstract.",
+      "cannot_establish": "Assignment to KT2440 PP_4976 or forward physiological hydrolysis flux.",
+      "finding": "SAH synthesis from adenosine and homocysteine reported with P. putida cells.",
+      "id": "sah_1986",
+      "kind": "primary_research",
+      "organism_scope": "P. putida cells; accessible abstract does not identify KT2440",
+      "url": "https://doi.org/10.1016/0168-1656(86)90020-9"
+    },
+    {
+      "access": "Indexed primary abstract.",
+      "cannot_establish": "Modern LuxS product identity or any KT2440 activity.",
+      "finding": "Homocysteine identified; sugar coproduct identification as ribose explicitly tentative.",
+      "id": "srh_1966",
+      "kind": "primary_research",
+      "organism_scope": "E. coli cell extracts",
+      "pmid": "5326098",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5326098/"
+    },
+    {
+      "access": "Publisher full text: pathway, purified-protein experiments and products.",
+      "cannot_establish": "Presence of this pathway in KT2440 or permission to add a gene-less DPD outlet.",
+      "finding": "Pfs/LuxS pathway links SAH through SRH to homocysteine and DPD-derived signalling product.",
+      "id": "luxs_2001",
+      "kind": "primary_research",
+      "organism_scope": "E. coli, Salmonella, Vibrio and Enterococcus; not KT2440",
+      "url": "https://doi.org/10.1046/j.1365-2958.2001.02532.x"
+    },
+    {
+      "access": "Both official entries read.",
+      "cannot_establish": "Existence of a KT2440 LuxS enzyme.",
+      "current_url": "https://enzyme.expasy.org/EC/4.4.1.21",
+      "finding": "EC3.3.1.3 transferred to EC4.4.1.21; classified SRH cleavage product is DPD plus homocysteine.",
+      "id": "ec_transfer",
+      "kind": "official_enzyme_nomenclature_record",
+      "organism_scope": "Enzyme classification, not species evidence",
+      "url": "https://enzyme.expasy.org/EC/3.3.1.3"
+    },
+    {
+      "access": "Publisher full text Results, Figure1 and supplement description.",
+      "cannot_establish": "Cytoplasmic ribose export, endogenous SAH-derived ribose disposal or RBK deletion rescue.",
+      "finding": "Supplied ribose processed to ribonate during anoxic electrode cultivation; no growth in those aldose cultures.",
+      "id": "kt2440_ribose_oxidation",
+      "kind": "primary_research",
+      "limitations": "One biological cultivation per aldose. Explicit main-text Gcd knockout comparisons name glucose, galactose and arabinose; do not infer ribose-specific genetic evidence.",
+      "organism_scope": "P. putida KT2440",
+      "pmid": "34115443",
+      "url": "https://doi.org/10.1111/1751-7915.13862"
+    },
+    {
+      "access": "Primary indexed article text.",
+      "cannot_establish": "A constitutive ribose exporter or measured nucleoside efflux.",
+      "finding": "Ribose ABC-transporter transcript response discussed after rehydration; nutrient release is a proposed interpretation.",
+      "id": "kt2440_rehydration",
+      "kind": "primary_research",
+      "organism_scope": "P. putida KT2440",
+      "url": "https://doi.org/10.1186/s13213-020-01596-3"
+    },
+    {
+      "access": "Primary abstract retrieved via Europe PMC; companion author thesis abstract.",
+      "cannot_establish": "Absence of KT2440 PpnP, activity against adenosine/inosine, or gene-level assignment.",
+      "finding": "Nucleoside hydrolase measured; uridine phosphorylase not measurable in tested extracts.",
+      "id": "other_strain_salvage",
+      "kind": "primary_research",
+      "organism_scope": "P. putida ATCC17536, not KT2440",
+      "pmid": "40982980",
+      "url": "https://doi.org/10.1139/cjm-2025-0161"
+    }
+  ]
+}

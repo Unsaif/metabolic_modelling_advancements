@@ -1,0 +1,848 @@
+{
+  "created_utc": "2026-09-06T12:15:21.201422+00:00",
+  "analysis_role": "post-outcome source-driven hypothesis development",
+  "scope": "Saved-model and gene-annotation metadata only; no numeric fitness values, optimization, or model intervention.",
+  "input_sha256": {
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/model.xml.gz": "4ee05b6b43f87fc0baa248654013973179e0ac89153e1fa2948e443a1e4dd34d",
+    "results/quinone_repair_2026_09_06/runs/main/curated_path_template/gene_map.json": "9eb29c368602debd13d2ef6775d052c3a5c7480574c54c3a315d1bc2ce8a7885",
+    "data/fitness_browser/Putida/genes.tsv": "b282bbd77a0998cf286d2514fa137f6fe723300ec1271d7a8451b0390c6cf13e"
+  },
+  "gene_annotation": [
+    {
+      "locusId": "PP_1777",
+      "sysName": "PP_1777",
+      "scaffoldId": "AE015451",
+      "begin": "1985382",
+      "end": "1986743",
+      "strand": "+",
+      "type": "1",
+      "desc": "phosphomannomutase"
+    },
+    {
+      "locusId": "PP_4248",
+      "sysName": "PP_4248",
+      "scaffoldId": "AE015451",
+      "begin": "4834852",
+      "end": "4835136",
+      "strand": "+",
+      "type": "1",
+      "desc": "conserved protein of unknown function, UPF0345 family"
+    }
+  ],
+  "model_gene_identities": {
+    "PP_4248": [],
+    "PP_1777": [
+      "NP_743933_1"
+    ]
+  },
+  "metabolite_adjacency": {
+    "ahcys_c": {
+      "present": true,
+      "reactions": [
+        {
+          "id": "AHCYSNS",
+          "name": "S-adenosylhomocysteine nucleosidase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "ahcys_c + h2o_c --> ade_c + rhcys_c",
+          "metabolites": {
+            "ahcys_c": -1.0,
+            "h2o_c": -1.0,
+            "ade_c": 1.0,
+            "rhcys_c": 1.0
+          },
+          "gene_rule": "NP_745397_1",
+          "loci": [
+            "PP_3254"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "AHCi",
+          "name": "Adenosylhomocysteinase",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "ahcys_c + h2o_c <=> adn_c + hcys__L_c",
+          "metabolites": {
+            "ahcys_c": -1.0,
+            "h2o_c": -1.0,
+            "adn_c": 1.0,
+            "hcys__L_c": 1.0
+          },
+          "gene_rule": "YP_009237194_1",
+          "loci": [
+            "PP_4976"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "AMMQLT8",
+          "name": "S-adenosylmethione:2-demthylmenaquinole methyltransferase (menaquinone 8)",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "2dmmql8_c + amet_c --> ahcys_c + h_c + mql8_c",
+          "metabolites": {
+            "2dmmql8_c": -1.0,
+            "amet_c": -1.0,
+            "ahcys_c": 1.0,
+            "h_c": 1.0,
+            "mql8_c": 1.0
+          },
+          "gene_rule": "NP_747113_1",
+          "loci": [
+            "PP_5011"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "AMMQT8_2",
+          "name": "S-adenosylmethione:2-demethylmenaquinone methyltransferase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "2dmmq8_c + amet_c --> ahcys_c + h_c + mqn8_c",
+          "metabolites": {
+            "2dmmq8_c": -1.0,
+            "amet_c": -1.0,
+            "ahcys_c": 1.0,
+            "h_c": 1.0,
+            "mqn8_c": 1.0
+          },
+          "gene_rule": "NP_744234_1 or NP_747113_1",
+          "loci": [
+            "PP_2084",
+            "PP_5011"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "DMQMT",
+          "name": "3-Dimethylubiquinonol 3-methyltransferase",
+          "bounds": [
+            0.0,
+            999999.0
+          ],
+          "equation": "2omhmbl_c + amet_c --> ahcys_c + h_c + q8h2_c",
+          "metabolites": {
+            "2omhmbl_c": -1.0,
+            "amet_c": -1.0,
+            "q8h2_c": 1.0,
+            "ahcys_c": 1.0,
+            "h_c": 1.0
+          },
+          "gene_rule": "PP_1765",
+          "loci": [
+            "PP_1765"
+          ],
+          "annotation": {
+            "sbo": "SBO:0000176",
+            "bigg.reaction": "DMQMT",
+            "biocyc": "META:DHHB-METHYLTRANSFER-RXN",
+            "ec-code": "2.1.1.64",
+            "metanetx.reaction": "MNXR97527",
+            "rhea": [
+              "28682",
+              "28680",
+              "28679",
+              "28681"
+            ],
+            "seed.reaction": "rxn08353"
+          }
+        },
+        {
+          "id": "HCYSMT",
+          "name": "Homocysteine S-methyltransferase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "amet_c + hcys__L_c --> ahcys_c + h_c + met__L_c",
+          "metabolites": {
+            "amet_c": -1.0,
+            "hcys__L_c": -1.0,
+            "ahcys_c": 1.0,
+            "h_c": 1.0,
+            "met__L_c": 1.0
+          },
+          "gene_rule": "NP_742819_1 or NP_744920_1",
+          "loci": [
+            "PP_0658",
+            "PP_2776"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "OHPHM",
+          "name": "2-octaprenyl-6-hydroxyphenol methylase",
+          "bounds": [
+            0.0,
+            999999.0
+          ],
+          "equation": "2ohph_c + amet_c --> 2omph_c + ahcys_c + h_c",
+          "metabolites": {
+            "2ohph_c": -1.0,
+            "amet_c": -1.0,
+            "2omph_c": 1.0,
+            "ahcys_c": 1.0,
+            "h_c": 1.0
+          },
+          "gene_rule": "PP_1765",
+          "loci": [
+            "PP_1765"
+          ],
+          "annotation": {
+            "sbo": "SBO:0000176",
+            "bigg.reaction": "OHPHM",
+            "biocyc": "META:2-OCTAPRENYL-6-OHPHENOL-METHY-RXN",
+            "ec-code": "2.1.1.222",
+            "kegg.reaction": "R04988",
+            "metanetx.reaction": "MNXR102170",
+            "rhea": [
+              "27772",
+              "27773",
+              "27771",
+              "27770"
+            ],
+            "seed.reaction": "rxn03395"
+          }
+        },
+        {
+          "id": "OMBZLM",
+          "name": "2-Octaprenyl-6-methoxy-benzoquinol methylase",
+          "bounds": [
+            0.0,
+            999999.0
+          ],
+          "equation": "2ombzl_c + amet_c --> 2ommbl_c + ahcys_c + h_c",
+          "metabolites": {
+            "2ombzl_c": -1.0,
+            "amet_c": -1.0,
+            "2ommbl_c": 1.0,
+            "ahcys_c": 1.0,
+            "h_c": 1.0
+          },
+          "gene_rule": "NP_747113_1",
+          "loci": [
+            "PP_5011"
+          ],
+          "annotation": {
+            "sbo": "SBO:0000176",
+            "bigg.reaction": "OMBZLM",
+            "biocyc": "META:2-OCTAPRENYL-METHOXY-BENZOQ-METH-RXN",
+            "ec-code": "2.1.1.201",
+            "metanetx.reaction": "MNXR115030",
+            "rhea": [
+              "27774",
+              "27777",
+              "27776",
+              "27775"
+            ],
+            "seed.reaction": "rxn09039"
+          }
+        },
+        {
+          "id": "UPP3MT",
+          "name": "Uroporphyrinogen methyltransferase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "2.0 amet_c + uppg3_c --> 2.0 ahcys_c + dscl_c + h_c",
+          "metabolites": {
+            "amet_c": -2.0,
+            "uppg3_c": -1.0,
+            "ahcys_c": 2.0,
+            "dscl_c": 1.0,
+            "h_c": 1.0
+          },
+          "gene_rule": "NP_742357_1 or NP_744240_1 or NP_746129_1",
+          "loci": [
+            "PP_0188",
+            "PP_2090",
+            "PP_3999"
+          ],
+          "annotation": {}
+        }
+      ]
+    },
+    "rhcys_c": {
+      "present": true,
+      "reactions": [
+        {
+          "id": "AHCYSNS",
+          "name": "S-adenosylhomocysteine nucleosidase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "ahcys_c + h2o_c --> ade_c + rhcys_c",
+          "metabolites": {
+            "ahcys_c": -1.0,
+            "h2o_c": -1.0,
+            "ade_c": 1.0,
+            "rhcys_c": 1.0
+          },
+          "gene_rule": "NP_745397_1",
+          "loci": [
+            "PP_3254"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "RHCYS",
+          "name": "5 deoxyribos 5 ylhomocysteinase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h2o_c + rhcys_c --> hcys__L_c + rib__D_c",
+          "metabolites": {
+            "h2o_c": -1.0,
+            "rhcys_c": -1.0,
+            "hcys__L_c": 1.0,
+            "rib__D_c": 1.0
+          },
+          "gene_rule": "",
+          "loci": [],
+          "annotation": {}
+        }
+      ]
+    },
+    "adn_c": {
+      "present": true,
+      "reactions": [
+        {
+          "id": "ADA",
+          "name": "Adenosine deaminase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "adn_c + h2o_c + h_c --> ins_c + nh4_c",
+          "metabolites": {
+            "adn_c": -1.0,
+            "h_c": -1.0,
+            "h2o_c": -1.0,
+            "ins_c": 1.0,
+            "nh4_c": 1.0
+          },
+          "gene_rule": "NP_742754_1",
+          "loci": [
+            "PP_0591"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "ADNt2",
+          "name": "Adenosine transport in via proton symport",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "adn_e + h_e --> adn_c + h_c",
+          "metabolites": {
+            "adn_e": -1.0,
+            "h_e": -1.0,
+            "adn_c": 1.0,
+            "h_c": 1.0
+          },
+          "gene_rule": "NP_745777_1",
+          "loci": [
+            "PP_3641"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "AHCi",
+          "name": "Adenosylhomocysteinase",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "ahcys_c + h2o_c <=> adn_c + hcys__L_c",
+          "metabolites": {
+            "ahcys_c": -1.0,
+            "h2o_c": -1.0,
+            "adn_c": 1.0,
+            "hcys__L_c": 1.0
+          },
+          "gene_rule": "YP_009237194_1",
+          "loci": [
+            "PP_4976"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "NTD7",
+          "name": "5'-nucleotidase (AMP)",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "amp_c + h2o_c --> adn_c + pi_c",
+          "metabolites": {
+            "amp_c": -1.0,
+            "h2o_c": -1.0,
+            "adn_c": 1.0,
+            "pi_c": 1.0
+          },
+          "gene_rule": "NP_743777_1",
+          "loci": [
+            "PP_1620"
+          ],
+          "annotation": {}
+        }
+      ]
+    },
+    "ins_c": {
+      "present": true,
+      "reactions": [
+        {
+          "id": "ADA",
+          "name": "Adenosine deaminase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "adn_c + h2o_c + h_c --> ins_c + nh4_c",
+          "metabolites": {
+            "adn_c": -1.0,
+            "h_c": -1.0,
+            "h2o_c": -1.0,
+            "ins_c": 1.0,
+            "nh4_c": 1.0
+          },
+          "gene_rule": "NP_742754_1",
+          "loci": [
+            "PP_0591"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "INSH",
+          "name": "Inosine hydrolase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h2o_c + ins_c --> hxan_c + rib__D_c",
+          "metabolites": {
+            "h2o_c": -1.0,
+            "ins_c": -1.0,
+            "hxan_c": 1.0,
+            "rib__D_c": 1.0
+          },
+          "gene_rule": "NP_744608_1",
+          "loci": [
+            "PP_2460"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "INSt2",
+          "name": "Inosine transport in via proton symport",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h_e + ins_e --> h_c + ins_c",
+          "metabolites": {
+            "h_e": -1.0,
+            "ins_e": -1.0,
+            "h_c": 1.0,
+            "ins_c": 1.0
+          },
+          "gene_rule": "NP_745777_1",
+          "loci": [
+            "PP_3641"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "NTD11",
+          "name": "5'-nucleotidase (IMP)",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h2o_c + imp_c --> ins_c + pi_c",
+          "metabolites": {
+            "h2o_c": -1.0,
+            "imp_c": -1.0,
+            "ins_c": 1.0,
+            "pi_c": 1.0
+          },
+          "gene_rule": "NP_743777_1",
+          "loci": [
+            "PP_1620"
+          ],
+          "annotation": {}
+        }
+      ]
+    },
+    "rib__D_c": {
+      "present": true,
+      "reactions": [
+        {
+          "id": "GNNUC",
+          "name": "Gnnuc",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "gsn_c + h2o_c --> gua_c + rib__D_c",
+          "metabolites": {
+            "gsn_c": -1.0,
+            "h2o_c": -1.0,
+            "gua_c": 1.0,
+            "rib__D_c": 1.0
+          },
+          "gene_rule": "NP_744608_1",
+          "loci": [
+            "PP_2460"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "INSH",
+          "name": "Inosine hydrolase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h2o_c + ins_c --> hxan_c + rib__D_c",
+          "metabolites": {
+            "h2o_c": -1.0,
+            "ins_c": -1.0,
+            "hxan_c": 1.0,
+            "rib__D_c": 1.0
+          },
+          "gene_rule": "NP_744608_1",
+          "loci": [
+            "PP_2460"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "RBK",
+          "name": "Ribokinase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "atp_c + rib__D_c --> adp_c + h_c + r5p_c",
+          "metabolites": {
+            "atp_c": -1.0,
+            "rib__D_c": -1.0,
+            "adp_c": 1.0,
+            "h_c": 1.0,
+            "r5p_c": 1.0
+          },
+          "gene_rule": "NP_744606_1",
+          "loci": [
+            "PP_2458"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "RHCYS",
+          "name": "5 deoxyribos 5 ylhomocysteinase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h2o_c + rhcys_c --> hcys__L_c + rib__D_c",
+          "metabolites": {
+            "h2o_c": -1.0,
+            "rhcys_c": -1.0,
+            "hcys__L_c": 1.0,
+            "rib__D_c": 1.0
+          },
+          "gene_rule": "",
+          "loci": [],
+          "annotation": {}
+        },
+        {
+          "id": "RIBabcpp",
+          "name": "D-ribose transport via ABC system (periplasm)",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "atp_c + h2o_c + rib__D_p --> adp_c + h_c + pi_c + rib__D_c",
+          "metabolites": {
+            "atp_c": -1.0,
+            "h2o_c": -1.0,
+            "rib__D_p": -1.0,
+            "adp_c": 1.0,
+            "h_c": 1.0,
+            "pi_c": 1.0,
+            "rib__D_c": 1.0
+          },
+          "gene_rule": "NP_744602_1 and NP_744603_1 and NP_744604_1 and NP_744607_1",
+          "loci": [
+            "PP_2454",
+            "PP_2455",
+            "PP_2456",
+            "PP_2459"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "XTSNH",
+          "name": "Xanthosine hydrolase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h2o_c + xtsn_c --> rib__D_c + xan_c",
+          "metabolites": {
+            "h2o_c": -1.0,
+            "xtsn_c": -1.0,
+            "rib__D_c": 1.0,
+            "xan_c": 1.0
+          },
+          "gene_rule": "NP_744608_1",
+          "loci": [
+            "PP_2460"
+          ],
+          "annotation": {}
+        }
+      ]
+    },
+    "r1p_c": {
+      "present": true,
+      "reactions": [
+        {
+          "id": "NP1",
+          "name": "NP1",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h_c + nac_c + r1p_c --> nicrns_c + pi_c",
+          "metabolites": {
+            "h_c": -1.0,
+            "nac_c": -1.0,
+            "r1p_c": -1.0,
+            "pi_c": 1.0,
+            "nicrns_c": 1.0
+          },
+          "gene_rule": "",
+          "loci": [],
+          "annotation": {}
+        },
+        {
+          "id": "PNP",
+          "name": "Purine nucleoside phosphorylase",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "pi_c + rnam_c <=> h_c + ncam_c + r1p_c",
+          "metabolites": {
+            "pi_c": -1.0,
+            "rnam_c": -1.0,
+            "h_c": 1.0,
+            "ncam_c": 1.0,
+            "r1p_c": 1.0
+          },
+          "gene_rule": "",
+          "loci": [],
+          "annotation": {}
+        },
+        {
+          "id": "PPM",
+          "name": "Phosphopentomutase",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "r1p_c <=> r5p_c",
+          "metabolites": {
+            "r1p_c": -1.0,
+            "r5p_c": 1.0
+          },
+          "gene_rule": "NP_743933_1",
+          "loci": [
+            "PP_1777"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "PYNP2r",
+          "name": "Pyrimidine-nucleoside phosphorylase (uracil)",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "pi_c + uri_c <=> r1p_c + ura_c",
+          "metabolites": {
+            "pi_c": -1.0,
+            "uri_c": -1.0,
+            "r1p_c": 1.0,
+            "ura_c": 1.0
+          },
+          "gene_rule": "",
+          "loci": [],
+          "annotation": {}
+        }
+      ]
+    },
+    "r5p_c": {
+      "present": true,
+      "reactions": [
+        {
+          "id": "AMPN",
+          "name": "AMP nucleosidase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "amp_c + h2o_c --> ade_c + r5p_c",
+          "metabolites": {
+            "amp_c": -1.0,
+            "h2o_c": -1.0,
+            "ade_c": 1.0,
+            "r5p_c": 1.0
+          },
+          "gene_rule": "NP_746884_2",
+          "loci": [
+            "PP_4779"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "NMNN",
+          "name": "NMN nucleosidase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "h2o_c + nmn_c --> h_c + ncam_c + r5p_c",
+          "metabolites": {
+            "h2o_c": -1.0,
+            "nmn_c": -1.0,
+            "h_c": 1.0,
+            "ncam_c": 1.0,
+            "r5p_c": 1.0
+          },
+          "gene_rule": "",
+          "loci": [],
+          "annotation": {}
+        },
+        {
+          "id": "PPM",
+          "name": "Phosphopentomutase",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "r1p_c <=> r5p_c",
+          "metabolites": {
+            "r1p_c": -1.0,
+            "r5p_c": 1.0
+          },
+          "gene_rule": "NP_743933_1",
+          "loci": [
+            "PP_1777"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "PRPPS",
+          "name": "Phosphoribosylpyrophosphate synthetase",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "atp_c + r5p_c <=> amp_c + h_c + prpp_c",
+          "metabolites": {
+            "atp_c": -1.0,
+            "r5p_c": -1.0,
+            "amp_c": 1.0,
+            "h_c": 1.0,
+            "prpp_c": 1.0
+          },
+          "gene_rule": "NP_742883_1",
+          "loci": [
+            "PP_0722"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "RBK",
+          "name": "Ribokinase",
+          "bounds": [
+            0.0,
+            1000.0
+          ],
+          "equation": "atp_c + rib__D_c --> adp_c + h_c + r5p_c",
+          "metabolites": {
+            "atp_c": -1.0,
+            "rib__D_c": -1.0,
+            "adp_c": 1.0,
+            "h_c": 1.0,
+            "r5p_c": 1.0
+          },
+          "gene_rule": "NP_744606_1",
+          "loci": [
+            "PP_2458"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "RPI",
+          "name": "Ribose-5-phosphate isomerase",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "r5p_c <=> ru5p__D_c",
+          "metabolites": {
+            "r5p_c": -1.0,
+            "ru5p__D_c": 1.0
+          },
+          "gene_rule": "NP_747251_1",
+          "loci": [
+            "PP_5150"
+          ],
+          "annotation": {}
+        },
+        {
+          "id": "TKT1",
+          "name": "Transketolase",
+          "bounds": [
+            -1000.0,
+            1000.0
+          ],
+          "equation": "r5p_c + xu5p__D_c <=> g3p_c + s7p_c",
+          "metabolites": {
+            "r5p_c": -1.0,
+            "xu5p__D_c": -1.0,
+            "g3p_c": 1.0,
+            "s7p_c": 1.0
+          },
+          "gene_rule": "NP_747068_1",
+          "loci": [
+            "PP_4965"
+          ],
+          "annotation": {}
+        }
+      ]
+    }
+  },
+  "interpretation": [
+    "The existing PPM reaction assigned to PP_1777 connects ribose-1-phosphate and ribose-5-phosphate in both directions.",
+    "The existing reactions involving ribose-1-phosphate do not include adenosine or inosine phosphorolysis.",
+    "PP_4248 has no mapped identity in this saved model; its local historical gene annotation reports a conserved UPF0345 protein of unknown function.",
+    "These are model-content observations. They do not establish an enzyme assignment, flux feasibility, physiological activity, or a validated repair. External source evidence is recorded separately."
+  ]
+}
