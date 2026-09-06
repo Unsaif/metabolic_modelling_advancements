@@ -8,10 +8,11 @@ Two AUC-PR conventions are provided because they answer different questions:
   the experimental fitness ranking recovers the model's no-growth calls without
   choosing a fitness cutoff.
 * `aucpr_standard` is the conventional direction: the experimental phenotype
-  (fitness < fit_thresh => 'important') is the label and the model's growth ratio
-  (negated) is the score. Because FBA growth ratios are close to binary this is
-  mostly a precision/recall summary of a binary predictor, which is why MCC and
-  balanced accuracy at fixed thresholds are reported alongside.
+  (fitness < fit_thresh => 'important') is the label and the model's growth
+  prediction (negated) is the score. The generic protocol passes absolute biomass
+  flux, not a wild-type-normalized ratio: pooled rankings therefore depend on
+  growth-rate scales across media and on numerical ties. MCC and balanced
+  accuracy at fixed thresholds are reported alongside.
 
 Bootstrap CIs resample *genes* (rows) with replacement, because the conditions of
 one gene are not independent observations.
@@ -25,39 +26,45 @@ from sklearn.metrics import (auc, average_precision_score, matthews_corrcoef,
                              precision_recall_curve, roc_auc_score)
 
 
+def _finite_pairs(sim: np.ndarray, fit: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
+    """Mask observations before thresholding: NaN is an unknown, not a phenotype."""
+    sim = np.asarray(sim, dtype=float)
+    fit = np.asarray(fit, dtype=float)
+    if sim.shape != fit.shape:
+        raise ValueError("simulation and fitness arrays must have identical shapes")
+    valid = np.isfinite(sim) & np.isfinite(fit)
+    return sim[valid], fit[valid]
+
+
 def aucpr_bernstein(sim: np.ndarray, fit: np.ndarray, sim_thresh: float = 1e-3) -> float:
-    y = (sim > sim_thresh).astype(int).ravel()       # 1 = predicted growth, 0 = predicted no growth
-    score = -np.asarray(fit, dtype=float).ravel()     # more negative fitness -> higher score
-    ok = np.isfinite(score)
-    if y[ok].min() == y[ok].max():
+    sim, fit = _finite_pairs(sim, fit)
+    y = (sim >= sim_thresh).astype(int)  # 1 = growth; threshold matches the protocol
+    if y.size == 0 or y.min() == y.max():
         return float("nan")
-    pre, rec, _ = precision_recall_curve(y[ok], score[ok], pos_label=0)
+    pre, rec, _ = precision_recall_curve(y, -fit, pos_label=0)
     return float(auc(rec, pre))
 
 
 def aucpr_standard(sim: np.ndarray, fit: np.ndarray, fit_thresh: float = -2.0) -> float:
-    label = (np.asarray(fit, dtype=float).ravel() < fit_thresh).astype(int)  # 1 = experimentally important
-    score = -np.asarray(sim, dtype=float).ravel()                           # lower growth -> higher score
-    ok = np.isfinite(label) & np.isfinite(score)
-    if label[ok].min() == label[ok].max():
+    sim, fit = _finite_pairs(sim, fit)
+    label = (fit < fit_thresh).astype(int)
+    if label.size == 0 or label.min() == label.max():
         return float("nan")
-    return float(average_precision_score(label[ok], score[ok]))
+    return float(average_precision_score(label, -sim))
 
 
 def auroc_standard(sim: np.ndarray, fit: np.ndarray, fit_thresh: float = -2.0) -> float:
-    label = (np.asarray(fit, dtype=float).ravel() < fit_thresh).astype(int)
-    score = -np.asarray(sim, dtype=float).ravel()
-    ok = np.isfinite(score)
-    if label[ok].min() == label[ok].max():
+    sim, fit = _finite_pairs(sim, fit)
+    label = (fit < fit_thresh).astype(int)
+    if label.size == 0 or label.min() == label.max():
         return float("nan")
-    return float(roc_auc_score(label[ok], score[ok]))
+    return float(roc_auc_score(label, -sim))
 
 
 def confusion(sim: np.ndarray, fit: np.ndarray, sim_thresh: float = 1e-3, fit_thresh: float = -2.0) -> Dict[str, int]:
-    pred_growth = (np.asarray(sim).ravel() > sim_thresh)
-    exp_growth = (np.asarray(fit, dtype=float).ravel() >= fit_thresh)
-    ok = np.isfinite(np.asarray(fit, dtype=float).ravel())
-    pred_growth, exp_growth = pred_growth[ok], exp_growth[ok]
+    sim, fit = _finite_pairs(sim, fit)
+    pred_growth = sim >= sim_thresh
+    exp_growth = fit >= fit_thresh
     tp = int(np.sum(pred_growth & exp_growth))      # growth predicted and observed
     tn = int(np.sum(~pred_growth & ~exp_growth))    # no growth predicted and observed
     fp = int(np.sum(pred_growth & ~exp_growth))     # growth predicted, not observed (model too permissive)
@@ -66,10 +73,10 @@ def confusion(sim: np.ndarray, fit: np.ndarray, sim_thresh: float = 1e-3, fit_th
 
 
 def mcc(sim: np.ndarray, fit: np.ndarray, sim_thresh: float = 1e-3, fit_thresh: float = -2.0) -> float:
-    pred = (np.asarray(sim).ravel() > sim_thresh).astype(int)
-    lab = (np.asarray(fit, dtype=float).ravel() >= fit_thresh).astype(int)
-    ok = np.isfinite(np.asarray(fit, dtype=float).ravel())
-    return float(matthews_corrcoef(lab[ok], pred[ok]))
+    sim, fit = _finite_pairs(sim, fit)
+    if sim.size == 0:
+        return float("nan")
+    return float(matthews_corrcoef(fit >= fit_thresh, sim >= sim_thresh))
 
 
 def balanced_accuracy(sim: np.ndarray, fit: np.ndarray, sim_thresh: float = 1e-3, fit_thresh: float = -2.0) -> float:
@@ -89,10 +96,14 @@ def bootstrap_ci(metric: Callable[[np.ndarray, np.ndarray], float], sim: np.ndar
                  n_boot: int = 1000, seed: int = 0, alpha: float = 0.05) -> Tuple[float, float, float]:
     """Percentile bootstrap over genes (rows). Returns (point, lower, upper)."""
     sim = np.asarray(sim); fit = np.asarray(fit, dtype=float)
+    if sim.shape != fit.shape or sim.ndim not in (1, 2):
+        raise ValueError("bootstrap expects matching one- or two-dimensional arrays")
     if sim.ndim == 1:
         sim = sim[:, None]; fit = fit[:, None]
     rng = np.random.default_rng(seed)
     point = metric(sim, fit)
+    if sim.shape[0] == 0:
+        return point, float("nan"), float("nan")
     vals = []
     n = sim.shape[0]
     for _ in range(n_boot):

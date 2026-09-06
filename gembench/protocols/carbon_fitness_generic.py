@@ -118,7 +118,8 @@ def run(model: cobra.Model, org: FitnessBrowserOrganism, conditions: List[Condit
     from ..checks import energy_from_nothing
     egc = {k: v for k, v in energy_from_nothing(model).items() if v > 1e-6}
     if egc:
-        print(f"  WARNING [{org.org_id}/{model.id}] energy-generating cycle after medium completion: {egc}", flush=True)
+        raise ValueError(f"[{org.org_id}/{model.id}] Energy-generating cycle after model preparation: {egc}; "
+                         "repair the model before scoring gene fitness")
 
     # 3. rich-medium essentials
     dropped_rich: List[str] = []
@@ -164,7 +165,7 @@ def run(model: cobra.Model, org: FitnessBrowserOrganism, conditions: List[Condit
                 else:
                     absent.append(ex_id)
             missing_carbon[c.key] = absent
-            wt[j] = _nan0(model.slim_optimize())
+            wt[j] = _growth_value(model.slim_optimize(), model.solver.status, f"wild type in {c.key}")
             if wt[j] >= p.growth_threshold and model_genes:
                 res = single_gene_deletion(model, model_genes, processes=p.processes)
                 growth = _growth_by_gene(res, model_genes)
@@ -220,14 +221,22 @@ def complete_medium_transport(model: cobra.Model, media_names: List[str], exclud
     return added
 
 
-def _nan0(x) -> float:
-    return 0.0 if (x is None or (isinstance(x, float) and np.isnan(x))) else float(x)
+def _growth_value(value, status: str, context: str) -> float:
+    if status == "infeasible":
+        return 0.0
+    if status != "optimal" or value is None or not np.isfinite(value):
+        raise RuntimeError(f"Growth optimization failed for {context}: solver status {status}")
+    return float(value)
 
 
 def _growth_by_gene(res, genes: List[str]) -> Dict[str, float]:
     out: Dict[str, float] = {}
-    for ids, g in zip(res["ids"], res["growth"]):
-        out[next(iter(ids))] = _nan0(g)
-    for g in genes:
-        out.setdefault(g, 0.0)
+    for ids, g, status in zip(res["ids"], res["growth"], res["status"]):
+        if len(ids) != 1:
+            raise RuntimeError(f"Expected a single-gene deletion result; received {ids}")
+        gid = next(iter(ids))
+        out[gid] = _growth_value(g, status, f"gene deletion {gid}")
+    missing = set(genes) - out.keys()
+    if missing:
+        raise RuntimeError(f"Missing gene deletion results: {sorted(missing)}")
     return out

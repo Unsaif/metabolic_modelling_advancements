@@ -1,0 +1,191 @@
+{
+  "audit_date": "2026-09-06",
+  "validation_status": "not_valid_for_biological_or_published_protocol_claims",
+  "scope": "Read-only audit of archived IEM predictions; original numerical files are preserved. This is not a rerun or corrected biological accuracy estimate.",
+  "source_files": [
+    {
+      "path": "results/wbm_iem/Harvey_1_03d_iem_results.json",
+      "sha256": "1a606cc0a7d3c287aaac5c5290675a358bd3cff2b1def8c4ad5181315478b0e6",
+      "n_iem_records": 38,
+      "n_biomarker_records": 157,
+      "stored_n_correct": 130
+    },
+    {
+      "path": "results/wbm_iem/Harvey_1_03d_iem_results_shard2.json",
+      "sha256": "32f460d12f0ab05d24d61a42b4c3d6fac0bbf0a1b019775d2b2aada5ad841fb7",
+      "n_iem_records": 7,
+      "n_biomarker_records": 29,
+      "stored_n_correct": 29
+    }
+  ],
+  "archive_counts": {
+    "n_iem_records": 45,
+    "n_biomarker_records": 186,
+    "stored_n_correct": 159,
+    "n_pairs_with_both_statuses_optimal": 183,
+    "n_pairs_with_nonoptimal_status": 3,
+    "n_records_in_corrected_active_protocol": 41
+  },
+  "stale_summary_counts": {
+    "n_iems_run": 63,
+    "n_biomarkers_scored": 19,
+    "n_correct": 16,
+    "accuracy": 0.8421052631578947
+  },
+  "corrected_protocol": {
+    "path": "data/iem/iem_protocol_v0.2.json",
+    "n_active_iems": 57,
+    "n_biomarker_entries": 252,
+    "source_git_blob_sha1": "31d3d27cc297e4e59feefe2c9b2018d5e3688e58",
+    "source_url": "https://github.com/opencobra/cobratoolbox/blob/master/src/analysis/wholeBody/PSCMToolbox/runIEM_HH.m",
+    "source_blob_api_url": "https://api.github.com/repos/opencobra/cobratoolbox/git/blobs/31d3d27cc297e4e59feefe2c9b2018d5e3688e58"
+  },
+  "disabled_calls_removed": [
+    {
+      "iem": "CRFD",
+      "call_index": 12,
+      "n_biomarkers": 2
+    },
+    {
+      "iem": "GSD6",
+      "call_index": 23,
+      "n_biomarkers": 6
+    },
+    {
+      "iem": "HFI",
+      "call_index": 26,
+      "n_biomarkers": 2
+    },
+    {
+      "iem": "OROA",
+      "call_index": 40,
+      "n_biomarkers": 2
+    },
+    {
+      "iem": "MNGIE",
+      "call_index": 42,
+      "n_biomarkers": 2
+    },
+    {
+      "iem": "MMA",
+      "call_index": 55,
+      "n_biomarkers": 5
+    }
+  ],
+  "commented_rows_removed": [
+    {
+      "iem": "3MGA",
+      "call_index": 5,
+      "n_removed": 2
+    },
+    {
+      "iem": "3MCC",
+      "call_index": 8,
+      "n_removed": 3
+    },
+    {
+      "iem": "BTD",
+      "call_index": 11,
+      "n_removed": 1
+    },
+    {
+      "iem": "ADSL",
+      "call_index": 58,
+      "n_removed": 1
+    },
+    {
+      "iem": "CD",
+      "call_index": 59,
+      "n_removed": 1
+    }
+  ],
+  "nonoptimal_biomarker_pairs": [
+    {
+      "iem": "CPS1",
+      "call_index": 4,
+      "reaction": "EX_5oxpro[u]",
+      "expected": "Increased",
+      "healthy": 0.0,
+      "disease": 0.0,
+      "predicted": "Unchanged",
+      "correct": false,
+      "status_healthy": "Time limit reached",
+      "status_disease": "Time limit reached"
+    },
+    {
+      "iem": "CPS1",
+      "call_index": 4,
+      "reaction": "DM_citr_L[bc]",
+      "expected": "Decreased",
+      "healthy": 0.0,
+      "disease": 0.0,
+      "predicted": "Unchanged",
+      "correct": false,
+      "status_healthy": "Time limit reached",
+      "status_disease": "Time limit reached"
+    },
+    {
+      "iem": "CPS1",
+      "call_index": 4,
+      "reaction": "DM_gln_L[bc]",
+      "expected": "Increased",
+      "healthy": 0.0,
+      "disease": 0.0,
+      "predicted": "Unchanged",
+      "correct": false,
+      "status_healthy": "Time limit reached",
+      "status_disease": "Time limit reached"
+    }
+  ],
+  "sum_cap_counterexamples": [
+    {
+      "iem": "HYPRO1",
+      "vmax_healthy": 115903.17991535075,
+      "source_upper_bound": 100000.0
+    }
+  ],
+  "findings": [
+    "The old parser included six literal if-0 IEM calls and eight commented-out biomarker rows: 63 calls/279 entries instead of 57 active IEMs/252 entries.",
+    "Three CPS1 biomarker pairs with Time limit reached in both states were converted to healthy=0/disease=0 and scored as biological Unchanged. Numerical failure is unknown, not zero.",
+    "Demand sinks persisted between IEMs, although runIEM_HH resets model=modelO for each block. This creates run-order, shard, and resume dependence; simply filtering old result rows does not repair the predictions.",
+    "The Python joint IEM objective omitted the source auxiliary-variable bound of +/-100000. HYPRO1 has archived vmax 115903.17991535075, which is impossible under the source cap.",
+    "Additional source demand reactions that were not scored biomarkers were omitted from the Python setup. The corrected protocol explicitly lists these demands.",
+    "The archived summary is stale and describes 63 attempted IEMs and 19 scored biomarkers, whereas available result shards contain 45 records and 186 biomarker records.",
+    "Physiological and EU average diet preprocessing remains unported, so even the corrected engine on shipped bounds is exploratory.",
+    "The IEM solver hard-coded threads=1 and ignored h.run() errors. Running after another HiGHS instance initialized a different scheduler returned Not Set/NaN. Default threads=0 now cooperates with the process-wide scheduler; run errors raise explicitly.",
+    "The parser omitted direct IEM bound changes and find(ismember(...)) bounds. EP therefore missed its source _XYLUR irreversibility constraint; corrected extraction includes the source per-IEM tweaks."
+  ],
+  "implemented_corrections": [
+    "Solver-status and finite-value gating; failed pairs are NA/unscored",
+    "Temporary demand and reaction-bound isolation with exception-safe cleanup",
+    "Source summed-IEM cap of +/-100000",
+    "Explicit source demand lists and comment/disabled-branch filtering",
+    "New v0.2 protocol/output namespace; resume fingerprint validates model/protocol/settings and retries partial runs",
+    "Strict JSON null for unavailable numbers; accuracy is accompanied by coverage",
+    "Cooperate with existing HiGHS scheduler without resetting global state; report h.run errors",
+    "Extract source per-IEM bounds including direct IEM selections and find(ismember(...))"
+  ],
+  "verification": {
+    "targeted_tests": 17,
+    "command": ".venv/bin/python -m pytest tests/test_wbm_iem.py tests/test_parse_iem_protocol.py tests/test_run_wbm_iem.py -q",
+    "solver": "HiGHS 1.15.1",
+    "full_harvey_rerun_performed": false,
+    "scheduler_integration_regression": "Initializes HiGHS scheduler with 2 threads, verifies default IEM solver reuses it, explicit incompatible threads=1 raises, and previous solver remains usable."
+  },
+  "remaining_limitations": [
+    "Harvey 1.03d model input is absent from this checkout; no full-model rerun was performed.",
+    "Physiological/diet conditions and source-specific numerical fallback behavior require a separately validated port.",
+    "The source extractor handles documented literal and whole-body branches, not arbitrary MATLAB evaluation; future source changes need review.",
+    "Whole-body IEM LPs still lack independently recomputed feasibility/optimality certificates; paired optimum directions alone do not identify metabolite concentrations.",
+    "The broader bile-duct reaction matching and exact-reaction versus substring matching have not been validated against the absent full model."
+  ],
+  "check_iem_source": {
+    "source_url": "https://github.com/opencobra/cobratoolbox/blob/master/src/analysis/wholeBody/PSCMToolbox/checkIEM_WBM.m",
+    "source_git_blob_sha1": "edc042a677f753383f6fae6514209bb849c1b22e",
+    "source_blob_api_url": "https://api.github.com/repos/opencobra/cobratoolbox/git/blobs/edc042a677f753383f6fae6514209bb849c1b22e",
+    "verified_sum_cap_lines": [
+      139,
+      140
+    ]
+  }
+}

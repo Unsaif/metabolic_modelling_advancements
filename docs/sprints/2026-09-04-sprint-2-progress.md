@@ -1,5 +1,7 @@
 # Sprint 2 progress — whole-body models in Python
 
+> **Review status, 6 September 2026:** [The scientific audit](../reviews/2026-09-06-scientific-audit.md) supersedes validation and ATP-synthase scope claims in this historical note. Benchmark gains use development data. Legacy IEM outputs are not validation results; protocol v0.2 requires a fresh run.
+
 **4–5 September 2026 · Status: the whole-body solver work is complete; the full 63-IEM run is in progress after a bug fix (see §2). Numbers below are from completed solves.**
 
 ## 1. Harvey and Harvetta solve with open-source solvers

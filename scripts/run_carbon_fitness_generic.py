@@ -29,7 +29,7 @@ logging.getLogger("cobra").setLevel(logging.ERROR)
 import cobra  # noqa: E402
 
 from gembench import metrics as M  # noqa: E402
-from gembench.cards import BenchmarkCard, LeakageCard, ModelProvenance, now, sha256_of  # noqa: E402
+from gembench.cards import BenchmarkCard, ModelProvenance, carbon_fitness_leakage, now, sha256_of  # noqa: E402
 from gembench.fitness_browser import carbon_source_conditions, load_organism  # noqa: E402
 from gembench.gene_mapping import GeneMap, build_gene_map  # noqa: E402
 from gembench.patches import apply_gpr_patches, apply_model_patches, apply_universe_patches, load_patch_files  # noqa: E402
@@ -45,6 +45,8 @@ CURATED = {"Putida": ("models/bigg/iJN1463.xml", "BiGG iJN1463 (Nogales et al. 2
 
 
 def load_model(org: str, variant: str = "shipped"):
+    if variant == "curated" and org not in CURATED and org != "Keio":
+        raise ValueError(f"No curated model configured for {org}; refusing to label a draft as curated")
     if variant == "curated" and org in CURATED:
         path = os.path.join(ROOT, CURATED[org][0])
         return cobra.io.read_sbml_model(path), path, CURATED[org][1]
@@ -85,7 +87,9 @@ def score(res: P.GenericResult, use_conditions: np.ndarray) -> dict:
     ok_rows = np.isfinite(fit).any(axis=1)
     sim, fit = sim[ok_rows], fit[ok_rows]
     out = {"n_genes": int(sim.shape[0]), "n_conditions": int(sim.shape[1]),
-           "n_gene_condition_pairs": int(np.isfinite(fit).sum())}
+           "n_gene_condition_pairs": int((np.isfinite(sim) & np.isfinite(fit)).sum()),
+           "n_missing_fitness": int((~np.isfinite(fit)).sum()),
+           "n_nonfinite_simulation": int((~np.isfinite(sim)).sum())}
     if sim.size == 0:
         return out
     st, ft = res.params.growth_threshold, res.params.fitness_threshold
@@ -109,7 +113,7 @@ def per_condition(res: P.GenericResult) -> pd.DataFrame:
     st, ft = res.params.growth_threshold, res.params.fitness_threshold
     for j, c in enumerate(res.conditions):
         s, f = res.sim_growth[:, j], res.fitness[:, j]
-        ok = np.isfinite(f)
+        ok = np.isfinite(s) & np.isfinite(f)
         d = {"condition": c.name, "media": c.media, "wt_growth": float(res.wt_growth[j]),
              "n_genes": int(ok.sum())}
         if res.wt_growth[j] >= st and ok.sum() > 0:
@@ -129,6 +133,7 @@ def main() -> None:
     ap.add_argument("--processes", type=int, default=2)
     ap.add_argument("--solver", default="glpk")
     ap.add_argument("--variant", default="shipped", choices=["shipped", "gapfilled", "curated"])
+    ap.add_argument("--output-dir", default=OUT, help="Result root; use a new directory for an audited rerun")
     ap.add_argument("--patch", default=None, help="JSON of universe-level reaction patches to apply (data/reference/universe_patches_*.json)")
     ap.add_argument("--gpr-patch", default=None, help="JSON of per-organism gene-rule patches (data/reference/gpr_patches_*.json)")
     ap.add_argument("--complete-medium-transport", action="store_true", help="add exchange+uptake for medium components the model lacks")
@@ -173,7 +178,7 @@ def main() -> None:
         suffix = ((f"__patched-v{patches['version']}" if patches else "") + (f"+model-v{model_patches['version']}" if model_patches else "")
                   + (f"+gpr-v{gpr_patches['version']}" if gpr_patches else "") + ("+medium" if args.complete_medium_transport else "")
                   + ("__nodroprich" if args.no_drop_rich else ""))
-        outdir = os.path.join(OUT, org, (f"{model.id}__{args.variant}" if org != "Keio" else model.id) + suffix)
+        outdir = os.path.join(args.output_dir, org, (f"{model.id}__{args.variant}" if org != "Keio" else model.id) + suffix)
         os.makedirs(outdir, exist_ok=True)
         grows = res.wt_growth >= params.growth_threshold
         results = {
@@ -201,19 +206,28 @@ def main() -> None:
                       "condition_selection": "expGroup == 'carbon source'; condition_2 empty or DMSO; media with a BiGG mapping; replicates averaged per condition x medium",
                       "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); "
                                  "condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"},
-            leakage=LeakageCard(
-                ground_truth_used_in_model_curation="no for EMBL draft models (automated reconstruction from genome annotation); "
-                                                    "for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly "
-                                                    "(Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
-                ground_truth_public_since="Fitness Browser releases 2015-2018 (Price et al. 2018)",
-                frontier_model_training_exposure="Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
-                held_out_recommendation="unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
-                notes=["Draft models are untouched by any phenotype data, so this is a true prospective test of automated reconstruction."]),
+            leakage=carbon_fitness_leakage(org, args.variant, patched=bool(patches or model_patches or gpr_patches),
+                                          medium_completion=args.complete_medium_transport),
             results=results,
             warnings=[f"{len(unmapped)} of {len(conds)} conditions have no BiGG mapping"] +
                      [f"medium '{m}' components absent from the model: {v}" for m, v in res.missing_medium_components.items() if v and not m.startswith("_")] +
                      ([f"medium completion added exchange+uptake for: {res.missing_medium_components.get('_medium_completion_added')}"] if args.complete_medium_transport else []),
         )
+        # Fingerprint inputs actually available at this run, including patches and code.
+        # The source-model hash alone does not identify the evaluated patched model.
+        paths = {mpath}
+        for part in [args.patch, args.model_patch, args.gpr_patch]:
+            if part:
+                paths.update(os.path.abspath(p) for p in part.split(","))
+        from pathlib import Path
+        for folder, pattern in [("gembench", "*.py"), ("scripts", "*.py"),
+                                (f"data/fitness_browser/{org}", "*"), ("data/reference", "*.tsv")]:
+            paths.update(str(p) for p in (Path(ROOT) / folder).rglob(pattern) if p.is_file())
+        gene_map_path = os.path.join(ROOT, "data", "genpept", f"{org}_genpept_map.tsv")
+        if os.path.isfile(gene_map_path):
+            paths.add(gene_map_path)
+        card.protocol["input_sha256"] = {os.path.relpath(path, ROOT): sha256_of(path) for path in sorted(paths)}
+        card.protocol["evaluation_role"] = "retrospective_development"
         card.write(os.path.join(outdir, "card.json"), os.path.join(outdir, "card.md"))
         np.savez_compressed(os.path.join(outdir, "matrices.npz"), sim_growth=res.sim_growth, wt_growth=res.wt_growth,
                             fitness=res.fitness, model_genes=np.array(res.model_genes), browser_genes=np.array(res.browser_genes),

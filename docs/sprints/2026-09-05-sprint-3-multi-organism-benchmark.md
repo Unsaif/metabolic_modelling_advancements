@@ -1,5 +1,7 @@
 # Sprint 3 — GEM-Bench across organisms: draft models against RB-TnSeq fitness
 
+> **Review status, 6 September 2026:** [The scientific audit](../reviews/2026-09-06-scientific-audit.md) supersedes validation and ATP-synthase scope claims in this historical note. Benchmark gains use development data. Legacy IEM outputs are not validation results; protocol v0.2 requires a fresh run.
+
 **5 September 2026 · Status: complete for the four bacterial organisms below; the whole-body IEM run from Sprint 2 is re-running in the background (see §7). All numbers were recomputed from the saved matrices by an independent script (`scripts/verify_carbon_fitness_multi.py`, zero discrepancies); every run of every arm is tabulated in `results/carbon_fitness_multi/summary_all_runs.tsv` (`scripts/summarise_runs.py`).**
 
 ## 1. What was built

@@ -381,15 +381,24 @@
       "genpept_table": "data/genpept/MR1_genpept_map.tsv"
     },
     "condition_selection": "expGroup == 'carbon source'; condition_2 empty or DMSO; media with a BiGG mapping; replicates averaged per condition x medium",
-    "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows"
+    "scoring": "gene-level metrics pooled over conditions where the wild-type model grows (>= growth_threshold); condition-level recall = fraction of experimentally growing carbon sources on which the wild-type model grows",
+    "reporting_audit": {
+      "date": "2026-09-06",
+      "base_commit": "b1997d3",
+      "note": "Leakage metadata corrected after review. Historical simulations and numeric results were not rerun or altered."
+    },
+    "evaluation_role": "retrospective_development"
   },
   "leakage": {
-    "ground_truth_used_in_model_curation": "no for EMBL draft models (automated reconstruction from genome annotation); for iML1515: partly (E. coli curation used phenotype data); for iJN1463: partly (Nogales et al. 2020 validated against growth phenotypes and gene essentiality data)",
-    "ground_truth_public_since": "Fitness Browser releases 2015-2018 (Price et al. 2018)",
-    "frontier_model_training_exposure": "Fitness Browser tables are public and partly in training corpora; the mapping tables here are new",
-    "held_out_recommendation": "unpublished RB-TnSeq experiments, or organisms added to the Browser after the model's training cut-off",
+    "ground_truth_used_in_model_curation": "yes: these patch sets were developed and accepted/held/rejected using Fitness Browser phenotypes also used for scoring; annotation support does not remove this reuse",
+    "ground_truth_public_since": "Fitness Browser releases include Price et al. 2018; exact dates differ by experiment",
+    "frontier_model_training_exposure": "unknown; public accessibility does not establish inclusion in a particular model's training data",
+    "held_out_recommendation": "Freeze code, media rules and patches before selecting independent data. Use organisms/experiments not inspected during development, or nested evaluation that repeats every data-guided selection step. A retrospective split of already-inspected data does not restore independence.",
     "notes": [
-      "Draft models are untouched by any phenotype data, so this is a true prospective test of automated reconstruction."
+      "Retrospective development evaluation. No independent held-out or prospective test is established.",
+      "Fitness < -2 is an operational importance threshold in a pooled mutant assay, not proof of lethality.",
+      "Compare gene-level scores on matched genes, conditions and finite observations; report wild-type growth coverage separately.",
+      "Medium completion adds assumed gene-less transport; recipe presence alone does not establish uptake or its energy cost."
     ]
   },
   "results": {

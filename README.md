@@ -2,9 +2,11 @@
 
 Working repository for the "Metabolic modelling improvements" project: bringing frontier-model
 effort to constraint-based metabolic modelling, with verification first. Tim Hulshof (Thiele lab,
-University of Galway) and Claude.
+University of Galway), with AI-assisted research and independent review.
 
-Start with **`docs/roadmap/00-landscape-and-roadmap.md`** — the standing charter: where the field
+Start with the **[6 September scientific audit](docs/reviews/2026-09-06-scientific-audit.md)** and its **[reproducible artifacts](results/audit_2026_09_06/)**. The benchmark improvements are retrospective development results; independent validation remains to be done. The IEM port required corrections and its legacy results must not be used as validation.
+
+Then read **`docs/roadmap/00-landscape-and-roadmap.md`** — the standing charter: where the field
 stands in 2026, the diagnosis, the workstreams, the decision log, and the current sprint. The six
 `docs/evidence/` briefs hold the sourced findings behind it; `docs/sprints/` holds the results of
 each sprint.
@@ -35,7 +37,7 @@ external/      (git-ignored) clones of public repositories used as data/model so
 redistributable (HPO, Orphanet XML, Human-GEM, Recon3D, Harvey/Harvetta) is fetched by the
 commands documented there rather than stored here.
 
-## Status (5 September 2026)
+## Historical status (5 September 2026; superseded where noted by the audit)
 
 - E. coli carbon-source fitness benchmark (Bernstein et al. 2023 protocol) reproduced with bootstrap CIs.
 - yeast-GEM 9.1.1 essential-gene test reproduced exactly.
@@ -46,3 +48,18 @@ commands documented there rather than stored here.
 - IEM biomarker protocol ported to Python; full 63-IEM run in progress (shipped bounds; physiological/diet constraints not yet ported).
 - IEM ground truth v0.1: 279 tuples from the lab's benchmark, linked outward; HPO cross-check done.
 - Fitness Browser data for 9 organisms downloaded (5 Sept 2026).
+
+## Reproducing the audit
+
+The audit was tested with Python 3.14 on macOS arm64; `requirements-audit.txt` records the exact installed packages. It is an audit environment snapshot, not a claim of compatibility with every platform or every optional workstream.
+
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-audit.txt
+.venv/bin/python -m pytest -q
+.venv/bin/python scripts/verify_carbon_fitness_multi.py
+.venv/bin/python scripts/audit_saved_results.py
+.venv/bin/python scripts/survey_embl_atp_synthase.py --summarize results/embl_atp_synthase_survey_sample500.tsv
+```
+
+`audit_saved_results.py` recomputes existing arrays into a separate audit directory. `--correct-leakage` corrects historical card metadata only; numerical outputs are preserved. New simulations should use a fresh `--output-dir`, as in `results/audit_2026_09_06/carbon_fitness_multi/`. The corrected IEM runner uses protocol v0.2 and separate outputs; it requires external whole-body model inputs and a fresh run.

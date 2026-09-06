@@ -1,0 +1,119 @@
+{
+  "organism": "MR1",
+  "arm": "Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich",
+  "n_genes": 713,
+  "n_conditions": 12,
+  "wt_growing_conditions": 11,
+  "n_growth_classification_changes": 0,
+  "max_absolute_wt_flux_difference": 6.122213846992963e-12,
+  "max_absolute_knockout_flux_difference": 9.655474197955982e-10,
+  "fitness_equal": true,
+  "archived_metrics": {
+    "n_genes": 713,
+    "n_conditions": 11,
+    "n_gene_condition_pairs": 7843,
+    "aucpr_bernstein": {
+      "point": 0.5319703445081962,
+      "ci95": [
+        0.43273080730656244,
+        0.6392777514958424
+      ]
+    },
+    "aucpr_standard": {
+      "point": 0.513566784733714,
+      "ci95": [
+        0.44258089388688776,
+        0.5859704455845333
+      ]
+    },
+    "auroc_standard": {
+      "point": 0.7280115373145456,
+      "ci95": [
+        0.6933246565910339,
+        0.7628619117794757
+      ]
+    },
+    "mcc": {
+      "point": 0.5291575469135111,
+      "ci95": [
+        0.4615920261034666,
+        0.5966239367763544
+      ]
+    },
+    "balanced_accuracy": {
+      "point": 0.7029624361626781,
+      "ci95": [
+        0.6643291786143182,
+        0.7413554743816188
+      ]
+    },
+    "accuracy": {
+      "point": 0.8856304985337243,
+      "ci95": [
+        0.8663649113859493,
+        0.9043255131964809
+      ]
+    },
+    "confusion": {
+      "tp": 6383,
+      "tn": 563,
+      "fp": 752,
+      "fn": 145
+    }
+  },
+  "audited_metrics": {
+    "n_genes": 713,
+    "n_conditions": 11,
+    "n_gene_condition_pairs": 7843,
+    "n_missing_fitness": 0,
+    "n_nonfinite_simulation": 0,
+    "aucpr_bernstein": {
+      "point": 0.5319703445081962,
+      "ci95": [
+        0.43273080730656244,
+        0.6392777514958424
+      ]
+    },
+    "aucpr_standard": {
+      "point": 0.5119530773659523,
+      "ci95": [
+        0.4372421264502152,
+        0.5848258252437087
+      ]
+    },
+    "auroc_standard": {
+      "point": 0.7273485261500038,
+      "ci95": [
+        0.6929196127126783,
+        0.7634244826670912
+      ]
+    },
+    "mcc": {
+      "point": 0.5291575469135111,
+      "ci95": [
+        0.4615920261034666,
+        0.5966239367763544
+      ]
+    },
+    "balanced_accuracy": {
+      "point": 0.7029624361626781,
+      "ci95": [
+        0.6643291786143182,
+        0.7413554743816188
+      ]
+    },
+    "accuracy": {
+      "point": 0.8856304985337243,
+      "ci95": [
+        0.8663649113859493,
+        0.9043255131964809
+      ]
+    },
+    "confusion": {
+      "tp": 6383,
+      "tn": 563,
+      "fp": 752,
+      "fn": 145
+    }
+  }
+}

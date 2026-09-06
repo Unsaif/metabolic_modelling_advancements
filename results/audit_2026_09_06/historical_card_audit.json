@@ -1,0 +1,742 @@
+{
+  "base_commit": "b1997d3",
+  "n_historical_cards": 49,
+  "runs": [
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml__shipped",
+      "matrix_sha256": "a570ff7ea38ca83b0a63f67894367ac619d703373e2efd504af5ecdae447531a",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 0,
+      "metrics": {
+        "mcc": null,
+        "aucpr_bernstein": null,
+        "aucpr_standard": null,
+        "auroc_standard": null
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled",
+      "matrix_sha256": "0a154b6e2e7bccbb4c010e05102d2c3baa7b68d804f3349c3f0caaec41dc5af2",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 6608,
+      "metrics": {
+        "mcc": 0.48333636599539287,
+        "aucpr_bernstein": 0.4207958043969223,
+        "aucpr_standard": 0.3964408294161528,
+        "auroc_standard": 0.680934872912644
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__nodroprich",
+      "matrix_sha256": "5e01333d5513e0286d999fc4299909f936b1b6ec578497d64e37c1a9b8695097",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 7098,
+      "metrics": {
+        "mcc": 0.5034834834296702,
+        "aucpr_bernstein": 0.47275691000966724,
+        "aucpr_standard": 0.43792732928521355,
+        "auroc_standard": 0.7449533409021682
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1",
+      "matrix_sha256": "767f3b337c2aaaae04abff17c06263c730dc4f02980571ea4ec579419c09041b",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 6608,
+      "metrics": {
+        "mcc": 0.4682931909509015,
+        "aucpr_bernstein": 0.4043088739898625,
+        "aucpr_standard": 0.3814573997929846,
+        "auroc_standard": 0.6780609948233176
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2",
+      "matrix_sha256": "e52e45463927df858c7d817323bcd7a19914f944053f25f0b509640b2392f125",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 6594,
+      "metrics": {
+        "mcc": 0.555376448406969,
+        "aucpr_bernstein": 0.5262221070900049,
+        "aucpr_standard": 0.4705858102207794,
+        "auroc_standard": 0.7156634709996272
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "c678a4ee289a5fb129f337eca137b7247f153184beeac15936c33c47af0fff0e",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 7126,
+      "metrics": {
+        "mcc": 0.560092730080038,
+        "aucpr_bernstein": 0.548745610146751,
+        "aucpr_standard": 0.4861050815571647,
+        "auroc_standard": 0.7779478297915692
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2+0.3__nodroprich",
+      "matrix_sha256": "694e18a64bbcdfdd7fd7af71a61e218fa55ecd017a80c4323dac92ddbf3bd60d",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 7126,
+      "metrics": {
+        "mcc": 0.5535814241238617,
+        "aucpr_bernstein": 0.5436091304431973,
+        "aucpr_standard": 0.4933154740692568,
+        "auroc_standard": 0.77902654097739
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2__nodroprich",
+      "matrix_sha256": "affa0f542595289b503a08cc9cc562660c200bb6f92a4707527b4b5a92aa8809",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 7112,
+      "metrics": {
+        "mcc": 0.5603726909866149,
+        "aucpr_bernstein": 0.5490979085625025,
+        "aucpr_standard": 0.4898531995834434,
+        "auroc_standard": 0.7794447484059228
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.1+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "dbf80d15b6337027309274bd449da33fe16e4fb22b12b45fe8dcea448018a2f1",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 7126,
+      "metrics": {
+        "mcc": 0.560092730080038,
+        "aucpr_bernstein": 0.548745610146751,
+        "aucpr_standard": 0.4600345778445129,
+        "auroc_standard": 0.7784287434039456
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.2+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "6cb657a65e5cdbf1687c39064f5d3058cc750bd298e771e37ad2b92238914f1b",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 7126,
+      "metrics": {
+        "mcc": 0.560092730080038,
+        "aucpr_bernstein": 0.548745610146751,
+        "aucpr_standard": 0.48617802538654065,
+        "auroc_standard": 0.780158848990553
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Btheta/Bacteroides_thetaiotaomicron_VPI_5482_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "matrix_sha256": "50712cfbde267b948b8a8332a10817ce540105b5082493549cb0dd70eb8499ed",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 8160,
+      "metrics": {
+        "mcc": 0.5730972266550152,
+        "aucpr_bernstein": 0.5694308457034167,
+        "aucpr_standard": 0.4710885457578758,
+        "auroc_standard": 0.7875396302607278
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Keio/iML1515",
+      "matrix_sha256": "116c434f582f62445585c449076010430543ec893cc844e7d9f6de068a6adabd",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 42528,
+      "metrics": {
+        "mcc": 0.5979467707330253,
+        "aucpr_bernstein": 0.6127971195004045,
+        "aucpr_standard": 0.48544876027926487,
+        "auroc_standard": 0.7958147614317548
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Keio/iML1515__patched-v0.1",
+      "matrix_sha256": "e00571ed2f864034d2d65f5841c1d382f7898505438cbc4799d78c8dc4aeb607",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 42528,
+      "metrics": {
+        "mcc": 0.6108788863025738,
+        "aucpr_bernstein": 0.6288231372296793,
+        "aucpr_standard": 0.4938518713939732,
+        "auroc_standard": 0.8034111499606357
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Keio/iML1515__patched-v0.1+model-v0.1",
+      "matrix_sha256": "173dd026d051b4bda3be8821a280f8b65c1e3b47751ceaee715aa91cbff9b5bd",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 42528,
+      "metrics": {
+        "mcc": 0.6108788863025738,
+        "aucpr_bernstein": 0.6288231372296793,
+        "aucpr_standard": 0.49969683766365103,
+        "auroc_standard": 0.8035248186308137
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Keio/iML1515__patched-v0.1+model-v0.2",
+      "matrix_sha256": "a4cfbb32498477ff96136e46e17741dc096e3fb4e088e5d14037d360e2ee081c",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 42528,
+      "metrics": {
+        "mcc": 0.6108788863025738,
+        "aucpr_bernstein": 0.6288231372296793,
+        "aucpr_standard": 0.49236375576195507,
+        "auroc_standard": 0.8033447407252235
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml__shipped",
+      "matrix_sha256": "c2b213c831a26637565f94441e4b56065fe7218edf1848efd85b537d69491fd5",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 0,
+      "metrics": {
+        "mcc": null,
+        "aucpr_bernstein": null,
+        "aucpr_standard": null,
+        "auroc_standard": null
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled",
+      "matrix_sha256": "a8dcd81005bd2e781ad3681e6d9df59836ed2b3468cb4e4c7af640135a237a5f",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 5408,
+      "metrics": {
+        "mcc": 0.4112340116344843,
+        "aucpr_bernstein": 0.2979479527927474,
+        "aucpr_standard": 0.378075613809954,
+        "auroc_standard": 0.6356424444376509
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__nodroprich",
+      "matrix_sha256": "7b240fd126213112ae19590ad9d68f3f5836ce0388184a4a3229523a525c02db",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 5704,
+      "metrics": {
+        "mcc": 0.45750456968190467,
+        "aucpr_bernstein": 0.41488264091550453,
+        "aucpr_standard": 0.4453661118235548,
+        "auroc_standard": 0.6919421978594242
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1",
+      "matrix_sha256": "e2f41d9f5e1eb4c1a0e4e9478abb29f079446bcfc980497ce7258c0df9590d80",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 5392,
+      "metrics": {
+        "mcc": 0.4164578996814493,
+        "aucpr_bernstein": 0.3077000587961048,
+        "aucpr_standard": 0.37424611671276875,
+        "auroc_standard": 0.6343347261381111
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2",
+      "matrix_sha256": "2a4b622f9651e5cb5031d63dc9fafb41e7bcb2cf925d22cbfc6871bfd6720225",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 5352,
+      "metrics": {
+        "mcc": 0.46337717025709524,
+        "aucpr_bernstein": 0.39086033459604147,
+        "aucpr_standard": 0.3991777049905222,
+        "auroc_standard": 0.6546924966790342
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "be9379e034b940fd91e539c4a559d1440a216ec6eb22871d45972107740a3881",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 5704,
+      "metrics": {
+        "mcc": 0.5350807813801891,
+        "aucpr_bernstein": 0.5236184053778908,
+        "aucpr_standard": 0.5112359284279256,
+        "auroc_standard": 0.7301178078484745
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2+0.3__nodroprich",
+      "matrix_sha256": "d8d35e3b0495e0f2662db47679e21eab7c200c135edc85cd510dca3f0f57ece8",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 5704,
+      "metrics": {
+        "mcc": 0.5242788889030665,
+        "aucpr_bernstein": 0.5120103805046671,
+        "aucpr_standard": 0.5129685598764632,
+        "auroc_standard": 0.7307162276018979
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2__nodroprich",
+      "matrix_sha256": "c9e99f4599c7bc4d19359e160a70a93e7903c727e6adb4c6ba8266008a8d21d2",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 5704,
+      "metrics": {
+        "mcc": 0.5242788889030665,
+        "aucpr_bernstein": 0.5120103805046671,
+        "aucpr_standard": 0.4979043992241258,
+        "auroc_standard": 0.7308618813552962
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.1+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "bd35522408a498d27c4b8fe8494166b392a3eaefcc466849cf66098a00067839",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 5704,
+      "metrics": {
+        "mcc": 0.5350807813801891,
+        "aucpr_bernstein": 0.5236184053778908,
+        "aucpr_standard": 0.5054801568537552,
+        "auroc_standard": 0.7295560005139383
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.2+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "b6cb736fdb130e816224182f4a6691092c9cf018a1a6a482cd9a7b88ca2f9cb3",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 6417,
+      "metrics": {
+        "mcc": 0.5302451983562092,
+        "aucpr_bernstein": 0.5269256358927283,
+        "aucpr_standard": 0.5163126166937562,
+        "auroc_standard": 0.7276059320547099
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/MR1/Shewanella_oneidensis_MR_1_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "matrix_sha256": "1dc287e3bb1b1de0993d2c2e07bcf40508f3226efd5ea6e4f26210b8a81dc469",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 7843,
+      "metrics": {
+        "mcc": 0.5291575469135111,
+        "aucpr_bernstein": 0.5319703445081962,
+        "aucpr_standard": 0.513566784733714,
+        "auroc_standard": 0.7280115373145456
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml__shipped",
+      "matrix_sha256": "9aab0eaa1637bbd152b1b66e86254da6b20eef6fdcf1817535522a41f399b4f3",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 1021,
+      "metrics": {
+        "mcc": 0.6726750197639055,
+        "aucpr_bernstein": 0.5086932525336387,
+        "aucpr_standard": 0.5958997406280488,
+        "auroc_standard": 0.7406393780739331
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled",
+      "matrix_sha256": "b7b30ceabdc5e0e2ed42ea4989c7a4bbf8333f2d7516f5544ffaed0781aee569",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 28588,
+      "metrics": {
+        "mcc": 0.6207752920748199,
+        "aucpr_bernstein": 0.5489547900498687,
+        "aucpr_standard": 0.4730100698240214,
+        "auroc_standard": 0.718297464607331
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__nodroprich",
+      "matrix_sha256": "ced5aa36e7b1f9f71c6f00ec974daddb5b3120a4b41e2d42bce93911d261b812",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 29064,
+      "metrics": {
+        "mcc": 0.48972114680946605,
+        "aucpr_bernstein": 0.4047766748173721,
+        "aucpr_standard": 0.32975487985463137,
+        "auroc_standard": 0.7112664254361574
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1",
+      "matrix_sha256": "5e4a1ab58542c7d7b86a52c7016bb4726a22b8b5678198a74ff171e92726f730",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 28588,
+      "metrics": {
+        "mcc": 0.6443046286213413,
+        "aucpr_bernstein": 0.5891209891597542,
+        "aucpr_standard": 0.48784259710817096,
+        "auroc_standard": 0.7339283071242353
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2",
+      "matrix_sha256": "19755511d8ba75201ba6900db525e4492c2ac3a7497e83ed20474ed550ef2036",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 28588,
+      "metrics": {
+        "mcc": 0.6807355913219133,
+        "aucpr_bernstein": 0.6238664948000534,
+        "aucpr_standard": 0.5428220687899706,
+        "auroc_standard": 0.7592513117532398
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "6d649f30895762fa81894762a175030b6ee19cafcd6d9a3676cec60da2bda13b",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 29064,
+      "metrics": {
+        "mcc": 0.5458884077991798,
+        "aucpr_bernstein": 0.46705789812570053,
+        "aucpr_standard": 0.38415835003148724,
+        "auroc_standard": 0.7572200600965889
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2+0.3__nodroprich",
+      "matrix_sha256": "3fdaa128208f2421d78b2b85c9401ff74ab0a45a97e50f15b33e569515632c9c",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 29064,
+      "metrics": {
+        "mcc": 0.5403805527807641,
+        "aucpr_bernstein": 0.4624784777730516,
+        "aucpr_standard": 0.37583638807655234,
+        "auroc_standard": 0.7569420422558735
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2__nodroprich",
+      "matrix_sha256": "bc6253565d460eb976d9aceaa08145e2c83f02b33672a49a6894f23f489e034e",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 29064,
+      "metrics": {
+        "mcc": 0.5525138090562178,
+        "aucpr_bernstein": 0.47522085464240893,
+        "aucpr_standard": 0.3862018564902992,
+        "auroc_standard": 0.7512609190921802
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.1+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "e9fad23d63e8640f797a1d8e10be16724478ea04f4c3437f0eb12c341959809f",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 29064,
+      "metrics": {
+        "mcc": 0.5693777060383294,
+        "aucpr_bernstein": 0.49377666665317044,
+        "aucpr_standard": 0.41187006213796384,
+        "auroc_standard": 0.7594440439610269
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.2+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "eab3e0eeb1a8e76add7a107f2c4ac58f33968c611028a4117cea9c8148455d6a",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 29064,
+      "metrics": {
+        "mcc": 0.5693777060383294,
+        "aucpr_bernstein": 0.49377666665317044,
+        "aucpr_standard": 0.4182709517205665,
+        "auroc_standard": 0.7591153281886707
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/Pseudomonas_putida_KT2440_xml_gapfilled__gapfilled__patched-v0.1+model-v0.3+gpr-v0.2+0.3+0.4+medium__nodroprich",
+      "matrix_sha256": "899473727594e9e1fb00eca3eacb9b9bcb3d1340f96f19f2b99019a37a1650fe",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 35598,
+      "metrics": {
+        "mcc": 0.5613730099550528,
+        "aucpr_bernstein": 0.48325729559103753,
+        "aucpr_standard": 0.3925477159020745,
+        "auroc_standard": 0.7600242588706071
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/iJN1463__curated",
+      "matrix_sha256": "89e7a9cf1eff7c10d94cb4b8ab45d174c46ca43f8be1f4fe92d044696cc0d8a3",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 40356,
+      "metrics": {
+        "mcc": 0.48972869431640975,
+        "aucpr_bernstein": 0.47233015857784966,
+        "aucpr_standard": 0.3428738970115837,
+        "auroc_standard": 0.8016704913965896
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Putida/iJN1463__curated__patched-v0.1",
+      "matrix_sha256": "ec6368888dbf931afb6a6e98599540ab0b00a255e138e0385c959615a28bdea3",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 40356,
+      "metrics": {
+        "mcc": 0.5104321169455132,
+        "aucpr_bernstein": 0.5009953950860434,
+        "aucpr_standard": 0.35002560387217935,
+        "auroc_standard": 0.8170263320830541
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml__shipped",
+      "matrix_sha256": "e554ec0e6f0a4215ccc48be6de5c02fa98a22b5ab5923c464846215223fb57af",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 0,
+      "metrics": {
+        "mcc": null,
+        "aucpr_bernstein": null,
+        "aucpr_standard": null,
+        "auroc_standard": null
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled",
+      "matrix_sha256": "6726c458b80204184b031bf0dc9c9200dd01a8969ef897737b969d493dcc8914",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 20097,
+      "metrics": {
+        "mcc": 0.529112114358025,
+        "aucpr_bernstein": 0.47656848101396476,
+        "aucpr_standard": 0.40470031801556816,
+        "auroc_standard": 0.6714873137379446
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__nodroprich",
+      "matrix_sha256": "913b287f165cb4be33ac00f5fe98ecad5b71ab85245eddf2c9f575de45740b52",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 20559,
+      "metrics": {
+        "mcc": 0.5230807254746646,
+        "aucpr_bernstein": 0.4738901932916663,
+        "aucpr_standard": 0.39225554179336164,
+        "auroc_standard": 0.7095280663919838
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1",
+      "matrix_sha256": "8f1001742f8eebce045a0b871e069e530544591b88a09f75959a7f5013ef08af",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 20097,
+      "metrics": {
+        "mcc": 0.5542844548490702,
+        "aucpr_bernstein": 0.4807461131900565,
+        "aucpr_standard": 0.429827968453139,
+        "auroc_standard": 0.6846066324423938
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2",
+      "matrix_sha256": "7c3cb012e5d59bdd8ab9d7e92b57c6d717140f476dca8a4c6827925a59beaa47",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 20034,
+      "metrics": {
+        "mcc": 0.6280381093665964,
+        "aucpr_bernstein": 0.5891940373660133,
+        "aucpr_standard": 0.5087386152911402,
+        "auroc_standard": 0.7325862407816986
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "c24bbec42a172b49009160bad6bc6786d2631db294c2fffb66b06eb70d1bfad7",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 20601,
+      "metrics": {
+        "mcc": 0.65449483252655,
+        "aucpr_bernstein": 0.6282962032293746,
+        "aucpr_standard": 0.5497927273026109,
+        "auroc_standard": 0.7746858893545816
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2+0.3__nodroprich",
+      "matrix_sha256": "cefff12381e35c5a97f96d5ead832af14d2af6ff5ba5cd7899e8932cbbdfab22",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 20601,
+      "metrics": {
+        "mcc": 0.6155152779812332,
+        "aucpr_bernstein": 0.5791913111628567,
+        "aucpr_standard": 0.5158566562598321,
+        "auroc_standard": 0.7721567879589714
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+gpr-v0.2__nodroprich",
+      "matrix_sha256": "db59dd6fd47cf20252211f8622bcc3c7e4c34a0f2799e93201244709f47b4778",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 20559,
+      "metrics": {
+        "mcc": 0.6215641827838034,
+        "aucpr_bernstein": 0.5865418675546723,
+        "aucpr_standard": 0.49865818390310673,
+        "auroc_standard": 0.7712055613600717
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.1+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "e5a230908e804f200e70d6f921d77c0d916cf02b27de604272d670fb4f44a5dc",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 20664,
+      "metrics": {
+        "mcc": 0.6764224454880142,
+        "aucpr_bernstein": 0.6567302733210937,
+        "aucpr_standard": 0.5858876439014992,
+        "auroc_standard": 0.7767554000169636
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    },
+    {
+      "run_dir": "results/carbon_fitness_multi/Smeli/Sinorhizobium_meliloti_1021_xml_gapfilled__gapfilled__patched-v0.1+model-v0.2+gpr-v0.2+0.3+medium__nodroprich",
+      "matrix_sha256": "f8b32669e65eabb37f60e4116434fe808f6ec6fe8e21784e20c931e4f517eb93",
+      "n_nonfinite_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "n_scored_pairs": 21648,
+      "metrics": {
+        "mcc": 0.6804246566262357,
+        "aucpr_bernstein": 0.6639301208071074,
+        "aucpr_standard": 0.5865058995321012,
+        "auroc_standard": 0.7747094754172905
+      },
+      "changed_point_metrics": [],
+      "evaluation_role": "retrospective_development"
+    }
+  ],
+  "note": "Recalculation from saved matrices cannot recover solver statuses discarded by the original pipeline; this is not a rerun or independent validation."
+}

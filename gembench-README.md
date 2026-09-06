@@ -1,5 +1,7 @@
 # GEM-Bench v0 (Sprints 1–3, September 2026)
 
+> Start with [the scientific audit](docs/reviews/2026-09-06-scientific-audit.md). Use `requirements-audit.txt` for the tested environment, a new `--output-dir` for carbon-fitness runs, and the versioned v0.2 IEM protocol. Commands and claims below describe the historical setup where they differ.
+
 A small, explicit benchmark harness for genome-scale metabolic models, built for the
 "Metabolic modelling improvements" project. Every dataset carries provenance and a
 licence note; every protocol exposes its thresholds; every result is written with a

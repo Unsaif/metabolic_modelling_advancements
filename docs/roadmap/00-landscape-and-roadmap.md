@@ -1,5 +1,7 @@
 # Metabolic Modelling Improvements — Landscape and Roadmap
 
+> **Review status, 6 September 2026:** [The scientific audit](../reviews/2026-09-06-scientific-audit.md) supersedes validation and ATP-synthase scope claims in this historical note. Benchmark gains use development data. Legacy IEM outputs are not validation results; protocol v0.2 requires a fresh run.
+
 **Version 1.2 · 5 September 2026 · Status: living document. Version 1.0 was independently fact-checked (20 key claims traced to primary sources) and critiqued before release (decisions D7–D8); version 1.1 recorded Tim's answers to the open questions (decisions D9–D12) and the outcome of Sprint 1; version 1.2 records Sprints 2 and 3 (decisions D13–D16, in the Sprint 3 note) and closes Q6 for the Fitness Browser.**
 
 ## 0. How to use this document

@@ -1,0 +1,74 @@
+{
+  "scope": "New non-boundary reactions introduced by model_patches_v0.4 in the four gapfilled drafts",
+  "interpretation": "All baseline metabolite charge fields are zero. Patches introduce some nonzero charges, so charge imbalance flags reflect inconsistent charge metadata and must not be used to infer incorrect reaction coefficients. All checked additions passed elemental mass balance.",
+  "baseline_charge_counts": {
+    "Btheta": {
+      "0": 1066
+    },
+    "Putida": {
+      "0": 1316
+    },
+    "MR1": {
+      "0": 1362
+    },
+    "Smeli": {
+      "0": 1373
+    }
+  },
+  "exceptions": [
+    {
+      "organism": "Putida",
+      "reaction": "5DH4DGLCD",
+      "equation": "5dh4dglc_c + h_c --> 25dop_c + co2_c + h2o_c",
+      "mass_charge_imbalance": {
+        "charge": -1
+      },
+      "missing_formula_or_charge": []
+    },
+    {
+      "organism": "Putida",
+      "reaction": "DOPDH",
+      "equation": "25dop_c + h2o_c + nadp_c --> akg_c + 2 h_c + nadph_c",
+      "mass_charge_imbalance": {
+        "charge": 1
+      },
+      "missing_formula_or_charge": []
+    },
+    {
+      "organism": "Putida",
+      "reaction": "HXAtex",
+      "equation": "hxa_e <=> hxa_p",
+      "mass_charge_imbalance": {
+        "charge": 1
+      },
+      "missing_formula_or_charge": []
+    },
+    {
+      "organism": "Putida",
+      "reaction": "MBCOAi",
+      "equation": "fad_c + ivcoa_c --> 3mb2coa_c + fadh2_c",
+      "mass_charge_imbalance": {
+        "charge": -4
+      },
+      "missing_formula_or_charge": []
+    },
+    {
+      "organism": "Putida",
+      "reaction": "MCCC",
+      "equation": "3mb2coa_c + atp_c + hco3_c --> 3mgcoa_c + adp_c + h_c + pi_c",
+      "mass_charge_imbalance": {
+        "charge": 4
+      },
+      "missing_formula_or_charge": []
+    },
+    {
+      "organism": "Smeli",
+      "reaction": "TMDPK",
+      "equation": "atp_c + thm_c --> amp_c + h_c + thmpp_c",
+      "mass_charge_imbalance": {
+        "charge": -1.0
+      },
+      "missing_formula_or_charge": []
+    }
+  ]
+}

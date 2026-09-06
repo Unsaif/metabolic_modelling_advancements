@@ -39,6 +39,36 @@ class LeakageCard:
     notes: List[str] = field(default_factory=list)
 
 
+def carbon_fitness_leakage(org: str, variant: str, *, patched: bool,
+                           medium_completion: bool = False) -> LeakageCard:
+    """Describe the evaluated arm, including data used after reconstruction."""
+    if patched:
+        exposure = ("yes: these patch sets were developed and accepted/held/rejected using Fitness Browser "
+                    "phenotypes also used for scoring; annotation support does not remove this reuse")
+    elif variant == "curated" or org == "Keio":
+        exposure = ("partly/unknown: published curated models used phenotype data; exact overlap with "
+                    "these measurements has not been audited")
+    elif variant == "gapfilled":
+        exposure = ("partly: gap filling uses observed wild-type growth in a reference medium; "
+                    "the shared media/protocol were refined using these benchmark organisms")
+    else:
+        exposure = ("no targeted fitness fitting documented for the archived automatic reconstruction; "
+                    "however the evaluation media/protocol were refined on these benchmark organisms")
+    notes = ["Retrospective development evaluation. No independent held-out or prospective test is established.",
+             "Fitness < -2 is an operational importance threshold in a pooled mutant assay, not proof of lethality.",
+             "Compare gene-level scores on matched genes, conditions and finite observations; report wild-type growth coverage separately."]
+    if medium_completion:
+        notes.append("Medium completion adds assumed gene-less transport; recipe presence alone does not establish uptake or its energy cost.")
+    return LeakageCard(
+        ground_truth_used_in_model_curation=exposure,
+        ground_truth_public_since="Fitness Browser releases include Price et al. 2018; exact dates differ by experiment",
+        frontier_model_training_exposure="unknown; public accessibility does not establish inclusion in a particular model's training data",
+        held_out_recommendation=("Freeze code, media rules and patches before selecting independent data. Use organisms/experiments "
+                                 "not inspected during development, or nested evaluation that repeats every data-guided selection step. "
+                                 "A retrospective split of already-inspected data does not restore independence."),
+        notes=notes)
+
+
 @dataclass
 class BenchmarkCard:
     benchmark: str
