@@ -1,0 +1,488 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-10-03T12:31:09Z",
+  "plan": {
+    "candidate_exposure": {
+      "custody": "Self-custodied (Tim Hulshof confirmed on 3 October 2026 that no external custodian is available). Claude (Opus 5.5) designs, prepares and evaluates; separation rests on recorded order: this plan freeze (git + Claude project), then panel B inputs and an inputs freeze (git + project), then the first download of panel B fitness tables.",
+      "evidence_paths": [
+        "data/fitness_browser_panel/metadata_manifest_2026-10-03.json",
+        "data/fitness_browser_panel/outcomes_download_2026-10-03.json",
+        "data/studies/independent_panel_v1/panel_selection.json"
+      ],
+      "uninspected_evidence": "No fitness table of any panel B organism has been downloaded (data/fitness_browser_panel/metadata_manifest_2026-10-03.json and outcomes_download_2026-10-03.json list every panel file downloaded). Panel B experiment metadata have been read only by scripts printing counts, medium names and the aerobic flag; panel B condition names have not been read."
+    },
+    "decision_rule": "As in transfer-method-v1 section 5.3; H1 counts as replicated if H1-B is supported.",
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_organisms": [
+      "Caulo",
+      "Cup4G11",
+      "Marino",
+      "Miya",
+      "PV4",
+      "SB2B"
+    ],
+    "evaluation_role": "prospective_self_custodied",
+    "exposed_evaluation_organisms": [
+      "Cola",
+      "Dino",
+      "Dyella79",
+      "MycoTube",
+      "PS",
+      "RPal_CGA009"
+    ],
+    "frozen_v1_files_unchanged": "every v1 code and rule file listed in paths has the same sha256 as in results/study_freezes/transfer_v1_method.json",
+    "paths": [
+      "data/fitness_browser_panel/Caulo/experiments.tsv",
+      "data/fitness_browser_panel/Caulo/genes.tsv",
+      "data/fitness_browser_panel/Cup4G11/experiments.tsv",
+      "data/fitness_browser_panel/Cup4G11/genes.tsv",
+      "data/fitness_browser_panel/Marino/experiments.tsv",
+      "data/fitness_browser_panel/Marino/genes.tsv",
+      "data/fitness_browser_panel/Miya/experiments.tsv",
+      "data/fitness_browser_panel/Miya/genes.tsv",
+      "data/fitness_browser_panel/PV4/experiments.tsv",
+      "data/fitness_browser_panel/PV4/genes.tsv",
+      "data/fitness_browser_panel/SB2B/experiments.tsv",
+      "data/fitness_browser_panel/SB2B/genes.tsv",
+      "data/fitness_browser_panel/metadata_manifest_2026-10-03.json",
+      "data/fitness_browser_panel/outcomes_download_2026-10-03.json",
+      "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "data/reference/fitness_browser_media_bigg.tsv",
+      "data/reference/model_patches_v0.1.json",
+      "data/reference/universe_patches_v0.1.json",
+      "data/studies/independent_panel_eligibility_v1.json",
+      "data/studies/independent_panel_v1/panel_selection.json",
+      "data/studies/transfer_v1/arms.json",
+      "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+      "data/studies/transfer_v1/feba/media",
+      "data/studies/transfer_v1/feba/mixes",
+      "data/studies/transfer_v1/feba_component_bigg.tsv",
+      "data/studies/transfer_v1/feba_component_bigg_panel_A.tsv",
+      "data/studies/transfer_v1_replication/arms.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Btheta.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Cola.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Dino.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Dyella79.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/MR1.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/MycoTube.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Putida.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/RPal_CGA009.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Smeli.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/filter_report.json",
+      "docs/studies/transfer-adjudication-procedure-v1.md",
+      "docs/studies/transfer-adjudication-prompt-v1.txt",
+      "docs/studies/transfer-method-v1.md",
+      "docs/studies/transfer-v1-replication-plan.md",
+      "gembench/__init__.py",
+      "gembench/cards.py",
+      "gembench/checks.py",
+      "gembench/comparison.py",
+      "gembench/feba_media.py",
+      "gembench/fitness_browser.py",
+      "gembench/gapfill.py",
+      "gembench/gene_mapping.py",
+      "gembench/media.py",
+      "gembench/metrics.py",
+      "gembench/patches.py",
+      "gembench/protocols/__init__.py",
+      "gembench/protocols/carbon_fitness_generic.py",
+      "gembench/study.py",
+      "gembench/transfer.py",
+      "results/study_freezes/transfer_v1_inputs_panel_A.json",
+      "results/study_freezes/transfer_v1_method.json",
+      "results/transfer_v1/evaluation_panel_A/aggregate_union.json",
+      "results/transfer_v1/evaluation_panel_A/paired.json",
+      "scripts/build_panel_gene_maps.py",
+      "scripts/freeze_study.py",
+      "scripts/run_carbon_fitness_generic.py",
+      "scripts/run_transfer_study.py",
+      "scripts/transfer_aggregate.py",
+      "scripts/transfer_candidates.py",
+      "scripts/transfer_compare.py",
+      "scripts/transfer_replication.py",
+      "tests/test_transfer_replication.py"
+    ],
+    "primary_comparisons": [
+      "panel B: B0 -> UNQ (H1-B), UNQ -> M (H2-B)",
+      "pooled panels A+B: same"
+    ],
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "question": "Do the frozen v1 results replicate on the reserved panel B, what is the pooled estimate over panels A and B, and does dropping R6 assignments to inorganic-ion transport reactions improve blind curation (H3)?",
+    "schema_version": 1,
+    "secondary_comparisons": [
+      "panel B: M -> M_noIonR6 (H3), UNQ -> M_noIonR6"
+    ],
+    "study_id": "transfer-v1-replication-panel-B-plan"
+  },
+  "files": [
+    {
+      "path": "data/fitness_browser_panel/Caulo/experiments.tsv",
+      "size_bytes": 94272,
+      "sha256": "f568e0c3d593bc72ad417d0b1b36fb41b34622f5c84d9211a275a4cdbf3c2848"
+    },
+    {
+      "path": "data/fitness_browser_panel/Caulo/genes.tsv",
+      "size_bytes": 326609,
+      "sha256": "5ab809c0b93767e6d4be29d51e9c2268e64a83ffa698f61d40697e5c8a182fa0"
+    },
+    {
+      "path": "data/fitness_browser_panel/Cup4G11/experiments.tsv",
+      "size_bytes": 66927,
+      "sha256": "7441219a9c0587c8caccaf21ef762e5f58d0bf5d00551943e7ee5b0f428d27dd"
+    },
+    {
+      "path": "data/fitness_browser_panel/Cup4G11/genes.tsv",
+      "size_bytes": 619581,
+      "sha256": "1875abe0d4ac6fc1efdb00a47a24d937790e9ae8e1b79714cb825a74c57527ab"
+    },
+    {
+      "path": "data/fitness_browser_panel/Marino/experiments.tsv",
+      "size_bytes": 125353,
+      "sha256": "988a0aeb058f77c3aa6bf5e7d6e695492c09125cb21daaab52eb18be6c4dbfa8"
+    },
+    {
+      "path": "data/fitness_browser_panel/Marino/genes.tsv",
+      "size_bytes": 367004,
+      "sha256": "f017a8b1d675b55dbdaee3673fc0539ccd9ae8b52ced738223383df4acf08879"
+    },
+    {
+      "path": "data/fitness_browser_panel/Miya/experiments.tsv",
+      "size_bytes": 79217,
+      "sha256": "76af99b8bb21f5b4cf969ecf68ba3fde7963a44c63a6d21840232dacdcfd6958"
+    },
+    {
+      "path": "data/fitness_browser_panel/Miya/genes.tsv",
+      "size_bytes": 295622,
+      "sha256": "ebe890380635a48586138e59c99571d601ceaf6bf09a02d55bcae21b0a3482b4"
+    },
+    {
+      "path": "data/fitness_browser_panel/PV4/experiments.tsv",
+      "size_bytes": 70862,
+      "sha256": "df900d6de3e69f62c8f9be1a9f6574257a1c521f045fa054521c1087a30280a6"
+    },
+    {
+      "path": "data/fitness_browser_panel/PV4/genes.tsv",
+      "size_bytes": 335276,
+      "sha256": "a169283c16005b474a40195c80528cfd8e543c4b4eff00c3752398f6e255157e"
+    },
+    {
+      "path": "data/fitness_browser_panel/SB2B/experiments.tsv",
+      "size_bytes": 88194,
+      "sha256": "ad137a2dbfb31f9205851c56fe1849618c764caf89d1e5e49fcb45a2fc9119fd"
+    },
+    {
+      "path": "data/fitness_browser_panel/SB2B/genes.tsv",
+      "size_bytes": 314476,
+      "sha256": "d10a6c17927160d5ce868b2a54990d194d35ebaa440faa5480d2b4bd7c111709"
+    },
+    {
+      "path": "data/fitness_browser_panel/metadata_manifest_2026-10-03.json",
+      "size_bytes": 9426,
+      "sha256": "6c88cdbd47c2909360fd6fad61a41914b31698b3a2d4f45a04c5730688660142"
+    },
+    {
+      "path": "data/fitness_browser_panel/outcomes_download_2026-10-03.json",
+      "size_bytes": 2107,
+      "sha256": "48ac53619b532cf4c485614a1c671500023052d0ae01c4ce50e0558a979b53e9"
+    },
+    {
+      "path": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "size_bytes": 5499,
+      "sha256": "43ed695ca0201e778bc738d2d582dad7e7a498b64d5ccf64c3b496be686e4da4"
+    },
+    {
+      "path": "data/reference/fitness_browser_media_bigg.tsv",
+      "size_bytes": 3452,
+      "sha256": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d"
+    },
+    {
+      "path": "data/reference/model_patches_v0.1.json",
+      "size_bytes": 6068,
+      "sha256": "cf2ac083b289c3e1a08a24c2aca997742c7d004743db508fdd3a6b77448d99ca"
+    },
+    {
+      "path": "data/reference/universe_patches_v0.1.json",
+      "size_bytes": 7146,
+      "sha256": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe"
+    },
+    {
+      "path": "data/studies/independent_panel_eligibility_v1.json",
+      "size_bytes": 3347,
+      "sha256": "a58b3dc356b8eb2f910a9c0548f301148f84323c1bd04fde0a5f7e5aaac4ef0e"
+    },
+    {
+      "path": "data/studies/independent_panel_v1/panel_selection.json",
+      "size_bytes": 5105,
+      "sha256": "084b1bd3f4d7ad0a7a8f96f93aca17cba02902af95b36bc751b05099ee6b4b08"
+    },
+    {
+      "path": "data/studies/transfer_v1/arms.json",
+      "size_bytes": 2047,
+      "sha256": "29b7efec739d268a0fd3ddb4c696b19a94c4097d7c82f82d57084c510f983366"
+    },
+    {
+      "path": "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+      "size_bytes": 18498,
+      "sha256": "88aaf4587539dc1484d29929d7902d89e733817966e2b608a93b3859c0255f2f"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba/media",
+      "size_bytes": 165152,
+      "sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba/mixes",
+      "size_bytes": 46523,
+      "sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba_component_bigg.tsv",
+      "size_bytes": 4044,
+      "sha256": "ea9f59f3e93c98b57679e41295936dbe10c96d9fe7ee31b7b598ace12de4e517"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba_component_bigg_panel_A.tsv",
+      "size_bytes": 2303,
+      "sha256": "35f8023410d8ba52f14aafcdaee404bc1913db9d11a9b5122d5741379106cf82"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/arms.json",
+      "size_bytes": 2329,
+      "sha256": "aa064ebe9bb17be4c6bb0ee58c334ab70f7941a1e54f62f52375a49b55b7b279"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Btheta.json",
+      "size_bytes": 20527,
+      "sha256": "d5a3aa37c38157df71199e317d411c59beb1cba20eedd923235bcc011a6027cd"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Cola.json",
+      "size_bytes": 14538,
+      "sha256": "cfa2ac70955e92fd731927bba5f239c99d23db76b4bad93f74b47f4bf0d0c273"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Dino.json",
+      "size_bytes": 17560,
+      "sha256": "b73d206913e4874052b48d878da3f17dbea3c84b1b1ed7ad9d59cc1214840c0d"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Dyella79.json",
+      "size_bytes": 12343,
+      "sha256": "ff00c02d41dd288be0aa0c1601bd44e720914164e5afd93d7559a35a3f02486e"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/MR1.json",
+      "size_bytes": 13768,
+      "sha256": "90bffcb27463f80754b9bf1ff9e5a06e99097bcf58ed2af8c2174614a4cdc2a4"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/MycoTube.json",
+      "size_bytes": 17415,
+      "sha256": "3644f194f239678462365deb7f6db9bdddd8335736ba4418534db28d5f1ed27c"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Putida.json",
+      "size_bytes": 27072,
+      "sha256": "af0828644a85b7962d2ba61f56cabe93f7bdef3bfa8c0e16710bea14b700dfc7"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/RPal_CGA009.json",
+      "size_bytes": 18111,
+      "sha256": "d13b9090c9a9a01f121d94f911e6f8dafc7c0d243ab304058c19ee9336166a35"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Smeli.json",
+      "size_bytes": 19847,
+      "sha256": "d03bd979cf2f9d0d2ae48d633f588e61c84bdd110c78e37adca0f83eaf0b830e"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/filter_report.json",
+      "size_bytes": 488,
+      "sha256": "c0c89ba82d715638d2109af2246865c6414723ae6424044cda6e324f97ff743f"
+    },
+    {
+      "path": "docs/studies/transfer-adjudication-procedure-v1.md",
+      "size_bytes": 5031,
+      "sha256": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+    },
+    {
+      "path": "docs/studies/transfer-adjudication-prompt-v1.txt",
+      "size_bytes": 1243,
+      "sha256": "f06bdce972a3300b58dcb5b57ac0300e70cdc03959e1baa33c7cf5bffacc00f1"
+    },
+    {
+      "path": "docs/studies/transfer-method-v1.md",
+      "size_bytes": 18305,
+      "sha256": "c975ba06aa7c7ff4f8cd94fbe8bf38dcfff9ddefb05e9472ff67269c8c84a739"
+    },
+    {
+      "path": "docs/studies/transfer-v1-replication-plan.md",
+      "size_bytes": 6353,
+      "sha256": "f702346b2f4cfc7f648da85a6c42cbe9f437a52c283268f50f2df059e1131397"
+    },
+    {
+      "path": "gembench/__init__.py",
+      "size_bytes": 368,
+      "sha256": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9"
+    },
+    {
+      "path": "gembench/cards.py",
+      "size_bytes": 6172,
+      "sha256": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d"
+    },
+    {
+      "path": "gembench/checks.py",
+      "size_bytes": 2761,
+      "sha256": "0c1bcb3ed1b55379533374bc5d481247dbf9c40a01efb9a495fb92d3a356a51a"
+    },
+    {
+      "path": "gembench/comparison.py",
+      "size_bytes": 4052,
+      "sha256": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8"
+    },
+    {
+      "path": "gembench/feba_media.py",
+      "size_bytes": 8455,
+      "sha256": "e71f93a5f3ff39651ea7ffa881bec05592d90e8300735f6bf78bb48291f8d41c"
+    },
+    {
+      "path": "gembench/fitness_browser.py",
+      "size_bytes": 8512,
+      "sha256": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c"
+    },
+    {
+      "path": "gembench/gapfill.py",
+      "size_bytes": 13625,
+      "sha256": "eaf202021dbc1f0d2a76668f5da11e992d7b0a374c264dd056866b448165ab63"
+    },
+    {
+      "path": "gembench/gene_mapping.py",
+      "size_bytes": 4495,
+      "sha256": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2"
+    },
+    {
+      "path": "gembench/media.py",
+      "size_bytes": 2920,
+      "sha256": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe"
+    },
+    {
+      "path": "gembench/metrics.py",
+      "size_bytes": 5535,
+      "sha256": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3"
+    },
+    {
+      "path": "gembench/patches.py",
+      "size_bytes": 8733,
+      "sha256": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8"
+    },
+    {
+      "path": "gembench/protocols/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gembench/protocols/carbon_fitness_generic.py",
+      "size_bytes": 12798,
+      "sha256": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303"
+    },
+    {
+      "path": "gembench/study.py",
+      "size_bytes": 19203,
+      "sha256": "5ce80eadec2fa49f0466873e27c8852a764e2594b28fd9c9f16de2275d045519"
+    },
+    {
+      "path": "gembench/transfer.py",
+      "size_bytes": 18110,
+      "sha256": "8f798a635bd09885a30e23131ad1d8ba1816404c10c17edb63afa6116bf0f9e8"
+    },
+    {
+      "path": "results/study_freezes/transfer_v1_inputs_panel_A.json",
+      "size_bytes": 10458,
+      "sha256": "f0c526c1cca9a3c1f8739727f227b824a50c6e87541b0566f6714c090016ee12"
+    },
+    {
+      "path": "results/study_freezes/transfer_v1_method.json",
+      "size_bytes": 50232,
+      "sha256": "d7abb56b3f9c247431b407d111aa1ebcb7e486c08fbaebc31be1080ec1393138"
+    },
+    {
+      "path": "results/transfer_v1/evaluation_panel_A/aggregate_union.json",
+      "size_bytes": 20350,
+      "sha256": "effe9478692890edd1e280ff0ce4b0d58ad9d9e80abbcb895f9d038edff4653f"
+    },
+    {
+      "path": "results/transfer_v1/evaluation_panel_A/paired.json",
+      "size_bytes": 35023,
+      "sha256": "8cdafb639bea6043b4b8c468d715391d89429b6125f29173148e895976748ee5"
+    },
+    {
+      "path": "scripts/build_panel_gene_maps.py",
+      "size_bytes": 4217,
+      "sha256": "e44d9bbe87770b16115db2f34099c72d0709fc86b379a00c6405bed830e2694d"
+    },
+    {
+      "path": "scripts/freeze_study.py",
+      "size_bytes": 3547,
+      "sha256": "620ebb61febd71dd71221a130da3fc6b39f2c8c9d4a4c60ae5f07bcbd7c401a8"
+    },
+    {
+      "path": "scripts/run_carbon_fitness_generic.py",
+      "size_bytes": 16091,
+      "sha256": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc"
+    },
+    {
+      "path": "scripts/run_transfer_study.py",
+      "size_bytes": 14668,
+      "sha256": "4269e462119f27f30f3594807d379e7dcc45aad99dc01756e88092e19dfd90bb"
+    },
+    {
+      "path": "scripts/transfer_aggregate.py",
+      "size_bytes": 4831,
+      "sha256": "88dd1799282a070d0316e3af2d1db31a5ef7d5d242ce205b4c9db3e923c27979"
+    },
+    {
+      "path": "scripts/transfer_candidates.py",
+      "size_bytes": 6761,
+      "sha256": "19d24b45f15e7aa8d87a9ab1e06a2853b32bb935b89421af36ce34ddc2b840ea"
+    },
+    {
+      "path": "scripts/transfer_compare.py",
+      "size_bytes": 8500,
+      "sha256": "c8319fcddbd93307320cb8ff636a1c9a5cf08ae623e0e7fb61acb65fc2c7b781"
+    },
+    {
+      "path": "scripts/transfer_replication.py",
+      "size_bytes": 11941,
+      "sha256": "2c83c78afc2ae2d0c9b9a384ab9bee7b70b19c3b4fdb9bd6c0e9b6fdffa54226"
+    },
+    {
+      "path": "tests/test_transfer_replication.py",
+      "size_bytes": 2767,
+      "sha256": "d983fd61d1b27450477598deebc83aea88cde71495ccf957c160fbd863fad96b"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "7097ccb66f0d355a0336b1ef7de355d26ed3a384",
+    "dirty": false,
+    "tracked_changes": [],
+    "untracked_paths": [],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "09312d9d4c4d11571a56d452706ef881835252a6c033d8fafa5f2ba751c2e44d",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}
