@@ -1,0 +1,199 @@
+{
+ "retrieved": "2026-10-03T07:46:30.587Z",
+ "source": "https://fit.genomics.lbl.gov",
+ "transfer": "browser pane fetch in page, bundled as one JSON download, staged from the device",
+ "files": {
+  "Caulo/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=Caulo",
+   "http_status": 200,
+   "chars": 94272,
+   "sha256": "f568e0c3d593bc72ad417d0b1b36fb41b34622f5c84d9211a275a4cdbf3c2848"
+  },
+  "Caulo/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=Caulo",
+   "http_status": 200,
+   "chars": 326609,
+   "sha256": "5ab809c0b93767e6d4be29d51e9c2268e64a83ffa698f61d40697e5c8a182fa0"
+  },
+  "Cola/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=Cola",
+   "http_status": 200,
+   "chars": 100823,
+   "sha256": "385e3241f1f3788e8095c4c3a3b9547836476ef9c9c681d5e20716152b2e6262"
+  },
+  "Cola/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=Cola",
+   "http_status": 200,
+   "chars": 441706,
+   "sha256": "f2b4f28ba755543f3fa3f917becd11de3ef93e7c6ea66a5a60dfc0565c63f3ba"
+  },
+  "Cup4G11/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=Cup4G11",
+   "http_status": 200,
+   "chars": 66927,
+   "sha256": "7441219a9c0587c8caccaf21ef762e5f58d0bf5d00551943e7ee5b0f428d27dd"
+  },
+  "Cup4G11/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=Cup4G11",
+   "http_status": 200,
+   "chars": 619581,
+   "sha256": "1875abe0d4ac6fc1efdb00a47a24d937790e9ae8e1b79714cb825a74c57527ab"
+  },
+  "Dino/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=Dino",
+   "http_status": 200,
+   "chars": 88832,
+   "sha256": "76ef743082a2f601aaba5e9f134192456088aae6a9f32507a6b174bc878a7f32"
+  },
+  "Dino/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=Dino",
+   "http_status": 200,
+   "chars": 368334,
+   "sha256": "9bce70d263df62f4cc72e57323e1bca0285647db59270c92b59fe20ecd7a0dc4"
+  },
+  "Dyella79/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=Dyella79",
+   "http_status": 200,
+   "chars": 33965,
+   "sha256": "123a07bbbdbb32e2aea20f3b539e958f16a558dfb7cefc12546cb186f132bb68"
+  },
+  "Dyella79/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=Dyella79",
+   "http_status": 200,
+   "chars": 445786,
+   "sha256": "f55ca716b860eee0f162ce3bd5cf2fe161605c9e190beaef24d577f754839f98"
+  },
+  "Magneto/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=Magneto",
+   "http_status": 200,
+   "chars": 15632,
+   "sha256": "d54e0ca2ee59e300c4b367910958041a8802daf81b5b516d5134ac539ebdce4d"
+  },
+  "Magneto/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=Magneto",
+   "http_status": 200,
+   "chars": 387911,
+   "sha256": "69ce006e76fd299a5039604adf4f1eeb238653b8bd4d39e34bbb04f225e9edca"
+  },
+  "Marino/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=Marino",
+   "http_status": 200,
+   "chars": 125353,
+   "sha256": "988a0aeb058f77c3aa6bf5e7d6e695492c09125cb21daaab52eb18be6c4dbfa8"
+  },
+  "Marino/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=Marino",
+   "http_status": 200,
+   "chars": 367004,
+   "sha256": "f017a8b1d675b55dbdaee3673fc0539ccd9ae8b52ced738223383df4acf08879"
+  },
+  "Miya/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=Miya",
+   "http_status": 200,
+   "chars": 79217,
+   "sha256": "76af99b8bb21f5b4cf969ecf68ba3fde7963a44c63a6d21840232dacdcfd6958"
+  },
+  "Miya/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=Miya",
+   "http_status": 200,
+   "chars": 295622,
+   "sha256": "ebe890380635a48586138e59c99571d601ceaf6bf09a02d55bcae21b0a3482b4"
+  },
+  "MycoTube/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=MycoTube",
+   "http_status": 200,
+   "chars": 95672,
+   "sha256": "98f0d579e881542d259e326a270b52ab035ca868612774bd2b48befbcf34566a"
+  },
+  "MycoTube/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=MycoTube",
+   "http_status": 200,
+   "chars": 366568,
+   "sha256": "aa96b2629e10c6949fa93f2c53bbb48453259d846d1c2e4ef6962e8840deb584"
+  },
+  "PS/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=PS",
+   "http_status": 200,
+   "chars": 37292,
+   "sha256": "8e85ccf248042233f44e1dd9eb4ddc6cefd257c555364a1283c20afbead2e767"
+  },
+  "PS/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=PS",
+   "http_status": 200,
+   "chars": 298104,
+   "sha256": "f93662370de8760195c222a34d4fc56ab8bc035781c835bd7c3b429e1d5da60e"
+  },
+  "PV4/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=PV4",
+   "http_status": 200,
+   "chars": 70862,
+   "sha256": "df900d6de3e69f62c8f9be1a9f6574257a1c521f045fa054521c1087a30280a6"
+  },
+  "PV4/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=PV4",
+   "http_status": 200,
+   "chars": 335276,
+   "sha256": "a169283c16005b474a40195c80528cfd8e543c4b4eff00c3752398f6e255157e"
+  },
+  "RPal_CGA009/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=RPal_CGA009",
+   "http_status": 200,
+   "chars": 113771,
+   "sha256": "b71fdc884977a3b51dbf41aa1c5fe85339daf9ca18e709fd378489c3acbbb394"
+  },
+  "RPal_CGA009/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=RPal_CGA009",
+   "http_status": 200,
+   "chars": 429850,
+   "sha256": "b84e5d0c7be9a54250ab53f2413f0fe02bf759d2e94322aa22f4b20000bcdbe2"
+  },
+  "RalstoniaGMI1000/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=RalstoniaGMI1000",
+   "http_status": 200,
+   "chars": 35712,
+   "sha256": "799994e34883690055faf63f4cff14206ac8d1261ffd56b713abaccfde124094"
+  },
+  "RalstoniaGMI1000/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=RalstoniaGMI1000",
+   "http_status": 200,
+   "chars": 422373,
+   "sha256": "2ff89777fcc6887cd19000a7cc10b59102d4c641842562150c8a16b75cb8dd02"
+  },
+  "SB2B/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=SB2B",
+   "http_status": 200,
+   "chars": 88194,
+   "sha256": "ad137a2dbfb31f9205851c56fe1849618c764caf89d1e5e49fcb45a2fc9119fd"
+  },
+  "SB2B/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=SB2B",
+   "http_status": 200,
+   "chars": 314476,
+   "sha256": "d10a6c17927160d5ce868b2a54990d194d35ebaa440faa5480d2b4bd7c111709"
+  },
+  "SyringaeB728a/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=SyringaeB728a",
+   "http_status": 200,
+   "chars": 20487,
+   "sha256": "294edf88a2e6343edeaec0463c75e59e74d5e25b7cf520cdce20106d74bd3167"
+  },
+  "SyringaeB728a/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=SyringaeB728a",
+   "http_status": 200,
+   "chars": 436515,
+   "sha256": "6f84acf5f0196196a2b7d6998885690024f97342aa89746544c26ae67e3f4038"
+  },
+  "SyringaeB728a_mexBdelta/experiments.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createExpData.cgi?orgId=SyringaeB728a_mexBdelta",
+   "http_status": 200,
+   "chars": 11976,
+   "sha256": "e9da5bb6c5a47a5d9011edeb326af0f62c9eafc04d3156026bf059f377353f56"
+  },
+  "SyringaeB728a_mexBdelta/genes.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgGenes.cgi?orgId=SyringaeB728a_mexBdelta",
+   "http_status": 200,
+   "chars": 436515,
+   "sha256": "6f84acf5f0196196a2b7d6998885690024f97342aa89746544c26ae67e3f4038"
+  }
+ }
+}

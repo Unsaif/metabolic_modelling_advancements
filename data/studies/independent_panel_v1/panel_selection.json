@@ -1,0 +1,160 @@
+{
+ "study": "independent-panel-v1",
+ "selected": "2026-10-03",
+ "criteria_file": "data/studies/independent_panel_eligibility_v1.json",
+ "fitness_browser_organism_list": "data/studies/independent_panel_v1/fitness_browser_organisms_2026-10-03.tsv (69 organisms)",
+ "embl_model_list": "data/studies/independent_panel_v1/embl_model_list_260d0f1.tsv (sha256 721acc2404b482eb29cbe93fce8845ec7713e41010cd92c542d74a69476f328b)",
+ "excluded_E2_archived_downloads": [
+  "Btheta",
+  "Putida",
+  "MR1",
+  "Smeli",
+  "Keio",
+  "Bvulgatus_CL09T03C04",
+  "Koxy",
+  "SynE",
+  "DvH"
+ ],
+ "excluded_E3_archaea": [
+  "Methanococcus_JJ",
+  "Methanococcus_S2"
+ ],
+ "exact_strain_EMBL_matches_E4": {
+  "Caulo": {
+   "assembly": "GCF_000022005.1",
+   "embl_name": "Caulobacter crescentus NA1000",
+   "embl_file": "models/c/caulobacter/Caulobacter_crescentus_NA1000.xml.gz"
+  },
+  "Cola": {
+   "assembly": "GCF_000325705.1",
+   "embl_name": "Echinicola vietnamensis DSM 17526",
+   "embl_file": "models/e/echinicola/Echinicola_vietnamensis_DSM_17526.xml.gz"
+  },
+  "Cup4G11": {
+   "assembly": "GCF_000832305.1",
+   "embl_name": "Cupriavidus basilensis strain=4G11",
+   "embl_file": "models/c/cupriavidus/Cupriavidus_basilensis_4G11.xml.gz"
+  },
+  "Dino": {
+   "assembly": "GCF_000018145.1",
+   "embl_name": "Dinoroseobacter shibae DFL 12 = DSM 16493",
+   "embl_file": "models/d/dinoroseobacter/Dinoroseobacter_shibae_DFL_12_DSM_16493.xml.gz"
+  },
+  "Dyella79": {
+   "assembly": "GCF_000620485.1",
+   "embl_name": "Dyella japonica UNC79MFTsu3.2",
+   "embl_file": "models/d/dyella/Dyella_japonica_UNC79MFTsu3_2.xml.gz"
+  },
+  "Marino": {
+   "assembly": "GCF_000166295.1",
+   "embl_name": "Marinobacter adhaerens HP15",
+   "embl_file": "models/m/marinobacter/Marinobacter_adhaerens_HP15.xml.gz"
+  },
+  "Miya": {
+   "assembly": "GCF_000021385.1",
+   "embl_name": "Desulfovibrio vulgaris str. 'Miyazaki F'",
+   "embl_file": "models/d/desulfovibrio/Desulfovibrio_vulgaris_str_Miyazaki_F.xml.gz"
+  },
+  "MycoTube": {
+   "assembly": "GCF_000195955.2",
+   "embl_name": "Mycobacterium tuberculosis H37Rv",
+   "embl_file": "models/m/mycobacterium/Mycobacterium_tuberculosis_H37Rv.xml.gz"
+  },
+  "PS": {
+   "assembly": "GCF_000236665.1",
+   "embl_name": "Dechlorosoma suillum PS",
+   "embl_file": "models/d/dechlorosoma/Dechlorosoma_suillum_PS.xml.gz"
+  },
+  "PV4": {
+   "assembly": "GCF_000016065.1",
+   "embl_name": "Shewanella loihica PV-4",
+   "embl_file": "models/s/shewanella/Shewanella_loihica_PV_4.xml.gz"
+  },
+  "RPal_CGA009": {
+   "assembly": "GCF_000195775.1",
+   "embl_name": "Rhodopseudomonas palustris CGA009",
+   "embl_file": "models/r/rhodopseudomonas/Rhodopseudomonas_palustris_CGA009.xml.gz"
+  },
+  "SB2B": {
+   "assembly": "GCF_000015245.1",
+   "embl_name": "Shewanella amazonensis SB2B",
+   "embl_file": "models/s/shewanella/Shewanella_amazonensis_SB2B.xml.gz"
+  },
+  "Magneto": {
+   "assembly": "GCF_000009985.1",
+   "embl_name": "Magnetospirillum magneticum AMB-1",
+   "embl_file": "models/m/magnetospirillum/Magnetospirillum_magneticum_AMB_1.xml.gz"
+  },
+  "SyringaeB728a": {
+   "assembly": "GCF_000012245.1",
+   "embl_name": "Pseudomonas syringae pv. syringae B728a",
+   "embl_file": "models/p/pseudomonas/Pseudomonas_syringae_pv_syringae_B728a.xml.gz"
+  },
+  "SyringaeB728a_mexBdelta": {
+   "assembly": "GCF_000012245.1",
+   "embl_name": "Pseudomonas syringae pv. syringae B728a (mutant-library derivative)",
+   "embl_file": "models/p/pseudomonas/Pseudomonas_syringae_pv_syringae_B728a.xml.gz"
+  },
+  "RalstoniaGMI1000": {
+   "assembly": "GCF_000009125.1",
+   "embl_name": "Ralstonia solanacearum GMI1000",
+   "embl_file": "models/r/ralstonia/Ralstonia_solanacearum_GMI1000.xml.gz"
+  }
+ },
+ "E4_notes": [
+  "Cup4G11: the Fitness Browser strain FW507-4G11 and the EMBL/RefSeq strain '4G11' are the same Field Research Center isolate designation; accepted as an exact-strain match.",
+  "Organisms whose EMBL entries are a different strain of the same species were excluded (e.g. Herbaspirillum seropedicae Z67 vs SmR1, Azospirillum brasilense Sp 7 vs Sp245, Bifidobacterium breve JCM 1192 vs UCC2003, Phaeobacter gallaeciensis DSM 26640 vs P. inhibens DSM 17395, Sphingomonas koreensis ABOJV vs DSMZ 15582, Pseudomonas stutzeri CGMCC 1.1803/28a24 vs RCH2); no EMBL entry was found for the remaining Fitness Browser organisms."
+ ],
+ "E5_E6_counts": "data/studies/independent_panel_v1/eligibility_counts.json (computed by script from experiment metadata; condition names not displayed)",
+ "excluded_E5_E6": [
+  "Magneto",
+  "RalstoniaGMI1000",
+  "SyringaeB728a",
+  "SyringaeB728a_mexBdelta"
+ ],
+ "eligible": [
+  "Caulo",
+  "Cola",
+  "Cup4G11",
+  "Dino",
+  "Dyella79",
+  "Marino",
+  "Miya",
+  "MycoTube",
+  "PS",
+  "PV4",
+  "RPal_CGA009",
+  "SB2B"
+ ],
+ "shuffle_seed": 20261003,
+ "shuffled_order": [
+  "PS",
+  "Cola",
+  "Dyella79",
+  "RPal_CGA009",
+  "MycoTube",
+  "Dino",
+  "Miya",
+  "Cup4G11",
+  "Marino",
+  "SB2B",
+  "PV4",
+  "Caulo"
+ ],
+ "panel_A": [
+  "Cola",
+  "Dino",
+  "Dyella79",
+  "MycoTube",
+  "PS",
+  "RPal_CGA009"
+ ],
+ "panel_B_reserved": [
+  "Caulo",
+  "Cup4G11",
+  "Marino",
+  "Miya",
+  "PV4",
+  "SB2B"
+ ]
+}
