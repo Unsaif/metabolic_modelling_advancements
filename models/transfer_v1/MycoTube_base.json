@@ -1,0 +1,22 @@
+{
+ "org": "MycoTube",
+ "role": "evaluation_panel_A",
+ "draft": "models/embl_pinned/MycoTube.xml.gz",
+ "draft_sha256": "c0c8fb4a6ba0233d013f8e9be6adf54a7c41983a4d0881b068140364ebc6c236",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "Sautons minimal media with no carbon",
+  "carbon_exchange": "EX_glc__D_e",
+  "condition": "D-Glucose",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "not_needed",
+ "added_reactions": [],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 6.022406361014234,
+ "growth_after": 6.022406361014234,
+ "base_sha256": "4bdd558f8e542aa476183236cd0d16e8c84a6cb1a30659dd0bd1813769f731f4",
+ "created": "2026-10-03T09:45:42Z"
+}

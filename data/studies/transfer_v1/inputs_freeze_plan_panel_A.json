@@ -1,0 +1,79 @@
+{
+ "schema_version": 1,
+ "study_id": "transfer-v1-inputs-panel-A",
+ "evaluation_role": "prospective_self_custodied",
+ "development_organisms": [
+  "Btheta",
+  "Putida",
+  "MR1",
+  "Smeli",
+  "Keio"
+ ],
+ "quarantined_organisms": [
+  "Bvulgatus_CL09T03C04",
+  "Koxy",
+  "SynE",
+  "DvH"
+ ],
+ "evaluation_organisms": [
+  "Cola",
+  "Dino",
+  "Dyella79",
+  "MycoTube",
+  "PS",
+  "RPal_CGA009"
+ ],
+ "reserved_organisms": [
+  "Caulo",
+  "Cup4G11",
+  "Marino",
+  "Miya",
+  "PV4",
+  "SB2B"
+ ],
+ "candidate_exposure": {
+  "custody": "Self-custodied. Claude (Opus 5.5, in Tim Hulshof's project) designed the method, prepares the inputs and will run the evaluation; no external custodian. Separation rests on recorded order: this method freeze (git commit + Claude project record), then panel A inputs (media, carbon sources, base models, adjudication packets and decisions) and an inputs freeze, then the first download of panel A fitness tables.",
+  "uninspected_evidence": "Since the method freeze, panel A experiment metadata were read for medium names, aerobic flags and carbon-source condition names (mapping only); no fitness table of any panel organism has been downloaded. This inputs freeze precedes the first download.",
+  "evidence_paths": [
+   "results/study_freezes/transfer_v1_method.json"
+  ]
+ },
+ "method_freeze": {
+  "manifest": "results/study_freezes/transfer_v1_method.json",
+  "content_fingerprint": "7ffb4213c6ad834280079b0b176c655cdd9a6be97fc3d0143ab1edf8af94d907",
+  "created_at": "2026-10-03T09:40:45Z"
+ },
+ "question": "Do fitness-blind, annotation-driven corrections (U') and blind AI adjudication of gene rules (M) improve EMBL GEMs draft-model predictions of carbon-source gene fitness on six organisms not used in development?",
+ "decision_rule": "Supported if the mean difference is positive and the organism-bootstrap 95% interval excludes zero; not supported if the mean is zero or negative; inconclusive otherwise. Every organism and every arm is reported, including failures.",
+ "inputs_note": "Panel A inputs prepared under the frozen method: media mapped by rule (R2A undefined, excluded); 16 new carbon-source names mapped; reference conditions chosen by rule; base models gap-filled for Cola (not needed), Dino, Dyella79, MycoTube (not needed), RPal_CGA009 (gap-fill added a nitrate reductase: the trace nitrate of cobalt nitrate is an unlimited ion under the frozen media rule); PS failed (every gap-fill solution created an energy-generating cycle) and is not evaluable; blind adjudication of the five others (265 candidates: 25 R6, 2 R2, 76 R1, 162 abstain; all applicable).",
+ "paths": [
+  "results/study_freezes/transfer_v1_method.json",
+  "data/studies/transfer_v1/feba_component_bigg_panel_A.tsv",
+  "data/studies/transfer_v1/media_bigg.tsv",
+  "data/studies/transfer_v1/media_mapping_report.json",
+  "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+  "data/studies/transfer_v1/organisms_panel_A.json",
+  "data/studies/transfer_v1/decisions/MANIFEST_panel_A.json",
+  "results/transfer_v1/evaluation_panel_A/PS_prepare_failure.json",
+  "models/transfer_v1/Cola_base.xml.gz",
+  "models/transfer_v1/Cola_base.json",
+  "data/studies/transfer_v1/decisions/Cola.json",
+  "data/studies/transfer_v1/packets/Cola/candidates.json",
+  "models/transfer_v1/Dino_base.xml.gz",
+  "models/transfer_v1/Dino_base.json",
+  "data/studies/transfer_v1/decisions/Dino.json",
+  "data/studies/transfer_v1/packets/Dino/candidates.json",
+  "models/transfer_v1/Dyella79_base.xml.gz",
+  "models/transfer_v1/Dyella79_base.json",
+  "data/studies/transfer_v1/decisions/Dyella79.json",
+  "data/studies/transfer_v1/packets/Dyella79/candidates.json",
+  "models/transfer_v1/MycoTube_base.xml.gz",
+  "models/transfer_v1/MycoTube_base.json",
+  "data/studies/transfer_v1/decisions/MycoTube.json",
+  "data/studies/transfer_v1/packets/MycoTube/candidates.json",
+  "models/transfer_v1/RPal_CGA009_base.xml.gz",
+  "models/transfer_v1/RPal_CGA009_base.json",
+  "data/studies/transfer_v1/decisions/RPal_CGA009.json",
+  "data/studies/transfer_v1/packets/RPal_CGA009/candidates.json"
+ ]
+}

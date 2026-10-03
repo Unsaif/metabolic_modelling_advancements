@@ -1,0 +1,2020 @@
+{
+ "org": "Dyella79",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 6,
+ "candidates": [
+  {
+   "reaction": "ACGK_1",
+   "name": "Acetylglutamate kinase",
+   "equation_ids": "acglu_c + atp_c --> acg5p_c + adp_c",
+   "equation_names": "N-Acetyl-L-glutamate + ATP --> N-Acetyl-L-glutamyl 5-phosphate + ADP",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": []
+  },
+  {
+   "reaction": "ACHBS",
+   "name": "2-aceto-2-hydroxybutanoate synthase",
+   "equation_ids": "2obut_c + h_c + pyr_c --> 2ahbut_c + co2_c",
+   "equation_names": "2-Oxobutanoate + H+ + Pyruvate --> (S)-2-Aceto-2-hydroxybutanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_026633211_1 and WP_026633363_1) or (WP_026633363_1 and WP_026633364_1)",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633211_1",
+     "locus": "ABZR86_RS07005",
+     "fitness_browser_desc": "acetolactate synthase large subunit",
+     "refseq_definition": "acetolactate synthase large subunit",
+     "neighbourhood": [
+      "ABZR86_RS06990 (-) hypothetical protein",
+      "ABZR86_RS06995 (+) hypothetical protein",
+      "ABZR86_RS07000 (-) Hsp20 family protein",
+      "ABZR86_RS07005 (+) acetolactate synthase large subunit",
+      "ABZR86_RS07010 (+) aldehyde dehydrogenase family protein",
+      "ABZR86_RS07015 (-) AraC family transcriptional regulator",
+      "ABZR86_RS07020 (+) NAD(P)-dependent alcohol dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_026633363_1",
+     "locus": "ABZR86_RS15930",
+     "fitness_browser_desc": "acetolactate synthase small subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "ABZR86_RS15915 (-) FecR domain-containing protein",
+      "ABZR86_RS15920 (-) sigma-70 family RNA polymerase sigma factor",
+      "ABZR86_RS15925 (-) threonine ammonia-lyase, biosynthetic",
+      "ABZR86_RS15930 (-) acetolactate synthase small subunit",
+      "ABZR86_RS15935 (-) biosynthetic-type acetolactate synthase large subunit",
+      "ABZR86_RS15940 (-) ketol-acid reductoisomerase",
+      "ABZR86_RS15945 (-) dihydroxy-acid dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_026633364_1",
+     "locus": "ABZR86_RS15935",
+     "fitness_browser_desc": "biosynthetic-type acetolactate synthase large subunit",
+     "refseq_definition": "biosynthetic-type acetolactate synthase large subunit",
+     "neighbourhood": [
+      "ABZR86_RS15920 (-) sigma-70 family RNA polymerase sigma factor",
+      "ABZR86_RS15925 (-) threonine ammonia-lyase, biosynthetic",
+      "ABZR86_RS15930 (-) acetolactate synthase small subunit",
+      "ABZR86_RS15935 (-) biosynthetic-type acetolactate synthase large subunit",
+      "ABZR86_RS15940 (-) ketol-acid reductoisomerase",
+      "ABZR86_RS15945 (-) dihydroxy-acid dehydratase",
+      "ABZR86_RS15950 (-) 3-isopropylmalate dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_026633211_1 and WP_026633363_1) or (WP_026633363_1 and WP_026633364_1)",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633211_1",
+     "locus": "ABZR86_RS07005",
+     "fitness_browser_desc": "acetolactate synthase large subunit",
+     "refseq_definition": "acetolactate synthase large subunit",
+     "neighbourhood": [
+      "ABZR86_RS06990 (-) hypothetical protein",
+      "ABZR86_RS06995 (+) hypothetical protein",
+      "ABZR86_RS07000 (-) Hsp20 family protein",
+      "ABZR86_RS07005 (+) acetolactate synthase large subunit",
+      "ABZR86_RS07010 (+) aldehyde dehydrogenase family protein",
+      "ABZR86_RS07015 (-) AraC family transcriptional regulator",
+      "ABZR86_RS07020 (+) NAD(P)-dependent alcohol dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_026633363_1",
+     "locus": "ABZR86_RS15930",
+     "fitness_browser_desc": "acetolactate synthase small subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "ABZR86_RS15915 (-) FecR domain-containing protein",
+      "ABZR86_RS15920 (-) sigma-70 family RNA polymerase sigma factor",
+      "ABZR86_RS15925 (-) threonine ammonia-lyase, biosynthetic",
+      "ABZR86_RS15930 (-) acetolactate synthase small subunit",
+      "ABZR86_RS15935 (-) biosynthetic-type acetolactate synthase large subunit",
+      "ABZR86_RS15940 (-) ketol-acid reductoisomerase",
+      "ABZR86_RS15945 (-) dihydroxy-acid dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_026633364_1",
+     "locus": "ABZR86_RS15935",
+     "fitness_browser_desc": "biosynthetic-type acetolactate synthase large subunit",
+     "refseq_definition": "biosynthetic-type acetolactate synthase large subunit",
+     "neighbourhood": [
+      "ABZR86_RS15920 (-) sigma-70 family RNA polymerase sigma factor",
+      "ABZR86_RS15925 (-) threonine ammonia-lyase, biosynthetic",
+      "ABZR86_RS15930 (-) acetolactate synthase small subunit",
+      "ABZR86_RS15935 (-) biosynthetic-type acetolactate synthase large subunit",
+      "ABZR86_RS15940 (-) ketol-acid reductoisomerase",
+      "ABZR86_RS15945 (-) dihydroxy-acid dehydratase",
+      "ABZR86_RS15950 (-) 3-isopropylmalate dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACOTA",
+   "name": "Acetylornithine transaminase",
+   "equation_ids": "acorn_c + akg_c <=> acg5sa_c + glu__L_c",
+   "equation_names": "N2-Acetyl-L-ornithine + 2-Oxoglutarate <=> N-Acetyl-L-glutamate 5-semialdehyde + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634880_1 or WP_026635156_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634880_1",
+     "locus": "ABZR86_RS17400",
+     "fitness_browser_desc": "acetylornithine transaminase",
+     "refseq_definition": "acetylornithine transaminase",
+     "neighbourhood": [
+      "ABZR86_RS17385 (+) NAD(P)-dependent oxidoreductase",
+      "ABZR86_RS17390 (+) VOC family protein",
+      "ABZR86_RS17395 (+) sigma-54 dependent transcriptional regulator",
+      "ABZR86_RS17400 (+) acetylornithine transaminase",
+      "ABZR86_RS17405 (-) glutamate-1-semialdehyde 2,1-aminomutase",
+      "ABZR86_RS17410 (-) thiamine phosphate synthase",
+      "ABZR86_RS17415 (+) rubredoxin"
+     ]
+    },
+    {
+     "model_gene": "WP_026635156_1",
+     "locus": "ABZR86_RS09395",
+     "fitness_browser_desc": "aminotransferase class III-fold pyridoxal phosphate-dependent enzyme",
+     "refseq_definition": "aspartate aminotransferase family protein",
+     "neighbourhood": [
+      "ABZR86_RS09380 (+) response regulator transcription factor",
+      "ABZR86_RS09385 (+) sensor histidine kinase",
+      "ABZR86_RS09390 (-) YadA-like family protein",
+      "ABZR86_RS09395 (-) aminotransferase class III-fold pyridoxal phosphate-dependent enzyme",
+      "ABZR86_RS09400 (-) MtnX-like HAD-IB family phosphatase",
+      "ABZR86_RS09405 (+) TolC family protein",
+      "ABZR86_RS09410 (+) FtsX-like permease family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "AGPR",
+   "name": "N-acetyl-g-glutamyl-phosphate reductase",
+   "equation_ids": "acg5sa_c + nadp_c + pi_c <=> acg5p_c + h_c + nadph_c",
+   "equation_names": "N-Acetyl-L-glutamate 5-semialdehyde + Nicotinamide adenine dinucleotide phosphate + Phosphate <=> N-Acetyl-L-glutamyl 5-phosphate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {
+    "ec-code": "1.2.1.38",
+    "rhea": [
+     "21588",
+     "21589",
+     "21590",
+     "21591"
+    ],
+    "metanetx.reaction": "MNXR95530",
+    "kegg.reaction": "R03443"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": []
+  },
+  {
+   "reaction": "ALAtex",
+   "name": "L-alanine transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ala__L_e <=> ala__L_p",
+   "equation_names": "L-Alanine <=> L-Alanine",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 6,
+   "genes": []
+  },
+  {
+   "reaction": "ANPRT",
+   "name": "Anthranilate phosphoribosyltransferase",
+   "equation_ids": "anth_c + prpp_c --> ppi_c + pran_c",
+   "equation_names": "Anthranilate + 5-Phospho-alpha-D-ribose 1-diphosphate --> Diphosphate + N-(5-Phospho-D-ribosyl)anthranilate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634844_1 or WP_081805026_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634844_1",
+     "locus": "ABZR86_RS14265",
+     "fitness_browser_desc": "anthranilate synthase family protein",
+     "refseq_definition": "anthranilate synthase family protein",
+     "neighbourhood": [
+      "ABZR86_RS14250 (-) PhzF family phenazine biosynthesis isomerase",
+      "ABZR86_RS14255 (-) pyridoxal 5'-phosphate synthase",
+      "ABZR86_RS14260 (-) hypothetical protein",
+      "ABZR86_RS14265 (-) anthranilate synthase family protein",
+      "ABZR86_RS14270 (-) isochorismatase family protein",
+      "ABZR86_RS14275 (-) class II 3-deoxy-7-phosphoheptulonate synthase",
+      "ABZR86_RS14280 (+) methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_081805026_1",
+     "locus": "ABZR86_RS12070",
+     "fitness_browser_desc": "anthranilate phosphoribosyltransferase",
+     "refseq_definition": "anthranilate phosphoribosyltransferase",
+     "neighbourhood": [
+      "ABZR86_RS12055 (+) sulfite exporter TauE/SafE family protein",
+      "ABZR86_RS12060 (-) HAD family hydrolase",
+      "ABZR86_RS12065 (-) indole-3-glycerol phosphate synthase TrpC",
+      "ABZR86_RS12070 (-) anthranilate phosphoribosyltransferase",
+      "ABZR86_RS12075 (-) aminodeoxychorismate/anthranilate synthase component II",
+      "ABZR86_RS12080 (+) hypothetical protein",
+      "ABZR86_RS12085 (-) FAD-dependent oxidoreductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ANS",
+   "name": "Anthranilate synthase",
+   "equation_ids": "chor_c + gln__L_c --> anth_c + glu__L_c + h_c + pyr_c",
+   "equation_names": "Chorismate + L-Glutamine --> Anthranilate + L-Glutamate + H+ + Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634844_1 or (WP_026633851_1 and WP_026633869_1)",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633851_1",
+     "locus": "ABZR86_RS12075",
+     "fitness_browser_desc": "aminodeoxychorismate/anthranilate synthase component II",
+     "refseq_definition": "anthranilate synthase component II",
+     "neighbourhood": [
+      "ABZR86_RS12060 (-) HAD family hydrolase",
+      "ABZR86_RS12065 (-) indole-3-glycerol phosphate synthase TrpC",
+      "ABZR86_RS12070 (-) anthranilate phosphoribosyltransferase",
+      "ABZR86_RS12075 (-) aminodeoxychorismate/anthranilate synthase component II",
+      "ABZR86_RS12080 (+) hypothetical protein",
+      "ABZR86_RS12085 (-) FAD-dependent oxidoreductase",
+      "ABZR86_RS12090 (-) dicarboxylate/amino acid:cation symporter"
+     ]
+    },
+    {
+     "model_gene": "WP_026633869_1",
+     "locus": "ABZR86_RS12180",
+     "fitness_browser_desc": "anthranilate synthase component I",
+     "refseq_definition": "anthranilate synthase component I",
+     "neighbourhood": [
+      "ABZR86_RS12165 (+) hypothetical protein",
+      "ABZR86_RS12170 (-) hypothetical protein",
+      "ABZR86_RS12175 (-) hypothetical protein",
+      "ABZR86_RS12180 (-) anthranilate synthase component I",
+      "ABZR86_RS12185 (+) hypothetical protein",
+      "ABZR86_RS12190 (-) ATP-binding protein",
+      "ABZR86_RS12195 (-) proteobacterial dedicated sortase system response regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_026634844_1",
+     "locus": "ABZR86_RS14265",
+     "fitness_browser_desc": "anthranilate synthase family protein",
+     "refseq_definition": "anthranilate synthase family protein",
+     "neighbourhood": [
+      "ABZR86_RS14250 (-) PhzF family phenazine biosynthesis isomerase",
+      "ABZR86_RS14255 (-) pyridoxal 5'-phosphate synthase",
+      "ABZR86_RS14260 (-) hypothetical protein",
+      "ABZR86_RS14265 (-) anthranilate synthase family protein",
+      "ABZR86_RS14270 (-) isochorismatase family protein",
+      "ABZR86_RS14275 (-) class II 3-deoxy-7-phosphoheptulonate synthase",
+      "ABZR86_RS14280 (+) methyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPK",
+   "name": "Aspartate kinase",
+   "equation_ids": "asp__L_c + atp_c <=> 4pasp_c + adp_c",
+   "equation_names": "L-Aspartate + ATP <=> 4-Phospho-L-aspartate + ADP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633374_1 or WP_026635606_1 or WP_026636861_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633374_1",
+     "locus": "ABZR86_RS15985",
+     "fitness_browser_desc": "homoserine dehydrogenase",
+     "refseq_definition": "homoserine dehydrogenase family protein",
+     "neighbourhood": [
+      "ABZR86_RS15970 (-) 2-isopropylmalate synthase",
+      "ABZR86_RS15975 (-) threonine synthase",
+      "ABZR86_RS15980 (-) homoserine kinase",
+      "ABZR86_RS15985 (-) homoserine dehydrogenase",
+      "ABZR86_RS15990 (+) hypothetical protein",
+      "ABZR86_RS15995 (+) DUF2501 domain-containing protein",
+      "ABZR86_RS16000 (-) bifunctional 2',3'-cyclic-nucleotide 2'-phosphodiesterase/3'-nucleotidase"
+     ]
+    },
+    {
+     "model_gene": "WP_026635606_1",
+     "locus": "ABZR86_RS19035",
+     "fitness_browser_desc": "homoserine dehydrogenase",
+     "refseq_definition": "homoserine dehydrogenase family protein",
+     "neighbourhood": [
+      "ABZR86_RS19020 (-) 2OG-Fe dioxygenase family protein",
+      "ABZR86_RS19025 (+) homoserine O-succinyltransferase",
+      "ABZR86_RS19030 (+) cystathionine gamma-synthase",
+      "ABZR86_RS19035 (+) homoserine dehydrogenase",
+      "ABZR86_RS19040 (-) hypothetical protein",
+      "ABZR86_RS19045 (-) APC family permease",
+      "ABZR86_RS19050 (-) LysM domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026636861_1",
+     "locus": "ABZR86_RS19560",
+     "fitness_browser_desc": "bifunctional aspartate kinase/diaminopimelate decarboxylase",
+     "refseq_definition": "bifunctional aspartate kinase/diaminopimelate decarboxylase",
+     "neighbourhood": [
+      "ABZR86_RS19545 (-) hypothetical protein",
+      "ABZR86_RS19550 (-) protease pro-enzyme activation domain-containing protein",
+      "ABZR86_RS19555 (+) fumarate hydratase",
+      "ABZR86_RS19560 (+) bifunctional aspartate kinase/diaminopimelate decarboxylase",
+      "ABZR86_RS19565 (+) UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-L- glutamate epimerase",
+      "ABZR86_RS19570 (+) UDP-N-acetylmuramoyl-L-alanine--D-glutamate ligase",
+      "ABZR86_RS19575 (+) OsmC family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPTA",
+   "name": "Aspartate transaminase",
+   "equation_ids": "akg_c + asp__L_c <=> glu__L_c + oaa_c",
+   "equation_names": "2-Oxoglutarate + L-Aspartate <=> L-Glutamate + Oxaloacetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633050_1 or WP_026633919_1 or WP_026634099_1 or WP_026636105_1 or WP_026636318_1 or WP_026636480_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633050_1",
+     "locus": "ABZR86_RS08550",
+     "fitness_browser_desc": "pyridoxal phosphate-dependent aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "ABZR86_RS08535 (-) response regulator transcription factor",
+      "ABZR86_RS08540 (+) MerR family transcriptional regulator",
+      "ABZR86_RS08545 (-) malate dehydrogenase",
+      "ABZR86_RS08550 (-) pyridoxal phosphate-dependent aminotransferase",
+      "ABZR86_RS08555 (+) GlsB/YeaQ/YmgE family stress response membrane protein",
+      "ABZR86_RS08560 (-) YidB family protein",
+      "ABZR86_RS08565 (-) peptidylprolyl isomerase"
+     ]
+    },
+    {
+     "model_gene": "WP_026633919_1",
+     "locus": "ABZR86_RS12435",
+     "fitness_browser_desc": "aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme",
+     "refseq_definition": "aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme",
+     "neighbourhood": [
+      "ABZR86_RS12420 (-) flavohemoglobin expression-modulating QEGLA motif protein",
+      "ABZR86_RS12425 (-) hypothetical protein",
+      "ABZR86_RS12430 (-) ribosome small subunit-dependent GTPase A",
+      "ABZR86_RS12435 (+) aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme",
+      "ABZR86_RS12440 (+) SGNH/GDSL hydrolase family protein",
+      "ABZR86_RS12445 (+) UDP-2,3-diacylglucosamine diphosphatase",
+      "ABZR86_RS12450 (+) Grx4 family monothiol glutaredoxin"
+     ]
+    },
+    {
+     "model_gene": "WP_026634099_1",
+     "locus": "ABZR86_RS04055",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "ABZR86_RS04040 (+) heme-binding protein",
+      "ABZR86_RS04045 (-) sialidase family protein",
+      "ABZR86_RS04050 (-) DMT family transporter",
+      "ABZR86_RS04055 (+) PLP-dependent aminotransferase family protein",
+      "ABZR86_RS04060 (-) M13 family metallopeptidase",
+      "ABZR86_RS04065 (-) VOC family protein",
+      "ABZR86_RS04070 (-) alpha/beta fold hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_026636105_1",
+     "locus": "ABZR86_RS20415",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "ABZR86_RS20400 (-) methylmalonyl-CoA mutase family protein",
+      "ABZR86_RS20405 (-) PepSY-associated TM helix domain-containing protein",
+      "ABZR86_RS20410 (-) transporter",
+      "ABZR86_RS20415 (+) PLP-dependent aminotransferase family protein",
+      "ABZR86_RS20420 (-) YceI family protein",
+      "ABZR86_RS20425 (-) LytTR family DNA-binding domain-containing protein",
+      "ABZR86_RS20430 (-) histidine kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_026636318_1",
+     "locus": "ABZR86_RS01145",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "ABZR86_RS01130 (-) histidine kinase",
+      "ABZR86_RS01135 (-) PD40 domain-containing protein",
+      "ABZR86_RS01140 (-) DMT family transporter",
+      "ABZR86_RS01145 (+) PLP-dependent aminotransferase family protein",
+      "ABZR86_RS01150 (-) hypothetical protein",
+      "ABZR86_RS01155 (+) isochorismatase family cysteine hydrolase",
+      "ABZR86_RS01160 (-) glycosyltransferase family 2 protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026636480_1",
+     "locus": "ABZR86_RS02120",
+     "fitness_browser_desc": "pyridoxal phosphate-dependent aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "ABZR86_RS02105 (+) hypothetical protein",
+      "ABZR86_RS02110 (-) FMN-dependent NADH-azoreductase",
+      "ABZR86_RS02115 (+) LysR substrate-binding domain-containing protein",
+      "ABZR86_RS02120 (+) pyridoxal phosphate-dependent aminotransferase",
+      "ABZR86_RS02125 (+) amidohydrolase",
+      "ABZR86_RS02130 (-) arsenate reductase (glutaredoxin)",
+      "ABZR86_RS02135 (-) pseudouridine synthase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "BGLA",
+   "name": "Beta-glucosidase",
+   "equation_ids": "cellb_c + h2o_c --> 2.0 glc__D_c",
+   "equation_names": "Cellobiose + H2O --> 2.0 D-Glucose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_081805121_1 or WP_081805326_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_081805121_1",
+     "locus": "ABZR86_RS15485",
+     "fitness_browser_desc": "glycoside hydrolase family 3 C-terminal domain-containing protein",
+     "refseq_definition": "beta-glucosidase family protein",
+     "neighbourhood": [
+      "ABZR86_RS15470 (+) hypothetical protein",
+      "ABZR86_RS15475 (+) hypothetical protein",
+      "ABZR86_RS15480 (+) hypothetical protein",
+      "ABZR86_RS15485 (+) glycoside hydrolase family 3 C-terminal domain-containing protein",
+      "ABZR86_RS15490 (-) hypothetical protein",
+      "ABZR86_RS15495 (-) GGDEF domain-containing protein",
+      "ABZR86_RS15500 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_081805326_1",
+     "locus": "ABZR86_RS19595",
+     "fitness_browser_desc": "glycoside hydrolase family 3 protein",
+     "refseq_definition": "glycoside hydrolase family 3 protein",
+     "neighbourhood": [
+      "ABZR86_RS19580 (-) N-acetylmuramoyl-L-alanine amidase",
+      "ABZR86_RS19585 (+) GNAT family N-acetyltransferase",
+      "ABZR86_RS19590 (+) GGDEF domain-containing protein",
+      "ABZR86_RS19595 (-) glycoside hydrolase family 3 protein",
+      "ABZR86_RS19600 (-) serine hydrolase domain-containing protein",
+      "ABZR86_RS19605 (-) hypothetical protein",
+      "ABZR86_RS19610 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLBtpp",
+   "name": "Cellobiose transport via permease",
+   "equation_ids": "cellb_p --> cellb_c",
+   "equation_names": "Cellobiose --> Cellobiose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 6,
+   "genes": []
+  },
+  {
+   "reaction": "CU2tpp",
+   "name": "Copper transport in via permease (no H+)",
+   "equation_ids": "cu2_p --> cu2_c",
+   "equation_names": "Cu2+ --> Cu2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": []
+  },
+  {
+   "reaction": "DAPDC",
+   "name": "Diaminopimelate decarboxylase",
+   "equation_ids": "26dap__M_c + h_c --> co2_c + lys__L_c",
+   "equation_names": "Meso-2,6-Diaminoheptanedioate + H+ --> CO2 + L-Lysine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633861_1 or WP_026636861_1 or WP_081805036_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633861_1",
+     "locus": "ABZR86_RS12130",
+     "fitness_browser_desc": "diaminopimelate decarboxylase",
+     "refseq_definition": "diaminopimelate decarboxylase",
+     "neighbourhood": [
+      "ABZR86_RS12115 (-) DUF819 family protein",
+      "ABZR86_RS12120 (+) transglutaminase-like domain-containing protein",
+      "ABZR86_RS12125 (+) carboxypeptidase regulatory-like domain-containing protein",
+      "ABZR86_RS12130 (+) diaminopimelate decarboxylase",
+      "ABZR86_RS12135 (+) dipeptidase",
+      "ABZR86_RS12140 (+) serine hydrolase domain-containing protein",
+      "ABZR86_RS12145 (+) M15 family metallopeptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_026636861_1",
+     "locus": "ABZR86_RS19560",
+     "fitness_browser_desc": "bifunctional aspartate kinase/diaminopimelate decarboxylase",
+     "refseq_definition": "bifunctional aspartate kinase/diaminopimelate decarboxylase",
+     "neighbourhood": [
+      "ABZR86_RS19545 (-) hypothetical protein",
+      "ABZR86_RS19550 (-) protease pro-enzyme activation domain-containing protein",
+      "ABZR86_RS19555 (+) fumarate hydratase",
+      "ABZR86_RS19560 (+) bifunctional aspartate kinase/diaminopimelate decarboxylase",
+      "ABZR86_RS19565 (+) UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-L- glutamate epimerase",
+      "ABZR86_RS19570 (+) UDP-N-acetylmuramoyl-L-alanine--D-glutamate ligase",
+      "ABZR86_RS19575 (+) OsmC family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_081805036_1",
+     "locus": "ABZR86_RS03475",
+     "fitness_browser_desc": "type III PLP-dependent enzyme",
+     "refseq_definition": "type III PLP-dependent enzyme",
+     "neighbourhood": [
+      "ABZR86_RS03460 (+) alginate export family protein",
+      "ABZR86_RS03465 (+) serine hydrolase domain-containing protein",
+      "ABZR86_RS03470 (+) FAD-dependent monooxygenase",
+      "ABZR86_RS03475 (-) type III PLP-dependent enzyme",
+      "ABZR86_RS03480 (-) IucA/IucC family protein",
+      "ABZR86_RS03485 (-) MFS transporter",
+      "ABZR86_RS03490 (-) IucA/IucC family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DDPA",
+   "name": "3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase",
+   "equation_ids": "e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Phosphoenolpyruvate --> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026635857_1 or WP_035323762_1 or WP_051548539_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026635857_1",
+     "locus": "ABZR86_RS21770",
+     "fitness_browser_desc": "class II 3-deoxy-7-phosphoheptulonate synthase",
+     "refseq_definition": "class II 3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "ABZR86_RS21755 (-) cytochrome c",
+      "ABZR86_RS21760 (-) c-type cytochrome",
+      "ABZR86_RS21765 (+) amidase",
+      "ABZR86_RS21770 (-) class II 3-deoxy-7-phosphoheptulonate synthase",
+      "ABZR86_RS21775 (-) disulfide bond formation protein B",
+      "ABZR86_RS21780 (-) 50S ribosomal protein L17",
+      "ABZR86_RS21785 (-) DNA-directed RNA polymerase subunit alpha"
+     ]
+    },
+    {
+     "model_gene": "WP_035323762_1",
+     "locus": "ABZR86_RS00390",
+     "fitness_browser_desc": "3-deoxy-7-phosphoheptulonate synthase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "ABZR86_RS00375 (-) 3'-5' exonuclease",
+      "ABZR86_RS00380 (+) VOC family protein",
+      "ABZR86_RS00385 (-) oxygenase MpaB family protein",
+      "ABZR86_RS00390 (+) 3-deoxy-7-phosphoheptulonate synthase",
+      "ABZR86_RS00395 (-) intradiol ring-cleavage dioxygenase",
+      "ABZR86_RS00400 (+) GNAT family N-acetyltransferase",
+      "ABZR86_RS00405 (+) DUF1345 domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_051548539_1",
+     "locus": "ABZR86_RS14275",
+     "fitness_browser_desc": "class II 3-deoxy-7-phosphoheptulonate synthase",
+     "refseq_definition": "class II 3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "ABZR86_RS14260 (-) hypothetical protein",
+      "ABZR86_RS14265 (-) anthranilate synthase family protein",
+      "ABZR86_RS14270 (-) isochorismatase family protein",
+      "ABZR86_RS14275 (-) class II 3-deoxy-7-phosphoheptulonate synthase",
+      "ABZR86_RS14280 (+) methyltransferase",
+      "ABZR86_RS14285 (+) antibiotic biosynthesis monooxygenase",
+      "ABZR86_RS14290 (+) FAD-dependent monooxygenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633366_1 or WP_026634103_1 or WP_026636575_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633366_1",
+     "locus": "ABZR86_RS15945",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "ABZR86_RS15930 (-) acetolactate synthase small subunit",
+      "ABZR86_RS15935 (-) biosynthetic-type acetolactate synthase large subunit",
+      "ABZR86_RS15940 (-) ketol-acid reductoisomerase",
+      "ABZR86_RS15945 (-) dihydroxy-acid dehydratase",
+      "ABZR86_RS15950 (-) 3-isopropylmalate dehydrogenase",
+      "ABZR86_RS15955 (-) 3-isopropylmalate dehydratase small subunit",
+      "ABZR86_RS15960 (-) 3-isopropylmalate dehydratase large subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_026634103_1",
+     "locus": "ABZR86_RS04080",
+     "fitness_browser_desc": "IlvD/Edd family dehydratase",
+     "refseq_definition": "IlvD/Edd family dehydratase",
+     "neighbourhood": [
+      "ABZR86_RS04065 (-) VOC family protein",
+      "ABZR86_RS04070 (-) alpha/beta fold hydrolase",
+      "ABZR86_RS04075 (+) RidA family protein",
+      "ABZR86_RS04080 (-) IlvD/Edd family dehydratase",
+      "ABZR86_RS04085 (-) LysR family transcriptional regulator",
+      "ABZR86_RS04090 (+) AraD1 family protein",
+      "ABZR86_RS04095 (+) ABC transporter substrate-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026636575_1",
+     "locus": "ABZR86_RS02735",
+     "fitness_browser_desc": "4a-hydroxytetrahydrobiopterin dehydratase",
+     "refseq_definition": "4a-hydroxytetrahydrobiopterin dehydratase",
+     "neighbourhood": [
+      "ABZR86_RS02720 (-) ribonuclease E",
+      "ABZR86_RS02725 (+) RluA family pseudouridine synthase",
+      "ABZR86_RS02730 (-) CPBP family intramembrane glutamic endopeptidase",
+      "ABZR86_RS02735 (-) 4a-hydroxytetrahydrobiopterin dehydratase",
+      "ABZR86_RS02740 (+) NfuA family Fe-S biogenesis protein",
+      "ABZR86_RS02745 (-) cytochrome c",
+      "ABZR86_RS02750 (-) cytochrome c"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPRy",
+   "name": "Dihydrodipicolinate reductase (NADPH)",
+   "equation_ids": "23dhdp_c + h_c + nadph_c --> nadp_c + thdp_c",
+   "equation_names": "2,3-Dihydrodipicolinate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + 2,3,4,5-Tetrahydrodipicolinate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633886_1 or WP_026634360_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633886_1",
+     "locus": "ABZR86_RS12265",
+     "fitness_browser_desc": "4-hydroxy-tetrahydrodipicolinate reductase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate reductase",
+     "neighbourhood": [
+      "ABZR86_RS12250 (-) type 1 glutamine amidotransferase domain-containing protein",
+      "ABZR86_RS12255 (+) DNA polymerase IV",
+      "ABZR86_RS12260 (+) hypothetical protein",
+      "ABZR86_RS12265 (-) 4-hydroxy-tetrahydrodipicolinate reductase",
+      "ABZR86_RS12270 (+) hypothetical protein",
+      "ABZR86_RS12275 (+) hypothetical protein",
+      "ABZR86_RS12280 (-) dihydrolipoyl dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634360_1",
+     "locus": "ABZR86_RS05640",
+     "fitness_browser_desc": "4-hydroxy-tetrahydrodipicolinate reductase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate reductase",
+     "neighbourhood": [
+      "ABZR86_RS05625 (+) radical SAM protein",
+      "ABZR86_RS05630 (+) hypothetical protein",
+      "ABZR86_RS05635 (-) sodium:calcium antiporter",
+      "ABZR86_RS05640 (-) 4-hydroxy-tetrahydrodipicolinate reductase",
+      "ABZR86_RS05645 (-) molecular chaperone DnaJ",
+      "ABZR86_RS05650 (-) molecular chaperone DnaK",
+      "ABZR86_RS05655 (-) nucleotide exchange factor GrpE"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPS",
+   "name": "Dihydrodipicolinate synthase",
+   "equation_ids": "aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Pyruvate --> 2,3-Dihydrodipicolinate + 2.0 H2O + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026636092_1 or WP_026636261_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026636092_1",
+     "locus": "ABZR86_RS20490",
+     "fitness_browser_desc": "dihydrodipicolinate synthase family protein",
+     "refseq_definition": "dihydrodipicolinate synthase family protein",
+     "neighbourhood": [
+      "ABZR86_RS20475 (+) FAD-dependent oxidoreductase",
+      "ABZR86_RS20480 (+) (2Fe-2S)-binding protein",
+      "ABZR86_RS20485 (+) FAD/NAD(P)-binding oxidoreductase",
+      "ABZR86_RS20490 (+) dihydrodipicolinate synthase family protein",
+      "ABZR86_RS20495 (+) aldehyde dehydrogenase family protein",
+      "ABZR86_RS20500 (+) Xaa-Pro peptidase family protein",
+      "ABZR86_RS20505 (+) DUF885 family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026636261_1",
+     "locus": "ABZR86_RS00785",
+     "fitness_browser_desc": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "ABZR86_RS00770 (-) PhoH family protein",
+      "ABZR86_RS00775 (-) peroxiredoxin",
+      "ABZR86_RS00780 (-) glycine cleavage system protein R",
+      "ABZR86_RS00785 (+) 4-hydroxy-tetrahydrodipicolinate synthase",
+      "ABZR86_RS00790 (+) hypothetical protein",
+      "ABZR86_RS00795 (-) ferredoxin FdxA",
+      "ABZR86_RS00800 (-) tRNA-Glu"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633097_1 or WP_026635266_1 or WP_035322884_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633097_1",
+     "locus": "ABZR86_RS08310",
+     "fitness_browser_desc": "amidohydrolase family protein",
+     "refseq_definition": "amidohydrolase family protein",
+     "neighbourhood": [
+      "ABZR86_RS08295 (-) alpha/beta fold hydrolase",
+      "ABZR86_RS08300 (-) VOC family protein",
+      "ABZR86_RS08305 (+) aminomethyl-transferring glycine dehydrogenase",
+      "ABZR86_RS08310 (+) amidohydrolase family protein",
+      "ABZR86_RS08315 (+) nuclear transport factor 2 family protein",
+      "ABZR86_RS08320 (-) M1 family metallopeptidase",
+      "ABZR86_RS08325 (+) helix-turn-helix domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026635266_1",
+     "locus": "ABZR86_RS08760",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "ABZR86_RS08745 (+) SufE family protein",
+      "ABZR86_RS08750 (-) RNA polymerase-binding protein DksA",
+      "ABZR86_RS08755 (+) membrane protein insertion efficiency factor YidD",
+      "ABZR86_RS08760 (+) dihydroorotase",
+      "ABZR86_RS08765 (-) GTP cyclohydrolase FolE2",
+      "ABZR86_RS08770 (-) squalene/phytoene synthase family protein",
+      "ABZR86_RS08775 (-) HAD-IA family hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_035322884_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "amidohydrolase family protein"
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634346_1 or WP_026636295_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634346_1",
+     "locus": "ABZR86_RS05565",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "ABZR86_RS05550 (-) lipopolysaccharide assembly protein LapB",
+      "ABZR86_RS05555 (-) lipopolysaccharide assembly protein LapA domain-containing protein",
+      "ABZR86_RS05560 (-) integration host factor subunit beta",
+      "ABZR86_RS05565 (-) 30S ribosomal protein S1",
+      "ABZR86_RS05570 (-) (d)CMP kinase",
+      "ABZR86_RS05575 (+) acyl-CoA-binding protein",
+      "ABZR86_RS05580 (+) NADPH-dependent 2,4-dienoyl-CoA reductase"
+     ]
+    },
+    {
+     "model_gene": "WP_026636295_1",
+     "locus": "ABZR86_RS00985",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "ABZR86_RS00970 (+) bifunctional riboflavin kinase/FAD synthetase",
+      "ABZR86_RS00975 (+) isoleucine--tRNA ligase",
+      "ABZR86_RS00980 (+) signal peptidase II",
+      "ABZR86_RS00985 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "ABZR86_RS00990 (-) RES family NAD+ phosphorylase",
+      "ABZR86_RS00995 (-) hypothetical protein",
+      "ABZR86_RS01000 (-) cytochrome P450"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FRUtex",
+   "name": "D-fructose transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "fru_e <=> fru_p",
+   "equation_names": "D-Fructose <=> D-Fructose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 6,
+   "genes": []
+  },
+  {
+   "reaction": "FUM",
+   "name": "Fumarase",
+   "equation_ids": "fum_c + h2o_c <=> mal__L_c",
+   "equation_names": "Fumarate + H2O <=> L-Malate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634391_1 or WP_026636862_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634391_1",
+     "locus": "ABZR86_RS05855",
+     "fitness_browser_desc": "class II fumarate hydratase",
+     "refseq_definition": "class II fumarate hydratase",
+     "neighbourhood": [
+      "ABZR86_RS05840 (+) serine hydrolase domain-containing protein",
+      "ABZR86_RS05845 (+) DUF2884 family protein",
+      "ABZR86_RS05850 (-) dihydrofolate reductase family protein",
+      "ABZR86_RS05855 (-) class II fumarate hydratase",
+      "ABZR86_RS05860 (+) adenylosuccinate lyase",
+      "ABZR86_RS05865 (-) glutathione transferase GstA",
+      "ABZR86_RS05870 (+) helix-turn-helix domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026636862_1",
+     "locus": "ABZR86_RS19555",
+     "fitness_browser_desc": "fumarate hydratase",
+     "refseq_definition": "fumarate hydratase",
+     "neighbourhood": [
+      "ABZR86_RS19540 (-) peptidase domain-containing ABC transporter",
+      "ABZR86_RS19545 (-) hypothetical protein",
+      "ABZR86_RS19550 (-) protease pro-enzyme activation domain-containing protein",
+      "ABZR86_RS19555 (+) fumarate hydratase",
+      "ABZR86_RS19560 (+) bifunctional aspartate kinase/diaminopimelate decarboxylase",
+      "ABZR86_RS19565 (+) UDP-N-acetyl-alpha-D-muramoyl-L-alanyl-L- glutamate epimerase",
+      "ABZR86_RS19570 (+) UDP-N-acetylmuramoyl-L-alanine--D-glutamate ligase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GALt2",
+   "name": "D galactose transport in via proton symport",
+   "equation_ids": "gal_e + h_e --> gal_c + h_c",
+   "equation_names": "D-Galactose + H+ --> D-Galactose + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633680_1 or WP_035323785_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633680_1",
+     "locus": "ABZR86_RS11100",
+     "fitness_browser_desc": "L-fucose:H+ symporter permease",
+     "refseq_definition": "L-fucose:H+ symporter permease",
+     "neighbourhood": [
+      "ABZR86_RS11085 (-) ATP-binding protein",
+      "ABZR86_RS11090 (-) GH92 family glycosyl hydrolase",
+      "ABZR86_RS11095 (+) LacI family DNA-binding transcriptional regulator",
+      "ABZR86_RS11100 (+) L-fucose:H+ symporter permease",
+      "ABZR86_RS11105 (+) carbohydrate kinase",
+      "ABZR86_RS11110 (+) AGE family epimerase/isomerase",
+      "ABZR86_RS11115 (-) carboxymuconolactone decarboxylase family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_035323785_1",
+     "locus": "ABZR86_RS01200",
+     "fitness_browser_desc": "sugar porter family MFS transporter",
+     "refseq_definition": "sugar porter family MFS transporter",
+     "neighbourhood": [
+      "ABZR86_RS01185 (+) OmpA family protein",
+      "ABZR86_RS01190 (+) alginate lyase family protein",
+      "ABZR86_RS01195 (-) RICIN domain-containing protein",
+      "ABZR86_RS01200 (-) sugar porter family MFS transporter",
+      "ABZR86_RS01205 (-) SMP-30/gluconolactonase/LRE family protein",
+      "ABZR86_RS01210 (-) SDR family oxidoreductase",
+      "ABZR86_RS01215 (-) galactonate dehydratase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GARFT",
+   "name": "Phosphoribosylglycinamide formyltransferase",
+   "equation_ids": "10fthf_c + gar_c <=> fgam_c + h_c + thf_c",
+   "equation_names": "10-Formyltetrahydrofolate + N1-(5-Phospho-D-ribosyl)glycinamide <=> N2-Formyl-N1-(5-phospho-D-ribosyl)glycinamide + H+ + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026635661_1 or WP_026636807_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026635661_1",
+     "locus": "ABZR86_RS19345",
+     "fitness_browser_desc": "formyl transferase",
+     "refseq_definition": "formyl transferase",
+     "neighbourhood": [
+      "ABZR86_RS19330 (+) DUF2007 domain-containing protein",
+      "ABZR86_RS19335 (+) adenine phosphoribosyltransferase",
+      "ABZR86_RS19340 (+) peptide-methionine (S)-S-oxide reductase MsrA",
+      "ABZR86_RS19345 (-) formyl transferase",
+      "ABZR86_RS19350 (-) polysaccharide deacetylase family protein",
+      "ABZR86_RS19355 (-) DNA-binding transcriptional regulator OxyR",
+      "ABZR86_RS19360 (+) M1 family metallopeptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_026636807_1",
+     "locus": "ABZR86_RS19860",
+     "fitness_browser_desc": "phosphoribosylglycinamide formyltransferase",
+     "refseq_definition": "phosphoribosylglycinamide formyltransferase",
+     "neighbourhood": [
+      "ABZR86_RS19845 (+) BolA/IbaG family iron-sulfur metabolism protein",
+      "ABZR86_RS19850 (+) UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+      "ABZR86_RS19855 (-) DUF3108 domain-containing protein",
+      "ABZR86_RS19860 (-) phosphoribosylglycinamide formyltransferase",
+      "ABZR86_RS19865 (-) phosphoribosylformylglycinamidine cyclo-ligase",
+      "ABZR86_RS19870 (+) DUF2066 domain-containing protein",
+      "ABZR86_RS19875 (+) CDP-alcohol phosphatidyltransferase family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GF6PTA",
+   "name": "Glutamine-fructose-6-phosphate transaminase",
+   "equation_ids": "f6p_c + gln__L_c --> gam6p_c + glu__L_c",
+   "equation_names": "D-Fructose 6-phosphate + L-Glutamine --> D-Glucosamine 6-phosphate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633385_1 or WP_026635544_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633385_1",
+     "locus": "ABZR86_RS16050",
+     "fitness_browser_desc": "SIS domain-containing protein",
+     "refseq_definition": "SIS domain-containing protein",
+     "neighbourhood": [
+      "ABZR86_RS16035 (-) periplasmic nitrate reductase, NapE protein",
+      "ABZR86_RS16040 (+) molybdopterin-dependent oxidoreductase",
+      "ABZR86_RS16045 (-) N-acetylglucosamine-6-phosphate deacetylase",
+      "ABZR86_RS16050 (-) SIS domain-containing protein",
+      "ABZR86_RS16055 (-) LacI family DNA-binding transcriptional regulator",
+      "ABZR86_RS16060 (-) sugar MFS transporter",
+      "ABZR86_RS16065 (+) glucokinase"
+     ]
+    },
+    {
+     "model_gene": "WP_026635544_1",
+     "locus": "ABZR86_RS18710",
+     "fitness_browser_desc": "glutamine--fructose-6-phosphate transaminase (isomerizing)",
+     "refseq_definition": "glutamine--fructose-6-phosphate transaminase (isomerizing)",
+     "neighbourhood": [
+      "ABZR86_RS18695 (+) hypothetical protein",
+      "ABZR86_RS18700 (+) YdcH family protein",
+      "ABZR86_RS18705 (+) pyridoxal-phosphate dependent enzyme",
+      "ABZR86_RS18710 (+) glutamine--fructose-6-phosphate transaminase (isomerizing)",
+      "ABZR86_RS18715 (-) mannose-1-phosphate guanylyltransferase/mannose-6-phosphate isomerase",
+      "ABZR86_RS18720 (-) dTDP-4-dehydrorhamnose reductase",
+      "ABZR86_RS18725 (-) dTDP-4-dehydrorhamnose 3,5-epimerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HSDy",
+   "name": "Homoserine dehydrogenase (NADPH)",
+   "equation_ids": "hom__L_c + nadp_c <=> aspsa_c + h_c + nadph_c",
+   "equation_names": "L-Homoserine + Nicotinamide adenine dinucleotide phosphate <=> L-Aspartate 4-semialdehyde + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633374_1 or WP_026635606_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633374_1",
+     "locus": "ABZR86_RS15985",
+     "fitness_browser_desc": "homoserine dehydrogenase",
+     "refseq_definition": "homoserine dehydrogenase family protein",
+     "neighbourhood": [
+      "ABZR86_RS15970 (-) 2-isopropylmalate synthase",
+      "ABZR86_RS15975 (-) threonine synthase",
+      "ABZR86_RS15980 (-) homoserine kinase",
+      "ABZR86_RS15985 (-) homoserine dehydrogenase",
+      "ABZR86_RS15990 (+) hypothetical protein",
+      "ABZR86_RS15995 (+) DUF2501 domain-containing protein",
+      "ABZR86_RS16000 (-) bifunctional 2',3'-cyclic-nucleotide 2'-phosphodiesterase/3'-nucleotidase"
+     ]
+    },
+    {
+     "model_gene": "WP_026635606_1",
+     "locus": "ABZR86_RS19035",
+     "fitness_browser_desc": "homoserine dehydrogenase",
+     "refseq_definition": "homoserine dehydrogenase family protein",
+     "neighbourhood": [
+      "ABZR86_RS19020 (-) 2OG-Fe dioxygenase family protein",
+      "ABZR86_RS19025 (+) homoserine O-succinyltransferase",
+      "ABZR86_RS19030 (+) cystathionine gamma-synthase",
+      "ABZR86_RS19035 (+) homoserine dehydrogenase",
+      "ABZR86_RS19040 (-) hypothetical protein",
+      "ABZR86_RS19045 (-) APC family permease",
+      "ABZR86_RS19050 (-) LysM domain-containing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IMPD",
+   "name": "IMP dehydrogenase",
+   "equation_ids": "h2o_c + imp_c + nad_c --> h_c + nadh_c + xmp_c",
+   "equation_names": "H2O + IMP + Nicotinamide adenine dinucleotide --> H+ + Nicotinamide adenine dinucleotide - reduced + Xanthosine 5'-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634316_1 or WP_026635581_1 or WP_051548424_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634316_1",
+     "locus": "ABZR86_RS05410",
+     "fitness_browser_desc": "IMP dehydrogenase",
+     "refseq_definition": "IMP dehydrogenase",
+     "neighbourhood": [
+      "ABZR86_RS05395 (-) nucleotidyl transferase AbiEii/AbiGii toxin family protein",
+      "ABZR86_RS05400 (-) type IV toxin-antitoxin system AbiEi family antitoxin domain-containing protein",
+      "ABZR86_RS05405 (-) glutamine-hydrolyzing GMP synthase",
+      "ABZR86_RS05410 (-) IMP dehydrogenase",
+      "ABZR86_RS05415 (-) bifunctional methylenetetrahydrofolate dehydrogenase/methenyltetrahydrofolate cyclohydrolase FolD",
+      "ABZR86_RS05420 (+) GNAT family protein",
+      "ABZR86_RS05425 (-) molybdopterin-synthase adenylyltransferase MoeB"
+     ]
+    },
+    {
+     "model_gene": "WP_026635581_1",
+     "locus": "ABZR86_RS18910",
+     "fitness_browser_desc": "CBS domain-containing protein",
+     "refseq_definition": "CBS domain-containing protein",
+     "neighbourhood": [
+      "ABZR86_RS18895 (-) serine hydrolase domain-containing protein",
+      "ABZR86_RS18900 (-) GMC family oxidoreductase N-terminal domain-containing protein",
+      "ABZR86_RS18905 (+) MFS transporter",
+      "ABZR86_RS18910 (-) CBS domain-containing protein",
+      "ABZR86_RS18915 (-) glycosyltransferase family 2 protein",
+      "ABZR86_RS18920 (-) monofunctional biosynthetic peptidoglycan transglycosylase",
+      "ABZR86_RS18925 (+) Hsp33 family molecular chaperone HslO"
+     ]
+    },
+    {
+     "model_gene": "WP_051548424_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "CBS domain-containing protein"
+    }
+   ]
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634346_1 or WP_026636295_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634346_1",
+     "locus": "ABZR86_RS05565",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "ABZR86_RS05550 (-) lipopolysaccharide assembly protein LapB",
+      "ABZR86_RS05555 (-) lipopolysaccharide assembly protein LapA domain-containing protein",
+      "ABZR86_RS05560 (-) integration host factor subunit beta",
+      "ABZR86_RS05565 (-) 30S ribosomal protein S1",
+      "ABZR86_RS05570 (-) (d)CMP kinase",
+      "ABZR86_RS05575 (+) acyl-CoA-binding protein",
+      "ABZR86_RS05580 (+) NADPH-dependent 2,4-dienoyl-CoA reductase"
+     ]
+    },
+    {
+     "model_gene": "WP_026636295_1",
+     "locus": "ABZR86_RS00985",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "ABZR86_RS00970 (+) bifunctional riboflavin kinase/FAD synthetase",
+      "ABZR86_RS00975 (+) isoleucine--tRNA ligase",
+      "ABZR86_RS00980 (+) signal peptidase II",
+      "ABZR86_RS00985 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "ABZR86_RS00990 (-) RES family NAD+ phosphorylase",
+      "ABZR86_RS00995 (-) hypothetical protein",
+      "ABZR86_RS01000 (-) cytochrome P450"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK2",
+   "name": "Nucleoside-diphosphate kinase (ATP:UDP)",
+   "equation_ids": "atp_c + udp_c <=> adp_c + utp_c",
+   "equation_names": "ATP + UDP <=> ADP + UTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634326_1 or WP_026634888_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634326_1",
+     "locus": "ABZR86_RS05460",
+     "fitness_browser_desc": "nucleoside-diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "ABZR86_RS05445 (-) helix-turn-helix domain-containing protein",
+      "ABZR86_RS05450 (-) type IV pilus biogenesis/stability protein PilW",
+      "ABZR86_RS05455 (-) 23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN",
+      "ABZR86_RS05460 (-) nucleoside-diphosphate kinase",
+      "ABZR86_RS05465 (+) TetR/AcrR family transcriptional regulator",
+      "ABZR86_RS05470 (+) 3-hydroxyacyl-CoA dehydrogenase/enoyl-CoA hydratase family protein",
+      "ABZR86_RS05475 (+) acetyl-CoA C-acyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634888_1",
+     "locus": "ABZR86_RS17360",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "ABZR86_RS17345 (-) transcriptional regulator GcvA",
+      "ABZR86_RS17350 (+) NAD(P)H-dependent oxidoreductase",
+      "ABZR86_RS17355 (-) 6-phosphofructokinase",
+      "ABZR86_RS17360 (+) adenylate kinase",
+      "ABZR86_RS17365 (+) UDP-N-acetylmuramate:L-alanyl-gamma-D-glutamyl- meso-diaminopimelate ligase",
+      "ABZR86_RS17370 (-) hypothetical protein",
+      "ABZR86_RS17375 (-) ABC transporter ATP-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK4",
+   "name": "Nucleoside-diphosphate kinase (ATP:dTDP)",
+   "equation_ids": "atp_c + dtdp_c <=> adp_c + dttp_c",
+   "equation_names": "ATP + DTDP <=> ADP + DTTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634326_1 or WP_026634888_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634326_1",
+     "locus": "ABZR86_RS05460",
+     "fitness_browser_desc": "nucleoside-diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "ABZR86_RS05445 (-) helix-turn-helix domain-containing protein",
+      "ABZR86_RS05450 (-) type IV pilus biogenesis/stability protein PilW",
+      "ABZR86_RS05455 (-) 23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN",
+      "ABZR86_RS05460 (-) nucleoside-diphosphate kinase",
+      "ABZR86_RS05465 (+) TetR/AcrR family transcriptional regulator",
+      "ABZR86_RS05470 (+) 3-hydroxyacyl-CoA dehydrogenase/enoyl-CoA hydratase family protein",
+      "ABZR86_RS05475 (+) acetyl-CoA C-acyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634888_1",
+     "locus": "ABZR86_RS17360",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "ABZR86_RS17345 (-) transcriptional regulator GcvA",
+      "ABZR86_RS17350 (+) NAD(P)H-dependent oxidoreductase",
+      "ABZR86_RS17355 (-) 6-phosphofructokinase",
+      "ABZR86_RS17360 (+) adenylate kinase",
+      "ABZR86_RS17365 (+) UDP-N-acetylmuramate:L-alanyl-gamma-D-glutamyl- meso-diaminopimelate ligase",
+      "ABZR86_RS17370 (-) hypothetical protein",
+      "ABZR86_RS17375 (-) ABC transporter ATP-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK5",
+   "name": "Nucleoside-diphosphate kinase (ATP:dGDP)",
+   "equation_ids": "atp_c + dgdp_c <=> adp_c + dgtp_c",
+   "equation_names": "ATP + DGDP <=> ADP + DGTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634326_1 or WP_026634888_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634326_1",
+     "locus": "ABZR86_RS05460",
+     "fitness_browser_desc": "nucleoside-diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "ABZR86_RS05445 (-) helix-turn-helix domain-containing protein",
+      "ABZR86_RS05450 (-) type IV pilus biogenesis/stability protein PilW",
+      "ABZR86_RS05455 (-) 23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN",
+      "ABZR86_RS05460 (-) nucleoside-diphosphate kinase",
+      "ABZR86_RS05465 (+) TetR/AcrR family transcriptional regulator",
+      "ABZR86_RS05470 (+) 3-hydroxyacyl-CoA dehydrogenase/enoyl-CoA hydratase family protein",
+      "ABZR86_RS05475 (+) acetyl-CoA C-acyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634888_1",
+     "locus": "ABZR86_RS17360",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "ABZR86_RS17345 (-) transcriptional regulator GcvA",
+      "ABZR86_RS17350 (+) NAD(P)H-dependent oxidoreductase",
+      "ABZR86_RS17355 (-) 6-phosphofructokinase",
+      "ABZR86_RS17360 (+) adenylate kinase",
+      "ABZR86_RS17365 (+) UDP-N-acetylmuramate:L-alanyl-gamma-D-glutamyl- meso-diaminopimelate ligase",
+      "ABZR86_RS17370 (-) hypothetical protein",
+      "ABZR86_RS17375 (-) ABC transporter ATP-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK7",
+   "name": "Nucleoside-diphosphate kinase (ATP:dCDP)",
+   "equation_ids": "atp_c + dcdp_c <=> adp_c + dctp_c",
+   "equation_names": "ATP + DCDP <=> ADP + DCTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634326_1 or WP_026634888_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634326_1",
+     "locus": "ABZR86_RS05460",
+     "fitness_browser_desc": "nucleoside-diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "ABZR86_RS05445 (-) helix-turn-helix domain-containing protein",
+      "ABZR86_RS05450 (-) type IV pilus biogenesis/stability protein PilW",
+      "ABZR86_RS05455 (-) 23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN",
+      "ABZR86_RS05460 (-) nucleoside-diphosphate kinase",
+      "ABZR86_RS05465 (+) TetR/AcrR family transcriptional regulator",
+      "ABZR86_RS05470 (+) 3-hydroxyacyl-CoA dehydrogenase/enoyl-CoA hydratase family protein",
+      "ABZR86_RS05475 (+) acetyl-CoA C-acyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634888_1",
+     "locus": "ABZR86_RS17360",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "ABZR86_RS17345 (-) transcriptional regulator GcvA",
+      "ABZR86_RS17350 (+) NAD(P)H-dependent oxidoreductase",
+      "ABZR86_RS17355 (-) 6-phosphofructokinase",
+      "ABZR86_RS17360 (+) adenylate kinase",
+      "ABZR86_RS17365 (+) UDP-N-acetylmuramate:L-alanyl-gamma-D-glutamyl- meso-diaminopimelate ligase",
+      "ABZR86_RS17370 (-) hypothetical protein",
+      "ABZR86_RS17375 (-) ABC transporter ATP-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633050_1 or WP_026633370_1 or WP_026633763_1 or WP_026634041_1 or WP_026634099_1 or WP_026635041_1 or WP_026636318_1 or WP_026636480_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633050_1",
+     "locus": "ABZR86_RS08550",
+     "fitness_browser_desc": "pyridoxal phosphate-dependent aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "ABZR86_RS08535 (-) response regulator transcription factor",
+      "ABZR86_RS08540 (+) MerR family transcriptional regulator",
+      "ABZR86_RS08545 (-) malate dehydrogenase",
+      "ABZR86_RS08550 (-) pyridoxal phosphate-dependent aminotransferase",
+      "ABZR86_RS08555 (+) GlsB/YeaQ/YmgE family stress response membrane protein",
+      "ABZR86_RS08560 (-) YidB family protein",
+      "ABZR86_RS08565 (-) peptidylprolyl isomerase"
+     ]
+    },
+    {
+     "model_gene": "WP_026633370_1",
+     "locus": "ABZR86_RS15965",
+     "fitness_browser_desc": "branched-chain amino acid transaminase",
+     "refseq_definition": "branched-chain amino acid transaminase",
+     "neighbourhood": [
+      "ABZR86_RS15950 (-) 3-isopropylmalate dehydrogenase",
+      "ABZR86_RS15955 (-) 3-isopropylmalate dehydratase small subunit",
+      "ABZR86_RS15960 (-) 3-isopropylmalate dehydratase large subunit",
+      "ABZR86_RS15965 (-) branched-chain amino acid transaminase",
+      "ABZR86_RS15970 (-) 2-isopropylmalate synthase",
+      "ABZR86_RS15975 (-) threonine synthase",
+      "ABZR86_RS15980 (-) homoserine kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_026633763_1",
+     "locus": "ABZR86_RS11580",
+     "fitness_browser_desc": "branched-chain amino acid transaminase",
+     "refseq_definition": "branched-chain amino acid transaminase",
+     "neighbourhood": [
+      "ABZR86_RS11565 (+) adenosylhomocysteinase",
+      "ABZR86_RS11570 (+) methylenetetrahydrofolate reductase [NAD(P)H]",
+      "ABZR86_RS11575 (+) DUF4124 domain-containing protein",
+      "ABZR86_RS11580 (+) branched-chain amino acid transaminase",
+      "ABZR86_RS11585 (-) condensation domain-containing protein",
+      "ABZR86_RS11590 (-) glycosyltransferase family 2 protein",
+      "ABZR86_RS11595 (-) condensation domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026634041_1",
+     "locus": "ABZR86_RS03710",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "ABZR86_RS03695 (+) hypothetical protein",
+      "ABZR86_RS03700 (-) helix-turn-helix domain-containing protein",
+      "ABZR86_RS03705 (+) SDR family NAD(P)-dependent oxidoreductase",
+      "ABZR86_RS03710 (-) PLP-dependent aminotransferase family protein",
+      "ABZR86_RS03715 (+) GNAT family protein",
+      "ABZR86_RS03720 (+) glutathione S-transferase family protein",
+      "ABZR86_RS03725 (+) alpha/beta fold hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634099_1",
+     "locus": "ABZR86_RS04055",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "ABZR86_RS04040 (+) heme-binding protein",
+      "ABZR86_RS04045 (-) sialidase family protein",
+      "ABZR86_RS04050 (-) DMT family transporter",
+      "ABZR86_RS04055 (+) PLP-dependent aminotransferase family protein",
+      "ABZR86_RS04060 (-) M13 family metallopeptidase",
+      "ABZR86_RS04065 (-) VOC family protein",
+      "ABZR86_RS04070 (-) alpha/beta fold hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_026635041_1",
+     "locus": "ABZR86_RS16490",
+     "fitness_browser_desc": "amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "ABZR86_RS16475 (-) YdcF family protein",
+      "ABZR86_RS16480 (-) DUF465 domain-containing protein",
+      "ABZR86_RS16485 (+) tRNA 2-thiocytidine(32) synthetase TtcA",
+      "ABZR86_RS16490 (+) amino acid aminotransferase",
+      "ABZR86_RS16495 (+) DUF2252 family protein",
+      "ABZR86_RS16500 (-) TonB-dependent receptor",
+      "ABZR86_RS16505 (+) recombination-associated protein RdgC"
+     ]
+    },
+    {
+     "model_gene": "WP_026636318_1",
+     "locus": "ABZR86_RS01145",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "ABZR86_RS01130 (-) histidine kinase",
+      "ABZR86_RS01135 (-) PD40 domain-containing protein",
+      "ABZR86_RS01140 (-) DMT family transporter",
+      "ABZR86_RS01145 (+) PLP-dependent aminotransferase family protein",
+      "ABZR86_RS01150 (-) hypothetical protein",
+      "ABZR86_RS01155 (+) isochorismatase family cysteine hydrolase",
+      "ABZR86_RS01160 (-) glycosyltransferase family 2 protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026636480_1",
+     "locus": "ABZR86_RS02120",
+     "fitness_browser_desc": "pyridoxal phosphate-dependent aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "ABZR86_RS02105 (+) hypothetical protein",
+      "ABZR86_RS02110 (-) FMN-dependent NADH-azoreductase",
+      "ABZR86_RS02115 (+) LysR substrate-binding domain-containing protein",
+      "ABZR86_RS02120 (+) pyridoxal phosphate-dependent aminotransferase",
+      "ABZR86_RS02125 (+) amidohydrolase",
+      "ABZR86_RS02130 (-) arsenate reductase (glutaredoxin)",
+      "ABZR86_RS02135 (-) pseudouridine synthase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRPPS",
+   "name": "Phosphoribosylpyrophosphate synthetase",
+   "equation_ids": "atp_c + r5p_c <=> amp_c + h_c + prpp_c",
+   "equation_names": "ATP + Alpha-D-Ribose 5-phosphate <=> AMP + H+ + 5-Phospho-alpha-D-ribose 1-diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_035324213_1 or WP_051548480_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_035324213_1",
+     "locus": "ABZR86_RS22025",
+     "fitness_browser_desc": "ribose-phosphate diphosphokinase",
+     "refseq_definition": "ribose-phosphate diphosphokinase",
+     "neighbourhood": [
+      "ABZR86_RS22010 (-) redox-regulated ATPase YchF",
+      "ABZR86_RS22015 (-) aminoacyl-tRNA hydrolase",
+      "ABZR86_RS22020 (-) 50S ribosomal protein L25/general stress protein Ctc",
+      "ABZR86_RS22025 (-) ribose-phosphate diphosphokinase",
+      "ABZR86_RS22030 (-) tRNA-Gln",
+      "ABZR86_RS22035 (-) 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase",
+      "ABZR86_RS22040 (-) lipoprotein insertase outer membrane protein LolB"
+     ]
+    },
+    {
+     "model_gene": "WP_051548480_1",
+     "locus": "ABZR86_RS04335",
+     "fitness_browser_desc": "ribose-phosphate diphosphokinase",
+     "refseq_definition": "ribose-phosphate diphosphokinase",
+     "neighbourhood": [
+      "ABZR86_RS04320 (+) CBS domain-containing protein",
+      "ABZR86_RS04325 (+) CBS domain-containing protein",
+      "ABZR86_RS04330 (+) thymidine phosphorylase family protein",
+      "ABZR86_RS04335 (+) ribose-phosphate diphosphokinase",
+      "ABZR86_RS04340 (-) hypothetical protein",
+      "ABZR86_RS04345 (+) cyclic nucleotide-binding domain-containing protein",
+      "ABZR86_RS04350 (-) PAS domain S-box protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR1",
+   "name": "Ribonucleoside-diphosphate reductase (ADP)",
+   "equation_ids": "adp_c + trdrd_c --> dadp_c + h2o_c + trdox_c",
+   "equation_names": "ADP + Reduced thioredoxin --> DADP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633947_1 or WP_026634934_1 or WP_026635683_1 or (WP_026635078_1 and WP_035323225_1)",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633947_1",
+     "locus": "ABZR86_RS12605",
+     "fitness_browser_desc": "thioredoxin TrxA",
+     "refseq_definition": "thioredoxin TrxA",
+     "neighbourhood": [
+      "ABZR86_RS12590 (-) permease-like cell division protein FtsX",
+      "ABZR86_RS12595 (-) cell division ATP-binding protein FtsE",
+      "ABZR86_RS12600 (-) DEAD/DEAH box helicase",
+      "ABZR86_RS12605 (+) thioredoxin TrxA",
+      "ABZR86_RS12610 (+) transcription termination factor Rho",
+      "ABZR86_RS12615 (+) hypothetical protein",
+      "ABZR86_RS12620 (-) sugar kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634934_1",
+     "locus": "ABZR86_RS17090",
+     "fitness_browser_desc": "TlpA disulfide reductase family protein",
+     "refseq_definition": "peroxiredoxin family protein",
+     "neighbourhood": [
+      "ABZR86_RS17075 (-) four helix bundle protein",
+      "ABZR86_RS17080 (-) acetyl-CoA carboxylase biotin carboxyl carrier protein",
+      "ABZR86_RS17085 (-) type II 3-dehydroquinate dehydratase",
+      "ABZR86_RS17090 (-) TlpA disulfide reductase family protein",
+      "ABZR86_RS17095 (-) protein-disulfide reductase DsbD",
+      "ABZR86_RS17100 (-) DMT family transporter",
+      "ABZR86_RS17105 (-) glutathione S-transferase N-terminal domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026635078_1",
+     "locus": "ABZR86_RS16265",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase subunit alpha",
+     "refseq_definition": "ribonucleoside-diphosphate reductase subunit alpha",
+     "neighbourhood": [
+      "ABZR86_RS16250 (-) transposase",
+      "ABZR86_RS16255 (-) ribonucleotide-diphosphate reductase subunit beta",
+      "ABZR86_RS16260 (-) hypothetical protein",
+      "ABZR86_RS16265 (-) ribonucleoside-diphosphate reductase subunit alpha",
+      "ABZR86_RS16270 (-) peptidase C13",
+      "ABZR86_RS16275 (+) alpha/beta hydrolase",
+      "ABZR86_RS16280 (-) amidohydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_026635683_1",
+     "locus": "ABZR86_RS17550",
+     "fitness_browser_desc": "adenosylcobalamin-dependent ribonucleoside-diphosphate reductase",
+     "refseq_definition": "adenosylcobalamin-dependent ribonucleoside-diphosphate reductase",
+     "neighbourhood": [
+      "ABZR86_RS17535 (-) HAD family hydrolase",
+      "ABZR86_RS17540 (-) substrate-binding domain-containing protein",
+      "ABZR86_RS17545 (-) DegQ family serine endoprotease",
+      "ABZR86_RS17550 (+) adenosylcobalamin-dependent ribonucleoside-diphosphate reductase",
+      "ABZR86_RS17555 (+) hypothetical protein",
+      "ABZR86_RS17560 (+) NrdJb",
+      "ABZR86_RS17565 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_035323225_1",
+     "locus": "ABZR86_RS16255",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase subunit beta",
+     "refseq_definition": "ribonucleotide-diphosphate reductase subunit beta",
+     "neighbourhood": [
+      "ABZR86_RS16240 (+) prohibitin family protein",
+      "ABZR86_RS16245 (+) DUF2076 family protein",
+      "ABZR86_RS16250 (-) transposase",
+      "ABZR86_RS16255 (-) ribonucleotide-diphosphate reductase subunit beta",
+      "ABZR86_RS16260 (-) hypothetical protein",
+      "ABZR86_RS16265 (-) ribonucleoside-diphosphate reductase subunit alpha",
+      "ABZR86_RS16270 (-) peptidase C13"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR2",
+   "name": "Ribonucleoside-diphosphate reductase (GDP)",
+   "equation_ids": "gdp_c + trdrd_c --> dgdp_c + h2o_c + trdox_c",
+   "equation_names": "GDP + Reduced thioredoxin --> DGDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633947_1 or WP_026634934_1 or WP_026635683_1 or (WP_026635078_1 and WP_035323225_1)",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633947_1",
+     "locus": "ABZR86_RS12605",
+     "fitness_browser_desc": "thioredoxin TrxA",
+     "refseq_definition": "thioredoxin TrxA",
+     "neighbourhood": [
+      "ABZR86_RS12590 (-) permease-like cell division protein FtsX",
+      "ABZR86_RS12595 (-) cell division ATP-binding protein FtsE",
+      "ABZR86_RS12600 (-) DEAD/DEAH box helicase",
+      "ABZR86_RS12605 (+) thioredoxin TrxA",
+      "ABZR86_RS12610 (+) transcription termination factor Rho",
+      "ABZR86_RS12615 (+) hypothetical protein",
+      "ABZR86_RS12620 (-) sugar kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634934_1",
+     "locus": "ABZR86_RS17090",
+     "fitness_browser_desc": "TlpA disulfide reductase family protein",
+     "refseq_definition": "peroxiredoxin family protein",
+     "neighbourhood": [
+      "ABZR86_RS17075 (-) four helix bundle protein",
+      "ABZR86_RS17080 (-) acetyl-CoA carboxylase biotin carboxyl carrier protein",
+      "ABZR86_RS17085 (-) type II 3-dehydroquinate dehydratase",
+      "ABZR86_RS17090 (-) TlpA disulfide reductase family protein",
+      "ABZR86_RS17095 (-) protein-disulfide reductase DsbD",
+      "ABZR86_RS17100 (-) DMT family transporter",
+      "ABZR86_RS17105 (-) glutathione S-transferase N-terminal domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026635078_1",
+     "locus": "ABZR86_RS16265",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase subunit alpha",
+     "refseq_definition": "ribonucleoside-diphosphate reductase subunit alpha",
+     "neighbourhood": [
+      "ABZR86_RS16250 (-) transposase",
+      "ABZR86_RS16255 (-) ribonucleotide-diphosphate reductase subunit beta",
+      "ABZR86_RS16260 (-) hypothetical protein",
+      "ABZR86_RS16265 (-) ribonucleoside-diphosphate reductase subunit alpha",
+      "ABZR86_RS16270 (-) peptidase C13",
+      "ABZR86_RS16275 (+) alpha/beta hydrolase",
+      "ABZR86_RS16280 (-) amidohydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_026635683_1",
+     "locus": "ABZR86_RS17550",
+     "fitness_browser_desc": "adenosylcobalamin-dependent ribonucleoside-diphosphate reductase",
+     "refseq_definition": "adenosylcobalamin-dependent ribonucleoside-diphosphate reductase",
+     "neighbourhood": [
+      "ABZR86_RS17535 (-) HAD family hydrolase",
+      "ABZR86_RS17540 (-) substrate-binding domain-containing protein",
+      "ABZR86_RS17545 (-) DegQ family serine endoprotease",
+      "ABZR86_RS17550 (+) adenosylcobalamin-dependent ribonucleoside-diphosphate reductase",
+      "ABZR86_RS17555 (+) hypothetical protein",
+      "ABZR86_RS17560 (+) NrdJb",
+      "ABZR86_RS17565 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_035323225_1",
+     "locus": "ABZR86_RS16255",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase subunit beta",
+     "refseq_definition": "ribonucleotide-diphosphate reductase subunit beta",
+     "neighbourhood": [
+      "ABZR86_RS16240 (+) prohibitin family protein",
+      "ABZR86_RS16245 (+) DUF2076 family protein",
+      "ABZR86_RS16250 (-) transposase",
+      "ABZR86_RS16255 (-) ribonucleotide-diphosphate reductase subunit beta",
+      "ABZR86_RS16260 (-) hypothetical protein",
+      "ABZR86_RS16265 (-) ribonucleoside-diphosphate reductase subunit alpha",
+      "ABZR86_RS16270 (-) peptidase C13"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SHK3Dr",
+   "name": "Shikimate dehydrogenase",
+   "equation_ids": "3dhsk_c + h_c + nadph_c <=> nadp_c + skm_c",
+   "equation_names": "3-Dehydroshikimate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + Shikimate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634715_1 or WP_026634973_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634715_1",
+     "locus": "ABZR86_RS14985",
+     "fitness_browser_desc": "shikimate dehydrogenase",
+     "refseq_definition": "shikimate dehydrogenase",
+     "neighbourhood": [
+      "ABZR86_RS14970 (-) energy transducer TonB",
+      "ABZR86_RS14975 (-) peptide-N4-asparagine amidase",
+      "ABZR86_RS14980 (-) YkgJ family cysteine cluster protein",
+      "ABZR86_RS14985 (-) shikimate dehydrogenase",
+      "ABZR86_RS14990 (+) hypothetical protein",
+      "ABZR86_RS14995 (-) RimK family protein",
+      "ABZR86_RS15000 (+) N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634973_1",
+     "locus": "ABZR86_RS16880",
+     "fitness_browser_desc": "shikimate 5-dehydrogenase",
+     "refseq_definition": "shikimate 5-dehydrogenase",
+     "neighbourhood": [
+      "ABZR86_RS16865 (-) EF-hand domain-containing protein",
+      "ABZR86_RS16870 (-) GTP cyclohydrolase I FolE",
+      "ABZR86_RS16875 (-) hypothetical protein",
+      "ABZR86_RS16880 (+) shikimate 5-dehydrogenase",
+      "ABZR86_RS16885 (-) DNA recombination protein RmuC",
+      "ABZR86_RS16890 (-) class I SAM-dependent rRNA methyltransferase",
+      "ABZR86_RS16895 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "STPT1",
+   "name": "Phosphoserine:homoserine phosphotransferase",
+   "equation_ids": "hom__L_c + pser__L_c --> phom_c + ser__L_c",
+   "equation_names": "L-Homoserine + O-Phospho-L-serine --> O-Phospho-L-homoserine + L-Serine",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": []
+  },
+  {
+   "reaction": "TYRTA",
+   "name": "Tyrosine transaminase",
+   "equation_ids": "akg_c + tyr__L_c <=> 34hpp_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Tyrosine <=> 3-(4-Hydroxyphenyl)pyruvate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633050_1 or WP_026634099_1 or WP_026635041_1 or WP_026636318_1 or WP_026636480_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633050_1",
+     "locus": "ABZR86_RS08550",
+     "fitness_browser_desc": "pyridoxal phosphate-dependent aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "ABZR86_RS08535 (-) response regulator transcription factor",
+      "ABZR86_RS08540 (+) MerR family transcriptional regulator",
+      "ABZR86_RS08545 (-) malate dehydrogenase",
+      "ABZR86_RS08550 (-) pyridoxal phosphate-dependent aminotransferase",
+      "ABZR86_RS08555 (+) GlsB/YeaQ/YmgE family stress response membrane protein",
+      "ABZR86_RS08560 (-) YidB family protein",
+      "ABZR86_RS08565 (-) peptidylprolyl isomerase"
+     ]
+    },
+    {
+     "model_gene": "WP_026634099_1",
+     "locus": "ABZR86_RS04055",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "ABZR86_RS04040 (+) heme-binding protein",
+      "ABZR86_RS04045 (-) sialidase family protein",
+      "ABZR86_RS04050 (-) DMT family transporter",
+      "ABZR86_RS04055 (+) PLP-dependent aminotransferase family protein",
+      "ABZR86_RS04060 (-) M13 family metallopeptidase",
+      "ABZR86_RS04065 (-) VOC family protein",
+      "ABZR86_RS04070 (-) alpha/beta fold hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_026635041_1",
+     "locus": "ABZR86_RS16490",
+     "fitness_browser_desc": "amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "ABZR86_RS16475 (-) YdcF family protein",
+      "ABZR86_RS16480 (-) DUF465 domain-containing protein",
+      "ABZR86_RS16485 (+) tRNA 2-thiocytidine(32) synthetase TtcA",
+      "ABZR86_RS16490 (+) amino acid aminotransferase",
+      "ABZR86_RS16495 (+) DUF2252 family protein",
+      "ABZR86_RS16500 (-) TonB-dependent receptor",
+      "ABZR86_RS16505 (+) recombination-associated protein RdgC"
+     ]
+    },
+    {
+     "model_gene": "WP_026636318_1",
+     "locus": "ABZR86_RS01145",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "ABZR86_RS01130 (-) histidine kinase",
+      "ABZR86_RS01135 (-) PD40 domain-containing protein",
+      "ABZR86_RS01140 (-) DMT family transporter",
+      "ABZR86_RS01145 (+) PLP-dependent aminotransferase family protein",
+      "ABZR86_RS01150 (-) hypothetical protein",
+      "ABZR86_RS01155 (+) isochorismatase family cysteine hydrolase",
+      "ABZR86_RS01160 (-) glycosyltransferase family 2 protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026636480_1",
+     "locus": "ABZR86_RS02120",
+     "fitness_browser_desc": "pyridoxal phosphate-dependent aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "ABZR86_RS02105 (+) hypothetical protein",
+      "ABZR86_RS02110 (-) FMN-dependent NADH-azoreductase",
+      "ABZR86_RS02115 (+) LysR substrate-binding domain-containing protein",
+      "ABZR86_RS02120 (+) pyridoxal phosphate-dependent aminotransferase",
+      "ABZR86_RS02125 (+) amidohydrolase",
+      "ABZR86_RS02130 (-) arsenate reductase (glutaredoxin)",
+      "ABZR86_RS02135 (-) pseudouridine synthase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDCPDP",
+   "name": "Undecaprenyl-diphosphatase",
+   "equation_ids": "h2o_c + udcpdp_c --> h_c + pi_c + udcpp_c",
+   "equation_names": "H2O + Undecaprenyl diphosphate --> H+ + Phosphate + Undecaprenyl phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633158_1 or WP_026634632_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633158_1",
+     "locus": "ABZR86_RS07930",
+     "fitness_browser_desc": "phosphatase PAP2 family protein",
+     "refseq_definition": "phosphatase PAP2 family protein",
+     "neighbourhood": [
+      "ABZR86_RS07915 (+) hypothetical protein",
+      "ABZR86_RS07920 (-) DUF4399 domain-containing protein",
+      "ABZR86_RS07925 (+) glycosyltransferase family 1 protein",
+      "ABZR86_RS07930 (+) phosphatase PAP2 family protein",
+      "ABZR86_RS07935 (-) 4'-phosphopantetheinyl transferase superfamily protein",
+      "ABZR86_RS07940 (-) TetR/AcrR family transcriptional regulator",
+      "ABZR86_RS07945 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026634632_1",
+     "locus": "ABZR86_RS15435",
+     "fitness_browser_desc": "undecaprenyl-diphosphate phosphatase",
+     "refseq_definition": "undecaprenyl-diphosphate phosphatase",
+     "neighbourhood": [
+      "ABZR86_RS15420 (+) hypothetical protein",
+      "ABZR86_RS15425 (+) serine hydrolase",
+      "ABZR86_RS15430 (-) winged helix-turn-helix transcriptional regulator",
+      "ABZR86_RS15435 (-) undecaprenyl-diphosphate phosphatase",
+      "ABZR86_RS15440 (-) histidine-type phosphatase",
+      "ABZR86_RS15445 (-) TonB-dependent receptor",
+      "ABZR86_RS15450 (-) FecR domain-containing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDPG4E",
+   "name": "UDPglucose 4-epimerase",
+   "equation_ids": "udpg_c <=> udpgal_c",
+   "equation_names": "UDPglucose <=> UDPgalactose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026633476_1 or WP_026633561_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026633476_1",
+     "locus": "ABZR86_RS09980",
+     "fitness_browser_desc": "NAD-dependent epimerase/dehydratase family protein",
+     "refseq_definition": "NAD-dependent epimerase/dehydratase family protein",
+     "neighbourhood": [
+      "ABZR86_RS09965 (+) tetratricopeptide repeat protein",
+      "ABZR86_RS09970 (+) hypothetical protein",
+      "ABZR86_RS09975 (+) glycosyltransferase family 4 protein",
+      "ABZR86_RS09980 (+) NAD-dependent epimerase/dehydratase family protein",
+      "ABZR86_RS09985 (+) glycosyltransferase",
+      "ABZR86_RS09990 (-) oligosaccharide flippase family protein",
+      "ABZR86_RS09995 (-) CmcI family methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_026633561_1",
+     "locus": "ABZR86_RS10470",
+     "fitness_browser_desc": "NAD-dependent epimerase/dehydratase family protein",
+     "refseq_definition": "NAD-dependent epimerase/dehydratase family protein",
+     "neighbourhood": [
+      "ABZR86_RS10455 (-) heavy metal-binding domain-containing protein",
+      "ABZR86_RS10460 (+) hypothetical protein",
+      "ABZR86_RS10465 (+) papain-like cysteine protease family protein",
+      "ABZR86_RS10470 (-) NAD-dependent epimerase/dehydratase family protein",
+      "ABZR86_RS10475 (+) shikimate kinase",
+      "ABZR86_RS10480 (+) 3-dehydroquinate synthase",
+      "ABZR86_RS10485 (+) WGR domain-containing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_026634347_1 or WP_026635889_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": [
+    {
+     "model_gene": "WP_026634347_1",
+     "locus": "ABZR86_RS05570",
+     "fitness_browser_desc": "(d)CMP kinase",
+     "refseq_definition": "(d)CMP kinase",
+     "neighbourhood": [
+      "ABZR86_RS05555 (-) lipopolysaccharide assembly protein LapA domain-containing protein",
+      "ABZR86_RS05560 (-) integration host factor subunit beta",
+      "ABZR86_RS05565 (-) 30S ribosomal protein S1",
+      "ABZR86_RS05570 (-) (d)CMP kinase",
+      "ABZR86_RS05575 (+) acyl-CoA-binding protein",
+      "ABZR86_RS05580 (+) NADPH-dependent 2,4-dienoyl-CoA reductase",
+      "ABZR86_RS05585 (+) LysR substrate-binding domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_026635889_1",
+     "locus": "ABZR86_RS21595",
+     "fitness_browser_desc": "UMP kinase",
+     "refseq_definition": "UMP kinase",
+     "neighbourhood": [
+      "ABZR86_RS21580 (-) type I methionyl aminopeptidase",
+      "ABZR86_RS21585 (+) 30S ribosomal protein S2",
+      "ABZR86_RS21590 (+) translation elongation factor Ts",
+      "ABZR86_RS21595 (+) UMP kinase",
+      "ABZR86_RS21600 (+) ribosome recycling factor",
+      "ABZR86_RS21605 (+) polyprenyl diphosphate synthase",
+      "ABZR86_RS21610 (+) phosphatidate cytidylyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ZN2tpp",
+   "name": "Zinc transport in via permease (no H+)",
+   "equation_ids": "zn2_p --> zn2_c",
+   "equation_names": "Zinc --> Zinc",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 6,
+   "genes": []
+  }
+ ]
+}

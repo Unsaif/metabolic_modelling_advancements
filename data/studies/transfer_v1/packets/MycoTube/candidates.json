@@ -1,0 +1,2081 @@
+{
+ "org": "MycoTube",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 19,
+ "candidates": [
+  {
+   "reaction": "ACHBS",
+   "name": "2-aceto-2-hydroxybutanoate synthase",
+   "equation_ids": "2obut_c + h_c + pyr_c --> 2ahbut_c + co2_c",
+   "equation_names": "2-Oxobutanoate + H+ + Pyruvate --> (S)-2-Aceto-2-hydroxybutanoate + CO2",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_216336_1 and NP_217518_1) or (NP_217518_1 and NP_217987_1) or (NP_217518_1 and NP_218026_1) or (NP_217518_1 and YP_177917_1)",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216336_1",
+     "locus": "Rv1820",
+     "fitness_browser_desc": "Probable acetolactate synthase IlvG (acetohydroxy-acid synthase)(ALS)",
+     "refseq_definition": "acetolactate synthase large subunit IlvG",
+     "neighbourhood": [
+      "Rv1817 (+) Possible flavoprotein",
+      "Rv1818c (-) PE-PGRS family protein PE_PGRS33",
+      "Rv1819c (-) Probable drug-transport transmembrane ATP-binding protein ABC transporter BacA",
+      "Rv1820 (+) Probable acetolactate synthase IlvG (acetohydroxy-acid synthase)(ALS)",
+      "Rv1821 (+) Possible preprotein translocase ATPase SecA2",
+      "Rv1822 (+) Probable CDP-diacylglycerol--glycerol-3-phosphate 3-phosphatidyltransferase PgsA2 (PGP synthase) (phosphatidylglycerophosphate synthase) (3-phosphatidyl-1'-glycerol-3'phosphate synthase)",
+      "Rv1823 (+) Conserved protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217518_1",
+     "locus": "Rv3002c",
+     "fitness_browser_desc": "Probable acetolactate synthase (small subunit) IlvN (acetohydroxy-acid synthase) (AHAS) (ALS)",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "Rv2999 (+) Probable conserved lipoprotein LppY",
+      "Rv3000 (+) Possible conserved transmembrane protein",
+      "Rv3001c (-) Probable KETOL-acid reductoisomerase IlvC (acetohydroxy-acid isomeroreductase) (alpha-keto-beta-hydroxylacil reductoisomerase)",
+      "Rv3002c (-) Probable acetolactate synthase (small subunit) IlvN (acetohydroxy-acid synthase) (AHAS) (ALS)",
+      "Rv3003c (-) Acetolactate synthase (large subunit) IlvB1 (acetohydroxy-acid synthase)",
+      "Rv3004 (+) Low molecular weight protein antigen 6 (CFP-6)",
+      "Rv3005c (-) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217987_1",
+     "locus": "Rv3470c",
+     "fitness_browser_desc": "Probable acetolactate synthase (large subunit) IlvB2 (AHAS) (acetohydroxy-acid synthase large subunit) (ALS)",
+     "refseq_definition": "acetolactate synthase large subunit",
+     "neighbourhood": [
+      "Rv3467 (+) Conserved hypothetical protein",
+      "Rv3468c (-) Possible dTDP-glucose 4,6-dehydratase",
+      "Rv3469c (-) Probable 4-hydroxy-2-oxovalerate aldolase MhpE (HOA)",
+      "Rv3470c (-) Probable acetolactate synthase (large subunit) IlvB2 (AHAS) (acetohydroxy-acid synthase large subunit) (ALS)",
+      "Rv3471c (-) Conserved hypothetical protein",
+      "Rv3472 (+) Conserved protein",
+      "Rv3473c (-) Possible peroxidase BpoA (non-haem peroxidase)"
+     ]
+    },
+    {
+     "model_gene": "NP_218026_1",
+     "locus": "Rv3509c",
+     "fitness_browser_desc": "Probable acetohydroxyacid synthase IlvX (acetolactate synthase)",
+     "refseq_definition": "acetohydroxyacid synthase large subunit",
+     "neighbourhood": [
+      "Rv3506 (+) Fatty-acid-CoA synthetase FadD17 (fatty-acid-CoA synthase) (fatty-acid-CoA ligase)",
+      "Rv3507 (+) PE-PGRS family protein PE_PGRS53",
+      "Rv3508 (+) PE-PGRS family protein PE_PGRS54",
+      "Rv3509c (-) Probable acetohydroxyacid synthase IlvX (acetolactate synthase)",
+      "Rv3510c (-) Conserved protein",
+      "Rv3511 (+) PE-PGRS family protein PE_PGRS55",
+      "Rv3512 (+) PE-PGRS family protein PE_PGRS56"
+     ]
+    },
+    {
+     "model_gene": "YP_177917_1",
+     "locus": "Rv3003c",
+     "fitness_browser_desc": "Acetolactate synthase (large subunit) IlvB1 (acetohydroxy-acid synthase)",
+     "refseq_definition": "acetolactate synthase large subunit IlvB",
+     "neighbourhood": [
+      "Rv3000 (+) Possible conserved transmembrane protein",
+      "Rv3001c (-) Probable KETOL-acid reductoisomerase IlvC (acetohydroxy-acid isomeroreductase) (alpha-keto-beta-hydroxylacil reductoisomerase)",
+      "Rv3002c (-) Probable acetolactate synthase (small subunit) IlvN (acetohydroxy-acid synthase) (AHAS) (ALS)",
+      "Rv3003c (-) Acetolactate synthase (large subunit) IlvB1 (acetohydroxy-acid synthase)",
+      "Rv3004 (+) Low molecular weight protein antigen 6 (CFP-6)",
+      "Rv3005c (-) Conserved hypothetical protein",
+      "Rv3006 (+) Probable conserved lipoprotein LppZ"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ADCL",
+   "name": "4-aminobenzoate synthase",
+   "equation_ids": "4adcho_c --> 4abz_c + h_c + pyr_c",
+   "equation_names": "4-amino-4-deoxychorismate --> 4-Aminobenzoate + H+ + Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_217069_1 or YP_177757_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_217069_1",
+     "locus": "Rv2553c",
+     "fitness_browser_desc": "Probable conserved membrane protein",
+     "refseq_definition": "membrane protein",
+     "neighbourhood": [
+      "Rv2550c (-) Possible antitoxin VapB20",
+      "Rv2551c (-) Conserved hypothetical protein",
+      "Rv2552c (-) Probable shikimate 5-dehydrogenase AroE (5-dehydroshikimate reductase)",
+      "Rv2553c (-) Probable conserved membrane protein",
+      "Rv2554c (-) Conserved protein",
+      "Rv2555c (-) Probable alanyl-tRNA synthetase AlaS (alanine--tRNA ligase) (alanine translase) (ALARS)",
+      "Rv2556c (-) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_177757_1",
+     "locus": "Rv0812",
+     "fitness_browser_desc": "Probable amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "Rv0809 (+) Probable phosphoribosylformylglycinamidine CYCLO-ligase PurM (AIRS) (phosphoribosyl-aminoimidazole synthetase) (air synthase)",
+      "Rv0810c (-) Conserved hypothetical protein",
+      "Rv0811c (-) Conserved protein",
+      "Rv0812 (+) Probable amino acid aminotransferase",
+      "Rv0813c (-) Conserved protein",
+      "Rv0814c (-) Conserved protein SseC2",
+      "Rv0815c (-) Probable thiosulfate sulfurtransferase CysA2 (rhodanese-like protein) (thiosulfate cyanide transsulfurase) (thiosulfate thiotransferase)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "AIRCr",
+   "name": "Phosphoribosylaminoimidazole carboxylase",
+   "equation_ids": "air_c + co2_c <=> 5aizc_c + h_c",
+   "equation_names": "5-amino-1-(5-phospho-D-ribosyl)imidazole + CO2 <=> 5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxylate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_217774_1 and NP_217793_1) or (NP_217792_1 and NP_217793_1)",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_217774_1",
+     "locus": "Rv3257c",
+     "fitness_browser_desc": "Probable phosphomannomutase PmmA (PMM) (phosphomannose mutase)",
+     "refseq_definition": "phosphomannomutase PmmA",
+     "neighbourhood": [
+      "Rv3254 (+) Conserved hypothetical protein",
+      "Rv3255c (-) Probable mannose-6-phosphate isomerase ManA (phosphomannose isomerase) (phosphomannoisomerase) (PMI) (phosphohexoisomerase) (phosphohexomutase)",
+      "Rv3256c (-) Conserved protein",
+      "Rv3257c (-) Probable phosphomannomutase PmmA (PMM) (phosphomannose mutase)",
+      "Rv3258c (-) Conserved hypothetical protein",
+      "Rv3259 (+) Conserved hypothetical protein",
+      "Rv3260c (-) Probable transcriptional regulatory protein WhiB-like WhiB2"
+     ]
+    },
+    {
+     "model_gene": "NP_217792_1",
+     "locus": "Rv3275c",
+     "fitness_browser_desc": "Probable phosphoribosylaminoimidazole carboxylase catalytic subunit PurE (air carboxylase) (AIRC)",
+     "refseq_definition": "N5-carboxyaminoimidazole ribonucleotide mutase",
+     "neighbourhood": [
+      "Rv3272 (+) Conserved hypothetical protein",
+      "Rv3273 (+) Probable transmembrane carbonic anhydrase (carbonate dehydratase) (carbonic dehydratase)",
+      "Rv3274c (-) Probable acyl-CoA dehydrogenase FadE25",
+      "Rv3275c (-) Probable phosphoribosylaminoimidazole carboxylase catalytic subunit PurE (air carboxylase) (AIRC)",
+      "Rv3276c (-) Probable phosphoribosylaminoimidazole carboxylase ATPase subunit PurK (air carboxylase) (AIRC)",
+      "Rv3277 (+) Probable conserved transmembrane protein",
+      "Rv3278c (-) Probable conserved transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217793_1",
+     "locus": "Rv3276c",
+     "fitness_browser_desc": "Probable phosphoribosylaminoimidazole carboxylase ATPase subunit PurK (air carboxylase) (AIRC)",
+     "refseq_definition": "N5-carboxyaminoimidazole ribonucleotide synthase",
+     "neighbourhood": [
+      "Rv3273 (+) Probable transmembrane carbonic anhydrase (carbonate dehydratase) (carbonic dehydratase)",
+      "Rv3274c (-) Probable acyl-CoA dehydrogenase FadE25",
+      "Rv3275c (-) Probable phosphoribosylaminoimidazole carboxylase catalytic subunit PurE (air carboxylase) (AIRC)",
+      "Rv3276c (-) Probable phosphoribosylaminoimidazole carboxylase ATPase subunit PurK (air carboxylase) (AIRC)",
+      "Rv3277 (+) Probable conserved transmembrane protein",
+      "Rv3278c (-) Probable conserved transmembrane protein",
+      "Rv3279c (-) Possible bifunctional protein BirA: biotin operon repressor + biotin--[acetyl-CoA-carboxylase] synthetase (biotin--protein ligase)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ANS",
+   "name": "Anthranilate synthase",
+   "equation_ids": "chor_c + gln__L_c --> anth_c + glu__L_c + h_c + pyr_c",
+   "equation_names": "Chorismate + L-Glutamine --> Anthranilate + L-Glutamate + H+ + Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_216125_1 or NP_217375_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216125_1",
+     "locus": "Rv1609",
+     "fitness_browser_desc": "Anthranilate synthase component I TrpE (glutamine amidotransferase)",
+     "refseq_definition": "anthranilate synthase component I",
+     "neighbourhood": [
+      "Rv1606 (+) Probable phosphoribosyl-AMP 1,6 cyclohydrolase HisI",
+      "Rv1607 (+) Probable ionic transporter integral membrane protein ChaA",
+      "Rv1608c (-) Probable peroxidoxin BcpB",
+      "Rv1609 (+) Anthranilate synthase component I TrpE (glutamine amidotransferase)",
+      "Rv1610 (+) Possible conserved membrane protein",
+      "Rv1611 (+) Probable indole-3-glycerol phosphate synthase TrpC",
+      "Rv1612 (+) Tryptophan synthase, beta subunit TrpB"
+     ]
+    },
+    {
+     "model_gene": "NP_217375_1",
+     "locus": "Rv2859c",
+     "fitness_browser_desc": "Possible amidotransferase",
+     "refseq_definition": "glutamine amidotransferase",
+     "neighbourhood": [
+      "Rv2856 (+) Possible nickel-transport integral membrane protein NicT",
+      "Rv2857c (-) Probable short-chain type dehydrogenase/reductase",
+      "Rv2858c (-) Probable aldehyde dehydrogenase AldC",
+      "Rv2859c (-) Possible amidotransferase",
+      "Rv2860c (-) Probable glutamine synthetase GlnA4 (glutamine synthase) (GS-II)",
+      "Rv2861c (-) Methionine aminopeptidase MapB (map) (peptidase M)",
+      "Rv2862c (-) Conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CBPS",
+   "name": "Carbamoyl-phosphate synthase (glutamine-hydrolysing)",
+   "equation_ids": "2.0 atp_c + gln__L_c + h2o_c + hco3_c --> 2.0 adp_c + cbp_c + glu__L_c + 2.0 h_c + pi_c",
+   "equation_names": "2.0 ATP + L-Glutamine + H2O + Bicarbonate --> 2.0 ADP + Carbamoyl phosphate + L-Glutamate + 2.0 H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215899_1 or YP_177804_1",
+   "n_growth_conditions_essential": 18,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215899_1",
+     "locus": "Rv1383",
+     "fitness_browser_desc": "Probable carbamoyl-phosphate synthase small chain CarA (carbamoyl-phosphate synthetase glutamine chain)",
+     "refseq_definition": "carbamoyl-phosphate synthase small subunit",
+     "neighbourhood": [
+      "Rv1380 (+) Probable aspartate carbamoyltransferase PyrB (ATCase) (aspartate transcarbamylase)",
+      "Rv1381 (+) Probable dihydroorotase PyrC (DHOase)",
+      "Rv1382 (+) Probable export or membrane protein",
+      "Rv1383 (+) Probable carbamoyl-phosphate synthase small chain CarA (carbamoyl-phosphate synthetase glutamine chain)",
+      "Rv1384 (+) Probable carbamoyl-phosphate synthase large chain CarB (carbamoyl-phosphate synthetase ammonia chain)",
+      "Rv1385 (+) Probable orotidine 5'-phosphate decarboxylase PyrF (OMP decarboxylase) (ompdecase)",
+      "Rv1386 (+) PE family protein PE15"
+     ]
+    },
+    {
+     "model_gene": "YP_177804_1",
+     "locus": "Rv1384",
+     "fitness_browser_desc": "Probable carbamoyl-phosphate synthase large chain CarB (carbamoyl-phosphate synthetase ammonia chain)",
+     "refseq_definition": "carbamoyl-phosphate synthase large subunit",
+     "neighbourhood": [
+      "Rv1381 (+) Probable dihydroorotase PyrC (DHOase)",
+      "Rv1382 (+) Probable export or membrane protein",
+      "Rv1383 (+) Probable carbamoyl-phosphate synthase small chain CarA (carbamoyl-phosphate synthetase glutamine chain)",
+      "Rv1384 (+) Probable carbamoyl-phosphate synthase large chain CarB (carbamoyl-phosphate synthetase ammonia chain)",
+      "Rv1385 (+) Probable orotidine 5'-phosphate decarboxylase PyrF (OMP decarboxylase) (ompdecase)",
+      "Rv1386 (+) PE family protein PE15",
+      "Rv1387 (+) PPE family protein PPE20"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CITt15",
+   "name": "Citrate transport in via Zn complex",
+   "equation_ids": "cit_e + h_e + zn2_e --> cit_c + h_c + zn2_c",
+   "equation_names": "Citrate + H+ + Zinc --> Citrate + H+ + Zinc",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "name": "Chloride transport out via proton antiport (2:1) (periplasm)",
+   "equation_ids": "2.0 cl_p + h_c --> 2.0 cl_c + h_p",
+   "equation_names": "2.0 Chloride + H+ --> 2.0 Chloride + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "CYSS",
+   "name": "Cysteine synthase",
+   "equation_ids": "acser_c + h2s_c --> ac_c + cys__L_c + h_c",
+   "equation_names": "O-Acetyl-L-serine + Hydrogen sulfide --> Acetate + L-Cysteine + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215852_1 or NP_218201_3 or YP_177762_1 or YP_177868_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215852_1",
+     "locus": "Rv1336",
+     "fitness_browser_desc": "Cysteine synthase B CysM (CSASE B) (O-phosphoserine sulfhydrylase B) (O-phosphoserine (thiol)-lyase B)",
+     "refseq_definition": "O-phosphoserine sulfhydrylase",
+     "neighbourhood": [
+      "Rv1333 (+) Probable hydrolase",
+      "Rv1334 (+) Possible hydrolase",
+      "Rv1335 (+) Sulfur carrier protein CysO",
+      "Rv1336 (+) Cysteine synthase B CysM (CSASE B) (O-phosphoserine sulfhydrylase B) (O-phosphoserine (thiol)-lyase B)",
+      "Rv1337 (+) Probable integral membrane protein",
+      "Rv1338 (+) Probable glutamate racemase MurI",
+      "Rv1339 (+) Conserved protein"
+     ]
+    },
+    {
+     "model_gene": "NP_218201_3",
+     "locus": "Rv3684",
+     "fitness_browser_desc": "Probable lyase",
+     "refseq_definition": "lyase",
+     "neighbourhood": [
+      "Rv3681c (-) Probable transcriptional regulatory protein WhiB-like WhiB4",
+      "Rv3682 (+) Probable bifunctional membrane-associated penicillin-binding protein 1A/1B PonA2 (murein polymerase) [includes: penicillin-insensitive transglycosylase (peptidoglycan TGASE) + penicillin-sensitive transpeptidase (DD-transpeptidase)]",
+      "Rv3683 (+) Conserved protein",
+      "Rv3684 (+) Probable lyase",
+      " (+) tRNA-Pro",
+      "Rv3685c (-) Probable cytochrome P450 137 Cyp137",
+      "Rv3686c (-) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_177762_1",
+     "locus": "Rv0848",
+     "fitness_browser_desc": "Possible cysteine synthase a CysK2 (O-acetylserine sulfhydrylase) (O-acetylserine (thiol)-lyase) (CSASE)",
+     "refseq_definition": "cysteine synthase CysK",
+     "neighbourhood": [
+      "Rv0845 (+) Possible two component sensor kinase",
+      "Rv0846c (-) Probable oxidase",
+      "Rv0847 (+) Probable lipoprotein LpqS",
+      "Rv0848 (+) Possible cysteine synthase a CysK2 (O-acetylserine sulfhydrylase) (O-acetylserine (thiol)-lyase) (CSASE)",
+      "Rv0849 (+) Probable conserved integral membrane transport protein",
+      "Rv0850 (+) Putative transposase (fragment)",
+      "Rv0851c (-) Probable short-chain type dehydrogenase/reductase"
+     ]
+    },
+    {
+     "model_gene": "YP_177868_1",
+     "locus": "Rv2334",
+     "fitness_browser_desc": "Cysteine synthase a CysK1 (O-acetylserine sulfhydrylase A) (O-acetylserine (thiol)-lyase A) (CSASE A)",
+     "refseq_definition": "O-acetylserine sulfhydrylase",
+     "neighbourhood": [
+      "Rv2331A (+) Hypothetical protein",
+      "Rv2332 (+) Probable [NAD] dependent malate oxidoreductase Mez (malic enzyme) (NAD-malic enzyme) (malate dehydrogenase (oxaloacetate decarboxylating)) (pyruvic-malic carboxylase) (NAD-me)",
+      "Rv2333c (-) Integral membrane drug efflux protein Stp",
+      "Rv2334 (+) Cysteine synthase a CysK1 (O-acetylserine sulfhydrylase A) (O-acetylserine (thiol)-lyase A) (CSASE A)",
+      "Rv2335 (+) Probable serine acetyltransferase CysE (sat)",
+      "Rv2336 (+) Hypothetical protein",
+      "Rv2337c (-) Hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DB4PS",
+   "name": "3,4-Dihydroxy-2-butanone-4-phosphate synthase",
+   "equation_ids": "ru5p__D_c --> db4p_c + for_c + h_c",
+   "equation_names": "D-Ribulose 5-phosphate --> 3,4-dihydroxy-2-butanone 4-phosphate + Formate + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_214703_1 or YP_177641_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_214703_1",
+     "locus": "Rv0189c",
+     "fitness_browser_desc": "Probable dihydroxy-acid dehydratase IlvD (dad)",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "Rv0186A (-) Metallothionein, MymT",
+      "Rv0187 (+) Probable O-methyltransferase",
+      "Rv0188 (+) Probable conserved transmembrane protein",
+      "Rv0189c (-) Probable dihydroxy-acid dehydratase IlvD (dad)",
+      "Rv0190 (+) Conserved protein",
+      "Rv0191 (+) Probable conserved integral membrane protein",
+      "Rv0192 (+) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_177641_1",
+     "locus": "Rv1159A",
+     "fitness_browser_desc": "Unknown protein",
+     "refseq_definition": "pterin-4-alpha-carbinolamine dehydratase",
+     "neighbourhood": [
+      "Rv1157c (-) Conserved ala-, pro-rich protein",
+      "Rv1158c (-) Conserved hypothetical ala-, pro-rich protein",
+      "Rv1159 (+) Mannosyltransferase PimE",
+      "Rv1159A (-) Unknown protein",
+      "Rv1160 (+) Probable mutator protein MutT2 (7,8-dihydro-8-oxoguanine-triphosphatase) (8-oxo-dGTPase)",
+      "Rv1161 (+) Respiratory nitrate reductase (alpha chain) NarG",
+      "Rv1162 (+) Probable respiratory nitrate reductase (beta chain) NarH"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPRy",
+   "name": "Dihydrodipicolinate reductase (NADPH)",
+   "equation_ids": "23dhdp_c + h_c + nadph_c --> nadp_c + thdp_c",
+   "equation_names": "2,3-Dihydrodipicolinate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + 2,3,4,5-Tetrahydrodipicolinate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215575_1 or NP_217289_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215575_1",
+     "locus": "Rv1059",
+     "fitness_browser_desc": "Conserved protein",
+     "refseq_definition": "hypothetical protein Rv1059",
+     "neighbourhood": [
+      "Rv1056 (+) Conserved protein",
+      "Rv1057 (+) Conserved hypothetical protein",
+      "Rv1058 (+) Probable medium chain fatty-acid-CoA ligase FadD14 (fatty-acid-CoA synthetase) (fatty-acid-CoA synthase)",
+      "Rv1059 (+) Conserved protein",
+      "Rv1060 (+) Unknown protein",
+      "Rv1061 (+) Conserved protein",
+      "Rv1062 (+) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217289_1",
+     "locus": "Rv2773c",
+     "fitness_browser_desc": "Dihydrodipicolinate reductase DapB (DHPR)",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate reductase",
+     "neighbourhood": [
+      "Rv2770c (-) PPE family protein PPE44",
+      "Rv2771c (-) Conserved hypothetical protein",
+      "Rv2772c (-) Probable conserved transmembrane protein",
+      "Rv2773c (-) Dihydrodipicolinate reductase DapB (DHPR)",
+      "Rv2774c (-) Hypothetical protein",
+      "Rv2775 (+) GCN5-related N-acetyltransferase",
+      "Rv2776c (-) Probable oxidoreductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMATT",
+   "name": "Dimethylallyltranstransferase",
+   "equation_ids": "dmpp_c + ipdp_c --> grdp_c + ppi_c",
+   "equation_names": "Dimethylallyl diphosphate + Isopentenyl diphosphate --> Geranyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215076_1 or NP_216689_1 or YP_177970_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215076_1",
+     "locus": "Rv0562",
+     "fitness_browser_desc": "Probable polyprenyl-diphosphate synthase GrcC1 (polyprenyl pyrophosphate synthetase)",
+     "refseq_definition": "polyprenyl-diphosphate synthase GrcC",
+     "neighbourhood": [
+      "Rv0559c (-) Possible conserved secreted protein",
+      "Rv0560c (-) Possible benzoquinone methyltransferase (methylase)",
+      "Rv0561c (-) Possible oxidoreductase",
+      "Rv0562 (+) Probable polyprenyl-diphosphate synthase GrcC1 (polyprenyl pyrophosphate synthetase)",
+      "Rv0563 (+) Probable protease transmembrane protein heat shock protein HtpX",
+      "Rv0564c (-) Probable glycerol-3-phosphate dehydrogenase [NAD(P)+] GpdA1 (NAD(P)H-dependent glycerol-3-phosphate dehydrogenase) (NAD(P)H-dependent dihydroxyacetone-phosphate reductase)",
+      "Rv0565c (-) Probable monooxygenase"
+     ]
+    },
+    {
+     "model_gene": "NP_216689_1",
+     "locus": "Rv2173",
+     "fitness_browser_desc": "Probable geranylgeranyl pyrophosphate synthetase IdsA2 (ggppsase) (GGPP synthetase) (geranylgeranyl diphosphate synthase)",
+     "refseq_definition": "geranylgeranyl pyrophosphate synthetase IdsA",
+     "neighbourhood": [
+      "Rv2170 (+) GCN5-related N-acetyltransferase",
+      "Rv2171 (+) Probable conserved lipoprotein LppM",
+      "Rv2172c (-) Conserved protein",
+      "Rv2173 (+) Probable geranylgeranyl pyrophosphate synthetase IdsA2 (ggppsase) (GGPP synthetase) (geranylgeranyl diphosphate synthase)",
+      "Rv2174 (+) Alpha(1->6)mannosyltransferase. Possible conserved integral membrane protein.",
+      "Rv2175c (-) Conserved regulatory protein",
+      "Rv2176 (+) Probable transmembrane serine/threonine-protein kinase L PknL (protein kinase L) (STPK L)"
+     ]
+    },
+    {
+     "model_gene": "YP_177970_1",
+     "locus": "Rv3398c",
+     "fitness_browser_desc": "Probable multifunctional geranylgeranyl pyrophosphate synthetase IdsA1 (GGPP synthetase) (ggppsase) (geranylgeranyl diphosphate synthase): dimethylallyltransferase (prenyltransferase) (geranyl-diphosphate synthase) + geranyltranstransferase (farnesyl-diphosphate synthase) (farnesyl-pyrophosphate synthetase) (farnesyl diphosphate synthetase) (FPP synthetase) + farnesyltranstransferase (geranylgeranyl-diphosphate synthase)",
+     "refseq_definition": "multifunctional dimethylallyltransferase/geranyltranstransferase/farnesyltranstransferase",
+     "neighbourhood": [
+      "Rv3395A (+) Probable membrane protein",
+      "Rv3396c (-) Probable GMP synthase [glutamine-hydrolyzing] GuaA (glutamine amidotransferase) (GMP synthetase)",
+      "Rv3397c (-) Probable phytoene synthase PhyA",
+      "Rv3398c (-) Probable multifunctional geranylgeranyl pyrophosphate synthetase IdsA1 (GGPP synthetase) (ggppsase) (geranylgeranyl diphosphate synthase): dimethylallyltransferase (prenyltransferase) (geranyl-diphosphate synthase) + geranyltranstransferase (farnesyl-diphosphate synthase) (farnesyl-pyrophosphate synthetase) (farnesyl diphosphate synthetase) (FPP synthetase) + farnesyltranstransferase (geranylgeranyl-diphosphate synthase)",
+      "Rv3399 (+) Possible S-adenosylmethionine-dependent methyltransferase",
+      "Rv3400 (+) Probable hydrolase",
+      "Rv3401 (+) Conserved protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNMPPA",
+   "name": "Dihydroneopterin monophosphate dephosphorylase",
+   "equation_ids": "dhpmp_c + h2o_c --> dhnpt_c + pi_c",
+   "equation_names": "Dihydroneopterin monophosphate + H2O --> Dihydroneopterin + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_216508_1 or NP_217727_1 or NP_218197_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216508_1",
+     "locus": "Rv1992c",
+     "fitness_browser_desc": "Probable metal cation transporter P-type ATPase G CtpG",
+     "refseq_definition": "cation transporter ATPase G",
+     "neighbourhood": [
+      "Rv1990A (-) Possible dehydrogenase (fragment)",
+      "Rv1991c (-) Toxin MazF6",
+      "Rv1991A (-) Antitoxin MazE6",
+      "Rv1992c (-) Probable metal cation transporter P-type ATPase G CtpG",
+      "Rv1993c (-) Conserved protein",
+      "Rv1994c (-) Metal sensor transcriptional regulator CmtR (ArsR-SmtB family)",
+      "Rv1995 (+) Unknown protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217727_1",
+     "locus": "Rv3211",
+     "fitness_browser_desc": "Probable ATP-dependent RNA helicase RhlE",
+     "refseq_definition": "ATP-dependent RNA helicase RhlE",
+     "neighbourhood": [
+      "Rv3208A (-) Conserved protein TB9.4",
+      "Rv3209 (+) Conserved hypothetical threonine and proline rich protein",
+      "Rv3210c (-) Conserved protein",
+      "Rv3211 (+) Probable ATP-dependent RNA helicase RhlE",
+      "Rv3212 (+) Conserved alanine valine rich protein",
+      "Rv3213c (-) Possible SOJ/para-related protein",
+      "Rv3214 (+) Possible phosphoglycerate mutase Gpm2 (phosphoglyceromutase) (PGAM) (BPG-dependent PGAM)"
+     ]
+    },
+    {
+     "model_gene": "NP_218197_1",
+     "locus": "Rv3680",
+     "fitness_browser_desc": "Probable anion transporter ATPase",
+     "refseq_definition": "anion transporter ATPase",
+     "neighbourhood": [
+      "Rv3678c (-) Conserved protein",
+      "Rv3678A (-) Conserved hypothetical protein",
+      "Rv3679 (+) Probable anion transporter ATPase",
+      "Rv3680 (+) Probable anion transporter ATPase",
+      "Rv3681c (-) Probable transcriptional regulatory protein WhiB-like WhiB4",
+      "Rv3682 (+) Probable bifunctional membrane-associated penicillin-binding protein 1A/1B PonA2 (murein polymerase) [includes: penicillin-insensitive transglycosylase (peptidoglycan TGASE) + penicillin-sensitive transpeptidase (DD-transpeptidase)]",
+      "Rv3683 (+) Conserved protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNTPPA",
+   "name": "Dihydroneopterin triphosphate pyrophosphatase",
+   "equation_ids": "ahdt_c + h2o_c --> dhpmp_c + h_c + ppi_c",
+   "equation_names": "2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + H2O --> Dihydroneopterin monophosphate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_216508_1 or NP_217727_1 or NP_218425_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216508_1",
+     "locus": "Rv1992c",
+     "fitness_browser_desc": "Probable metal cation transporter P-type ATPase G CtpG",
+     "refseq_definition": "cation transporter ATPase G",
+     "neighbourhood": [
+      "Rv1990A (-) Possible dehydrogenase (fragment)",
+      "Rv1991c (-) Toxin MazF6",
+      "Rv1991A (-) Antitoxin MazE6",
+      "Rv1992c (-) Probable metal cation transporter P-type ATPase G CtpG",
+      "Rv1993c (-) Conserved protein",
+      "Rv1994c (-) Metal sensor transcriptional regulator CmtR (ArsR-SmtB family)",
+      "Rv1995 (+) Unknown protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217727_1",
+     "locus": "Rv3211",
+     "fitness_browser_desc": "Probable ATP-dependent RNA helicase RhlE",
+     "refseq_definition": "ATP-dependent RNA helicase RhlE",
+     "neighbourhood": [
+      "Rv3208A (-) Conserved protein TB9.4",
+      "Rv3209 (+) Conserved hypothetical threonine and proline rich protein",
+      "Rv3210c (-) Conserved protein",
+      "Rv3211 (+) Probable ATP-dependent RNA helicase RhlE",
+      "Rv3212 (+) Conserved alanine valine rich protein",
+      "Rv3213c (-) Possible SOJ/para-related protein",
+      "Rv3214 (+) Possible phosphoglycerate mutase Gpm2 (phosphoglyceromutase) (PGAM) (BPG-dependent PGAM)"
+     ]
+    },
+    {
+     "model_gene": "NP_218425_1",
+     "locus": "Rv3908",
+     "fitness_browser_desc": "Possible mutator protein MutT4",
+     "refseq_definition": "mutator protein MutT",
+     "neighbourhood": [
+      "Rv3905c (-) Putative ESAT-6 like protein EsxF (hypothetical alanine and glycine rich protein) (ESAT-6 like protein 13)",
+      "Rv3906c (-) Conserved hypothetical protein",
+      "Rv3907c (-) Probable poly(A) polymerase PcnA (polynucleotide adenylyltransferase) (NTP polymerase) (RNA adenylating enzyme) (poly(A) polymerase)",
+      "Rv3908 (+) Possible mutator protein MutT4",
+      "Rv3909 (+) Conserved protein",
+      "Rv3910 (+) Probable conserved transmembrane protein",
+      "Rv3911 (+) Possible alternative RNA polymerase sigma factor SigM"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DXPS",
+   "name": "1-deoxy-D-xylulose 5-phosphate synthase",
+   "equation_ids": "g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c",
+   "equation_names": "Glyceraldehyde 3-phosphate + H+ + Pyruvate --> CO2 + 1-deoxy-D-xylulose 5-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_217896_1 or YP_177898_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_217896_1",
+     "locus": "Rv3379c",
+     "fitness_browser_desc": "Probable 1-deoxy-D-xylulose 5-phosphate synthase Dxs2 (1-deoxyxylulose-5-phosphate synthase) (DXP synthase) (DXPS)",
+     "refseq_definition": "1-deoxy-D-xylulose 5-phosphate synthase",
+     "neighbourhood": [
+      "Rv3376 (+) Conserved hypothetical protein",
+      "Rv3377c (-) Halimadienyl diphosphate synthase",
+      "Rv3378c (-) Diterpene synthase",
+      "Rv3379c (-) Probable 1-deoxy-D-xylulose 5-phosphate synthase Dxs2 (1-deoxyxylulose-5-phosphate synthase) (DXP synthase) (DXPS)",
+      "Rv3380c (-) Probable transposase",
+      "Rv3381c (-) Probable transposase for insertion sequence element IS6110 (fragment)",
+      "Rv3382c (-) Probable LYTB-related protein LytB1"
+     ]
+    },
+    {
+     "model_gene": "YP_177898_1",
+     "locus": "Rv2682c",
+     "fitness_browser_desc": "Probable 1-deoxy-D-xylulose 5-phosphate synthase Dxs1 (1-deoxyxylulose-5-phosphate synthase) (DXP synthase) (DXPS)",
+     "refseq_definition": "1-deoxy-D-xylulose 5-phosphate synthase",
+     "neighbourhood": [
+      "Rv2679 (+) Probable enoyl-CoA hydratase EchA15 (enoyl hydrase) (unsaturated acyl-CoA hydratase) (crotonase)",
+      "Rv2680 (+) Conserved protein",
+      "Rv2681 (+) Conserved hypothetical alanine rich protein",
+      "Rv2682c (-) Probable 1-deoxy-D-xylulose 5-phosphate synthase Dxs1 (1-deoxyxylulose-5-phosphate synthase) (DXP synthase) (DXPS)",
+      "Rv2683 (+) Conserved protein",
+      "Rv2684 (+) Probable arsenic-transport integral membrane protein ArsA",
+      "Rv2685 (+) Probable arsenic-transport integral membrane protein ArsB1"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "E4PD",
+   "name": "Erythrose 4-phosphate dehydrogenase",
+   "equation_ids": "e4p_c + h2o_c + nad_c <=> 4per_c + 2.0 h_c + nadh_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Nicotinamide adenine dinucleotide <=> 4-Phospho-D-erythronate + 2.0 H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "FBP",
+   "name": "Fructose-bisphosphatase",
+   "equation_ids": "fdp_c + h2o_c --> f6p_c + pi_c",
+   "equation_names": "D-Fructose 1,6-bisphosphate + H2O --> D-Fructose 6-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215615_3 or NP_217653_1",
+   "n_growth_conditions_essential": 17,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215615_3",
+     "locus": "Rv1099c",
+     "fitness_browser_desc": "Fructose 1,6-bisphosphatase GlpX",
+     "refseq_definition": "fructose 1,6-bisphosphatase",
+     "neighbourhood": [
+      "Rv1096 (+) Possible glycosyl hydrolase",
+      "Rv1097c (-) Probable membrane glycine and proline rich protein",
+      "Rv1098c (-) Probable fumarase Fum (fumarate hydratase)",
+      "Rv1099c (-) Fructose 1,6-bisphosphatase GlpX",
+      "Rv1100 (+) Conserved protein",
+      "Rv1101c (-) Conserved membrane protein",
+      "Rv1102c (-) Toxin MazF3"
+     ]
+    },
+    {
+     "model_gene": "NP_217653_1",
+     "locus": "Rv3137",
+     "fitness_browser_desc": "Probable monophosphatase",
+     "refseq_definition": "histidinol-phosphatase",
+     "neighbourhood": [
+      "Rv3135 (+) PPE family protein PPE50",
+      "Rv3136 (+) PPE family protein PPE51",
+      "Rv3136A (-) Conserved protein",
+      "Rv3137 (+) Probable monophosphatase",
+      "Rv3138 (+) Probable pyruvate formate lyase activating protein PflA (formate acetyltransferase activating enzyme) ([pyruvate formate-lyase] activating enzyme)",
+      "Rv3139 (+) Probable acyl-CoA dehydrogenase FadE24",
+      "Rv3140 (+) Probable acyl-CoA dehydrogenase FadE23"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GARFT",
+   "name": "Phosphoribosylglycinamide formyltransferase",
+   "equation_ids": "10fthf_c + gar_c <=> fgam_c + h_c + thf_c",
+   "equation_names": "10-Formyltetrahydrofolate + N1-(5-Phospho-D-ribosyl)glycinamide <=> N2-Formyl-N1-(5-phospho-D-ribosyl)glycinamide + H+ + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_214903_1 or NP_215471_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_214903_1",
+     "locus": "Rv0389",
+     "fitness_browser_desc": "Probable phosphoribosylglycinamide formyltransferase 2 PurT (GART 2) (gar transformylase 2) (5'-phosphoribosylglycinamide transformylase 2) (formate-dependent gar transformylase)",
+     "refseq_definition": "phosphoribosylglycinamide formyltransferase PurT",
+     "neighbourhood": [
+      "Rv0386 (+) Probable transcriptional regulatory protein (probably LuxR/UhpA-family)",
+      "Rv0387c (-) Conserved hypothetical protein",
+      "Rv0388c (-) PPE family protein PPE9",
+      "Rv0389 (+) Probable phosphoribosylglycinamide formyltransferase 2 PurT (GART 2) (gar transformylase 2) (5'-phosphoribosylglycinamide transformylase 2) (formate-dependent gar transformylase)",
+      "Rv0390 (+) Conserved protein",
+      "Rv0391 (+) Probable O-succinylhomoserine sulfhydrylase MetZ (OSH sulfhydrylase)",
+      "Rv0392c (-) Probable membrane NADH dehydrogenase NdhA"
+     ]
+    },
+    {
+     "model_gene": "NP_215471_1",
+     "locus": "Rv0956",
+     "fitness_browser_desc": "Probable 5'-phosphoribosylglycinamide formyltransferase PurN (GART) (gar transformylase) (5'-phosphoribosylglycinamide transformylase)",
+     "refseq_definition": "phosphoribosylglycinamide formyltransferase PurN",
+     "neighbourhood": [
+      "Rv0953c (-) Possible oxidoreductase",
+      "Rv0954 (+) Probable conserved transmembrane protein",
+      "Rv0955 (+) Probable conserved integral membrane protein",
+      "Rv0956 (+) Probable 5'-phosphoribosylglycinamide formyltransferase PurN (GART) (gar transformylase) (5'-phosphoribosylglycinamide transformylase)",
+      "Rv0957 (+) Probable bifunctional purine biosynthesis protein PurH: phosphoribosylaminoimidazolecarboxamide formyltransferase (AICAR transformylase) (5'-phosphoribosyl-5-aminoimidazole-4-carboxamide formyltransferase) + inosinemonophosphate cyclohydrolase (imp cyclohydrolase) (inosinicase) (imp synthetase) (ATIC)",
+      "Rv0958 (+) Possible magnesium chelatase",
+      "Rv0959 (+) Conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GHMT2r",
+   "name": "Glycine hydroxymethyltransferase, reversible",
+   "equation_ids": "ser__L_c + thf_c <=> gly_c + h2o_c + mlthf_c",
+   "equation_names": "L-Serine + 5,6,7,8-Tetrahydrofolate <=> Glycine + H2O + 5,10-Methylenetetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_214584_1 or YP_177787_3",
+   "n_growth_conditions_essential": 18,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_214584_1",
+     "locus": "Rv0070c",
+     "fitness_browser_desc": "Serine hydroxymethyltransferase GlyA2 (serine methylase 2) (SHMT 2)",
+     "refseq_definition": "serine hydroxymethyltransferase",
+     "neighbourhood": [
+      "Rv0067c (-) Possible transcriptional regulatory protein (possibly TetR-family)",
+      "Rv0068 (+) Probable oxidoreductase",
+      "Rv0069c (-) Probable L-serine dehydratase SdaA (L-serine deaminase) (SDH) (L-SD)",
+      "Rv0070c (-) Serine hydroxymethyltransferase GlyA2 (serine methylase 2) (SHMT 2)",
+      "Rv0071 (+) Possible maturase",
+      "Rv0072 (+) Probable glutamine-transport transmembrane protein ABC transporter",
+      "Rv0073 (+) Probable glutamine-transport ATP-binding protein ABC transporter"
+     ]
+    },
+    {
+     "model_gene": "YP_177787_3",
+     "locus": "Rv1093",
+     "fitness_browser_desc": "Serine hydroxymethyltransferase 1 GlyA1",
+     "refseq_definition": "serine hydroxymethyltransferase",
+     "neighbourhood": [
+      "Rv1090 (+) Probable cellulase CelA2b (endo-1,4-beta-glucanase) (endoglucanase) (carboxymethyl cellulase)",
+      "Rv1091 (+) PE-PGRS family protein PE_PGRS22",
+      "Rv1092c (-) Probable pantothenate kinase CoaA (pantothenic acid kinase)",
+      "Rv1093 (+) Serine hydroxymethyltransferase 1 GlyA1",
+      "Rv1094 (+) Possible acyl-[acyl-carrier protein] desaturase DesA2 (acyl-[ACP] desaturase) (stearoyl-ACP desaturase)",
+      "Rv1095 (+) Probable PHOH-like protein PhoH2 (phosphate starvation-inducible protein PSIH)",
+      "Rv1096 (+) Possible glycosyl hydrolase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLUPRT",
+   "name": "Glutamine phosphoribosyldiphosphate amidotransferase",
+   "equation_ids": "gln__L_c + h2o_c + prpp_c --> glu__L_c + ppi_c + pram_c",
+   "equation_names": "L-Glutamine + H2O + 5-Phospho-alpha-D-ribose 1-diphosphate --> L-Glutamate + Diphosphate + 5-Phospho-beta-D-ribosylamine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215323_1 or NP_215577_1 or NP_216118_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215323_1",
+     "locus": "Rv0808",
+     "fitness_browser_desc": "Amidophosphoribosyltransferase PurF (glutamine phosphoribosylpyrophosphate amidotransferase) (ATASE) (gpatase)",
+     "refseq_definition": "amidophosphoribosyltransferase",
+     "neighbourhood": [
+      "Rv0805 (+) Class III cyclic nucleotide phosphodiesterase (cNMP PDE)",
+      "Rv0806c (-) Possible UDP-glucose-4-epimerase CpsY (galactowaldenase) (UDP-galactose-4-epimerase) (uridine diphosphate galactose-4-epimerase) (uridine diphospho-galactose-4-epimerase)",
+      "Rv0807 (+) Conserved hypothetical protein",
+      "Rv0808 (+) Amidophosphoribosyltransferase PurF (glutamine phosphoribosylpyrophosphate amidotransferase) (ATASE) (gpatase)",
+      "Rv0809 (+) Probable phosphoribosylformylglycinamidine CYCLO-ligase PurM (AIRS) (phosphoribosyl-aminoimidazole synthetase) (air synthase)",
+      "Rv0810c (-) Conserved hypothetical protein",
+      "Rv0811c (-) Conserved protein"
+     ]
+    },
+    {
+     "model_gene": "NP_215577_1",
+     "locus": "Rv1061",
+     "fitness_browser_desc": "Conserved protein",
+     "refseq_definition": "hypothetical protein Rv1061",
+     "neighbourhood": [
+      "Rv1058 (+) Probable medium chain fatty-acid-CoA ligase FadD14 (fatty-acid-CoA synthetase) (fatty-acid-CoA synthase)",
+      "Rv1059 (+) Conserved protein",
+      "Rv1060 (+) Unknown protein",
+      "Rv1061 (+) Conserved protein",
+      "Rv1062 (+) Conserved hypothetical protein",
+      "Rv1063c (-) Conserved hypothetical protein",
+      "Rv1064c (-) Possible lipoprotein LpqV"
+     ]
+    },
+    {
+     "model_gene": "NP_216118_1",
+     "locus": "Rv1602",
+     "fitness_browser_desc": "Probable amidotransferase HisH",
+     "refseq_definition": "imidazole glycerol phosphate synthase subunit HisH",
+     "neighbourhood": [
+      "Rv1599 (+) Probable histidinol dehydrogenase HisD (HDH)",
+      "Rv1600 (+) Probable histidinol-phosphate aminotransferase HisC1",
+      "Rv1601 (+) Probable imidazole glycerol-phosphate dehydratase HisB",
+      "Rv1602 (+) Probable amidotransferase HisH",
+      "Rv1603 (+) Probable phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase HisA",
+      "Rv1604 (+) Probable inositol-monophosphatase ImpA (imp)",
+      "Rv1605 (+) Probable cyclase HisF"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GRTT",
+   "name": "Geranyltranstransferase",
+   "equation_ids": "grdp_c + ipdp_c --> frdp_c + ppi_c",
+   "equation_names": "Geranyl diphosphate + Isopentenyl diphosphate --> Farnesyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215076_1 or NP_215602_1 or NP_216689_1 or NP_217914_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215076_1",
+     "locus": "Rv0562",
+     "fitness_browser_desc": "Probable polyprenyl-diphosphate synthase GrcC1 (polyprenyl pyrophosphate synthetase)",
+     "refseq_definition": "polyprenyl-diphosphate synthase GrcC",
+     "neighbourhood": [
+      "Rv0559c (-) Possible conserved secreted protein",
+      "Rv0560c (-) Possible benzoquinone methyltransferase (methylase)",
+      "Rv0561c (-) Possible oxidoreductase",
+      "Rv0562 (+) Probable polyprenyl-diphosphate synthase GrcC1 (polyprenyl pyrophosphate synthetase)",
+      "Rv0563 (+) Probable protease transmembrane protein heat shock protein HtpX",
+      "Rv0564c (-) Probable glycerol-3-phosphate dehydrogenase [NAD(P)+] GpdA1 (NAD(P)H-dependent glycerol-3-phosphate dehydrogenase) (NAD(P)H-dependent dihydroxyacetone-phosphate reductase)",
+      "Rv0565c (-) Probable monooxygenase"
+     ]
+    },
+    {
+     "model_gene": "NP_215602_1",
+     "locus": "Rv1086",
+     "fitness_browser_desc": "Short (C15) chain Z-isoprenyl diphosphate synthase (Z-FPP synthase) (Z-farnesyl diphosphate synthase) (Z-FPP synthetase) (Z-farnesyl diphosphate synthetase) (geranyltranstransferase) (farnesyl pyrophosphate synthetase)",
+     "refseq_definition": "(2Z,6E)-farnesyl diphosphate synthase",
+     "neighbourhood": [
+      "Rv1083 (+) Conserved hypothetical protein",
+      "Rv1084 (+) Conserved protein",
+      "Rv1085c (-) Possible hemolysin-like protein",
+      "Rv1086 (+) Short (C15) chain Z-isoprenyl diphosphate synthase (Z-FPP synthase) (Z-farnesyl diphosphate synthase) (Z-FPP synthetase) (Z-farnesyl diphosphate synthetase) (geranyltranstransferase) (farnesyl pyrophosphate synthetase)",
+      "Rv1087 (+) PE-PGRS family protein PE_PGRS21",
+      "Rv1087A (+) Conserved hypothetical protein",
+      "Rv1088 (+) PE family protein PE9"
+     ]
+    },
+    {
+     "model_gene": "NP_216689_1",
+     "locus": "Rv2173",
+     "fitness_browser_desc": "Probable geranylgeranyl pyrophosphate synthetase IdsA2 (ggppsase) (GGPP synthetase) (geranylgeranyl diphosphate synthase)",
+     "refseq_definition": "geranylgeranyl pyrophosphate synthetase IdsA",
+     "neighbourhood": [
+      "Rv2170 (+) GCN5-related N-acetyltransferase",
+      "Rv2171 (+) Probable conserved lipoprotein LppM",
+      "Rv2172c (-) Conserved protein",
+      "Rv2173 (+) Probable geranylgeranyl pyrophosphate synthetase IdsA2 (ggppsase) (GGPP synthetase) (geranylgeranyl diphosphate synthase)",
+      "Rv2174 (+) Alpha(1->6)mannosyltransferase. Possible conserved integral membrane protein.",
+      "Rv2175c (-) Conserved regulatory protein",
+      "Rv2176 (+) Probable transmembrane serine/threonine-protein kinase L PknL (protein kinase L) (STPK L)"
+     ]
+    },
+    {
+     "model_gene": "NP_217914_1",
+     "locus": "Rv3397c",
+     "fitness_browser_desc": "Probable phytoene synthase PhyA",
+     "refseq_definition": "phytoene synthase",
+     "neighbourhood": [
+      "Rv3395c (-) Conserved hypothetical protein",
+      "Rv3395A (+) Probable membrane protein",
+      "Rv3396c (-) Probable GMP synthase [glutamine-hydrolyzing] GuaA (glutamine amidotransferase) (GMP synthetase)",
+      "Rv3397c (-) Probable phytoene synthase PhyA",
+      "Rv3398c (-) Probable multifunctional geranylgeranyl pyrophosphate synthetase IdsA1 (GGPP synthetase) (ggppsase) (geranylgeranyl diphosphate synthase): dimethylallyltransferase (prenyltransferase) (geranyl-diphosphate synthase) + geranyltranstransferase (farnesyl-diphosphate synthase) (farnesyl-pyrophosphate synthetase) (farnesyl diphosphate synthetase) (FPP synthetase) + farnesyltranstransferase (geranylgeranyl-diphosphate synthase)",
+      "Rv3399 (+) Possible S-adenosylmethionine-dependent methyltransferase",
+      "Rv3400 (+) Probable hydrolase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215800_1 or NP_217790_1 or NP_218105_1 or spontaneous",
+   "n_growth_conditions_essential": 18,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215800_1",
+     "locus": "Rv1284",
+     "fitness_browser_desc": "Beta-carbonic anhydrase",
+     "refseq_definition": "beta-carbonic anhydrase",
+     "neighbourhood": [
+      "Rv1281c (-) Probable oligopeptide-transport ATP-binding protein ABC transporter OppD",
+      "Rv1282c (-) Probable oligopeptide-transport integral membrane protein ABC transporter OppC",
+      "Rv1283c (-) Probable oligopeptide-transport integral membrane protein ABC transporter OppB",
+      "Rv1284 (+) Beta-carbonic anhydrase",
+      "Rv1285 (+) Probable sulfate adenylyltransferase subunit 2 CysD",
+      "Rv1286 (+) Probable bifunctional enzyme CysN/CysC: sulfate adenyltransferase (subunit 1) + adenylylsulfate kinase",
+      "Rv1287 (+) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217790_1",
+     "locus": "Rv3273",
+     "fitness_browser_desc": "Probable transmembrane carbonic anhydrase (carbonate dehydratase) (carbonic dehydratase)",
+     "refseq_definition": "transmembrane carbonic anhydrase",
+     "neighbourhood": [
+      "Rv3270 (+) Probable metal cation-transporting P-type ATPase C CtpC",
+      "Rv3271c (-) Probable conserved integral membrane protein",
+      "Rv3272 (+) Conserved hypothetical protein",
+      "Rv3273 (+) Probable transmembrane carbonic anhydrase (carbonate dehydratase) (carbonic dehydratase)",
+      "Rv3274c (-) Probable acyl-CoA dehydrogenase FadE25",
+      "Rv3275c (-) Probable phosphoribosylaminoimidazole carboxylase catalytic subunit PurE (air carboxylase) (AIRC)",
+      "Rv3276c (-) Probable phosphoribosylaminoimidazole carboxylase ATPase subunit PurK (air carboxylase) (AIRC)"
+     ]
+    },
+    {
+     "model_gene": "NP_218105_1",
+     "locus": "Rv3588c",
+     "fitness_browser_desc": "Beta-carbonic anhydrase CanB",
+     "refseq_definition": "carbonic anhydrase",
+     "neighbourhood": [
+      "Rv3585 (+) DNA repair protein RadA (DNA repair protein SMS)",
+      "Rv3586 (+) Conserved hypothetical protein",
+      "Rv3587c (-) Probable conserved membrane protein",
+      "Rv3588c (-) Beta-carbonic anhydrase CanB",
+      "Rv3589 (+) Probable adenine glycosylase MutY",
+      "Rv3590c (-) PE-PGRS family protein PE_PGRS58",
+      "Rv3591c (-) Possible hydrolase"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HSTPT",
+   "name": "Histidinol-phosphate transaminase",
+   "equation_ids": "glu__L_c + imacp_c --> akg_c + hisp_c",
+   "equation_names": "L-Glutamate + 3-(Imidazol-4-yl)-2-oxopropyl phosphate --> 2-Oxoglutarate + L-Histidinol phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_216747_1 or NP_218289_1 or YP_177823_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216747_1",
+     "locus": "Rv2231c",
+     "fitness_browser_desc": "Possible aminotransferase CobC",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "Rv2228c (-) Multifunctional protein. Has RNASE H,alpha-ribazole phosphatase, and acid phosphatase activities.",
+      "Rv2229c (-) Conserved protein",
+      "Rv2230c (-) Conserved protein",
+      "Rv2231c (-) Possible aminotransferase CobC",
+      "Rv2231A (-) Possible toxin VapC16",
+      "Rv2231B (-) Possible antitoxin VapB16",
+      "Rv2232 (+) Protein tyrosine kinase transcriptional regulatory protein PtkA"
+     ]
+    },
+    {
+     "model_gene": "NP_218289_1",
+     "locus": "Rv3772",
+     "fitness_browser_desc": "Probable histidinol-phosphate aminotransferase HisC2 (imidazole acetol-phosphate transaminase) (imidazolylacetolphosphate aminotransferase)",
+     "refseq_definition": "histidinol-phosphate aminotransferase",
+     "neighbourhood": [
+      "Rv3771c (-) Conserved hypothetical protein",
+      " (-) tRNA-Arg",
+      " (-) tRNA-Ser",
+      "Rv3772 (+) Probable histidinol-phosphate aminotransferase HisC2 (imidazole acetol-phosphate transaminase) (imidazolylacetolphosphate aminotransferase)",
+      "Rv3773c (-) Conserved protein",
+      "Rv3774 (+) Possible enoyl-CoA hydratase EchA21 (enoyl hydrase) (unsaturated acyl-CoA hydratase) (crotonase)",
+      "Rv3775 (+) Probable lipase LipE"
+     ]
+    },
+    {
+     "model_gene": "YP_177823_1",
+     "locus": "Rv1600",
+     "fitness_browser_desc": "Probable histidinol-phosphate aminotransferase HisC1",
+     "refseq_definition": "histidinol-phosphate aminotransferase",
+     "neighbourhood": [
+      "Rv1597 (+) Hypothetical protein",
+      "Rv1598c (-) Conserved protein",
+      "Rv1599 (+) Probable histidinol dehydrogenase HisD (HDH)",
+      "Rv1600 (+) Probable histidinol-phosphate aminotransferase HisC1",
+      "Rv1601 (+) Probable imidazole glycerol-phosphate dehydratase HisB",
+      "Rv1602 (+) Probable amidotransferase HisH",
+      "Rv1603 (+) Probable phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase HisA"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ICDHyr",
+   "name": "Isocitrate dehydrogenase (NADP)",
+   "equation_ids": "icit_c + nadp_c <=> akg_c + co2_c + nadph_c",
+   "equation_names": "Isocitrate + Nicotinamide adenine dinucleotide phosphate <=> 2-Oxoglutarate + CO2 + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_214580_1 or NP_217856_1",
+   "n_growth_conditions_essential": 18,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_214580_1",
+     "locus": "Rv0066c",
+     "fitness_browser_desc": "Probable isocitrate dehydrogenase [NADP] Icd2 (oxalosuccinate decarboxylase) (IDH) (NADP+-specific ICDH) (IDP)",
+     "refseq_definition": "isocitrate dehydrogenase",
+     "neighbourhood": [
+      "Rv0064 (+) Probable conserved transmembrane protein",
+      "Rv0064A (+) Possible antitoxin VapB1",
+      "Rv0065 (+) Possible toxin VapC1",
+      "Rv0066c (-) Probable isocitrate dehydrogenase [NADP] Icd2 (oxalosuccinate decarboxylase) (IDH) (NADP+-specific ICDH) (IDP)",
+      "Rv0067c (-) Possible transcriptional regulatory protein (possibly TetR-family)",
+      "Rv0068 (+) Probable oxidoreductase",
+      "Rv0069c (-) Probable L-serine dehydratase SdaA (L-serine deaminase) (SDH) (L-SD)"
+     ]
+    },
+    {
+     "model_gene": "NP_217856_1",
+     "locus": "Rv3339c",
+     "fitness_browser_desc": "Probable isocitrate dehydrogenase [NADP] Icd1 (oxalosuccinate decarboxylase) (IDH) (NADP+-specific ICDH) (IDP)",
+     "refseq_definition": "isocitrate dehydrogenase",
+     "neighbourhood": [
+      "Rv3336c (-) Probable tryptophanyl-tRNA synthetase TrpS (tryptophan--tRNA ligase) (TRPRS) (tryptophan translase)",
+      "Rv3337 (+) Conserved hypothetical protein",
+      "Rv3338 (+) Conserved hypothetical protein",
+      "Rv3339c (-) Probable isocitrate dehydrogenase [NADP] Icd1 (oxalosuccinate decarboxylase) (IDH) (NADP+-specific ICDH) (IDP)",
+      "Rv3340 (+) Probable O-acetylhomoserine sulfhydrylase MetC (homocysteine synthase) (O-acetylhomoserine (thiol)-lyase) (OAH sulfhydrylase) (O-acetyl-L-homoserine sulfhydrylase)",
+      "Rv3341 (+) Probable homoserine O-acetyltransferase MetA (homoserine O-trans-acetylase) (homoserine transacetylase) (HTA)",
+      "Rv3342 (+) Possible methyltransferase (methylase)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IMPD",
+   "name": "IMP dehydrogenase",
+   "equation_ids": "h2o_c + imp_c + nad_c --> h_c + nadh_c + xmp_c",
+   "equation_names": "H2O + IMP + Nicotinamide adenine dinucleotide --> H+ + Nicotinamide adenine dinucleotide - reduced + Xanthosine 5'-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_217142_1 or (NP_216359_1 and NP_217927_1 and NP_217928_1)",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216359_1",
+     "locus": "Rv1843c",
+     "fitness_browser_desc": "Probable inosine-5'-monophosphate dehydrogenase GuaB1(imp dehydrogenase) (IMPDH) (IMPD)",
+     "refseq_definition": "inosine-5'-monophosphate dehydrogenase",
+     "neighbourhood": [
+      "Rv1840c (-) PE-PGRS family protein PE_PGRS34",
+      "Rv1841c (-) Conserved hypothetical membrane protein",
+      "Rv1842c (-) Conserved hypothetical membrane protein",
+      "Rv1843c (-) Probable inosine-5'-monophosphate dehydrogenase GuaB1(imp dehydrogenase) (IMPDH) (IMPD)",
+      "Rv1844c (-) Probable 6-phosphogluconate dehydrogenase Gnd1",
+      "Rv1845c (-) Possible sensor-transducer protein BlaR",
+      "Rv1846c (-) Transcriptional repressor BlaI"
+     ]
+    },
+    {
+     "model_gene": "NP_217142_1",
+     "locus": "Rv2626c",
+     "fitness_browser_desc": "Hypoxic response protein 1 Hrp1",
+     "refseq_definition": "hypoxic response protein",
+     "neighbourhood": [
+      "Rv2623 (+) Universal stress protein family protein TB31.7",
+      "Rv2624c (-) Universal stress protein family protein",
+      "Rv2625c (-) Probable conserved transmembrane alanine and leucine rich protein",
+      "Rv2626c (-) Hypoxic response protein 1 Hrp1",
+      "Rv2627c (-) Conserved protein",
+      "Rv2628 (+) Hypothetical protein",
+      "Rv2629 (+) Conserved protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217927_1",
+     "locus": "Rv3410c",
+     "fitness_browser_desc": "Probable inosine-5'-monophosphate dehydrogenase GuaB3 (imp dehydrogenase) (inosinic acid dehydrogenase) (inosinate dehydrogenase) (imp oxidoreductase) (inosine-5'-monophosphate oxidoreductase) (IMPDH) (IMPD)",
+     "refseq_definition": "oxidoreductase",
+     "neighbourhood": [
+      "Rv3407 (+) Possible antitoxin VapB47",
+      "Rv3408 (+) Possible toxin VapC47. Contains PIN domain.",
+      "Rv3409c (-) Cholesterol oxidase ChoD (cholesterol-O2 oxidoreductase)",
+      "Rv3410c (-) Probable inosine-5'-monophosphate dehydrogenase GuaB3 (imp dehydrogenase) (inosinic acid dehydrogenase) (inosinate dehydrogenase) (imp oxidoreductase) (inosine-5'-monophosphate oxidoreductase) (IMPDH) (IMPD)",
+      "Rv3411c (-) Probable inosine-5'-monophosphate dehydrogenase GuaB2 (imp dehydrogenase) (inosinic acid dehydrogenase) (inosinate dehydrogenase) (imp oxidoreductase) (inosine-5'-monophosphate oxidoreductase) (IMPDH) (IMPD)",
+      "Rv3412 (+) Conserved hypothetical protein",
+      "Rv3413c (-) Unknown alanine and proline rich protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217928_1",
+     "locus": "Rv3411c",
+     "fitness_browser_desc": "Probable inosine-5'-monophosphate dehydrogenase GuaB2 (imp dehydrogenase) (inosinic acid dehydrogenase) (inosinate dehydrogenase) (imp oxidoreductase) (inosine-5'-monophosphate oxidoreductase) (IMPDH) (IMPD)",
+     "refseq_definition": "inosine-5'-monophosphate dehydrogenase",
+     "neighbourhood": [
+      "Rv3408 (+) Possible toxin VapC47. Contains PIN domain.",
+      "Rv3409c (-) Cholesterol oxidase ChoD (cholesterol-O2 oxidoreductase)",
+      "Rv3410c (-) Probable inosine-5'-monophosphate dehydrogenase GuaB3 (imp dehydrogenase) (inosinic acid dehydrogenase) (inosinate dehydrogenase) (imp oxidoreductase) (inosine-5'-monophosphate oxidoreductase) (IMPDH) (IMPD)",
+      "Rv3411c (-) Probable inosine-5'-monophosphate dehydrogenase GuaB2 (imp dehydrogenase) (inosinic acid dehydrogenase) (inosinate dehydrogenase) (imp oxidoreductase) (inosine-5'-monophosphate oxidoreductase) (IMPDH) (IMPD)",
+      "Rv3412 (+) Conserved hypothetical protein",
+      "Rv3413c (-) Unknown alanine and proline rich protein",
+      "Rv3414c (-) Probable alternative RNA polymerase sigma-D factor SigD"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MTHFR3",
+   "name": "5 10 methylenetetrahydrofolatereductase  NADPH",
+   "equation_ids": "2.0 h_c + mlthf_c + nadph_c --> 5mthf_c + nadp_c",
+   "equation_names": "2.0 H+ + 5,10-Methylenetetrahydrofolate + Nicotinamide adenine dinucleotide phosphate - reduced --> 5-Methyltetrahydrofolate + Nicotinamide adenine dinucleotide phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "PAPSR",
+   "name": "Phosphoadenylyl-sulfate reductase (thioredoxin)",
+   "equation_ids": "paps_c + trdrd_c --> 2.0 h_c + pap_c + so3_c + trdox_c",
+   "equation_names": "3'-Phosphoadenylyl sulfate + Reduced thioredoxin --> 2.0 H+ + Adenosine 3',5'-bisphosphate + Sulfite + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_216908_1 or NP_218431_1 or YP_177815_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216908_1",
+     "locus": "Rv2392",
+     "fitness_browser_desc": "Probable 3'-phosphoadenosine 5'-phosphosulfate reductase CysH (PAPS reductase, thioredoxin DEP.) (padops reductase) (3'-phosphoadenylylsulfate reductase) (PAPS sulfotransferase)",
+     "refseq_definition": "phosphoadenosine phosphosulfate reductase",
+     "neighbourhood": [
+      "Rv2389c (-) Probable resuscitation-promoting factor RpfD",
+      "Rv2390c (-) Conserved hypothetical protein",
+      "Rv2391 (+) Ferredoxin-dependent sulfite reductase SirA",
+      "Rv2392 (+) Probable 3'-phosphoadenosine 5'-phosphosulfate reductase CysH (PAPS reductase, thioredoxin DEP.) (padops reductase) (3'-phosphoadenylylsulfate reductase) (PAPS sulfotransferase)",
+      "Rv2393 (+) Ferrochelatase Che1",
+      "Rv2394 (+) Probable gamma-glutamyltranspeptidase precursor GgtB (gamma-glutamyltransferase) (glutamyl transpeptidase)",
+      "Rv2395 (+) Probable conserved integral membrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_218431_1",
+     "locus": "Rv3914",
+     "fitness_browser_desc": "Thioredoxin TrxC (TRX) (MPT46)",
+     "refseq_definition": "thioredoxin TrxC",
+     "neighbourhood": [
+      "Rv3911 (+) Possible alternative RNA polymerase sigma factor SigM",
+      "Rv3912 (+) Hypothetical alanine rich protein",
+      "Rv3913 (+) Probable thioredoxin reductase TrxB2 (TRXR) (TR)",
+      "Rv3914 (+) Thioredoxin TrxC (TRX) (MPT46)",
+      "Rv3915 (+) Probable peptidoglycan hydrolase",
+      "Rv3916c (-) Conserved hypothetical protein",
+      "Rv3917c (-) Probable chromosome partitioning protein ParB"
+     ]
+    },
+    {
+     "model_gene": "YP_177815_1",
+     "locus": "Rv1471",
+     "fitness_browser_desc": "Probable thioredoxin TrxB1",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "Rv1468c (-) PE-PGRS family protein PE_PGRS29",
+      "Rv1469 (+) Probable cation transporter P-type ATPase D CtpD",
+      "Rv1470 (+) Probable thioredoxin TrxA",
+      "Rv1471 (+) Probable thioredoxin TrxB1",
+      "Rv1472 (+) Possible enoyl-CoA hydratase EchA12 (enoyl hydrase) (unsaturated acyl-CoA hydratase) (crotonase)",
+      "Rv1473 (+) Probable macrolide-transport ATP-binding protein ABC transporter",
+      "Rv1473A (+) Possible transcriptional regulatory protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PDX5PS",
+   "name": "Pyridoxine 5'-phosphate synthase",
+   "equation_ids": "dxyl5p_c + nad_c + phthr_c --> co2_c + 2.0 h2o_c + h_c + nadh_c + pdx5p_c + pi_c",
+   "equation_names": "1-deoxy-D-xylulose 5-phosphate + Nicotinamide adenine dinucleotide + O-Phospho-4-hydroxy-L-threonine --> CO2 + 2.0 H2O + H+ + Nicotinamide adenine dinucleotide - reduced + Pyridoxine 5'-phosphate + Phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "PERD",
+   "name": "Erythronate 4-phosphate (4per) dehydrogenase",
+   "equation_ids": "4per_c + nad_c <=> h_c + nadh_c + ohpb_c",
+   "equation_names": "4-Phospho-D-erythronate + Nicotinamide adenine dinucleotide <=> H+ + Nicotinamide adenine dinucleotide - reduced + 2-Oxo-3-hydroxy-4-phosphobutanoate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "PGAMT",
+   "name": "Phosphoglucosamine mutase",
+   "equation_ids": "gam1p_c <=> gam6p_c",
+   "equation_names": "D-Glucosamine 1-phosphate <=> D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "PGCD",
+   "name": "Phosphoglycerate dehydrogenase",
+   "equation_ids": "3pg_c + nad_c --> 3php_c + h_c + nadh_c",
+   "equation_names": "3-Phospho-D-glycerate + Nicotinamide adenine dinucleotide --> 3-Phosphohydroxypyruvate + H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215242_1 or YP_177916_1",
+   "n_growth_conditions_essential": 18,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215242_1",
+     "locus": "Rv0728c",
+     "fitness_browser_desc": "Possible D-3-phosphoglycerate dehydrogenase SerA2 (phosphoglycerate dehydrogenase) (PGDH)",
+     "refseq_definition": "D-3-phosphoglycerate dehydrogenase SerA",
+     "neighbourhood": [
+      "Rv0725c (-) Conserved hypothetical protein",
+      "Rv0726c (-) Possible S-adenosylmethionine-dependent methyltransferase",
+      "Rv0727c (-) Possible L-fuculose phosphate aldolase FucA (L-fuculose-1-phosphate aldolase)",
+      "Rv0728c (-) Possible D-3-phosphoglycerate dehydrogenase SerA2 (phosphoglycerate dehydrogenase) (PGDH)",
+      "Rv0729 (+) Possible D-xylulose kinase XylB (xylulokinase) (xylulose kinase)",
+      "Rv0730 (+) GCN5-related N-acetyltransferase",
+      "Rv0731c (-) Possible S-adenosylmethionine-dependent methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "YP_177916_1",
+     "locus": "Rv2996c",
+     "fitness_browser_desc": "Probable D-3-phosphoglycerate dehydrogenase SerA1 (PGDH)",
+     "refseq_definition": "D-3-phosphoglycerate dehydrogenase",
+     "neighbourhood": [
+      "Rv2993c (-) Possible 2-hydroxyhepta-2,4-diene-1,7-dioate isomerase (HHDD isomerase)",
+      "Rv2994 (+) Probable conserved integral membrane protein",
+      "Rv2995c (-) Probable 3-isopropylmalate dehydrogenase LeuB (beta-IPM dehydrogenase) (IMDH) (3-IPM-DH)",
+      "Rv2996c (-) Probable D-3-phosphoglycerate dehydrogenase SerA1 (PGDH)",
+      "Rv2997 (+) Possible alanine rich dehydrogenase",
+      "Rv2998 (+) Hypothetical protein",
+      "Rv2998A (-) Conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PMDPHT",
+   "name": "Pyrimidine phosphatase",
+   "equation_ids": "5aprbu_c + h2o_c --> 4r5au_c + pi_c",
+   "equation_names": "5-Amino-6-(5'-phosphoribitylamino)uracil + H2O --> 4-(1-D-Ribitylamino)-5-aminouracil + Phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "PNTK",
+   "name": "Pantothenate kinase",
+   "equation_ids": "atp_c + pnto__R_c --> 4ppan_c + adp_c + h_c",
+   "equation_names": "ATP + (R)-Pantothenate --> D-4'-Phosphopantothenate + ADP + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215608_1 or NP_218117_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215608_1",
+     "locus": "Rv1092c",
+     "fitness_browser_desc": "Probable pantothenate kinase CoaA (pantothenic acid kinase)",
+     "refseq_definition": "pantothenate kinase",
+     "neighbourhood": [
+      "Rv1089A (+) Probable cellulase CelA2a (endo-1,4-beta-glucanase) (endoglucanase) (carboxymethyl cellulase)",
+      "Rv1090 (+) Probable cellulase CelA2b (endo-1,4-beta-glucanase) (endoglucanase) (carboxymethyl cellulase)",
+      "Rv1091 (+) PE-PGRS family protein PE_PGRS22",
+      "Rv1092c (-) Probable pantothenate kinase CoaA (pantothenic acid kinase)",
+      "Rv1093 (+) Serine hydroxymethyltransferase 1 GlyA1",
+      "Rv1094 (+) Possible acyl-[acyl-carrier protein] desaturase DesA2 (acyl-[ACP] desaturase) (stearoyl-ACP desaturase)",
+      "Rv1095 (+) Probable PHOH-like protein PhoH2 (phosphate starvation-inducible protein PSIH)"
+     ]
+    },
+    {
+     "model_gene": "NP_218117_1",
+     "locus": "Rv3600c",
+     "fitness_browser_desc": "Conserved protein",
+     "refseq_definition": "type III pantothenate kinase",
+     "neighbourhood": [
+      "Rv3597c (-) Iron-regulated H-NS-like protein Lsr2",
+      "Rv3598c (-) Lysyl-tRNA synthetase 1 LysS (lysine--tRNA ligase 1) (LysRS 1) (lysine translase)",
+      "Rv3599c (-) Hypothetical short protein",
+      "Rv3600c (-) Conserved protein",
+      "Rv3601c (-) Probable aspartate 1-decarboxylase precursor PanD (aspartate alpha-decarboxylase)",
+      "Rv3602c (-) Pantoate--beta-alanine ligase PanC (pantothenate synthetase) (pantoate activating enzyme)",
+      "Rv3603c (-) Conserved hypothetical alanine and leucine rich protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PPA",
+   "name": "Inorganic diphosphatase",
+   "equation_ids": "h2o_c + ppi_c --> h_c + 2.0 pi_c",
+   "equation_names": "H2O + Diphosphate --> H+ + 2.0 Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215542_1 or NP_218145_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215542_1",
+     "locus": "Rv1026",
+     "fitness_browser_desc": "Conserved protein",
+     "refseq_definition": "hypothetical protein Rv1026",
+     "neighbourhood": [
+      "Rv1023 (+) Probable enolase Eno",
+      "Rv1024 (+) Possible conserved membrane protein",
+      "Rv1025 (+) Conserved protein",
+      "Rv1026 (+) Conserved protein",
+      "Rv1027c (-) Probable transcriptional regulatory protein KdpE",
+      "Rv1028c (-) Probable sensor protein KdpD",
+      "Rv1028A (+) Probable membrane protein KdpF"
+     ]
+    },
+    {
+     "model_gene": "NP_218145_1",
+     "locus": "Rv3628",
+     "fitness_browser_desc": "Inorganic pyrophosphatase Ppa (pyrophosphate phospho-hydrolase) (PPASE) (inorganic diphosphatase) (diphosphate phospho-hydrolase)",
+     "refseq_definition": "inorganic pyrophosphatase",
+     "neighbourhood": [
+      "Rv3625c (-) Possible cell cycle protein MesJ",
+      "Rv3626c (-) Conserved hypothetical protein",
+      "Rv3627c (-) Conserved protein",
+      "Rv3628 (+) Inorganic pyrophosphatase Ppa (pyrophosphate phospho-hydrolase) (PPASE) (inorganic diphosphatase) (diphosphate phospho-hydrolase)",
+      "Rv3629c (-) Probable conserved integral membrane protein",
+      "Rv3630 (+) Probable conserved integral membrane protein",
+      "Rv3631 (+) Possible transferase (possibly glycosyltransferase)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PSP_L",
+   "name": "Phosphoserine phosphatase (L-serine)",
+   "equation_ids": "h2o_c + pser__L_c --> pi_c + ser__L_c",
+   "equation_names": "H2O + O-Phospho-L-serine --> Phosphate + L-Serine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_217558_1 or YP_177732_1",
+   "n_growth_conditions_essential": 18,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_217558_1",
+     "locus": "Rv3042c",
+     "fitness_browser_desc": "Probable phosphoserine phosphatase SerB2 (PSP) (O-phosphoserine phosphohydrolase) (pspase)",
+     "refseq_definition": "phosphoserine phosphatase SerB",
+     "neighbourhood": [
+      "Rv3039c (-) Probable enoyl-CoA hydratase EchA17 (crotonase) (unsatured acyl-CoA hydratase) (enoyl hydrase)",
+      "Rv3040c (-) Conserved protein",
+      "Rv3041c (-) Probable conserved ATP-binding protein ABC transporter",
+      "Rv3042c (-) Probable phosphoserine phosphatase SerB2 (PSP) (O-phosphoserine phosphohydrolase) (pspase)",
+      "Rv3043c (-) Probable cytochrome C oxidase polypeptide I CtaD (cytochrome AA3 subunit 1)",
+      "Rv3044 (+) Probable FEIII-dicitrate-binding periplasmic lipoprotein FecB",
+      "Rv3045 (+) Probable NADP-dependent alcohol dehydrogenase AdhC"
+     ]
+    },
+    {
+     "model_gene": "YP_177732_1",
+     "locus": "Rv0505c",
+     "fitness_browser_desc": "Possible phosphoserine phosphatase SerB1 (PSP) (O-phosphoserine phosphohydrolase) (pspase)",
+     "refseq_definition": "phosphoserine phosphatase SerB",
+     "neighbourhood": [
+      "Rv0502 (+) Conserved protein",
+      "Rv0503c (-) Cyclopropane-fatty-acyl-phospholipid synthase 2 CmaA2 (cyclopropane fatty acid synthase) (CFA synthase) (cyclopropane mycolic acid synthase 2) (mycolic acid trans-cyclopropane synthetase)",
+      "Rv0504c (-) Conserved protein",
+      "Rv0505c (-) Possible phosphoserine phosphatase SerB1 (PSP) (O-phosphoserine phosphohydrolase) (pspase)",
+      "Rv0506 (+) Probable conserved membrane protein MmpS2",
+      "Rv0507 (+) Probable conserved transmembrane transport protein MmpL2",
+      "Rv0508 (+) Conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR1",
+   "name": "Ribonucleoside-diphosphate reductase (ADP)",
+   "equation_ids": "adp_c + trdrd_c --> dadp_c + h2o_c + trdox_c",
+   "equation_names": "ADP + Reduced thioredoxin --> DADP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_218431_1 or YP_177815_1 or (NP_215084_1 and YP_177853_1)",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215084_1",
+     "locus": "Rv0570",
+     "fitness_browser_desc": "Probable ribonucleoside-diphosphate reductase (large subunit) NrdZ (ribonucleotide reductase)",
+     "refseq_definition": "vitamin B12-dependent ribonucleoside-diphosphate reductase",
+     "neighbourhood": [
+      "Rv0567 (+) Probable methyltransferase/methylase",
+      "Rv0568 (+) Possible cytochrome P450 135B1 Cyp135B1",
+      "Rv0569 (+) Conserved protein",
+      "Rv0570 (+) Probable ribonucleoside-diphosphate reductase (large subunit) NrdZ (ribonucleotide reductase)",
+      "Rv0571c (-) Conserved protein",
+      "Rv0572c (-) Hypothetical protein",
+      "Rv0573c (-) Nicotinic acid phosphoribosyltransferase PncB2"
+     ]
+    },
+    {
+     "model_gene": "NP_218431_1",
+     "locus": "Rv3914",
+     "fitness_browser_desc": "Thioredoxin TrxC (TRX) (MPT46)",
+     "refseq_definition": "thioredoxin TrxC",
+     "neighbourhood": [
+      "Rv3911 (+) Possible alternative RNA polymerase sigma factor SigM",
+      "Rv3912 (+) Hypothetical alanine rich protein",
+      "Rv3913 (+) Probable thioredoxin reductase TrxB2 (TRXR) (TR)",
+      "Rv3914 (+) Thioredoxin TrxC (TRX) (MPT46)",
+      "Rv3915 (+) Probable peptidoglycan hydrolase",
+      "Rv3916c (-) Conserved hypothetical protein",
+      "Rv3917c (-) Probable chromosome partitioning protein ParB"
+     ]
+    },
+    {
+     "model_gene": "YP_177815_1",
+     "locus": "Rv1471",
+     "fitness_browser_desc": "Probable thioredoxin TrxB1",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "Rv1468c (-) PE-PGRS family protein PE_PGRS29",
+      "Rv1469 (+) Probable cation transporter P-type ATPase D CtpD",
+      "Rv1470 (+) Probable thioredoxin TrxA",
+      "Rv1471 (+) Probable thioredoxin TrxB1",
+      "Rv1472 (+) Possible enoyl-CoA hydratase EchA12 (enoyl hydrase) (unsaturated acyl-CoA hydratase) (crotonase)",
+      "Rv1473 (+) Probable macrolide-transport ATP-binding protein ABC transporter",
+      "Rv1473A (+) Possible transcriptional regulatory protein"
+     ]
+    },
+    {
+     "model_gene": "YP_177853_1",
+     "locus": "Rv1981c",
+     "fitness_browser_desc": "Ribonucleoside-diphosphate reductase (beta chain) NrdF1 (ribonucleotide reductase small subunit) (R2F protein)",
+     "refseq_definition": "ribonucleoside-diphosphate reductase subunit beta NrdF1",
+     "neighbourhood": [
+      "Rv1978 (+) Conserved protein",
+      "Rv1979c (-) Possible conserved permease",
+      "Rv1980c (-) Immunogenic protein Mpt64 (antigen Mpt64/MPB64)",
+      "Rv1981c (-) Ribonucleoside-diphosphate reductase (beta chain) NrdF1 (ribonucleotide reductase small subunit) (R2F protein)",
+      "Rv1982c (-) Possible toxin VapC36. Contains PIN domain.",
+      "Rv1982A (-) Possible antitoxin VapB36",
+      "Rv1983 (+) PE-PGRS family protein PE_PGRS35"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR3",
+   "name": "Ribonucleoside-diphosphate reductase (CDP)",
+   "equation_ids": "cdp_c + trdrd_c --> dcdp_c + h2o_c + trdox_c",
+   "equation_names": "CDP + Reduced thioredoxin --> DCDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_218431_1 or YP_177815_1 or (NP_217567_1 and YP_177921_1)",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_217567_1",
+     "locus": "Rv3051c",
+     "fitness_browser_desc": "Ribonucleoside-diphosphate reductase (alpha chain) NrdE (ribonucleotide reductase small subunit) (R1F protein)",
+     "refseq_definition": "ribonucleoside-diphosphate reductase subunit alpha",
+     "neighbourhood": [
+      "Rv3048c (-) Ribonucleoside-diphosphate reductase (beta chain) NrdF2 (ribonucleotide reductase small subunit) (R2F protein)",
+      "Rv3049c (-) Probable monooxygenase",
+      "Rv3050c (-) Probable transcriptional regulatory protein (probably AsnC-family)",
+      "Rv3051c (-) Ribonucleoside-diphosphate reductase (alpha chain) NrdE (ribonucleotide reductase small subunit) (R1F protein)",
+      "Rv3052c (-) Probable NrdI protein",
+      "Rv3053c (-) Probable glutaredoxin electron transport component of NRDEF (glutaredoxin-like protein) NrdH",
+      "Rv3054c (-) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_218431_1",
+     "locus": "Rv3914",
+     "fitness_browser_desc": "Thioredoxin TrxC (TRX) (MPT46)",
+     "refseq_definition": "thioredoxin TrxC",
+     "neighbourhood": [
+      "Rv3911 (+) Possible alternative RNA polymerase sigma factor SigM",
+      "Rv3912 (+) Hypothetical alanine rich protein",
+      "Rv3913 (+) Probable thioredoxin reductase TrxB2 (TRXR) (TR)",
+      "Rv3914 (+) Thioredoxin TrxC (TRX) (MPT46)",
+      "Rv3915 (+) Probable peptidoglycan hydrolase",
+      "Rv3916c (-) Conserved hypothetical protein",
+      "Rv3917c (-) Probable chromosome partitioning protein ParB"
+     ]
+    },
+    {
+     "model_gene": "YP_177815_1",
+     "locus": "Rv1471",
+     "fitness_browser_desc": "Probable thioredoxin TrxB1",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "Rv1468c (-) PE-PGRS family protein PE_PGRS29",
+      "Rv1469 (+) Probable cation transporter P-type ATPase D CtpD",
+      "Rv1470 (+) Probable thioredoxin TrxA",
+      "Rv1471 (+) Probable thioredoxin TrxB1",
+      "Rv1472 (+) Possible enoyl-CoA hydratase EchA12 (enoyl hydrase) (unsaturated acyl-CoA hydratase) (crotonase)",
+      "Rv1473 (+) Probable macrolide-transport ATP-binding protein ABC transporter",
+      "Rv1473A (+) Possible transcriptional regulatory protein"
+     ]
+    },
+    {
+     "model_gene": "YP_177921_1",
+     "locus": "Rv3048c",
+     "fitness_browser_desc": "Ribonucleoside-diphosphate reductase (beta chain) NrdF2 (ribonucleotide reductase small subunit) (R2F protein)",
+     "refseq_definition": "ribonucleoside-diphosphate reductase subunit beta NrdF2",
+     "neighbourhood": [
+      "Rv3045 (+) Probable NADP-dependent alcohol dehydrogenase AdhC",
+      "Rv3046c (-) Conserved protein",
+      "Rv3047c (-) Hypothetical protein",
+      "Rv3048c (-) Ribonucleoside-diphosphate reductase (beta chain) NrdF2 (ribonucleotide reductase small subunit) (R2F protein)",
+      "Rv3049c (-) Probable monooxygenase",
+      "Rv3050c (-) Probable transcriptional regulatory protein (probably AsnC-family)",
+      "Rv3051c (-) Ribonucleoside-diphosphate reductase (alpha chain) NrdE (ribonucleotide reductase small subunit) (R1F protein)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SDPDS",
+   "name": "Succinyl-diaminopimelate desuccinylase",
+   "equation_ids": "h2o_c + sl26da_c --> 26dap_LL_c + succ_c",
+   "equation_names": "H2O + N-Succinyl-LL-2,6-diaminoheptanedioate --> LL-2,6-Diaminoheptanedioate + Succinate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_217038_1 or YP_177796_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_217038_1",
+     "locus": "Rv2522c",
+     "fitness_browser_desc": "Conserved hypothetical protein",
+     "refseq_definition": "hypothetical protein Rv2522c",
+     "neighbourhood": [
+      "Rv2519 (+) PE family protein PE26",
+      "Rv2520c (-) Possible conserved membrane protein",
+      "Rv2521 (+) Probable bacterioferritin comigratory protein Bcp",
+      "Rv2522c (-) Conserved hypothetical protein",
+      "Rv2523c (-) holo-[acyl-carrier protein] synthase AcpS (holo-ACP synthase) (CoA:APO-[ACP]pantetheinephosphotransferase) (CoA:APO-[acyl-carrier protein]pantetheinephosphotransferase)",
+      "Rv2524c (-) Probable fatty acid synthase Fas (fatty acid synthetase)",
+      "Rv2525c (-) Conserved hypothetical protein. Secreted; predicted to be a substrate of the twin arginine translocation (tat) export system."
+     ]
+    },
+    {
+     "model_gene": "YP_177796_1",
+     "locus": "Rv1202",
+     "fitness_browser_desc": "Probable succinyl-diaminopimelate desuccinylase DapE",
+     "refseq_definition": "succinyl-diaminopimelate desuccinylase DapE",
+     "neighbourhood": [
+      "Rv1199c (-) Possible transposase",
+      "Rv1200 (+) Probable conserved integral membrane transport protein",
+      "Rv1201c (-) Tetrahydrodipicolinate N-succinyltransferase DapD",
+      "Rv1202 (+) Probable succinyl-diaminopimelate desuccinylase DapE",
+      "Rv1203c (-) Hypothetical protein",
+      "Rv1204c (-) Conserved hypothetical protein",
+      "Rv1205 (+) Conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SDPTA",
+   "name": "Succinyldiaminopimelate transaminase",
+   "equation_ids": "akg_c + sl26da_c <=> glu__L_c + sl2a6o_c",
+   "equation_names": "2-Oxoglutarate + N-Succinyl-LL-2,6-diaminoheptanedioate <=> L-Glutamate + N-Succinyl-2-L-amino-6-oxoheptanedioate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215373_1 or NP_215694_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215373_1",
+     "locus": "Rv0858c",
+     "fitness_browser_desc": "Probable N-succinyldiaminopimelate aminotransferase DapC (DAP-at)",
+     "refseq_definition": "N-succinyldiaminopimelate aminotransferase DapC",
+     "neighbourhood": [
+      "Rv0855 (+) Probable fatty-acid-CoA racemase Far",
+      "Rv0856 (+) Conserved hypothetical protein",
+      "Rv0857 (+) Conserved hypothetical protein",
+      "Rv0858c (-) Probable N-succinyldiaminopimelate aminotransferase DapC (DAP-at)",
+      "Rv0859 (+) Possible acyl-CoA thiolase FadA",
+      "Rv0860 (+) Probable fatty oxidation protein FadB",
+      "Rv0861c (-) DNA helicase Ercc3"
+     ]
+    },
+    {
+     "model_gene": "NP_215694_1",
+     "locus": "Rv1178",
+     "fitness_browser_desc": "Probable aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "Rv1175c (-) Probable NADPH dependent 2,4-dienoyl-CoA reductase FadH (2,4-dienoyl coenzyme A reductase) (4-enoyl-CoA reductase)",
+      "Rv1176c (-) Conserved hypothetical protein",
+      "Rv1177 (+) Probable ferredoxin FdxC",
+      "Rv1178 (+) Probable aminotransferase",
+      "Rv1179c (-) Unknown protein",
+      "Rv1180 (+) Probable polyketide beta-ketoacyl synthase Pks3",
+      "Rv1181 (+) Probable polyketide beta-ketoacyl synthase Pks4"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SERAT",
+   "name": "Serine O-acetyltransferase",
+   "equation_ids": "accoa_c + ser__L_c <=> acser_c + coa_c",
+   "equation_names": "Acetyl-CoA + L-Serine <=> O-Acetyl-L-serine + Coenzyme A",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215982_1 or NP_216851_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215982_1",
+     "locus": "Rv1466",
+     "fitness_browser_desc": "Conserved protein",
+     "refseq_definition": "hypothetical protein Rv1466",
+     "neighbourhood": [
+      "Rv1463 (+) Probable conserved ATP-binding protein ABC transporter",
+      "Rv1464 (+) Probable cysteine desulfurase Csd",
+      "Rv1465 (+) Possible nitrogen fixation related protein",
+      "Rv1466 (+) Conserved protein",
+      "Rv1467c (-) Probable acyl-CoA dehydrogenase FadE15",
+      "Rv1468c (-) PE-PGRS family protein PE_PGRS29",
+      "Rv1469 (+) Probable cation transporter P-type ATPase D CtpD"
+     ]
+    },
+    {
+     "model_gene": "NP_216851_1",
+     "locus": "Rv2335",
+     "fitness_browser_desc": "Probable serine acetyltransferase CysE (sat)",
+     "refseq_definition": "serine acetyltransferase",
+     "neighbourhood": [
+      "Rv2332 (+) Probable [NAD] dependent malate oxidoreductase Mez (malic enzyme) (NAD-malic enzyme) (malate dehydrogenase (oxaloacetate decarboxylating)) (pyruvic-malic carboxylase) (NAD-me)",
+      "Rv2333c (-) Integral membrane drug efflux protein Stp",
+      "Rv2334 (+) Cysteine synthase a CysK1 (O-acetylserine sulfhydrylase A) (O-acetylserine (thiol)-lyase A) (CSASE A)",
+      "Rv2335 (+) Probable serine acetyltransferase CysE (sat)",
+      "Rv2336 (+) Hypothetical protein",
+      "Rv2337c (-) Hypothetical protein",
+      "Rv2338c (-) Possible molybdopterin biosynthesis protein MoeW"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SO3R",
+   "name": "Sulfite reductase",
+   "equation_ids": "5.0 h_c + 3.0 nadh_c + so3_c --> 3.0 h2o_c + h2s_c + 3.0 nad_c",
+   "equation_names": "5.0 H+ + 3.0 Nicotinamide adenine dinucleotide - reduced + Sulfite --> 3.0 H2O + Hydrogen sulfide + 3.0 Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": []
+  },
+  {
+   "reaction": "SUCBZL",
+   "name": "O-succinylbenzoate-CoA ligase",
+   "equation_ids": "atp_c + coa_c + sucbz_c --> amp_c + ppi_c + sbzcoa_c",
+   "equation_names": "ATP + Coenzyme A + O-Succinylbenzoate --> AMP + Diphosphate + O-Succinylbenzoyl-CoA",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215056_1 or NP_217605_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215056_1",
+     "locus": "Rv0542c",
+     "fitness_browser_desc": "Possible O-succinylbenzoic acid--CoA ligase MenE (OSB-CoA synthetase) (O-succinylbenzoate-CoA synthase)",
+     "refseq_definition": "2-succinylbenzoic acid--CoA ligase",
+     "neighbourhood": [
+      "Rv0539 (+) Probable dolichyl-phosphate sugar synthase (dolichol-phosphate sugar synthetase) (dolichol-phosphate sugar transferase) (sugar phosphoryldolichol synthase)",
+      "Rv0540 (+) Conserved hypothetical protein",
+      "Rv0541c (-) Probable conserved integral membrane protein",
+      "Rv0542c (-) Possible O-succinylbenzoic acid--CoA ligase MenE (OSB-CoA synthetase) (O-succinylbenzoate-CoA synthase)",
+      "Rv0543c (-) Conserved protein",
+      "Rv0544c (-) Possible conserved transmembrane protein",
+      "Rv0545c (-) Probable low-affinity inorganic phosphate transporter integral membrane protein PitA"
+     ]
+    },
+    {
+     "model_gene": "NP_217605_1",
+     "locus": "Rv3089",
+     "fitness_browser_desc": "Probable chain-fatty-acid-CoA ligase FadD13 (fatty-acyl-CoA synthetase)",
+     "refseq_definition": "long chain-fatty-acid--CoA ligase FadD13",
+     "neighbourhood": [
+      "Rv3086 (+) Probable zinc-type alcohol dehydrogenase AdhD (aldehyde reductase)",
+      "Rv3087 (+) Possible triacylglycerol synthase (diacylglycerol acyltransferase)",
+      "Rv3088 (+) Putative triacylglycerol synthase (diacylglycerol acyltransferase) Tgs4",
+      "Rv3089 (+) Probable chain-fatty-acid-CoA ligase FadD13 (fatty-acyl-CoA synthetase)",
+      "Rv3090 (+) Unknown alanine and valine rich protein",
+      "Rv3091 (+) Conserved protein",
+      "Rv3092c (-) Probable conserved integral membrane protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "THZPSN",
+   "name": "Thiazole phosphate synthesis",
+   "equation_ids": "atp_c + cys__L_c + dxyl5p_c + tyr__L_c --> 4hba_c + 4mpetz_c + ala__L_c + amp_c + co2_c + h2o_c + h_c + ppi_c",
+   "equation_names": "ATP + L-Cysteine + 1-deoxy-D-xylulose 5-phosphate + L-Tyrosine --> 4-Hydroxy-benzyl alcohol + 4-Methyl-5-(2-phosphoethyl)-thiazole + L-Alanine + AMP + CO2 + H2O + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_214929_1 or NP_214931_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_214929_1",
+     "locus": "Rv0415",
+     "fitness_browser_desc": "Possible thiamine biosynthesis oxidoreductase ThiO",
+     "refseq_definition": "thiamine biosynthesis oxidoreductase ThiO",
+     "neighbourhood": [
+      "Rv0412c (-) Possible conserved membrane protein",
+      "Rv0413 (+) Possible mutator protein MutT3 (7,8-dihydro-8-oxoguanine-triphosphatase) (8-oxo-dGTPase) (dGTP pyrophosphohydrolase)",
+      "Rv0414c (-) Thiamine-phosphate pyrophosphorylase ThiE (TMP pyrophosphorylase) (TMP-PPASE) (thiamine-phosphate synthase)",
+      "Rv0415 (+) Possible thiamine biosynthesis oxidoreductase ThiO",
+      "Rv0416 (+) Possible protein ThiS",
+      "Rv0417 (+) Probable thiamin biosynthesis protein ThiG (thiazole biosynthesis protein)",
+      "Rv0418 (+) Probable lipoprotein aminopeptidase LpqL"
+     ]
+    },
+    {
+     "model_gene": "NP_214931_1",
+     "locus": "Rv0417",
+     "fitness_browser_desc": "Probable thiamin biosynthesis protein ThiG (thiazole biosynthesis protein)",
+     "refseq_definition": "thiazole synthase",
+     "neighbourhood": [
+      "Rv0414c (-) Thiamine-phosphate pyrophosphorylase ThiE (TMP pyrophosphorylase) (TMP-PPASE) (thiamine-phosphate synthase)",
+      "Rv0415 (+) Possible thiamine biosynthesis oxidoreductase ThiO",
+      "Rv0416 (+) Possible protein ThiS",
+      "Rv0417 (+) Probable thiamin biosynthesis protein ThiG (thiazole biosynthesis protein)",
+      "Rv0418 (+) Probable lipoprotein aminopeptidase LpqL",
+      "Rv0419 (+) Possible lipoprotein peptidase LpqM",
+      "Rv0420c (-) Possible transmembrane protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMDS",
+   "name": "Thymidylate synthase",
+   "equation_ids": "dump_c + mlthf_c --> dhf_c + dtmp_c",
+   "equation_names": "DUMP + 5,10-Methylenetetrahydrofolate --> 7,8-Dihydrofolate + DTMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_217270_1 or NP_217280_1 or NP_217876_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_217270_1",
+     "locus": "Rv2754c",
+     "fitness_browser_desc": "Probable thymidylate synthase ThyX (ts) (TSase)",
+     "refseq_definition": "thymidylate synthase ThyX",
+     "neighbourhood": [
+      "Rv2751 (+) Conserved protein",
+      "Rv2752c (-) Conserved hypothetical protein",
+      "Rv2753c (-) Probable dihydrodipicolinate synthase DapA (DHDPS) (dihydrodipicolinate synthetase)",
+      "Rv2754c (-) Probable thymidylate synthase ThyX (ts) (TSase)",
+      "Rv2755c (-) Possible type I restriction/modification system specificity determinant (fragment) HsdS.1 (S protein)",
+      "Rv2756c (-) Possible type I restriction/modification system DNA methylase HsdM (M protein) (DNA methyltransferase)",
+      "Rv2757c (-) Possible toxin VapC21"
+     ]
+    },
+    {
+     "model_gene": "NP_217280_1",
+     "locus": "Rv2764c",
+     "fitness_browser_desc": "Probable thymidylate synthase ThyA (ts) (TSASE)",
+     "refseq_definition": "thymidylate synthase ThyA",
+     "neighbourhood": [
+      "Rv2761c (-) Possible type I restriction/modification system specificity determinant HsdS (S protein)",
+      "Rv2762c (-) Conserved hypothetical protein",
+      "Rv2763c (-) Dihydrofolate reductase DfrA (DHFR) (tetrahydrofolate dehydrogenase)",
+      "Rv2764c (-) Probable thymidylate synthase ThyA (ts) (TSASE)",
+      "Rv2765 (+) Probable alanine rich hydrolase",
+      "Rv2766c (-) Probable short-chain type dehydrogenase/reductase",
+      "Rv2767c (-) Possible membrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_217876_1",
+     "locus": "Rv3359",
+     "fitness_browser_desc": "Possible oxidoreductase",
+     "refseq_definition": "oxidoreductase",
+     "neighbourhood": [
+      "Rv3356c (-) Probable bifunctional protein FolD: methylenetetrahydrofolate dehydrogenase + methenyltetrahydrofolate cyclohydrolase",
+      "Rv3357 (+) Antitoxin RelJ",
+      "Rv3358 (+) Toxin RelK",
+      "Rv3359 (+) Possible oxidoreductase",
+      "Rv3360 (+) Conserved hypothetical protein",
+      "Rv3361c (-) Conserved protein",
+      "Rv3362c (-) Probable ATP/GTP-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TRDR",
+   "name": "Thioredoxin reductase (NADPH)",
+   "equation_ids": "h_c + nadph_c + trdox_c --> nadp_c + trdrd_c",
+   "equation_names": "H+ + Nicotinamide adenine dinucleotide phosphate - reduced + Oxidized thioredoxin --> Nicotinamide adenine dinucleotide phosphate + Reduced thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_215331_1 or NP_218430_1 or YP_177815_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_215331_1",
+     "locus": "Rv0816c",
+     "fitness_browser_desc": "Probable thioredoxin ThiX",
+     "refseq_definition": "thioredoxin ThiX",
+     "neighbourhood": [
+      "Rv0813c (-) Conserved protein",
+      "Rv0814c (-) Conserved protein SseC2",
+      "Rv0815c (-) Probable thiosulfate sulfurtransferase CysA2 (rhodanese-like protein) (thiosulfate cyanide transsulfurase) (thiosulfate thiotransferase)",
+      "Rv0816c (-) Probable thioredoxin ThiX",
+      "Rv0817c (-) Probable conserved exported protein",
+      "Rv0818 (+) Transcriptional regulatory protein",
+      "Rv0819 (+) GCN5-related N-acetyltransferase, MshD"
+     ]
+    },
+    {
+     "model_gene": "NP_218430_1",
+     "locus": "Rv3913",
+     "fitness_browser_desc": "Probable thioredoxin reductase TrxB2 (TRXR) (TR)",
+     "refseq_definition": "thioredoxin reductase",
+     "neighbourhood": [
+      "Rv3910 (+) Probable conserved transmembrane protein",
+      "Rv3911 (+) Possible alternative RNA polymerase sigma factor SigM",
+      "Rv3912 (+) Hypothetical alanine rich protein",
+      "Rv3913 (+) Probable thioredoxin reductase TrxB2 (TRXR) (TR)",
+      "Rv3914 (+) Thioredoxin TrxC (TRX) (MPT46)",
+      "Rv3915 (+) Probable peptidoglycan hydrolase",
+      "Rv3916c (-) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_177815_1",
+     "locus": "Rv1471",
+     "fitness_browser_desc": "Probable thioredoxin TrxB1",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "Rv1468c (-) PE-PGRS family protein PE_PGRS29",
+      "Rv1469 (+) Probable cation transporter P-type ATPase D CtpD",
+      "Rv1470 (+) Probable thioredoxin TrxA",
+      "Rv1471 (+) Probable thioredoxin TrxB1",
+      "Rv1472 (+) Possible enoyl-CoA hydratase EchA12 (enoyl hydrase) (unsaturated acyl-CoA hydratase) (crotonase)",
+      "Rv1473 (+) Probable macrolide-transport ATP-binding protein ABC transporter",
+      "Rv1473A (+) Possible transcriptional regulatory protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UAAGDS",
+   "name": "UDP-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimelate synthetase",
+   "equation_ids": "26dap__M_c + atp_c + uamag_c --> adp_c + h_c + pi_c + ugmd_c",
+   "equation_names": "Meso-2,6-Diaminoheptanedioate + ATP + UDP-N-acetylmuramoyl-L-alanyl-D-glutamate --> ADP + H+ + Phosphate + UDP-N-acetylmuramoyl-L-alanyl-D-gamma-glutamyl-meso-2,6-diaminopimelate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_216674_1 or NP_218229_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216674_1",
+     "locus": "Rv2158c",
+     "fitness_browser_desc": "Probable UDP-N-acetylmuramoylalanyl-D-glutamate-2,6-diaminopimelate ligase MurE",
+     "refseq_definition": "UDP-N-acetylmuramoylalanyl-D-glutamate--2,6-diaminopimelate ligase",
+     "neighbourhood": [
+      "Rv2155c (-) Probable UDP-N-acetylmuramoylalanine-D-glutamate ligase MurD",
+      "Rv2156c (-) Probable phospho-N-acetylmuramoyl-pentappeptidetransferase MurX",
+      "Rv2157c (-) Probable UDP-N-acetylmuramoylalanyl-D-glutamyl-2, 6-diaminopimelate-D-alanyl-D-alanyl ligase MurF",
+      "Rv2158c (-) Probable UDP-N-acetylmuramoylalanyl-D-glutamate-2,6-diaminopimelate ligase MurE",
+      "Rv2159c (-) Conserved protein",
+      "Rv2160A (-) Conserved hypothetical protein",
+      "Rv2160c (-) Conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_218229_1",
+     "locus": "Rv3712",
+     "fitness_browser_desc": "Possible ligase",
+     "refseq_definition": "ligase",
+     "neighbourhood": [
+      "Rv3709c (-) Aspartokinase Ask (aspartate kinase) [contains: aspartokinase alpha subunit (Ask-alpha); and aspartokinase beta subunit (Ask-beta)]",
+      "Rv3710 (+) 2-isopropylmalate synthase LeuA (alpha-isopropylmalate synthase) (alpha-IPM synthetase) (IPMS)",
+      "Rv3711c (-) Probable DNA polymerase III (epsilon subunit) DnaQ",
+      "Rv3712 (+) Possible ligase",
+      "Rv3713 (+) Possible cobyric acid synthase CobQ2",
+      "Rv3714c (-) Conserved hypothetical protein",
+      "Rv3715c (-) Probable recombination protein RecR"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_216228_1 or NP_217399_1",
+   "n_growth_conditions_essential": 19,
+   "n_growth_conditions": 19,
+   "genes": [
+    {
+     "model_gene": "NP_216228_1",
+     "locus": "Rv1712",
+     "fitness_browser_desc": "Cytidylate kinase Cmk (CMP kinase) (cytidine monophosphate kinase) (ck)",
+     "refseq_definition": "cytidylate kinase",
+     "neighbourhood": [
+      "Rv1709 (+) Possible segregation and condensation protein ScpA",
+      "Rv1710 (+) Possible segregation and condensation protein ScpB",
+      "Rv1711 (+) Conserved hypothetical protein",
+      "Rv1712 (+) Cytidylate kinase Cmk (CMP kinase) (cytidine monophosphate kinase) (ck)",
+      "Rv1713 (+) Probable GTP-binding protein EngA",
+      "Rv1714 (+) Probable oxidoreductase",
+      "Rv1715 (+) Probable 3-hydroxybutyryl-CoA dehydrogenase FadB3 (beta-hydroxybutyryl-CoA dehydrogenase) (BHBD)"
+     ]
+    },
+    {
+     "model_gene": "NP_217399_1",
+     "locus": "Rv2883c",
+     "fitness_browser_desc": "Probable uridylate kinase PyrH (UK) (uridine monophosphate kinase) (UMP kinase)",
+     "refseq_definition": "uridylate kinase",
+     "neighbourhood": [
+      "Rv2880c (-) Conserved hypothetical protein",
+      "Rv2881c (-) Probable integral membrane phosphatidate cytidylyltransferase CdsA (CDP-diglyceride synthetase) (CDP-diglyceride pyrophosphorylase) (CDP-diacylglycerol synthase) (CDS) (CTP:phosphatidate cytidylyltransferase) (CDP-DAG synthase) (CDP-DG synthetase)",
+      "Rv2882c (-) Ribosome recycling factor Frr (ribosome releasing factor) (RRF)",
+      "Rv2883c (-) Probable uridylate kinase PyrH (UK) (uridine monophosphate kinase) (UMP kinase)",
+      "Rv2884 (+) Probable transcriptional regulatory protein",
+      "Rv2885c (-) Probable transposase",
+      "Rv2886c (-) Probable resolvase"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,384 @@
+{
+ "org": "RPal_CGA009",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ACOTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "TX73_019330 is the hopanoid aminotransferase HpnO, but the only other alternative TX73_024810 carries a generic 'aspartate aminotransferase family protein' annotation (likely ArgD, next to argF), so R1 is not allowed."
+  },
+  {
+   "reaction": "AIRC2",
+   "decision": "R6",
+   "new_rule": "TX73_021645",
+   "evidence": "TX73_021645 '5-(carboxyamino)imidazole ribonucleotide synthase' (PurK, EC 6.3.4.18) catalyses exactly AIR + ATP + HCO3- -> N5-CAIR + ADP + Pi; the adjacent TX73_021640 N5-CAIR mutase (PurE) supports the operon."
+  },
+  {
+   "reaction": "ALAALAr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "TX73_007125 is a 'D-alanine--D-alanine ligase family protein' in RefSeq (a family-level annotation that fits the reaction) and an alternative to the dcw-cluster Ddl TX73_018270, so it may not be removed."
+  },
+  {
+   "reaction": "ANPRT",
+   "decision": "R1",
+   "new_rule": "TX73_014980",
+   "evidence": "TX73_023350 is anthranilate synthase component I (TrpE, EC 4.1.3.27; 719 aa, consistent with a TrpEG fusion), which has no phosphoribosyltransferase domain. TX73_014980 'anthranilate phosphoribosyltransferase' (TrpD, next to trpC) remains."
+  },
+  {
+   "reaction": "ARGSL",
+   "decision": "R1",
+   "new_rule": "TX73_024645",
+   "evidence": "TX73_002040 argininosuccinate synthase (ArgG, EC 6.3.4.5) catalyses the preceding step, not the lyase reaction. TX73_024645 'argininosuccinate lyase' (ArgH) remains."
+  },
+  {
+   "reaction": "ASNS2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No asparagine synthetase (AsnA or AsnB) is annotated anywhere in the genome; only GatCAB Asp-tRNA(Asn) amidotransferase is present, so there is nothing specific to assign."
+  },
+  {
+   "reaction": "CU2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No copper importer is specifically annotated; the only candidates are a 'CopD family protein' and generic metal transporters, which are family-level matches."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two DAHP synthase isozymes ('3-deoxy-7-phosphoheptulonate synthase' and its class II form); same-function alternatives, not subunits."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All three alternatives are annotated 'dihydroxy-acid dehydratase' (IlvD/Edd family); they are same-name paralogs."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Three '4-hydroxy-tetrahydrodipicolinate synthase' paralogs; same-name alternatives."
+  },
+  {
+   "reaction": "DHORD2",
+   "decision": "R6",
+   "new_rule": "TX73_004110",
+   "evidence": "TX73_004110 'quinone-dependent dihydroorotate dehydrogenase' (family-2 PyrD, EC 1.3.5.2) catalyses exactly dihydroorotate + ubiquinone -> orotate + ubiquinol."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are annotated 'dihydroorotase' (one sits next to pyrB); they are same-name paralogs, not subunits of one dihydroorotase complex."
+  },
+  {
+   "reaction": "DHQS",
+   "decision": "R1",
+   "new_rule": "TX73_002610 or TX73_020995",
+   "evidence": "TX73_024880 is a 'helix-turn-helix transcriptional regulator' (324 aa; at most an HTH plus shikimate-kinase-like domain) and cannot be a 3-dehydroquinate synthase. Both '3-dehydroquinate synthase' paralogs remain."
+  },
+  {
+   "reaction": "DHQTi",
+   "decision": "R1",
+   "new_rule": "TX73_012605",
+   "evidence": "TX73_020995 is a 372-aa 3-dehydroquinate synthase (EC 4.2.3.4; DHQS-length only, not an AROM-type multidomain protein) in a sugar-nucleotide cluster. TX73_012605 'type II 3-dehydroquinate dehydratase' (AroQ) remains."
+  },
+  {
+   "reaction": "DMATT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All three alternatives are generic 'polyprenyl synthetase family protein' genes; broad specificity and redundancy are plausible."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "TX73_000335 is a standard-length (565 aa) 30S ribosomal protein S1 and not a catalyst. However, a second annotated IspH paralog (TX73_022125) is missing from this rule and cannot be added, so removing S1 would wrongly leave TX73_019340 as the only IspH."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are annotated '2-dehydropantoate 2-reductase' (ketopantoate reductase family); they are same-name paralogs."
+  },
+  {
+   "reaction": "DXPS",
+   "decision": "R6",
+   "new_rule": "TX73_004905",
+   "evidence": "TX73_004905 '1-deoxy-D-xylulose-5-phosphate synthase' (Dxs, EC 2.2.1.7), the only Dxs in the genome, catalyses exactly G3P + pyruvate -> DXP + CO2."
+  },
+  {
+   "reaction": "FDH",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The alternatives are an Fds-type NAD-dependent formate dehydrogenase complex (gamma/beta/alpha/delta) and an 'FdhF/YdeP family oxidoreductase' (family-level, a compatible molybdo-enzyme) paired with FdhD. There is no subunit-only OR to join and no clear non-catalyst to remove."
+  },
+  {
+   "reaction": "FUM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two class II fumarate hydratases and one 'fumarate hydratase' (class I); same-function isozymes."
+  },
+  {
+   "reaction": "GCCb",
+   "decision": "R6",
+   "new_rule": "TX73_019925 and TX73_019930",
+   "evidence": "TX73_019925 'glycine cleavage system aminomethyltransferase GcvT' (T-protein, EC 2.1.2.10) acts on the aminomethyl-lipoyl H-protein supplied by TX73_019930 'glycine cleavage system protein GcvH'. Both sit in the gcvT-gcvH-gcvP operon."
+  },
+  {
+   "reaction": "GCCc",
+   "decision": "R6",
+   "new_rule": "(TX73_000960 or TX73_014835) and TX73_019930",
+   "evidence": "The dihydrolipoyl dehydrogenase (L-protein, EC 1.8.1.4) paralogs TX73_000960 and TX73_014835 can each reoxidise the dihydrolipoyl H-protein. The H-protein is TX73_019930 'glycine cleavage system protein GcvH' from the gcvTHP operon."
+  },
+  {
+   "reaction": "GK1",
+   "decision": "R1",
+   "new_rule": "TX73_015875",
+   "evidence": "TX73_015995 is an 'SDR family NAD(P)-dependent oxidoreductase', a dehydrogenase family that cannot catalyse ATP-dependent GMP phosphorylation. TX73_015875 'guanylate kinase' remains."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Type I glutamate--ammonia ligase TX73_015390 (next to glnB) plus two 'glutamine synthetase family' proteins and a GS beta-grasp protein (possibly GlnII-like). These family-level annotations fit the reaction, so none may be removed."
+  },
+  {
+   "reaction": "GRTT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "TX73_007775 phytoene/squalene synthase has a different activity, but the remaining alternatives are both generic 'polyprenyl synthetase family protein' genes, so R1 is not allowed."
+  },
+  {
+   "reaction": "GTPCI",
+   "decision": "R1",
+   "new_rule": "TX73_017535",
+   "evidence": "TX73_014895 'preQ(1) synthase' (QueF, EC 1.7.1.13) is an NADPH-dependent nitrile reductase, not a GTP cyclohydrolase. TX73_017535 'GTP cyclohydrolase I FolE' remains."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two carbonic anhydrases plus spontaneous hydration; all alternatives fit the reaction."
+  },
+  {
+   "reaction": "HISTP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HisB TX73_001605 is a monofunctional 197-aa imidazoleglycerol-phosphate dehydratase without the HAD histidinol-phosphatase domain. The only other alternative is a generic 'inositol monophosphatase family protein', so R1 is not allowed."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "TX73_000335 is a standard-length (565 aa) 30S ribosomal protein S1 and not a catalyst. However, a second annotated IspH paralog (TX73_022125) is missing from this rule and cannot be added, so removing S1 would wrongly leave TX73_019340 as the only IspH."
+  },
+  {
+   "reaction": "IPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Citramalate synthase TX73_010310 is a LeuA-family homologue with closely related chemistry (2-oxo acid + acetyl-CoA condensation). Two '2-isopropylmalate synthase' paralogs remain either way, so I abstain."
+  },
+  {
+   "reaction": "MEPCT",
+   "decision": "R6",
+   "new_rule": "TX73_013405",
+   "evidence": "TX73_013405 'bifunctional 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase/2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase' (IspDF) carries exactly the IspD (EC 2.7.7.60) activity."
+  },
+  {
+   "reaction": "MNt2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are NRAMP-family divalent metal transporters (MntH-type), which is the right transporter class for Mn2+/H+ symport."
+  },
+  {
+   "reaction": "NNATr",
+   "decision": "R1",
+   "new_rule": "TX73_000860",
+   "evidence": "TX73_005515 is a 147-aa NUDIX hydrolase, too short to carry a NadM-type adenylyltransferase domain, so it cannot catalyse adenylyl transfer. TX73_000860 'nicotinate-nucleotide adenylyltransferase' (NadD) remains."
+  },
+  {
+   "reaction": "NNDPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "ModD TX73_005155 is a paralog in the quinolinate phosphoribosyltransferase family with uncertain activity, not clearly a non-catalyst; abstain."
+  },
+  {
+   "reaction": "NO3R1bpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No nitrate reductase (Nap or Nar) is annotated in the genome; only a nitrate ABC transporter permease, so there is nothing to assign."
+  },
+  {
+   "reaction": "OHPBAT",
+   "decision": "R6",
+   "new_rule": "TX73_022330",
+   "evidence": "TX73_022330 'phosphoserine transaminase' (SerC, EC 2.6.1.52) is the bifunctional SerC whose EC also covers transamination of 2-oxo-3-hydroxy-4-phosphobutanoate to 4-phosphohydroxy-L-threonine. It is the only SerC and sits next to serA."
+  },
+  {
+   "reaction": "PDX5PO2",
+   "decision": "R6",
+   "new_rule": "TX73_006145",
+   "evidence": "TX73_006145 'pyridoxamine 5'-phosphate oxidase' (a canonical 212-aa PdxH, EC 1.4.3.5) is the pyridoxine-5'-phosphate -> PLP oxidase. The many 'pyridoxamine 5'-phosphate oxidase family protein' genes were not used."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Phosphoglucosamine mutase GlmM plus a phosphoglucomutase and a bifunctional phosphomannomutase/phosphoglucomutase. These belong to the broad-specificity hexose-phosphate mutase family, so none may be removed."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Generic and broad-specificity aminotransferases (HisC, IlvE, 'aminotransferase', a PLP-dependent aminotransferase); redundancy is plausible and the remaining genes would all be generic."
+  },
+  {
+   "reaction": "PPND",
+   "decision": "R1",
+   "new_rule": "TX73_023040",
+   "evidence": "TX73_000320 is a standard-length (445 aa) 3-phosphoshikimate 1-carboxyvinyltransferase (AroA, EC 2.5.1.19) with no TyrA domain. TX73_023040 'prephenate/arogenate dehydrogenase family protein' (TyrA, in the CM-hisC-tyrA cluster) remains."
+  },
+  {
+   "reaction": "PPNDH",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "TX73_023030 'chorismate mutase' is 281 aa, long enough to carry a second (possibly prephenate dehydratase) domain. Bifunctionality cannot be excluded, so I abstain."
+  },
+  {
+   "reaction": "PRAGSr",
+   "decision": "R1",
+   "new_rule": "TX73_005965",
+   "evidence": "TX73_015785 'phosphoribosylformylglycinamidine cyclo-ligase' (PurM, EC 6.3.3.1) catalyses a different purine step. TX73_005965 'phosphoribosylamine--glycine ligase' (PurD) remains."
+  },
+  {
+   "reaction": "PRAMPC",
+   "decision": "R1",
+   "new_rule": "TX73_017530",
+   "evidence": "TX73_001630 and TX73_024445 are monofunctional phosphoribosyl-ATP diphosphatases (HisE, 107 and 131 aa, EC 3.6.1.31), not HisIE fusions. TX73_017530 'phosphoribosyl-AMP cyclohydrolase' (HisI) remains."
+  },
+  {
+   "reaction": "PRASCSi",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two 'phosphoribosylaminoimidazolesuccinocarboxamide synthase' (PurC) paralogs; same-name alternatives."
+  },
+  {
+   "reaction": "PRATPP",
+   "decision": "R1",
+   "new_rule": "TX73_001630 or TX73_024445",
+   "evidence": "TX73_017530 is a monofunctional 151-aa phosphoribosyl-AMP cyclohydrolase (HisI, EC 3.5.4.19), not a HisIE fusion. The two 'phosphoribosyl-ATP diphosphatase' (HisE) paralogs remain."
+  },
+  {
+   "reaction": "PRPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two 'ribose-phosphate pyrophosphokinase' paralogs; same-name alternatives."
+  },
+  {
+   "reaction": "PSCVT",
+   "decision": "R1",
+   "new_rule": "TX73_000320",
+   "evidence": "TX73_020995 is a 372-aa 3-dehydroquinate synthase (EC 4.2.3.4) with no EPSP synthase domain. TX73_000320 '3-phosphoshikimate 1-carboxyvinyltransferase' (AroA) remains."
+  },
+  {
+   "reaction": "RBFK",
+   "decision": "R1",
+   "new_rule": "TX73_022700",
+   "evidence": "TX73_022480 'HAD family phosphatase' is a hydrolase and cannot catalyse ATP-dependent riboflavin phosphorylation. TX73_022700 'bifunctional riboflavin kinase/FAD synthetase' (RibF) remains."
+  },
+  {
+   "reaction": "RBFSa",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Lumazine synthase is catalysed by same-name paralogs (TX73_022615 and TX73_014135, the latter ANDed with riboflavin synthase). Neither alternative is a non-catalyst, and editing the AND pairing is outside R1/R2."
+  },
+  {
+   "reaction": "RNDR2",
+   "decision": "R1",
+   "new_rule": "TX73_015440",
+   "evidence": "Thioredoxins TX73_001395 and TX73_001940 are the electron-donor substrate (represented as trdrd), not catalysts. TX73_015440 'vitamin B12-dependent ribonucleotide reductase' (NrdJ, the only RNR in the genome) remains."
+  },
+  {
+   "reaction": "RNDR3",
+   "decision": "R1",
+   "new_rule": "TX73_015440",
+   "evidence": "Thioredoxins TX73_001395 and TX73_001940 are the electron-donor substrate (represented as trdrd), not catalysts. TX73_015440 'vitamin B12-dependent ribonucleotide reductase' (NrdJ, the only RNR in the genome) remains."
+  },
+  {
+   "reaction": "SDPDS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "DapE TX73_003230 (next to dapD) plus an M20/M25/M40 metallo-hydrolase and an ArgE/DapE-family deacylase. These family-level annotations fit the reaction, so none may be removed."
+  },
+  {
+   "reaction": "SHK3Dr",
+   "decision": "R1",
+   "new_rule": "TX73_022410",
+   "evidence": "TX73_020995 is a 372-aa 3-dehydroquinate synthase (EC 4.2.3.4) with no shikimate dehydrogenase domain. TX73_022410 'shikimate dehydrogenase' (AroE) remains."
+  },
+  {
+   "reaction": "SHKK",
+   "decision": "R1",
+   "new_rule": "TX73_002615 or TX73_024880",
+   "evidence": "TX73_020995 is a 372-aa 3-dehydroquinate synthase (EC 4.2.3.4) with no kinase domain. Kept: aroK TX73_002615 (next to aroB) and the 324-aa HTH regulator TX73_024880, whose length fits an XRE-HTH/shikimate-kinase-domain protein."
+  },
+  {
+   "reaction": "SUCDi",
+   "decision": "R6",
+   "new_rule": "TX73_001125 and TX73_001120 and TX73_001130 and TX73_001135",
+   "evidence": "sdhCDAB operon: TX73_001125 flavoprotein, TX73_001120 iron-sulfur subunit, TX73_001130 hydrophobic membrane anchor and TX73_001135 cytochrome b556 subunit of succinate:quinone oxidoreductase (EC 1.3.5.1)."
+  },
+  {
+   "reaction": "THZPSN",
+   "decision": "R1",
+   "new_rule": "TX73_018530",
+   "evidence": "TX73_014145 'thiamine-phosphate kinase' (ThiL, EC 2.7.4.16) phosphorylates TMP and is not part of thiazole synthesis. TX73_018530 'thiazole synthase' (ThiG, in the thiS-thiG-thiE-thiC cluster) remains."
+  },
+  {
+   "reaction": "TMDS",
+   "decision": "R1",
+   "new_rule": "TX73_018090",
+   "evidence": "TX73_022825 'alkene reductase' (Old Yellow Enzyme family) has a different activity. TX73_018090 'thymidylate synthase' (ThyA, next to dihydrofolate reductase) remains."
+  },
+  {
+   "reaction": "TPI",
+   "decision": "R1",
+   "new_rule": "TX73_014970",
+   "evidence": "TX73_004860 is a standard 398-aa phosphoglycerate kinase (EC 2.7.2.3) with no TIM domain. TX73_014970 'triose-phosphate isomerase' remains."
+  },
+  {
+   "reaction": "TRDR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Thioredoxin-disulfide reductase TX73_021110 (ANDed with thioredoxins) plus generic 'NAD(P)/FAD-dependent oxidoreductase' and 'FAD-dependent oxidoreductase' genes. These family-level annotations fit the reaction, so none may be removed."
+  },
+  {
+   "reaction": "TYRTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Generic and broad-specificity aminotransferases (HisC, 'aminotransferase', a PLP-dependent aminotransferase); redundancy is plausible and the remaining genes would all be generic."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "UMP kinase PyrH TX73_015130 plus a CMP kinase and two 'amino acid kinase family protein' genes (MoSto-like, the UMP-kinase fold family). Family-level annotations may not be removed."
+  },
+  {
+   "reaction": "VALTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two 'branched-chain amino acid aminotransferase' paralogs; same-name alternatives."
+  },
+  {
+   "reaction": "ZNabc",
+   "decision": "R6",
+   "new_rule": "TX73_004425 and TX73_004430 and TX73_004435",
+   "evidence": "TX73_004425 'zinc ABC transporter ATP-binding protein AztA' is zinc-specific. It forms an operon with TX73_004430 'metal ABC transporter permease' and TX73_004435 'metal ABC transporter substrate-binding protein' (the AztABC zinc importer)."
+  }
+ ]
+}

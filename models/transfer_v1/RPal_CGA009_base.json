@@ -1,0 +1,48 @@
+{
+ "org": "RPal_CGA009",
+ "role": "evaluation_panel_A",
+ "draft": "models/embl_pinned/RPal_CGA009.xml.gz",
+ "draft_sha256": "1cb49f1a06b244929b4f83943d433ef641546fa36c86e54477c73a9d3ad7f32f",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "PM",
+  "carbon_exchange": "EX_succ_e",
+  "condition": "Sodium succinate dibasic hexahydrate",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "ASNS2",
+   "reaction": "asp__L_c + atp_c + nh4_c --> amp_c + asn__L_c + h_c + ppi_c",
+   "name": "Asparagine synthetase"
+  },
+  {
+   "id": "CHRPL",
+   "reaction": "chor_c --> 4hbz_c + pyr_c",
+   "name": "Chorismate pyruvate lyase"
+  },
+  {
+   "id": "NO3R1bpp",
+   "reaction": "no3_p + q8h2_c --> h2o_p + no2_p + q8_c",
+   "name": "Nitrate reductase (Ubiquinol-8)"
+  },
+  {
+   "id": "PDX5PO2",
+   "reaction": "nad_c + pdx5p_c --> h_c + nadh_c + pydx5p_c",
+   "name": "Pyridoxine 5'-phosphate oxidase (anaerboic"
+  },
+  {
+   "id": "SUCDi",
+   "reaction": "q8_c + succ_c --> fum_c + q8h2_c",
+   "name": "Succinate dehydrogenase (irreversible)"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.09829698004958862,
+ "base_sha256": "98523291d5d082d65d580cfdd57565b171a983664756c30d68030cefa56ca1e9",
+ "created": "2026-10-03T09:47:12Z"
+}

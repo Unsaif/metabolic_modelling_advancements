@@ -1,0 +1,2739 @@
+{
+ "org": "Dino",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 7,
+ "candidates": [
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178715_1 or (WP_012178451_1 and WP_012178453_1)",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178451_1",
+     "locus": "Dshi_1779",
+     "fitness_browser_desc": "acetolactate synthase, large subunit, biosynthetic type",
+     "refseq_definition": "acetolactate synthase 3 large subunit",
+     "neighbourhood": [
+      "Dshi_1776 (+) hypothetical protein",
+      "Dshi_1777 (-) ATP-dependent protease La",
+      "Dshi_1778 (+) hypothetical protein",
+      "Dshi_1779 (+) acetolactate synthase, large subunit, biosynthetic type",
+      "Dshi_1780 (+) hypothetical protein",
+      "Dshi_1781 (+) acetolactate synthase, small subunit",
+      "Dshi_1782 (+) Rieske (2Fe-2S) domain protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012178453_1",
+     "locus": "Dshi_1781",
+     "fitness_browser_desc": "acetolactate synthase, small subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "Dshi_1778 (+) hypothetical protein",
+      "Dshi_1779 (+) acetolactate synthase, large subunit, biosynthetic type",
+      "Dshi_1780 (+) hypothetical protein",
+      "Dshi_1781 (+) acetolactate synthase, small subunit",
+      "Dshi_1782 (+) Rieske (2Fe-2S) domain protein",
+      "Dshi_1783 (-) hypothetical protein",
+      "Dshi_1784 (+) RNA polymerase, sigma-24 subunit, ECF subfamily"
+     ]
+    },
+    {
+     "model_gene": "WP_012178715_1",
+     "locus": "Dshi_2045",
+     "fitness_browser_desc": "thiamine pyrophosphate protein central region",
+     "refseq_definition": "sulfoacetaldehyde acetyltransferase",
+     "neighbourhood": [
+      "Dshi_2042 (-) aminotransferase class-III",
+      "Dshi_2043 (+) hypothetical protein",
+      "Dshi_2044 (+) transcriptional regulator, GntR family with aminotransferase domain",
+      "Dshi_2045 (+) thiamine pyrophosphate protein central region",
+      "Dshi_5006 (+) hypothetical protein",
+      "Dshi_2047 (-) hypothetical protein",
+      "Dshi_2048 (-) Mammalian cell entry related domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACtex",
+   "name": "Acetate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ac_e <=> ac_p",
+   "equation_names": "Acetate <=> Acetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179601_1 or WP_012179686_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179601_1",
+     "locus": "Dshi_2940",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "peptidoglycan -binding protein",
+     "neighbourhood": [
+      "Dshi_2937 (-) ATP synthase F1, delta subunit",
+      "Dshi_2938 (-) hypothetical protein",
+      "Dshi_2939 (+) ATP-dependent Clp protease, ATP-binding subunit clpA",
+      "Dshi_2940 (-) OmpA/MotB domain protein",
+      "Dshi_2941 (-) hypothetical protein",
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179686_1",
+     "locus": "Dshi_3025",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Dshi_3022 (-) PfkB domain protein",
+      "Dshi_3023 (-) endonuclease III",
+      "Dshi_3024 (+) transcriptional regulator, AraC family",
+      "Dshi_3025 (+) OmpA/MotB domain protein",
+      "Dshi_3026 (+) GntR domain protein",
+      "Dshi_3027 (-) H+transporting two-sector ATPase B/B' subunit",
+      "Dshi_3028 (-) H+transporting two-sector ATPase B/B' subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "AGPR",
+   "name": "N-acetyl-g-glutamyl-phosphate reductase",
+   "equation_ids": "acg5sa_c + nadp_c + pi_c <=> acg5p_c + h_c + nadph_c",
+   "equation_names": "N-Acetyl-L-glutamate 5-semialdehyde + Nicotinamide adenine dinucleotide phosphate + Phosphate <=> N-Acetyl-L-glutamyl 5-phosphate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "ANPRT",
+   "name": "Anthranilate phosphoribosyltransferase",
+   "equation_ids": "anth_c + prpp_c --> ppi_c + pran_c",
+   "equation_names": "Anthranilate + 5-Phospho-alpha-D-ribose 1-diphosphate --> Diphosphate + N-(5-Phospho-D-ribosyl)anthranilate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178342_1 or WP_012178471_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178342_1",
+     "locus": "Dshi_1670",
+     "fitness_browser_desc": "glycosyl transferase family 3",
+     "refseq_definition": "glycosyl transferase family protein",
+     "neighbourhood": [
+      "Dshi_1667 (+) nitrite reductase (NAD(P)H), large subunit",
+      "Dshi_1668 (+) nitrite reductase (NAD(P)H), small subunit",
+      "Dshi_1669 (+) molybdopterin oxidoreductase",
+      "Dshi_1670 (+) glycosyl transferase family 3",
+      "Dshi_1671 (+) uroporphyrin-III C-methyltransferase",
+      "Dshi_1672 (-) ribosomal RNA methyltransferase RrmJ/FtsJ",
+      "Dshi_1673 (-) Ppx/GppA phosphatase"
+     ]
+    },
+    {
+     "model_gene": "WP_012178471_1",
+     "locus": "Dshi_1799",
+     "fitness_browser_desc": "anthranilate phosphoribosyltransferase",
+     "refseq_definition": "anthranilate phosphoribosyltransferase",
+     "neighbourhood": [
+      "Dshi_1796 (+) anthranilate synthase component I",
+      "Dshi_1797 (-) protein of unknown function DUF610, YibQ",
+      "Dshi_1798 (+) glutamine amidotransferase of anthranilate synthase",
+      "Dshi_1799 (+) anthranilate phosphoribosyltransferase",
+      "Dshi_1800 (+) Indole-3-glycerol-phosphate synthase",
+      "Dshi_1801 (+) molybdenum cofactor biosynthesis protein C",
+      "Dshi_1802 (+) molybdenum cofactor synthesis domain"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ANS",
+   "name": "Anthranilate synthase",
+   "equation_ids": "chor_c + gln__L_c --> anth_c + glu__L_c + h_c + pyr_c",
+   "equation_names": "Chorismate + L-Glutamine --> Anthranilate + L-Glutamate + H+ + Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012187311_1 or (WP_012178468_1 and WP_012178470_1)",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178468_1",
+     "locus": "Dshi_1796",
+     "fitness_browser_desc": "anthranilate synthase component I",
+     "refseq_definition": "anthranilate synthase component I",
+     "neighbourhood": [
+      "Dshi_1793 (+) Xanthine phosphoribosyltransferase",
+      "Dshi_1794 (+) aminotransferase class I and II",
+      "Dshi_1795 (+) putative peptidyl-prolyl cis-trans isomerse D",
+      "Dshi_1796 (+) anthranilate synthase component I",
+      "Dshi_1797 (-) protein of unknown function DUF610, YibQ",
+      "Dshi_1798 (+) glutamine amidotransferase of anthranilate synthase",
+      "Dshi_1799 (+) anthranilate phosphoribosyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_012178470_1",
+     "locus": "Dshi_1798",
+     "fitness_browser_desc": "glutamine amidotransferase of anthranilate synthase",
+     "refseq_definition": "aminodeoxychorismate/anthranilate synthase component II",
+     "neighbourhood": [
+      "Dshi_1795 (+) putative peptidyl-prolyl cis-trans isomerse D",
+      "Dshi_1796 (+) anthranilate synthase component I",
+      "Dshi_1797 (-) protein of unknown function DUF610, YibQ",
+      "Dshi_1798 (+) glutamine amidotransferase of anthranilate synthase",
+      "Dshi_1799 (+) anthranilate phosphoribosyltransferase",
+      "Dshi_1800 (+) Indole-3-glycerol-phosphate synthase",
+      "Dshi_1801 (+) molybdenum cofactor biosynthesis protein C"
+     ]
+    },
+    {
+     "model_gene": "WP_012187311_1",
+     "locus": "Dshi_3925",
+     "fitness_browser_desc": "peptidase C26",
+     "refseq_definition": "gamma-glutamyl-gamma-aminobutyrate hydrolase family protein",
+     "neighbourhood": [
+      "Dshi_3922 (+) transport protein, putative",
+      "Dshi_3923 (-) hypothetical protein",
+      "Dshi_3924 (-) hypothetical protein",
+      "Dshi_3925 (-) peptidase C26",
+      "Dshi_3926 (-) hypothetical protein",
+      "Dshi_3927 (-) hypothetical protein",
+      "Dshi_3928 (+) homocysteine S-methyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASNS1",
+   "name": "Asparagine synthase (glutamine-hydrolysing)",
+   "equation_ids": "asp__L_c + atp_c + gln__L_c + h2o_c --> amp_c + asn__L_c + glu__L_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + L-Glutamine + H2O --> AMP + L-Asparagine + L-Glutamate + H+ + Diphosphate",
+   "annotation": {
+    "rhea": [
+     "12228",
+     "12229",
+     "12230",
+     "12231"
+    ],
+    "ec-code": "6.3.5.4",
+    "metanetx.reaction": "MNXR96059",
+    "kegg.reaction": "R00578"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "CA2tex",
+   "name": "Calcium (Ca+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ca2_e <=> ca2_p",
+   "equation_names": "Calcium <=> Calcium",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179601_1 or WP_012179686_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179601_1",
+     "locus": "Dshi_2940",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "peptidoglycan -binding protein",
+     "neighbourhood": [
+      "Dshi_2937 (-) ATP synthase F1, delta subunit",
+      "Dshi_2938 (-) hypothetical protein",
+      "Dshi_2939 (+) ATP-dependent Clp protease, ATP-binding subunit clpA",
+      "Dshi_2940 (-) OmpA/MotB domain protein",
+      "Dshi_2941 (-) hypothetical protein",
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179686_1",
+     "locus": "Dshi_3025",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Dshi_3022 (-) PfkB domain protein",
+      "Dshi_3023 (-) endonuclease III",
+      "Dshi_3024 (+) transcriptional regulator, AraC family",
+      "Dshi_3025 (+) OmpA/MotB domain protein",
+      "Dshi_3026 (+) GntR domain protein",
+      "Dshi_3027 (-) H+transporting two-sector ATPase B/B' subunit",
+      "Dshi_3028 (-) H+transporting two-sector ATPase B/B' subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CHORM",
+   "name": "Chorismate mutase",
+   "equation_ids": "chor_c --> pphn_c",
+   "equation_names": "Chorismate --> Prephenate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177028_1 or WP_012177331_1 or WP_012177956_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177028_1",
+     "locus": "Dshi_0349",
+     "fitness_browser_desc": "chorismate mutase",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "Dshi_0346 (-) protein of unknown function DUF55",
+      "Dshi_0347 (-) cob(II)yrinic acid a,c-diamide reductase",
+      "Dshi_0348 (-) ribosomal protein S16",
+      "Dshi_0349 (-) chorismate mutase",
+      "Dshi_0350 (-) hypothetical protein",
+      "Dshi_0351 (-) GCN5-related N-acetyltransferase",
+      "Dshi_0352 (-) acetyltransferase, GNAT family"
+     ]
+    },
+    {
+     "model_gene": "WP_012177331_1",
+     "locus": "Dshi_0653",
+     "fitness_browser_desc": "Prephenate dehydratase",
+     "refseq_definition": "prephenate dehydratase",
+     "neighbourhood": [
+      "Dshi_0650 (-) DNA polymerase III, subunits gamma and tau",
+      "Dshi_0651 (+) NUDIX hydrolase",
+      "Dshi_0652 (+) hypothetical protein",
+      "Dshi_0653 (-) Prephenate dehydratase",
+      "Dshi_0654 (+) cytochrome c class I",
+      "Dshi_0655 (+) extracellular solute-binding protein family 5",
+      "Dshi_0656 (+) binding-protein-dependent transport systems inner membrane component"
+     ]
+    },
+    {
+     "model_gene": "WP_012177956_1",
+     "locus": "Dshi_1284",
+     "fitness_browser_desc": "chorismate mutase related enzyme",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "Dshi_1281 (+) Respiratory-chain NADH dehydrogenase domain 51 kDa subunit",
+      "Dshi_1282 (+) formate dehydrogenase, alpha subunit",
+      "Dshi_1283 (+) Formate--tetrahydrofolate ligase",
+      "Dshi_1284 (+) chorismate mutase related enzyme",
+      "Dshi_1285 (+) Methylenetetrahydrofolate dehydrogenase (NADP(+))",
+      "Dshi_1286 (+) hypothetical protein",
+      "Dshi_1287 (-) protein of unknown function DUF395 YeeE/YedE"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "name": "Chloride transport out via proton antiport (2:1) (periplasm)",
+   "equation_ids": "2.0 cl_p + h_c --> 2.0 cl_c + h_p",
+   "equation_names": "2.0 Chloride + H+ --> 2.0 Chloride + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "CLtex",
+   "name": "Chloride (Cl-1) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cl_e <=> cl_p",
+   "equation_names": "Chloride <=> Chloride",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179601_1 or WP_012179686_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179601_1",
+     "locus": "Dshi_2940",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "peptidoglycan -binding protein",
+     "neighbourhood": [
+      "Dshi_2937 (-) ATP synthase F1, delta subunit",
+      "Dshi_2938 (-) hypothetical protein",
+      "Dshi_2939 (+) ATP-dependent Clp protease, ATP-binding subunit clpA",
+      "Dshi_2940 (-) OmpA/MotB domain protein",
+      "Dshi_2941 (-) hypothetical protein",
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179686_1",
+     "locus": "Dshi_3025",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Dshi_3022 (-) PfkB domain protein",
+      "Dshi_3023 (-) endonuclease III",
+      "Dshi_3024 (+) transcriptional regulator, AraC family",
+      "Dshi_3025 (+) OmpA/MotB domain protein",
+      "Dshi_3026 (+) GntR domain protein",
+      "Dshi_3027 (-) H+transporting two-sector ATPase B/B' subunit",
+      "Dshi_3028 (-) H+transporting two-sector ATPase B/B' subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "COBALT2tex",
+   "name": "Cobalt (Co+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cobalt2_e <=> cobalt2_p",
+   "equation_names": "Co2+ <=> Co2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179601_1 or WP_012179686_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179601_1",
+     "locus": "Dshi_2940",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "peptidoglycan -binding protein",
+     "neighbourhood": [
+      "Dshi_2937 (-) ATP synthase F1, delta subunit",
+      "Dshi_2938 (-) hypothetical protein",
+      "Dshi_2939 (+) ATP-dependent Clp protease, ATP-binding subunit clpA",
+      "Dshi_2940 (-) OmpA/MotB domain protein",
+      "Dshi_2941 (-) hypothetical protein",
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179686_1",
+     "locus": "Dshi_3025",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Dshi_3022 (-) PfkB domain protein",
+      "Dshi_3023 (-) endonuclease III",
+      "Dshi_3024 (+) transcriptional regulator, AraC family",
+      "Dshi_3025 (+) OmpA/MotB domain protein",
+      "Dshi_3026 (+) GntR domain protein",
+      "Dshi_3027 (-) H+transporting two-sector ATPase B/B' subunit",
+      "Dshi_3028 (-) H+transporting two-sector ATPase B/B' subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CS",
+   "name": "Citrate synthase",
+   "equation_ids": "accoa_c + h2o_c + oaa_c --> cit_c + coa_c + h_c",
+   "equation_names": "Acetyl-CoA + H2O + Oxaloacetate --> Citrate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178478_1 or WP_012179780_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178478_1",
+     "locus": "Dshi_1806",
+     "fitness_browser_desc": "citrate synthase I",
+     "refseq_definition": "citrate synthase",
+     "neighbourhood": [
+      "Dshi_1803 (+) transcriptional repressor, LexA family",
+      "Dshi_1804 (-) ComEC/Rec2-related protein",
+      "Dshi_1805 (+) glutamyl-tRNA synthetase",
+      "Dshi_1806 (+) citrate synthase I",
+      "Dshi_1807 (+) UspA domain protein",
+      "Dshi_1808 (+) amino acid carrier protein",
+      "Dshi_1809 (-) excinuclease ABC, A subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_012179780_1",
+     "locus": "Dshi_3119",
+     "fitness_browser_desc": "citrate synthase",
+     "refseq_definition": "citryl-CoA lyase",
+     "neighbourhood": [
+      "Dshi_3116 (+) von Willebrand factor type A",
+      "Dshi_3117 (+) Tetratricopeptide TPR_2 repeat protein",
+      "Dshi_3118 (+) hypothetical protein",
+      "Dshi_3119 (-) citrate synthase",
+      "Dshi_3120 (-) L-carnitine dehydratase/bile acid-inducible protein F",
+      "Dshi_3121 (-) protein of unknown function DUF112 transmembrane",
+      "Dshi_3122 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tex",
+   "name": "Copper (Cu+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cu2_e <=> cu2_p",
+   "equation_names": "Cu2+ <=> Cu2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179601_1 or WP_012179686_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179601_1",
+     "locus": "Dshi_2940",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "peptidoglycan -binding protein",
+     "neighbourhood": [
+      "Dshi_2937 (-) ATP synthase F1, delta subunit",
+      "Dshi_2938 (-) hypothetical protein",
+      "Dshi_2939 (+) ATP-dependent Clp protease, ATP-binding subunit clpA",
+      "Dshi_2940 (-) OmpA/MotB domain protein",
+      "Dshi_2941 (-) hypothetical protein",
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179686_1",
+     "locus": "Dshi_3025",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Dshi_3022 (-) PfkB domain protein",
+      "Dshi_3023 (-) endonuclease III",
+      "Dshi_3024 (+) transcriptional regulator, AraC family",
+      "Dshi_3025 (+) OmpA/MotB domain protein",
+      "Dshi_3026 (+) GntR domain protein",
+      "Dshi_3027 (-) H+transporting two-sector ATPase B/B' subunit",
+      "Dshi_3028 (-) H+transporting two-sector ATPase B/B' subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176811_1 or WP_012176816_1 or WP_012177916_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176811_1",
+     "locus": "Dshi_0129",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "Dshi_0126 (-) hypothetical protein",
+      "Dshi_0127 (-) hypothetical protein",
+      "Dshi_0128 (-) hypothetical protein",
+      "Dshi_0129 (-) dihydroxy-acid dehydratase",
+      "Dshi_0130 (+) Abortive infection protein",
+      "Dshi_0131 (+) acetyl-CoA carboxylase, carboxyl transferase, beta subunit",
+      "Dshi_0132 (+) FolC bifunctional protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012176816_1",
+     "locus": "Dshi_0134",
+     "fitness_browser_desc": "transcriptional coactivator/pterin dehydratase",
+     "refseq_definition": "4a-hydroxytetrahydrobiopterin dehydratase",
+     "neighbourhood": [
+      "Dshi_0131 (+) acetyl-CoA carboxylase, carboxyl transferase, beta subunit",
+      "Dshi_0132 (+) FolC bifunctional protein",
+      "Dshi_0133 (+) type I secretion target repeat protein",
+      "Dshi_0134 (-) transcriptional coactivator/pterin dehydratase",
+      "Dshi_0135 (-) protein of unknown function DUF482",
+      "Dshi_0136 (-) glycerophosphoryl diester phosphodiesterase",
+      "Dshi_0137 (-) Endoribonuclease L-PSP"
+     ]
+    },
+    {
+     "model_gene": "WP_012177916_1",
+     "locus": "Dshi_1244",
+     "fitness_browser_desc": "Dihydroxy-acid dehydratase",
+     "refseq_definition": "IlvD/Edd family dehydratase",
+     "neighbourhood": [
+      "Dshi_1241 (-) KDPG and KHG aldolase",
+      "Dshi_1242 (-) 2-dehydro-3-deoxygalactonokinase",
+      "Dshi_1243 (-) short-chain dehydrogenase/reductase SDR",
+      "Dshi_1244 (-) Dihydroxy-acid dehydratase",
+      "Dshi_1245 (-) glycoside hydrolase family 4",
+      "Dshi_1246 (-) binding-protein-dependent transport systems inner membrane component",
+      "Dshi_1247 (-) binding-protein-dependent transport systems inner membrane component"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD2",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylpentanoate)",
+   "equation_ids": "23dhmp_c --> 3mop_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylpentanoate --> (S)-3-Methyl-2-oxopentanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176811_1 or WP_012176816_1 or WP_012177916_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176811_1",
+     "locus": "Dshi_0129",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "Dshi_0126 (-) hypothetical protein",
+      "Dshi_0127 (-) hypothetical protein",
+      "Dshi_0128 (-) hypothetical protein",
+      "Dshi_0129 (-) dihydroxy-acid dehydratase",
+      "Dshi_0130 (+) Abortive infection protein",
+      "Dshi_0131 (+) acetyl-CoA carboxylase, carboxyl transferase, beta subunit",
+      "Dshi_0132 (+) FolC bifunctional protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012176816_1",
+     "locus": "Dshi_0134",
+     "fitness_browser_desc": "transcriptional coactivator/pterin dehydratase",
+     "refseq_definition": "4a-hydroxytetrahydrobiopterin dehydratase",
+     "neighbourhood": [
+      "Dshi_0131 (+) acetyl-CoA carboxylase, carboxyl transferase, beta subunit",
+      "Dshi_0132 (+) FolC bifunctional protein",
+      "Dshi_0133 (+) type I secretion target repeat protein",
+      "Dshi_0134 (-) transcriptional coactivator/pterin dehydratase",
+      "Dshi_0135 (-) protein of unknown function DUF482",
+      "Dshi_0136 (-) glycerophosphoryl diester phosphodiesterase",
+      "Dshi_0137 (-) Endoribonuclease L-PSP"
+     ]
+    },
+    {
+     "model_gene": "WP_012177916_1",
+     "locus": "Dshi_1244",
+     "fitness_browser_desc": "Dihydroxy-acid dehydratase",
+     "refseq_definition": "IlvD/Edd family dehydratase",
+     "neighbourhood": [
+      "Dshi_1241 (-) KDPG and KHG aldolase",
+      "Dshi_1242 (-) 2-dehydro-3-deoxygalactonokinase",
+      "Dshi_1243 (-) short-chain dehydrogenase/reductase SDR",
+      "Dshi_1244 (-) Dihydroxy-acid dehydratase",
+      "Dshi_1245 (-) glycoside hydrolase family 4",
+      "Dshi_1246 (-) binding-protein-dependent transport systems inner membrane component",
+      "Dshi_1247 (-) binding-protein-dependent transport systems inner membrane component"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPS",
+   "name": "Dihydrodipicolinate synthase",
+   "equation_ids": "aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Pyruvate --> 2,3-Dihydrodipicolinate + 2.0 H2O + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176831_1 or WP_012179111_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176831_1",
+     "locus": "Dshi_0149",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "Dshi_0146 (-) Rhodanese domain protein",
+      "Dshi_0147 (-) SsrA-binding protein",
+      "Dshi_0148 (-) GCN5-related N-acetyltransferase",
+      "Dshi_0149 (-) dihydrodipicolinate synthase",
+      "Dshi_0150 (+) Lytic transglycosylase catalytic",
+      "Dshi_0151 (-) protein of unknown function DUF6 transmembrane",
+      "Dshi_0152 (-) protein of unknown function DUF752"
+     ]
+    },
+    {
+     "model_gene": "WP_012179111_1",
+     "locus": "Dshi_2446",
+     "fitness_browser_desc": "dihydrodipicolinate synthetase",
+     "refseq_definition": "dihydrodipicolinate synthase family protein",
+     "neighbourhood": [
+      "Dshi_2443 (-) 6-phosphogluconate dehydrogenase NAD-binding",
+      "Dshi_2444 (-) 4-hydroxythreonine-4-phosphate dehydrogenase",
+      "Dshi_2445 (-) transcriptional regulator, GntR family",
+      "Dshi_2446 (-) dihydrodipicolinate synthetase",
+      "Dshi_2447 (-) Mandelate racemase/muconate lactonizing protein",
+      "Dshi_2448 (-) protein of unknown function DUF112 transmembrane",
+      "Dshi_2449 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHFR",
+   "name": "Dihydrofolate reductase",
+   "equation_ids": "dhf_c + h_c + nadph_c <=> nadp_c + thf_c",
+   "equation_names": "7,8-Dihydrofolate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "DHFS",
+   "name": "Dihydrofolate synthase",
+   "equation_ids": "atp_c + dhpt_c + glu__L_c --> adp_c + dhf_c + h_c + pi_c",
+   "equation_names": "ATP + Dihydropteroate + L-Glutamate --> ADP + 7,8-Dihydrofolate + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176814_1 or WP_012179065_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176814_1",
+     "locus": "Dshi_0132",
+     "fitness_browser_desc": "FolC bifunctional protein",
+     "refseq_definition": "bifunctional folylpolyglutamate synthase/dihydrofolate synthase",
+     "neighbourhood": [
+      "Dshi_0129 (-) dihydroxy-acid dehydratase",
+      "Dshi_0130 (+) Abortive infection protein",
+      "Dshi_0131 (+) acetyl-CoA carboxylase, carboxyl transferase, beta subunit",
+      "Dshi_0132 (+) FolC bifunctional protein",
+      "Dshi_0133 (+) type I secretion target repeat protein",
+      "Dshi_0134 (-) transcriptional coactivator/pterin dehydratase",
+      "Dshi_0135 (-) protein of unknown function DUF482"
+     ]
+    },
+    {
+     "model_gene": "WP_012179065_1",
+     "locus": "Dshi_2398",
+     "fitness_browser_desc": "dihydropteroate synthase",
+     "refseq_definition": "dihydropteroate synthase",
+     "neighbourhood": [
+      "Dshi_2395 (-) transcriptional regulator, AsnC family",
+      "Dshi_2396 (+) ketol-acid reductoisomerase",
+      "Dshi_2397 (-) phosphoglucosamine mutase",
+      "Dshi_2398 (-) dihydropteroate synthase",
+      "Dshi_2399 (-) dihydroneopterin aldolase",
+      "Dshi_2400 (-) cell wall hydrolase SleB",
+      "Dshi_2401 (-) PEP-utilizing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORDi",
+   "name": "Dihydoorotic acid dehydrogenase  irreversible",
+   "equation_ids": "dhor__S_c + o2_c --> h2o2_c + orot_c",
+   "equation_names": "(S)-Dihydroorotate + O2 --> Hydrogen peroxide + Orotate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178956_1 or WP_012179038_1 or WP_012179755_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178956_1",
+     "locus": "Dshi_2289",
+     "fitness_browser_desc": "amidohydrolase",
+     "refseq_definition": "metal-dependent hydrolase family protein",
+     "neighbourhood": [
+      "Dshi_2286 (+) transcriptional regulator, MarR family",
+      "Dshi_2287 (+) TRAP transporter, 4TM/12TM fusion protein",
+      "Dshi_2288 (+) TRAP transporter solute receptor, TAXI family",
+      "Dshi_2289 (+) amidohydrolase",
+      "Dshi_2290 (+) Carbohydrate-selective porin OprB",
+      "Dshi_2291 (+) protein of unknown function DUF306 Meta and HslJ",
+      "Dshi_2292 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179038_1",
+     "locus": "Dshi_2371",
+     "fitness_browser_desc": "dihydroorotase, homodimeric type",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "Dshi_2368 (-) urease, beta subunit",
+      "Dshi_2369 (-) urease, gamma subunit",
+      "Dshi_2370 (-) Urease accessory protein UreD",
+      "Dshi_2371 (+) dihydroorotase, homodimeric type",
+      "Dshi_2372 (+) orotate phosphoribosyltransferase",
+      "Dshi_2373 (+) replicative DNA helicase",
+      "Dshi_2374 (+) putative methyl-accepting chemotaxis sensory transducer"
+     ]
+    },
+    {
+     "model_gene": "WP_012179755_1",
+     "locus": "Dshi_3094",
+     "fitness_browser_desc": "dihydroorotase, multifunctional complex type",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "Dshi_3091 (+) aspartate carbamoyltransferase",
+      "Dshi_3092 (+) hypothetical protein",
+      "Dshi_3093 (+) hypothetical protein",
+      "Dshi_3094 (+) dihydroorotase, multifunctional complex type",
+      "Dshi_3095 (+) protein of unknown function DUF205",
+      "Dshi_3096 (+) protein of unknown function DUF805",
+      "Dshi_3097 (-) glutamate--cysteine ligase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHPM1",
+   "name": "DHPM1",
+   "equation_ids": "56dura_c + h2o_c --> cala_c + h_c",
+   "equation_names": "5,6-dihydrouracil + H2O --> N-Carbamoyl-beta-alanine + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "DMATT",
+   "name": "Dimethylallyltranstransferase",
+   "equation_ids": "dmpp_c + ipdp_c --> grdp_c + ppi_c",
+   "equation_names": "Dimethylallyl diphosphate + Isopentenyl diphosphate --> Geranyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179733_1 or WP_012180170_1 or WP_083768431_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179733_1",
+     "locus": "Dshi_3072",
+     "fitness_browser_desc": "Polyprenyl synthetase",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "Dshi_3069 (-) protein of unknown function DUF465",
+      "Dshi_3070 (-) methyltransferase small",
+      "Dshi_3071 (-) Beta tubulin, autoregulation binding site",
+      "Dshi_3072 (+) Polyprenyl synthetase",
+      "Dshi_3073 (-) 4-diphosphocytidyl-2C-methyl-D-erythritol kinase",
+      "Dshi_3074 (-) Tetratricopeptide TPR_2 repeat protein",
+      "Dshi_3075 (-) Electron-transferring-flavoproteindehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_012180170_1",
+     "locus": "Dshi_3514",
+     "fitness_browser_desc": "Polyprenyl synthetase",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "Dshi_3511 (-) hypothetical protein",
+      "Dshi_3512 (-) hydroxyneurosporene synthase",
+      "Dshi_3513 (-) Zeta-phytoene desaturase",
+      "Dshi_3514 (+) Polyprenyl synthetase",
+      "Dshi_3515 (+) O-methyltransferase family 2",
+      "Dshi_3516 (+) chlorophyll synthesis pathway, BchC",
+      "Dshi_3517 (+) chlorophyllide reductase iron protein subunit X"
+     ]
+    },
+    {
+     "model_gene": "WP_083768431_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "farnesyl diphosphate synthase"
+    }
+   ]
+  },
+  {
+   "reaction": "DNMPPA",
+   "name": "Dihydroneopterin monophosphate dephosphorylase",
+   "equation_ids": "dhpmp_c + h2o_c --> dhnpt_c + pi_c",
+   "equation_names": "Dihydroneopterin monophosphate + H2O --> Dihydroneopterin + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_007803450_1 or WP_012176774_1 or WP_012177345_1 or WP_012179994_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_007803450_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "heavy metal translocating P-type ATPase"
+    },
+    {
+     "model_gene": "WP_012176774_1",
+     "locus": "Dshi_0092",
+     "fitness_browser_desc": "NUDIX hydrolase",
+     "refseq_definition": "RNA pyrophosphohydrolase",
+     "neighbourhood": [
+      "Dshi_0089 (+) phosphoglycerate mutase, 2,3-bisphosphoglycerate-independent",
+      "Dshi_0090 (+) peptidase M23B",
+      "Dshi_0091 (+) carboxyl-terminal protease",
+      "Dshi_0092 (+) NUDIX hydrolase",
+      "Dshi_0093 (-) hypothetical protein",
+      "Dshi_0094 (-) hypothetical protein",
+      "Dshi_0095 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012177345_1",
+     "locus": "Dshi_0667",
+     "fitness_browser_desc": "heavy metal translocating P-type ATPase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "Dshi_0664 (+) cytochrome c oxidase, cbb3-type, subunit III",
+      "Dshi_0665 (+) Cytochrome c oxidase cbb3 type accessory protein FixG",
+      "Dshi_0666 (+) FixH family protein",
+      "Dshi_0667 (+) heavy metal translocating P-type ATPase",
+      "Dshi_0668 (+) cytochrome oxidase maturation protein, cbb3-type",
+      "Dshi_0669 (-) Serine-type D-Ala-D-Ala carboxypeptidase",
+      "Dshi_0670 (-) Haloacid dehalogenase domain protein hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_012179994_1",
+     "locus": "Dshi_3334",
+     "fitness_browser_desc": "ATP-dependent DNA helicase RecQ",
+     "refseq_definition": "DNA helicase RecQ",
+     "neighbourhood": [
+      "Dshi_3331 (+) acetyl-CoA acetyltransferase",
+      "Dshi_3332 (+) histidine kinase",
+      "Dshi_3333 (-) protein of unknown function DUF328",
+      "Dshi_3334 (-) ATP-dependent DNA helicase RecQ",
+      "Dshi_3335 (-) protein of unknown function YGGT",
+      "Dshi_3336 (+) hypothetical protein",
+      "Dshi_3337 (+) major facilitator superfamily MFS_1"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNTPPA",
+   "name": "Dihydroneopterin triphosphate pyrophosphatase",
+   "equation_ids": "ahdt_c + h2o_c --> dhpmp_c + h_c + ppi_c",
+   "equation_names": "2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + H2O --> Dihydroneopterin monophosphate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_007803450_1 or WP_012176774_1 or WP_012177345_1 or WP_012179994_1 or WP_012180220_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_007803450_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "heavy metal translocating P-type ATPase"
+    },
+    {
+     "model_gene": "WP_012176774_1",
+     "locus": "Dshi_0092",
+     "fitness_browser_desc": "NUDIX hydrolase",
+     "refseq_definition": "RNA pyrophosphohydrolase",
+     "neighbourhood": [
+      "Dshi_0089 (+) phosphoglycerate mutase, 2,3-bisphosphoglycerate-independent",
+      "Dshi_0090 (+) peptidase M23B",
+      "Dshi_0091 (+) carboxyl-terminal protease",
+      "Dshi_0092 (+) NUDIX hydrolase",
+      "Dshi_0093 (-) hypothetical protein",
+      "Dshi_0094 (-) hypothetical protein",
+      "Dshi_0095 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012177345_1",
+     "locus": "Dshi_0667",
+     "fitness_browser_desc": "heavy metal translocating P-type ATPase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "Dshi_0664 (+) cytochrome c oxidase, cbb3-type, subunit III",
+      "Dshi_0665 (+) Cytochrome c oxidase cbb3 type accessory protein FixG",
+      "Dshi_0666 (+) FixH family protein",
+      "Dshi_0667 (+) heavy metal translocating P-type ATPase",
+      "Dshi_0668 (+) cytochrome oxidase maturation protein, cbb3-type",
+      "Dshi_0669 (-) Serine-type D-Ala-D-Ala carboxypeptidase",
+      "Dshi_0670 (-) Haloacid dehalogenase domain protein hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_012179994_1",
+     "locus": "Dshi_3334",
+     "fitness_browser_desc": "ATP-dependent DNA helicase RecQ",
+     "refseq_definition": "DNA helicase RecQ",
+     "neighbourhood": [
+      "Dshi_3331 (+) acetyl-CoA acetyltransferase",
+      "Dshi_3332 (+) histidine kinase",
+      "Dshi_3333 (-) protein of unknown function DUF328",
+      "Dshi_3334 (-) ATP-dependent DNA helicase RecQ",
+      "Dshi_3335 (-) protein of unknown function YGGT",
+      "Dshi_3336 (+) hypothetical protein",
+      "Dshi_3337 (+) major facilitator superfamily MFS_1"
+     ]
+    },
+    {
+     "model_gene": "WP_012180220_1",
+     "locus": "Dshi_3564",
+     "fitness_browser_desc": "mutator MutT protein",
+     "refseq_definition": "8-oxo-dGTP diphosphatase MutT",
+     "neighbourhood": [
+      "Dshi_3561 (+) NusA antitermination factor",
+      "Dshi_3562 (+) protein of unknown function DUF448",
+      "Dshi_3563 (+) translation initiation factor IF-2",
+      "Dshi_3564 (-) mutator MutT protein",
+      "Dshi_3565 (-) arginine biosynthesis bifunctional protein ArgJ",
+      "Dshi_3566 (-) PpiC-type peptidyl-prolyl cis-trans isomerase",
+      "Dshi_3567 (+) preprotein translocase, SecA subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177888_1 or WP_012179063_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177888_1",
+     "locus": "Dshi_1216",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "2-dehydropantoate 2-reductase",
+     "neighbourhood": [
+      "Dshi_1213 (+) ATPase associated with various cellular activities AAA_5",
+      "Dshi_1214 (+) VWA containing CoxE family protein",
+      "Dshi_1215 (+) protein of unknown function DUF182",
+      "Dshi_1216 (-) 2-dehydropantoate 2-reductase",
+      "Dshi_1217 (-) AMP-dependent synthetase and ligase",
+      "Dshi_1218 (-) protein of unknown function DUF112 transmembrane",
+      "Dshi_1219 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179063_1",
+     "locus": "Dshi_2396",
+     "fitness_browser_desc": "ketol-acid reductoisomerase",
+     "refseq_definition": "ketol-acid reductoisomerase",
+     "neighbourhood": [
+      "Dshi_2393 (-) aminotransferase family protein, putative",
+      "Dshi_2394 (-) transcriptional regulator, AsnC family",
+      "Dshi_2395 (-) transcriptional regulator, AsnC family",
+      "Dshi_2396 (+) ketol-acid reductoisomerase",
+      "Dshi_2397 (-) phosphoglucosamine mutase",
+      "Dshi_2398 (-) dihydropteroate synthase",
+      "Dshi_2399 (-) dihydroneopterin aldolase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FBA",
+   "name": "Fructose-bisphosphate aldolase",
+   "equation_ids": "fdp_c <=> dhap_c + g3p_c",
+   "equation_names": "D-Fructose 1,6-bisphosphate <=> Dihydroxyacetone phosphate + Glyceraldehyde 3-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177938_1 or WP_012178824_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177938_1",
+     "locus": "Dshi_1266",
+     "fitness_browser_desc": "ketose-bisphosphate aldolase",
+     "refseq_definition": "class II fructose-bisphosphate aldolase",
+     "neighbourhood": [
+      "Dshi_1263 (-) efflux transporter, RND family, MFP subunit",
+      "Dshi_1264 (+) Ion transport 2 domain protein",
+      "Dshi_1265 (-) Inositol 2-dehydrogenase",
+      "Dshi_1266 (-) ketose-bisphosphate aldolase",
+      "Dshi_1267 (-) hypothetical protein",
+      "Dshi_1268 (-) PfkB domain protein",
+      "Dshi_1269 (-) thiamine pyrophosphate protein central region"
+     ]
+    },
+    {
+     "model_gene": "WP_012178824_1",
+     "locus": "Dshi_2156",
+     "fitness_browser_desc": "Fructose-bisphosphate aldolase",
+     "refseq_definition": "fructose bisphosphate aldolase",
+     "neighbourhood": [
+      "Dshi_2153 (-) peptidyl-prolyl cis-trans isomerase cyclophilin type",
+      "Dshi_2154 (-) peptidyl-prolyl cis-trans isomerase cyclophilin type",
+      "Dshi_2155 (+) Phosphoglycerate kinase",
+      "Dshi_2156 (+) Fructose-bisphosphate aldolase",
+      "Dshi_2157 (+) Septum formation initiator",
+      "Dshi_2158 (+) Pyruvate dehydrogenase (acetyl-transferring)",
+      "Dshi_2159 (+) Transketolase central region"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FBP",
+   "name": "Fructose-bisphosphatase",
+   "equation_ids": "fdp_c + h2o_c --> f6p_c + pi_c",
+   "equation_names": "D-Fructose 1,6-bisphosphate + H2O --> D-Fructose 6-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176745_1 or WP_012178941_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176745_1",
+     "locus": "Dshi_0063",
+     "fitness_browser_desc": "Inositol-phosphate phosphatase",
+     "refseq_definition": "inositol monophosphatase family protein",
+     "neighbourhood": [
+      "Dshi_0060 (-) aminotransferase class I and II",
+      "Dshi_0061 (-) Amidase",
+      "Dshi_0062 (+) Ubiquinone biosynthesis hydroxylase, UbiH/UbiF/VisC/COQ6 family",
+      "Dshi_0063 (-) Inositol-phosphate phosphatase",
+      "Dshi_0064 (-) peptidase U62 modulator of DNA gyrase",
+      "Dshi_0065 (-) hypothetical protein",
+      "Dshi_0066 (+) short-chain dehydrogenase/reductase SDR"
+     ]
+    },
+    {
+     "model_gene": "WP_012178941_1",
+     "locus": "Dshi_2274",
+     "fitness_browser_desc": "fructose-1,6-bisphosphatase, class II",
+     "refseq_definition": "class II fructose-bisphosphatase",
+     "neighbourhood": [
+      "Dshi_2271 (-) transcriptional regulator, TetR family",
+      "Dshi_2272 (+) hypothetical protein",
+      "Dshi_2273 (+) Homoserine dehydrogenase",
+      "Dshi_2274 (+) fructose-1,6-bisphosphatase, class II",
+      "Dshi_2275 (+) single-stranded-DNA-specific exonuclease RecJ",
+      "Dshi_R0042 (+) tRNA-Glu",
+      "Dshi_2276 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FUM",
+   "name": "Fumarase",
+   "equation_ids": "fum_c + h2o_c <=> mal__L_c",
+   "equation_names": "Fumarate + H2O <=> L-Malate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178098_1 or WP_044028766_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178098_1",
+     "locus": "Dshi_1426",
+     "fitness_browser_desc": "hydro-lyase, Fe-S type, tartrate/fumarate subfamily, alpha subunit",
+     "refseq_definition": "fumarate hydratase",
+     "neighbourhood": [
+      "Dshi_1423 (+) inner-membrane translocator",
+      "Dshi_1424 (+) inner-membrane translocator",
+      "Dshi_1425 (+) aldehyde dehydrogenase",
+      "Dshi_1426 (+) hydro-lyase, Fe-S type, tartrate/fumarate subfamily, alpha subunit",
+      "Dshi_1427 (+) Citrate CoA-transferase",
+      "Dshi_1428 (-) glucose-methanol-choline oxidoreductase",
+      "Dshi_1429 (-) short-chain dehydrogenase/reductase SDR"
+     ]
+    },
+    {
+     "model_gene": "WP_044028766_1",
+     "locus": "Dshi_2334",
+     "fitness_browser_desc": "fumarate hydratase, class II",
+     "refseq_definition": "class II fumarate hydratase",
+     "neighbourhood": [
+      "Dshi_2331 (+) Antibiotic biosynthesis monooxygenase",
+      "Dshi_2332 (+) chromate transporter, chromate ion transporter (CHR) family",
+      "Dshi_2333 (+) protein of unknown function DUF1321",
+      "Dshi_2334 (+) fumarate hydratase, class II",
+      "Dshi_2335 (+) arylsulfate sulfotransferase-like protein",
+      "Dshi_2336 (+) hypothetical protein",
+      "Dshi_2337 (-) cytochrome P450"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNS",
+   "name": "Glutamine synthetase",
+   "equation_ids": "atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c",
+   "equation_names": "ATP + L-Glutamate + Ammonium --> ADP + L-Glutamine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178511_1 or WP_012178539_1 or WP_012178893_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178511_1",
+     "locus": "Dshi_1839",
+     "fitness_browser_desc": "glutamine synthetase, type I",
+     "refseq_definition": "type I glutamate--ammonia ligase",
+     "neighbourhood": [
+      "Dshi_1836 (+) hypothetical protein",
+      "Dshi_1837 (-) carbohydrate kinase, YjeF related protein",
+      "Dshi_1838 (+) nitrogen regulatory protein P-II",
+      "Dshi_1839 (+) glutamine synthetase, type I",
+      "Dshi_1840 (+) OsmC family protein",
+      "Dshi_1841 (-) hypothetical protein",
+      "Dshi_1842 (+) adenylosuccinate lyase"
+     ]
+    },
+    {
+     "model_gene": "WP_012178539_1",
+     "locus": "Dshi_1867",
+     "fitness_browser_desc": "glutamine synthetase catalytic region",
+     "refseq_definition": "type III glutamate--ammonia ligase",
+     "neighbourhood": [
+      "Dshi_1864 (+) lytic murein transglycosylase",
+      "Dshi_1865 (-) hypothetical protein",
+      "Dshi_1866 (-) hypothetical protein",
+      "Dshi_1867 (-) glutamine synthetase catalytic region",
+      "Dshi_1868 (-) ferredoxin-dependent glutamate synthase",
+      "Dshi_1869 (-) glutamate synthase alpha subunit domain protein",
+      "Dshi_1870 (-) glutamine amidotransferase class-II"
+     ]
+    },
+    {
+     "model_gene": "WP_012178893_1",
+     "locus": "Dshi_2226",
+     "fitness_browser_desc": "Glutamate--putrescine ligase",
+     "refseq_definition": "glutamine synthetase family protein",
+     "neighbourhood": [
+      "Dshi_2223 (+) binding-protein-dependent transport systems inner membrane component",
+      "Dshi_2224 (+) polar amino acid ABC transporter, inner membrane subunit",
+      "Dshi_2225 (+) glutamine amidotransferase class-I",
+      "Dshi_2226 (+) Glutamate--putrescine ligase",
+      "Dshi_2227 (+) FAD dependent oxidoreductase",
+      "Dshi_2228 (+) DegT/DnrJ/EryC1/StrS aminotransferase",
+      "Dshi_2229 (-) transcriptional regulator, LysR family"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GRTT",
+   "name": "Geranyltranstransferase",
+   "equation_ids": "grdp_c + ipdp_c --> frdp_c + ppi_c",
+   "equation_names": "Geranyl diphosphate + Isopentenyl diphosphate --> Farnesyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179733_1 or WP_012180165_1 or WP_083768431_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179733_1",
+     "locus": "Dshi_3072",
+     "fitness_browser_desc": "Polyprenyl synthetase",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "Dshi_3069 (-) protein of unknown function DUF465",
+      "Dshi_3070 (-) methyltransferase small",
+      "Dshi_3071 (-) Beta tubulin, autoregulation binding site",
+      "Dshi_3072 (+) Polyprenyl synthetase",
+      "Dshi_3073 (-) 4-diphosphocytidyl-2C-methyl-D-erythritol kinase",
+      "Dshi_3074 (-) Tetratricopeptide TPR_2 repeat protein",
+      "Dshi_3075 (-) Electron-transferring-flavoproteindehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_012180165_1",
+     "locus": "Dshi_3509",
+     "fitness_browser_desc": "Squalene/phytoene synthase",
+     "refseq_definition": "15-cis-phytoene synthase",
+     "neighbourhood": [
+      "Dshi_3506 (-) Nitrilase/cyanide hydratase and apolipoprotein N-acyltransferase",
+      "Dshi_3507 (-) glutaredoxin 3",
+      "Dshi_3508 (+) Zeta-phytoene desaturase",
+      "Dshi_3509 (+) Squalene/phytoene synthase",
+      "Dshi_3510 (+) TspO and MBR like protein",
+      "Dshi_3511 (-) hypothetical protein",
+      "Dshi_3512 (-) hydroxyneurosporene synthase"
+     ]
+    },
+    {
+     "model_gene": "WP_083768431_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "farnesyl diphosphate synthase"
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179896_1 or spontaneous",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179896_1",
+     "locus": "Dshi_3236",
+     "fitness_browser_desc": "Carbonate dehydratase",
+     "refseq_definition": "carbonic anhydrase",
+     "neighbourhood": [
+      "Dshi_3233 (-) NLP/P60 protein",
+      "Dshi_3234 (-) Leucyl aminopeptidase",
+      "Dshi_3235 (-) hypothetical protein",
+      "Dshi_3236 (+) Carbonate dehydratase",
+      "Dshi_3237 (+) protein of unknown function DUF897",
+      "Dshi_3238 (+) hypothetical protein",
+      "Dshi_3239 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HISTD",
+   "name": "Histidinol dehydrogenase",
+   "equation_ids": "h2o_c + histd_c + 2.0 nad_c --> 3.0 h_c + his__L_c + 2.0 nadh_c",
+   "equation_names": "H2O + L-Histidinol + 2.0 Nicotinamide adenine dinucleotide --> 3.0 H+ + L-Histidine + 2.0 Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177653_1 or WP_012178704_1 or WP_012178909_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177653_1",
+     "locus": "Dshi_0979",
+     "fitness_browser_desc": "Histidinol dehydrogenase",
+     "refseq_definition": "histidinol dehydrogenase",
+     "neighbourhood": [
+      "Dshi_R0022 (-) tRNA-Thr",
+      "Dshi_0977 (+) UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+      "Dshi_0978 (+) hypothetical protein",
+      "Dshi_0979 (+) Histidinol dehydrogenase",
+      "Dshi_0980 (+) hypothetical protein",
+      "Dshi_0981 (+) protein tyrosine phosphatase",
+      "Dshi_0982 (+) translation initiation factor IF-1"
+     ]
+    },
+    {
+     "model_gene": "WP_012178704_1",
+     "locus": "Dshi_2034",
+     "fitness_browser_desc": "Histidinol dehydrogenase",
+     "refseq_definition": "histidinol dehydrogenase",
+     "neighbourhood": [
+      "Dshi_2031 (+) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_2032 (+) Tripartite ATP-independent periplasmic transporter DctQ component",
+      "Dshi_2033 (+) TRAP dicarboxylate transporter, DctM subunit",
+      "Dshi_2034 (+) Histidinol dehydrogenase",
+      "Dshi_2035 (+) short-chain dehydrogenase/reductase SDR",
+      "Dshi_2036 (+) Alcohol dehydrogenase GroES domain protein",
+      "Dshi_2037 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012178909_1",
+     "locus": "Dshi_2242",
+     "fitness_browser_desc": "Histidinol dehydrogenase",
+     "refseq_definition": "histidinol dehydrogenase",
+     "neighbourhood": [
+      "Dshi_2239 (-) short-chain dehydrogenase/reductase SDR",
+      "Dshi_2240 (-) hypothetical protein",
+      "Dshi_2241 (-) protein of unknown function DUF1486",
+      "Dshi_2242 (-) Histidinol dehydrogenase",
+      "Dshi_2243 (-) alpha/beta hydrolase fold",
+      "Dshi_2244 (-) protein of unknown function DUF1052",
+      "Dshi_2245 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ILETA",
+   "name": "Isoleucine transaminase",
+   "equation_ids": "akg_c + ile__L_c <=> 3mop_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Isoleucine <=> (S)-3-Methyl-2-oxopentanoate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179498_1 or WP_012179961_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179498_1",
+     "locus": "Dshi_2837",
+     "fitness_browser_desc": "aminotransferase class IV",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "Dshi_2834 (+) integral membrane protein MviN",
+      "Dshi_2835 (-) Rhomboid family protein",
+      "Dshi_2836 (+) tryptophanyl-tRNA synthetase",
+      "Dshi_2837 (+) aminotransferase class IV",
+      "Dshi_2838 (+) UspA domain protein",
+      "Dshi_2839 (+) Scaffold protein Nfu/NifU",
+      "Dshi_2840 (+) peptidase M22 glycoprotease"
+     ]
+    },
+    {
+     "model_gene": "WP_012179961_1",
+     "locus": "Dshi_3301",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "Dshi_3298 (+) hypothetical protein",
+      "Dshi_3299 (-) two component transcriptional regulator, winged helix family",
+      "Dshi_3300 (-) transcriptional regulator, MarR family",
+      "Dshi_3301 (+) branched-chain amino acid aminotransferase",
+      "Dshi_3302 (+) hypothetical protein",
+      "Dshi_3303 (-) hypothetical protein",
+      "Dshi_3304 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPMD",
+   "name": "3-isopropylmalate dehydrogenase",
+   "equation_ids": "3c2hmp_c + nad_c --> 3c4mop_c + h_c + nadh_c",
+   "equation_names": "3-Carboxy-2-hydroxy-4-methylpentanoate + Nicotinamide adenine dinucleotide --> 3-Carboxy-4-methyl-2-oxopentanoate + H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176763_1 or WP_012180052_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176763_1",
+     "locus": "Dshi_0081",
+     "fitness_browser_desc": "3-isopropylmalate dehydrogenase",
+     "refseq_definition": "3-isopropylmalate dehydrogenase",
+     "neighbourhood": [
+      "Dshi_R0001 (-) tRNA-Pro",
+      "Dshi_0079 (+) lipid A biosynthesis acyltransferase",
+      "Dshi_0080 (-) protein of unknown function DUF6 transmembrane",
+      "Dshi_0081 (-) 3-isopropylmalate dehydrogenase",
+      "Dshi_0082 (-) hypothetical protein",
+      "Dshi_0083 (-) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0084 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012180052_1",
+     "locus": "Dshi_3393",
+     "fitness_browser_desc": "3-isopropylmalate dehydrogenase",
+     "refseq_definition": "isocitrate/isopropylmalate dehydrogenase family protein",
+     "neighbourhood": [
+      "Dshi_3390 (-) metallophosphoesterase",
+      "Dshi_3391 (-) beta-lactamase domain protein",
+      "Dshi_3392 (-) Antibiotic biosynthesis monooxygenase",
+      "Dshi_3393 (+) 3-isopropylmalate dehydrogenase",
+      "Dshi_3394 (+) oxidoreductase domain protein",
+      "Dshi_3395 (-) TRAP C4-dicarboxylate transport system permease DctM subunit",
+      "Dshi_3396 (-) Tripartite ATP-independent periplasmic transporter DctQ component"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPMIa",
+   "name": "3-isopropylmalate dehydratase",
+   "equation_ids": "3c2hmp_c <=> 2ippm_c + h2o_c",
+   "equation_names": "3-Carboxy-2-hydroxy-4-methylpentanoate <=> 2-Isopropylmaleate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_012176765_1 and WP_012176767_1) or (WP_012176767_1 and WP_012177374_1) or (WP_012177373_1 and WP_012177374_1)",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176765_1",
+     "locus": "Dshi_0083",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase, small subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "Dshi_0080 (-) protein of unknown function DUF6 transmembrane",
+      "Dshi_0081 (-) 3-isopropylmalate dehydrogenase",
+      "Dshi_0082 (-) hypothetical protein",
+      "Dshi_0083 (-) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0084 (-) hypothetical protein",
+      "Dshi_0085 (-) 3-isopropylmalate dehydratase, large subunit",
+      "Dshi_0086 (+) SOUL heme-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012176767_1",
+     "locus": "Dshi_0085",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase, large subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "Dshi_0082 (-) hypothetical protein",
+      "Dshi_0083 (-) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0084 (-) hypothetical protein",
+      "Dshi_0085 (-) 3-isopropylmalate dehydratase, large subunit",
+      "Dshi_0086 (+) SOUL heme-binding protein",
+      "Dshi_0087 (+) iojap-like protein",
+      "Dshi_0088 (+) protein of unknown function DUF163"
+     ]
+    },
+    {
+     "model_gene": "WP_012177373_1",
+     "locus": "Dshi_0695",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase, large subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "Dshi_0692 (-) 5-oxoprolinase (ATP-hydrolyzing)",
+      "Dshi_0693 (-) 4-oxalocrotonate tautomerase",
+      "Dshi_0694 (+) transcriptional regulator, GntR family",
+      "Dshi_0695 (+) 3-isopropylmalate dehydratase, large subunit",
+      "Dshi_0696 (+) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0697 (+) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_0698 (+) Tripartite ATP-independent periplasmic transporter DctQ component"
+     ]
+    },
+    {
+     "model_gene": "WP_012177374_1",
+     "locus": "Dshi_0696",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase, small subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "Dshi_0693 (-) 4-oxalocrotonate tautomerase",
+      "Dshi_0694 (+) transcriptional regulator, GntR family",
+      "Dshi_0695 (+) 3-isopropylmalate dehydratase, large subunit",
+      "Dshi_0696 (+) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0697 (+) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_0698 (+) Tripartite ATP-independent periplasmic transporter DctQ component",
+      "Dshi_0699 (+) TRAP C4-dicarboxylate transport system permease DctM subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPMIb",
+   "name": "2-isopropylmalate hydratase",
+   "equation_ids": "2ippm_c + h2o_c <=> 3c3hmp_c",
+   "equation_names": "2-Isopropylmaleate + H2O <=> 3-Carboxy-3-hydroxy-4-methylpentanoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_012176765_1 and WP_012176767_1) or (WP_012176767_1 and WP_012177374_1) or (WP_012177373_1 and WP_012177374_1)",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176765_1",
+     "locus": "Dshi_0083",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase, small subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "Dshi_0080 (-) protein of unknown function DUF6 transmembrane",
+      "Dshi_0081 (-) 3-isopropylmalate dehydrogenase",
+      "Dshi_0082 (-) hypothetical protein",
+      "Dshi_0083 (-) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0084 (-) hypothetical protein",
+      "Dshi_0085 (-) 3-isopropylmalate dehydratase, large subunit",
+      "Dshi_0086 (+) SOUL heme-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012176767_1",
+     "locus": "Dshi_0085",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase, large subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "Dshi_0082 (-) hypothetical protein",
+      "Dshi_0083 (-) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0084 (-) hypothetical protein",
+      "Dshi_0085 (-) 3-isopropylmalate dehydratase, large subunit",
+      "Dshi_0086 (+) SOUL heme-binding protein",
+      "Dshi_0087 (+) iojap-like protein",
+      "Dshi_0088 (+) protein of unknown function DUF163"
+     ]
+    },
+    {
+     "model_gene": "WP_012177373_1",
+     "locus": "Dshi_0695",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase, large subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "Dshi_0692 (-) 5-oxoprolinase (ATP-hydrolyzing)",
+      "Dshi_0693 (-) 4-oxalocrotonate tautomerase",
+      "Dshi_0694 (+) transcriptional regulator, GntR family",
+      "Dshi_0695 (+) 3-isopropylmalate dehydratase, large subunit",
+      "Dshi_0696 (+) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0697 (+) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_0698 (+) Tripartite ATP-independent periplasmic transporter DctQ component"
+     ]
+    },
+    {
+     "model_gene": "WP_012177374_1",
+     "locus": "Dshi_0696",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase, small subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "Dshi_0693 (-) 4-oxalocrotonate tautomerase",
+      "Dshi_0694 (+) transcriptional regulator, GntR family",
+      "Dshi_0695 (+) 3-isopropylmalate dehydratase, large subunit",
+      "Dshi_0696 (+) 3-isopropylmalate dehydratase, small subunit",
+      "Dshi_0697 (+) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_0698 (+) Tripartite ATP-independent periplasmic transporter DctQ component",
+      "Dshi_0699 (+) TRAP C4-dicarboxylate transport system permease DctM subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPS",
+   "name": "2-isopropylmalate synthase",
+   "equation_ids": "3mob_c + accoa_c + h2o_c --> 3c3hmp_c + coa_c + h_c",
+   "equation_names": "3-Methyl-2-oxobutanoate + Acetyl-CoA + H2O --> 3-Carboxy-3-hydroxy-4-methylpentanoate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177274_1 or WP_012178368_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177274_1",
+     "locus": "Dshi_0596",
+     "fitness_browser_desc": "2-isopropylmalate synthase",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "Dshi_0593 (-) putative rod shape-determining protein MreD",
+      "Dshi_0594 (-) rod shape-determining protein MreC",
+      "Dshi_0595 (-) cell shape determining protein, MreB/Mrl family",
+      "Dshi_0596 (-) 2-isopropylmalate synthase",
+      "Dshi_0597 (-) hypothetical protein",
+      "Dshi_0598 (+) short-chain dehydrogenase/reductase SDR",
+      "Dshi_0599 (+) deoxyribodipyrimidine photolyase-related protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012178368_1",
+     "locus": "Dshi_1696",
+     "fitness_browser_desc": "2-isopropylmalate synthase/homocitrate synthase family protein",
+     "refseq_definition": "citramalate synthase",
+     "neighbourhood": [
+      "Dshi_1693 (+) cobyrinic acid a,c-diamide synthase",
+      "Dshi_1694 (+) major facilitator superfamily MFS_1",
+      "Dshi_1695 (-) hypothetical protein",
+      "Dshi_1696 (-) 2-isopropylmalate synthase/homocitrate synthase family protein",
+      "Dshi_1697 (-) hypothetical protein",
+      "Dshi_1698 (-) cysteinyl-tRNA synthetase",
+      "Dshi_1699 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "LCADi",
+   "name": "Lactaldehyde dehydrogenase",
+   "equation_ids": "h2o_c + lald__L_c + nad_c --> 2.0 h_c + lac__L_c + nadh_c",
+   "equation_names": "H2O + L-Lactaldehyde + Nicotinamide adenine dinucleotide --> 2.0 H+ + L-Lactate + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176785_1 or WP_012177768_1 or WP_012179678_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176785_1",
+     "locus": "Dshi_0103",
+     "fitness_browser_desc": "Alcohol dehydrogenase class III/S-(hydroxymethyl)glutathione dehydrogenase",
+     "refseq_definition": "S-(hydroxymethyl)glutathione dehydrogenase/class III alcohol dehydrogenase",
+     "neighbourhood": [
+      "Dshi_0100 (-) transposase, putative",
+      "Dshi_0101 (+) hypothetical protein",
+      "Dshi_0102 (+) DNA polymerase III, alpha subunit",
+      "Dshi_0103 (+) Alcohol dehydrogenase class III/S-(hydroxymethyl)glutathione dehydrogenase",
+      "Dshi_0104 (+) GCN5-related N-acetyltransferase",
+      "Dshi_0105 (+) protein of unknown function DUF88",
+      "Dshi_0106 (-) transcriptional regulator, TetR family"
+     ]
+    },
+    {
+     "model_gene": "WP_012177768_1",
+     "locus": "Dshi_1095",
+     "fitness_browser_desc": "aldehyde dehydrogenase",
+     "refseq_definition": "aldehyde dehydrogenase",
+     "neighbourhood": [
+      "Dshi_1092 (+) carboxyvinyl-carboxyphosphonatephosphorylmutase",
+      "Dshi_1093 (+) hypothetical protein",
+      "Dshi_1094 (+) transcriptional regulator, Fis family",
+      "Dshi_1095 (+) aldehyde dehydrogenase",
+      "Dshi_1096 (-) lipolytic enzyme, G-D-S-L",
+      "Dshi_1097 (-) protein of unknown function DUF395 YeeE/YedE",
+      "Dshi_1098 (+) major facilitator superfamily MFS_1"
+     ]
+    },
+    {
+     "model_gene": "WP_012179678_1",
+     "locus": "Dshi_3017",
+     "fitness_browser_desc": "aldehyde dehydrogenase",
+     "refseq_definition": "aldehyde dehydrogenase family protein",
+     "neighbourhood": [
+      "Dshi_3014 (-) Phytanoyl-CoA dioxygenase",
+      "Dshi_3015 (+) transcriptional regulator, AraC family",
+      "Dshi_3016 (+) deoxyribose-phosphate aldolase",
+      "Dshi_3017 (+) aldehyde dehydrogenase",
+      "Dshi_3018 (-) protein of unknown function DUF1523",
+      "Dshi_3019 (-) hypothetical protein",
+      "Dshi_3020 (+) acetylornithine deacetylase or succinyl-diaminopimelate desuccinylase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MEPCT",
+   "name": "2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase",
+   "equation_ids": "2me4p_c + ctp_c + h_c --> 4c2me_c + ppi_c",
+   "equation_names": "2-C-methyl-D-erythritol 4-phosphate + CTP + H+ --> 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol + Diphosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "MNtex",
+   "name": "Manganese (Mn+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "mn2_e <=> mn2_p",
+   "equation_names": "Mn2+ <=> Mn2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179601_1 or WP_012179686_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179601_1",
+     "locus": "Dshi_2940",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "peptidoglycan -binding protein",
+     "neighbourhood": [
+      "Dshi_2937 (-) ATP synthase F1, delta subunit",
+      "Dshi_2938 (-) hypothetical protein",
+      "Dshi_2939 (+) ATP-dependent Clp protease, ATP-binding subunit clpA",
+      "Dshi_2940 (-) OmpA/MotB domain protein",
+      "Dshi_2941 (-) hypothetical protein",
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179686_1",
+     "locus": "Dshi_3025",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Dshi_3022 (-) PfkB domain protein",
+      "Dshi_3023 (-) endonuclease III",
+      "Dshi_3024 (+) transcriptional regulator, AraC family",
+      "Dshi_3025 (+) OmpA/MotB domain protein",
+      "Dshi_3026 (+) GntR domain protein",
+      "Dshi_3027 (-) H+transporting two-sector ATPase B/B' subunit",
+      "Dshi_3028 (-) H+transporting two-sector ATPase B/B' subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "OMCDC",
+   "name": "2-Oxo-4-methyl-3-carboxypentanoate decarboxylation",
+   "equation_ids": "3c4mop_c + h_c --> 4mop_c + co2_c",
+   "equation_names": "3-Carboxy-4-methyl-2-oxopentanoate + H+ --> 4-Methyl-2-oxopentanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012180052_1 or spontaneous",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012180052_1",
+     "locus": "Dshi_3393",
+     "fitness_browser_desc": "3-isopropylmalate dehydrogenase",
+     "refseq_definition": "isocitrate/isopropylmalate dehydrogenase family protein",
+     "neighbourhood": [
+      "Dshi_3390 (-) metallophosphoesterase",
+      "Dshi_3391 (-) beta-lactamase domain protein",
+      "Dshi_3392 (-) Antibiotic biosynthesis monooxygenase",
+      "Dshi_3393 (+) 3-isopropylmalate dehydrogenase",
+      "Dshi_3394 (+) oxidoreductase domain protein",
+      "Dshi_3395 (-) TRAP C4-dicarboxylate transport system permease DctM subunit",
+      "Dshi_3396 (-) Tripartite ATP-independent periplasmic transporter DctQ component"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "PGM",
+   "name": "Phosphoglycerate mutase",
+   "equation_ids": "2pg_c <=> 3pg_c",
+   "equation_names": "D-Glycerate 2-phosphate <=> 3-Phospho-D-glycerate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176771_1 or WP_044028675_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176771_1",
+     "locus": "Dshi_0089",
+     "fitness_browser_desc": "phosphoglycerate mutase, 2,3-bisphosphoglycerate-independent",
+     "refseq_definition": "2,3-bisphosphoglycerate-independent phosphoglycerate mutase",
+     "neighbourhood": [
+      "Dshi_0086 (+) SOUL heme-binding protein",
+      "Dshi_0087 (+) iojap-like protein",
+      "Dshi_0088 (+) protein of unknown function DUF163",
+      "Dshi_0089 (+) phosphoglycerate mutase, 2,3-bisphosphoglycerate-independent",
+      "Dshi_0090 (+) peptidase M23B",
+      "Dshi_0091 (+) carboxyl-terminal protease",
+      "Dshi_0092 (+) NUDIX hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_044028675_1",
+     "locus": "Dshi_2079",
+     "fitness_browser_desc": "transcriptional regulator, LysR family",
+     "refseq_definition": "LysR family transcriptional regulator",
+     "neighbourhood": [
+      "Dshi_2076 (-) FAD linked oxidase domain protein",
+      "Dshi_2077 (-) hypothetical protein",
+      "Dshi_2078 (+) Triose-phosphate isomerase",
+      "Dshi_2079 (-) transcriptional regulator, LysR family",
+      "Dshi_2080 (+) 5,10-methylenetetrahydrofolate reductase",
+      "Dshi_2081 (-) cytochrome c class I",
+      "Dshi_2082 (-) L-sorbosone dehydrogenase, putative"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176827_1 or WP_012177439_1 or WP_012177472_1 or WP_012178466_1 or WP_012178507_1 or WP_012179498_1 or WP_012179607_1 or WP_012179961_1 or WP_083768351_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176827_1",
+     "locus": "Dshi_0145",
+     "fitness_browser_desc": "Aspartate transaminase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "Dshi_0142 (-) penicillin-binding protein, 1A family",
+      "Dshi_0143 (+) nitrogen regulatory protein P-II",
+      "Dshi_0144 (+) ammonium transporter",
+      "Dshi_0145 (-) Aspartate transaminase",
+      "Dshi_0146 (-) Rhodanese domain protein",
+      "Dshi_0147 (-) SsrA-binding protein",
+      "Dshi_0148 (-) GCN5-related N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_012177439_1",
+     "locus": "Dshi_0762",
+     "fitness_browser_desc": "aminotransferase class I and II",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "Dshi_0759 (+) hypothetical protein",
+      "Dshi_0760 (-) hypothetical protein",
+      "Dshi_0761 (-) hypothetical protein",
+      "Dshi_0762 (-) aminotransferase class I and II",
+      "Dshi_0763 (+) transcriptional regulator, XRE family",
+      "Dshi_0764 (+) protein of unknown function DUF339",
+      "Dshi_0765 (+) transcriptional regulator, MarR family"
+     ]
+    },
+    {
+     "model_gene": "WP_012177472_1",
+     "locus": "Dshi_0795",
+     "fitness_browser_desc": "imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+     "refseq_definition": "imidazole glycerol phosphate synthase subunit HisH",
+     "neighbourhood": [
+      "Dshi_0792 (-) hypothetical protein",
+      "Dshi_0793 (-) O-acetylhomoserine/O-acetylserine sulfhydrylase",
+      "Dshi_0794 (+) Imidazoleglycerol-phosphate dehydratase",
+      "Dshi_0795 (+) imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+      "Dshi_0796 (-) ornithine carbamoyltransferase",
+      "Dshi_0797 (-) GCN5-related N-acetyltransferase",
+      "Dshi_0798 (-) acetylornithine and succinylornithine aminotransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_012178466_1",
+     "locus": "Dshi_1794",
+     "fitness_browser_desc": "aminotransferase class I and II",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "Dshi_1791 (+) Lysine exporter protein (LYSE/YGGA)",
+      "Dshi_1792 (+) Lysine exporter protein (LYSE/YGGA)",
+      "Dshi_1793 (+) Xanthine phosphoribosyltransferase",
+      "Dshi_1794 (+) aminotransferase class I and II",
+      "Dshi_1795 (+) putative peptidyl-prolyl cis-trans isomerse D",
+      "Dshi_1796 (+) anthranilate synthase component I",
+      "Dshi_1797 (-) protein of unknown function DUF610, YibQ"
+     ]
+    },
+    {
+     "model_gene": "WP_012178507_1",
+     "locus": "Dshi_1835",
+     "fitness_browser_desc": "transcriptional regulator, GntR family with aminotransferase domain",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "Dshi_1832 (-) TRAP dicarboxylate transporter, DctM subunit",
+      "Dshi_1833 (-) Tripartite ATP-independent periplasmic transporter DctQ component",
+      "Dshi_1834 (-) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_1835 (+) transcriptional regulator, GntR family with aminotransferase domain",
+      "Dshi_R0037 (-) tRNA-Leu",
+      "Dshi_1836 (+) hypothetical protein",
+      "Dshi_1837 (-) carbohydrate kinase, YjeF related protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179498_1",
+     "locus": "Dshi_2837",
+     "fitness_browser_desc": "aminotransferase class IV",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "Dshi_2834 (+) integral membrane protein MviN",
+      "Dshi_2835 (-) Rhomboid family protein",
+      "Dshi_2836 (+) tryptophanyl-tRNA synthetase",
+      "Dshi_2837 (+) aminotransferase class IV",
+      "Dshi_2838 (+) UspA domain protein",
+      "Dshi_2839 (+) Scaffold protein Nfu/NifU",
+      "Dshi_2840 (+) peptidase M22 glycoprotease"
+     ]
+    },
+    {
+     "model_gene": "WP_012179607_1",
+     "locus": "Dshi_2946",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "Dshi_2943 (+) hypothetical protein",
+      "Dshi_2944 (-) Extensin family protein",
+      "Dshi_2945 (-) Prephenate dehydrogenase",
+      "Dshi_2946 (-) histidinol-phosphate aminotransferase",
+      "Dshi_2947 (-) Homospermidine synthase",
+      "Dshi_2948 (-) RNA-binding S4 domain protein",
+      "Dshi_2949 (-) ribonucleoside-diphosphate reductase, adenosylcobalamin-dependent"
+     ]
+    },
+    {
+     "model_gene": "WP_012179961_1",
+     "locus": "Dshi_3301",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "Dshi_3298 (+) hypothetical protein",
+      "Dshi_3299 (-) two component transcriptional regulator, winged helix family",
+      "Dshi_3300 (-) transcriptional regulator, MarR family",
+      "Dshi_3301 (+) branched-chain amino acid aminotransferase",
+      "Dshi_3302 (+) hypothetical protein",
+      "Dshi_3303 (-) hypothetical protein",
+      "Dshi_3304 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_083768351_1",
+     "locus": "Dshi_0609",
+     "fitness_browser_desc": "transcriptional regulator, GntR family with aminotransferase domain",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "Dshi_0606 (-) hypothetical protein",
+      "Dshi_0607 (-) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_0608 (-) hypothetical protein",
+      "Dshi_0609 (+) transcriptional regulator, GntR family with aminotransferase domain",
+      "Dshi_0610 (-) protein of unknown function DUF1445",
+      "Dshi_0611 (-) NIPSNAP family containing protein",
+      "Dshi_0612 (-) beta-lactamase domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PPA",
+   "name": "Inorganic diphosphatase",
+   "equation_ids": "h2o_c + ppi_c --> h_c + 2.0 pi_c",
+   "equation_names": "H2O + Diphosphate --> H+ + 2.0 Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177416_1 or WP_012178804_1 or WP_044028033_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177416_1",
+     "locus": "Dshi_0739",
+     "fitness_browser_desc": "Ppx/GppA phosphatase",
+     "refseq_definition": "Ppx/GppA family phosphatase",
+     "neighbourhood": [
+      "Dshi_0736 (+) GCN5-related N-acetyltransferase",
+      "Dshi_0737 (+) heat shock protein DnaJ domain protein",
+      "Dshi_0738 (+) hypothetical protein",
+      "Dshi_0739 (-) Ppx/GppA phosphatase",
+      "Dshi_0740 (-) Polyphosphate kinase",
+      "Dshi_0741 (-) chromosomal replication initiator, DnaA",
+      "Dshi_0742 (-) protein of unknown function UPF0118"
+     ]
+    },
+    {
+     "model_gene": "WP_012178804_1",
+     "locus": "Dshi_2136",
+     "fitness_browser_desc": "stationary-phase survival protein SurE",
+     "refseq_definition": "5'/3'-nucleotidase SurE",
+     "neighbourhood": [
+      "Dshi_2133 (+) protein of unknown function DUF1284",
+      "Dshi_2134 (-) BioY protein",
+      "Dshi_2135 (+) short-chain dehydrogenase/reductase SDR",
+      "Dshi_2136 (+) stationary-phase survival protein SurE",
+      "Dshi_2137 (+) protein-L-isoaspartate O-methyltransferase",
+      "Dshi_2138 (+) peptidase M23B",
+      "Dshi_2139 (-) protein of unknown function DUF6 transmembrane"
+     ]
+    },
+    {
+     "model_gene": "WP_044028033_1",
+     "locus": "Dshi_2924",
+     "fitness_browser_desc": "Inorganic diphosphatase",
+     "refseq_definition": "manganese-dependent inorganic pyrophosphatase",
+     "neighbourhood": [
+      "Dshi_2921 (+) hypothetical protein",
+      "Dshi_2922 (-) hypothetical protein",
+      "Dshi_2923 (+) 5TM Receptors of the LytS-YhcK type transmembrane region",
+      "Dshi_2924 (+) Inorganic diphosphatase",
+      "Dshi_2925 (+) HAD-superfamily subfamily IIA hydrolase like protein",
+      "Dshi_2926 (+) MaoC domain protein dehydratase",
+      "Dshi_2927 (+) riboflavin biosynthesis protein RibF"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PPND",
+   "name": "Prephenate dehydrogenase",
+   "equation_ids": "nad_c + pphn_c --> 34hpp_c + co2_c + nadh_c",
+   "equation_names": "Nicotinamide adenine dinucleotide + Prephenate --> 3-(4-Hydroxyphenyl)pyruvate + CO2 + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177028_1 or WP_012177695_1 or WP_012177956_1 or WP_012179606_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177028_1",
+     "locus": "Dshi_0349",
+     "fitness_browser_desc": "chorismate mutase",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "Dshi_0346 (-) protein of unknown function DUF55",
+      "Dshi_0347 (-) cob(II)yrinic acid a,c-diamide reductase",
+      "Dshi_0348 (-) ribosomal protein S16",
+      "Dshi_0349 (-) chorismate mutase",
+      "Dshi_0350 (-) hypothetical protein",
+      "Dshi_0351 (-) GCN5-related N-acetyltransferase",
+      "Dshi_0352 (-) acetyltransferase, GNAT family"
+     ]
+    },
+    {
+     "model_gene": "WP_012177695_1",
+     "locus": "Dshi_1022",
+     "fitness_browser_desc": "3-phosphoshikimate 1-carboxyvinyltransferase",
+     "refseq_definition": "3-phosphoshikimate 1-carboxyvinyltransferase",
+     "neighbourhood": [
+      "Dshi_1019 (-) RNA modification enzyme, MiaB family",
+      "Dshi_1020 (+) hypothetical protein",
+      "Dshi_1021 (+) tRNA (guanine-N(7)-)-methyltransferase",
+      "Dshi_1022 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "Dshi_1023 (+) cytidylate kinase",
+      "Dshi_1024 (+) histone family protein nucleoid-structuring protein H-NS",
+      "Dshi_1025 (+) ribosomal protein S1"
+     ]
+    },
+    {
+     "model_gene": "WP_012177956_1",
+     "locus": "Dshi_1284",
+     "fitness_browser_desc": "chorismate mutase related enzyme",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "Dshi_1281 (+) Respiratory-chain NADH dehydrogenase domain 51 kDa subunit",
+      "Dshi_1282 (+) formate dehydrogenase, alpha subunit",
+      "Dshi_1283 (+) Formate--tetrahydrofolate ligase",
+      "Dshi_1284 (+) chorismate mutase related enzyme",
+      "Dshi_1285 (+) Methylenetetrahydrofolate dehydrogenase (NADP(+))",
+      "Dshi_1286 (+) hypothetical protein",
+      "Dshi_1287 (-) protein of unknown function DUF395 YeeE/YedE"
+     ]
+    },
+    {
+     "model_gene": "WP_012179606_1",
+     "locus": "Dshi_2945",
+     "fitness_browser_desc": "Prephenate dehydrogenase",
+     "refseq_definition": "prephenate/arogenate dehydrogenase family protein",
+     "neighbourhood": [
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein",
+      "Dshi_2944 (-) Extensin family protein",
+      "Dshi_2945 (-) Prephenate dehydrogenase",
+      "Dshi_2946 (-) histidinol-phosphate aminotransferase",
+      "Dshi_2947 (-) Homospermidine synthase",
+      "Dshi_2948 (-) RNA-binding S4 domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRAGSr",
+   "name": "Phosphoribosylglycinamide synthase",
+   "equation_ids": "atp_c + gly_c + pram_c <=> adp_c + gar_c + h_c + pi_c",
+   "equation_names": "ATP + Glycine + 5-Phospho-beta-D-ribosylamine <=> ADP + N1-(5-Phospho-D-ribosyl)glycinamide + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178561_1 or WP_012179389_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178561_1",
+     "locus": "Dshi_1889",
+     "fitness_browser_desc": "phosphoribosylformylglycinamidine cyclo-ligase",
+     "refseq_definition": "phosphoribosylformylglycinamidine cyclo-ligase",
+     "neighbourhood": [
+      "Dshi_1886 (-) exodeoxyribonuclease III Xth",
+      "Dshi_1887 (-) ribonuclease D",
+      "Dshi_1888 (-) phosphoribosylglycinamide formyltransferase",
+      "Dshi_1889 (-) phosphoribosylformylglycinamidine cyclo-ligase",
+      "Dshi_R0038 (+) tRNA-Met",
+      "Dshi_1890 (-) Sel1 domain protein repeat-containing protein",
+      "Dshi_1891 (+) globin"
+     ]
+    },
+    {
+     "model_gene": "WP_012179389_1",
+     "locus": "Dshi_2728",
+     "fitness_browser_desc": "phosphoribosylamine--glycine ligase",
+     "refseq_definition": "phosphoribosylamine--glycine ligase",
+     "neighbourhood": [
+      "Dshi_2725 (-) signal recognition particle-docking protein FtsY",
+      "Dshi_2726 (+) hypothetical protein",
+      "Dshi_2727 (-) exodeoxyribonuclease VII, large subunit",
+      "Dshi_2728 (+) phosphoribosylamine--glycine ligase",
+      "Dshi_2729 (+) Ion transport 2 domain protein",
+      "Dshi_2730 (-) FG-GAP repeat domain protein",
+      "Dshi_2731 (-) ferredoxin"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRAMPC",
+   "name": "Phosphoribosyl-AMP cyclohydrolase",
+   "equation_ids": "h2o_c + prbamp_c --> prfp_c",
+   "equation_names": "H2O + 1-(5-Phosphoribosyl)-AMP --> 1-(5-Phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino]imidazole-4-carboxamide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178187_1 or WP_012179236_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178187_1",
+     "locus": "Dshi_1515",
+     "fitness_browser_desc": "Phosphoribosyl-AMP cyclohydrolase",
+     "refseq_definition": "phosphoribosyl-AMP cyclohydrolase",
+     "neighbourhood": [
+      "Dshi_1512 (-) cytochrome oxidase assembly",
+      "Dshi_1513 (-) tRNA/rRNA methyltransferase (SpoU)",
+      "Dshi_1514 (+) thiamine monophosphate synthase",
+      "Dshi_1515 (-) Phosphoribosyl-AMP cyclohydrolase",
+      "Dshi_1516 (+) nitrogen-fixing NifU domain protein",
+      "Dshi_1517 (-) inner-membrane translocator",
+      "Dshi_1518 (-) inner-membrane translocator"
+     ]
+    },
+    {
+     "model_gene": "WP_012179236_1",
+     "locus": "Dshi_2575",
+     "fitness_browser_desc": "phosphoribosyl-ATP pyrophosphohydrolase",
+     "refseq_definition": "phosphoribosyl-ATP diphosphatase",
+     "neighbourhood": [
+      "Dshi_2572 (+) hypothetical protein",
+      "Dshi_2573 (+) hypothetical protein",
+      "Dshi_2574 (+) CoA-binding domain protein",
+      "Dshi_2575 (-) phosphoribosyl-ATP pyrophosphohydrolase",
+      "Dshi_2576 (-) imidazoleglycerol phosphate synthase, cyclase subunit",
+      "Dshi_2577 (+) putative RNA methylase",
+      "Dshi_2578 (-) phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRATPP",
+   "name": "Phosphoribosyl-ATP pyrophosphatase",
+   "equation_ids": "h2o_c + prbatp_c --> h_c + ppi_c + prbamp_c",
+   "equation_names": "H2O + 1-(5-Phosphoribosyl)-ATP --> H+ + Diphosphate + 1-(5-Phosphoribosyl)-AMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178187_1 or WP_012179236_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178187_1",
+     "locus": "Dshi_1515",
+     "fitness_browser_desc": "Phosphoribosyl-AMP cyclohydrolase",
+     "refseq_definition": "phosphoribosyl-AMP cyclohydrolase",
+     "neighbourhood": [
+      "Dshi_1512 (-) cytochrome oxidase assembly",
+      "Dshi_1513 (-) tRNA/rRNA methyltransferase (SpoU)",
+      "Dshi_1514 (+) thiamine monophosphate synthase",
+      "Dshi_1515 (-) Phosphoribosyl-AMP cyclohydrolase",
+      "Dshi_1516 (+) nitrogen-fixing NifU domain protein",
+      "Dshi_1517 (-) inner-membrane translocator",
+      "Dshi_1518 (-) inner-membrane translocator"
+     ]
+    },
+    {
+     "model_gene": "WP_012179236_1",
+     "locus": "Dshi_2575",
+     "fitness_browser_desc": "phosphoribosyl-ATP pyrophosphohydrolase",
+     "refseq_definition": "phosphoribosyl-ATP diphosphatase",
+     "neighbourhood": [
+      "Dshi_2572 (+) hypothetical protein",
+      "Dshi_2573 (+) hypothetical protein",
+      "Dshi_2574 (+) CoA-binding domain protein",
+      "Dshi_2575 (-) phosphoribosyl-ATP pyrophosphohydrolase",
+      "Dshi_2576 (-) imidazoleglycerol phosphate synthase, cyclase subunit",
+      "Dshi_2577 (+) putative RNA methylase",
+      "Dshi_2578 (-) phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PYRtex",
+   "name": "Pyruvate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "pyr_e <=> pyr_p",
+   "equation_names": "Pyruvate <=> Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179601_1 or WP_012179686_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179601_1",
+     "locus": "Dshi_2940",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "peptidoglycan -binding protein",
+     "neighbourhood": [
+      "Dshi_2937 (-) ATP synthase F1, delta subunit",
+      "Dshi_2938 (-) hypothetical protein",
+      "Dshi_2939 (+) ATP-dependent Clp protease, ATP-binding subunit clpA",
+      "Dshi_2940 (-) OmpA/MotB domain protein",
+      "Dshi_2941 (-) hypothetical protein",
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179686_1",
+     "locus": "Dshi_3025",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Dshi_3022 (-) PfkB domain protein",
+      "Dshi_3023 (-) endonuclease III",
+      "Dshi_3024 (+) transcriptional regulator, AraC family",
+      "Dshi_3025 (+) OmpA/MotB domain protein",
+      "Dshi_3026 (+) GntR domain protein",
+      "Dshi_3027 (-) H+transporting two-sector ATPase B/B' subunit",
+      "Dshi_3028 (-) H+transporting two-sector ATPase B/B' subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RBFK",
+   "name": "Riboflavin kinase",
+   "equation_ids": "atp_c + ribflv_c --> adp_c + fmn_c + h_c",
+   "equation_names": "ATP + Riboflavin --> ADP + FMN + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177223_1 or WP_044028948_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177223_1",
+     "locus": "Dshi_0545",
+     "fitness_browser_desc": "HAD-superfamily hydrolase, subfamily IA, variant 3",
+     "refseq_definition": "HAD family hydrolase",
+     "neighbourhood": [
+      "Dshi_0542 (-) phosphate transporter",
+      "Dshi_0543 (+) Na+/Picotransporter",
+      "Dshi_0544 (+) hypothetical protein",
+      "Dshi_0545 (-) HAD-superfamily hydrolase, subfamily IA, variant 3",
+      "Dshi_0546 (-) ABC transporter related",
+      "Dshi_0547 (+) extracellular solute-binding protein family 1",
+      "Dshi_0548 (+) binding-protein-dependent transport systems inner membrane component"
+     ]
+    },
+    {
+     "model_gene": "WP_044028948_1",
+     "locus": "Dshi_2927",
+     "fitness_browser_desc": "riboflavin biosynthesis protein RibF",
+     "refseq_definition": "bifunctional riboflavin kinase/FAD synthetase",
+     "neighbourhood": [
+      "Dshi_2924 (+) Inorganic diphosphatase",
+      "Dshi_2925 (+) HAD-superfamily subfamily IIA hydrolase like protein",
+      "Dshi_2926 (+) MaoC domain protein dehydratase",
+      "Dshi_2927 (+) riboflavin biosynthesis protein RibF",
+      "Dshi_2928 (+) protein of unknown function UPF0153",
+      "Dshi_2929 (-) alpha/beta hydrolase fold",
+      "Dshi_2930 (-) DSBA oxidoreductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RMK",
+   "name": "Rhamnulokinase",
+   "equation_ids": "atp_c + rml_c --> adp_c + h_c + rml1p_c",
+   "equation_names": "ATP + L-Rhamnulose --> ADP + H+ + L-Rhamnulose 1-phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "RMNt",
+   "name": "L-rhamnose transport via proton symport",
+   "equation_ids": "h_e + rmn_e --> h_c + rmn_c",
+   "equation_names": "H+ + L-Rhamnose --> H+ + L-Rhamnose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "RMPA",
+   "name": "Rhamnulose-1-phosphate aldolase",
+   "equation_ids": "rml1p_c <=> dhap_c + lald__L_c",
+   "equation_names": "L-Rhamnulose 1-phosphate <=> Dihydroxyacetone phosphate + L-Lactaldehyde",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "SO3R",
+   "name": "Sulfite reductase",
+   "equation_ids": "5.0 h_c + 3.0 nadh_c + so3_c --> 3.0 h2o_c + h2s_c + 3.0 nad_c",
+   "equation_names": "5.0 H+ + 3.0 Nicotinamide adenine dinucleotide - reduced + Sulfite --> 3.0 H2O + Hydrogen sulfide + 3.0 Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "THZPSN",
+   "name": "Thiazole phosphate synthesis",
+   "equation_ids": "atp_c + cys__L_c + dxyl5p_c + tyr__L_c --> 4hba_c + 4mpetz_c + ala__L_c + amp_c + co2_c + h2o_c + h_c + ppi_c",
+   "equation_names": "ATP + L-Cysteine + 1-deoxy-D-xylulose 5-phosphate + L-Tyrosine --> 4-Hydroxy-benzyl alcohol + 4-Methyl-5-(2-phosphoethyl)-thiazole + L-Alanine + AMP + CO2 + H2O + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176835_1 or WP_012177589_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176835_1",
+     "locus": "Dshi_0153",
+     "fitness_browser_desc": "FAD dependent oxidoreductase",
+     "refseq_definition": "NAD(P)/FAD-dependent oxidoreductase",
+     "neighbourhood": [
+      "Dshi_0150 (+) Lytic transglycosylase catalytic",
+      "Dshi_0151 (-) protein of unknown function DUF6 transmembrane",
+      "Dshi_0152 (-) protein of unknown function DUF752",
+      "Dshi_0153 (+) FAD dependent oxidoreductase",
+      "Dshi_0154 (-) NADPH-dependent FMN reductase",
+      "Dshi_0155 (+) LrgA family protein",
+      "Dshi_0156 (+) LrgB family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012177589_1",
+     "locus": "Dshi_0912",
+     "fitness_browser_desc": "thiazole biosynthesis family protein",
+     "refseq_definition": "thiazole synthase",
+     "neighbourhood": [
+      "Dshi_0909 (-) NMT1/THI5 like domain protein",
+      "Dshi_0910 (-) UBA/THIF-type NAD/FAD binding protein",
+      "Dshi_0911 (-) Thiamine-phosphate diphosphorylase",
+      "Dshi_0912 (-) thiazole biosynthesis family protein",
+      "Dshi_0913 (-) thiamine biosynthesis protein ThiS",
+      "Dshi_0914 (-) glycine oxidase ThiO",
+      "Dshi_0915 (-) phosphomethylpyrimidine kinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMPK",
+   "name": "Thiamine-phosphate kinase",
+   "equation_ids": "atp_c + thmmp_c --> adp_c + thmpp_c",
+   "equation_names": "ATP + Thiamin monophosphate --> ADP + Thiamine diphosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "TPI",
+   "name": "Triose-phosphate isomerase",
+   "equation_ids": "dhap_c <=> g3p_c",
+   "equation_names": "Dihydroxyacetone phosphate <=> Glyceraldehyde 3-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012178748_1 or WP_012178823_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012178748_1",
+     "locus": "Dshi_2078",
+     "fitness_browser_desc": "Triose-phosphate isomerase",
+     "refseq_definition": "triose-phosphate isomerase",
+     "neighbourhood": [
+      "Dshi_2075 (+) protein of unknown function DUF302",
+      "Dshi_2076 (-) FAD linked oxidase domain protein",
+      "Dshi_2077 (-) hypothetical protein",
+      "Dshi_2078 (+) Triose-phosphate isomerase",
+      "Dshi_2079 (-) transcriptional regulator, LysR family",
+      "Dshi_2080 (+) 5,10-methylenetetrahydrofolate reductase",
+      "Dshi_2081 (-) cytochrome c class I"
+     ]
+    },
+    {
+     "model_gene": "WP_012178823_1",
+     "locus": "Dshi_2155",
+     "fitness_browser_desc": "Phosphoglycerate kinase",
+     "refseq_definition": "phosphoglycerate kinase",
+     "neighbourhood": [
+      "Dshi_2152 (-) hypothetical protein",
+      "Dshi_2153 (-) peptidyl-prolyl cis-trans isomerase cyclophilin type",
+      "Dshi_2154 (-) peptidyl-prolyl cis-trans isomerase cyclophilin type",
+      "Dshi_2155 (+) Phosphoglycerate kinase",
+      "Dshi_2156 (+) Fructose-bisphosphate aldolase",
+      "Dshi_2157 (+) Septum formation initiator",
+      "Dshi_2158 (+) Pyruvate dehydrogenase (acetyl-transferring)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TYRTA",
+   "name": "Tyrosine transaminase",
+   "equation_ids": "akg_c + tyr__L_c <=> 34hpp_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Tyrosine <=> 3-(4-Hydroxyphenyl)pyruvate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012176827_1 or WP_012177439_1 or WP_012177472_1 or WP_012178466_1 or WP_012179607_1 or WP_083768351_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012176827_1",
+     "locus": "Dshi_0145",
+     "fitness_browser_desc": "Aspartate transaminase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "Dshi_0142 (-) penicillin-binding protein, 1A family",
+      "Dshi_0143 (+) nitrogen regulatory protein P-II",
+      "Dshi_0144 (+) ammonium transporter",
+      "Dshi_0145 (-) Aspartate transaminase",
+      "Dshi_0146 (-) Rhodanese domain protein",
+      "Dshi_0147 (-) SsrA-binding protein",
+      "Dshi_0148 (-) GCN5-related N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_012177439_1",
+     "locus": "Dshi_0762",
+     "fitness_browser_desc": "aminotransferase class I and II",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "Dshi_0759 (+) hypothetical protein",
+      "Dshi_0760 (-) hypothetical protein",
+      "Dshi_0761 (-) hypothetical protein",
+      "Dshi_0762 (-) aminotransferase class I and II",
+      "Dshi_0763 (+) transcriptional regulator, XRE family",
+      "Dshi_0764 (+) protein of unknown function DUF339",
+      "Dshi_0765 (+) transcriptional regulator, MarR family"
+     ]
+    },
+    {
+     "model_gene": "WP_012177472_1",
+     "locus": "Dshi_0795",
+     "fitness_browser_desc": "imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+     "refseq_definition": "imidazole glycerol phosphate synthase subunit HisH",
+     "neighbourhood": [
+      "Dshi_0792 (-) hypothetical protein",
+      "Dshi_0793 (-) O-acetylhomoserine/O-acetylserine sulfhydrylase",
+      "Dshi_0794 (+) Imidazoleglycerol-phosphate dehydratase",
+      "Dshi_0795 (+) imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+      "Dshi_0796 (-) ornithine carbamoyltransferase",
+      "Dshi_0797 (-) GCN5-related N-acetyltransferase",
+      "Dshi_0798 (-) acetylornithine and succinylornithine aminotransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_012178466_1",
+     "locus": "Dshi_1794",
+     "fitness_browser_desc": "aminotransferase class I and II",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "Dshi_1791 (+) Lysine exporter protein (LYSE/YGGA)",
+      "Dshi_1792 (+) Lysine exporter protein (LYSE/YGGA)",
+      "Dshi_1793 (+) Xanthine phosphoribosyltransferase",
+      "Dshi_1794 (+) aminotransferase class I and II",
+      "Dshi_1795 (+) putative peptidyl-prolyl cis-trans isomerse D",
+      "Dshi_1796 (+) anthranilate synthase component I",
+      "Dshi_1797 (-) protein of unknown function DUF610, YibQ"
+     ]
+    },
+    {
+     "model_gene": "WP_012179607_1",
+     "locus": "Dshi_2946",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "Dshi_2943 (+) hypothetical protein",
+      "Dshi_2944 (-) Extensin family protein",
+      "Dshi_2945 (-) Prephenate dehydrogenase",
+      "Dshi_2946 (-) histidinol-phosphate aminotransferase",
+      "Dshi_2947 (-) Homospermidine synthase",
+      "Dshi_2948 (-) RNA-binding S4 domain protein",
+      "Dshi_2949 (-) ribonucleoside-diphosphate reductase, adenosylcobalamin-dependent"
+     ]
+    },
+    {
+     "model_gene": "WP_083768351_1",
+     "locus": "Dshi_0609",
+     "fitness_browser_desc": "transcriptional regulator, GntR family with aminotransferase domain",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "Dshi_0606 (-) hypothetical protein",
+      "Dshi_0607 (-) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_0608 (-) hypothetical protein",
+      "Dshi_0609 (+) transcriptional regulator, GntR family with aminotransferase domain",
+      "Dshi_0610 (-) protein of unknown function DUF1445",
+      "Dshi_0611 (-) NIPSNAP family containing protein",
+      "Dshi_0612 (-) beta-lactamase domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012177696_1 or WP_085930397_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012177696_1",
+     "locus": "Dshi_1023",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "(d)CMP kinase",
+     "neighbourhood": [
+      "Dshi_1020 (+) hypothetical protein",
+      "Dshi_1021 (+) tRNA (guanine-N(7)-)-methyltransferase",
+      "Dshi_1022 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "Dshi_1023 (+) cytidylate kinase",
+      "Dshi_1024 (+) histone family protein nucleoid-structuring protein H-NS",
+      "Dshi_1025 (+) ribosomal protein S1",
+      "Dshi_1026 (-) Intracellular septation protein A"
+     ]
+    },
+    {
+     "model_gene": "WP_085930397_1",
+     "locus": "Dshi_1493",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "UMP kinase",
+     "neighbourhood": [
+      "Dshi_1490 (-) extracellular solute-binding protein family 5",
+      "Dshi_1491 (-) transcriptional regulator, AraC family",
+      "Dshi_1492 (-) tRNA delta(2)-isopentenylpyrophosphate transferase",
+      "Dshi_1493 (+) uridylate kinase",
+      "Dshi_1494 (+) ribosome recycling factor",
+      "Dshi_1495 (+) undecaprenyl diphosphate synthase",
+      "Dshi_1496 (+) phosphatidate cytidylyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "VALTA",
+   "name": "Valine transaminase",
+   "equation_ids": "akg_c + val__L_c <=> 3mob_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Valine <=> 3-Methyl-2-oxobutanoate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179498_1 or WP_012179961_1 or WP_012187483_1",
+   "n_growth_conditions_essential": 6,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179498_1",
+     "locus": "Dshi_2837",
+     "fitness_browser_desc": "aminotransferase class IV",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "Dshi_2834 (+) integral membrane protein MviN",
+      "Dshi_2835 (-) Rhomboid family protein",
+      "Dshi_2836 (+) tryptophanyl-tRNA synthetase",
+      "Dshi_2837 (+) aminotransferase class IV",
+      "Dshi_2838 (+) UspA domain protein",
+      "Dshi_2839 (+) Scaffold protein Nfu/NifU",
+      "Dshi_2840 (+) peptidase M22 glycoprotease"
+     ]
+    },
+    {
+     "model_gene": "WP_012179961_1",
+     "locus": "Dshi_3301",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "Dshi_3298 (+) hypothetical protein",
+      "Dshi_3299 (-) two component transcriptional regulator, winged helix family",
+      "Dshi_3300 (-) transcriptional regulator, MarR family",
+      "Dshi_3301 (+) branched-chain amino acid aminotransferase",
+      "Dshi_3302 (+) hypothetical protein",
+      "Dshi_3303 (-) hypothetical protein",
+      "Dshi_3304 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012187483_1",
+     "locus": "Dshi_4206",
+     "fitness_browser_desc": "aminotransferase class IV",
+     "refseq_definition": "aminotransferase class IV",
+     "neighbourhood": [
+      "Dshi_4203 (+) TRAP dicarboxylate transporter- DctP subunit",
+      "Dshi_4204 (+) hypothetical protein",
+      "Dshi_4205 (+) TRAP dicarboxylate transporter, DctM subunit",
+      "Dshi_4206 (+) aminotransferase class IV",
+      "Dshi_4207 (+) protein of unknown function DUF900 hydrolase family protein",
+      "Dshi_4208 (-) hypothetical protein",
+      "Dshi_4209 (-) glycerophosphoryl diester phosphodiesterase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "Zn2tex",
+   "name": "Zinc (Zn+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "zn2_e <=> zn2_p",
+   "equation_names": "Zinc <=> Zinc",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_012179601_1 or WP_012179686_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_012179601_1",
+     "locus": "Dshi_2940",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "peptidoglycan -binding protein",
+     "neighbourhood": [
+      "Dshi_2937 (-) ATP synthase F1, delta subunit",
+      "Dshi_2938 (-) hypothetical protein",
+      "Dshi_2939 (+) ATP-dependent Clp protease, ATP-binding subunit clpA",
+      "Dshi_2940 (-) OmpA/MotB domain protein",
+      "Dshi_2941 (-) hypothetical protein",
+      "Dshi_2942 (-) ChaC family protein",
+      "Dshi_2943 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012179686_1",
+     "locus": "Dshi_3025",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Dshi_3022 (-) PfkB domain protein",
+      "Dshi_3023 (-) endonuclease III",
+      "Dshi_3024 (+) transcriptional regulator, AraC family",
+      "Dshi_3025 (+) OmpA/MotB domain protein",
+      "Dshi_3026 (+) GntR domain protein",
+      "Dshi_3027 (-) H+transporting two-sector ATPase B/B' subunit",
+      "Dshi_3028 (-) H+transporting two-sector ATPase B/B' subunit"
+     ]
+    }
+   ]
+  }
+ ]
+}

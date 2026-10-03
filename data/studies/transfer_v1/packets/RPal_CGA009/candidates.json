@@ -1,0 +1,2860 @@
+{
+ "org": "RPal_CGA009",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 3,
+ "candidates": [
+  {
+   "reaction": "ACOTA",
+   "name": "Acetylornithine transaminase",
+   "equation_ids": "acorn_c + akg_c <=> acg5sa_c + glu__L_c",
+   "equation_names": "N2-Acetyl-L-ornithine + 2-Oxoglutarate <=> N-Acetyl-L-glutamate 5-semialdehyde + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159270_1 or WP_011160305_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011159270_1",
+     "locus": "TX73_019330",
+     "fitness_browser_desc": "aminobacteriohopanetriol synthase HpnO",
+     "refseq_definition": "aminobacteriohopanetriol synthase HpnO",
+     "neighbourhood": [
+      "TX73_019315 (-) M20 family metallopeptidase",
+      "TX73_019320 (+) GMC family oxidoreductase N-terminal domain-containing protein",
+      "TX73_019325 (+) alpha/beta hydrolase",
+      "TX73_019330 (-) aminobacteriohopanetriol synthase HpnO",
+      "TX73_019335 (-) MMPL family transporter",
+      "TX73_019340 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "TX73_019345 (+) adenosyl-hopene transferase HpnH"
+     ]
+    },
+    {
+     "model_gene": "WP_011160305_1",
+     "locus": "TX73_024810",
+     "fitness_browser_desc": "aspartate aminotransferase family protein",
+     "refseq_definition": "aspartate aminotransferase family protein",
+     "neighbourhood": [
+      "TX73_024795 (+) Co2+/Mg2+ efflux protein ApaG",
+      "TX73_024800 (-) Hsp33 family molecular chaperone",
+      "TX73_024805 (-) ornithine carbamoyltransferase",
+      "TX73_024810 (-) aspartate aminotransferase family protein",
+      "TX73_024815 (+) GcrA family cell cycle regulator",
+      "TX73_024820 (-) phosphate regulon transcriptional regulator PhoB",
+      "TX73_024825 (-) phosphate signaling complex protein PhoU"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "AIRC2",
+   "name": "Phosphoribosylaminoimidazole carboxylase",
+   "equation_ids": "air_c + atp_c + hco3_c --> 5caiz_c + adp_c + h_c + pi_c",
+   "equation_names": "5-amino-1-(5-phospho-D-ribosyl)imidazole + ATP + Bicarbonate --> 5-phosphoribosyl-5-carboxyaminoimidazole + ADP + H+ + Phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "ALAALAr",
+   "name": "D-alanine-D-alanine ligase (reversible)",
+   "equation_ids": "2.0 ala__D_c + atp_c <=> adp_c + alaala_c + h_c + pi_c",
+   "equation_names": "2.0 D-Alanine + ATP <=> ADP + D-Alanyl-D-alanine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156951_1 or WP_011159065_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156951_1",
+     "locus": "TX73_007125",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "D-alanine--D-alanine ligase family protein",
+     "neighbourhood": [
+      "TX73_007110 (-) phosphate/phosphite/phosphonate ABC transporter substrate-binding protein",
+      "TX73_007115 (-) phosphonate ABC transporter ATP-binding protein",
+      "TX73_007120 (-) DUF364 domain-containing protein",
+      "TX73_007125 (+) hypothetical protein",
+      "TX73_007130 (+) ABC transporter substrate-binding protein",
+      "TX73_007135 (+) GTP-binding protein",
+      "TX73_007140 (+) ATP-binding cassette domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011159065_1",
+     "locus": "TX73_018270",
+     "fitness_browser_desc": "D-alanine--D-alanine ligase",
+     "refseq_definition": "D-alanine--D-alanine ligase family protein",
+     "neighbourhood": [
+      "TX73_018255 (-) cell division protein FtsZ",
+      "TX73_018260 (-) cell division protein FtsA",
+      "TX73_018265 (-) FtsQ-type POTRA domain-containing protein",
+      "TX73_018270 (-) D-alanine--D-alanine ligase",
+      "TX73_018275 (-) glycosyltransferase family 87 protein",
+      "TX73_018280 (+) DUF4239 domain-containing protein",
+      "TX73_018285 (-) UDP-N-acetylmuramate dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ANPRT",
+   "name": "Anthranilate phosphoribosyltransferase",
+   "equation_ids": "anth_c + prpp_c --> ppi_c + pran_c",
+   "equation_names": "Anthranilate + 5-Phospho-alpha-D-ribose 1-diphosphate --> Diphosphate + N-(5-Phospho-D-ribosyl)anthranilate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011158439_1 or WP_011160030_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011158439_1",
+     "locus": "TX73_014980",
+     "fitness_browser_desc": "anthranilate phosphoribosyltransferase",
+     "refseq_definition": "anthranilate phosphoribosyltransferase",
+     "neighbourhood": [
+      "TX73_014965 (-) preprotein translocase subunit SecG",
+      "TX73_014970 (-) triose-phosphate isomerase",
+      "TX73_014975 (+) SurA N-terminal domain-containing protein",
+      "TX73_014980 (+) anthranilate phosphoribosyltransferase",
+      "TX73_014985 (+) indole-3-glycerol phosphate synthase TrpC",
+      "TX73_014990 (+) cyclic pyranopterin monophosphate synthase MoaC",
+      "TX73_014995 (+) cation-translocating P-type ATPase"
+     ]
+    },
+    {
+     "model_gene": "WP_011160030_1",
+     "locus": "TX73_023350",
+     "fitness_browser_desc": "anthranilate synthase component I",
+     "refseq_definition": "anthranilate synthase component I",
+     "neighbourhood": [
+      "TX73_023335 (-) hypothetical protein",
+      "TX73_023340 (-) M48 family metallopeptidase",
+      "TX73_023345 (-) LemA family protein",
+      "TX73_023350 (-) anthranilate synthase component I",
+      "TX73_023355 (-) hypothetical protein",
+      "TX73_023360 (-) RusA family crossover junction endodeoxyribonuclease",
+      "TX73_023365 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ARGSL",
+   "name": "Argininosuccinate lyase",
+   "equation_ids": "argsuc_c <=> arg__L_c + fum_c",
+   "equation_names": "N(omega)-(L-Arginino)succinate <=> L-Arginine + Fumarate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155960_1 or WP_011160275_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155960_1",
+     "locus": "TX73_002040",
+     "fitness_browser_desc": "argininosuccinate synthase",
+     "refseq_definition": "argininosuccinate synthase",
+     "neighbourhood": [
+      "TX73_002025 (-) penicillin-insensitive murein endopeptidase",
+      "TX73_002030 (+) EAL domain-containing protein",
+      "TX73_002035 (-) alkaline phosphatase",
+      "TX73_002040 (-) argininosuccinate synthase",
+      "TX73_002045 (-) phosphatase PAP2 family protein",
+      "TX73_002050 (-) hypothetical protein",
+      "TX73_002055 (-) HD domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011160275_1",
+     "locus": "TX73_024645",
+     "fitness_browser_desc": "argininosuccinate lyase",
+     "refseq_definition": "argininosuccinate lyase",
+     "neighbourhood": [
+      "TX73_024630 (+) carboxymuconolactone decarboxylase family protein",
+      "TX73_024635 (-) diaminopimelate decarboxylase",
+      "TX73_024640 (-) lipoprotein",
+      "TX73_024645 (-) argininosuccinate lyase",
+      "TX73_024650 (+) TlpA disulfide reductase family protein",
+      "TX73_024655 (-) hypothetical protein",
+      "TX73_024660 (-) NAD(P)H-dependent oxidoreductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASNS2",
+   "name": "Asparagine synthetase",
+   "equation_ids": "asp__L_c + atp_c + nh4_c --> amp_c + asn__L_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + Ammonium --> AMP + L-Asparagine + H+ + Diphosphate",
+   "annotation": {
+    "rhea": [
+     "11372",
+     "11373",
+     "11374",
+     "11375"
+    ],
+    "ec-code": [
+     "6.3.1.1",
+     "6.3.5.4"
+    ],
+    "metanetx.reaction": "MNXR96060",
+    "kegg.reaction": "R00483"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "CU2tpp",
+   "name": "Copper transport in via permease (no H+)",
+   "equation_ids": "cu2_p --> cu2_c",
+   "equation_names": "Cu2+ --> Cu2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "DDPA",
+   "name": "3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase",
+   "equation_ids": "e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Phosphoenolpyruvate --> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155598_1 or WP_011157539_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155598_1",
+     "locus": "TX73_000140",
+     "fitness_browser_desc": "3-deoxy-7-phosphoheptulonate synthase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "TX73_000125 (-) NAD(P)-dependent oxidoreductase",
+      "TX73_000130 (-) gamma-glutamyltransferase",
+      "TX73_000135 (+) MFS transporter",
+      "TX73_000140 (+) 3-deoxy-7-phosphoheptulonate synthase",
+      "TX73_000145 (-) bifunctional phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase",
+      "TX73_000150 (-) heparinase II/III family protein",
+      "TX73_000155 (-) transcription antitermination factor NusB"
+     ]
+    },
+    {
+     "model_gene": "WP_011157539_1",
+     "locus": "TX73_010225",
+     "fitness_browser_desc": "3-deoxy-7-phosphoheptulonate synthase class II",
+     "refseq_definition": "class II 3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "TX73_010210 (+) ribose-5-phosphate isomerase RpiA",
+      "TX73_010215 (+) DUF2059 domain-containing protein",
+      "TX73_010220 (+) glutathione-disulfide reductase",
+      "TX73_010225 (+) 3-deoxy-7-phosphoheptulonate synthase class II",
+      "TX73_010230 (+) diacylglycerol kinase",
+      "TX73_010235 (+) NAD+ synthase",
+      "TX73_010240 (-) HdeA/HdeB family chaperone"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011157024_1 or WP_011157710_1 or WP_011157894_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011157024_1",
+     "locus": "TX73_007515",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "TX73_007500 (-) formate/nitrite transporter family protein",
+      "TX73_007505 (-) DUF4424 domain-containing protein",
+      "TX73_007510 (-) GTP-binding protein",
+      "TX73_007515 (+) dihydroxy-acid dehydratase",
+      "TX73_007520 (-) gamma-glutamyl-gamma-aminobutyrate hydrolase family protein",
+      "TX73_007525 (+) chloride channel protein",
+      "TX73_007530 (-) allophanate hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_011157710_1",
+     "locus": "TX73_011115",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "IlvD/Edd family dehydratase",
+     "neighbourhood": [
+      "TX73_011100 (+) EAL domain-containing protein",
+      "TX73_011105 (+) aldehyde dehydrogenase family protein",
+      "TX73_011110 (+) acyltransferase",
+      "TX73_011115 (+) dihydroxy-acid dehydratase",
+      "TX73_011120 (-) N(2)-fixation sustaining protein CowN",
+      "TX73_011125 (+) DUF2778 domain-containing protein",
+      "TX73_011130 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011157894_1",
+     "locus": "TX73_012105",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "TX73_012090 (-) hypothetical protein",
+      "TX73_012095 (+) Fur family transcriptional regulator",
+      "TX73_012100 (-) FAD-dependent oxidoreductase",
+      "TX73_012105 (-) dihydroxy-acid dehydratase",
+      "TX73_012110 (-) MFS transporter",
+      "TX73_012115 (+) GntR family transcriptional regulator",
+      "TX73_012120 (-) dimethylsulfonioproprionate lyase family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPS",
+   "name": "Dihydrodipicolinate synthase",
+   "equation_ids": "aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Pyruvate --> 2,3-Dihydrodipicolinate + 2.0 H2O + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156433_1 or WP_011158546_1 or WP_042441582_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156433_1",
+     "locus": "TX73_004625",
+     "fitness_browser_desc": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "TX73_004610 (-) SDR family NAD(P)-dependent oxidoreductase",
+      "TX73_004615 (+) SDR family oxidoreductase",
+      "TX73_004620 (-) DUF459 domain-containing protein",
+      "TX73_004625 (-) 4-hydroxy-tetrahydrodipicolinate synthase",
+      "TX73_004630 (-) lytic murein transglycosylase",
+      "TX73_004635 (+) LysE family translocator",
+      "TX73_004640 (-) sulfite exporter TauE/SafE family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011158546_1",
+     "locus": "TX73_015535",
+     "fitness_browser_desc": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "TX73_015520 (+) proton-conducting transporter membrane subunit",
+      "TX73_015525 (+) DUF2309 domain-containing protein",
+      "TX73_015530 (+) hypothetical protein",
+      "TX73_015535 (+) 4-hydroxy-tetrahydrodipicolinate synthase",
+      "TX73_015540 (-) PTS sugar transporter subunit IIA",
+      "TX73_015545 (-) response regulator transcription factor",
+      "TX73_015550 (-) sensor histidine kinase KdpD"
+     ]
+    },
+    {
+     "model_gene": "WP_042441582_1",
+     "locus": "TX73_013920",
+     "fitness_browser_desc": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "TX73_013905 (-) 5-oxoprolinase subunit PxpB",
+      "TX73_013910 (+) ribonuclease activity regulator RraA",
+      "TX73_013915 (+) cupin domain-containing protein",
+      "TX73_013920 (+) 4-hydroxy-tetrahydrodipicolinate synthase",
+      "TX73_013925 (+) large conductance mechanosensitive channel protein MscL",
+      "TX73_013930 (+) SsrA-binding protein SmpB",
+      "TX73_013935 (+) peroxiredoxin"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORD2",
+   "name": "Dihydoorotic acid dehydrogenase (quinone8)",
+   "equation_ids": "dhor__S_c + q8_c --> orot_c + q8h2_c",
+   "equation_names": "(S)-Dihydroorotate + Ubiquinone-8 --> Orotate + Ubiquinol-8",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156633_1 or WP_011158663_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156633_1",
+     "locus": "TX73_005495",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "TX73_005480 (+) hypothetical protein",
+      "TX73_005485 (-) DNA-3-methyladenine glycosylase I",
+      "TX73_005490 (-) folate-binding protein YgfZ",
+      "TX73_005495 (+) dihydroorotase",
+      "TX73_005500 (+) hypothetical protein",
+      "TX73_005505 (-) hypothetical protein",
+      "TX73_005510 (-) TIGR02301 family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011158663_1",
+     "locus": "TX73_016125",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "TX73_016110 (-) acyl-CoA dehydrogenase family protein",
+      "TX73_016115 (-) indolepyruvate/phenylpyruvate decarboxylase",
+      "TX73_016120 (+) aspartate carbamoyltransferase catalytic subunit",
+      "TX73_016125 (+) dihydroorotase",
+      "TX73_016130 (+) glycerol-3-phosphate 1-O-acyltransferase PlsY",
+      "TX73_016135 (+) DNA-processing protein DprA",
+      "TX73_016140 (+) MBOAT family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHQS",
+   "name": "3-dehydroquinate synthase",
+   "equation_ids": "2dda7p_c --> 3dhq_c + pi_c",
+   "equation_names": "2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate --> 3-Dehydroquinate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156071_1 or WP_011159587_1 or WP_011160319_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156071_1",
+     "locus": "TX73_002610",
+     "fitness_browser_desc": "3-dehydroquinate synthase",
+     "refseq_definition": "3-dehydroquinate synthase",
+     "neighbourhood": [
+      "TX73_002595 (-) DnaJ domain-containing protein",
+      "TX73_002600 (+) BolA family transcriptional regulator",
+      "TX73_002605 (-) hemolysin family protein",
+      "TX73_002610 (-) 3-dehydroquinate synthase",
+      "TX73_002615 (-) shikimate kinase",
+      "TX73_002620 (+) histidine kinase",
+      "TX73_002625 (+) site-specific tyrosine recombinase XerD"
+     ]
+    },
+    {
+     "model_gene": "WP_011159587_1",
+     "locus": "TX73_020995",
+     "fitness_browser_desc": "3-dehydroquinate synthase",
+     "refseq_definition": "3-dehydroquinate synthase",
+     "neighbourhood": [
+      "TX73_020980 (+) CDP-glucose 4,6-dehydratase",
+      "TX73_020985 (+) aldolase/citrate lyase family protein",
+      "TX73_020990 (+) SDR family NAD(P)-dependent oxidoreductase",
+      "TX73_020995 (+) 3-dehydroquinate synthase",
+      "TX73_021000 (+) NAD-dependent epimerase/dehydratase family protein",
+      "TX73_021005 (+) thiamine pyrophosphate-binding protein",
+      "TX73_021010 (+) GtrA family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011160319_1",
+     "locus": "TX73_024880",
+     "fitness_browser_desc": "helix-turn-helix transcriptional regulator",
+     "refseq_definition": "helix-turn-helix transcriptional regulator",
+     "neighbourhood": [
+      "TX73_024865 (-) OmpA family protein",
+      "TX73_024870 (+) polysaccharide deacetylase family protein",
+      "TX73_024875 (+) SDR family oxidoreductase",
+      "TX73_024880 (+) helix-turn-helix transcriptional regulator",
+      "TX73_024885 (-) sn-glycerol-3-phosphate ABC transporter substrate-binding protein UgpB",
+      "TX73_024890 (+) HAMP domain-containing sensor histidine kinase",
+      "TX73_024895 (+) DUF3369 domain-containing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHQTi",
+   "name": "3-dehydroquinate dehydratase, irreversible",
+   "equation_ids": "3dhq_c --> 3dhsk_c + h2o_c",
+   "equation_names": "3-Dehydroquinate --> 3-Dehydroshikimate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011157987_1 or WP_011159587_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011157987_1",
+     "locus": "TX73_012605",
+     "fitness_browser_desc": "type II 3-dehydroquinate dehydratase",
+     "refseq_definition": "type II 3-dehydroquinate dehydratase",
+     "neighbourhood": [
+      "TX73_012590 (-) CHASE3 domain-containing protein",
+      "TX73_012595 (-) acetyl-CoA carboxylase biotin carboxylase subunit",
+      "TX73_012600 (-) acetyl-CoA carboxylase biotin carboxyl carrier protein",
+      "TX73_012605 (-) type II 3-dehydroquinate dehydratase",
+      "TX73_012610 (-) DUF1236 domain-containing protein",
+      "TX73_012615 (+) hypothetical protein",
+      "TX73_012620 (+) cation transporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011159587_1",
+     "locus": "TX73_020995",
+     "fitness_browser_desc": "3-dehydroquinate synthase",
+     "refseq_definition": "3-dehydroquinate synthase",
+     "neighbourhood": [
+      "TX73_020980 (+) CDP-glucose 4,6-dehydratase",
+      "TX73_020985 (+) aldolase/citrate lyase family protein",
+      "TX73_020990 (+) SDR family NAD(P)-dependent oxidoreductase",
+      "TX73_020995 (+) 3-dehydroquinate synthase",
+      "TX73_021000 (+) NAD-dependent epimerase/dehydratase family protein",
+      "TX73_021005 (+) thiamine pyrophosphate-binding protein",
+      "TX73_021010 (+) GtrA family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMATT",
+   "name": "Dimethylallyltranstransferase",
+   "equation_ids": "dmpp_c + ipdp_c --> grdp_c + ppi_c",
+   "equation_names": "Dimethylallyl diphosphate + Isopentenyl diphosphate --> Geranyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156092_1 or WP_011156573_1 or WP_011157080_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156092_1",
+     "locus": "TX73_002715",
+     "fitness_browser_desc": "polyprenyl synthetase family protein",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "TX73_002700 (+) bifunctional diguanylate cyclase/phosphodiesterase",
+      "TX73_002705 (+) BLUF domain-containing protein",
+      "TX73_002710 (-) DUF1345 domain-containing protein",
+      "TX73_002715 (-) polyprenyl synthetase family protein",
+      "TX73_002720 (+) monofunctional biosynthetic peptidoglycan transglycosylase",
+      "TX73_002725 (+) 50S ribosomal protein L32",
+      "TX73_002730 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011156573_1",
+     "locus": "TX73_005345",
+     "fitness_browser_desc": "polyprenyl synthetase family protein",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "TX73_005330 (+) electron transfer flavoprotein-ubiquinone oxidoreductase",
+      "TX73_005335 (+) tetratricopeptide repeat protein",
+      "TX73_005340 (+) 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase",
+      "TX73_005345 (-) polyprenyl synthetase family protein",
+      "TX73_005350 (+) DUF2007 domain-containing protein",
+      "TX73_005355 (+) methyltransferase",
+      "TX73_005360 (+) S49 family peptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_011157080_1",
+     "locus": "TX73_007810",
+     "fitness_browser_desc": "polyprenyl synthetase family protein",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "TX73_007795 (+) hypothetical protein",
+      "TX73_007800 (-) carotenoid 1,2-hydratase",
+      "TX73_007805 (-) phytoene desaturase family protein",
+      "TX73_007810 (+) polyprenyl synthetase family protein",
+      "TX73_007815 (+) methyltransferase",
+      "TX73_007820 (+) chlorophyll synthesis pathway protein BchC",
+      "TX73_007825 (+) chlorophyllide a reductase iron protein subunit X"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155635_1 or WP_012497128_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155635_1",
+     "locus": "TX73_000335",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "TX73_000320 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "TX73_000325 (-) lysophospholipid acyltransferase family protein",
+      "TX73_000330 (+) (d)CMP kinase",
+      "TX73_000335 (+) 30S ribosomal protein S1",
+      "TX73_000340 (+) signal peptide peptidase SppA",
+      "TX73_000345 (+) integration host factor subunit beta",
+      "TX73_000350 (+) LapA family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012497128_1",
+     "locus": "TX73_019340",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "TX73_019325 (+) alpha/beta hydrolase",
+      "TX73_019330 (-) aminobacteriohopanetriol synthase HpnO",
+      "TX73_019335 (-) MMPL family transporter",
+      "TX73_019340 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "TX73_019345 (+) adenosyl-hopene transferase HpnH",
+      "TX73_019350 (-) phosphate ABC transporter substrate-binding protein PstS",
+      "TX73_019355 (-) phosphonoacetate hydrolase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011160094_1 or WP_042440969_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011160094_1",
+     "locus": "TX73_023700",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "ketopantoate reductase family protein",
+     "neighbourhood": [
+      "TX73_023685 (+) CoA ester lyase",
+      "TX73_023690 (+) IclR family transcriptional regulator",
+      "TX73_023695 (-) GMP reductase",
+      "TX73_023700 (+) 2-dehydropantoate 2-reductase",
+      "TX73_023705 (-) thermonuclease family protein",
+      "TX73_023710 (+) hotdog domain-containing protein",
+      "TX73_023715 (+) GGDEF domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_042440969_1",
+     "locus": "TX73_010015",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "2-dehydropantoate 2-reductase",
+     "neighbourhood": [
+      "TX73_010000 (-) zinc-binding dehydrogenase",
+      "TX73_010005 (-) nitronate monooxygenase family protein",
+      "TX73_010010 (-) fumarylacetoacetate hydrolase family protein",
+      "TX73_010015 (-) 2-dehydropantoate 2-reductase",
+      "TX73_010020 (-) oxalate/formate MFS antiporter",
+      "TX73_010025 (-) formyl-CoA transferase",
+      "TX73_010030 (-) GntR family transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DXPS",
+   "name": "1-deoxy-D-xylulose 5-phosphate synthase",
+   "equation_ids": "g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c",
+   "equation_names": "Glyceraldehyde 3-phosphate + H+ + Pyruvate --> CO2 + 1-deoxy-D-xylulose 5-phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "FDH",
+   "name": "Formate dehydrogenase",
+   "equation_ids": "for_c + nad_c --> co2_c + nadh_c",
+   "equation_names": "Formate + Nicotinamide adenine dinucleotide --> CO2 + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_011155948_1 and WP_011156302_1) or (WP_011156299_1 and WP_011156300_1 and WP_011156301_1 and WP_085977284_1)",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155948_1",
+     "locus": "TX73_001975",
+     "fitness_browser_desc": "FdhF/YdeP family oxidoreductase",
+     "refseq_definition": "FdhF/YdeP family oxidoreductase",
+     "neighbourhood": [
+      "TX73_001960 (+) universal stress protein",
+      "TX73_001965 (-) alpha-glucosidase/alpha-galactosidase",
+      "TX73_001970 (+) 1-phosphofructokinase family hexose kinase",
+      "TX73_001975 (+) FdhF/YdeP family oxidoreductase",
+      "TX73_001980 (+) glucose-1-phosphate adenylyltransferase",
+      "TX73_001985 (+) glycogen synthase GlgA",
+      "TX73_001990 (+) crotonase/enoyl-CoA hydratase family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011156299_1",
+     "locus": "TX73_003785",
+     "fitness_browser_desc": "formate dehydrogenase subunit gamma",
+     "refseq_definition": "formate dehydrogenase subunit gamma",
+     "neighbourhood": [
+      "TX73_003770 (+) pilus assembly protein",
+      "TX73_003775 (+) pilus assembly protein",
+      "TX73_003780 (+) LysR family transcriptional regulator",
+      "TX73_003785 (+) formate dehydrogenase subunit gamma",
+      "TX73_003790 (+) NADH-quinone oxidoreductase subunit NuoF",
+      "TX73_003795 (+) formate dehydrogenase subunit alpha",
+      "TX73_003800 (+) formate dehydrogenase accessory sulfurtransferase FdhD"
+     ]
+    },
+    {
+     "model_gene": "WP_011156300_1",
+     "locus": "TX73_003790",
+     "fitness_browser_desc": "NADH-quinone oxidoreductase subunit NuoF",
+     "refseq_definition": "formate dehydrogenase beta subunit",
+     "neighbourhood": [
+      "TX73_003775 (+) pilus assembly protein",
+      "TX73_003780 (+) LysR family transcriptional regulator",
+      "TX73_003785 (+) formate dehydrogenase subunit gamma",
+      "TX73_003790 (+) NADH-quinone oxidoreductase subunit NuoF",
+      "TX73_003795 (+) formate dehydrogenase subunit alpha",
+      "TX73_003800 (+) formate dehydrogenase accessory sulfurtransferase FdhD",
+      "TX73_003805 (+) formate dehydrogenase subunit delta"
+     ]
+    },
+    {
+     "model_gene": "WP_011156301_1",
+     "locus": "TX73_003795",
+     "fitness_browser_desc": "formate dehydrogenase subunit alpha",
+     "refseq_definition": "formate dehydrogenase subunit alpha",
+     "neighbourhood": [
+      "TX73_003780 (+) LysR family transcriptional regulator",
+      "TX73_003785 (+) formate dehydrogenase subunit gamma",
+      "TX73_003790 (+) NADH-quinone oxidoreductase subunit NuoF",
+      "TX73_003795 (+) formate dehydrogenase subunit alpha",
+      "TX73_003800 (+) formate dehydrogenase accessory sulfurtransferase FdhD",
+      "TX73_003805 (+) formate dehydrogenase subunit delta",
+      "TX73_003810 (+) OFA family MFS transporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011156302_1",
+     "locus": "TX73_003800",
+     "fitness_browser_desc": "formate dehydrogenase accessory sulfurtransferase FdhD",
+     "refseq_definition": "formate dehydrogenase accessory sulfurtransferase FdhD",
+     "neighbourhood": [
+      "TX73_003785 (+) formate dehydrogenase subunit gamma",
+      "TX73_003790 (+) NADH-quinone oxidoreductase subunit NuoF",
+      "TX73_003795 (+) formate dehydrogenase subunit alpha",
+      "TX73_003800 (+) formate dehydrogenase accessory sulfurtransferase FdhD",
+      "TX73_003805 (+) formate dehydrogenase subunit delta",
+      "TX73_003810 (+) OFA family MFS transporter",
+      "TX73_003815 (+) PQQ-dependent sugar dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_085977284_1",
+     "locus": "TX73_003805",
+     "fitness_browser_desc": "formate dehydrogenase subunit delta",
+     "refseq_definition": "formate dehydrogenase subunit delta",
+     "neighbourhood": [
+      "TX73_003790 (+) NADH-quinone oxidoreductase subunit NuoF",
+      "TX73_003795 (+) formate dehydrogenase subunit alpha",
+      "TX73_003800 (+) formate dehydrogenase accessory sulfurtransferase FdhD",
+      "TX73_003805 (+) formate dehydrogenase subunit delta",
+      "TX73_003810 (+) OFA family MFS transporter",
+      "TX73_003815 (+) PQQ-dependent sugar dehydrogenase",
+      "TX73_003820 (+) c-type cytochrome"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FUM",
+   "name": "Fumarase",
+   "equation_ids": "fum_c + h2o_c <=> mal__L_c",
+   "equation_names": "Fumarate + H2O <=> L-Malate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156892_1 or WP_011159412_1 or WP_042441648_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156892_1",
+     "locus": "TX73_006820",
+     "fitness_browser_desc": "class II fumarate hydratase",
+     "refseq_definition": "class II fumarate hydratase",
+     "neighbourhood": [
+      "TX73_006805 (-) AraC family transcriptional regulator",
+      "TX73_006810 (+) protein kinase",
+      "TX73_006815 (+) ATP-binding protein",
+      "TX73_006820 (+) class II fumarate hydratase",
+      "TX73_006825 (+) threonine/serine exporter family protein",
+      "TX73_006830 (+) cupin domain-containing protein",
+      "TX73_006835 (+) malate dehydrogenase (quinone)"
+     ]
+    },
+    {
+     "model_gene": "WP_011159412_1",
+     "locus": "TX73_020085",
+     "fitness_browser_desc": "fumarate hydratase",
+     "refseq_definition": "fumarate hydratase",
+     "neighbourhood": [
+      "TX73_020070 (+) septation protein IspZ",
+      "TX73_020075 (-) Ig-like domain-containing protein",
+      "TX73_020080 (+) hypothetical protein",
+      "TX73_020085 (-) fumarate hydratase",
+      "TX73_020090 (+) hypothetical protein",
+      "TX73_020095 (+) hypothetical protein",
+      "TX73_020100 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_042441648_1",
+     "locus": "TX73_018130",
+     "fitness_browser_desc": "class II fumarate hydratase",
+     "refseq_definition": "class II fumarate hydratase",
+     "neighbourhood": [
+      "TX73_018110 (-) chromate transporter",
+      "TX73_018115 (-) chromate transporter",
+      "TX73_018125 (+) ClpXP protease specificity-enhancing factor SspB",
+      "TX73_018130 (+) class II fumarate hydratase",
+      "TX73_018135 (+) DUF4169 family protein",
+      "TX73_018140 (+) ribbon-helix-helix domain-containing protein",
+      "TX73_018145 (-) AsmA-like C-terminal region-containing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GCCb",
+   "name": "Glycine cleavage complex",
+   "equation_ids": "alpro_c + thf_c --> dhlpro_c + mlthf_c + nh4_c",
+   "equation_names": "S Aminomethyldihydrolipoylprotein CH6NS2X + 5,6,7,8-Tetrahydrofolate --> Dihydrolipolprotein H2S2X + 5,10-Methylenetetrahydrofolate + Ammonium",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "GCCc",
+   "name": "Glycine-cleavage complex",
+   "equation_ids": "dhlpro_c + nad_c --> h_c + lpro_c + nadh_c",
+   "equation_names": "Dihydrolipolprotein H2S2X + Nicotinamide adenine dinucleotide --> H+ + Lipoylprotein S2X + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "GK1",
+   "name": "Guanylate kinase (GMP:ATP)",
+   "equation_ids": "atp_c + gmp_c <=> adp_c + gdp_c",
+   "equation_names": "ATP + GMP <=> ADP + GDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011158615_1 or WP_011158637_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011158615_1",
+     "locus": "TX73_015875",
+     "fitness_browser_desc": "guanylate kinase",
+     "refseq_definition": "guanylate kinase",
+     "neighbourhood": [
+      "TX73_015860 (+) 16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))- dimethyltransferase RsmA",
+      "TX73_015865 (+) alcohol dehydrogenase",
+      "TX73_015870 (+) hypothetical protein",
+      "TX73_015875 (-) guanylate kinase",
+      "TX73_015880 (-) YicC family protein",
+      "TX73_015885 (-) endolytic transglycosylase MltG",
+      "TX73_015890 (-) beta-ketoacyl-ACP synthase II"
+     ]
+    },
+    {
+     "model_gene": "WP_011158637_1",
+     "locus": "TX73_015995",
+     "fitness_browser_desc": "SDR family NAD(P)-dependent oxidoreductase",
+     "refseq_definition": "SDR family NAD(P)-dependent oxidoreductase",
+     "neighbourhood": [
+      "TX73_015980 (+) DNA repair protein RadA",
+      "TX73_015985 (+) CvpA family protein",
+      "TX73_015990 (+) amidophosphoribosyltransferase",
+      "TX73_015995 (+) SDR family NAD(P)-dependent oxidoreductase",
+      "TX73_016000 (+) ABC transporter substrate-binding protein",
+      "TX73_016005 (-) tetracycline resistance MFS efflux pump",
+      "TX73_016010 (-) ribosome biogenesis GTPase Der"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNS",
+   "name": "Glutamine synthetase",
+   "equation_ids": "atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c",
+   "equation_names": "ATP + L-Glutamate + Ammonium --> ADP + L-Glutamine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156517_1 or WP_011156964_1 or WP_011158516_1 or WP_011159744_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156517_1",
+     "locus": "TX73_005065",
+     "fitness_browser_desc": "glutamine synthetase family protein",
+     "refseq_definition": "glutamine synthetase family protein",
+     "neighbourhood": [
+      "TX73_005050 (+) PAS domain S-box protein",
+      "TX73_005055 (-) IclR family transcriptional regulator",
+      "TX73_005060 (+) aromatic ring-hydroxylating dioxygenase subunit alpha",
+      "TX73_005065 (+) glutamine synthetase family protein",
+      "TX73_005070 (+) ABC transporter substrate-binding protein",
+      "TX73_005075 (+) branched-chain amino acid ABC transporter permease",
+      "TX73_005080 (+) branched-chain amino acid ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "WP_011156964_1",
+     "locus": "TX73_007190",
+     "fitness_browser_desc": "glutamine synthetase family protein",
+     "refseq_definition": "glutamine synthetase family protein",
+     "neighbourhood": [
+      "TX73_007175 (+) ABC transporter ATP-binding protein",
+      "TX73_007180 (+) ABC transporter ATP-binding protein",
+      "TX73_007185 (+) type 1 glutamine amidotransferase",
+      "TX73_007190 (+) glutamine synthetase family protein",
+      "TX73_007195 (+) amidase family protein",
+      "TX73_007200 (+) type 1 glutamine amidotransferase",
+      "TX73_007205 (-) allophanate hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_011158516_1",
+     "locus": "TX73_015390",
+     "fitness_browser_desc": "type I glutamate--ammonia ligase",
+     "refseq_definition": "type I glutamate--ammonia ligase",
+     "neighbourhood": [
+      "TX73_015375 (+) multicopper oxidase domain-containing protein",
+      "TX73_015380 (-) bifunctional ADP-dependent NAD(P)H-hydrate dehydratase/NAD(P)H-hydrate epimerase",
+      "TX73_015385 (+) P-II family nitrogen regulator",
+      "TX73_015390 (+) type I glutamate--ammonia ligase",
+      "TX73_015395 (+) CerR family C-terminal domain-containing protein",
+      "TX73_015400 (+) hypothetical protein",
+      "TX73_015405 (-) adenosylmethionine--8-amino-7-oxononanoate transaminase"
+     ]
+    },
+    {
+     "model_gene": "WP_011159744_1",
+     "locus": "TX73_021820",
+     "fitness_browser_desc": "glutamine synthetase beta-grasp domain-containing protein",
+     "refseq_definition": "glutamine synthetase beta-grasp domain-containing protein",
+     "neighbourhood": [
+      "TX73_021805 (-) 3-hydroxybutyrate dehydrogenase",
+      "TX73_021810 (-) patatin-like phospholipase family protein",
+      "TX73_021815 (-) CAP domain-containing protein",
+      "TX73_021820 (-) glutamine synthetase beta-grasp domain-containing protein",
+      "TX73_021825 (+) DUF2735 domain-containing protein",
+      "TX73_021830 (-) glutaminase",
+      "TX73_021835 (-) DUF934 domain-containing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GRTT",
+   "name": "Geranyltranstransferase",
+   "equation_ids": "grdp_c + ipdp_c --> frdp_c + ppi_c",
+   "equation_names": "Geranyl diphosphate + Isopentenyl diphosphate --> Farnesyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156092_1 or WP_011156573_1 or WP_011157074_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156092_1",
+     "locus": "TX73_002715",
+     "fitness_browser_desc": "polyprenyl synthetase family protein",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "TX73_002700 (+) bifunctional diguanylate cyclase/phosphodiesterase",
+      "TX73_002705 (+) BLUF domain-containing protein",
+      "TX73_002710 (-) DUF1345 domain-containing protein",
+      "TX73_002715 (-) polyprenyl synthetase family protein",
+      "TX73_002720 (+) monofunctional biosynthetic peptidoglycan transglycosylase",
+      "TX73_002725 (+) 50S ribosomal protein L32",
+      "TX73_002730 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011156573_1",
+     "locus": "TX73_005345",
+     "fitness_browser_desc": "polyprenyl synthetase family protein",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "TX73_005330 (+) electron transfer flavoprotein-ubiquinone oxidoreductase",
+      "TX73_005335 (+) tetratricopeptide repeat protein",
+      "TX73_005340 (+) 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol kinase",
+      "TX73_005345 (-) polyprenyl synthetase family protein",
+      "TX73_005350 (+) DUF2007 domain-containing protein",
+      "TX73_005355 (+) methyltransferase",
+      "TX73_005360 (+) S49 family peptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_011157074_1",
+     "locus": "TX73_007775",
+     "fitness_browser_desc": "phytoene/squalene synthase family protein",
+     "refseq_definition": "phytoene/squalene synthase family protein",
+     "neighbourhood": [
+      "TX73_007760 (+) alpha/beta fold hydrolase",
+      "TX73_007765 (+) alpha/beta fold hydrolase",
+      "TX73_007770 (+) phytoene desaturase",
+      "TX73_007775 (+) phytoene/squalene synthase family protein",
+      "TX73_007780 (+) oxygen-dependent coproporphyrinogen oxidase",
+      "TX73_007785 (-) universal stress protein",
+      "TX73_007790 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GTPCI",
+   "name": "GTP cyclohydrolase I",
+   "equation_ids": "gtp_c + h2o_c --> ahdt_c + for_c + h_c",
+   "equation_names": "GTP + H2O --> 2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + Formate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011158424_1 or WP_011158933_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011158424_1",
+     "locus": "TX73_014895",
+     "fitness_browser_desc": "preQ(1) synthase",
+     "refseq_definition": "preQ(1) synthase",
+     "neighbourhood": [
+      "TX73_014880 (-) hypothetical protein",
+      "TX73_014885 (-) zinc-binding dehydrogenase",
+      "TX73_014890 (-) phosphopyruvate hydratase",
+      "TX73_014895 (+) preQ(1) synthase",
+      "TX73_014900 (-) NAD(+) synthase",
+      "TX73_014905 (+) glucan biosynthesis protein G",
+      "TX73_014910 (+) glucans biosynthesis glucosyltransferase MdoH"
+     ]
+    },
+    {
+     "model_gene": "WP_011158933_1",
+     "locus": "TX73_017535",
+     "fitness_browser_desc": "GTP cyclohydrolase I FolE",
+     "refseq_definition": "GTP cyclohydrolase I FolE",
+     "neighbourhood": [
+      "TX73_017520 (-) transglycosylase SLT domain-containing protein",
+      "TX73_017525 (+) hypothetical protein",
+      "TX73_017530 (-) phosphoribosyl-AMP cyclohydrolase",
+      "TX73_017535 (-) GTP cyclohydrolase I FolE",
+      "TX73_017540 (+) iron-sulfur cluster assembly scaffold protein",
+      "TX73_017545 (-) hypothetical protein",
+      "TX73_017550 (+) membrane protein insertion efficiency factor YidD"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155800_1 or WP_011156366_1 or spontaneous",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155800_1",
+     "locus": "TX73_001200",
+     "fitness_browser_desc": "carbonic anhydrase",
+     "refseq_definition": "carbonic anhydrase",
+     "neighbourhood": [
+      "TX73_001185 (-) hypothetical protein",
+      "TX73_001190 (+) aspartate-semialdehyde dehydrogenase",
+      "TX73_001195 (+) TIGR00645 family protein",
+      "TX73_001200 (-) carbonic anhydrase",
+      "TX73_001205 (+) CoA ester lyase",
+      "TX73_001210 (-) methyl-accepting chemotaxis protein",
+      "TX73_001215 (-) 3-isopropylmalate dehydratase small subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_011156366_1",
+     "locus": "TX73_004120",
+     "fitness_browser_desc": "carbonic anhydrase",
+     "refseq_definition": "carbonic anhydrase",
+     "neighbourhood": [
+      "TX73_004105 (+) DUF952 domain-containing protein",
+      "TX73_004110 (+) quinone-dependent dihydroorotate dehydrogenase",
+      "TX73_004115 (-) MBL fold metallo-hydrolase",
+      "TX73_004120 (-) carbonic anhydrase",
+      "TX73_004125 (-) MATE family efflux transporter",
+      "TX73_004130 (-) DUF6460 domain-containing protein",
+      "TX73_004135 (-) ATP-dependent DNA ligase"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HISTP",
+   "name": "Histidinol-phosphatase",
+   "equation_ids": "h2o_c + hisp_c --> histd_c + pi_c",
+   "equation_names": "H2O + L-Histidinol phosphate --> L-Histidinol + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155877_1 or WP_011156472_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155877_1",
+     "locus": "TX73_001605",
+     "fitness_browser_desc": "imidazoleglycerol-phosphate dehydratase HisB",
+     "refseq_definition": "imidazoleglycerol-phosphate dehydratase HisB",
+     "neighbourhood": [
+      "TX73_001590 (-) ATP-dependent protease ATPase subunit HslU",
+      "TX73_001595 (-) DUF2585 domain-containing protein",
+      "TX73_001600 (-) ATP-dependent protease subunit HslV",
+      "TX73_001605 (+) imidazoleglycerol-phosphate dehydratase HisB",
+      "TX73_001610 (+) DUF2628 domain-containing protein",
+      "TX73_001615 (+) imidazole glycerol phosphate synthase subunit HisH",
+      "TX73_001620 (+) 1-(5-phosphoribosyl)-5-[(5- phosphoribosylamino)methylideneamino]imidazole-4- carboxamide isomerase"
+     ]
+    },
+    {
+     "model_gene": "WP_011156472_1",
+     "locus": "TX73_004830",
+     "fitness_browser_desc": "inositol monophosphatase family protein",
+     "refseq_definition": "inositol monophosphatase family protein",
+     "neighbourhood": [
+      "TX73_004815 (+) U32 family peptidase",
+      "TX73_004820 (-) alpha/beta fold hydrolase",
+      "TX73_004825 (+) TetR/AcrR family transcriptional regulator",
+      "TX73_004830 (-) inositol monophosphatase family protein",
+      "TX73_004835 (-) tetratricopeptide repeat protein",
+      "TX73_004840 (-) thiamine phosphate synthase",
+      "TX73_004845 (-) fructose-bisphosphate aldolase class I"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155635_1 or WP_012497128_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155635_1",
+     "locus": "TX73_000335",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "TX73_000320 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "TX73_000325 (-) lysophospholipid acyltransferase family protein",
+      "TX73_000330 (+) (d)CMP kinase",
+      "TX73_000335 (+) 30S ribosomal protein S1",
+      "TX73_000340 (+) signal peptide peptidase SppA",
+      "TX73_000345 (+) integration host factor subunit beta",
+      "TX73_000350 (+) LapA family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012497128_1",
+     "locus": "TX73_019340",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "TX73_019325 (+) alpha/beta hydrolase",
+      "TX73_019330 (-) aminobacteriohopanetriol synthase HpnO",
+      "TX73_019335 (-) MMPL family transporter",
+      "TX73_019340 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "TX73_019345 (+) adenosyl-hopene transferase HpnH",
+      "TX73_019350 (-) phosphate ABC transporter substrate-binding protein PstS",
+      "TX73_019355 (-) phosphonoacetate hydrolase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPS",
+   "name": "2-isopropylmalate synthase",
+   "equation_ids": "3mob_c + accoa_c + h2o_c --> 3c3hmp_c + coa_c + h_c",
+   "equation_names": "3-Methyl-2-oxobutanoate + Acetyl-CoA + H2O --> 3-Carboxy-3-hydroxy-4-methylpentanoate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011157555_1 or WP_011157601_1 or WP_011160197_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011157555_1",
+     "locus": "TX73_010310",
+     "fitness_browser_desc": "citramalate synthase",
+     "refseq_definition": "citramalate synthase",
+     "neighbourhood": [
+      "TX73_010295 (+) hypothetical protein",
+      "TX73_010300 (+) hypothetical protein",
+      "TX73_010305 (+) GNAT family N-acetyltransferase",
+      "TX73_010310 (+) citramalate synthase",
+      "TX73_010315 (+) acetolactate synthase large subunit",
+      "TX73_010320 (+) FAD-binding oxidoreductase",
+      "TX73_010325 (-) c-type cytochrome"
+     ]
+    },
+    {
+     "model_gene": "WP_011157601_1",
+     "locus": "TX73_010545",
+     "fitness_browser_desc": "2-isopropylmalate synthase",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "TX73_010530 (+) NUDIX hydrolase",
+      "TX73_010535 (-) biotin synthase BioB",
+      "TX73_010540 (+) hypothetical protein",
+      "TX73_010545 (+) 2-isopropylmalate synthase",
+      "TX73_010550 (+) TRAP transporter substrate-binding protein",
+      "TX73_010555 (+) TRAP transporter small permease",
+      "TX73_010560 (+) TRAP transporter large permease subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_011160197_1",
+     "locus": "TX73_024250",
+     "fitness_browser_desc": "2-isopropylmalate synthase",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "TX73_024235 (-) MFS transporter",
+      "TX73_024240 (-) HAMP domain-containing methyl-accepting chemotaxis protein",
+      "TX73_024245 (-) helix-turn-helix transcriptional regulator",
+      "TX73_024250 (+) 2-isopropylmalate synthase",
+      "TX73_024255 (+) (2Fe-2S)-binding protein",
+      "TX73_024260 (+) xanthine dehydrogenase family protein molybdopterin-binding subunit",
+      "TX73_024265 (+) xanthine dehydrogenase family protein subunit M"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MEPCT",
+   "name": "2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase",
+   "equation_ids": "2me4p_c + ctp_c + h_c --> 4c2me_c + ppi_c",
+   "equation_names": "2-C-methyl-D-erythritol 4-phosphate + CTP + H+ --> 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol + Diphosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "MNt2",
+   "name": "Manganese transport in via proton symport",
+   "equation_ids": "h_e + mn2_e --> h_c + mn2_c",
+   "equation_names": "H+ + Mn2+ --> H+ + Mn2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011158256_1 or WP_011158833_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011158256_1",
+     "locus": "TX73_014020",
+     "fitness_browser_desc": "Nramp family divalent metal transporter",
+     "refseq_definition": "Nramp family divalent metal transporter",
+     "neighbourhood": [
+      "TX73_014005 (+) DNA topoisomerase IV subunit A",
+      "TX73_014010 (+) sodium:proton antiporter",
+      "TX73_014015 (-) hypothetical protein",
+      "TX73_014020 (+) Nramp family divalent metal transporter",
+      "TX73_014025 (-) helix-turn-helix transcriptional regulator",
+      "TX73_014030 (+) FUSC family protein",
+      "TX73_014035 (+) DUF1656 domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011158833_1",
+     "locus": "TX73_017015",
+     "fitness_browser_desc": "divalent metal cation transporter",
+     "refseq_definition": "NRAMP family divalent metal transporter",
+     "neighbourhood": [
+      "TX73_017000 (-) phosphotransferase family protein",
+      "TX73_017005 (-) acyl-CoA dehydrogenase family protein",
+      "TX73_017010 (+) TetR/AcrR family transcriptional regulator",
+      "TX73_017015 (-) divalent metal cation transporter",
+      "TX73_017020 (-) hypothetical protein",
+      "TX73_017025 (-) ABC transporter ATP-binding protein",
+      "TX73_017030 (-) ABC transporter ATP-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NNATr",
+   "name": "Nicotinate-nucleotide adenylyltransferase",
+   "equation_ids": "atp_c + h_c + nicrnt_c <=> dnad_c + ppi_c",
+   "equation_names": "ATP + H+ + Nicotinate D-ribonucleotide <=> Deamino-NAD+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155733_1 or WP_042440830_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155733_1",
+     "locus": "TX73_000860",
+     "fitness_browser_desc": "nicotinate-nucleotide adenylyltransferase",
+     "refseq_definition": "nicotinate-nucleotide adenylyltransferase",
+     "neighbourhood": [
+      "TX73_000845 (+) GTPase ObgE",
+      "TX73_000850 (+) glutamate 5-kinase",
+      "TX73_000855 (+) glutamate-5-semialdehyde dehydrogenase",
+      "TX73_000860 (+) nicotinate-nucleotide adenylyltransferase",
+      "TX73_000865 (+) ribosome silencing factor",
+      "TX73_000870 (+) 23S rRNA (pseudouridine(1915)-N(3))-methyltransferase RlmH",
+      "TX73_000875 (+) peptidoglycan DD-metalloendopeptidase family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_042440830_1",
+     "locus": "TX73_005515",
+     "fitness_browser_desc": "NUDIX hydrolase",
+     "refseq_definition": "NUDIX hydrolase",
+     "neighbourhood": [
+      "TX73_005500 (+) hypothetical protein",
+      "TX73_005505 (-) hypothetical protein",
+      "TX73_005510 (-) TIGR02301 family protein",
+      "TX73_005515 (-) NUDIX hydrolase",
+      "TX73_005520 (-) hypothetical protein",
+      "TX73_005525 (+) SOS response-associated peptidase",
+      "TX73_005530 (-) FAD-binding oxidoreductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NNDPR",
+   "name": "Nicotinate-nucleotide diphosphorylase (carboxylating)",
+   "equation_ids": "2.0 h_c + prpp_c + quln_c --> co2_c + nicrnt_c + ppi_c",
+   "equation_names": "2.0 H+ + 5-Phospho-alpha-D-ribose 1-diphosphate + Quinolinate --> CO2 + Nicotinate D-ribonucleotide + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156617_1 or WP_042440817_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156617_1",
+     "locus": "TX73_005415",
+     "fitness_browser_desc": "carboxylating nicotinate-nucleotide diphosphorylase",
+     "refseq_definition": "carboxylating nicotinate-nucleotide diphosphorylase",
+     "neighbourhood": [
+      "TX73_005400 (+) pyruvate, phosphate dikinase",
+      "TX73_005405 (+) cell wall hydrolase",
+      "TX73_005410 (-) hypothetical protein",
+      "TX73_005415 (-) carboxylating nicotinate-nucleotide diphosphorylase",
+      "TX73_005420 (-) L-aspartate oxidase",
+      "TX73_005425 (-) quinolinate synthase NadA",
+      "TX73_005430 (+) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "WP_042440817_1",
+     "locus": "TX73_005155",
+     "fitness_browser_desc": "ModD protein",
+     "refseq_definition": "ModD protein",
+     "neighbourhood": [
+      "TX73_005140 (+) class I SAM-dependent methyltransferase",
+      "TX73_005145 (-) hypothetical protein",
+      "TX73_005150 (-) DUF2478 domain-containing protein",
+      "TX73_005155 (+) ModD protein",
+      "TX73_005160 (-) AMP-binding protein",
+      "TX73_005165 (+) hypothetical protein",
+      "TX73_005170 (+) NUDIX hydrolase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NO3R1bpp",
+   "name": "Nitrate reductase (Ubiquinol-8)",
+   "equation_ids": "no3_p + q8h2_c --> h2o_p + no2_p + q8_c",
+   "equation_names": "Nitrate + Ubiquinol-8 --> H2O + Nitrite + Ubiquinone-8",
+   "annotation": {
+    "rhea": [
+     "29123",
+     "29124",
+     "29125",
+     "29126"
+    ],
+    "metanetx.reaction": "MNXR101987"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "OHPBAT",
+   "name": "O-Phospho-4-hydroxy-L-threonine:2-oxoglutarate aminotransferase",
+   "equation_ids": "glu__L_c + ohpb_c <=> akg_c + phthr_c",
+   "equation_names": "L-Glutamate + 2-Oxo-3-hydroxy-4-phosphobutanoate <=> 2-Oxoglutarate + O-Phospho-4-hydroxy-L-threonine",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "PDX5PO2",
+   "name": "Pyridoxine 5'-phosphate oxidase (anaerboic",
+   "equation_ids": "nad_c + pdx5p_c --> h_c + nadh_c + pydx5p_c",
+   "equation_names": "Nicotinamide adenine dinucleotide + Pyridoxine 5'-phosphate --> H+ + Nicotinamide adenine dinucleotide - reduced + Pyridoxal 5'-phosphate",
+   "annotation": {
+    "metanetx.reaction": "MNXR102437"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "PGAMT",
+   "name": "Phosphoglucosamine mutase",
+   "equation_ids": "gam1p_c <=> gam6p_c",
+   "equation_names": "D-Glucosamine 1-phosphate <=> D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011157045_1 or WP_011158863_1 or WP_011159852_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011157045_1",
+     "locus": "TX73_007630",
+     "fitness_browser_desc": "phosphoglucomutase (alpha-D-glucose-1,6-bisphosphate-dependent)",
+     "refseq_definition": "phosphoglucomutase (alpha-D-glucose-1,6-bisphosphate-dependent)",
+     "neighbourhood": [
+      "TX73_007615 (+) response regulator",
+      "TX73_007620 (+) alpha/beta fold hydrolase",
+      "TX73_007625 (-) FAD-dependent oxidoreductase",
+      "TX73_007630 (+) phosphoglucomutase (alpha-D-glucose-1,6-bisphosphate-dependent)",
+      "TX73_007635 (+) NnrU family protein",
+      "TX73_007640 (+) NnrS family protein",
+      "TX73_007645 (+) DUF2249 domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011158863_1",
+     "locus": "TX73_017170",
+     "fitness_browser_desc": "phosphomannomutase/phosphoglucomutase",
+     "refseq_definition": "phosphomannomutase/phosphoglucomutase",
+     "neighbourhood": [
+      "TX73_017155 (-) hypothetical protein",
+      "TX73_017160 (-) Crp/Fnr family transcriptional regulator",
+      "TX73_017165 (+) hypothetical protein",
+      "TX73_017170 (-) phosphomannomutase/phosphoglucomutase",
+      "TX73_017175 (-) mannose-1-phosphate guanylyltransferase/mannose-6-phosphate isomerase",
+      "TX73_017180 (-) DUF4407 domain-containing protein",
+      "TX73_017185 (-) TIGR04325 family methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011159852_1",
+     "locus": "TX73_022375",
+     "fitness_browser_desc": "phosphoglucosamine mutase",
+     "refseq_definition": "phosphoglucosamine mutase",
+     "neighbourhood": [
+      "TX73_022360 (-) outer membrane beta-barrel protein",
+      "TX73_022365 (-) outer membrane beta-barrel protein",
+      "TX73_022370 (-) MFS transporter",
+      "TX73_022375 (-) phosphoglucosamine mutase",
+      "TX73_022380 (-) hypothetical protein",
+      "TX73_022385 (+) alpha-hydroxy acid oxidase",
+      "TX73_022390 (+) enoyl-CoA hydratase/isomerase family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155676_1 or WP_011155879_1 or WP_011157568_1 or WP_011159973_1 or WP_011160125_1 or WP_042441707_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155676_1",
+     "locus": "TX73_000540",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "TX73_000525 (-) ABC transporter substrate-binding protein",
+      "TX73_000530 (-) GTP-binding protein",
+      "TX73_000535 (-) amidohydrolase",
+      "TX73_000540 (+) PLP-dependent aminotransferase family protein",
+      "TX73_000545 (-) ABC transporter substrate-binding protein",
+      "TX73_000550 (-) zinc-binding dehydrogenase",
+      "TX73_000555 (-) thiamine pyrophosphate-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011155879_1",
+     "locus": "TX73_001615",
+     "fitness_browser_desc": "imidazole glycerol phosphate synthase subunit HisH",
+     "refseq_definition": "imidazole glycerol phosphate synthase subunit HisH",
+     "neighbourhood": [
+      "TX73_001600 (-) ATP-dependent protease subunit HslV",
+      "TX73_001605 (+) imidazoleglycerol-phosphate dehydratase HisB",
+      "TX73_001610 (+) DUF2628 domain-containing protein",
+      "TX73_001615 (+) imidazole glycerol phosphate synthase subunit HisH",
+      "TX73_001620 (+) 1-(5-phosphoribosyl)-5-[(5- phosphoribosylamino)methylideneamino]imidazole-4- carboxamide isomerase",
+      "TX73_001625 (+) imidazole glycerol phosphate synthase subunit HisF",
+      "TX73_001630 (+) phosphoribosyl-ATP diphosphatase"
+     ]
+    },
+    {
+     "model_gene": "WP_011157568_1",
+     "locus": "TX73_010375",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "TX73_010360 (+) flagellar motor protein MotB",
+      "TX73_010365 (+) potassium transporter Kup",
+      "TX73_010370 (+) rhodanese-like domain-containing protein",
+      "TX73_010375 (+) aminotransferase",
+      "TX73_010380 (+) polyamine ABC transporter substrate-binding protein",
+      "TX73_010385 (+) hypothetical protein",
+      "TX73_010390 (-) radical SAM protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011159973_1",
+     "locus": "TX73_023035",
+     "fitness_browser_desc": "histidinol-phosphate transaminase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "TX73_023020 (-) methionine biosynthesis protein MetW",
+      "TX73_023025 (-) homoserine O-acetyltransferase",
+      "TX73_023030 (+) chorismate mutase",
+      "TX73_023035 (+) histidinol-phosphate transaminase",
+      "TX73_023040 (+) prephenate/arogenate dehydrogenase family protein",
+      "TX73_023045 (-) magnesium transporter CorA family protein",
+      "TX73_023050 (+) L,D-transpeptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_011160125_1",
+     "locus": "TX73_023855",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "TX73_023840 (-) homoserine O-succinyltransferase",
+      "TX73_023845 (-) O-acetylhomoserine aminocarboxypropyltransferase/cysteine synthase",
+      "TX73_023850 (+) long-chain-acyl-CoA synthetase",
+      "TX73_023855 (+) branched-chain amino acid aminotransferase",
+      "TX73_023860 (-) acyl-CoA acyltransferase",
+      "TX73_023865 (+) acyl carrier protein",
+      "TX73_023870 (+) fatty acid--CoA ligase family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_042441707_1",
+     "locus": "TX73_022440",
+     "fitness_browser_desc": "pyridoxal phosphate-dependent aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "TX73_022425 (-) elongation factor G",
+      "TX73_022430 (-) DUF992 domain-containing protein",
+      "TX73_022435 (-) DUF992 domain-containing protein",
+      "TX73_022440 (-) pyridoxal phosphate-dependent aminotransferase",
+      "TX73_022445 (+) glutathione S-transferase family protein",
+      "TX73_022450 (+) HtrA2 peptidase",
+      "TX73_022455 (+) PQQ-dependent sugar dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PPND",
+   "name": "Prephenate dehydrogenase",
+   "equation_ids": "nad_c + pphn_c --> 34hpp_c + co2_c + nadh_c",
+   "equation_names": "Nicotinamide adenine dinucleotide + Prephenate --> 3-(4-Hydroxyphenyl)pyruvate + CO2 + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155632_1 or WP_011159974_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155632_1",
+     "locus": "TX73_000320",
+     "fitness_browser_desc": "3-phosphoshikimate 1-carboxyvinyltransferase",
+     "refseq_definition": "3-phosphoshikimate 1-carboxyvinyltransferase",
+     "neighbourhood": [
+      "TX73_000305 (-) CaiB/BaiF CoA-transferase family protein",
+      "TX73_000310 (-) tRNA-Ala",
+      "TX73_000315 (-) TIGR02300 family protein",
+      "TX73_000320 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "TX73_000325 (-) lysophospholipid acyltransferase family protein",
+      "TX73_000330 (+) (d)CMP kinase",
+      "TX73_000335 (+) 30S ribosomal protein S1"
+     ]
+    },
+    {
+     "model_gene": "WP_011159974_1",
+     "locus": "TX73_023040",
+     "fitness_browser_desc": "prephenate/arogenate dehydrogenase family protein",
+     "refseq_definition": "prephenate/arogenate dehydrogenase family protein",
+     "neighbourhood": [
+      "TX73_023025 (-) homoserine O-acetyltransferase",
+      "TX73_023030 (+) chorismate mutase",
+      "TX73_023035 (+) histidinol-phosphate transaminase",
+      "TX73_023040 (+) prephenate/arogenate dehydrogenase family protein",
+      "TX73_023045 (-) magnesium transporter CorA family protein",
+      "TX73_023050 (+) L,D-transpeptidase",
+      "TX73_023055 (-) extensin family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PPNDH",
+   "name": "Prephenate dehydratase",
+   "equation_ids": "h_c + pphn_c --> co2_c + h2o_c + phpyr_c",
+   "equation_names": "H+ + Prephenate --> CO2 + H2O + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159234_1 or WP_012497629_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011159234_1",
+     "locus": "TX73_019145",
+     "fitness_browser_desc": "prephenate dehydratase",
+     "refseq_definition": "prephenate dehydratase",
+     "neighbourhood": [
+      "TX73_019130 (-) extracellular solute-binding protein",
+      "TX73_019135 (-) cytochrome c family protein",
+      "TX73_019140 (+) 3-deoxy-manno-octulosonate cytidylyltransferase",
+      "TX73_019145 (+) prephenate dehydratase",
+      "TX73_019150 (-) TetR/AcrR family transcriptional regulator",
+      "TX73_019155 (+) efflux RND transporter periplasmic adaptor subunit",
+      "TX73_019160 (+) DHA2 family efflux MFS transporter permease subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_012497629_1",
+     "locus": "TX73_023030",
+     "fitness_browser_desc": "chorismate mutase",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "TX73_023015 (-) TIGR02594 family protein",
+      "TX73_023020 (-) methionine biosynthesis protein MetW",
+      "TX73_023025 (-) homoserine O-acetyltransferase",
+      "TX73_023030 (+) chorismate mutase",
+      "TX73_023035 (+) histidinol-phosphate transaminase",
+      "TX73_023040 (+) prephenate/arogenate dehydrogenase family protein",
+      "TX73_023045 (-) magnesium transporter CorA family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRAGSr",
+   "name": "Phosphoribosylglycinamide synthase",
+   "equation_ids": "atp_c + gly_c + pram_c <=> adp_c + gar_c + h_c + pi_c",
+   "equation_names": "ATP + Glycine + 5-Phospho-beta-D-ribosylamine <=> ADP + N1-(5-Phospho-D-ribosyl)glycinamide + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156726_1 or WP_011158597_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156726_1",
+     "locus": "TX73_005965",
+     "fitness_browser_desc": "phosphoribosylamine--glycine ligase",
+     "refseq_definition": "phosphoribosylamine--glycine ligase",
+     "neighbourhood": [
+      "TX73_005950 (+) tetraacyldisaccharide 4'-kinase",
+      "TX73_005955 (-) DUF2093 domain-containing protein",
+      "TX73_005960 (-) exodeoxyribonuclease VII large subunit",
+      "TX73_005965 (+) phosphoribosylamine--glycine ligase",
+      "TX73_005970 (+) alpha/beta hydrolase",
+      "TX73_005975 (-) nucleoside deaminase",
+      "TX73_005980 (+) pseudouridine synthase"
+     ]
+    },
+    {
+     "model_gene": "WP_011158597_1",
+     "locus": "TX73_015785",
+     "fitness_browser_desc": "phosphoribosylformylglycinamidine cyclo-ligase",
+     "refseq_definition": "phosphoribosylformylglycinamidine cyclo-ligase",
+     "neighbourhood": [
+      "TX73_015770 (-) RNA degradosome polyphosphate kinase",
+      "TX73_015775 (-) DnaA/Hda family protein",
+      "TX73_015780 (-) CDP-alcohol phosphatidyltransferase family protein",
+      "TX73_015785 (+) phosphoribosylformylglycinamidine cyclo-ligase",
+      "TX73_015790 (+) phosphoribosylglycinamide formyltransferase",
+      "TX73_015795 (-) cold-shock protein",
+      "TX73_015800 (+) Crp/Fnr family transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRAMPC",
+   "name": "Phosphoribosyl-AMP cyclohydrolase",
+   "equation_ids": "h2o_c + prbamp_c --> prfp_c",
+   "equation_names": "H2O + 1-(5-Phosphoribosyl)-AMP --> 1-(5-Phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino]imidazole-4-carboxamide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155882_1 or WP_011158932_1 or WP_011160237_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155882_1",
+     "locus": "TX73_001630",
+     "fitness_browser_desc": "phosphoribosyl-ATP diphosphatase",
+     "refseq_definition": "phosphoribosyl-ATP diphosphatase",
+     "neighbourhood": [
+      "TX73_001615 (+) imidazole glycerol phosphate synthase subunit HisH",
+      "TX73_001620 (+) 1-(5-phosphoribosyl)-5-[(5- phosphoribosylamino)methylideneamino]imidazole-4- carboxamide isomerase",
+      "TX73_001625 (+) imidazole glycerol phosphate synthase subunit HisF",
+      "TX73_001630 (+) phosphoribosyl-ATP diphosphatase",
+      "TX73_001635 (+) type I pantothenate kinase",
+      "TX73_001640 (-) GNAT family N-acetyltransferase",
+      "TX73_001645 (-) ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011158932_1",
+     "locus": "TX73_017530",
+     "fitness_browser_desc": "phosphoribosyl-AMP cyclohydrolase",
+     "refseq_definition": "phosphoribosyl-AMP cyclohydrolase",
+     "neighbourhood": [
+      "TX73_017515 (+) LysR family transcriptional regulator",
+      "TX73_017520 (-) transglycosylase SLT domain-containing protein",
+      "TX73_017525 (+) hypothetical protein",
+      "TX73_017530 (-) phosphoribosyl-AMP cyclohydrolase",
+      "TX73_017535 (-) GTP cyclohydrolase I FolE",
+      "TX73_017540 (+) iron-sulfur cluster assembly scaffold protein",
+      "TX73_017545 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011160237_1",
+     "locus": "TX73_024445",
+     "fitness_browser_desc": "phosphoribosyl-ATP diphosphatase",
+     "refseq_definition": "phosphoribosyl-ATP diphosphatase",
+     "neighbourhood": [
+      "TX73_024430 (+) class III extradiol dioxygenase subunit beta",
+      "TX73_024435 (+) Gfo/Idh/MocA family oxidoreductase",
+      "TX73_024440 (+) hypothetical protein",
+      "TX73_024445 (+) phosphoribosyl-ATP diphosphatase",
+      "TX73_024450 (+) DedA family protein",
+      "TX73_024455 (+) hypothetical protein",
+      "TX73_024460 (+) nitronate monooxygenase family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRASCSi",
+   "name": "Phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+   "equation_ids": "5aizc_c + asp__L_c + atp_c --> 25aics_c + adp_c + h_c + pi_c",
+   "equation_names": "5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxylate + L-Aspartate + ATP --> (S)-2-[5-Amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxamido]succinate + ADP + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156126_1 or WP_012497196_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156126_1",
+     "locus": "TX73_002890",
+     "fitness_browser_desc": "phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+     "refseq_definition": "phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+     "neighbourhood": [
+      "TX73_002875 (-) class I SAM-dependent methyltransferase",
+      "TX73_002880 (-) HNH endonuclease",
+      "TX73_002885 (+) cysteine synthase A",
+      "TX73_002890 (-) phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+      "TX73_002895 (-) pirin family protein",
+      "TX73_002900 (-) malonyl-CoA decarboxylase",
+      "TX73_002905 (-) PAS domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_012497196_1",
+     "locus": "TX73_019780",
+     "fitness_browser_desc": "phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+     "refseq_definition": "phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+     "neighbourhood": [
+      "TX73_019765 (-) phosphoribosylformylglycinamidine synthase subunit PurQ",
+      "TX73_019770 (-) hypothetical protein",
+      "TX73_019775 (-) phosphoribosylformylglycinamidine synthase subunit PurS",
+      "TX73_019780 (-) phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+      "TX73_019785 (+) DUF1476 domain-containing protein",
+      "TX73_019790 (+) hypothetical protein",
+      "TX73_019795 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRATPP",
+   "name": "Phosphoribosyl-ATP pyrophosphatase",
+   "equation_ids": "h2o_c + prbatp_c --> h_c + ppi_c + prbamp_c",
+   "equation_names": "H2O + 1-(5-Phosphoribosyl)-ATP --> H+ + Diphosphate + 1-(5-Phosphoribosyl)-AMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155882_1 or WP_011158932_1 or WP_011160237_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155882_1",
+     "locus": "TX73_001630",
+     "fitness_browser_desc": "phosphoribosyl-ATP diphosphatase",
+     "refseq_definition": "phosphoribosyl-ATP diphosphatase",
+     "neighbourhood": [
+      "TX73_001615 (+) imidazole glycerol phosphate synthase subunit HisH",
+      "TX73_001620 (+) 1-(5-phosphoribosyl)-5-[(5- phosphoribosylamino)methylideneamino]imidazole-4- carboxamide isomerase",
+      "TX73_001625 (+) imidazole glycerol phosphate synthase subunit HisF",
+      "TX73_001630 (+) phosphoribosyl-ATP diphosphatase",
+      "TX73_001635 (+) type I pantothenate kinase",
+      "TX73_001640 (-) GNAT family N-acetyltransferase",
+      "TX73_001645 (-) ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011158932_1",
+     "locus": "TX73_017530",
+     "fitness_browser_desc": "phosphoribosyl-AMP cyclohydrolase",
+     "refseq_definition": "phosphoribosyl-AMP cyclohydrolase",
+     "neighbourhood": [
+      "TX73_017515 (+) LysR family transcriptional regulator",
+      "TX73_017520 (-) transglycosylase SLT domain-containing protein",
+      "TX73_017525 (+) hypothetical protein",
+      "TX73_017530 (-) phosphoribosyl-AMP cyclohydrolase",
+      "TX73_017535 (-) GTP cyclohydrolase I FolE",
+      "TX73_017540 (+) iron-sulfur cluster assembly scaffold protein",
+      "TX73_017545 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011160237_1",
+     "locus": "TX73_024445",
+     "fitness_browser_desc": "phosphoribosyl-ATP diphosphatase",
+     "refseq_definition": "phosphoribosyl-ATP diphosphatase",
+     "neighbourhood": [
+      "TX73_024430 (+) class III extradiol dioxygenase subunit beta",
+      "TX73_024435 (+) Gfo/Idh/MocA family oxidoreductase",
+      "TX73_024440 (+) hypothetical protein",
+      "TX73_024445 (+) phosphoribosyl-ATP diphosphatase",
+      "TX73_024450 (+) DedA family protein",
+      "TX73_024455 (+) hypothetical protein",
+      "TX73_024460 (+) nitronate monooxygenase family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRPPS",
+   "name": "Phosphoribosylpyrophosphate synthetase",
+   "equation_ids": "atp_c + r5p_c <=> amp_c + h_c + prpp_c",
+   "equation_names": "ATP + Alpha-D-Ribose 5-phosphate <=> AMP + H+ + 5-Phospho-alpha-D-ribose 1-diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159683_1 or WP_011159896_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011159683_1",
+     "locus": "TX73_021500",
+     "fitness_browser_desc": "ribose-phosphate pyrophosphokinase",
+     "refseq_definition": "ribose-phosphate pyrophosphokinase",
+     "neighbourhood": [
+      "TX73_021485 (+) copper-containing nitrite reductase",
+      "TX73_021490 (+) SUMF1/EgtB/PvdO family nonheme iron enzyme",
+      "TX73_021495 (+) thymidine phosphorylase family protein",
+      "TX73_021500 (+) ribose-phosphate pyrophosphokinase",
+      "TX73_021505 (+) MBL fold metallo-hydrolase",
+      "TX73_021510 (+) hypothetical protein",
+      "TX73_021515 (-) 4-oxalocrotonate tautomerase"
+     ]
+    },
+    {
+     "model_gene": "WP_011159896_1",
+     "locus": "TX73_022610",
+     "fitness_browser_desc": "ribose-phosphate pyrophosphokinase",
+     "refseq_definition": "ribose-phosphate pyrophosphokinase",
+     "neighbourhood": [
+      "TX73_022595 (+) SAM-dependent methyltransferase",
+      "TX73_022600 (+) peptidoglycan editing factor PgeF",
+      "TX73_022605 (+) hypothetical protein",
+      "TX73_022610 (+) ribose-phosphate pyrophosphokinase",
+      "TX73_022615 (-) 6,7-dimethyl-8-ribityllumazine synthase",
+      "TX73_022620 (+) YbjN domain-containing protein",
+      "TX73_022625 (+) GNAT family N-acetyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PSCVT",
+   "name": "3-phosphoshikimate 1-carboxyvinyltransferase",
+   "equation_ids": "pep_c + skm5p_c <=> 3psme_c + pi_c",
+   "equation_names": "Phosphoenolpyruvate + Shikimate 5-phosphate <=> 5-O-(1-Carboxyvinyl)-3-phosphoshikimate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155632_1 or WP_011159587_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155632_1",
+     "locus": "TX73_000320",
+     "fitness_browser_desc": "3-phosphoshikimate 1-carboxyvinyltransferase",
+     "refseq_definition": "3-phosphoshikimate 1-carboxyvinyltransferase",
+     "neighbourhood": [
+      "TX73_000305 (-) CaiB/BaiF CoA-transferase family protein",
+      "TX73_000310 (-) tRNA-Ala",
+      "TX73_000315 (-) TIGR02300 family protein",
+      "TX73_000320 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "TX73_000325 (-) lysophospholipid acyltransferase family protein",
+      "TX73_000330 (+) (d)CMP kinase",
+      "TX73_000335 (+) 30S ribosomal protein S1"
+     ]
+    },
+    {
+     "model_gene": "WP_011159587_1",
+     "locus": "TX73_020995",
+     "fitness_browser_desc": "3-dehydroquinate synthase",
+     "refseq_definition": "3-dehydroquinate synthase",
+     "neighbourhood": [
+      "TX73_020980 (+) CDP-glucose 4,6-dehydratase",
+      "TX73_020985 (+) aldolase/citrate lyase family protein",
+      "TX73_020990 (+) SDR family NAD(P)-dependent oxidoreductase",
+      "TX73_020995 (+) 3-dehydroquinate synthase",
+      "TX73_021000 (+) NAD-dependent epimerase/dehydratase family protein",
+      "TX73_021005 (+) thiamine pyrophosphate-binding protein",
+      "TX73_021010 (+) GtrA family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RBFK",
+   "name": "Riboflavin kinase",
+   "equation_ids": "atp_c + ribflv_c --> adp_c + fmn_c + h_c",
+   "equation_names": "ATP + Riboflavin --> ADP + FMN + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159871_1 or WP_011159913_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011159871_1",
+     "locus": "TX73_022480",
+     "fitness_browser_desc": "HAD family phosphatase",
+     "refseq_definition": "HAD family hydrolase",
+     "neighbourhood": [
+      "TX73_022465 (-) DNA helicase",
+      "TX73_022470 (+) aldo/keto reductase",
+      "TX73_022475 (+) hypothetical protein",
+      "TX73_022480 (+) HAD family phosphatase",
+      "TX73_022485 (-) TetR/AcrR family transcriptional regulator",
+      "TX73_022490 (+) crotonase/enoyl-CoA hydratase family protein",
+      "TX73_022495 (-) glutathione S-transferase family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011159913_1",
+     "locus": "TX73_022700",
+     "fitness_browser_desc": "bifunctional riboflavin kinase/FAD synthetase",
+     "refseq_definition": "bifunctional riboflavin kinase/FAD synthetase",
+     "neighbourhood": [
+      "TX73_022685 (-) signal peptidase II",
+      "TX73_022690 (-) isoleucine--tRNA ligase",
+      "TX73_022695 (-) sugar O-acetyltransferase",
+      "TX73_022700 (-) bifunctional riboflavin kinase/FAD synthetase",
+      "TX73_022705 (-) ribonuclease T2",
+      "TX73_022710 (-) hypothetical protein",
+      "TX73_022715 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RBFSa",
+   "name": "Riboflavin synthase",
+   "equation_ids": "4r5au_c + db4p_c --> dmlz_c + 2.0 h2o_c + pi_c",
+   "equation_names": "4-(1-D-Ribitylamino)-5-aminouracil + 3,4-dihydroxy-2-butanone 4-phosphate --> 6,7-Dimethyl-8-(1-D-ribityl)lumazine + 2.0 H2O + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_042441302_1 or (WP_011158278_1 and WP_011158279_1)",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011158278_1",
+     "locus": "TX73_014130",
+     "fitness_browser_desc": "riboflavin synthase",
+     "refseq_definition": "riboflavin synthase",
+     "neighbourhood": [
+      "TX73_014115 (+) serine hydroxymethyltransferase",
+      "TX73_014120 (+) transcriptional regulator NrdR",
+      "TX73_014125 (+) bifunctional diaminohydroxyphosphoribosylaminopyrimidine deaminase/5-amino-6-(5-phosphoribosylamino)uracil reductase RibD",
+      "TX73_014130 (+) riboflavin synthase",
+      "TX73_014135 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "TX73_014140 (+) transcription antitermination factor NusB",
+      "TX73_014145 (+) thiamine-phosphate kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_011158279_1",
+     "locus": "TX73_014135",
+     "fitness_browser_desc": "6,7-dimethyl-8-ribityllumazine synthase",
+     "refseq_definition": "6,7-dimethyl-8-ribityllumazine synthase",
+     "neighbourhood": [
+      "TX73_014120 (+) transcriptional regulator NrdR",
+      "TX73_014125 (+) bifunctional diaminohydroxyphosphoribosylaminopyrimidine deaminase/5-amino-6-(5-phosphoribosylamino)uracil reductase RibD",
+      "TX73_014130 (+) riboflavin synthase",
+      "TX73_014135 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "TX73_014140 (+) transcription antitermination factor NusB",
+      "TX73_014145 (+) thiamine-phosphate kinase",
+      "TX73_014150 (+) sodium-translocating pyrophosphatase"
+     ]
+    },
+    {
+     "model_gene": "WP_042441302_1",
+     "locus": "TX73_022615",
+     "fitness_browser_desc": "6,7-dimethyl-8-ribityllumazine synthase",
+     "refseq_definition": "6,7-dimethyl-8-ribityllumazine synthase",
+     "neighbourhood": [
+      "TX73_022600 (+) peptidoglycan editing factor PgeF",
+      "TX73_022605 (+) hypothetical protein",
+      "TX73_022610 (+) ribose-phosphate pyrophosphokinase",
+      "TX73_022615 (-) 6,7-dimethyl-8-ribityllumazine synthase",
+      "TX73_022620 (+) YbjN domain-containing protein",
+      "TX73_022625 (+) GNAT family N-acetyltransferase",
+      "TX73_022630 (+) pyrroline-5-carboxylate reductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR2",
+   "name": "Ribonucleoside-diphosphate reductase (GDP)",
+   "equation_ids": "gdp_c + trdrd_c --> dgdp_c + h2o_c + trdox_c",
+   "equation_names": "GDP + Reduced thioredoxin --> DGDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155835_1 or WP_011155941_1 or WP_011158526_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155835_1",
+     "locus": "TX73_001395",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "TX73_001380 (-) alginate O-acetyltransferase",
+      "TX73_001385 (-) MBOAT family protein",
+      "TX73_001390 (-) tRNA-Gly",
+      "TX73_001395 (+) thioredoxin",
+      "TX73_001400 (+) LON peptidase substrate-binding domain-containing protein",
+      "TX73_001405 (+) Trm112 family protein",
+      "TX73_001410 (-) ubiquinone biosynthesis hydroxylase"
+     ]
+    },
+    {
+     "model_gene": "WP_011155941_1",
+     "locus": "TX73_001940",
+     "fitness_browser_desc": "thioredoxin TrxC",
+     "refseq_definition": "thioredoxin TrxC",
+     "neighbourhood": [
+      "TX73_001925 (-) EAL domain-containing protein",
+      "TX73_001930 (-) methionine gamma-lyase",
+      "TX73_001935 (+) Lrp/AsnC family transcriptional regulator",
+      "TX73_001940 (-) thioredoxin TrxC",
+      "TX73_001945 (-) zinc-dependent alcohol dehydrogenase family protein",
+      "TX73_001950 (-) ChaB family protein",
+      "TX73_001955 (+) protein-L-isoaspartate(D-aspartate) O-methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011158526_1",
+     "locus": "TX73_015440",
+     "fitness_browser_desc": "vitamin B12-dependent ribonucleotide reductase",
+     "refseq_definition": "vitamin B12-dependent ribonucleotide reductase",
+     "neighbourhood": [
+      "TX73_015425 (-) amidase",
+      "TX73_015430 (-) hydroxyacid dehydrogenase",
+      "TX73_015435 (-) DMT family transporter",
+      "TX73_015440 (+) vitamin B12-dependent ribonucleotide reductase",
+      "TX73_015445 (+) hypothetical protein",
+      "TX73_015450 (+) DUF2442 domain-containing protein",
+      "TX73_015455 (-) IS3-like element ISRpa2 family transposase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR3",
+   "name": "Ribonucleoside-diphosphate reductase (CDP)",
+   "equation_ids": "cdp_c + trdrd_c --> dcdp_c + h2o_c + trdox_c",
+   "equation_names": "CDP + Reduced thioredoxin --> DCDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155835_1 or WP_011155941_1 or WP_011158526_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155835_1",
+     "locus": "TX73_001395",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "TX73_001380 (-) alginate O-acetyltransferase",
+      "TX73_001385 (-) MBOAT family protein",
+      "TX73_001390 (-) tRNA-Gly",
+      "TX73_001395 (+) thioredoxin",
+      "TX73_001400 (+) LON peptidase substrate-binding domain-containing protein",
+      "TX73_001405 (+) Trm112 family protein",
+      "TX73_001410 (-) ubiquinone biosynthesis hydroxylase"
+     ]
+    },
+    {
+     "model_gene": "WP_011155941_1",
+     "locus": "TX73_001940",
+     "fitness_browser_desc": "thioredoxin TrxC",
+     "refseq_definition": "thioredoxin TrxC",
+     "neighbourhood": [
+      "TX73_001925 (-) EAL domain-containing protein",
+      "TX73_001930 (-) methionine gamma-lyase",
+      "TX73_001935 (+) Lrp/AsnC family transcriptional regulator",
+      "TX73_001940 (-) thioredoxin TrxC",
+      "TX73_001945 (-) zinc-dependent alcohol dehydrogenase family protein",
+      "TX73_001950 (-) ChaB family protein",
+      "TX73_001955 (+) protein-L-isoaspartate(D-aspartate) O-methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011158526_1",
+     "locus": "TX73_015440",
+     "fitness_browser_desc": "vitamin B12-dependent ribonucleotide reductase",
+     "refseq_definition": "vitamin B12-dependent ribonucleotide reductase",
+     "neighbourhood": [
+      "TX73_015425 (-) amidase",
+      "TX73_015430 (-) hydroxyacid dehydrogenase",
+      "TX73_015435 (-) DMT family transporter",
+      "TX73_015440 (+) vitamin B12-dependent ribonucleotide reductase",
+      "TX73_015445 (+) hypothetical protein",
+      "TX73_015450 (+) DUF2442 domain-containing protein",
+      "TX73_015455 (-) IS3-like element ISRpa2 family transposase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SDPDS",
+   "name": "Succinyl-diaminopimelate desuccinylase",
+   "equation_ids": "h2o_c + sl26da_c --> 26dap_LL_c + succ_c",
+   "equation_names": "H2O + N-Succinyl-LL-2,6-diaminoheptanedioate --> LL-2,6-Diaminoheptanedioate + Succinate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156192_1 or WP_011156781_1 or WP_011158579_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156192_1",
+     "locus": "TX73_003230",
+     "fitness_browser_desc": "succinyl-diaminopimelate desuccinylase",
+     "refseq_definition": "succinyl-diaminopimelate desuccinylase",
+     "neighbourhood": [
+      "TX73_003215 (+) peptide deformylase",
+      "TX73_003220 (+) methionyl-tRNA formyltransferase",
+      "TX73_003225 (+) tRNA pseudouridine(38-40) synthase TruA",
+      "TX73_003230 (-) succinyl-diaminopimelate desuccinylase",
+      "TX73_003235 (-) DUF805 domain-containing protein",
+      "TX73_003240 (-) 2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase",
+      "TX73_003245 (-) pyrimidine 5'-nucleotidase"
+     ]
+    },
+    {
+     "model_gene": "WP_011156781_1",
+     "locus": "TX73_006250",
+     "fitness_browser_desc": "M20/M25/M40 family metallo-hydrolase",
+     "refseq_definition": "M20/M25/M40 family metallo-hydrolase",
+     "neighbourhood": [
+      "TX73_006235 (-) ABC transporter ATP-binding protein",
+      "TX73_006240 (-) ABC transporter permease",
+      "TX73_006245 (-) ABC transporter permease",
+      "TX73_006250 (-) M20/M25/M40 family metallo-hydrolase",
+      "TX73_006255 (+) ABC transporter substrate-binding protein",
+      "TX73_006260 (-) hypothetical protein",
+      "TX73_006265 (+) CBS domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011158579_1",
+     "locus": "TX73_015700",
+     "fitness_browser_desc": "ArgE/DapE family deacylase",
+     "refseq_definition": "ArgE/DapE family deacylase",
+     "neighbourhood": [
+      "TX73_015685 (+) hypothetical protein",
+      "TX73_015690 (-) GNAT family N-acetyltransferase",
+      "TX73_015695 (-) PaaI family thioesterase",
+      "TX73_015700 (-) ArgE/DapE family deacylase",
+      "TX73_015705 (+) hypothetical protein",
+      "TX73_015710 (-) hypothetical protein",
+      "TX73_015715 (-) CreA family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SHK3Dr",
+   "name": "Shikimate dehydrogenase",
+   "equation_ids": "3dhsk_c + h_c + nadph_c <=> nadp_c + skm_c",
+   "equation_names": "3-Dehydroshikimate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + Shikimate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159587_1 or WP_011159859_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011159587_1",
+     "locus": "TX73_020995",
+     "fitness_browser_desc": "3-dehydroquinate synthase",
+     "refseq_definition": "3-dehydroquinate synthase",
+     "neighbourhood": [
+      "TX73_020980 (+) CDP-glucose 4,6-dehydratase",
+      "TX73_020985 (+) aldolase/citrate lyase family protein",
+      "TX73_020990 (+) SDR family NAD(P)-dependent oxidoreductase",
+      "TX73_020995 (+) 3-dehydroquinate synthase",
+      "TX73_021000 (+) NAD-dependent epimerase/dehydratase family protein",
+      "TX73_021005 (+) thiamine pyrophosphate-binding protein",
+      "TX73_021010 (+) GtrA family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011159859_1",
+     "locus": "TX73_022410",
+     "fitness_browser_desc": "shikimate dehydrogenase",
+     "refseq_definition": "shikimate dehydrogenase",
+     "neighbourhood": [
+      "TX73_022395 (+) response regulator",
+      "TX73_022400 (+) hypothetical protein",
+      "TX73_022405 (+) hypothetical protein",
+      "TX73_022410 (-) shikimate dehydrogenase",
+      "TX73_022415 (-) SulP family inorganic anion transporter",
+      "TX73_022420 (-) helix-turn-helix transcriptional regulator",
+      "TX73_022425 (-) elongation factor G"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SHKK",
+   "name": "Shikimate kinase",
+   "equation_ids": "atp_c + skm_c --> adp_c + h_c + skm5p_c",
+   "equation_names": "ATP + Shikimate --> ADP + H+ + Shikimate 5-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156072_1 or WP_011159587_1 or WP_011160319_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156072_1",
+     "locus": "TX73_002615",
+     "fitness_browser_desc": "shikimate kinase",
+     "refseq_definition": "shikimate kinase",
+     "neighbourhood": [
+      "TX73_002600 (+) BolA family transcriptional regulator",
+      "TX73_002605 (-) hemolysin family protein",
+      "TX73_002610 (-) 3-dehydroquinate synthase",
+      "TX73_002615 (-) shikimate kinase",
+      "TX73_002620 (+) histidine kinase",
+      "TX73_002625 (+) site-specific tyrosine recombinase XerD",
+      "TX73_002630 (-) cytochrome b"
+     ]
+    },
+    {
+     "model_gene": "WP_011159587_1",
+     "locus": "TX73_020995",
+     "fitness_browser_desc": "3-dehydroquinate synthase",
+     "refseq_definition": "3-dehydroquinate synthase",
+     "neighbourhood": [
+      "TX73_020980 (+) CDP-glucose 4,6-dehydratase",
+      "TX73_020985 (+) aldolase/citrate lyase family protein",
+      "TX73_020990 (+) SDR family NAD(P)-dependent oxidoreductase",
+      "TX73_020995 (+) 3-dehydroquinate synthase",
+      "TX73_021000 (+) NAD-dependent epimerase/dehydratase family protein",
+      "TX73_021005 (+) thiamine pyrophosphate-binding protein",
+      "TX73_021010 (+) GtrA family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011160319_1",
+     "locus": "TX73_024880",
+     "fitness_browser_desc": "helix-turn-helix transcriptional regulator",
+     "refseq_definition": "helix-turn-helix transcriptional regulator",
+     "neighbourhood": [
+      "TX73_024865 (-) OmpA family protein",
+      "TX73_024870 (+) polysaccharide deacetylase family protein",
+      "TX73_024875 (+) SDR family oxidoreductase",
+      "TX73_024880 (+) helix-turn-helix transcriptional regulator",
+      "TX73_024885 (-) sn-glycerol-3-phosphate ABC transporter substrate-binding protein UgpB",
+      "TX73_024890 (+) HAMP domain-containing sensor histidine kinase",
+      "TX73_024895 (+) DUF3369 domain-containing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SUCDi",
+   "name": "Succinate dehydrogenase (irreversible)",
+   "equation_ids": "q8_c + succ_c --> fum_c + q8h2_c",
+   "equation_names": "Ubiquinone-8 + Succinate --> Fumarate + Ubiquinol-8",
+   "annotation": {
+    "rhea": [
+     "29187",
+     "29188",
+     "29189",
+     "29190"
+    ],
+    "metanetx.reaction": "MNXR99641"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 3,
+   "genes": []
+  },
+  {
+   "reaction": "THZPSN",
+   "name": "Thiazole phosphate synthesis",
+   "equation_ids": "atp_c + cys__L_c + dxyl5p_c + tyr__L_c --> 4hba_c + 4mpetz_c + ala__L_c + amp_c + co2_c + h2o_c + h_c + ppi_c",
+   "equation_names": "ATP + L-Cysteine + 1-deoxy-D-xylulose 5-phosphate + L-Tyrosine --> 4-Hydroxy-benzyl alcohol + 4-Methyl-5-(2-phosphoethyl)-thiazole + L-Alanine + AMP + CO2 + H2O + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159115_1 or WP_042441583_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011159115_1",
+     "locus": "TX73_018530",
+     "fitness_browser_desc": "thiazole synthase",
+     "refseq_definition": "thiazole synthase",
+     "neighbourhood": [
+      "TX73_018515 (-) hypothetical protein",
+      "TX73_018520 (+) FAD-dependent oxidoreductase",
+      "TX73_018525 (+) sulfur carrier protein ThiS",
+      "TX73_018530 (+) thiazole synthase",
+      "TX73_018535 (+) thiamine phosphate synthase",
+      "TX73_018540 (+) phosphomethylpyrimidine synthase ThiC",
+      "TX73_018545 (+) DUF4393 domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_042441583_1",
+     "locus": "TX73_014145",
+     "fitness_browser_desc": "thiamine-phosphate kinase",
+     "refseq_definition": "thiamine-phosphate kinase",
+     "neighbourhood": [
+      "TX73_014130 (+) riboflavin synthase",
+      "TX73_014135 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "TX73_014140 (+) transcription antitermination factor NusB",
+      "TX73_014145 (+) thiamine-phosphate kinase",
+      "TX73_014150 (+) sodium-translocating pyrophosphatase",
+      "TX73_014155 (+) DUF2171 domain-containing protein",
+      "TX73_014160 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMDS",
+   "name": "Thymidylate synthase",
+   "equation_ids": "dump_c + mlthf_c --> dhf_c + dtmp_c",
+   "equation_names": "DUMP + 5,10-Methylenetetrahydrofolate --> 7,8-Dihydrofolate + DTMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159033_1 or WP_011159937_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011159033_1",
+     "locus": "TX73_018090",
+     "fitness_browser_desc": "thymidylate synthase",
+     "refseq_definition": "thymidylate synthase",
+     "neighbourhood": [
+      "TX73_018075 (-) protease modulator HflC",
+      "TX73_018080 (-) FtsH protease activity modulator HflK",
+      "TX73_018085 (-) dihydrofolate reductase",
+      "TX73_018090 (-) thymidylate synthase",
+      "TX73_018095 (-) tripartite tricarboxylate transporter substrate-binding protein",
+      "TX73_018100 (-) tripartite tricarboxylate transporter permease",
+      "TX73_018105 (-) tripartite tricarboxylate transporter TctB family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011159937_1",
+     "locus": "TX73_022825",
+     "fitness_browser_desc": "alkene reductase",
+     "refseq_definition": "alkene reductase",
+     "neighbourhood": [
+      "TX73_022810 (+) branched-chain amino acid ABC transporter permease",
+      "TX73_022815 (+) branched-chain amino acid ABC transporter permease",
+      "TX73_022820 (+) sodium:proton exchanger",
+      "TX73_022825 (+) alkene reductase",
+      "TX73_022830 (-) ABC transporter substrate-binding protein",
+      "TX73_022835 (-) DUF2160 domain-containing protein",
+      "TX73_022840 (-) carbohydrate ABC transporter permease"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TPI",
+   "name": "Triose-phosphate isomerase",
+   "equation_ids": "dhap_c <=> g3p_c",
+   "equation_names": "Dihydroxyacetone phosphate <=> Glyceraldehyde 3-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011156478_1 or WP_042441126_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011156478_1",
+     "locus": "TX73_004860",
+     "fitness_browser_desc": "phosphoglycerate kinase",
+     "refseq_definition": "phosphoglycerate kinase",
+     "neighbourhood": [
+      "TX73_004845 (-) fructose-bisphosphate aldolase class I",
+      "TX73_004850 (-) type II toxin-antitoxin system PemK/MazF family toxin",
+      "TX73_004855 (-) antitoxin MazE family protein",
+      "TX73_004860 (-) phosphoglycerate kinase",
+      "TX73_004865 (-) type I glyceraldehyde-3-phosphate dehydrogenase",
+      "TX73_004870 (-) transketolase",
+      "TX73_004875 (+) DUF4164 domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_042441126_1",
+     "locus": "TX73_014970",
+     "fitness_browser_desc": "triose-phosphate isomerase",
+     "refseq_definition": "triose-phosphate isomerase",
+     "neighbourhood": [
+      "TX73_014955 (+) CHAT domain-containing protein",
+      "TX73_014960 (-) CTP synthase",
+      "TX73_014965 (-) preprotein translocase subunit SecG",
+      "TX73_014970 (-) triose-phosphate isomerase",
+      "TX73_014975 (+) SurA N-terminal domain-containing protein",
+      "TX73_014980 (+) anthranilate phosphoribosyltransferase",
+      "TX73_014985 (+) indole-3-glycerol phosphate synthase TrpC"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TRDR",
+   "name": "Thioredoxin reductase (NADPH)",
+   "equation_ids": "h_c + nadph_c + trdox_c --> nadp_c + trdrd_c",
+   "equation_names": "H+ + Nicotinamide adenine dinucleotide phosphate - reduced + Oxidized thioredoxin --> Nicotinamide adenine dinucleotide phosphate + Reduced thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159490_1 or WP_011160068_1 or (WP_011155644_1 and WP_011159610_1) or (WP_011155835_1 and WP_011159610_1) or (WP_011155941_1 and WP_011159610_1)",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155644_1",
+     "locus": "TX73_000380",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "TX73_000365 (+) tryptophan synthase subunit alpha",
+      "TX73_000370 (+) acetyl-CoA carboxylase, carboxyltransferase subunit beta",
+      "TX73_000375 (+) bifunctional folylpolyglutamate synthase/dihydrofolate synthase",
+      "TX73_000380 (-) thioredoxin",
+      "TX73_000385 (-) double-strand break repair helicase AddA",
+      "TX73_000390 (-) double-strand break repair protein AddB",
+      "TX73_000395 (-) nucleotidyltransferase family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011155835_1",
+     "locus": "TX73_001395",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "TX73_001380 (-) alginate O-acetyltransferase",
+      "TX73_001385 (-) MBOAT family protein",
+      "TX73_001390 (-) tRNA-Gly",
+      "TX73_001395 (+) thioredoxin",
+      "TX73_001400 (+) LON peptidase substrate-binding domain-containing protein",
+      "TX73_001405 (+) Trm112 family protein",
+      "TX73_001410 (-) ubiquinone biosynthesis hydroxylase"
+     ]
+    },
+    {
+     "model_gene": "WP_011155941_1",
+     "locus": "TX73_001940",
+     "fitness_browser_desc": "thioredoxin TrxC",
+     "refseq_definition": "thioredoxin TrxC",
+     "neighbourhood": [
+      "TX73_001925 (-) EAL domain-containing protein",
+      "TX73_001930 (-) methionine gamma-lyase",
+      "TX73_001935 (+) Lrp/AsnC family transcriptional regulator",
+      "TX73_001940 (-) thioredoxin TrxC",
+      "TX73_001945 (-) zinc-dependent alcohol dehydrogenase family protein",
+      "TX73_001950 (-) ChaB family protein",
+      "TX73_001955 (+) protein-L-isoaspartate(D-aspartate) O-methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011159490_1",
+     "locus": "TX73_020485",
+     "fitness_browser_desc": "NAD(P)/FAD-dependent oxidoreductase",
+     "refseq_definition": "NAD(P)/FAD-dependent oxidoreductase",
+     "neighbourhood": [
+      "TX73_020470 (+) GDP-mannose 4,6-dehydratase",
+      "TX73_020475 (+) GDP-mannose 4,6-dehydratase",
+      "TX73_020480 (-) chloride channel protein",
+      "TX73_020485 (-) NAD(P)/FAD-dependent oxidoreductase",
+      "TX73_020490 (+) thioesterase family protein",
+      "TX73_020495 (-) 2Fe-2S iron-sulfur cluster-binding protein",
+      "TX73_020500 (-) Hpt domain-containing protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011159610_1",
+     "locus": "TX73_021110",
+     "fitness_browser_desc": "thioredoxin-disulfide reductase",
+     "refseq_definition": "thioredoxin-disulfide reductase",
+     "neighbourhood": [
+      "TX73_021095 (+) transcription elongation factor GreA",
+      "TX73_021100 (+) DoxX family protein",
+      "TX73_021105 (-) Lrp/AsnC family transcriptional regulator",
+      "TX73_021110 (+) thioredoxin-disulfide reductase",
+      "TX73_021115 (+) LysR family transcriptional regulator",
+      "TX73_021120 (-) ParA family protein",
+      "TX73_021125 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011160068_1",
+     "locus": "TX73_023565",
+     "fitness_browser_desc": "FAD-dependent oxidoreductase",
+     "refseq_definition": "FAD-dependent oxidoreductase",
+     "neighbourhood": [
+      "TX73_023550 (-) UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+      "TX73_023555 (-) DUF3551 domain-containing protein",
+      "TX73_023560 (+) hypothetical protein",
+      "TX73_023565 (-) FAD-dependent oxidoreductase",
+      "TX73_023570 (-) hypothetical protein",
+      "TX73_023575 (+) nuclear transport factor 2 family protein",
+      "TX73_023580 (+) tRNA-Thr"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TYRTA",
+   "name": "Tyrosine transaminase",
+   "equation_ids": "akg_c + tyr__L_c <=> 34hpp_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Tyrosine <=> 3-(4-Hydroxyphenyl)pyruvate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155676_1 or WP_011155879_1 or WP_011157568_1 or WP_011159973_1 or WP_042441707_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155676_1",
+     "locus": "TX73_000540",
+     "fitness_browser_desc": "PLP-dependent aminotransferase family protein",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "TX73_000525 (-) ABC transporter substrate-binding protein",
+      "TX73_000530 (-) GTP-binding protein",
+      "TX73_000535 (-) amidohydrolase",
+      "TX73_000540 (+) PLP-dependent aminotransferase family protein",
+      "TX73_000545 (-) ABC transporter substrate-binding protein",
+      "TX73_000550 (-) zinc-binding dehydrogenase",
+      "TX73_000555 (-) thiamine pyrophosphate-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011155879_1",
+     "locus": "TX73_001615",
+     "fitness_browser_desc": "imidazole glycerol phosphate synthase subunit HisH",
+     "refseq_definition": "imidazole glycerol phosphate synthase subunit HisH",
+     "neighbourhood": [
+      "TX73_001600 (-) ATP-dependent protease subunit HslV",
+      "TX73_001605 (+) imidazoleglycerol-phosphate dehydratase HisB",
+      "TX73_001610 (+) DUF2628 domain-containing protein",
+      "TX73_001615 (+) imidazole glycerol phosphate synthase subunit HisH",
+      "TX73_001620 (+) 1-(5-phosphoribosyl)-5-[(5- phosphoribosylamino)methylideneamino]imidazole-4- carboxamide isomerase",
+      "TX73_001625 (+) imidazole glycerol phosphate synthase subunit HisF",
+      "TX73_001630 (+) phosphoribosyl-ATP diphosphatase"
+     ]
+    },
+    {
+     "model_gene": "WP_011157568_1",
+     "locus": "TX73_010375",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "TX73_010360 (+) flagellar motor protein MotB",
+      "TX73_010365 (+) potassium transporter Kup",
+      "TX73_010370 (+) rhodanese-like domain-containing protein",
+      "TX73_010375 (+) aminotransferase",
+      "TX73_010380 (+) polyamine ABC transporter substrate-binding protein",
+      "TX73_010385 (+) hypothetical protein",
+      "TX73_010390 (-) radical SAM protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011159973_1",
+     "locus": "TX73_023035",
+     "fitness_browser_desc": "histidinol-phosphate transaminase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "TX73_023020 (-) methionine biosynthesis protein MetW",
+      "TX73_023025 (-) homoserine O-acetyltransferase",
+      "TX73_023030 (+) chorismate mutase",
+      "TX73_023035 (+) histidinol-phosphate transaminase",
+      "TX73_023040 (+) prephenate/arogenate dehydrogenase family protein",
+      "TX73_023045 (-) magnesium transporter CorA family protein",
+      "TX73_023050 (+) L,D-transpeptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_042441707_1",
+     "locus": "TX73_022440",
+     "fitness_browser_desc": "pyridoxal phosphate-dependent aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "TX73_022425 (-) elongation factor G",
+      "TX73_022430 (-) DUF992 domain-containing protein",
+      "TX73_022435 (-) DUF992 domain-containing protein",
+      "TX73_022440 (-) pyridoxal phosphate-dependent aminotransferase",
+      "TX73_022445 (+) glutathione S-transferase family protein",
+      "TX73_022450 (+) HtrA2 peptidase",
+      "TX73_022455 (+) PQQ-dependent sugar dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011155634_1 or WP_011157004_1 or WP_011157005_1 or WP_011158469_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011155634_1",
+     "locus": "TX73_000330",
+     "fitness_browser_desc": "(d)CMP kinase",
+     "refseq_definition": "(d)CMP kinase",
+     "neighbourhood": [
+      "TX73_000315 (-) TIGR02300 family protein",
+      "TX73_000320 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "TX73_000325 (-) lysophospholipid acyltransferase family protein",
+      "TX73_000330 (+) (d)CMP kinase",
+      "TX73_000335 (+) 30S ribosomal protein S1",
+      "TX73_000340 (+) signal peptide peptidase SppA",
+      "TX73_000345 (+) integration host factor subunit beta"
+     ]
+    },
+    {
+     "model_gene": "WP_011157004_1",
+     "locus": "TX73_007400",
+     "fitness_browser_desc": "molybdenum storage protein subunit alpha",
+     "refseq_definition": "amino acid kinase family protein",
+     "neighbourhood": [
+      "TX73_007385 (-) nitrogenase iron protein",
+      "TX73_007390 (-) sigma-54-dependent Fis family transcriptional regulator",
+      "TX73_007395 (-) hypothetical protein",
+      "TX73_007400 (-) molybdenum storage protein subunit alpha",
+      "TX73_007405 (-) uridine kinase",
+      "TX73_007410 (-) GntR family transcriptional regulator",
+      "TX73_007415 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011157005_1",
+     "locus": "TX73_007405",
+     "fitness_browser_desc": "uridine kinase",
+     "refseq_definition": "amino acid kinase family protein",
+     "neighbourhood": [
+      "TX73_007390 (-) sigma-54-dependent Fis family transcriptional regulator",
+      "TX73_007395 (-) hypothetical protein",
+      "TX73_007400 (-) molybdenum storage protein subunit alpha",
+      "TX73_007405 (-) uridine kinase",
+      "TX73_007410 (-) GntR family transcriptional regulator",
+      "TX73_007415 (+) hypothetical protein",
+      "TX73_007420 (+) ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011158469_1",
+     "locus": "TX73_015130",
+     "fitness_browser_desc": "UMP kinase",
+     "refseq_definition": "UMP kinase",
+     "neighbourhood": [
+      "TX73_015115 (-) phosphatidate cytidylyltransferase",
+      "TX73_015120 (-) isoprenyl transferase",
+      "TX73_015125 (-) ribosome recycling factor",
+      "TX73_015130 (-) UMP kinase",
+      "TX73_015135 (-) translation elongation factor Ts",
+      "TX73_015140 (-) 30S ribosomal protein S2",
+      "TX73_015145 (-) caspase family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "VALTA",
+   "name": "Valine transaminase",
+   "equation_ids": "akg_c + val__L_c <=> 3mob_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Valine <=> 3-Methyl-2-oxobutanoate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011159904_1 or WP_011160125_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": [
+    {
+     "model_gene": "WP_011159904_1",
+     "locus": "TX73_022650",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "TX73_022635 (-) ATP-binding protein",
+      "TX73_022640 (-) response regulator transcription factor",
+      "TX73_022645 (-) MarR family transcriptional regulator",
+      "TX73_022650 (+) branched-chain amino acid aminotransferase",
+      "TX73_022655 (-) DNA mismatch repair endonuclease MutL",
+      "TX73_022660 (-) alternative ribosome rescue aminoacyl-tRNA hydrolase ArfB",
+      "TX73_022665 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011160125_1",
+     "locus": "TX73_023855",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "TX73_023840 (-) homoserine O-succinyltransferase",
+      "TX73_023845 (-) O-acetylhomoserine aminocarboxypropyltransferase/cysteine synthase",
+      "TX73_023850 (+) long-chain-acyl-CoA synthetase",
+      "TX73_023855 (+) branched-chain amino acid aminotransferase",
+      "TX73_023860 (-) acyl-CoA acyltransferase",
+      "TX73_023865 (+) acyl carrier protein",
+      "TX73_023870 (+) fatty acid--CoA ligase family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ZNabc",
+   "name": "Zinc transport via ABC system",
+   "equation_ids": "atp_c + h2o_c + zn2_e --> adp_c + h_c + pi_c + zn2_c",
+   "equation_names": "ATP + H2O + Zinc --> ADP + H+ + Phosphate + Zinc",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 3,
+   "genes": []
+  }
+ ]
+}

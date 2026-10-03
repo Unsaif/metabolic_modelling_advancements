@@ -1,0 +1,22 @@
+{
+ "org": "Cola",
+ "role": "evaluation_panel_A",
+ "draft": "models/embl_pinned/Cola.xml.gz",
+ "draft_sha256": "482301c55627b4186e9c305074ad03622b7abd9f7abb4af69b90c77b2ae6ee7f",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "DinoMM_noCarbon_HighNutrient",
+  "carbon_exchange": "EX_glc__D_e",
+  "condition": "D-Glucose",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "not_needed",
+ "added_reactions": [],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.11505375614596056,
+ "growth_after": 0.11505375614596056,
+ "base_sha256": "2940de8c6e0497e446bf1d220ad34ee2351831e0de04b7ab466c8160b76a7af4",
+ "created": "2026-10-03T09:45:04Z"
+}

@@ -1,0 +1,101 @@
+{
+ "note": "Panel A organisms of transfer study v1, configured after the method freeze by scripts/prepare_panel_inputs.py",
+ "organisms": {
+  "Cola": {
+   "role": "evaluation_panel_A",
+   "fb_dir": "data/fitness_browser_panel/Cola",
+   "embl_model": "models/embl_pinned/Cola.xml.gz",
+   "genpept_map": "data/genpept_panel/Cola_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1/media_bigg.tsv",
+   "carbon_table": "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+   "reference": {
+    "medium": "DinoMM_noCarbon_HighNutrient",
+    "carbon_exchange": "EX_glc__D_e",
+    "condition": "D-Glucose",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 14,
+   "n_conditions_from_metadata": 19
+  },
+  "Dino": {
+   "role": "evaluation_panel_A",
+   "fb_dir": "data/fitness_browser_panel/Dino",
+   "embl_model": "models/embl_pinned/Dino.xml.gz",
+   "genpept_map": "data/genpept_panel/Dino_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1/media_bigg.tsv",
+   "carbon_table": "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+   "reference": {
+    "medium": "DinoMM_noCarbon_HighNutrient",
+    "carbon_exchange": "EX_glc__D_e",
+    "condition": "D-Glucose",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 21,
+   "n_conditions_from_metadata": 21
+  },
+  "Dyella79": {
+   "role": "evaluation_panel_A",
+   "fb_dir": "data/fitness_browser_panel/Dyella79",
+   "embl_model": "models/embl_pinned/Dyella79.xml.gz",
+   "genpept_map": "data/genpept_panel/Dyella79_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1/media_bigg.tsv",
+   "carbon_table": "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+   "reference": {
+    "medium": "RCH2_defined_noCarbon",
+    "carbon_exchange": "EX_glc__D_e",
+    "condition": "D-Glucose",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 9,
+   "n_conditions_from_metadata": 10
+  },
+  "MycoTube": {
+   "role": "evaluation_panel_A",
+   "fb_dir": "data/fitness_browser_panel/MycoTube",
+   "embl_model": "models/embl_pinned/MycoTube.xml.gz",
+   "genpept_map": "data/genpept_panel/MycoTube_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1/media_bigg.tsv",
+   "carbon_table": "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+   "reference": {
+    "medium": "Sautons minimal media with no carbon",
+    "carbon_exchange": "EX_glc__D_e",
+    "condition": "D-Glucose",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 19,
+   "n_conditions_from_metadata": 20
+  },
+  "PS": {
+   "role": "evaluation_panel_A",
+   "fb_dir": "data/fitness_browser_panel/PS",
+   "embl_model": "models/embl_pinned/PS.xml.gz",
+   "genpept_map": "data/genpept_panel/PS_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1/media_bigg.tsv",
+   "carbon_table": "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+   "reference": {
+    "medium": "ALP_defined_noC",
+    "carbon_exchange": "EX_lac__L_e",
+    "condition": "Sodium L-Lactate",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 7,
+   "n_conditions_from_metadata": 7
+  },
+  "RPal_CGA009": {
+   "role": "evaluation_panel_A",
+   "fb_dir": "data/fitness_browser_panel/RPal_CGA009",
+   "embl_model": "models/embl_pinned/RPal_CGA009.xml.gz",
+   "genpept_map": "data/genpept_panel/RPal_CGA009_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1/media_bigg.tsv",
+   "carbon_table": "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+   "reference": {
+    "medium": "PM",
+    "carbon_exchange": "EX_succ_e",
+    "condition": "Sodium succinate dibasic hexahydrate",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 7,
+   "n_conditions_from_metadata": 7
+  }
+ }
+}

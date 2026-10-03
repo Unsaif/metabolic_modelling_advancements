@@ -1,0 +1,2238 @@
+{
+ "org": "Cola",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 7,
+ "candidates": [
+  {
+   "reaction": "ANPRT",
+   "name": "Anthranilate phosphoribosyltransferase",
+   "equation_ids": "anth_c + prpp_c --> ppi_c + pran_c",
+   "equation_names": "Anthranilate + 5-Phospho-alpha-D-ribose 1-diphosphate --> Diphosphate + N-(5-Phospho-D-ribosyl)anthranilate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015266306_1 or WP_015266309_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015266306_1",
+     "locus": "Echvi_2504",
+     "fitness_browser_desc": "Anthranilate/para-aminobenzoate synthases component I",
+     "refseq_definition": "anthranilate synthase component I family protein",
+     "neighbourhood": [
+      "Echvi_2501 (-) RNA",
+      "Echvi_2502 (+) hypothetical protein",
+      "Echvi_2503 (-) hypothetical protein",
+      "Echvi_2504 (+) Anthranilate/para-aminobenzoate synthases component I",
+      "Echvi_2505 (+) S23 ribosomal protein.",
+      "Echvi_2506 (+) glutamine amidotransferase of anthranilate synthase or aminodeoxychorismate synthase",
+      "Echvi_2507 (+) anthranilate phosphoribosyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_015266309_1",
+     "locus": "Echvi_2507",
+     "fitness_browser_desc": "anthranilate phosphoribosyltransferase",
+     "refseq_definition": "anthranilate phosphoribosyltransferase",
+     "neighbourhood": [
+      "Echvi_2504 (+) Anthranilate/para-aminobenzoate synthases component I",
+      "Echvi_2505 (+) S23 ribosomal protein.",
+      "Echvi_2506 (+) glutamine amidotransferase of anthranilate synthase or aminodeoxychorismate synthase",
+      "Echvi_2507 (+) anthranilate phosphoribosyltransferase",
+      "Echvi_2508 (+) Indole-3-glycerol phosphate synthase",
+      "Echvi_2509 (+) Phosphoribosylanthranilate isomerase",
+      "Echvi_2510 (+) tryptophan synthase, beta subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASP1DC",
+   "name": "Aspartate 1-decarboxylase",
+   "equation_ids": "asp__L_c + h_c --> ala_B_c + co2_c",
+   "equation_names": "L-Aspartate + H+ --> Beta-Alanine + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264979_1 or WP_015265356_1 or WP_015267584_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264979_1",
+     "locus": "Echvi_1144",
+     "fitness_browser_desc": "Glutamate decarboxylase and related PLP-dependent proteins",
+     "refseq_definition": "aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme",
+     "neighbourhood": [
+      "Echvi_1141 (+) Response regulator of the LytR/AlgR family",
+      "Echvi_1142 (-) Predicted ATPase related to phosphate starvation-inducible protein PhoH",
+      "Echvi_1143 (+) Beta-galactosidase/beta-glucuronidase",
+      "Echvi_1144 (-) Glutamate decarboxylase and related PLP-dependent proteins",
+      "Echvi_1145 (-) Shikimate 5-dehydrogenase",
+      "Echvi_1146 (-) Predicted membrane protein",
+      "Echvi_1147 (-) Uncharacterized conserved protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015265356_1",
+     "locus": "Echvi_1528",
+     "fitness_browser_desc": "L-aspartate-alpha-decarboxylase",
+     "refseq_definition": "aspartate 1-decarboxylase",
+     "neighbourhood": [
+      "Echvi_1525 (-) hypothetical protein",
+      "Echvi_1526 (-) Glycogen synthase",
+      "Echvi_1527 (+) pantoate--beta-alanine ligase",
+      "Echvi_1528 (+) L-aspartate-alpha-decarboxylase",
+      "Echvi_1529 (+) conserved hypothetical protein",
+      "Echvi_1530 (+) Predicted Zn-dependent protease",
+      "Echvi_1531 (-) putative TIM-barrel protein, nifR3 family"
+     ]
+    },
+    {
+     "model_gene": "WP_015267584_1",
+     "locus": "Echvi_3830",
+     "fitness_browser_desc": "Glutamate decarboxylase and related PLP-dependent proteins",
+     "refseq_definition": "pyridoxal phosphate-dependent decarboxylase family protein",
+     "neighbourhood": [
+      "Echvi_3827 (+) Putative regulator of cell autolysis",
+      "Echvi_3828 (+) Response regulator of the LytR/AlgR family",
+      "Echvi_3829 (+) Cytosine/adenosine deaminases",
+      "Echvi_3830 (+) Glutamate decarboxylase and related PLP-dependent proteins",
+      "Echvi_3831 (-) hypothetical protein",
+      "Echvi_3832 (-) hypothetical protein",
+      "Echvi_3833 (+) Isopropylmalate/homocitrate/citramalate synthases"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPK",
+   "name": "Aspartate kinase",
+   "equation_ids": "asp__L_c + atp_c <=> 4pasp_c + adp_c",
+   "equation_names": "L-Aspartate + ATP <=> 4-Phospho-L-aspartate + ADP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015265053_1 or WP_015265814_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015265053_1",
+     "locus": "Echvi_1218",
+     "fitness_browser_desc": "aspartate kinase",
+     "refseq_definition": "aspartate kinase",
+     "neighbourhood": [
+      "Echvi_1215 (+) excinuclease ABC, B subunit",
+      "Echvi_1216 (+) hypothetical protein",
+      "Echvi_1217 (+) Predicted transcriptional regulator containing an HTH domain and an uncharacterized domain shared with the mammalian protein Schlafen",
+      "Echvi_1218 (-) aspartate kinase",
+      "Echvi_1219 (-) 6,7-dimethyl-8-ribityllumazine synthase",
+      "Echvi_1220 (-) Tetratricopeptide repeat.",
+      "Echvi_1221 (-) pyruvate dehydrogenase E1 component, alpha subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_015265814_1",
+     "locus": "Echvi_2000",
+     "fitness_browser_desc": "aspartate kinase",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase I",
+     "neighbourhood": [
+      "Echvi_1997 (+) hypothetical protein",
+      "Echvi_1998 (-) Heat shock protein",
+      "Echvi_1999 (+) hypothetical protein",
+      "Echvi_2000 (+) aspartate kinase",
+      "Echvi_2001 (+) homoserine kinase",
+      "Echvi_2002 (+) threonine synthase",
+      "Echvi_2003 (-) Antirepressor regulating drug resistance, predicted signal transduction N-terminal membrane component"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPTA",
+   "name": "Aspartate transaminase",
+   "equation_ids": "akg_c + asp__L_c <=> glu__L_c + oaa_c",
+   "equation_names": "2-Oxoglutarate + L-Aspartate <=> L-Glutamate + Oxaloacetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015263989_1 or WP_015264518_1 or WP_015265453_1 or WP_015265632_1 or WP_041739222_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015263989_1",
+     "locus": "Echvi_0124",
+     "fitness_browser_desc": "Aspartate/tyrosine/aromatic aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "Echvi_0121 (+) 3-dehydroquinate synthase",
+      "Echvi_0122 (+) 5-enolpyruvylshikimate-3-phosphate synthase",
+      "Echvi_0123 (+) Prephenate dehydratase",
+      "Echvi_0124 (+) Aspartate/tyrosine/aromatic aminotransferase",
+      "Echvi_0125 (+) Prephenate dehydrogenase",
+      "Echvi_0126 (-) ABC-type Fe3+-hydroxamate transport system, periplasmic component",
+      "Echvi_0127 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015264518_1",
+     "locus": "Echvi_0675",
+     "fitness_browser_desc": "Aspartate/tyrosine/aromatic aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "Echvi_0672 (-) lipoate-protein ligase B",
+      "Echvi_0673 (+) Predicted endonuclease distantly related to archaeal Holliday junction resolvase",
+      "Echvi_0674 (-) hypothetical protein",
+      "Echvi_0675 (+) Aspartate/tyrosine/aromatic aminotransferase",
+      "Echvi_0676 (+) Predicted glycosyltransferases",
+      "Echvi_0677 (-) Glycosyltransferases involved in cell wall biogenesis",
+      "Echvi_0678 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015265453_1",
+     "locus": "Echvi_1625",
+     "fitness_browser_desc": "Transcriptional regulators containing a DNA-binding HTH domain and an aminotransferase domain (MocR family) and their eukaryotic orthologs",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "Echvi_1622 (+) SusD family.",
+      "Echvi_1623 (+) Glycosyl hydrolases family 43.",
+      "Echvi_1624 (+) Glycogen debranching enzyme",
+      "Echvi_1625 (-) Transcriptional regulators containing a DNA-binding HTH domain and an aminotransferase domain (MocR family) and their eukaryotic orthologs",
+      "Echvi_1626 (+) branched-chain amino acid aminotransferase, group II",
+      "Echvi_1627 (+) DNA-directed RNA polymerase specialized sigma subunit, sigma24 homolog",
+      "Echvi_1628 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015265632_1",
+     "locus": "Echvi_1811",
+     "fitness_browser_desc": "Serine-pyruvate aminotransferase/archaeal aspartate aminotransferase",
+     "refseq_definition": "aminotransferase class V-fold PLP-dependent enzyme",
+     "neighbourhood": [
+      "Echvi_1808 (-) Cytochrome c.",
+      "Echvi_1809 (-) tyrosine recombinase XerD",
+      "Echvi_1810 (+) 3-dehydroquinate dehydratase, type II",
+      "Echvi_1811 (+) Serine-pyruvate aminotransferase/archaeal aspartate aminotransferase",
+      "Echvi_1812 (+) membrane protein, MarC family",
+      "Echvi_1813 (+) Ribonuclease HI",
+      "Echvi_1814 (+) Predicted O-methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_041739222_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase"
+    }
+   ]
+  },
+  {
+   "reaction": "BGLA",
+   "name": "Beta-glucosidase",
+   "equation_ids": "cellb_c + h2o_c --> 2.0 glc__D_c",
+   "equation_names": "Cellobiose + H2O --> 2.0 D-Glucose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264253_1 or WP_015266215_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264253_1",
+     "locus": "Echvi_0398",
+     "fitness_browser_desc": "Beta-glucosidase-related glycosidases",
+     "refseq_definition": "glycoside hydrolase family 3 C-terminal domain-containing protein",
+     "neighbourhood": [
+      "Echvi_0395 (-) DNA repair proteins",
+      "Echvi_0396 (-) Transcriptional regulators",
+      "Echvi_0397 (-) hypothetical protein",
+      "Echvi_0398 (-) Beta-glucosidase-related glycosidases",
+      "Echvi_0399 (-) Lysophospholipase L1 and related esterases",
+      "Echvi_0400 (-) hypothetical protein",
+      "Echvi_0401 (-) SusD family."
+     ]
+    },
+    {
+     "model_gene": "WP_015266215_1",
+     "locus": "Echvi_2412",
+     "fitness_browser_desc": "Beta-glucosidase-related glycosidases",
+     "refseq_definition": "glycoside hydrolase family 3 N-terminal domain-containing protein",
+     "neighbourhood": [
+      "Echvi_2409 (+) Acetyltransferases",
+      "Echvi_2410 (+) Acetyltransferases",
+      "Echvi_2411 (+) tRNA",
+      "Echvi_2412 (+) Beta-glucosidase-related glycosidases",
+      "Echvi_2413 (+) N-acetyl-beta-hexosaminidase",
+      "Echvi_2414 (+) alpha-1,2-mannosidase, putative",
+      "Echvi_2415 (+) TonB-linked outer membrane protein, SusC/RagA family"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CHORM",
+   "name": "Chorismate mutase",
+   "equation_ids": "chor_c --> pphn_c",
+   "equation_names": "Chorismate --> Prephenate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015263985_1 or WP_015263988_1 or WP_015266314_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015263985_1",
+     "locus": "Echvi_0120",
+     "fitness_browser_desc": "3-deoxy-D-arabino-heptulosonate 7-phosphate (DAHP) synthase",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "Echvi_0117 (-) Predicted metalloendopeptidase",
+      "Echvi_0118 (-) Lysyl-tRNA synthetase (class II)",
+      "Echvi_0119 (-) Proline dehydrogenase",
+      "Echvi_0120 (+) 3-deoxy-D-arabino-heptulosonate 7-phosphate (DAHP) synthase",
+      "Echvi_0121 (+) 3-dehydroquinate synthase",
+      "Echvi_0122 (+) 5-enolpyruvylshikimate-3-phosphate synthase",
+      "Echvi_0123 (+) Prephenate dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_015263988_1",
+     "locus": "Echvi_0123",
+     "fitness_browser_desc": "Prephenate dehydratase",
+     "refseq_definition": "prephenate dehydratase",
+     "neighbourhood": [
+      "Echvi_0120 (+) 3-deoxy-D-arabino-heptulosonate 7-phosphate (DAHP) synthase",
+      "Echvi_0121 (+) 3-dehydroquinate synthase",
+      "Echvi_0122 (+) 5-enolpyruvylshikimate-3-phosphate synthase",
+      "Echvi_0123 (+) Prephenate dehydratase",
+      "Echvi_0124 (+) Aspartate/tyrosine/aromatic aminotransferase",
+      "Echvi_0125 (+) Prephenate dehydrogenase",
+      "Echvi_0126 (-) ABC-type Fe3+-hydroxamate transport system, periplasmic component"
+     ]
+    },
+    {
+     "model_gene": "WP_015266314_1",
+     "locus": "Echvi_2512",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "bifunctional 3-deoxy-7-phosphoheptulonate synthase/chorismate mutase",
+     "neighbourhood": [
+      "Echvi_2509 (+) Phosphoribosylanthranilate isomerase",
+      "Echvi_2510 (+) tryptophan synthase, beta subunit",
+      "Echvi_2511 (+) tryptophan synthase, alpha subunit",
+      "Echvi_2512 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Echvi_2513 (+) Phenylalanine-4-hydroxylase",
+      "Echvi_2514 (+) imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+      "Echvi_2515 (+) phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLBtpp",
+   "name": "Cellobiose transport via permease",
+   "equation_ids": "cellb_p --> cellb_c",
+   "equation_names": "Cellobiose --> Cellobiose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "CU2tpp",
+   "name": "Copper transport in via permease (no H+)",
+   "equation_ids": "cu2_p --> cu2_c",
+   "equation_names": "Cu2+ --> Cu2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "DDPA",
+   "name": "3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase",
+   "equation_ids": "e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Phosphoenolpyruvate --> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015263985_1 or WP_015266314_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015263985_1",
+     "locus": "Echvi_0120",
+     "fitness_browser_desc": "3-deoxy-D-arabino-heptulosonate 7-phosphate (DAHP) synthase",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "Echvi_0117 (-) Predicted metalloendopeptidase",
+      "Echvi_0118 (-) Lysyl-tRNA synthetase (class II)",
+      "Echvi_0119 (-) Proline dehydrogenase",
+      "Echvi_0120 (+) 3-deoxy-D-arabino-heptulosonate 7-phosphate (DAHP) synthase",
+      "Echvi_0121 (+) 3-dehydroquinate synthase",
+      "Echvi_0122 (+) 5-enolpyruvylshikimate-3-phosphate synthase",
+      "Echvi_0123 (+) Prephenate dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_015266314_1",
+     "locus": "Echvi_2512",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "bifunctional 3-deoxy-7-phosphoheptulonate synthase/chorismate mutase",
+     "neighbourhood": [
+      "Echvi_2509 (+) Phosphoribosylanthranilate isomerase",
+      "Echvi_2510 (+) tryptophan synthase, beta subunit",
+      "Echvi_2511 (+) tryptophan synthase, alpha subunit",
+      "Echvi_2512 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Echvi_2513 (+) Phenylalanine-4-hydroxylase",
+      "Echvi_2514 (+) imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+      "Echvi_2515 (+) phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264688_1 or WP_041738531_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264688_1",
+     "locus": "Echvi_0850",
+     "fitness_browser_desc": "Pterin-4a-carbinolamine dehydratase",
+     "refseq_definition": "4a-hydroxytetrahydrobiopterin dehydratase",
+     "neighbourhood": [
+      "Echvi_0847 (-) Predicted dinucleotide-binding enzymes",
+      "Echvi_0848 (-) Archaeal fructose-1,6-bisphosphatase and related enzymes of inositol monophosphatase family",
+      "Echvi_0849 (-) probable S-adenosylmethionine-dependent methyltransferase, YraL family",
+      "Echvi_0850 (-) Pterin-4a-carbinolamine dehydratase",
+      "Echvi_0851 (-) Uncharacterized conserved protein",
+      "Echvi_0852 (-) Parvulin-like peptidyl-prolyl isomerase",
+      "Echvi_0853 (-) Hemolysins and related proteins containing CBS domains"
+     ]
+    },
+    {
+     "model_gene": "WP_041738531_1",
+     "locus": "Echvi_2055",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "Echvi_2052 (-) 4-diphosphocytidyl-2C-methyl-D-erythritol kinase",
+      "Echvi_2053 (+) hypothetical protein",
+      "Echvi_2054 (-) hypothetical protein",
+      "Echvi_2055 (+) dihydroxy-acid dehydratase",
+      "Echvi_2056 (+) acetolactate synthase, large subunit, biosynthetic type",
+      "Echvi_2057 (+) acetolactate synthase, small subunit",
+      "Echvi_2058 (+) ketol-acid reductoisomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPS",
+   "name": "Dihydrodipicolinate synthase",
+   "equation_ids": "aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Pyruvate --> 2,3-Dihydrodipicolinate + 2.0 H2O + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264763_1 or WP_015265111_1 or WP_015267701_1 or WP_015267707_1 or WP_015268211_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264763_1",
+     "locus": "Echvi_0926",
+     "fitness_browser_desc": "Dihydrodipicolinate synthase/N-acetylneuraminate lyase",
+     "refseq_definition": "dihydrodipicolinate synthase family protein",
+     "neighbourhood": [
+      "Echvi_0923 (-) 4-hydroxythreonine-4-phosphate dehydrogenase",
+      "Echvi_0924 (-) Alcohol dehydrogenase, class IV",
+      "Echvi_0925 (-) transporter, SSS family",
+      "Echvi_0926 (-) Dihydrodipicolinate synthase/N-acetylneuraminate lyase",
+      "Echvi_0927 (-) Glycogen debranching enzyme",
+      "Echvi_0928 (-) hypothetical protein",
+      "Echvi_0929 (-) Beta-fructosidases (levanase/invertase)"
+     ]
+    },
+    {
+     "model_gene": "WP_015265111_1",
+     "locus": "Echvi_1276",
+     "fitness_browser_desc": "Dihydrodipicolinate synthase/N-acetylneuraminate lyase",
+     "refseq_definition": "dihydrodipicolinate synthase family protein",
+     "neighbourhood": [
+      "Echvi_1273 (-) hypothetical protein",
+      "Echvi_1274 (-) L-fucose isomerase and related proteins",
+      "Echvi_1275 (-) transporter, SSS family",
+      "Echvi_1276 (-) Dihydrodipicolinate synthase/N-acetylneuraminate lyase",
+      "Echvi_1277 (-) Acetyltransferases, including N-acetylases of ribosomal proteins",
+      "Echvi_1278 (+) Periplasmic protease",
+      "Echvi_1279 (-) Glycerol kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_015267701_1",
+     "locus": "Echvi_3953",
+     "fitness_browser_desc": "Dihydrodipicolinate synthase/N-acetylneuraminate lyase",
+     "refseq_definition": "dihydrodipicolinate synthase family protein",
+     "neighbourhood": [
+      "Echvi_3950 (-) Glycine/D-amino acid oxidases (deaminating)",
+      "Echvi_3951 (-) Proline racemase",
+      "Echvi_3952 (-) NAD-dependent aldehyde dehydrogenases",
+      "Echvi_3953 (-) Dihydrodipicolinate synthase/N-acetylneuraminate lyase",
+      "Echvi_3954 (+) exodeoxyribonuclease VII, large subunit",
+      "Echvi_3955 (+) Exonuclease VII small subunit.",
+      "Echvi_3956 (-) Transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_015267707_1",
+     "locus": "Echvi_3959",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "Echvi_3956 (-) Transcriptional regulator",
+      "Echvi_3957 (+) DNA ligase, NAD-dependent",
+      "Echvi_3958 (+) hypothetical protein",
+      "Echvi_3959 (+) dihydrodipicolinate synthase",
+      "Echvi_3960 (-) Histone H1-like protein Hc1.",
+      "Echvi_3961 (-) 7-keto-8-aminopelargonate synthetase and related enzymes",
+      "Echvi_3962 (+) Acetyl/propionyl-CoA carboxylase, alpha subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_015268211_1",
+     "locus": "Echvi_4516",
+     "fitness_browser_desc": "Dihydrodipicolinate synthase/N-acetylneuraminate lyase",
+     "refseq_definition": "dihydrodipicolinate synthase family protein",
+     "neighbourhood": [
+      "Echvi_4513 (-) Domain of unknown function (DUF303).",
+      "Echvi_4514 (-) Ribulose kinase",
+      "Echvi_4515 (-) transporter, SSS family",
+      "Echvi_4516 (-) Dihydrodipicolinate synthase/N-acetylneuraminate lyase",
+      "Echvi_4517 (-) Periplasmic component of the Tol biopolymer transport system",
+      "Echvi_4518 (-) hypothetical protein",
+      "Echvi_4519 (-) Arylsulfatase A and related enzymes"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHFR",
+   "name": "Dihydrofolate reductase",
+   "equation_ids": "dhf_c + h_c + nadph_c <=> nadp_c + thf_c",
+   "equation_names": "7,8-Dihydrofolate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015268012_1 or WP_041739757_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015268012_1",
+     "locus": "Echvi_4291",
+     "fitness_browser_desc": "Dihydrofolate reductase",
+     "refseq_definition": "dihydrofolate reductase family protein",
+     "neighbourhood": [
+      "Echvi_4288 (+) Transposase and inactivated derivatives",
+      "Echvi_4289 (-) cAMP-binding proteins - catabolite gene activator and regulatory subunit of cAMP-dependent protein kinases",
+      "Echvi_4290 (-) Activator of Hsp90 ATPase homolog 1-like protein.",
+      "Echvi_4291 (-) Dihydrofolate reductase",
+      "Echvi_4292 (-) Transcriptional regulator containing an amidase domain and an AraC-type DNA-binding HTH domain",
+      "Echvi_4293 (-) hypothetical protein",
+      "Echvi_4294 (-) AraC-type DNA-binding domain-containing proteins"
+     ]
+    },
+    {
+     "model_gene": "WP_041739757_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "dihydrofolate reductase"
+    }
+   ]
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264590_1 or WP_015267374_1 or WP_015268317_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264590_1",
+     "locus": "Echvi_0748",
+     "fitness_browser_desc": "dihydroorotase, multifunctional complex type",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "Echvi_0745 (+) Predicted aminopeptidases",
+      "Echvi_0746 (-) hypothetical protein",
+      "Echvi_0747 (-) Superfamily II DNA and RNA helicases",
+      "Echvi_0748 (+) dihydroorotase, multifunctional complex type",
+      "Echvi_0749 (+) tRNA",
+      "Echvi_0750 (+) hypothetical protein",
+      "Echvi_0751 (+) glycogen debranching enzyme, archaeal type, putative"
+     ]
+    },
+    {
+     "model_gene": "WP_015267374_1",
+     "locus": "Echvi_3613",
+     "fitness_browser_desc": "Imidazolonepropionase and related amidohydrolases",
+     "refseq_definition": "amidohydrolase family protein",
+     "neighbourhood": [
+      "Echvi_3610 (-) hypothetical protein",
+      "Echvi_3611 (-) Response regulators consisting of a CheY-like receiver domain and a winged-helix DNA-binding domain",
+      "Echvi_3612 (+) Imidazolonepropionase and related amidohydrolases",
+      "Echvi_3613 (+) Imidazolonepropionase and related amidohydrolases",
+      "Echvi_3614 (+) Imidazolonepropionase and related amidohydrolases",
+      "Echvi_3615 (+) Cell wall-associated hydrolases (invasion-associated proteins)",
+      "Echvi_3616 (-) Predicted N6-adenine-specific DNA methylase"
+     ]
+    },
+    {
+     "model_gene": "WP_015268317_1",
+     "locus": "Echvi_4623",
+     "fitness_browser_desc": "Dihydroorotase and related cyclic amidohydrolases",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "Echvi_4620 (-) Glycosyltransferases involved in cell wall biogenesis",
+      "Echvi_4621 (-) hypothetical protein",
+      "Echvi_4622 (-) hypothetical protein",
+      "Echvi_4623 (-) Dihydroorotase and related cyclic amidohydrolases",
+      "Echvi_4624 (-) 5S",
+      "Echvi_4625 (-) 23S",
+      "Echvi_4626 (-) 16S"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMATT",
+   "name": "Dimethylallyltranstransferase",
+   "equation_ids": "dmpp_c + ipdp_c --> grdp_c + ppi_c",
+   "equation_names": "Dimethylallyl diphosphate + Isopentenyl diphosphate --> Geranyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264177_1 or WP_015264511_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264177_1",
+     "locus": "Echvi_0319",
+     "fitness_browser_desc": "Geranylgeranyl pyrophosphate synthase",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "Echvi_0316 (-) hypothetical protein",
+      "Echvi_0317 (-) S-adenosyl-methyltransferase MraW",
+      "Echvi_0318 (-) mraZ protein",
+      "Echvi_0319 (-) Geranylgeranyl pyrophosphate synthase",
+      "Echvi_0320 (-) Uncharacterized protein conserved in bacteria",
+      "Echvi_0321 (+) Glycerol-3-phosphate O-acyltransferase",
+      "Echvi_0322 (+) Glycerol-3-phosphate dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_015264511_1",
+     "locus": "Echvi_0668",
+     "fitness_browser_desc": "Geranylgeranyl pyrophosphate synthase",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "Echvi_0665 (-) FOG: Transposase and inactivated derivatives",
+      "Echvi_0666 (+) hypothetical protein",
+      "Echvi_0667 (-) Uncharacterized membrane protein (homolog of Drosophila rhomboid)",
+      "Echvi_0668 (-) Geranylgeranyl pyrophosphate synthase",
+      "Echvi_0669 (-) ribonuclease R",
+      "Echvi_0670 (-) DNA polymerase elongation subunit (family B)",
+      "Echvi_0671 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015265309_1 or WP_015265905_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015265309_1",
+     "locus": "Echvi_1480",
+     "fitness_browser_desc": "(E)-4-hydroxy-3-methyl-but-2-enyl pyrophosphate reductase (IPP and DMAPP forming)",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "Echvi_1477 (+) phytoene desaturase",
+      "Echvi_1478 (+) Phytoene/squalene synthetase",
+      "Echvi_1479 (+) lycopene cyclase domain",
+      "Echvi_1480 (+) (E)-4-hydroxy-3-methyl-but-2-enyl pyrophosphate reductase (IPP and DMAPP forming)",
+      "Echvi_1481 (+) Fatty acid desaturase",
+      "Echvi_1482 (+) Outer membrane protein/protective antigen OMA87",
+      "Echvi_1483 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015265905_1",
+     "locus": "Echvi_2093",
+     "fitness_browser_desc": "Ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "Echvi_2090 (+) Putative translation initiation inhibitor, yjgF family",
+      "Echvi_2091 (+) Predicted amino acid aldolase or racemase",
+      "Echvi_2092 (+) Zn-dependent dipeptidase, microsomal dipeptidase homolog",
+      "Echvi_2093 (+) Ribosomal protein S1",
+      "Echvi_2094 (-) Uncharacterized conserved protein",
+      "Echvi_2095 (-) tRNA",
+      "Echvi_2096 (+) Cytochrome c, mono- and diheme variants"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "DTMPK",
+   "name": "DTMP kinase",
+   "equation_ids": "atp_c + dtmp_c <=> adp_c + dtdp_c",
+   "equation_names": "ATP + DTMP <=> ADP + DTDP",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "GALt2",
+   "name": "D galactose transport in via proton symport",
+   "equation_ids": "gal_e + h_e --> gal_c + h_c",
+   "equation_names": "D-Galactose + H+ --> D-Galactose + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015266596_1 or WP_015267657_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015266596_1",
+     "locus": "Echvi_2805",
+     "fitness_browser_desc": "MFS transporter, sugar porter (SP) family",
+     "refseq_definition": "sugar porter family MFS transporter",
+     "neighbourhood": [
+      "Echvi_2802 (+) hypothetical protein",
+      "Echvi_2803 (+) Predicted dehydrogenases and related proteins",
+      "Echvi_2804 (-) Sugar kinases, ribokinase family",
+      "Echvi_2805 (-) MFS transporter, sugar porter (SP) family",
+      "Echvi_2806 (-) Beta-fructosidases (levanase/invertase)",
+      "Echvi_2807 (-) Beta-fructosidases (levanase/invertase)",
+      "Echvi_2808 (-) SusD family."
+     ]
+    },
+    {
+     "model_gene": "WP_015267657_1",
+     "locus": "Echvi_3909",
+     "fitness_browser_desc": "Fucose permease",
+     "refseq_definition": "sugar MFS transporter",
+     "neighbourhood": [
+      "Echvi_3906 (-) hypothetical protein",
+      "Echvi_3907 (-) Mannose-6-phosphate isomerase",
+      "Echvi_3908 (-) alpha-1,2-mannosidase, putative",
+      "Echvi_3909 (-) Fucose permease",
+      "Echvi_3910 (-) Transcriptional regulator/sugar kinase",
+      "Echvi_3911 (-) alpha-1,2-mannosidase, putative",
+      "Echvi_3912 (-) SusD family."
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GAPD",
+   "name": "Glyceraldehyde-3-phosphate dehydrogenase",
+   "equation_ids": "g3p_c + nad_c + pi_c <=> 13dpg_c + h_c + nadh_c",
+   "equation_names": "Glyceraldehyde 3-phosphate + Nicotinamide adenine dinucleotide + Phosphate <=> 3-Phospho-D-glyceroyl phosphate + H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015266736_1 or WP_015266819_1 or WP_015266936_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015266736_1",
+     "locus": "Echvi_2946",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase, type I",
+     "refseq_definition": "type I glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "Echvi_2943 (+) Protein chain release factor B",
+      "Echvi_2944 (-) cation diffusion facilitator family transporter",
+      "Echvi_2945 (-) Domain of unknown function (DUF1905).",
+      "Echvi_2946 (-) glyceraldehyde-3-phosphate dehydrogenase, type I",
+      "Echvi_2947 (-) hypothetical protein",
+      "Echvi_2948 (+) replicative DNA helicase",
+      "Echvi_2949 (+) NADPH:quinone reductase and related Zn-dependent oxidoreductases"
+     ]
+    },
+    {
+     "model_gene": "WP_015266819_1",
+     "locus": "Echvi_3029",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase, type I",
+     "refseq_definition": "type I glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "Echvi_3026 (+) Subtilisin-like serine proteases",
+      "Echvi_3027 (-) Uncharacterized protein conserved in bacteria",
+      "Echvi_3028 (+) Predicted acyl esterases",
+      "Echvi_3029 (+) glyceraldehyde-3-phosphate dehydrogenase, type I",
+      "Echvi_3030 (-) methionine aminopeptidase, type I",
+      "Echvi_3031 (-) Sulfate permease and related transporters (MFS superfamily)",
+      "Echvi_3032 (+) Cyclopropane fatty acid synthase and related methyltransferases"
+     ]
+    },
+    {
+     "model_gene": "WP_015266936_1",
+     "locus": "Echvi_3157",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase, type II",
+     "refseq_definition": "type II glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "Echvi_3154 (+) hypothetical protein",
+      "Echvi_3155 (+) Universal stress protein UspA and related nucleotide-binding proteins",
+      "Echvi_3156 (+) NADH dehydrogenase, FAD-containing subunit",
+      "Echvi_3157 (+) glyceraldehyde-3-phosphate dehydrogenase, type II",
+      "Echvi_3158 (+) DhnA-type fructose-1,6-bisphosphate aldolase and related enzymes",
+      "Echvi_3159 (+) Na+/H+-dicarboxylate symporters",
+      "Echvi_3160 (+) 6-phosphofructokinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GRTT",
+   "name": "Geranyltranstransferase",
+   "equation_ids": "grdp_c + ipdp_c --> frdp_c + ppi_c",
+   "equation_names": "Geranyl diphosphate + Isopentenyl diphosphate --> Farnesyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264177_1 or WP_015264511_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264177_1",
+     "locus": "Echvi_0319",
+     "fitness_browser_desc": "Geranylgeranyl pyrophosphate synthase",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "Echvi_0316 (-) hypothetical protein",
+      "Echvi_0317 (-) S-adenosyl-methyltransferase MraW",
+      "Echvi_0318 (-) mraZ protein",
+      "Echvi_0319 (-) Geranylgeranyl pyrophosphate synthase",
+      "Echvi_0320 (-) Uncharacterized protein conserved in bacteria",
+      "Echvi_0321 (+) Glycerol-3-phosphate O-acyltransferase",
+      "Echvi_0322 (+) Glycerol-3-phosphate dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_015264511_1",
+     "locus": "Echvi_0668",
+     "fitness_browser_desc": "Geranylgeranyl pyrophosphate synthase",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "Echvi_0665 (-) FOG: Transposase and inactivated derivatives",
+      "Echvi_0666 (+) hypothetical protein",
+      "Echvi_0667 (-) Uncharacterized membrane protein (homolog of Drosophila rhomboid)",
+      "Echvi_0668 (-) Geranylgeranyl pyrophosphate synthase",
+      "Echvi_0669 (-) ribonuclease R",
+      "Echvi_0670 (-) DNA polymerase elongation subunit (family B)",
+      "Echvi_0671 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015267631_1 or WP_015267632_1 or spontaneous",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015267631_1",
+     "locus": "Echvi_3878",
+     "fitness_browser_desc": "Carbonic anhydrase",
+     "refseq_definition": "carbonic anhydrase family protein",
+     "neighbourhood": [
+      "Echvi_3875 (-) Predicted Co/Zn/Cd cation transporters",
+      "Echvi_3876 (-) hypothetical protein",
+      "Echvi_3877 (+) single stranded DNA-binding protein (ssb)",
+      "Echvi_3878 (-) Carbonic anhydrase",
+      "Echvi_3879 (-) Sulfate permease and related transporters (MFS superfamily)",
+      "Echvi_3880 (-) hypothetical protein",
+      "Echvi_3881 (-) Predicted oxidoreductases (related to aryl-alcohol dehydrogenases)"
+     ]
+    },
+    {
+     "model_gene": "WP_015267632_1",
+     "locus": "Echvi_3879",
+     "fitness_browser_desc": "Sulfate permease and related transporters (MFS superfamily)",
+     "refseq_definition": "SulP family inorganic anion transporter",
+     "neighbourhood": [
+      "Echvi_3876 (-) hypothetical protein",
+      "Echvi_3877 (+) single stranded DNA-binding protein (ssb)",
+      "Echvi_3878 (-) Carbonic anhydrase",
+      "Echvi_3879 (-) Sulfate permease and related transporters (MFS superfamily)",
+      "Echvi_3880 (-) hypothetical protein",
+      "Echvi_3881 (-) Predicted oxidoreductases (related to aryl-alcohol dehydrogenases)",
+      "Echvi_3882 (-) Predicted oxidoreductases (related to aryl-alcohol dehydrogenases)"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HISTP",
+   "name": "Histidinol-phosphatase",
+   "equation_ids": "h2o_c + hisp_c --> histd_c + pi_c",
+   "equation_names": "H2O + L-Histidinol phosphate --> L-Histidinol + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264686_1 or WP_015266260_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264686_1",
+     "locus": "Echvi_0848",
+     "fitness_browser_desc": "Archaeal fructose-1,6-bisphosphatase and related enzymes of inositol monophosphatase family",
+     "refseq_definition": "inositol monophosphatase family protein",
+     "neighbourhood": [
+      "Echvi_0845 (+) hypothetical protein",
+      "Echvi_0846 (-) hypothetical protein",
+      "Echvi_0847 (-) Predicted dinucleotide-binding enzymes",
+      "Echvi_0848 (-) Archaeal fructose-1,6-bisphosphatase and related enzymes of inositol monophosphatase family",
+      "Echvi_0849 (-) probable S-adenosylmethionine-dependent methyltransferase, YraL family",
+      "Echvi_0850 (-) Pterin-4a-carbinolamine dehydratase",
+      "Echvi_0851 (-) Uncharacterized conserved protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015266260_1",
+     "locus": "Echvi_2457",
+     "fitness_browser_desc": "histidinol-phosphatase",
+     "refseq_definition": "bifunctional histidinol-phosphatase/imidazoleglycerol-phosphate dehydratase HisB",
+     "neighbourhood": [
+      "Echvi_2454 (-) Tetratricopeptide repeat.",
+      "Echvi_2455 (+) hypothetical protein",
+      "Echvi_2456 (+) hypothetical protein",
+      "Echvi_2457 (-) histidinol-phosphatase",
+      "Echvi_2458 (-) histidinol-phosphate aminotransferase",
+      "Echvi_2459 (-) histidinol dehydrogenase",
+      "Echvi_2460 (-) ATP phosphoribosyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HSDy",
+   "name": "Homoserine dehydrogenase (NADPH)",
+   "equation_ids": "hom__L_c + nadp_c <=> aspsa_c + h_c + nadph_c",
+   "equation_names": "L-Homoserine + Nicotinamide adenine dinucleotide phosphate <=> L-Aspartate 4-semialdehyde + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015265814_1 or WP_015267054_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015265814_1",
+     "locus": "Echvi_2000",
+     "fitness_browser_desc": "aspartate kinase",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase I",
+     "neighbourhood": [
+      "Echvi_1997 (+) hypothetical protein",
+      "Echvi_1998 (-) Heat shock protein",
+      "Echvi_1999 (+) hypothetical protein",
+      "Echvi_2000 (+) aspartate kinase",
+      "Echvi_2001 (+) homoserine kinase",
+      "Echvi_2002 (+) threonine synthase",
+      "Echvi_2003 (-) Antirepressor regulating drug resistance, predicted signal transduction N-terminal membrane component"
+     ]
+    },
+    {
+     "model_gene": "WP_015267054_1",
+     "locus": "Echvi_3284",
+     "fitness_browser_desc": "Homoserine dehydrogenase",
+     "refseq_definition": "homoserine dehydrogenase",
+     "neighbourhood": [
+      "Echvi_3281 (-) hypothetical protein",
+      "Echvi_3282 (-) hypothetical protein",
+      "Echvi_3283 (-) Lactoylglutathione lyase and related lyases",
+      "Echvi_3284 (-) Homoserine dehydrogenase",
+      "Echvi_3285 (-) homoserine O-acetyltransferase",
+      "Echvi_3286 (-) hypothetical protein",
+      "Echvi_3287 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IGPS",
+   "name": "Indole-3-glycerol-phosphate synthase",
+   "equation_ids": "2cpr5p_c + h_c --> 3ig3p_c + co2_c + h2o_c",
+   "equation_names": "1-(2-Carboxyphenylamino)-1-deoxy-D-ribulose 5-phosphate + H+ --> C'-(3-Indolyl)-glycerol 3-phosphate + CO2 + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015266310_1 or WP_015266311_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015266310_1",
+     "locus": "Echvi_2508",
+     "fitness_browser_desc": "Indole-3-glycerol phosphate synthase",
+     "refseq_definition": "indole-3-glycerol phosphate synthase TrpC",
+     "neighbourhood": [
+      "Echvi_2505 (+) S23 ribosomal protein.",
+      "Echvi_2506 (+) glutamine amidotransferase of anthranilate synthase or aminodeoxychorismate synthase",
+      "Echvi_2507 (+) anthranilate phosphoribosyltransferase",
+      "Echvi_2508 (+) Indole-3-glycerol phosphate synthase",
+      "Echvi_2509 (+) Phosphoribosylanthranilate isomerase",
+      "Echvi_2510 (+) tryptophan synthase, beta subunit",
+      "Echvi_2511 (+) tryptophan synthase, alpha subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_015266311_1",
+     "locus": "Echvi_2509",
+     "fitness_browser_desc": "Phosphoribosylanthranilate isomerase",
+     "refseq_definition": "phosphoribosylanthranilate isomerase",
+     "neighbourhood": [
+      "Echvi_2506 (+) glutamine amidotransferase of anthranilate synthase or aminodeoxychorismate synthase",
+      "Echvi_2507 (+) anthranilate phosphoribosyltransferase",
+      "Echvi_2508 (+) Indole-3-glycerol phosphate synthase",
+      "Echvi_2509 (+) Phosphoribosylanthranilate isomerase",
+      "Echvi_2510 (+) tryptophan synthase, beta subunit",
+      "Echvi_2511 (+) tryptophan synthase, alpha subunit",
+      "Echvi_2512 (+) phospho-2-dehydro-3-deoxyheptonate aldolase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015265309_1 or WP_015265905_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015265309_1",
+     "locus": "Echvi_1480",
+     "fitness_browser_desc": "(E)-4-hydroxy-3-methyl-but-2-enyl pyrophosphate reductase (IPP and DMAPP forming)",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "Echvi_1477 (+) phytoene desaturase",
+      "Echvi_1478 (+) Phytoene/squalene synthetase",
+      "Echvi_1479 (+) lycopene cyclase domain",
+      "Echvi_1480 (+) (E)-4-hydroxy-3-methyl-but-2-enyl pyrophosphate reductase (IPP and DMAPP forming)",
+      "Echvi_1481 (+) Fatty acid desaturase",
+      "Echvi_1482 (+) Outer membrane protein/protective antigen OMA87",
+      "Echvi_1483 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015265905_1",
+     "locus": "Echvi_2093",
+     "fitness_browser_desc": "Ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "Echvi_2090 (+) Putative translation initiation inhibitor, yjgF family",
+      "Echvi_2091 (+) Predicted amino acid aldolase or racemase",
+      "Echvi_2092 (+) Zn-dependent dipeptidase, microsomal dipeptidase homolog",
+      "Echvi_2093 (+) Ribosomal protein S1",
+      "Echvi_2094 (-) Uncharacterized conserved protein",
+      "Echvi_2095 (-) tRNA",
+      "Echvi_2096 (+) Cytochrome c, mono- and diheme variants"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPS",
+   "name": "2-isopropylmalate synthase",
+   "equation_ids": "3mob_c + accoa_c + h2o_c --> 3c3hmp_c + coa_c + h_c",
+   "equation_names": "3-Methyl-2-oxobutanoate + Acetyl-CoA + H2O --> 3-Carboxy-3-hydroxy-4-methylpentanoate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015267587_1 or WP_052331420_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015267587_1",
+     "locus": "Echvi_3833",
+     "fitness_browser_desc": "Isopropylmalate/homocitrate/citramalate synthases",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "Echvi_3830 (+) Glutamate decarboxylase and related PLP-dependent proteins",
+      "Echvi_3831 (-) hypothetical protein",
+      "Echvi_3832 (-) hypothetical protein",
+      "Echvi_3833 (+) Isopropylmalate/homocitrate/citramalate synthases",
+      "Echvi_3834 (-) signal recognition particle protein",
+      "Echvi_3835 (-) hypothetical protein",
+      "Echvi_3836 (+) FOG: Transposase and inactivated derivatives"
+     ]
+    },
+    {
+     "model_gene": "WP_052331420_1",
+     "locus": "Echvi_2061",
+     "fitness_browser_desc": "Isopropylmalate/homocitrate/citramalate synthases",
+     "refseq_definition": "hydroxymethylglutaryl-CoA lyase-like TIM-barrel protein",
+     "neighbourhood": [
+      "Echvi_2058 (+) ketol-acid reductoisomerase",
+      "Echvi_2059 (+) 3-isopropylmalate dehydratase, large subunit",
+      "Echvi_2060 (+) 3-isopropylmalate dehydratase, small subunit",
+      "Echvi_2061 (+) Isopropylmalate/homocitrate/citramalate synthases",
+      "Echvi_2062 (+) 3-isopropylmalate dehydrogenase",
+      "Echvi_2063 (+) cAMP-binding proteins - catabolite gene activator and regulatory subunit of cAMP-dependent protein kinases",
+      "Echvi_2064 (+) Short-chain dehydrogenase involved in D-alanine esterification of lipoteichoic acid and wall teichoic acid (D-alanine transfer protein)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "KARA1",
+   "name": "Ketol-acid reductoisomerase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c + nadp_c <=> alac__S_c + h_c + nadph_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate + Nicotinamide adenine dinucleotide phosphate <=> (S)-2-Acetolactate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "KARA2",
+   "name": "Ketol-acid reductoisomerase (2-Acetolactate)",
+   "equation_ids": "2ahbut_c + h_c + nadph_c <=> 23dhmp_c + nadp_c",
+   "equation_names": "(S)-2-Aceto-2-hydroxybutanoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> (R)-2,3-Dihydroxy-3-methylpentanoate + Nicotinamide adenine dinucleotide phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "OMCDC",
+   "name": "2-Oxo-4-methyl-3-carboxypentanoate decarboxylation",
+   "equation_ids": "3c4mop_c + h_c --> 4mop_c + co2_c",
+   "equation_names": "3-Carboxy-4-methyl-2-oxopentanoate + H+ --> 4-Methyl-2-oxopentanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_041738533_1 or spontaneous",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_041738533_1",
+     "locus": "Echvi_2062",
+     "fitness_browser_desc": "3-isopropylmalate dehydrogenase",
+     "refseq_definition": "3-isopropylmalate dehydrogenase",
+     "neighbourhood": [
+      "Echvi_2059 (+) 3-isopropylmalate dehydratase, large subunit",
+      "Echvi_2060 (+) 3-isopropylmalate dehydratase, small subunit",
+      "Echvi_2061 (+) Isopropylmalate/homocitrate/citramalate synthases",
+      "Echvi_2062 (+) 3-isopropylmalate dehydrogenase",
+      "Echvi_2063 (+) cAMP-binding proteins - catabolite gene activator and regulatory subunit of cAMP-dependent protein kinases",
+      "Echvi_2064 (+) Short-chain dehydrogenase involved in D-alanine esterification of lipoteichoic acid and wall teichoic acid (D-alanine transfer protein)",
+      "Echvi_2065 (-) FAD dependent oxidoreductase."
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "PGAMT",
+   "name": "Phosphoglucosamine mutase",
+   "equation_ids": "gam1p_c <=> gam6p_c",
+   "equation_names": "D-Glucosamine 1-phosphate <=> D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "PGCD",
+   "name": "Phosphoglycerate dehydrogenase",
+   "equation_ids": "3pg_c + nad_c --> 3php_c + h_c + nadh_c",
+   "equation_names": "3-Phospho-D-glycerate + Nicotinamide adenine dinucleotide --> 3-Phosphohydroxypyruvate + H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264046_1 or WP_015266568_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264046_1",
+     "locus": "Echvi_0181",
+     "fitness_browser_desc": "Phosphoglycerate dehydrogenase and related dehydrogenases",
+     "refseq_definition": "2-hydroxyacid dehydrogenase",
+     "neighbourhood": [
+      "Echvi_0178 (-) Bacteroidetes-specific putative membrane protein",
+      "Echvi_0179 (-) Diadenosine tetraphosphate (Ap4A) hydrolase and other HIT family hydrolases",
+      "Echvi_0180 (-) transcription elongation factor GreA",
+      "Echvi_0181 (-) Phosphoglycerate dehydrogenase and related dehydrogenases",
+      "Echvi_0182 (-) Mg2+ transporter (mgtE)",
+      "Echvi_0183 (-) dimethyladenosine transferase",
+      "Echvi_0184 (+) Leucyl aminopeptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_015266568_1",
+     "locus": "Echvi_2777",
+     "fitness_browser_desc": "Haloacid Dehalogenase superfamily, subfamily IB, phosphoserine phosphatase-like",
+     "refseq_definition": "phosphoglycerate dehydrogenase",
+     "neighbourhood": [
+      "Echvi_2774 (-) RNA polymerase sigma factor, sigma-70 family",
+      "Echvi_2775 (-) Universal stress protein UspA and related nucleotide-binding proteins",
+      "Echvi_2776 (-) hypothetical protein",
+      "Echvi_2777 (-) Haloacid Dehalogenase superfamily, subfamily IB, phosphoserine phosphatase-like",
+      "Echvi_2778 (+) hypothetical protein",
+      "Echvi_2779 (+) hypothetical protein",
+      "Echvi_2780 (-) efflux transporter, outer membrane factor (OMF) lipoprotein, NodT family"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PGMT",
+   "name": "Phosphoglucomutase",
+   "equation_ids": "g1p_c <=> g6p_c",
+   "equation_names": "D-Glucose 1-phosphate <=> D-Glucose 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264864_1 or WP_015266036_1 or WP_015268255_1 or WP_041738301_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264864_1",
+     "locus": "Echvi_1029",
+     "fitness_browser_desc": "haloacid dehalogenase superfamily, subfamily IA, variant 3 with third motif having DD or ED",
+     "refseq_definition": "HAD family hydrolase",
+     "neighbourhood": [
+      "Echvi_1026 (-) hypothetical protein",
+      "Echvi_1027 (+) DNA mismatch endonuclease Vsr",
+      "Echvi_1028 (-) hypothetical protein",
+      "Echvi_1029 (+) haloacid dehalogenase superfamily, subfamily IA, variant 3 with third motif having DD or ED",
+      "Echvi_1030 (-) secondary thiamine-phosphate synthase enzyme",
+      "Echvi_1031 (-) DNA repair protein RadA",
+      "Echvi_1032 (-) DNA polymerase I"
+     ]
+    },
+    {
+     "model_gene": "WP_015266036_1",
+     "locus": "Echvi_2228",
+     "fitness_browser_desc": "haloacid dehalogenase superfamily, subfamily IA, variant 3 with third motif having DD or ED",
+     "refseq_definition": "HAD family hydrolase",
+     "neighbourhood": [
+      "Echvi_2225 (-) Transposase DDE domain./Transposase domain (DUF772).",
+      "Echvi_2226 (-) hypothetical protein",
+      "Echvi_2227 (-) Predicted signal-transduction protein containing cAMP-binding and CBS domains",
+      "Echvi_2228 (+) haloacid dehalogenase superfamily, subfamily IA, variant 3 with third motif having DD or ED",
+      "Echvi_2229 (-) Lysophospholipase L1 and related esterases",
+      "Echvi_2230 (-) Uncharacterized proteins, homologs of microcin C7 resistance protein MccF",
+      "Echvi_2231 (-) D-alanyl-D-alanine carboxypeptidase (penicillin-binding protein 4)"
+     ]
+    },
+    {
+     "model_gene": "WP_015268255_1",
+     "locus": "Echvi_4560",
+     "fitness_browser_desc": "Predicted phosphatases",
+     "refseq_definition": "phosphonatase-like hydrolase",
+     "neighbourhood": [
+      "Echvi_4557 (+) Predicted transcriptional regulators",
+      "Echvi_4558 (+) putative phosphonate catabolism associated alcohol dehydrogenase",
+      "Echvi_4559 (+) FAD dependent oxidoreductase TIGR03364",
+      "Echvi_4560 (+) Predicted phosphatases",
+      "Echvi_4561 (+) hypothetical protein",
+      "Echvi_4562 (-) hypothetical protein",
+      "Echvi_4563 (-) SusD family."
+     ]
+    },
+    {
+     "model_gene": "WP_041738301_1",
+     "locus": "Echvi_0844",
+     "fitness_browser_desc": "2,3-bisphosphoglycerate-independent phosphoglycerate mutase",
+     "refseq_definition": "2,3-bisphosphoglycerate-independent phosphoglycerate mutase",
+     "neighbourhood": [
+      "Echvi_0841 (-) aspartyl-tRNA synthetase, bacterial type",
+      "Echvi_0842 (+) Membrane proteins related to metalloendopeptidases",
+      "Echvi_0843 (+) hypothetical protein",
+      "Echvi_0844 (+) 2,3-bisphosphoglycerate-independent phosphoglycerate mutase",
+      "Echvi_0845 (+) hypothetical protein",
+      "Echvi_0846 (-) hypothetical protein",
+      "Echvi_0847 (-) Predicted dinucleotide-binding enzymes"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015263989_1 or WP_015264518_1 or WP_015265453_1 or WP_015266648_1 or WP_041739222_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015263989_1",
+     "locus": "Echvi_0124",
+     "fitness_browser_desc": "Aspartate/tyrosine/aromatic aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "Echvi_0121 (+) 3-dehydroquinate synthase",
+      "Echvi_0122 (+) 5-enolpyruvylshikimate-3-phosphate synthase",
+      "Echvi_0123 (+) Prephenate dehydratase",
+      "Echvi_0124 (+) Aspartate/tyrosine/aromatic aminotransferase",
+      "Echvi_0125 (+) Prephenate dehydrogenase",
+      "Echvi_0126 (-) ABC-type Fe3+-hydroxamate transport system, periplasmic component",
+      "Echvi_0127 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015264518_1",
+     "locus": "Echvi_0675",
+     "fitness_browser_desc": "Aspartate/tyrosine/aromatic aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "Echvi_0672 (-) lipoate-protein ligase B",
+      "Echvi_0673 (+) Predicted endonuclease distantly related to archaeal Holliday junction resolvase",
+      "Echvi_0674 (-) hypothetical protein",
+      "Echvi_0675 (+) Aspartate/tyrosine/aromatic aminotransferase",
+      "Echvi_0676 (+) Predicted glycosyltransferases",
+      "Echvi_0677 (-) Glycosyltransferases involved in cell wall biogenesis",
+      "Echvi_0678 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015265453_1",
+     "locus": "Echvi_1625",
+     "fitness_browser_desc": "Transcriptional regulators containing a DNA-binding HTH domain and an aminotransferase domain (MocR family) and their eukaryotic orthologs",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "Echvi_1622 (+) SusD family.",
+      "Echvi_1623 (+) Glycosyl hydrolases family 43.",
+      "Echvi_1624 (+) Glycogen debranching enzyme",
+      "Echvi_1625 (-) Transcriptional regulators containing a DNA-binding HTH domain and an aminotransferase domain (MocR family) and their eukaryotic orthologs",
+      "Echvi_1626 (+) branched-chain amino acid aminotransferase, group II",
+      "Echvi_1627 (+) DNA-directed RNA polymerase specialized sigma subunit, sigma24 homolog",
+      "Echvi_1628 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015266648_1",
+     "locus": "Echvi_2857",
+     "fitness_browser_desc": "Histidinol-phosphate/aromatic aminotransferase and cobyric acid decarboxylase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "Echvi_2854 (+) TonB-linked outer membrane protein, SusC/RagA family",
+      "Echvi_2855 (+) hypothetical protein",
+      "Echvi_2856 (+) hypothetical protein",
+      "Echvi_2857 (+) Histidinol-phosphate/aromatic aminotransferase and cobyric acid decarboxylase",
+      "Echvi_2858 (+) Predicted permeases",
+      "Echvi_2859 (-) hypothetical protein",
+      "Echvi_2860 (+) sugar-phosphate isomerases, RpiB/LacA/LacB family"
+     ]
+    },
+    {
+     "model_gene": "WP_041739222_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase"
+    }
+   ]
+  },
+  {
+   "reaction": "PNTK",
+   "name": "Pantothenate kinase",
+   "equation_ids": "atp_c + pnto__R_c --> 4ppan_c + adp_c + h_c",
+   "equation_names": "ATP + (R)-Pantothenate --> D-4'-Phosphopantothenate + ADP + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015265016_1 or WP_015265087_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015265016_1",
+     "locus": "Echvi_1181",
+     "fitness_browser_desc": "Uridine kinase",
+     "refseq_definition": "uridine kinase",
+     "neighbourhood": [
+      "Echvi_1178 (+) phosphoglucosamine mutase",
+      "Echvi_1179 (+) Cysteine sulfinate desulfinase/cysteine desulfurase and related enzymes",
+      "Echvi_1180 (+) non-canonical purine NTP pyrophosphatase, rdgB/HAM1 family",
+      "Echvi_1181 (+) Uridine kinase",
+      "Echvi_1182 (+) hypothetical protein",
+      "Echvi_1183 (-) hypothetical protein",
+      "Echvi_1184 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015265087_1",
+     "locus": "Echvi_1252",
+     "fitness_browser_desc": "pantothenate kinase, type III",
+     "refseq_definition": "type III pantothenate kinase",
+     "neighbourhood": [
+      "Echvi_1249 (+) Bacterial nucleoid DNA-binding protein",
+      "Echvi_1250 (+) hypothetical protein",
+      "Echvi_1251 (+) ribonuclease, Rne/Rng family",
+      "Echvi_1252 (-) pantothenate kinase, type III",
+      "Echvi_1253 (+) Sortase and related acyltransferases",
+      "Echvi_1254 (-) hypothetical protein",
+      "Echvi_1255 (+) Fatty acid hydroxylase superfamily."
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRAMPC",
+   "name": "Phosphoribosyl-AMP cyclohydrolase",
+   "equation_ids": "h2o_c + prbamp_c --> prfp_c",
+   "equation_names": "H2O + 1-(5-Phosphoribosyl)-AMP --> 1-(5-Phosphoribosyl)-5-[(5-phosphoribosylamino)methylideneamino]imidazole-4-carboxamide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015266262_1 or WP_015266319_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015266262_1",
+     "locus": "Echvi_2459",
+     "fitness_browser_desc": "histidinol dehydrogenase",
+     "refseq_definition": "histidinol dehydrogenase",
+     "neighbourhood": [
+      "Echvi_2456 (+) hypothetical protein",
+      "Echvi_2457 (-) histidinol-phosphatase",
+      "Echvi_2458 (-) histidinol-phosphate aminotransferase",
+      "Echvi_2459 (-) histidinol dehydrogenase",
+      "Echvi_2460 (-) ATP phosphoribosyltransferase",
+      "Echvi_2461 (-) glutamyl-tRNA reductase",
+      "Echvi_2462 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015266319_1",
+     "locus": "Echvi_2517",
+     "fitness_browser_desc": "phosphoribosyl-ATP pyrophosphohydrolase",
+     "refseq_definition": "bifunctional phosphoribosyl-AMP cyclohydrolase/phosphoribosyl-ATP diphosphatase HisIE",
+     "neighbourhood": [
+      "Echvi_2514 (+) imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+      "Echvi_2515 (+) phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase",
+      "Echvi_2516 (+) imidazoleglycerol phosphate synthase, cyclase subunit",
+      "Echvi_2517 (+) phosphoribosyl-ATP pyrophosphohydrolase",
+      "Echvi_2518 (-) Periplasmic protease",
+      "Echvi_2519 (+) hypothetical protein",
+      "Echvi_2520 (+) Predicted unusual protein kinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRATPP",
+   "name": "Phosphoribosyl-ATP pyrophosphatase",
+   "equation_ids": "h2o_c + prbatp_c --> h_c + ppi_c + prbamp_c",
+   "equation_names": "H2O + 1-(5-Phosphoribosyl)-ATP --> H+ + Diphosphate + 1-(5-Phosphoribosyl)-AMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015266262_1 or WP_015266319_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015266262_1",
+     "locus": "Echvi_2459",
+     "fitness_browser_desc": "histidinol dehydrogenase",
+     "refseq_definition": "histidinol dehydrogenase",
+     "neighbourhood": [
+      "Echvi_2456 (+) hypothetical protein",
+      "Echvi_2457 (-) histidinol-phosphatase",
+      "Echvi_2458 (-) histidinol-phosphate aminotransferase",
+      "Echvi_2459 (-) histidinol dehydrogenase",
+      "Echvi_2460 (-) ATP phosphoribosyltransferase",
+      "Echvi_2461 (-) glutamyl-tRNA reductase",
+      "Echvi_2462 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015266319_1",
+     "locus": "Echvi_2517",
+     "fitness_browser_desc": "phosphoribosyl-ATP pyrophosphohydrolase",
+     "refseq_definition": "bifunctional phosphoribosyl-AMP cyclohydrolase/phosphoribosyl-ATP diphosphatase HisIE",
+     "neighbourhood": [
+      "Echvi_2514 (+) imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+      "Echvi_2515 (+) phosphoribosylformimino-5-aminoimidazole carboxamide ribotide isomerase",
+      "Echvi_2516 (+) imidazoleglycerol phosphate synthase, cyclase subunit",
+      "Echvi_2517 (+) phosphoribosyl-ATP pyrophosphohydrolase",
+      "Echvi_2518 (-) Periplasmic protease",
+      "Echvi_2519 (+) hypothetical protein",
+      "Echvi_2520 (+) Predicted unusual protein kinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRFGS",
+   "name": "Phosphoribosylformylglycinamidine synthase",
+   "equation_ids": "atp_c + fgam_c + gln__L_c + h2o_c --> adp_c + fpram_c + glu__L_c + h_c + pi_c",
+   "equation_names": "ATP + N2-Formyl-N1-(5-phospho-D-ribosyl)glycinamide + L-Glutamine + H2O --> ADP + 2-(Formamido)-N1-(5-phospho-D-ribosyl)acetamidine + L-Glutamate + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015267445_1 or WP_015268135_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015267445_1",
+     "locus": "Echvi_3691",
+     "fitness_browser_desc": "intracellular protease, PfpI family",
+     "refseq_definition": "DJ-1/PfpI family protein",
+     "neighbourhood": [
+      "Echvi_3688 (-) hypothetical protein",
+      "Echvi_3689 (-) Arylsulfatase A and related enzymes",
+      "Echvi_3690 (-) Arylsulfatase A and related enzymes",
+      "Echvi_3691 (+) intracellular protease, PfpI family",
+      "Echvi_3692 (+) Predicted nucleoside-diphosphate-sugar epimerases",
+      "Echvi_3693 (-) Receptor L domain.",
+      "Echvi_3694 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015268135_1",
+     "locus": "Echvi_4428",
+     "fitness_browser_desc": "Phosphoribosylformylglycinamidine (FGAM) synthase, synthetase domain",
+     "refseq_definition": "phosphoribosylformylglycinamidine synthase",
+     "neighbourhood": [
+      "Echvi_4425 (-) RND family efflux transporter, MFP subunit",
+      "Echvi_4426 (-) Outer membrane protein",
+      "Echvi_4427 (-) Transcriptional regulator",
+      "Echvi_4428 (+) Phosphoribosylformylglycinamidine (FGAM) synthase, synthetase domain",
+      "Echvi_4429 (+) tRNA",
+      "Echvi_4430 (-) Site-specific recombinases, DNA invertase Pin homologs",
+      "Echvi_4431 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRPPS",
+   "name": "Phosphoribosylpyrophosphate synthetase",
+   "equation_ids": "atp_c + r5p_c <=> amp_c + h_c + prpp_c",
+   "equation_names": "ATP + Alpha-D-Ribose 5-phosphate <=> AMP + H+ + 5-Phospho-alpha-D-ribose 1-diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015266945_1 or WP_015268291_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015266945_1",
+     "locus": "Echvi_3167",
+     "fitness_browser_desc": "ribose-phosphate pyrophosphokinase",
+     "refseq_definition": "ribose-phosphate pyrophosphokinase",
+     "neighbourhood": [
+      "Echvi_3164 (+) hypothetical protein",
+      "Echvi_3165 (+) Predicted exonuclease of the beta-lactamase fold involved in RNA processing",
+      "Echvi_3166 (+) putative thymidine phosphorylase",
+      "Echvi_3167 (+) ribose-phosphate pyrophosphokinase",
+      "Echvi_3168 (+) hypothetical protein",
+      "Echvi_3169 (+) hypothetical protein",
+      "Echvi_3170 (+) copper-(or silver)-translocating P-type ATPase/heavy metal-(Cd/Co/Hg/Pb/Zn)-translocating P-type ATPase"
+     ]
+    },
+    {
+     "model_gene": "WP_015268291_1",
+     "locus": "Echvi_4597",
+     "fitness_browser_desc": "ribose-phosphate pyrophosphokinase",
+     "refseq_definition": "ribose-phosphate pyrophosphokinase",
+     "neighbourhood": [
+      "Echvi_4594 (-) Xaa-Pro aminopeptidase",
+      "Echvi_4595 (+) hypothetical protein",
+      "Echvi_4596 (-) Phosphate-selective porin",
+      "Echvi_4597 (+) ribose-phosphate pyrophosphokinase",
+      "Echvi_4598 (+) ribosomal protein L25, Ctc-form",
+      "Echvi_4599 (+) peptidyl-tRNA hydrolase",
+      "Echvi_4600 (+) Uncharacterized conserved protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PYK",
+   "name": "Pyruvate kinase",
+   "equation_ids": "adp_c + h_c + pep_c --> atp_c + pyr_c",
+   "equation_names": "ADP + H+ + Phosphoenolpyruvate --> ATP + Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015266120_1 or WP_015266122_1",
+   "n_growth_conditions_essential": 4,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015266120_1",
+     "locus": "Echvi_2314",
+     "fitness_browser_desc": "beta-ketoacyl-acyl-carrier-protein synthase II",
+     "refseq_definition": "beta-ketoacyl-ACP synthase II",
+     "neighbourhood": [
+      "Echvi_2311 (-) Prolipoprotein diacylglyceryltransferase",
+      "Echvi_2312 (-) NAD+ synthetase",
+      "Echvi_2313 (-) ribonuclease III, bacterial",
+      "Echvi_2314 (-) beta-ketoacyl-acyl-carrier-protein synthase II",
+      "Echvi_2315 (-) acyl carrier protein",
+      "Echvi_2316 (+) hypothetical protein",
+      "Echvi_2317 (+) pyruvate kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_015266122_1",
+     "locus": "Echvi_2317",
+     "fitness_browser_desc": "pyruvate kinase",
+     "refseq_definition": "pyruvate kinase",
+     "neighbourhood": [
+      "Echvi_2314 (-) beta-ketoacyl-acyl-carrier-protein synthase II",
+      "Echvi_2315 (-) acyl carrier protein",
+      "Echvi_2316 (+) hypothetical protein",
+      "Echvi_2317 (+) pyruvate kinase",
+      "Echvi_2318 (-) Predicted RNA-binding protein homologous to eukaryotic snRNP",
+      "Echvi_2319 (-) Metal-dependent hydrolases of the beta-lactamase superfamily I",
+      "Echvi_2320 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RPI",
+   "name": "Ribose-5-phosphate isomerase",
+   "equation_ids": "r5p_c <=> ru5p__D_c",
+   "equation_names": "Alpha-D-Ribose 5-phosphate <=> D-Ribulose 5-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015265021_1 or WP_015266651_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015265021_1",
+     "locus": "Echvi_1186",
+     "fitness_browser_desc": "ribose 5-phosphate isomerase B",
+     "refseq_definition": "ribose 5-phosphate isomerase B",
+     "neighbourhood": [
+      "Echvi_1183 (-) hypothetical protein",
+      "Echvi_1184 (-) hypothetical protein",
+      "Echvi_1185 (-) hypothetical protein",
+      "Echvi_1186 (-) ribose 5-phosphate isomerase B",
+      "Echvi_1187 (-) Twin arginine targeting (Tat) protein translocase TatC",
+      "Echvi_1188 (-) Glycine/serine hydroxymethyltransferase",
+      "Echvi_1189 (-) Threonine dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_015266651_1",
+     "locus": "Echvi_2860",
+     "fitness_browser_desc": "sugar-phosphate isomerases, RpiB/LacA/LacB family",
+     "refseq_definition": "RpiB/LacA/LacB family sugar-phosphate isomerase",
+     "neighbourhood": [
+      "Echvi_2857 (+) Histidinol-phosphate/aromatic aminotransferase and cobyric acid decarboxylase",
+      "Echvi_2858 (+) Predicted permeases",
+      "Echvi_2859 (-) hypothetical protein",
+      "Echvi_2860 (+) sugar-phosphate isomerases, RpiB/LacA/LacB family",
+      "Echvi_2861 (+) 6-phosphogluconate dehydrogenase, decarboxylating",
+      "Echvi_2862 (+) glucose-6-phosphate 1-dehydrogenase",
+      "Echvi_2863 (+) 6-phosphogluconolactonase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "STPT1",
+   "name": "Phosphoserine:homoserine phosphotransferase",
+   "equation_ids": "hom__L_c + pser__L_c --> phom_c + ser__L_c",
+   "equation_names": "L-Homoserine + O-Phospho-L-serine --> O-Phospho-L-homoserine + L-Serine",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  },
+  {
+   "reaction": "TKT1",
+   "name": "Transketolase",
+   "equation_ids": "r5p_c + xu5p__D_c <=> g3p_c + s7p_c",
+   "equation_names": "Alpha-D-Ribose 5-phosphate + D-Xylulose 5-phosphate <=> Glyceraldehyde 3-phosphate + Sedoheptulose 7-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_015265120_1 and WP_015265121_1) or (WP_015266716_1 and WP_015266717_1)",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015265120_1",
+     "locus": "Echvi_1285",
+     "fitness_browser_desc": "Transketolase, C-terminal subunit",
+     "refseq_definition": "transketolase family protein",
+     "neighbourhood": [
+      "Echvi_1282 (-) ABC-type sugar transport system, ATPase component",
+      "Echvi_1283 (-) Predicted periplasmic lipoprotein (DUF2291).",
+      "Echvi_1284 (-) ABC-type sugar transport system, periplasmic component",
+      "Echvi_1285 (-) Transketolase, C-terminal subunit",
+      "Echvi_1286 (-) Transketolase, N-terminal subunit",
+      "Echvi_1287 (-) L-fucose isomerase and related proteins",
+      "Echvi_1288 (-) SusD family."
+     ]
+    },
+    {
+     "model_gene": "WP_015265121_1",
+     "locus": "Echvi_1286",
+     "fitness_browser_desc": "Transketolase, N-terminal subunit",
+     "refseq_definition": "transketolase",
+     "neighbourhood": [
+      "Echvi_1283 (-) Predicted periplasmic lipoprotein (DUF2291).",
+      "Echvi_1284 (-) ABC-type sugar transport system, periplasmic component",
+      "Echvi_1285 (-) Transketolase, C-terminal subunit",
+      "Echvi_1286 (-) Transketolase, N-terminal subunit",
+      "Echvi_1287 (-) L-fucose isomerase and related proteins",
+      "Echvi_1288 (-) SusD family.",
+      "Echvi_1289 (-) TonB-linked outer membrane protein, SusC/RagA family"
+     ]
+    },
+    {
+     "model_gene": "WP_015266716_1",
+     "locus": "Echvi_2926",
+     "fitness_browser_desc": "Transketolase, C-terminal subunit",
+     "refseq_definition": "transketolase family protein",
+     "neighbourhood": [
+      "Echvi_2923 (-) Outer membrane receptor proteins, mostly Fe transport",
+      "Echvi_2924 (-) AraC-type DNA-binding domain-containing proteins",
+      "Echvi_2925 (-) hypothetical protein",
+      "Echvi_2926 (-) Transketolase, C-terminal subunit",
+      "Echvi_2927 (-) Transketolase, N-terminal subunit",
+      "Echvi_2928 (-) Peroxiredoxin",
+      "Echvi_2929 (-) Membrane proteins related to metalloendopeptidases"
+     ]
+    },
+    {
+     "model_gene": "WP_015266717_1",
+     "locus": "Echvi_2927",
+     "fitness_browser_desc": "Transketolase, N-terminal subunit",
+     "refseq_definition": "transketolase",
+     "neighbourhood": [
+      "Echvi_2924 (-) AraC-type DNA-binding domain-containing proteins",
+      "Echvi_2925 (-) hypothetical protein",
+      "Echvi_2926 (-) Transketolase, C-terminal subunit",
+      "Echvi_2927 (-) Transketolase, N-terminal subunit",
+      "Echvi_2928 (-) Peroxiredoxin",
+      "Echvi_2929 (-) Membrane proteins related to metalloendopeptidases",
+      "Echvi_2930 (-) 2-keto-4-pentenoate hydratase/2-oxohepta-3-ene-1,7-dioic acid hydratase (catechol pathway)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TKT2",
+   "name": "Transketolase",
+   "equation_ids": "e4p_c + xu5p__D_c <=> f6p_c + g3p_c",
+   "equation_names": "D-Erythrose 4-phosphate + D-Xylulose 5-phosphate <=> D-Fructose 6-phosphate + Glyceraldehyde 3-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_015265120_1 and WP_015265121_1) or (WP_015266716_1 and WP_015266717_1)",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015265120_1",
+     "locus": "Echvi_1285",
+     "fitness_browser_desc": "Transketolase, C-terminal subunit",
+     "refseq_definition": "transketolase family protein",
+     "neighbourhood": [
+      "Echvi_1282 (-) ABC-type sugar transport system, ATPase component",
+      "Echvi_1283 (-) Predicted periplasmic lipoprotein (DUF2291).",
+      "Echvi_1284 (-) ABC-type sugar transport system, periplasmic component",
+      "Echvi_1285 (-) Transketolase, C-terminal subunit",
+      "Echvi_1286 (-) Transketolase, N-terminal subunit",
+      "Echvi_1287 (-) L-fucose isomerase and related proteins",
+      "Echvi_1288 (-) SusD family."
+     ]
+    },
+    {
+     "model_gene": "WP_015265121_1",
+     "locus": "Echvi_1286",
+     "fitness_browser_desc": "Transketolase, N-terminal subunit",
+     "refseq_definition": "transketolase",
+     "neighbourhood": [
+      "Echvi_1283 (-) Predicted periplasmic lipoprotein (DUF2291).",
+      "Echvi_1284 (-) ABC-type sugar transport system, periplasmic component",
+      "Echvi_1285 (-) Transketolase, C-terminal subunit",
+      "Echvi_1286 (-) Transketolase, N-terminal subunit",
+      "Echvi_1287 (-) L-fucose isomerase and related proteins",
+      "Echvi_1288 (-) SusD family.",
+      "Echvi_1289 (-) TonB-linked outer membrane protein, SusC/RagA family"
+     ]
+    },
+    {
+     "model_gene": "WP_015266716_1",
+     "locus": "Echvi_2926",
+     "fitness_browser_desc": "Transketolase, C-terminal subunit",
+     "refseq_definition": "transketolase family protein",
+     "neighbourhood": [
+      "Echvi_2923 (-) Outer membrane receptor proteins, mostly Fe transport",
+      "Echvi_2924 (-) AraC-type DNA-binding domain-containing proteins",
+      "Echvi_2925 (-) hypothetical protein",
+      "Echvi_2926 (-) Transketolase, C-terminal subunit",
+      "Echvi_2927 (-) Transketolase, N-terminal subunit",
+      "Echvi_2928 (-) Peroxiredoxin",
+      "Echvi_2929 (-) Membrane proteins related to metalloendopeptidases"
+     ]
+    },
+    {
+     "model_gene": "WP_015266717_1",
+     "locus": "Echvi_2927",
+     "fitness_browser_desc": "Transketolase, N-terminal subunit",
+     "refseq_definition": "transketolase",
+     "neighbourhood": [
+      "Echvi_2924 (-) AraC-type DNA-binding domain-containing proteins",
+      "Echvi_2925 (-) hypothetical protein",
+      "Echvi_2926 (-) Transketolase, C-terminal subunit",
+      "Echvi_2927 (-) Transketolase, N-terminal subunit",
+      "Echvi_2928 (-) Peroxiredoxin",
+      "Echvi_2929 (-) Membrane proteins related to metalloendopeptidases",
+      "Echvi_2930 (-) 2-keto-4-pentenoate hydratase/2-oxohepta-3-ene-1,7-dioic acid hydratase (catechol pathway)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMPPP",
+   "name": "Thiamine-phosphate diphosphorylase",
+   "equation_ids": "2mahmp_c + 4mpetz_c + h_c --> ppi_c + thmmp_c",
+   "equation_names": "2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate + 4-Methyl-5-(2-phosphoethyl)-thiazole + H+ --> Diphosphate + Thiamin monophosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264079_1 or WP_015264080_1 or WP_015267326_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264079_1",
+     "locus": "Echvi_0215",
+     "fitness_browser_desc": "phosphomethylpyrimidine kinase",
+     "refseq_definition": "bifunctional hydroxymethylpyrimidine kinase/phosphomethylpyrimidine kinase",
+     "neighbourhood": [
+      "Echvi_0212 (-) Sulfite oxidase and related enzymes",
+      "Echvi_0213 (+) hypothetical protein",
+      "Echvi_0214 (-) Putative transcription activator",
+      "Echvi_0215 (-) phosphomethylpyrimidine kinase",
+      "Echvi_0216 (-) thiamine-phosphate pyrophosphorylase",
+      "Echvi_0217 (-) hydroxyethylthiazole kinase",
+      "Echvi_0218 (-) luciferase family oxidoreductase, group 1"
+     ]
+    },
+    {
+     "model_gene": "WP_015264080_1",
+     "locus": "Echvi_0216",
+     "fitness_browser_desc": "thiamine-phosphate pyrophosphorylase",
+     "refseq_definition": "thiamine phosphate synthase",
+     "neighbourhood": [
+      "Echvi_0213 (+) hypothetical protein",
+      "Echvi_0214 (-) Putative transcription activator",
+      "Echvi_0215 (-) phosphomethylpyrimidine kinase",
+      "Echvi_0216 (-) thiamine-phosphate pyrophosphorylase",
+      "Echvi_0217 (-) hydroxyethylthiazole kinase",
+      "Echvi_0218 (-) luciferase family oxidoreductase, group 1",
+      "Echvi_0219 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015267326_1",
+     "locus": "Echvi_3565",
+     "fitness_browser_desc": "Thiamine monophosphate synthase",
+     "refseq_definition": "thiamine phosphate synthase",
+     "neighbourhood": [
+      "Echvi_3562 (-) Aldo/keto reductases, related to diketogulonate reductase",
+      "Echvi_3563 (-) thiazole biosynthesis protein ThiH",
+      "Echvi_3564 (-) Uncharacterized enzyme of thiazole biosynthesis",
+      "Echvi_3565 (-) Thiamine monophosphate synthase",
+      "Echvi_3566 (-) Thiamine monophosphate synthase",
+      "Echvi_3567 (-) thiamine biosynthesis protein ThiC",
+      "Echvi_3568 (-) thiamine biosynthesis protein ThiS"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TRDR",
+   "name": "Thioredoxin reductase (NADPH)",
+   "equation_ids": "h_c + nadph_c + trdox_c --> nadp_c + trdrd_c",
+   "equation_names": "H+ + Nicotinamide adenine dinucleotide phosphate - reduced + Oxidized thioredoxin --> Nicotinamide adenine dinucleotide phosphate + Reduced thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015265821_1 or WP_015267561_1 or WP_015268370_1 or (WP_015264494_1 and WP_015267201_1) or (WP_015265072_1 and WP_015267201_1) or (WP_015265832_1 and WP_015267201_1) or (WP_015267201_1 and WP_015267265_1)",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264494_1",
+     "locus": "Echvi_0650",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "Echvi_0647 (-) ferrochelatase",
+      "Echvi_0648 (-) hypothetical protein",
+      "Echvi_0649 (-) Transposase and inactivated derivatives",
+      "Echvi_0650 (-) thioredoxin",
+      "Echvi_0651 (-) Outer membrane protein",
+      "Echvi_0652 (-) Outer membrane protein",
+      "Echvi_0653 (-) Outer membrane protein/protective antigen OMA87"
+     ]
+    },
+    {
+     "model_gene": "WP_015265072_1",
+     "locus": "Echvi_1237",
+     "fitness_browser_desc": "Thiol-disulfide isomerase and thioredoxins",
+     "refseq_definition": "thioredoxin family protein",
+     "neighbourhood": [
+      "Echvi_1234 (-) Uncharacterized protein conserved in bacteria",
+      "Echvi_1235 (+) Nitroreductase",
+      "Echvi_1236 (-) hypothetical protein",
+      "Echvi_1237 (-) Thiol-disulfide isomerase and thioredoxins",
+      "Echvi_1238 (-) inosine/xanthosine triphosphatase",
+      "Echvi_1239 (-) DNA-binding regulatory protein, YebC/PmpR family",
+      "Echvi_1240 (+) NADH dehydrogenase, FAD-containing subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_015265821_1",
+     "locus": "Echvi_2007",
+     "fitness_browser_desc": "putative bacillithiol system thiol disulfide oxidoreductase, YpdA family",
+     "refseq_definition": "YpdA family putative bacillithiol disulfide reductase",
+     "neighbourhood": [
+      "Echvi_2004 (-) Predicted transcriptional regulator",
+      "Echvi_2005 (-) hypothetical protein",
+      "Echvi_2006 (+) Uncharacterized conserved protein",
+      "Echvi_2007 (+) putative bacillithiol system thiol disulfide oxidoreductase, YpdA family",
+      "Echvi_2008 (-) Signal transduction histidine kinase",
+      "Echvi_2009 (-) adenine deaminase",
+      "Echvi_2010 (+) cytidylate kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_015265832_1",
+     "locus": "Echvi_2019",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "Echvi_2016 (+) NADH:ubiquinone oxidoreductase, Na(+)-translocating, E subunit",
+      "Echvi_2017 (+) Uncharacterized conserved protein",
+      "Echvi_2018 (+) Transposase and inactivated derivatives",
+      "Echvi_2019 (-) thioredoxin",
+      "Echvi_2020 (-) DNA-directed DNA polymerase III (polc)",
+      "Echvi_2021 (+) trehalose-phosphatase/alpha,alpha-trehalose-phosphate synthase [UDP-forming]",
+      "Echvi_2022 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015267201_1",
+     "locus": "Echvi_3438",
+     "fitness_browser_desc": "thioredoxin-disulfide reductase",
+     "refseq_definition": "thioredoxin-disulfide reductase",
+     "neighbourhood": [
+      "Echvi_3435 (+) ribosomal protein S15, bacterial/organelle",
+      "Echvi_3436 (+) polyribonucleotide nucleotidyltransferase",
+      "Echvi_3437 (+) RNA polymerase sigma factor, sigma-70 family",
+      "Echvi_3438 (+) thioredoxin-disulfide reductase",
+      "Echvi_3439 (+) Membrane proteins related to metalloendopeptidases",
+      "Echvi_3440 (+) bacillithiol biosynthesis deacetylase BshB1",
+      "Echvi_3441 (-) pyridoxamine-phosphate oxidase"
+     ]
+    },
+    {
+     "model_gene": "WP_015267265_1",
+     "locus": "Echvi_3504",
+     "fitness_browser_desc": "Redoxin.",
+     "refseq_definition": "TlpA family protein disulfide reductase",
+     "neighbourhood": [
+      "Echvi_3501 (+) SusD family.",
+      "Echvi_3502 (+) hypothetical protein",
+      "Echvi_3503 (+) hypothetical protein",
+      "Echvi_3504 (+) Redoxin.",
+      "Echvi_3505 (-) hypothetical protein",
+      "Echvi_3506 (-) Outer membrane protein and related peptidoglycan-associated (lipo)proteins",
+      "Echvi_3507 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015267561_1",
+     "locus": "Echvi_3807",
+     "fitness_browser_desc": "Thioredoxin reductase",
+     "refseq_definition": "NAD(P)/FAD-dependent oxidoreductase",
+     "neighbourhood": [
+      "Echvi_3804 (-) Nucleoside-diphosphate-sugar epimerases",
+      "Echvi_3805 (-) Sugar transferases involved in lipopolysaccharide synthesis",
+      "Echvi_3806 (-) hypothetical protein",
+      "Echvi_3807 (+) Thioredoxin reductase",
+      "Echvi_3808 (+) DNA topoisomerase III, bacteria and conjugative plasmid",
+      "Echvi_3809 (-) Arylsulfatase A and related enzymes",
+      "Echvi_3810 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015268370_1",
+     "locus": "Echvi_4681",
+     "fitness_browser_desc": "Thioredoxin reductase",
+     "refseq_definition": "NAD(P)/FAD-dependent oxidoreductase",
+     "neighbourhood": [
+      "Echvi_4678 (+) ABC-type Fe3+-siderophore transport system, permease component",
+      "Echvi_4679 (+) ABC-type cobalamin/Fe3+-siderophores transport systems, ATPase components",
+      "Echvi_4680 (+) Transcriptional regulators",
+      "Echvi_4681 (+) Thioredoxin reductase",
+      "Echvi_4682 (+) Ferredoxin",
+      "Echvi_4683 (-) Methylmalonyl-CoA mutase, N-terminal domain/subunit",
+      "Echvi_4684 (-) Methylmalonyl-CoA mutase, N-terminal domain/subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDCPDP",
+   "name": "Undecaprenyl-diphosphatase",
+   "equation_ids": "h2o_c + udcpdp_c --> h_c + pi_c + udcpp_c",
+   "equation_names": "H2O + Undecaprenyl diphosphate --> H+ + Phosphate + Undecaprenyl phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015267045_1 or WP_015267473_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015267045_1",
+     "locus": "Echvi_3275",
+     "fitness_browser_desc": "Uncharacterized bacitracin resistance protein",
+     "refseq_definition": "undecaprenyl-diphosphate phosphatase",
+     "neighbourhood": [
+      "Echvi_3272 (-) 3-oxoacid CoA-transferase, A subunit",
+      "Echvi_3273 (-) riboflavin kinase/FMN adenylyltransferase",
+      "Echvi_3274 (-) tRNA pseudouridine 55 synthase",
+      "Echvi_3275 (-) Uncharacterized bacitracin resistance protein",
+      "Echvi_3276 (-) Protein of unknown function (DUF3098).",
+      "Echvi_3277 (-) Cell division protein",
+      "Echvi_3278 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015267473_1",
+     "locus": "Echvi_3719",
+     "fitness_browser_desc": "Membrane-associated phospholipid phosphatase",
+     "refseq_definition": "phosphatase PAP2 family protein",
+     "neighbourhood": [
+      "Echvi_3716 (-) rRNA methylases",
+      "Echvi_3717 (+) Outer membrane protein/protective antigen OMA87",
+      "Echvi_3718 (+) Coproporphyrinogen III oxidase",
+      "Echvi_3719 (+) Membrane-associated phospholipid phosphatase",
+      "Echvi_3720 (-) riboflavin synthase, alpha subunit",
+      "Echvi_3721 (+) protein-L-isoaspartate(D-aspartate) O-methyltransferase",
+      "Echvi_3722 (+) Acyl-CoA hydrolase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDPG4E",
+   "name": "UDPglucose 4-epimerase",
+   "equation_ids": "udpg_c <=> udpgal_c",
+   "equation_names": "UDPglucose <=> UDPgalactose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264984_1 or WP_015265301_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264984_1",
+     "locus": "Echvi_1149",
+     "fitness_browser_desc": "Nucleoside-diphosphate-sugar epimerases",
+     "refseq_definition": "NAD-dependent epimerase/dehydratase family protein",
+     "neighbourhood": [
+      "Echvi_1146 (-) Predicted membrane protein",
+      "Echvi_1147 (-) Uncharacterized conserved protein",
+      "Echvi_1148 (-) Tetratricopeptide repeat.",
+      "Echvi_1149 (-) Nucleoside-diphosphate-sugar epimerases",
+      "Echvi_1150 (-) Capsular polysaccharide biosynthesis protein",
+      "Echvi_1151 (-) dTDP-4-dehydrorhamnose 3,5-epimerase",
+      "Echvi_1152 (+) GTP-binding protein HflX"
+     ]
+    },
+    {
+     "model_gene": "WP_015265301_1",
+     "locus": "Echvi_1472",
+     "fitness_browser_desc": "UDP-glucose-4-epimerase",
+     "refseq_definition": "UDP-glucose 4-epimerase GalE",
+     "neighbourhood": [
+      "Echvi_1469 (-) AICAR transformylase/IMP cyclohydrolase PurH (only IMP cyclohydrolase domain in Aful)",
+      "Echvi_1470 (-) phosphoribosylglycinamide formyltransferase, formyltetrahydrofolate-dependent",
+      "Echvi_1471 (-) 4-hydroxybenzoate polyprenyltransferase and related prenyltransferases",
+      "Echvi_1472 (-) UDP-glucose-4-epimerase",
+      "Echvi_1473 (+) Acyl-CoA dehydrogenases",
+      "Echvi_1474 (+) Membrane-associated lipoprotein involved in thiamine biosynthesis",
+      "Echvi_1475 (+) ZIP Zinc transporter."
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264134_1 or WP_015265824_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264134_1",
+     "locus": "Echvi_0276",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "UMP kinase",
+     "neighbourhood": [
+      "Echvi_0273 (-) tRNA",
+      "Echvi_0274 (-) Aminopeptidase N",
+      "Echvi_0275 (+) Acetyl/propionyl-CoA carboxylase, alpha subunit",
+      "Echvi_0276 (+) uridylate kinase",
+      "Echvi_0277 (+) ribosome recycling factor",
+      "Echvi_0278 (-) hypothetical protein",
+      "Echvi_0279 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_015265824_1",
+     "locus": "Echvi_2010",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "(d)CMP kinase",
+     "neighbourhood": [
+      "Echvi_2007 (+) putative bacillithiol system thiol disulfide oxidoreductase, YpdA family",
+      "Echvi_2008 (-) Signal transduction histidine kinase",
+      "Echvi_2009 (-) adenine deaminase",
+      "Echvi_2010 (+) cytidylate kinase",
+      "Echvi_2011 (+) (E)-4-hydroxy-3-methyl-but-2-enyl pyrophosphate reductase (IPP and DMAPP forming)",
+      "Echvi_2012 (+) NADH:ubiquinone oxidoreductase, Na(+)-translocating, A subunit",
+      "Echvi_2013 (+) NADH:ubiquinone oxidoreductase, Na(+)-translocating, B subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "XYLK",
+   "name": "Xylulokinase",
+   "equation_ids": "atp_c + xylu__D_c --> adp_c + h_c + xu5p__D_c",
+   "equation_names": "ATP + D-Xylulose --> ADP + H+ + D-Xylulose 5-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_015264366_1 or WP_015265691_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 7,
+   "genes": [
+    {
+     "model_gene": "WP_015264366_1",
+     "locus": "Echvi_0515",
+     "fitness_browser_desc": "L-ribulokinase",
+     "refseq_definition": "ribulokinase",
+     "neighbourhood": [
+      "Echvi_0512 (+) hypothetical protein",
+      "Echvi_0513 (+) Small-conductance mechanosensitive channel",
+      "Echvi_0514 (+) Uncharacterized membrane protein",
+      "Echvi_0515 (-) L-ribulokinase",
+      "Echvi_0516 (-) Alpha-L-arabinofuranosidase",
+      "Echvi_0517 (-) Glycoside hydrolase 97.",
+      "Echvi_0518 (-) Uncharacterized protein conserved in bacteria"
+     ]
+    },
+    {
+     "model_gene": "WP_015265691_1",
+     "locus": "Echvi_1875",
+     "fitness_browser_desc": "Sugar (pentulose and hexulose) kinases",
+     "refseq_definition": "xylulokinase",
+     "neighbourhood": [
+      "Echvi_1872 (+) hypothetical protein",
+      "Echvi_1873 (+) hypothetical protein",
+      "Echvi_1874 (-) AraC-type DNA-binding domain-containing proteins",
+      "Echvi_1875 (+) Sugar (pentulose and hexulose) kinases",
+      "Echvi_1876 (+) xylose isomerase",
+      "Echvi_1877 (-) hypothetical protein",
+      "Echvi_1878 (-) Beta-xylosidase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ZN2tpp",
+   "name": "Zinc transport in via permease (no H+)",
+   "equation_ids": "zn2_p --> zn2_c",
+   "equation_names": "Zinc --> Zinc",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 7,
+   "genes": []
+  }
+ ]
+}

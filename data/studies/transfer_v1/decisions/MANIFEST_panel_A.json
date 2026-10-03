@@ -1,0 +1,77 @@
+{
+ "note": "Blind adjudication of panel A (transfer study v1), after the method freeze and before any panel A fitness table was downloaded. Packets were built by scripts/transfer_candidates.py --arm UNQ in a scratch directory outside the repository; each was given to one fresh Claude subagent (general-purpose agent type, inheriting the session model claude-opus-5-5) with docs/studies/transfer-adjudication-prompt-v1.txt. candidates.json is copied here; genes.tsv is the organism's data/fitness_browser_panel/<org>/genes.tsv columns; PROCEDURE.md is docs/studies/transfer-adjudication-procedure-v1.md. PS has no packet (its base model could not be built).",
+ "date": "2026-10-03",
+ "organisms": {
+  "Cola": {
+   "packet": {
+    "candidates.json": "5312d96f6a193e5c58126dc71633273b02625c9d58379f3c28280192eeffcf3b",
+    "genes.tsv": "3e115a8e2970f01ac5d35096563f5731efc7f5daaa56e819429fc40ab0bfd402",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "3a1afd5d652628a4986f324d86d10c6934dab524cdd10749b2bf0e5873341bf6",
+   "n_candidates": 50,
+   "decision_counts": {
+    "R1": 13,
+    "abstain": 33,
+    "R6": 4
+   }
+  },
+  "Dino": {
+   "packet": {
+    "candidates.json": "9c948aea81ef0e58e4efe327c26098fecbd89d58ed10b51d4beb20cc5c1146fb",
+    "genes.tsv": "83cd184495769db52c9bc485c0e55b0e6f625867fc8db0c8a6e7a18fc9cef2e4",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "42fb46f2a56a23e03297d9d6a3b3caafbc63d0b7cf312f9813bd83af4371890a",
+   "n_candidates": 61,
+   "decision_counts": {
+    "R1": 18,
+    "abstain": 37,
+    "R6": 6
+   }
+  },
+  "Dyella79": {
+   "packet": {
+    "candidates.json": "2af6dcd6943cd4245f98a685da215ea25a6999d0c21973542cadc51cc1e6d7c8",
+    "genes.tsv": "614b5fee86807f62a1b6a874abb5cf32c97bb51285d62729f00677cc5e3abbbc",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "62905d908572ae744cf941572de50e7b4f289d9bec8bd501c99b5f2397e3d1db",
+   "n_candidates": 43,
+   "decision_counts": {
+    "R6": 2,
+    "abstain": 32,
+    "R1": 9
+   }
+  },
+  "MycoTube": {
+   "packet": {
+    "candidates.json": "a02a364d0c8dba937cebe864002bc81197eddb6353082f3a408c4f63286b66a2",
+    "genes.tsv": "e7f66d863f06968ff271be6305a2a822601a6f4ed23d9af1bf7f339dbaf3fd19",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "96059c6b7fb922688d79dfb991280a3bca655630ec03d6131d13aed023b56afc",
+   "n_candidates": 48,
+   "decision_counts": {
+    "R6": 3,
+    "abstain": 27,
+    "R1": 16,
+    "R2": 2
+   }
+  },
+  "RPal_CGA009": {
+   "packet": {
+    "candidates.json": "cfdd08106b061561bbedd1c8757f515d49d52a1bc6bfc16cec2b0cac84247d18",
+    "genes.tsv": "cdea33873fd1e948543bbdb8853dcd84790d904f3068c87ad980cf31c284a65b",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "2567181de73ab9a5f657e6d8c51daf05e3fe2fdcd1cb0857aa3bcffe12ba9220",
+   "n_candidates": 63,
+   "decision_counts": {
+    "abstain": 33,
+    "R6": 10,
+    "R1": 20
+   }
+  }
+ }
+}

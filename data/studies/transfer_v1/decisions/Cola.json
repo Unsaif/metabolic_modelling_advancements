@@ -1,0 +1,306 @@
+{
+ "org": "Cola",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ANPRT",
+   "decision": "R1",
+   "new_rule": "Echvi_2507",
+   "evidence": "Echvi_2507 is annotated anthranilate phosphoribosyltransferase (TrpD, 338 aa) in the trp operon; Echvi_2504 is anthranilate synthase component I (TrpE, 469 aa, EC 4.1.3.27), a different enzyme that makes the substrate, so it is removed."
+  },
+  {
+   "reaction": "ASP1DC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_1528 is the canonical PanD next to panC (Echvi_1527), but Echvi_1144/Echvi_3830 carry family-level 'glutamate decarboxylase and related PLP-dependent proteins' annotations (group II decarboxylases include PLP-dependent aspartate 1-decarboxylases); not removable."
+  },
+  {
+   "reaction": "ASPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_1218 (aspartate kinase) and Echvi_2000 (bifunctional aspartate kinase/homoserine dehydrogenase I) are genuine aspartate kinase isozymes; OR rule is correct."
+  },
+  {
+   "reaction": "ASPTA",
+   "decision": "R1",
+   "new_rule": "Echvi_0124 or Echvi_0675 or Echvi_1811 or WP_041739222_1",
+   "evidence": "Echvi_1625 is a MocR-family transcriptional regulator (HTH + aminotransferase-like effector domain), not a catalyst, and is removed; the aspartate/aromatic (Echvi_0124, Echvi_0675), class V aspartate-type (Echvi_1811) and PLP aminotransferase (WP_041739222_1) alternatives are kept."
+  },
+  {
+   "reaction": "BGLA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_0398 and Echvi_2412 are both full-length GH3 'beta-glucosidase-related glycosidases' (family-level), not subunits; redundancy plausible."
+  },
+  {
+   "reaction": "CHORM",
+   "decision": "R1",
+   "new_rule": "Echvi_0120 or Echvi_2512",
+   "evidence": "Echvi_0120 (RefSeq 'chorismate mutase', 367 aa DAHPS-CM fusion) and Echvi_2512 (bifunctional DAHP synthase/chorismate mutase) carry CM activity; Echvi_0123 is a monofunctional prephenate dehydratase (279 aa, no CM domain, EC 4.2.1.51) and is removed."
+  },
+  {
+   "reaction": "CLBtpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No cellobiose-specific transporter is annotated; only generic sugar MFS/ABC components exist."
+  },
+  {
+   "reaction": "CU2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No copper uptake permease is annotated; copper-related genes are CopA-type efflux P-type ATPases, chaperones, multicopper oxidases and silver/Cus-type efflux pumps, which do not match passive Cu2+ uptake."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_0120 and Echvi_2512 are both annotated DAHP synthases (isozymes); OR rule is correct."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "Echvi_2055",
+   "evidence": "Echvi_2055 is dihydroxy-acid dehydratase (IlvD, 561 aa) in the ilv/leu cluster; Echvi_0850 is pterin-4a-carbinolamine dehydratase (76 aa, EC 4.2.1.96, pterin substrate), clearly not a catalyst, and is removed."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_3959 is the specific DapA, but the other four carry the family-level 'dihydrodipicolinate synthase/N-acetylneuraminate lyase' (DapA-family aldolase) annotation; same-family paralogs are not removed."
+  },
+  {
+   "reaction": "DHFR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_4291 and WP_041739757_1 are both annotated dihydrofolate reductase (same-name paralogs)."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_0748 and Echvi_4623 are annotated dihydroorotase; Echvi_3613 is a family-level cyclic amidohydrolase compatible with the reaction; no removal allowed."
+  },
+  {
+   "reaction": "DMATT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_0319 and Echvi_0668 are both polyprenyl synthetase family 'geranylgeranyl pyrophosphate synthase' paralogs (family-level); cannot tell which is the FPP synthase."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_2093 is ribosomal protein S1 (592 aa, no IspH fusion) and not a catalyst, but a second annotated IspH (Echvi_2011) lies outside the rule, so pruning to Echvi_1480 alone would create a false single-gene dependency; isozyme additions are not allowed."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No ketopantoate reductase (PanE/ApbA, EC 1.1.1.169) is annotated in the genome; only pantoate-beta-alanine ligase and type III pantothenate kinases."
+  },
+  {
+   "reaction": "DTMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No thymidylate kinase (Tmk, EC 2.7.4.9) is annotated; thymidine kinase, deoxynucleoside kinases, cytidylate and adenylate kinases catalyse different reactions."
+  },
+  {
+   "reaction": "GALt2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both are sugar MFS transporters (sugar porter family; fucose permease) of the right substrate class; never remove."
+  },
+  {
+   "reaction": "GAPD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Three GAPDH paralogs (two type I, one type II phosphorylating GAPDH); same-name alternatives, OR rule is correct."
+  },
+  {
+   "reaction": "GRTT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_0319 and Echvi_0668 are both polyprenyl synthetase family 'geranylgeranyl pyrophosphate synthase' paralogs (family-level); cannot tell which is the FPP synthase."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "R1",
+   "new_rule": "Echvi_3878 or spontaneous",
+   "evidence": "Echvi_3879 is a SulP-family inorganic anion transporter (548 aa, no fused CA domain), i.e. a transporter listed for an enzymatic hydration, and is removed; carbonic anhydrase Echvi_3878 and the spontaneous term remain."
+  },
+  {
+   "reaction": "HISTP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_2457 is HisB histidinol-phosphatase; Echvi_0848 is an inositol monophosphatase-family phosphatase (family includes HisN-type histidinol-phosphate phosphatases), a family-level annotation that is not removed."
+  },
+  {
+   "reaction": "HSDy",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_2000 (bifunctional aspartate kinase/homoserine dehydrogenase I) and Echvi_3284 (homoserine dehydrogenase) are both genuine homoserine dehydrogenases; OR rule is correct."
+  },
+  {
+   "reaction": "IGPS",
+   "decision": "R1",
+   "new_rule": "Echvi_2508",
+   "evidence": "Echvi_2508 is indole-3-glycerol phosphate synthase (TrpC, 272 aa); Echvi_2509 is a separate monofunctional phosphoribosylanthranilate isomerase (TrpF, EC 5.3.1.24), a different step, and is removed."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_2093 is ribosomal protein S1 (592 aa, no IspH fusion) and not a catalyst, but a second annotated IspH (Echvi_2011) lies outside the rule, so pruning to Echvi_1480 alone would create a false single-gene dependency; isozyme additions are not allowed."
+  },
+  {
+   "reaction": "IPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both carry the 'isopropylmalate/homocitrate/citramalate synthase' family annotation (Echvi_2061 in the leu cluster, Echvi_3833 RefSeq 2-isopropylmalate synthase); same-family paralogs, no removal."
+  },
+  {
+   "reaction": "KARA1",
+   "decision": "R6",
+   "new_rule": "Echvi_2058",
+   "evidence": "Echvi_2058 is annotated ketol-acid reductoisomerase (IlvC, EC 1.1.1.86), the only KARI in the genome, located in the ilvD-ilvB-ilvN-ilvC-leuCD-leuA-leuB cluster (Echvi_2055-2062)."
+  },
+  {
+   "reaction": "KARA2",
+   "decision": "R6",
+   "new_rule": "Echvi_2058",
+   "evidence": "Ketol-acid reductoisomerase IlvC (Echvi_2058, EC 1.1.1.86) also converts 2-aceto-2-hydroxybutanoate in the isoleucine branch; it is the sole annotated KARI and sits in the ilv cluster."
+  },
+  {
+   "reaction": "OMCDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "3-isopropylmalate dehydrogenase LeuB (Echvi_2062) catalyses this decarboxylation and the spontaneous term is legitimate; rule is fine."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "R6",
+   "new_rule": "Echvi_1178",
+   "evidence": "Echvi_1178 is annotated phosphoglucosamine mutase (GlmM, EC 5.4.2.10, 463 aa), the only such gene in the genome."
+  },
+  {
+   "reaction": "PGCD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_2777 (RefSeq phosphoglycerate dehydrogenase; 630 aa SerA/HAD-IB fusion) and Echvi_0181 (family-level D-2-hydroxyacid dehydrogenase) are both compatible; no removal."
+  },
+  {
+   "reaction": "PGMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_0844 (2,3-BPG-independent phosphoglycerate mutase, EC 5.4.2.12) is a different enzyme, but the genes that would remain (HAD hydrolases Echvi_1029/Echvi_2228, phosphonatase-like Echvi_4560) are all generic, so R1 is barred."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "R1",
+   "new_rule": "Echvi_0124 or Echvi_0675 or Echvi_2857 or WP_041739222_1",
+   "evidence": "Echvi_1625 is a MocR-family transcriptional regulator (HTH + aminotransferase-like effector domain), not a catalyst, and is removed; aromatic aminotransferases Echvi_0124, Echvi_0675, Echvi_2857 and PLP aminotransferase WP_041739222_1 remain."
+  },
+  {
+   "reaction": "PNTK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_1181 is uridine kinase (not a pantothenate kinase), but a second annotated type III pantothenate kinase (Echvi_0858) lies outside the rule, so pruning to Echvi_1252 alone would create a false single-gene dependency; isozyme additions are not allowed."
+  },
+  {
+   "reaction": "PRAMPC",
+   "decision": "R1",
+   "new_rule": "Echvi_2517",
+   "evidence": "Echvi_2517 is bifunctional HisIE (phosphoribosyl-AMP cyclohydrolase/phosphoribosyl-ATP diphosphatase); Echvi_2459 is monofunctional histidinol dehydrogenase (HisD, 429 aa, EC 1.1.1.23), a different step, and is removed."
+  },
+  {
+   "reaction": "PRATPP",
+   "decision": "R1",
+   "new_rule": "Echvi_2517",
+   "evidence": "Echvi_2517 is bifunctional HisIE (phosphoribosyl-ATP diphosphatase/phosphoribosyl-AMP cyclohydrolase); Echvi_2459 is monofunctional histidinol dehydrogenase (HisD, 429 aa, EC 1.1.1.23), a different step, and is removed."
+  },
+  {
+   "reaction": "PRFGS",
+   "decision": "R1",
+   "new_rule": "Echvi_4428",
+   "evidence": "Echvi_4428 is phosphoribosylformylglycinamidine synthase (1228 aa, large single-chain PurL including the glutaminase domain); Echvi_3691 is a DJ-1/PfpI-family intracellular protease, not PurQ, and is removed."
+  },
+  {
+   "reaction": "PRPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_3167 and Echvi_4597 are both annotated ribose-phosphate pyrophosphokinase (same-name paralogs); OR rule is correct."
+  },
+  {
+   "reaction": "PYK",
+   "decision": "R1",
+   "new_rule": "Echvi_2317",
+   "evidence": "Echvi_2317 is pyruvate kinase (the only one annotated); Echvi_2314 is beta-ketoacyl-ACP synthase II (FabF, EC 2.3.1.179), a fatty-acid synthesis enzyme with an unrelated activity, and is removed."
+  },
+  {
+   "reaction": "RPI",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_1186 (ribose 5-phosphate isomerase B) and Echvi_2860 (RpiB/LacA/LacB family, in the oxidative pentose-phosphate cluster) are both compatible; no removal."
+  },
+  {
+   "reaction": "STPT1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No phosphoserine:homoserine phosphotransferase (ThrH-type) is annotated; homoserine kinase (Echvi_2001, ATP-dependent) and phosphoserine phosphatases catalyse different reactions."
+  },
+  {
+   "reaction": "TKT1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule already joins the N- and C-terminal transketolase subunits of each split transketolase with AND (Echvi_1286/Echvi_1285, Echvi_2927/Echvi_2926); no change needed."
+  },
+  {
+   "reaction": "TKT2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule already joins the N- and C-terminal transketolase subunits of each split transketolase with AND (Echvi_1286/Echvi_1285, Echvi_2927/Echvi_2926); no change needed."
+  },
+  {
+   "reaction": "TMPPP",
+   "decision": "R1",
+   "new_rule": "Echvi_0216 or Echvi_3565",
+   "evidence": "Echvi_0216 and Echvi_3565 are thiamine-phosphate synthases (ThiE); Echvi_0215 is the HMP/HMP-P kinase ThiD (279 aa, EC 2.7.1.49/2.7.4.7, no ThiE domain), a different step, and is removed."
+  },
+  {
+   "reaction": "TRDR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Standalone alternatives are thioredoxin reductase-family (COG0492) oxidoreductases and the others are TrxB + thioredoxin/redoxin AND-complexes; annotations are family-level and compatible, so no removal or join is warranted."
+  },
+  {
+   "reaction": "UDCPDP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_3275 is BacA/UppP undecaprenyl-diphosphate phosphatase and Echvi_3719 is a PAP2-family membrane phosphatase (PAP2 enzymes dephosphorylate C55-PP); compatible, not removed."
+  },
+  {
+   "reaction": "UDPG4E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_1472 is GalE; Echvi_1149 is a family-level NAD-dependent nucleoside-diphosphate-sugar epimerase; no removal."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "Echvi_0276",
+   "evidence": "Echvi_0276 is uridylate kinase (PyrH, EC 2.7.4.22, the only one annotated); Echvi_2010 is cytidylate kinase (Cmk, EC 2.7.4.25), a CMP/dCMP-specific NMP kinase of an unrelated fold, and is removed."
+  },
+  {
+   "reaction": "XYLK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Echvi_1875 (RefSeq xylulokinase, next to xylose isomerase) and Echvi_0515 (L-ribulokinase, a broad-specificity FGGY pentulose kinase) are both compatible; no removal."
+  },
+  {
+   "reaction": "ZN2tpp",
+   "decision": "R6",
+   "new_rule": "Echvi_1475 or Echvi_1091",
+   "evidence": "Echvi_1475 is annotated 'ZIP zinc transporter' (ZupT-type Zn2+ uptake permease without ATP or H+ coupling); Echvi_1091 'predicted divalent heavy-metal cations transporter' is the COG0428 ZupT/ZIP-family paralog, so both are given as OR alternatives."
+  }
+ ]
+}

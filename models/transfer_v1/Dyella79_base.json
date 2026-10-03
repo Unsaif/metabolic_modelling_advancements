@@ -1,0 +1,38 @@
+{
+ "org": "Dyella79",
+ "role": "evaluation_panel_A",
+ "draft": "models/embl_pinned/Dyella79.xml.gz",
+ "draft_sha256": "7a52ae165d3cd90609f4bb6cc6eab10a0da3a2e388c279cd1d687afb48af2250",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "RCH2_defined_noCarbon",
+  "carbon_exchange": "EX_glc__D_e",
+  "condition": "D-Glucose",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "4HBADH",
+   "reaction": "4hba_c + nad_c <=> 4hbald_c + h_c + nadh_c",
+   "name": "4 hydroxy benzyl alcohol dehydrogenase"
+  },
+  {
+   "id": "ACGK_1",
+   "reaction": "acglu_c + atp_c --> acg5p_c + adp_c",
+   "name": "Acetylglutamate kinase"
+  },
+  {
+   "id": "AGPR",
+   "reaction": "acg5sa_c + nadp_c + pi_c <=> acg5p_c + h_c + nadph_c",
+   "name": "N-acetyl-g-glutamyl-phosphate reductase"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.7666466035401711,
+ "base_sha256": "2b44f8c3f2ac7e46bbe757fa432b76ae187e705940e5823adaa288b1bdaa271f",
+ "created": "2026-10-03T09:45:34Z"
+}

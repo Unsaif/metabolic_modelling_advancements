@@ -1,0 +1,30 @@
+# Section 2 of the FEBA component dictionary (transfer study v1): components of panel A media, added on 3 October 2026 AFTER the method
+# freeze (manifest results/study_freezes/transfer_v1_method.json) and before any panel A fitness table was downloaded, by chemical identity
+# only under the frozen class definitions of feba_component_bigg.tsv. Elements without a CarveMe-universe metabolite (B, Br, Sr, F, Al) are
+# dropped; EDTA has no universe metabolite and is a chelator (ignore). Known consequences of the frozen rule (inorganic ions are unlimited unless
+# they are trace metals), recorded here and not corrected: the ammonium of ammonium molybdate and the nitrate of cobalt nitrate are unlimited
+# although present only in trace amounts. In the anaerobic R. palustris media (PM, NFM, MDC_bicarb) nitrate can therefore act as an electron
+# acceptor if a model has a nitrate reductase, and NFM and MDC_bicarb (no added nitrogen source) supply ammonium.
+component	class	bigg_ids	counter_ions	note
+Sea salts	inorganic	na1;cl;mg2;so4;ca2;k;hco3		defined salt mixture (NaCl, MgCl2, Na2SO4, CaCl2, KCl, NaHCO3, with KBr, H3BO3, SrCl2, NaF dropped)
+Ammonium Sulfate	inorganic	nh4;so4		
+Disodium phosphate	inorganic	na1;pi		
+Na2HPO4	inorganic	na1;pi		
+KH2PO4	inorganic	k;pi		
+MgSO4	inorganic	mg2;so4		
+zinc sulfate	inorganic	zn2;so4		
+Sodium thiosulfate	inorganic	na1;tsul		
+Sodium thiosulfate pentahydrate	inorganic	na1;tsul		
+ammonium molybdate tetrahydrate	inorganic	nh4;mobd		
+Cobalt(II) nitrate hexahydrate	inorganic	cobalt2;no3		
+sodium tetraborate decahydrate	inorganic	na1		boron has no universe metabolite
+"#N2"	inorganic	n2		dinitrogen in the headspace (nitrogen-fixing medium NFM); quoted because the loader treats an unquoted leading # as a comment
+EDTA	ignore			chelator; no universe metabolite
+Ferric ammonium citrate	organic	cit	fe3;nh4	citrate has a BiGG metabolite, so it is not an ignored chelator under the frozen classes
+Ethanol	organic	etoh		listed in the recipe at 0.2 vol%
+Tyloxapol	organic			non-ionic detergent polymer; no universe metabolite
+D-Glucose	organic	glc__D		(R2A only; R2A is undefined)
+Sodium pyruvate	organic	pyr	na1	(R2A only; R2A is undefined)
+Peptone	undefined			
+casamino acids	undefined			
+Starch	undefined			polysaccharide of undefined chain length (R2A only)

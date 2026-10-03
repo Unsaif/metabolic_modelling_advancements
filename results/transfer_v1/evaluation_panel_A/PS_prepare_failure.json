@@ -1,0 +1,49 @@
+{
+ "org": "PS",
+ "step": "prepare (base model B0)",
+ "date": "2026-10-03",
+ "reference": {
+  "medium": "ALP_defined_noC",
+  "carbon_exchange": "EX_lac__L_e",
+  "condition": "Sodium L-Lactate",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "result": "gap-fill failed: every solution creates an energy-generating cycle (max_rounds 6 of gembench.gapfill.gapfill)",
+ "rejected_energy_cycle_sets": [
+  [
+   "ASNS2",
+   "MECDPDH4E",
+   "OBTFL"
+  ],
+  [
+   "ASNS1",
+   "MECDPDH4E",
+   "OBTFL"
+  ],
+  [
+   "ACOAD3",
+   "ASNS2",
+   "GCDH",
+   "OBTFL"
+  ],
+  [
+   "ACOAD6",
+   "ASNS1",
+   "GCDH",
+   "OBTFL"
+  ],
+  [
+   "ACOAD7",
+   "ASNS1",
+   "GCDH",
+   "OBTFL"
+  ],
+  [
+   "ASNS2",
+   "GCDH",
+   "OBTFL",
+   "OIVD1r"
+  ]
+ ],
+ "consequence": "PS is not evaluable for any comparison (docs/studies/transfer-method-v1.md section 6); it is reported, not replaced, and no packet or decision was made for it."
+}
