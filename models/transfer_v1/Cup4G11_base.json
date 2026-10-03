@@ -1,0 +1,28 @@
+{
+ "org": "Cup4G11",
+ "role": "evaluation_panel_B",
+ "draft": "models/embl_pinned/Cup4G11.xml.gz",
+ "draft_sha256": "bc51082574bcc225b06adc2e7dc2f2a142678a244b68607725c0fb86640502d6",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "RCH2_defined_noCarbon",
+  "carbon_exchange": "EX_fru_e",
+  "condition": "D-Fructose",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "4HBADH",
+   "reaction": "4hba_c + nad_c <=> 4hbald_c + h_c + nadh_c",
+   "name": "4 hydroxy benzyl alcohol dehydrogenase"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.40784693664128563,
+ "base_sha256": "37c47a0dc229b340eebd0a44fd6b5ac270b399905f7e182921968784c077da90",
+ "created": "2026-10-03T12:40:03Z"
+}

@@ -1,0 +1,43 @@
+{
+ "org": "Caulo",
+ "role": "evaluation_panel_B",
+ "draft": "models/embl_pinned/Caulo.xml.gz",
+ "draft_sha256": "a10f3d4a2da6629ff1f37d8e344e618bf7724c3f9c1ad23e682e8fb5ca5acb6b",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "M2_noCarbon",
+  "carbon_exchange": "EX_glc__D_e",
+  "condition": "D-Glucose",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "ASNS2",
+   "reaction": "asp__L_c + atp_c + nh4_c --> amp_c + asn__L_c + h_c + ppi_c",
+   "name": "Asparagine synthetase"
+  },
+  {
+   "id": "CITACt",
+   "reaction": "ac_c + cit_e <-- ac_e + cit_c",
+   "name": "Citrate transport via acetate antiport"
+  },
+  {
+   "id": "DXPS",
+   "reaction": "g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c",
+   "name": "1-deoxy-D-xylulose 5-phosphate synthase"
+  },
+  {
+   "id": "PLPS",
+   "reaction": "g3p_c + gln__L_c + r5p_c --> glu__L_c + 3.0 h2o_c + h_c + pi_c + pydx5p_c",
+   "name": "Pyridoxal-5-phosphate synthase"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.31004903368372966,
+ "base_sha256": "78f1ceee721a644a8845ca3dc8974f89f3eba536835a7695a143d7777f69180f",
+ "created": "2026-10-03T12:39:50Z"
+}

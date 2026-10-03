@@ -1,0 +1,43 @@
+{
+ "org": "Marino",
+ "role": "evaluation_panel_B",
+ "draft": "models/embl_pinned/Marino.xml.gz",
+ "draft_sha256": "13c5e03e67934b36dda53d1dd6ec44762155541c49e9c8424b7f7de7904ee617",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "DinoMM_noCarbon_HighNutrient",
+  "carbon_exchange": "EX_glyc_e",
+  "condition": "Glycerol",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "BZDH",
+   "reaction": "bzal_c + h2o_c + nad_c <=> bz_c + 2.0 h_c + nadh_c",
+   "name": "Benzaldehyde dehydrogenase"
+  },
+  {
+   "id": "CITACt",
+   "reaction": "ac_c + cit_e <-- ac_e + cit_c",
+   "name": "Citrate transport via acetate antiport"
+  },
+  {
+   "id": "FBP",
+   "reaction": "fdp_c + h2o_c --> f6p_c + pi_c",
+   "name": "Fructose-bisphosphatase"
+  },
+  {
+   "id": "PHPYROX",
+   "reaction": "o2_c + phpyr_c --> bzal_c + h_c + oxa_c",
+   "name": "Phenylpyruvate oxidation chemical"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.5522020263515223,
+ "base_sha256": "7e95c275de7f729761dc874cdec7e70edc099dbf404e7f2b68c5bd373e67fd06",
+ "created": "2026-10-03T12:40:19Z"
+}

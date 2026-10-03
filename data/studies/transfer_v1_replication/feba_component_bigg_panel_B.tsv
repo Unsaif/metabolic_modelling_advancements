@@ -1,0 +1,16 @@
+# Section 3 of the FEBA component dictionary: components of panel B media, added on 3 October 2026 AFTER the replication plan freeze
+# (results/study_freezes/transfer_v1_replication_plan.json) and before any panel B fitness table was downloaded, by chemical identity only under the
+# frozen class definitions of data/studies/transfer_v1/feba_component_bigg.tsv. Sodium sulfide is classed with the reductants (trace-limited), as
+# L-cysteine was; choline chloride is a component of Thauer's vitamin mix (trace-limited). Tungsten has no CarveMe-universe exchange.
+# Known consequence of the frozen rule, kept for the replication: the D,L-lactate of the MoLS4 medium is an unlimited carbon source.
+component	class	bigg_ids	counter_ions	note
+Sodium D,L-Lactate	organic	lac__D;lac__L	na1	racemate to both enantiomers
+Tris hydrochloride	ignore		cl	Tris buffer; chloride counter-ion
+Sodium sulfide nonahydrate	trace_organic	h2s	na1	reductant (class definition: reductants are trace-limited)
+Iron (II) chloride tetrahydrate	inorganic	fe2;cl		
+Zinc chloride	inorganic	zn2;cl		
+Sodium molybdate	inorganic	na1;mobd		
+Nickel (II) sulfate hexahydrate	inorganic	ni2;so4		
+copper (II) chloride dihydrate	inorganic	cu2;cl		
+Sodium tungstate dihydrate	inorganic	na1;tungs		tungsten has no universe exchange
+Choline chloride	trace_organic	chol	cl	component of Thauer's vitamin mix

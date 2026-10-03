@@ -1,0 +1,15 @@
+{
+ "org": "Miya",
+ "step": "reference condition (gembench.transfer.choose_reference_condition)",
+ "date": "2026-10-03",
+ "result": "no reference condition: the main medium by carbon-source experiment count is MoLS4 (13 experiments whose condition_1 is empty, so no carbon source is mapped); the frozen rule looks for candidates only on the main medium and returns none",
+ "conditions_from_metadata": {
+  "' | MoLS4'": 13,
+  "Sodium D-Lactate | MoLS4_no_lactate": 2,
+  "Sodium L-Lactate | MoLS4_no_lactate": 2,
+  "Sodium D,L-Lactate | MoLS4_no_lactate": 4,
+  "L-Serine | MoLS4_no_lactate": 2,
+  "casamino acids | MoLS4_no_lactate": 2
+ },
+ "consequence": "Miya has no base model under the frozen v1 rules and is not evaluable for any comparison (transfer-method-v1 section 6; replication plan section 2). It is reported, not replaced; its fitness table is not downloaded."
+}

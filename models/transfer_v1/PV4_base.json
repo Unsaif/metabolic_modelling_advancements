@@ -1,0 +1,38 @@
+{
+ "org": "PV4",
+ "role": "evaluation_panel_B",
+ "draft": "models/embl_pinned/PV4.xml.gz",
+ "draft_sha256": "dfec4d30777c80b4215aa1958c29ef377e7df37d9671b1e2981b1c9e762a78b7",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "ShewMM_noCarbon",
+  "carbon_exchange": "EX_lac__L_e",
+  "condition": "Sodium L-Lactate",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "LDH_L",
+   "reaction": "lac__L_c + nad_c <=> h_c + nadh_c + pyr_c",
+   "name": "L-lactate dehydrogenase"
+  },
+  {
+   "id": "L_LACt2r",
+   "reaction": "h_e + lac__L_e --> h_c + lac__L_c",
+   "name": "L lactate reversible transport via proton symport"
+  },
+  {
+   "id": "MN2tpp",
+   "reaction": "mn2_p --> mn2_c",
+   "name": "Manganese transport in via permease (no H+)"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.09715669188892075,
+ "base_sha256": "ef0dbe3b2d6351cff66d1ac11e5459a86e364c5980febfbc8f1e9f8fa52ecc77",
+ "created": "2026-10-03T12:40:45Z"
+}

@@ -31,5 +31,33 @@
     "zn2"
    ]
   }
- ]
+ ],
+ "Caulo": [
+  {
+   "reaction": "CLt3_2pp",
+   "new_rule": "CCNA_02638",
+   "carried": [
+    "cl"
+   ]
+  }
+ ],
+ "Cup4G11": [],
+ "Marino": [],
+ "PV4": [
+  {
+   "reaction": "CLt3_2pp",
+   "new_rule": "Shew_1015",
+   "carried": [
+    "cl"
+   ]
+  },
+  {
+   "reaction": "MN2tpp",
+   "new_rule": "Shew_2965",
+   "carried": [
+    "mn2"
+   ]
+  }
+ ],
+ "SB2B": []
 }

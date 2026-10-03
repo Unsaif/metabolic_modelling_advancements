@@ -1,0 +1,361 @@
+{
+ "org": "Cup4G11",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "3OXCOAT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RR42_RS35915 'beta-ketoadipyl CoA thiolase' (PcaF) is specific, but RR42_RS26090 'acetyl-CoA acetyltransferase' is a broad-specificity thiolase (acyl-CoA enzyme family) that cannot be excluded; redundancy plausible."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The IlvI/IlvH-type complex (RR42_RS05435 catalytic + RR42_RS05440 small subunit) is already joined with AND; RR42_RS26245 'thiamine pyrophosphate-binding protein' is a family-level TPP-enzyme annotation compatible with a single-subunit ALS, so it is not removable."
+  },
+  {
+   "reaction": "ADCL",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Conflicting annotations: RR42_RS10910 is 'aminodeoxychorismate lyase' in FB but 'endolytic transglycosylase MltG' in RefSeq (331 aa, tmk/holB neighbourhood), and WP_052494684_1 is 'aminodeoxychorismate synthase component I' (possible PabB-PabC fusion); no confident removal."
+  },
+  {
+   "reaction": "ANPRT",
+   "decision": "R1",
+   "new_rule": "RR42_RS18305",
+   "evidence": "RR42_RS18305 'anthranilate phosphoribosyltransferase' sits in the trpE-trpG-trpD-trpC operon; RR42_RS01940 is RefSeq 'DNA-binding protein YbiB' (TrpD2 family, non-catalytic DNA-binding TrpD paralog; FB only generic 'glycosyl transferase') and is removed."
+  },
+  {
+   "reaction": "APRAUR",
+   "decision": "R1",
+   "new_rule": "RR42_RS15555",
+   "evidence": "RR42_RS15555 is the bifunctional RibD deaminase/5-amino-6-(5-phosphoribosylamino)uracil reductase in the rib operon; WP_082055062_1 is a 'hypothetical protein' with no enzymatic annotation and is removed."
+  },
+  {
+   "reaction": "ASP1DC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are annotated aspartate 1-decarboxylases (RR42_RS10745 RefSeq 'pyridoxal-dependent aspartate 1-decarboxylase PanP'; WP_082054930_1 'aspartate 1-decarboxylase'); genuine isofunctional enzymes."
+  },
+  {
+   "reaction": "ASPTA",
+   "decision": "R1",
+   "new_rule": "RR42_RS02275 or RR42_RS05770 or RR42_RS15580 or RR42_RS22455 or RR42_RS33805 or RR42_RS35305 or WP_052495210_1",
+   "evidence": "Removed two GntR/MocR-family transcriptional regulators (RR42_RS10785 FB 'GntR family transcriptional regulator', 471 aa; RR42_RS21340 'MocR-like pyridoxine biosynthesis transcription factor PdxR', 527 aa); every aminotransferase-annotated gene is kept (RR42_RS33805 kept because FB calls it '2-aminoadipate aminotransferase')."
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are CLC-family chloride transporters (RR42_RS18530 EriC-type Cl-/H+ antiporter; RR42_RS29685 ClcB), i.e. transporters of the right substrate."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; removing the OmpA-family/YfiB proteins would leave only the generic 'porin' RR42_RS22675 (R1 not allowed when only generic annotations remain); porin redundancy plausible."
+  },
+  {
+   "reaction": "CU2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; removing the OmpA-family/YfiB proteins would leave only the generic 'porin' RR42_RS22675 (R1 not allowed when only generic annotations remain); porin redundancy plausible."
+  },
+  {
+   "reaction": "DB4PS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RR42_RS15565 is the bifunctional RibBA; RR42_RS29255 (198 aa) and RR42_RS30825 are GTP cyclohydrolase II only (different EC), but a second annotated '3,4-dihydroxy-2-butanone 4-phosphate synthase' (RR42_RS32045, 374 aa) lies outside the rule and cannot be added, so removal would make RR42_RS15565 appear unique; redundancy plausible."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "RR42_RS16210 or RR42_RS18585 or RR42_RS33305",
+   "evidence": "WP_082054951_1 is '4a-hydroxytetrahydrobiopterin dehydratase' (pterin-4a-carbinolamine dehydratase, EC 4.2.1.96), a different activity; the three IlvD/EDD-family genes annotated 'dihydroxy-acid dehydratase' are kept."
+  },
+  {
+   "reaction": "DHDPRy",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Same-name paralogs, both '4-hydroxy-tetrahydrodipicolinate reductase' (DapB)."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Four same-name DapA paralogs ('dihydrodipicolinate synthase' / 4-hydroxy-tetrahydrodipicolinate synthase family)."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "R1",
+   "new_rule": "RR42_RS02610 or RR42_RS15855",
+   "evidence": "RR42_RS28115 is PhnM 'alpha-D-ribose 1-methylphosphonate 5-triphosphate diphosphatase' in the C-P lyase operon, a different activity; the two 'dihydroorotase' genes (RR42_RS15855 next to pyrB) are kept."
+  },
+  {
+   "reaction": "DHQS",
+   "decision": "R1",
+   "new_rule": "RR42_RS19005",
+   "evidence": "RR42_RS19005 '3-dehydroquinate synthase' (adjacent to shikimate kinase); RR42_RS35135 is a 'helix-turn-helix transcriptional regulator' in a benzoyl-CoA (box) cluster, not a catalyst."
+  },
+  {
+   "reaction": "DHQTi",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name type II 3-dehydroquinate dehydratases."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RR42_RS04490 '30S ribosomal protein S1' is not a catalyst, but a second annotated IspH (RR42_RS32230, hopanoid cluster) lies outside the rule and cannot be added; removing S1 would make RR42_RS16985 appear unique despite plausible redundancy."
+  },
+  {
+   "reaction": "DNMPPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "None of the five alternatives is a plausible monophosphatase (P-type ATPases, RecQ helicase, ArsA, RNA pyrophosphohydrolase); removing the obvious non-catalysts would leave RppH alone as a false unique catalyst, so the rule is left unchanged."
+  },
+  {
+   "reaction": "DNTPPA",
+   "decision": "R1",
+   "new_rule": "RR42_RS05585 or RR42_RS15110 or RR42_RS17930 or RR42_RS18010 or RR42_RS02470",
+   "evidence": "Removed RecQ DNA helicase RR42_RS19310 and the two heavy-metal P-type ATPases RR42_RS12920 and RR42_RS30930 (their FB descriptions, carbonate dehydratase/ArnD deformylase, are also incompatible); kept the specific 'dihydroneopterin triphosphate pyrophosphatase' RR42_RS02470 and the Nudix hydrolases."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Same-name paralogs '2-dehydropantoate 2-reductase' (ketopantoate reductase family)."
+  },
+  {
+   "reaction": "FERIRDe",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No gene is annotated as a ferric reductase or quinol:Fe(III) oxidoreductase; only generic flavin reductases and cytochrome b561 proteins exist."
+  },
+  {
+   "reaction": "GF6PTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name GlmS paralogs plus a 'class II glutamine amidotransferase' (family-level annotation of the GlmS amidotransferase domain family); keep."
+  },
+  {
+   "reaction": "GRTT",
+   "decision": "R1",
+   "new_rule": "RR42_RS15010",
+   "evidence": "RR42_RS15010 'geranyl transferase' (IspA, polyprenyl synthetase in the xseB-ispA-dxs arrangement); RR42_RS07905 is 'phytoene synthase'/'presqualene diphosphate synthase HpnD' (head-to-head squalene/phytoene synthase family, different EC), not a GPP+IPP chain elongase."
+  },
+  {
+   "reaction": "GTPCI",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RR42_RS15000 (FolE2) and RR42_RS34345 (FolE) are both GTP cyclohydrolase I (EC 3.5.4.16)."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two carbonic anhydrases (carbonate dehydratase, carbonic anhydrase family) plus spontaneous; all compatible."
+  },
+  {
+   "reaction": "HISDr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "WP_052494409_1 'tyrosine 2,3-aminomutase' is unlikely to be a histidase, but a second complete hut cluster with histidine ammonia-lyase RR42_RS16920 lies outside the rule; removal would make RR42_RS14640 appear unique."
+  },
+  {
+   "reaction": "HISTP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are phosphatases (GmhB-type HAD; inositol monophosphatase family, HisN-type); removing GmhB would leave only a generic family annotation."
+  },
+  {
+   "reaction": "IOR2b",
+   "decision": "R6",
+   "new_rule": "RR42_RS10350 or RR42_RS19540 or RR42_RS34245",
+   "evidence": "Three genes annotated 'indolepyruvate ferredoxin oxidoreductase' (fused IorAB-type, ~1160-1200 aa; EC 1.2.7.8 also acts on phenylpyruvate), assigned as OR alternatives."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RR42_RS04490 '30S ribosomal protein S1' is not a catalyst, but a second annotated IspH (RR42_RS32230, hopanoid cluster) lies outside the rule and cannot be added; removing S1 would make RR42_RS16985 appear unique despite plausible redundancy."
+  },
+  {
+   "reaction": "IPPMIa",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule already consists of LeuC/LeuD AND-complexes; the operon partners of some subunits (e.g. RR42_RS14390, RR42_RS24175, RR42_RS22775) are not in the rule and cannot be added."
+  },
+  {
+   "reaction": "IPPMIb",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule already consists of LeuC/LeuD AND-complexes; the operon partners of some subunits (e.g. RR42_RS14390, RR42_RS24175, RR42_RS22775) are not in the rule and cannot be added."
+  },
+  {
+   "reaction": "IPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name '2-isopropylmalate synthase' paralogs."
+  },
+  {
+   "reaction": "IZPN",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RR42_RS31430 'amidohydrolase' is a family-level annotation (HutI is an amidohydrolase) and WP_052494678_1 is 'imidazolonepropionase'; keep both."
+  },
+  {
+   "reaction": "NDPK2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Nucleoside diphosphate kinase RR42_RS13160 plus adenylate kinase RR42_RS03445, a broad-specificity NMP/NDP kinase; keep."
+  },
+  {
+   "reaction": "NDPK4",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Nucleoside diphosphate kinase RR42_RS13160 plus adenylate kinase RR42_RS03445, a broad-specificity NMP/NDP kinase; keep."
+  },
+  {
+   "reaction": "NNATr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "NadD (WP_052494754_1) and a bifunctional NadM-Nudix adenylyltransferase (WP_052494407_1) act on the same substrate class; neither is clearly wrong."
+  },
+  {
+   "reaction": "NNDPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name 'carboxylating nicotinate-nucleotide diphosphorylase' (NadC) paralogs."
+  },
+  {
+   "reaction": "PERD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No gene is annotated as erythronate-4-phosphate dehydrogenase (PdxB); only generic 2-hydroxyacid/hydroxyacid dehydrogenases."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "R1",
+   "new_rule": "RR42_RS02275 or RR42_RS05770 or RR42_RS05990 or RR42_RS14595 or RR42_RS04465 or RR42_RS33490 or RR42_RS35305 or WP_052495210_1",
+   "evidence": "Removed four GntR/MocR-family transcriptional regulators (RR42_RS01570, RR42_RS01590, RR42_RS33140 'GntR family transcriptional regulator'; RR42_RS21340 'MocR-like PdxR'); all aminotransferases, including two aromatic amino acid aminotransferases, are kept."
+  },
+  {
+   "reaction": "PPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Besides inorganic pyrophosphatase RR42_RS04285, the alternatives are SurE nucleotidases and an exopolyphosphatase (broad-specificity phosphatases), and another 'inorganic pyrophosphatase/exopolyphosphatase' (RR42_RS21600) lies outside the rule; redundancy plausible."
+  },
+  {
+   "reaction": "PRASCSi",
+   "decision": "R1",
+   "new_rule": "RR42_RS03220",
+   "evidence": "RR42_RS03220 'phosphoribosylaminoimidazole-succinocarboxamide synthase' (PurC, clustered with purE/purK); RR42_RS15995 is a '4Fe-4S ferredoxin'/'4Fe-4S binding protein' beside formate dehydrogenase genes, not a catalyst."
+  },
+  {
+   "reaction": "PRPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name ribose-phosphate pyrophosphokinases."
+  },
+  {
+   "reaction": "RBFK",
+   "decision": "R1",
+   "new_rule": "RR42_RS17065",
+   "evidence": "RR42_RS17065 is the bifunctional riboflavin kinase/FAD synthetase (RibF); RR42_RS00905 is a 'HAD family hydrolase' (phosphatase class), not an ATP-dependent riboflavin kinase."
+  },
+  {
+   "reaction": "RBFSb",
+   "decision": "R1",
+   "new_rule": "RR42_RS15560",
+   "evidence": "RR42_RS15560 'riboflavin synthase subunit alpha' (RefSeq 'riboflavin synthase') catalyses the dismutation alone; RR42_RS15570 '6,7-dimethyl-8-ribityllumazine synthase' (EC 2.5.1.78) catalyses the preceding step and is removed."
+  },
+  {
+   "reaction": "SERAT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Same-name 'serine O-acetyltransferase' paralogs."
+  },
+  {
+   "reaction": "SHK3Dr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Three shikimate dehydrogenase(-family) genes; all compatible."
+  },
+  {
+   "reaction": "SHKK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RR42_RS07515 and RR42_RS35135 are HTH transcriptional regulators in box clusters, but a second annotated 'shikimate kinase' (RR42_RS32495) lies outside the rule and cannot be added; removal would make RR42_RS19010 appear unique."
+  },
+  {
+   "reaction": "THZPSN",
+   "decision": "R1",
+   "new_rule": "RR42_RS01305",
+   "evidence": "RR42_RS01305 'thiazole synthase' (ThiG, in the thiC-thiS-thiG-thiE cluster); RR42_RS17615 'thiamine monophosphate kinase' (ThiL, EC 2.7.4.16) catalyses TMP to TPP, not thiazole synthesis."
+  },
+  {
+   "reaction": "TMDS",
+   "decision": "R1",
+   "new_rule": "RR42_RS14740",
+   "evidence": "RR42_RS14740 'thymidylate synthase' (ThyA); RR42_RS25605 'N-ethylmaleimide reductase'/'alkene reductase' (Old Yellow Enzyme family) has a different activity."
+  },
+  {
+   "reaction": "TMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RR42_RS33115 is a 'sll0787 family AIR synthase-like protein' (PurM-like superfamily that includes ThiL); this is a family-level annotation, so it is not removable."
+  },
+  {
+   "reaction": "TMPPP",
+   "decision": "R1",
+   "new_rule": "RR42_RS01310",
+   "evidence": "RR42_RS01310 'thiamine-phosphate pyrophosphorylase' (ThiE, thi cluster); RR42_RS01370 is ThiD 'hydroxymethylpyrimidine kinase/phosphomethylpyrimidine kinase' (EC 2.7.1.49/2.7.4.7), a different activity."
+  },
+  {
+   "reaction": "TYRTA",
+   "decision": "R1",
+   "new_rule": "RR42_RS02275 or RR42_RS05770 or RR42_RS05990 or RR42_RS04465 or RR42_RS33490 or RR42_RS35305 or WP_052495210_1",
+   "evidence": "Removed three GntR/MocR-family transcriptional regulators (RR42_RS01570, RR42_RS01590 'GntR family transcriptional regulator'; RR42_RS21340 'MocR-like PdxR'); all aminotransferases are kept."
+  },
+  {
+   "reaction": "UAGCVT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name 'UDP-N-acetylglucosamine 1-carboxyvinyltransferase' (MurA) paralogs."
+  },
+  {
+   "reaction": "UAGPT3",
+   "decision": "R1",
+   "new_rule": "RR42_RS18075",
+   "evidence": "RR42_RS18075 is MurG in the dcw cluster (ftsW-murG-murC); RR42_RS30840 'galactosyldiacylglycerol synthase'/'MGDG synthase family glycosyltransferase' galactosylates diacylglycerol (different EC and substrate class)."
+  },
+  {
+   "reaction": "UDCPDP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "UppP/BacA RR42_RS15630 plus a PAP2-family phosphatase (broad-specificity phosphatase family); keep."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "RR42_RS11865",
+   "evidence": "RR42_RS11865 'uridylate kinase' (PyrH, EC 2.7.4.22, in the rpsB-tsf-pyrH-frr operon); RR42_RS04485 '(d)CMP kinase' (Cmk, EC 2.7.4.25) is a CMP/dCMP-specific kinase of a different family."
+  },
+  {
+   "reaction": "URCN",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Same-name 'urocanate hydratase' paralogs."
+  },
+  {
+   "reaction": "Zn2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; removing the OmpA-family/YfiB proteins would leave only the generic 'porin' RR42_RS22675 (R1 not allowed when only generic annotations remain); porin redundancy plausible."
+  }
+ ],
+ "filter": "noIonR6 (docs/studies/transfer-v1-replication-plan.md)"
+}

@@ -1,0 +1,2922 @@
+{
+ "org": "Caulo",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 5,
+ "candidates": [
+  {
+   "reaction": "ACOTA",
+   "name": "Acetylornithine transaminase",
+   "equation_ids": "acorn_c + akg_c <=> acg5sa_c + glu__L_c",
+   "equation_names": "N2-Acetyl-L-ornithine + 2-Oxoglutarate <=> N-Acetyl-L-glutamate 5-semialdehyde + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515993_1 or YP_002517699_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515993_1",
+     "locus": "CCNA_00620",
+     "fitness_browser_desc": "acetylornithine aminotransferase/succinyldiaminopimelate aminotransferase",
+     "refseq_definition": "acetylornithine aminotransferase/succinyldiaminopimelate aminotransferase",
+     "neighbourhood": [
+      "CCNA_00617 (+) arginine N-succinyltransferase, beta chain",
+      "CCNA_00618 (+) succinylglutamic semialdehyde dehydrogenase",
+      "CCNA_00619 (+) succinylarginine dihydrolase",
+      "CCNA_00620 (+) acetylornithine aminotransferase/succinyldiaminopimelate aminotransferase",
+      "CCNA_00621 (-) conserved domain hypothetical protein",
+      "CCNA_00622 (+) hypothetical protein",
+      "CCNA_00623 (+) PAS-family sensor histidine kinase"
+     ]
+    },
+    {
+     "model_gene": "YP_002517699_1",
+     "locus": "CCNA_02326",
+     "fitness_browser_desc": "acetylornithine aminotransferase/succinyldiaminopimelate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase family protein",
+     "neighbourhood": [
+      "CCNA_03966 (+) hypothetical protein",
+      "CCNA_02324 (-) heat shock protein 33 hsp33",
+      "CCNA_02325 (-) ornithine carbamoyltransferase",
+      "CCNA_02326 (-) acetylornithine aminotransferase/succinyldiaminopimelate aminotransferase",
+      "CCNA_02327 (-) ABC transporter permease protein",
+      "CCNA_02328 (+) cell cycle regulatory protein GcrA",
+      "CCNA_02329 (+) exodeoxyribonuclease VII large subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACtex",
+   "name": "Acetate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ac_e <=> ac_p",
+   "equation_names": "Acetate <=> Acetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515576_1 or YP_002518709_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515576_1",
+     "locus": "CCNA_00201",
+     "fitness_browser_desc": "outer membrane protein",
+     "refseq_definition": "outer membrane protein",
+     "neighbourhood": [
+      "CCNA_00198 (-) tRNA (guanine-N1) -methyltransferase",
+      "CCNA_00199 (+) TadG/vWA-family protein",
+      "CCNA_00200 (-) 2OG-Fe(II) oxygenase superfamily protein",
+      "CCNA_00201 (+) outer membrane protein",
+      "CCNA_00202 (+) DesA-family fatty acid desaturase",
+      "CCNA_00203 (+) sterol desaturase family protein",
+      "CCNA_00204 (-) glutathione-regulated potassium-efflux system protein kefB"
+     ]
+    },
+    {
+     "model_gene": "YP_002518709_1",
+     "locus": "CCNA_03337",
+     "fitness_browser_desc": "peptidoglycan-associated lipoprotein pal",
+     "refseq_definition": "peptidoglycan-associated lipoprotein pal",
+     "neighbourhood": [
+      "CCNA_03334 (-) cell division protein FtsH",
+      "CCNA_03335 (-) PP-loop family cell cycle control ATPase",
+      "CCNA_03336 (-) Tol system periplasmic component YbgF",
+      "CCNA_03337 (-) peptidoglycan-associated lipoprotein pal",
+      "CCNA_03338 (-) TolB protein",
+      "CCNA_03339 (-) TolA protein",
+      "CCNA_03340 (-) TolR protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ADCL",
+   "name": "4-aminobenzoate synthase",
+   "equation_ids": "4adcho_c --> 4abz_c + h_c + pyr_c",
+   "equation_names": "4-amino-4-deoxychorismate --> 4-Aminobenzoate + H+ + Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517124_1 or YP_002518420_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517124_1",
+     "locus": "CCNA_01751",
+     "fitness_browser_desc": "aminodeoxychorismate lyase",
+     "refseq_definition": "aminodeoxychorismate lyase",
+     "neighbourhood": [
+      "CCNA_01748 (+) methyltransferase",
+      "CCNA_01749 (+) acyl carrier protein",
+      "CCNA_01750 (+) 3-oxoacyl-(acyl-carrier-protein) synthase II",
+      "CCNA_01751 (+) aminodeoxychorismate lyase",
+      "CCNA_01752 (+) YicC-family protein",
+      "CCNA_01753 (+) guanylate kinase",
+      "CCNA_01754 (-) transglycosylase associated protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518420_1",
+     "locus": "CCNA_03047",
+     "fitness_browser_desc": "4-amino-4-deoxychorismate lyase",
+     "refseq_definition": "aminotransferase class IV",
+     "neighbourhood": [
+      "CCNA_03044 (+) CpaC-related secretion pathway protein",
+      "CCNA_03045 (+) TadG-related pilus assembly protein",
+      "CCNA_03046 (+) TadE-related pilus assembly protein",
+      "CCNA_03047 (-) 4-amino-4-deoxychorismate lyase",
+      "CCNA_03048 (-) para-aminobenzoate synthetase component I",
+      "CCNA_03049 (-) transporter, MFS superfamily",
+      "CCNA_03050 (-) protein tyrosine phosphatase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ANPRT",
+   "name": "Anthranilate phosphoribosyltransferase",
+   "equation_ids": "anth_c + prpp_c --> ppi_c + pran_c",
+   "equation_names": "Anthranilate + 5-Phospho-alpha-D-ribose 1-diphosphate --> Diphosphate + N-(5-Phospho-D-ribosyl)anthranilate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517347_1 or YP_002517348_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517347_1",
+     "locus": "CCNA_01974",
+     "fitness_browser_desc": "anthranilate synthase component II/para-aminobenzoate synthase glutamine amidotransferase component II",
+     "refseq_definition": "anthranilate synthase component II/para-aminobenzoate synthase glutamine amidotransferase component II",
+     "neighbourhood": [
+      "CCNA_01971 (+) peptidyl-prolyl cis-trans isomerase",
+      "CCNA_01972 (+) anthranilate synthase component I",
+      "CCNA_01973 (-) hypothetical protein",
+      "CCNA_01974 (+) anthranilate synthase component II/para-aminobenzoate synthase glutamine amidotransferase component II",
+      "CCNA_01975 (+) anthranilate phosphoribosyltransferase",
+      "CCNA_01976 (+) Indole-3-glycerol phosphate synthase",
+      "CCNA_01977 (+) 1-acyl-sn-glycerol-3-phosphate acyltransferase"
+     ]
+    },
+    {
+     "model_gene": "YP_002517348_1",
+     "locus": "CCNA_01975",
+     "fitness_browser_desc": "anthranilate phosphoribosyltransferase",
+     "refseq_definition": "anthranilate phosphoribosyltransferase",
+     "neighbourhood": [
+      "CCNA_01972 (+) anthranilate synthase component I",
+      "CCNA_01973 (-) hypothetical protein",
+      "CCNA_01974 (+) anthranilate synthase component II/para-aminobenzoate synthase glutamine amidotransferase component II",
+      "CCNA_01975 (+) anthranilate phosphoribosyltransferase",
+      "CCNA_01976 (+) Indole-3-glycerol phosphate synthase",
+      "CCNA_01977 (+) 1-acyl-sn-glycerol-3-phosphate acyltransferase",
+      "CCNA_01978 (+) methyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASAD",
+   "name": "Aspartate-semialdehyde dehydrogenase",
+   "equation_ids": "aspsa_c + nadp_c + pi_c <=> 4pasp_c + h_c + nadph_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Nicotinamide adenine dinucleotide phosphate + Phosphate <=> 4-Phospho-L-aspartate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515628_1 or YP_002518972_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515628_1",
+     "locus": "CCNA_00253",
+     "fitness_browser_desc": "aspartate-semialdehyde dehydrogenase",
+     "refseq_definition": "aspartate-semialdehyde dehydrogenase",
+     "neighbourhood": [
+      "CCNA_00250 (+) poly(3-hydroxyalkanoate) depolymerase",
+      "CCNA_00251 (+) zinc metalloprotease",
+      "CCNA_00252 (-) multimodular transpeptidase-transglycosylase PbpX",
+      "CCNA_00253 (+) aspartate-semialdehyde dehydrogenase",
+      "CCNA_00254 (+) RarD family membrane permease",
+      "CCNA_00255 (-) esterase",
+      "CCNA_00256 (-) pyridoxine kinase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518972_1",
+     "locus": "CCNA_03599",
+     "fitness_browser_desc": "aspartate-semialdehyde dehydrogenase",
+     "refseq_definition": "aspartate-semialdehyde dehydrogenase",
+     "neighbourhood": [
+      "CCNA_03597 (-) acetylglutamate kinase",
+      "CCNA_03598 (+) two-component sensor histidine kinase DivL",
+      "CCNA_03995 (+) hypothetical protein",
+      "CCNA_03599 (+) aspartate-semialdehyde dehydrogenase",
+      "CCNA_03600 (+) integral membrane protein",
+      "CCNA_03601 (+) hemolysin III-related membrane protein",
+      "CCNA_03602 (+) patatin family phospholipase domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASNS2",
+   "name": "Asparagine synthetase",
+   "equation_ids": "asp__L_c + atp_c + nh4_c --> amp_c + asn__L_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + Ammonium --> AMP + L-Asparagine + H+ + Diphosphate",
+   "annotation": {
+    "rhea": [
+     "11372",
+     "11373",
+     "11374",
+     "11375"
+    ],
+    "ec-code": [
+     "6.3.1.1",
+     "6.3.5.4"
+    ],
+    "metanetx.reaction": "MNXR96060",
+    "kegg.reaction": "R00483"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "ASPTA",
+   "name": "Aspartate transaminase",
+   "equation_ids": "akg_c + asp__L_c <=> glu__L_c + oaa_c",
+   "equation_names": "2-Oxoglutarate + L-Aspartate <=> L-Glutamate + Oxaloacetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516148_1 or YP_002516976_1 or YP_002517912_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516148_1",
+     "locus": "CCNA_00775",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "CCNA_00773 (+) carboxypeptidase S",
+      "CCNA_03937 (+) hypothetical protein",
+      "CCNA_00774 (+) ring hydroxylating diooxygenase",
+      "CCNA_00775 (-) aspartate aminotransferase",
+      "CCNA_00776 (-) OAR protein precursor",
+      "CCNA_00777 (-) PAS family GGDEF/EAL protein",
+      "CCNA_00778 (-) GTP-binding protein TypA/BipA"
+     ]
+    },
+    {
+     "model_gene": "YP_002516976_1",
+     "locus": "CCNA_01603",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "CCNA_01600 (-) Methane oxygenase, PmoA family",
+      "CCNA_01601 (+) hypothetical protein",
+      "CCNA_01602 (+) glutathione S-transferase",
+      "CCNA_01603 (-) aspartate aminotransferase",
+      "CCNA_01604 (+) hypothetical protein",
+      "CCNA_01605 (-) NADPH-dependent FMN reductase family protein",
+      "CCNA_01606 (-) Soj/ParA-related ATPase protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002517912_1",
+     "locus": "CCNA_02539",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aminotransferase class I/II-fold pyridoxal phosphate-dependent enzyme",
+     "neighbourhood": [
+      "CCNA_03900 (+) hypothetical protein",
+      "CCNA_02537 (+) ribonuclease R",
+      "CCNA_02538 (-) endoglucanase E",
+      "CCNA_02539 (+) aspartate aminotransferase",
+      "CCNA_02540 (-) N-acyl-L-amino acid amidohydrolase",
+      "CCNA_02541 (+) MutT/nudix family phosphohydrolase",
+      "CCNA_02542 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "BGLA",
+   "name": "Beta-glucosidase",
+   "equation_ids": "cellb_c + h2o_c --> 2.0 glc__D_c",
+   "equation_names": "Cellobiose + H2O --> 2.0 D-Glucose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516392_1 or YP_002518522_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516392_1",
+     "locus": "CCNA_01019",
+     "fitness_browser_desc": "beta-glucosidase",
+     "refseq_definition": "beta-glucosidase",
+     "neighbourhood": [
+      "CCNA_01016 (+) copper resistance protein B",
+      "CCNA_01017 (+) acyl-CoA synthetase",
+      "CCNA_01018 (-) D-galactose 1-dehydrogenase",
+      "CCNA_01019 (-) beta-glucosidase",
+      "CCNA_01020 (-) LacI-family transcriptional regulator",
+      "CCNA_01021 (+) TonB-dependent receptor",
+      "CCNA_01022 (+) tryptophan halogenase superfamily protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518522_1",
+     "locus": "CCNA_03149",
+     "fitness_browser_desc": "beta-glucosidase/beta-xylosidase",
+     "refseq_definition": "beta-glucosidase/beta-xylosidase",
+     "neighbourhood": [
+      "CCNA_03146 (+) M61 glycyl aminopeptidase",
+      "CCNA_03147 (+) hypothetical protein",
+      "CCNA_03148 (+) hypothetical protein",
+      "CCNA_03149 (+) beta-glucosidase/beta-xylosidase",
+      "CCNA_03150 (-) hypothetical protein",
+      "CCNA_03151 (+) sialic acid-specific 9-O-acetylesterase",
+      "CCNA_03152 (+) truncated hemoglobin"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CA2abcpp",
+   "name": "Calcium transport via ABC system (periplasm)",
+   "equation_ids": "atp_c + ca2_p + h2o_c --> adp_c + ca2_c + h_c + pi_c",
+   "equation_names": "ATP + Calcium + H2O --> ADP + Calcium + H+ + Phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "CA2tex",
+   "name": "Calcium (Ca+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ca2_e <=> ca2_p",
+   "equation_names": "Calcium <=> Calcium",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515576_1 or YP_002518709_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515576_1",
+     "locus": "CCNA_00201",
+     "fitness_browser_desc": "outer membrane protein",
+     "refseq_definition": "outer membrane protein",
+     "neighbourhood": [
+      "CCNA_00198 (-) tRNA (guanine-N1) -methyltransferase",
+      "CCNA_00199 (+) TadG/vWA-family protein",
+      "CCNA_00200 (-) 2OG-Fe(II) oxygenase superfamily protein",
+      "CCNA_00201 (+) outer membrane protein",
+      "CCNA_00202 (+) DesA-family fatty acid desaturase",
+      "CCNA_00203 (+) sterol desaturase family protein",
+      "CCNA_00204 (-) glutathione-regulated potassium-efflux system protein kefB"
+     ]
+    },
+    {
+     "model_gene": "YP_002518709_1",
+     "locus": "CCNA_03337",
+     "fitness_browser_desc": "peptidoglycan-associated lipoprotein pal",
+     "refseq_definition": "peptidoglycan-associated lipoprotein pal",
+     "neighbourhood": [
+      "CCNA_03334 (-) cell division protein FtsH",
+      "CCNA_03335 (-) PP-loop family cell cycle control ATPase",
+      "CCNA_03336 (-) Tol system periplasmic component YbgF",
+      "CCNA_03337 (-) peptidoglycan-associated lipoprotein pal",
+      "CCNA_03338 (-) TolB protein",
+      "CCNA_03339 (-) TolA protein",
+      "CCNA_03340 (-) TolR protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CITACt",
+   "name": "Citrate transport via acetate antiport",
+   "equation_ids": "ac_c + cit_e <-- ac_e + cit_c",
+   "equation_names": "Acetate + Citrate <-- Acetate + Citrate",
+   "annotation": {
+    "metanetx.reaction": "MNXR96723"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "CITt11",
+   "name": "Citrate transport in via Mn complex",
+   "equation_ids": "cit_e + h_e + mn2_e --> cit_c + h_c + mn2_c",
+   "equation_names": "Citrate + H+ + Mn2+ --> Citrate + H+ + Mn2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "CITt15",
+   "name": "Citrate transport in via Zn complex",
+   "equation_ids": "cit_e + h_e + zn2_e --> cit_c + h_c + zn2_c",
+   "equation_names": "Citrate + H+ + Zinc --> Citrate + H+ + Zinc",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "CLBtex",
+   "name": "Cellobiose transport transport via diffusion extracellular to periplasm",
+   "equation_ids": "cellb_e <=> cellb_p",
+   "equation_names": "Cellobiose <=> Cellobiose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516391_1 or YP_002517922_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516391_1",
+     "locus": "CCNA_01018",
+     "fitness_browser_desc": "D-galactose 1-dehydrogenase",
+     "refseq_definition": "D-galactose 1-dehydrogenase",
+     "neighbourhood": [
+      "CCNA_01015 (+) multicopper oxidase PcoA",
+      "CCNA_01016 (+) copper resistance protein B",
+      "CCNA_01017 (+) acyl-CoA synthetase",
+      "CCNA_01018 (-) D-galactose 1-dehydrogenase",
+      "CCNA_01019 (-) beta-glucosidase",
+      "CCNA_01020 (-) LacI-family transcriptional regulator",
+      "CCNA_01021 (+) TonB-dependent receptor"
+     ]
+    },
+    {
+     "model_gene": "YP_002517922_1",
+     "locus": "CCNA_02549",
+     "fitness_browser_desc": "glucokinase",
+     "refseq_definition": "ROK family protein",
+     "neighbourhood": [
+      "CCNA_02546 (-) GGDEF/response regulator protein PleD",
+      "CCNA_02547 (-) response regulator receiver protein DivK",
+      "CCNA_02548 (+) hypothetical protein",
+      "CCNA_02549 (+) glucokinase",
+      "CCNA_02550 (+) DNA polymerase IV-kappa DinB",
+      "CCNA_02551 (+) hypothetical protein",
+      "CCNA_02552 (+) ATP-dependent Clp protease adaptor protein ClpS"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLBtpp",
+   "name": "Cellobiose transport via permease",
+   "equation_ids": "cellb_p --> cellb_c",
+   "equation_names": "Cellobiose --> Cellobiose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "name": "Chloride transport out via proton antiport (2:1) (periplasm)",
+   "equation_ids": "2.0 cl_p + h_c --> 2.0 cl_c + h_p",
+   "equation_names": "2.0 Chloride + H+ --> 2.0 Chloride + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "CLtex",
+   "name": "Chloride (Cl-1) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cl_e <=> cl_p",
+   "equation_names": "Chloride <=> Chloride",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515576_1 or YP_002518709_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515576_1",
+     "locus": "CCNA_00201",
+     "fitness_browser_desc": "outer membrane protein",
+     "refseq_definition": "outer membrane protein",
+     "neighbourhood": [
+      "CCNA_00198 (-) tRNA (guanine-N1) -methyltransferase",
+      "CCNA_00199 (+) TadG/vWA-family protein",
+      "CCNA_00200 (-) 2OG-Fe(II) oxygenase superfamily protein",
+      "CCNA_00201 (+) outer membrane protein",
+      "CCNA_00202 (+) DesA-family fatty acid desaturase",
+      "CCNA_00203 (+) sterol desaturase family protein",
+      "CCNA_00204 (-) glutathione-regulated potassium-efflux system protein kefB"
+     ]
+    },
+    {
+     "model_gene": "YP_002518709_1",
+     "locus": "CCNA_03337",
+     "fitness_browser_desc": "peptidoglycan-associated lipoprotein pal",
+     "refseq_definition": "peptidoglycan-associated lipoprotein pal",
+     "neighbourhood": [
+      "CCNA_03334 (-) cell division protein FtsH",
+      "CCNA_03335 (-) PP-loop family cell cycle control ATPase",
+      "CCNA_03336 (-) Tol system periplasmic component YbgF",
+      "CCNA_03337 (-) peptidoglycan-associated lipoprotein pal",
+      "CCNA_03338 (-) TolB protein",
+      "CCNA_03339 (-) TolA protein",
+      "CCNA_03340 (-) TolR protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CYSS",
+   "name": "Cysteine synthase",
+   "equation_ids": "acser_c + h2s_c --> ac_c + cys__L_c + h_c",
+   "equation_names": "O-Acetyl-L-serine + Hydrogen sulfide --> Acetate + L-Cysteine + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516866_1 or YP_002519113_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516866_1",
+     "locus": "CCNA_01493",
+     "fitness_browser_desc": "cysteine synthase",
+     "refseq_definition": "cysteine synthase",
+     "neighbourhood": [
+      "CCNA_01490 (+) FAD-dependent dehydrogenase",
+      "CCNA_01491 (-) cystathionine beta-lyase",
+      "CCNA_01492 (-) 3-mercaptopyruvate sulfurtransferase",
+      "CCNA_01493 (-) cysteine synthase",
+      "CCNA_01494 (-) cyclopropane-fatty-acyl-phospholipid synthase",
+      "CCNA_01495 (-) deoxyribodipyrimidine photolyase",
+      "CCNA_01496 (+) 2-dehydro-3-deoxyphosphooctonate aldolase"
+     ]
+    },
+    {
+     "model_gene": "YP_002519113_1",
+     "locus": "CCNA_03740",
+     "fitness_browser_desc": "cysteine synthase",
+     "refseq_definition": "cysteine synthase",
+     "neighbourhood": [
+      "CCNA_03737 (+) YggU superfamily protein",
+      "CCNA_03738 (+) hybrid histidine kinase/receiver domain protein",
+      "CCNA_03739 (-) very short patch repair endonuclease",
+      "CCNA_03740 (-) cysteine synthase",
+      "CCNA_03741 (-) DNA-cytosine methyltransferase",
+      "CCNA_03742 (+) hypothetical protein",
+      "CCNA_03743 (-) beta-lactamase family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "Cuabc",
+   "name": "Cuabc",
+   "equation_ids": "atp_c + cu2_e + h2o_c --> adp_c + cu2_c + h_c + pi_c",
+   "equation_names": "ATP + Cu2+ + H2O --> ADP + Cu2+ + H+ + Phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "DDPA",
+   "name": "3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase",
+   "equation_ids": "e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Phosphoenolpyruvate --> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516836_1 or YP_002517758_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516836_1",
+     "locus": "CCNA_01463",
+     "fitness_browser_desc": "3-deoxy-7-phosphoheptulonate synthase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "CCNA_01460 (+) hypothetical protein",
+      "CCNA_01461 (+) hypothetical protein",
+      "CCNA_01462 (-) lactate 2-monooxygenase",
+      "CCNA_01463 (-) 3-deoxy-7-phosphoheptulonate synthase",
+      "CCNA_03951 (-) hypothetical protein",
+      "CCNA_01464 (-) hypothetical protein",
+      "CCNA_01465 (+) methyl-accepting chemotaxis protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002517758_1",
+     "locus": "CCNA_02385",
+     "fitness_browser_desc": "3-deoxy-7-phosphoheptulonate synthase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "CCNA_02382 (+) membrane peptidase, M23 family",
+      "CCNA_02383 (-) alpha/beta hydrolase family protein",
+      "CCNA_02384 (-) very-long-chain acyl-CoA synthetase",
+      "CCNA_02385 (-) 3-deoxy-7-phosphoheptulonate synthase",
+      "CCNA_02386 (-) O-antigen ligase related enzyme",
+      "CCNA_02387 (-) glutathione reductase",
+      "CCNA_02388 (-) ribose 5-phosphate isomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515620_1 or YP_002516235_1 or YP_002516861_1 or YP_002518512_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515620_1",
+     "locus": "CCNA_00245",
+     "fitness_browser_desc": "pterin-4-alpha-carbinolamine dehydratase",
+     "refseq_definition": "pterin-4-alpha-carbinolamine dehydratase",
+     "neighbourhood": [
+      "CCNA_03917 (-) hypothetical protein",
+      "CCNA_00243 (-) hypothetical protein",
+      "CCNA_00244 (+) HAD superfamily phophatase",
+      "CCNA_00245 (+) pterin-4-alpha-carbinolamine dehydratase",
+      "CCNA_00246 (+) cyclohexanol dehydrogenase",
+      "CCNA_00247 (-) two-component receiver protein SpdR",
+      "CCNA_00248 (-) sensor histidine protein kinase"
+     ]
+    },
+    {
+     "model_gene": "YP_002516235_1",
+     "locus": "CCNA_00862",
+     "fitness_browser_desc": "xylonate dehydratase xylD",
+     "refseq_definition": "xylonate dehydratase xylD",
+     "neighbourhood": [
+      "CCNA_00859 (-) acetyltransferase, GNAT family",
+      "CCNA_00860 (-) holdfast inhibitor protein HfiA",
+      "CCNA_00861 (-) hypothetical protein",
+      "CCNA_00862 (-) xylonate dehydratase xylD",
+      "CCNA_00863 (-) xylonolactonase xylC",
+      "CCNA_00864 (-) xylose dehydrogenase xylB",
+      "CCNA_00865 (-) alpha-ketoglutaric semialdehyde dehydrogenase xylA"
+     ]
+    },
+    {
+     "model_gene": "YP_002516861_1",
+     "locus": "CCNA_01488",
+     "fitness_browser_desc": "dihydroxyacid dehydratase",
+     "refseq_definition": "dihydroxyacid dehydratase",
+     "neighbourhood": [
+      "CCNA_01485 (-) aldose 1-epimerase",
+      "CCNA_01486 (-) fumarylacetoacetate (FAA) hydrolase family protein",
+      "CCNA_01487 (+) GntR-family transcriptional regulator",
+      "CCNA_01488 (+) dihydroxyacid dehydratase",
+      "CCNA_01489 (+) alpha-L-arabinofuranosidase",
+      "CCNA_01490 (+) FAD-dependent dehydrogenase",
+      "CCNA_01491 (-) cystathionine beta-lyase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518512_1",
+     "locus": "CCNA_03139",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "CCNA_03137 (+) endo-1,4-beta-xylanase",
+      "CCNA_03986 (-) hypothetical protein",
+      "CCNA_03138 (+) peroxidase/catalase katG",
+      "CCNA_03139 (-) dihydroxy-acid dehydratase",
+      "CCNA_03140 (+) LysR-family transcriptional regulator",
+      "CCNA_03141 (+) phosphoserine phosphatase",
+      "CCNA_03142 (-) RNA polymerase sigma factor rpoD"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORD2",
+   "name": "Dihydoorotic acid dehydrogenase (quinone8)",
+   "equation_ids": "dhor__S_c + q8_c --> orot_c + q8h2_c",
+   "equation_names": "(S)-Dihydroorotate + Ubiquinone-8 --> Orotate + Ubiquinol-8",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515767_1 or YP_002517899_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515767_1",
+     "locus": "CCNA_00392",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "CCNA_00389 (-) aminomethyltransferase family protein",
+      "CCNA_00390 (+) ADP-heptose--LPS heptosyltransferase",
+      "CCNA_00391 (+) hypothetical protein",
+      "CCNA_00392 (+) dihydroorotase",
+      "CCNA_00393 (-) RNA polymerase sigma factor",
+      "CCNA_00394 (-) YCII-related domain protein",
+      "CCNA_00395 (+) feruloyl-CoA synthetase"
+     ]
+    },
+    {
+     "model_gene": "YP_002517899_1",
+     "locus": "CCNA_02526",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "CCNA_03899 (-) hypothetical protein",
+      "CCNA_02525 (+) aspartate carbamoyltransferase",
+      "CCNA_03968 (+) hypothetical protein",
+      "CCNA_02526 (+) dihydroorotase",
+      "CCNA_02527 (+) hypothetical protein",
+      "CCNA_02528 (+) PlsY-like acyl-phosphate glycerol 3-phosphate acyltransferase",
+      "CCNA_02529 (+) DNA recombination-mediator protein A, SMF family"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMATT",
+   "name": "Dimethylallyltranstransferase",
+   "equation_ids": "dmpp_c + ipdp_c --> grdp_c + ppi_c",
+   "equation_names": "Dimethylallyl diphosphate + Isopentenyl diphosphate --> Geranyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517523_1 or YP_002517571_4",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517523_1",
+     "locus": "CCNA_02150",
+     "fitness_browser_desc": "dimethylallyltransferase/geranyltranstransferase",
+     "refseq_definition": "dimethylallyltransferase/geranyltranstransferase",
+     "neighbourhood": [
+      "CCNA_02147 (+) hypothetical protein",
+      "CCNA_02148 (+) hypothetical protein",
+      "CCNA_02149 (-) 1-deoxy-D-xylulose 5-phosphate synthase",
+      "CCNA_02150 (-) dimethylallyltransferase/geranyltranstransferase",
+      "CCNA_02151 (-) exodeoxyribonuclease VII small subunit",
+      "CCNA_02152 (-) phosphoglycerate mutase",
+      "CCNA_02153 (-) acetylspermidine deacetylase"
+     ]
+    },
+    {
+     "model_gene": "YP_002517571_4",
+     "locus": "CCNA_02198",
+     "fitness_browser_desc": "trans-isoprenyl diphosphate synthase",
+     "refseq_definition": "trans-isoprenyl diphosphate synthase",
+     "neighbourhood": [
+      "CCNA_02195 (+) acetyltransferase",
+      "CCNA_02196 (-) hypothetical protein",
+      "CCNA_02197 (-) hypothetical protein",
+      "CCNA_02198 (-) trans-isoprenyl diphosphate synthase",
+      "CCNA_02199 (+) methyltransferase",
+      "CCNA_02200 (-) cytochrome c-family protein",
+      "CCNA_02201 (-) nucleoside 2-deoxyribosyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002518844_1 or YP_002519075_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002518844_1",
+     "locus": "CCNA_03471",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "CCNA_03468 (+) methyl-accepting chemotaxis protein",
+      "CCNA_03469 (-) arginyl-tRNA synthetase",
+      "CCNA_03909 (-) hypothetical protein",
+      "CCNA_03471 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "CCNA_03472 (+) hypothetical protein",
+      "CCNA_03473 (-) death on curing toxin protein doc",
+      "CCNA_03474 (-) SpoVT-AbrB family transcription factor, phd antitoxin"
+     ]
+    },
+    {
+     "model_gene": "YP_002519075_1",
+     "locus": "CCNA_03702",
+     "fitness_browser_desc": "SSU ribosomal protein S1P",
+     "refseq_definition": "SSU ribosomal protein S1P",
+     "neighbourhood": [
+      "CCNA_03699 (+) peptidase, M16 family",
+      "CCNA_03700 (-) large-conductance mechanosensitive channel",
+      "CCNA_03701 (-) integration host factor beta-subunit",
+      "CCNA_03702 (-) SSU ribosomal protein S1P",
+      "CCNA_03703 (-) cytidylate kinase",
+      "CCNA_03704 (-) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "CCNA_03705 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNMPPA",
+   "name": "Dihydroneopterin monophosphate dephosphorylase",
+   "equation_ids": "dhpmp_c + h2o_c --> dhnpt_c + pi_c",
+   "equation_names": "Dihydroneopterin monophosphate + H2O --> Dihydroneopterin + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516846_1 or YP_002516996_1 or YP_002518184_1 or YP_002518926_1 or YP_002518951_2",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516846_1",
+     "locus": "CCNA_01473",
+     "fitness_browser_desc": "E1-E2 cation pump ATPase fixI",
+     "refseq_definition": "E1-E2 cation pump ATPase fixI",
+     "neighbourhood": [
+      "CCNA_01470 (+) cytochrome cbb3 oxidase, diheme subunit, membrane-bound ccoP",
+      "CCNA_01471 (+) polyferredoxin protein fixG",
+      "CCNA_01472 (+) cation pump-linked membrane protein fixH",
+      "CCNA_01473 (+) E1-E2 cation pump ATPase fixI",
+      "CCNA_01474 (+) cytochrome cbb3 oxidase maturation protein ccoS",
+      "CCNA_01475 (+) OmpW family outer membrane cation channel",
+      "CCNA_01476 (+) CRP-family transcription regulator FtrB"
+     ]
+    },
+    {
+     "model_gene": "YP_002516996_1",
+     "locus": "CCNA_01623",
+     "fitness_browser_desc": "phosphohydrolase, MutT/nudix family",
+     "refseq_definition": "phosphohydrolase, MutT/nudix family",
+     "neighbourhood": [
+      "CCNA_01620 (+) 2-amino-4-hydroxy-6- hydroxymethyldihydropteridine pyrophosphokinase",
+      "CCNA_01621 (+) DNA-directed RNA polymerase omega chain",
+      "CCNA_01622 (+) Rsh ppGpp hydrolase-synthetase",
+      "CCNA_01623 (-) phosphohydrolase, MutT/nudix family",
+      "CCNA_01624 (+) orotate phosphoribosyltransferase",
+      "CCNA_01625 (-) aminobenzoyl-glutamate utilization protein B",
+      "CCNA_01626 (+) pyridoxal phosphate biosynthetic protein pdxJ"
+     ]
+    },
+    {
+     "model_gene": "YP_002518184_1",
+     "locus": "CCNA_02811",
+     "fitness_browser_desc": "heavy metal translocating P-type ATPase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "CCNA_02808 (+) hypothetical protein",
+      "CCNA_02809 (+) AcrB-family cation/multidrug efflux pump",
+      "CCNA_02810 (+) PII-like signaling protein",
+      "CCNA_02811 (+) heavy metal translocating P-type ATPase",
+      "CCNA_02812 (+) glutaredoxin",
+      "CCNA_02813 (+) transposase",
+      "CCNA_02814 (+) transposase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518926_1",
+     "locus": "CCNA_03553",
+     "fitness_browser_desc": "diadenosine tetraphosphate (Ap4A) hydrolase",
+     "refseq_definition": "RNA pyrophosphohydrolase",
+     "neighbourhood": [
+      "CCNA_03548 (+) carboxy-terminal processing protease precursor",
+      "CCNA_03549 (-) TonB-dependent receptor",
+      "CCNA_03552 (+) polysaccharide deacetylase",
+      "CCNA_03553 (+) diadenosine tetraphosphate (Ap4A) hydrolase",
+      "CCNA_03554 (+) esterase lipase family protein FzeB",
+      "CCNA_03555 (+) esterase lipase family protein",
+      "CCNA_03556 (-) multidrug efflux system protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518951_2",
+     "locus": "CCNA_03578",
+     "fitness_browser_desc": "ATP-dependent DNA helicase recQ",
+     "refseq_definition": "ATP-dependent DNA helicase recQ",
+     "neighbourhood": [
+      "CCNA_03575 (+) 3-ketoacyl-CoA thiolase",
+      "CCNA_03576 (-) hypothetical protein",
+      "CCNA_03577 (-) DNA polymerase I",
+      "CCNA_03578 (+) ATP-dependent DNA helicase recQ",
+      "CCNA_03579 (+) hypothetical protein",
+      "CCNA_03580 (-) SOS-induced DUF1052 family protein",
+      "CCNA_03581 (+) transporter, drug/metabolite exporter family"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNTPPA",
+   "name": "Dihydroneopterin triphosphate pyrophosphatase",
+   "equation_ids": "ahdt_c + h2o_c --> dhpmp_c + h_c + ppi_c",
+   "equation_names": "2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + H2O --> Dihydroneopterin monophosphate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516557_1 or YP_002516781_1 or YP_002516846_1 or YP_002518108_1 or YP_002518184_1 or YP_002518926_1 or YP_002518951_2",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516557_1",
+     "locus": "CCNA_01184",
+     "fitness_browser_desc": "MutT/nudix family hydrolase",
+     "refseq_definition": "MutT/nudix family hydrolase",
+     "neighbourhood": [
+      "CCNA_01181 (-) hypothetical protein",
+      "CCNA_01182 (+) glutathione S-transferase",
+      "CCNA_01183 (+) zinc dependent phospholipase C/S1-P1 nuclease-family protein",
+      "CCNA_01184 (+) MutT/nudix family hydrolase",
+      "CCNA_01185 (-) hypothetical protein",
+      "CCNA_01186 (+) hypothetical protein",
+      "CCNA_01187 (+) RNA polymerase ECF-type sigma factor"
+     ]
+    },
+    {
+     "model_gene": "YP_002516781_1",
+     "locus": "CCNA_01408",
+     "fitness_browser_desc": "phosphohydrolase, MutT/nudix family",
+     "refseq_definition": "phosphohydrolase, MutT/nudix family",
+     "neighbourhood": [
+      "CCNA_01405 (-) GIY-YIG domain protein",
+      "CCNA_01406 (-) metal-dependent hydrolase",
+      "CCNA_01407 (+) hypothetical protein",
+      "CCNA_01408 (-) phosphohydrolase, MutT/nudix family",
+      "CCNA_01409 (-) delta-aminolevulinic acid dehydratase",
+      "CCNA_01410 (-) cyclohexanone monooxygenase",
+      "CCNA_03949 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002516846_1",
+     "locus": "CCNA_01473",
+     "fitness_browser_desc": "E1-E2 cation pump ATPase fixI",
+     "refseq_definition": "E1-E2 cation pump ATPase fixI",
+     "neighbourhood": [
+      "CCNA_01470 (+) cytochrome cbb3 oxidase, diheme subunit, membrane-bound ccoP",
+      "CCNA_01471 (+) polyferredoxin protein fixG",
+      "CCNA_01472 (+) cation pump-linked membrane protein fixH",
+      "CCNA_01473 (+) E1-E2 cation pump ATPase fixI",
+      "CCNA_01474 (+) cytochrome cbb3 oxidase maturation protein ccoS",
+      "CCNA_01475 (+) OmpW family outer membrane cation channel",
+      "CCNA_01476 (+) CRP-family transcription regulator FtrB"
+     ]
+    },
+    {
+     "model_gene": "YP_002518108_1",
+     "locus": "CCNA_02735",
+     "fitness_browser_desc": "ADP-ribose pyrophosphatase family protein",
+     "refseq_definition": "NUDIX hydrolase",
+     "neighbourhood": [
+      "CCNA_02732 (-) hypothetical protein",
+      "CCNA_02733 (-) glutaminyl-peptide cyclotransferase",
+      "CCNA_02734 (-) serine acetyltransferase",
+      "CCNA_02735 (-) ADP-ribose pyrophosphatase family protein",
+      "CCNA_02736 (+) nitroreductase family",
+      "CCNA_02737 (-) queuosine biosynthesis protein QueF",
+      "CCNA_02738 (+) 3-ketoacyl-(acyl-carrier-protein) reductase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518184_1",
+     "locus": "CCNA_02811",
+     "fitness_browser_desc": "heavy metal translocating P-type ATPase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "CCNA_02808 (+) hypothetical protein",
+      "CCNA_02809 (+) AcrB-family cation/multidrug efflux pump",
+      "CCNA_02810 (+) PII-like signaling protein",
+      "CCNA_02811 (+) heavy metal translocating P-type ATPase",
+      "CCNA_02812 (+) glutaredoxin",
+      "CCNA_02813 (+) transposase",
+      "CCNA_02814 (+) transposase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518926_1",
+     "locus": "CCNA_03553",
+     "fitness_browser_desc": "diadenosine tetraphosphate (Ap4A) hydrolase",
+     "refseq_definition": "RNA pyrophosphohydrolase",
+     "neighbourhood": [
+      "CCNA_03548 (+) carboxy-terminal processing protease precursor",
+      "CCNA_03549 (-) TonB-dependent receptor",
+      "CCNA_03552 (+) polysaccharide deacetylase",
+      "CCNA_03553 (+) diadenosine tetraphosphate (Ap4A) hydrolase",
+      "CCNA_03554 (+) esterase lipase family protein FzeB",
+      "CCNA_03555 (+) esterase lipase family protein",
+      "CCNA_03556 (-) multidrug efflux system protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518951_2",
+     "locus": "CCNA_03578",
+     "fitness_browser_desc": "ATP-dependent DNA helicase recQ",
+     "refseq_definition": "ATP-dependent DNA helicase recQ",
+     "neighbourhood": [
+      "CCNA_03575 (+) 3-ketoacyl-CoA thiolase",
+      "CCNA_03576 (-) hypothetical protein",
+      "CCNA_03577 (-) DNA polymerase I",
+      "CCNA_03578 (+) ATP-dependent DNA helicase recQ",
+      "CCNA_03579 (+) hypothetical protein",
+      "CCNA_03580 (-) SOS-induced DUF1052 family protein",
+      "CCNA_03581 (+) transporter, drug/metabolite exporter family"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515637_1 or YP_002517577_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515637_1",
+     "locus": "CCNA_00262",
+     "fitness_browser_desc": "ketopantoate reductase panE/ApbA family protein",
+     "refseq_definition": "ketopantoate reductase panE/ApbA family protein",
+     "neighbourhood": [
+      "CCNA_00259 (-) hypothetical protein",
+      "CCNA_00260 (-) glutathione S-transferase",
+      "CCNA_00261 (+) ribonucleoside-diphosphate reductase beta chain",
+      "CCNA_00262 (+) ketopantoate reductase panE/ApbA family protein",
+      "CCNA_00263 (-) hypothetical protein",
+      "CCNA_00264 (-) C4-dicarboxylate transport protein",
+      "CCNA_00265 (+) AMP nucleosidase"
+     ]
+    },
+    {
+     "model_gene": "YP_002517577_1",
+     "locus": "CCNA_02204",
+     "fitness_browser_desc": "ketol-acid reductoisomerase/2-dehydropantoate 2-reductase",
+     "refseq_definition": "ketol-acid reductoisomerase/2-dehydropantoate 2-reductase",
+     "neighbourhood": [
+      "CCNA_02201 (-) nucleoside 2-deoxyribosyltransferase",
+      "CCNA_02202 (+) SCP domain protein",
+      "CCNA_02203 (-) YceI-like domain protein",
+      "CCNA_02204 (-) ketol-acid reductoisomerase/2-dehydropantoate 2-reductase",
+      "CCNA_02205 (-) hypothetical protein",
+      "CCNA_02206 (+) hypothetical protein",
+      "CCNA_02207 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DXPS",
+   "name": "1-deoxy-D-xylulose 5-phosphate synthase",
+   "equation_ids": "g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c",
+   "equation_names": "Glyceraldehyde 3-phosphate + H+ + Pyruvate --> CO2 + 1-deoxy-D-xylulose 5-phosphate",
+   "annotation": {
+    "rhea": [
+     "12605",
+     "12606",
+     "12607",
+     "12608"
+    ],
+    "ec-code": "2.2.1.7",
+    "metanetx.reaction": "MNXR97831",
+    "kegg.reaction": "R05636"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "FBP",
+   "name": "Fructose-bisphosphatase",
+   "equation_ids": "fdp_c + h2o_c --> f6p_c + pi_c",
+   "equation_names": "D-Fructose 1,6-bisphosphate + H2O --> D-Fructose 6-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516821_1 or YP_002516822_2",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516821_1",
+     "locus": "CCNA_01448",
+     "fitness_browser_desc": "fructose-1,6-bisphosphatase, class II",
+     "refseq_definition": "fructose-1,6-bisphosphatase, class II",
+     "neighbourhood": [
+      "CCNA_01445 (+) hypothetical protein",
+      "CCNA_01446 (+) LL-diaminopimelate aminotransferase",
+      "CCNA_01447 (+) homoserine dehydrogenase",
+      "CCNA_01448 (+) fructose-1,6-bisphosphatase, class II",
+      "CCNA_01449 (+) fructose-1,6-bisphosphatase, FIG superfamily",
+      "CCNA_01450 (+) single-stranded-DNA-specific exonuclease recJ",
+      "CCNA_R0036 (+) tRNA-Glu"
+     ]
+    },
+    {
+     "model_gene": "YP_002516822_2",
+     "locus": "CCNA_01449",
+     "fitness_browser_desc": "fructose-1,6-bisphosphatase, FIG superfamily",
+     "refseq_definition": "fructose-1,6-bisphosphatase, FIG superfamily",
+     "neighbourhood": [
+      "CCNA_01446 (+) LL-diaminopimelate aminotransferase",
+      "CCNA_01447 (+) homoserine dehydrogenase",
+      "CCNA_01448 (+) fructose-1,6-bisphosphatase, class II",
+      "CCNA_01449 (+) fructose-1,6-bisphosphatase, FIG superfamily",
+      "CCNA_01450 (+) single-stranded-DNA-specific exonuclease recJ",
+      "CCNA_R0036 (+) tRNA-Glu",
+      "CCNA_R0037 (+) tRNA-Glu"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FE2tex",
+   "name": "Iron (II) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "fe2_e <=> fe2_p",
+   "equation_names": "Fe2+ <=> Fe2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515576_1 or YP_002518709_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515576_1",
+     "locus": "CCNA_00201",
+     "fitness_browser_desc": "outer membrane protein",
+     "refseq_definition": "outer membrane protein",
+     "neighbourhood": [
+      "CCNA_00198 (-) tRNA (guanine-N1) -methyltransferase",
+      "CCNA_00199 (+) TadG/vWA-family protein",
+      "CCNA_00200 (-) 2OG-Fe(II) oxygenase superfamily protein",
+      "CCNA_00201 (+) outer membrane protein",
+      "CCNA_00202 (+) DesA-family fatty acid desaturase",
+      "CCNA_00203 (+) sterol desaturase family protein",
+      "CCNA_00204 (-) glutathione-regulated potassium-efflux system protein kefB"
+     ]
+    },
+    {
+     "model_gene": "YP_002518709_1",
+     "locus": "CCNA_03337",
+     "fitness_browser_desc": "peptidoglycan-associated lipoprotein pal",
+     "refseq_definition": "peptidoglycan-associated lipoprotein pal",
+     "neighbourhood": [
+      "CCNA_03334 (-) cell division protein FtsH",
+      "CCNA_03335 (-) PP-loop family cell cycle control ATPase",
+      "CCNA_03336 (-) Tol system periplasmic component YbgF",
+      "CCNA_03337 (-) peptidoglycan-associated lipoprotein pal",
+      "CCNA_03338 (-) TolB protein",
+      "CCNA_03339 (-) TolA protein",
+      "CCNA_03340 (-) TolR protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "G1PACT",
+   "name": "Glucosamine-1-phosphate N-acetyltransferase",
+   "equation_ids": "accoa_c + gam1p_c --> acgam1p_c + coa_c + h_c",
+   "equation_names": "Acetyl-CoA + D-Glucosamine 1-phosphate --> N-Acetyl-D-glucosamine 1-phosphate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516583_1 or YP_002517762_1 or YP_002519023_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516583_1",
+     "locus": "CCNA_01210",
+     "fitness_browser_desc": "nucleotidyltransferase family protein",
+     "refseq_definition": "nucleotidyltransferase family protein",
+     "neighbourhood": [
+      "CCNA_01207 (+) two-component sensor histidine kinase",
+      "CCNA_01208 (+) two-component response regulator",
+      "CCNA_01209 (+) L-lactate dehydrogenase",
+      "CCNA_01210 (+) nucleotidyltransferase family protein",
+      "CCNA_01211 (-) MobA-like NTP transferase domain protein",
+      "CCNA_01212 (-) dATP pyrophosphohydrolase",
+      "CCNA_01213 (-) YjgP/YjgQ family membrane permease"
+     ]
+    },
+    {
+     "model_gene": "YP_002517762_1",
+     "locus": "CCNA_02389",
+     "fitness_browser_desc": "glucosamine-1-phosphate acetyltransferase/UDP-N-acetylglucosamine pyrophosphorylase",
+     "refseq_definition": "glucosamine-1-phosphate acetyltransferase/UDP-N-acetylglucosamine pyrophosphorylase",
+     "neighbourhood": [
+      "CCNA_02386 (-) O-antigen ligase related enzyme",
+      "CCNA_02387 (-) glutathione reductase",
+      "CCNA_02388 (-) ribose 5-phosphate isomerase",
+      "CCNA_02389 (-) glucosamine-1-phosphate acetyltransferase/UDP-N-acetylglucosamine pyrophosphorylase",
+      "CCNA_02390 (+) phosphoglycolate phosphatase",
+      "CCNA_R0056 (+) tRNA-Val",
+      "CCNA_02391 (+) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "YP_002519023_1",
+     "locus": "CCNA_03650",
+     "fitness_browser_desc": "mannose-1-phosphate guanyltransferase",
+     "refseq_definition": "N-acetylmuramate alpha-1-phosphate uridylyltransferase MurU",
+     "neighbourhood": [
+      "CCNA_03647 (+) lysophospholipid acyltransferases",
+      "CCNA_03648 (+) YjeE family ATPase",
+      "CCNA_03649 (+) Ser/Thr kinase-related phosphotransferase",
+      "CCNA_03650 (+) mannose-1-phosphate guanyltransferase",
+      "CCNA_03651 (+) ATP-dependent nuclease subunit B",
+      "CCNA_03652 (+) ATP-dependent nuclease subunit A",
+      "CCNA_03653 (+) thioredoxin"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GALKr",
+   "name": "Galactokinase",
+   "equation_ids": "atp_c + gal_c <=> adp_c + gal1p_c + h_c",
+   "equation_names": "ATP + D-Galactose <=> ADP + Alpha-D-Galactose 1-phosphate + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "GF6PTA",
+   "name": "Glutamine-fructose-6-phosphate transaminase",
+   "equation_ids": "f6p_c + gln__L_c --> gam6p_c + glu__L_c",
+   "equation_names": "D-Fructose 6-phosphate + L-Glutamine --> D-Glucosamine 6-phosphate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515492_1 or YP_002515828_1 or YP_002515942_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515492_1",
+     "locus": "CCNA_00117",
+     "fitness_browser_desc": "glucosamine-fructose-6-phosphate aminotransferase, isomerizing",
+     "refseq_definition": "glucosamine-fructose-6-phosphate aminotransferase, isomerizing",
+     "neighbourhood": [
+      "CCNA_00114 (+) MarR/EmrR-family transcriptional regulator",
+      "CCNA_00115 (+) TolB protein",
+      "CCNA_00116 (-) phosphoglucosamine mutase",
+      "CCNA_00117 (+) glucosamine-fructose-6-phosphate aminotransferase, isomerizing",
+      "CCNA_00118 (+) porphyrin biosynthesis protein",
+      "CCNA_00119 (+) hypothetical protein",
+      "CCNA_00120 (+) putative acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "YP_002515828_1",
+     "locus": "CCNA_00453",
+     "fitness_browser_desc": "glucosamine-6-phosphate deaminase",
+     "refseq_definition": "glucosamine-6-phosphate deaminase",
+     "neighbourhood": [
+      "CCNA_00450 (+) cheE protein",
+      "CCNA_00451 (+) TonB-dependent receptor",
+      "CCNA_00452 (-) N-acetylglucosamine-6-phosphate deacetylase",
+      "CCNA_00453 (-) glucosamine-6-phosphate deaminase",
+      "CCNA_00454 (-) GntR-family transcriptional regulator",
+      "CCNA_03920 (-) hypothetical protein",
+      "CCNA_00455 (+) N-acetyl-glucosamine/N-acetyl-chitin oligosaccharide outer membrane transporter nagA"
+     ]
+    },
+    {
+     "model_gene": "YP_002515942_1",
+     "locus": "CCNA_00569",
+     "fitness_browser_desc": "glucosamine-6-phosphate deaminase",
+     "refseq_definition": "glucosamine-6-phosphate deaminase",
+     "neighbourhood": [
+      "CCNA_00566 (-) mannonate dehydratase",
+      "CCNA_00567 (-) alpha-1,2-mannosidase",
+      "CCNA_00568 (-) N-acetylglucosamine-6-phosphate deacetylase",
+      "CCNA_00569 (-) glucosamine-6-phosphate deaminase",
+      "CCNA_00570 (-) GntR-family transcriptional regulator",
+      "CCNA_00571 (+) phosphoenolpyruvate-protein phosphotransferase/phosphocarrier protein HPr/PTS system, glucose-specific IIA subunit",
+      "CCNA_00572 (+) PTS system, N-acetylglucosamine-specific IIBC component"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNS",
+   "name": "Glutamine synthetase",
+   "equation_ids": "atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c",
+   "equation_names": "ATP + L-Glutamate + Ammonium --> ADP + L-Glutamine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517420_1 or YP_002518613_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517420_1",
+     "locus": "CCNA_02047",
+     "fitness_browser_desc": "glutamine synthetase",
+     "refseq_definition": "glutamine synthetase",
+     "neighbourhood": [
+      "CCNA_02044 (-) phosphoglycerate mutase",
+      "CCNA_02045 (-) acetyl-coenzyme A synthetase",
+      "CCNA_02046 (+) nitrogen regulatory protein P-II",
+      "CCNA_02047 (+) glutamine synthetase",
+      "CCNA_02048 (+) TonB-dependent receptor",
+      "CCNA_02049 (-) ABM superfamily monooxygenase protein",
+      "CCNA_02050 (+) imidazolonepropionase related amidohydrolase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518613_1",
+     "locus": "CCNA_03240",
+     "fitness_browser_desc": "glutamine synthetase",
+     "refseq_definition": "glutamine synthetase",
+     "neighbourhood": [
+      "CCNA_03236 (-) spermidine/putrescine transport system permease protein potC",
+      "CCNA_03238 (-) ABC-type spermidine/putrescine transport system, permease component II",
+      "CCNA_03239 (-) spermidine/putrescine-binding protein",
+      "CCNA_03240 (-) glutamine synthetase",
+      "CCNA_03241 (-) glutamate-1-semialdehyde 2,1-aminomutase",
+      "CCNA_03242 (-) succinic semialdehyde dehydrogenase",
+      "CCNA_03243 (-) NADP+-dependent gamma-glutamyl-gamma-aminobutyraldehyde dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLXCBL",
+   "name": "Glyoxalate carboligase",
+   "equation_ids": "2.0 glx_c + h_c --> 2h3opp_c + co2_c",
+   "equation_names": "2.0 Glyoxylate + H+ --> 2 Hydroxy 3 oxopropanoate C3H3O4 + CO2",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "GRTT",
+   "name": "Geranyltranstransferase",
+   "equation_ids": "grdp_c + ipdp_c --> frdp_c + ppi_c",
+   "equation_names": "Geranyl diphosphate + Isopentenyl diphosphate --> Farnesyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517523_1 or YP_002517571_4",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517523_1",
+     "locus": "CCNA_02150",
+     "fitness_browser_desc": "dimethylallyltransferase/geranyltranstransferase",
+     "refseq_definition": "dimethylallyltransferase/geranyltranstransferase",
+     "neighbourhood": [
+      "CCNA_02147 (+) hypothetical protein",
+      "CCNA_02148 (+) hypothetical protein",
+      "CCNA_02149 (-) 1-deoxy-D-xylulose 5-phosphate synthase",
+      "CCNA_02150 (-) dimethylallyltransferase/geranyltranstransferase",
+      "CCNA_02151 (-) exodeoxyribonuclease VII small subunit",
+      "CCNA_02152 (-) phosphoglycerate mutase",
+      "CCNA_02153 (-) acetylspermidine deacetylase"
+     ]
+    },
+    {
+     "model_gene": "YP_002517571_4",
+     "locus": "CCNA_02198",
+     "fitness_browser_desc": "trans-isoprenyl diphosphate synthase",
+     "refseq_definition": "trans-isoprenyl diphosphate synthase",
+     "neighbourhood": [
+      "CCNA_02195 (+) acetyltransferase",
+      "CCNA_02196 (-) hypothetical protein",
+      "CCNA_02197 (-) hypothetical protein",
+      "CCNA_02198 (-) trans-isoprenyl diphosphate synthase",
+      "CCNA_02199 (+) methyltransferase",
+      "CCNA_02200 (-) cytochrome c-family protein",
+      "CCNA_02201 (-) nucleoside 2-deoxyribosyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GTPCI",
+   "name": "GTP cyclohydrolase I",
+   "equation_ids": "gtp_c + h2o_c --> ahdt_c + for_c + h_c",
+   "equation_names": "GTP + H2O --> 2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + Formate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515864_1 or YP_002518110_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515864_1",
+     "locus": "CCNA_00491",
+     "fitness_browser_desc": "GTP cyclohydrolase I",
+     "refseq_definition": "GTP cyclohydrolase I",
+     "neighbourhood": [
+      "CCNA_00488 (-) amino acid efflux permease",
+      "CCNA_00489 (-) phosphoribosyl-AMP cyclohydrolase",
+      "CCNA_00490 (+) hypothetical protein",
+      "CCNA_00491 (-) GTP cyclohydrolase I",
+      "CCNA_00492 (+) cysteinyl-tRNA synthetase",
+      "CCNA_00493 (+) putative polyketide cyclase-dehydrase/lipid transport protein",
+      "CCNA_00494 (+) transport protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518110_1",
+     "locus": "CCNA_02737",
+     "fitness_browser_desc": "queuosine biosynthesis protein QueF",
+     "refseq_definition": "NADPH-dependent 7-cyano-7-deazaguanine reductase QueF",
+     "neighbourhood": [
+      "CCNA_02734 (-) serine acetyltransferase",
+      "CCNA_02735 (-) ADP-ribose pyrophosphatase family protein",
+      "CCNA_02736 (+) nitroreductase family",
+      "CCNA_02737 (-) queuosine biosynthesis protein QueF",
+      "CCNA_02738 (+) 3-ketoacyl-(acyl-carrier-protein) reductase",
+      "CCNA_03974 (-) hypothetical protein",
+      "CCNA_02739 (-) transposase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002519057_1 or YP_002519060_2 or spontaneous",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002519057_1",
+     "locus": "CCNA_03684",
+     "fitness_browser_desc": "carbonic anhydrase",
+     "refseq_definition": "carbonic anhydrase",
+     "neighbourhood": [
+      "CCNA_03681 (-) ABC transporter ATP-binding protein",
+      "CCNA_03682 (+) fumarylpyruvate hydrolase",
+      "CCNA_03683 (+) maleylpyruvate isomerase",
+      "CCNA_03684 (+) carbonic anhydrase",
+      "CCNA_03685 (-) multimodular transpeptidase-transglycosylase PbpZ",
+      "CCNA_03686 (-) alpha2 macroglobulin domain-containing extracellular protein",
+      "CCNA_03687 (-) carbonic anhydrase"
+     ]
+    },
+    {
+     "model_gene": "YP_002519060_2",
+     "locus": "CCNA_03687",
+     "fitness_browser_desc": "carbonic anhydrase",
+     "refseq_definition": "carbonic anhydrase",
+     "neighbourhood": [
+      "CCNA_03684 (+) carbonic anhydrase",
+      "CCNA_03685 (-) multimodular transpeptidase-transglycosylase PbpZ",
+      "CCNA_03686 (-) alpha2 macroglobulin domain-containing extracellular protein",
+      "CCNA_03687 (-) carbonic anhydrase",
+      "CCNA_03688 (-) AsnC-family transcriptional regulator",
+      "CCNA_03689 (+) alanine dehydrogenase",
+      "CCNA_03690 (-) spore coat polysaccharide biosynthesis protein spsF"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HEX1",
+   "name": "Hexokinase (D-glucose:ATP)",
+   "equation_ids": "atp_c + glc__D_c --> adp_c + g6p_c + h_c",
+   "equation_names": "ATP + D-Glucose --> ADP + D-Glucose 6-phosphate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517243_1 or YP_002517506_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517243_1",
+     "locus": "CCNA_01870",
+     "fitness_browser_desc": "NagC-family transcriptional regulator",
+     "refseq_definition": "NagC-family transcriptional regulator",
+     "neighbourhood": [
+      "CCNA_03894 (-) MFS sugar transporter",
+      "CCNA_01868 (-) 2H phosphodiesterase family protein",
+      "CCNA_01869 (-) TonB-dependent receptor",
+      "CCNA_01870 (-) NagC-family transcriptional regulator",
+      "CCNA_03895 (-) hypothetical protein",
+      "CCNA_01873 (+) magnesium and cobalt transport protein corA",
+      "CCNA_01874 (-) transposase"
+     ]
+    },
+    {
+     "model_gene": "YP_002517506_1",
+     "locus": "CCNA_02133",
+     "fitness_browser_desc": "glucokinase",
+     "refseq_definition": "glucokinase",
+     "neighbourhood": [
+      "CCNA_02130 (-) pyruvate kinase",
+      "CCNA_02131 (-) glucan 1,4-beta-glucosidase",
+      "CCNA_02132 (-) LacI-family transcriptional regulator",
+      "CCNA_02133 (-) glucokinase",
+      "CCNA_02134 (-) phosphogluconate dehydratase",
+      "CCNA_02135 (-) 6-phosphogluconolactonase",
+      "CCNA_02136 (-) glucose-6-phosphate 1-dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HEX7",
+   "name": "Hexokinase (D-fructose:ATP)",
+   "equation_ids": "atp_c + fru_c --> adp_c + f6p_c + h_c",
+   "equation_names": "ATP + D-Fructose --> ADP + D-Fructose 6-phosphate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516565_1 or YP_002517922_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516565_1",
+     "locus": "CCNA_01192",
+     "fitness_browser_desc": "sugar kinase",
+     "refseq_definition": "fructokinase SucC",
+     "neighbourhood": [
+      "CCNA_01189 (+) TonB-dependent receptor",
+      "CCNA_01190 (+) hypothetical protein",
+      "CCNA_01191 (-) transporter, major facilitator superfamily",
+      "CCNA_01192 (-) sugar kinase",
+      "CCNA_01193 (-) amylosucrase",
+      "CCNA_01194 (-) TonB-dependent receptor",
+      "CCNA_01195 (-) LacI-family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "YP_002517922_1",
+     "locus": "CCNA_02549",
+     "fitness_browser_desc": "glucokinase",
+     "refseq_definition": "ROK family protein",
+     "neighbourhood": [
+      "CCNA_02546 (-) GGDEF/response regulator protein PleD",
+      "CCNA_02547 (-) response regulator receiver protein DivK",
+      "CCNA_02548 (+) hypothetical protein",
+      "CCNA_02549 (+) glucokinase",
+      "CCNA_02550 (+) DNA polymerase IV-kappa DinB",
+      "CCNA_02551 (+) hypothetical protein",
+      "CCNA_02552 (+) ATP-dependent Clp protease adaptor protein ClpS"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HISTP",
+   "name": "Histidinol-phosphatase",
+   "equation_ids": "h2o_c + hisp_c --> histd_c + pi_c",
+   "equation_names": "H2O + L-Histidinol phosphate --> L-Histidinol + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517708_1 or YP_002519223_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517708_1",
+     "locus": "CCNA_02335",
+     "fitness_browser_desc": "inositol monophosphatase family protein",
+     "refseq_definition": "inositol monophosphatase family protein",
+     "neighbourhood": [
+      "CCNA_02332 (+) chemotaxis receiver protein cheYIII",
+      "CCNA_02333 (-) lipid A biosynthesis lauroyl acyltransferase",
+      "CCNA_02334 (+) transcriptional regulator of stalk biogenesis staR",
+      "CCNA_02335 (+) inositol monophosphatase family protein",
+      "CCNA_02336 (-) lysophospholipase L2",
+      "CCNA_02337 (-) nonspecific lipid-transfer protein",
+      "CCNA_02338 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002519223_1",
+     "locus": "CCNA_03850",
+     "fitness_browser_desc": "imidazoleglycerol-phosphate dehydratase",
+     "refseq_definition": "imidazoleglycerol-phosphate dehydratase",
+     "neighbourhood": [
+      "CCNA_03847 (+) endonuclease III",
+      "CCNA_03848 (-) ATP-grasp domain protein",
+      "CCNA_03849 (+) fructokinase",
+      "CCNA_03850 (+) imidazoleglycerol-phosphate dehydratase",
+      "CCNA_03851 (+) imidazole glycerol phosphate synthase, glutamine amidotransferase subunit",
+      "CCNA_03852 (+) phosphoribosylformimino-5-aminoimidazole carboxamide ribonucleotide isomerase",
+      "CCNA_03853 (+) imidazole glycerol phosphate synthase, cyclase subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HSERTA",
+   "name": "Homoserine O trans acetylase",
+   "equation_ids": "accoa_c + hom__L_c <=> achms_c + coa_c",
+   "equation_names": "Acetyl-CoA + L-Homoserine <=> O Acetyl L homoserine C6H11NO4 + Coenzyme A",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002518681_1 or (YP_002515931_1 and YP_002515932_1)",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515931_1",
+     "locus": "CCNA_00558",
+     "fitness_browser_desc": "methyltransferase",
+     "refseq_definition": "methionine biosynthesis protein MetW",
+     "neighbourhood": [
+      "CCNA_00555 (+) nitrogen regulatory protein P-II",
+      "CCNA_00556 (+) phospholipase D",
+      "CCNA_00557 (-) endonuclease/exonuclease/phosphatase family protein",
+      "CCNA_00558 (-) methyltransferase",
+      "CCNA_00559 (-) homoserine O-acetyltransferase",
+      "CCNA_00560 (+) phosphohistidine phosphatase SixA",
+      "CCNA_00561 (+) conserved hypothetical cytosolic protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002515932_1",
+     "locus": "CCNA_00559",
+     "fitness_browser_desc": "homoserine O-acetyltransferase",
+     "refseq_definition": "homoserine O-acetyltransferase",
+     "neighbourhood": [
+      "CCNA_00556 (+) phospholipase D",
+      "CCNA_00557 (-) endonuclease/exonuclease/phosphatase family protein",
+      "CCNA_00558 (-) methyltransferase",
+      "CCNA_00559 (-) homoserine O-acetyltransferase",
+      "CCNA_00560 (+) phosphohistidine phosphatase SixA",
+      "CCNA_00561 (+) conserved hypothetical cytosolic protein",
+      "CCNA_00562 (+) dihydroorotate dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518681_1",
+     "locus": "CCNA_03309",
+     "fitness_browser_desc": "homoserine O-acetyltransferase",
+     "refseq_definition": "homoserine O-acetyltransferase metX1",
+     "neighbourhood": [
+      "CCNA_03306 (-) SSU ribosomal protein S12P",
+      "CCNA_03307 (+) hypothetical protein",
+      "CCNA_03308 (+) hypothetical protein",
+      "CCNA_03309 (+) homoserine O-acetyltransferase",
+      "CCNA_03310 (-) transcription antitermination protein NusG",
+      "CCNA_03311 (-) protein translocase subunit SecE",
+      "CCNA_R0076 (-) tRNA-Trp"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002518844_1 or YP_002519075_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002518844_1",
+     "locus": "CCNA_03471",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "CCNA_03468 (+) methyl-accepting chemotaxis protein",
+      "CCNA_03469 (-) arginyl-tRNA synthetase",
+      "CCNA_03909 (-) hypothetical protein",
+      "CCNA_03471 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "CCNA_03472 (+) hypothetical protein",
+      "CCNA_03473 (-) death on curing toxin protein doc",
+      "CCNA_03474 (-) SpoVT-AbrB family transcription factor, phd antitoxin"
+     ]
+    },
+    {
+     "model_gene": "YP_002519075_1",
+     "locus": "CCNA_03702",
+     "fitness_browser_desc": "SSU ribosomal protein S1P",
+     "refseq_definition": "SSU ribosomal protein S1P",
+     "neighbourhood": [
+      "CCNA_03699 (+) peptidase, M16 family",
+      "CCNA_03700 (-) large-conductance mechanosensitive channel",
+      "CCNA_03701 (-) integration host factor beta-subunit",
+      "CCNA_03702 (-) SSU ribosomal protein S1P",
+      "CCNA_03703 (-) cytidylate kinase",
+      "CCNA_03704 (-) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "CCNA_03705 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MEPCT",
+   "name": "2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase",
+   "equation_ids": "2me4p_c + ctp_c + h_c --> 4c2me_c + ppi_c",
+   "equation_names": "2-C-methyl-D-erythritol 4-phosphate + CTP + H+ --> 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol + Diphosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "METB1",
+   "name": "Metb1",
+   "equation_ids": "achms_c + cys__L_c --> ac_c + cyst__L_c + h_c",
+   "equation_names": "O Acetyl L homoserine C6H11NO4 + L-Cysteine --> Acetate + L-Cystathionine + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "PGCD",
+   "name": "Phosphoglycerate dehydrogenase",
+   "equation_ids": "3pg_c + nad_c --> 3php_c + h_c + nadh_c",
+   "equation_names": "3-Phospho-D-glycerate + Nicotinamide adenine dinucleotide --> 3-Phosphohydroxypyruvate + H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517603_1 or YP_002518694_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517603_1",
+     "locus": "CCNA_02230",
+     "fitness_browser_desc": "gluconate 2-dehydrogenase",
+     "refseq_definition": "Hydroxy(phenyl)pyruvate reductase",
+     "neighbourhood": [
+      "CCNA_02227 (-) LysR-family transcriptional regulator",
+      "CCNA_02228 (+) NTF2 superfamily protein",
+      "CCNA_02229 (+) hypothetical protein",
+      "CCNA_02230 (-) gluconate 2-dehydrogenase",
+      "CCNA_02231 (-) ABC transporter ATP-binding protein",
+      "CCNA_02232 (+) TonB-dependent receptor",
+      "CCNA_02233 (+) signal peptidase I"
+     ]
+    },
+    {
+     "model_gene": "YP_002518694_1",
+     "locus": "CCNA_03322",
+     "fitness_browser_desc": "D-3-phosphoglycerate dehydrogenase",
+     "refseq_definition": "D-3-phosphoglycerate dehydrogenase",
+     "neighbourhood": [
+      "CCNA_03319 (-) conserved hypothetical protein ImuA",
+      "CCNA_03320 (+) biotin carboxylase",
+      "CCNA_03321 (-) VanZ superfamily protein",
+      "CCNA_03322 (-) D-3-phosphoglycerate dehydrogenase",
+      "CCNA_03323 (-) phosphoserine aminotransferase",
+      "CCNA_03324 (-) hypothetical protein",
+      "CCNA_03325 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PGMT",
+   "name": "Phosphoglucomutase",
+   "equation_ids": "g1p_c <=> g6p_c",
+   "equation_names": "D-Glucose 1-phosphate <=> D-Glucose 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515458_1 or YP_002517554_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515458_1",
+     "locus": "CCNA_00083",
+     "fitness_browser_desc": "phosphoglucomutase/phosphomannomutase",
+     "refseq_definition": "phosphoglucomutase/phosphomannomutase",
+     "neighbourhood": [
+      "CCNA_00080 (+) LexA-related transcriptional repressor",
+      "CCNA_00081 (-) hypothetical protein",
+      "CCNA_00082 (-) class 1 lysyl-tRNA synthetase",
+      "CCNA_00083 (-) phosphoglucomutase/phosphomannomutase",
+      "CCNA_00084 (+) phosphoribosylaminoimidazolecarboxamide formyltransferase/IMP cyclohydrolase",
+      "CCNA_00085 (+) dienelactone hydrolase-related protein",
+      "CCNA_00086 (-) NAD-specific glutamate dehydrogenase GdhZ"
+     ]
+    },
+    {
+     "model_gene": "YP_002517554_1",
+     "locus": "CCNA_02181",
+     "fitness_browser_desc": "phosphatase/phosphohexomutase family protein",
+     "refseq_definition": "phosphatase/phosphohexomutase family protein",
+     "neighbourhood": [
+      "CCNA_02178 (+) short-chain alcohol dehydrogenase",
+      "CCNA_02179 (+) long-chain fatty acid transport protein precursor",
+      "CCNA_02180 (-) iron-sulfur cluster assembly/repair protein ApbC",
+      "CCNA_02181 (-) phosphatase/phosphohexomutase family protein",
+      "CCNA_02182 (-) phosphoserine phosphatase",
+      "CCNA_02183 (+) tRNA delta(2)-isopentenylpyrophosphate transferase",
+      "CCNA_02184 (+) competence damage-inducible protein cinA"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516148_1 or YP_002516976_1 or YP_002517679_1 or YP_002517990_1 or YP_002518397_1 or YP_002518588_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516148_1",
+     "locus": "CCNA_00775",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "CCNA_00773 (+) carboxypeptidase S",
+      "CCNA_03937 (+) hypothetical protein",
+      "CCNA_00774 (+) ring hydroxylating diooxygenase",
+      "CCNA_00775 (-) aspartate aminotransferase",
+      "CCNA_00776 (-) OAR protein precursor",
+      "CCNA_00777 (-) PAS family GGDEF/EAL protein",
+      "CCNA_00778 (-) GTP-binding protein TypA/BipA"
+     ]
+    },
+    {
+     "model_gene": "YP_002516976_1",
+     "locus": "CCNA_01603",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "CCNA_01600 (-) Methane oxygenase, PmoA family",
+      "CCNA_01601 (+) hypothetical protein",
+      "CCNA_01602 (+) glutathione S-transferase",
+      "CCNA_01603 (-) aspartate aminotransferase",
+      "CCNA_01604 (+) hypothetical protein",
+      "CCNA_01605 (-) NADPH-dependent FMN reductase family protein",
+      "CCNA_01606 (-) Soj/ParA-related ATPase protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002517679_1",
+     "locus": "CCNA_02306",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate aminotransferase",
+     "neighbourhood": [
+      "CCNA_02303 (-) cation transport protein chaC",
+      "CCNA_02304 (+) hypothetical protein",
+      "CCNA_02305 (+) chorismate mutase-family protein",
+      "CCNA_02306 (+) histidinol-phosphate aminotransferase",
+      "CCNA_02307 (+) cyclohexadienyl dehydrogenase",
+      "CCNA_02308 (-) hypothetical protein",
+      "CCNA_02309 (+) EF hand domain protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002517990_1",
+     "locus": "CCNA_02617",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "CCNA_02614 (-) fumarylacetoacetase superfamily protein",
+      "CCNA_02615 (-) homogentisate 1,2-dioxygenase",
+      "CCNA_02616 (-) 4-hydroxyphenylpyruvate dioxygenase",
+      "CCNA_02617 (-) histidinol-phosphate aminotransferase",
+      "CCNA_02618 (-) AsnC-family transcriptional regulator",
+      "CCNA_02619 (+) stomatin/prohibitin-related protein",
+      "CCNA_02620 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518397_1",
+     "locus": "CCNA_03024",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "CCNA_03021 (-) hypothetical protein",
+      "CCNA_03022 (-) PiuB-family transmembrane transporter",
+      "CCNA_03023 (-) TonB-dependent receptor",
+      "CCNA_03024 (-) branched-chain amino acid aminotransferase",
+      "CCNA_03025 (+) MarR-family transcriptional regulator",
+      "CCNA_03026 (+) two-component response regulator petR",
+      "CCNA_03027 (+) two-component sensor histidine kinase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518588_1",
+     "locus": "CCNA_03215",
+     "fitness_browser_desc": "ARO8 family aminotransferase/HTH DNA-binding protein",
+     "refseq_definition": "ARO8 family aminotransferase/HTH DNA-binding protein",
+     "neighbourhood": [
+      "CCNA_03212 (-) hypothetical protein",
+      "CCNA_03213 (+) polyhydroxyalkanoic acid system protein",
+      "CCNA_03214 (-) hypothetical protein",
+      "CCNA_03215 (+) ARO8 family aminotransferase/HTH DNA-binding protein",
+      "CCNA_03216 (-) hypothetical protein",
+      "CCNA_03217 (-) TetR-family transcriptional regulator",
+      "CCNA_03218 (+) periplasmic multidrug efflux lipoprotein precursor"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PLPS",
+   "name": "Pyridoxal-5-phosphate synthase",
+   "equation_ids": "g3p_c + gln__L_c + r5p_c --> glu__L_c + 3.0 h2o_c + h_c + pi_c + pydx5p_c",
+   "equation_names": "Glyceraldehyde 3-phosphate + L-Glutamine + Alpha-D-Ribose 5-phosphate --> L-Glutamate + 3.0 H2O + H+ + Phosphate + Pyridoxal 5'-phosphate",
+   "annotation": {
+    "metanetx.reaction": "MNXR103011"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "PMDPHT",
+   "name": "Pyrimidine phosphatase",
+   "equation_ids": "5aprbu_c + h2o_c --> 4r5au_c + pi_c",
+   "equation_names": "5-Amino-6-(5'-phosphoribitylamino)uracil + H2O --> 4-(1-D-Ribitylamino)-5-aminouracil + Phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "PPNDH",
+   "name": "Prephenate dehydratase",
+   "equation_ids": "h_c + pphn_c --> co2_c + h2o_c + phpyr_c",
+   "equation_names": "H+ + Prephenate --> CO2 + H2O + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517678_2 or YP_002518401_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517678_2",
+     "locus": "CCNA_02305",
+     "fitness_browser_desc": "chorismate mutase-family protein",
+     "refseq_definition": "chorismate mutase-family protein",
+     "neighbourhood": [
+      "CCNA_02302 (+) 1-acyl-sn-glycerol-3-phosphate acyltransferase",
+      "CCNA_02303 (-) cation transport protein chaC",
+      "CCNA_02304 (+) hypothetical protein",
+      "CCNA_02305 (+) chorismate mutase-family protein",
+      "CCNA_02306 (+) histidinol-phosphate aminotransferase",
+      "CCNA_02307 (+) cyclohexadienyl dehydrogenase",
+      "CCNA_02308 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518401_1",
+     "locus": "CCNA_03028",
+     "fitness_browser_desc": "prephenate dehydratase",
+     "refseq_definition": "prephenate dehydratase",
+     "neighbourhood": [
+      "CCNA_03025 (+) MarR-family transcriptional regulator",
+      "CCNA_03026 (+) two-component response regulator petR",
+      "CCNA_03027 (+) two-component sensor histidine kinase",
+      "CCNA_03028 (-) prephenate dehydratase",
+      "CCNA_03029 (-) 3-deoxy-manno-octulosonate cytidylyltransferase",
+      "CCNA_03030 (+) cytochrome c2",
+      "CCNA_03031 (-) NlpC/P60 family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRAGSr",
+   "name": "Phosphoribosylglycinamide synthase",
+   "equation_ids": "atp_c + gly_c + pram_c <=> adp_c + gar_c + h_c + pi_c",
+   "equation_names": "ATP + Glycine + 5-Phospho-beta-D-ribosylamine <=> ADP + N1-(5-Phospho-D-ribosyl)glycinamide + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515674_1 or YP_002517148_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515674_1",
+     "locus": "CCNA_00299",
+     "fitness_browser_desc": "phosphoribosylamine--glycine ligase",
+     "refseq_definition": "phosphoribosylamine--glycine ligase",
+     "neighbourhood": [
+      "CCNA_00296 (+) phosphate regulon response regulator PhoB",
+      "CCNA_00297 (-) two-component response regulator",
+      "CCNA_00298 (-) hypothetical protein",
+      "CCNA_00299 (+) phosphoribosylamine--glycine ligase",
+      "CCNA_00300 (-) glyoxalase superfamily protein",
+      "CCNA_00301 (+) phosphotransferase family protein",
+      "CCNA_00302 (+) imidazolonepropionase-related amidohydrolase"
+     ]
+    },
+    {
+     "model_gene": "YP_002517148_1",
+     "locus": "CCNA_01775",
+     "fitness_browser_desc": "phosphoribosylformylglycinamidine cyclo-ligase",
+     "refseq_definition": "phosphoribosylformylglycinamidine cyclo-ligase",
+     "neighbourhood": [
+      "CCNA_01772 (+) hypothetical protein",
+      "CCNA_01773 (-) SNARE-associated family membrane protein",
+      "CCNA_01774 (-) phosphoribosylglycinamide formyltransferase",
+      "CCNA_01775 (-) phosphoribosylformylglycinamidine cyclo-ligase",
+      "CCNA_01776 (+) ribonuclease D",
+      "CCNA_01777 (+) hybrid sensor histidine kinase/receiver domain protein",
+      "CCNA_01778 (+) penicillin-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRASCSi",
+   "name": "Phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+   "equation_ids": "5aizc_c + asp__L_c + atp_c --> 25aics_c + adp_c + h_c + pi_c",
+   "equation_names": "5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxylate + L-Aspartate + ATP --> (S)-2-[5-Amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxamido]succinate + ADP + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517949_1 or YP_002518723_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517949_1",
+     "locus": "CCNA_02576",
+     "fitness_browser_desc": "phosphoribosylamidoimidazole-succinocarboxamide synthase",
+     "refseq_definition": "phosphoribosylamidoimidazole-succinocarboxamide synthase",
+     "neighbourhood": [
+      "CCNA_02573 (+) proline hydroxylase",
+      "CCNA_02574 (+) MUG-like uracil-DNA glycosylase family protein",
+      "CCNA_02575 (-) hypothetical protein",
+      "CCNA_02576 (+) phosphoribosylamidoimidazole-succinocarboxamide synthase",
+      "CCNA_02577 (+) phosphoribosylformylglycinamidine synthase, purS component",
+      "CCNA_02578 (-) TetR-family transcriptional regulator",
+      "CCNA_02579 (+) cytochrome P450"
+     ]
+    },
+    {
+     "model_gene": "YP_002518723_1",
+     "locus": "CCNA_03351",
+     "fitness_browser_desc": "phosphoribosylamidoimidazole-succinocarboxamide synthase",
+     "refseq_definition": "phosphoribosylamidoimidazole-succinocarboxamide synthase",
+     "neighbourhood": [
+      "CCNA_03348 (+) hypothetical protein",
+      "CCNA_03349 (-) hypothetical protein",
+      "CCNA_03350 (+) hypothetical protein",
+      "CCNA_03351 (-) phosphoribosylamidoimidazole-succinocarboxamide synthase",
+      "CCNA_03352 (-) YebC/PmpR transcriptional regulator",
+      "CCNA_03353 (-) metallophosphatase domain protein",
+      "CCNA_03354 (-) 5-formyltetrahydrofolate cyclo-ligase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PSP_L",
+   "name": "Phosphoserine phosphatase (L-serine)",
+   "equation_ids": "h2o_c + pser__L_c --> pi_c + ser__L_c",
+   "equation_names": "H2O + O-Phospho-L-serine --> Phosphate + L-Serine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517413_1 or YP_002517555_3",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517413_1",
+     "locus": "CCNA_02040",
+     "fitness_browser_desc": "phosphoserine phosphatase",
+     "refseq_definition": "HAD-IB family hydrolase",
+     "neighbourhood": [
+      "CCNA_02036 (-) DNA-binding protein HU",
+      "CCNA_02037 (-) ATP-dependent endopeptidase Lon",
+      "CCNA_02039 (-) ATP-dependent endopeptidase clp, ATP-binding subunit ClpX",
+      "CCNA_02040 (+) phosphoserine phosphatase",
+      "CCNA_02041 (-) ATP-dependent endopeptidase clp, proteolytic subunit ClpP",
+      "CCNA_02042 (-) trigger factor chaperone",
+      "CCNA_R0048 (-) tRNA-Leu"
+     ]
+    },
+    {
+     "model_gene": "YP_002517555_3",
+     "locus": "CCNA_02182",
+     "fitness_browser_desc": "phosphoserine phosphatase",
+     "refseq_definition": "phosphoserine phosphatase",
+     "neighbourhood": [
+      "CCNA_02179 (+) long-chain fatty acid transport protein precursor",
+      "CCNA_02180 (-) iron-sulfur cluster assembly/repair protein ApbC",
+      "CCNA_02181 (-) phosphatase/phosphohexomutase family protein",
+      "CCNA_02182 (-) phosphoserine phosphatase",
+      "CCNA_02183 (+) tRNA delta(2)-isopentenylpyrophosphate transferase",
+      "CCNA_02184 (+) competence damage-inducible protein cinA",
+      "CCNA_03962 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RAFFtex",
+   "name": "Raffinose transport transport via diffusion extracellular to periplasm",
+   "equation_ids": "raffin_e <=> raffin_p",
+   "equation_names": "Raffinose C18H32O16 <=> Raffinose C18H32O16",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516391_1 or YP_002517922_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516391_1",
+     "locus": "CCNA_01018",
+     "fitness_browser_desc": "D-galactose 1-dehydrogenase",
+     "refseq_definition": "D-galactose 1-dehydrogenase",
+     "neighbourhood": [
+      "CCNA_01015 (+) multicopper oxidase PcoA",
+      "CCNA_01016 (+) copper resistance protein B",
+      "CCNA_01017 (+) acyl-CoA synthetase",
+      "CCNA_01018 (-) D-galactose 1-dehydrogenase",
+      "CCNA_01019 (-) beta-glucosidase",
+      "CCNA_01020 (-) LacI-family transcriptional regulator",
+      "CCNA_01021 (+) TonB-dependent receptor"
+     ]
+    },
+    {
+     "model_gene": "YP_002517922_1",
+     "locus": "CCNA_02549",
+     "fitness_browser_desc": "glucokinase",
+     "refseq_definition": "ROK family protein",
+     "neighbourhood": [
+      "CCNA_02546 (-) GGDEF/response regulator protein PleD",
+      "CCNA_02547 (-) response regulator receiver protein DivK",
+      "CCNA_02548 (+) hypothetical protein",
+      "CCNA_02549 (+) glucokinase",
+      "CCNA_02550 (+) DNA polymerase IV-kappa DinB",
+      "CCNA_02551 (+) hypothetical protein",
+      "CCNA_02552 (+) ATP-dependent Clp protease adaptor protein ClpS"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RAFHpp",
+   "name": "Raffinose hydrolase",
+   "equation_ids": "h2o_p + raffin_p --> fru_p + melib_p",
+   "equation_names": "H2O + Raffinose C18H32O16 --> D-Fructose + Melibiose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "RBFK",
+   "name": "Riboflavin kinase",
+   "equation_ids": "atp_c + ribflv_c --> adp_c + fmn_c + h_c",
+   "equation_names": "ATP + Riboflavin --> ADP + FMN + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516113_1 or YP_002517554_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516113_1",
+     "locus": "CCNA_00740",
+     "fitness_browser_desc": "riboflavin kinase/FMN adenylyltransferase",
+     "refseq_definition": "riboflavin kinase/FMN adenylyltransferase",
+     "neighbourhood": [
+      "CCNA_00737 (-) isoleucyl-tRNA synthetase",
+      "CCNA_03934 (-) hypothetical protein",
+      "CCNA_00738 (-) DegQ-family trypsin-like serine prototease",
+      "CCNA_00740 (-) riboflavin kinase/FMN adenylyltransferase",
+      "CCNA_00741 (-) 3-hydroxybutyryl-CoA dehydratase",
+      "CCNA_00742 (-) HAD superfamily sugar phosphatase",
+      "CCNA_00743 (+) NnrU family membrane protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002517554_1",
+     "locus": "CCNA_02181",
+     "fitness_browser_desc": "phosphatase/phosphohexomutase family protein",
+     "refseq_definition": "phosphatase/phosphohexomutase family protein",
+     "neighbourhood": [
+      "CCNA_02178 (+) short-chain alcohol dehydrogenase",
+      "CCNA_02179 (+) long-chain fatty acid transport protein precursor",
+      "CCNA_02180 (-) iron-sulfur cluster assembly/repair protein ApbC",
+      "CCNA_02181 (-) phosphatase/phosphohexomutase family protein",
+      "CCNA_02182 (-) phosphoserine phosphatase",
+      "CCNA_02183 (+) tRNA delta(2)-isopentenylpyrophosphate transferase",
+      "CCNA_02184 (+) competence damage-inducible protein cinA"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RBFSa",
+   "name": "Riboflavin synthase",
+   "equation_ids": "4r5au_c + db4p_c --> dmlz_c + 2.0 h2o_c + pi_c",
+   "equation_names": "4-(1-D-Ribitylamino)-5-aminouracil + 3,4-dihydroxy-2-butanone 4-phosphate --> 6,7-Dimethyl-8-(1-D-ribityl)lumazine + 2.0 H2O + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516794_1 or (YP_002516303_1 and YP_002516305_1)",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516303_1",
+     "locus": "CCNA_00930",
+     "fitness_browser_desc": "riboflavin synthase alpha chain",
+     "refseq_definition": "riboflavin synthase alpha chain",
+     "neighbourhood": [
+      "CCNA_00927 (-) hypothetical protein",
+      "CCNA_00928 (-) GntR family transcriptional regulator",
+      "CCNA_00929 (+) Riboflavin-specific deaminase family protein",
+      "CCNA_00930 (+) riboflavin synthase alpha chain",
+      "CCNA_00931 (+) GTP cyclohydrolase II/3,4-dihydroxy-2-butanone-4-phosphate synthase",
+      "CCNA_00932 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "CCNA_00933 (+) M28 Zn-Peptidase"
+     ]
+    },
+    {
+     "model_gene": "YP_002516305_1",
+     "locus": "CCNA_00932",
+     "fitness_browser_desc": "6,7-dimethyl-8-ribityllumazine synthase",
+     "refseq_definition": "6,7-dimethyl-8-ribityllumazine synthase",
+     "neighbourhood": [
+      "CCNA_00929 (+) Riboflavin-specific deaminase family protein",
+      "CCNA_00930 (+) riboflavin synthase alpha chain",
+      "CCNA_00931 (+) GTP cyclohydrolase II/3,4-dihydroxy-2-butanone-4-phosphate synthase",
+      "CCNA_00932 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "CCNA_00933 (+) M28 Zn-Peptidase",
+      "CCNA_00934 (+) hypothetical protein",
+      "CCNA_00935 (-) AraC-family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "YP_002516794_1",
+     "locus": "CCNA_01421",
+     "fitness_browser_desc": "6,7-dimethyl-8-ribityllumazine synthase",
+     "refseq_definition": "6,7-dimethyl-8-ribityllumazine synthase",
+     "neighbourhood": [
+      "CCNA_01418 (-) ROS/MUCR transcriptional regulator",
+      "CCNA_01419 (+) serine hydroxymethyltransferase",
+      "CCNA_01420 (+) NrdR family transcriptional regulator",
+      "CCNA_01421 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "CCNA_01422 (+) N utilization substance protein B NusB",
+      "CCNA_01423 (+) thiamine-monophosphate kinase",
+      "CCNA_01424 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR1",
+   "name": "Ribonucleoside-diphosphate reductase (ADP)",
+   "equation_ids": "adp_c + trdrd_c --> dadp_c + h2o_c + trdox_c",
+   "equation_names": "ADP + Reduced thioredoxin --> DADP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002519026_2 or (YP_002515636_1 and YP_002518980_1)",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515636_1",
+     "locus": "CCNA_00261",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase beta chain",
+     "refseq_definition": "ribonucleoside-diphosphate reductase beta chain",
+     "neighbourhood": [
+      "CCNA_00257 (-) adenosylhomocysteinase",
+      "CCNA_00259 (-) hypothetical protein",
+      "CCNA_00260 (-) glutathione S-transferase",
+      "CCNA_00261 (+) ribonucleoside-diphosphate reductase beta chain",
+      "CCNA_00262 (+) ketopantoate reductase panE/ApbA family protein",
+      "CCNA_00263 (-) hypothetical protein",
+      "CCNA_00264 (-) C4-dicarboxylate transport protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518980_1",
+     "locus": "CCNA_03607",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase alpha chain",
+     "refseq_definition": "ribonucleoside-diphosphate reductase alpha chain",
+     "neighbourhood": [
+      "CCNA_03603 (+) beta-lactamase family protein",
+      "CCNA_03604 (-) hypothetical protein",
+      "CCNA_03605 (-) hypothetical protein",
+      "CCNA_03607 (-) ribonucleoside-diphosphate reductase alpha chain",
+      "CCNA_03609 (-) outer membrane protein",
+      "CCNA_03610 (-) methyltransferase",
+      "CCNA_03611 (-) glutathione-regulated potassium-efflux system protein kefC"
+     ]
+    },
+    {
+     "model_gene": "YP_002519026_2",
+     "locus": "CCNA_03653",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "CCNA_03650 (+) mannose-1-phosphate guanyltransferase",
+      "CCNA_03651 (+) ATP-dependent nuclease subunit B",
+      "CCNA_03652 (+) ATP-dependent nuclease subunit A",
+      "CCNA_03653 (+) thioredoxin",
+      "CCNA_03910 (-) hypothetical protein",
+      "CCNA_03655 (-) folylpolyglutamate synthase/dihydrofolate synthase",
+      "CCNA_03656 (-) acetyl-coenzyme A carboxylase carboxyl transferase subunit beta"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR2",
+   "name": "Ribonucleoside-diphosphate reductase (GDP)",
+   "equation_ids": "gdp_c + trdrd_c --> dgdp_c + h2o_c + trdox_c",
+   "equation_names": "GDP + Reduced thioredoxin --> DGDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002519026_2 or (YP_002515636_1 and YP_002518980_1)",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515636_1",
+     "locus": "CCNA_00261",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase beta chain",
+     "refseq_definition": "ribonucleoside-diphosphate reductase beta chain",
+     "neighbourhood": [
+      "CCNA_00257 (-) adenosylhomocysteinase",
+      "CCNA_00259 (-) hypothetical protein",
+      "CCNA_00260 (-) glutathione S-transferase",
+      "CCNA_00261 (+) ribonucleoside-diphosphate reductase beta chain",
+      "CCNA_00262 (+) ketopantoate reductase panE/ApbA family protein",
+      "CCNA_00263 (-) hypothetical protein",
+      "CCNA_00264 (-) C4-dicarboxylate transport protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518980_1",
+     "locus": "CCNA_03607",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase alpha chain",
+     "refseq_definition": "ribonucleoside-diphosphate reductase alpha chain",
+     "neighbourhood": [
+      "CCNA_03603 (+) beta-lactamase family protein",
+      "CCNA_03604 (-) hypothetical protein",
+      "CCNA_03605 (-) hypothetical protein",
+      "CCNA_03607 (-) ribonucleoside-diphosphate reductase alpha chain",
+      "CCNA_03609 (-) outer membrane protein",
+      "CCNA_03610 (-) methyltransferase",
+      "CCNA_03611 (-) glutathione-regulated potassium-efflux system protein kefC"
+     ]
+    },
+    {
+     "model_gene": "YP_002519026_2",
+     "locus": "CCNA_03653",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "CCNA_03650 (+) mannose-1-phosphate guanyltransferase",
+      "CCNA_03651 (+) ATP-dependent nuclease subunit B",
+      "CCNA_03652 (+) ATP-dependent nuclease subunit A",
+      "CCNA_03653 (+) thioredoxin",
+      "CCNA_03910 (-) hypothetical protein",
+      "CCNA_03655 (-) folylpolyglutamate synthase/dihydrofolate synthase",
+      "CCNA_03656 (-) acetyl-coenzyme A carboxylase carboxyl transferase subunit beta"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR3",
+   "name": "Ribonucleoside-diphosphate reductase (CDP)",
+   "equation_ids": "cdp_c + trdrd_c --> dcdp_c + h2o_c + trdox_c",
+   "equation_names": "CDP + Reduced thioredoxin --> DCDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002519026_2 or (YP_002515636_1 and YP_002518980_1)",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515636_1",
+     "locus": "CCNA_00261",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase beta chain",
+     "refseq_definition": "ribonucleoside-diphosphate reductase beta chain",
+     "neighbourhood": [
+      "CCNA_00257 (-) adenosylhomocysteinase",
+      "CCNA_00259 (-) hypothetical protein",
+      "CCNA_00260 (-) glutathione S-transferase",
+      "CCNA_00261 (+) ribonucleoside-diphosphate reductase beta chain",
+      "CCNA_00262 (+) ketopantoate reductase panE/ApbA family protein",
+      "CCNA_00263 (-) hypothetical protein",
+      "CCNA_00264 (-) C4-dicarboxylate transport protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518980_1",
+     "locus": "CCNA_03607",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase alpha chain",
+     "refseq_definition": "ribonucleoside-diphosphate reductase alpha chain",
+     "neighbourhood": [
+      "CCNA_03603 (+) beta-lactamase family protein",
+      "CCNA_03604 (-) hypothetical protein",
+      "CCNA_03605 (-) hypothetical protein",
+      "CCNA_03607 (-) ribonucleoside-diphosphate reductase alpha chain",
+      "CCNA_03609 (-) outer membrane protein",
+      "CCNA_03610 (-) methyltransferase",
+      "CCNA_03611 (-) glutathione-regulated potassium-efflux system protein kefC"
+     ]
+    },
+    {
+     "model_gene": "YP_002519026_2",
+     "locus": "CCNA_03653",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "CCNA_03650 (+) mannose-1-phosphate guanyltransferase",
+      "CCNA_03651 (+) ATP-dependent nuclease subunit B",
+      "CCNA_03652 (+) ATP-dependent nuclease subunit A",
+      "CCNA_03653 (+) thioredoxin",
+      "CCNA_03910 (-) hypothetical protein",
+      "CCNA_03655 (-) folylpolyglutamate synthase/dihydrofolate synthase",
+      "CCNA_03656 (-) acetyl-coenzyme A carboxylase carboxyl transferase subunit beta"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR4",
+   "name": "Ribonucleoside-diphosphate reductase (UDP)",
+   "equation_ids": "trdrd_c + udp_c --> dudp_c + h2o_c + trdox_c",
+   "equation_names": "Reduced thioredoxin + UDP --> DUDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002519026_2 or (YP_002515636_1 and YP_002518980_1)",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515636_1",
+     "locus": "CCNA_00261",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase beta chain",
+     "refseq_definition": "ribonucleoside-diphosphate reductase beta chain",
+     "neighbourhood": [
+      "CCNA_00257 (-) adenosylhomocysteinase",
+      "CCNA_00259 (-) hypothetical protein",
+      "CCNA_00260 (-) glutathione S-transferase",
+      "CCNA_00261 (+) ribonucleoside-diphosphate reductase beta chain",
+      "CCNA_00262 (+) ketopantoate reductase panE/ApbA family protein",
+      "CCNA_00263 (-) hypothetical protein",
+      "CCNA_00264 (-) C4-dicarboxylate transport protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518980_1",
+     "locus": "CCNA_03607",
+     "fitness_browser_desc": "ribonucleoside-diphosphate reductase alpha chain",
+     "refseq_definition": "ribonucleoside-diphosphate reductase alpha chain",
+     "neighbourhood": [
+      "CCNA_03603 (+) beta-lactamase family protein",
+      "CCNA_03604 (-) hypothetical protein",
+      "CCNA_03605 (-) hypothetical protein",
+      "CCNA_03607 (-) ribonucleoside-diphosphate reductase alpha chain",
+      "CCNA_03609 (-) outer membrane protein",
+      "CCNA_03610 (-) methyltransferase",
+      "CCNA_03611 (-) glutathione-regulated potassium-efflux system protein kefC"
+     ]
+    },
+    {
+     "model_gene": "YP_002519026_2",
+     "locus": "CCNA_03653",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "CCNA_03650 (+) mannose-1-phosphate guanyltransferase",
+      "CCNA_03651 (+) ATP-dependent nuclease subunit B",
+      "CCNA_03652 (+) ATP-dependent nuclease subunit A",
+      "CCNA_03653 (+) thioredoxin",
+      "CCNA_03910 (-) hypothetical protein",
+      "CCNA_03655 (-) folylpolyglutamate synthase/dihydrofolate synthase",
+      "CCNA_03656 (-) acetyl-coenzyme A carboxylase carboxyl transferase subunit beta"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SERAT",
+   "name": "Serine O-acetyltransferase",
+   "equation_ids": "accoa_c + ser__L_c <=> acser_c + coa_c",
+   "equation_names": "Acetyl-CoA + L-Serine <=> O-Acetyl-L-serine + Coenzyme A",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517308_1 or YP_002518107_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517308_1",
+     "locus": "CCNA_01935",
+     "fitness_browser_desc": "FeS assembly SUF system protein",
+     "refseq_definition": "FeS assembly SUF system protein",
+     "neighbourhood": [
+      "CCNA_01932 (+) 1-acyl-sn-glycerol-3-phosphate acyltransferase",
+      "CCNA_01933 (-) hypothetical protein",
+      "CCNA_01934 (-) HesB protein family",
+      "CCNA_01935 (-) FeS assembly SUF system protein",
+      "CCNA_01936 (-) cysteine desulfurase/selenocysteine lyase",
+      "CCNA_01937 (-) FeS assembly protein SufD",
+      "CCNA_01938 (-) ATP-dependent transporter SufC"
+     ]
+    },
+    {
+     "model_gene": "YP_002518107_1",
+     "locus": "CCNA_02734",
+     "fitness_browser_desc": "serine acetyltransferase",
+     "refseq_definition": "serine O-acetyltransferase",
+     "neighbourhood": [
+      "CCNA_02731 (-) acetyltransferase",
+      "CCNA_02732 (-) hypothetical protein",
+      "CCNA_02733 (-) glutaminyl-peptide cyclotransferase",
+      "CCNA_02734 (-) serine acetyltransferase",
+      "CCNA_02735 (-) ADP-ribose pyrophosphatase family protein",
+      "CCNA_02736 (+) nitroreductase family",
+      "CCNA_02737 (-) queuosine biosynthesis protein QueF"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SO4tex",
+   "name": "Sulfate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "so4_e <=> so4_p",
+   "equation_names": "Sulfate <=> Sulfate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002515576_1 or YP_002518709_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002515576_1",
+     "locus": "CCNA_00201",
+     "fitness_browser_desc": "outer membrane protein",
+     "refseq_definition": "outer membrane protein",
+     "neighbourhood": [
+      "CCNA_00198 (-) tRNA (guanine-N1) -methyltransferase",
+      "CCNA_00199 (+) TadG/vWA-family protein",
+      "CCNA_00200 (-) 2OG-Fe(II) oxygenase superfamily protein",
+      "CCNA_00201 (+) outer membrane protein",
+      "CCNA_00202 (+) DesA-family fatty acid desaturase",
+      "CCNA_00203 (+) sterol desaturase family protein",
+      "CCNA_00204 (-) glutathione-regulated potassium-efflux system protein kefB"
+     ]
+    },
+    {
+     "model_gene": "YP_002518709_1",
+     "locus": "CCNA_03337",
+     "fitness_browser_desc": "peptidoglycan-associated lipoprotein pal",
+     "refseq_definition": "peptidoglycan-associated lipoprotein pal",
+     "neighbourhood": [
+      "CCNA_03334 (-) cell division protein FtsH",
+      "CCNA_03335 (-) PP-loop family cell cycle control ATPase",
+      "CCNA_03336 (-) Tol system periplasmic component YbgF",
+      "CCNA_03337 (-) peptidoglycan-associated lipoprotein pal",
+      "CCNA_03338 (-) TolB protein",
+      "CCNA_03339 (-) TolA protein",
+      "CCNA_03340 (-) TolR protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SUCCt2r",
+   "name": "Succinate transport via proton symport",
+   "equation_ids": "h_e + succ_e <=> h_c + succ_c",
+   "equation_names": "H+ + Succinate <=> H+ + Succinate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "TPI",
+   "name": "Triose-phosphate isomerase",
+   "equation_ids": "dhap_c <=> g3p_c",
+   "equation_names": "Dihydroxyacetone phosphate <=> Glyceraldehyde 3-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517343_1 or YP_002518731_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517343_1",
+     "locus": "CCNA_01970",
+     "fitness_browser_desc": "triosephosphate isomerase",
+     "refseq_definition": "triosephosphate isomerase",
+     "neighbourhood": [
+      "CCNA_01967 (+) hypothetical protein with pentapeptide repeats",
+      "CCNA_01968 (+) pentapeptide repeats containing protein",
+      "CCNA_01969 (-) aspartyl-tRNA synthetase",
+      "CCNA_01970 (-) triosephosphate isomerase",
+      "CCNA_01971 (+) peptidyl-prolyl cis-trans isomerase",
+      "CCNA_01972 (+) anthranilate synthase component I",
+      "CCNA_01973 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002518731_1",
+     "locus": "CCNA_03359",
+     "fitness_browser_desc": "phosphoglycerate kinase",
+     "refseq_definition": "phosphoglycerate kinase",
+     "neighbourhood": [
+      "CCNA_03356 (-) cell division protein ZapA",
+      "CCNA_03357 (-) hypothetical protein",
+      "CCNA_03358 (+) glyceraldehyde 3-phosphate dehydrogenase",
+      "CCNA_03359 (+) phosphoglycerate kinase",
+      "CCNA_03360 (+) tagatose-1,6-bisphosphate aldolase",
+      "CCNA_03905 (-) hypothetical protein",
+      "CCNA_03273 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TRDR",
+   "name": "Thioredoxin reductase (NADPH)",
+   "equation_ids": "h_c + nadph_c + trdox_c --> nadp_c + trdrd_c",
+   "equation_names": "H+ + Nicotinamide adenine dinucleotide phosphate - reduced + Oxidized thioredoxin --> Nicotinamide adenine dinucleotide phosphate + Reduced thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002518386_1 or (YP_002518337_3 and YP_002519026_2)",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002518337_3",
+     "locus": "CCNA_02964",
+     "fitness_browser_desc": "thioredoxin-disulfide reductase",
+     "refseq_definition": "thioredoxin-disulfide reductase",
+     "neighbourhood": [
+      "CCNA_02962 (+) HicB-family RNAse H fold protein",
+      "CCNA_02963 (-) hypothetical protein",
+      "CCNA_03984 (-) hypothetical protein",
+      "CCNA_02964 (+) thioredoxin-disulfide reductase",
+      "CCNA_02965 (-) cell wall hydrolase family protein",
+      "CCNA_02966 (-) non-specific DNA-binding protein Dps/iron-binding ferritin-like antioxidant protein/ferroxidase",
+      "CCNA_02967 (+) PAS-family sensor histidine kinase"
+     ]
+    },
+    {
+     "model_gene": "YP_002518386_1",
+     "locus": "CCNA_03013",
+     "fitness_browser_desc": "alkyl hydroperoxide reductase subunit F",
+     "refseq_definition": "alkyl hydroperoxide reductase subunit F",
+     "neighbourhood": [
+      "CCNA_03010 (-) MAPEG family protein",
+      "CCNA_03011 (-) outer membrane lipoprotein Blc",
+      "CCNA_03012 (+) peroxiredoxin",
+      "CCNA_03013 (+) alkyl hydroperoxide reductase subunit F",
+      "CCNA_03014 (-) hypothetical protein",
+      "CCNA_03015 (-) hypothetical protein",
+      "CCNA_03016 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "YP_002519026_2",
+     "locus": "CCNA_03653",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "CCNA_03650 (+) mannose-1-phosphate guanyltransferase",
+      "CCNA_03651 (+) ATP-dependent nuclease subunit B",
+      "CCNA_03652 (+) ATP-dependent nuclease subunit A",
+      "CCNA_03653 (+) thioredoxin",
+      "CCNA_03910 (-) hypothetical protein",
+      "CCNA_03655 (-) folylpolyglutamate synthase/dihydrofolate synthase",
+      "CCNA_03656 (-) acetyl-coenzyme A carboxylase carboxyl transferase subunit beta"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UAGDP",
+   "name": "UDP-N-acetylglucosamine diphosphorylase",
+   "equation_ids": "acgam1p_c + h_c + utp_c --> ppi_c + uacgam_c",
+   "equation_names": "N-Acetyl-D-glucosamine 1-phosphate + H+ + UTP --> Diphosphate + UDP-N-acetyl-D-glucosamine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002516583_1 or YP_002517762_1 or YP_002519023_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002516583_1",
+     "locus": "CCNA_01210",
+     "fitness_browser_desc": "nucleotidyltransferase family protein",
+     "refseq_definition": "nucleotidyltransferase family protein",
+     "neighbourhood": [
+      "CCNA_01207 (+) two-component sensor histidine kinase",
+      "CCNA_01208 (+) two-component response regulator",
+      "CCNA_01209 (+) L-lactate dehydrogenase",
+      "CCNA_01210 (+) nucleotidyltransferase family protein",
+      "CCNA_01211 (-) MobA-like NTP transferase domain protein",
+      "CCNA_01212 (-) dATP pyrophosphohydrolase",
+      "CCNA_01213 (-) YjgP/YjgQ family membrane permease"
+     ]
+    },
+    {
+     "model_gene": "YP_002517762_1",
+     "locus": "CCNA_02389",
+     "fitness_browser_desc": "glucosamine-1-phosphate acetyltransferase/UDP-N-acetylglucosamine pyrophosphorylase",
+     "refseq_definition": "glucosamine-1-phosphate acetyltransferase/UDP-N-acetylglucosamine pyrophosphorylase",
+     "neighbourhood": [
+      "CCNA_02386 (-) O-antigen ligase related enzyme",
+      "CCNA_02387 (-) glutathione reductase",
+      "CCNA_02388 (-) ribose 5-phosphate isomerase",
+      "CCNA_02389 (-) glucosamine-1-phosphate acetyltransferase/UDP-N-acetylglucosamine pyrophosphorylase",
+      "CCNA_02390 (+) phosphoglycolate phosphatase",
+      "CCNA_R0056 (+) tRNA-Val",
+      "CCNA_02391 (+) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "YP_002519023_1",
+     "locus": "CCNA_03650",
+     "fitness_browser_desc": "mannose-1-phosphate guanyltransferase",
+     "refseq_definition": "N-acetylmuramate alpha-1-phosphate uridylyltransferase MurU",
+     "neighbourhood": [
+      "CCNA_03647 (+) lysophospholipid acyltransferases",
+      "CCNA_03648 (+) YjeE family ATPase",
+      "CCNA_03649 (+) Ser/Thr kinase-related phosphotransferase",
+      "CCNA_03650 (+) mannose-1-phosphate guanyltransferase",
+      "CCNA_03651 (+) ATP-dependent nuclease subunit B",
+      "CCNA_03652 (+) ATP-dependent nuclease subunit A",
+      "CCNA_03653 (+) thioredoxin"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDPG4E",
+   "name": "UDPglucose 4-epimerase",
+   "equation_ids": "udpg_c <=> udpgal_c",
+   "equation_names": "UDPglucose <=> UDPgalactose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517839_1 or YP_002518366_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517839_1",
+     "locus": "CCNA_02466",
+     "fitness_browser_desc": "UDP-glucose 4-epimerase",
+     "refseq_definition": "UDP-glucose 4-epimerase",
+     "neighbourhood": [
+      "CCNA_02464 (-) UDP-glucose 6-dehydrogenase",
+      "CCNA_R0060 (+) tRNA-Cys",
+      "CCNA_02465 (-) UDP-glucose 6-dehydrogenase",
+      "CCNA_02466 (-) UDP-glucose 4-epimerase",
+      "CCNA_02467 (-) polyisoprenylphosphate hexose-1-phosphotransferase pssZ",
+      "CCNA_02468 (-) hypothetical protein",
+      "CCNA_02469 (+) protein hipA"
+     ]
+    },
+    {
+     "model_gene": "YP_002518366_1",
+     "locus": "CCNA_02993",
+     "fitness_browser_desc": "NADH-ubiquinone oxidoreductase",
+     "refseq_definition": "NADH-ubiquinone oxidoreductase",
+     "neighbourhood": [
+      "CCNA_03903 (+) IS4/5 transposase family protein",
+      "CCNA_02991 (+) transposase",
+      "CCNA_02992 (-) hypothetical protein",
+      "CCNA_02993 (-) NADH-ubiquinone oxidoreductase",
+      "CCNA_02994 (-) carbamoyl-phosphate synthase large chain",
+      "CCNA_02995 (+) glutathione S-transferase",
+      "CCNA_02996 (-) patatin family phospholipase domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UGLT",
+   "name": "UDPglucose--hexose-1-phosphate uridylyltransferase",
+   "equation_ids": "gal1p_c + udpg_c <=> g1p_c + udpgal_c",
+   "equation_names": "Alpha-D-Galactose 1-phosphate + UDPglucose <=> D-Glucose 1-phosphate + UDPgalactose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 5,
+   "genes": []
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "YP_002517371_1 or YP_002519076_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 5,
+   "genes": [
+    {
+     "model_gene": "YP_002517371_1",
+     "locus": "CCNA_01998",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "uridylate kinase",
+     "neighbourhood": [
+      "CCNA_01995 (-) phosphatidate cytidylyltransferase",
+      "CCNA_01996 (-) undecaprenyl pyrophosphate synthetase",
+      "CCNA_01997 (-) ribosome recycling factor (RRF)",
+      "CCNA_01998 (-) uridylate kinase",
+      "CCNA_01999 (-) translation elongation factor Ts (EF-Ts)",
+      "CCNA_02000 (-) SSU ribosomal protein S2P",
+      "CCNA_02001 (+) phosphoserine phosphatase"
+     ]
+    },
+    {
+     "model_gene": "YP_002519076_1",
+     "locus": "CCNA_03703",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "cytidylate kinase",
+     "neighbourhood": [
+      "CCNA_03700 (-) large-conductance mechanosensitive channel",
+      "CCNA_03701 (-) integration host factor beta-subunit",
+      "CCNA_03702 (-) SSU ribosomal protein S1P",
+      "CCNA_03703 (-) cytidylate kinase",
+      "CCNA_03704 (-) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "CCNA_03705 (+) hypothetical protein",
+      "CCNA_R0089 (+) tRNA-Ala"
+     ]
+    }
+   ]
+  }
+ ]
+}

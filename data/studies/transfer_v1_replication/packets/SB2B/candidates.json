@@ -1,0 +1,2308 @@
+{
+ "org": "SB2B",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 15,
+ "candidates": [
+  {
+   "reaction": "ABTA",
+   "name": "4-aminobutyrate transaminase",
+   "equation_ids": "4abut_c + akg_c --> glu__L_c + sucsal_c",
+   "equation_names": "4-Aminobutanoate + 2-Oxoglutarate --> L-Glutamate + Succinic semialdehyde",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011760744_1 or WP_011761712_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011760744_1",
+     "locus": "Sama_2636",
+     "fitness_browser_desc": "4-aminobutyrate aminotransferase",
+     "refseq_definition": "4-aminobutyrate--2-oxoglutarate transaminase",
+     "neighbourhood": [
+      "Sama_2633 (-) hypothetical protein",
+      "Sama_2634 (+) hypothetical protein",
+      "Sama_2635 (-) putative methyl-accepting chemotaxis sensory transducer",
+      "Sama_2636 (-) 4-aminobutyrate aminotransferase",
+      "Sama_2637 (-) succinate-semialdehyde dehydrogenase (NAD(P)(+))",
+      "Sama_2638 (-) putative oxidoreductase",
+      "Sama_2639 (-) binding-protein-dependent transport systems inner membrane component"
+     ]
+    },
+    {
+     "model_gene": "WP_011761712_1",
+     "locus": "Sama_3606",
+     "fitness_browser_desc": "aminotransferase, class III; 4-aminobutyrate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase family protein",
+     "neighbourhood": [
+      "Sama_3603 (+) GGDEF domain-containing protein",
+      "Sama_3604 (-) coproporphyrinogen III oxidase",
+      "Sama_3605 (-) LysR family transcriptional regulator",
+      "Sama_3606 (+) aminotransferase, class III; 4-aminobutyrate aminotransferase",
+      "Sama_3607 (-) formate dehydrogenase, C subunit, putative",
+      "Sama_3608 (-) formate dehydrogenase, iron-sulfur subunit",
+      "Sama_3609 (-) formate dehydrogenase, alpha subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACHBS",
+   "name": "2-aceto-2-hydroxybutanoate synthase",
+   "equation_ids": "2obut_c + h_c + pyr_c --> 2ahbut_c + co2_c",
+   "equation_names": "2-Oxobutanoate + H+ + Pyruvate --> (S)-2-Aceto-2-hydroxybutanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_011760131_1 and WP_011760132_1) or (WP_011761387_1 and WP_011761388_1)",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011760131_1",
+     "locus": "Sama_2018",
+     "fitness_browser_desc": "acetolactate synthase 3 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 3 large subunit",
+     "neighbourhood": [
+      "Sama_2015 (-) hypothetical protein",
+      "Sama_2016 (+) GntR family transcriptional regulator",
+      "Sama_2017 (+) bicyclomycin resistance protein",
+      "Sama_2018 (+) acetolactate synthase 3 catalytic subunit",
+      "Sama_2019 (+) acetolactate synthase 3 regulatory subunit",
+      "Sama_2020 (-) 16 kDa heat shock protein A",
+      "Sama_2021 (-) bifunctional UDP-sugar hydrolase/5'-nucleotidase periplasmic precursor"
+     ]
+    },
+    {
+     "model_gene": "WP_011760132_1",
+     "locus": "Sama_2019",
+     "fitness_browser_desc": "acetolactate synthase 3 regulatory subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "Sama_2016 (+) GntR family transcriptional regulator",
+      "Sama_2017 (+) bicyclomycin resistance protein",
+      "Sama_2018 (+) acetolactate synthase 3 catalytic subunit",
+      "Sama_2019 (+) acetolactate synthase 3 regulatory subunit",
+      "Sama_2020 (-) 16 kDa heat shock protein A",
+      "Sama_2021 (-) bifunctional UDP-sugar hydrolase/5'-nucleotidase periplasmic precursor",
+      "Sama_2022 (-) carboxylesterase"
+     ]
+    },
+    {
+     "model_gene": "WP_011761387_1",
+     "locus": "Sama_3280",
+     "fitness_browser_desc": "acetolactate synthase 2 regulatory subunit",
+     "refseq_definition": "acetolactate synthase 2 small subunit",
+     "neighbourhood": [
+      "Sama_3277 (-) Serine--pyruvate transaminase",
+      "Sama_3278 (-) threonine dehydratase",
+      "Sama_3279 (-) dihydroxy-acid dehydratase",
+      "Sama_3280 (-) acetolactate synthase 2 regulatory subunit",
+      "Sama_3281 (-) acetolactate synthase 2 catalytic subunit",
+      "Sama_3282 (-) ketol-acid reductoisomerase",
+      "Sama_3283 (+) DNA-binding transcriptional regulator IlvY"
+     ]
+    },
+    {
+     "model_gene": "WP_011761388_1",
+     "locus": "Sama_3281",
+     "fitness_browser_desc": "acetolactate synthase 2 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 2 catalytic subunit",
+     "neighbourhood": [
+      "Sama_3278 (-) threonine dehydratase",
+      "Sama_3279 (-) dihydroxy-acid dehydratase",
+      "Sama_3280 (-) acetolactate synthase 2 regulatory subunit",
+      "Sama_3281 (-) acetolactate synthase 2 catalytic subunit",
+      "Sama_3282 (-) ketol-acid reductoisomerase",
+      "Sama_3283 (+) DNA-binding transcriptional regulator IlvY",
+      "Sama_3284 (-) hemolysin, putative"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_011760131_1 and WP_011760132_1) or (WP_011761387_1 and WP_011761388_1)",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011760131_1",
+     "locus": "Sama_2018",
+     "fitness_browser_desc": "acetolactate synthase 3 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 3 large subunit",
+     "neighbourhood": [
+      "Sama_2015 (-) hypothetical protein",
+      "Sama_2016 (+) GntR family transcriptional regulator",
+      "Sama_2017 (+) bicyclomycin resistance protein",
+      "Sama_2018 (+) acetolactate synthase 3 catalytic subunit",
+      "Sama_2019 (+) acetolactate synthase 3 regulatory subunit",
+      "Sama_2020 (-) 16 kDa heat shock protein A",
+      "Sama_2021 (-) bifunctional UDP-sugar hydrolase/5'-nucleotidase periplasmic precursor"
+     ]
+    },
+    {
+     "model_gene": "WP_011760132_1",
+     "locus": "Sama_2019",
+     "fitness_browser_desc": "acetolactate synthase 3 regulatory subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "Sama_2016 (+) GntR family transcriptional regulator",
+      "Sama_2017 (+) bicyclomycin resistance protein",
+      "Sama_2018 (+) acetolactate synthase 3 catalytic subunit",
+      "Sama_2019 (+) acetolactate synthase 3 regulatory subunit",
+      "Sama_2020 (-) 16 kDa heat shock protein A",
+      "Sama_2021 (-) bifunctional UDP-sugar hydrolase/5'-nucleotidase periplasmic precursor",
+      "Sama_2022 (-) carboxylesterase"
+     ]
+    },
+    {
+     "model_gene": "WP_011761387_1",
+     "locus": "Sama_3280",
+     "fitness_browser_desc": "acetolactate synthase 2 regulatory subunit",
+     "refseq_definition": "acetolactate synthase 2 small subunit",
+     "neighbourhood": [
+      "Sama_3277 (-) Serine--pyruvate transaminase",
+      "Sama_3278 (-) threonine dehydratase",
+      "Sama_3279 (-) dihydroxy-acid dehydratase",
+      "Sama_3280 (-) acetolactate synthase 2 regulatory subunit",
+      "Sama_3281 (-) acetolactate synthase 2 catalytic subunit",
+      "Sama_3282 (-) ketol-acid reductoisomerase",
+      "Sama_3283 (+) DNA-binding transcriptional regulator IlvY"
+     ]
+    },
+    {
+     "model_gene": "WP_011761388_1",
+     "locus": "Sama_3281",
+     "fitness_browser_desc": "acetolactate synthase 2 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 2 catalytic subunit",
+     "neighbourhood": [
+      "Sama_3278 (-) threonine dehydratase",
+      "Sama_3279 (-) dihydroxy-acid dehydratase",
+      "Sama_3280 (-) acetolactate synthase 2 regulatory subunit",
+      "Sama_3281 (-) acetolactate synthase 2 catalytic subunit",
+      "Sama_3282 (-) ketol-acid reductoisomerase",
+      "Sama_3283 (+) DNA-binding transcriptional regulator IlvY",
+      "Sama_3284 (-) hemolysin, putative"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACOTA",
+   "name": "Acetylornithine transaminase",
+   "equation_ids": "acorn_c + akg_c <=> acg5sa_c + glu__L_c",
+   "equation_names": "N2-Acetyl-L-ornithine + 2-Oxoglutarate <=> N-Acetyl-L-glutamate 5-semialdehyde + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759743_1 or WP_011761118_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759743_1",
+     "locus": "Sama_1628",
+     "fitness_browser_desc": "bifunctional N-succinyldiaminopimelate-aminotransferase/acetylornithine transaminase protein",
+     "refseq_definition": "aspartate aminotransferase family protein",
+     "neighbourhood": [
+      "Sama_1625 (-) hypothetical protein",
+      "Sama_1626 (-) succinylglutamic semialdehyde dehydrogenase",
+      "Sama_1627 (-) arginine N-succinyltransferase",
+      "Sama_1628 (-) bifunctional N-succinyldiaminopimelate-aminotransferase/acetylornithine transaminase protein",
+      "Sama_1629 (+) AsnC family transcriptional regulator",
+      "Sama_1630 (-) LysR family transcriptional regulator",
+      "Sama_1631 (+) histidine ammonia-lyase"
+     ]
+    },
+    {
+     "model_gene": "WP_011761118_1",
+     "locus": "Sama_3011",
+     "fitness_browser_desc": "bifunctional N-succinyldiaminopimelate-aminotransferase/acetylornithine transaminase protein",
+     "refseq_definition": "aspartate aminotransferase family protein",
+     "neighbourhood": [
+      "Sama_3008 (-) hypothetical protein",
+      "Sama_3009 (-) succinylglutamic semialdehyde dehydrogenase",
+      "Sama_3010 (-) arginine N-succinyltransferase",
+      "Sama_3011 (-) bifunctional N-succinyldiaminopimelate-aminotransferase/acetylornithine transaminase protein",
+      "Sama_3012 (-) esterase, putative",
+      "Sama_3013 (-) hypothetical protein",
+      "Sama_3014 (-) dipeptidyl peptidase IV, putative"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACtex",
+   "name": "Acetate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ac_e <=> ac_p",
+   "equation_names": "Acetate <=> Acetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759367_1 or WP_011761443_1 or WP_086015256_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759367_1",
+     "locus": "Sama_1251",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_1248 (-) hypothetical protein",
+      "Sama_1249 (-) ATP-dependent DNA helicase DinG",
+      "Sama_1250 (+) DNA polymerase II",
+      "Sama_1251 (+) outer membrane porin, putative",
+      "Sama_1252 (+) TonB-dependent receptor",
+      "Sama_1253 (+) hypothetical protein",
+      "Sama_1254 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761443_1",
+     "locus": "Sama_3336",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_3333 (+) hypothetical protein",
+      "Sama_3334 (+) ornithine decarboxylase",
+      "Sama_3335 (+) putrescine transporter",
+      "Sama_3336 (+) outer membrane porin, putative",
+      "Sama_3337 (-) homospermidine synthase",
+      "Sama_3338 (-) hypothetical protein",
+      "Sama_3339 (+) GCN5-related N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_086015256_1",
+     "locus": "Sama_3096",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Sama_3093 (+) magnesium transporter",
+      "Sama_3094 (-) hypothetical protein",
+      "Sama_3095 (-) molybdate ABC transporter periplasmic molybdate-binding protein",
+      "Sama_3096 (-) OmpA family protein",
+      "Sama_3097 (+) putative transposase",
+      "Sama_3098 (+) GGDEF family protein",
+      "Sama_3099 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "AGDC",
+   "name": "N-acetylglucosamine-6-phosphate deacetylase",
+   "equation_ids": "acgam6p_c + h2o_c --> ac_c + gam6p_c",
+   "equation_names": "N-Acetyl-D-glucosamine 6-phosphate + H2O --> Acetate + D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758151_1 or WP_011759062_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758151_1",
+     "locus": "Sama_0028",
+     "fitness_browser_desc": "amidohydrolase",
+     "refseq_definition": "amidohydrolase family protein",
+     "neighbourhood": [
+      "Sama_0025 (-) glycyl-tRNA synthetase subunit beta",
+      "Sama_0026 (-) glycyl-tRNA synthetase subunit alpha",
+      "Sama_0027 (+) DNA-3-methyladenine glycosylase I",
+      "Sama_0028 (-) amidohydrolase",
+      "Sama_0029 (-) redox protein regulator of disulfide bond formation",
+      "Sama_0030 (+) putative methyl-accepting chemotaxis sensory transducer",
+      "Sama_0031 (-) 3-ketoacyl-CoA thiolase"
+     ]
+    },
+    {
+     "model_gene": "WP_011759062_1",
+     "locus": "Sama_0946",
+     "fitness_browser_desc": "N-acetylglucosamine-6-phosphate deacetylase",
+     "refseq_definition": "N-acetylglucosamine-6-phosphate deacetylase",
+     "neighbourhood": [
+      "Sama_0943 (+) Beta-N-acetylhexosaminidase",
+      "Sama_0944 (+) hypothetical protein",
+      "Sama_0945 (+) glutamine--fructose-6-phosphate transaminase (isomerizing)",
+      "Sama_0946 (+) N-acetylglucosamine-6-phosphate deacetylase",
+      "Sama_0947 (+) hypothetical protein",
+      "Sama_0948 (+) multiple antibiotic resistance (MarC)-related protein",
+      "Sama_R0033 (-) tRNA-Thr"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ARGSS",
+   "name": "Argininosuccinate synthase",
+   "equation_ids": "asp__L_c + atp_c + citr__L_c --> amp_c + argsuc_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + L-Citrulline --> AMP + N(omega)-(L-Arginino)succinate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758380_1 or WP_011758381_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758380_1",
+     "locus": "Sama_0259",
+     "fitness_browser_desc": "argininosuccinate synthase",
+     "refseq_definition": "argininosuccinate synthase",
+     "neighbourhood": [
+      "Sama_0256 (+) N-acetyl-gamma-glutamyl-phosphate reductase",
+      "Sama_0257 (+) acetylglutamate kinase",
+      "Sama_0258 (+) ornithine carbamoyltransferase",
+      "Sama_0259 (+) argininosuccinate synthase",
+      "Sama_0260 (+) argininosuccinate lyase",
+      "Sama_0261 (-) AMP-dependent synthetase and ligase",
+      "Sama_0262 (-) tRNA guanosine-2'-O-methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011758381_1",
+     "locus": "Sama_0260",
+     "fitness_browser_desc": "argininosuccinate lyase",
+     "refseq_definition": "argininosuccinate lyase",
+     "neighbourhood": [
+      "Sama_0257 (+) acetylglutamate kinase",
+      "Sama_0258 (+) ornithine carbamoyltransferase",
+      "Sama_0259 (+) argininosuccinate synthase",
+      "Sama_0260 (+) argininosuccinate lyase",
+      "Sama_0261 (-) AMP-dependent synthetase and ligase",
+      "Sama_0262 (-) tRNA guanosine-2'-O-methyltransferase",
+      "Sama_0263 (-) YjgF-like protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPK",
+   "name": "Aspartate kinase",
+   "equation_ids": "asp__L_c + atp_c <=> 4pasp_c + adp_c",
+   "equation_names": "L-Aspartate + ATP <=> 4-Phospho-L-aspartate + ADP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758721_1 or WP_011759022_1 or WP_011759165_1 or WP_011761277_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758721_1",
+     "locus": "Sama_0603",
+     "fitness_browser_desc": "aspartate kinase III",
+     "refseq_definition": "lysine-sensitive aspartokinase 3",
+     "neighbourhood": [
+      "Sama_0600 (+) dipeptidyl peptidase IV",
+      "Sama_0601 (-) two-component response regulator",
+      "Sama_0602 (+) hypothetical protein",
+      "Sama_0603 (+) aspartate kinase III",
+      "Sama_0604 (+) hypothetical protein",
+      "Sama_0605 (-) DNA-binding transcriptional regulator AsnC",
+      "Sama_0606 (-) pseudouridylate synthase"
+     ]
+    },
+    {
+     "model_gene": "WP_011759022_1",
+     "locus": "Sama_0905",
+     "fitness_browser_desc": "bifunctional aspartokinase I/homeserine dehydrogenase I",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase I",
+     "neighbourhood": [
+      "Sama_0902 (+) putative Trp operon repressor",
+      "Sama_0903 (-) hypothetical protein",
+      "Sama_0904 (-) peptidyl-prolyl cis-trans isomerase SlyD",
+      "Sama_0905 (+) bifunctional aspartokinase I/homeserine dehydrogenase I",
+      "Sama_0906 (+) homoserine kinase",
+      "Sama_0907 (+) threonine synthase",
+      "Sama_0908 (+) signal transduction histidine kinase-like protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759165_1",
+     "locus": "Sama_1049",
+     "fitness_browser_desc": "aspartate kinase",
+     "refseq_definition": "aspartate kinase",
+     "neighbourhood": [
+      "Sama_1046 (+) recombinase A",
+      "Sama_1047 (+) hypothetical protein",
+      "Sama_1048 (+) alanyl-tRNA synthetase",
+      "Sama_1049 (+) aspartate kinase",
+      "Sama_1050 (+) carbon storage regulator",
+      "Sama_R0038 (+) tRNA-Ser",
+      "Sama_R0039 (+) tRNA-Arg"
+     ]
+    },
+    {
+     "model_gene": "WP_011761277_1",
+     "locus": "Sama_3170",
+     "fitness_browser_desc": "bifunctional aspartate kinase II/homoserine dehydrogenase II",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase II",
+     "neighbourhood": [
+      "Sama_3167 (-) hypothetical protein",
+      "Sama_3168 (-) hypothetical protein",
+      "Sama_3169 (-) 5,10-methylenetetrahydrofolate reductase",
+      "Sama_3170 (-) bifunctional aspartate kinase II/homoserine dehydrogenase II",
+      "Sama_3171 (-) cystathionine gamma-synthase",
+      "Sama_3172 (+) transcriptional repressor protein MetJ",
+      "Sama_3173 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CA2tex",
+   "name": "Calcium (Ca+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ca2_e <=> ca2_p",
+   "equation_names": "Calcium <=> Calcium",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759367_1 or WP_011761443_1 or WP_086015256_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759367_1",
+     "locus": "Sama_1251",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_1248 (-) hypothetical protein",
+      "Sama_1249 (-) ATP-dependent DNA helicase DinG",
+      "Sama_1250 (+) DNA polymerase II",
+      "Sama_1251 (+) outer membrane porin, putative",
+      "Sama_1252 (+) TonB-dependent receptor",
+      "Sama_1253 (+) hypothetical protein",
+      "Sama_1254 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761443_1",
+     "locus": "Sama_3336",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_3333 (+) hypothetical protein",
+      "Sama_3334 (+) ornithine decarboxylase",
+      "Sama_3335 (+) putrescine transporter",
+      "Sama_3336 (+) outer membrane porin, putative",
+      "Sama_3337 (-) homospermidine synthase",
+      "Sama_3338 (-) hypothetical protein",
+      "Sama_3339 (+) GCN5-related N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_086015256_1",
+     "locus": "Sama_3096",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Sama_3093 (+) magnesium transporter",
+      "Sama_3094 (-) hypothetical protein",
+      "Sama_3095 (-) molybdate ABC transporter periplasmic molybdate-binding protein",
+      "Sama_3096 (-) OmpA family protein",
+      "Sama_3097 (+) putative transposase",
+      "Sama_3098 (+) GGDEF family protein",
+      "Sama_3099 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CEPA",
+   "name": "Cellobiose phosphorylase",
+   "equation_ids": "cellb_c + pi_c <=> g1p_c + glc__D_c",
+   "equation_names": "Cellobiose + Phosphate <=> D-Glucose 1-phosphate + D-Glucose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "CHORM",
+   "name": "Chorismate mutase",
+   "equation_ids": "chor_c --> pphn_c",
+   "equation_names": "Chorismate --> Prephenate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759011_1 or WP_011759015_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759011_1",
+     "locus": "Sama_0894",
+     "fitness_browser_desc": "bifunctional chorismate mutase/prephenate dehydrogenase",
+     "refseq_definition": "bifunctional chorismate mutase/prephenate dehydrogenase",
+     "neighbourhood": [
+      "Sama_0891 (+) tRNA (guanine-N(1)-)-methyltransferase",
+      "Sama_0892 (+) 50S ribosomal protein L19",
+      "Sama_0893 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Sama_0894 (+) bifunctional chorismate mutase/prephenate dehydrogenase",
+      "Sama_0895 (+) hydroxylamine reductase",
+      "Sama_0896 (+) iron-sulfur cluster-binding protein",
+      "Sama_0897 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759015_1",
+     "locus": "Sama_0898",
+     "fitness_browser_desc": "prephenate dehydratase / chorismate mutase / phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "Sama_0895 (+) hydroxylamine reductase",
+      "Sama_0896 (+) iron-sulfur cluster-binding protein",
+      "Sama_0897 (+) hypothetical protein",
+      "Sama_0898 (-) prephenate dehydratase / chorismate mutase / phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Sama_0899 (-) ribosomal subunit interface protein",
+      "Sama_0900 (+) b-type cytochrome, putative",
+      "Sama_0901 (-) cytochrome c, class II"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CITt11",
+   "name": "Citrate transport in via Mn complex",
+   "equation_ids": "cit_e + h_e + mn2_e --> cit_c + h_c + mn2_c",
+   "equation_names": "Citrate + H+ + Mn2+ --> Citrate + H+ + Mn2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "CITt15",
+   "name": "Citrate transport in via Zn complex",
+   "equation_ids": "cit_e + h_e + zn2_e --> cit_c + h_c + zn2_c",
+   "equation_names": "Citrate + H+ + Zinc --> Citrate + H+ + Zinc",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "CITt3",
+   "name": "Citrate transport out via proton antiport",
+   "equation_ids": "cit_c + h_e --> cit_e + h_c",
+   "equation_names": "Citrate + H+ --> Citrate + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "CLBtex",
+   "name": "Cellobiose transport transport via diffusion extracellular to periplasm",
+   "equation_ids": "cellb_e <=> cellb_p",
+   "equation_names": "Cellobiose <=> Cellobiose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759310_1 or WP_011759367_1 or WP_011760344_1 or WP_011761443_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759310_1",
+     "locus": "Sama_1194",
+     "fitness_browser_desc": "Gfo/Idh/MocA family oxidoreductase",
+     "refseq_definition": "Gfo/Idh/MocA family protein",
+     "neighbourhood": [
+      "Sama_1191 (+) hypothetical protein",
+      "Sama_1192 (-) TonB-dependent receptor",
+      "Sama_1193 (+) GlpR family transcriptional regulator",
+      "Sama_1194 (+) Gfo/Idh/MocA family oxidoreductase",
+      "Sama_1195 (+) tagatose-6-phosphate kinase",
+      "Sama_1196 (+) phosphosugar isomerase",
+      "Sama_1197 (+) putative ROK-family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759367_1",
+     "locus": "Sama_1251",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_1248 (-) hypothetical protein",
+      "Sama_1249 (-) ATP-dependent DNA helicase DinG",
+      "Sama_1250 (+) DNA polymerase II",
+      "Sama_1251 (+) outer membrane porin, putative",
+      "Sama_1252 (+) TonB-dependent receptor",
+      "Sama_1253 (+) hypothetical protein",
+      "Sama_1254 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011760344_1",
+     "locus": "Sama_2231",
+     "fitness_browser_desc": "fructokinase",
+     "refseq_definition": "fructokinase",
+     "neighbourhood": [
+      "Sama_2228 (+) decaheme cytochrome c",
+      "Sama_2229 (-) hypothetical protein",
+      "Sama_2230 (-) hypothetical protein",
+      "Sama_2231 (-) fructokinase",
+      "Sama_2232 (-) cysQ protein",
+      "Sama_2233 (-) putative hydrolase",
+      "Sama_2234 (+) uncharacterized lipoprotein NlpE involved in copper resistance"
+     ]
+    },
+    {
+     "model_gene": "WP_011761443_1",
+     "locus": "Sama_3336",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_3333 (+) hypothetical protein",
+      "Sama_3334 (+) ornithine decarboxylase",
+      "Sama_3335 (+) putrescine transporter",
+      "Sama_3336 (+) outer membrane porin, putative",
+      "Sama_3337 (-) homospermidine synthase",
+      "Sama_3338 (-) hypothetical protein",
+      "Sama_3339 (+) GCN5-related N-acetyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLBtpp",
+   "name": "Cellobiose transport via permease",
+   "equation_ids": "cellb_p --> cellb_c",
+   "equation_names": "Cellobiose --> Cellobiose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "CLtex",
+   "name": "Chloride (Cl-1) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cl_e <=> cl_p",
+   "equation_names": "Chloride <=> Chloride",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759367_1 or WP_011761443_1 or WP_086015256_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759367_1",
+     "locus": "Sama_1251",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_1248 (-) hypothetical protein",
+      "Sama_1249 (-) ATP-dependent DNA helicase DinG",
+      "Sama_1250 (+) DNA polymerase II",
+      "Sama_1251 (+) outer membrane porin, putative",
+      "Sama_1252 (+) TonB-dependent receptor",
+      "Sama_1253 (+) hypothetical protein",
+      "Sama_1254 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761443_1",
+     "locus": "Sama_3336",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_3333 (+) hypothetical protein",
+      "Sama_3334 (+) ornithine decarboxylase",
+      "Sama_3335 (+) putrescine transporter",
+      "Sama_3336 (+) outer membrane porin, putative",
+      "Sama_3337 (-) homospermidine synthase",
+      "Sama_3338 (-) hypothetical protein",
+      "Sama_3339 (+) GCN5-related N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_086015256_1",
+     "locus": "Sama_3096",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Sama_3093 (+) magnesium transporter",
+      "Sama_3094 (-) hypothetical protein",
+      "Sama_3095 (-) molybdate ABC transporter periplasmic molybdate-binding protein",
+      "Sama_3096 (-) OmpA family protein",
+      "Sama_3097 (+) putative transposase",
+      "Sama_3098 (+) GGDEF family protein",
+      "Sama_3099 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "COBALT2tex",
+   "name": "Cobalt (Co+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cobalt2_e <=> cobalt2_p",
+   "equation_names": "Co2+ <=> Co2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759367_1 or WP_011761443_1 or WP_086015256_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759367_1",
+     "locus": "Sama_1251",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_1248 (-) hypothetical protein",
+      "Sama_1249 (-) ATP-dependent DNA helicase DinG",
+      "Sama_1250 (+) DNA polymerase II",
+      "Sama_1251 (+) outer membrane porin, putative",
+      "Sama_1252 (+) TonB-dependent receptor",
+      "Sama_1253 (+) hypothetical protein",
+      "Sama_1254 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761443_1",
+     "locus": "Sama_3336",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_3333 (+) hypothetical protein",
+      "Sama_3334 (+) ornithine decarboxylase",
+      "Sama_3335 (+) putrescine transporter",
+      "Sama_3336 (+) outer membrane porin, putative",
+      "Sama_3337 (-) homospermidine synthase",
+      "Sama_3338 (-) hypothetical protein",
+      "Sama_3339 (+) GCN5-related N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_086015256_1",
+     "locus": "Sama_3096",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Sama_3093 (+) magnesium transporter",
+      "Sama_3094 (-) hypothetical protein",
+      "Sama_3095 (-) molybdate ABC transporter periplasmic molybdate-binding protein",
+      "Sama_3096 (-) OmpA family protein",
+      "Sama_3097 (+) putative transposase",
+      "Sama_3098 (+) GGDEF family protein",
+      "Sama_3099 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tex",
+   "name": "Copper (Cu+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cu2_e <=> cu2_p",
+   "equation_names": "Cu2+ <=> Cu2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759367_1 or WP_011761443_1 or WP_086015256_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759367_1",
+     "locus": "Sama_1251",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_1248 (-) hypothetical protein",
+      "Sama_1249 (-) ATP-dependent DNA helicase DinG",
+      "Sama_1250 (+) DNA polymerase II",
+      "Sama_1251 (+) outer membrane porin, putative",
+      "Sama_1252 (+) TonB-dependent receptor",
+      "Sama_1253 (+) hypothetical protein",
+      "Sama_1254 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761443_1",
+     "locus": "Sama_3336",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_3333 (+) hypothetical protein",
+      "Sama_3334 (+) ornithine decarboxylase",
+      "Sama_3335 (+) putrescine transporter",
+      "Sama_3336 (+) outer membrane porin, putative",
+      "Sama_3337 (-) homospermidine synthase",
+      "Sama_3338 (-) hypothetical protein",
+      "Sama_3339 (+) GCN5-related N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_086015256_1",
+     "locus": "Sama_3096",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Sama_3093 (+) magnesium transporter",
+      "Sama_3094 (-) hypothetical protein",
+      "Sama_3095 (-) molybdate ABC transporter periplasmic molybdate-binding protein",
+      "Sama_3096 (-) OmpA family protein",
+      "Sama_3097 (+) putative transposase",
+      "Sama_3098 (+) GGDEF family protein",
+      "Sama_3099 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tpp",
+   "name": "Copper transport in via permease (no H+)",
+   "equation_ids": "cu2_p --> cu2_c",
+   "equation_names": "Cu2+ --> Cu2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "CYSS",
+   "name": "Cysteine synthase",
+   "equation_ids": "acser_c + h2s_c --> ac_c + cys__L_c + h_c",
+   "equation_names": "O-Acetyl-L-serine + Hydrogen sulfide --> Acetate + L-Cysteine + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759623_1 or WP_011759937_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759623_1",
+     "locus": "Sama_1508",
+     "fitness_browser_desc": "cysteine synthase A",
+     "refseq_definition": "cysteine synthase A",
+     "neighbourhood": [
+      "Sama_1505 (-) O-methyltransferase, putative",
+      "Sama_1506 (-) cysteine desulfurase",
+      "Sama_1507 (+) TetR family transcriptional regulator",
+      "Sama_1508 (-) cysteine synthase A",
+      "Sama_1509 (+) hypothetical protein",
+      "Sama_1510 (+) 3-oxoacyl-(acyl carrier protein) synthase III",
+      "Sama_1511 (+) response regulator receiver protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759937_1",
+     "locus": "Sama_1824",
+     "fitness_browser_desc": "pyridoxal-5'-phosphate-dependent enzyme, beta subunit",
+     "refseq_definition": "PLP-dependent cysteine synthase family protein",
+     "neighbourhood": [
+      "Sama_R0070 (+) tRNA-Tyr",
+      "Sama_R0071 (+) tRNA-Tyr",
+      "Sama_R0072 (+) tRNA-Tyr",
+      "Sama_1824 (+) pyridoxal-5'-phosphate-dependent enzyme, beta subunit",
+      "Sama_1825 (-) radical activating enzyme",
+      "Sama_1826 (+) ExsB protein",
+      "Sama_1827 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DDPA",
+   "name": "3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase",
+   "equation_ids": "e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Phosphoenolpyruvate --> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758775_1 or WP_011759010_1 or WP_011760187_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758775_1",
+     "locus": "Sama_0657",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase AroG",
+     "neighbourhood": [
+      "Sama_0654 (+) putative methyl-accepting chemotaxis sensory transducer",
+      "Sama_0655 (-) hypothetical protein",
+      "Sama_0656 (-) hypothetical protein",
+      "Sama_0657 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Sama_0658 (-) hypothetical protein",
+      "Sama_0659 (+) ABC transporter, ATP-binding protein",
+      "Sama_0660 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759010_1",
+     "locus": "Sama_0893",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "Sama_0890 (+) 16S rRNA-processing protein RimM",
+      "Sama_0891 (+) tRNA (guanine-N(1)-)-methyltransferase",
+      "Sama_0892 (+) 50S ribosomal protein L19",
+      "Sama_0893 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Sama_0894 (+) bifunctional chorismate mutase/prephenate dehydrogenase",
+      "Sama_0895 (+) hydroxylamine reductase",
+      "Sama_0896 (+) iron-sulfur cluster-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011760187_1",
+     "locus": "Sama_2074",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "Sama_2071 (-) oxidoreductase, FAD-binding, putative",
+      "Sama_2072 (-) phosphoenolpyruvate synthase",
+      "Sama_2073 (+) hypothetical protein",
+      "Sama_2074 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Sama_2075 (+) thioesterase superfamily protein",
+      "Sama_2076 (+) response regulator receiver protein",
+      "Sama_2077 (-) oxidoreductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011760334_1 or WP_011761386_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011760334_1",
+     "locus": "Sama_2221",
+     "fitness_browser_desc": "pterin-4-alpha-carbinolamine dehydratase",
+     "refseq_definition": "4a-hydroxytetrahydrobiopterin dehydratase",
+     "neighbourhood": [
+      "Sama_2218 (-) maleylacetoacetate isomerase",
+      "Sama_2219 (-) fumarylacetoacetate hydrolase family protein",
+      "Sama_2220 (-) transcriptional regulatory protein TyrR",
+      "Sama_2221 (-) pterin-4-alpha-carbinolamine dehydratase",
+      "Sama_2222 (-) phenylalanine 4-monooxygenase",
+      "Sama_2223 (+) UTP--glucose-1-phosphate uridylyltransferase",
+      "Sama_2224 (+) UDP-glucose 4-epimerase"
+     ]
+    },
+    {
+     "model_gene": "WP_011761386_1",
+     "locus": "Sama_3279",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "Sama_3276 (-) ABC-type amino acid transport/signal transduction system",
+      "Sama_3277 (-) Serine--pyruvate transaminase",
+      "Sama_3278 (-) threonine dehydratase",
+      "Sama_3279 (-) dihydroxy-acid dehydratase",
+      "Sama_3280 (-) acetolactate synthase 2 regulatory subunit",
+      "Sama_3281 (-) acetolactate synthase 2 catalytic subunit",
+      "Sama_3282 (-) ketol-acid reductoisomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPS",
+   "name": "Dihydrodipicolinate synthase",
+   "equation_ids": "aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Pyruvate --> 2,3-Dihydrodipicolinate + 2.0 H2O + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759646_1 or WP_011760021_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759646_1",
+     "locus": "Sama_1531",
+     "fitness_browser_desc": "dihydrodipicolinate synthetase family protein",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "Sama_1528 (-) GntR family transcriptional regulator",
+      "Sama_1529 (-) fatty aldehyde dehydrogenase",
+      "Sama_1530 (-) hydroxyproline-2-epimerase",
+      "Sama_1531 (-) dihydrodipicolinate synthetase family protein",
+      "Sama_1532 (+) putative proline racemase",
+      "Sama_1533 (+) D-amino-acid dehydrogenase",
+      "Sama_1534 (-) xaa-pro aminopeptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_011760021_1",
+     "locus": "Sama_1908",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "Sama_1905 (-) AcrB/AcrD/AcrF family protein",
+      "Sama_1906 (-) HlyD family-like protein",
+      "Sama_1907 (-) lipoprotein-34 NlpB",
+      "Sama_1908 (-) dihydrodipicolinate synthase",
+      "Sama_1909 (+) glycine cleavage system transcriptional repressor, putative",
+      "Sama_1910 (+) thioredoxin-dependent thiol peroxidase",
+      "Sama_1911 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHFR",
+   "name": "Dihydrofolate reductase",
+   "equation_ids": "dhf_c + h_c + nadph_c <=> nadp_c + thf_c",
+   "equation_names": "7,8-Dihydrofolate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759877_1 or WP_011760932_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759877_1",
+     "locus": "Sama_1764",
+     "fitness_browser_desc": "short-chain dehydrogenase/reductase SDR",
+     "refseq_definition": "SDR family oxidoreductase",
+     "neighbourhood": [
+      "Sama_1761 (-) MATE efflux family protein",
+      "Sama_1762 (+) riboflavin synthase subunit alpha",
+      "Sama_1763 (-) hypothetical protein",
+      "Sama_1764 (-) short-chain dehydrogenase/reductase SDR",
+      "Sama_1765 (+) threonyl-tRNA synthetase",
+      "Sama_1766 (+) translation initiation factor IF-3",
+      "Sama_1767 (+) 50S ribosomal protein L35"
+     ]
+    },
+    {
+     "model_gene": "WP_011760932_1",
+     "locus": "Sama_2824",
+     "fitness_browser_desc": "dihydrofolate reductase",
+     "refseq_definition": "type 3 dihydrofolate reductase",
+     "neighbourhood": [
+      "Sama_2821 (+) diadenosine tetraphosphatase",
+      "Sama_2822 (+) putative methyl-accepting chemotaxis sensory transducer",
+      "Sama_2823 (-) hypothetical protein",
+      "Sama_2824 (-) dihydrofolate reductase",
+      "Sama_2825 (-) hypothetical protein",
+      "Sama_2826 (-) hypothetical protein",
+      "Sama_2827 (-) GTPase ObgE"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHNPA2r",
+   "name": "Dihydroneopterin aldolase reversible",
+   "equation_ids": "dhnpt_c <=> 6hmhpt_c + gcald_c",
+   "equation_names": "Dihydroneopterin <=> 6-hydroxymethyl dihydropterin + Glycolaldehyde",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758957_1 or WP_011760978_1",
+   "n_growth_conditions_essential": 13,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758957_1",
+     "locus": "Sama_0840",
+     "fitness_browser_desc": "aspartate carbamoyltransferase",
+     "refseq_definition": "aspartate carbamoyltransferase",
+     "neighbourhood": [
+      "Sama_0837 (-) citrate transporter",
+      "Sama_0838 (+) hypothetical protein",
+      "Sama_0839 (-) glutamate-1-semialdehyde aminotransferase",
+      "Sama_0840 (-) aspartate carbamoyltransferase",
+      "Sama_0841 (-) chloride channel",
+      "Sama_0842 (+) hypothetical protein",
+      "Sama_0843 (+) iron-sulfur cluster insertion protein ErpA"
+     ]
+    },
+    {
+     "model_gene": "WP_011760978_1",
+     "locus": "Sama_2870",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "Sama_2867 (+) hypothetical protein",
+      "Sama_2868 (-) hypothetical protein",
+      "Sama_2869 (-) ABC transporter, periplasmic substrate-binding protein, putative",
+      "Sama_2870 (+) dihydroorotase",
+      "Sama_2871 (-) response regulator",
+      "Sama_2872 (+) hypothetical protein",
+      "Sama_2873 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759849_1 or WP_041410133_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759849_1",
+     "locus": "Sama_1736",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "Sama_1733 (-) aromatic amino acid aminotransferase",
+      "Sama_1734 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "Sama_1735 (+) cytidylate kinase",
+      "Sama_1736 (+) 30S ribosomal protein S1",
+      "Sama_1737 (+) integration host factor subunit beta",
+      "Sama_1738 (+) membrane protein",
+      "Sama_1739 (+) tetratricopeptide repeat protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041410133_1",
+     "locus": "Sama_0927",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "Sama_0924 (+) isoleucyl-tRNA synthetase",
+      "Sama_0925 (+) lipoprotein signal peptidase",
+      "Sama_0926 (+) peptidylprolyl isomerase, FKBP-type",
+      "Sama_0927 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "Sama_0928 (+) type IV pilus assembly protein PilV",
+      "Sama_0929 (+) type IV pilus assembly protein PilW",
+      "Sama_0930 (+) type IV pilus assembly protein PilX"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011760668_1 or WP_011761389_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011760668_1",
+     "locus": "Sama_2559",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "ketopantoate reductase family protein",
+     "neighbourhood": [
+      "Sama_2556 (+) AmpG protein, putative",
+      "Sama_2557 (-) putative nucleotide-binding protein",
+      "Sama_2558 (+) hypothetical protein",
+      "Sama_2559 (+) 2-dehydropantoate 2-reductase",
+      "Sama_2560 (-) hypothetical protein",
+      "Sama_2561 (-) 2-dehydro-3-deoxyphosphooctonate aldolase",
+      "Sama_2562 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761389_1",
+     "locus": "Sama_3282",
+     "fitness_browser_desc": "ketol-acid reductoisomerase",
+     "refseq_definition": "ketol-acid reductoisomerase",
+     "neighbourhood": [
+      "Sama_3279 (-) dihydroxy-acid dehydratase",
+      "Sama_3280 (-) acetolactate synthase 2 regulatory subunit",
+      "Sama_3281 (-) acetolactate synthase 2 catalytic subunit",
+      "Sama_3282 (-) ketol-acid reductoisomerase",
+      "Sama_3283 (+) DNA-binding transcriptional regulator IlvY",
+      "Sama_3284 (-) hemolysin, putative",
+      "Sama_3285 (+) putative amino acid ABC transporter"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FUM",
+   "name": "Fumarase",
+   "equation_ids": "fum_c + h2o_c <=> mal__L_c",
+   "equation_names": "Fumarate + H2O <=> L-Malate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758939_1 or WP_011759802_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758939_1",
+     "locus": "Sama_0822",
+     "fitness_browser_desc": "fumarate hydratase",
+     "refseq_definition": "class II fumarate hydratase",
+     "neighbourhood": [
+      "Sama_0819 (+) hypothetical protein",
+      "Sama_0820 (-) putative lipoprotein",
+      "Sama_0821 (+) peptidyl-prolyl cis-trans isomerase FkbP",
+      "Sama_0822 (+) fumarate hydratase",
+      "Sama_R0032 (-) tRNA-Met",
+      "Sama_0823 (-) RNA polymerase sigma-70 factor",
+      "Sama_0824 (-) DNA primase"
+     ]
+    },
+    {
+     "model_gene": "WP_011759802_1",
+     "locus": "Sama_1688",
+     "fitness_browser_desc": "fumarate hydratase, class I, anaerobic, putative",
+     "refseq_definition": "fumarate hydratase",
+     "neighbourhood": [
+      "Sama_1685 (+) hypothetical protein",
+      "Sama_1686 (-) MutT/nudix family protein",
+      "Sama_1687 (-) para-aminobenzoate synthase, component I",
+      "Sama_1688 (+) fumarate hydratase, class I, anaerobic, putative",
+      "Sama_1689 (+) peptidase, putative",
+      "Sama_1690 (+) hypothetical protein",
+      "Sama_1691 (+) glucan biosynthesis protein G"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GAPD",
+   "name": "Glyceraldehyde-3-phosphate dehydrogenase",
+   "equation_ids": "g3p_c + nad_c + pi_c <=> 13dpg_c + h_c + nadh_c",
+   "equation_names": "Glyceraldehyde 3-phosphate + Nicotinamide adenine dinucleotide + Phosphate <=> 3-Phospho-D-glyceroyl phosphate + H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758614_1 or WP_011759919_1 or WP_011759921_1",
+   "n_growth_conditions_essential": 8,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758614_1",
+     "locus": "Sama_0494",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase",
+     "refseq_definition": "ArsJ-associated glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "Sama_0491 (-) phosphoribosylaminoimidazole-succinocarboxamide synthase",
+      "Sama_0492 (-) sodium/proline symporter",
+      "Sama_0493 (+) transcriptional regulator",
+      "Sama_0494 (+) glyceraldehyde-3-phosphate dehydrogenase",
+      "Sama_0495 (+) transporter, putative",
+      "Sama_0496 (+) putative diguanylate phosphodiesterase",
+      "Sama_0497 (+) metallo-beta-lactamase family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759919_1",
+     "locus": "Sama_1806",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase",
+     "refseq_definition": "glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "Sama_1805 (-) aromatic amino acid aminotransferase",
+      "Sama_R0068 (-) tRNA-Cys",
+      "Sama_R0069 (-) tRNA-Gly",
+      "Sama_1806 (-) glyceraldehyde-3-phosphate dehydrogenase",
+      "Sama_1807 (+) hypothetical protein",
+      "Sama_1808 (+) glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)",
+      "Sama_1809 (-) keto-hydroxyglutarate-aldolase/keto-deoxy- phosphogluconate aldolase"
+     ]
+    },
+    {
+     "model_gene": "WP_011759921_1",
+     "locus": "Sama_1808",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)",
+     "refseq_definition": "type I glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "Sama_R0069 (-) tRNA-Gly",
+      "Sama_1806 (-) glyceraldehyde-3-phosphate dehydrogenase",
+      "Sama_1807 (+) hypothetical protein",
+      "Sama_1808 (+) glyceraldehyde-3-phosphate dehydrogenase (phosphorylating)",
+      "Sama_1809 (-) keto-hydroxyglutarate-aldolase/keto-deoxy- phosphogluconate aldolase",
+      "Sama_1810 (-) phosphogluconate dehydratase",
+      "Sama_1811 (-) 6-phosphogluconolactonase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GF6PTA",
+   "name": "Glutamine-fructose-6-phosphate transaminase",
+   "equation_ids": "f6p_c + gln__L_c --> gam6p_c + glu__L_c",
+   "equation_names": "D-Fructose 6-phosphate + L-Glutamine --> D-Glucosamine 6-phosphate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759061_1 or WP_011761745_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759061_1",
+     "locus": "Sama_0945",
+     "fitness_browser_desc": "glutamine--fructose-6-phosphate transaminase (isomerizing)",
+     "refseq_definition": "glucosamine-6-phosphate deaminase NagB-II",
+     "neighbourhood": [
+      "Sama_0942 (+) putative methyl-accepting chemotaxis sensory transducer",
+      "Sama_0943 (+) Beta-N-acetylhexosaminidase",
+      "Sama_0944 (+) hypothetical protein",
+      "Sama_0945 (+) glutamine--fructose-6-phosphate transaminase (isomerizing)",
+      "Sama_0946 (+) N-acetylglucosamine-6-phosphate deacetylase",
+      "Sama_0947 (+) hypothetical protein",
+      "Sama_0948 (+) multiple antibiotic resistance (MarC)-related protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761745_1",
+     "locus": "Sama_3639",
+     "fitness_browser_desc": "glucosamine--fructose-6-phosphate aminotransferase",
+     "refseq_definition": "glutamine--fructose-6-phosphate transaminase (isomerizing)",
+     "neighbourhood": [
+      "Sama_3636 (+) hypothetical protein",
+      "Sama_3637 (-) hypothetical protein",
+      "Sama_3638 (-) hypothetical protein",
+      "Sama_3639 (-) glucosamine--fructose-6-phosphate aminotransferase",
+      "Sama_3640 (-) DeoR family transcriptional regulator",
+      "Sama_3641 (-) TonB-dependent receptor, putative",
+      "Sama_3642 (-) UDP-N-acetylglucosamine diphosphorylase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNS",
+   "name": "Glutamine synthetase",
+   "equation_ids": "atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c",
+   "equation_names": "ATP + L-Glutamate + Ammonium --> ADP + L-Glutamine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759290_1 or WP_011761523_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759290_1",
+     "locus": "Sama_1174",
+     "fitness_browser_desc": "glutamate--ammonia ligase",
+     "refseq_definition": "glutamine synthetase family protein",
+     "neighbourhood": [
+      "Sama_1171 (+) Na+/H+ antiporter NhaC",
+      "Sama_1172 (-) peptidyl-dipeptidase Dcp",
+      "Sama_1173 (+) thymidine kinase",
+      "Sama_1174 (-) glutamate--ammonia ligase",
+      "Sama_1175 (+) choline/carnitine/betaine transport",
+      "Sama_1176 (+) hypothetical protein",
+      "Sama_1177 (+) proton-dependent oligopeptide transporter (POT) family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761523_1",
+     "locus": "Sama_3416",
+     "fitness_browser_desc": "glutamine synthetase",
+     "refseq_definition": "glutamate--ammonia ligase",
+     "neighbourhood": [
+      "Sama_3413 (+) putative iron-regulated membrane protein",
+      "Sama_3414 (+) aminopeptidase-like protein",
+      "Sama_3415 (-) virulence regulator BipA",
+      "Sama_3416 (+) glutamine synthetase",
+      "Sama_3417 (-) kynureninase",
+      "Sama_3418 (-) hypothetical protein",
+      "Sama_3419 (+) AsnC family transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNtex",
+   "name": "L-glutamine transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "gln__L_e <=> gln__L_p",
+   "equation_names": "L-Glutamine <=> L-Glutamine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759367_1 or WP_011761443_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759367_1",
+     "locus": "Sama_1251",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_1248 (-) hypothetical protein",
+      "Sama_1249 (-) ATP-dependent DNA helicase DinG",
+      "Sama_1250 (+) DNA polymerase II",
+      "Sama_1251 (+) outer membrane porin, putative",
+      "Sama_1252 (+) TonB-dependent receptor",
+      "Sama_1253 (+) hypothetical protein",
+      "Sama_1254 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761443_1",
+     "locus": "Sama_3336",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_3333 (+) hypothetical protein",
+      "Sama_3334 (+) ornithine decarboxylase",
+      "Sama_3335 (+) putrescine transporter",
+      "Sama_3336 (+) outer membrane porin, putative",
+      "Sama_3337 (-) homospermidine synthase",
+      "Sama_3338 (-) hypothetical protein",
+      "Sama_3339 (+) GCN5-related N-acetyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759756_1 or spontaneous",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759756_1",
+     "locus": "Sama_1642",
+     "fitness_browser_desc": "carbonate dehydratase",
+     "refseq_definition": "carbonate dehydratase",
+     "neighbourhood": [
+      "Sama_1639 (-) 3-deoxy-manno-octulosonate cytidylyltransferase",
+      "Sama_1640 (-) alcohol dehydrogenase, iron-containing",
+      "Sama_1641 (-) polysaccharide biosynthesis protein",
+      "Sama_1642 (-) carbonate dehydratase",
+      "Sama_1643 (-) hypothetical protein",
+      "Sama_1644 (-) topoisomerase IV, subunit B",
+      "Sama_1645 (-) alpha/beta hydrolase fold"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HSDy",
+   "name": "Homoserine dehydrogenase (NADPH)",
+   "equation_ids": "hom__L_c + nadp_c <=> aspsa_c + h_c + nadph_c",
+   "equation_names": "L-Homoserine + Nicotinamide adenine dinucleotide phosphate <=> L-Aspartate 4-semialdehyde + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759022_1 or WP_011761277_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759022_1",
+     "locus": "Sama_0905",
+     "fitness_browser_desc": "bifunctional aspartokinase I/homeserine dehydrogenase I",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase I",
+     "neighbourhood": [
+      "Sama_0902 (+) putative Trp operon repressor",
+      "Sama_0903 (-) hypothetical protein",
+      "Sama_0904 (-) peptidyl-prolyl cis-trans isomerase SlyD",
+      "Sama_0905 (+) bifunctional aspartokinase I/homeserine dehydrogenase I",
+      "Sama_0906 (+) homoserine kinase",
+      "Sama_0907 (+) threonine synthase",
+      "Sama_0908 (+) signal transduction histidine kinase-like protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761277_1",
+     "locus": "Sama_3170",
+     "fitness_browser_desc": "bifunctional aspartate kinase II/homoserine dehydrogenase II",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase II",
+     "neighbourhood": [
+      "Sama_3167 (-) hypothetical protein",
+      "Sama_3168 (-) hypothetical protein",
+      "Sama_3169 (-) 5,10-methylenetetrahydrofolate reductase",
+      "Sama_3170 (-) bifunctional aspartate kinase II/homoserine dehydrogenase II",
+      "Sama_3171 (-) cystathionine gamma-synthase",
+      "Sama_3172 (+) transcriptional repressor protein MetJ",
+      "Sama_3173 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759849_1 or WP_041410133_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759849_1",
+     "locus": "Sama_1736",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "Sama_1733 (-) aromatic amino acid aminotransferase",
+      "Sama_1734 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "Sama_1735 (+) cytidylate kinase",
+      "Sama_1736 (+) 30S ribosomal protein S1",
+      "Sama_1737 (+) integration host factor subunit beta",
+      "Sama_1738 (+) membrane protein",
+      "Sama_1739 (+) tetratricopeptide repeat protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041410133_1",
+     "locus": "Sama_0927",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "Sama_0924 (+) isoleucyl-tRNA synthetase",
+      "Sama_0925 (+) lipoprotein signal peptidase",
+      "Sama_0926 (+) peptidylprolyl isomerase, FKBP-type",
+      "Sama_0927 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "Sama_0928 (+) type IV pilus assembly protein PilV",
+      "Sama_0929 (+) type IV pilus assembly protein PilW",
+      "Sama_0930 (+) type IV pilus assembly protein PilX"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MALTabc",
+   "name": "Maltose transport via ABC system",
+   "equation_ids": "atp_c + h2o_c + malt_e --> adp_c + h_c + malt_c + pi_c",
+   "equation_names": "ATP + H2O + Maltose --> ADP + H+ + Maltose + Phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "NDPK2",
+   "name": "Nucleoside-diphosphate kinase (ATP:UDP)",
+   "equation_ids": "atp_c + udp_c <=> adp_c + utp_c",
+   "equation_names": "ATP + UDP <=> ADP + UTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759417_1 or WP_011759431_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759417_1",
+     "locus": "Sama_1301",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "Sama_1298 (+) ferredoxin, 2Fe-2S",
+      "Sama_1299 (+) ribosomal protein S6 modification protein",
+      "Sama_1300 (+) hypothetical protein",
+      "Sama_1301 (+) nucleoside diphosphate kinase",
+      "Sama_1302 (-) TraR/DksA family transcriptional regulator",
+      "Sama_1303 (-) NifR3/Smm1 family protein",
+      "Sama_1304 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759431_1",
+     "locus": "Sama_1315",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "Sama_1312 (+) recombination protein RecR",
+      "Sama_1313 (+) heat shock protein 90",
+      "Sama_1314 (+) putative thioredoxin-like protein",
+      "Sama_1315 (+) adenylate kinase",
+      "Sama_1316 (+) ferrochelatase",
+      "Sama_1317 (+) inosine kinase",
+      "Sama_1318 (+) IS1004 transposase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK4",
+   "name": "Nucleoside-diphosphate kinase (ATP:dTDP)",
+   "equation_ids": "atp_c + dtdp_c <=> adp_c + dttp_c",
+   "equation_names": "ATP + DTDP <=> ADP + DTTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759417_1 or WP_011759431_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759417_1",
+     "locus": "Sama_1301",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "Sama_1298 (+) ferredoxin, 2Fe-2S",
+      "Sama_1299 (+) ribosomal protein S6 modification protein",
+      "Sama_1300 (+) hypothetical protein",
+      "Sama_1301 (+) nucleoside diphosphate kinase",
+      "Sama_1302 (-) TraR/DksA family transcriptional regulator",
+      "Sama_1303 (-) NifR3/Smm1 family protein",
+      "Sama_1304 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759431_1",
+     "locus": "Sama_1315",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "Sama_1312 (+) recombination protein RecR",
+      "Sama_1313 (+) heat shock protein 90",
+      "Sama_1314 (+) putative thioredoxin-like protein",
+      "Sama_1315 (+) adenylate kinase",
+      "Sama_1316 (+) ferrochelatase",
+      "Sama_1317 (+) inosine kinase",
+      "Sama_1318 (+) IS1004 transposase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NPHS",
+   "name": "Naphthoate synthase",
+   "equation_ids": "sbzcoa_c --> coa_c + dhna_c",
+   "equation_names": "O-Succinylbenzoyl-CoA --> Coenzyme A + 1,4-Dihydroxy-2-naphthoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759855_1 or WP_011761741_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759855_1",
+     "locus": "Sama_1742",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "DUF2058 domain-containing protein",
+     "neighbourhood": [
+      "Sama_1739 (+) tetratricopeptide repeat protein",
+      "Sama_1740 (+) orotidine 5'-phosphate decarboxylase",
+      "Sama_1741 (+) short chain dehydrogenase",
+      "Sama_1742 (+) hypothetical protein",
+      "Sama_1743 (+) acyl-CoA dehydrogenase family protein",
+      "Sama_1744 (-) Serine-type D-Ala-D-Ala carboxypeptidase",
+      "Sama_1745 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761741_1",
+     "locus": "Sama_3635",
+     "fitness_browser_desc": "naphthoate synthase",
+     "refseq_definition": "1,4-dihydroxy-2-naphthoyl-CoA synthase",
+     "neighbourhood": [
+      "Sama_R0132 (-) 16S ribosomal RNA",
+      "Sama_3633 (-) iron-sulfur cluster-binding protein",
+      "Sama_3634 (+) hypothetical protein",
+      "Sama_3635 (+) naphthoate synthase",
+      "Sama_3636 (+) hypothetical protein",
+      "Sama_3637 (-) hypothetical protein",
+      "Sama_3638 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "OMCDC",
+   "name": "2-Oxo-4-methyl-3-carboxypentanoate decarboxylation",
+   "equation_ids": "3c4mop_c + h_c --> 4mop_c + co2_c",
+   "equation_names": "3-Carboxy-4-methyl-2-oxopentanoate + H+ --> 4-Methyl-2-oxopentanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758457_1 or spontaneous",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758457_1",
+     "locus": "Sama_0336",
+     "fitness_browser_desc": "3-isopropylmalate dehydrogenase",
+     "refseq_definition": "3-isopropylmalate dehydrogenase",
+     "neighbourhood": [
+      "Sama_0333 (+) ATP-dependent DNA helicase RecQ",
+      "Sama_0334 (-) tetratricopeptide TPR_2",
+      "Sama_0335 (+) 2-isopropylmalate synthase",
+      "Sama_0336 (+) 3-isopropylmalate dehydrogenase",
+      "Sama_0337 (+) isopropylmalate isomerase large subunit",
+      "Sama_0338 (+) isopropylmalate isomerase small subunit",
+      "Sama_0339 (+) membrane protein involved in aromatic hydrocarbon degradation"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "PGAMT",
+   "name": "Phosphoglucosamine mutase",
+   "equation_ids": "gam1p_c <=> gam6p_c",
+   "equation_names": "D-Glucosamine 1-phosphate <=> D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759072_1 or WP_011759820_1 or WP_011760356_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759072_1",
+     "locus": "Sama_0956",
+     "fitness_browser_desc": "phosphoglucosamine mutase",
+     "refseq_definition": "phosphoglucosamine mutase",
+     "neighbourhood": [
+      "Sama_0953 (+) 23S rRNA methyltransferase J",
+      "Sama_0954 (+) vesicle-fusing ATPase",
+      "Sama_0955 (+) dihydropteroate synthase",
+      "Sama_0956 (+) phosphoglucosamine mutase",
+      "Sama_0957 (+) Triose-phosphate isomerase",
+      "Sama_0958 (+) preprotein translocase subunit SecG",
+      "Sama_R0035 (+) tRNA-Leu"
+     ]
+    },
+    {
+     "model_gene": "WP_011759820_1",
+     "locus": "Sama_1706",
+     "fitness_browser_desc": "phosphoglucomutase",
+     "refseq_definition": "phosphoglucomutase (alpha-D-glucose-1,6-bisphosphate-dependent)",
+     "neighbourhood": [
+      "Sama_1703 (-) hypothetical protein",
+      "Sama_1704 (-) alpha/beta fold family hydrolase",
+      "Sama_1705 (+) replication initiation regulator SeqA",
+      "Sama_1706 (+) phosphoglucomutase",
+      "Sama_1707 (-) protein-methionine-S-oxide reductase",
+      "Sama_1708 (+) succinylglutamate desuccinylase",
+      "Sama_1709 (+) 3-methyl-2-oxobutanoate dehydrogenase (2-methylpropanoyl-transferring)"
+     ]
+    },
+    {
+     "model_gene": "WP_011760356_1",
+     "locus": "Sama_2243",
+     "fitness_browser_desc": "phosphoglucosamine mutase",
+     "refseq_definition": "phosphoglucosamine mutase",
+     "neighbourhood": [
+      "Sama_2240 (-) glucose-1-phosphate thymidylyltransferase",
+      "Sama_2241 (-) hypothetical protein",
+      "Sama_2242 (-) dTDP-glucose 4,6-dehydratase",
+      "Sama_2243 (-) phosphoglucosamine mutase",
+      "Sama_2244 (-) polysaccharide biosynthesis protein",
+      "Sama_2245 (-) pilin glycosylation protein",
+      "Sama_2246 (-) methionyl-tRNA formyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PGMT",
+   "name": "Phosphoglucomutase",
+   "equation_ids": "g1p_c <=> g6p_c",
+   "equation_names": "D-Glucose 1-phosphate <=> D-Glucose 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758502_1 or WP_011759820_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758502_1",
+     "locus": "Sama_0381",
+     "fitness_browser_desc": "2-deoxyglucose-6-phosphatase",
+     "refseq_definition": "hexitol phosphatase HxpB",
+     "neighbourhood": [
+      "Sama_0378 (+) sensory box protein",
+      "Sama_0379 (+) hypothetical protein",
+      "Sama_0380 (+) endothelin-converting protein 1",
+      "Sama_0381 (-) 2-deoxyglucose-6-phosphatase",
+      "Sama_0382 (+) bifunctional aconitate hydratase 2/2-methylisocitrate dehydratase",
+      "Sama_0383 (-) ATP-dependent RNA helicase RhlE",
+      "Sama_0384 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011759820_1",
+     "locus": "Sama_1706",
+     "fitness_browser_desc": "phosphoglucomutase",
+     "refseq_definition": "phosphoglucomutase (alpha-D-glucose-1,6-bisphosphate-dependent)",
+     "neighbourhood": [
+      "Sama_1703 (-) hypothetical protein",
+      "Sama_1704 (-) alpha/beta fold family hydrolase",
+      "Sama_1705 (+) replication initiation regulator SeqA",
+      "Sama_1706 (+) phosphoglucomutase",
+      "Sama_1707 (-) protein-methionine-S-oxide reductase",
+      "Sama_1708 (+) succinylglutamate desuccinylase",
+      "Sama_1709 (+) 3-methyl-2-oxobutanoate dehydrogenase (2-methylpropanoyl-transferring)"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759918_1 or WP_011760129_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759918_1",
+     "locus": "Sama_1805",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "Sama_1802 (-) hypothetical protein",
+      "Sama_1803 (-) bax protein, putative",
+      "Sama_1804 (+) hypothetical protein",
+      "Sama_1805 (-) aromatic amino acid aminotransferase",
+      "Sama_R0068 (-) tRNA-Cys",
+      "Sama_R0069 (-) tRNA-Gly",
+      "Sama_1806 (-) glyceraldehyde-3-phosphate dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_011760129_1",
+     "locus": "Sama_2016",
+     "fitness_browser_desc": "GntR family transcriptional regulator",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "Sama_2013 (+) hypothetical protein",
+      "Sama_2014 (-) sulfate permease family protein",
+      "Sama_2015 (-) hypothetical protein",
+      "Sama_2016 (+) GntR family transcriptional regulator",
+      "Sama_2017 (+) bicyclomycin resistance protein",
+      "Sama_2018 (+) acetolactate synthase 3 catalytic subunit",
+      "Sama_2019 (+) acetolactate synthase 3 regulatory subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PMPK",
+   "name": "Phosphomethylpyrimidine kinase",
+   "equation_ids": "4ampm_c + atp_c --> 2mahmp_c + adp_c",
+   "equation_names": "4-Amino-2-methyl-5-phosphomethylpyrimidine + ATP --> 2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate + ADP",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": []
+  },
+  {
+   "reaction": "PPA",
+   "name": "Inorganic diphosphatase",
+   "equation_ids": "h2o_c + ppi_c --> h_c + 2.0 pi_c",
+   "equation_names": "H2O + Diphosphate --> H+ + 2.0 Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758716_1 or WP_011759157_1 or WP_011760125_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758716_1",
+     "locus": "Sama_0598",
+     "fitness_browser_desc": "inorganic pyrophosphatase",
+     "refseq_definition": "inorganic diphosphatase",
+     "neighbourhood": [
+      "Sama_0595 (+) sodium:dicarboxylate symporter",
+      "Sama_0596 (+) IS1004 transposase",
+      "Sama_0597 (-) hypothetical protein",
+      "Sama_0598 (-) inorganic pyrophosphatase",
+      "Sama_0599 (-) fructose-1,6-bisphosphatase",
+      "Sama_0600 (+) dipeptidyl peptidase IV",
+      "Sama_0601 (-) two-component response regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_011759157_1",
+     "locus": "Sama_1041",
+     "fitness_browser_desc": "stationary phase survival protein SurE",
+     "refseq_definition": "5'/3'-nucleotidase SurE",
+     "neighbourhood": [
+      "Sama_1038 (+) 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase",
+      "Sama_1039 (+) 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+      "Sama_1040 (+) pseudouridylate synthase",
+      "Sama_1041 (+) stationary phase survival protein SurE",
+      "Sama_1042 (+) protein-L-isoaspartate(D-aspartate) O-methyltransferase",
+      "Sama_1043 (+) lipoprotein NlpD",
+      "Sama_1044 (+) RNA polymerase sigma-38 factor"
+     ]
+    },
+    {
+     "model_gene": "WP_011760125_1",
+     "locus": "Sama_2012",
+     "fitness_browser_desc": "guanosine-5'-triphosphate,3'-diphosphate diphosphatase",
+     "refseq_definition": "Ppx/GppA phosphatase family protein",
+     "neighbourhood": [
+      "Sama_2009 (-) creA protein",
+      "Sama_2010 (-) putative chaperone",
+      "Sama_2011 (+) polyphosphate kinase",
+      "Sama_2012 (+) guanosine-5'-triphosphate,3'-diphosphate diphosphatase",
+      "Sama_2013 (+) hypothetical protein",
+      "Sama_2014 (-) sulfate permease family protein",
+      "Sama_2015 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PYRtex",
+   "name": "Pyruvate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "pyr_e <=> pyr_p",
+   "equation_names": "Pyruvate <=> Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759367_1 or WP_011761443_1 or WP_086015256_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759367_1",
+     "locus": "Sama_1251",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_1248 (-) hypothetical protein",
+      "Sama_1249 (-) ATP-dependent DNA helicase DinG",
+      "Sama_1250 (+) DNA polymerase II",
+      "Sama_1251 (+) outer membrane porin, putative",
+      "Sama_1252 (+) TonB-dependent receptor",
+      "Sama_1253 (+) hypothetical protein",
+      "Sama_1254 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761443_1",
+     "locus": "Sama_3336",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Sama_3333 (+) hypothetical protein",
+      "Sama_3334 (+) ornithine decarboxylase",
+      "Sama_3335 (+) putrescine transporter",
+      "Sama_3336 (+) outer membrane porin, putative",
+      "Sama_3337 (-) homospermidine synthase",
+      "Sama_3338 (-) hypothetical protein",
+      "Sama_3339 (+) GCN5-related N-acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_086015256_1",
+     "locus": "Sama_3096",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Sama_3093 (+) magnesium transporter",
+      "Sama_3094 (-) hypothetical protein",
+      "Sama_3095 (-) molybdate ABC transporter periplasmic molybdate-binding protein",
+      "Sama_3096 (-) OmpA family protein",
+      "Sama_3097 (+) putative transposase",
+      "Sama_3098 (+) GGDEF family protein",
+      "Sama_3099 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SDPDS",
+   "name": "Succinyl-diaminopimelate desuccinylase",
+   "equation_ids": "h2o_c + sl26da_c --> 26dap_LL_c + succ_c",
+   "equation_names": "H2O + N-Succinyl-LL-2,6-diaminoheptanedioate --> LL-2,6-Diaminoheptanedioate + Succinate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759680_1 or WP_011759761_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759680_1",
+     "locus": "Sama_1565",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "dipeptidase",
+     "neighbourhood": [
+      "Sama_1562 (-) ferrichrome-binding protein",
+      "Sama_1563 (-) bifunctional 2',3'-cyclic nucleotide 2'-phosphodiesterase/3'-nucleotidase periplasmic precursor protein",
+      "Sama_1564 (-) peptidyl-dipeptidase Dcp",
+      "Sama_1565 (+) hypothetical protein",
+      "Sama_1566 (-) gamma-glutamyltransferase",
+      "Sama_1567 (-) amino acid transporter LysE",
+      "Sama_1568 (-) 4-hydroxyphenylpyruvate dioxygenase"
+     ]
+    },
+    {
+     "model_gene": "WP_011759761_1",
+     "locus": "Sama_1647",
+     "fitness_browser_desc": "succinyl-diaminopimelate desuccinylase",
+     "refseq_definition": "succinyl-diaminopimelate desuccinylase",
+     "neighbourhood": [
+      "Sama_1644 (-) topoisomerase IV, subunit B",
+      "Sama_1645 (-) alpha/beta hydrolase fold",
+      "Sama_1646 (-) D-alanyl-D-alanine carboxypeptidase-related protein",
+      "Sama_1647 (-) succinyl-diaminopimelate desuccinylase",
+      "Sama_1648 (-) hypothetical protein",
+      "Sama_1649 (-) glucose-specific PTS system component",
+      "Sama_1650 (-) phosphotransferase system, enzyme I"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SUCBZL",
+   "name": "O-succinylbenzoate-CoA ligase",
+   "equation_ids": "atp_c + coa_c + sucbz_c --> amp_c + ppi_c + sbzcoa_c",
+   "equation_names": "ATP + Coenzyme A + O-Succinylbenzoate --> AMP + Diphosphate + O-Succinylbenzoyl-CoA",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759300_1 or WP_011761570_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759300_1",
+     "locus": "Sama_1184",
+     "fitness_browser_desc": "peptide synthase",
+     "refseq_definition": "olefin beta-lactone synthetase",
+     "neighbourhood": [
+      "Sama_1181 (+) hypothetical protein",
+      "Sama_1182 (+) 3-oxoacyl-(acyl carrier protein) synthase III",
+      "Sama_1183 (+) alpha/beta fold family hydrolase",
+      "Sama_1184 (+) peptide synthase",
+      "Sama_1185 (+) steroid dehydrogenase",
+      "Sama_1186 (-) Slt family transglycosylase",
+      "Sama_1187 (+) ABC transporter, ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011761570_1",
+     "locus": "Sama_3463",
+     "fitness_browser_desc": "O-succinylbenzoic acid--CoA ligase",
+     "refseq_definition": "o-succinylbenzoate--CoA ligase",
+     "neighbourhood": [
+      "Sama_3460 (+) 2-succinyl-5-enolpyruvyl-6-hydroxy-3- cyclohexene-1-carboxylate synthase",
+      "Sama_3461 (+) alpha/beta fold family hydrolase",
+      "Sama_3462 (+) O-succinylbenzoate synthase",
+      "Sama_3463 (+) O-succinylbenzoic acid--CoA ligase",
+      "Sama_3464 (-) IS1004 transposase",
+      "Sama_3465 (-) RNA polymerase factor sigma-32",
+      "Sama_3466 (-) cell division ABC transporter, permease protein FtsX"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "THDPS",
+   "name": "Tetrahydrodipicolinate succinylase",
+   "equation_ids": "h2o_c + succoa_c + thdp_c --> coa_c + sl2a6o_c",
+   "equation_names": "H2O + Succinyl-CoA + 2,3,4,5-Tetrahydrodipicolinate --> Coenzyme A + N-Succinyl-2-L-amino-6-oxoheptanedioate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759252_1 or WP_011759499_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759252_1",
+     "locus": "Sama_1136",
+     "fitness_browser_desc": "2,3,4,5-tetrahydropyridine-2,6-carboxylate N-succinyltransferase",
+     "refseq_definition": "2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase",
+     "neighbourhood": [
+      "Sama_1133 (+) PTS system, glucose-specific IIBC component",
+      "Sama_1134 (+) formyltetrahydrofolate deformylase",
+      "Sama_1135 (-) hypothetical protein",
+      "Sama_1136 (-) 2,3,4,5-tetrahydropyridine-2,6-carboxylate N-succinyltransferase",
+      "Sama_1137 (-) PII uridylyl-transferase",
+      "Sama_1138 (-) methionine aminopeptidase",
+      "Sama_1139 (+) 30S ribosomal protein S2"
+     ]
+    },
+    {
+     "model_gene": "WP_011759499_1",
+     "locus": "Sama_1384",
+     "fitness_browser_desc": "streptogramin A acetyl transferase",
+     "refseq_definition": "Vat family streptogramin A O-acetyltransferase",
+     "neighbourhood": [
+      "Sama_1381 (+) 3-ketoacyl-(acyl-carrier-protein) reductase",
+      "Sama_1382 (+) hypothetical protein",
+      "Sama_1383 (+) prolyl oligopeptidase family protein",
+      "Sama_1384 (-) streptogramin A acetyl transferase",
+      "Sama_1385 (-) hypothetical protein",
+      "Sama_1386 (+) ABC transporter, ATP-binding protein",
+      "Sama_1387 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMPK",
+   "name": "Thiamine-phosphate kinase",
+   "equation_ids": "atp_c + thmmp_c --> adp_c + thmpp_c",
+   "equation_names": "ATP + Thiamin monophosphate --> ADP + Thiamine diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011760542_1 or WP_041410146_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011760542_1",
+     "locus": "Sama_2431",
+     "fitness_browser_desc": "thiamine biosynthesis protein ThiI",
+     "refseq_definition": "tRNA uracil 4-sulfurtransferase ThiI",
+     "neighbourhood": [
+      "Sama_2428 (-) hypothetical protein",
+      "Sama_2429 (-) DNA-binding transcriptional activator GcvA",
+      "Sama_2430 (+) hypothetical protein",
+      "Sama_2431 (-) thiamine biosynthesis protein ThiI",
+      "Sama_2432 (-) flagellar motor protein MotB",
+      "Sama_2433 (-) flagellar motor protein PomA",
+      "Sama_2434 (+) exodeoxyribonuclease VII, small subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_041410146_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "thiamine-phosphate kinase"
+    }
+   ]
+  },
+  {
+   "reaction": "UDCPDP",
+   "name": "Undecaprenyl-diphosphatase",
+   "equation_ids": "h2o_c + udcpdp_c --> h_c + pi_c + udcpp_c",
+   "equation_names": "H2O + Undecaprenyl diphosphate --> H+ + Phosphate + Undecaprenyl phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011758271_1 or WP_011758948_1 or WP_011761382_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011758271_1",
+     "locus": "Sama_0148",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "phosphatase PAP2 family protein",
+     "neighbourhood": [
+      "Sama_0145 (+) endonuclease",
+      "Sama_0146 (+) response regulator receiver protein",
+      "Sama_0147 (+) signal transduction histidine kinase-like protein",
+      "Sama_0148 (+) hypothetical protein",
+      "Sama_0149 (+) hypothetical protein",
+      "Sama_0150 (+) putative SAM-dependent methyltransferase",
+      "Sama_0151 (+) serine protease"
+     ]
+    },
+    {
+     "model_gene": "WP_011758948_1",
+     "locus": "Sama_0831",
+     "fitness_browser_desc": "undecaprenyl pyrophosphate phosphatase",
+     "refseq_definition": "undecaprenyl-diphosphate phosphatase",
+     "neighbourhood": [
+      "Sama_0828 (-) putative glycerol-3-phosphate acyltransferase PlsY",
+      "Sama_0829 (+) dihydroneopterin aldolase",
+      "Sama_0830 (+) 2-amino-4-hydroxy-6- hydroxymethyldihydropteridine pyrophosphokinase",
+      "Sama_0831 (+) undecaprenyl pyrophosphate phosphatase",
+      "Sama_0832 (+) ribosomal RNA large subunit methyltransferase A, putative",
+      "Sama_0833 (-) major outer membrane lipoprotein, putative",
+      "Sama_0834 (-) polynucleotide adenylyltransferase region"
+     ]
+    },
+    {
+     "model_gene": "WP_011761382_1",
+     "locus": "Sama_3275",
+     "fitness_browser_desc": "phosphatidylglycerophosphatase B, putative",
+     "refseq_definition": "phosphatase PAP2 family protein",
+     "neighbourhood": [
+      "Sama_3272 (-) urease accessory protein UreJ",
+      "Sama_3273 (-) hypothetical protein",
+      "Sama_3274 (+) hypothetical protein",
+      "Sama_3275 (+) phosphatidylglycerophosphatase B, putative",
+      "Sama_3276 (-) ABC-type amino acid transport/signal transduction system",
+      "Sama_3277 (-) Serine--pyruvate transaminase",
+      "Sama_3278 (-) threonine dehydratase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011759257_1 or WP_011759848_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 15,
+   "genes": [
+    {
+     "model_gene": "WP_011759257_1",
+     "locus": "Sama_1141",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "UMP kinase",
+     "neighbourhood": [
+      "Sama_1138 (-) methionine aminopeptidase",
+      "Sama_1139 (+) 30S ribosomal protein S2",
+      "Sama_1140 (+) elongation factor Ts",
+      "Sama_1141 (+) uridylate kinase",
+      "Sama_1142 (+) ribosome recycling factor",
+      "Sama_1143 (+) di-trans,poly-cis-decaprenylcistransferase",
+      "Sama_1144 (+) phosphatidate cytidylyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011759848_1",
+     "locus": "Sama_1735",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "(d)CMP kinase",
+     "neighbourhood": [
+      "Sama_1732 (+) phosphoserine aminotransferase",
+      "Sama_1733 (-) aromatic amino acid aminotransferase",
+      "Sama_1734 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "Sama_1735 (+) cytidylate kinase",
+      "Sama_1736 (+) 30S ribosomal protein S1",
+      "Sama_1737 (+) integration host factor subunit beta",
+      "Sama_1738 (+) membrane protein"
+     ]
+    }
+   ]
+  }
+ ]
+}

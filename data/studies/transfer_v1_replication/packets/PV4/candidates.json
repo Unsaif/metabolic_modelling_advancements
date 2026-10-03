@@ -1,0 +1,2180 @@
+{
+ "org": "PV4",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 10,
+ "candidates": [
+  {
+   "reaction": "ACHBS",
+   "name": "2-aceto-2-hydroxybutanoate synthase",
+   "equation_ids": "2obut_c + h_c + pyr_c --> 2ahbut_c + co2_c",
+   "equation_names": "2-Oxobutanoate + H+ + Pyruvate --> (S)-2-Aceto-2-hydroxybutanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_011864095_1 and WP_011864096_1) or (WP_011865573_1 and WP_011865574_1)",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864095_1",
+     "locus": "Shew_0289",
+     "fitness_browser_desc": "acetolactate synthase 2 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 2 catalytic subunit",
+     "neighbourhood": [
+      "Shew_0286 (-) extracellular solute-binding protein",
+      "Shew_0287 (-) DNA-binding transcriptional regulator IlvY",
+      "Shew_0288 (+) ketol-acid reductoisomerase",
+      "Shew_0289 (+) acetolactate synthase 2 catalytic subunit",
+      "Shew_0290 (+) acetolactate synthase 2 regulatory subunit",
+      "Shew_0291 (+) branched-chain amino acid aminotransferase",
+      "Shew_0292 (+) dihydroxy-acid dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_011864096_1",
+     "locus": "Shew_0290",
+     "fitness_browser_desc": "acetolactate synthase 2 regulatory subunit",
+     "refseq_definition": "acetolactate synthase 2 small subunit",
+     "neighbourhood": [
+      "Shew_0287 (-) DNA-binding transcriptional regulator IlvY",
+      "Shew_0288 (+) ketol-acid reductoisomerase",
+      "Shew_0289 (+) acetolactate synthase 2 catalytic subunit",
+      "Shew_0290 (+) acetolactate synthase 2 regulatory subunit",
+      "Shew_0291 (+) branched-chain amino acid aminotransferase",
+      "Shew_0292 (+) dihydroxy-acid dehydratase",
+      "Shew_0293 (+) threonine dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_011865573_1",
+     "locus": "Shew_1775",
+     "fitness_browser_desc": "acetolactate synthase 3 regulatory subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "Shew_1772 (+) NapC/NirT family periplasmic nitrate (or nitrite) reductase c-type cytochrome",
+      "Shew_1773 (-) LysR family transcriptional regulator",
+      "Shew_1774 (+) excinuclease ATPase subunit",
+      "Shew_1775 (-) acetolactate synthase 3 regulatory subunit",
+      "Shew_1776 (-) acetolactate synthase 3 catalytic subunit",
+      "Shew_1777 (-) Bcr/CflA subfamily drug resistance transporter",
+      "Shew_1778 (-) glutamine amidotransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011865574_1",
+     "locus": "Shew_1776",
+     "fitness_browser_desc": "acetolactate synthase 3 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 3 large subunit",
+     "neighbourhood": [
+      "Shew_1773 (-) LysR family transcriptional regulator",
+      "Shew_1774 (+) excinuclease ATPase subunit",
+      "Shew_1775 (-) acetolactate synthase 3 regulatory subunit",
+      "Shew_1776 (-) acetolactate synthase 3 catalytic subunit",
+      "Shew_1777 (-) Bcr/CflA subfamily drug resistance transporter",
+      "Shew_1778 (-) glutamine amidotransferase",
+      "Shew_1779 (+) alkaline phosphatase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_011864095_1 and WP_011864096_1) or (WP_011865573_1 and WP_011865574_1)",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864095_1",
+     "locus": "Shew_0289",
+     "fitness_browser_desc": "acetolactate synthase 2 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 2 catalytic subunit",
+     "neighbourhood": [
+      "Shew_0286 (-) extracellular solute-binding protein",
+      "Shew_0287 (-) DNA-binding transcriptional regulator IlvY",
+      "Shew_0288 (+) ketol-acid reductoisomerase",
+      "Shew_0289 (+) acetolactate synthase 2 catalytic subunit",
+      "Shew_0290 (+) acetolactate synthase 2 regulatory subunit",
+      "Shew_0291 (+) branched-chain amino acid aminotransferase",
+      "Shew_0292 (+) dihydroxy-acid dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_011864096_1",
+     "locus": "Shew_0290",
+     "fitness_browser_desc": "acetolactate synthase 2 regulatory subunit",
+     "refseq_definition": "acetolactate synthase 2 small subunit",
+     "neighbourhood": [
+      "Shew_0287 (-) DNA-binding transcriptional regulator IlvY",
+      "Shew_0288 (+) ketol-acid reductoisomerase",
+      "Shew_0289 (+) acetolactate synthase 2 catalytic subunit",
+      "Shew_0290 (+) acetolactate synthase 2 regulatory subunit",
+      "Shew_0291 (+) branched-chain amino acid aminotransferase",
+      "Shew_0292 (+) dihydroxy-acid dehydratase",
+      "Shew_0293 (+) threonine dehydratase"
+     ]
+    },
+    {
+     "model_gene": "WP_011865573_1",
+     "locus": "Shew_1775",
+     "fitness_browser_desc": "acetolactate synthase 3 regulatory subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "Shew_1772 (+) NapC/NirT family periplasmic nitrate (or nitrite) reductase c-type cytochrome",
+      "Shew_1773 (-) LysR family transcriptional regulator",
+      "Shew_1774 (+) excinuclease ATPase subunit",
+      "Shew_1775 (-) acetolactate synthase 3 regulatory subunit",
+      "Shew_1776 (-) acetolactate synthase 3 catalytic subunit",
+      "Shew_1777 (-) Bcr/CflA subfamily drug resistance transporter",
+      "Shew_1778 (-) glutamine amidotransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011865574_1",
+     "locus": "Shew_1776",
+     "fitness_browser_desc": "acetolactate synthase 3 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 3 large subunit",
+     "neighbourhood": [
+      "Shew_1773 (-) LysR family transcriptional regulator",
+      "Shew_1774 (+) excinuclease ATPase subunit",
+      "Shew_1775 (-) acetolactate synthase 3 regulatory subunit",
+      "Shew_1776 (-) acetolactate synthase 3 catalytic subunit",
+      "Shew_1777 (-) Bcr/CflA subfamily drug resistance transporter",
+      "Shew_1778 (-) glutamine amidotransferase",
+      "Shew_1779 (+) alkaline phosphatase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACtex",
+   "name": "Acetate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ac_e <=> ac_p",
+   "equation_names": "Acetate <=> Acetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864713_1 or WP_011865590_1 or WP_011866080_1 or WP_011866278_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864713_1",
+     "locus": "Shew_0908",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Shew_0905 (-) response regulator receiver protein",
+      "Shew_0906 (-) Hpt protein",
+      "Shew_0907 (-) PAS/PAC sensor hybrid histidine kinase",
+      "Shew_0908 (-) OmpA/MotB domain-containing protein",
+      "Shew_0909 (-) hypothetical protein",
+      "Shew_0910 (+) hypothetical protein",
+      "Shew_0911 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011865590_1",
+     "locus": "Shew_1792",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "sortase-associated OmpA-like protein PdsO",
+     "neighbourhood": [
+      "Shew_1789 (-) cystathionine beta-lyase",
+      "Shew_1790 (-) integral membrane sensor signal transduction histidine kinase",
+      "Shew_1791 (-) two component transcriptional regulator",
+      "Shew_1792 (+) OmpA/MotB domain-containing protein",
+      "Shew_1793 (+) vault protein inter-alpha-trypsin subunit",
+      "Shew_1794 (+) sortase family protein",
+      "Shew_1795 (-) diguanylate cyclase"
+     ]
+    },
+    {
+     "model_gene": "WP_011866080_1",
+     "locus": "Shew_2283",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2280 (-) phenylalanine/histidine ammonia-lyase",
+      "Shew_2281 (-) flavocytochrome c",
+      "Shew_2282 (+) Fis family transcriptional regulator",
+      "Shew_2283 (-) porin",
+      "Shew_2284 (+) hypothetical protein",
+      "Shew_2285 (-) UDP-glucose 4-epimerase",
+      "Shew_2286 (-) SSS family solute/sodium (Na+) symporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011866278_1",
+     "locus": "Shew_2481",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2478 (-) hypothetical protein",
+      "Shew_2479 (-) methyltransferase type 11",
+      "Shew_2480 (-) TonB-dependent receptor",
+      "Shew_2481 (-) porin",
+      "Shew_2482 (-) DNA polymerase II",
+      "Shew_2483 (+) ATP-dependent DNA helicase DinG",
+      "Shew_2484 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ADSK",
+   "name": "Adenylyl-sulfate kinase",
+   "equation_ids": "aps_c + atp_c --> adp_c + h_c + paps_c",
+   "equation_names": "Adenosine 5'-phosphosulfate + ATP --> ADP + H+ + 3'-Phosphoadenylyl sulfate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865224_1 or WP_011865373_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865224_1",
+     "locus": "Shew_1425",
+     "fitness_browser_desc": "adenylyl-sulfate kinase",
+     "refseq_definition": "adenylyl-sulfate kinase",
+     "neighbourhood": [
+      "Shew_1422 (+) sulfate adenylyltransferase subunit 2",
+      "Shew_1423 (+) sulfate adenylyltransferase, large subunit",
+      "Shew_1424 (+) TrkA domain-containing protein",
+      "Shew_1425 (+) adenylyl-sulfate kinase",
+      "Shew_1426 (-) hypothetical protein",
+      "Shew_1427 (+) 3'(2'),5'-bisphosphate nucleotidase",
+      "Shew_1428 (+) fructokinase"
+     ]
+    },
+    {
+     "model_gene": "WP_011865373_1",
+     "locus": "Shew_1574",
+     "fitness_browser_desc": "ATP-binding Mrp/Nbp35 family protein",
+     "refseq_definition": "iron-sulfur cluster carrier protein ApbC",
+     "neighbourhood": [
+      "Shew_1571 (-) hypothetical protein",
+      "Shew_1572 (+) hypothetical protein",
+      "Shew_1573 (-) methionyl-tRNA synthetase",
+      "Shew_1574 (+) ATP-binding Mrp/Nbp35 family protein",
+      "Shew_1575 (+) uridine kinase",
+      "Shew_1576 (+) deoxycytidine triphosphate deaminase",
+      "Shew_1577 (+) aminotransferase, class IV"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "AGDC",
+   "name": "N-acetylglucosamine-6-phosphate deacetylase",
+   "equation_ids": "acgam6p_c + h2o_c --> ac_c + gam6p_c",
+   "equation_names": "N-Acetyl-D-glucosamine 6-phosphate + H2O --> Acetate + D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864921_1 or WP_041406227_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864921_1",
+     "locus": "Shew_1117",
+     "fitness_browser_desc": "N-acetylglucosamine-6-phosphate deacetylase",
+     "refseq_definition": "N-acetylglucosamine-6-phosphate deacetylase",
+     "neighbourhood": [
+      "Shew_1114 (-) SapC family protein",
+      "Shew_1115 (+) Beta-N-acetylhexosaminidase",
+      "Shew_1116 (+) ATPase, BadF/BadG/BcrA/BcrD type",
+      "Shew_1117 (+) N-acetylglucosamine-6-phosphate deacetylase",
+      "Shew_1118 (+) hypothetical protein",
+      "Shew_1119 (+) glucose/galactose transporter",
+      "Shew_R0024 (-) tRNA-Thr"
+     ]
+    },
+    {
+     "model_gene": "WP_041406227_1",
+     "locus": "Shew_0013",
+     "fitness_browser_desc": "amidohydrolase",
+     "refseq_definition": "amidohydrolase family protein",
+     "neighbourhood": [
+      "Shew_0010 (-) glycyl-tRNA synthetase subunit alpha",
+      "Shew_0011 (+) DNA-3-methyladenine glycosylase I",
+      "Shew_0012 (-) hypothetical protein",
+      "Shew_0013 (-) amidohydrolase",
+      "Shew_0014 (-) hypothetical protein",
+      "Shew_0015 (-) SirA family protein",
+      "Shew_0016 (-) ybaK/ebsC protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ARGSS",
+   "name": "Argininosuccinate synthase",
+   "equation_ids": "asp__L_c + atp_c + citr__L_c --> amp_c + argsuc_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + L-Citrulline --> AMP + N(omega)-(L-Arginino)succinate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864012_1 or WP_011864013_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864012_1",
+     "locus": "Shew_0205",
+     "fitness_browser_desc": "argininosuccinate synthase",
+     "refseq_definition": "argininosuccinate synthase",
+     "neighbourhood": [
+      "Shew_0202 (+) N-acetyl-gamma-glutamyl-phosphate reductase",
+      "Shew_0203 (+) acetylglutamate kinase",
+      "Shew_0204 (+) ornithine carbamoyltransferase",
+      "Shew_0205 (+) argininosuccinate synthase",
+      "Shew_0206 (+) argininosuccinate lyase",
+      "Shew_0207 (-) 1A family penicillin-binding protein",
+      "Shew_0208 (+) type IV pilus assembly protein PilM"
+     ]
+    },
+    {
+     "model_gene": "WP_011864013_1",
+     "locus": "Shew_0206",
+     "fitness_browser_desc": "argininosuccinate lyase",
+     "refseq_definition": "argininosuccinate lyase",
+     "neighbourhood": [
+      "Shew_0203 (+) acetylglutamate kinase",
+      "Shew_0204 (+) ornithine carbamoyltransferase",
+      "Shew_0205 (+) argininosuccinate synthase",
+      "Shew_0206 (+) argininosuccinate lyase",
+      "Shew_0207 (-) 1A family penicillin-binding protein",
+      "Shew_0208 (+) type IV pilus assembly protein PilM",
+      "Shew_0209 (+) fimbrial assembly family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASNS1",
+   "name": "Asparagine synthase (glutamine-hydrolysing)",
+   "equation_ids": "asp__L_c + atp_c + gln__L_c + h2o_c --> amp_c + asn__L_c + glu__L_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + L-Glutamine + H2O --> AMP + L-Asparagine + L-Glutamate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865308_1 or WP_011866834_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865308_1",
+     "locus": "Shew_1509",
+     "fitness_browser_desc": "asparagine synthetase B",
+     "refseq_definition": "asparagine synthase B",
+     "neighbourhood": [
+      "Shew_1506 (+) glyoxalase/bleomycin resistance protein/dioxygenase",
+      "Shew_1507 (+) 5-carboxymethyl-2-hydroxymuconate isomerase",
+      "Shew_1508 (+) extracellular solute-binding protein",
+      "Shew_1509 (-) asparagine synthetase B",
+      "Shew_1510 (-) peptidase M28",
+      "Shew_1511 (-) UMP phosphatase",
+      "Shew_1512 (-) phosphoribosylglycinamide formyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011866834_1",
+     "locus": "Shew_3038",
+     "fitness_browser_desc": "asparagine synthase (glutamine-hydrolyzing)",
+     "refseq_definition": "N-acetylglutaminylglutamine amidotransferase",
+     "neighbourhood": [
+      "Shew_3035 (-) hypothetical protein",
+      "Shew_3036 (-) hypothetical protein",
+      "Shew_3037 (-) alpha-L-glutamate ligase",
+      "Shew_3038 (+) asparagine synthase (glutamine-hydrolyzing)",
+      "Shew_3039 (-) hypothetical protein",
+      "Shew_3040 (+) hypothetical protein",
+      "Shew_3041 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPK",
+   "name": "Aspartate kinase",
+   "equation_ids": "asp__L_c + atp_c <=> 4pasp_c + adp_c",
+   "equation_names": "L-Aspartate + ATP <=> 4-Phospho-L-aspartate + ADP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864327_1 or WP_011864585_1 or WP_011864883_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864327_1",
+     "locus": "Shew_0521",
+     "fitness_browser_desc": "bifunctional aspartate kinase II/homoserine dehydrogenase II",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase II",
+     "neighbourhood": [
+      "Shew_0518 (-) hypothetical protein",
+      "Shew_0519 (-) transcriptional repressor protein MetJ",
+      "Shew_0520 (+) O-succinylhomoserine (thiol)-lyase",
+      "Shew_0521 (+) bifunctional aspartate kinase II/homoserine dehydrogenase II",
+      "Shew_0522 (+) 5,10-methylenetetrahydrofolate reductase",
+      "Shew_0523 (+) cytochrome c family protein",
+      "Shew_0524 (+) cytochrome c, class I"
+     ]
+    },
+    {
+     "model_gene": "WP_011864585_1",
+     "locus": "Shew_0779",
+     "fitness_browser_desc": "aspartate kinase III",
+     "refseq_definition": "lysine-sensitive aspartokinase 3",
+     "neighbourhood": [
+      "Shew_0776 (+) deaminase-reductase domain-containing protein",
+      "Shew_0777 (-) two-component response regulator",
+      "Shew_0778 (+) hypothetical protein",
+      "Shew_0779 (+) aspartate kinase III",
+      "Shew_0780 (+) succinylglutamate desuccinylase/aspartoacylase",
+      "Shew_0781 (-) peptidase S8 and S53, subtilisin, kexin, sedolisin",
+      "Shew_0782 (-) DNA-binding transcriptional regulator AsnC"
+     ]
+    },
+    {
+     "model_gene": "WP_011864883_1",
+     "locus": "Shew_1079",
+     "fitness_browser_desc": "bifunctional aspartokinase I/homeserine dehydrogenase I",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase I",
+     "neighbourhood": [
+      "Shew_1076 (+) Trp operon repressor",
+      "Shew_1077 (-) hypothetical protein",
+      "Shew_1078 (-) peptidylprolyl isomerase, FKBP-type",
+      "Shew_1079 (+) bifunctional aspartokinase I/homeserine dehydrogenase I",
+      "Shew_1080 (+) homoserine kinase",
+      "Shew_1081 (+) threonine synthase",
+      "Shew_1082 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "BPNT",
+   "name": "3',5'-bisphosphate nucleotidase",
+   "equation_ids": "h2o_c + pap_c --> amp_c + pi_c",
+   "equation_names": "H2O + Adenosine 3',5'-bisphosphate --> AMP + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011863939_1 or WP_011865226_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011863939_1",
+     "locus": "Shew_0130",
+     "fitness_browser_desc": "3'(2'),5'-bisphosphate nucleotidase",
+     "refseq_definition": "3'(2'),5'-bisphosphate nucleotidase CysQ",
+     "neighbourhood": [
+      "Shew_0127 (-) LexA repressor",
+      "Shew_0128 (-) HAD family hydrolase",
+      "Shew_0129 (+) ADP-ribose diphosphatase NudE",
+      "Shew_0130 (+) 3'(2'),5'-bisphosphate nucleotidase",
+      "Shew_0131 (+) GCN5-related N-acetyltransferase",
+      "Shew_0132 (+) TetR family transcriptional regulator",
+      "Shew_0133 (+) phospholipid/glycerol acyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011865226_1",
+     "locus": "Shew_1427",
+     "fitness_browser_desc": "3'(2'),5'-bisphosphate nucleotidase",
+     "refseq_definition": "3'(2'),5'-bisphosphate nucleotidase CysQ",
+     "neighbourhood": [
+      "Shew_1424 (+) TrkA domain-containing protein",
+      "Shew_1425 (+) adenylyl-sulfate kinase",
+      "Shew_1426 (-) hypothetical protein",
+      "Shew_1427 (+) 3'(2'),5'-bisphosphate nucleotidase",
+      "Shew_1428 (+) fructokinase",
+      "Shew_1429 (+) hypothetical protein",
+      "Shew_1430 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CHORM",
+   "name": "Chorismate mutase",
+   "equation_ids": "chor_c --> pphn_c",
+   "equation_names": "Chorismate --> Prephenate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864876_1 or WP_041406991_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864876_1",
+     "locus": "Shew_1072",
+     "fitness_browser_desc": "chorismate mutase",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "Shew_1069 (+) hydroxylamine reductase",
+      "Shew_1070 (+) oxidoreductase FAD-binding subunit",
+      "Shew_1071 (+) hypothetical protein",
+      "Shew_1072 (-) chorismate mutase",
+      "Shew_1073 (-) sigma 54 modulation protein/ribosomal protein S30EA",
+      "Shew_1074 (+) cytochrome B561",
+      "Shew_1075 (-) cytochrome c, class II"
+     ]
+    },
+    {
+     "model_gene": "WP_041406991_1",
+     "locus": "Shew_1068",
+     "fitness_browser_desc": "bifunctional chorismate mutase/prephenate dehydrogenase",
+     "refseq_definition": "bifunctional chorismate mutase/prephenate dehydrogenase",
+     "neighbourhood": [
+      "Shew_1065 (+) tRNA (guanine-N(1)-)-methyltransferase",
+      "Shew_1066 (+) 50S ribosomal protein L19",
+      "Shew_1067 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Shew_1068 (+) bifunctional chorismate mutase/prephenate dehydrogenase",
+      "Shew_1069 (+) hydroxylamine reductase",
+      "Shew_1070 (+) oxidoreductase FAD-binding subunit",
+      "Shew_1071 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "name": "Chloride transport out via proton antiport (2:1) (periplasm)",
+   "equation_ids": "2.0 cl_p + h_c --> 2.0 cl_c + h_p",
+   "equation_names": "2.0 Chloride + H+ --> 2.0 Chloride + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": []
+  },
+  {
+   "reaction": "CLtex",
+   "name": "Chloride (Cl-1) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cl_e <=> cl_p",
+   "equation_names": "Chloride <=> Chloride",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864713_1 or WP_011865590_1 or WP_011866080_1 or WP_011866278_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864713_1",
+     "locus": "Shew_0908",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Shew_0905 (-) response regulator receiver protein",
+      "Shew_0906 (-) Hpt protein",
+      "Shew_0907 (-) PAS/PAC sensor hybrid histidine kinase",
+      "Shew_0908 (-) OmpA/MotB domain-containing protein",
+      "Shew_0909 (-) hypothetical protein",
+      "Shew_0910 (+) hypothetical protein",
+      "Shew_0911 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011865590_1",
+     "locus": "Shew_1792",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "sortase-associated OmpA-like protein PdsO",
+     "neighbourhood": [
+      "Shew_1789 (-) cystathionine beta-lyase",
+      "Shew_1790 (-) integral membrane sensor signal transduction histidine kinase",
+      "Shew_1791 (-) two component transcriptional regulator",
+      "Shew_1792 (+) OmpA/MotB domain-containing protein",
+      "Shew_1793 (+) vault protein inter-alpha-trypsin subunit",
+      "Shew_1794 (+) sortase family protein",
+      "Shew_1795 (-) diguanylate cyclase"
+     ]
+    },
+    {
+     "model_gene": "WP_011866080_1",
+     "locus": "Shew_2283",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2280 (-) phenylalanine/histidine ammonia-lyase",
+      "Shew_2281 (-) flavocytochrome c",
+      "Shew_2282 (+) Fis family transcriptional regulator",
+      "Shew_2283 (-) porin",
+      "Shew_2284 (+) hypothetical protein",
+      "Shew_2285 (-) UDP-glucose 4-epimerase",
+      "Shew_2286 (-) SSS family solute/sodium (Na+) symporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011866278_1",
+     "locus": "Shew_2481",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2478 (-) hypothetical protein",
+      "Shew_2479 (-) methyltransferase type 11",
+      "Shew_2480 (-) TonB-dependent receptor",
+      "Shew_2481 (-) porin",
+      "Shew_2482 (-) DNA polymerase II",
+      "Shew_2483 (+) ATP-dependent DNA helicase DinG",
+      "Shew_2484 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tex",
+   "name": "Copper (Cu+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cu2_e <=> cu2_p",
+   "equation_names": "Cu2+ <=> Cu2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864713_1 or WP_011865590_1 or WP_011866080_1 or WP_011866278_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864713_1",
+     "locus": "Shew_0908",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Shew_0905 (-) response regulator receiver protein",
+      "Shew_0906 (-) Hpt protein",
+      "Shew_0907 (-) PAS/PAC sensor hybrid histidine kinase",
+      "Shew_0908 (-) OmpA/MotB domain-containing protein",
+      "Shew_0909 (-) hypothetical protein",
+      "Shew_0910 (+) hypothetical protein",
+      "Shew_0911 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011865590_1",
+     "locus": "Shew_1792",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "sortase-associated OmpA-like protein PdsO",
+     "neighbourhood": [
+      "Shew_1789 (-) cystathionine beta-lyase",
+      "Shew_1790 (-) integral membrane sensor signal transduction histidine kinase",
+      "Shew_1791 (-) two component transcriptional regulator",
+      "Shew_1792 (+) OmpA/MotB domain-containing protein",
+      "Shew_1793 (+) vault protein inter-alpha-trypsin subunit",
+      "Shew_1794 (+) sortase family protein",
+      "Shew_1795 (-) diguanylate cyclase"
+     ]
+    },
+    {
+     "model_gene": "WP_011866080_1",
+     "locus": "Shew_2283",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2280 (-) phenylalanine/histidine ammonia-lyase",
+      "Shew_2281 (-) flavocytochrome c",
+      "Shew_2282 (+) Fis family transcriptional regulator",
+      "Shew_2283 (-) porin",
+      "Shew_2284 (+) hypothetical protein",
+      "Shew_2285 (-) UDP-glucose 4-epimerase",
+      "Shew_2286 (-) SSS family solute/sodium (Na+) symporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011866278_1",
+     "locus": "Shew_2481",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2478 (-) hypothetical protein",
+      "Shew_2479 (-) methyltransferase type 11",
+      "Shew_2480 (-) TonB-dependent receptor",
+      "Shew_2481 (-) porin",
+      "Shew_2482 (-) DNA polymerase II",
+      "Shew_2483 (+) ATP-dependent DNA helicase DinG",
+      "Shew_2484 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tpp",
+   "name": "Copper transport in via permease (no H+)",
+   "equation_ids": "cu2_p --> cu2_c",
+   "equation_names": "Cu2+ --> Cu2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": []
+  },
+  {
+   "reaction": "CYSS",
+   "name": "Cysteine synthase",
+   "equation_ids": "acser_c + h2s_c --> ac_c + cys__L_c + h_c",
+   "equation_names": "O-Acetyl-L-serine + Hydrogen sulfide --> Acetate + L-Cysteine + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865858_1 or WP_011866179_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865858_1",
+     "locus": "Shew_2060",
+     "fitness_browser_desc": "pyridoxal-5'-phosphate-dependent enzyme, beta subunit",
+     "refseq_definition": "PLP-dependent cysteine synthase family protein",
+     "neighbourhood": [
+      "Shew_R0071 (+) tRNA-Tyr",
+      "Shew_R0072 (+) tRNA-Tyr",
+      "Shew_R0073 (+) tRNA-Tyr",
+      "Shew_2060 (+) pyridoxal-5'-phosphate-dependent enzyme, beta subunit",
+      "Shew_2061 (-) radical SAM domain-containing protein",
+      "Shew_2062 (+) exsB protein",
+      "Shew_2063 (+) rhomboid family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011866179_1",
+     "locus": "Shew_2382",
+     "fitness_browser_desc": "cysteine synthase A",
+     "refseq_definition": "cysteine synthase A",
+     "neighbourhood": [
+      "Shew_2379 (-) chromosome segregation protein SMC",
+      "Shew_2380 (+) putative sulfate transport protein CysZ",
+      "Shew_2381 (-) RDD domain-containing protein",
+      "Shew_2382 (+) cysteine synthase A",
+      "Shew_2383 (-) TetR family transcriptional regulator",
+      "Shew_2384 (+) O-methyltransferase family protein",
+      "Shew_2385 (+) TonB-dependent receptor, plug"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DDPA",
+   "name": "3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase",
+   "equation_ids": "e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Phosphoenolpyruvate --> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864657_1 or WP_011864871_1 or WP_011865346_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864657_1",
+     "locus": "Shew_0851",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase AroG",
+     "neighbourhood": [
+      "Shew_0848 (+) hypothetical protein",
+      "Shew_0849 (+) TPR repeat-containing protein",
+      "Shew_0850 (-) hypothetical protein",
+      "Shew_0851 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Shew_0852 (-) hypothetical protein",
+      "Shew_0853 (+) ABC transporter-related protein",
+      "Shew_0854 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011864871_1",
+     "locus": "Shew_1067",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "Shew_1064 (+) 16S rRNA-processing protein",
+      "Shew_1065 (+) tRNA (guanine-N(1)-)-methyltransferase",
+      "Shew_1066 (+) 50S ribosomal protein L19",
+      "Shew_1067 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Shew_1068 (+) bifunctional chorismate mutase/prephenate dehydrogenase",
+      "Shew_1069 (+) hydroxylamine reductase",
+      "Shew_1070 (+) oxidoreductase FAD-binding subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_011865346_1",
+     "locus": "Shew_1547",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "Shew_1544 (+) TetR family transcriptional regulator",
+      "Shew_1545 (-) two component LuxR family transcriptional regulator",
+      "Shew_1546 (-) thioesterase superfamily protein",
+      "Shew_1547 (-) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "Shew_1548 (-) hypothetical protein",
+      "Shew_1549 (+) phosphoenolpyruvate synthase",
+      "Shew_1550 (+) FAD linked oxidase domain-containing protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864098_1 or WP_011865235_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864098_1",
+     "locus": "Shew_0292",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "Shew_0289 (+) acetolactate synthase 2 catalytic subunit",
+      "Shew_0290 (+) acetolactate synthase 2 regulatory subunit",
+      "Shew_0291 (+) branched-chain amino acid aminotransferase",
+      "Shew_0292 (+) dihydroxy-acid dehydratase",
+      "Shew_0293 (+) threonine dehydratase",
+      "Shew_0294 (+) alanine--glyoxylate transaminase",
+      "Shew_0295 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011865235_1",
+     "locus": "Shew_1436",
+     "fitness_browser_desc": "pterin-4-alpha-carbinolamine dehydratase",
+     "refseq_definition": "4a-hydroxytetrahydrobiopterin dehydratase",
+     "neighbourhood": [
+      "Shew_1433 (-) UDP-glucose 4-epimerase",
+      "Shew_1434 (-) UTP-glucose-1-phosphate uridylyltransferase GalU",
+      "Shew_1435 (+) phenylalanine 4-monooxygenase",
+      "Shew_1436 (+) pterin-4-alpha-carbinolamine dehydratase",
+      "Shew_1437 (+) transcriptional regulator, TyrR",
+      "Shew_1438 (+) fumarylacetoacetate (FAA) hydrolase",
+      "Shew_1439 (+) maleylacetoacetate isomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPS",
+   "name": "Dihydrodipicolinate synthase",
+   "equation_ids": "aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Pyruvate --> 2,3-Dihydrodipicolinate + 2.0 H2O + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865646_1 or WP_011866159_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865646_1",
+     "locus": "Shew_1848",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "Shew_1845 (+) lysine exporter protein LysE/YggA",
+      "Shew_1846 (-) redoxin domain-containing protein",
+      "Shew_1847 (-) amino acid-binding ACT domain-containing protein",
+      "Shew_1848 (+) dihydrodipicolinate synthase",
+      "Shew_1849 (+) NlpB/DapX family lipoprotein",
+      "Shew_1850 (+) diguanylate cyclase/phosphodiesterase with GAF sensor",
+      "Shew_1851 (+) RND family efflux transporter MFP subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_011866159_1",
+     "locus": "Shew_2362",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "Shew_2359 (-) uracil-DNA glycosylase superfamily protein",
+      "Shew_2360 (-) D-amino-acid dehydrogenase",
+      "Shew_2361 (-) proline racemase",
+      "Shew_2362 (+) dihydrodipicolinate synthase",
+      "Shew_2363 (+) proline racemase",
+      "Shew_2364 (+) aldehyde dehydrogenase",
+      "Shew_2365 (+) GntR family transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHFR",
+   "name": "Dihydrofolate reductase",
+   "equation_ids": "dhf_c + h_c + nadph_c <=> nadp_c + thf_c",
+   "equation_names": "7,8-Dihydrofolate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011863858_1 or WP_011864582_1 or WP_011864680_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011863858_1",
+     "locus": "Shew_0048",
+     "fitness_browser_desc": "short chain dehydrogenase",
+     "refseq_definition": "dihydromonapterin reductase",
+     "neighbourhood": [
+      "Shew_0045 (+) RND family efflux transporter MFP subunit",
+      "Shew_0046 (+) molybdenum cofactor synthesis domain-containing protein",
+      "Shew_0047 (+) molybdopterin biosynthesis protein MoeB",
+      "Shew_0048 (-) short chain dehydrogenase",
+      "Shew_0049 (+) choline/carnitine/betaine transporter",
+      "Shew_0050 (-) DNA polymerase III subunit epsilon",
+      "Shew_0051 (-) cyclic nucleotide-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011864582_1",
+     "locus": "Shew_0776",
+     "fitness_browser_desc": "deaminase-reductase domain-containing protein",
+     "refseq_definition": "dihydrofolate reductase family protein",
+     "neighbourhood": [
+      "Shew_0773 (-) fructose-1,6-bisphosphatase",
+      "Shew_0774 (+) peptidase S9B dipeptidylpeptidase IV subunit",
+      "Shew_0775 (-) TetR family transcriptional regulator",
+      "Shew_0776 (+) deaminase-reductase domain-containing protein",
+      "Shew_0777 (-) two-component response regulator",
+      "Shew_0778 (+) hypothetical protein",
+      "Shew_0779 (+) aspartate kinase III"
+     ]
+    },
+    {
+     "model_gene": "WP_011864680_1",
+     "locus": "Shew_0874",
+     "fitness_browser_desc": "dihydrofolate reductase",
+     "refseq_definition": "type 3 dihydrofolate reductase",
+     "neighbourhood": [
+      "Shew_0871 (+) GTPase ObgE",
+      "Shew_0872 (+) hypothetical protein",
+      "Shew_0873 (+) hypothetical protein",
+      "Shew_0874 (+) dihydrofolate reductase",
+      "Shew_0875 (+) hypothetical protein",
+      "Shew_0876 (-) methyl-accepting chemotaxis sensory transducer",
+      "Shew_0877 (-) diadenosine tetraphosphatase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864534_1 or WP_011864817_1 or WP_011866383_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864534_1",
+     "locus": "Shew_0728",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "Shew_0725 (+) hypothetical protein",
+      "Shew_0726 (+) two component, sigma54 specific, Fis family transcriptional regulator",
+      "Shew_0727 (+) integral membrane sensor signal transduction histidine kinase",
+      "Shew_0728 (-) dihydroorotase",
+      "Shew_0729 (+) FAD-dependent pyridine nucleotide-disulphide oxidoreductase",
+      "Shew_0730 (+) protein of unknown function DUF395, YeeE/YedE",
+      "Shew_0731 (+) protein of unknown function DUF395, YeeE/YedE"
+     ]
+    },
+    {
+     "model_gene": "WP_011864817_1",
+     "locus": "Shew_1013",
+     "fitness_browser_desc": "aspartate carbamoyltransferase",
+     "refseq_definition": "aspartate carbamoyltransferase",
+     "neighbourhood": [
+      "Shew_1010 (+) general secretion pathway protein B",
+      "Shew_1011 (-) citrate transporter",
+      "Shew_1012 (-) glutamate-1-semialdehyde-2,1-aminomutase",
+      "Shew_1013 (-) aspartate carbamoyltransferase",
+      "Shew_1014 (+) XRE family transcriptional regulator",
+      "Shew_1015 (-) Cl- channel, voltage-gated family protein",
+      "Shew_1016 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011866383_1",
+     "locus": "Shew_2586",
+     "fitness_browser_desc": "amidohydrolase",
+     "refseq_definition": "amidohydrolase family protein",
+     "neighbourhood": [
+      "Shew_2583 (-) electron transfer flavoprotein, alpha subunit",
+      "Shew_2584 (-) electron transfer flavoprotein beta-subunit",
+      "Shew_2585 (+) histone family protein nucleoid-structuring protein H-NS",
+      "Shew_2586 (+) amidohydrolase",
+      "Shew_2587 (+) hypothetical protein",
+      "Shew_2588 (+) putative lipoprotein",
+      "Shew_2589 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864906_1 or WP_011865752_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864906_1",
+     "locus": "Shew_1102",
+     "fitness_browser_desc": "hydroxymethylbutenyl pyrophosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "Shew_1099 (+) isoleucyl-tRNA synthetase",
+      "Shew_1100 (+) lipoprotein signal peptidase",
+      "Shew_1101 (+) peptidylprolyl isomerase, FKBP-type",
+      "Shew_1102 (+) hydroxymethylbutenyl pyrophosphate reductase",
+      "Shew_1103 (+) type IV pilus modification protein PilV",
+      "Shew_1104 (+) prepilin-type cleavage/methylation-like protein",
+      "Shew_1105 (+) type IV pilus assembly protein PilX"
+     ]
+    },
+    {
+     "model_gene": "WP_011865752_1",
+     "locus": "Shew_1954",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "Shew_1951 (-) aromatic amino acid aminotransferase",
+      "Shew_1952 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "Shew_1953 (+) cytidylate kinase",
+      "Shew_1954 (+) 30S ribosomal protein S1",
+      "Shew_1955 (+) integration host factor, beta subunit",
+      "Shew_1956 (+) hypothetical protein",
+      "Shew_1957 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864094_1 or WP_011866692_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864094_1",
+     "locus": "Shew_0288",
+     "fitness_browser_desc": "ketol-acid reductoisomerase",
+     "refseq_definition": "ketol-acid reductoisomerase",
+     "neighbourhood": [
+      "Shew_0285 (-) diguanylate cyclase",
+      "Shew_0286 (-) extracellular solute-binding protein",
+      "Shew_0287 (-) DNA-binding transcriptional regulator IlvY",
+      "Shew_0288 (+) ketol-acid reductoisomerase",
+      "Shew_0289 (+) acetolactate synthase 2 catalytic subunit",
+      "Shew_0290 (+) acetolactate synthase 2 regulatory subunit",
+      "Shew_0291 (+) branched-chain amino acid aminotransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011866692_1",
+     "locus": "Shew_2895",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "ketopantoate reductase family protein",
+     "neighbourhood": [
+      "Shew_2892 (+) major facilitator transporter",
+      "Shew_2893 (-) nucleotide-binding protein",
+      "Shew_2894 (+) VanZ family protein",
+      "Shew_2895 (+) 2-dehydropantoate 2-reductase",
+      "Shew_2896 (+) sodium:neurotransmitter symporter",
+      "Shew_2897 (-) LysR family transcriptional regulator",
+      "Shew_2898 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FUM",
+   "name": "Fumarase",
+   "equation_ids": "fum_c + h2o_c <=> mal__L_c",
+   "equation_names": "Fumarate + H2O <=> L-Malate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011863878_1 or WP_011865702_1",
+   "n_growth_conditions_essential": 3,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011863878_1",
+     "locus": "Shew_0068",
+     "fitness_browser_desc": "fumarate lyase",
+     "refseq_definition": "class II fumarate hydratase",
+     "neighbourhood": [
+      "Shew_0065 (+) formate dehydrogenase, gamma subunit",
+      "Shew_0066 (+) hypothetical protein",
+      "Shew_0067 (-) hypothetical protein",
+      "Shew_0068 (+) fumarate lyase",
+      "Shew_0069 (-) hypothetical protein",
+      "Shew_0070 (-) iron-containing alcohol dehydrogenase",
+      "Shew_0071 (+) AraC family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_011865702_1",
+     "locus": "Shew_1904",
+     "fitness_browser_desc": "tartrate/fumarate subfamily Fe-S type hydro-lyase alpha subunit",
+     "refseq_definition": "fumarate hydratase",
+     "neighbourhood": [
+      "Shew_1901 (+) hypothetical protein",
+      "Shew_1902 (-) NUDIX hydrolase",
+      "Shew_1903 (-) para-aminobenzoate synthase, subunit I",
+      "Shew_1904 (+) tartrate/fumarate subfamily Fe-S type hydro-lyase alpha subunit",
+      "Shew_1905 (+) peptidase S9 prolyl oligopeptidase",
+      "Shew_1906 (-) GCN5-related N-acetyltransferase",
+      "Shew_1907 (+) glutathione-dependent formaldehyde-activating, GFA"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNS",
+   "name": "Glutamine synthetase",
+   "equation_ids": "atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c",
+   "equation_names": "ATP + L-Glutamate + Ammonium --> ADP + L-Glutamine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864777_1 or WP_011867348_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864777_1",
+     "locus": "Shew_0972",
+     "fitness_browser_desc": "glutamate--ammonia ligase",
+     "refseq_definition": "glutamine synthetase family protein",
+     "neighbourhood": [
+      "Shew_0969 (-) FAD dependent oxidoreductase",
+      "Shew_0970 (+) XRE family transcriptional regulator",
+      "Shew_0971 (+) peptidase C26",
+      "Shew_0972 (+) glutamate--ammonia ligase",
+      "Shew_0973 (+) extracellular solute-binding protein",
+      "Shew_0974 (+) spermidine/putrescine ABC transporter ATPase subunit",
+      "Shew_0975 (+) binding-protein-dependent transport systems inner membrane component"
+     ]
+    },
+    {
+     "model_gene": "WP_011867348_1",
+     "locus": "Shew_3554",
+     "fitness_browser_desc": "glutamine synthetase",
+     "refseq_definition": "glutamate--ammonia ligase",
+     "neighbourhood": [
+      "Shew_3551 (+) Bcr/CflA subfamily drug resistance transporter",
+      "Shew_3552 (+) transposase IS116/IS110/IS902 family protein",
+      "Shew_3553 (-) GTP-binding protein TypA",
+      "Shew_3554 (+) glutamine synthetase",
+      "Shew_3555 (+) hypothetical protein",
+      "Shew_3556 (-) aminotransferase, class V",
+      "Shew_3557 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNtex",
+   "name": "L-glutamine transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "gln__L_e <=> gln__L_p",
+   "equation_names": "L-Glutamine <=> L-Glutamine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011866080_1 or WP_011866278_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011866080_1",
+     "locus": "Shew_2283",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2280 (-) phenylalanine/histidine ammonia-lyase",
+      "Shew_2281 (-) flavocytochrome c",
+      "Shew_2282 (+) Fis family transcriptional regulator",
+      "Shew_2283 (-) porin",
+      "Shew_2284 (+) hypothetical protein",
+      "Shew_2285 (-) UDP-glucose 4-epimerase",
+      "Shew_2286 (-) SSS family solute/sodium (Na+) symporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011866278_1",
+     "locus": "Shew_2481",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2478 (-) hypothetical protein",
+      "Shew_2479 (-) methyltransferase type 11",
+      "Shew_2480 (-) TonB-dependent receptor",
+      "Shew_2481 (-) porin",
+      "Shew_2482 (-) DNA polymerase II",
+      "Shew_2483 (+) ATP-dependent DNA helicase DinG",
+      "Shew_2484 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865657_1 or spontaneous",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865657_1",
+     "locus": "Shew_1859",
+     "fitness_browser_desc": "carbonate dehydratase",
+     "refseq_definition": "carbonate dehydratase",
+     "neighbourhood": [
+      "Shew_1856 (-) 3-deoxy-manno-octulosonate cytidylyltransferase",
+      "Shew_1857 (-) iron-containing alcohol dehydrogenase",
+      "Shew_1858 (-) DegT/DnrJ/EryC1/StrS aminotransferase",
+      "Shew_1859 (-) carbonate dehydratase",
+      "Shew_1860 (-) alpha/beta hydrolase fold",
+      "Shew_1861 (-) peptidase M15B and M15C, D,D-carboxypeptidase VanY/endolysin",
+      "Shew_1862 (-) succinyl-diaminopimelate desuccinylase"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HSDy",
+   "name": "Homoserine dehydrogenase (NADPH)",
+   "equation_ids": "hom__L_c + nadp_c <=> aspsa_c + h_c + nadph_c",
+   "equation_names": "L-Homoserine + Nicotinamide adenine dinucleotide phosphate <=> L-Aspartate 4-semialdehyde + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864327_1 or WP_011864883_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864327_1",
+     "locus": "Shew_0521",
+     "fitness_browser_desc": "bifunctional aspartate kinase II/homoserine dehydrogenase II",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase II",
+     "neighbourhood": [
+      "Shew_0518 (-) hypothetical protein",
+      "Shew_0519 (-) transcriptional repressor protein MetJ",
+      "Shew_0520 (+) O-succinylhomoserine (thiol)-lyase",
+      "Shew_0521 (+) bifunctional aspartate kinase II/homoserine dehydrogenase II",
+      "Shew_0522 (+) 5,10-methylenetetrahydrofolate reductase",
+      "Shew_0523 (+) cytochrome c family protein",
+      "Shew_0524 (+) cytochrome c, class I"
+     ]
+    },
+    {
+     "model_gene": "WP_011864883_1",
+     "locus": "Shew_1079",
+     "fitness_browser_desc": "bifunctional aspartokinase I/homeserine dehydrogenase I",
+     "refseq_definition": "bifunctional aspartate kinase/homoserine dehydrogenase I",
+     "neighbourhood": [
+      "Shew_1076 (+) Trp operon repressor",
+      "Shew_1077 (-) hypothetical protein",
+      "Shew_1078 (-) peptidylprolyl isomerase, FKBP-type",
+      "Shew_1079 (+) bifunctional aspartokinase I/homeserine dehydrogenase I",
+      "Shew_1080 (+) homoserine kinase",
+      "Shew_1081 (+) threonine synthase",
+      "Shew_1082 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864906_1 or WP_011865752_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864906_1",
+     "locus": "Shew_1102",
+     "fitness_browser_desc": "hydroxymethylbutenyl pyrophosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "Shew_1099 (+) isoleucyl-tRNA synthetase",
+      "Shew_1100 (+) lipoprotein signal peptidase",
+      "Shew_1101 (+) peptidylprolyl isomerase, FKBP-type",
+      "Shew_1102 (+) hydroxymethylbutenyl pyrophosphate reductase",
+      "Shew_1103 (+) type IV pilus modification protein PilV",
+      "Shew_1104 (+) prepilin-type cleavage/methylation-like protein",
+      "Shew_1105 (+) type IV pilus assembly protein PilX"
+     ]
+    },
+    {
+     "model_gene": "WP_011865752_1",
+     "locus": "Shew_1954",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "Shew_1951 (-) aromatic amino acid aminotransferase",
+      "Shew_1952 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "Shew_1953 (+) cytidylate kinase",
+      "Shew_1954 (+) 30S ribosomal protein S1",
+      "Shew_1955 (+) integration host factor, beta subunit",
+      "Shew_1956 (+) hypothetical protein",
+      "Shew_1957 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "LDH_L",
+   "name": "L-lactate dehydrogenase",
+   "equation_ids": "lac__L_c + nad_c <=> h_c + nadh_c + pyr_c",
+   "equation_names": "L-Lactate + Nicotinamide adenine dinucleotide <=> H+ + Nicotinamide adenine dinucleotide - reduced + Pyruvate",
+   "annotation": {
+    "ec-code": "1.1.1.27",
+    "rhea": [
+     "23444",
+     "23445",
+     "23446",
+     "23447"
+    ],
+    "metanetx.reaction": "MNXR101040",
+    "kegg.reaction": "R00703"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 10,
+   "genes": []
+  },
+  {
+   "reaction": "L_LACt2r",
+   "name": "L lactate reversible transport via proton symport",
+   "equation_ids": "h_e + lac__L_e --> h_c + lac__L_c",
+   "equation_names": "H+ + L-Lactate --> H+ + L-Lactate",
+   "annotation": {
+    "rhea": [
+     "29415",
+     "29416",
+     "29417",
+     "29418"
+    ],
+    "metanetx.reaction": "MNXR101277"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 10,
+   "genes": []
+  },
+  {
+   "reaction": "MN2tpp",
+   "name": "Manganese transport in via permease (no H+)",
+   "equation_ids": "mn2_p --> mn2_c",
+   "equation_names": "Mn2+ --> Mn2+",
+   "annotation": {
+    "rhea": [
+     "28699",
+     "28700",
+     "28701",
+     "28702"
+    ],
+    "metanetx.reaction": "MNXR101670"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": []
+  },
+  {
+   "reaction": "MNtex",
+   "name": "Manganese (Mn+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "mn2_e <=> mn2_p",
+   "equation_names": "Mn2+ <=> Mn2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864713_1 or WP_011865590_1 or WP_011866080_1 or WP_011866278_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864713_1",
+     "locus": "Shew_0908",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Shew_0905 (-) response regulator receiver protein",
+      "Shew_0906 (-) Hpt protein",
+      "Shew_0907 (-) PAS/PAC sensor hybrid histidine kinase",
+      "Shew_0908 (-) OmpA/MotB domain-containing protein",
+      "Shew_0909 (-) hypothetical protein",
+      "Shew_0910 (+) hypothetical protein",
+      "Shew_0911 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011865590_1",
+     "locus": "Shew_1792",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "sortase-associated OmpA-like protein PdsO",
+     "neighbourhood": [
+      "Shew_1789 (-) cystathionine beta-lyase",
+      "Shew_1790 (-) integral membrane sensor signal transduction histidine kinase",
+      "Shew_1791 (-) two component transcriptional regulator",
+      "Shew_1792 (+) OmpA/MotB domain-containing protein",
+      "Shew_1793 (+) vault protein inter-alpha-trypsin subunit",
+      "Shew_1794 (+) sortase family protein",
+      "Shew_1795 (-) diguanylate cyclase"
+     ]
+    },
+    {
+     "model_gene": "WP_011866080_1",
+     "locus": "Shew_2283",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2280 (-) phenylalanine/histidine ammonia-lyase",
+      "Shew_2281 (-) flavocytochrome c",
+      "Shew_2282 (+) Fis family transcriptional regulator",
+      "Shew_2283 (-) porin",
+      "Shew_2284 (+) hypothetical protein",
+      "Shew_2285 (-) UDP-glucose 4-epimerase",
+      "Shew_2286 (-) SSS family solute/sodium (Na+) symporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011866278_1",
+     "locus": "Shew_2481",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2478 (-) hypothetical protein",
+      "Shew_2479 (-) methyltransferase type 11",
+      "Shew_2480 (-) TonB-dependent receptor",
+      "Shew_2481 (-) porin",
+      "Shew_2482 (-) DNA polymerase II",
+      "Shew_2483 (+) ATP-dependent DNA helicase DinG",
+      "Shew_2484 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK2",
+   "name": "Nucleoside-diphosphate kinase (ATP:UDP)",
+   "equation_ids": "atp_c + udp_c <=> adp_c + utp_c",
+   "equation_names": "ATP + UDP <=> ADP + UTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011866028_1 or WP_011866107_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011866028_1",
+     "locus": "Shew_2230",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "Shew_2227 (+) sodium:dicarboxylate symporter",
+      "Shew_2228 (-) inosine kinase",
+      "Shew_2229 (-) ferrochelatase",
+      "Shew_2230 (-) adenylate kinase",
+      "Shew_2231 (-) thioredoxin domain-containing protein",
+      "Shew_2232 (-) heat shock protein 90",
+      "Shew_2233 (-) recombination protein RecR"
+     ]
+    },
+    {
+     "model_gene": "WP_011866107_1",
+     "locus": "Shew_2310",
+     "fitness_browser_desc": "nucleoside-diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "Shew_2307 (-) hypothetical protein",
+      "Shew_2308 (-) aspartate-semialdehyde dehydrogenase",
+      "Shew_2309 (-) D-isomer specific 2-hydroxyacid dehydrogenase, NAD-binding",
+      "Shew_2310 (-) nucleoside-diphosphate kinase",
+      "Shew_2311 (-) hypothetical protein",
+      "Shew_2312 (-) ferredoxin, 2Fe-2S type, ISC system",
+      "Shew_2313 (-) chaperone protein HscA"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK4",
+   "name": "Nucleoside-diphosphate kinase (ATP:dTDP)",
+   "equation_ids": "atp_c + dtdp_c <=> adp_c + dttp_c",
+   "equation_names": "ATP + DTDP <=> ADP + DTTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011866028_1 or WP_011866107_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011866028_1",
+     "locus": "Shew_2230",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "Shew_2227 (+) sodium:dicarboxylate symporter",
+      "Shew_2228 (-) inosine kinase",
+      "Shew_2229 (-) ferrochelatase",
+      "Shew_2230 (-) adenylate kinase",
+      "Shew_2231 (-) thioredoxin domain-containing protein",
+      "Shew_2232 (-) heat shock protein 90",
+      "Shew_2233 (-) recombination protein RecR"
+     ]
+    },
+    {
+     "model_gene": "WP_011866107_1",
+     "locus": "Shew_2310",
+     "fitness_browser_desc": "nucleoside-diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "Shew_2307 (-) hypothetical protein",
+      "Shew_2308 (-) aspartate-semialdehyde dehydrogenase",
+      "Shew_2309 (-) D-isomer specific 2-hydroxyacid dehydrogenase, NAD-binding",
+      "Shew_2310 (-) nucleoside-diphosphate kinase",
+      "Shew_2311 (-) hypothetical protein",
+      "Shew_2312 (-) ferredoxin, 2Fe-2S type, ISC system",
+      "Shew_2313 (-) chaperone protein HscA"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NPHS",
+   "name": "Naphthoate synthase",
+   "equation_ids": "sbzcoa_c --> coa_c + dhna_c",
+   "equation_names": "O-Succinylbenzoyl-CoA --> Coenzyme A + 1,4-Dihydroxy-2-naphthoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865758_1 or WP_011867608_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865758_1",
+     "locus": "Shew_1960",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "DUF2058 domain-containing protein",
+     "neighbourhood": [
+      "Shew_1957 (+) hypothetical protein",
+      "Shew_1958 (+) orotidine 5'-phosphate decarboxylase",
+      "Shew_1959 (+) short chain dehydrogenase",
+      "Shew_1960 (+) hypothetical protein",
+      "Shew_1961 (+) acyl-CoA dehydrogenase domain-containing protein",
+      "Shew_1962 (-) D-alanyl-D-alanine carboxypeptidase/D-alanyl-D-alanine-endopeptidase",
+      "Shew_1963 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011867608_1",
+     "locus": "Shew_3814",
+     "fitness_browser_desc": "naphthoate synthase",
+     "refseq_definition": "1,4-dihydroxy-2-naphthoyl-CoA synthase",
+     "neighbourhood": [
+      "Shew_R0125 (-) 16S ribosomal RNA",
+      "Shew_3812 (-) 4Fe-4S ferredoxin iron-sulfur binding domain-containing protein",
+      "Shew_3813 (+) hypothetical protein",
+      "Shew_3814 (+) naphthoate synthase",
+      "Shew_3815 (+) hypothetical protein",
+      "Shew_3816 (+) OmpA domain-containing protein",
+      "Shew_3817 (-) plastocyanin domain-containing putative protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "OMCDC",
+   "name": "2-Oxo-4-methyl-3-carboxypentanoate decarboxylation",
+   "equation_ids": "3c4mop_c + h_c --> 4mop_c + co2_c",
+   "equation_names": "3-Carboxy-4-methyl-2-oxopentanoate + H+ --> 4-Methyl-2-oxopentanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011867267_1 or spontaneous",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011867267_1",
+     "locus": "Shew_3471",
+     "fitness_browser_desc": "3-isopropylmalate dehydrogenase",
+     "refseq_definition": "3-isopropylmalate dehydrogenase",
+     "neighbourhood": [
+      "Shew_3468 (-) membrane protein involved in aromatic hydrocarbon degradation",
+      "Shew_3469 (-) isopropylmalate isomerase small subunit",
+      "Shew_3470 (-) isopropylmalate isomerase large subunit",
+      "Shew_3471 (-) 3-isopropylmalate dehydrogenase",
+      "Shew_3472 (-) 2-isopropylmalate synthase",
+      "Shew_3473 (+) response regulator receiver protein",
+      "Shew_3474 (-) ATP-dependent DNA helicase RecQ"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "PGAMT",
+   "name": "Phosphoglucosamine mutase",
+   "equation_ids": "gam1p_c <=> gam6p_c",
+   "equation_names": "D-Glucosamine 1-phosphate <=> D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865720_1 or WP_011866629_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865720_1",
+     "locus": "Shew_1922",
+     "fitness_browser_desc": "phosphoglucomutase",
+     "refseq_definition": "phosphoglucomutase (alpha-D-glucose-1,6-bisphosphate-dependent)",
+     "neighbourhood": [
+      "Shew_1919 (-) hypothetical protein",
+      "Shew_1920 (-) alpha/beta hydrolase fold",
+      "Shew_1921 (+) replication initiation regulator SeqA",
+      "Shew_1922 (+) phosphoglucomutase",
+      "Shew_1923 (-) peptide methionine sulfoxide reductase",
+      "Shew_1924 (+) succinylglutamate desuccinylase",
+      "Shew_1925 (+) 3-methyl-2-oxobutanoate dehydrogenase (2-methylpropanoyl-transferring)"
+     ]
+    },
+    {
+     "model_gene": "WP_011866629_1",
+     "locus": "Shew_2832",
+     "fitness_browser_desc": "phosphoglucosamine mutase",
+     "refseq_definition": "phosphoglucosamine mutase",
+     "neighbourhood": [
+      "Shew_R0092 (-) tRNA-Leu",
+      "Shew_2830 (-) preprotein translocase subunit SecG",
+      "Shew_2831 (-) Triose-phosphate isomerase",
+      "Shew_2832 (-) phosphoglucosamine mutase",
+      "Shew_2833 (-) dihydropteroate synthase",
+      "Shew_2834 (-) ATP-dependent metalloprotease FtsH",
+      "Shew_2835 (-) 23S rRNA methyltransferase J"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864097_1 or WP_011865797_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864097_1",
+     "locus": "Shew_0291",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid transaminase",
+     "neighbourhood": [
+      "Shew_0288 (+) ketol-acid reductoisomerase",
+      "Shew_0289 (+) acetolactate synthase 2 catalytic subunit",
+      "Shew_0290 (+) acetolactate synthase 2 regulatory subunit",
+      "Shew_0291 (+) branched-chain amino acid aminotransferase",
+      "Shew_0292 (+) dihydroxy-acid dehydratase",
+      "Shew_0293 (+) threonine dehydratase",
+      "Shew_0294 (+) alanine--glyoxylate transaminase"
+     ]
+    },
+    {
+     "model_gene": "WP_011865797_1",
+     "locus": "Shew_1999",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "Shew_1996 (-) hypothetical protein",
+      "Shew_1997 (-) bax protein, putative",
+      "Shew_1998 (+) protein of unknown function UPF0052 and CofD",
+      "Shew_1999 (-) aromatic amino acid aminotransferase",
+      "Shew_R0065 (-) tRNA-Leu",
+      "Shew_R0066 (-) tRNA-Cys",
+      "Shew_R0067 (-) tRNA-Gly"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PMPK",
+   "name": "Phosphomethylpyrimidine kinase",
+   "equation_ids": "4ampm_c + atp_c --> 2mahmp_c + adp_c",
+   "equation_names": "4-Amino-2-methyl-5-phosphomethylpyrimidine + ATP --> 2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate + ADP",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": []
+  },
+  {
+   "reaction": "PPA",
+   "name": "Inorganic diphosphatase",
+   "equation_ids": "h2o_c + ppi_c --> h_c + 2.0 pi_c",
+   "equation_names": "H2O + Diphosphate --> H+ + 2.0 Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865012_1 or WP_011865773_1 or WP_011866874_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865012_1",
+     "locus": "Shew_1210",
+     "fitness_browser_desc": "stationary-phase survival protein SurE",
+     "refseq_definition": "5'/3'-nucleotidase SurE",
+     "neighbourhood": [
+      "Shew_1207 (+) 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase",
+      "Shew_1208 (+) 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+      "Shew_1209 (+) pseudouridylate synthase",
+      "Shew_1210 (+) stationary-phase survival protein SurE",
+      "Shew_1211 (+) protein-L-isoaspartate O-methyltransferase",
+      "Shew_1212 (+) peptidase M23B",
+      "Shew_1213 (+) RpoD family RNA polymerase sigma factor"
+     ]
+    },
+    {
+     "model_gene": "WP_011865773_1",
+     "locus": "Shew_1975",
+     "fitness_browser_desc": "putative manganese-dependent inorganic pyrophosphatase",
+     "refseq_definition": "manganese-dependent inorganic pyrophosphatase",
+     "neighbourhood": [
+      "Shew_1972 (+) FMN-binding domain-containing protein",
+      "Shew_1973 (+) porin",
+      "Shew_1974 (+) hypothetical protein",
+      "Shew_1975 (+) putative manganese-dependent inorganic pyrophosphatase",
+      "Shew_1976 (-) putative ATP-dependent protease La-relatedprotein",
+      "Shew_1977 (+) diguanylate cyclase with PAS/PAC sensor",
+      "Shew_1978 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011866874_1",
+     "locus": "Shew_3078",
+     "fitness_browser_desc": "Ppx/GppA phosphatase",
+     "refseq_definition": "Ppx/GppA phosphatase family protein",
+     "neighbourhood": [
+      "Shew_3075 (+) hypothetical protein",
+      "Shew_3076 (-) lysine exporter protein LysE/YggA",
+      "Shew_3077 (-) peptidase S10, serine carboxypeptidase",
+      "Shew_3078 (-) Ppx/GppA phosphatase",
+      "Shew_3079 (-) polyphosphate kinase",
+      "Shew_3080 (+) thiol:disulfide interchange protein, putative",
+      "Shew_3081 (-) TonB-dependent receptor"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PYRtex",
+   "name": "Pyruvate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "pyr_e <=> pyr_p",
+   "equation_names": "Pyruvate <=> Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864713_1 or WP_011865590_1 or WP_011866080_1 or WP_011866278_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864713_1",
+     "locus": "Shew_0908",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Shew_0905 (-) response regulator receiver protein",
+      "Shew_0906 (-) Hpt protein",
+      "Shew_0907 (-) PAS/PAC sensor hybrid histidine kinase",
+      "Shew_0908 (-) OmpA/MotB domain-containing protein",
+      "Shew_0909 (-) hypothetical protein",
+      "Shew_0910 (+) hypothetical protein",
+      "Shew_0911 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011865590_1",
+     "locus": "Shew_1792",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "sortase-associated OmpA-like protein PdsO",
+     "neighbourhood": [
+      "Shew_1789 (-) cystathionine beta-lyase",
+      "Shew_1790 (-) integral membrane sensor signal transduction histidine kinase",
+      "Shew_1791 (-) two component transcriptional regulator",
+      "Shew_1792 (+) OmpA/MotB domain-containing protein",
+      "Shew_1793 (+) vault protein inter-alpha-trypsin subunit",
+      "Shew_1794 (+) sortase family protein",
+      "Shew_1795 (-) diguanylate cyclase"
+     ]
+    },
+    {
+     "model_gene": "WP_011866080_1",
+     "locus": "Shew_2283",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2280 (-) phenylalanine/histidine ammonia-lyase",
+      "Shew_2281 (-) flavocytochrome c",
+      "Shew_2282 (+) Fis family transcriptional regulator",
+      "Shew_2283 (-) porin",
+      "Shew_2284 (+) hypothetical protein",
+      "Shew_2285 (-) UDP-glucose 4-epimerase",
+      "Shew_2286 (-) SSS family solute/sodium (Na+) symporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011866278_1",
+     "locus": "Shew_2481",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2478 (-) hypothetical protein",
+      "Shew_2479 (-) methyltransferase type 11",
+      "Shew_2480 (-) TonB-dependent receptor",
+      "Shew_2481 (-) porin",
+      "Shew_2482 (-) DNA polymerase II",
+      "Shew_2483 (+) ATP-dependent DNA helicase DinG",
+      "Shew_2484 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SDPDS",
+   "name": "Succinyl-diaminopimelate desuccinylase",
+   "equation_ids": "h2o_c + sl26da_c --> 26dap_LL_c + succ_c",
+   "equation_names": "H2O + N-Succinyl-LL-2,6-diaminoheptanedioate --> LL-2,6-Diaminoheptanedioate + Succinate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865660_1 or WP_011865958_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865660_1",
+     "locus": "Shew_1862",
+     "fitness_browser_desc": "succinyl-diaminopimelate desuccinylase",
+     "refseq_definition": "succinyl-diaminopimelate desuccinylase",
+     "neighbourhood": [
+      "Shew_1859 (-) carbonate dehydratase",
+      "Shew_1860 (-) alpha/beta hydrolase fold",
+      "Shew_1861 (-) peptidase M15B and M15C, D,D-carboxypeptidase VanY/endolysin",
+      "Shew_1862 (-) succinyl-diaminopimelate desuccinylase",
+      "Shew_1863 (-) arsenate reductase and related",
+      "Shew_1864 (-) glucose-specific PTS system component",
+      "Shew_1865 (-) phosphoenolpyruvate-protein phosphotransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_011865958_1",
+     "locus": "Shew_2160",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "dipeptidase",
+     "neighbourhood": [
+      "Shew_2157 (-) hypothetical protein",
+      "Shew_2158 (+) gamma-glutamyltransferase",
+      "Shew_2159 (-) methyl-accepting chemotaxis sensory transducer with Pas/Pac sensor",
+      "Shew_2160 (-) hypothetical protein",
+      "Shew_2161 (+) peptidyl-dipeptidase Dcp",
+      "Shew_2162 (+) bifunctional 2',3'-cyclic nucleotide 2'-phosphodiesterase/3'-nucleotidase periplasmic precursor protein",
+      "Shew_2163 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMDS",
+   "name": "Thymidylate synthase",
+   "equation_ids": "dump_c + mlthf_c --> dhf_c + dtmp_c",
+   "equation_names": "DUMP + 5,10-Methylenetetrahydrofolate --> 7,8-Dihydrofolate + DTMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864845_1 or WP_011865740_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864845_1",
+     "locus": "Shew_1041",
+     "fitness_browser_desc": "thymidylate synthase",
+     "refseq_definition": "thymidylate synthase",
+     "neighbourhood": [
+      "Shew_1038 (+) dinucleoside polyphosphate hydrolase",
+      "Shew_1039 (+) phosphoenolpyruvate-protein phosphotransferase PtsP",
+      "Shew_1040 (+) hypothetical protein",
+      "Shew_1041 (+) thymidylate synthase",
+      "Shew_1042 (+) Na+/H+ antiporter NhaA",
+      "Shew_1043 (+) hypothetical protein",
+      "Shew_1044 (+) transcriptional activator NhaR"
+     ]
+    },
+    {
+     "model_gene": "WP_011865740_1",
+     "locus": "Shew_1942",
+     "fitness_browser_desc": "NADH:flavin oxidoreductase/NADH oxidase",
+     "refseq_definition": "NADPH-dependent 2,4-dienoyl-CoA reductase",
+     "neighbourhood": [
+      "Shew_1939 (+) hypothetical protein",
+      "Shew_1940 (-) cytoplasmic asparaginase I",
+      "Shew_1941 (-) signal peptide peptidase SppA, 67K type",
+      "Shew_1942 (+) NADH:flavin oxidoreductase/NADH oxidase",
+      "Shew_1943 (+) hypothetical protein",
+      "Shew_1944 (-) ferredoxin",
+      "Shew_1945 (-) ribonucleotide-diphosphate reductase subunit beta"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMPK",
+   "name": "Thiamine-phosphate kinase",
+   "equation_ids": "atp_c + thmmp_c --> adp_c + thmpp_c",
+   "equation_names": "ATP + Thiamin monophosphate --> ADP + Thiamine diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864994_1 or WP_011866563_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864994_1",
+     "locus": "Shew_1192",
+     "fitness_browser_desc": "thiamine-monophosphate kinase",
+     "refseq_definition": "thiamine-phosphate kinase",
+     "neighbourhood": [
+      "Shew_1189 (+) 3,4-dihydroxy-2-butanone 4-phosphate synthase",
+      "Shew_1190 (+) riboflavin synthase",
+      "Shew_1191 (+) transcription antitermination protein NusB",
+      "Shew_1192 (+) thiamine-monophosphate kinase",
+      "Shew_1193 (+) phosphatidylglycerophosphatase",
+      "Shew_1194 (+) glutathione-dependent formaldehyde-activating, GFA",
+      "Shew_1195 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011866563_1",
+     "locus": "Shew_2766",
+     "fitness_browser_desc": "thiamine biosynthesis protein ThiI",
+     "refseq_definition": "tRNA uracil 4-sulfurtransferase ThiI",
+     "neighbourhood": [
+      "Shew_2763 (-) dienelactone hydrolase",
+      "Shew_2764 (-) DNA-binding transcriptional activator GcvA",
+      "Shew_2765 (+) hypothetical protein",
+      "Shew_2766 (-) thiamine biosynthesis protein ThiI",
+      "Shew_2767 (-) flagellar motor protein MotB",
+      "Shew_2768 (-) flagellar motor protein PomA",
+      "Shew_2769 (+) exodeoxyribonuclease VII, small subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDCPDP",
+   "name": "Undecaprenyl-diphosphatase",
+   "equation_ids": "h2o_c + udcpdp_c --> h_c + pi_c + udcpp_c",
+   "equation_names": "H2O + Undecaprenyl diphosphate --> H+ + Phosphate + Undecaprenyl phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864108_1 or WP_011864808_1 or WP_083764335_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864108_1",
+     "locus": "Shew_0302",
+     "fitness_browser_desc": "phosphoesterase, PA-phosphatase related",
+     "refseq_definition": "phosphatase PAP2 family protein",
+     "neighbourhood": [
+      "Shew_0299 (+) TetR family transcriptional regulator",
+      "Shew_0300 (-) sodium:neurotransmitter symporter",
+      "Shew_0301 (-) AsnC family transcriptional regulator",
+      "Shew_0302 (-) phosphoesterase, PA-phosphatase related",
+      "Shew_0303 (-) hypothetical protein",
+      "Shew_0304 (-) hypothetical protein",
+      "Shew_0305 (+) ATP-dependent DNA helicase Rep"
+     ]
+    },
+    {
+     "model_gene": "WP_011864808_1",
+     "locus": "Shew_1004",
+     "fitness_browser_desc": "undecaprenyl pyrophosphate phosphatase",
+     "refseq_definition": "undecaprenyl-diphosphate phosphatase",
+     "neighbourhood": [
+      "Shew_1001 (-) putative glycerol-3-phosphate acyltransferase PlsY",
+      "Shew_1002 (+) dihydroneopterin aldolase",
+      "Shew_1003 (+) 2-amino-4-hydroxy-6- hydroxymethyldihydropteridine pyrophosphokinase",
+      "Shew_1004 (+) undecaprenyl pyrophosphate phosphatase",
+      "Shew_1005 (+) rRNA (guanine-N(1)-)-methyltransferase",
+      "Shew_1006 (+) ErfK/YbiS/YcfS/YnhG family protein",
+      "Shew_1007 (-) major outer membrane lipoprotein, putative"
+     ]
+    },
+    {
+     "model_gene": "WP_083764335_1",
+     "locus": "Shew_0036",
+     "fitness_browser_desc": "phosphoesterase, PA-phosphatase related",
+     "refseq_definition": "phosphatase PAP2 family protein",
+     "neighbourhood": [
+      "Shew_0033 (+) peptidase M14, carboxypeptidase A",
+      "Shew_0034 (-) methyltransferase type 12",
+      "Shew_0035 (+) putative lipoprotein",
+      "Shew_0036 (-) phosphoesterase, PA-phosphatase related",
+      "Shew_0037 (-) phosphoesterase, PA-phosphatase related",
+      "Shew_0038 (-) excinuclease ABC subunit C",
+      "Shew_0039 (-) oligopeptidase B"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011865751_1 or WP_011866430_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011865751_1",
+     "locus": "Shew_1953",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "(d)CMP kinase",
+     "neighbourhood": [
+      "Shew_1950 (+) phosphoserine aminotransferase",
+      "Shew_1951 (-) aromatic amino acid aminotransferase",
+      "Shew_1952 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "Shew_1953 (+) cytidylate kinase",
+      "Shew_1954 (+) 30S ribosomal protein S1",
+      "Shew_1955 (+) integration host factor, beta subunit",
+      "Shew_1956 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011866430_1",
+     "locus": "Shew_2633",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "UMP kinase",
+     "neighbourhood": [
+      "Shew_2630 (-) phosphatidate cytidylyltransferase",
+      "Shew_2631 (-) undecaprenyl diphosphate synthase",
+      "Shew_2632 (-) ribosome recycling factor",
+      "Shew_2633 (-) uridylate kinase",
+      "Shew_2634 (-) elongation factor Ts",
+      "Shew_2635 (-) 30S ribosomal protein S2",
+      "Shew_R0090 (-) "
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "Zn2tex",
+   "name": "Zinc (Zn+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "zn2_e <=> zn2_p",
+   "equation_names": "Zinc <=> Zinc",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_011864713_1 or WP_011865590_1 or WP_011866080_1 or WP_011866278_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 10,
+   "genes": [
+    {
+     "model_gene": "WP_011864713_1",
+     "locus": "Shew_0908",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "YiaD family glycine zipper/OmpA-like lipoprotein",
+     "neighbourhood": [
+      "Shew_0905 (-) response regulator receiver protein",
+      "Shew_0906 (-) Hpt protein",
+      "Shew_0907 (-) PAS/PAC sensor hybrid histidine kinase",
+      "Shew_0908 (-) OmpA/MotB domain-containing protein",
+      "Shew_0909 (-) hypothetical protein",
+      "Shew_0910 (+) hypothetical protein",
+      "Shew_0911 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_011865590_1",
+     "locus": "Shew_1792",
+     "fitness_browser_desc": "OmpA/MotB domain-containing protein",
+     "refseq_definition": "sortase-associated OmpA-like protein PdsO",
+     "neighbourhood": [
+      "Shew_1789 (-) cystathionine beta-lyase",
+      "Shew_1790 (-) integral membrane sensor signal transduction histidine kinase",
+      "Shew_1791 (-) two component transcriptional regulator",
+      "Shew_1792 (+) OmpA/MotB domain-containing protein",
+      "Shew_1793 (+) vault protein inter-alpha-trypsin subunit",
+      "Shew_1794 (+) sortase family protein",
+      "Shew_1795 (-) diguanylate cyclase"
+     ]
+    },
+    {
+     "model_gene": "WP_011866080_1",
+     "locus": "Shew_2283",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2280 (-) phenylalanine/histidine ammonia-lyase",
+      "Shew_2281 (-) flavocytochrome c",
+      "Shew_2282 (+) Fis family transcriptional regulator",
+      "Shew_2283 (-) porin",
+      "Shew_2284 (+) hypothetical protein",
+      "Shew_2285 (-) UDP-glucose 4-epimerase",
+      "Shew_2286 (-) SSS family solute/sodium (Na+) symporter"
+     ]
+    },
+    {
+     "model_gene": "WP_011866278_1",
+     "locus": "Shew_2481",
+     "fitness_browser_desc": "porin",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "Shew_2478 (-) hypothetical protein",
+      "Shew_2479 (-) methyltransferase type 11",
+      "Shew_2480 (-) TonB-dependent receptor",
+      "Shew_2481 (-) porin",
+      "Shew_2482 (-) DNA polymerase II",
+      "Shew_2483 (+) ATP-dependent DNA helicase DinG",
+      "Shew_2484 (+) hypothetical protein"
+     ]
+    }
+   ]
+  }
+ ]
+}

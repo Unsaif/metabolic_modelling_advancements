@@ -1,0 +1,28 @@
+{
+ "org": "SB2B",
+ "role": "evaluation_panel_B",
+ "draft": "models/embl_pinned/SB2B.xml.gz",
+ "draft_sha256": "6e43306f5050d2a7f66a7b296b8c355cff4fd011fd81f5d52a1098495afdf651",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "ShewMM_noCarbon",
+  "carbon_exchange": "EX_glc__D_e",
+  "condition": "D-Glucose",
+  "rule": "gembench.transfer.choose_reference_condition"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "CITt3",
+   "reaction": "cit_c + h_e --> cit_e + h_c",
+   "name": "Citrate transport out via proton antiport"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.310735600033741,
+ "base_sha256": "951611b5768be36ad0ad10b4a643e5d07e6f2be0ad8c3a9aed797e669b7102cd",
+ "created": "2026-10-03T12:40:57Z"
+}

@@ -1,0 +1,3075 @@
+{
+ "org": "Marino",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 16,
+ "candidates": [
+  {
+   "reaction": "ACHBS",
+   "name": "2-aceto-2-hydroxybutanoate synthase",
+   "equation_ids": "2obut_c + h_c + pyr_c --> 2ahbut_c + co2_c",
+   "equation_names": "2-Oxobutanoate + H+ + Pyruvate --> (S)-2-Aceto-2-hydroxybutanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_008170692_1 and WP_014576077_1) or (WP_014576492_1 and WP_014576493_1)",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008170692_1",
+     "locus": "HP15_532",
+     "fitness_browser_desc": "acetolactate synthase 3 regulatory subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "HP15_529 (+) protein disaggregation chaperone",
+      "HP15_530 (-) conserved hypothetical protein, secreted",
+      "HP15_531 (+) acetolactate synthase, large subunit, biosynthetic type",
+      "HP15_532 (+) acetolactate synthase 3 regulatory subunit",
+      "HP15_533 (+) ketol-acid reductoisomerase",
+      "HP15_534 (+) CDP-diacylglycerol-serine O-phosphatidyltransferase",
+      "HP15_535 (+) sulfite oxidase subunit YedY"
+     ]
+    },
+    {
+     "model_gene": "WP_014576077_1",
+     "locus": "HP15_531",
+     "fitness_browser_desc": "acetolactate synthase, large subunit, biosynthetic type",
+     "refseq_definition": "acetolactate synthase 3 large subunit",
+     "neighbourhood": [
+      "HP15_528 (+) multi-copper polyphenol oxidoreductase, laccase",
+      "HP15_529 (+) protein disaggregation chaperone",
+      "HP15_530 (-) conserved hypothetical protein, secreted",
+      "HP15_531 (+) acetolactate synthase, large subunit, biosynthetic type",
+      "HP15_532 (+) acetolactate synthase 3 regulatory subunit",
+      "HP15_533 (+) ketol-acid reductoisomerase",
+      "HP15_534 (+) CDP-diacylglycerol-serine O-phosphatidyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_014576492_1",
+     "locus": "HP15_1016",
+     "fitness_browser_desc": "acetolactate synthase II, small subunit-like protein",
+     "refseq_definition": "ACT domain-containing protein",
+     "neighbourhood": [
+      "HP15_1013 (+) nitrate transport system permease protein",
+      "HP15_1014 (+) nitrate ABC transporter, ATPase subunits C and D",
+      "HP15_1015 (+) cyanate lyase",
+      "HP15_1016 (-) acetolactate synthase II, small subunit-like protein",
+      "HP15_1017 (-) acetolactate synthase, large subunit, biosynthetic type",
+      "HP15_1018 (+) efflux transporter, RND family, MFP subunit",
+      "HP15_1019 (+) multidrug resistance protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014576493_1",
+     "locus": "HP15_1017",
+     "fitness_browser_desc": "acetolactate synthase, large subunit, biosynthetic type",
+     "refseq_definition": "acetolactate synthase 2 catalytic subunit",
+     "neighbourhood": [
+      "HP15_1014 (+) nitrate ABC transporter, ATPase subunits C and D",
+      "HP15_1015 (+) cyanate lyase",
+      "HP15_1016 (-) acetolactate synthase II, small subunit-like protein",
+      "HP15_1017 (-) acetolactate synthase, large subunit, biosynthetic type",
+      "HP15_1018 (+) efflux transporter, RND family, MFP subunit",
+      "HP15_1019 (+) multidrug resistance protein",
+      "HP15_1020 (-) methyl-accepting chemotaxis sensory transducer"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_008170692_1 and WP_014576077_1) or (WP_014576492_1 and WP_014576493_1)",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008170692_1",
+     "locus": "HP15_532",
+     "fitness_browser_desc": "acetolactate synthase 3 regulatory subunit",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "HP15_529 (+) protein disaggregation chaperone",
+      "HP15_530 (-) conserved hypothetical protein, secreted",
+      "HP15_531 (+) acetolactate synthase, large subunit, biosynthetic type",
+      "HP15_532 (+) acetolactate synthase 3 regulatory subunit",
+      "HP15_533 (+) ketol-acid reductoisomerase",
+      "HP15_534 (+) CDP-diacylglycerol-serine O-phosphatidyltransferase",
+      "HP15_535 (+) sulfite oxidase subunit YedY"
+     ]
+    },
+    {
+     "model_gene": "WP_014576077_1",
+     "locus": "HP15_531",
+     "fitness_browser_desc": "acetolactate synthase, large subunit, biosynthetic type",
+     "refseq_definition": "acetolactate synthase 3 large subunit",
+     "neighbourhood": [
+      "HP15_528 (+) multi-copper polyphenol oxidoreductase, laccase",
+      "HP15_529 (+) protein disaggregation chaperone",
+      "HP15_530 (-) conserved hypothetical protein, secreted",
+      "HP15_531 (+) acetolactate synthase, large subunit, biosynthetic type",
+      "HP15_532 (+) acetolactate synthase 3 regulatory subunit",
+      "HP15_533 (+) ketol-acid reductoisomerase",
+      "HP15_534 (+) CDP-diacylglycerol-serine O-phosphatidyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_014576492_1",
+     "locus": "HP15_1016",
+     "fitness_browser_desc": "acetolactate synthase II, small subunit-like protein",
+     "refseq_definition": "ACT domain-containing protein",
+     "neighbourhood": [
+      "HP15_1013 (+) nitrate transport system permease protein",
+      "HP15_1014 (+) nitrate ABC transporter, ATPase subunits C and D",
+      "HP15_1015 (+) cyanate lyase",
+      "HP15_1016 (-) acetolactate synthase II, small subunit-like protein",
+      "HP15_1017 (-) acetolactate synthase, large subunit, biosynthetic type",
+      "HP15_1018 (+) efflux transporter, RND family, MFP subunit",
+      "HP15_1019 (+) multidrug resistance protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014576493_1",
+     "locus": "HP15_1017",
+     "fitness_browser_desc": "acetolactate synthase, large subunit, biosynthetic type",
+     "refseq_definition": "acetolactate synthase 2 catalytic subunit",
+     "neighbourhood": [
+      "HP15_1014 (+) nitrate ABC transporter, ATPase subunits C and D",
+      "HP15_1015 (+) cyanate lyase",
+      "HP15_1016 (-) acetolactate synthase II, small subunit-like protein",
+      "HP15_1017 (-) acetolactate synthase, large subunit, biosynthetic type",
+      "HP15_1018 (+) efflux transporter, RND family, MFP subunit",
+      "HP15_1019 (+) multidrug resistance protein",
+      "HP15_1020 (-) methyl-accepting chemotaxis sensory transducer"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACtex",
+   "name": "Acetate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ac_e <=> ac_p",
+   "equation_names": "Acetate <=> Acetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578091_1 or WP_014579423_1",
+   "n_growth_conditions_essential": 12,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578091_1",
+     "locus": "HP15_2834",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "outer membrane lipoprotein YfiB",
+     "neighbourhood": [
+      "HP15_2831 (+) conserved hypothetical protein, membrane",
+      "HP15_2832 (-) type III restriction protein res subunit",
+      "HP15_2833 (+) conserved hypothetical protein",
+      "HP15_2834 (+) OmpA/MotB domain protein",
+      "HP15_2835 (+) cold shock, CspA",
+      "HP15_2836 (-) conserved hypothetical protein, membrane",
+      "HP15_2837 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014579423_1",
+     "locus": "HP15_p187g137",
+     "fitness_browser_desc": "outer membrane protein OprF",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "HP15_p187g134 (+) short chain dehydrogenase",
+      "HP15_p187g135 (+) conserved hypothetical protein",
+      "HP15_p187g136 (-) hypothetical protein",
+      "HP15_p187g137 (-) outer membrane protein OprF",
+      "HP15_p187g139 (+) hypothetical protein",
+      "HP15_p187g138 (-) hypothetical protein",
+      "HP15_p187g140 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ANS",
+   "name": "Anthranilate synthase",
+   "equation_ids": "chor_c + gln__L_c --> anth_c + glu__L_c + h_c + pyr_c",
+   "equation_names": "Chorismate + L-Glutamine --> Anthranilate + L-Glutamate + H+ + Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008177443_1 or (WP_008173393_1 and WP_041646392_1)",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008173393_1",
+     "locus": "HP15_3289",
+     "fitness_browser_desc": "para-aminobenzoate/anthranilate synthase glutamine amidotransferase component II",
+     "refseq_definition": "aminodeoxychorismate/anthranilate synthase component II",
+     "neighbourhood": [
+      "HP15_3286 (+) ribulose-phosphate 3-epimerase-like protein",
+      "HP15_3287 (+) phosphoglycolate phosphatase",
+      "HP15_3288 (+) anthranilate synthase component I",
+      "HP15_3289 (+) para-aminobenzoate/anthranilate synthase glutamine amidotransferase component II",
+      "HP15_3290 (+) anthranilate phosphoribosyltransferase",
+      "HP15_3291 (+) indole-3-glycerol phosphate synthase",
+      "HP15_3292 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_008177443_1",
+     "locus": "HP15_2338",
+     "fitness_browser_desc": "peptidase C26",
+     "refseq_definition": "gamma-glutamyl-gamma-aminobutyrate hydrolase family protein",
+     "neighbourhood": [
+      "HP15_2335 (-) SOS cell division inhibitor",
+      "HP15_2336 (-) LexA repressor",
+      "HP15_2337 (+) conserved hypothetical protein",
+      "HP15_2338 (+) peptidase C26",
+      "HP15_2339 (+) secreted protein containing DUF541",
+      "HP15_2340 (-) protein containing DUF490",
+      "HP15_2341 (-) surface antigen (D15)"
+     ]
+    },
+    {
+     "model_gene": "WP_041646392_1",
+     "locus": "HP15_3288",
+     "fitness_browser_desc": "anthranilate synthase component I",
+     "refseq_definition": "anthranilate synthase component I",
+     "neighbourhood": [
+      "HP15_3285 (-) conserved hypothetical protein, secreted",
+      "HP15_3286 (+) ribulose-phosphate 3-epimerase-like protein",
+      "HP15_3287 (+) phosphoglycolate phosphatase",
+      "HP15_3288 (+) anthranilate synthase component I",
+      "HP15_3289 (+) para-aminobenzoate/anthranilate synthase glutamine amidotransferase component II",
+      "HP15_3290 (+) anthranilate phosphoribosyltransferase",
+      "HP15_3291 (+) indole-3-glycerol phosphate synthase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASNS1",
+   "name": "Asparagine synthase (glutamine-hydrolysing)",
+   "equation_ids": "asp__L_c + atp_c + gln__L_c + h2o_c --> amp_c + asn__L_c + glu__L_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + L-Glutamine + H2O --> AMP + L-Asparagine + L-Glutamate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577268_1 or WP_014579346_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577268_1",
+     "locus": "HP15_1914",
+     "fitness_browser_desc": "asparagine synthase, glutamine-hydrolyzing",
+     "refseq_definition": "asparagine synthase (glutamine-hydrolyzing)",
+     "neighbourhood": [
+      "HP15_1911 (-) beta 1,4-N-acetylgalactosaminyltransferase-transferase-III-like protein",
+      "HP15_1912 (-) polysaccharide biosynthesis protein",
+      "HP15_1913 (-) glycosyltransferase",
+      "HP15_1914 (-) asparagine synthase, glutamine-hydrolyzing",
+      "HP15_1915 (-) glycosyl transferase, group 1",
+      "HP15_1916 (-) O-antigen polymerase",
+      "HP15_1917 (-) glycosyl transferase, family 2"
+     ]
+    },
+    {
+     "model_gene": "WP_014579346_1",
+     "locus": "HP15_p187g60",
+     "fitness_browser_desc": "asparagine synthase, glutamine-hydrolyzing",
+     "refseq_definition": "asparagine synthase (glutamine-hydrolyzing)",
+     "neighbourhood": [
+      "HP15_p187g57 (+) protein containing glycosyl transferase group 1 domain",
+      "HP15_p187g58 (+) protein containing glycosyl transferase group 1 domain",
+      "HP15_p187g59 (+) glycosyl transferase, group 1",
+      "HP15_p187g60 (+) asparagine synthase, glutamine-hydrolyzing",
+      "HP15_p187g61 (+) conserved hypothetical protein, membrane",
+      "HP15_p187g62 (+) acetyltransferase",
+      "HP15_p187g63 (+) secreted protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPK",
+   "name": "Aspartate kinase",
+   "equation_ids": "asp__L_c + atp_c <=> 4pasp_c + adp_c",
+   "equation_names": "L-Aspartate + ATP <=> 4-Phospho-L-aspartate + ADP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576751_1 or WP_039882177_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576751_1",
+     "locus": "HP15_1320",
+     "fitness_browser_desc": "aspartate kinase: aspartate kinase, monofunctional class",
+     "refseq_definition": "aspartate kinase",
+     "neighbourhood": [
+      "HP15_1317 (+) permease YjgP/YjgQ family protein",
+      "HP15_1318 (-) RDD domain containing protein",
+      "HP15_1319 (+) alanyl-tRNA synthetase, class IIc",
+      "HP15_1320 (+) aspartate kinase: aspartate kinase, monofunctional class",
+      "HP15_1321 (+) carbon storage regulator",
+      "HP15_tRNA22 (+) tRNA-Ser",
+      "HP15_tRNA23 (+) tRNA-Arg"
+     ]
+    },
+    {
+     "model_gene": "WP_039882177_1",
+     "locus": "HP15_3856",
+     "fitness_browser_desc": "aspartokinase",
+     "refseq_definition": "aspartate kinase",
+     "neighbourhood": [
+      "HP15_3853 (+) conserved hypothetical protein",
+      "HP15_3854 (+) L-2,4-diaminobutyric acid acetyltransferase",
+      "HP15_3855 (+) 2,4-diaminobutyrate 4-transaminase",
+      "HP15_3856 (+) aspartokinase",
+      "HP15_3857 (+) RNA polymerase, sigma 70 subunit, RpoD family",
+      "HP15_3858 (-) aspartate kinase",
+      "HP15_3859 (-) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPTA",
+   "name": "Aspartate transaminase",
+   "equation_ids": "akg_c + asp__L_c <=> glu__L_c + oaa_c",
+   "equation_names": "2-Oxoglutarate + L-Aspartate <=> L-Glutamate + Oxaloacetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008176120_1 or WP_014576347_1 or WP_014576796_1 or WP_014577032_1 or WP_014578023_1 or WP_041645088_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008176120_1",
+     "locus": "HP15_814",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "HP15_811 (+) acetyl-CoA synthetase",
+      "HP15_812 (+) two component transcriptional regulator, LuxR family",
+      "HP15_813 (-) D-isomer specific 2-hydroxyacid dehydrogenase family protein",
+      "HP15_814 (+) aspartate aminotransferase",
+      "HP15_815 (+) uncharacterized conserved protein UCP037225-like protein",
+      "HP15_816 (+) secreted protein containing DUF1439",
+      "HP15_817 (-) 3-isopropylmalate dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_014576347_1",
+     "locus": "HP15_858",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "HP15_855 (+) M23 peptidase domain protein",
+      "HP15_856 (-) UspA domain protein",
+      "HP15_857 (-) sodium-dependent transporter family protein",
+      "HP15_858 (-) aspartate aminotransferase",
+      "HP15_859 (-) pyruvate ferredoxin/flavodoxin oxidoreductase",
+      "HP15_860 (+) transcriptional regulator, AsnC family protein",
+      "HP15_861 (-) cold shock, CspA"
+     ]
+    },
+    {
+     "model_gene": "WP_014576796_1",
+     "locus": "HP15_1371",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "HP15_1369 (+) conserved hypothetical protein",
+      "HP15_1370 (+) orotidine 5'-phosphate decarboxylase",
+      "HP15_tRNA25 (-) tRNA-Asn",
+      "HP15_1371 (-) aspartate aminotransferase",
+      "HP15_1372 (+) excinuclease ABC subunit B",
+      "HP15_1373 (-) acetyltransferase, GNAT family",
+      "HP15_1374 (+) glutathione synthase/ribosomal protein S6 modification enzyme"
+     ]
+    },
+    {
+     "model_gene": "WP_014577032_1",
+     "locus": "HP15_1649",
+     "fitness_browser_desc": "transcriptional regulator, GntR family with aminotransferase domain protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "HP15_1646 (+) conserved hypothetical protein",
+      "HP15_1647 (+) DoxX",
+      "HP15_1648 (+) protein containing thioredoxin domain",
+      "HP15_1649 (+) transcriptional regulator, GntR family with aminotransferase domain protein",
+      "HP15_1650 (+) iron-sulfur cluster-binding protein-like protein",
+      "HP15_1651 (+) iron-sulfur cluster-binding protein",
+      "HP15_1652 (-) disulfide isomerase/thiol-disulfide oxidase-like protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014578023_1",
+     "locus": "HP15_2761",
+     "fitness_browser_desc": "transcriptional regulator, GntR family with aminotransferase domain protein",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "HP15_2757 (-) conserved hypothetical protein",
+      "HP15_2758 (+) conserved hypothetical protein, membrane",
+      "HP15_2759 (-) conserved hypothetical protein",
+      "HP15_2761 (+) transcriptional regulator, GntR family with aminotransferase domain protein",
+      "HP15_2760 (+) methyltransferase domain family",
+      "HP15_2762 (-) transcriptional regulator, LysR family protein",
+      "HP15_2763 (+) methyltransferase, UbiE/COQ5 family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041645088_1",
+     "locus": "HP15_1036",
+     "fitness_browser_desc": "transcriptional regulator, GntR family with aminotransferase domain protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "HP15_1033 (-) flavoprotein, NADB Rossmann superfamily",
+      "HP15_1034 (-) Zn-dependent alcohol dehydrogenase",
+      "HP15_1035 (-) phenazine biosynthesis protein, PhzF family",
+      "HP15_1036 (+) transcriptional regulator, GntR family with aminotransferase domain protein",
+      "HP15_1037 (-) two-component response regulator",
+      "HP15_1038 (-) sensory box histidine kinase",
+      "HP15_1039 (+) acyl-CoA synthetase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CA2tex",
+   "name": "Calcium (Ca+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ca2_e <=> ca2_p",
+   "equation_names": "Calcium <=> Calcium",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578091_1 or WP_014579423_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578091_1",
+     "locus": "HP15_2834",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "outer membrane lipoprotein YfiB",
+     "neighbourhood": [
+      "HP15_2831 (+) conserved hypothetical protein, membrane",
+      "HP15_2832 (-) type III restriction protein res subunit",
+      "HP15_2833 (+) conserved hypothetical protein",
+      "HP15_2834 (+) OmpA/MotB domain protein",
+      "HP15_2835 (+) cold shock, CspA",
+      "HP15_2836 (-) conserved hypothetical protein, membrane",
+      "HP15_2837 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014579423_1",
+     "locus": "HP15_p187g137",
+     "fitness_browser_desc": "outer membrane protein OprF",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "HP15_p187g134 (+) short chain dehydrogenase",
+      "HP15_p187g135 (+) conserved hypothetical protein",
+      "HP15_p187g136 (-) hypothetical protein",
+      "HP15_p187g137 (-) outer membrane protein OprF",
+      "HP15_p187g139 (+) hypothetical protein",
+      "HP15_p187g138 (-) hypothetical protein",
+      "HP15_p187g140 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CHORM",
+   "name": "Chorismate mutase",
+   "equation_ids": "chor_c --> pphn_c",
+   "equation_names": "Chorismate --> Prephenate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008172067_1 or WP_014577564_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008172067_1",
+     "locus": "HP15_1362",
+     "fitness_browser_desc": "chorismate mutase / prephenate dehydratase",
+     "refseq_definition": "prephenate dehydratase",
+     "neighbourhood": [
+      "HP15_1358 (+) formyltetrahydrofolate deformylase",
+      "HP15_1360 (+) DNA gyrase subunit A-like protein",
+      "HP15_1361 (+) phosphoserine aminotransferase",
+      "HP15_1362 (+) chorismate mutase / prephenate dehydratase",
+      "HP15_1363 (+) histidinol-phosphate aminotransferase",
+      "HP15_1364 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "HP15_1365 (+) cytidylate kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_014577564_1",
+     "locus": "HP15_2243",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "HP15_2240 (+) tRNA-dihydrouridine synthase, TIM-barrel, YjbN",
+      "HP15_2241 (+) transaldolase",
+      "HP15_2242 (+) protein containing DUF1332",
+      "HP15_2243 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "HP15_2244 (+) glycerophosphoryl diester phosphodiesterase",
+      "HP15_2245 (-) soluble pyridine nucleotide transhydrogenase",
+      "HP15_2246 (-) membrane or secreted protein containing DUF539"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CITACt",
+   "name": "Citrate transport via acetate antiport",
+   "equation_ids": "ac_c + cit_e <-- ac_e + cit_c",
+   "equation_names": "Acetate + Citrate <-- Acetate + Citrate",
+   "annotation": {
+    "metanetx.reaction": "MNXR96723"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": []
+  },
+  {
+   "reaction": "CITt11",
+   "name": "Citrate transport in via Mn complex",
+   "equation_ids": "cit_e + h_e + mn2_e --> cit_c + h_c + mn2_c",
+   "equation_names": "Citrate + H+ + Mn2+ --> Citrate + H+ + Mn2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": []
+  },
+  {
+   "reaction": "CITt13",
+   "name": "Citrate transport in via Co complex",
+   "equation_ids": "cit_e + cobalt2_e + h_e --> cit_c + cobalt2_c + h_c",
+   "equation_names": "Citrate + Co2+ + H+ --> Citrate + Co2+ + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": []
+  },
+  {
+   "reaction": "CLtex",
+   "name": "Chloride (Cl-1) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cl_e <=> cl_p",
+   "equation_names": "Chloride <=> Chloride",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578091_1 or WP_014579423_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578091_1",
+     "locus": "HP15_2834",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "outer membrane lipoprotein YfiB",
+     "neighbourhood": [
+      "HP15_2831 (+) conserved hypothetical protein, membrane",
+      "HP15_2832 (-) type III restriction protein res subunit",
+      "HP15_2833 (+) conserved hypothetical protein",
+      "HP15_2834 (+) OmpA/MotB domain protein",
+      "HP15_2835 (+) cold shock, CspA",
+      "HP15_2836 (-) conserved hypothetical protein, membrane",
+      "HP15_2837 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014579423_1",
+     "locus": "HP15_p187g137",
+     "fitness_browser_desc": "outer membrane protein OprF",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "HP15_p187g134 (+) short chain dehydrogenase",
+      "HP15_p187g135 (+) conserved hypothetical protein",
+      "HP15_p187g136 (-) hypothetical protein",
+      "HP15_p187g137 (-) outer membrane protein OprF",
+      "HP15_p187g139 (+) hypothetical protein",
+      "HP15_p187g138 (-) hypothetical protein",
+      "HP15_p187g140 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tex",
+   "name": "Copper (Cu+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cu2_e <=> cu2_p",
+   "equation_names": "Cu2+ <=> Cu2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578091_1 or WP_014579423_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578091_1",
+     "locus": "HP15_2834",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "outer membrane lipoprotein YfiB",
+     "neighbourhood": [
+      "HP15_2831 (+) conserved hypothetical protein, membrane",
+      "HP15_2832 (-) type III restriction protein res subunit",
+      "HP15_2833 (+) conserved hypothetical protein",
+      "HP15_2834 (+) OmpA/MotB domain protein",
+      "HP15_2835 (+) cold shock, CspA",
+      "HP15_2836 (-) conserved hypothetical protein, membrane",
+      "HP15_2837 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014579423_1",
+     "locus": "HP15_p187g137",
+     "fitness_browser_desc": "outer membrane protein OprF",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "HP15_p187g134 (+) short chain dehydrogenase",
+      "HP15_p187g135 (+) conserved hypothetical protein",
+      "HP15_p187g136 (-) hypothetical protein",
+      "HP15_p187g137 (-) outer membrane protein OprF",
+      "HP15_p187g139 (+) hypothetical protein",
+      "HP15_p187g138 (-) hypothetical protein",
+      "HP15_p187g140 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tpp",
+   "name": "Copper transport in via permease (no H+)",
+   "equation_ids": "cu2_p --> cu2_c",
+   "equation_names": "Cu2+ --> Cu2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": []
+  },
+  {
+   "reaction": "CYSS",
+   "name": "Cysteine synthase",
+   "equation_ids": "acser_c + h2s_c --> ac_c + cys__L_c + h_c",
+   "equation_names": "O-Acetyl-L-serine + Hydrogen sulfide --> Acetate + L-Cysteine + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576290_1 or WP_014578627_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576290_1",
+     "locus": "HP15_789",
+     "fitness_browser_desc": "cysteine synthase B",
+     "refseq_definition": "cysteine synthase CysM",
+     "neighbourhood": [
+      "HP15_786 (+) DNA repair protein RecO",
+      "HP15_787 (+) pyridoxal phosphate biosynthetic protein PdxJ",
+      "HP15_788 (-) multi-sensor hybrid histidine kinase",
+      "HP15_789 (+) cysteine synthase B",
+      "HP15_790 (+) 23S rRNA 5-methyluridine methyltransferase",
+      "HP15_791 (+) (p)ppGpp synthetase I (GTP pyrophosphokinase), SpoT/RelA",
+      "HP15_792 (+) nucleoside triphosphate pyrophosphohydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_014578627_1",
+     "locus": "HP15_3453",
+     "fitness_browser_desc": "cysteine synthase A",
+     "refseq_definition": "cysteine synthase A",
+     "neighbourhood": [
+      "HP15_3450 (-) protein containing DUF815",
+      "HP15_3451 (+) methylglyoxal synthase",
+      "HP15_3452 (+) diguanylate cyclase",
+      "HP15_3453 (+) cysteine synthase A",
+      "HP15_3454 (-) OmpA domain protein transmembrane region-containing protein",
+      "HP15_3455 (-) glycerophosphoryl diester phosphodiesterase family protein",
+      "HP15_3456 (-) protein containing DUF465"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DDPA",
+   "name": "3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase",
+   "equation_ids": "e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Phosphoenolpyruvate --> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008171726_1 or WP_014577564_1 or WP_014578460_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008171726_1",
+     "locus": "HP15_1814",
+     "fitness_browser_desc": "phospho-2-dehydro-3-heoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "HP15_1811 (+) short-chain dehydrogenase/reductase SDR",
+      "HP15_1812 (-) type IV pilus assembly PilZ",
+      "HP15_1813 (-) conserved hypothetical protein",
+      "HP15_1814 (+) phospho-2-dehydro-3-heoxyheptonate aldolase",
+      "HP15_1815 (-) siroheme synthase",
+      "HP15_1816 (-) seryl-tRNA synthetase",
+      "HP15_1817 (-) recombination factor protein RarA"
+     ]
+    },
+    {
+     "model_gene": "WP_014577564_1",
+     "locus": "HP15_2243",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "HP15_2240 (+) tRNA-dihydrouridine synthase, TIM-barrel, YjbN",
+      "HP15_2241 (+) transaldolase",
+      "HP15_2242 (+) protein containing DUF1332",
+      "HP15_2243 (+) phospho-2-dehydro-3-deoxyheptonate aldolase",
+      "HP15_2244 (+) glycerophosphoryl diester phosphodiesterase",
+      "HP15_2245 (-) soluble pyridine nucleotide transhydrogenase",
+      "HP15_2246 (-) membrane or secreted protein containing DUF539"
+     ]
+    },
+    {
+     "model_gene": "WP_014578460_1",
+     "locus": "HP15_3256",
+     "fitness_browser_desc": "phospho-2-dehydro-3-heoxyheptonate aldolase",
+     "refseq_definition": "3-deoxy-7-phosphoheptulonate synthase",
+     "neighbourhood": [
+      "HP15_3253 (-) ferritin-like DNA-binding protein",
+      "HP15_3254 (-) hypothetical protein",
+      "HP15_3255 (-) mercuric ion reductase",
+      "HP15_3256 (-) phospho-2-dehydro-3-heoxyheptonate aldolase",
+      "HP15_3257 (+) hypothetical protein",
+      "HP15_3258 (-) hypothetical protein",
+      "HP15_3259 (+) NolW domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578545_1 or WP_041644970_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578545_1",
+     "locus": "HP15_3363",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "HP15_3360 (-) asparaginase",
+      "HP15_3361 (-) peptidase S11, D-alanyl-D-alanine carboxypeptidase 1",
+      "HP15_3362 (+) diguanylate cyclase/phosphodiesterase with PAS/PAC and GAF sensor(s)",
+      "HP15_3363 (-) dihydroxy-acid dehydratase",
+      "HP15_3364 (+) hypothetical protein",
+      "HP15_3365 (+) D-xylulose 5-phosphate/D-fructose 6-phosphate phosphoketolase",
+      "HP15_3366 (-) cation-transporting ATPase, E1-E2 family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041644970_1",
+     "locus": "HP15_595",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "HP15_592 (-) conserved hypothetical protein",
+      "HP15_593 (+) protein belonging to uncharacterized protein family UPF0118",
+      "HP15_594 (+) peptidoglycan-binding domain 1 protein-like protein",
+      "HP15_595 (-) dihydroxy-acid dehydratase",
+      "HP15_596 (+) signal transduction protein",
+      "HP15_597 (+) peptidase S16, lon domain protein",
+      "HP15_598 (-) phosphoesterase, PA-phosphatase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHFR",
+   "name": "Dihydrofolate reductase",
+   "equation_ids": "dhf_c + h_c + nadph_c <=> nadp_c + thf_c",
+   "equation_names": "7,8-Dihydrofolate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576120_1 or WP_014578851_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576120_1",
+     "locus": "HP15_587",
+     "fitness_browser_desc": "protein containing dihydrofolate reductase region domain",
+     "refseq_definition": "dihydrofolate reductase",
+     "neighbourhood": [
+      "HP15_584 (+) membrane protein containing DUF81",
+      "HP15_585 (+) prolipoprotein diacylglyceryl transferase",
+      "HP15_586 (+) thymidylate synthase",
+      "HP15_587 (+) protein containing dihydrofolate reductase region domain",
+      "HP15_588 (-) DEAD/DEAH box helicase domain protein",
+      "HP15_589 (+) acyl-CoA thioesterase II",
+      "HP15_590 (-) haloalkane dehalogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_014578851_1",
+     "locus": "HP15_3719",
+     "fitness_browser_desc": "short-chain dehydrogenase/reductase SDR",
+     "refseq_definition": "dihydromonapterin reductase",
+     "neighbourhood": [
+      "HP15_3716 (-) conserved hypothetical protein",
+      "HP15_3717 (+) conserved hypothetical protein",
+      "HP15_3718 (+) conserved hypothetical protein, secreted",
+      "HP15_3719 (-) short-chain dehydrogenase/reductase SDR",
+      "HP15_3720 (+) protein containing VRR-NUC domain",
+      "HP15_3721 (+) Rad3-related DNA helicase",
+      "HP15_3722 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576669_1 or WP_014578668_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576669_1",
+     "locus": "HP15_1216",
+     "fitness_browser_desc": "dihydroorotase, homodimeric type",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "HP15_1213 (+) short chain dehydrogenase",
+      "HP15_1214 (+) methyl-accepting chemotaxis sensory transducer",
+      "HP15_1215 (-) ribonuclease T",
+      "HP15_1216 (-) dihydroorotase, homodimeric type",
+      "HP15_1217 (+) hypothetical protein",
+      "HP15_1218 (+) OmpA/MotB domain protein",
+      "HP15_1219 (-) histone deacetylase/AcuC/AphA family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014578668_1",
+     "locus": "HP15_3506",
+     "fitness_browser_desc": "dihydroorotase, multifunctional complex type",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "HP15_3503 (+) hypothetical protein",
+      "HP15_3504 (+) histone-like bacterial DNA-binding protein",
+      "HP15_3505 (-) RND type efflux pump involved in aminoglycoside resistance (AdeT)",
+      "HP15_3506 (-) dihydroorotase, multifunctional complex type",
+      "HP15_3507 (-) aspartate carbamoyltransferase",
+      "HP15_3508 (-) bifunctional protein PyrR",
+      "HP15_3509 (-) Holliday junction resolvase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNMPPA",
+   "name": "Dihydroneopterin monophosphate dephosphorylase",
+   "equation_ids": "dhpmp_c + h2o_c --> dhnpt_c + pi_c",
+   "equation_names": "Dihydroneopterin monophosphate + H2O --> Dihydroneopterin + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577099_1 or WP_014577455_1 or WP_041644941_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577099_1",
+     "locus": "HP15_1718",
+     "fitness_browser_desc": "ATP-dependent DNA helicase RecQ",
+     "refseq_definition": "DNA helicase RecQ",
+     "neighbourhood": [
+      "HP15_1715 (-) phospholipase/carboxylesterase family protein",
+      "HP15_1716 (-) hypothetical protein",
+      "HP15_1717 (-) phospholipid/glycerol acyltransferase",
+      "HP15_1718 (+) ATP-dependent DNA helicase RecQ",
+      "HP15_1719 (-) conserved hypothetical protein",
+      "HP15_1720 (-) hypothetical protein",
+      "HP15_1721 (+) conserved hypothetical protein, secreted"
+     ]
+    },
+    {
+     "model_gene": "WP_014577455_1",
+     "locus": "HP15_2113",
+     "fitness_browser_desc": "heavy-metal transporting P-type ATPase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "HP15_2110 (+) cytochrome c oxidase, cbb3-type, subunit III",
+      "HP15_2111 (+) iron-sulfur cluster-binding protein",
+      "HP15_2112 (+) FixH-like protein",
+      "HP15_2113 (+) heavy-metal transporting P-type ATPase",
+      "HP15_2114 (+) cytochrome oxidase maturation protein, cbb3-type",
+      "HP15_2115 (+) conserved hypothetical protein, membrane",
+      "HP15_2116 (-) PP-loop domain protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041644941_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "RNA pyrophosphohydrolase"
+    }
+   ]
+  },
+  {
+   "reaction": "DNTPPA",
+   "name": "Dihydroneopterin triphosphate pyrophosphatase",
+   "equation_ids": "ahdt_c + h2o_c --> dhpmp_c + h_c + ppi_c",
+   "equation_names": "2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + H2O --> Dihydroneopterin monophosphate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576113_1 or WP_014577099_1 or WP_014577455_1 or WP_041644941_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576113_1",
+     "locus": "HP15_577",
+     "fitness_browser_desc": "mutator MutT protein",
+     "refseq_definition": "Nudix family hydrolase",
+     "neighbourhood": [
+      "HP15_574 (+) peptidase M23B",
+      "HP15_575 (+) preprotein translocase, SecA subunit",
+      "HP15_576 (+) bifunctional ornithine acetyltransferase/N-acetylglutamate synthase protein",
+      "HP15_577 (+) mutator MutT protein",
+      "HP15_578 (+) molybdenum cofactor biosynthesis protein C",
+      "HP15_579 (+) bifunctional 3,4-dihydroxy-2-butanone 4-phosphate synthase/GTP cyclohydrolase II protein",
+      "HP15_580 (-) 1-deoxy-D-xylulose-5-phosphate synthase"
+     ]
+    },
+    {
+     "model_gene": "WP_014577099_1",
+     "locus": "HP15_1718",
+     "fitness_browser_desc": "ATP-dependent DNA helicase RecQ",
+     "refseq_definition": "DNA helicase RecQ",
+     "neighbourhood": [
+      "HP15_1715 (-) phospholipase/carboxylesterase family protein",
+      "HP15_1716 (-) hypothetical protein",
+      "HP15_1717 (-) phospholipid/glycerol acyltransferase",
+      "HP15_1718 (+) ATP-dependent DNA helicase RecQ",
+      "HP15_1719 (-) conserved hypothetical protein",
+      "HP15_1720 (-) hypothetical protein",
+      "HP15_1721 (+) conserved hypothetical protein, secreted"
+     ]
+    },
+    {
+     "model_gene": "WP_014577455_1",
+     "locus": "HP15_2113",
+     "fitness_browser_desc": "heavy-metal transporting P-type ATPase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "HP15_2110 (+) cytochrome c oxidase, cbb3-type, subunit III",
+      "HP15_2111 (+) iron-sulfur cluster-binding protein",
+      "HP15_2112 (+) FixH-like protein",
+      "HP15_2113 (+) heavy-metal transporting P-type ATPase",
+      "HP15_2114 (+) cytochrome oxidase maturation protein, cbb3-type",
+      "HP15_2115 (+) conserved hypothetical protein, membrane",
+      "HP15_2116 (-) PP-loop domain protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041644941_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "RNA pyrophosphohydrolase"
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576744_1 or WP_041645945_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576744_1",
+     "locus": "HP15_1312",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "ketopantoate reductase family protein",
+     "neighbourhood": [
+      "HP15_1309 (+) signaling modulator of AmpD, AmpE",
+      "HP15_1310 (+) methyl-accepting chemotaxis sensory transducer",
+      "HP15_1311 (-) ATP-cobalamin adenosyltransferase",
+      "HP15_1312 (-) 2-dehydropantoate 2-reductase",
+      "HP15_1313 (-) valyl-tRNA synthetase",
+      "HP15_1314 (-) DNA polymerase III chi subunit, HolC",
+      "HP15_1315 (-) leucyl aminopeptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_041645945_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "ketopantoate reductase family protein"
+    }
+   ]
+  },
+  {
+   "reaction": "DTMPK",
+   "name": "DTMP kinase",
+   "equation_ids": "atp_c + dtmp_c <=> adp_c + dtdp_c",
+   "equation_names": "ATP + DTMP <=> ADP + DTDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577539_1 or WP_041646001_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577539_1",
+     "locus": "HP15_2207",
+     "fitness_browser_desc": "thymidylate kinase",
+     "refseq_definition": "dTMP kinase",
+     "neighbourhood": [
+      "HP15_2204 (-) membrane protein containing DUF81",
+      "HP15_2205 (-) sodium/solute symporter",
+      "HP15_2206 (-) AraC-type DNA-binding domain-containing protein",
+      "HP15_2207 (-) thymidylate kinase",
+      "HP15_2208 (-) aminodeoxychorismate lyase",
+      "HP15_2209 (-) 4-amino-4-deoxychorismate lyase",
+      "HP15_2210 (-) 3-oxoacyl-(acyl-carrier-protein) synthase II"
+     ]
+    },
+    {
+     "model_gene": "WP_041646001_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "dTMP kinase"
+    }
+   ]
+  },
+  {
+   "reaction": "E4PD",
+   "name": "Erythrose 4-phosphate dehydrogenase",
+   "equation_ids": "e4p_c + h2o_c + nad_c <=> 4per_c + 2.0 h_c + nadh_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Nicotinamide adenine dinucleotide <=> 4-Phospho-D-erythronate + 2.0 H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578164_1 or WP_014578578_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578164_1",
+     "locus": "HP15_2912",
+     "fitness_browser_desc": "glyceraldehyde 3-phosphate dehydrogenase, type I",
+     "refseq_definition": "type I glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "HP15_2909 (-) heat shock protein DnaJ domain protein",
+      "HP15_2910 (-) fructose-1,6-bisphosphate aldolase",
+      "HP15_2911 (-) phosphoglycerate kinase",
+      "HP15_2912 (-) glyceraldehyde 3-phosphate dehydrogenase, type I",
+      "HP15_2913 (-) bacterial transketolase",
+      "HP15_2914 (+) protein containing Methyltransferase type 11 domain",
+      "HP15_2915 (+) S-adenosylmethionine synthetase"
+     ]
+    },
+    {
+     "model_gene": "WP_014578578_1",
+     "locus": "HP15_3399",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase, type I",
+     "refseq_definition": "ArsJ-associated glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "HP15_3396 (-) ABC transporter",
+      "HP15_3397 (+) conserved hypothetical protein, secreted",
+      "HP15_3398 (-) major facilitator superfamily MFS_1",
+      "HP15_3399 (-) glyceraldehyde-3-phosphate dehydrogenase, type I",
+      "HP15_3400 (-) transcriptional regulator, ArsR family protein",
+      "HP15_3401 (+) sodium bile acid symporter family protein",
+      "HP15_3402 (+) undecaprenyl pyrophosphate phosphatase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ETOHtex",
+   "name": "Ethanol transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "etoh_e <=> etoh_p",
+   "equation_names": "Ethanol <=> Ethanol",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578091_1 or WP_014579423_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578091_1",
+     "locus": "HP15_2834",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "outer membrane lipoprotein YfiB",
+     "neighbourhood": [
+      "HP15_2831 (+) conserved hypothetical protein, membrane",
+      "HP15_2832 (-) type III restriction protein res subunit",
+      "HP15_2833 (+) conserved hypothetical protein",
+      "HP15_2834 (+) OmpA/MotB domain protein",
+      "HP15_2835 (+) cold shock, CspA",
+      "HP15_2836 (-) conserved hypothetical protein, membrane",
+      "HP15_2837 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014579423_1",
+     "locus": "HP15_p187g137",
+     "fitness_browser_desc": "outer membrane protein OprF",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "HP15_p187g134 (+) short chain dehydrogenase",
+      "HP15_p187g135 (+) conserved hypothetical protein",
+      "HP15_p187g136 (-) hypothetical protein",
+      "HP15_p187g137 (-) outer membrane protein OprF",
+      "HP15_p187g139 (+) hypothetical protein",
+      "HP15_p187g138 (-) hypothetical protein",
+      "HP15_p187g140 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FBP",
+   "name": "Fructose-bisphosphatase",
+   "equation_ids": "fdp_c + h2o_c --> f6p_c + pi_c",
+   "equation_names": "D-Fructose 1,6-bisphosphate + H2O --> D-Fructose 6-phosphate + Phosphate",
+   "annotation": {
+    "rhea": [
+     "11064",
+     "11065",
+     "11066",
+     "11067"
+    ],
+    "ec-code": "3.1.3.11",
+    "metanetx.reaction": "MNXR99465"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 16,
+   "genes": []
+  },
+  {
+   "reaction": "FUM",
+   "name": "Fumarase",
+   "equation_ids": "fum_c + h2o_c <=> mal__L_c",
+   "equation_names": "Fumarate + H2O <=> L-Malate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576609_1 or WP_014578343_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576609_1",
+     "locus": "HP15_1143",
+     "fitness_browser_desc": "hydro-lyase, Fe-S type, tartrate/fumarate subfamily, alpha subunit",
+     "refseq_definition": "fumarate hydratase",
+     "neighbourhood": [
+      "HP15_1140 (-) MECDP-synthase",
+      "HP15_1141 (-) enoyl-CoA hydratase/isomerase",
+      "HP15_1142 (+) hypothetical protein",
+      "HP15_1143 (+) hydro-lyase, Fe-S type, tartrate/fumarate subfamily, alpha subunit",
+      "HP15_1144 (-) protein belonging to uncharacterized protein family UPF0061",
+      "HP15_1145 (+) conserved hypothetical protein",
+      "HP15_1146 (+) mannosyl-3-phosphoglycerate phosphatase"
+     ]
+    },
+    {
+     "model_gene": "WP_014578343_1",
+     "locus": "HP15_3132",
+     "fitness_browser_desc": "fumarate hydratase class II",
+     "refseq_definition": "class II fumarate hydratase",
+     "neighbourhood": [
+      "HP15_3129 (-) chromate transporter",
+      "HP15_3130 (+) phosphohydrolase",
+      "HP15_3131 (-) hypothetical protein",
+      "HP15_3132 (-) fumarate hydratase class II",
+      "HP15_3133 (-) conserved hypothetical protein",
+      "HP15_3134 (-) two-component system sensor protein",
+      "HP15_3135 (-) iron-containing alcohol dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GAPD",
+   "name": "Glyceraldehyde-3-phosphate dehydrogenase",
+   "equation_ids": "g3p_c + nad_c + pi_c <=> 13dpg_c + h_c + nadh_c",
+   "equation_names": "Glyceraldehyde 3-phosphate + Nicotinamide adenine dinucleotide + Phosphate <=> 3-Phospho-D-glyceroyl phosphate + H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577514_1 or WP_014577573_1 or WP_014578578_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577514_1",
+     "locus": "HP15_2175",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase, type I",
+     "refseq_definition": "type I glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "HP15_2172 (+) nitrorecductase",
+      "HP15_2173 (-) glucokinase",
+      "HP15_2174 (-) 6-phosphogluconate dehydratase",
+      "HP15_2175 (+) glyceraldehyde-3-phosphate dehydrogenase, type I",
+      "HP15_2176 (+) pyruvate kinase II",
+      "HP15_2177 (-) 2-dehydro-3-deoxyphosphogluconate aldolase/4-hydroxy-2-oxoglutarate aldolase",
+      "HP15_2178 (-) 6-phosphogluconolactonase"
+     ]
+    },
+    {
+     "model_gene": "WP_014577573_1",
+     "locus": "HP15_2255",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase, type I",
+     "refseq_definition": "glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "HP15_2252 (-) Na(+)-translocating NADH-quinone reductase subunit B",
+      "HP15_2253 (-) Na(+)-translocating NADH-quinone reductase subunit A",
+      "HP15_2254 (-) hypothetical protein",
+      "HP15_2255 (-) glyceraldehyde-3-phosphate dehydrogenase, type I",
+      "HP15_2256 (+) hypothetical protein",
+      "HP15_2257 (+) transcription-repair-coupling factor",
+      "HP15_2258 (+) 5'-methylthioadenosine phosphorylase"
+     ]
+    },
+    {
+     "model_gene": "WP_014578578_1",
+     "locus": "HP15_3399",
+     "fitness_browser_desc": "glyceraldehyde-3-phosphate dehydrogenase, type I",
+     "refseq_definition": "ArsJ-associated glyceraldehyde-3-phosphate dehydrogenase",
+     "neighbourhood": [
+      "HP15_3396 (-) ABC transporter",
+      "HP15_3397 (+) conserved hypothetical protein, secreted",
+      "HP15_3398 (-) major facilitator superfamily MFS_1",
+      "HP15_3399 (-) glyceraldehyde-3-phosphate dehydrogenase, type I",
+      "HP15_3400 (-) transcriptional regulator, ArsR family protein",
+      "HP15_3401 (+) sodium bile acid symporter family protein",
+      "HP15_3402 (+) undecaprenyl pyrophosphate phosphatase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GK1",
+   "name": "Guanylate kinase (GMP:ATP)",
+   "equation_ids": "atp_c + gmp_c <=> adp_c + gdp_c",
+   "equation_names": "ATP + GMP <=> ADP + GDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014575899_1 or WP_041645030_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014575899_1",
+     "locus": "HP15_303",
+     "fitness_browser_desc": "guanylate kinase",
+     "refseq_definition": "guanylate kinase",
+     "neighbourhood": [
+      "HP15_300 (-) ribonuclease PH",
+      "HP15_301 (+) conserved hypothetical protein",
+      "HP15_302 (-) protein containing pseudouridine synthase domain",
+      "HP15_303 (+) guanylate kinase",
+      "HP15_304 (+) DNA-directed RNA polymerase subunit omega",
+      "HP15_305 (+) guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase",
+      "HP15_306 (+) YjgF-like protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041645030_1",
+     "locus": "HP15_879",
+     "fitness_browser_desc": "short-chain dehydrogenase/reductase SDR",
+     "refseq_definition": "SDR family oxidoreductase",
+     "neighbourhood": [
+      "HP15_876 (+) class I peptide chain release factor",
+      "HP15_877 (-) lipase/esterase",
+      "HP15_878 (+) conserved hypothetical protein",
+      "HP15_879 (+) short-chain dehydrogenase/reductase SDR",
+      "HP15_880 (+) oxidoreductase, short chain dehydrogenase/reductase family",
+      "HP15_881 (+) 2',5' RNA ligase",
+      "HP15_882 (+) hydrolase, carbon-nitrogen family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNS",
+   "name": "Glutamine synthetase",
+   "equation_ids": "atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c",
+   "equation_names": "ATP + L-Glutamate + Ammonium --> ADP + L-Glutamine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014575989_1 or WP_014576422_1 or WP_014578366_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014575989_1",
+     "locus": "HP15_428",
+     "fitness_browser_desc": "glutamine synthetase, type I",
+     "refseq_definition": "glutamate--ammonia ligase",
+     "neighbourhood": [
+      "HP15_425 (-) two-component response regulator NtrC",
+      "HP15_426 (-) signal transduction histidine kinase, nitrogen specific, NtrB",
+      "HP15_427 (-) conserved hypothetical protein, secreted",
+      "HP15_428 (-) glutamine synthetase, type I",
+      "HP15_429 (+) GTP-binding protein TypA",
+      "HP15_430 (+) peptidase S33, proline iminopeptidase 1",
+      "HP15_431 (+) D-tyrosyl-tRNA(Tyr) deacylase"
+     ]
+    },
+    {
+     "model_gene": "WP_014576422_1",
+     "locus": "HP15_942",
+     "fitness_browser_desc": "glutamate-putrescine ligase",
+     "refseq_definition": "glutamine synthetase family protein",
+     "neighbourhood": [
+      "HP15_939 (-) spermidine/putrescine ABC transporter ATPase subunit",
+      "HP15_940 (-) putrescine ABC transporter, periplasmic putrescine-binding protein",
+      "HP15_941 (-) conserved hypothetical protein, secreted",
+      "HP15_942 (+) glutamate-putrescine ligase",
+      "HP15_943 (-) aldehyde dehydrogenase family protein",
+      "HP15_944 (+) FAD dependent oxidoreductase",
+      "HP15_945 (+) protein containing immunoglobulin I-set domain"
+     ]
+    },
+    {
+     "model_gene": "WP_014578366_1",
+     "locus": "HP15_3156",
+     "fitness_browser_desc": "glutamate-ammonia ligase",
+     "refseq_definition": "type III glutamate--ammonia ligase",
+     "neighbourhood": [
+      "HP15_3153 (-) protein containing cyclic nucleotide-binding domain",
+      "HP15_3154 (+) class II aldolase/adducin family protein",
+      "HP15_3155 (+) metal dependent phosphohydrolase",
+      "HP15_3156 (-) glutamate-ammonia ligase",
+      "HP15_3157 (+) homoserine O-acetyltransferase",
+      "HP15_3158 (+) binding-protein-dependent transport systems inner membrane component",
+      "HP15_3159 (+) spermidine/putrescine ABC transporter ATPase subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLYCtex",
+   "name": "Glycerol transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "glyc_e <=> glyc_p",
+   "equation_names": "Glycerol <=> Glycerol",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578091_1 or WP_014579423_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578091_1",
+     "locus": "HP15_2834",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "outer membrane lipoprotein YfiB",
+     "neighbourhood": [
+      "HP15_2831 (+) conserved hypothetical protein, membrane",
+      "HP15_2832 (-) type III restriction protein res subunit",
+      "HP15_2833 (+) conserved hypothetical protein",
+      "HP15_2834 (+) OmpA/MotB domain protein",
+      "HP15_2835 (+) cold shock, CspA",
+      "HP15_2836 (-) conserved hypothetical protein, membrane",
+      "HP15_2837 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014579423_1",
+     "locus": "HP15_p187g137",
+     "fitness_browser_desc": "outer membrane protein OprF",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "HP15_p187g134 (+) short chain dehydrogenase",
+      "HP15_p187g135 (+) conserved hypothetical protein",
+      "HP15_p187g136 (-) hypothetical protein",
+      "HP15_p187g137 (-) outer membrane protein OprF",
+      "HP15_p187g139 (+) hypothetical protein",
+      "HP15_p187g138 (-) hypothetical protein",
+      "HP15_p187g140 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLYK",
+   "name": "Glycerol kinase",
+   "equation_ids": "atp_c + glyc_c --> adp_c + glyc3p_c + h_c",
+   "equation_names": "ATP + Glycerol --> ADP + Glycerol 3-phosphate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576256_1 or WP_014577505_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576256_1",
+     "locus": "HP15_748",
+     "fitness_browser_desc": "glycerol kinase",
+     "refseq_definition": "glycerol kinase GlpK",
+     "neighbourhood": [
+      "HP15_745 (-) conserved hypothetical protein",
+      "HP15_746 (+) two component transcriptional regulator, winged helix family",
+      "HP15_747 (+) integral membrane sensor signal transduction histidine kinase",
+      "HP15_748 (+) glycerol kinase",
+      "HP15_749 (-) iron(III) ABC transporter, ATP-binding protein",
+      "HP15_750 (-) ornithine carbamoyltransferase",
+      "HP15_751 (+) monothiol glutaredoxin"
+     ]
+    },
+    {
+     "model_gene": "WP_014577505_1",
+     "locus": "HP15_2166",
+     "fitness_browser_desc": "glycerol kinase",
+     "refseq_definition": "glycerol kinase GlpK",
+     "neighbourhood": [
+      "HP15_2163 (-) sugar ABC transporter, ATP-binding protein",
+      "HP15_2164 (-) ATP-binding protein of sugar ABC transporter",
+      "HP15_2165 (+) sigma-54 dependent transcriptional regulator",
+      "HP15_2166 (-) glycerol kinase",
+      "HP15_2167 (+) transcriptional repressor for the dissimilation of sn-glycerol 3-phosphate, DeoR family protein",
+      "HP15_2168 (+) FAD dependent oxidoreductase",
+      "HP15_2169 (-) conserved hypothetical protein, secreted"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GMPS2",
+   "name": "GMP synthase",
+   "equation_ids": "atp_c + gln__L_c + h2o_c + xmp_c --> amp_c + glu__L_c + gmp_c + 2.0 h_c + ppi_c",
+   "equation_names": "ATP + L-Glutamine + H2O + Xanthosine 5'-phosphate --> AMP + L-Glutamate + GMP + 2.0 H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577400_1 or WP_041645039_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577400_1",
+     "locus": "HP15_2050",
+     "fitness_browser_desc": "bifunctional GMP synthase/glutamine amidotransferase protein",
+     "refseq_definition": "glutamine-hydrolyzing GMP synthase",
+     "neighbourhood": [
+      "HP15_2047 (-) UDP-glucose 6-dehydrogenase",
+      "HP15_2048 (-) UDP-glucose 4-epimerase",
+      "HP15_2049 (-) cytidine/deoxycytidylate deaminase family protein",
+      "HP15_2050 (-) bifunctional GMP synthase/glutamine amidotransferase protein",
+      "HP15_2051 (-) inositol-5-monophosphate dehydrogenase",
+      "HP15_2052 (+) exodeoxyribonuclease VII large subunit",
+      "HP15_2053 (+) PrpE protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041645039_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "glutamine amidotransferase"
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577585_1 or spontaneous",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577585_1",
+     "locus": "HP15_2268",
+     "fitness_browser_desc": "carbonate dehydratase",
+     "refseq_definition": "carbonate dehydratase",
+     "neighbourhood": [
+      "HP15_2265 (-) rRNA (guanine-N2-)-methyltransferase, RsmD",
+      "HP15_2266 (-) rRNA (guanine-N(2)-)-methyltransferase",
+      "HP15_2267 (-) hypothetical protein",
+      "HP15_2268 (-) carbonate dehydratase",
+      "HP15_2269 (-) NAD-specific glutamate dehydrogenase",
+      "HP15_2270 (+) magnesium chelatase subunit I",
+      "HP15_2271 (+) protein containing DUF58"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HISTP",
+   "name": "Histidinol-phosphatase",
+   "equation_ids": "h2o_c + hisp_c --> histd_c + pi_c",
+   "equation_names": "H2O + L-Histidinol phosphate --> L-Histidinol + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578473_1 or WP_014578870_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578473_1",
+     "locus": "HP15_3272",
+     "fitness_browser_desc": "inositol-1(or 4)-monophosphatase",
+     "refseq_definition": "inositol monophosphatase family protein",
+     "neighbourhood": [
+      "HP15_3269 (+) membrane protein containing ATP-binding region, ATPase-like domains",
+      "HP15_3270 (+) OmpA/MotB domain protein",
+      "HP15_3271 (+) aspartate aminotransferase",
+      "HP15_3272 (+) inositol-1(or 4)-monophosphatase",
+      "HP15_3273 (-) nucleoid occlusion protein",
+      "HP15_3274 (-) thiazole synthase",
+      "HP15_3275 (-) ThiS, thiamine-biosynthesis"
+     ]
+    },
+    {
+     "model_gene": "WP_014578870_1",
+     "locus": "HP15_3738",
+     "fitness_browser_desc": "histidinol-phosphate phosphatase family protein",
+     "refseq_definition": "D-glycero-beta-D-manno-heptose 1,7-bisphosphate 7-phosphatase",
+     "neighbourhood": [
+      "HP15_3736 (-) protein containing alkyl hydroperoxide reductase/ thiol specific antioxidant/ mal allergen/ peroxiredoxin, C-terminal",
+      "HP15_3737 (+) phospholipase D/transphosphatidylase",
+      "HP15_tRNA50 (-) tRNA-Pro",
+      "HP15_3738 (-) histidinol-phosphate phosphatase family protein",
+      "HP15_3739 (-) glycyl-tRNA synthetase beta subunit",
+      "HP15_3740 (-) glycyl-tRNA synthetase alpha subunit",
+      "HP15_3741 (-) potassium transporter peripheral membrane component"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HSERTA",
+   "name": "Homoserine O trans acetylase",
+   "equation_ids": "accoa_c + hom__L_c <=> achms_c + coa_c",
+   "equation_names": "Acetyl-CoA + L-Homoserine <=> O Acetyl L homoserine C6H11NO4 + Coenzyme A",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578367_1 or (WP_008174176_1 and WP_008174179_1)",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008174176_1",
+     "locus": "HP15_283",
+     "fitness_browser_desc": "methionine biosynthesis protein MetW",
+     "refseq_definition": "methionine biosynthesis protein MetW",
+     "neighbourhood": [
+      "HP15_280 (-) putative oxygen-independent coproporphyrinogen III oxidase",
+      "HP15_281 (-) non-canonical purine NTP pyrophosphatase, RdgB/HAM1 family",
+      "HP15_282 (-) conserved hypothetical protein, secreted",
+      "HP15_283 (-) methionine biosynthesis protein MetW",
+      "HP15_284 (-) homoserine O-acetyltransferase",
+      "HP15_285 (-) conserved hypothetical protein",
+      "HP15_286 (-) protein of unknown function YGGT"
+     ]
+    },
+    {
+     "model_gene": "WP_008174179_1",
+     "locus": "HP15_284",
+     "fitness_browser_desc": "homoserine O-acetyltransferase",
+     "refseq_definition": "homoserine O-succinyltransferase MetX",
+     "neighbourhood": [
+      "HP15_281 (-) non-canonical purine NTP pyrophosphatase, RdgB/HAM1 family",
+      "HP15_282 (-) conserved hypothetical protein, secreted",
+      "HP15_283 (-) methionine biosynthesis protein MetW",
+      "HP15_284 (-) homoserine O-acetyltransferase",
+      "HP15_285 (-) conserved hypothetical protein",
+      "HP15_286 (-) protein of unknown function YGGT",
+      "HP15_287 (-) pyrroline-5-carboxylate reductase"
+     ]
+    },
+    {
+     "model_gene": "WP_014578367_1",
+     "locus": "HP15_3157",
+     "fitness_browser_desc": "homoserine O-acetyltransferase",
+     "refseq_definition": "alpha/beta fold hydrolase",
+     "neighbourhood": [
+      "HP15_3154 (+) class II aldolase/adducin family protein",
+      "HP15_3155 (+) metal dependent phosphohydrolase",
+      "HP15_3156 (-) glutamate-ammonia ligase",
+      "HP15_3157 (+) homoserine O-acetyltransferase",
+      "HP15_3158 (+) binding-protein-dependent transport systems inner membrane component",
+      "HP15_3159 (+) spermidine/putrescine ABC transporter ATPase subunit",
+      "HP15_3160 (-) quinoprotein alcohol dehydrogenase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ICDHyr",
+   "name": "Isocitrate dehydrogenase (NADP)",
+   "equation_ids": "icit_c + nadp_c <=> akg_c + co2_c + nadph_c",
+   "equation_names": "Isocitrate + Nicotinamide adenine dinucleotide phosphate <=> 2-Oxoglutarate + CO2 + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578929_1 or WP_041645202_1",
+   "n_growth_conditions_essential": 11,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578929_1",
+     "locus": "HP15_3800",
+     "fitness_browser_desc": "isocitrate dehydrogenase, NADP-dependent",
+     "refseq_definition": "NADP-dependent isocitrate dehydrogenase",
+     "neighbourhood": [
+      "HP15_3797 (+) TRAP-type mannitol/chloroaromatic compound transport system, large permease component",
+      "HP15_3798 (+) 3-hydroxybutyrate dehydrogenase",
+      "HP15_3799 (+) acetyl-CoA synthetase",
+      "HP15_3800 (+) isocitrate dehydrogenase, NADP-dependent",
+      "HP15_3801 (-) sodium/hydrogen exchanger",
+      "HP15_3802 (-) conserved hypothetical protein CHP00011",
+      "HP15_3803 (+) GGDEF domain-like protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041645202_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "isocitrate/isopropylmalate family dehydrogenase"
+    }
+   ]
+  },
+  {
+   "reaction": "IMPD",
+   "name": "IMP dehydrogenase",
+   "equation_ids": "h2o_c + imp_c + nad_c --> h_c + nadh_c + xmp_c",
+   "equation_names": "H2O + IMP + Nicotinamide adenine dinucleotide --> H+ + Nicotinamide adenine dinucleotide - reduced + Xanthosine 5'-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008169151_1 or WP_014579070_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008169151_1",
+     "locus": "HP15_2051",
+     "fitness_browser_desc": "inositol-5-monophosphate dehydrogenase",
+     "refseq_definition": "IMP dehydrogenase",
+     "neighbourhood": [
+      "HP15_2048 (-) UDP-glucose 4-epimerase",
+      "HP15_2049 (-) cytidine/deoxycytidylate deaminase family protein",
+      "HP15_2050 (-) bifunctional GMP synthase/glutamine amidotransferase protein",
+      "HP15_2051 (-) inositol-5-monophosphate dehydrogenase",
+      "HP15_2052 (+) exodeoxyribonuclease VII large subunit",
+      "HP15_2053 (+) PrpE protein",
+      "HP15_2054 (+) cold shock, CspA"
+     ]
+    },
+    {
+     "model_gene": "WP_014579070_1",
+     "locus": "HP15_3951",
+     "fitness_browser_desc": "signal-transduction protein",
+     "refseq_definition": "putative nucleotidyltransferase substrate binding domain-containing protein",
+     "neighbourhood": [
+      "HP15_3948 (+) periplasmic sensor signal transduction histidine kinase",
+      "HP15_3949 (+) bifunctional methionine sulfoxide reductase A/B protein",
+      "HP15_3950 (-) exonuclease, RNase T and DNA polymerase III",
+      "HP15_3951 (-) signal-transduction protein",
+      "HP15_3952 (+) hypothetical protein",
+      "HP15_3953 (+) outer membrane receptor for transport of vitamin B",
+      "HP15_3954 (+) substrate-binding periplasmic (PBP) ABC transporter protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576061_1 or WP_014576794_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576061_1",
+     "locus": "HP15_515",
+     "fitness_browser_desc": "hydroxymethylbutenyl pyrophosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "HP15_512 (+) isoleucyl-tRNA synthetase",
+      "HP15_513 (+) lipoprotein signal peptidase",
+      "HP15_514 (+) peptidylprolyl isomerase, FKBP-type",
+      "HP15_515 (+) hydroxymethylbutenyl pyrophosphate reductase",
+      "HP15_516 (+) hypothetical protein",
+      "HP15_517 (+) membrane or secreted protein",
+      "HP15_518 (+) type IV pilus assembly protein PilW"
+     ]
+    },
+    {
+     "model_gene": "WP_014576794_1",
+     "locus": "HP15_1366",
+     "fitness_browser_desc": "ribosomal S1 synthesis/modification protein",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "HP15_1363 (+) histidinol-phosphate aminotransferase",
+      "HP15_1364 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "HP15_1365 (+) cytidylate kinase",
+      "HP15_1366 (+) ribosomal S1 synthesis/modification protein",
+      "HP15_1367 (+) integration host factor, beta subunit",
+      "HP15_1368 (+) membrane protein containing DUF1049",
+      "HP15_1369 (+) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPMIa",
+   "name": "3-isopropylmalate dehydratase",
+   "equation_ids": "3c2hmp_c <=> 2ippm_c + h2o_c",
+   "equation_names": "3-Carboxy-2-hydroxy-4-methylpentanoate <=> 2-Isopropylmaleate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_014577190_1 and WP_014577191_1) or (WP_014577881_1 and WP_014577882_1)",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577190_1",
+     "locus": "HP15_1833",
+     "fitness_browser_desc": "isopropylmalate isomerase small subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "HP15_1830 (-) secreted protein containing motility protein FimV",
+      "HP15_1831 (-) aspartate-semialdehyde dehydrogenase",
+      "HP15_1832 (-) 3-isopropylmalate dehydrogenase",
+      "HP15_1833 (-) isopropylmalate isomerase small subunit",
+      "HP15_1834 (-) protein containing 3-isopropylmalate dehydratase, large subunit region domain",
+      "HP15_1835 (+) transcriptional regulator LysR family protein",
+      "HP15_1836 (-) major facilitator superfamily MFS_1"
+     ]
+    },
+    {
+     "model_gene": "WP_014577191_1",
+     "locus": "HP15_1834",
+     "fitness_browser_desc": "protein containing 3-isopropylmalate dehydratase, large subunit region domain",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "HP15_1831 (-) aspartate-semialdehyde dehydrogenase",
+      "HP15_1832 (-) 3-isopropylmalate dehydrogenase",
+      "HP15_1833 (-) isopropylmalate isomerase small subunit",
+      "HP15_1834 (-) protein containing 3-isopropylmalate dehydratase, large subunit region domain",
+      "HP15_1835 (+) transcriptional regulator LysR family protein",
+      "HP15_1836 (-) major facilitator superfamily MFS_1",
+      "HP15_1837 (-) major facilitator superfamily MFS_1"
+     ]
+    },
+    {
+     "model_gene": "WP_014577881_1",
+     "locus": "HP15_2598",
+     "fitness_browser_desc": "isopropylmalate isomerase small subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "HP15_2595 (+) acyl-CoA synthetase",
+      "HP15_2596 (-) endoribonuclease L-PSP",
+      "HP15_2597 (-) two component, sigma54 specific, transcriptional regulator, Fis family",
+      "HP15_2598 (-) isopropylmalate isomerase small subunit",
+      "HP15_2599 (-) isopropylmalate isomerase large subunit",
+      "HP15_2600 (-) isopropylmalate isomerase large subunit",
+      "HP15_2601 (-) N-carbamoylsarcosine amidase"
+     ]
+    },
+    {
+     "model_gene": "WP_014577882_1",
+     "locus": "HP15_2599",
+     "fitness_browser_desc": "isopropylmalate isomerase large subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "HP15_2596 (-) endoribonuclease L-PSP",
+      "HP15_2597 (-) two component, sigma54 specific, transcriptional regulator, Fis family",
+      "HP15_2598 (-) isopropylmalate isomerase small subunit",
+      "HP15_2599 (-) isopropylmalate isomerase large subunit",
+      "HP15_2600 (-) isopropylmalate isomerase large subunit",
+      "HP15_2601 (-) N-carbamoylsarcosine amidase",
+      "HP15_2602 (-) hydantoin utilization protein B"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPMIb",
+   "name": "2-isopropylmalate hydratase",
+   "equation_ids": "2ippm_c + h2o_c <=> 3c3hmp_c",
+   "equation_names": "2-Isopropylmaleate + H2O <=> 3-Carboxy-3-hydroxy-4-methylpentanoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_014577190_1 and WP_014577191_1) or (WP_014577881_1 and WP_014577882_1)",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577190_1",
+     "locus": "HP15_1833",
+     "fitness_browser_desc": "isopropylmalate isomerase small subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "HP15_1830 (-) secreted protein containing motility protein FimV",
+      "HP15_1831 (-) aspartate-semialdehyde dehydrogenase",
+      "HP15_1832 (-) 3-isopropylmalate dehydrogenase",
+      "HP15_1833 (-) isopropylmalate isomerase small subunit",
+      "HP15_1834 (-) protein containing 3-isopropylmalate dehydratase, large subunit region domain",
+      "HP15_1835 (+) transcriptional regulator LysR family protein",
+      "HP15_1836 (-) major facilitator superfamily MFS_1"
+     ]
+    },
+    {
+     "model_gene": "WP_014577191_1",
+     "locus": "HP15_1834",
+     "fitness_browser_desc": "protein containing 3-isopropylmalate dehydratase, large subunit region domain",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "HP15_1831 (-) aspartate-semialdehyde dehydrogenase",
+      "HP15_1832 (-) 3-isopropylmalate dehydrogenase",
+      "HP15_1833 (-) isopropylmalate isomerase small subunit",
+      "HP15_1834 (-) protein containing 3-isopropylmalate dehydratase, large subunit region domain",
+      "HP15_1835 (+) transcriptional regulator LysR family protein",
+      "HP15_1836 (-) major facilitator superfamily MFS_1",
+      "HP15_1837 (-) major facilitator superfamily MFS_1"
+     ]
+    },
+    {
+     "model_gene": "WP_014577881_1",
+     "locus": "HP15_2598",
+     "fitness_browser_desc": "isopropylmalate isomerase small subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "HP15_2595 (+) acyl-CoA synthetase",
+      "HP15_2596 (-) endoribonuclease L-PSP",
+      "HP15_2597 (-) two component, sigma54 specific, transcriptional regulator, Fis family",
+      "HP15_2598 (-) isopropylmalate isomerase small subunit",
+      "HP15_2599 (-) isopropylmalate isomerase large subunit",
+      "HP15_2600 (-) isopropylmalate isomerase large subunit",
+      "HP15_2601 (-) N-carbamoylsarcosine amidase"
+     ]
+    },
+    {
+     "model_gene": "WP_014577882_1",
+     "locus": "HP15_2599",
+     "fitness_browser_desc": "isopropylmalate isomerase large subunit",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "HP15_2596 (-) endoribonuclease L-PSP",
+      "HP15_2597 (-) two component, sigma54 specific, transcriptional regulator, Fis family",
+      "HP15_2598 (-) isopropylmalate isomerase small subunit",
+      "HP15_2599 (-) isopropylmalate isomerase large subunit",
+      "HP15_2600 (-) isopropylmalate isomerase large subunit",
+      "HP15_2601 (-) N-carbamoylsarcosine amidase",
+      "HP15_2602 (-) hydantoin utilization protein B"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPS",
+   "name": "2-isopropylmalate synthase",
+   "equation_ids": "3mob_c + accoa_c + h2o_c --> 3c3hmp_c + coa_c + h_c",
+   "equation_names": "3-Methyl-2-oxobutanoate + Acetyl-CoA + H2O --> 3-Carboxy-3-hydroxy-4-methylpentanoate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576083_1 or WP_014577403_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576083_1",
+     "locus": "HP15_538",
+     "fitness_browser_desc": "2-isopropylmalate synthase",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "HP15_tRNA11 (+) tRNA-Ala",
+      "HP15_rRNA5 (+) 23S ribosomal RNA",
+      "HP15_rRNA6 (+) 5S ribosomal RNA",
+      "HP15_538 (+) 2-isopropylmalate synthase",
+      "HP15_539 (+) 2-isopropylmalate synthase",
+      "HP15_540 (+) ribosomal-protein-alanine acetyltransferase",
+      "HP15_541 (+) peptide chain release factor 3"
+     ]
+    },
+    {
+     "model_gene": "WP_014577403_1",
+     "locus": "HP15_2055",
+     "fitness_browser_desc": "2-isopropylmalate synthase",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "HP15_2052 (+) exodeoxyribonuclease VII large subunit",
+      "HP15_2053 (+) PrpE protein",
+      "HP15_2054 (+) cold shock, CspA",
+      "HP15_2055 (-) 2-isopropylmalate synthase",
+      "HP15_2056 (+) transcriptional regulator of AsnC/Lrp family protein",
+      "HP15_2057 (-) transcriptional regulator, TetR family",
+      "HP15_2058 (+) prolyl-tRNA synthetase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK2",
+   "name": "Nucleoside-diphosphate kinase (ATP:UDP)",
+   "equation_ids": "atp_c + udp_c <=> adp_c + utp_c",
+   "equation_names": "ATP + UDP <=> ADP + UTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008174325_1 or WP_008176153_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008174325_1",
+     "locus": "HP15_1489",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "HP15_1486 (-) hypothetical protein",
+      "HP15_1487 (+) transcriptional regulator, BadM/Rrf2 family",
+      "HP15_1488 (+) cysteine desulfurase IscS",
+      "HP15_1489 (+) nucleoside diphosphate kinase",
+      "HP15_1490 (+) conserved hypothetical protein",
+      "HP15_1491 (+) type IV pilus biogenesis protein PilF",
+      "HP15_1492 (+) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_008176153_1",
+     "locus": "HP15_797",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "HP15_794 (-) conserved hypothetical protein",
+      "HP15_795 (+) phosphoenolpyruvate carboxylase",
+      "HP15_796 (+) signal transduction protein",
+      "HP15_797 (+) adenylate kinase",
+      "HP15_798 (+) peptidase M22, glycoprotease",
+      "HP15_799 (+) undecaprenyl pyrophosphate phosphatase-like protein",
+      "HP15_800 (+) protein YhiQ"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK4",
+   "name": "Nucleoside-diphosphate kinase (ATP:dTDP)",
+   "equation_ids": "atp_c + dtdp_c <=> adp_c + dttp_c",
+   "equation_names": "ATP + DTDP <=> ADP + DTTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008174325_1 or WP_008176153_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008174325_1",
+     "locus": "HP15_1489",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "HP15_1486 (-) hypothetical protein",
+      "HP15_1487 (+) transcriptional regulator, BadM/Rrf2 family",
+      "HP15_1488 (+) cysteine desulfurase IscS",
+      "HP15_1489 (+) nucleoside diphosphate kinase",
+      "HP15_1490 (+) conserved hypothetical protein",
+      "HP15_1491 (+) type IV pilus biogenesis protein PilF",
+      "HP15_1492 (+) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_008176153_1",
+     "locus": "HP15_797",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "HP15_794 (-) conserved hypothetical protein",
+      "HP15_795 (+) phosphoenolpyruvate carboxylase",
+      "HP15_796 (+) signal transduction protein",
+      "HP15_797 (+) adenylate kinase",
+      "HP15_798 (+) peptidase M22, glycoprotease",
+      "HP15_799 (+) undecaprenyl pyrophosphate phosphatase-like protein",
+      "HP15_800 (+) protein YhiQ"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK5",
+   "name": "Nucleoside-diphosphate kinase (ATP:dGDP)",
+   "equation_ids": "atp_c + dgdp_c <=> adp_c + dgtp_c",
+   "equation_names": "ATP + DGDP <=> ADP + DGTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008174325_1 or WP_008176153_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008174325_1",
+     "locus": "HP15_1489",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "HP15_1486 (-) hypothetical protein",
+      "HP15_1487 (+) transcriptional regulator, BadM/Rrf2 family",
+      "HP15_1488 (+) cysteine desulfurase IscS",
+      "HP15_1489 (+) nucleoside diphosphate kinase",
+      "HP15_1490 (+) conserved hypothetical protein",
+      "HP15_1491 (+) type IV pilus biogenesis protein PilF",
+      "HP15_1492 (+) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_008176153_1",
+     "locus": "HP15_797",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "HP15_794 (-) conserved hypothetical protein",
+      "HP15_795 (+) phosphoenolpyruvate carboxylase",
+      "HP15_796 (+) signal transduction protein",
+      "HP15_797 (+) adenylate kinase",
+      "HP15_798 (+) peptidase M22, glycoprotease",
+      "HP15_799 (+) undecaprenyl pyrophosphate phosphatase-like protein",
+      "HP15_800 (+) protein YhiQ"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK7",
+   "name": "Nucleoside-diphosphate kinase (ATP:dCDP)",
+   "equation_ids": "atp_c + dcdp_c <=> adp_c + dctp_c",
+   "equation_names": "ATP + DCDP <=> ADP + DCTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008174325_1 or WP_008176153_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008174325_1",
+     "locus": "HP15_1489",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "HP15_1486 (-) hypothetical protein",
+      "HP15_1487 (+) transcriptional regulator, BadM/Rrf2 family",
+      "HP15_1488 (+) cysteine desulfurase IscS",
+      "HP15_1489 (+) nucleoside diphosphate kinase",
+      "HP15_1490 (+) conserved hypothetical protein",
+      "HP15_1491 (+) type IV pilus biogenesis protein PilF",
+      "HP15_1492 (+) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_008176153_1",
+     "locus": "HP15_797",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "HP15_794 (-) conserved hypothetical protein",
+      "HP15_795 (+) phosphoenolpyruvate carboxylase",
+      "HP15_796 (+) signal transduction protein",
+      "HP15_797 (+) adenylate kinase",
+      "HP15_798 (+) peptidase M22, glycoprotease",
+      "HP15_799 (+) undecaprenyl pyrophosphate phosphatase-like protein",
+      "HP15_800 (+) protein YhiQ"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NNATr",
+   "name": "Nicotinate-nucleotide adenylyltransferase",
+   "equation_ids": "atp_c + h_c + nicrnt_c <=> dnad_c + ppi_c",
+   "equation_names": "ATP + H+ + Nicotinate D-ribonucleotide <=> Deamino-NAD+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008171471_1 or WP_014576127_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008171471_1",
+     "locus": "HP15_1241",
+     "fitness_browser_desc": "ADP-ribose pyrophosphatase",
+     "refseq_definition": "NUDIX hydrolase",
+     "neighbourhood": [
+      "HP15_1238 (-) transglycosylase, Slt family protein",
+      "HP15_1239 (+) phosphoribosylformylglycinamidine synthase",
+      "HP15_1240 (+) conserved hypothetical protein",
+      "HP15_1241 (-) ADP-ribose pyrophosphatase",
+      "HP15_1242 (+) MutT/nudix family protein",
+      "HP15_1243 (+) transferase hexapeptide repeat containing protein",
+      "HP15_1244 (+) protein containing DUF1289"
+     ]
+    },
+    {
+     "model_gene": "WP_014576127_1",
+     "locus": "HP15_602",
+     "fitness_browser_desc": "nicotinic acid mononucleotide adenyltransferase",
+     "refseq_definition": "nicotinate-nucleotide adenylyltransferase",
+     "neighbourhood": [
+      "HP15_599 (-) membrane protein containing Diguanylate cyclase, predicted domains",
+      "HP15_600 (-) GGDEF domain protein",
+      "HP15_601 (+) gamma-glutamyl phosphate reductase",
+      "HP15_602 (+) nicotinic acid mononucleotide adenyltransferase",
+      "HP15_603 (+) Iojap-related protein",
+      "HP15_604 (+) conserved hypothetical protein CHP00246",
+      "HP15_605 (+) peptidoglycan glycosyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "OCBT",
+   "name": "Ornithine carbamoyltransferase",
+   "equation_ids": "cbp_c + orn_c <=> citr__L_c + h_c + pi_c",
+   "equation_names": "Carbamoyl phosphate + Ornithine <=> L-Citrulline + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576258_1 or WP_014579103_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576258_1",
+     "locus": "HP15_750",
+     "fitness_browser_desc": "ornithine carbamoyltransferase",
+     "refseq_definition": "ornithine carbamoyltransferase",
+     "neighbourhood": [
+      "HP15_747 (+) integral membrane sensor signal transduction histidine kinase",
+      "HP15_748 (+) glycerol kinase",
+      "HP15_749 (-) iron(III) ABC transporter, ATP-binding protein",
+      "HP15_750 (-) ornithine carbamoyltransferase",
+      "HP15_751 (+) monothiol glutaredoxin",
+      "HP15_752 (-) protein containing TonB, C-terminal domain",
+      "HP15_753 (-) protein containing DUF1631"
+     ]
+    },
+    {
+     "model_gene": "WP_014579103_1",
+     "locus": "HP15_3987",
+     "fitness_browser_desc": "ornithine carbamoyltransferase",
+     "refseq_definition": "ornithine carbamoyltransferase",
+     "neighbourhood": [
+      "HP15_3984 (+) TonB-dependent copper receptor",
+      "HP15_3985 (+) arginine repressor",
+      "HP15_3986 (+) arginine deiminase",
+      "HP15_3987 (+) ornithine carbamoyltransferase",
+      "HP15_3988 (+) bacterial carbamate kinase",
+      "HP15_3989 (+) F0F1 ATP synthase subunit beta",
+      "HP15_3990 (+) F0F1 ATP synthase subunit epsilon"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PDX5POi",
+   "name": "Pyridoxine 5'-phosphate oxidase",
+   "equation_ids": "o2_c + pdx5p_c --> h2o2_c + pydx5p_c",
+   "equation_names": "O2 + Pyridoxine 5'-phosphate --> Hydrogen peroxide + Pyridoxal 5'-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008176900_1 or WP_041645385_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008176900_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "pyridoxamine 5'-phosphate oxidase"
+    },
+    {
+     "model_gene": "WP_041645385_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "bifunctional ADP-dependent NAD(P)H-hydrate dehydratase/NAD(P)H-hydrate epimerase"
+    }
+   ]
+  },
+  {
+   "reaction": "PGK",
+   "name": "Phosphoglycerate kinase",
+   "equation_ids": "3pg_c + atp_c <=> 13dpg_c + adp_c",
+   "equation_names": "3-Phospho-D-glycerate + ATP <=> 3-Phospho-D-glyceroyl phosphate + ADP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577494_1 or WP_014578163_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577494_1",
+     "locus": "HP15_2155",
+     "fitness_browser_desc": "triosephosphate isomerase",
+     "refseq_definition": "triose-phosphate isomerase",
+     "neighbourhood": [
+      "HP15_2152 (-) membrane-associated lipoprotein involved in thiamine biosynthesis",
+      "HP15_2153 (+) extracellular ligand-binding receptor",
+      "HP15_2154 (-) NADP-dependent glyceraldehyde-3-phosphate dehydrogenase",
+      "HP15_2155 (-) triosephosphate isomerase",
+      "HP15_2156 (-) phosphopyruvate hydratase",
+      "HP15_2157 (-) methyl-accepting chemotaxis protein",
+      "HP15_2158 (-) ABC-type sugar transport system, periplasmic component"
+     ]
+    },
+    {
+     "model_gene": "WP_014578163_1",
+     "locus": "HP15_2911",
+     "fitness_browser_desc": "phosphoglycerate kinase",
+     "refseq_definition": "phosphoglycerate kinase",
+     "neighbourhood": [
+      "HP15_2908 (-) conserved hypothetical protein",
+      "HP15_2909 (-) heat shock protein DnaJ domain protein",
+      "HP15_2910 (-) fructose-1,6-bisphosphate aldolase",
+      "HP15_2911 (-) phosphoglycerate kinase",
+      "HP15_2912 (-) glyceraldehyde 3-phosphate dehydrogenase, type I",
+      "HP15_2913 (-) bacterial transketolase",
+      "HP15_2914 (+) protein containing Methyltransferase type 11 domain"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008170880_1 or WP_008176120_1 or WP_014576347_1 or WP_014576791_1 or WP_014576796_1 or WP_014577032_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008170880_1",
+     "locus": "HP15_436",
+     "fitness_browser_desc": "branched-chain-amino-acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid transaminase",
+     "neighbourhood": [
+      "HP15_433 (+) adenylate cyclase",
+      "HP15_434 (-) potassium channel protein",
+      "HP15_435 (+) glutamate-ammonia-ligase adenylyltransferase",
+      "HP15_436 (+) branched-chain-amino-acid aminotransferase",
+      "HP15_437 (+) conserved hypothetical protein",
+      "HP15_438 (-) lipopolysaccharide biosynthesis protein",
+      "HP15_439 (+) lipopolysaccharide kinase"
+     ]
+    },
+    {
+     "model_gene": "WP_008176120_1",
+     "locus": "HP15_814",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "HP15_811 (+) acetyl-CoA synthetase",
+      "HP15_812 (+) two component transcriptional regulator, LuxR family",
+      "HP15_813 (-) D-isomer specific 2-hydroxyacid dehydrogenase family protein",
+      "HP15_814 (+) aspartate aminotransferase",
+      "HP15_815 (+) uncharacterized conserved protein UCP037225-like protein",
+      "HP15_816 (+) secreted protein containing DUF1439",
+      "HP15_817 (-) 3-isopropylmalate dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_014576347_1",
+     "locus": "HP15_858",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "HP15_855 (+) M23 peptidase domain protein",
+      "HP15_856 (-) UspA domain protein",
+      "HP15_857 (-) sodium-dependent transporter family protein",
+      "HP15_858 (-) aspartate aminotransferase",
+      "HP15_859 (-) pyruvate ferredoxin/flavodoxin oxidoreductase",
+      "HP15_860 (+) transcriptional regulator, AsnC family protein",
+      "HP15_861 (-) cold shock, CspA"
+     ]
+    },
+    {
+     "model_gene": "WP_014576791_1",
+     "locus": "HP15_1363",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "HP15_1360 (+) DNA gyrase subunit A-like protein",
+      "HP15_1361 (+) phosphoserine aminotransferase",
+      "HP15_1362 (+) chorismate mutase / prephenate dehydratase",
+      "HP15_1363 (+) histidinol-phosphate aminotransferase",
+      "HP15_1364 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "HP15_1365 (+) cytidylate kinase",
+      "HP15_1366 (+) ribosomal S1 synthesis/modification protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014576796_1",
+     "locus": "HP15_1371",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "HP15_1369 (+) conserved hypothetical protein",
+      "HP15_1370 (+) orotidine 5'-phosphate decarboxylase",
+      "HP15_tRNA25 (-) tRNA-Asn",
+      "HP15_1371 (-) aspartate aminotransferase",
+      "HP15_1372 (+) excinuclease ABC subunit B",
+      "HP15_1373 (-) acetyltransferase, GNAT family",
+      "HP15_1374 (+) glutathione synthase/ribosomal protein S6 modification enzyme"
+     ]
+    },
+    {
+     "model_gene": "WP_014577032_1",
+     "locus": "HP15_1649",
+     "fitness_browser_desc": "transcriptional regulator, GntR family with aminotransferase domain protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "HP15_1646 (+) conserved hypothetical protein",
+      "HP15_1647 (+) DoxX",
+      "HP15_1648 (+) protein containing thioredoxin domain",
+      "HP15_1649 (+) transcriptional regulator, GntR family with aminotransferase domain protein",
+      "HP15_1650 (+) iron-sulfur cluster-binding protein-like protein",
+      "HP15_1651 (+) iron-sulfur cluster-binding protein",
+      "HP15_1652 (-) disulfide isomerase/thiol-disulfide oxidase-like protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PMPK",
+   "name": "Phosphomethylpyrimidine kinase",
+   "equation_ids": "4ampm_c + atp_c --> 2mahmp_c + adp_c",
+   "equation_names": "4-Amino-2-methyl-5-phosphomethylpyrimidine + ATP --> 2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate + ADP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014575936_1 or WP_081449807_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014575936_1",
+     "locus": "HP15_348",
+     "fitness_browser_desc": "thiamine-phosphate pyrophosphorylase",
+     "refseq_definition": "thiamine phosphate synthase",
+     "neighbourhood": [
+      "HP15_345 (+) tetratricopeptide TPR_4-containing protein",
+      "HP15_346 (-) triacylglycerol lipase",
+      "HP15_347 (-) glutamate-1-semialdehyde 2,1-aminomutase",
+      "HP15_348 (-) thiamine-phosphate pyrophosphorylase",
+      "HP15_349 (-) phosphomethylpyrimidine kinase",
+      "HP15_350 (-) conserved hypothetical protein CHP00701",
+      "HP15_351 (-) Cl-channel, voltage-gated family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_081449807_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "bifunctional hydroxymethylpyrimidine kinase/phosphomethylpyrimidine kinase"
+    }
+   ]
+  },
+  {
+   "reaction": "PPA",
+   "name": "Inorganic diphosphatase",
+   "equation_ids": "h2o_c + ppi_c --> h_c + 2.0 pi_c",
+   "equation_names": "H2O + Diphosphate --> H+ + 2.0 Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008172880_1 or WP_014578423_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008172880_1",
+     "locus": "HP15_1279",
+     "fitness_browser_desc": "stationary-phase survival protein SurE",
+     "refseq_definition": "5'/3'-nucleotidase SurE",
+     "neighbourhood": [
+      "HP15_1276 (+) 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase",
+      "HP15_1277 (+) 2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+      "HP15_1278 (+) pseudouridylate synthase",
+      "HP15_1279 (+) stationary-phase survival protein SurE",
+      "HP15_1280 (+) protein-L-isoaspartate (D-aspartate) O-methyltransferase",
+      "HP15_1281 (+) membrane protein containing DUF368",
+      "HP15_1282 (+) peptidase M23B"
+     ]
+    },
+    {
+     "model_gene": "WP_014578423_1",
+     "locus": "HP15_3216",
+     "fitness_browser_desc": "inorganic diphosphatase",
+     "refseq_definition": "inorganic diphosphatase",
+     "neighbourhood": [
+      "HP15_3213 (-) threonine dehydratase biosynthetic",
+      "HP15_3214 (+) ribose-5-phosphate isomerase A",
+      "HP15_3215 (+) acyl-CoA dehydrogenase domain protein",
+      "HP15_3216 (+) inorganic diphosphatase",
+      "HP15_3217 (-) uncharacterized conserved protein UCP029693",
+      "HP15_3218 (-) diguanylate cyclase/phosphodiesterase",
+      "HP15_3219 (+) two-component response regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PYRtex",
+   "name": "Pyruvate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "pyr_e <=> pyr_p",
+   "equation_names": "Pyruvate <=> Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578091_1 or WP_014579423_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578091_1",
+     "locus": "HP15_2834",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "outer membrane lipoprotein YfiB",
+     "neighbourhood": [
+      "HP15_2831 (+) conserved hypothetical protein, membrane",
+      "HP15_2832 (-) type III restriction protein res subunit",
+      "HP15_2833 (+) conserved hypothetical protein",
+      "HP15_2834 (+) OmpA/MotB domain protein",
+      "HP15_2835 (+) cold shock, CspA",
+      "HP15_2836 (-) conserved hypothetical protein, membrane",
+      "HP15_2837 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014579423_1",
+     "locus": "HP15_p187g137",
+     "fitness_browser_desc": "outer membrane protein OprF",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "HP15_p187g134 (+) short chain dehydrogenase",
+      "HP15_p187g135 (+) conserved hypothetical protein",
+      "HP15_p187g136 (-) hypothetical protein",
+      "HP15_p187g137 (-) outer membrane protein OprF",
+      "HP15_p187g139 (+) hypothetical protein",
+      "HP15_p187g138 (-) hypothetical protein",
+      "HP15_p187g140 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR2",
+   "name": "Ribonucleoside-diphosphate reductase (GDP)",
+   "equation_ids": "gdp_c + trdrd_c --> dgdp_c + h2o_c + trdox_c",
+   "equation_names": "GDP + Reduced thioredoxin --> DGDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008169901_1 or WP_041646181_1 or (WP_014578797_1 and WP_014578798_1)",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008169901_1",
+     "locus": "HP15_229",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin TrxA",
+     "neighbourhood": [
+      "HP15_226 (+) ABC transporter ATP-binding protein-like protein",
+      "HP15_228 (-) guanosine-5'-triphosphate,3'-diphosphate pyrophosphatase",
+      "HP15_227 (+) hypothetical protein",
+      "HP15_229 (+) thioredoxin",
+      "HP15_230 (-) molybdenum cofactor biosynthesis protein E",
+      "HP15_231 (-) thiamineS",
+      "HP15_232 (-) molybdenum cofactor synthesis domain protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014578797_1",
+     "locus": "HP15_3648",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase beta subunit",
+     "refseq_definition": "ribonucleotide-diphosphate reductase subunit beta",
+     "neighbourhood": [
+      "HP15_3645 (-) hypothetical protein",
+      "HP15_3646 (-) hypothetical protein",
+      "HP15_3647 (-) hypothetical protein",
+      "HP15_3648 (-) ribonucleotide-diphosphate reductase beta subunit",
+      "HP15_3649 (-) ribonucleotide-diphosphate reductase subunit alpha",
+      "HP15_3650 (-) formamidase regulatory protein FmdB",
+      "HP15_3651 (-) acetamidase/formamidase"
+     ]
+    },
+    {
+     "model_gene": "WP_014578798_1",
+     "locus": "HP15_3649",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase subunit alpha",
+     "refseq_definition": "ribonucleoside-diphosphate reductase subunit alpha",
+     "neighbourhood": [
+      "HP15_3646 (-) hypothetical protein",
+      "HP15_3647 (-) hypothetical protein",
+      "HP15_3648 (-) ribonucleotide-diphosphate reductase beta subunit",
+      "HP15_3649 (-) ribonucleotide-diphosphate reductase subunit alpha",
+      "HP15_3650 (-) formamidase regulatory protein FmdB",
+      "HP15_3651 (-) acetamidase/formamidase",
+      "HP15_3652 (-) ATPase AAA-2 domain protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041646181_1",
+     "locus": "HP15_1447",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase subunit alpha",
+     "refseq_definition": "adenosylcobalamin-dependent ribonucleoside-diphosphate reductase",
+     "neighbourhood": [
+      "HP15_1444 (-) conserved hypothetical protein",
+      "HP15_1445 (-) hypothetical protein",
+      "HP15_1446 (-) ribonucleotide reductase, alpha subunit",
+      "HP15_1447 (-) ribonucleotide-diphosphate reductase subunit alpha",
+      "HP15_1448 (+) conserved hypothetical protein, secreted",
+      "HP15_1449 (-) ABC transporter, ATP-binding protein",
+      "HP15_1450 (-) inner-membrane translocator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR3",
+   "name": "Ribonucleoside-diphosphate reductase (CDP)",
+   "equation_ids": "cdp_c + trdrd_c --> dcdp_c + h2o_c + trdox_c",
+   "equation_names": "CDP + Reduced thioredoxin --> DCDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008169901_1 or WP_041646181_1 or (WP_014578797_1 and WP_014578798_1)",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008169901_1",
+     "locus": "HP15_229",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin TrxA",
+     "neighbourhood": [
+      "HP15_226 (+) ABC transporter ATP-binding protein-like protein",
+      "HP15_228 (-) guanosine-5'-triphosphate,3'-diphosphate pyrophosphatase",
+      "HP15_227 (+) hypothetical protein",
+      "HP15_229 (+) thioredoxin",
+      "HP15_230 (-) molybdenum cofactor biosynthesis protein E",
+      "HP15_231 (-) thiamineS",
+      "HP15_232 (-) molybdenum cofactor synthesis domain protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014578797_1",
+     "locus": "HP15_3648",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase beta subunit",
+     "refseq_definition": "ribonucleotide-diphosphate reductase subunit beta",
+     "neighbourhood": [
+      "HP15_3645 (-) hypothetical protein",
+      "HP15_3646 (-) hypothetical protein",
+      "HP15_3647 (-) hypothetical protein",
+      "HP15_3648 (-) ribonucleotide-diphosphate reductase beta subunit",
+      "HP15_3649 (-) ribonucleotide-diphosphate reductase subunit alpha",
+      "HP15_3650 (-) formamidase regulatory protein FmdB",
+      "HP15_3651 (-) acetamidase/formamidase"
+     ]
+    },
+    {
+     "model_gene": "WP_014578798_1",
+     "locus": "HP15_3649",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase subunit alpha",
+     "refseq_definition": "ribonucleoside-diphosphate reductase subunit alpha",
+     "neighbourhood": [
+      "HP15_3646 (-) hypothetical protein",
+      "HP15_3647 (-) hypothetical protein",
+      "HP15_3648 (-) ribonucleotide-diphosphate reductase beta subunit",
+      "HP15_3649 (-) ribonucleotide-diphosphate reductase subunit alpha",
+      "HP15_3650 (-) formamidase regulatory protein FmdB",
+      "HP15_3651 (-) acetamidase/formamidase",
+      "HP15_3652 (-) ATPase AAA-2 domain protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041646181_1",
+     "locus": "HP15_1447",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase subunit alpha",
+     "refseq_definition": "adenosylcobalamin-dependent ribonucleoside-diphosphate reductase",
+     "neighbourhood": [
+      "HP15_1444 (-) conserved hypothetical protein",
+      "HP15_1445 (-) hypothetical protein",
+      "HP15_1446 (-) ribonucleotide reductase, alpha subunit",
+      "HP15_1447 (-) ribonucleotide-diphosphate reductase subunit alpha",
+      "HP15_1448 (+) conserved hypothetical protein, secreted",
+      "HP15_1449 (-) ABC transporter, ATP-binding protein",
+      "HP15_1450 (-) inner-membrane translocator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SHKK",
+   "name": "Shikimate kinase",
+   "equation_ids": "atp_c + skm_c --> adp_c + h_c + skm5p_c",
+   "equation_names": "ATP + Shikimate --> ADP + H+ + Shikimate 5-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008170790_1 or WP_014577950_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008170790_1",
+     "locus": "HP15_479",
+     "fitness_browser_desc": "shikimate kinase I",
+     "refseq_definition": "shikimate kinase AroK",
+     "neighbourhood": [
+      "HP15_476 (+) type 4 fimbrial biogenesis protein PilO",
+      "HP15_477 (+) type 4 fimbrial biogenesis protein PilP",
+      "HP15_478 (+) type 4 fimbrial biogenesis protein PilQ",
+      "HP15_479 (+) shikimate kinase I",
+      "HP15_480 (+) 3-dehydroquinate synthase",
+      "HP15_481 (+) sporulation domain protein",
+      "HP15_482 (+) glutamate synthase subunit alpha"
+     ]
+    },
+    {
+     "model_gene": "WP_014577950_1",
+     "locus": "HP15_2678",
+     "fitness_browser_desc": "shikimate kinase",
+     "refseq_definition": "shikimate kinase",
+     "neighbourhood": [
+      "HP15_2675 (+) pseudouridine synthase, Rsu",
+      "HP15_2676 (+) proton/sodium-glutamate symport protein",
+      "HP15_2677 (-) conserved hypothetical protein, secreted",
+      "HP15_2678 (-) shikimate kinase",
+      "HP15_2679 (+) transglycosylase SLT domain protein",
+      "HP15_2680 (+) protein containing LysR, substrate-binding / Bacterial regulatory protein, LysR",
+      "HP15_2681 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMDS",
+   "name": "Thymidylate synthase",
+   "equation_ids": "dump_c + mlthf_c --> dhf_c + dtmp_c",
+   "equation_names": "DUMP + 5,10-Methylenetetrahydrofolate --> 7,8-Dihydrofolate + DTMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576119_1 or WP_041646188_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576119_1",
+     "locus": "HP15_586",
+     "fitness_browser_desc": "thymidylate synthase",
+     "refseq_definition": "thymidylate synthase",
+     "neighbourhood": [
+      "HP15_583 (-) protein containing DUF833",
+      "HP15_584 (+) membrane protein containing DUF81",
+      "HP15_585 (+) prolipoprotein diacylglyceryl transferase",
+      "HP15_586 (+) thymidylate synthase",
+      "HP15_587 (+) protein containing dihydrofolate reductase region domain",
+      "HP15_588 (-) DEAD/DEAH box helicase domain protein",
+      "HP15_589 (+) acyl-CoA thioesterase II"
+     ]
+    },
+    {
+     "model_gene": "WP_041646188_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "NADH:flavin oxidoreductase/NADH oxidase family protein"
+    }
+   ]
+  },
+  {
+   "reaction": "TMPK",
+   "name": "Thiamine-phosphate kinase",
+   "equation_ids": "atp_c + thmmp_c --> adp_c + thmpp_c",
+   "equation_names": "ATP + Thiamin monophosphate --> ADP + Thiamine diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014576045_1 or WP_041645701_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014576045_1",
+     "locus": "HP15_496",
+     "fitness_browser_desc": "thiamine-monophosphate kinase",
+     "refseq_definition": "thiamine-phosphate kinase",
+     "neighbourhood": [
+      "HP15_493 (+) bifunctional 3,4-dihydroxy-2-butanone 4-phosphate synthase/GTP cyclohydrolase II protein",
+      "HP15_494 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "HP15_495 (+) transcription antitermination protein NusB",
+      "HP15_496 (+) thiamine-monophosphate kinase",
+      "HP15_497 (+) phosphatidylglycerophosphatase A",
+      "HP15_498 (-) thiolase-like protein",
+      "HP15_499 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_041645701_1",
+     "locus": "HP15_3407",
+     "fitness_browser_desc": "thiamine biosynthesis protein",
+     "refseq_definition": "tRNA uracil 4-sulfurtransferase ThiI",
+     "neighbourhood": [
+      "HP15_3403 (-) UvrD/REP helicase",
+      "HP15_3404 (-) succinic semialdehyde dehydrogenase",
+      "HP15_3405 (+) histone deacetylase superfamily",
+      "HP15_3407 (-) thiamine biosynthesis protein",
+      "HP15_3406 (+) hypothetical protein",
+      "HP15_3408 (+) conserved hypothetical protein",
+      "HP15_3409 (-) cytochrome c554"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TPI",
+   "name": "Triose-phosphate isomerase",
+   "equation_ids": "dhap_c <=> g3p_c",
+   "equation_names": "Dihydroxyacetone phosphate <=> Glyceraldehyde 3-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577494_1 or WP_014578294_1",
+   "n_growth_conditions_essential": 14,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014577494_1",
+     "locus": "HP15_2155",
+     "fitness_browser_desc": "triosephosphate isomerase",
+     "refseq_definition": "triose-phosphate isomerase",
+     "neighbourhood": [
+      "HP15_2152 (-) membrane-associated lipoprotein involved in thiamine biosynthesis",
+      "HP15_2153 (+) extracellular ligand-binding receptor",
+      "HP15_2154 (-) NADP-dependent glyceraldehyde-3-phosphate dehydrogenase",
+      "HP15_2155 (-) triosephosphate isomerase",
+      "HP15_2156 (-) phosphopyruvate hydratase",
+      "HP15_2157 (-) methyl-accepting chemotaxis protein",
+      "HP15_2158 (-) ABC-type sugar transport system, periplasmic component"
+     ]
+    },
+    {
+     "model_gene": "WP_014578294_1",
+     "locus": "HP15_3071",
+     "fitness_browser_desc": "triosephosphate isomerase",
+     "refseq_definition": "triose-phosphate isomerase",
+     "neighbourhood": [
+      "HP15_3069 (-) protein belonging to uncharacterized protein family UPF0090",
+      "HP15_tRNA49 (-) tRNA-Leu",
+      "HP15_3070 (-) preprotein translocase SecG subunit",
+      "HP15_3071 (-) triosephosphate isomerase",
+      "HP15_3072 (-) phosphoglucosamine mutase",
+      "HP15_3073 (-) dihydropteroate synthase",
+      "HP15_3074 (-) membrane protein containing peptidase M41, FtsH / ATPase, AAA-type, core"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TRDR",
+   "name": "Thioredoxin reductase (NADPH)",
+   "equation_ids": "h_c + nadph_c + trdox_c --> nadp_c + trdrd_c",
+   "equation_names": "H+ + Nicotinamide adenine dinucleotide phosphate - reduced + Oxidized thioredoxin --> Nicotinamide adenine dinucleotide phosphate + Reduced thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014577483_1 or WP_014578771_1 or WP_041645465_1 or (WP_008169901_1 and WP_014577420_1) or (WP_014577420_1 and WP_014578279_1)",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008169901_1",
+     "locus": "HP15_229",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin TrxA",
+     "neighbourhood": [
+      "HP15_226 (+) ABC transporter ATP-binding protein-like protein",
+      "HP15_228 (-) guanosine-5'-triphosphate,3'-diphosphate pyrophosphatase",
+      "HP15_227 (+) hypothetical protein",
+      "HP15_229 (+) thioredoxin",
+      "HP15_230 (-) molybdenum cofactor biosynthesis protein E",
+      "HP15_231 (-) thiamineS",
+      "HP15_232 (-) molybdenum cofactor synthesis domain protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014577420_1",
+     "locus": "HP15_2076",
+     "fitness_browser_desc": "secreted protein containing thioredoxin reductase domain",
+     "refseq_definition": "thioredoxin-disulfide reductase",
+     "neighbourhood": [
+      "HP15_2073 (+) peptidyl-arginine deiminase family protein",
+      "HP15_2074 (+) carbon-nitrogen hydrolase family protein",
+      "HP15_2075 (+) MoxR protein",
+      "HP15_2076 (+) secreted protein containing thioredoxin reductase domain",
+      "HP15_2077 (+) leucyl/phenylalanyl-tRNA-protein transferase",
+      "HP15_2078 (+) arginyl-tRNA-protein transferase",
+      "HP15_2079 (+) translation initiation factor IF-1"
+     ]
+    },
+    {
+     "model_gene": "WP_014577483_1",
+     "locus": "HP15_2144",
+     "fitness_browser_desc": "redoxin domain protein",
+     "refseq_definition": "TlpA family protein disulfide reductase",
+     "neighbourhood": [
+      "HP15_2141 (-) protein containing tetratricopeptide repeats",
+      "HP15_2142 (-) conserved hypothetical protein, secreted",
+      "HP15_2143 (-) conserved hypothetical protein",
+      "HP15_2144 (-) redoxin domain protein",
+      "HP15_2145 (-) conserved hypothetical protein",
+      "HP15_2146 (-) conserved hypothetical protein, secreted",
+      "HP15_2147 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014578279_1",
+     "locus": "HP15_3051",
+     "fitness_browser_desc": "thioredoxin domain-containing protein",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "HP15_3047 (+) lysine 2,3-aminomutase-like protein",
+      "HP15_3048 (-) membrane protein",
+      "HP15_3049 (-) conserved hypothetical protein",
+      "HP15_3051 (-) thioredoxin domain-containing protein",
+      "HP15_3050 (-) hypothetical protein",
+      "HP15_3052 (+) ATP-dependent protease La-like protein",
+      "HP15_3053 (-) transcriptional regulator, MarR family protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014578771_1",
+     "locus": "HP15_3619",
+     "fitness_browser_desc": "FAD-dependent pyridine nucleotide-disulfide oxidoreductase",
+     "refseq_definition": "alkyl hydroperoxide reductase subunit F",
+     "neighbourhood": [
+      "HP15_3616 (+) tRNA/rRNA methyltransferase (SpoU)",
+      "HP15_3617 (+) protein containing transglutaminase-like domain",
+      "HP15_3618 (-) periplasmic sugar-binding domain protein",
+      "HP15_3619 (-) FAD-dependent pyridine nucleotide-disulfide oxidoreductase",
+      "HP15_3620 (+) conserved hypothetical protein",
+      "HP15_3621 (+) antioxidant, AhpC/Tsa family protein",
+      "HP15_3622 (-) peroxiredoxin"
+     ]
+    },
+    {
+     "model_gene": "WP_041645465_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "thioredoxin TrxC"
+    }
+   ]
+  },
+  {
+   "reaction": "TYRTA",
+   "name": "Tyrosine transaminase",
+   "equation_ids": "akg_c + tyr__L_c <=> 34hpp_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Tyrosine <=> 3-(4-Hydroxyphenyl)pyruvate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008176120_1 or WP_014576347_1 or WP_014576791_1 or WP_014576796_1 or WP_014577032_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008176120_1",
+     "locus": "HP15_814",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "HP15_811 (+) acetyl-CoA synthetase",
+      "HP15_812 (+) two component transcriptional regulator, LuxR family",
+      "HP15_813 (-) D-isomer specific 2-hydroxyacid dehydrogenase family protein",
+      "HP15_814 (+) aspartate aminotransferase",
+      "HP15_815 (+) uncharacterized conserved protein UCP037225-like protein",
+      "HP15_816 (+) secreted protein containing DUF1439",
+      "HP15_817 (-) 3-isopropylmalate dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_014576347_1",
+     "locus": "HP15_858",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "HP15_855 (+) M23 peptidase domain protein",
+      "HP15_856 (-) UspA domain protein",
+      "HP15_857 (-) sodium-dependent transporter family protein",
+      "HP15_858 (-) aspartate aminotransferase",
+      "HP15_859 (-) pyruvate ferredoxin/flavodoxin oxidoreductase",
+      "HP15_860 (+) transcriptional regulator, AsnC family protein",
+      "HP15_861 (-) cold shock, CspA"
+     ]
+    },
+    {
+     "model_gene": "WP_014576791_1",
+     "locus": "HP15_1363",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "HP15_1360 (+) DNA gyrase subunit A-like protein",
+      "HP15_1361 (+) phosphoserine aminotransferase",
+      "HP15_1362 (+) chorismate mutase / prephenate dehydratase",
+      "HP15_1363 (+) histidinol-phosphate aminotransferase",
+      "HP15_1364 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "HP15_1365 (+) cytidylate kinase",
+      "HP15_1366 (+) ribosomal S1 synthesis/modification protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014576796_1",
+     "locus": "HP15_1371",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "HP15_1369 (+) conserved hypothetical protein",
+      "HP15_1370 (+) orotidine 5'-phosphate decarboxylase",
+      "HP15_tRNA25 (-) tRNA-Asn",
+      "HP15_1371 (-) aspartate aminotransferase",
+      "HP15_1372 (+) excinuclease ABC subunit B",
+      "HP15_1373 (-) acetyltransferase, GNAT family",
+      "HP15_1374 (+) glutathione synthase/ribosomal protein S6 modification enzyme"
+     ]
+    },
+    {
+     "model_gene": "WP_014577032_1",
+     "locus": "HP15_1649",
+     "fitness_browser_desc": "transcriptional regulator, GntR family with aminotransferase domain protein",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "HP15_1646 (+) conserved hypothetical protein",
+      "HP15_1647 (+) DoxX",
+      "HP15_1648 (+) protein containing thioredoxin domain",
+      "HP15_1649 (+) transcriptional regulator, GntR family with aminotransferase domain protein",
+      "HP15_1650 (+) iron-sulfur cluster-binding protein-like protein",
+      "HP15_1651 (+) iron-sulfur cluster-binding protein",
+      "HP15_1652 (-) disulfide isomerase/thiol-disulfide oxidase-like protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_008170379_1 or WP_014576793_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_008170379_1",
+     "locus": "HP15_1168",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "UMP kinase",
+     "neighbourhood": [
+      "HP15_1166 (-) hypothetical protein",
+      "HP15_1165 (+) 30S ribosomal protein S2",
+      "HP15_1167 (+) elongation factor Ts",
+      "HP15_1168 (+) uridylate kinase",
+      "HP15_1169 (+) ribosome recycling factor",
+      "HP15_1170 (+) undecaprenyl diphosphate synthase",
+      "HP15_1171 (+) phosphatidate cytidylyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_014576793_1",
+     "locus": "HP15_1365",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "(d)CMP kinase",
+     "neighbourhood": [
+      "HP15_1362 (+) chorismate mutase / prephenate dehydratase",
+      "HP15_1363 (+) histidinol-phosphate aminotransferase",
+      "HP15_1364 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "HP15_1365 (+) cytidylate kinase",
+      "HP15_1366 (+) ribosomal S1 synthesis/modification protein",
+      "HP15_1367 (+) integration host factor, beta subunit",
+      "HP15_1368 (+) membrane protein containing DUF1049"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "Zn2tex",
+   "name": "Zinc (Zn+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "zn2_e <=> zn2_p",
+   "equation_names": "Zinc <=> Zinc",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_014578091_1 or WP_014579423_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_014578091_1",
+     "locus": "HP15_2834",
+     "fitness_browser_desc": "OmpA/MotB domain protein",
+     "refseq_definition": "outer membrane lipoprotein YfiB",
+     "neighbourhood": [
+      "HP15_2831 (+) conserved hypothetical protein, membrane",
+      "HP15_2832 (-) type III restriction protein res subunit",
+      "HP15_2833 (+) conserved hypothetical protein",
+      "HP15_2834 (+) OmpA/MotB domain protein",
+      "HP15_2835 (+) cold shock, CspA",
+      "HP15_2836 (-) conserved hypothetical protein, membrane",
+      "HP15_2837 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_014579423_1",
+     "locus": "HP15_p187g137",
+     "fitness_browser_desc": "outer membrane protein OprF",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "HP15_p187g134 (+) short chain dehydrogenase",
+      "HP15_p187g135 (+) conserved hypothetical protein",
+      "HP15_p187g136 (-) hypothetical protein",
+      "HP15_p187g137 (-) outer membrane protein OprF",
+      "HP15_p187g139 (+) hypothetical protein",
+      "HP15_p187g138 (-) hypothetical protein",
+      "HP15_p187g140 (-) hypothetical protein"
+     ]
+    }
+   ]
+  }
+ ]
+}

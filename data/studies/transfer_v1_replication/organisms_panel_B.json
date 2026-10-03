@@ -1,0 +1,96 @@
+{
+ "note": "Panel B organisms of the transfer v1 replication, configured after the replication freeze",
+ "organisms": {
+  "Caulo": {
+   "role": "evaluation_panel_B",
+   "fb_dir": "data/fitness_browser_panel/Caulo",
+   "embl_model": "models/embl_pinned/Caulo.xml.gz",
+   "genpept_map": "data/genpept_panel/Caulo_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+   "carbon_table": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+   "reference": {
+    "medium": "M2_noCarbon",
+    "carbon_exchange": "EX_glc__D_e",
+    "condition": "D-Glucose",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 13,
+   "n_conditions_from_metadata": 14
+  },
+  "Cup4G11": {
+   "role": "evaluation_panel_B",
+   "fb_dir": "data/fitness_browser_panel/Cup4G11",
+   "embl_model": "models/embl_pinned/Cup4G11.xml.gz",
+   "genpept_map": "data/genpept_panel/Cup4G11_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+   "carbon_table": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+   "reference": {
+    "medium": "RCH2_defined_noCarbon",
+    "carbon_exchange": "EX_fru_e",
+    "condition": "D-Fructose",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 36,
+   "n_conditions_from_metadata": 38
+  },
+  "Marino": {
+   "role": "evaluation_panel_B",
+   "fb_dir": "data/fitness_browser_panel/Marino",
+   "embl_model": "models/embl_pinned/Marino.xml.gz",
+   "genpept_map": "data/genpept_panel/Marino_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+   "carbon_table": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+   "reference": {
+    "medium": "DinoMM_noCarbon_HighNutrient",
+    "carbon_exchange": "EX_glyc_e",
+    "condition": "Glycerol",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 29,
+   "n_conditions_from_metadata": 30
+  },
+  "Miya": {
+   "role": "evaluation_panel_B",
+   "fb_dir": "data/fitness_browser_panel/Miya",
+   "embl_model": "models/embl_pinned/Miya.xml.gz",
+   "genpept_map": "data/genpept_panel/Miya_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+   "carbon_table": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+   "reference": null,
+   "n_mapped_conditions_from_metadata": 5,
+   "n_conditions_from_metadata": 6
+  },
+  "PV4": {
+   "role": "evaluation_panel_B",
+   "fb_dir": "data/fitness_browser_panel/PV4",
+   "embl_model": "models/embl_pinned/PV4.xml.gz",
+   "genpept_map": "data/genpept_panel/PV4_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+   "carbon_table": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+   "reference": {
+    "medium": "ShewMM_noCarbon",
+    "carbon_exchange": "EX_lac__L_e",
+    "condition": "Sodium L-Lactate",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 12,
+   "n_conditions_from_metadata": 13
+  },
+  "SB2B": {
+   "role": "evaluation_panel_B",
+   "fb_dir": "data/fitness_browser_panel/SB2B",
+   "embl_model": "models/embl_pinned/SB2B.xml.gz",
+   "genpept_map": "data/genpept_panel/SB2B_genpept_map.tsv",
+   "media_table": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+   "carbon_table": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+   "reference": {
+    "medium": "ShewMM_noCarbon",
+    "carbon_exchange": "EX_glc__D_e",
+    "condition": "D-Glucose",
+    "rule": "gembench.transfer.choose_reference_condition"
+   },
+   "n_mapped_conditions_from_metadata": 20,
+   "n_conditions_from_metadata": 23
+  }
+ }
+}

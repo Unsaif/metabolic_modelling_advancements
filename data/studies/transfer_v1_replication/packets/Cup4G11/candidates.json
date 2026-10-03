@@ -1,0 +1,3177 @@
+{
+ "org": "Cup4G11",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 16,
+ "candidates": [
+  {
+   "reaction": "3OXCOAT",
+   "name": "3-oxoadipyl-CoA thiolase",
+   "equation_ids": "coa_c + oxadpcoa_c --> accoa_c + succoa_c",
+   "equation_names": "Coenzyme A + 3-Oxoadipyl-CoA --> Acetyl-CoA + Succinyl-CoA",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043354247_1 or WP_043357059_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043354247_1",
+     "locus": "RR42_RS26090",
+     "fitness_browser_desc": "acetyl-CoA acetyltransferase",
+     "refseq_definition": "acetyl-CoA C-acetyltransferase",
+     "neighbourhood": [
+      "RR42_RS26075 (-) cytochrome D ubiquinol oxidase subunit I",
+      "RR42_RS26080 (-) hypothetical protein",
+      "RR42_RS26085 (-) acetoacetyl-CoA reductase",
+      "RR42_RS26090 (-) acetyl-CoA acetyltransferase",
+      "RR42_RS26095 (-) hypothetical protein",
+      "RR42_RS26100 (-) pyridine nucleotide-disulfide oxidoreductase",
+      "RR42_RS26105 (-) C4-dicarboxylate transporter"
+     ]
+    },
+    {
+     "model_gene": "WP_043357059_1",
+     "locus": "RR42_RS35915",
+     "fitness_browser_desc": "beta-ketoadipyl CoA thiolase",
+     "refseq_definition": "3-oxoadipyl-CoA thiolase",
+     "neighbourhood": [
+      "RR42_RS35900 (+) hypothetical protein",
+      "RR42_RS35905 (-) LacI family transcriptional regulator",
+      "RR42_RS35910 (-) short-chain dehydrogenase",
+      "RR42_RS35915 (-) beta-ketoadipyl CoA thiolase",
+      "RR42_RS35920 (-) 3-oxoadipate CoA-transferase",
+      "RR42_RS35925 (-) 3-oxoadipate CoA-transferase",
+      "RR42_RS35930 (-) DNA repair exonuclease"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043354306_1 or (WP_006156850_1 and WP_043344716_1)",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_006156850_1",
+     "locus": "RR42_RS05440",
+     "fitness_browser_desc": "acetolactate synthase",
+     "refseq_definition": "acetolactate synthase small subunit",
+     "neighbourhood": [
+      "RR42_RS05425 (-) membrane protein",
+      "RR42_RS05430 (-) DNA-directed RNA polymerase sigma-70 factor",
+      "RR42_RS05435 (+) acetolactate synthase 3 catalytic subunit",
+      "RR42_RS05440 (+) acetolactate synthase",
+      "RR42_RS05445 (+) ketol-acid reductoisomerase",
+      "RR42_RS05450 (+) phosphatidylserine decarboxylase",
+      "RR42_RS05455 (+) CDP-diacylglycerol--serine O-phosphatidyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_043344716_1",
+     "locus": "RR42_RS05435",
+     "fitness_browser_desc": "acetolactate synthase 3 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 3 catalytic subunit",
+     "neighbourhood": [
+      "RR42_RS05420 (-) membrane protein",
+      "RR42_RS05425 (-) membrane protein",
+      "RR42_RS05430 (-) DNA-directed RNA polymerase sigma-70 factor",
+      "RR42_RS05435 (+) acetolactate synthase 3 catalytic subunit",
+      "RR42_RS05440 (+) acetolactate synthase",
+      "RR42_RS05445 (+) ketol-acid reductoisomerase",
+      "RR42_RS05450 (+) phosphatidylserine decarboxylase"
+     ]
+    },
+    {
+     "model_gene": "WP_043354306_1",
+     "locus": "RR42_RS26245",
+     "fitness_browser_desc": "thiamine pyrophosphate-binding protein",
+     "refseq_definition": "thiamine pyrophosphate-binding protein",
+     "neighbourhood": [
+      "RR42_RS26230 (-) MFS transporter",
+      "RR42_RS26235 (-) GntR family transcriptional regulator",
+      "RR42_RS26240 (+) 4-aminobutyrate aminotransferase",
+      "RR42_RS26245 (+) thiamine pyrophosphate-binding protein",
+      "RR42_RS26250 (+) allantoate amidohydrolase",
+      "RR42_RS26255 (+) aldehyde dehydrogenase",
+      "RR42_RS26260 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ADCL",
+   "name": "4-aminobenzoate synthase",
+   "equation_ids": "4adcho_c --> 4abz_c + h_c + pyr_c",
+   "equation_names": "4-amino-4-deoxychorismate --> 4-Aminobenzoate + H+ + Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043346557_1 or WP_052494684_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043346557_1",
+     "locus": "RR42_RS10910",
+     "fitness_browser_desc": "aminodeoxychorismate lyase",
+     "refseq_definition": "endolytic transglycosylase MltG",
+     "neighbourhood": [
+      "RR42_RS10895 (-) pilus assembly protein",
+      "RR42_RS10900 (-) DNA polymerase III subunit delta'",
+      "RR42_RS10905 (-) thymidylate kinase",
+      "RR42_RS10910 (-) aminodeoxychorismate lyase",
+      "RR42_RS10915 (+) folate-binding protein",
+      "RR42_RS10920 (+) hypothetical protein",
+      "RR42_RS10925 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_052494684_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "aminodeoxychorismate synthase component I"
+    }
+   ]
+  },
+  {
+   "reaction": "ANPRT",
+   "name": "Anthranilate phosphoribosyltransferase",
+   "equation_ids": "anth_c + prpp_c --> ppi_c + pran_c",
+   "equation_names": "Anthranilate + 5-Phospho-alpha-D-ribose 1-diphosphate --> Diphosphate + N-(5-Phospho-D-ribosyl)anthranilate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343384_1 or WP_043352341_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343384_1",
+     "locus": "RR42_RS01940",
+     "fitness_browser_desc": "glycosyl transferase",
+     "refseq_definition": "DNA-binding protein YbiB",
+     "neighbourhood": [
+      "RR42_RS01925 (+) photosynthetic protein synthase I",
+      "RR42_RS01930 (-) RNA polymerase factor sigma-32",
+      "RR42_RS01935 (+) pirin",
+      "RR42_RS01940 (-) glycosyl transferase",
+      "RR42_RS01945 (-) nitrate ABC transporter ATP-binding protein",
+      "RR42_RS01950 (-) nitrate ABC transporter permease",
+      "RR42_RS01955 (-) nitrate transporter"
+     ]
+    },
+    {
+     "model_gene": "WP_043352341_1",
+     "locus": "RR42_RS18305",
+     "fitness_browser_desc": "anthranilate phosphoribosyltransferase",
+     "refseq_definition": "anthranilate phosphoribosyltransferase",
+     "neighbourhood": [
+      "RR42_RS18290 (+) phosphoglycolate phosphatase",
+      "RR42_RS18295 (+) anthranilate synthase component I",
+      "RR42_RS18300 (+) anthranilate synthase subunit II",
+      "RR42_RS18305 (+) anthranilate phosphoribosyltransferase",
+      "RR42_RS18310 (+) indole-3-glycerol-phosphate synthase",
+      "RR42_RS18315 (+) toxin",
+      "RR42_RS18320 (+) uracil-DNA glycosylase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "APRAUR",
+   "name": "5-amino-6-(5-phosphoribosylamino)uracil reductase",
+   "equation_ids": "5apru_c + h_c + nadph_c --> 5aprbu_c + nadp_c",
+   "equation_names": "5-Amino-6-(5'-phosphoribosylamino)uracil + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> 5-Amino-6-(5'-phosphoribitylamino)uracil + Nicotinamide adenine dinucleotide phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348566_1 or WP_082055062_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348566_1",
+     "locus": "RR42_RS15555",
+     "fitness_browser_desc": "diaminohydroxyphosphoribosylaminopyrimidine deaminase",
+     "refseq_definition": "bifunctional diaminohydroxyphosphoribosylaminopyrimidine deaminase/5-amino-6-(5-phosphoribosylamino)uracil reductase RibD",
+     "neighbourhood": [
+      "RR42_RS15540 (+) hypothetical protein",
+      "RR42_RS15545 (+) pilus assembly protein PilE",
+      "RR42_RS15550 (+) pilus assembly protein",
+      "RR42_RS15555 (+) diaminohydroxyphosphoribosylaminopyrimidine deaminase",
+      "RR42_RS15560 (+) riboflavin synthase subunit alpha",
+      "RR42_RS15565 (+) 3,4-dihydroxy-2-butanone 4-phosphate synthase",
+      "RR42_RS15570 (+) 6,7-dimethyl-8-ribityllumazine synthase"
+     ]
+    },
+    {
+     "model_gene": "WP_082055062_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "hypothetical protein"
+    }
+   ]
+  },
+  {
+   "reaction": "ASP1DC",
+   "name": "Aspartate 1-decarboxylase",
+   "equation_ids": "asp__L_c + h_c --> ala_B_c + co2_c",
+   "equation_names": "L-Aspartate + H+ --> Beta-Alanine + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043351884_1 or WP_082054930_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043351884_1",
+     "locus": "RR42_RS10745",
+     "fitness_browser_desc": "glutamate decarboxylase",
+     "refseq_definition": "pyridoxal-dependent aspartate 1-decarboxylase PanP",
+     "neighbourhood": [
+      "RR42_RS10730 (-) transporter",
+      "RR42_RS10735 (+) Fis family transcriptional regulator",
+      "RR42_RS10740 (-) hypothetical protein",
+      "RR42_RS10745 (+) glutamate decarboxylase",
+      "RR42_RS10750 (-) DNA-directed RNA polymerase sigma-70 factor",
+      "RR42_RS10755 (-) phosphatidylinositol kinase",
+      "RR42_RS10760 (-) XRE family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_082054930_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "aspartate 1-decarboxylase"
+    }
+   ]
+  },
+  {
+   "reaction": "ASPTA",
+   "name": "Aspartate transaminase",
+   "equation_ids": "akg_c + asp__L_c <=> glu__L_c + oaa_c",
+   "equation_names": "2-Oxoglutarate + L-Aspartate <=> L-Glutamate + Oxaloacetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343522_1 or WP_043344808_1 or WP_043346494_1 or WP_043348581_1 or WP_043352803_1 or WP_043353147_1 or WP_043356397_1 or WP_043356872_1 or WP_052495210_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343522_1",
+     "locus": "RR42_RS02275",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS02260 (+) cytochrome C peroxidase",
+      "RR42_RS02265 (+) excinuclease ABC subunit A",
+      "RR42_RS02270 (+) hypothetical protein",
+      "RR42_RS02275 (+) aspartate aminotransferase",
+      "RR42_RS02280 (-) ABC transporter permease",
+      "RR42_RS02285 (-) mannose-1-phosphate guanyltransferase",
+      "RR42_RS02290 (-) multidrug ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043344808_1",
+     "locus": "RR42_RS05770",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS05755 (-) enoyl-CoA hydratase",
+      "RR42_RS05760 (-) 3-hydroxyacyl-CoA dehydrogenase",
+      "RR42_RS05765 (+) glutathione S-transferase",
+      "RR42_RS05770 (-) aminotransferase",
+      "RR42_RS05775 (-) hypothetical protein",
+      "RR42_RS05780 (+) hypothetical protein",
+      "RR42_RS05785 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043346494_1",
+     "locus": "RR42_RS10785",
+     "fitness_browser_desc": "GntR family transcriptional regulator",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS10770 (-) three-component membrane-bound alcohol deshydrogenase (adha)",
+      "RR42_RS10775 (-) alcohol dehydrogenase",
+      "RR42_RS10780 (-) alcohol dehydrogenase",
+      "RR42_RS10785 (+) GntR family transcriptional regulator",
+      "RR42_RS10790 (-) ABC transporter permease",
+      "RR42_RS10795 (+) LysR family transcriptional regulator",
+      "RR42_RS10800 (+) FAD-dependent oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "WP_043348581_1",
+     "locus": "RR42_RS15580",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS15565 (+) 3,4-dihydroxy-2-butanone 4-phosphate synthase",
+      "RR42_RS15570 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "RR42_RS15575 (+) N utilization substance protein B",
+      "RR42_RS15580 (+) aminotransferase",
+      "RR42_RS15585 (-) lytic transglycosylase",
+      "RR42_RS15590 (+) 3-octaprenyl-4-hydroxybenzoate carboxy-lyase",
+      "RR42_RS15595 (+) acetoacetyl-CoA synthetase"
+     ]
+    },
+    {
+     "model_gene": "WP_043352803_1",
+     "locus": "RR42_RS21340",
+     "fitness_browser_desc": "DNA-binding protein",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "RR42_RS21325 (+) ethanolamine ammonia-lyase",
+      "RR42_RS21330 (+) phosphoserine phosphatase",
+      "RR42_RS21335 (-) FAD-linked oxidase",
+      "RR42_RS21340 (-) DNA-binding protein",
+      "RR42_RS21345 (+) acetylornithine deacetylase",
+      "RR42_RS21350 (+) peptide ABC transporter substrate-binding protein",
+      "RR42_RS21355 (+) ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043353147_1",
+     "locus": "RR42_RS22455",
+     "fitness_browser_desc": "2-aminoethylphosphonate aminotransferase",
+     "refseq_definition": "2-aminoethylphosphonate aminotransferase",
+     "neighbourhood": [
+      "RR42_RS22440 (+) ADP-glucose pyrophosphorylase",
+      "RR42_RS22445 (+) phosphoenolpyruvate phosphomutase",
+      "RR42_RS22450 (+) phosphonopyruvate decarboxylase",
+      "RR42_RS22455 (+) 2-aminoethylphosphonate aminotransferase",
+      "RR42_RS22460 (+) ABC transporter",
+      "RR42_RS22465 (-) membrane protein",
+      "RR42_RS22470 (-) MFS transporter"
+     ]
+    },
+    {
+     "model_gene": "WP_043356397_1",
+     "locus": "RR42_RS33805",
+     "fitness_browser_desc": "2-aminoadipate aminotransferase",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "RR42_RS33790 (+) FAD-dependent oxidoreductase",
+      "RR42_RS33795 (+) oxidase",
+      "RR42_RS33800 (+) cytochrome C552",
+      "RR42_RS33805 (+) 2-aminoadipate aminotransferase",
+      "RR42_RS33810 (-) NIPSNAP family containing protein",
+      "RR42_RS33815 (-) isochorismatase",
+      "RR42_RS33820 (-) arabinose transporter permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043356872_1",
+     "locus": "RR42_RS35305",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS35290 (-) Fe-S oxidoreductase",
+      "RR42_RS35295 (-) diguanylate cyclase",
+      "RR42_RS35300 (-) ABC transporter substrate-binding protein",
+      "RR42_RS35305 (-) aspartate aminotransferase",
+      "RR42_RS35310 (+) LysR family transcriptional regulator",
+      "RR42_RS35315 (-) membrane protein",
+      "RR42_RS35320 (-) membrane protein"
+     ]
+    },
+    {
+     "model_gene": "WP_052495210_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "aminotransferase-like domain-containing protein"
+    }
+   ]
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "name": "Chloride transport out via proton antiport (2:1) (periplasm)",
+   "equation_ids": "2.0 cl_p + h_c --> 2.0 cl_c + h_p",
+   "equation_names": "2.0 Chloride + H+ --> 2.0 Chloride + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043352360_1 or WP_043358183_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043352360_1",
+     "locus": "RR42_RS18530",
+     "fitness_browser_desc": "chloride channel protein EriC",
+     "refseq_definition": "chloride channel protein",
+     "neighbourhood": [
+      "RR42_RS18515 (+) dihydrodipicolinate reductase",
+      "RR42_RS18520 (-) hypothetical protein",
+      "RR42_RS18525 (-) hypothetical protein",
+      "RR42_RS18530 (-) chloride channel protein EriC",
+      "RR42_RS18535 (-) ABC transporter substrate-binding protein",
+      "RR42_RS18540 (-) long-chain fatty acid--CoA ligase",
+      "RR42_RS18545 (-) short-chain dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_043358183_1",
+     "locus": "RR42_RS29685",
+     "fitness_browser_desc": "voltage-gated chloride channel protein ClcB",
+     "refseq_definition": "ClcB-like voltage-gated chloride channel protein",
+     "neighbourhood": [
+      "RR42_RS29670 (-) ornithine cyclodeaminase",
+      "RR42_RS29675 (+) hypothetical protein",
+      "RR42_RS29680 (+) hypothetical protein",
+      "RR42_RS29685 (+) voltage-gated chloride channel protein ClcB",
+      "RR42_RS29690 (-) hypothetical protein",
+      "RR42_RS29695 (+) hypothetical protein",
+      "RR42_RS29700 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLtex",
+   "name": "Chloride (Cl-1) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cl_e <=> cl_p",
+   "equation_names": "Chloride <=> Chloride",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043353027_1 or WP_043353205_1 or WP_052494874_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043353027_1",
+     "locus": "RR42_RS22045",
+     "fitness_browser_desc": "flagellar motor protein MotB",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "RR42_RS22030 (-) hypothetical protein",
+      "RR42_RS22035 (-) ATPase",
+      "RR42_RS22040 (-) Hcp family T6SS protein CtsH1",
+      "RR42_RS22045 (-) flagellar motor protein MotB",
+      "RR42_RS22050 (-) DotU family type IV / VI secretion system protein",
+      "RR42_RS22055 (-) type VI secretion protein",
+      "RR42_RS22060 (-) type VI secretion protein EvpB"
+     ]
+    },
+    {
+     "model_gene": "WP_043353205_1",
+     "locus": "RR42_RS22675",
+     "fitness_browser_desc": "membrane protein",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "RR42_RS22660 (+) hypothetical protein",
+      "RR42_RS22665 (+) hypothetical protein",
+      "RR42_RS22670 (+) penicillin acylase",
+      "RR42_RS22675 (-) membrane protein",
+      "RR42_RS22680 (-) enoyl-CoA hydratase",
+      "RR42_RS22685 (-) ABC transporter substrate-binding protein",
+      "RR42_RS22690 (-) CoA-transferase"
+     ]
+    },
+    {
+     "model_gene": "WP_052494874_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "outer membrane lipoprotein YfiB"
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tex",
+   "name": "Copper (Cu+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cu2_e <=> cu2_p",
+   "equation_names": "Cu2+ <=> Cu2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043353027_1 or WP_043353205_1 or WP_052494874_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043353027_1",
+     "locus": "RR42_RS22045",
+     "fitness_browser_desc": "flagellar motor protein MotB",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "RR42_RS22030 (-) hypothetical protein",
+      "RR42_RS22035 (-) ATPase",
+      "RR42_RS22040 (-) Hcp family T6SS protein CtsH1",
+      "RR42_RS22045 (-) flagellar motor protein MotB",
+      "RR42_RS22050 (-) DotU family type IV / VI secretion system protein",
+      "RR42_RS22055 (-) type VI secretion protein",
+      "RR42_RS22060 (-) type VI secretion protein EvpB"
+     ]
+    },
+    {
+     "model_gene": "WP_043353205_1",
+     "locus": "RR42_RS22675",
+     "fitness_browser_desc": "membrane protein",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "RR42_RS22660 (+) hypothetical protein",
+      "RR42_RS22665 (+) hypothetical protein",
+      "RR42_RS22670 (+) penicillin acylase",
+      "RR42_RS22675 (-) membrane protein",
+      "RR42_RS22680 (-) enoyl-CoA hydratase",
+      "RR42_RS22685 (-) ABC transporter substrate-binding protein",
+      "RR42_RS22690 (-) CoA-transferase"
+     ]
+    },
+    {
+     "model_gene": "WP_052494874_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "outer membrane lipoprotein YfiB"
+    }
+   ]
+  },
+  {
+   "reaction": "DB4PS",
+   "name": "3,4-Dihydroxy-2-butanone-4-phosphate synthase",
+   "equation_ids": "ru5p__D_c --> db4p_c + for_c + h_c",
+   "equation_names": "D-Ribulose 5-phosphate --> 3,4-dihydroxy-2-butanone 4-phosphate + Formate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348572_1 or WP_043355124_1 or WP_043355607_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348572_1",
+     "locus": "RR42_RS15565",
+     "fitness_browser_desc": "3,4-dihydroxy-2-butanone 4-phosphate synthase",
+     "refseq_definition": "bifunctional 3,4-dihydroxy-2-butanone-4-phosphate synthase/GTP cyclohydrolase II",
+     "neighbourhood": [
+      "RR42_RS15550 (+) pilus assembly protein",
+      "RR42_RS15555 (+) diaminohydroxyphosphoribosylaminopyrimidine deaminase",
+      "RR42_RS15560 (+) riboflavin synthase subunit alpha",
+      "RR42_RS15565 (+) 3,4-dihydroxy-2-butanone 4-phosphate synthase",
+      "RR42_RS15570 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "RR42_RS15575 (+) N utilization substance protein B",
+      "RR42_RS15580 (+) aminotransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_043355124_1",
+     "locus": "RR42_RS29255",
+     "fitness_browser_desc": "GTP cyclohydrolase",
+     "refseq_definition": "GTP cyclohydrolase II",
+     "neighbourhood": [
+      "RR42_RS29240 (+) nitrile hydratase subunit alpha",
+      "RR42_RS29245 (+) nitrile hydratase",
+      "RR42_RS29250 (+) nitrile hydratase",
+      "RR42_RS29255 (+) GTP cyclohydrolase",
+      "RR42_RS29260 (+) hypothetical protein",
+      "RR42_RS29265 (-) hypothetical protein",
+      "RR42_RS29270 (-) AraC family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043355607_1",
+     "locus": "RR42_RS30825",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "GTP cyclohydrolase II",
+     "neighbourhood": [
+      "RR42_RS30810 (-) TetR family transcriptional regulator",
+      "RR42_RS30815 (-) uracil phosphoribosyltransferase",
+      "RR42_RS30820 (-) uracil phosphoribosyltransferase",
+      "RR42_RS30825 (-) hypothetical protein",
+      "RR42_RS30830 (-) GTP cyclohydrolase",
+      "RR42_RS30835 (-) hypothetical protein",
+      "RR42_RS30840 (-) galactosyldiacylglycerol synthase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348892_1 or WP_043350076_1 or WP_043356250_1 or WP_082054951_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348892_1",
+     "locus": "RR42_RS16210",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "RR42_RS16195 (-) haloacid dehalogenase",
+      "RR42_RS16200 (-) diacylglyceryl transferase",
+      "RR42_RS16205 (-) LysR family transcriptional regulator",
+      "RR42_RS16210 (+) dihydroxy-acid dehydratase",
+      "RR42_RS16215 (-) hypothetical protein",
+      "RR42_RS16220 (-) DNA polymerase III subunit chi",
+      "RR42_RS16225 (-) cytosol aminopeptidase"
+     ]
+    },
+    {
+     "model_gene": "WP_043350076_1",
+     "locus": "RR42_RS18585",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "IlvD/Edd family dehydratase",
+     "neighbourhood": [
+      "RR42_RS18570 (+) integrase",
+      "RR42_RS18575 (-) ABC transporter ATP-binding protein",
+      "RR42_RS18580 (-) GntR family transcriptional regulator",
+      "RR42_RS18585 (+) dihydroxy-acid dehydratase",
+      "RR42_RS18590 (+) hypothetical protein",
+      "RR42_RS18595 (+) ABC transporter substrate-binding protein",
+      "RR42_RS18600 (+) ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043356250_1",
+     "locus": "RR42_RS33305",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "L-arabinonate dehydratase",
+     "neighbourhood": [
+      "RR42_RS33290 (+) histidine kinase",
+      "RR42_RS33295 (+) GNAT family acetyltransferase",
+      "RR42_RS33300 (-) transcriptional regulator",
+      "RR42_RS33305 (+) dihydroxy-acid dehydratase",
+      "RR42_RS33310 (+) hypothetical protein",
+      "RR42_RS33315 (+) ABC transporter substrate-binding protein",
+      "RR42_RS33320 (+) ABC transporter substrate-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_082054951_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "4a-hydroxytetrahydrobiopterin dehydratase"
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPRy",
+   "name": "Dihydrodipicolinate reductase (NADPH)",
+   "equation_ids": "23dhdp_c + h_c + nadph_c --> nadp_c + thdp_c",
+   "equation_names": "2,3-Dihydrodipicolinate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + 2,3,4,5-Tetrahydrodipicolinate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043349554_1 or WP_043350043_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043349554_1",
+     "locus": "RR42_RS17550",
+     "fitness_browser_desc": "4-hydroxy-tetrahydrodipicolinate reductase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate reductase",
+     "neighbourhood": [
+      "RR42_RS17535 (-) DNA polymerase III subunit delta",
+      "RR42_RS17540 (-) lipoprotein",
+      "RR42_RS17545 (-) leucyl-tRNA synthetase",
+      "RR42_RS17550 (-) 4-hydroxy-tetrahydrodipicolinate reductase",
+      "RR42_RS17555 (-) hypothetical protein",
+      "RR42_RS17560 (+) Fur family transcriptional regulator",
+      "RR42_RS17565 (-) LysR family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043350043_1",
+     "locus": "RR42_RS18515",
+     "fitness_browser_desc": "dihydrodipicolinate reductase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate reductase",
+     "neighbourhood": [
+      "RR42_RS18500 (-) aldehyde dehydrogenase",
+      "RR42_RS18505 (-) saccharopine dehydrogenase",
+      "RR42_RS18510 (+) AsnC family transcriptional regulator",
+      "RR42_RS18515 (+) dihydrodipicolinate reductase",
+      "RR42_RS18520 (-) hypothetical protein",
+      "RR42_RS18525 (-) hypothetical protein",
+      "RR42_RS18530 (-) chloride channel protein EriC"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPS",
+   "name": "Dihydrodipicolinate synthase",
+   "equation_ids": "aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Pyruvate --> 2,3-Dihydrodipicolinate + 2.0 H2O + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_006163130_1 or WP_043344413_1 or WP_043344633_1 or WP_082054929_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_006163130_1",
+     "locus": "RR42_RS06250",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "RR42_RS06235 (+) peptidase M50",
+      "RR42_RS06240 (+) tryptophan--tRNA ligase",
+      "RR42_RS06245 (+) SAM-dependent methyltransferase",
+      "RR42_RS06250 (+) dihydrodipicolinate synthase",
+      "RR42_RS06255 (+) lipoprotein",
+      "RR42_RS06260 (+) MBL fold metallo-hydrolase",
+      "RR42_RS06265 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043344413_1",
+     "locus": "RR42_RS04230",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "RR42_RS04215 (-) hypothetical protein",
+      "RR42_RS04220 (-) membrane protein",
+      "RR42_RS04225 (-) hypothetical protein",
+      "RR42_RS04230 (+) dihydrodipicolinate synthase",
+      "RR42_RS04235 (-) glutamate-1-semialdehyde aminotransferase",
+      "RR42_RS04240 (+) rubredoxin",
+      "RR42_RS04245 (+) chemotaxis protein CheY"
+     ]
+    },
+    {
+     "model_gene": "WP_043344633_1",
+     "locus": "RR42_RS05135",
+     "fitness_browser_desc": "dihydrodipicolinate synthetase",
+     "refseq_definition": "dihydrodipicolinate synthase family protein",
+     "neighbourhood": [
+      "RR42_RS05120 (-) ABC transporter substrate-binding protein",
+      "RR42_RS05125 (-) malonic semialdehyde reductase",
+      "RR42_RS05130 (-) 2-aminomuconate deaminase",
+      "RR42_RS05135 (-) dihydrodipicolinate synthetase",
+      "RR42_RS05140 (-) lipase",
+      "RR42_RS05145 (-) glyoxalase",
+      "RR42_RS05150 (-) 5-oxopent-3-ene-1,2,5-tricarboxylate decarboxylase"
+     ]
+    },
+    {
+     "model_gene": "WP_082054929_1",
+     "locus": "RR42_RS17475",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "4-hydroxy-tetrahydrodipicolinate synthase",
+     "neighbourhood": [
+      "RR42_RS17460 (+) glutathione S-transferase",
+      "RR42_RS17465 (-) tRNA (5-methylaminomethyl-2-thiouridylate)-methyltransferase",
+      "RR42_RS17470 (-) NUDIX hydrolase",
+      "RR42_RS17475 (-) dihydrodipicolinate synthase",
+      "RR42_RS17480 (-) hypothetical protein",
+      "RR42_RS17485 (-) hypothetical protein",
+      "RR42_RS17490 (+) NADP transhydrogenase subunit alpha"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343656_1 or WP_043348711_1 or WP_043354801_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343656_1",
+     "locus": "RR42_RS02610",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "RR42_RS02595 (-) glutamine amidotransferase",
+      "RR42_RS02600 (+) tartrate dehydrogenase",
+      "RR42_RS02605 (+) hydroxypyruvate reductase",
+      "RR42_RS02610 (+) dihydroorotase",
+      "RR42_RS02615 (+) membrane protein",
+      "RR42_RS02620 (-) peroxiredoxin",
+      "RR42_RS02625 (+) 50S ribosomal protein L13"
+     ]
+    },
+    {
+     "model_gene": "WP_043348711_1",
+     "locus": "RR42_RS15855",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "RR42_RS15840 (-) spore coat protein",
+      "RR42_RS15845 (+) biotin transporter BioY",
+      "RR42_RS15850 (-) glycerol acyltransferase",
+      "RR42_RS15855 (-) dihydroorotase",
+      "RR42_RS15860 (-) aspartate carbamoyltransferase catalytic subunit",
+      "RR42_RS15865 (-) uracil phosphoribosyltransferase",
+      "RR42_RS15870 (-) Holliday junction DNA helicase"
+     ]
+    },
+    {
+     "model_gene": "WP_043354801_1",
+     "locus": "RR42_RS28115",
+     "fitness_browser_desc": "phosphonate metabolism protein PhnM",
+     "refseq_definition": "alpha-D-ribose 1-methylphosphonate 5-triphosphate diphosphatase",
+     "neighbourhood": [
+      "RR42_RS28100 (+) carbon-phosphorus lyase",
+      "RR42_RS28105 (+) phosphonate C-P lyase system protein PhnK",
+      "RR42_RS28110 (+) phosphonate ABC transporter ATPase",
+      "RR42_RS28115 (+) phosphonate metabolism protein PhnM",
+      "RR42_RS28120 (+) molybdenum cofactor biosysynthesis protein",
+      "RR42_RS28125 (-) hypothetical protein",
+      "RR42_RS28130 (+) N-acylglucosamine 2-epimerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHQS",
+   "name": "3-dehydroquinate synthase",
+   "equation_ids": "2dda7p_c --> 3dhq_c + pi_c",
+   "equation_names": "2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate --> 3-Dehydroquinate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043350279_1 or WP_043356818_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043350279_1",
+     "locus": "RR42_RS19005",
+     "fitness_browser_desc": "3-dehydroquinate synthase",
+     "refseq_definition": "3-dehydroquinate synthase",
+     "neighbourhood": [
+      "RR42_RS18990 (-) glutamate synthase",
+      "RR42_RS18995 (-) transposase",
+      "RR42_RS19000 (-) deoxyguanosinetriphosphate triphosphohydrolase",
+      "RR42_RS19005 (-) 3-dehydroquinate synthase",
+      "RR42_RS19010 (-) shikimate kinase",
+      "RR42_RS19015 (-) secretin",
+      "RR42_RS19020 (-) pilus assembly protein PilP"
+     ]
+    },
+    {
+     "model_gene": "WP_043356818_1",
+     "locus": "RR42_RS35135",
+     "fitness_browser_desc": "transcriptional regulator",
+     "refseq_definition": "helix-turn-helix transcriptional regulator",
+     "neighbourhood": [
+      "RR42_RS35120 (-) benzoyl-CoA oxygenase",
+      "RR42_RS35125 (-) benzoyl-CoA oxygenase",
+      "RR42_RS35130 (-) benzoyl-CoA-dihydrodiol lyase",
+      "RR42_RS35135 (-) transcriptional regulator",
+      "RR42_RS35140 (+) 2-hydroxylaminobenzoate mutase",
+      "RR42_RS35145 (+) aldehyde dehydrogenase",
+      "RR42_RS35150 (+) 4-hydroxybenzoate--CoA ligase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHQTi",
+   "name": "3-dehydroquinate dehydratase, irreversible",
+   "equation_ids": "3dhq_c --> 3dhsk_c + h2o_c",
+   "equation_names": "3-Dehydroquinate --> 3-Dehydroshikimate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043352322_1 or WP_043356023_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043352322_1",
+     "locus": "RR42_RS17690",
+     "fitness_browser_desc": "3-dehydroquinate dehydratase",
+     "refseq_definition": "type II 3-dehydroquinate dehydratase",
+     "neighbourhood": [
+      "RR42_RS17675 (-) UDP-N-acetylmuramate:L-alanyl-gamma-D-glutamyl- meso-diaminopimelate ligase",
+      "RR42_RS17680 (+) UDP-N-acetylmuramate--alanine ligase",
+      "RR42_RS17685 (+) alkyl hydroperoxide reductase",
+      "RR42_RS17690 (+) 3-dehydroquinate dehydratase",
+      "RR42_RS17695 (+) acetyl-CoA carboxylase",
+      "RR42_RS17700 (+) acetyl-CoA carboxylase",
+      "RR42_RS17705 (+) ribosomal protein L11 methyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_043356023_1",
+     "locus": "RR42_RS32450",
+     "fitness_browser_desc": "3-dehydroquinate dehydratase",
+     "refseq_definition": "type II 3-dehydroquinate dehydratase",
+     "neighbourhood": [
+      "RR42_RS32435 (-) hypothetical protein",
+      "RR42_RS32440 (-) 4-hydroxyphenylpyruvate dioxygenase",
+      "RR42_RS32445 (+) shikimate dehydrogenase",
+      "RR42_RS32450 (-) 3-dehydroquinate dehydratase",
+      "RR42_RS32455 (-) oxidoreductase",
+      "RR42_RS32460 (+) LysR family transcriptional regulator",
+      "RR42_RS32465 (+) 3-phenylpropionic acid transporter"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_006158411_1 or WP_043349272_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_006158411_1",
+     "locus": "RR42_RS04490",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "RR42_RS04475 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "RR42_RS04480 (-) membrane protein",
+      "RR42_RS04485 (+) cytidylate kinase",
+      "RR42_RS04490 (+) 30S ribosomal protein S1",
+      "RR42_RS04495 (+) integration host factor subunit beta",
+      "RR42_RS04500 (+) membrane protein",
+      "RR42_RS04505 (+) N-acetylglucosaminyl transferase"
+     ]
+    },
+    {
+     "model_gene": "WP_043349272_1",
+     "locus": "RR42_RS16985",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "RR42_RS16970 (-) ABC transporter ATP-binding protein",
+      "RR42_RS16975 (-) ABC transporter permease",
+      "RR42_RS16980 (-) branched-chain amino acid ABC transporter substrate-binding protein",
+      "RR42_RS16985 (-) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "RR42_RS16990 (-) peptidylprolyl isomerase",
+      "RR42_RS16995 (+) hypothetical protein",
+      "RR42_RS17000 (+) 50S ribosomal protein L28"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNMPPA",
+   "name": "Dihydroneopterin monophosphate dephosphorylase",
+   "equation_ids": "dhpmp_c + h2o_c --> dhnpt_c + pi_c",
+   "equation_names": "Dihydroneopterin monophosphate + H2O --> Dihydroneopterin + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043347349_1 or WP_043349734_1 or WP_043350379_1 or WP_043355640_1 or WP_043356911_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043347349_1",
+     "locus": "RR42_RS12920",
+     "fitness_browser_desc": "carbonate dehydratase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "RR42_RS12905 (-) peptidase S41",
+      "RR42_RS12910 (-) cbb3-type cytochrome c oxidase subunit I",
+      "RR42_RS12915 (-) cytochrome oxidase maturation protein Cbb3",
+      "RR42_RS12920 (-) carbonate dehydratase",
+      "RR42_RS12925 (-) ATPase",
+      "RR42_RS12930 (-) dihydrolipoamide dehydrogenase",
+      "RR42_RS12935 (-) dihydrolipoamide succinyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_043349734_1",
+     "locus": "RR42_RS17930",
+     "fitness_browser_desc": "RNA pyrophosphohydrolase",
+     "refseq_definition": "RNA pyrophosphohydrolase",
+     "neighbourhood": [
+      "RR42_RS17915 (-) proline dioxygenase",
+      "RR42_RS17920 (-) lytic transglycosylase",
+      "RR42_RS17925 (-) prolyl-tRNA synthetase",
+      "RR42_RS17930 (+) RNA pyrophosphohydrolase",
+      "RR42_RS17935 (+) lipoprotein",
+      "RR42_RS17940 (-) gamma-glutamyl kinase",
+      "RR42_RS17945 (-) GTPase CgtA"
+     ]
+    },
+    {
+     "model_gene": "WP_043350379_1",
+     "locus": "RR42_RS19310",
+     "fitness_browser_desc": "ATP-dependent DNA helicase RecQ",
+     "refseq_definition": "DNA helicase RecQ",
+     "neighbourhood": [
+      "RR42_RS19295 (-) elongation factor G",
+      "RR42_RS19300 (-) 30S ribosomal protein S7",
+      "RR42_RS19305 (-) 30S ribosomal protein S12",
+      "RR42_RS19310 (-) ATP-dependent DNA helicase RecQ",
+      "RR42_RS19315 (-) DNA-directed RNA polymerase subunit beta'",
+      "RR42_RS19320 (-) DNA-directed RNA polymerase subunit beta",
+      "RR42_RS19325 (-) 50S ribosomal protein L7/L12"
+     ]
+    },
+    {
+     "model_gene": "WP_043355640_1",
+     "locus": "RR42_RS30930",
+     "fitness_browser_desc": "4-deoxy-4-formamido-L-arabinose-phospho-UDP deformylase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "RR42_RS30915 (+) formyltransferase",
+      "RR42_RS30920 (+) UDP-4-amino-4-deoxy-L-arabinose formyltransferase",
+      "RR42_RS30925 (+) chitin deacetylase",
+      "RR42_RS30930 (-) 4-deoxy-4-formamido-L-arabinose-phospho-UDP deformylase",
+      "RR42_RS30935 (+) hypothetical protein",
+      "RR42_RS30940 (+) cobalt-zinc-cadmium resistance protein",
+      "RR42_RS30945 (+) cytochrome C peroxidase"
+     ]
+    },
+    {
+     "model_gene": "WP_043356911_1",
+     "locus": "RR42_RS35405",
+     "fitness_browser_desc": "arsenic ABC transporter ATPase",
+     "refseq_definition": "arsenical pump-driving ATPase",
+     "neighbourhood": [
+      "RR42_RS35390 (-) hypothetical protein",
+      "RR42_RS35395 (-) hypothetical protein",
+      "RR42_RS35400 (-) iron permease FTR1",
+      "RR42_RS35405 (-) arsenic ABC transporter ATPase",
+      "RR42_RS35410 (-) arsenic resistance operon repressor",
+      "RR42_RS35415 (-) hypothetical protein",
+      "RR42_RS35420 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNTPPA",
+   "name": "Dihydroneopterin triphosphate pyrophosphatase",
+   "equation_ids": "ahdt_c + h2o_c --> dhpmp_c + h_c + ppi_c",
+   "equation_names": "2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + H2O --> Dihydroneopterin monophosphate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043344757_1 or WP_043347349_1 or WP_043348348_1 or WP_043349734_1 or WP_043349769_1 or WP_043350379_1 or WP_043351230_1 or WP_043355640_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043344757_1",
+     "locus": "RR42_RS05585",
+     "fitness_browser_desc": "ADP-ribose pyrophosphatase",
+     "refseq_definition": "NUDIX domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS05570 (+) NADH:ubiquinone oxidoreductase subunit M",
+      "RR42_RS05575 (+) NADH:ubiquinone oxidoreductase subunit N",
+      "RR42_RS05580 (+) membrane protein",
+      "RR42_RS05585 (+) ADP-ribose pyrophosphatase",
+      "RR42_RS05590 (+) hypothetical protein",
+      "RR42_RS05595 (+) acyl-CoA dehydrogenase",
+      "RR42_RS05600 (+) acyl-CoA dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_043347349_1",
+     "locus": "RR42_RS12920",
+     "fitness_browser_desc": "carbonate dehydratase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "RR42_RS12905 (-) peptidase S41",
+      "RR42_RS12910 (-) cbb3-type cytochrome c oxidase subunit I",
+      "RR42_RS12915 (-) cytochrome oxidase maturation protein Cbb3",
+      "RR42_RS12920 (-) carbonate dehydratase",
+      "RR42_RS12925 (-) ATPase",
+      "RR42_RS12930 (-) dihydrolipoamide dehydrogenase",
+      "RR42_RS12935 (-) dihydrolipoamide succinyltransferase"
+     ]
+    },
+    {
+     "model_gene": "WP_043348348_1",
+     "locus": "RR42_RS15110",
+     "fitness_browser_desc": "NADH pyrophosphatase",
+     "refseq_definition": "NUDIX hydrolase",
+     "neighbourhood": [
+      "RR42_RS15095 (+) valyl-tRNA synthetase",
+      "RR42_RS15100 (+) UTP--glucose-1-phosphate uridylyltransferase",
+      "RR42_RS15105 (-) transcriptional regulator",
+      "RR42_RS15110 (-) NADH pyrophosphatase",
+      "RR42_RS15115 (-) threonine aldolase",
+      "RR42_RS15120 (-) 4-oxalocrotonate tautomerase",
+      "RR42_RS15125 (-) aldolase"
+     ]
+    },
+    {
+     "model_gene": "WP_043349734_1",
+     "locus": "RR42_RS17930",
+     "fitness_browser_desc": "RNA pyrophosphohydrolase",
+     "refseq_definition": "RNA pyrophosphohydrolase",
+     "neighbourhood": [
+      "RR42_RS17915 (-) proline dioxygenase",
+      "RR42_RS17920 (-) lytic transglycosylase",
+      "RR42_RS17925 (-) prolyl-tRNA synthetase",
+      "RR42_RS17930 (+) RNA pyrophosphohydrolase",
+      "RR42_RS17935 (+) lipoprotein",
+      "RR42_RS17940 (-) gamma-glutamyl kinase",
+      "RR42_RS17945 (-) GTPase CgtA"
+     ]
+    },
+    {
+     "model_gene": "WP_043349769_1",
+     "locus": "RR42_RS18010",
+     "fitness_browser_desc": "7,8-dihydro-8-oxoguanine-triphosphatase",
+     "refseq_definition": "NUDIX domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS17995 (+) dephospho-CoA kinase",
+      "RR42_RS18000 (+) cell division protein ZapD",
+      "RR42_RS18005 (+) pilus assembly protein",
+      "RR42_RS18010 (-) 7,8-dihydro-8-oxoguanine-triphosphatase",
+      "RR42_RS18015 (-) ATPase AAA",
+      "RR42_RS18020 (-) ornithine acetyltransferase",
+      "RR42_RS18025 (-) preprotein translocase subunit SecA"
+     ]
+    },
+    {
+     "model_gene": "WP_043350379_1",
+     "locus": "RR42_RS19310",
+     "fitness_browser_desc": "ATP-dependent DNA helicase RecQ",
+     "refseq_definition": "DNA helicase RecQ",
+     "neighbourhood": [
+      "RR42_RS19295 (-) elongation factor G",
+      "RR42_RS19300 (-) 30S ribosomal protein S7",
+      "RR42_RS19305 (-) 30S ribosomal protein S12",
+      "RR42_RS19310 (-) ATP-dependent DNA helicase RecQ",
+      "RR42_RS19315 (-) DNA-directed RNA polymerase subunit beta'",
+      "RR42_RS19320 (-) DNA-directed RNA polymerase subunit beta",
+      "RR42_RS19325 (-) 50S ribosomal protein L7/L12"
+     ]
+    },
+    {
+     "model_gene": "WP_043351230_1",
+     "locus": "RR42_RS02470",
+     "fitness_browser_desc": "dihydroneopterin triphosphate pyrophosphatase",
+     "refseq_definition": "dihydroneopterin triphosphate diphosphatase",
+     "neighbourhood": [
+      "RR42_RS02455 (-) agmatinase",
+      "RR42_RS02460 (+) LysR family transcriptional regulator",
+      "RR42_RS02465 (+) membrane protein",
+      "RR42_RS02470 (+) dihydroneopterin triphosphate pyrophosphatase",
+      "RR42_RS02475 (+) endonuclease",
+      "RR42_RS02480 (-) LysR family transcriptional regulator",
+      "RR42_RS02485 (+) short-chain dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_043355640_1",
+     "locus": "RR42_RS30930",
+     "fitness_browser_desc": "4-deoxy-4-formamido-L-arabinose-phospho-UDP deformylase",
+     "refseq_definition": "heavy metal translocating P-type ATPase",
+     "neighbourhood": [
+      "RR42_RS30915 (+) formyltransferase",
+      "RR42_RS30920 (+) UDP-4-amino-4-deoxy-L-arabinose formyltransferase",
+      "RR42_RS30925 (+) chitin deacetylase",
+      "RR42_RS30930 (-) 4-deoxy-4-formamido-L-arabinose-phospho-UDP deformylase",
+      "RR42_RS30935 (+) hypothetical protein",
+      "RR42_RS30940 (+) cobalt-zinc-cadmium resistance protein",
+      "RR42_RS30945 (+) cytochrome C peroxidase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043350889_1 or WP_052495305_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043350889_1",
+     "locus": "RR42_RS20405",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "2-dehydropantoate 2-reductase",
+     "neighbourhood": [
+      "RR42_RS20390 (+) DNA-binding protein",
+      "RR42_RS20395 (+) membrane protein",
+      "RR42_RS20400 (+) aldolase",
+      "RR42_RS20405 (+) 2-dehydropantoate 2-reductase",
+      "RR42_RS20410 (-) transporter",
+      "RR42_RS20415 (-) ABC transporter substrate-binding protein",
+      "RR42_RS20420 (+) maltoporin"
+     ]
+    },
+    {
+     "model_gene": "WP_052495305_1",
+     "locus": "RR42_RS32960",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "ketopantoate reductase family protein",
+     "neighbourhood": [
+      "RR42_RS32945 (+) hypothetical protein",
+      "RR42_RS32950 (-) alpha/beta hydrolase",
+      "RR42_RS32955 (-) MFS transporter",
+      "RR42_RS32960 (-) 2-dehydropantoate 2-reductase",
+      "RR42_RS32965 (-) salicylaldehyde dehydrogenase",
+      "RR42_RS32970 (-) benzoylformate decarboxylase",
+      "RR42_RS32975 (+) LysR family transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FERIRDe",
+   "name": "Quinon:iron(III) oxidoreductase",
+   "equation_ids": "2.0 fe3_e + qh2_c --> 2.0 fe2_e + 2.0 h_e + q_c",
+   "equation_names": "2.0 Fe3+ + Ubiquinol --> 2.0 Fe2+ + 2.0 H+ + Ubiquinone",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": []
+  },
+  {
+   "reaction": "GF6PTA",
+   "name": "Glutamine-fructose-6-phosphate transaminase",
+   "equation_ids": "f6p_c + gln__L_c --> gam6p_c + glu__L_c",
+   "equation_names": "D-Fructose 6-phosphate + L-Glutamine --> D-Glucosamine 6-phosphate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343191_1 or WP_043343649_1 or WP_043346162_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343191_1",
+     "locus": "RR42_RS01460",
+     "fitness_browser_desc": "glucosamine--fructose-6-phosphate aminotransferase",
+     "refseq_definition": "glutamine--fructose-6-phosphate transaminase (isomerizing)",
+     "neighbourhood": [
+      "RR42_RS01445 (+) tRNA 2-thiocytidine biosynthesis protein TtcA",
+      "RR42_RS01450 (-) hypothetical protein",
+      "RR42_RS01455 (+) bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase",
+      "RR42_RS01460 (+) glucosamine--fructose-6-phosphate aminotransferase",
+      "RR42_RS01465 (+) histidine kinase",
+      "RR42_RS01470 (+) hypothetical protein",
+      "RR42_RS01475 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043343649_1",
+     "locus": "RR42_RS02595",
+     "fitness_browser_desc": "glutamine amidotransferase",
+     "refseq_definition": "class II glutamine amidotransferase",
+     "neighbourhood": [
+      "RR42_RS02580 (+) amino acid ABC transporter permease",
+      "RR42_RS02585 (+) amino acid ABC transporter permease",
+      "RR42_RS02590 (+) amino acid ABC transporter ATP-binding protein",
+      "RR42_RS02595 (-) glutamine amidotransferase",
+      "RR42_RS02600 (+) tartrate dehydrogenase",
+      "RR42_RS02605 (+) hydroxypyruvate reductase",
+      "RR42_RS02610 (+) dihydroorotase"
+     ]
+    },
+    {
+     "model_gene": "WP_043346162_1",
+     "locus": "RR42_RS09880",
+     "fitness_browser_desc": "glucosamine--fructose-6-phosphate aminotransferase",
+     "refseq_definition": "glutamine--fructose-6-phosphate transaminase (isomerizing)",
+     "neighbourhood": [
+      "RR42_RS09865 (+) hemin storage protein",
+      "RR42_RS09870 (+) N-glycosyltransferase",
+      "RR42_RS09875 (+) hypothetical protein",
+      "RR42_RS09880 (+) glucosamine--fructose-6-phosphate aminotransferase",
+      "RR42_RS09885 (+) hypothetical protein",
+      "RR42_RS09890 (-) acyl-CoA synthetase",
+      "RR42_RS09895 (-) peptidase S15"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GRTT",
+   "name": "Geranyltranstransferase",
+   "equation_ids": "grdp_c + ipdp_c --> frdp_c + ppi_c",
+   "equation_names": "Geranyl diphosphate + Isopentenyl diphosphate --> Farnesyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043345431_1 or WP_043348295_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043345431_1",
+     "locus": "RR42_RS07905",
+     "fitness_browser_desc": "phytoene synthase",
+     "refseq_definition": "presqualene diphosphate synthase HpnD",
+     "neighbourhood": [
+      "RR42_RS07890 (+) hypothetical protein",
+      "RR42_RS07895 (-) gluconolactonase",
+      "RR42_RS07900 (-) allantoate amidohydrolase",
+      "RR42_RS07905 (-) phytoene synthase",
+      "RR42_RS07910 (+) RND transporter MFP subunit",
+      "RR42_RS07915 (+) multidrug transporter AcrB",
+      "RR42_RS07920 (-) cyclophilin-like superfamily protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043348295_1",
+     "locus": "RR42_RS15010",
+     "fitness_browser_desc": "geranyl transferase",
+     "refseq_definition": "polyprenyl synthetase family protein",
+     "neighbourhood": [
+      "RR42_RS14995 (+) tRNA threonylcarbamoyladenosine modification protein TsaD",
+      "RR42_RS15000 (-) GTP cyclohydrolase",
+      "RR42_RS15005 (-) 1-deoxy-D-xylulose-5-phosphate synthase",
+      "RR42_RS15010 (-) geranyl transferase",
+      "RR42_RS15015 (-) exodeoxyribonuclease VII small subunit",
+      "RR42_RS15020 (+) (2Fe-2S)-binding protein",
+      "RR42_RS15025 (+) membrane protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GTPCI",
+   "name": "GTP cyclohydrolase I",
+   "equation_ids": "gtp_c + h2o_c --> ahdt_c + for_c + h_c",
+   "equation_names": "GTP + H2O --> 2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + Formate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348288_1 or WP_043356575_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348288_1",
+     "locus": "RR42_RS15000",
+     "fitness_browser_desc": "GTP cyclohydrolase",
+     "refseq_definition": "GTP cyclohydrolase FolE2",
+     "neighbourhood": [
+      "RR42_RS14985 (-) 30S ribosomal protein S21",
+      "RR42_RS14990 (-) membrane protein",
+      "RR42_RS14995 (+) tRNA threonylcarbamoyladenosine modification protein TsaD",
+      "RR42_RS15000 (-) GTP cyclohydrolase",
+      "RR42_RS15005 (-) 1-deoxy-D-xylulose-5-phosphate synthase",
+      "RR42_RS15010 (-) geranyl transferase",
+      "RR42_RS15015 (-) exodeoxyribonuclease VII small subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_043356575_1",
+     "locus": "RR42_RS34345",
+     "fitness_browser_desc": "GTP cyclohydrolase",
+     "refseq_definition": "GTP cyclohydrolase I",
+     "neighbourhood": [
+      "RR42_RS34330 (+) hypothetical protein",
+      "RR42_RS34335 (-) hypothetical protein",
+      "RR42_RS34340 (+) acetyltransferase",
+      "RR42_RS34345 (+) GTP cyclohydrolase",
+      "RR42_RS34350 (+) blue light sensor protein",
+      "RR42_RS34355 (+) hydratase",
+      "RR42_RS34360 (-) transposase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043342942_1 or WP_043345892_1 or spontaneous",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043342942_1",
+     "locus": "RR42_RS00880",
+     "fitness_browser_desc": "carbonate dehydratase",
+     "refseq_definition": "carbonate dehydratase",
+     "neighbourhood": [
+      "RR42_RS00865 (+) phenylacetic acid degradation protein PaaI",
+      "RR42_RS00870 (+) isovaleryl-CoA dehydrogenase",
+      "RR42_RS00875 (+) isocitrate dehydrogenase",
+      "RR42_RS00880 (+) carbonate dehydratase",
+      "RR42_RS00885 (+) acetyl-CoA acetyltransferase",
+      "RR42_RS00890 (+) short-chain dehydrogenase",
+      "RR42_RS00895 (+) acyl-CoA dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_043345892_1",
+     "locus": "RR42_RS08950",
+     "fitness_browser_desc": "carbonic anhydrase",
+     "refseq_definition": "carbonic anhydrase family protein",
+     "neighbourhood": [
+      "RR42_RS08935 (+) peptidylprolyl isomerase",
+      "RR42_RS08940 (-) hypothetical protein",
+      "RR42_RS08945 (-) hypothetical protein",
+      "RR42_RS08950 (-) carbonic anhydrase",
+      "RR42_RS08955 (-) hypothetical protein",
+      "RR42_RS08960 (+) GCN5 family acetyltransferase",
+      "RR42_RS08965 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HISDr",
+   "name": "Histidase r",
+   "equation_ids": "his__L_c --> nh4_c + urcan_c",
+   "equation_names": "L-Histidine --> Ammonium + Urocanate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348124_1 or WP_052494409_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348124_1",
+     "locus": "RR42_RS14640",
+     "fitness_browser_desc": "histidine ammonia-lyase",
+     "refseq_definition": "histidine ammonia-lyase",
+     "neighbourhood": [
+      "RR42_RS14625 (-) formimidoylglutamase",
+      "RR42_RS14630 (-) MFS transporter",
+      "RR42_RS14635 (-) proline-specific permease",
+      "RR42_RS14640 (-) histidine ammonia-lyase",
+      "RR42_RS14645 (-) urocanate hydratase",
+      "RR42_RS14650 (+) multidrug ABC transporter ATP-binding protein",
+      "RR42_RS14655 (-) chromate transporter"
+     ]
+    },
+    {
+     "model_gene": "WP_052494409_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "tyrosine 2,3-aminomutase"
+    }
+   ]
+  },
+  {
+   "reaction": "HISTP",
+   "name": "Histidinol-phosphatase",
+   "equation_ids": "h2o_c + hisp_c --> histd_c + pi_c",
+   "equation_names": "H2O + L-Histidinol phosphate --> L-Histidinol + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343769_1 or WP_082055267_1",
+   "n_growth_conditions_essential": 15,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343769_1",
+     "locus": "RR42_RS02815",
+     "fitness_browser_desc": "D,D-heptose 1,7-bisphosphate phosphatase",
+     "refseq_definition": "D-glycero-beta-D-manno-heptose 1,7-bisphosphate 7-phosphatase",
+     "neighbourhood": [
+      "RR42_RS02800 (-) glyoxalase I",
+      "RR42_RS02805 (-) metal-dependent hydrolase",
+      "RR42_RS02810 (-) acyl-phosphate glycerol 3-phosphate acyltransferase",
+      "RR42_RS02815 (-) D,D-heptose 1,7-bisphosphate phosphatase",
+      "RR42_RS02820 (-) glycyl-tRNA synthetase subunit beta",
+      "RR42_RS02825 (-) hypothetical protein",
+      "RR42_RS02830 (-) glycyl-tRNA synthetase subunit alpha"
+     ]
+    },
+    {
+     "model_gene": "WP_082055267_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "inositol monophosphatase family protein"
+    }
+   ]
+  },
+  {
+   "reaction": "IOR2b",
+   "name": "Indolepyruvate ferredoxin oxidoreductase (phenylpyvurate)",
+   "equation_ids": "coa_c + fdxo_42_c + phpyr_c <=> co2_c + fdxr_42_c + h_c + phaccoa_c",
+   "equation_names": "Coenzyme A + Ferredoxin (oxidized form 4:2) + Phenylpyruvate <=> CO2 + Ferredoxin (reduced form 4:2) + H+ + Phenylacetyl-CoA",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": []
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_006158411_1 or WP_043349272_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_006158411_1",
+     "locus": "RR42_RS04490",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "RR42_RS04475 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "RR42_RS04480 (-) membrane protein",
+      "RR42_RS04485 (+) cytidylate kinase",
+      "RR42_RS04490 (+) 30S ribosomal protein S1",
+      "RR42_RS04495 (+) integration host factor subunit beta",
+      "RR42_RS04500 (+) membrane protein",
+      "RR42_RS04505 (+) N-acetylglucosaminyl transferase"
+     ]
+    },
+    {
+     "model_gene": "WP_043349272_1",
+     "locus": "RR42_RS16985",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "RR42_RS16970 (-) ABC transporter ATP-binding protein",
+      "RR42_RS16975 (-) ABC transporter permease",
+      "RR42_RS16980 (-) branched-chain amino acid ABC transporter substrate-binding protein",
+      "RR42_RS16985 (-) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "RR42_RS16990 (-) peptidylprolyl isomerase",
+      "RR42_RS16995 (+) hypothetical protein",
+      "RR42_RS17000 (+) 50S ribosomal protein L28"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPMIa",
+   "name": "3-isopropylmalate dehydratase",
+   "equation_ids": "3c2hmp_c <=> 2ippm_c + h2o_c",
+   "equation_names": "3-Carboxy-2-hydroxy-4-methylpentanoate <=> 2-Isopropylmaleate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_043343215_1 and WP_043351188_1) or (WP_043348009_1 and WP_043353682_1) or (WP_043351188_1 and WP_043353237_1) or (WP_043352702_1 and WP_043352703_1)",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343215_1",
+     "locus": "RR42_RS01530",
+     "fitness_browser_desc": "isopropylmalate isomerase",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "RR42_RS01515 (+) cytidyltransferase",
+      "RR42_RS01520 (-) LysR family transcriptional regulator",
+      "RR42_RS01525 (+) LacI family transcriptional regulator",
+      "RR42_RS01530 (+) isopropylmalate isomerase",
+      "RR42_RS01535 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS01540 (+) alpha/beta hydrolase",
+      "RR42_RS01545 (+) TetR family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043348009_1",
+     "locus": "RR42_RS14400",
+     "fitness_browser_desc": "isopropylmalate isomerase",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "RR42_RS14385 (-) 3-isopropylmalate dehydrogenase",
+      "RR42_RS14390 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS14395 (-) entericidin",
+      "RR42_RS14400 (-) isopropylmalate isomerase",
+      "RR42_RS14405 (-) leucine/isoleucine/valine transporter ATP-binding subunit",
+      "RR42_RS14410 (-) leucine/isoleucine/valine transporter ATP-binding subunit",
+      "RR42_RS14415 (-) leucine/isoleucine/valine transporter permease subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_043351188_1",
+     "locus": "RR42_RS01535",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "RR42_RS01520 (-) LysR family transcriptional regulator",
+      "RR42_RS01525 (+) LacI family transcriptional regulator",
+      "RR42_RS01530 (+) isopropylmalate isomerase",
+      "RR42_RS01535 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS01540 (+) alpha/beta hydrolase",
+      "RR42_RS01545 (+) TetR family transcriptional regulator",
+      "RR42_RS01550 (+) ABC transporter substrate-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043352702_1",
+     "locus": "RR42_RS21080",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "LeuD/DmdB family oxidoreductase small subunit",
+     "neighbourhood": [
+      "RR42_RS21065 (+) diguanylate phosphodiesterase",
+      "RR42_RS21070 (-) hypothetical protein",
+      "RR42_RS21075 (+) phosphoribosyltransferase",
+      "RR42_RS21080 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS21085 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS21090 (-) MFS transporter",
+      "RR42_RS21095 (-) GntR family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043352703_1",
+     "locus": "RR42_RS21085",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "RR42_RS21070 (-) hypothetical protein",
+      "RR42_RS21075 (+) phosphoribosyltransferase",
+      "RR42_RS21080 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS21085 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS21090 (-) MFS transporter",
+      "RR42_RS21095 (-) GntR family transcriptional regulator",
+      "RR42_RS21100 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043353237_1",
+     "locus": "RR42_RS22770",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "RR42_RS22755 (+) hypothetical protein",
+      "RR42_RS22760 (-) GntR family transcriptional regulator",
+      "RR42_RS22765 (+) carboxyvinyl-carboxyphosphonate phosphorylmutase",
+      "RR42_RS22770 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS22775 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS22780 (+) hypothetical protein",
+      "RR42_RS22785 (+) receptor"
+     ]
+    },
+    {
+     "model_gene": "WP_043353682_1",
+     "locus": "RR42_RS24180",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "RR42_RS24165 (+) gentisate 1,2-dioxygenase",
+      "RR42_RS24170 (+) hypothetical protein",
+      "RR42_RS24175 (+) isopropylmalate isomerase",
+      "RR42_RS24180 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS24190 (-) LysR family transcriptional regulator",
+      "RR42_RS24195 (-) short-chain dehydrogenase",
+      "RR42_RS24200 (-) LysR family transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPMIb",
+   "name": "2-isopropylmalate hydratase",
+   "equation_ids": "2ippm_c + h2o_c <=> 3c3hmp_c",
+   "equation_names": "2-Isopropylmaleate + H2O <=> 3-Carboxy-3-hydroxy-4-methylpentanoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(WP_043343215_1 and WP_043351188_1) or (WP_043348009_1 and WP_043353682_1) or (WP_043351188_1 and WP_043353237_1) or (WP_043352702_1 and WP_043352703_1)",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343215_1",
+     "locus": "RR42_RS01530",
+     "fitness_browser_desc": "isopropylmalate isomerase",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "RR42_RS01515 (+) cytidyltransferase",
+      "RR42_RS01520 (-) LysR family transcriptional regulator",
+      "RR42_RS01525 (+) LacI family transcriptional regulator",
+      "RR42_RS01530 (+) isopropylmalate isomerase",
+      "RR42_RS01535 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS01540 (+) alpha/beta hydrolase",
+      "RR42_RS01545 (+) TetR family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043348009_1",
+     "locus": "RR42_RS14400",
+     "fitness_browser_desc": "isopropylmalate isomerase",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "RR42_RS14385 (-) 3-isopropylmalate dehydrogenase",
+      "RR42_RS14390 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS14395 (-) entericidin",
+      "RR42_RS14400 (-) isopropylmalate isomerase",
+      "RR42_RS14405 (-) leucine/isoleucine/valine transporter ATP-binding subunit",
+      "RR42_RS14410 (-) leucine/isoleucine/valine transporter ATP-binding subunit",
+      "RR42_RS14415 (-) leucine/isoleucine/valine transporter permease subunit"
+     ]
+    },
+    {
+     "model_gene": "WP_043351188_1",
+     "locus": "RR42_RS01535",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "RR42_RS01520 (-) LysR family transcriptional regulator",
+      "RR42_RS01525 (+) LacI family transcriptional regulator",
+      "RR42_RS01530 (+) isopropylmalate isomerase",
+      "RR42_RS01535 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS01540 (+) alpha/beta hydrolase",
+      "RR42_RS01545 (+) TetR family transcriptional regulator",
+      "RR42_RS01550 (+) ABC transporter substrate-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043352702_1",
+     "locus": "RR42_RS21080",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "LeuD/DmdB family oxidoreductase small subunit",
+     "neighbourhood": [
+      "RR42_RS21065 (+) diguanylate phosphodiesterase",
+      "RR42_RS21070 (-) hypothetical protein",
+      "RR42_RS21075 (+) phosphoribosyltransferase",
+      "RR42_RS21080 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS21085 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS21090 (-) MFS transporter",
+      "RR42_RS21095 (-) GntR family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043352703_1",
+     "locus": "RR42_RS21085",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "RR42_RS21070 (-) hypothetical protein",
+      "RR42_RS21075 (+) phosphoribosyltransferase",
+      "RR42_RS21080 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS21085 (-) 3-isopropylmalate dehydratase",
+      "RR42_RS21090 (-) MFS transporter",
+      "RR42_RS21095 (-) GntR family transcriptional regulator",
+      "RR42_RS21100 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043353237_1",
+     "locus": "RR42_RS22770",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "3-isopropylmalate dehydratase large subunit",
+     "neighbourhood": [
+      "RR42_RS22755 (+) hypothetical protein",
+      "RR42_RS22760 (-) GntR family transcriptional regulator",
+      "RR42_RS22765 (+) carboxyvinyl-carboxyphosphonate phosphorylmutase",
+      "RR42_RS22770 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS22775 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS22780 (+) hypothetical protein",
+      "RR42_RS22785 (+) receptor"
+     ]
+    },
+    {
+     "model_gene": "WP_043353682_1",
+     "locus": "RR42_RS24180",
+     "fitness_browser_desc": "3-isopropylmalate dehydratase",
+     "refseq_definition": "3-isopropylmalate dehydratase small subunit",
+     "neighbourhood": [
+      "RR42_RS24165 (+) gentisate 1,2-dioxygenase",
+      "RR42_RS24170 (+) hypothetical protein",
+      "RR42_RS24175 (+) isopropylmalate isomerase",
+      "RR42_RS24180 (+) 3-isopropylmalate dehydratase",
+      "RR42_RS24190 (-) LysR family transcriptional regulator",
+      "RR42_RS24195 (-) short-chain dehydrogenase",
+      "RR42_RS24200 (-) LysR family transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPS",
+   "name": "2-isopropylmalate synthase",
+   "equation_ids": "3mob_c + accoa_c + h2o_c --> 3c3hmp_c + coa_c + h_c",
+   "equation_names": "3-Methyl-2-oxobutanoate + Acetyl-CoA + H2O --> 3-Carboxy-3-hydroxy-4-methylpentanoate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043344724_1 or WP_043357532_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043344724_1",
+     "locus": "RR42_RS05465",
+     "fitness_browser_desc": "2-isopropylmalate synthase",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "RR42_RS05450 (+) phosphatidylserine decarboxylase",
+      "RR42_RS05455 (+) CDP-diacylglycerol--serine O-phosphatidyltransferase",
+      "RR42_RS05460 (+) peptidase M23",
+      "RR42_RS05465 (+) 2-isopropylmalate synthase",
+      "RR42_RS05470 (-) lipoprotein",
+      "RR42_RS05475 (+) ABC transporter permease",
+      "RR42_RS05480 (+) 30S ribosomal protein S15"
+     ]
+    },
+    {
+     "model_gene": "WP_043357532_1",
+     "locus": "RR42_RS21205",
+     "fitness_browser_desc": "2-isopropylmalate synthase",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "RR42_RS21190 (-) LysR family transcriptional regulator",
+      "RR42_RS21195 (+) phosphohydrolase",
+      "RR42_RS21200 (-) membrane protein",
+      "RR42_RS21205 (-) 2-isopropylmalate synthase",
+      "RR42_RS21210 (+) hypothetical protein",
+      "RR42_RS21215 (-) membrane protein",
+      "RR42_RS21220 (-) iron transporter FeoB"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IZPN",
+   "name": "Imidazolonepropionase",
+   "equation_ids": "4izp_c + h2o_c --> forglu_c + h_c",
+   "equation_names": "4-Imidazolone-5-propanoate + H2O --> N-Formimidoyl-L-glutamate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043355764_1 or WP_052494678_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043355764_1",
+     "locus": "RR42_RS31430",
+     "fitness_browser_desc": "amidohydrolase",
+     "refseq_definition": "amidohydrolase",
+     "neighbourhood": [
+      "RR42_RS31415 (+) histidine kinase",
+      "RR42_RS31420 (-) LuxR family transcriptional regulator",
+      "RR42_RS31425 (+) chloroperoxidase",
+      "RR42_RS31430 (+) amidohydrolase",
+      "RR42_RS31435 (+) hypothetical protein",
+      "RR42_RS31440 (+) ABC transporter substrate-binding protein",
+      "RR42_RS31445 (+) porin"
+     ]
+    },
+    {
+     "model_gene": "WP_052494678_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "imidazolonepropionase"
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK2",
+   "name": "Nucleoside-diphosphate kinase (ATP:UDP)",
+   "equation_ids": "atp_c + udp_c <=> adp_c + utp_c",
+   "equation_names": "ATP + UDP <=> ADP + UTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_006157747_1 or WP_043344041_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_006157747_1",
+     "locus": "RR42_RS13160",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "RR42_RS13145 (-) DNA-binding protein",
+      "RR42_RS13150 (-) pilus assembly protein PilW",
+      "RR42_RS13155 (-) 23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN",
+      "RR42_RS13160 (-) nucleoside diphosphate kinase",
+      "RR42_RS13165 (+) membrane protein",
+      "RR42_RS13170 (-) 23S rRNA methyltransferase",
+      "RR42_RS13175 (+) endonuclease"
+     ]
+    },
+    {
+     "model_gene": "WP_043344041_1",
+     "locus": "RR42_RS03445",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "RR42_RS03430 (-) SAM-dependent methyltransferase",
+      "RR42_RS03435 (+) XRE family transcriptional regulator",
+      "RR42_RS03440 (-) 3-hydroxy-2-methylbutyryl-CoA dehydrogenase",
+      "RR42_RS03445 (-) adenylate kinase",
+      "RR42_RS03450 (-) 3-deoxy-manno-octulosonate cytidylyltransferase",
+      "RR42_RS03455 (-) hypothetical protein",
+      "RR42_RS03460 (-) tetraacyldisaccharide 4'-kinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK4",
+   "name": "Nucleoside-diphosphate kinase (ATP:dTDP)",
+   "equation_ids": "atp_c + dtdp_c <=> adp_c + dttp_c",
+   "equation_names": "ATP + DTDP <=> ADP + DTTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_006157747_1 or WP_043344041_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_006157747_1",
+     "locus": "RR42_RS13160",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside-diphosphate kinase",
+     "neighbourhood": [
+      "RR42_RS13145 (-) DNA-binding protein",
+      "RR42_RS13150 (-) pilus assembly protein PilW",
+      "RR42_RS13155 (-) 23S rRNA (adenine(2503)-C(2))-methyltransferase RlmN",
+      "RR42_RS13160 (-) nucleoside diphosphate kinase",
+      "RR42_RS13165 (+) membrane protein",
+      "RR42_RS13170 (-) 23S rRNA methyltransferase",
+      "RR42_RS13175 (+) endonuclease"
+     ]
+    },
+    {
+     "model_gene": "WP_043344041_1",
+     "locus": "RR42_RS03445",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "RR42_RS03430 (-) SAM-dependent methyltransferase",
+      "RR42_RS03435 (+) XRE family transcriptional regulator",
+      "RR42_RS03440 (-) 3-hydroxy-2-methylbutyryl-CoA dehydrogenase",
+      "RR42_RS03445 (-) adenylate kinase",
+      "RR42_RS03450 (-) 3-deoxy-manno-octulosonate cytidylyltransferase",
+      "RR42_RS03455 (-) hypothetical protein",
+      "RR42_RS03460 (-) tetraacyldisaccharide 4'-kinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NNATr",
+   "name": "Nicotinate-nucleotide adenylyltransferase",
+   "equation_ids": "atp_c + h_c + nicrnt_c <=> dnad_c + ppi_c",
+   "equation_names": "ATP + H+ + Nicotinate D-ribonucleotide <=> Deamino-NAD+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_052494407_1 or WP_052494754_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_052494407_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "bifunctional nicotinamide-nucleotide adenylyltransferase/Nudix hydroxylase"
+    },
+    {
+     "model_gene": "WP_052494754_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "nicotinate-nucleotide adenylyltransferase"
+    }
+   ]
+  },
+  {
+   "reaction": "NNDPR",
+   "name": "Nicotinate-nucleotide diphosphorylase (carboxylating)",
+   "equation_ids": "2.0 h_c + prpp_c + quln_c --> co2_c + nicrnt_c + ppi_c",
+   "equation_names": "2.0 H+ + 5-Phospho-alpha-D-ribose 1-diphosphate + Quinolinate --> CO2 + Nicotinate D-ribonucleotide + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043352766_1 or WP_052494680_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043352766_1",
+     "locus": "RR42_RS21245",
+     "fitness_browser_desc": "nicotinate-nucleotide pyrophosphorylase",
+     "refseq_definition": "carboxylating nicotinate-nucleotide diphosphorylase",
+     "neighbourhood": [
+      "RR42_RS21230 (-) ABC transporter substrate-binding protein",
+      "RR42_RS21235 (-) thymidine phosphorylase",
+      "RR42_RS21240 (+) MarR family transcriptional regulator",
+      "RR42_RS21245 (-) nicotinate-nucleotide pyrophosphorylase",
+      "RR42_RS21250 (+) antibiotic biosynthesis monooxygenase",
+      "RR42_RS21255 (-) LysR family transcriptional regulator",
+      "RR42_RS21260 (+) isovaleryl-CoA dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "WP_052494680_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "carboxylating nicotinate-nucleotide diphosphorylase"
+    }
+   ]
+  },
+  {
+   "reaction": "PERD",
+   "name": "Erythronate 4-phosphate (4per) dehydrogenase",
+   "equation_ids": "4per_c + nad_c <=> h_c + nadh_c + ohpb_c",
+   "equation_names": "4-Phospho-D-erythronate + Nicotinamide adenine dinucleotide <=> H+ + Nicotinamide adenine dinucleotide - reduced + 2-Oxo-3-hydroxy-4-phosphobutanoate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": []
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343225_1 or WP_043343234_1 or WP_043343522_1 or WP_043344808_1 or WP_043344875_1 or WP_043348101_1 or WP_043351363_1 or WP_043352803_1 or WP_043356209_1 or WP_043356309_1 or WP_043356872_1 or WP_052495210_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343225_1",
+     "locus": "RR42_RS01570",
+     "fitness_browser_desc": "GntR family transcriptional regulator",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS01555 (+) aminopeptidase",
+      "RR42_RS01560 (+) diguanylate cyclase",
+      "RR42_RS01565 (+) hypothetical protein",
+      "RR42_RS01570 (-) GntR family transcriptional regulator",
+      "RR42_RS01575 (+) omega amino acid--pyruvate aminotransferase",
+      "RR42_RS01580 (+) methylmalonate-semialdehyde dehydrogenase",
+      "RR42_RS01585 (+) amino acid permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043343234_1",
+     "locus": "RR42_RS01590",
+     "fitness_browser_desc": "GntR family transcriptional regulator",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS01575 (+) omega amino acid--pyruvate aminotransferase",
+      "RR42_RS01580 (+) methylmalonate-semialdehyde dehydrogenase",
+      "RR42_RS01585 (+) amino acid permease",
+      "RR42_RS01590 (-) GntR family transcriptional regulator",
+      "RR42_RS01595 (+) hypothetical protein",
+      "RR42_RS01600 (+) methylmalonyl-CoA mutase",
+      "RR42_RS01605 (+) hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_043343522_1",
+     "locus": "RR42_RS02275",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS02260 (+) cytochrome C peroxidase",
+      "RR42_RS02265 (+) excinuclease ABC subunit A",
+      "RR42_RS02270 (+) hypothetical protein",
+      "RR42_RS02275 (+) aspartate aminotransferase",
+      "RR42_RS02280 (-) ABC transporter permease",
+      "RR42_RS02285 (-) mannose-1-phosphate guanyltransferase",
+      "RR42_RS02290 (-) multidrug ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043344808_1",
+     "locus": "RR42_RS05770",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS05755 (-) enoyl-CoA hydratase",
+      "RR42_RS05760 (-) 3-hydroxyacyl-CoA dehydrogenase",
+      "RR42_RS05765 (+) glutathione S-transferase",
+      "RR42_RS05770 (-) aminotransferase",
+      "RR42_RS05775 (-) hypothetical protein",
+      "RR42_RS05780 (+) hypothetical protein",
+      "RR42_RS05785 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043344875_1",
+     "locus": "RR42_RS05990",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "RR42_RS05975 (-) ferredoxin",
+      "RR42_RS05980 (+) TetR family transcriptional regulator",
+      "RR42_RS05985 (-) esterase",
+      "RR42_RS05990 (-) aromatic amino acid aminotransferase",
+      "RR42_RS05995 (+) excinuclease ABC subunit B",
+      "RR42_RS06000 (+) antibiotic biosynthesis monooxygenase",
+      "RR42_RS06005 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043348101_1",
+     "locus": "RR42_RS14595",
+     "fitness_browser_desc": "2-aminoadipate aminotransferase",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS14580 (+) multidrug DMT transporter permease",
+      "RR42_RS14585 (+) L-PSP family endoribonuclease",
+      "RR42_RS14590 (+) hypothetical protein",
+      "RR42_RS14595 (+) 2-aminoadipate aminotransferase",
+      "RR42_RS14600 (+) glutathione S-transferase",
+      "RR42_RS14605 (-) threonine transporter",
+      "RR42_RS14610 (+) lactate permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043351363_1",
+     "locus": "RR42_RS04465",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "RR42_RS04450 (+) hypothetical protein",
+      "RR42_RS04455 (+) MFS transporter",
+      "RR42_RS04460 (+) chorismate mutase",
+      "RR42_RS04465 (+) aspartate aminotransferase",
+      "RR42_RS04470 (+) prephenate dehydrogenase",
+      "RR42_RS04475 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "RR42_RS04480 (-) membrane protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043352803_1",
+     "locus": "RR42_RS21340",
+     "fitness_browser_desc": "DNA-binding protein",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "RR42_RS21325 (+) ethanolamine ammonia-lyase",
+      "RR42_RS21330 (+) phosphoserine phosphatase",
+      "RR42_RS21335 (-) FAD-linked oxidase",
+      "RR42_RS21340 (-) DNA-binding protein",
+      "RR42_RS21345 (+) acetylornithine deacetylase",
+      "RR42_RS21350 (+) peptide ABC transporter substrate-binding protein",
+      "RR42_RS21355 (+) ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043356209_1",
+     "locus": "RR42_RS33140",
+     "fitness_browser_desc": "GntR family transcriptional regulator",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS33125 (-) radical SAM protein",
+      "RR42_RS33130 (-) aliphatic nitrilase",
+      "RR42_RS33135 (-) hypothetical protein",
+      "RR42_RS33140 (+) GntR family transcriptional regulator",
+      "RR42_RS33145 (-) hypothetical protein",
+      "RR42_RS33150 (-) hypothetical protein",
+      "RR42_RS33155 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043356309_1",
+     "locus": "RR42_RS33490",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "RR42_RS33475 (-) CopG family transcriptional regulator",
+      "RR42_RS33480 (+) spermidine synthase",
+      "RR42_RS33485 (+) Fe-S oxidoreductase",
+      "RR42_RS33490 (-) aromatic amino acid aminotransferase",
+      "RR42_RS33495 (-) aromatic amino acid transporter",
+      "RR42_RS33500 (-) 4-hydroxyphenylpyruvate dioxygenase",
+      "RR42_RS33505 (+) AsnC family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043356872_1",
+     "locus": "RR42_RS35305",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS35290 (-) Fe-S oxidoreductase",
+      "RR42_RS35295 (-) diguanylate cyclase",
+      "RR42_RS35300 (-) ABC transporter substrate-binding protein",
+      "RR42_RS35305 (-) aspartate aminotransferase",
+      "RR42_RS35310 (+) LysR family transcriptional regulator",
+      "RR42_RS35315 (-) membrane protein",
+      "RR42_RS35320 (-) membrane protein"
+     ]
+    },
+    {
+     "model_gene": "WP_052495210_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "aminotransferase-like domain-containing protein"
+    }
+   ]
+  },
+  {
+   "reaction": "PPA",
+   "name": "Inorganic diphosphatase",
+   "equation_ids": "h2o_c + ppi_c --> h_c + 2.0 pi_c",
+   "equation_names": "H2O + Diphosphate --> H+ + 2.0 Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043344428_1 or WP_043347480_1 or WP_043347570_1 or WP_052495113_1 or WP_082055316_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043344428_1",
+     "locus": "RR42_RS04285",
+     "fitness_browser_desc": "inorganic pyrophosphatase",
+     "refseq_definition": "inorganic diphosphatase",
+     "neighbourhood": [
+      "RR42_RS04270 (-) MFS transporter",
+      "RR42_RS04275 (-) hypothetical protein",
+      "RR42_RS04280 (-) aldehyde dehydrogenase",
+      "RR42_RS04285 (+) inorganic pyrophosphatase",
+      "RR42_RS04290 (+) cytochrome B561",
+      "RR42_RS04295 (-) hypothetical protein",
+      "RR42_RS04300 (+) nitrogen regulatory protein P-II 1"
+     ]
+    },
+    {
+     "model_gene": "WP_043347480_1",
+     "locus": "RR42_RS13200",
+     "fitness_browser_desc": "stationary phase survival protein SurE",
+     "refseq_definition": "5'/3'-nucleotidase SurE",
+     "neighbourhood": [
+      "RR42_RS13185 (-) RNA polymerase sigma factor RpoS",
+      "RR42_RS13190 (-) outer membrane metallopeptidase lipoprotein nlpD",
+      "RR42_RS13195 (-) protein-L-isoaspartate O-methyltransferase",
+      "RR42_RS13200 (-) stationary phase survival protein SurE",
+      "RR42_RS13205 (+) NADPH:quinone oxidoreductase",
+      "RR42_RS13210 (-) porin",
+      "RR42_RS13215 (+) transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043347570_1",
+     "locus": "RR42_RS13430",
+     "fitness_browser_desc": "exopolyphosphatase",
+     "refseq_definition": "exopolyphosphatase",
+     "neighbourhood": [
+      "RR42_RS13415 (+) translation initiation factor IF-1",
+      "RR42_RS13420 (+) phosphohistidine phosphatase",
+      "RR42_RS13425 (+) hypothetical protein",
+      "RR42_RS13430 (-) exopolyphosphatase",
+      "RR42_RS13435 (+) polyphosphate kinase",
+      "RR42_RS13440 (-) histidine kinase",
+      "RR42_RS13445 (-) chemotaxis protein CheY"
+     ]
+    },
+    {
+     "model_gene": "WP_052495113_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "5'/3'-nucleotidase SurE"
+    },
+    {
+     "model_gene": "WP_082055316_1",
+     "locus": "RR42_RS32200",
+     "fitness_browser_desc": "5'-nucleotidase",
+     "refseq_definition": "5'/3'-nucleotidase SurE",
+     "neighbourhood": [
+      "RR42_RS32185 (+) hypothetical protein",
+      "RR42_RS32190 (-) LysR family transcriptional regulator",
+      "RR42_RS32195 (-) hypothetical protein",
+      "RR42_RS32200 (-) 5'-nucleotidase",
+      "RR42_RS32205 (+) membrane protein",
+      "RR42_RS32210 (+) AraC family transcriptional regulator",
+      "RR42_RS32215 (+) aminomethyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRASCSi",
+   "name": "Phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+   "equation_ids": "5aizc_c + asp__L_c + atp_c --> 25aics_c + adp_c + h_c + pi_c",
+   "equation_names": "5-amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxylate + L-Aspartate + ATP --> (S)-2-[5-Amino-1-(5-phospho-D-ribosyl)imidazole-4-carboxamido]succinate + ADP + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343946_1 or WP_043348790_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343946_1",
+     "locus": "RR42_RS03220",
+     "fitness_browser_desc": "phosphoribosylaminoimidazole-succinocarboxamide synthase",
+     "refseq_definition": "phosphoribosylaminoimidazolesuccinocarboxamide synthase",
+     "neighbourhood": [
+      "RR42_RS03205 (+) hypothetical protein",
+      "RR42_RS03210 (+) pyruvate kinase",
+      "RR42_RS03215 (+) fructose-bisphosphate aldolase",
+      "RR42_RS03220 (+) phosphoribosylaminoimidazole-succinocarboxamide synthase",
+      "RR42_RS03225 (+) N5-carboxyaminoimidazole ribonucleotide mutase",
+      "RR42_RS03230 (+) phosphoribosylaminoimidazole carboxylase",
+      "RR42_RS03235 (+) translation factor Sua5"
+     ]
+    },
+    {
+     "model_gene": "WP_043348790_1",
+     "locus": "RR42_RS15995",
+     "fitness_browser_desc": "4Fe-4S ferredoxin",
+     "refseq_definition": "4Fe-4S binding protein",
+     "neighbourhood": [
+      "RR42_RS15980 (-) formate dehydrogenase",
+      "RR42_RS15985 (-) formate dehydrogenase",
+      "RR42_RS15990 (-) cytochrome C oxidase subunit II",
+      "RR42_RS15995 (-) 4Fe-4S ferredoxin",
+      "RR42_RS16000 (-) hypothetical protein",
+      "RR42_RS16005 (-) hypothetical protein",
+      "RR42_RS16010 (-) ATP-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRPPS",
+   "name": "Phosphoribosylpyrophosphate synthetase",
+   "equation_ids": "atp_c + r5p_c <=> amp_c + h_c + prpp_c",
+   "equation_names": "ATP + Alpha-D-Ribose 5-phosphate <=> AMP + H+ + 5-Phospho-alpha-D-ribose 1-diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_017229695_1 or WP_043346876_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_017229695_1",
+     "locus": "RR42_RS02015",
+     "fitness_browser_desc": "ribose-phosphate pyrophosphokinase",
+     "refseq_definition": "ribose-phosphate pyrophosphokinase",
+     "neighbourhood": [
+      "RR42_RS02000 (+) ferredoxin",
+      "RR42_RS02005 (-) peptidyl-tRNA hydrolase",
+      "RR42_RS02010 (-) 50S ribosomal protein L25",
+      "RR42_RS02015 (-) ribose-phosphate pyrophosphokinase",
+      "RR42_RS02020 (-) tRNA-Gln",
+      "RR42_RS02025 (-) 4-diphosphocytidyl-2C-methyl-D-erythritol kinase",
+      "RR42_RS02030 (-) membrane protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043346876_1",
+     "locus": "RR42_RS11675",
+     "fitness_browser_desc": "phosphoribosylpyrophosphate synthetase",
+     "refseq_definition": "ribose-phosphate pyrophosphokinase",
+     "neighbourhood": [
+      "RR42_RS11660 (-) hypothetical protein",
+      "RR42_RS11665 (-) hypothetical protein",
+      "RR42_RS11670 (+) thymidine phosphorylase",
+      "RR42_RS11675 (+) phosphoribosylpyrophosphate synthetase",
+      "RR42_RS11680 (+) hypothetical protein",
+      "RR42_RS11685 (+) hypothetical protein",
+      "RR42_RS11690 (+) erythromycin esterase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RBFK",
+   "name": "Riboflavin kinase",
+   "equation_ids": "atp_c + ribflv_c --> adp_c + fmn_c + h_c",
+   "equation_names": "ATP + Riboflavin --> ADP + FMN + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043342959_1 or WP_043352294_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043342959_1",
+     "locus": "RR42_RS00905",
+     "fitness_browser_desc": "haloacid dehalogenase",
+     "refseq_definition": "HAD family hydrolase",
+     "neighbourhood": [
+      "RR42_RS00890 (+) short-chain dehydrogenase",
+      "RR42_RS00895 (+) acyl-CoA dehydrogenase",
+      "RR42_RS00900 (+) 2-hydroxychromene-2-carboxylate isomerase",
+      "RR42_RS00905 (+) haloacid dehalogenase",
+      "RR42_RS00910 (+) hypothetical protein",
+      "RR42_RS00915 (+) glutathione S-transferase",
+      "RR42_RS00920 (+) dienelactone hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_043352294_1",
+     "locus": "RR42_RS17065",
+     "fitness_browser_desc": "riboflavin kinase",
+     "refseq_definition": "bifunctional riboflavin kinase/FAD synthetase",
+     "neighbourhood": [
+      "RR42_RS17050 (-) phosphoribosylglycinamide formyltransferase",
+      "RR42_RS17055 (+) LuxR family transcriptional regulator",
+      "RR42_RS17060 (-) histidine kinase",
+      "RR42_RS17065 (+) riboflavin kinase",
+      "RR42_RS17070 (+) isoleucyl-tRNA synthetase",
+      "RR42_RS17075 (+) peptidase A8",
+      "RR42_RS17080 (+) phosphopantothenate synthase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RBFSb",
+   "name": "Riboflavin synthase",
+   "equation_ids": "2.0 dmlz_c --> 4r5au_c + ribflv_c",
+   "equation_names": "2.0 6,7-Dimethyl-8-(1-D-ribityl)lumazine --> 4-(1-D-Ribitylamino)-5-aminouracil + Riboflavin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348570_1 or WP_043348576_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348570_1",
+     "locus": "RR42_RS15560",
+     "fitness_browser_desc": "riboflavin synthase subunit alpha",
+     "refseq_definition": "riboflavin synthase",
+     "neighbourhood": [
+      "RR42_RS15545 (+) pilus assembly protein PilE",
+      "RR42_RS15550 (+) pilus assembly protein",
+      "RR42_RS15555 (+) diaminohydroxyphosphoribosylaminopyrimidine deaminase",
+      "RR42_RS15560 (+) riboflavin synthase subunit alpha",
+      "RR42_RS15565 (+) 3,4-dihydroxy-2-butanone 4-phosphate synthase",
+      "RR42_RS15570 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "RR42_RS15575 (+) N utilization substance protein B"
+     ]
+    },
+    {
+     "model_gene": "WP_043348576_1",
+     "locus": "RR42_RS15570",
+     "fitness_browser_desc": "6,7-dimethyl-8-ribityllumazine synthase",
+     "refseq_definition": "6,7-dimethyl-8-ribityllumazine synthase",
+     "neighbourhood": [
+      "RR42_RS15555 (+) diaminohydroxyphosphoribosylaminopyrimidine deaminase",
+      "RR42_RS15560 (+) riboflavin synthase subunit alpha",
+      "RR42_RS15565 (+) 3,4-dihydroxy-2-butanone 4-phosphate synthase",
+      "RR42_RS15570 (+) 6,7-dimethyl-8-ribityllumazine synthase",
+      "RR42_RS15575 (+) N utilization substance protein B",
+      "RR42_RS15580 (+) aminotransferase",
+      "RR42_RS15585 (-) lytic transglycosylase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SERAT",
+   "name": "Serine O-acetyltransferase",
+   "equation_ids": "accoa_c + ser__L_c <=> acser_c + coa_c",
+   "equation_names": "Acetyl-CoA + L-Serine <=> O-Acetyl-L-serine + Coenzyme A",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_082054984_1 or WP_082055186_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_082054984_1",
+     "locus": "RR42_RS06325",
+     "fitness_browser_desc": "serine O-acetyltransferase",
+     "refseq_definition": "serine O-acetyltransferase",
+     "neighbourhood": [
+      "RR42_RS06310 (-) inositol monophosphatase",
+      "RR42_RS06315 (+) RNA methyltransferase",
+      "RR42_RS06320 (+) 3-methylitaconate isomerase",
+      "RR42_RS06325 (+) serine O-acetyltransferase",
+      "RR42_RS06330 (-) UDP-2,3-diacylglucosamine hydrolase",
+      "RR42_RS06335 (-) cyclophilin",
+      "RR42_RS06340 (-) peptidyl-prolyl cis-trans isomerase"
+     ]
+    },
+    {
+     "model_gene": "WP_082055186_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "serine O-acetyltransferase"
+    }
+   ]
+  },
+  {
+   "reaction": "SHK3Dr",
+   "name": "Shikimate dehydrogenase",
+   "equation_ids": "3dhsk_c + h_c + nadph_c <=> nadp_c + skm_c",
+   "equation_names": "3-Dehydroshikimate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + Shikimate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043346038_1 or WP_043356022_1 or WP_052494688_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043346038_1",
+     "locus": "RR42_RS09460",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "shikimate dehydrogenase family protein",
+     "neighbourhood": [
+      "RR42_RS09445 (+) LysR family transcriptional regulator",
+      "RR42_RS09450 (+) GCN5 family acetyltransferase",
+      "RR42_RS09455 (+) hypothetical protein",
+      "RR42_RS09460 (-) hypothetical protein",
+      "RR42_RS09465 (-) bifunctional glyoxylate/hydroxypyruvate reductase B",
+      "RR42_RS09470 (-) 2-dehydro-3-deoxygluconokinase",
+      "RR42_RS09475 (-) glutamine ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043356022_1",
+     "locus": "RR42_RS32445",
+     "fitness_browser_desc": "shikimate dehydrogenase",
+     "refseq_definition": "shikimate dehydrogenase family protein",
+     "neighbourhood": [
+      "RR42_RS32430 (-) SAM-dependent methyltransferase",
+      "RR42_RS32435 (-) hypothetical protein",
+      "RR42_RS32440 (-) 4-hydroxyphenylpyruvate dioxygenase",
+      "RR42_RS32445 (+) shikimate dehydrogenase",
+      "RR42_RS32450 (-) 3-dehydroquinate dehydratase",
+      "RR42_RS32455 (-) oxidoreductase",
+      "RR42_RS32460 (+) LysR family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_052494688_1",
+     "locus": "RR42_RS17645",
+     "fitness_browser_desc": "shikimate dehydrogenase",
+     "refseq_definition": "shikimate dehydrogenase",
+     "neighbourhood": [
+      "RR42_RS17630 (-) orotidine 5'-phosphate decarboxylase",
+      "RR42_RS17635 (+) magnesium transporter CorA",
+      "RR42_RS17640 (-) peptidoglycan transglycosylase",
+      "RR42_RS17645 (-) shikimate dehydrogenase",
+      "RR42_RS17650 (-) energy transducer TonB",
+      "RR42_RS17655 (-) ribonuclease II",
+      "RR42_RS17660 (-) 3-oxoacyl-ACP synthase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SHKK",
+   "name": "Shikimate kinase",
+   "equation_ids": "atp_c + skm_c --> adp_c + h_c + skm5p_c",
+   "equation_names": "ATP + Shikimate --> ADP + H+ + Shikimate 5-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043345290_1 or WP_043350282_1 or WP_043356818_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043345290_1",
+     "locus": "RR42_RS07515",
+     "fitness_browser_desc": "transcriptional regulator",
+     "refseq_definition": "helix-turn-helix transcriptional regulator",
+     "neighbourhood": [
+      "RR42_RS07500 (-) benzoyl-CoA oxygenase",
+      "RR42_RS07505 (-) benzoyl-CoA oxygenase",
+      "RR42_RS07510 (-) benzoyl-CoA-dihydrodiol lyase",
+      "RR42_RS07515 (-) transcriptional regulator",
+      "RR42_RS07520 (+) 4-hydroxybenzoate--CoA ligase",
+      "RR42_RS07525 (+) alpha/beta hydrolase",
+      "RR42_RS07530 (+) ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043350282_1",
+     "locus": "RR42_RS19010",
+     "fitness_browser_desc": "shikimate kinase",
+     "refseq_definition": "shikimate kinase",
+     "neighbourhood": [
+      "RR42_RS18995 (-) transposase",
+      "RR42_RS19000 (-) deoxyguanosinetriphosphate triphosphohydrolase",
+      "RR42_RS19005 (-) 3-dehydroquinate synthase",
+      "RR42_RS19010 (-) shikimate kinase",
+      "RR42_RS19015 (-) secretin",
+      "RR42_RS19020 (-) pilus assembly protein PilP",
+      "RR42_RS19025 (-) pilus assembly protein PilO"
+     ]
+    },
+    {
+     "model_gene": "WP_043356818_1",
+     "locus": "RR42_RS35135",
+     "fitness_browser_desc": "transcriptional regulator",
+     "refseq_definition": "helix-turn-helix transcriptional regulator",
+     "neighbourhood": [
+      "RR42_RS35120 (-) benzoyl-CoA oxygenase",
+      "RR42_RS35125 (-) benzoyl-CoA oxygenase",
+      "RR42_RS35130 (-) benzoyl-CoA-dihydrodiol lyase",
+      "RR42_RS35135 (-) transcriptional regulator",
+      "RR42_RS35140 (+) 2-hydroxylaminobenzoate mutase",
+      "RR42_RS35145 (+) aldehyde dehydrogenase",
+      "RR42_RS35150 (+) 4-hydroxybenzoate--CoA ligase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "THZPSN",
+   "name": "Thiazole phosphate synthesis",
+   "equation_ids": "atp_c + cys__L_c + dxyl5p_c + tyr__L_c --> 4hba_c + 4mpetz_c + ala__L_c + amp_c + co2_c + h2o_c + h_c + ppi_c",
+   "equation_names": "ATP + L-Cysteine + 1-deoxy-D-xylulose 5-phosphate + L-Tyrosine --> 4-Hydroxy-benzyl alcohol + 4-Methyl-5-(2-phosphoethyl)-thiazole + L-Alanine + AMP + CO2 + H2O + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343126_1 or WP_043349586_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343126_1",
+     "locus": "RR42_RS01305",
+     "fitness_browser_desc": "thiazole synthase",
+     "refseq_definition": "thiazole synthase",
+     "neighbourhood": [
+      "RR42_RS01290 (+) thiamine biosynthesis protein ThiC",
+      "RR42_RS01295 (+) cytochrome C biogenesis protein CcdA",
+      "RR42_RS01300 (+) thiamine biosynthesis protein ThiS",
+      "RR42_RS01305 (+) thiazole synthase",
+      "RR42_RS01310 (+) thiamine-phosphate pyrophosphorylase",
+      "RR42_RS01315 (+) GNAT family acetyltransferase",
+      "RR42_RS01320 (+) ATPase AAA"
+     ]
+    },
+    {
+     "model_gene": "WP_043349586_1",
+     "locus": "RR42_RS17615",
+     "fitness_browser_desc": "thiamine monophosphate kinase",
+     "refseq_definition": "thiamine-phosphate kinase",
+     "neighbourhood": [
+      "RR42_RS17600 (-) ribonuclease inhibitor",
+      "RR42_RS17605 (-) ribonuclease",
+      "RR42_RS17610 (-) malate dehydrogenase",
+      "RR42_RS17615 (+) thiamine monophosphate kinase",
+      "RR42_RS17620 (+) phosphatidylglycerophosphatase",
+      "RR42_RS17625 (+) damage-inducible protein CinA",
+      "RR42_RS17630 (-) orotidine 5'-phosphate decarboxylase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMDS",
+   "name": "Thymidylate synthase",
+   "equation_ids": "dump_c + mlthf_c --> dhf_c + dtmp_c",
+   "equation_names": "DUMP + 5,10-Methylenetetrahydrofolate --> 7,8-Dihydrofolate + DTMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348176_1 or WP_043354112_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348176_1",
+     "locus": "RR42_RS14740",
+     "fitness_browser_desc": "thymidylate synthase",
+     "refseq_definition": "thymidylate synthase",
+     "neighbourhood": [
+      "RR42_RS14725 (-) glycosyl transferase",
+      "RR42_RS14730 (-) methyltransferase",
+      "RR42_RS14735 (+) membrane protein",
+      "RR42_RS14740 (+) thymidylate synthase",
+      "RR42_RS14745 (+) diacylglycerol kinase",
+      "RR42_RS14750 (-) peptidase PMbA",
+      "RR42_RS14755 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043354112_1",
+     "locus": "RR42_RS25605",
+     "fitness_browser_desc": "N-ethylmaleimide reductase",
+     "refseq_definition": "alkene reductase",
+     "neighbourhood": [
+      "RR42_RS25590 (-) glucose 1-dehydrogenase",
+      "RR42_RS25595 (-) alpha/beta hydrolase",
+      "RR42_RS25600 (-) AraC family transcriptional regulator",
+      "RR42_RS25605 (-) N-ethylmaleimide reductase",
+      "RR42_RS25610 (-) alpha/beta hydrolase",
+      "RR42_RS25615 (+) TetR family transcriptional regulator",
+      "RR42_RS25620 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMPK",
+   "name": "Thiamine-phosphate kinase",
+   "equation_ids": "atp_c + thmmp_c --> adp_c + thmpp_c",
+   "equation_names": "ATP + Thiamin monophosphate --> ADP + Thiamine diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043349586_1 or WP_043356202_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043349586_1",
+     "locus": "RR42_RS17615",
+     "fitness_browser_desc": "thiamine monophosphate kinase",
+     "refseq_definition": "thiamine-phosphate kinase",
+     "neighbourhood": [
+      "RR42_RS17600 (-) ribonuclease inhibitor",
+      "RR42_RS17605 (-) ribonuclease",
+      "RR42_RS17610 (-) malate dehydrogenase",
+      "RR42_RS17615 (+) thiamine monophosphate kinase",
+      "RR42_RS17620 (+) phosphatidylglycerophosphatase",
+      "RR42_RS17625 (+) damage-inducible protein CinA",
+      "RR42_RS17630 (-) orotidine 5'-phosphate decarboxylase"
+     ]
+    },
+    {
+     "model_gene": "WP_043356202_1",
+     "locus": "RR42_RS33115",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "sll0787 family AIR synthase-like protein",
+     "neighbourhood": [
+      "RR42_RS33100 (+) oxidoreductase",
+      "RR42_RS33105 (-) FAD-dependent oxidoreductase",
+      "RR42_RS33110 (-) hypothetical protein",
+      "RR42_RS33115 (-) hypothetical protein",
+      "RR42_RS33120 (-) histone acetyltransferase",
+      "RR42_RS33125 (-) radical SAM protein",
+      "RR42_RS33130 (-) aliphatic nitrilase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMPPP",
+   "name": "Thiamine-phosphate diphosphorylase",
+   "equation_ids": "2mahmp_c + 4mpetz_c + h_c --> ppi_c + thmmp_c",
+   "equation_names": "2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate + 4-Methyl-5-(2-phosphoethyl)-thiazole + H+ --> Diphosphate + Thiamin monophosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343128_1 or WP_043343151_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343128_1",
+     "locus": "RR42_RS01310",
+     "fitness_browser_desc": "thiamine-phosphate pyrophosphorylase",
+     "refseq_definition": "thiamine phosphate synthase",
+     "neighbourhood": [
+      "RR42_RS01295 (+) cytochrome C biogenesis protein CcdA",
+      "RR42_RS01300 (+) thiamine biosynthesis protein ThiS",
+      "RR42_RS01305 (+) thiazole synthase",
+      "RR42_RS01310 (+) thiamine-phosphate pyrophosphorylase",
+      "RR42_RS01315 (+) GNAT family acetyltransferase",
+      "RR42_RS01320 (+) ATPase AAA",
+      "RR42_RS01325 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043343151_1",
+     "locus": "RR42_RS01370",
+     "fitness_browser_desc": "phosphomethylpyrimidine kinase",
+     "refseq_definition": "bifunctional hydroxymethylpyrimidine kinase/phosphomethylpyrimidine kinase",
+     "neighbourhood": [
+      "RR42_RS01355 (+) biotin attachment protein",
+      "RR42_RS01360 (+) phenylacetic acid degradation protein",
+      "RR42_RS01365 (-) hypothetical protein",
+      "RR42_RS01370 (-) phosphomethylpyrimidine kinase",
+      "RR42_RS01375 (+) S-adenosyl-L-homocysteine hydrolase",
+      "RR42_RS01380 (+) membrane protein",
+      "RR42_RS01385 (+) 5,10-methylenetetrahydrofolate reductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TYRTA",
+   "name": "Tyrosine transaminase",
+   "equation_ids": "akg_c + tyr__L_c <=> 34hpp_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Tyrosine <=> 3-(4-Hydroxyphenyl)pyruvate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043343225_1 or WP_043343234_1 or WP_043343522_1 or WP_043344808_1 or WP_043344875_1 or WP_043351363_1 or WP_043352803_1 or WP_043356309_1 or WP_043356872_1 or WP_052495210_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043343225_1",
+     "locus": "RR42_RS01570",
+     "fitness_browser_desc": "GntR family transcriptional regulator",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS01555 (+) aminopeptidase",
+      "RR42_RS01560 (+) diguanylate cyclase",
+      "RR42_RS01565 (+) hypothetical protein",
+      "RR42_RS01570 (-) GntR family transcriptional regulator",
+      "RR42_RS01575 (+) omega amino acid--pyruvate aminotransferase",
+      "RR42_RS01580 (+) methylmalonate-semialdehyde dehydrogenase",
+      "RR42_RS01585 (+) amino acid permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043343234_1",
+     "locus": "RR42_RS01590",
+     "fitness_browser_desc": "GntR family transcriptional regulator",
+     "refseq_definition": "aminotransferase-like domain-containing protein",
+     "neighbourhood": [
+      "RR42_RS01575 (+) omega amino acid--pyruvate aminotransferase",
+      "RR42_RS01580 (+) methylmalonate-semialdehyde dehydrogenase",
+      "RR42_RS01585 (+) amino acid permease",
+      "RR42_RS01590 (-) GntR family transcriptional regulator",
+      "RR42_RS01595 (+) hypothetical protein",
+      "RR42_RS01600 (+) methylmalonyl-CoA mutase",
+      "RR42_RS01605 (+) hydrolase"
+     ]
+    },
+    {
+     "model_gene": "WP_043343522_1",
+     "locus": "RR42_RS02275",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS02260 (+) cytochrome C peroxidase",
+      "RR42_RS02265 (+) excinuclease ABC subunit A",
+      "RR42_RS02270 (+) hypothetical protein",
+      "RR42_RS02275 (+) aspartate aminotransferase",
+      "RR42_RS02280 (-) ABC transporter permease",
+      "RR42_RS02285 (-) mannose-1-phosphate guanyltransferase",
+      "RR42_RS02290 (-) multidrug ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043344808_1",
+     "locus": "RR42_RS05770",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS05755 (-) enoyl-CoA hydratase",
+      "RR42_RS05760 (-) 3-hydroxyacyl-CoA dehydrogenase",
+      "RR42_RS05765 (+) glutathione S-transferase",
+      "RR42_RS05770 (-) aminotransferase",
+      "RR42_RS05775 (-) hypothetical protein",
+      "RR42_RS05780 (+) hypothetical protein",
+      "RR42_RS05785 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043344875_1",
+     "locus": "RR42_RS05990",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "RR42_RS05975 (-) ferredoxin",
+      "RR42_RS05980 (+) TetR family transcriptional regulator",
+      "RR42_RS05985 (-) esterase",
+      "RR42_RS05990 (-) aromatic amino acid aminotransferase",
+      "RR42_RS05995 (+) excinuclease ABC subunit B",
+      "RR42_RS06000 (+) antibiotic biosynthesis monooxygenase",
+      "RR42_RS06005 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043351363_1",
+     "locus": "RR42_RS04465",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "histidinol-phosphate transaminase",
+     "neighbourhood": [
+      "RR42_RS04450 (+) hypothetical protein",
+      "RR42_RS04455 (+) MFS transporter",
+      "RR42_RS04460 (+) chorismate mutase",
+      "RR42_RS04465 (+) aspartate aminotransferase",
+      "RR42_RS04470 (+) prephenate dehydrogenase",
+      "RR42_RS04475 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "RR42_RS04480 (-) membrane protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043352803_1",
+     "locus": "RR42_RS21340",
+     "fitness_browser_desc": "DNA-binding protein",
+     "refseq_definition": "MocR-like pyridoxine biosynthesis transcription factor PdxR",
+     "neighbourhood": [
+      "RR42_RS21325 (+) ethanolamine ammonia-lyase",
+      "RR42_RS21330 (+) phosphoserine phosphatase",
+      "RR42_RS21335 (-) FAD-linked oxidase",
+      "RR42_RS21340 (-) DNA-binding protein",
+      "RR42_RS21345 (+) acetylornithine deacetylase",
+      "RR42_RS21350 (+) peptide ABC transporter substrate-binding protein",
+      "RR42_RS21355 (+) ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "WP_043356309_1",
+     "locus": "RR42_RS33490",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "amino acid aminotransferase",
+     "neighbourhood": [
+      "RR42_RS33475 (-) CopG family transcriptional regulator",
+      "RR42_RS33480 (+) spermidine synthase",
+      "RR42_RS33485 (+) Fe-S oxidoreductase",
+      "RR42_RS33490 (-) aromatic amino acid aminotransferase",
+      "RR42_RS33495 (-) aromatic amino acid transporter",
+      "RR42_RS33500 (-) 4-hydroxyphenylpyruvate dioxygenase",
+      "RR42_RS33505 (+) AsnC family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_043356872_1",
+     "locus": "RR42_RS35305",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "pyridoxal phosphate-dependent aminotransferase",
+     "neighbourhood": [
+      "RR42_RS35290 (-) Fe-S oxidoreductase",
+      "RR42_RS35295 (-) diguanylate cyclase",
+      "RR42_RS35300 (-) ABC transporter substrate-binding protein",
+      "RR42_RS35305 (-) aspartate aminotransferase",
+      "RR42_RS35310 (+) LysR family transcriptional regulator",
+      "RR42_RS35315 (-) membrane protein",
+      "RR42_RS35320 (-) membrane protein"
+     ]
+    },
+    {
+     "model_gene": "WP_052495210_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "aminotransferase-like domain-containing protein"
+    }
+   ]
+  },
+  {
+   "reaction": "UAGCVT",
+   "name": "UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+   "equation_ids": "pep_c + uacgam_c --> pi_c + uaccg_c",
+   "equation_names": "Phosphoenolpyruvate + UDP-N-acetyl-D-glucosamine --> Phosphate + UDP-N-acetyl-3-O-(1-carboxyvinyl)-D-glucosamine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043350234_1 or WP_043353086_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043350234_1",
+     "locus": "RR42_RS18925",
+     "fitness_browser_desc": "UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+     "refseq_definition": "UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+     "neighbourhood": [
+      "RR42_RS18910 (-) histidinol-phosphate aminotransferase",
+      "RR42_RS18915 (-) histidinol dehydrogenase",
+      "RR42_RS18920 (-) ATP phosphoribosyltransferase catalytic subunit",
+      "RR42_RS18925 (-) UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+      "RR42_RS18930 (-) BolA family transcriptional regulator",
+      "RR42_RS18935 (-) metal-dependent hydrolase",
+      "RR42_RS18940 (-) ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043353086_1",
+     "locus": "RR42_RS22240",
+     "fitness_browser_desc": "UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+     "refseq_definition": "UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+     "neighbourhood": [
+      "RR42_RS22225 (+) cytochrome C oxidase subunit III",
+      "RR42_RS22230 (+) hypothetical protein",
+      "RR42_RS22235 (-) peptidase M19",
+      "RR42_RS22240 (+) UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+      "RR42_RS22245 (+) cytochrome C biogenesis protein",
+      "RR42_RS22250 (+) hypothetical protein",
+      "RR42_RS22255 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UAGPT3",
+   "name": "UDP-N-acetylglucosamine-N-acetylmuramyl-(pentapeptide)pyrophosphoryl-undecaprenol N-acetylglucosamine transferase",
+   "equation_ids": "uacgam_c + uagmda_c --> h_c + uaagmda_c + udp_c",
+   "equation_names": "UDP-N-acetyl-D-glucosamine + Undecaprenyl-diphospho-N-acetylmuramoyl-L-alanyl-D-glutamyl-meso-2,6-diaminopimeloyl-D-alanyl-D-alanine --> H+ + Undecaprenyl-diphospho-N-acetylmuramoyl-(N-acetylglucosamine)-L-ala-D-glu-meso-2,6-diaminopimeloyl-D-ala-D-ala + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043349816_1 or WP_043355609_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043349816_1",
+     "locus": "RR42_RS18075",
+     "fitness_browser_desc": "UDP-N-acetylglucosamine--N-acetylmuramyl- (pentapeptide) pyrophosphoryl-UDP N-acetylglucosamine transferase",
+     "refseq_definition": "undecaprenyldiphospho-muramoylpentapeptide beta-N-acetylglucosaminyltransferase",
+     "neighbourhood": [
+      "RR42_RS18060 (-) cell division protein FtsQ",
+      "RR42_RS18065 (-) D-alanine--D-alanine ligase",
+      "RR42_RS18070 (-) UDP-N-acetylmuramate--alanine ligase",
+      "RR42_RS18075 (-) UDP-N-acetylglucosamine--N-acetylmuramyl- (pentapeptide) pyrophosphoryl-UDP N-acetylglucosamine transferase",
+      "RR42_RS18080 (-) cell division protein FtsW",
+      "RR42_RS18085 (-) UDP-N-acetylmuramoylalanine--D-glutamate ligase",
+      "RR42_RS18090 (-) phospho-N-acetylmuramoyl-pentapeptide transferase"
+     ]
+    },
+    {
+     "model_gene": "WP_043355609_1",
+     "locus": "RR42_RS30840",
+     "fitness_browser_desc": "galactosyldiacylglycerol synthase",
+     "refseq_definition": "MGDG synthase family glycosyltransferase",
+     "neighbourhood": [
+      "RR42_RS30825 (-) hypothetical protein",
+      "RR42_RS30830 (-) GTP cyclohydrolase",
+      "RR42_RS30835 (-) hypothetical protein",
+      "RR42_RS30840 (-) galactosyldiacylglycerol synthase",
+      "RR42_RS30845 (-) hypothetical protein",
+      "RR42_RS30850 (-) hypothetical protein",
+      "RR42_RS30855 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDCPDP",
+   "name": "Undecaprenyl-diphosphatase",
+   "equation_ids": "h2o_c + udcpdp_c --> h_c + pi_c + udcpp_c",
+   "equation_names": "H2O + Undecaprenyl diphosphate --> H+ + Phosphate + Undecaprenyl phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348603_1 or WP_082055159_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348603_1",
+     "locus": "RR42_RS15630",
+     "fitness_browser_desc": "UDP pyrophosphate phosphatase",
+     "refseq_definition": "undecaprenyl-diphosphate phosphatase",
+     "neighbourhood": [
+      "RR42_RS15615 (+) aldose epimerase",
+      "RR42_RS15620 (+) tRNA-Gly",
+      "RR42_RS15625 (+) tRNA (guanine-N7)-methyltransferase",
+      "RR42_RS15630 (-) UDP pyrophosphate phosphatase",
+      "RR42_RS15635 (-) membrane protein",
+      "RR42_RS15640 (-) hypothetical protein",
+      "RR42_RS15645 (+) TetR family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "WP_082055159_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "phosphatase PAP2 family protein"
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043344483_1 or WP_043346948_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043344483_1",
+     "locus": "RR42_RS04485",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "(d)CMP kinase",
+     "neighbourhood": [
+      "RR42_RS04470 (+) prephenate dehydrogenase",
+      "RR42_RS04475 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "RR42_RS04480 (-) membrane protein",
+      "RR42_RS04485 (+) cytidylate kinase",
+      "RR42_RS04490 (+) 30S ribosomal protein S1",
+      "RR42_RS04495 (+) integration host factor subunit beta",
+      "RR42_RS04500 (+) membrane protein"
+     ]
+    },
+    {
+     "model_gene": "WP_043346948_1",
+     "locus": "RR42_RS11865",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "UMP kinase",
+     "neighbourhood": [
+      "RR42_RS11850 (-) phosphatidate cytidylyltransferase",
+      "RR42_RS11855 (-) UDP diphosphate synthase",
+      "RR42_RS11860 (-) ribosome recycling factor",
+      "RR42_RS11865 (-) uridylate kinase",
+      "RR42_RS11870 (-) elongation factor Ts",
+      "RR42_RS11875 (-) 30S ribosomal protein S2",
+      "RR42_RS11880 (+) methionine aminopeptidase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "URCN",
+   "name": "Urocanase",
+   "equation_ids": "h2o_c + urcan_c --> 4izp_c",
+   "equation_names": "H2O + Urocanate --> 4-Imidazolone-5-propanoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043348126_1 or WP_052494679_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043348126_1",
+     "locus": "RR42_RS14645",
+     "fitness_browser_desc": "urocanate hydratase",
+     "refseq_definition": "urocanate hydratase",
+     "neighbourhood": [
+      "RR42_RS14630 (-) MFS transporter",
+      "RR42_RS14635 (-) proline-specific permease",
+      "RR42_RS14640 (-) histidine ammonia-lyase",
+      "RR42_RS14645 (-) urocanate hydratase",
+      "RR42_RS14650 (+) multidrug ABC transporter ATP-binding protein",
+      "RR42_RS14655 (-) chromate transporter",
+      "RR42_RS14660 (-) chromate transporter"
+     ]
+    },
+    {
+     "model_gene": "WP_052494679_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "urocanate hydratase"
+    }
+   ]
+  },
+  {
+   "reaction": "Zn2tex",
+   "name": "Zinc (Zn+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "zn2_e <=> zn2_p",
+   "equation_names": "Zinc <=> Zinc",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "WP_043353027_1 or WP_043353205_1 or WP_052494874_1",
+   "n_growth_conditions_essential": 16,
+   "n_growth_conditions": 16,
+   "genes": [
+    {
+     "model_gene": "WP_043353027_1",
+     "locus": "RR42_RS22045",
+     "fitness_browser_desc": "flagellar motor protein MotB",
+     "refseq_definition": "OmpA family protein",
+     "neighbourhood": [
+      "RR42_RS22030 (-) hypothetical protein",
+      "RR42_RS22035 (-) ATPase",
+      "RR42_RS22040 (-) Hcp family T6SS protein CtsH1",
+      "RR42_RS22045 (-) flagellar motor protein MotB",
+      "RR42_RS22050 (-) DotU family type IV / VI secretion system protein",
+      "RR42_RS22055 (-) type VI secretion protein",
+      "RR42_RS22060 (-) type VI secretion protein EvpB"
+     ]
+    },
+    {
+     "model_gene": "WP_043353205_1",
+     "locus": "RR42_RS22675",
+     "fitness_browser_desc": "membrane protein",
+     "refseq_definition": "porin",
+     "neighbourhood": [
+      "RR42_RS22660 (+) hypothetical protein",
+      "RR42_RS22665 (+) hypothetical protein",
+      "RR42_RS22670 (+) penicillin acylase",
+      "RR42_RS22675 (-) membrane protein",
+      "RR42_RS22680 (-) enoyl-CoA hydratase",
+      "RR42_RS22685 (-) ABC transporter substrate-binding protein",
+      "RR42_RS22690 (-) CoA-transferase"
+     ]
+    },
+    {
+     "model_gene": "WP_052494874_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "outer membrane lipoprotein YfiB"
+    }
+   ]
+  }
+ ]
+}

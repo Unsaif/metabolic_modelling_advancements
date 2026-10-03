@@ -1,0 +1,396 @@
+{
+ "org": "Marino",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ACHBS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rule already pairs acetolactate synthase subunits as AND-complexes (HP15_531 large + HP15_532 regulatory subunit; HP15_1017 large + HP15_1016 'ALS II small subunit-like'); two isozyme complexes, nothing to join or remove."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rule already pairs acetolactate synthase subunits as AND-complexes (HP15_531 + HP15_532; HP15_1017 + HP15_1016); two same-name isozyme complexes, nothing to join or remove."
+  },
+  {
+   "reaction": "ACtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; both alternatives are OmpA-family envelope proteins (HP15_2834 'OmpA/MotB domain protein', HP15_p187g137 'outer membrane protein OprF'). Porin redundancy is expected and removal would leave a single OmpA-family gene, so no change."
+  },
+  {
+   "reaction": "ANS",
+   "decision": "R1",
+   "new_rule": "HP15_3288 and HP15_3289",
+   "evidence": "HP15_3288 'anthranilate synthase component I' + HP15_3289 'anthranilate synthase glutamine amidotransferase component II' (TrpE/TrpG, in trpE-trpG-trpD-trpC cluster) form the enzyme; HP15_2338 'peptidase C26' (gamma-glutamyl-GABA hydrolase family) listed alone lacks the chorismate-aminating TrpE component and has a different activity."
+  },
+  {
+   "reaction": "ASNS1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1914 and HP15_p187g60 are both 'asparagine synthase, glutamine-hydrolyzing' (same-name paralogs)."
+  },
+  {
+   "reaction": "ASPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1320 'aspartate kinase, monofunctional class' and HP15_3856 'aspartokinase' (ectoine cluster) are same-function paralogs."
+  },
+  {
+   "reaction": "ASPTA",
+   "decision": "R1",
+   "new_rule": "HP15_814 or HP15_858 or HP15_1371",
+   "evidence": "Kept the three genes annotated 'aspartate aminotransferase' (HP15_814, HP15_858, HP15_1371); removed HP15_1649, HP15_1036 and HP15_2761, which are GntR/MocR-family transcriptional regulators (~470 aa; HP15_2761 = PdxR) whose aminotransferase-like domain is an effector domain."
+  },
+  {
+   "reaction": "CA2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; both alternatives are OmpA-family envelope proteins (HP15_2834 'OmpA/MotB domain protein', HP15_p187g137 'outer membrane protein OprF'). Porin redundancy is expected and removal would leave a single OmpA-family gene, so no change."
+  },
+  {
+   "reaction": "CHORM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1362 'chorismate mutase / prephenate dehydratase' is the clear catalyst, but HP15_2243 is a 375-aa DAHP synthase annotated apart from the two other DAHPS paralogs and may carry a fused chorismate-mutase domain (B. subtilis-type), so removal is not clearly justified."
+  },
+  {
+   "reaction": "CITACt",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No citrate/acetate antiporter (CitW-type) is annotated; HP15_3122 'citrate transporter' and TctABC (HP15_2659-2661) are substrate-level/generic and do not specify acetate antiport."
+  },
+  {
+   "reaction": "CITt11",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No Mn2+-citrate complex symporter (CitM-type) is annotated; HP15_3122 'citrate transporter' and the TctABC system do not specify metal-citrate/H+ symport with Mn2+."
+  },
+  {
+   "reaction": "CITt13",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No Co2+-citrate complex symporter (CitM-type) is annotated; HP15_3122 'citrate transporter' and the TctABC system do not specify metal-citrate/H+ symport with Co2+."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; both alternatives are OmpA-family envelope proteins (HP15_2834 'OmpA/MotB domain protein', HP15_p187g137 'outer membrane protein OprF'). Porin redundancy is expected and removal would leave a single OmpA-family gene, so no change."
+  },
+  {
+   "reaction": "CU2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; both alternatives are OmpA-family envelope proteins (HP15_2834 'OmpA/MotB domain protein', HP15_p187g137 'outer membrane protein OprF'). Porin redundancy is expected and removal would leave a single OmpA-family gene, so no change."
+  },
+  {
+   "reaction": "CU2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No copper-specific inner-membrane importer (e.g. CopD) is annotated: HP15_182-184 are CopB/CopA/CopC-type periplasmic and outer-membrane proteins, HP15_178/HP15_3546 are Cu efflux P-type ATPases, and HP15_1354 'divalent heavy-metal cations transporter' is a broad ZIP-family annotation."
+  },
+  {
+   "reaction": "CYSS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_789 'cysteine synthase B' (CysM) and HP15_3453 'cysteine synthase A' (CysK) are bona fide isozymes."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1814, HP15_2243 and HP15_3256 are all 'phospho-2-dehydro-3-deoxyheptonate aldolase' (DAHP synthase) paralogs."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_3363 and HP15_595 are both 'dihydroxy-acid dehydratase' (same-name paralogs)."
+  },
+  {
+   "reaction": "DHFR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_587 is DHFR (adjacent to thyA HP15_586); HP15_3719 is an SDR/'dihydromonapterin reductase' (FolM-type, known secondary DHFR activity) with a family-level dehydrogenase annotation, so it is not removed."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1216 'dihydroorotase, homodimeric type' and HP15_3506 'dihydroorotase, multifunctional complex type' (pyrR-pyrB cluster) are same-name paralogs."
+  },
+  {
+   "reaction": "DNMPPA",
+   "decision": "R1",
+   "new_rule": "WP_041644941_1",
+   "evidence": "Removed HP15_1718 'ATP-dependent DNA helicase RecQ' (DNA substrate) and HP15_2113 'heavy-metal transporting P-type ATPase' (transporter in the cbb3-oxidase maturation cluster), neither of which can dephosphorylate a metabolite; retained the hydrolase WP_041644941_1 (RNA pyrophosphohydrolase, Nudix)."
+  },
+  {
+   "reaction": "DNTPPA",
+   "decision": "R1",
+   "new_rule": "HP15_577 or WP_041644941_1",
+   "evidence": "Removed HP15_1718 RecQ DNA helicase and HP15_2113 heavy-metal P-type ATPase (transporter); kept the Nudix pyrophosphohydrolases HP15_577 ('mutator MutT protein'/'Nudix family hydrolase') and WP_041644941_1 (RNA pyrophosphohydrolase), the family that hydrolyses dihydroneopterin triphosphate."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1312 '2-dehydropantoate 2-reductase' and WP_041645945_1 'ketopantoate reductase family protein' belong to the same enzyme family."
+  },
+  {
+   "reaction": "DTMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_2207 'thymidylate kinase' and WP_041646001_1 'dTMP kinase' are same-name alternatives."
+  },
+  {
+   "reaction": "E4PD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_2912 (tkt-gap-pgk-fba cluster, Epd-like) and HP15_3399 (ArsJ-associated) are both 'glyceraldehyde-3-phosphate dehydrogenase, type I' family paralogs."
+  },
+  {
+   "reaction": "ETOHtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; both alternatives are OmpA-family envelope proteins (HP15_2834 'OmpA/MotB domain protein', HP15_p187g137 'outer membrane protein OprF'). Porin redundancy is expected and removal would leave a single OmpA-family gene, so no change."
+  },
+  {
+   "reaction": "FBP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No fructose-1,6-bisphosphatase (Fbp/GlpX) is annotated; the only match is HP15_1483, a 129-aa fragment '1,6-bisphosphatase and related enzyme of inositol monophosphatase-like protein' (family-level IMPase annotation), plus IMPase-family HP15_3272."
+  },
+  {
+   "reaction": "FUM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1143 (504-aa class I Fe-S fumarate hydratase, full length) and HP15_3132 'fumarate hydratase class II' are true isozymes."
+  },
+  {
+   "reaction": "GAPD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_2175, HP15_2255 and HP15_3399 are all 'glyceraldehyde-3-phosphate dehydrogenase, type I' (same-name paralogs, HP15_3399 ArsJ-associated)."
+  },
+  {
+   "reaction": "GK1",
+   "decision": "R1",
+   "new_rule": "HP15_303",
+   "evidence": "Kept HP15_303 'guanylate kinase' (gmk-rpoZ arrangement); removed HP15_879 'short-chain dehydrogenase/reductase SDR', an oxidoreductase with a clearly different activity (EC 1.1.1.-, not an NMP kinase)."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_428 (GS type I) and HP15_3156 (GS type III) are glutamine synthetases; HP15_942 'glutamate-putrescine ligase' carries the family-level RefSeq name 'glutamine synthetase family protein', so it is not removed."
+  },
+  {
+   "reaction": "GLYCtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; both alternatives are OmpA-family envelope proteins (HP15_2834 'OmpA/MotB domain protein', HP15_p187g137 'outer membrane protein OprF'). Porin redundancy is expected and removal would leave a single OmpA-family gene, so no change."
+  },
+  {
+   "reaction": "GLYK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_748 and HP15_2166 are both 'glycerol kinase GlpK' (same-name paralogs)."
+  },
+  {
+   "reaction": "GMPS2",
+   "decision": "R1",
+   "new_rule": "HP15_2050",
+   "evidence": "Kept HP15_2050 'bifunctional GMP synthase/glutamine amidotransferase' (full-length GuaA, guaBA operon); removed WP_041645039_1, a standalone 'glutamine amidotransferase' that lacks the XMP-aminating ATP-pyrophosphatase domain and cannot catalyse the reaction alone."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_2268 'carbonate dehydratase' with a spontaneous alternative; CO2 hydration is genuinely spontaneous, so the rule is left unchanged."
+  },
+  {
+   "reaction": "HISTP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives have phosphatase-family annotations (HP15_3272 'inositol monophosphatase family'; HP15_3738 'histidinol-phosphate phosphatase family protein'/GmhB); with broad specificity plausible and no specific HolPase, neither is removed."
+  },
+  {
+   "reaction": "HSERTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "MetX+MetW are already AND-joined (HP15_284 + HP15_283); HP15_3157 is a same-name 'homoserine O-acetyltransferase' paralog."
+  },
+  {
+   "reaction": "ICDHyr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_3800 'isocitrate dehydrogenase, NADP-dependent' and WP_041645202_1 'isocitrate/isopropylmalate family dehydrogenase' (family-level, compatible)."
+  },
+  {
+   "reaction": "IMPD",
+   "decision": "R1",
+   "new_rule": "HP15_2051",
+   "evidence": "Kept HP15_2051 IMP dehydrogenase (guaBA operon); removed HP15_3951 'signal-transduction protein' (CBS / nucleotidyltransferase substrate-binding domain protein), which is a signalling protein, not IMPDH."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "R1",
+   "new_rule": "HP15_515",
+   "evidence": "Kept HP15_515 'hydroxymethylbutenyl pyrophosphate reductase' (IspH); removed HP15_1366, full-length 30S ribosomal protein S1 (564 aa, cmk-rpsA-ihfB arrangement), a translation protein."
+  },
+  {
+   "reaction": "IPPMIa",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "LeuC/LeuD subunit pairs are already AND-joined (HP15_1834 + HP15_1833; HP15_2599 + HP15_2598); same-name isozyme complexes."
+  },
+  {
+   "reaction": "IPPMIb",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "LeuC/LeuD subunit pairs are already AND-joined (HP15_1834 + HP15_1833; HP15_2599 + HP15_2598); same-name isozyme complexes."
+  },
+  {
+   "reaction": "IPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_538 and HP15_2055 are both '2-isopropylmalate synthase' (same-name paralogs)."
+  },
+  {
+   "reaction": "NDPK2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1489 'nucleoside diphosphate kinase' plus HP15_797 'adenylate kinase'; adenylate kinase has documented broad NDP-kinase activity, so it is not clearly a non-catalyst."
+  },
+  {
+   "reaction": "NDPK4",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1489 'nucleoside diphosphate kinase' plus HP15_797 'adenylate kinase'; adenylate kinase has documented broad NDP-kinase activity, so it is not clearly a non-catalyst."
+  },
+  {
+   "reaction": "NDPK5",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1489 'nucleoside diphosphate kinase' plus HP15_797 'adenylate kinase'; adenylate kinase has documented broad NDP-kinase activity, so it is not clearly a non-catalyst."
+  },
+  {
+   "reaction": "NDPK7",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_1489 'nucleoside diphosphate kinase' plus HP15_797 'adenylate kinase'; adenylate kinase has documented broad NDP-kinase activity, so it is not clearly a non-catalyst."
+  },
+  {
+   "reaction": "NNATr",
+   "decision": "R1",
+   "new_rule": "HP15_602",
+   "evidence": "Kept HP15_602 'nicotinic acid mononucleotide adenyltransferase' (NadD, proA-nadD-rsfS arrangement); removed HP15_1241 'ADP-ribose pyrophosphatase' (183-aa Nudix hydrolase, EC 3.6.1.13), which has a different specific activity."
+  },
+  {
+   "reaction": "OCBT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_750 and HP15_3987 (arcDABC-type cluster) are both 'ornithine carbamoyltransferase' (same-name paralogs)."
+  },
+  {
+   "reaction": "PDX5POi",
+   "decision": "R1",
+   "new_rule": "WP_008176900_1",
+   "evidence": "Kept WP_008176900_1 'pyridoxamine 5'-phosphate oxidase' (PdxH); removed WP_041645385_1 'ADP-dependent NAD(P)H-hydrate dehydratase/NAD(P)H-hydrate epimerase', a NAD(P)HX-repair enzyme with a different activity."
+  },
+  {
+   "reaction": "PGK",
+   "decision": "R1",
+   "new_rule": "HP15_2911",
+   "evidence": "Kept HP15_2911 'phosphoglycerate kinase' (gap-pgk-fba cluster); removed HP15_2155 'triosephosphate isomerase' (268-aa standalone TPI, EC 5.3.1.1), which has a different specific activity."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Apart from the GntR/MocR regulator HP15_1649, the alternatives are generic or broad-specificity aminotransferases (IlvE, AspC-type, HisC); redundancy is plausible and the remaining genes would all be generic."
+  },
+  {
+   "reaction": "PMPK",
+   "decision": "R1",
+   "new_rule": "WP_081449807_1",
+   "evidence": "Kept WP_081449807_1 'bifunctional hydroxymethylpyrimidine kinase/phosphomethylpyrimidine kinase' (ThiD); removed HP15_348 'thiamine-phosphate pyrophosphorylase' (219-aa ThiE, EC 2.5.1.3), which catalyses a different step."
+  },
+  {
+   "reaction": "PPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_3216 'inorganic diphosphatase' plus HP15_1279 SurE '5'/3'-nucleotidase', a broad-specificity phosphatase/exopolyphosphatase; phosphatases are not removed."
+  },
+  {
+   "reaction": "PYRtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; both alternatives are OmpA-family envelope proteins (HP15_2834 'OmpA/MotB domain protein', HP15_p187g137 'outer membrane protein OprF'). Porin redundancy is expected and removal would leave a single OmpA-family gene, so no change."
+  },
+  {
+   "reaction": "RNDR2",
+   "decision": "R1",
+   "new_rule": "HP15_1447 or (HP15_3648 and HP15_3649)",
+   "evidence": "Kept class II RNR HP15_1447 and the NrdA/NrdB complex (HP15_3649 alpha + HP15_3648 beta); removed HP15_229 'thioredoxin', the reductant substrate (trdrd) rather than a catalyst."
+  },
+  {
+   "reaction": "RNDR3",
+   "decision": "R1",
+   "new_rule": "HP15_1447 or (HP15_3648 and HP15_3649)",
+   "evidence": "Kept class II RNR HP15_1447 and the NrdA/NrdB complex (HP15_3649 alpha + HP15_3648 beta); removed HP15_229 'thioredoxin', the reductant substrate (trdrd) rather than a catalyst."
+  },
+  {
+   "reaction": "SHKK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_479 'shikimate kinase I' (aroK-aroB) and HP15_2678 'shikimate kinase' are same-name paralogs."
+  },
+  {
+   "reaction": "TMDS",
+   "decision": "R1",
+   "new_rule": "HP15_586",
+   "evidence": "Kept HP15_586 'thymidylate synthase' (ThyA, adjacent to DHFR); removed WP_041646188_1 'NADH:flavin oxidoreductase/NADH oxidase family protein' (Old Yellow Enzyme family), which has a different activity."
+  },
+  {
+   "reaction": "TMPK",
+   "decision": "R1",
+   "new_rule": "HP15_496",
+   "evidence": "Kept HP15_496 'thiamine-monophosphate kinase' (ThiL); removed HP15_3407, RefSeq 'tRNA uracil 4-sulfurtransferase ThiI' (462 aa), a sulfurtransferase, not a kinase."
+  },
+  {
+   "reaction": "TPI",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HP15_2155 and HP15_3071 are both 'triosephosphate isomerase' (same-name paralogs)."
+  },
+  {
+   "reaction": "TRDR",
+   "decision": "R1",
+   "new_rule": "HP15_3619 or (HP15_229 and HP15_2076) or (HP15_2076 and HP15_3051)",
+   "evidence": "Removed HP15_2144 'redoxin domain protein'/TlpA and WP_041645465_1 'thioredoxin TrxC' listed alone; both are thioredoxin-like substrates, not NADPH-dependent reductases. Kept the TrxB alternatives (HP15_2076 'thioredoxin-disulfide reductase') and the family-level HP15_3619 'FAD-dependent pyridine nucleotide-disulfide oxidoreductase'."
+  },
+  {
+   "reaction": "TYRTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Apart from the GntR/MocR regulator HP15_1649, the alternatives are generic or broad-specificity aminotransferases (AspC-type, HisC); redundancy is plausible and the remaining genes would all be generic."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "HP15_1168",
+   "evidence": "Kept HP15_1168 'uridylate kinase' (PyrH; rpsB-tsf-pyrH-frr operon); removed HP15_1365 'cytidylate kinase'/'(d)CMP kinase' (Cmk, EC 2.7.4.25), which has a different substrate specificity."
+  },
+  {
+   "reaction": "Zn2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; both alternatives are OmpA-family envelope proteins (HP15_2834 'OmpA/MotB domain protein', HP15_p187g137 'outer membrane protein OprF'). Porin redundancy is expected and removal would leave a single OmpA-family gene, so no change."
+  }
+ ]
+}

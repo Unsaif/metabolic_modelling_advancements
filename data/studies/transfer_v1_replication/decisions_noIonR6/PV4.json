@@ -1,0 +1,289 @@
+{
+ "org": "PV4",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ACHBS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rule already pairs catalytic and small/regulatory subunits of two AHAS isozymes (Shew_0289+Shew_0290 'acetolactate synthase 2 catalytic/regulatory subunit'; Shew_1776+Shew_1775 'acetolactate synthase 3 catalytic/regulatory subunit'); both complexes are genuine, no change needed."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rule already pairs catalytic and small/regulatory subunits of two AHAS isozymes (Shew_0289+Shew_0290 'acetolactate synthase 2 catalytic/regulatory subunit'; Shew_1776+Shew_1775 'acetolactate synthase 3 catalytic/regulatory subunit'); both complexes are genuine, no change needed."
+  },
+  {
+   "reaction": "ACtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; alternatives are two 'porin' genes (Shew_2283, Shew_2481) and two OmpA/MotB-domain lipoproteins (Shew_0908 YiaD-family, Shew_1792 PdsO). Removing the lipoproteins would leave only generic 'porin' annotations, which the procedure forbids, so the rule is left unchanged."
+  },
+  {
+   "reaction": "ADSK",
+   "decision": "R1",
+   "new_rule": "Shew_1425",
+   "evidence": "Shew_1425 'adenylyl-sulfate kinase' (CysC) sits in the sulfate-activation operon with Shew_1422/Shew_1423 'sulfate adenylyltransferase' subunits (PAPS reductase Shew_0667 present); Shew_1574 'ATP-binding Mrp/Nbp35 family protein' / 'iron-sulfur cluster carrier protein ApbC' is an Fe-S carrier NTPase with a different activity, so it is removed."
+  },
+  {
+   "reaction": "AGDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_1117 is NagA ('N-acetylglucosamine-6-phosphate deacetylase'); Shew_0013 carries a family-level 'amidohydrolase' annotation (NagA's superfamily), which may not be removed."
+  },
+  {
+   "reaction": "ARGSS",
+   "decision": "R1",
+   "new_rule": "Shew_0205",
+   "evidence": "Shew_0205 'argininosuccinate synthase' (ArgG, EC 6.3.4.5) in the arg cluster; Shew_0206 'argininosuccinate lyase' (ArgH, EC 4.3.2.1) catalyses the next step, a different reaction and EC number, so it is removed."
+  },
+  {
+   "reaction": "ASNS1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_1509 'asparagine synthetase B'; Shew_3038 is annotated 'asparagine synthase (glutamine-hydrolyzing)' in the Fitness Browser (same name) although RefSeq calls it N-acetylglutaminylglutamine amidotransferase; same-name/conflicting annotation, so not removed."
+  },
+  {
+   "reaction": "ASPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All three are genuine aspartokinases: Shew_0521 AK II/HSD II (MetL), Shew_0779 'aspartate kinase III' (LysC), Shew_1079 AK I/HSD I (ThrA); the isozyme OR rule is correct."
+  },
+  {
+   "reaction": "BPNT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_0130 and Shew_1427 are both '3'(2'),5'-bisphosphate nucleotidase CysQ' (same-name paralogs); never removed."
+  },
+  {
+   "reaction": "CHORM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_1072 'chorismate mutase' and Shew_1068 'bifunctional chorismate mutase/prephenate dehydrogenase' (TyrA) both carry chorismate mutase activity; correct isozyme rule."
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "removed by the noIonR6 filter (R6 on an inorganic-ion transport reaction); original: Shew_1015 'Cl- channel, voltage-gated family protein' is the genome's only ClC-family chloride transporter; bacterial ClC proteins are 2Cl-/1H+ exchangers, matching this reaction's substrate and stoichiometry."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; alternatives are two 'porin' genes (Shew_2283, Shew_2481) and two OmpA/MotB-domain lipoproteins (Shew_0908 YiaD-family, Shew_1792 PdsO). Removing the lipoproteins would leave only generic 'porin' annotations, which the procedure forbids, so the rule is left unchanged."
+  },
+  {
+   "reaction": "CU2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; alternatives are two 'porin' genes (Shew_2283, Shew_2481) and two OmpA/MotB-domain lipoproteins (Shew_0908 YiaD-family, Shew_1792 PdsO). Removing the lipoproteins would leave only generic 'porin' annotations, which the procedure forbids, so the rule is left unchanged."
+  },
+  {
+   "reaction": "CU2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No copper uptake permease is annotated: copper-named transport genes are efflux systems (Shew_3818 'copper-translocating P-type ATPase', CzcA family) or a NosL/NosD-associated ABC permease subunit (Shew_0357 'copper ABC transporter, permease protein'), an ATP-driven multicomponent system tied to multicopper-enzyme maturation, not this H+-independent uptake permease."
+  },
+  {
+   "reaction": "CYSS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_2382 'cysteine synthase A' plus Shew_2060 'PLP-dependent cysteine synthase family protein', a family-level annotation compatible with the reaction; not removed."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_0851, Shew_1067 and Shew_1547 are all 'phospho-2-dehydro-3-deoxyheptonate aldolase' / 3-deoxy-7-phosphoheptulonate synthase paralogs (DAHP synthase isozymes)."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "Shew_0292",
+   "evidence": "Shew_0292 'dihydroxy-acid dehydratase' (IlvD) lies in the ilv cluster (AHAS, IlvE, threonine dehydratase); Shew_1436 'pterin-4-alpha-carbinolamine dehydratase' (PhhB, EC 4.2.1.96, 113 aa, phhA-phhB operon) acts on a pterin, a different substrate class and EC number, so it is removed."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_1848 and Shew_2362 are both annotated 'dihydrodipicolinate synthase' (same-name paralogs) and are kept, although Shew_2362 sits in a proline-racemase/D-amino-acid dehydrogenase cluster."
+  },
+  {
+   "reaction": "DHFR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_0874 'dihydrofolate reductase' (FolA) plus Shew_0048 'dihydromonapterin reductase' (FolM-type, known DHFR activity) and Shew_0776 'dihydrofolate reductase family protein'; compatible/family-level annotations, not removed."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "R1",
+   "new_rule": "Shew_0728 or Shew_2586",
+   "evidence": "Shew_1013 'aspartate carbamoyltransferase' (PyrB, EC 2.1.3.2) catalyses the preceding step, not dihydroorotate hydrolysis, so it is removed; Shew_0728 'dihydroorotase' (PyrC) and family-level Shew_2586 'amidohydrolase' are kept."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "R1",
+   "new_rule": "Shew_1102",
+   "evidence": "Shew_1102 'hydroxymethylbutenyl pyrophosphate reductase' (IspH, 4-hydroxy-3-methylbut-2-enyl diphosphate reductase) is the specific enzyme; Shew_1954 '30S ribosomal protein S1' is a ribosomal protein and is removed."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_2895 '2-dehydropantoate 2-reductase' (PanE) plus Shew_0288 'ketol-acid reductoisomerase' (IlvC), which has known ketopantoate reductase side activity; compatible alternative, not removed."
+  },
+  {
+   "reaction": "FUM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_0068 'class II fumarate hydratase' (FumC) and Shew_1904 'fumarate hydratase' (single-chain 508 aa class I Fe-S hydro-lyase); both genuine fumarases."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_3554 'glutamine synthetase' plus Shew_0972 'glutamate--ammonia ligase' (same-name GS-family annotation; neighbourhood suggests a gamma-glutamylpolyamine synthetase, but same-name paralogs are never removed)."
+  },
+  {
+   "reaction": "GLNtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Diffusion step whose only alternatives are two 'porin' genes (Shew_2283, Shew_2481); no change."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_1859 'carbonate dehydratase' or spontaneous CO2 hydration; the rule is appropriate."
+  },
+  {
+   "reaction": "HSDy",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_0521 (AK II/HSD II) and Shew_1079 (AK I/HSD I) both carry homoserine dehydrogenase domains; correct isozyme rule."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "R1",
+   "new_rule": "Shew_1102",
+   "evidence": "Shew_1102 'hydroxymethylbutenyl pyrophosphate reductase' (IspH, 4-hydroxy-3-methylbut-2-enyl diphosphate reductase) is the specific enzyme; Shew_1954 '30S ribosomal protein S1' is a ribosomal protein and is removed."
+  },
+  {
+   "reaction": "LDH_L",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No NAD-dependent L-lactate dehydrogenase (EC 1.1.1.27) is annotated in the genome; the only nearby candidate, Shew_3136 'FAD linked oxidase domain-containing protein', is a generic FAD-dependent oxidase, not this NAD-linked reaction."
+  },
+  {
+   "reaction": "L_LACt2r",
+   "decision": "R6",
+   "new_rule": "Shew_3135",
+   "evidence": "Shew_3135 'L-lactate permease' (LctP family L-lactate:H+ symporter) is the specific transporter for this substrate and mechanism."
+  },
+  {
+   "reaction": "MN2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "removed by the noIonR6 filter (R6 on an inorganic-ion transport reaction); original: Shew_2965 'putative manganese transporter' (423 aa, size of an NRAMP-type uptake carrier) is the only transporter annotated for Mn2+; assigned as the specific manganese transporter."
+  },
+  {
+   "reaction": "MNtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; alternatives are two 'porin' genes (Shew_2283, Shew_2481) and two OmpA/MotB-domain lipoproteins (Shew_0908 YiaD-family, Shew_1792 PdsO). Removing the lipoproteins would leave only generic 'porin' annotations, which the procedure forbids, so the rule is left unchanged."
+  },
+  {
+   "reaction": "NDPK2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_2310 'nucleoside-diphosphate kinase' (Ndk) plus Shew_2230 'adenylate kinase', an NMP kinase with documented NDP-kinase side activity; not clearly a non-catalyst, so not removed."
+  },
+  {
+   "reaction": "NDPK4",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_2310 'nucleoside-diphosphate kinase' (Ndk) plus Shew_2230 'adenylate kinase', an NMP kinase with documented NDP-kinase side activity; not clearly a non-catalyst, so not removed."
+  },
+  {
+   "reaction": "NPHS",
+   "decision": "R1",
+   "new_rule": "Shew_3814",
+   "evidence": "Shew_3814 'naphthoate synthase' (MenB, 1,4-dihydroxy-2-naphthoyl-CoA synthase) is the specific enzyme; Shew_1960 is a 'hypothetical protein' (DUF2058) with no enzymatic annotation or menaquinone-gene context, so it is removed."
+  },
+  {
+   "reaction": "OMCDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_3471 '3-isopropylmalate dehydrogenase' (LeuB) or spontaneous beta-keto acid decarboxylation; the rule is appropriate."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_2832 'phosphoglucosamine mutase' (GlmM) plus Shew_1922 'phosphoglucomutase', a member of the same phosphohexomutase superfamily acting on a closely related hexose phosphate; cross-specificity cannot be excluded, so not removed."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Generic aminotransferases (Shew_0291 'branched-chain amino acid aminotransferase', Shew_1999 'aromatic amino acid aminotransferase'); redundancy plausible."
+  },
+  {
+   "reaction": "PMPK",
+   "decision": "R6",
+   "new_rule": "Shew_2095",
+   "evidence": "Shew_2095 'phosphomethylpyrimidine kinase' (ThiD-type, EC 2.7.4.7) lies in the thiamine biosynthesis cluster with ThiC (Shew_2096), ThiS (Shew_2093) and ThiH (Shew_2091)."
+  },
+  {
+   "reaction": "PPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_1975 'manganese-dependent inorganic pyrophosphatase' plus SurE nucleotidase (Shew_1210) and Ppx/GppA phosphatase (Shew_3078); phosphatase annotations may not be removed."
+  },
+  {
+   "reaction": "PYRtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; alternatives are two 'porin' genes (Shew_2283, Shew_2481) and two OmpA/MotB-domain lipoproteins (Shew_0908 YiaD-family, Shew_1792 PdsO). Removing the lipoproteins would leave only generic 'porin' annotations, which the procedure forbids, so the rule is left unchanged."
+  },
+  {
+   "reaction": "SDPDS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_1862 'succinyl-diaminopimelate desuccinylase' (DapE) plus Shew_2160, 'hypothetical protein' in the Fitness Browser but 'dipeptidase' in RefSeq (broad-specificity peptidase annotation); not clearly a non-catalyst."
+  },
+  {
+   "reaction": "TMDS",
+   "decision": "R1",
+   "new_rule": "Shew_1041",
+   "evidence": "Shew_1041 'thymidylate synthase' (ThyA) is the genome's only thymidylate synthase; Shew_1942 'NADH:flavin oxidoreductase' / 'NADPH-dependent 2,4-dienoyl-CoA reductase' (FadH-type, EC 1.3.1.34) has a different activity and substrate class, so it is removed."
+  },
+  {
+   "reaction": "TMPK",
+   "decision": "R1",
+   "new_rule": "Shew_1192",
+   "evidence": "Shew_1192 'thiamine-monophosphate kinase' (ThiL) is the specific enzyme; Shew_2766 'tRNA uracil 4-sulfurtransferase ThiI' is a sulfurtransferase (EC 2.8.1.4), not a kinase, so it is removed."
+  },
+  {
+   "reaction": "UDCPDP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_1004 'undecaprenyl pyrophosphate phosphatase' (UppP) plus two PAP2-family phosphatases (Shew_0302, Shew_0036), a family with known undecaprenyl-diphosphate phosphatase members; not removed."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Shew_2633 'uridylate kinase' (PyrH) plus Shew_1953 'cytidylate kinase' (Cmk), an NMP kinase acting on the same substrate class (pyrimidine NMPs); not clearly a non-catalyst, left unchanged."
+  },
+  {
+   "reaction": "Zn2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; alternatives are two 'porin' genes (Shew_2283, Shew_2481) and two OmpA/MotB-domain lipoproteins (Shew_0908 YiaD-family, Shew_1792 PdsO). Removing the lipoproteins would leave only generic 'porin' annotations, which the procedure forbids, so the rule is left unchanged."
+  }
+ ],
+ "filter": "noIonR6 (docs/studies/transfer-v1-replication-plan.md)"
+}

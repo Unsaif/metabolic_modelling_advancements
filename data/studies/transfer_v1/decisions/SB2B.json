@@ -1,0 +1,330 @@
+{
+ "org": "SB2B",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ABTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are annotated 4-aminobutyrate aminotransferase: Sama_2636 (next to succinate-semialdehyde dehydrogenase Sama_2637) and Sama_3606 (class III/GABA aminotransferase). Same-name paralogs, so both are kept."
+  },
+  {
+   "reaction": "ACHBS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule already joins the ALS III subunits (Sama_2018 catalytic and Sama_2019 regulatory) and the ALS II subunits (Sama_3281 catalytic and Sama_3280 regulatory) as AND complexes. No change is needed."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule already joins the ALS III subunits (Sama_2018 and Sama_2019) and the ALS II subunits (Sama_3281 and Sama_3280) as AND complexes. No change is needed."
+  },
+  {
+   "reaction": "ACOTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_1628 and Sama_3011 are same-name paralogs ('bifunctional N-succinyldiaminopimelate-aminotransferase/acetylornithine transaminase'), so both are kept."
+  },
+  {
+   "reaction": "ACtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are two 'outer membrane porin, putative' genes (Sama_1251, Sama_3336) plus Sama_3096 'OmpA family protein' (RefSeq YiaD-family OmpA-like lipoprotein, 222 aa). The porins that would remain carry only generic annotations, so R1 is not allowed; this is a diffusion step and the OR redundancy is unaffected."
+  },
+  {
+   "reaction": "AGDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_0946 is NagA (N-acetylglucosamine-6-phosphate deacetylase). Sama_0028 has a family-level 'amidohydrolase' annotation, which must not be removed."
+  },
+  {
+   "reaction": "ARGSS",
+   "decision": "R1",
+   "new_rule": "Sama_0259",
+   "evidence": "Sama_0260 is argininosuccinate lyase (ArgH, EC 4.3.2.1), which catalyses the next step, not this reaction. Keep Sama_0259 'argininosuccinate synthase' (ArgG, EC 6.3.4.5), the only ArgG in the genome."
+  },
+  {
+   "reaction": "ASPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All four alternatives are aspartate kinases: Sama_0603 (AK III), Sama_1049 (aspartate kinase), Sama_0905 (bifunctional AK I/HSD I) and Sama_3170 (bifunctional AK II/HSD II). These are genuine isozymes."
+  },
+  {
+   "reaction": "CA2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are two 'outer membrane porin, putative' genes (Sama_1251, Sama_3336) plus Sama_3096 'OmpA family protein' (RefSeq YiaD-family OmpA-like lipoprotein, 222 aa). The porins that would remain carry only generic annotations, so R1 is not allowed; this is a diffusion step and the OR redundancy is unaffected."
+  },
+  {
+   "reaction": "CEPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No cellobiose phosphorylase is annotated. Sama_2451 'phosphorylase' lies in the glycogen operon (Sama_2449-2454), so it is glycogen phosphorylase. Beta-glucosidases Sama_1402 and Sama_1404 are hydrolytic, not phosphorolytic."
+  },
+  {
+   "reaction": "CHORM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives carry chorismate mutase domains: Sama_0894 (bifunctional CM/prephenate dehydrogenase, TyrA) and Sama_0898 (CM/prephenate dehydratase, PheA-type). These are genuine isozymes."
+  },
+  {
+   "reaction": "CITt11",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The only match is Sama_0837 'citrate transporter'. Its annotation states neither metal-citrate:H+ symport nor any metal specificity, so it is not an exact annotation for Mn2+-citrate uptake."
+  },
+  {
+   "reaction": "CITt15",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The only match is Sama_0837 'citrate transporter'. Its annotation states neither metal-citrate:H+ symport nor any metal specificity, so it is not an exact annotation for Zn2+-citrate uptake."
+  },
+  {
+   "reaction": "CITt3",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No citrate:H+ antiporter or citrate exporter is annotated. Sama_0837 'citrate transporter' does not specify export by proton antiport."
+  },
+  {
+   "reaction": "CLBtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_1194 (Gfo/Idh/MocA oxidoreductase) and Sama_2231 (fructokinase) are enzymes, not outer-membrane channels. However, the porins that would remain (Sama_1251, Sama_3336) carry only generic annotations, so R1 is not allowed; the OR redundancy is unaffected."
+  },
+  {
+   "reaction": "CLBtpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No cellobiose-specific permease is annotated. The only candidate is family-level: Sama_1401 'sugar (glycoside-pentoside-hexuronide) transporter', next to beta-glucosidase Sama_1402. Operon context alone is not sufficient."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are two 'outer membrane porin, putative' genes (Sama_1251, Sama_3336) plus Sama_3096 'OmpA family protein' (RefSeq YiaD-family OmpA-like lipoprotein, 222 aa). The porins that would remain carry only generic annotations, so R1 is not allowed; this is a diffusion step and the OR redundancy is unaffected."
+  },
+  {
+   "reaction": "COBALT2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are two 'outer membrane porin, putative' genes (Sama_1251, Sama_3336) plus Sama_3096 'OmpA family protein' (RefSeq YiaD-family OmpA-like lipoprotein, 222 aa). The porins that would remain carry only generic annotations, so R1 is not allowed; this is a diffusion step and the OR redundancy is unaffected."
+  },
+  {
+   "reaction": "CU2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are two 'outer membrane porin, putative' genes (Sama_1251, Sama_3336) plus Sama_3096 'OmpA family protein' (RefSeq YiaD-family OmpA-like lipoprotein, 222 aa). The porins that would remain carry only generic annotations, so R1 is not allowed; this is a diffusion step and the OR redundancy is unaffected."
+  },
+  {
+   "reaction": "CU2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No Cu2+ uptake permease is annotated. Sama_1786 is a copper-translocating P-type ATPase (CopA-type, ATP-driven export), and CorA Sama_1537 is a Mg/Co transporter. Neither annotation fits this reaction."
+  },
+  {
+   "reaction": "CYSS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_1508 is CysK (cysteine synthase A). Sama_1824 has a family-level annotation ('PLP-dependent cysteine synthase family protein'), which must not be removed."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_0657, Sama_0893 and Sama_2074 are same-name paralogs, all annotated 'phospho-2-dehydro-3-deoxyheptonate aldolase' (DAHP synthase). These are genuine isozymes."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "Sama_3279",
+   "evidence": "Sama_2221 is pterin-4a-carbinolamine dehydratase (PhhB, EC 4.2.1.96, 112 aa), in the phhA operon, a different activity. Keep Sama_3279 'dihydroxy-acid dehydratase' (IlvD, EC 4.2.1.9) in the ilv cluster."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_1908 is DapA. Sama_1531 is annotated 'dihydrodipicolinate synthetase family protein' (RefSeq '4-hydroxy-tetrahydrodipicolinate synthase'). That annotation is compatible/family-level, so it must not be removed, even though the gene sits in a hydroxyproline-catabolism cluster."
+  },
+  {
+   "reaction": "DHFR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_2824 is FolA. Sama_1764 has a family-level 'short-chain dehydrogenase/reductase SDR' annotation (possibly a FolM-type reductase), which must not be removed."
+  },
+  {
+   "reaction": "DHNPA2r",
+   "decision": "R6",
+   "new_rule": "Sama_0829",
+   "evidence": "Sama_0829 'dihydroneopterin aldolase' (FolB, EC 4.1.2.25) names exactly this enzyme. It is adjacent to Sama_0830 HPPK (FolK), the next folate step. Sama_1489 FolX acts on the triphosphate and is not included."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "R1",
+   "new_rule": "Sama_2870",
+   "evidence": "Sama_0840 is aspartate carbamoyltransferase (PyrB, EC 2.1.3.2), the preceding pyrimidine step, not a dihydroorotase. Keep Sama_2870 'dihydroorotase' (PyrC, EC 3.5.2.3)."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "R1",
+   "new_rule": "Sama_0927",
+   "evidence": "Sama_1736 is 30S ribosomal protein S1, a translation protein. Keep Sama_0927 '4-hydroxy-3-methylbut-2-enyl diphosphate reductase' (IspH)."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_2559 is PanE (2-dehydropantoate 2-reductase). Sama_3282 is ketol-acid reductoisomerase (IlvC), which has a documented ketopantoate-reductase side activity, so it is treated as a broad-specificity alternative and kept."
+  },
+  {
+   "reaction": "FUM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are fumarate hydratases (class II FumC Sama_0822; class I FumA/B-type Sama_1688). These are genuine isozymes."
+  },
+  {
+   "reaction": "GAPD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All three alternatives (Sama_0494 ArsJ-associated, Sama_1806, Sama_1808) are annotated glyceraldehyde-3-phosphate dehydrogenase. Same-name paralogs, so all are kept."
+  },
+  {
+   "reaction": "GF6PTA",
+   "decision": "R1",
+   "new_rule": "Sama_3639",
+   "evidence": "Sama_0945 is RefSeq 'glucosamine-6-phosphate deaminase NagB-II' (EC 3.5.99.6); its FB 'GFAT' name is outdated. It is only 332 aa, lacking the glutamine-amidotransferase domain of the 609-aa GlmS, and sits with nagA Sama_0946. Keep Sama_3639 GlmS (next to glmU Sama_3642)."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are annotated glutamine synthetase / glutamate--ammonia ligase (Sama_3416; Sama_1174, GS family). The annotations are compatible, so both are kept."
+  },
+  {
+   "reaction": "GLNtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are outer membrane porins (Sama_1251, Sama_3336). There is no non-catalyst to remove."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule is Sama_1642 carbonate dehydratase OR spontaneous. CO2 hydration is genuinely spontaneous, so there is nothing to join or remove."
+  },
+  {
+   "reaction": "HSDy",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are bifunctional aspartokinase/homoserine dehydrogenases (ThrA-type Sama_0905, MetL-type Sama_3170). These are genuine isozymes."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "R1",
+   "new_rule": "Sama_0927",
+   "evidence": "Sama_1736 is 30S ribosomal protein S1, a translation protein. Keep Sama_0927 '4-hydroxy-3-methylbut-2-enyl diphosphate reductase' (IspH)."
+  },
+  {
+   "reaction": "MALTabc",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No maltose/maltodextrin ABC transporter (MalEFGK) or other maltose-specific transporter is annotated in genes.tsv."
+  },
+  {
+   "reaction": "NDPK2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_1301 is Ndk. Sama_1315 is adenylate kinase, which has a documented NDP-kinase side activity, so it is treated as a broad-specificity alternative and kept."
+  },
+  {
+   "reaction": "NDPK4",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_1301 is Ndk. Sama_1315 is adenylate kinase, which has a documented NDP-kinase side activity, so it is treated as a broad-specificity alternative and kept."
+  },
+  {
+   "reaction": "NPHS",
+   "decision": "R1",
+   "new_rule": "Sama_3635",
+   "evidence": "Sama_1742 is a 181-aa 'hypothetical protein' (RefSeq 'DUF2058 domain-containing protein') with no enzymatic annotation. Keep Sama_3635 'naphthoate synthase' (MenB)."
+  },
+  {
+   "reaction": "OMCDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule is Sama_0336 3-isopropylmalate dehydrogenase (LeuB) OR spontaneous. Decarboxylation of this beta-keto acid is genuinely spontaneous/LeuB-associated, so there is nothing to remove."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_0956 and Sama_2243 are same-name phosphoglucosamine mutase paralogs. Sama_1706, a phosphoglucomutase, is in the same phosphohexomutase superfamily and may have broad specificity, so there is no clear non-catalyst."
+  },
+  {
+   "reaction": "PGMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_1706 is phosphoglucomutase. Sama_0381 is a sugar phosphatase (2-deoxyglucose-6-phosphatase/HxpB), and phosphatases must not be removed."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_2016 is FB 'GntR family transcriptional regulator' but RefSeq 'aminotransferase-like domain-containing protein' (family-level aminotransferase). Aminotransferase redundancy is plausible: a second aromatic aminotransferase, Sama_1733, is in the genome."
+  },
+  {
+   "reaction": "PMPK",
+   "decision": "R6",
+   "new_rule": "Sama_1859",
+   "evidence": "Sama_1859 'phosphomethylpyrimidine kinase/thiamine-phosphate diphosphorylase' (ThiD-ThiE fusion) names HMP-P kinase (EC 2.7.4.7), exactly this reaction. It sits in the thiC-thiF-thiS-thiG-thiH cluster (Sama_1855-1860)."
+  },
+  {
+   "reaction": "PPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_0598 is the inorganic pyrophosphatase Ppa. Sama_1041 (SurE 5'/3'-nucleotidase) and Sama_2012 ('Ppx/GppA phosphatase family protein') are phosphatases, which the procedure says must not be removed."
+  },
+  {
+   "reaction": "PYRtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are two 'outer membrane porin, putative' genes (Sama_1251, Sama_3336) plus Sama_3096 'OmpA family protein' (RefSeq YiaD-family OmpA-like lipoprotein, 222 aa). The porins that would remain carry only generic annotations, so R1 is not allowed; this is a diffusion step and the OR redundancy is unaffected."
+  },
+  {
+   "reaction": "SDPDS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_1647 is DapE. Sama_1565 is FB 'hypothetical protein' but RefSeq 'dipeptidase', a broad-specificity hydrolase annotation, so it is not an unannotated hypothetical and must not be removed."
+  },
+  {
+   "reaction": "SUCBZL",
+   "decision": "R1",
+   "new_rule": "Sama_3463",
+   "evidence": "Sama_1184 is RefSeq 'olefin beta-lactone synthetase' (OleC, EC 6.1.3.1; FB 'peptide synthase') in the oleABCD cluster (Sama_1182-1185), a different activity. Keep Sama_3463 'O-succinylbenzoic acid--CoA ligase' (MenE), in the menD/menH/menC cluster."
+  },
+  {
+   "reaction": "THDPS",
+   "decision": "R1",
+   "new_rule": "Sama_1136",
+   "evidence": "Sama_1384 is a 'streptogramin A acetyl transferase' (Vat-family antibiotic O-acetyltransferase), with a different acyl donor and substrate class. Keep Sama_1136 '2,3,4,5-tetrahydropyridine-2,6-dicarboxylate N-succinyltransferase' (DapD)."
+  },
+  {
+   "reaction": "TMPK",
+   "decision": "R1",
+   "new_rule": "WP_041410146_1",
+   "evidence": "Sama_2431 is ThiI (tRNA uracil 4-sulfurtransferase / thiazole sulfur transfer, EC 2.8.1.4), not a kinase. Keep model gene WP_041410146_1, RefSeq 'thiamine-phosphate kinase' (ThiL; probably Sama_1021 in genes.tsv, unmapped in the packet)."
+  },
+  {
+   "reaction": "UDCPDP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Sama_0831 is BacA/UppP. Sama_0148 and Sama_3275 are PAP2-family phosphatases (PgpB-like) that can dephosphorylate undecaprenyl diphosphate, and phosphatases must not be removed."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "Sama_1141",
+   "evidence": "Sama_1735 is cytidylate kinase (Cmk, (d)CMP-specific NMP kinase, EC 2.7.4.25), a different specific activity. Keep Sama_1141 'uridylate kinase' (PyrH, EC 2.7.4.22), the only PyrH in the genome."
+  }
+ ]
+}

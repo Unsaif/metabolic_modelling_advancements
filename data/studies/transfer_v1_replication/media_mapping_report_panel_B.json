@@ -1,0 +1,95 @@
+{
+ "DinoMM_noCarbon": {
+  "status": "mapped",
+  "aerobic": "yes",
+  "unmapped": [],
+  "undefined": [],
+  "ignored": [
+   "Nitrilotriacetic acid"
+  ],
+  "bigg_ids": "h2o;h;co2;na1;cl;mg2;so4;ca2;k;hco3;nh4;pi;mn2;cobalt2;zn2;fe2;ni2;cu2;mobd;slnt;pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl;fe3;sel;tungs",
+  "trace_components": "pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl"
+ },
+ "DinoMM_noCarbon_HighNutrient": {
+  "status": "mapped",
+  "aerobic": "yes",
+  "unmapped": [],
+  "undefined": [],
+  "ignored": [
+   "Nitrilotriacetic acid"
+  ],
+  "bigg_ids": "h2o;h;co2;na1;cl;mg2;so4;ca2;k;hco3;nh4;pi;mn2;cobalt2;zn2;fe2;ni2;cu2;mobd;slnt;pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl;fe3;sel;tungs",
+  "trace_components": "pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl"
+ },
+ "M2_noCarbon": {
+  "status": "mapped",
+  "aerobic": "yes",
+  "unmapped": [],
+  "undefined": [],
+  "ignored": [
+   "EDTA"
+  ],
+  "bigg_ids": "h2o;h;co2;na1;pi;k;nh4;cl;mg2;so4;ca2;fe2;fe3;mn2;zn2;cu2;cobalt2;mobd;ni2;sel;slnt;tungs",
+  "trace_components": ""
+ },
+ "MOPS minimal media_noCarbon": {
+  "status": "mapped",
+  "aerobic": "yes",
+  "unmapped": [],
+  "undefined": [],
+  "ignored": [
+   "3-(N-morpholino)propanesulfonic acid",
+   "Tricine"
+  ],
+  "bigg_ids": "h2o;h;co2;k;pi;fe2;so4;nh4;cl;ca2;mg2;na1;mobd;cobalt2;cu2;mn2;zn2;fe3;ni2;sel;slnt;tungs",
+  "trace_components": ""
+ },
+ "MoLS4": {
+  "status": "mapped",
+  "aerobic": "no",
+  "unmapped": [],
+  "undefined": [],
+  "ignored": [
+   "Tris hydrochloride",
+   "EDTA"
+  ],
+  "bigg_ids": "h2o;h;co2;na1;so4;lac__D;lac__L;nh4;cl;h2s;mg2;ca2;k;pi;fe2;mn2;cobalt2;zn2;mobd;ni2;cu2;slnt;tungs;pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl;chol;fe3;sel",
+  "trace_components": "h2s;pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl;chol"
+ },
+ "MoLS4_no_lactate": {
+  "status": "mapped",
+  "aerobic": "no",
+  "unmapped": [],
+  "undefined": [],
+  "ignored": [
+   "Tris hydrochloride",
+   "EDTA"
+  ],
+  "bigg_ids": "h2o;h;co2;na1;so4;nh4;cl;h2s;mg2;ca2;k;pi;fe2;mn2;cobalt2;zn2;mobd;ni2;cu2;slnt;tungs;pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl;chol;fe3;sel",
+  "trace_components": "h2s;pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl;chol"
+ },
+ "RCH2_defined_noCarbon": {
+  "status": "mapped",
+  "aerobic": "yes",
+  "unmapped": [],
+  "undefined": [],
+  "ignored": [
+   "PIPES sesquisodium salt",
+   "Nitrilotriacetic acid"
+  ],
+  "bigg_ids": "h2o;h;co2;nh4;cl;k;na1;pi;mg2;so4;mn2;cobalt2;zn2;ca2;fe2;ni2;cu2;mobd;slnt;pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl;fe3;sel;tungs",
+  "trace_components": "pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl"
+ },
+ "ShewMM_noCarbon": {
+  "status": "mapped",
+  "aerobic": "yes",
+  "unmapped": [],
+  "undefined": [],
+  "ignored": [
+   "PIPES sesquisodium salt",
+   "Nitrilotriacetic acid"
+  ],
+  "bigg_ids": "h2o;h;co2;nh4;cl;na1;mg2;k;pi;so4;mn2;cobalt2;zn2;ca2;fe2;ni2;cu2;mobd;slnt;pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl;fe3;sel;tungs",
+  "trace_components": "pydxn;4abz;lipoate;nac;ribflv;thm;pnto__R;btn;fol;cbl1;adocbl"
+ }
+}

@@ -1,0 +1,438 @@
+{
+ "org": "Caulo",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ACOTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_00620 (ast cluster) and CCNA_02326 (next to argF) carry the same annotation, acetylornithine/succinyldiaminopimelate aminotransferase; same-name broad-specificity paralogs are never removed."
+  },
+  {
+   "reaction": "ACtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; CCNA_03337 (Pal lipoprotein) is not a porin, but removing it would leave only the generic 'outer membrane protein' CCNA_00201, which R1 forbids."
+  },
+  {
+   "reaction": "ADCL",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_03047 '4-amino-4-deoxychorismate lyase' (class IV aminotransferase fold, adjacent to pabB CCNA_03048) is the likely PabC; CCNA_01751 (366 aa, after fabF) may be a YceG/MltG-family protein with the legacy 'aminodeoxychorismate lyase' name, but as a same-name paralog it cannot be removed."
+  },
+  {
+   "reaction": "ANPRT",
+   "decision": "R1",
+   "new_rule": "CCNA_01975",
+   "evidence": "CCNA_01975 'anthranilate phosphoribosyltransferase' (341-aa monofunctional TrpD in the trpE-trpG-trpD-trpC cluster) catalyses this step; CCNA_01974 is the separate 199-aa anthranilate synthase glutamine amidotransferase component II (TrpG), a different activity that matched only through the E. coli TrpG-TrpD fusion."
+  },
+  {
+   "reaction": "ASAD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_00253 and CCNA_03599 are both annotated aspartate-semialdehyde dehydrogenase (same-name paralogs)."
+  },
+  {
+   "reaction": "ASNS2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only CCNA_02794 'asparagine synthetase C-terminal domain protein' matches, a domain-level AsnB-family annotation in a TonB-receptor/transglutaminase context rather than an ammonia-dependent AsnA; the genome uses GatCAB (CCNA_02518-02520) and has no AsnRS, so its role in free Asn synthesis is uncertain."
+  },
+  {
+   "reaction": "ASPTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Three annotated aspartate aminotransferases (CCNA_00775, CCNA_01603, CCNA_02539): same-name, broad-specificity paralogs."
+  },
+  {
+   "reaction": "BGLA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_01019 'beta-glucosidase' and CCNA_03149 'beta-glucosidase/beta-xylosidase' are both compatible with cellobiose hydrolysis."
+  },
+  {
+   "reaction": "CA2abcpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No calcium-specific ABC transporter is annotated (only CorA/CorC Mg/Co, zinc and copper-resistance proteins); generic ABC components do not qualify."
+  },
+  {
+   "reaction": "CA2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; CCNA_03337 (Pal lipoprotein) is not a porin, but removing it would leave only the generic 'outer membrane protein' CCNA_00201, which R1 forbids."
+  },
+  {
+   "reaction": "CITACt",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No citrate transporter (citrate/acetate antiporter, CitM/CitH or TctABC) is annotated; the only citrate genes are citrate synthases and citrate lyase subunits."
+  },
+  {
+   "reaction": "CITt11",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No CitM-type metal-citrate complex transporter is annotated in the genome."
+  },
+  {
+   "reaction": "CITt15",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No CitM-type metal-citrate complex transporter is annotated; the zinc-related genes are CzcABCD efflux and a low-affinity zinc transporter, not citrate-Zn symporters."
+  },
+  {
+   "reaction": "CLBtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are cytoplasmic enzymes (CCNA_01018 D-galactose 1-dehydrogenase, CCNA_02549 glucokinase) listed for an outer-membrane diffusion step, but removing them would leave no gene, and R1 may not leave an empty or generic-only rule."
+  },
+  {
+   "reaction": "CLBtpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No cellobiose-specific permease is annotated; only generic MFS sugar transporters and melibiose carriers (CCNA_01822, CCNA_03125)."
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "decision": "R6",
+   "new_rule": "CCNA_02638",
+   "evidence": "CCNA_02638 'CLC voltage-gated chloride channel' (618 aa, ClC family) is the only chloride-specific transporter in the genome; bacterial ClC proteins are 2Cl-/1H+ exchangers, matching this 2:1 Cl-/H+ antiport (as ClcA/ClcB do in E. coli models)."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; CCNA_03337 (Pal lipoprotein) is not a porin, but removing it would leave only the generic 'outer membrane protein' CCNA_00201, which R1 forbids."
+  },
+  {
+   "reaction": "CYSS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_01493 and CCNA_03740 are both annotated cysteine synthase (same-name paralogs)."
+  },
+  {
+   "reaction": "Cuabc",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No copper ABC importer is annotated; copper-related genes are PcoA/PcoB resistance proteins, CutC and a Cu(I)-binding protein."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two 3-deoxy-7-phosphoheptulonate synthases (CCNA_01463, CCNA_02385): same-name paralogs."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "CCNA_01488 or CCNA_03139",
+   "evidence": "CCNA_01488 and CCNA_03139 are annotated dihydroxy-acid dehydratase (IlvD family); CCNA_00245 is a 94-aa pterin-4a-carbinolamine dehydratase (EC 4.2.1.96) and CCNA_00862 is xylonate dehydratase XylD of the xylXABCD operon (EC 4.2.1.82), both different specific activities."
+  },
+  {
+   "reaction": "DHORD2",
+   "decision": "R6",
+   "new_rule": "CCNA_00562",
+   "evidence": "CCNA_00562 'dihydroorotate dehydrogenase' (352 aa, the only DHODH in the genome, no PyrK electron-transfer subunit) fits the membrane-bound, quinone-dependent family 2 PyrD that this ubiquinone-linked reaction describes."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two dihydroorotases (CCNA_00392, and CCNA_02526 next to aspartate carbamoyltransferase): same-name paralogs."
+  },
+  {
+   "reaction": "DMATT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_02150 is the specific IspA (dimethylallyltransferase/geranyltranstransferase), but CCNA_02198 'trans-isoprenyl diphosphate synthase' is a family-level prenyltransferase annotation, which R1 does not allow removing."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "R1",
+   "new_rule": "CCNA_03471",
+   "evidence": "CCNA_03471 '4-hydroxy-3-methylbut-2-enyl diphosphate reductase' (IspH, the only one in the genome) catalyses this step; CCNA_03702 is SSU ribosomal protein S1, a translation protein."
+  },
+  {
+   "reaction": "DNMPPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The P-type ATPases (CCNA_01473, CCNA_02811) and RecQ helicase (CCNA_03578) are not catalysts, but the remaining alternatives are Nudix-family hydrolases with no annotation for this phosphatase step, so R1 would leave only generic genes."
+  },
+  {
+   "reaction": "DNTPPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Nudix hydrolases (CCNA_01184, CCNA_01408, CCNA_02735, CCNA_03553) are the right family for dihydroneopterin triphosphate pyrophosphohydrolase but none is specifically annotated; removing the P-type ATPases and RecQ would leave only generic Nudix annotations."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_00262 'ketopantoate reductase PanE/ApbA family' and CCNA_02204 'ketol-acid reductoisomerase/2-dehydropantoate 2-reductase' (IlvC with ketopantoate reductase side activity) are both compatible."
+  },
+  {
+   "reaction": "DXPS",
+   "decision": "R6",
+   "new_rule": "CCNA_02149",
+   "evidence": "CCNA_02149 '1-deoxy-D-xylulose 5-phosphate synthase' (640 aa, EC 2.2.1.7, the only DXS in the genome, adjacent to ispA CCNA_02150) matches this reaction exactly."
+  },
+  {
+   "reaction": "FBP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_01448 'fructose-1,6-bisphosphatase, class II' and the adjacent CCNA_01449 'fructose-1,6-bisphosphatase, FIG superfamily' are both annotated FBPases and are not annotated as subunits of one complex."
+  },
+  {
+   "reaction": "FE2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; CCNA_03337 (Pal lipoprotein) is not a porin, but removing it would leave only the generic 'outer membrane protein' CCNA_00201, which R1 forbids."
+  },
+  {
+   "reaction": "G1PACT",
+   "decision": "R1",
+   "new_rule": "CCNA_02389",
+   "evidence": "CCNA_02389 is the full-length bifunctional GlmU (462 aa, glucosamine-1-phosphate acetyltransferase/UDP-GlcNAc pyrophosphorylase); CCNA_01210 (253 aa) and CCNA_03650 (242 aa, MurU/ManC-like) are nucleotidyltransferases without the acetyltransferase domain (EC 2.7.7.x, not 2.3.1.157)."
+  },
+  {
+   "reaction": "GALKr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No galactokinase is annotated; the galactose genes point to the De Ley-Doudoroff route (D-galactose 1-dehydrogenase CCNA_01018, 2-dehydro-3-deoxygalactonokinase CCNA_00826)."
+  },
+  {
+   "reaction": "GF6PTA",
+   "decision": "R1",
+   "new_rule": "CCNA_00117",
+   "evidence": "CCNA_00117 'glucosamine-fructose-6-phosphate aminotransferase, isomerizing' (606-aa GlmS) is the glutamine-dependent catalyst; CCNA_00453 and CCNA_00569 are catabolic glucosamine-6-phosphate deaminases (EC 3.5.99.6, ~360-aa SIS-domain proteins in nagA/PTS clusters) that lack the glutaminase domain."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two glutamine synthetases (CCNA_02047, CCNA_03240): same-name paralogs."
+  },
+  {
+   "reaction": "GLXCBL",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No glyoxylate carboligase is annotated in the genome."
+  },
+  {
+   "reaction": "GRTT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_02150 is the specific IspA (dimethylallyltransferase/geranyltranstransferase), but CCNA_02198 'trans-isoprenyl diphosphate synthase' is a family-level prenyltransferase annotation, which R1 does not allow removing."
+  },
+  {
+   "reaction": "GTPCI",
+   "decision": "R1",
+   "new_rule": "CCNA_00491",
+   "evidence": "CCNA_00491 'GTP cyclohydrolase I' (FolE, the only one annotated) catalyses this step; CCNA_02737 is QueF, NADPH-dependent 7-cyano-7-deazaguanine reductase (EC 1.7.1.13), a different activity of the same T-fold superfamily."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two annotated carbonic anhydrases (CCNA_03684, CCNA_03687) plus a spontaneous route: same-name paralogs."
+  },
+  {
+   "reaction": "HEX1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_01870 is a NagC/ROK-family transcriptional regulator, not a catalyst, but two more annotated glucokinases lie outside this rule (CCNA_02549, CCNA_03269), so making CCNA_02133 the sole HEX1 gene would ignore likely redundancy."
+  },
+  {
+   "reaction": "HEX7",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_01192 'sugar kinase' (RefSeq fructokinase) and CCNA_02549 ROK-family glucokinase are both hexose kinases, and another fructokinase (CCNA_03849) lies outside the rule; removal is not clear-cut."
+  },
+  {
+   "reaction": "HISTP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_03850 is a monofunctional 196-aa imidazoleglycerol-phosphate dehydratase (no HAD phosphatase domain), but the only remaining gene CCNA_02335 has a generic 'inositol monophosphatase family protein' annotation, so R1 is not permitted."
+  },
+  {
+   "reaction": "HSERTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_03309 and CCNA_00559 are same-name homoserine O-acetyltransferases (the latter already AND-joined with MetW CCNA_00558); no permitted change."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "R1",
+   "new_rule": "CCNA_03471",
+   "evidence": "CCNA_03471 '4-hydroxy-3-methylbut-2-enyl diphosphate reductase' (IspH, the only one in the genome) catalyses this step; CCNA_03702 is SSU ribosomal protein S1, a translation protein."
+  },
+  {
+   "reaction": "MEPCT",
+   "decision": "R6",
+   "new_rule": "CCNA_01812",
+   "evidence": "CCNA_01812 '2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase/2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase' (bifunctional IspDF, 382 aa, the only IspD in the genome) names this enzyme exactly."
+  },
+  {
+   "reaction": "METB1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No cystathionine gamma-synthase is annotated; CCNA_02321 'O-succinylhomoserine sulfhydrylase' (MetZ) does direct sulfhydrylation with sulfide, a different reaction, and CCNA_01491 is cystathionine beta-lyase."
+  },
+  {
+   "reaction": "PGCD",
+   "decision": "R1",
+   "new_rule": "CCNA_03322",
+   "evidence": "CCNA_03322 'D-3-phosphoglycerate dehydrogenase' (526-aa SerA, adjacent to phosphoserine aminotransferase CCNA_03323) catalyses this step; CCNA_02230 'gluconate 2-dehydrogenase' (RefSeq hydroxy(phenyl)pyruvate reductase) is a D-2-hydroxyacid dehydrogenase with a different EC and non-phosphorylated substrates."
+  },
+  {
+   "reaction": "PGMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_02181 'phosphatase/phosphohexomutase family protein' is a family-level HAD annotation, which R1 forbids removing."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Six broad-specificity aminotransferases (aspartate, histidinol-phosphate, branched-chain, ARO8-family); redundancy is plausible."
+  },
+  {
+   "reaction": "PLPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No PdxS/PdxT (Pdx1/Pdx2) pyridoxal 5'-phosphate synthase is annotated; the genome encodes the DXP-dependent route (pdxJ CCNA_01626)."
+  },
+  {
+   "reaction": "PMDPHT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No specific 5-amino-6-(5-phosphoribitylamino)uracil phosphatase is annotated; only generic HAD and phosphatase-family proteins."
+  },
+  {
+   "reaction": "PPNDH",
+   "decision": "R1",
+   "new_rule": "CCNA_03028",
+   "evidence": "CCNA_03028 'prephenate dehydratase' (283-aa monofunctional PheA, the only one annotated) catalyses this step; CCNA_02305 'chorismate mutase-family protein' (upstream of hisC/tyrA) is a chorismate mutase (EC 5.4.99.5) with no annotated dehydratase domain."
+  },
+  {
+   "reaction": "PRAGSr",
+   "decision": "R1",
+   "new_rule": "CCNA_00299",
+   "evidence": "CCNA_00299 'phosphoribosylamine--glycine ligase' (PurD) catalyses this step; CCNA_01775 is phosphoribosylformylglycinamidine cyclo-ligase (PurM, EC 6.3.3.1), a different purine-pathway reaction."
+  },
+  {
+   "reaction": "PRASCSi",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two annotated phosphoribosylaminoimidazole-succinocarboxamide synthases (CCNA_02576, CCNA_03351): same-name paralogs."
+  },
+  {
+   "reaction": "PSP_L",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_02040 and CCNA_02182 are both annotated phosphoserine phosphatase (same-name paralogs)."
+  },
+  {
+   "reaction": "RAFFtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are cytoplasmic enzymes (CCNA_01018 D-galactose 1-dehydrogenase, CCNA_02549 glucokinase) listed for an outer-membrane diffusion step, but removing them would leave no gene, and R1 may not leave an empty or generic-only rule."
+  },
+  {
+   "reaction": "RAFHpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No invertase, beta-fructofuranosidase or raffinose hydrolase is annotated; amylosucrase CCNA_01193 is a glucansucrase, not this reaction."
+  },
+  {
+   "reaction": "RBFK",
+   "decision": "R1",
+   "new_rule": "CCNA_00740",
+   "evidence": "CCNA_00740 'riboflavin kinase/FMN adenylyltransferase' (RibF, the only one annotated) catalyses this kinase step; CCNA_02181 is a HAD-family phosphatase/phosphohexomutase, a hydrolase with a different activity (EC 3.1.3.x)."
+  },
+  {
+   "reaction": "RBFSa",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "This lumazine synthase step has two same-name lumazine synthase paralogs (CCNA_01421, and CCNA_00932 AND-joined to riboflavin synthase alpha CCNA_00930); no permitted change."
+  },
+  {
+   "reaction": "RNDR1",
+   "decision": "R1",
+   "new_rule": "CCNA_00261 and CCNA_03607",
+   "evidence": "Class Ia ribonucleotide reductase = alpha chain CCNA_03607 + beta chain CCNA_00261 (already AND-joined); thioredoxin CCNA_03653 is the electron-donor cosubstrate (trdrd_c in the equation), not a catalyst, so it is removed as a stand-alone alternative (the class II RNR CCNA_01966 needs B12, and the genome lacks de novo cobalamin synthesis)."
+  },
+  {
+   "reaction": "RNDR2",
+   "decision": "R1",
+   "new_rule": "CCNA_00261 and CCNA_03607",
+   "evidence": "Class Ia ribonucleotide reductase = alpha chain CCNA_03607 + beta chain CCNA_00261 (already AND-joined); thioredoxin CCNA_03653 is the electron-donor cosubstrate (trdrd_c in the equation), not a catalyst, so it is removed as a stand-alone alternative (the class II RNR CCNA_01966 needs B12, and the genome lacks de novo cobalamin synthesis)."
+  },
+  {
+   "reaction": "RNDR3",
+   "decision": "R1",
+   "new_rule": "CCNA_00261 and CCNA_03607",
+   "evidence": "Class Ia ribonucleotide reductase = alpha chain CCNA_03607 + beta chain CCNA_00261 (already AND-joined); thioredoxin CCNA_03653 is the electron-donor cosubstrate (trdrd_c in the equation), not a catalyst, so it is removed as a stand-alone alternative (the class II RNR CCNA_01966 needs B12, and the genome lacks de novo cobalamin synthesis)."
+  },
+  {
+   "reaction": "RNDR4",
+   "decision": "R1",
+   "new_rule": "CCNA_00261 and CCNA_03607",
+   "evidence": "Class Ia ribonucleotide reductase = alpha chain CCNA_03607 + beta chain CCNA_00261 (already AND-joined); thioredoxin CCNA_03653 is the electron-donor cosubstrate (trdrd_c in the equation), not a catalyst, so it is removed as a stand-alone alternative (the class II RNR CCNA_01966 needs B12, and the genome lacks de novo cobalamin synthesis)."
+  },
+  {
+   "reaction": "SERAT",
+   "decision": "R1",
+   "new_rule": "CCNA_02734",
+   "evidence": "CCNA_02734 'serine acetyltransferase' (CysE, the only one annotated) catalyses this step; CCNA_01935 is a 118-aa FeS assembly SUF system protein in the sufBCDS cluster, not an acetyltransferase."
+  },
+  {
+   "reaction": "SO4tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; CCNA_03337 (Pal lipoprotein) is not a porin, but removing it would leave only the generic 'outer membrane protein' CCNA_00201, which R1 forbids."
+  },
+  {
+   "reaction": "SUCCt2r",
+   "decision": "R6",
+   "new_rule": "CCNA_00264 or CCNA_00664",
+   "evidence": "CCNA_00264 and CCNA_00664 are both annotated 'C4-dicarboxylate transport protein' (417-aa DctA-type H+/C4-dicarboxylate symporters), the specific succinate-proton symporters; assigned as OR alternatives."
+  },
+  {
+   "reaction": "TPI",
+   "decision": "R1",
+   "new_rule": "CCNA_01970",
+   "evidence": "CCNA_01970 'triosephosphate isomerase' (the only TPI annotated) catalyses this step; CCNA_03359 is phosphoglycerate kinase (EC 2.7.2.3), a different glycolytic enzyme."
+  },
+  {
+   "reaction": "TRDR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_03013 AhpF is a TrxR-like flavoprotein disulfide reductase whose activity overlaps this reaction, and the thioredoxin inside the AND complex cannot be changed with R1 or R2; abstain."
+  },
+  {
+   "reaction": "UAGDP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_02389 GlmU is the specific uridylyltransferase, but CCNA_01210 ('nucleotidyltransferase family protein') and CCNA_03650 (MurU/ManC-like sugar-1-phosphate nucleotidyltransferase) are family-compatible, which R1 forbids removing."
+  },
+  {
+   "reaction": "UDPG4E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CCNA_02993 'NADH-ubiquinone oxidoreductase' is not an epimerase, but a second annotated UDP-glucose 4-epimerase (CCNA_00090) lies outside the rule, so making CCNA_02466 the sole gene would ignore likely redundancy."
+  },
+  {
+   "reaction": "UGLT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No galactose-1-phosphate uridylyltransferase (GalT) is annotated; CCNA_03752 is UTP-glucose-1-phosphate uridylyltransferase (GalU), a different reaction."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "CCNA_01998",
+   "evidence": "CCNA_01998 'uridylate kinase' (PyrH, in the frr-pyrH-tsf-rpsB cluster) is the bacterial UMP kinase; CCNA_03703 'cytidylate kinase' (Cmk, EC 2.7.4.25) is an NMP kinase with a different specificity."
+  }
+ ]
+}
