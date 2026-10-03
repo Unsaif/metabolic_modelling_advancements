@@ -1,0 +1,36 @@
+{
+ "retrieved": "2026-10-03T08:06:03.353Z",
+ "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi (db=protein, rettype=fasta, POST, 200 ids per request)",
+ "files": {
+  "data/genpept_panel/Cola_model_proteins.faa": {
+   "n_accessions_requested": 720,
+   "n_records": 720,
+   "sha256": "89a6c9d0b304b3e37577b8b4b3101c22d5646e20f10602581c0717db35485ee9"
+  },
+  "data/genpept_panel/Dino_model_proteins.faa": {
+   "n_accessions_requested": 855,
+   "n_records": 855,
+   "sha256": "750f06918e50ba645d823a46abb94148f2c1e65cb67991d046dcb6c9c4f27dc0"
+  },
+  "data/genpept_panel/Dyella79_model_proteins.faa": {
+   "n_accessions_requested": 781,
+   "n_records": 781,
+   "sha256": "dfe338f6f18beca98d02843867c082761497ce1dd2a6f02ab4e7ab5cf4201312"
+  },
+  "data/genpept_panel/MycoTube_model_proteins.faa": {
+   "n_accessions_requested": 794,
+   "n_records": 794,
+   "sha256": "5697f99959ae93ef0b0bfb9adcde39333ef36e674d410f631670048d0e20be33"
+  },
+  "data/genpept_panel/PS_model_proteins.faa": {
+   "n_accessions_requested": 761,
+   "n_records": 761,
+   "sha256": "f32c2b49996da5e26eaeed669d7d98b52364fa94b707773b2bba25a3731a29cc"
+  },
+  "data/genpept_panel/RPal_CGA009_model_proteins.faa": {
+   "n_accessions_requested": 945,
+   "n_records": 945,
+   "sha256": "e7751521718608a46ac309d82352f1e3f04bf4c3c3058f12c0982899c082423c"
+  }
+ }
+}

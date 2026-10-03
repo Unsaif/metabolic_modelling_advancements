@@ -194,6 +194,48 @@
    "http_status": 200,
    "chars": 436515,
    "sha256": "6f84acf5f0196196a2b7d6998885690024f97342aa89746544c26ae67e3f4038"
+  },
+  "Cola/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=Cola",
+   "http_status": 200,
+   "chars": 1925815,
+   "sha256": "31cf408f80dadb955958cae50783f99e0a1ea1f0ff05d04035f0ad9661d5043f",
+   "retrieved": "2026-10-03T08:03:14.349Z"
+  },
+  "Dino/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=Dino",
+   "http_status": 200,
+   "chars": 1617503,
+   "sha256": "b28cd23a8d6101ae7dd86438def09f4d8fc5e3db204886a86e278d2b888f7fd1",
+   "retrieved": "2026-10-03T08:03:14.349Z"
+  },
+  "Dyella79/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=Dyella79",
+   "http_status": 200,
+   "chars": 1802814,
+   "sha256": "0a83b01f82e74766eed95fc4976d288fb7275695deb67bf7e5aeffe2536e2276",
+   "retrieved": "2026-10-03T08:03:14.349Z"
+  },
+  "MycoTube/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=MycoTube",
+   "http_status": 200,
+   "chars": 1633913,
+   "sha256": "7c2ff217a10bd1293fe1ee4601b891bb5030c50bcf11cf3fcc34810cf4a43f61",
+   "retrieved": "2026-10-03T08:03:14.349Z"
+  },
+  "PS/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=PS",
+   "http_status": 200,
+   "chars": 1356069,
+   "sha256": "e3cef3abe7b82cc13cabb11c68aa3fc6023c2eb999d4ccaf41939dec706ec6eb",
+   "retrieved": "2026-10-03T08:03:14.349Z"
+  },
+  "RPal_CGA009/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=RPal_CGA009",
+   "http_status": 200,
+   "chars": 1925717,
+   "sha256": "9a8106ca6f204df6890e7ed1824d007892162fcb9f2878fc1e6588bb79bfb318",
+   "retrieved": "2026-10-03T08:03:14.349Z"
   }
  }
 }

@@ -1,0 +1,60 @@
+{
+ "Cola": {
+  "model_proteins": 720,
+  "fitness_browser_proteins": 4625,
+  "tiers": {
+   "exact": 686,
+   "contained": 23,
+   "unmatched": 11
+  }
+ },
+ "Dino": {
+  "model_proteins": 855,
+  "fitness_browser_proteins": 4192,
+  "tiers": {
+   "exact": 784,
+   "ambiguous_exact": 10,
+   "ambiguous_fuzzy": 1,
+   "unmatched": 26,
+   "contained": 34
+  }
+ },
+ "Dyella79": {
+  "model_proteins": 781,
+  "fitness_browser_proteins": 4375,
+  "tiers": {
+   "exact": 716,
+   "unmatched": 33,
+   "contained": 31,
+   "ambiguous_exact": 1
+  }
+ },
+ "MycoTube": {
+  "model_proteins": 794,
+  "fitness_browser_proteins": 4029,
+  "tiers": {
+   "exact": 458,
+   "near_identical": 336
+  }
+ },
+ "PS": {
+  "model_proteins": 761,
+  "fitness_browser_proteins": 3443,
+  "tiers": {
+   "exact": 719,
+   "ambiguous_exact": 1,
+   "contained": 23,
+   "unmatched": 18
+  }
+ },
+ "RPal_CGA009": {
+  "model_proteins": 945,
+  "fitness_browser_proteins": 4916,
+  "tiers": {
+   "exact": 894,
+   "unmatched": 20,
+   "contained": 30,
+   "ambiguous_exact": 1
+  }
+ }
+}
