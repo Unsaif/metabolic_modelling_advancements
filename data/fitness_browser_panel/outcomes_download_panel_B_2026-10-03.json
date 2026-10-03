@@ -1,0 +1,40 @@
+{
+ "note": "First download of panel B fitness tables (transfer v1 replication), after the inputs freeze results/study_freezes/transfer_v1_inputs_panel_B.json (created 2026-10-03T13:06:21Z). Fetched in the Claude desktop browser pane and staged unchanged; sha256 computed in the browser before saving and verified here. Miya (not evaluable) was not downloaded.",
+ "files": {
+  "data/fitness_browser_panel/Caulo/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=Caulo",
+   "sha256": "877396fb516d78d1aba2d92beda030a3c5bdd506e5e3bdb1855f23dea00b85da",
+   "bytes": 4469934,
+   "fetch_started": "2026-10-03T13:07:00.845Z",
+   "fetch_finished": "2026-10-03T13:07:03.437Z"
+  },
+  "data/fitness_browser_panel/Cup4G11/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=Cup4G11",
+   "sha256": "a438c2b621463d27c365043c455a6414050ef2cbd1c8e64bff8743c2f86f9ad4",
+   "bytes": 5891598,
+   "fetch_started": "2026-10-03T13:07:04.939Z",
+   "fetch_finished": "2026-10-03T13:07:07.938Z"
+  },
+  "data/fitness_browser_panel/Marino/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=Marino",
+   "sha256": "9773c1739c8a9d46b2232f06b46066bcfbdd8e56a341879169d17aefe355864c",
+   "bytes": 6292648,
+   "fetch_started": "2026-10-03T13:07:09.440Z",
+   "fetch_finished": "2026-10-03T13:07:12.478Z"
+  },
+  "data/fitness_browser_panel/PV4/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=PV4",
+   "sha256": "affbb46f471d0b8e739c2ee42ee66f9f3a0824bbe237a90b8394a3dad4fc810c",
+   "bytes": 3330464,
+   "fetch_started": "2026-10-03T13:07:13.980Z",
+   "fetch_finished": "2026-10-03T13:07:15.896Z"
+  },
+  "data/fitness_browser_panel/SB2B/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=SB2B",
+   "sha256": "295edb3e338c8739ff1e08566aa2421911baf7486bfa77d2aa8942a65a75faeb",
+   "bytes": 4077466,
+   "fetch_started": "2026-10-03T13:07:17.399Z",
+   "fetch_finished": "2026-10-03T13:07:19.691Z"
+  }
+ }
+}
