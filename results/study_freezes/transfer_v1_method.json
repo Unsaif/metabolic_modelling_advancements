@@ -1,0 +1,1231 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-10-03T09:40:45Z",
+  "plan": {
+    "candidate_exposure": {
+      "custody": "Self-custodied. Claude (Opus 5.5, in Tim Hulshof's project) designed the method, prepares the inputs and will run the evaluation; no external custodian. Separation rests on recorded order: this method freeze (git commit + Claude project record), then panel A inputs (media, carbon sources, base models, adjudication packets and decisions) and an inputs freeze, then the first download of panel A fitness tables.",
+      "evidence_paths": [
+        "data/fitness_browser_panel/metadata_manifest_2026-10-03.json",
+        "data/studies/independent_panel_eligibility_v1.json",
+        "data/studies/independent_panel_v1/panel_selection.json"
+      ],
+      "uninspected_evidence": "No fitness table (fit_logratios, fit_t) of any panel A or panel B organism has been downloaded; the panel metadata manifest lists every file downloaded for them (experiment and gene metadata, protein sequences). Panel A condition names have not been read; only scripts printing counts, medium names and the aerobic flag have touched the experiment tables. Training exposure of the model to published phenotypes of these organisms is unknown."
+    },
+    "decision_rule": "Supported if the mean difference is positive and the organism-bootstrap 95% interval excludes zero; not supported if the mean is zero or negative; inconclusive otherwise. Every organism and every arm is reported, including failures.",
+    "declared_values": {
+      "carveme_universe_path": "external/carveme/universe_bacteria.xml.gz (outside the freeze root; hash recorded here and in every base-model record)",
+      "carveme_universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+      "embl_gems_commit": "260d0f133802adbc151de4d7b14fb34722e1d9f4",
+      "feba_commit": "803273865ea9e83fab770ec4f13670db80e1180b",
+      "fixed_protocol": {
+        "carbon_uptake": -10.0,
+        "complete_medium_transport": true,
+        "drop_rich_medium_essentials": false,
+        "fitness_threshold": -2.0,
+        "gene_bootstrap": 1000,
+        "growth_threshold": 0.001,
+        "organism_bootstrap": 10000,
+        "seed": 0,
+        "solver": "glpk"
+      }
+    },
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_organisms": [
+      "Cola",
+      "Dino",
+      "Dyella79",
+      "MycoTube",
+      "PS",
+      "RPal_CGA009"
+    ],
+    "evaluation_role": "prospective_self_custodied",
+    "paths": [
+      "data/fitness_browser_panel/Cola/experiments.tsv",
+      "data/fitness_browser_panel/Cola/genes.tsv",
+      "data/fitness_browser_panel/Cola/proteins.faa",
+      "data/fitness_browser_panel/Dino/experiments.tsv",
+      "data/fitness_browser_panel/Dino/genes.tsv",
+      "data/fitness_browser_panel/Dino/proteins.faa",
+      "data/fitness_browser_panel/Dyella79/experiments.tsv",
+      "data/fitness_browser_panel/Dyella79/genes.tsv",
+      "data/fitness_browser_panel/Dyella79/proteins.faa",
+      "data/fitness_browser_panel/MycoTube/experiments.tsv",
+      "data/fitness_browser_panel/MycoTube/genes.tsv",
+      "data/fitness_browser_panel/MycoTube/proteins.faa",
+      "data/fitness_browser_panel/PS/experiments.tsv",
+      "data/fitness_browser_panel/PS/genes.tsv",
+      "data/fitness_browser_panel/PS/proteins.faa",
+      "data/fitness_browser_panel/RPal_CGA009/experiments.tsv",
+      "data/fitness_browser_panel/RPal_CGA009/genes.tsv",
+      "data/fitness_browser_panel/RPal_CGA009/proteins.faa",
+      "data/fitness_browser_panel/metadata_manifest_2026-10-03.json",
+      "data/genpept_panel/Cola_genpept_map.tsv",
+      "data/genpept_panel/Cola_model_proteins.faa",
+      "data/genpept_panel/Dino_genpept_map.tsv",
+      "data/genpept_panel/Dino_model_proteins.faa",
+      "data/genpept_panel/Dyella79_genpept_map.tsv",
+      "data/genpept_panel/Dyella79_model_proteins.faa",
+      "data/genpept_panel/MANIFEST.json",
+      "data/genpept_panel/MycoTube_genpept_map.tsv",
+      "data/genpept_panel/MycoTube_model_proteins.faa",
+      "data/genpept_panel/PS_genpept_map.tsv",
+      "data/genpept_panel/PS_model_proteins.faa",
+      "data/genpept_panel/RPal_CGA009_genpept_map.tsv",
+      "data/genpept_panel/RPal_CGA009_model_proteins.faa",
+      "data/genpept_panel/mapping_summary.json",
+      "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "data/reference/fitness_browser_media_bigg.tsv",
+      "data/reference/model_patches_v0.1.json",
+      "data/reference/universe_patches_v0.1.json",
+      "data/studies/exposure_registry_v1.json",
+      "data/studies/independent_panel_eligibility_v1.json",
+      "data/studies/independent_panel_v1/eligibility_counts.json",
+      "data/studies/independent_panel_v1/embl_model_list_260d0f1.tsv",
+      "data/studies/independent_panel_v1/fitness_browser_organisms_2026-10-03.tsv",
+      "data/studies/independent_panel_v1/panel_selection.json",
+      "data/studies/transfer_v1/arms.json",
+      "data/studies/transfer_v1/decisions/Btheta.json",
+      "data/studies/transfer_v1/decisions/MANIFEST_development.json",
+      "data/studies/transfer_v1/decisions/MR1.json",
+      "data/studies/transfer_v1/decisions/Putida.json",
+      "data/studies/transfer_v1/decisions/Smeli.json",
+      "data/studies/transfer_v1/feba/PROVENANCE.json",
+      "data/studies/transfer_v1/feba/media",
+      "data/studies/transfer_v1/feba/mixes",
+      "data/studies/transfer_v1/feba_component_bigg.tsv",
+      "data/studies/transfer_v1/organisms.json",
+      "data/studies/transfer_v1/packets/Btheta/candidates.json",
+      "data/studies/transfer_v1/packets/MR1/candidates.json",
+      "data/studies/transfer_v1/packets/Putida/candidates.json",
+      "data/studies/transfer_v1/packets/Smeli/candidates.json",
+      "docs/studies/evaluation-protocol-v1.md",
+      "docs/studies/transfer-adjudication-procedure-v1.md",
+      "docs/studies/transfer-adjudication-prompt-v1.txt",
+      "docs/studies/transfer-method-v1.md",
+      "gembench/__init__.py",
+      "gembench/cards.py",
+      "gembench/checks.py",
+      "gembench/comparison.py",
+      "gembench/feba_media.py",
+      "gembench/fitness_browser.py",
+      "gembench/gapfill.py",
+      "gembench/gene_mapping.py",
+      "gembench/media.py",
+      "gembench/metrics.py",
+      "gembench/patches.py",
+      "gembench/protocols/__init__.py",
+      "gembench/protocols/carbon_fitness_generic.py",
+      "gembench/study.py",
+      "gembench/transfer.py",
+      "models/embl_pinned/Btheta.xml.gz",
+      "models/embl_pinned/Cola.xml.gz",
+      "models/embl_pinned/Dino.xml.gz",
+      "models/embl_pinned/Dyella79.xml.gz",
+      "models/embl_pinned/MANIFEST.json",
+      "models/embl_pinned/MR1.xml.gz",
+      "models/embl_pinned/MycoTube.xml.gz",
+      "models/embl_pinned/PS.xml.gz",
+      "models/embl_pinned/Putida.xml.gz",
+      "models/embl_pinned/RPal_CGA009.xml.gz",
+      "models/embl_pinned/Smeli.xml.gz",
+      "models/transfer_v1/Btheta_base.json",
+      "models/transfer_v1/Btheta_base.xml.gz",
+      "models/transfer_v1/MR1_base.json",
+      "models/transfer_v1/MR1_base.xml.gz",
+      "models/transfer_v1/Putida_base.json",
+      "models/transfer_v1/Putida_base.xml.gz",
+      "models/transfer_v1/Smeli_base.json",
+      "models/transfer_v1/Smeli_base.xml.gz",
+      "requirements-audit.txt",
+      "results/transfer_v1/development/Btheta/B0/card.json",
+      "results/transfer_v1/development/Btheta/B0/matrices.npz",
+      "results/transfer_v1/development/Btheta/M/card.json",
+      "results/transfer_v1/development/Btheta/M/matrices.npz",
+      "results/transfer_v1/development/Btheta/M_R1R2/card.json",
+      "results/transfer_v1/development/Btheta/M_R1R2/matrices.npz",
+      "results/transfer_v1/development/Btheta/M_R6/card.json",
+      "results/transfer_v1/development/Btheta/M_R6/matrices.npz",
+      "results/transfer_v1/development/Btheta/U/card.json",
+      "results/transfer_v1/development/Btheta/U/matrices.npz",
+      "results/transfer_v1/development/Btheta/UN/card.json",
+      "results/transfer_v1/development/Btheta/UN/matrices.npz",
+      "results/transfer_v1/development/Btheta/UNQ/card.json",
+      "results/transfer_v1/development/Btheta/UNQ/matrices.npz",
+      "results/transfer_v1/development/Btheta/UQ/card.json",
+      "results/transfer_v1/development/Btheta/UQ/matrices.npz",
+      "results/transfer_v1/development/Btheta/Uonly_atp/card.json",
+      "results/transfer_v1/development/Btheta/Uonly_atp/matrices.npz",
+      "results/transfer_v1/development/Btheta/Uonly_rxn/card.json",
+      "results/transfer_v1/development/Btheta/Uonly_rxn/matrices.npz",
+      "results/transfer_v1/development/MR1/B0/card.json",
+      "results/transfer_v1/development/MR1/B0/matrices.npz",
+      "results/transfer_v1/development/MR1/M/card.json",
+      "results/transfer_v1/development/MR1/M/matrices.npz",
+      "results/transfer_v1/development/MR1/M_R1R2/card.json",
+      "results/transfer_v1/development/MR1/M_R1R2/matrices.npz",
+      "results/transfer_v1/development/MR1/M_R6/card.json",
+      "results/transfer_v1/development/MR1/M_R6/matrices.npz",
+      "results/transfer_v1/development/MR1/U/card.json",
+      "results/transfer_v1/development/MR1/U/matrices.npz",
+      "results/transfer_v1/development/MR1/UN/card.json",
+      "results/transfer_v1/development/MR1/UN/matrices.npz",
+      "results/transfer_v1/development/MR1/UNQ/card.json",
+      "results/transfer_v1/development/MR1/UNQ/matrices.npz",
+      "results/transfer_v1/development/MR1/UQ/card.json",
+      "results/transfer_v1/development/MR1/UQ/matrices.npz",
+      "results/transfer_v1/development/MR1/Uonly_atp/card.json",
+      "results/transfer_v1/development/MR1/Uonly_atp/matrices.npz",
+      "results/transfer_v1/development/MR1/Uonly_rxn/card.json",
+      "results/transfer_v1/development/MR1/Uonly_rxn/matrices.npz",
+      "results/transfer_v1/development/Putida/B0/card.json",
+      "results/transfer_v1/development/Putida/B0/matrices.npz",
+      "results/transfer_v1/development/Putida/M/card.json",
+      "results/transfer_v1/development/Putida/M/matrices.npz",
+      "results/transfer_v1/development/Putida/M_R1R2/card.json",
+      "results/transfer_v1/development/Putida/M_R1R2/matrices.npz",
+      "results/transfer_v1/development/Putida/M_R6/card.json",
+      "results/transfer_v1/development/Putida/M_R6/matrices.npz",
+      "results/transfer_v1/development/Putida/U/card.json",
+      "results/transfer_v1/development/Putida/U/matrices.npz",
+      "results/transfer_v1/development/Putida/UN/card.json",
+      "results/transfer_v1/development/Putida/UN/matrices.npz",
+      "results/transfer_v1/development/Putida/UNQ/card.json",
+      "results/transfer_v1/development/Putida/UNQ/matrices.npz",
+      "results/transfer_v1/development/Putida/UQ/card.json",
+      "results/transfer_v1/development/Putida/UQ/matrices.npz",
+      "results/transfer_v1/development/Putida/Uonly_atp/card.json",
+      "results/transfer_v1/development/Putida/Uonly_atp/matrices.npz",
+      "results/transfer_v1/development/Putida/Uonly_rxn/card.json",
+      "results/transfer_v1/development/Putida/Uonly_rxn/matrices.npz",
+      "results/transfer_v1/development/Smeli/B0/card.json",
+      "results/transfer_v1/development/Smeli/B0/matrices.npz",
+      "results/transfer_v1/development/Smeli/M/card.json",
+      "results/transfer_v1/development/Smeli/M/matrices.npz",
+      "results/transfer_v1/development/Smeli/M_R1R2/card.json",
+      "results/transfer_v1/development/Smeli/M_R1R2/matrices.npz",
+      "results/transfer_v1/development/Smeli/M_R6/card.json",
+      "results/transfer_v1/development/Smeli/M_R6/matrices.npz",
+      "results/transfer_v1/development/Smeli/U/card.json",
+      "results/transfer_v1/development/Smeli/U/matrices.npz",
+      "results/transfer_v1/development/Smeli/UN/card.json",
+      "results/transfer_v1/development/Smeli/UN/matrices.npz",
+      "results/transfer_v1/development/Smeli/UNQ/card.json",
+      "results/transfer_v1/development/Smeli/UNQ/matrices.npz",
+      "results/transfer_v1/development/Smeli/UQ/card.json",
+      "results/transfer_v1/development/Smeli/UQ/matrices.npz",
+      "results/transfer_v1/development/Smeli/Uonly_atp/card.json",
+      "results/transfer_v1/development/Smeli/Uonly_atp/matrices.npz",
+      "results/transfer_v1/development/Smeli/Uonly_rxn/card.json",
+      "results/transfer_v1/development/Smeli/Uonly_rxn/matrices.npz",
+      "results/transfer_v1/development/aggregate_common.json",
+      "results/transfer_v1/development/aggregate_union.json",
+      "results/transfer_v1/development/paired.json",
+      "scripts/build_panel_gene_maps.py",
+      "scripts/freeze_study.py",
+      "scripts/prepare_panel_inputs.py",
+      "scripts/run_carbon_fitness_generic.py",
+      "scripts/run_transfer_study.py",
+      "scripts/transfer_aggregate.py",
+      "scripts/transfer_candidates.py",
+      "scripts/transfer_compare.py",
+      "tests/test_study.py",
+      "tests/test_transfer.py"
+    ],
+    "primary_comparisons": [
+      "B0 -> UNQ (H1)",
+      "UNQ -> M (H2)"
+    ],
+    "primary_metric": "per-organism paired MCC difference on the union of both arms' scored genes (absent gene = no predicted effect), conditions where both wild types grow; aggregate = unweighted mean over evaluable organisms with a 10,000-resample organism bootstrap (seed 0); sign counts and exact sign test",
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "question": "Do fitness-blind, annotation-driven corrections (U') and blind AI adjudication of gene rules (M) improve EMBL GEMs draft-model predictions of carbon-source gene fitness on six organisms not used in development?",
+    "reserved_organisms": [
+      "Caulo",
+      "Cup4G11",
+      "Marino",
+      "Miya",
+      "PV4",
+      "SB2B"
+    ],
+    "schema_version": 1,
+    "study_id": "transfer-v1-method",
+    "time_ordering_note": "Frozen before any panel A input beyond gene/experiment metadata, protein sequences and gene maps was prepared, and before any panel fitness table was downloaded."
+  },
+  "files": [
+    {
+      "path": "data/fitness_browser_panel/Cola/experiments.tsv",
+      "size_bytes": 100823,
+      "sha256": "385e3241f1f3788e8095c4c3a3b9547836476ef9c9c681d5e20716152b2e6262"
+    },
+    {
+      "path": "data/fitness_browser_panel/Cola/genes.tsv",
+      "size_bytes": 441706,
+      "sha256": "f2b4f28ba755543f3fa3f917becd11de3ef93e7c6ea66a5a60dfc0565c63f3ba"
+    },
+    {
+      "path": "data/fitness_browser_panel/Cola/proteins.faa",
+      "size_bytes": 1925815,
+      "sha256": "31cf408f80dadb955958cae50783f99e0a1ea1f0ff05d04035f0ad9661d5043f"
+    },
+    {
+      "path": "data/fitness_browser_panel/Dino/experiments.tsv",
+      "size_bytes": 88832,
+      "sha256": "76ef743082a2f601aaba5e9f134192456088aae6a9f32507a6b174bc878a7f32"
+    },
+    {
+      "path": "data/fitness_browser_panel/Dino/genes.tsv",
+      "size_bytes": 368334,
+      "sha256": "9bce70d263df62f4cc72e57323e1bca0285647db59270c92b59fe20ecd7a0dc4"
+    },
+    {
+      "path": "data/fitness_browser_panel/Dino/proteins.faa",
+      "size_bytes": 1617503,
+      "sha256": "b28cd23a8d6101ae7dd86438def09f4d8fc5e3db204886a86e278d2b888f7fd1"
+    },
+    {
+      "path": "data/fitness_browser_panel/Dyella79/experiments.tsv",
+      "size_bytes": 33965,
+      "sha256": "123a07bbbdbb32e2aea20f3b539e958f16a558dfb7cefc12546cb186f132bb68"
+    },
+    {
+      "path": "data/fitness_browser_panel/Dyella79/genes.tsv",
+      "size_bytes": 445786,
+      "sha256": "f55ca716b860eee0f162ce3bd5cf2fe161605c9e190beaef24d577f754839f98"
+    },
+    {
+      "path": "data/fitness_browser_panel/Dyella79/proteins.faa",
+      "size_bytes": 1802814,
+      "sha256": "0a83b01f82e74766eed95fc4976d288fb7275695deb67bf7e5aeffe2536e2276"
+    },
+    {
+      "path": "data/fitness_browser_panel/MycoTube/experiments.tsv",
+      "size_bytes": 95672,
+      "sha256": "98f0d579e881542d259e326a270b52ab035ca868612774bd2b48befbcf34566a"
+    },
+    {
+      "path": "data/fitness_browser_panel/MycoTube/genes.tsv",
+      "size_bytes": 366568,
+      "sha256": "aa96b2629e10c6949fa93f2c53bbb48453259d846d1c2e4ef6962e8840deb584"
+    },
+    {
+      "path": "data/fitness_browser_panel/MycoTube/proteins.faa",
+      "size_bytes": 1633913,
+      "sha256": "7c2ff217a10bd1293fe1ee4601b891bb5030c50bcf11cf3fcc34810cf4a43f61"
+    },
+    {
+      "path": "data/fitness_browser_panel/PS/experiments.tsv",
+      "size_bytes": 37292,
+      "sha256": "8e85ccf248042233f44e1dd9eb4ddc6cefd257c555364a1283c20afbead2e767"
+    },
+    {
+      "path": "data/fitness_browser_panel/PS/genes.tsv",
+      "size_bytes": 298104,
+      "sha256": "f93662370de8760195c222a34d4fc56ab8bc035781c835bd7c3b429e1d5da60e"
+    },
+    {
+      "path": "data/fitness_browser_panel/PS/proteins.faa",
+      "size_bytes": 1356069,
+      "sha256": "e3cef3abe7b82cc13cabb11c68aa3fc6023c2eb999d4ccaf41939dec706ec6eb"
+    },
+    {
+      "path": "data/fitness_browser_panel/RPal_CGA009/experiments.tsv",
+      "size_bytes": 113926,
+      "sha256": "b71fdc884977a3b51dbf41aa1c5fe85339daf9ca18e709fd378489c3acbbb394"
+    },
+    {
+      "path": "data/fitness_browser_panel/RPal_CGA009/genes.tsv",
+      "size_bytes": 429850,
+      "sha256": "b84e5d0c7be9a54250ab53f2413f0fe02bf759d2e94322aa22f4b20000bcdbe2"
+    },
+    {
+      "path": "data/fitness_browser_panel/RPal_CGA009/proteins.faa",
+      "size_bytes": 1925717,
+      "sha256": "9a8106ca6f204df6890e7ed1824d007892162fcb9f2878fc1e6588bb79bfb318"
+    },
+    {
+      "path": "data/fitness_browser_panel/metadata_manifest_2026-10-03.json",
+      "size_bytes": 9426,
+      "sha256": "6c88cdbd47c2909360fd6fad61a41914b31698b3a2d4f45a04c5730688660142"
+    },
+    {
+      "path": "data/genpept_panel/Cola_genpept_map.tsv",
+      "size_bytes": 65347,
+      "sha256": "8ad82800fd8270ab301544a91baba98449aaff4589c8ee3300b165a3bc734870"
+    },
+    {
+      "path": "data/genpept_panel/Cola_model_proteins.faa",
+      "size_bytes": 344288,
+      "sha256": "89a6c9d0b304b3e37577b8b4b3101c22d5646e20f10602581c0717db35485ee9"
+    },
+    {
+      "path": "data/genpept_panel/Dino_genpept_map.tsv",
+      "size_bytes": 74597,
+      "sha256": "0342cad27e65fb40592f29a84ac5913576ffdab901bda3b74890f8b1756e8305"
+    },
+    {
+      "path": "data/genpept_panel/Dino_model_proteins.faa",
+      "size_bytes": 404117,
+      "sha256": "750f06918e50ba645d823a46abb94148f2c1e65cb67991d046dcb6c9c4f27dc0"
+    },
+    {
+      "path": "data/genpept_panel/Dyella79_genpept_map.tsv",
+      "size_bytes": 60938,
+      "sha256": "b26dc93d9ba08112e2a075be324ca3e1929c394855316085e2ab75aa3a2aeff8"
+    },
+    {
+      "path": "data/genpept_panel/Dyella79_model_proteins.faa",
+      "size_bytes": 378804,
+      "sha256": "dfe338f6f18beca98d02843867c082761497ce1dd2a6f02ab4e7ab5cf4201312"
+    },
+    {
+      "path": "data/genpept_panel/MANIFEST.json",
+      "size_bytes": 1339,
+      "sha256": "7531d9bba0b933882fc246116dcd9407eedfc05ad182e2a561e9f67c5ba0e986"
+    },
+    {
+      "path": "data/genpept_panel/MycoTube_genpept_map.tsv",
+      "size_bytes": 73708,
+      "sha256": "ebc9e9eb5030ad39534effcdf1344ec87805f978e0feed5d793d45cdb7b7ce34"
+    },
+    {
+      "path": "data/genpept_panel/MycoTube_model_proteins.faa",
+      "size_bytes": 401463,
+      "sha256": "5697f99959ae93ef0b0bfb9adcde39333ef36e674d410f631670048d0e20be33"
+    },
+    {
+      "path": "data/genpept_panel/PS_genpept_map.tsv",
+      "size_bytes": 58908,
+      "sha256": "bcd9bf11a96bb22946097ea240304b092863820173d0f919524ea702eedbf2cc"
+    },
+    {
+      "path": "data/genpept_panel/PS_model_proteins.faa",
+      "size_bytes": 350609,
+      "sha256": "f32c2b49996da5e26eaeed669d7d98b52364fa94b707773b2bba25a3731a29cc"
+    },
+    {
+      "path": "data/genpept_panel/RPal_CGA009_genpept_map.tsv",
+      "size_bytes": 89710,
+      "sha256": "a3befee0b36f357eaa0860833a12f322db766527b805c2c46b427dfbfc4476da"
+    },
+    {
+      "path": "data/genpept_panel/RPal_CGA009_model_proteins.faa",
+      "size_bytes": 451192,
+      "sha256": "e7751521718608a46ac309d82352f1e3f04bf4c3c3058f12c0982899c082423c"
+    },
+    {
+      "path": "data/genpept_panel/mapping_summary.json",
+      "size_bytes": 1021,
+      "sha256": "6867513c09b257e9b7fcca3cf535bb4564205078bc01e58ab6d2fb0f526cb426"
+    },
+    {
+      "path": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+      "size_bytes": 5499,
+      "sha256": "43ed695ca0201e778bc738d2d582dad7e7a498b64d5ccf64c3b496be686e4da4"
+    },
+    {
+      "path": "data/reference/fitness_browser_media_bigg.tsv",
+      "size_bytes": 3452,
+      "sha256": "5bad04fcce4450b1a985b5888aa36159115b3448420e8dc44a4cc60886301b2d"
+    },
+    {
+      "path": "data/reference/model_patches_v0.1.json",
+      "size_bytes": 6068,
+      "sha256": "cf2ac083b289c3e1a08a24c2aca997742c7d004743db508fdd3a6b77448d99ca"
+    },
+    {
+      "path": "data/reference/universe_patches_v0.1.json",
+      "size_bytes": 7146,
+      "sha256": "3e2c2e8ba94617ba5f1a3c291f2a2d2fe3652df7374c3d5c8d2acec24f153ffe"
+    },
+    {
+      "path": "data/studies/exposure_registry_v1.json",
+      "size_bytes": 1192,
+      "sha256": "7519f099a63c95b6b5a9cdc8e14066255e72016a1c577ea92b4b231714823fc4"
+    },
+    {
+      "path": "data/studies/independent_panel_eligibility_v1.json",
+      "size_bytes": 3347,
+      "sha256": "a58b3dc356b8eb2f910a9c0548f301148f84323c1bd04fde0a5f7e5aaac4ef0e"
+    },
+    {
+      "path": "data/studies/independent_panel_v1/eligibility_counts.json",
+      "size_bytes": 3349,
+      "sha256": "801a2feaeed1949a9784ee004583b43d76474d89ea5bb6dbd02da96b21cd1dcf"
+    },
+    {
+      "path": "data/studies/independent_panel_v1/embl_model_list_260d0f1.tsv",
+      "size_bytes": 732267,
+      "sha256": "721acc2404b482eb29cbe93fce8845ec7713e41010cd92c542d74a69476f328b"
+    },
+    {
+      "path": "data/studies/independent_panel_v1/fitness_browser_organisms_2026-10-03.tsv",
+      "size_bytes": 5368,
+      "sha256": "3eae3fe36550b9ec2d5d775786b3ede56cafa57d17051ee831faca16d49f68ab"
+    },
+    {
+      "path": "data/studies/independent_panel_v1/panel_selection.json",
+      "size_bytes": 5105,
+      "sha256": "084b1bd3f4d7ad0a7a8f96f93aca17cba02902af95b36bc751b05099ee6b4b08"
+    },
+    {
+      "path": "data/studies/transfer_v1/arms.json",
+      "size_bytes": 2047,
+      "sha256": "29b7efec739d268a0fd3ddb4c696b19a94c4097d7c82f82d57084c510f983366"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Btheta.json",
+      "size_bytes": 20459,
+      "sha256": "5b40cfdcb18c5eb070ee56e5b2e235d22a0dc2b5318ea9ea2e01c2552bb1702c"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/MANIFEST_development.json",
+      "size_bytes": 2577,
+      "sha256": "65de61ac52da2f337e3914324a2a8c0599e9467dfc4303cdf54c013d4876a119"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/MR1.json",
+      "size_bytes": 13635,
+      "sha256": "8ef7a887d50d3f8cdc47e13ba43b4e35ea5548e2fb52d1ec51c7b714e1f23151"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Putida.json",
+      "size_bytes": 27003,
+      "sha256": "6e8ae0759717928c0ec33275e0a099cde1320484b5047acdb0481f7f27d768c1"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Smeli.json",
+      "size_bytes": 19778,
+      "sha256": "d7ed77033c1455f9ef895846e9082b393246c3eb825d0c897bb4b1cef82e1a7c"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba/PROVENANCE.json",
+      "size_bytes": 556,
+      "sha256": "7a740377c9a5d1543b4fc2ed9fcea36225d31d9a2fe1ada20cae9262a85f738e"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba/media",
+      "size_bytes": 165152,
+      "sha256": "a15dc82b1cbb0ae2c1a9a5d4b4d83b80364da1fc9a55b6ff1357d7988ce14848"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba/mixes",
+      "size_bytes": 46523,
+      "sha256": "b10abf37b8ea1774feb90e93541ad8f895e6cb2a08ac0cfb70c0266530a518e4"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba_component_bigg.tsv",
+      "size_bytes": 4044,
+      "sha256": "ea9f59f3e93c98b57679e41295936dbe10c96d9fe7ee31b7b598ace12de4e517"
+    },
+    {
+      "path": "data/studies/transfer_v1/organisms.json",
+      "size_bytes": 1341,
+      "sha256": "eaf336da5c549d06f1c5058518b585ba448d22369bda26e624a43bde1ec03d76"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/Btheta/candidates.json",
+      "size_bytes": 95376,
+      "sha256": "c4f30ac9a4a86f0ab03c79be3c49f66f8a82e22ceaa82cbb225ee055c38cfeca"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/MR1/candidates.json",
+      "size_bytes": 88012,
+      "sha256": "00ef8dc0c0a944f98e2947904cf566d94b7ee81d58a963469281e01f040e7b2c"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/Putida/candidates.json",
+      "size_bytes": 207660,
+      "sha256": "ca69f70cfeb8bed6250bdbf17420b7ed9316f7121eea798eeaafe348749f38e6"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/Smeli/candidates.json",
+      "size_bytes": 151425,
+      "sha256": "5eaa37707ccbf75198349c094e488c61cdaa0c35166ffbc3c8a01e8e6f6b7c86"
+    },
+    {
+      "path": "docs/studies/evaluation-protocol-v1.md",
+      "size_bytes": 7026,
+      "sha256": "dab9ebd9fb489e873997066f46c1e81c027de5635810bb2fa1992834640eeaf2"
+    },
+    {
+      "path": "docs/studies/transfer-adjudication-procedure-v1.md",
+      "size_bytes": 5031,
+      "sha256": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+    },
+    {
+      "path": "docs/studies/transfer-adjudication-prompt-v1.txt",
+      "size_bytes": 1243,
+      "sha256": "f06bdce972a3300b58dcb5b57ac0300e70cdc03959e1baa33c7cf5bffacc00f1"
+    },
+    {
+      "path": "docs/studies/transfer-method-v1.md",
+      "size_bytes": 18305,
+      "sha256": "c975ba06aa7c7ff4f8cd94fbe8bf38dcfff9ddefb05e9472ff67269c8c84a739"
+    },
+    {
+      "path": "gembench/__init__.py",
+      "size_bytes": 368,
+      "sha256": "7787cad46f04a856e72e347c0c61a58c384abf64fa5e0dfc136e3aaea4052af9"
+    },
+    {
+      "path": "gembench/cards.py",
+      "size_bytes": 6172,
+      "sha256": "a198bc01c3265bbfabb855a1ded5882d84ba63ceeeda2c47a052f03ad8b55b5d"
+    },
+    {
+      "path": "gembench/checks.py",
+      "size_bytes": 2761,
+      "sha256": "0c1bcb3ed1b55379533374bc5d481247dbf9c40a01efb9a495fb92d3a356a51a"
+    },
+    {
+      "path": "gembench/comparison.py",
+      "size_bytes": 4052,
+      "sha256": "74657beedd6f4d2e4925cb5be211b0be48abc323998a29141d2bf5b73c0a52c8"
+    },
+    {
+      "path": "gembench/feba_media.py",
+      "size_bytes": 8455,
+      "sha256": "e71f93a5f3ff39651ea7ffa881bec05592d90e8300735f6bf78bb48291f8d41c"
+    },
+    {
+      "path": "gembench/fitness_browser.py",
+      "size_bytes": 8512,
+      "sha256": "b498474ac47978decdf1460f8bf3c600add65b74c9fe28afd336e79b65d7a60c"
+    },
+    {
+      "path": "gembench/gapfill.py",
+      "size_bytes": 13625,
+      "sha256": "eaf202021dbc1f0d2a76668f5da11e992d7b0a374c264dd056866b448165ab63"
+    },
+    {
+      "path": "gembench/gene_mapping.py",
+      "size_bytes": 4495,
+      "sha256": "e897a6f781fb377710cd7713fe46bcc51c191ecb027156a76099de6b74238cb2"
+    },
+    {
+      "path": "gembench/media.py",
+      "size_bytes": 2920,
+      "sha256": "cbd602469855cc3cf4bb849e8c3703dd0375d903cb87dcb60fd5bee63e9356fe"
+    },
+    {
+      "path": "gembench/metrics.py",
+      "size_bytes": 5535,
+      "sha256": "1c25993fc4f6824f33b8b0c64e357fba0276ab93a9a7fc06aaf647b3880cbee3"
+    },
+    {
+      "path": "gembench/patches.py",
+      "size_bytes": 8733,
+      "sha256": "b1a8cdd731d30b6f12d18373087c59f79573cb73b1dfa2da5d6bafc20bcf63b8"
+    },
+    {
+      "path": "gembench/protocols/__init__.py",
+      "size_bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "gembench/protocols/carbon_fitness_generic.py",
+      "size_bytes": 12798,
+      "sha256": "10a5258c621ff951184f8ca970428c854554c059510e5bba0b8c29bcd631a303"
+    },
+    {
+      "path": "gembench/study.py",
+      "size_bytes": 19203,
+      "sha256": "5ce80eadec2fa49f0466873e27c8852a764e2594b28fd9c9f16de2275d045519"
+    },
+    {
+      "path": "gembench/transfer.py",
+      "size_bytes": 18110,
+      "sha256": "8f798a635bd09885a30e23131ad1d8ba1816404c10c17edb63afa6116bf0f9e8"
+    },
+    {
+      "path": "models/embl_pinned/Btheta.xml.gz",
+      "size_bytes": 156458,
+      "sha256": "0d38cb19d7e2deba4224c12eb114ec4b9f812678284091dd6a30cb5f394cd985"
+    },
+    {
+      "path": "models/embl_pinned/Cola.xml.gz",
+      "size_bytes": 166474,
+      "sha256": "482301c55627b4186e9c305074ad03622b7abd9f7abb4af69b90c77b2ae6ee7f"
+    },
+    {
+      "path": "models/embl_pinned/Dino.xml.gz",
+      "size_bytes": 180370,
+      "sha256": "991bf8bcb2c8cc12c2c4857b9cddaeb17b003165065a7fe0b1e439745d46ce5c"
+    },
+    {
+      "path": "models/embl_pinned/Dyella79.xml.gz",
+      "size_bytes": 177793,
+      "sha256": "7a52ae165d3cd90609f4bb6cc6eab10a0da3a2e388c279cd1d687afb48af2250"
+    },
+    {
+      "path": "models/embl_pinned/MANIFEST.json",
+      "size_bytes": 3844,
+      "sha256": "5fb14de163d45b4c5a92bb65750e221ffcd95386bf89f5d8dc8a3fff5c08de7f"
+    },
+    {
+      "path": "models/embl_pinned/MR1.xml.gz",
+      "size_bytes": 196072,
+      "sha256": "591d8e5b5fdd1124a4e78a947b0ad9907398c9a64f1c4028c6dee92452f1220e"
+    },
+    {
+      "path": "models/embl_pinned/MycoTube.xml.gz",
+      "size_bytes": 146938,
+      "sha256": "c0c8fb4a6ba0233d013f8e9be6adf54a7c41983a4d0881b068140364ebc6c236"
+    },
+    {
+      "path": "models/embl_pinned/PS.xml.gz",
+      "size_bytes": 166462,
+      "sha256": "155e7234c36d20ca36d819a7a93ec9bccca75d9a62be40fd433cec8acd61f7d1"
+    },
+    {
+      "path": "models/embl_pinned/Putida.xml.gz",
+      "size_bytes": 203482,
+      "sha256": "5b69bf07cf15fdecb7cf5a6c87e35271cd94e97c7d16747aee62f4c7594fd7c1"
+    },
+    {
+      "path": "models/embl_pinned/RPal_CGA009.xml.gz",
+      "size_bytes": 196975,
+      "sha256": "1cb49f1a06b244929b4f83943d433ef641546fa36c86e54477c73a9d3ad7f32f"
+    },
+    {
+      "path": "models/embl_pinned/Smeli.xml.gz",
+      "size_bytes": 211309,
+      "sha256": "9881183f0104a2966fa81e80e471c3ab26c948ac2206911e9363da0ec2341362"
+    },
+    {
+      "path": "models/transfer_v1/Btheta_base.json",
+      "size_bytes": 1389,
+      "sha256": "91da29e20ee299103f160aaf2c3ed3affdc43037e8b6f4650a6782d5d414a09d"
+    },
+    {
+      "path": "models/transfer_v1/Btheta_base.xml.gz",
+      "size_bytes": 146627,
+      "sha256": "f4c4fd384ebd27ff390c51a2b084ca2a4662b46e9d9bdd68846f25128948a5a8"
+    },
+    {
+      "path": "models/transfer_v1/MR1_base.json",
+      "size_bytes": 1061,
+      "sha256": "bd5ef4cf82c4884e08455b910bb56f8d12eba86363aaa8dc16a944916e9b618e"
+    },
+    {
+      "path": "models/transfer_v1/MR1_base.xml.gz",
+      "size_bytes": 182975,
+      "sha256": "405850d4656d42f4c367ec1a8a247b4bdea549505974389bc0478a41eec5a69d"
+    },
+    {
+      "path": "models/transfer_v1/Putida_base.json",
+      "size_bytes": 946,
+      "sha256": "87453e0c0b352130663c748f78a921f76cc90e9ab9623fc350d190b24f8212ec"
+    },
+    {
+      "path": "models/transfer_v1/Putida_base.xml.gz",
+      "size_bytes": 189437,
+      "sha256": "d35b0827b289142b79d3fd28ce75f7df7f4d032a6d8e964e2020270f6f5ad9e2"
+    },
+    {
+      "path": "models/transfer_v1/Smeli_base.json",
+      "size_bytes": 833,
+      "sha256": "0970eb0f5c48d422e1e6e2b93586c7100d52cdf4479b8b17f3650311d7f4ca25"
+    },
+    {
+      "path": "models/transfer_v1/Smeli_base.xml.gz",
+      "size_bytes": 196437,
+      "sha256": "f2709520e35ba1dd1991b80938dfbe7c34688ac6e95178f1c314c32ab609b671"
+    },
+    {
+      "path": "requirements-audit.txt",
+      "size_bytes": 708,
+      "sha256": "f242faf03ecdd36f9dfbbc54838318556badc4cd653461460a2e3e3866b36260"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/B0/card.json",
+      "size_bytes": 6849,
+      "sha256": "3dac8f286dadfc390abe1360d34ec664f949aa260bce622d4aa1b800310f450c"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/B0/matrices.npz",
+      "size_bytes": 60763,
+      "sha256": "d3c39fed2a6bb03a64f56fcd4a0b7c6247bbec5915d5aa7f7d8988bd11b8f727"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/M/card.json",
+      "size_bytes": 19062,
+      "sha256": "cc37c0b6f99e6c1f34b85ad6209a5949b06f4df5d89b448446b98a204fc70c3b"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/M/matrices.npz",
+      "size_bytes": 63342,
+      "sha256": "f7be0cb2e7b06b32315d8a2b853b041a2240c1ca087f2fc129f56137c042cc73"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/M_R1R2/card.json",
+      "size_bytes": 17577,
+      "sha256": "87dce1e81547ea57f6a252af275551436afac200f435578f46ec88ba5138254d"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/M_R1R2/matrices.npz",
+      "size_bytes": 62228,
+      "sha256": "f93784dec002cbca3c9f21a49b7b40a4232182ff5d550de541383ad9a54a8f0a"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/M_R6/card.json",
+      "size_bytes": 16031,
+      "sha256": "822b719e7e16baf74dce3a8babb9a546f1ada7e5548801da87b68d318f76807a"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/M_R6/matrices.npz",
+      "size_bytes": 62702,
+      "sha256": "33da402a0ffcb8d8f53127557a549ebfc2f697f13af2df8ffab9fa36b854ab40"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/U/card.json",
+      "size_bytes": 8604,
+      "sha256": "be9e2f717dba8937e3ab9fb995acbf0ba037fdb406ba29ada933d5859bb2f8d2"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/U/matrices.npz",
+      "size_bytes": 60534,
+      "sha256": "a9172c50d5fac9f46b5363ac8b9364d0dc3f7a6f0f87acc22b39049ae052be2c"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/UN/card.json",
+      "size_bytes": 13909,
+      "sha256": "39c29c23195a97e469169834f213b44f8c263ef6cad3dd30c02aa9e278188b16"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/UN/matrices.npz",
+      "size_bytes": 60866,
+      "sha256": "7301d0c49cdcea80dce6bf2a9f24c8307c751f9aa187221541b0fc2ee475aa60"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/UNQ/card.json",
+      "size_bytes": 14317,
+      "sha256": "40cc7b278e88b9d294a96898f6070dd566fd398dec02000899cd70ff1cc8bcb8"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/UNQ/matrices.npz",
+      "size_bytes": 60871,
+      "sha256": "872c006668219234f9682bed26dac7fd3fe39c5b8147005b835277d97b525916"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/UQ/card.json",
+      "size_bytes": 9013,
+      "sha256": "b0c76f4defaadcaf52c5e9364da16f89b9b99405aae22b52c79ed0535e18045a"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/UQ/matrices.npz",
+      "size_bytes": 60533,
+      "sha256": "5bf36642b57709a90b1eec38d81749eff9c4144070534ee9151b222afa1880a9"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/Uonly_atp/card.json",
+      "size_bytes": 7744,
+      "sha256": "fab659448beb911ef4a3fcdcb91fb671b7157960bd1818a1bcf266c7c0284f90"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/Uonly_atp/matrices.npz",
+      "size_bytes": 59988,
+      "sha256": "f9f0cc56c1a0bab38193efbf10a1b1ae721eea7ea1f354de9d33a057fa527584"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/Uonly_rxn/card.json",
+      "size_bytes": 7189,
+      "sha256": "a7052b8d348168bbec933923c95b70aab3dd0ba2afcd10bb8031e94901dc1db3"
+    },
+    {
+      "path": "results/transfer_v1/development/Btheta/Uonly_rxn/matrices.npz",
+      "size_bytes": 61001,
+      "sha256": "07b6dd8a8fcf5db43642af810cdce2627dea5cdf5fc4d20da25b82c0b7a881ec"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/B0/card.json",
+      "size_bytes": 6427,
+      "sha256": "f3f45283c49c5eb2d57ac5cf3709eb1e0e49ee7f008d1adc18a3727e8bc4e5a2"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/B0/matrices.npz",
+      "size_bytes": 42128,
+      "sha256": "425a980c82496d4a05cca20f86d75bcda6075764a3f12ca7a9adf49652cf9143"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/M/card.json",
+      "size_bytes": 20028,
+      "sha256": "a99d3f8cd46ed0a6fbf29b271f37d73fe309a3247af48c16bc5089f251c2a219"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/M/matrices.npz",
+      "size_bytes": 45048,
+      "sha256": "ef22940be3a135b8ba3d30ca16409359b5aaedb7e4108d0c4d2f6c5e45cc7652"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/M_R1R2/card.json",
+      "size_bytes": 19395,
+      "sha256": "f5b2281e843538e1e8831501ab2e44ce27690e1d18c7bb046d725fecf461dd30"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/M_R1R2/matrices.npz",
+      "size_bytes": 44520,
+      "sha256": "d4b77a8b294b99bf8ea72f8fd778796355fcb8360396c9f2006b2c728a238f51"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/M_R6/card.json",
+      "size_bytes": 17445,
+      "sha256": "a2422efdef1b050fd226217f857ce7d74aba69d2975607007410a16bcb14c7c5"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/M_R6/matrices.npz",
+      "size_bytes": 44676,
+      "sha256": "73fa4254d67dfa7c8aa3298528f8f7c7a8cf3146a1d2369a011d8c2d59cbe5e7"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/U/card.json",
+      "size_bytes": 8216,
+      "sha256": "c86db83a7b57006502f1d4029f79bbb92a5f4b39238e1bde42ea2fa06ff0b043"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/U/matrices.npz",
+      "size_bytes": 44366,
+      "sha256": "be08b1ce064c7904780c9f06d30b4ab6411f33f2cc0298c2361ef05c2e8e45d4"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/UN/card.json",
+      "size_bytes": 16063,
+      "sha256": "700c34b4660e3f947676720ba3afc1e90d50dbca4ea9be468b99dddf9bc2a53d"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/UN/matrices.npz",
+      "size_bytes": 44546,
+      "sha256": "fd851612b9a89874530c7209c6d18adeacb6531f5efe8b321faf6a66f25ecdb6"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/UNQ/card.json",
+      "size_bytes": 16575,
+      "sha256": "4e94569c60b71204c6d82cda87b708efd9e5a95a59d48af8bc957c6d9ac4d126"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/UNQ/matrices.npz",
+      "size_bytes": 44548,
+      "sha256": "1371ef358e25e6dcd4a89ea7bad39ef0d8fad870654a5c1f6b9c97404c089a37"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/UQ/card.json",
+      "size_bytes": 8727,
+      "sha256": "04a903a0b998625596afdd97b156aa30aad440093f4e5674386af0d7aedd826c"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/UQ/matrices.npz",
+      "size_bytes": 44367,
+      "sha256": "f28574e07b2c58de5db01a21a677ce813b3c559e96931cbc7f585a0ab145fdbe"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/Uonly_atp/card.json",
+      "size_bytes": 7330,
+      "sha256": "0f5c9c1a477cc7b0d88188276d00bb2f0c5b3b8856cd77d2376ba98582ed7a5e"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/Uonly_atp/matrices.npz",
+      "size_bytes": 44248,
+      "sha256": "7428bbae9d0f525fcc8ec76971ec371677d0b0443b57b84bf137a15455b8c197"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/Uonly_rxn/card.json",
+      "size_bytes": 6803,
+      "sha256": "295883991ea8d17772f4af5189de184166e5973090442702df3ba1d290982408"
+    },
+    {
+      "path": "results/transfer_v1/development/MR1/Uonly_rxn/matrices.npz",
+      "size_bytes": 42331,
+      "sha256": "31fe977660993432bb05f19cd3b89787ce961bd8c24f2ac057da790cd24222dd"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/B0/card.json",
+      "size_bytes": 6322,
+      "sha256": "845ee95a4d51cb4d86540be8b43f278c7b37f7f60ede7b94f5e7bf7bf22210f2"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/B0/matrices.npz",
+      "size_bytes": 172181,
+      "sha256": "ec74398d2c304e35f1b79b8490125451b58904a164d1bab4fa2e8e1434cd1db6"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/M/card.json",
+      "size_bytes": 16747,
+      "sha256": "436712754aee5655a19e64c8d3fc5487cce4d57b6d6e2cbbfa4322186c52dd62"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/M/matrices.npz",
+      "size_bytes": 176021,
+      "sha256": "addfc2bc1904ca0f29add26ea1858765fffd844f7ff9edcf837e9591cd1c5bb5"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/M_R1R2/card.json",
+      "size_bytes": 15915,
+      "sha256": "8dc2db2d7cc03ed6a79be3f8f1ff7fe674a328df5ce5dd67c7471e15e28fa68e"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/M_R1R2/matrices.npz",
+      "size_bytes": 175666,
+      "sha256": "0a12ec4e7a8964058c07c666c0a4477704b22170398084cc5ec6426dcad6d4ef"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/M_R6/card.json",
+      "size_bytes": 11408,
+      "sha256": "2f384dc47ac30285d4d63df3154f9f0b26ae01390bafc3d41ccc2ce661ef87a5"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/M_R6/matrices.npz",
+      "size_bytes": 173362,
+      "sha256": "34358cf0c65e3a60574bb3812741cc3a9303554259fa8ed0649b52a53e439c01"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/U/card.json",
+      "size_bytes": 7374,
+      "sha256": "bd1d3f8113c83fc75deb6bb20b46128b29f93a59ea5f202af0af3a7bcec37eb7"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/U/matrices.npz",
+      "size_bytes": 173238,
+      "sha256": "b53abc20659ba95311bf0274ae4781e2486a9d1f2d72e1935eca4358190ca2f3"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/UN/card.json",
+      "size_bytes": 10023,
+      "sha256": "19445f18ae1a8bdf7ab73021135beed6463217ee2c5cf1abcf1b3b6dc15222ba"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/UN/matrices.npz",
+      "size_bytes": 173238,
+      "sha256": "b53abc20659ba95311bf0274ae4781e2486a9d1f2d72e1935eca4358190ca2f3"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/UNQ/card.json",
+      "size_bytes": 10352,
+      "sha256": "b7feede5dc47dc16fa5dac03e5fdcf7ab134277f203de893642ee83afc74db99"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/UNQ/matrices.npz",
+      "size_bytes": 170748,
+      "sha256": "4adadf92a67a521d8ef5c6f9d6559e21cf478dec247ea623ad796db561b429d2"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/UQ/card.json",
+      "size_bytes": 7706,
+      "sha256": "6c50844b048239c5b7aefb799979422c86359fdd10044d44819e565066fe288c"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/UQ/matrices.npz",
+      "size_bytes": 170748,
+      "sha256": "4adadf92a67a521d8ef5c6f9d6559e21cf478dec247ea623ad796db561b429d2"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/Uonly_atp/card.json",
+      "size_bytes": 6473,
+      "sha256": "5b108ea86c79eb2e04942acfbe46a672cec98684cf63314c59505a2ca1951fca"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/Uonly_atp/matrices.npz",
+      "size_bytes": 172181,
+      "sha256": "ec74398d2c304e35f1b79b8490125451b58904a164d1bab4fa2e8e1434cd1db6"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/Uonly_rxn/card.json",
+      "size_bytes": 6707,
+      "sha256": "a8bd70c239ad1dde5390cc22c3f65a8b95eed76045011a80d74e1f5ac5d1ffe8"
+    },
+    {
+      "path": "results/transfer_v1/development/Putida/Uonly_rxn/matrices.npz",
+      "size_bytes": 172270,
+      "sha256": "0adb46e730b45076ec0c94a868a35c5257a8ec9cd5228b7a6c0e8edf8e517998"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/B0/card.json",
+      "size_bytes": 6160,
+      "sha256": "1d13a378366c1f3fc33bc333b4f7171884be87b92cda87296f15acb0c5d50b0b"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/B0/matrices.npz",
+      "size_bytes": 109965,
+      "sha256": "d227adc9cd1f52e3b7fa6cf3df166b75d769dd8077498cc5534995d6ee750ebf"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/M/card.json",
+      "size_bytes": 18797,
+      "sha256": "e1ac60010edf6280fe2ac794c5a932f7935b9ee1e4afc29b1196509373d25cd1"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/M/matrices.npz",
+      "size_bytes": 114330,
+      "sha256": "8bba8d691c38c91f68b80bb81835b7421bfee1cd26a15f1b448d0d6ff2997e69"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/M_R1R2/card.json",
+      "size_bytes": 17858,
+      "sha256": "5fc437dea87dc5771586babf13384f4be0e8f91c46452a585551dd36e3ecc9fe"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/M_R1R2/matrices.npz",
+      "size_bytes": 113277,
+      "sha256": "c69920cacacbd472dac0c0989fed4a929a6ae89da8c5994c09ccb5bbdc97c418"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/M_R6/card.json",
+      "size_bytes": 14912,
+      "sha256": "1534565519acc91f2bec8e4efe7b022dced4ae5e13f00c9bca4d6ec8993c6785"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/M_R6/matrices.npz",
+      "size_bytes": 113644,
+      "sha256": "abdcd8032ed2ddaf5810a8cc8e6171c2d9df3c969cd90387a7e0c16c94be323b"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/U/card.json",
+      "size_bytes": 8265,
+      "sha256": "348d8021a82380136dd69de4f5809d732fa92d9f00bc615706a597d4e7fdd971"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/U/matrices.npz",
+      "size_bytes": 114898,
+      "sha256": "5f9f7e7d11fdb2a737346683eef05cc148776b1b07a1307e40127c9b16335d95"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/UN/card.json",
+      "size_bytes": 13404,
+      "sha256": "a6df9bae0e82c914255322457b22b952e921cca576f661c430a66556436bd303"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/UN/matrices.npz",
+      "size_bytes": 115099,
+      "sha256": "3803017472548f4591f8c418a39b1477a1d3a874119c892efb64921f2ba45601"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/UNQ/card.json",
+      "size_bytes": 13742,
+      "sha256": "8c6f61054da972b98670e0dac08937cad5ffdf48babc57ca79c9105ac9d0c055"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/UNQ/matrices.npz",
+      "size_bytes": 113709,
+      "sha256": "bdb8d376815b20b9d156816bcc80721b82fd810d551c0752d5d420eb5ff1fe9d"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/UQ/card.json",
+      "size_bytes": 8597,
+      "sha256": "6ec38b1327bbfc28542f0a24d970c0989f2af938862f3c7f2a2f6c230f5bde4b"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/UQ/matrices.npz",
+      "size_bytes": 113402,
+      "sha256": "54071a9efb911af30acbdcdc6c5a75d4abf0f5fd2cdbf27ad894bc91bda45f34"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/Uonly_atp/card.json",
+      "size_bytes": 7159,
+      "sha256": "4d48799d6dbf25693ca574baf024424e5b87839435290a47d37017b3dd0525d9"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/Uonly_atp/matrices.npz",
+      "size_bytes": 113951,
+      "sha256": "7ba330070294990aecbd69032b071a266e7ba87c3f0bd63a3a9316f412707f4d"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/Uonly_rxn/card.json",
+      "size_bytes": 6741,
+      "sha256": "b5e27e51e7f87cd443aff653c75804b1738ea51a93e2c36a8fb640b6914e9f0a"
+    },
+    {
+      "path": "results/transfer_v1/development/Smeli/Uonly_rxn/matrices.npz",
+      "size_bytes": 110614,
+      "sha256": "a1d040352bc755b040b7058a989993b0bcfc1cdcab045ce4bcb5b950d24c6a8a"
+    },
+    {
+      "path": "results/transfer_v1/development/aggregate_common.json",
+      "size_bytes": 15404,
+      "sha256": "bb8475ae5c51e5f241917c96edf9bf63f1226366583a903f9f7f2644f63e99a0"
+    },
+    {
+      "path": "results/transfer_v1/development/aggregate_union.json",
+      "size_bytes": 15517,
+      "sha256": "ef10e378afa045f965b318e5e6e6620020b22e8af7282a128c162805f7c69eaf"
+    },
+    {
+      "path": "results/transfer_v1/development/paired.json",
+      "size_bytes": 27831,
+      "sha256": "cf8b8873682ba928105ce193b45824158244bb618d5d185070301ed50af31f7e"
+    },
+    {
+      "path": "scripts/build_panel_gene_maps.py",
+      "size_bytes": 4217,
+      "sha256": "e44d9bbe87770b16115db2f34099c72d0709fc86b379a00c6405bed830e2694d"
+    },
+    {
+      "path": "scripts/freeze_study.py",
+      "size_bytes": 3547,
+      "sha256": "620ebb61febd71dd71221a130da3fc6b39f2c8c9d4a4c60ae5f07bcbd7c401a8"
+    },
+    {
+      "path": "scripts/prepare_panel_inputs.py",
+      "size_bytes": 6443,
+      "sha256": "2ffbd4e1b17494327d213c19be7e692ec559a9a7b6f5cb58056f7c97e2fb8121"
+    },
+    {
+      "path": "scripts/run_carbon_fitness_generic.py",
+      "size_bytes": 16091,
+      "sha256": "fd7df7860dd782bf08598947529ebdf3683d36729e10b72694f8b21de388aadc"
+    },
+    {
+      "path": "scripts/run_transfer_study.py",
+      "size_bytes": 14668,
+      "sha256": "4269e462119f27f30f3594807d379e7dcc45aad99dc01756e88092e19dfd90bb"
+    },
+    {
+      "path": "scripts/transfer_aggregate.py",
+      "size_bytes": 4831,
+      "sha256": "88dd1799282a070d0316e3af2d1db31a5ef7d5d242ce205b4c9db3e923c27979"
+    },
+    {
+      "path": "scripts/transfer_candidates.py",
+      "size_bytes": 6761,
+      "sha256": "19d24b45f15e7aa8d87a9ab1e06a2853b32bb935b89421af36ce34ddc2b840ea"
+    },
+    {
+      "path": "scripts/transfer_compare.py",
+      "size_bytes": 8500,
+      "sha256": "c8319fcddbd93307320cb8ff636a1c9a5cf08ae623e0e7fb61acb65fc2c7b781"
+    },
+    {
+      "path": "tests/test_study.py",
+      "size_bytes": 10966,
+      "sha256": "7b6f011aa77c4ea3c06c1272041544bf1a989839bed95ec8aa104942f67355fc"
+    },
+    {
+      "path": "tests/test_transfer.py",
+      "size_bytes": 9791,
+      "sha256": "7201191d1c425e2d670bfde2962248bf0f627db3def8cab05768cd7ee969a4e9"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "81883ca8c196e216d109b888758513c90da2711c",
+    "dirty": true,
+    "tracked_changes": [],
+    "untracked_paths": [
+      "results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json"
+    ],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "7ffb4213c6ad834280079b0b176c655cdd9a6be97fc3d0143ab1edf8af94d907",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}
