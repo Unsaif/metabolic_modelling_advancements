@@ -1,0 +1,295 @@
+{
+ "org": "MycoTube",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ACHBS",
+   "decision": "R6",
+   "new_rule": "(Rv3003c and Rv3002c) or (Rv1820 and Rv3002c) or (Rv3470c and Rv3002c) or (Rv3509c and Rv3002c)",
+   "evidence": "2-aceto-2-hydroxybutanoate synthase is the same acetohydroxyacid synthase (AHAS, EC 2.2.1.6) activity as ACLS, condensing pyruvate with 2-oxobutanoate; the genome annotates one AHAS small subunit IlvN (Rv3002c, adjacent to and co-transcribed with IlvB1 Rv3003c) and four AHAS large subunits (IlvB1 Rv3003c, IlvG Rv1820, IlvB2 Rv3470c, IlvX Rv3509c), so the rule mirrors the model's own ACLS complex rule for the identical enzyme."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rule already pairs each annotated AHAS large subunit (IlvB1/IlvG/IlvB2/IlvX) with the small subunit IlvN Rv3002c as AND-complexes; the large subunits are same-name paralogs, so nothing to join or remove."
+  },
+  {
+   "reaction": "ADCL",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "4-amino-4-deoxychorismate lyase (PabC) is a class-IV aminotransferase-fold enzyme, so Rv0812 'probable amino acid aminotransferase' is a family-level but compatible annotation; removing Rv2553c would leave only that generic annotation, which the procedure forbids."
+  },
+  {
+   "reaction": "AIRCr",
+   "decision": "R1",
+   "new_rule": "Rv3275c and Rv3276c",
+   "evidence": "Rv3275c 'phosphoribosylaminoimidazole carboxylase catalytic subunit PurE' and adjacent Rv3276c 'ATPase subunit PurK' are the annotated PurE/PurK pair for this step; the other alternative Rv3257c is 'phosphomannomutase PmmA', a different specific activity (hexose-phosphate mutase) with no relation to AIR carboxylation."
+  },
+  {
+   "reaction": "ANS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv1609 is annotated anthranilate synthase component I TrpE; Rv2859c carries only a family-level 'possible amidotransferase / glutamine amidotransferase' annotation, which is compatible with a component-II-like glutamine amidotransferase and is not explicitly annotated as a subunit of anthranilate synthase, so neither R1 nor R2 is justified."
+  },
+  {
+   "reaction": "CBPS",
+   "decision": "R2",
+   "new_rule": "Rv1383 and Rv1384",
+   "evidence": "Rv1383 'carbamoyl-phosphate synthase small chain CarA (glutamine chain)' and the immediately adjacent Rv1384 'carbamoyl-phosphate synthase large chain CarB' are the two obligate subunits of one glutamine-dependent CPS; neither subunit alone catalyses the reaction."
+  },
+  {
+   "reaction": "CITt15",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less citrate/Zn-complex uptake step; the gene table contains no annotated citrate or tricarboxylate transporter, and no specific transporter for this substrate-metal complex, so no assignment is supportable."
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less chloride/proton antiport step; no chloride channel or chloride transporter (ClC/EriC-type or other) is annotated anywhere in the gene table."
+  },
+  {
+   "reaction": "CYSS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv2334 CysK1 and Rv0848 CysK2 are both annotated O-acetylserine sulfhydrylase (cysteine synthase A) same-name paralogs, Rv1336 CysM is annotated cysteine synthase B, and Rv3684 has only a family-level 'probable lyase' annotation, so no alternative is clearly a non-catalyst."
+  },
+  {
+   "reaction": "DB4PS",
+   "decision": "R6",
+   "new_rule": "Rv1415",
+   "evidence": "Rv1415 is annotated 'riboflavin biosynthesis protein RibA2: GTP cyclohydrolase II + 3,4-dihydroxy-2-butanone 4-phosphate synthase (DHBP synthase)', naming exactly this reaction; it is the only DHBP synthase annotation in the genome (Rv1940 RibA1 carries the cyclohydrolase II activity only)."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "Rv0189c",
+   "evidence": "Rv0189c is annotated dihydroxy-acid dehydratase IlvD, exactly this reaction; the other alternative Rv1159A is 'unknown protein' in Fitness Browser and 'pterin-4-alpha-carbinolamine dehydratase' in RefSeq, a different specific activity (pterin cofactor regeneration) and no annotation compatible with 2,3-dihydroxy-3-methylbutanoate dehydration."
+  },
+  {
+   "reaction": "DHDPRy",
+   "decision": "R1",
+   "new_rule": "Rv2773c",
+   "evidence": "Rv2773c is annotated dihydrodipicolinate reductase DapB (4-hydroxy-tetrahydrodipicolinate reductase), exactly this reaction; Rv1059 is only 'conserved protein / hypothetical protein Rv1059' with no enzymatic annotation."
+  },
+  {
+   "reaction": "DMATT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All three alternatives are trans-prenyltransferases of the same family: Rv3398c IdsA1 is explicitly annotated dimethylallyltransferase (geranyl-diphosphate synthase), and Rv0562 GrcC1 'polyprenyl-diphosphate synthase' and Rv2173 IdsA2 'geranylgeranyl diphosphate synthase' are broad-specificity chain-elongating prenyltransferases compatible with this condensation."
+  },
+  {
+   "reaction": "DNMPPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "None of the three alternatives (Rv1992c P-type cation ATPase CtpG, Rv3211 RNA helicase RhlE, Rv3680 anion-transporter ATPase) is a credible dihydroneopterin-monophosphate phosphatase, but no phosphatase candidate is present in the rule, so applying R1 would remove every alternative and leave the rule naming no gene; abstaining leaves the rule unchanged."
+  },
+  {
+   "reaction": "DNTPPA",
+   "decision": "R1",
+   "new_rule": "Rv3908",
+   "evidence": "Rv3908 is annotated 'mutator protein MutT4', a Nudix hydrolase of the family that performs dihydroneopterin triphosphate pyrophosphohydrolysis (NudB-type), so it is compatible; Rv1992c is a metal-cation P-type ATPase (a transporter listed for an enzymatic reaction) and Rv3211 is an ATP-dependent RNA helicase, both clearly non-catalysts for this step."
+  },
+  {
+   "reaction": "DXPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv3379c Dxs2 and Rv2682c Dxs1 are both specifically annotated 1-deoxy-D-xylulose 5-phosphate synthase; same-name paralogs are never removed."
+  },
+  {
+   "reaction": "E4PD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less step; no erythrose-4-phosphate dehydrogenase (Epd/GapB, EC 1.2.1.72) annotation exists in the gene table, and assigning the glyceraldehyde-3-phosphate dehydrogenase would rest on family-level similarity only."
+  },
+  {
+   "reaction": "FBP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv1099c GlpX is the annotated fructose 1,6-bisphosphatase, but the second alternative Rv3137 is annotated only as 'probable monophosphatase / histidinol-phosphatase', a broad-specificity phosphatase, which the procedure explicitly protects from removal."
+  },
+  {
+   "reaction": "GARFT",
+   "decision": "R1",
+   "new_rule": "Rv0956",
+   "evidence": "This reaction is the 10-formyl-THF-dependent GAR transformylase (PurN, EC 2.1.2.2), annotated at Rv0956; Rv0389 PurT is annotated 'formate-dependent gar transformylase 2', a distinct ATP- and formate-dependent ligase (EC 6.3.1.21) that cannot use 10-formyltetrahydrofolate, i.e. a clearly different specific activity and substrate."
+  },
+  {
+   "reaction": "GHMT2r",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv0070c GlyA2 and Rv1093 GlyA1 are both annotated serine hydroxymethyltransferase; same-name paralogs are never removed."
+  },
+  {
+   "reaction": "GLUPRT",
+   "decision": "R1",
+   "new_rule": "Rv0808",
+   "evidence": "Rv0808 PurF is annotated amidophosphoribosyltransferase (glutamine PRPP amidotransferase), exactly this reaction; Rv1061 is 'conserved protein / hypothetical protein' with no enzymatic annotation, and Rv1602 HisH is the glutamine amidotransferase subunit of imidazole-glycerol-phosphate synthase (a different EC, different substrate, and a subunit of the HisF/HisH complex listed alone)."
+  },
+  {
+   "reaction": "GRTT",
+   "decision": "R1",
+   "new_rule": "Rv0562 or Rv1086 or Rv2173",
+   "evidence": "Rv1086 is annotated geranyltranstransferase / farnesyl diphosphate synthase and Rv0562 GrcC1 and Rv2173 IdsA2 are broad-specificity chain-elongating polyprenyl-diphosphate synthases, all compatible; Rv3397c is annotated 'probable phytoene synthase PhyA', a head-to-head C40 condensing enzyme of the squalene/phytoene synthase class with a clearly different specific activity (EC 2.5.1.32) from a GPP+IPP chain elongation."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv1284, Rv3273 and Rv3588c are all annotated carbonic anhydrases, each compatible with CO2 hydration, and the rule also carries a 'spontaneous' term, consistent with this being a near-spontaneous equilibration; nothing is clearly a non-catalyst."
+  },
+  {
+   "reaction": "HSTPT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv1600 HisC1 and Rv3772 HisC2 are both annotated histidinol-phosphate aminotransferase (same-name paralogs), and Rv2231c carries a family-level 'possible aminotransferase CobC' annotation, which the procedure protects from removal."
+  },
+  {
+   "reaction": "ICDHyr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv0066c Icd2 and Rv3339c Icd1 are both annotated NADP-dependent isocitrate dehydrogenase; same-name paralogs are never removed."
+  },
+  {
+   "reaction": "IMPD",
+   "decision": "R1",
+   "new_rule": "Rv1843c and Rv3410c and Rv3411c",
+   "evidence": "The three retained genes are all annotated inosine-5'-monophosphate dehydrogenase (GuaB1, GuaB3, GuaB2), while Rv2626c is annotated 'hypoxic response protein 1 Hrp1', a universal-stress-protein-family protein with no enzymatic annotation and no IMP dehydrogenase activity; the existing AND structure of the GuaB genes is left as given, since splitting it is not an allowed operation."
+  },
+  {
+   "reaction": "MTHFR3",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less step; no methylenetetrahydrofolate reductase (MetF/MTHFR) annotation exists in the gene table - the only related gene, Rv3356c FolD, is a methylenetetrahydrofolate dehydrogenase/cyclohydrolase, a different reaction."
+  },
+  {
+   "reaction": "PAPSR",
+   "decision": "R1",
+   "new_rule": "Rv2392",
+   "evidence": "Rv2392 CysH is annotated 3'-phosphoadenosine 5'-phosphosulfate reductase (thioredoxin-dependent), exactly this reaction; Rv3914 TrxC and Rv1471 TrxB1 are annotated thioredoxins, i.e. the protein redox substrate of the reaction rather than its catalyst."
+  },
+  {
+   "reaction": "PDX5PS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less step; the gene table contains no pyridoxine 5'-phosphate synthase (PdxJ) or PdxA annotation - only pyridoxamine 5'-phosphate oxidases (Rv2607 PdxH and two homologues), which catalyse the subsequent PNP/PMP oxidation, not this condensation."
+  },
+  {
+   "reaction": "PERD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less step; no erythronate-4-phosphate dehydrogenase (PdxB) or any 4-phospho-D-erythronate-related annotation is present in the gene table, and only a generic dehydrogenase match would be available."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less step; no phosphoglucosamine mutase (GlmM) annotation exists - the closest genes are Rv3257c/Rv3308 phosphomannomutases and Rv3068c phosphoglucomutase, i.e. family-level (phosphohexomutase superfamily) matches only, which the procedure says is insufficient for assignment."
+  },
+  {
+   "reaction": "PGCD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv2996c SerA1 and Rv0728c SerA2 are both annotated D-3-phosphoglycerate dehydrogenase; same-name paralogs are never removed."
+  },
+  {
+   "reaction": "PMDPHT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less step; no phosphatase specific for 5-amino-6-(5'-phosphoribitylamino)uracil is annotated, and this dephosphorylation is typically carried out by promiscuous HAD phosphatases, so only a generic 'phosphatase/hydrolase' match would be available."
+  },
+  {
+   "reaction": "PNTK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv1092c is annotated pantothenate kinase CoaA (type I) and Rv3600c is annotated type III pantothenate kinase (CoaX) in RefSeq; both are annotated as the same enzyme activity, so neither can be removed."
+  },
+  {
+   "reaction": "PPA",
+   "decision": "R1",
+   "new_rule": "Rv3628",
+   "evidence": "Rv3628 is annotated inorganic pyrophosphatase Ppa (diphosphate phosphohydrolase), exactly this reaction; Rv1026 is only 'conserved protein / hypothetical protein Rv1026' with no enzymatic annotation."
+  },
+  {
+   "reaction": "PSP_L",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv3042c SerB2 and Rv0505c SerB1 are both annotated phosphoserine phosphatase; same-name paralogs are never removed."
+  },
+  {
+   "reaction": "RNDR1",
+   "decision": "R1",
+   "new_rule": "Rv0570 and Rv1981c",
+   "evidence": "The catalytic alternatives are the annotated ribonucleotide reductase subunits (Rv0570 NrdZ large subunit, Rv1981c NrdF1 small subunit), kept as the given AND-complex; Rv3914 TrxC and Rv1471 TrxB1 are annotated thioredoxins, the protein reductant consumed by the reaction rather than its catalyst."
+  },
+  {
+   "reaction": "RNDR3",
+   "decision": "R1",
+   "new_rule": "Rv3051c and Rv3048c",
+   "evidence": "Rv3051c NrdE (alpha chain) and Rv3048c NrdF2 (beta chain) are the annotated class-Ib ribonucleoside-diphosphate reductase subunit pair; Rv3914 TrxC and Rv1471 TrxB1 are annotated thioredoxins, i.e. the reaction's protein redox substrate and not catalysts."
+  },
+  {
+   "reaction": "SDPDS",
+   "decision": "R1",
+   "new_rule": "Rv1202",
+   "evidence": "Rv1202 is annotated succinyl-diaminopimelate desuccinylase DapE, exactly this reaction, and sits next to Rv1201c DapD; Rv2522c is only 'conserved hypothetical protein' with no enzymatic annotation."
+  },
+  {
+   "reaction": "SDPTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv0858c DapC is the specifically annotated N-succinyldiaminopimelate aminotransferase, but Rv1178 carries a family-level 'probable aminotransferase' annotation, which the procedure explicitly protects from removal."
+  },
+  {
+   "reaction": "SERAT",
+   "decision": "R1",
+   "new_rule": "Rv2335",
+   "evidence": "Rv2335 is annotated serine acetyltransferase CysE, exactly this reaction, and is adjacent to cysteine synthase CysK1 Rv2334; Rv1466 is only 'conserved protein / hypothetical protein Rv1466' with no enzymatic annotation."
+  },
+  {
+   "reaction": "SO3R",
+   "decision": "R6",
+   "new_rule": "Rv2391",
+   "evidence": "Rv2391 SirA is the genome's only annotated sulfite reductase ('ferredoxin-dependent sulfite reductase'), performing exactly this six-electron sulfite-to-sulfide reduction; it sits immediately next to the PAPS reductase CysH (Rv2392) in the assimilatory sulfate-reduction locus, and only the model's electron donor (NADH) differs from the annotated physiological donor."
+  },
+  {
+   "reaction": "SUCBZL",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv0542c MenE is the specifically annotated O-succinylbenzoate-CoA ligase, but the alternative Rv3089 FadD13 is a fatty-acid-CoA ligase, i.e. a broad-specificity acyl-CoA synthetase, which the procedure explicitly protects from removal."
+  },
+  {
+   "reaction": "THZPSN",
+   "decision": "R2",
+   "new_rule": "Rv0415 and Rv0417",
+   "evidence": "This lumped thiazole-phosphate synthesis reaction needs both the thiazole synthase (Rv0417 ThiG) and the amino-acid-derived imine-donating oxidoreductase/lyase component (Rv0415 ThiO) of the same thiazole-forming complex, which are co-located in one operon with ThiS (Rv0416); neither activity alone can carry out the lumped conversion, so the alternatives are joined rather than kept as isozymes."
+  },
+  {
+   "reaction": "TMDS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv2764c ThyA and Rv2754c ThyX are both annotated thymidylate synthase (same-name paralogs), and Rv3359 carries only a generic 'possible oxidoreductase' annotation, so none of the alternatives can be removed."
+  },
+  {
+   "reaction": "TRDR",
+   "decision": "R1",
+   "new_rule": "Rv3913",
+   "evidence": "Rv3913 TrxB2 is annotated thioredoxin reductase, exactly this reaction; Rv0816c ThiX and Rv1471 TrxB1 are annotated thioredoxins, i.e. the substrate of thioredoxin reductase rather than the catalyst."
+  },
+  {
+   "reaction": "UAAGDS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rv2158c MurE is the specifically annotated UDP-N-acetylmuramoyl-L-alanyl-D-glutamate--2,6-diaminopimelate ligase, but Rv3712 carries only a family-level 'possible ligase' annotation, which the procedure protects from removal."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "Rv2883c",
+   "evidence": "Rv2883c PyrH is annotated uridylate (UMP) kinase, exactly this reaction; Rv1712 Cmk is annotated cytidylate kinase (CMP kinase, EC 2.7.4.25), a distinct enzyme family with a different specific activity and nucleotide substrate."
+  }
+ ],
+ "filter": "noIonR6 (docs/studies/transfer-v1-replication-plan.md)"
+}

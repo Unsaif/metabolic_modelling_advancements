@@ -1,0 +1,373 @@
+{
+ "org": "Dino",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ACLS",
+   "decision": "R1",
+   "new_rule": "Dshi_1779 and Dshi_1781",
+   "evidence": "Dshi_2045 is RefSeq 'sulfoacetaldehyde acetyltransferase' (Xsc, EC 2.3.3.15; FB only 'TPP protein central region') next to a class-III aminotransferase and MocR-type regulator (taurine/sulfoacetaldehyde context), a different reaction. Keep the biosynthetic AHAS large+small subunits Dshi_1779/Dshi_1781, already AND-joined."
+  },
+  {
+   "reaction": "ACtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only OmpA/MotB-domain peptidoglycan-binding lipoproteins (Dshi_2940, Dshi_3025) are listed for this outer-membrane diffusion step; no specific porin to keep, and removing either would only make the other a sole carrier."
+  },
+  {
+   "reaction": "AGPR",
+   "decision": "R6",
+   "new_rule": "Dshi_1759",
+   "evidence": "Dshi_1759 'N-acetyl-gamma-glutamyl-phosphate reductase' (ArgC, ~341 aa) is the only gene with this name. Dshi_1469 'gamma-glutamyl phosphate reductase' is ProA, a different reaction."
+  },
+  {
+   "reaction": "ANPRT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Dshi_1799 is the trp-operon TrpD, but Dshi_1670 'glycosyl transferase family 3' is a family-level annotation of the TrpD family and cannot be removed under the procedure."
+  },
+  {
+   "reaction": "ANS",
+   "decision": "R1",
+   "new_rule": "Dshi_1796 and Dshi_1798",
+   "evidence": "Dshi_3925 'peptidase C26'/'gamma-glutamyl-GABA hydrolase family' (~240 aa) lacks the chorismate-aminating TrpE component and cannot catalyse ANS alone (at most a lone amidotransferase-like subunit). Keep the TrpE (Dshi_1796) + TrpG (Dshi_1798) complex."
+  },
+  {
+   "reaction": "ASNS1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No asparagine synthetase (AsnB, EC 6.3.5.4) is annotated in genes.tsv; only generic class-I/II glutamine amidotransferases (e.g. Dshi_1870 in the glutamate synthase cluster)."
+  },
+  {
+   "reaction": "CA2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only OmpA/MotB-domain peptidoglycan-binding lipoproteins (Dshi_2940, Dshi_3025) are listed for this outer-membrane diffusion step; no specific porin to keep, and removing either would only make the other a sole carrier."
+  },
+  {
+   "reaction": "CHORM",
+   "decision": "R1",
+   "new_rule": "Dshi_0349 or Dshi_1284",
+   "evidence": "Dshi_0653 is a monofunctional prephenate dehydratase (PheA, EC 4.2.1.51; ~280 aa, too short to carry the CM domain of bifunctional P-proteins). Chorismate mutases Dshi_0349 and Dshi_1284 remain."
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only a domain-level CLC-family annotation (Dshi_2412 'Chloride channel core') with no supporting context. The CLC family includes channels and Cl-/H+ and F-/H+ antiporters, so it is not an exact match for 2Cl-/H+ antiport."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only OmpA/MotB-domain peptidoglycan-binding lipoproteins (Dshi_2940, Dshi_3025) are listed for this outer-membrane diffusion step; no specific porin to keep, and removing either would only make the other a sole carrier."
+  },
+  {
+   "reaction": "COBALT2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only OmpA/MotB-domain peptidoglycan-binding lipoproteins (Dshi_2940, Dshi_3025) are listed for this outer-membrane diffusion step; no specific porin to keep, and removing either would only make the other a sole carrier."
+  },
+  {
+   "reaction": "CS",
+   "decision": "R1",
+   "new_rule": "Dshi_1806",
+   "evidence": "Dshi_3119 (FB 'citrate synthase') is RefSeq 'citryl-CoA lyase' (EC 4.1.3.34), only ~254 aa against ~430 aa for Dshi_1806 'citrate synthase I'. It sits beside a CaiB/BaiF CoA-transferase and TctCBA tricarboxylate transporter genes, so it does not release citrate + CoA; keep Dshi_1806."
+  },
+  {
+   "reaction": "CU2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only OmpA/MotB-domain peptidoglycan-binding lipoproteins (Dshi_2940, Dshi_3025) are listed for this outer-membrane diffusion step; no specific porin to keep, and removing either would only make the other a sole carrier."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "Dshi_0129 or Dshi_1244",
+   "evidence": "Dshi_0134 is pterin-4a-carbinolamine dehydratase/DCoH (RefSeq 4a-hydroxytetrahydrobiopterin dehydratase, EC 4.2.1.96, ~97 aa), a different substrate class. Dihydroxy-acid dehydratase-annotated Dshi_0129 and Dshi_1244 (IlvD/Edd family) are kept."
+  },
+  {
+   "reaction": "DHAD2",
+   "decision": "R1",
+   "new_rule": "Dshi_0129 or Dshi_1244",
+   "evidence": "Dshi_0134 is pterin-4a-carbinolamine dehydratase/DCoH (EC 4.2.1.96, ~97 aa), not an IlvD-type dehydratase. Dihydroxy-acid dehydratase-annotated Dshi_0129 and Dshi_1244 are kept."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Dshi_2446 is annotated 'dihydrodipicolinate synthetase' / 'DHDPS family protein' (same name and family-level), even though it sits in a sugar-acid catabolic cluster; it cannot be removed under the procedure."
+  },
+  {
+   "reaction": "DHFR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No dihydrofolate reductase (FolA) or FolM/pteridine reductase is annotated in genes.tsv."
+  },
+  {
+   "reaction": "DHFS",
+   "decision": "R1",
+   "new_rule": "Dshi_0132",
+   "evidence": "Dshi_2398 is dihydropteroate synthase (FolP, EC 2.5.1.15, ~337 aa, folB/glmM context), which does not ligate glutamate. Keep the bifunctional FolC Dshi_0132 (folylpolyglutamate/dihydrofolate synthase)."
+  },
+  {
+   "reaction": "DHORDi",
+   "decision": "R6",
+   "new_rule": "Dshi_0847",
+   "evidence": "Dshi_0847 is annotated 'Dihydroorotate oxidase' (class-2 PyrD size, ~352 aa), naming exactly this dihydroorotate oxidation. Dshi_1363 (DHOD 'family protein' in the pyrimidine-catabolic cluster) is not assigned."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two genes are annotated dihydroorotase (Dshi_2371, Dshi_3094), and Dshi_2289 carries a generic amidohydrolase annotation; none is removable."
+  },
+  {
+   "reaction": "DHPM1",
+   "decision": "R6",
+   "new_rule": "Dshi_1370",
+   "evidence": "Dshi_1370 'dihydropyrimidinase' (EC 3.5.2.2) names this exact reaction. It is supported by a reductive pyrimidine-catabolism cluster with a DHOD-family dehydrogenase (Dshi_1363) and a hydantoinase/carbamoylase-family amidase (Dshi_1367)."
+  },
+  {
+   "reaction": "DMATT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Polyprenyl synthetases (Dshi_3072, Dshi_3514 in the carotenoid cluster) and a farnesyl diphosphate synthase (WP_083768431_1) are all compatible prenyltransferases."
+  },
+  {
+   "reaction": "DNMPPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The P-type ATPases and the RecQ helicase are not catalysts, but the only gene left would be a generic NUDIX hydrolase (Dshi_0092), and the procedure forbids R1 when only generic annotations remain."
+  },
+  {
+   "reaction": "DNTPPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The P-type ATPases and the RecQ helicase are not catalysts, but the remaining genes would be generic NUDIX hydrolases (Dshi_0092, MutT Dshi_3564), so R1 is not allowed."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Dshi_1216 is PanE and Dshi_2396 is ketol-acid reductoisomerase (IlvC), a broad-specificity 2-oxoacid reductase with known ketopantoate reductase activity; keep both."
+  },
+  {
+   "reaction": "FBA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are class-II fructose-bisphosphate/ketose-bisphosphate aldolases (same-name aldolases); no removal allowed."
+  },
+  {
+   "reaction": "FBP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Dshi_2274 is the class-II FBPase (GlpX). Dshi_0063 is an inositol-monophosphatase-family phosphatase (FBPase/IMPase family, broad specificity), so it is kept."
+  },
+  {
+   "reaction": "FUM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Dshi_1426 is a single-chain (~504 aa) class-I Fe-S fumarate hydratase and Dshi_2334 a class-II fumarase; both are genuine isozymes."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Dshi_2226 'glutamate--putrescine ligase' lies in a Puu-like gamma-glutamyl-amine cluster, but RefSeq names it 'glutamine synthetase family protein' (same chemistry), so it is not clearly excluded; GS type I and III remain in any case."
+  },
+  {
+   "reaction": "GRTT",
+   "decision": "R1",
+   "new_rule": "Dshi_3072 or WP_083768431_1",
+   "evidence": "Dshi_3509 is phytoene synthase (CrtB, EC 2.5.1.32; head-to-head GGPP condensation in the carotenoid cluster), not an IPP chain-elongating prenyltransferase. Keep polyprenyl synthetase Dshi_3072 and FPP synthase WP_083768431_1."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Carbonic anhydrase Dshi_3236 plus the spontaneous pseudo-gene is a correct rule."
+  },
+  {
+   "reaction": "HISTD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "There are three same-name 'histidinol dehydrogenase' paralogs (Dshi_0979, Dshi_2034, Dshi_2242); none may be removed."
+  },
+  {
+   "reaction": "ILETA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are branched-chain amino acid aminotransferases (class IV); both are compatible."
+  },
+  {
+   "reaction": "IPMD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Dshi_3393 is a same-name '3-isopropylmalate dehydrogenase' (IDH/IPMDH family) paralog of LeuB Dshi_0081; it may not be removed."
+  },
+  {
+   "reaction": "IPPMIa",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The large and small subunits are already AND-joined; all four genes are same-name 3-isopropylmalate dehydratase subunits."
+  },
+  {
+   "reaction": "IPPMIb",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The large and small subunits are already AND-joined; all four genes are same-name 3-isopropylmalate dehydratase subunits."
+  },
+  {
+   "reaction": "IPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Dshi_1696 is RefSeq 'citramalate synthase', but FB '2-isopropylmalate synthase/homocitrate synthase family protein'. It shares the chemistry with a related 2-oxoacid, so activity cannot be excluded."
+  },
+  {
+   "reaction": "LCADi",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Removing the class-III ADH (Dshi_0103) would leave only generic 'aldehyde dehydrogenase' genes, so R1 is not allowed."
+  },
+  {
+   "reaction": "MEPCT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The only IspD-named gene, Dshi_1294 (~450 aa), sits directly upstream of and overlaps glmS (Dshi_1293), and no GlmU is annotated, which points to a misannotated GlmU. The IspF-named Dshi_1577 (~400 aa, likely IspDF) is not annotated for this step."
+  },
+  {
+   "reaction": "MNtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only OmpA/MotB-domain peptidoglycan-binding lipoproteins (Dshi_2940, Dshi_3025) are listed for this outer-membrane diffusion step; no specific porin to keep, and removing either would only make the other a sole carrier."
+  },
+  {
+   "reaction": "OMCDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "This is a spontaneous beta-keto acid decarboxylation (rule includes 'spontaneous') with an IPMDH-family gene; leave it unchanged."
+  },
+  {
+   "reaction": "PGM",
+   "decision": "R1",
+   "new_rule": "Dshi_0089",
+   "evidence": "Dshi_2079 is a LysR-family transcriptional regulator. Keep the 2,3-bisphosphoglycerate-independent phosphoglycerate mutase Dshi_0089."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "R1",
+   "new_rule": "Dshi_0145 or Dshi_0762 or Dshi_1794 or Dshi_2837 or Dshi_2946 or Dshi_3301",
+   "evidence": "Removed Dshi_0795 (HisH, imidazole glycerol phosphate synthase glutamine amidotransferase subunit, not a transaminase) and MocR/PdxR-type transcriptional regulators Dshi_1835 and Dshi_0609. All aminotransferases are kept."
+  },
+  {
+   "reaction": "PPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Ppx/GppA exopolyphosphatase (Dshi_0739) and SurE nucleotidase (Dshi_2136) are broad-specificity phosphatases that may not be removed alongside the Mn-dependent PPase Dshi_2924."
+  },
+  {
+   "reaction": "PPND",
+   "decision": "R1",
+   "new_rule": "Dshi_2945",
+   "evidence": "Dshi_0349 (~98 aa) and Dshi_1284 (~106 aa) are monofunctional chorismate mutases, and Dshi_1022 (~450 aa) is a monofunctional EPSP synthase (AroA, no TyrA fusion); none oxidises prephenate. Keep prephenate dehydrogenase Dshi_2945 (TyrA, next to hisC)."
+  },
+  {
+   "reaction": "PRAGSr",
+   "decision": "R1",
+   "new_rule": "Dshi_2728",
+   "evidence": "Dshi_1889 is phosphoribosylformylglycinamidine cyclo-ligase (PurM, EC 6.3.3.1, ~353 aa, not a PurD fusion), a different purine step. Keep phosphoribosylamine--glycine ligase Dshi_2728 (PurD)."
+  },
+  {
+   "reaction": "PRAMPC",
+   "decision": "R1",
+   "new_rule": "Dshi_1515",
+   "evidence": "Dshi_2575 is a monofunctional phosphoribosyl-ATP pyrophosphohydrolase (HisE, EC 3.6.1.31, ~102 aa, not a HisIE fusion). Keep phosphoribosyl-AMP cyclohydrolase Dshi_1515 (HisI)."
+  },
+  {
+   "reaction": "PRATPP",
+   "decision": "R1",
+   "new_rule": "Dshi_2575",
+   "evidence": "Dshi_1515 is a monofunctional phosphoribosyl-AMP cyclohydrolase (HisI, EC 3.5.4.19, ~119 aa, not a HisIE fusion). Keep phosphoribosyl-ATP pyrophosphohydrolase Dshi_2575 (HisE)."
+  },
+  {
+   "reaction": "PYRtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only OmpA/MotB-domain peptidoglycan-binding lipoproteins (Dshi_2940, Dshi_3025) are listed for this outer-membrane diffusion step; no specific porin to keep, and removing either would only make the other a sole carrier."
+  },
+  {
+   "reaction": "RBFK",
+   "decision": "R1",
+   "new_rule": "Dshi_2927",
+   "evidence": "Dshi_0545 is a HAD-superfamily IA hydrolase (~246 aa phosphatase), which cannot catalyse ATP-dependent phosphorylation. Keep bifunctional riboflavin kinase/FAD synthetase RibF Dshi_2927."
+  },
+  {
+   "reaction": "RMK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The only candidate is Dshi_2429, annotated generically as 'carbohydrate kinase FGGY'. It lies in the rha operon, but operon context alone is not sufficient for R6."
+  },
+  {
+   "reaction": "RMNt",
+   "decision": "R6",
+   "new_rule": "Dshi_2431 and Dshi_2432 and Dshi_2433 and Dshi_2434",
+   "evidence": "Dshi_2434 is 'rhamnose ABC transporter, periplasmic rhamnose-binding protein'. It is co-transcribed with its cognate monosaccharide ABC permeases (Dshi_2431, Dshi_2432) and the two-NBD ATPase (Dshi_2433) in the rha cluster; this is the specific rhamnose transporter, as an AND-complex."
+  },
+  {
+   "reaction": "RMPA",
+   "decision": "R6",
+   "new_rule": "Dshi_2436",
+   "evidence": "Dshi_2436 'rhamnulose-1-phosphate aldolase/alcohol dehydrogenase' (bifunctional RhaD) in the rha cluster names this exact aldolase."
+  },
+  {
+   "reaction": "SO3R",
+   "decision": "R6",
+   "new_rule": "Dshi_1153",
+   "evidence": "Dshi_1153 'nitrite/sulfite reductase hemoprotein beta-component' is co-transcribed with PAPS reductase CysH (Dshi_1152), with siroheme CysG (Dshi_1155) nearby, which fits assimilatory sulfite reductase. Nitrite assimilation is by NirBD (Dshi_1667/1668)."
+  },
+  {
+   "reaction": "THZPSN",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "This is a lumped multi-enzyme thiazole reaction. Dshi_0153 is a generic FAD-dependent oxidoreductase (family-level), so neither R1 nor R2 applies."
+  },
+  {
+   "reaction": "TMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No thiamine-monophosphate kinase (ThiL) is annotated. Dshi_2739 'thiamine pyrophosphokinase' catalyses a different reaction (thiamine to TPP)."
+  },
+  {
+   "reaction": "TPI",
+   "decision": "R1",
+   "new_rule": "Dshi_2078",
+   "evidence": "Dshi_2155 is phosphoglycerate kinase (EC 2.7.2.3, ~393 aa, no TPI fusion). Keep triose-phosphate isomerase Dshi_2078."
+  },
+  {
+   "reaction": "TYRTA",
+   "decision": "R1",
+   "new_rule": "Dshi_0145 or Dshi_0762 or Dshi_1794 or Dshi_2946",
+   "evidence": "Removed Dshi_0795 (HisH glutamine amidotransferase subunit, not a transaminase) and the MocR/PdxR-type transcriptional regulator Dshi_0609. All aminotransferases are kept."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "Dshi_1493",
+   "evidence": "Dshi_1023 is the bacterial cytidylate kinase (RefSeq '(d)CMP kinase', EC 2.7.4.25, CMP/dCMP-specific; aroA-cmk-rpsA context). Keep uridylate kinase PyrH Dshi_1493 (EC 2.7.4.22)."
+  },
+  {
+   "reaction": "VALTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Branched-chain and class-IV aminotransferases are compatible, broad-specificity aminotransferases."
+  },
+  {
+   "reaction": "Zn2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only OmpA/MotB-domain peptidoglycan-binding lipoproteins (Dshi_2940, Dshi_3025) are listed for this outer-membrane diffusion step; no specific porin to keep, and removing either would only make the other a sole carrier."
+  }
+ ],
+ "filter": "noIonR6 (docs/studies/transfer-v1-replication-plan.md)"
+}

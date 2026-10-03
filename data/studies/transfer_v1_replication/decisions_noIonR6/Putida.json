@@ -1,0 +1,583 @@
+{
+ "org": "Putida",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "3HBCOAHL",
+   "decision": "R6",
+   "new_rule": "PP_1412",
+   "evidence": "PP_1412 is annotated '3-hydroxyisobutyryl-CoA hydrolase' (HIBCH, EC 3.1.2.4), exactly this valine-catabolism step, and is the only gene in genes.tsv with that annotation."
+  },
+  {
+   "reaction": "3OXCOAT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1377 (PcaF beta-ketoadipyl-CoA thiolase) and PP_3280 (PaaJ 3-oxoadipyl-CoA thiolase) are same-function paralogs, and PP_4636 'acetyl-CoA acetyltransferase' is a broad-specificity thiolase (acyl-CoA enzyme), so nothing qualifies for removal."
+  },
+  {
+   "reaction": "4HBZtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  },
+  {
+   "reaction": "ABTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0214 and PP_4108 are both annotated 4-aminobutyrate aminotransferase (same-name paralogs)."
+  },
+  {
+   "reaction": "ACACT8r",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0582 'Thiolase family protein' and PP_3754 'Beta-ketothiolase BktB' are broad-specificity thiolases; no removal or complex joining applies."
+  },
+  {
+   "reaction": "ACOAD1f",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are acyl-CoA dehydrogenase family proteins (e.g. PP_1893 medium-long chain, PP_2216 short-chain, PP_0370/PP_4948 family proteins), i.e. broad-specificity acyl-CoA enzymes that may not be removed; they are independent enzymes, not subunits."
+  },
+  {
+   "reaction": "ACOAD20",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_3226 'Acyl-CoA dehydrogenase-related protein' and PP_3725 'putative Acyl-CoA dehydrogenase' are family-level acyl-CoA dehydrogenases, which may not be removed."
+  },
+  {
+   "reaction": "ACOAD2f",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are acyl-CoA dehydrogenase family proteins (e.g. PP_1893 medium-long chain, PP_2216 short-chain, PP_0370/PP_4948 family proteins), i.e. broad-specificity acyl-CoA enzymes that may not be removed; they are independent enzymes, not subunits."
+  },
+  {
+   "reaction": "ACOAD3f",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are acyl-CoA dehydrogenase family proteins (e.g. PP_1893 medium-long chain, PP_2216 short-chain, PP_0370/PP_4948 family proteins), i.e. broad-specificity acyl-CoA enzymes that may not be removed; they are independent enzymes, not subunits."
+  },
+  {
+   "reaction": "ACOAD4f",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are acyl-CoA dehydrogenase family proteins (e.g. PP_1893 medium-long chain, PP_2216 short-chain, PP_0370/PP_4948 family proteins), i.e. broad-specificity acyl-CoA enzymes that may not be removed; they are independent enzymes, not subunits."
+  },
+  {
+   "reaction": "ACOAD5f",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are acyl-CoA dehydrogenase family proteins (e.g. PP_1893 medium-long chain, PP_2216 short-chain, PP_0370/PP_4948 family proteins), i.e. broad-specificity acyl-CoA enzymes that may not be removed; they are independent enzymes, not subunits."
+  },
+  {
+   "reaction": "ACOAD6f",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are acyl-CoA dehydrogenase family proteins (e.g. PP_1893 medium-long chain, PP_2216 short-chain, PP_0370/PP_4948 family proteins), i.e. broad-specificity acyl-CoA enzymes that may not be removed; they are independent enzymes, not subunits."
+  },
+  {
+   "reaction": "ACOAD7f",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are acyl-CoA dehydrogenase family proteins (e.g. PP_1893 medium-long chain, PP_2216 short-chain, PP_0370/PP_4948 family proteins), i.e. broad-specificity acyl-CoA enzymes that may not be removed; they are independent enzymes, not subunits."
+  },
+  {
+   "reaction": "ACOADH2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_3226 'Acyl-CoA dehydrogenase-related protein' and PP_3725 'putative Acyl-CoA dehydrogenase' are family-level acyl-CoA dehydrogenases, which may not be removed."
+  },
+  {
+   "reaction": "ACOTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0372 'Acetylornithine aminotransferase 2' and PP_4481 'succinylornithine transaminase/acetylornithine aminotransferase' both carry acetylornithine aminotransferase annotations (same-function paralogs)."
+  },
+  {
+   "reaction": "ACS2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_2351 'propionyl-CoA synthetase' matches; PP_3071 'acetoacetyl-CoA synthetase' is an acyl-CoA synthetase (protected acyl-CoA enzyme class), so it is not removed."
+  },
+  {
+   "reaction": "ACtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  },
+  {
+   "reaction": "AGPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0432 'N-acetyl-gamma-glutamyl-phosphate reductase 1' and PP_3633 'ArgC-like N-acetyl-gamma-glutamyl-phosphate reductase' are same-name paralogs."
+  },
+  {
+   "reaction": "ALAALAr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1339 (DdlB), PP_4346 (DdlA) and PP_5673 (putative Ddl) are same-name D-alanine--D-alanine ligase paralogs."
+  },
+  {
+   "reaction": "ANPRT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0421 is TrpD; PP_3997 'putative Glycosyl transferase' is a family-level annotation compatible with this phosphoribosyltransferase (glycosyltransferase family 3), so it is not removed."
+  },
+  {
+   "reaction": "ANS",
+   "decision": "R1",
+   "new_rule": "PP_0417 and PP_0420",
+   "evidence": "PP_0727 is a 200-aa 'conserved protein of unknown function' (hypothetical protein) with no enzymatic annotation and is removed; TrpE PP_0417 'anthranilate synthase component 1' and the glutamine-amidotransferase component PP_0420 in the trp cluster remain as the complex."
+  },
+  {
+   "reaction": "ASPTA",
+   "decision": "R1",
+   "new_rule": "PP_0858 or PP_2209 or PP_3721 or PP_3786 or PP_4692",
+   "evidence": "PP_2948 and PP_4197 are GntR-family transcriptional regulators and are removed; all aminotransferases (incl. PP_4692 aspartate/tyrosine/aromatic aminotransferase) are kept."
+  },
+  {
+   "reaction": "CA2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  },
+  {
+   "reaction": "CTECOAI8",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_5021 is a methyl-accepting chemotaxis transducer, but the remaining alternatives (PP_1845/PP_3726 enoyl-CoA hydratase/isomerase family, PP_2047 3-hydroxyacyl-CoA dehydrogenase family) all carry family-level annotations, so R1 is not applied."
+  },
+  {
+   "reaction": "CU2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  },
+  {
+   "reaction": "DAPDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_2077 and PP_5227 are both annotated diaminopimelate decarboxylase (same-name paralogs)."
+  },
+  {
+   "reaction": "DAPE",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_3790 and PP_5228 are both annotated diaminopimelate epimerase (same-name paralogs)."
+  },
+  {
+   "reaction": "DB4PS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0516 and PP_3813 (bifunctional RibBA) and PP_0530 (RibB) are all annotated 3,4-dihydroxy-2-butanone 4-phosphate synthase."
+  },
+  {
+   "reaction": "DCAtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion of decanoate; diffusion steps are not assigned genes."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1866, PP_2324 and PP_3080 are all annotated phospho-2-dehydro-3-deoxyheptonate aldolase (DAHP synthase) paralogs."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "PP_5128",
+   "evidence": "PP_4491 is pterin-4-alpha-carbinolamine dehydratase (PhhB, EC 4.2.1.96, 118 aa, next to phenylalanine-4-hydroxylase PP_4490), a clearly different activity; PP_5128 'Dihydroxy-acid dehydratase' (IlvD) remains."
+  },
+  {
+   "reaction": "DHAD2",
+   "decision": "R1",
+   "new_rule": "PP_5128",
+   "evidence": "PP_4491 is pterin-4-alpha-carbinolamine dehydratase (PhhB, EC 4.2.1.96, 118 aa, next to phenylalanine-4-hydroxylase PP_4490), a clearly different activity; PP_5128 'Dihydroxy-acid dehydratase' (IlvD) remains."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "R1",
+   "new_rule": "PP_1237 or PP_2639",
+   "evidence": "PP_1257 is annotated 1-pyrroline-4-hydroxy-2-carboxylate deaminase (EC 3.5.4.22) inside the hydroxyproline catabolic cluster (PP_1255-PP_1258), a different specific activity; the two 4-hydroxy-tetrahydrodipicolinate synthases are kept."
+  },
+  {
+   "reaction": "DHFR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_5132 'dihydrofolate reductase' and PP_4632 'dihydrofolate reductase / dihydromonapterin reductase' (FolM) both carry DHFR annotations."
+  },
+  {
+   "reaction": "DHNPA_1",
+   "decision": "R6",
+   "new_rule": "PP_0392",
+   "evidence": "PP_0392 is annotated 'dihydroneopterin aldolase' (FolB, EC 4.1.2.25), exactly this reaction, and is adjacent to PP_0393 hydroxymethyldihydropteridine pyrophosphokinase (FolK)."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1086 'dihydroorotase' and PP_4999 'dihydroorotase-like protein' carry the same/compatible annotation, so neither is removed."
+  },
+  {
+   "reaction": "DHQTi",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0560, PP_2407 and PP_3003 are all annotated type II 3-dehydroquinate dehydratase."
+  },
+  {
+   "reaction": "DNMPPA",
+   "decision": "R1",
+   "new_rule": "PP_3650 or PP_5146",
+   "evidence": "PP_4261 and PP_5139 are cation-transporting P-type ATPases (transporters) and PP_4516 is an ATP-dependent DNA 3'-5' helicase, none of which catalyses this reaction; NUDIX hydrolase PP_3650 and RNA pyrophosphohydrolase PP_5146 are kept."
+  },
+  {
+   "reaction": "DNTPPA",
+   "decision": "R1",
+   "new_rule": "PP_1062 or PP_1348 or PP_5146",
+   "evidence": "PP_4261 and PP_5139 are cation-transporting P-type ATPases (transporters) and PP_4516 is an ATP-dependent DNA 3'-5' helicase, none of which catalyses this reaction; the Nudix-family pyrophosphohydrolases appropriate for this Nudix reaction (PP_1062, PP_1348, PP_5146) are kept."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1351, PP_2325 and PP_2998 are all annotated 2-dehydropantoate 2-reductase."
+  },
+  {
+   "reaction": "ECOAH1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are enoyl-CoA hydratase/isomerase-family and 3-hydroxyacyl-CoA dehydrogenase-family acyl-CoA enzymes (PP_1845, PP_3726, PP_2047, FadB-type PP_2136, enoyl-CoA hydratase PP_2217); broad-specificity, so no removal applies."
+  },
+  {
+   "reaction": "ECOAH12",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Methacrylyl-CoA hydration (valine catabolism): the genome has only generic crotonase annotations (PP_2217 'enoyl-CoA hydratase', PP_2136, several 'Enoyl-CoA hydratase/isomerase family' proteins) and no methacrylyl-CoA-specific gene or valine-cluster context."
+  },
+  {
+   "reaction": "ECOAH2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are enoyl-CoA hydratase/isomerase-family and 3-hydroxyacyl-CoA dehydrogenase-family acyl-CoA enzymes (PP_1845, PP_3726, PP_2047, FadB-type PP_2136, enoyl-CoA hydratase PP_2217); broad-specificity, so no removal applies."
+  },
+  {
+   "reaction": "ECOAH3",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are enoyl-CoA hydratase/isomerase-family and 3-hydroxyacyl-CoA dehydrogenase-family acyl-CoA enzymes (PP_1845, PP_3726, PP_2047, FadB-type PP_2136, enoyl-CoA hydratase PP_2217); broad-specificity, so no removal applies."
+  },
+  {
+   "reaction": "ECOAH4",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are enoyl-CoA hydratase/isomerase-family and 3-hydroxyacyl-CoA dehydrogenase-family acyl-CoA enzymes (PP_1845, PP_3726, PP_2047, FadB-type PP_2136, enoyl-CoA hydratase PP_2217); broad-specificity, so no removal applies."
+  },
+  {
+   "reaction": "ECOAH5",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are enoyl-CoA hydratase/isomerase-family and 3-hydroxyacyl-CoA dehydrogenase-family acyl-CoA enzymes (PP_1845, PP_3726, PP_2047, FadB-type PP_2136, enoyl-CoA hydratase PP_2217); broad-specificity, so no removal applies."
+  },
+  {
+   "reaction": "ECOAH6",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are enoyl-CoA hydratase/isomerase-family and 3-hydroxyacyl-CoA dehydrogenase-family acyl-CoA enzymes (PP_1845, PP_3726, PP_2047, FadB-type PP_2136, enoyl-CoA hydratase PP_2217); broad-specificity, so no removal applies."
+  },
+  {
+   "reaction": "ECOAH7",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are enoyl-CoA hydratase/isomerase-family and 3-hydroxyacyl-CoA dehydrogenase-family acyl-CoA enzymes (PP_1845, PP_3726, PP_2047, FadB-type PP_2136, enoyl-CoA hydratase PP_2217); broad-specificity, so no removal applies."
+  },
+  {
+   "reaction": "ECOAH8",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alternatives are enoyl-CoA hydratase/isomerase-family and 3-hydroxyacyl-CoA dehydrogenase-family acyl-CoA enzymes (PP_1845, PP_3726, PP_2047, FadB-type PP_2136, enoyl-CoA hydratase PP_2217); broad-specificity, so no removal applies."
+  },
+  {
+   "reaction": "ECOAH9ir",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Tiglyl-CoA hydration: PP_2217 'enoyl-CoA hydratase' sits in the PP_2213-PP_2217 branched-chain cluster, but its annotation is the generic crotonase (EC 4.2.1.17) shared with other genes (PP_2136, PP_3284), so it does not name exactly this reaction."
+  },
+  {
+   "reaction": "ETOHtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  },
+  {
+   "reaction": "FACOAL100t2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are fatty acid--CoA ligases/acyl-CoA synthetases (PP_0763, PP_2038, PP_2213, PP_2709, PP_3458, PP_4549, PP_4550), broad-specificity acyl-CoA enzymes; PP_4549/PP_4550 are separate full-length ligases, not subunits of one complex."
+  },
+  {
+   "reaction": "FACOAL80t2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All alternatives are fatty acid--CoA ligases/acyl-CoA synthetases (PP_0763, PP_2038, PP_2213, PP_2709, PP_3458, PP_4549, PP_4550), broad-specificity acyl-CoA enzymes; PP_4549/PP_4550 are separate full-length ligases, not subunits of one complex."
+  },
+  {
+   "reaction": "FUM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0897 (class I) and PP_0944/PP_1755 (class II) are all fumarate hydratases."
+  },
+  {
+   "reaction": "G1PACT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_5411 is bifunctional GlmU; PP_0726 carries only a generic 'Transferase' annotation, which is not removable under the rules."
+  },
+  {
+   "reaction": "GAPD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1009 and PP_2149 are both annotated glyceraldehyde-3-phosphate dehydrogenase (same-name paralogs)."
+  },
+  {
+   "reaction": "GLCtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1019 and PP_1445 are both carbohydrate-selective porins (OprB) for this outer-membrane diffusion step (same-name paralogs)."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "R1",
+   "new_rule": "PP_4399 or PP_5046",
+   "evidence": "PP_5299 is annotated glutamate-putrescine ligase (EC 6.3.1.11; putrescine rather than ammonium as acceptor), a different specific activity; the two glutamine synthetase annotations are kept."
+  },
+  {
+   "reaction": "GTPCI",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1823 and PP_2512 are both annotated GTP cyclohydrolase 1."
+  },
+  {
+   "reaction": "GTPCII",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0516/PP_3813 (bifunctional RibBA) and PP_0522 'GTP cyclohydrolase-2' all carry GTP cyclohydrolase II annotations."
+  },
+  {
+   "reaction": "HACD9",
+   "decision": "R6",
+   "new_rule": "PP_2214",
+   "evidence": "PP_2214 '3-hydroxyacyl-CoA dehydrogenase type-2' (HSD17B10/MHBD-type, EC 1.1.1.35/1.1.1.178) matches 2-methyl-3-hydroxybutyryl-CoA dehydrogenation; supported by its operon with short-chain acyl-CoA dehydrogenase PP_2216, enoyl-CoA hydratase PP_2217 and thiolase PP_2215."
+  },
+  {
+   "reaction": "HADPCOADH3",
+   "decision": "R6",
+   "new_rule": "PP_3282",
+   "evidence": "PP_3282 is annotated '3-hydroxyadipyl-CoA dehydrogenase' (PaaH), exactly this reaction, within the phenylacetate catabolic cluster (PP_3279 phenylacetate-CoA ligase, PP_3280 3-oxoadipyl-CoA thiolase)."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "R1",
+   "new_rule": "spontaneous",
+   "evidence": "PP_0101 'putative sulfate transporter' (SulP family) is a transporter listed for an enzymatic hydration reaction and is removed; the spontaneous alternative remains."
+  },
+  {
+   "reaction": "IZPN",
+   "decision": "R1",
+   "new_rule": "PP_5030",
+   "evidence": "PP_3194 is a 'conserved protein of unknown function' (hypothetical protein) with no enzymatic annotation; PP_5030 'Imidazolonepropionase' (HutI), clustered with HutH PP_5032, HutU PP_5033 and HutG PP_5029, remains."
+  },
+  {
+   "reaction": "MCITL2",
+   "decision": "R1",
+   "new_rule": "PP_1510 or PP_2334",
+   "evidence": "PP_1389 is annotated oxaloacetate decarboxylase, a different specific activity; PP_2334 '2-methylisocitrate lyase' (prp operon) and PP_1510 (putative PEP mutase/isocitrate lyase-family protein, family-level) are kept."
+  },
+  {
+   "reaction": "MMTSAO",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0597 and PP_4667 are both annotated methylmalonate-semialdehyde dehydrogenase (same-name paralogs)."
+  },
+  {
+   "reaction": "MNtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  },
+  {
+   "reaction": "OCBT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1000 (catabolic) and PP_1079 are both annotated ornithine carbamoyltransferase (same-name paralogs)."
+  },
+  {
+   "reaction": "OCTAtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion of octanoate; diffusion steps are not assigned genes."
+  },
+  {
+   "reaction": "OXOAEL",
+   "decision": "R1",
+   "new_rule": "PP_1380",
+   "evidence": "PP_0553 is the dihydrolipoyllysine-residue acetyltransferase (E2) of the acetoin cleaving system, a clearly different activity; PP_1380 '3-oxoadipate enol-lactonase 2' (PcaD) in the pca cluster remains."
+  },
+  {
+   "reaction": "PERD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_2117 is PdxB; PP_2533 'D-isomer specific 2-hydroxyacid dehydrogenase family protein' is a family-level dehydrogenase compatible with this reaction."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_4716 is GlmM; PP_3578 'phosphoglucomutase' is a phosphohexomutase acting on a closely related hexose phosphate, so it is not clearly excluded as a catalyst."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "R1",
+   "new_rule": "PP_0858 or PP_1972 or PP_3590 or PP_3786",
+   "evidence": "PP_4197 and PP_4429 (GntR-family transcriptional regulators) and PP_5275 (transcriptional regulator) are removed; all aminotransferases (incl. PP_1972 aromatic-amino-acid aminotransferase) are kept."
+  },
+  {
+   "reaction": "PMPK",
+   "decision": "R1",
+   "new_rule": "PP_4782",
+   "evidence": "PP_4783 'Thiamine-phosphate synthase' (ThiE, EC 2.5.1.3) catalyses the next condensation step, not ATP-dependent phosphorylation; PP_4782 'Phosphomethylpyrimidine kinase' (ThiD) remains."
+  },
+  {
+   "reaction": "PPAt2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No propionate-specific symporter is annotated; only acetate permeases (PP_1743, PP_2797, PP_3272) and a putative short-chain fatty acid transporter (PP_3124) exist."
+  },
+  {
+   "reaction": "PPAtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  },
+  {
+   "reaction": "PRPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_0722 and PP_2744 both carry ribose-phosphate pyrophosphokinase (family) annotations."
+  },
+  {
+   "reaction": "RBFK",
+   "decision": "R1",
+   "new_rule": "PP_0602",
+   "evidence": "PP_2052 is a sugar-phosphatase/mannitol-1-phosphate 5-dehydrogenase, which cannot perform ATP-dependent riboflavin phosphorylation; PP_0602 bifunctional riboflavin kinase/FMN adenylyltransferase (RibF) remains."
+  },
+  {
+   "reaction": "RBFSa",
+   "decision": "R1",
+   "new_rule": "PP_0517",
+   "evidence": "The equation is the lumazine synthase step (EC 2.5.1.78), annotated for PP_0517 '6,7-dimethyl-8-ribityllumazine synthase'; PP_2916 'riboflavin synthase' (EC 2.5.1.9) catalyses the following, different reaction and is removed."
+  },
+  {
+   "reaction": "RNDR1",
+   "decision": "R1",
+   "new_rule": "PP_1177 and PP_1179",
+   "evidence": "PP_5215 thioredoxin I is the reductant co-substrate of this reaction, not a ribonucleotide reductase; the annotated class I RNR alpha (PP_1179) and beta (PP_1177) subunits remain as the complex."
+  },
+  {
+   "reaction": "RNDR3",
+   "decision": "R1",
+   "new_rule": "PP_1177 and PP_1179",
+   "evidence": "PP_5215 thioredoxin I is the reductant co-substrate of this reaction, not a ribonucleotide reductase; the annotated class I RNR alpha (PP_1179) and beta (PP_1177) subunits remain as the complex."
+  },
+  {
+   "reaction": "SDPDS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1525 is DapE; PP_0203 'putative dipeptidase' is a broad-specificity peptidase/amidohydrolase annotation and is not clearly excluded."
+  },
+  {
+   "reaction": "SDPTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_1588 is the specific N-succinyl-L,L-diaminopimelate aminotransferase; PP_3786 is a generic 'aminotransferase', which may not be removed."
+  },
+  {
+   "reaction": "SHK3Dr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All five alternatives carry shikimate (5-)dehydrogenase or quinate/shikimate dehydrogenase family annotations."
+  },
+  {
+   "reaction": "T4HCINNMtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion of p-coumarate; no specific porin is annotated."
+  },
+  {
+   "reaction": "T4HCINNMtpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No 4-hydroxycinnamate transporter is annotated; PP_3349 is a 3-hydroxyphenylpropionate/3-hydroxycinnamate symporter (different substrate)."
+  },
+  {
+   "reaction": "TMDS",
+   "decision": "R1",
+   "new_rule": "PP_5141",
+   "evidence": "PP_2486 is an Old Yellow Enzyme-family NADH-dependent flavin oxidoreductase, a clearly different activity (and not a ThyX-type enzyme); PP_5141 'Thymidylate synthase' (ThyA) remains."
+  },
+  {
+   "reaction": "TMPK",
+   "decision": "R1",
+   "new_rule": "PP_0519",
+   "evidence": "PP_5045 'tRNA sulfurtransferase' (ThiI) is not a kinase; PP_0519 'thiamin monophosphate kinase' (ThiL) remains."
+  },
+  {
+   "reaction": "TRDR",
+   "decision": "R1",
+   "new_rule": "PP_0786 or PP_2440",
+   "evidence": "PP_0510 and PP_5069 are thioredoxins (the substrate of this reaction), not the NADPH-dependent reductase; thioredoxin reductase PP_0786 and the TrxB-like AhpF PP_2440 are kept."
+  },
+  {
+   "reaction": "UAGDP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_5411 is bifunctional GlmU; PP_0726 carries only a generic 'Transferase' annotation, which is not removable under the rules."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "PP_1593",
+   "evidence": "PP_1771 'Cytidylate kinase' (Cmk, EC 2.7.4.25, NMP-kinase family) is specific for CMP/dCMP and unrelated to the amino-acid-kinase-family UMP kinase; PP_1593 'Uridylate kinase' (PyrH) remains."
+  },
+  {
+   "reaction": "VANLNtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion of vanillin; diffusion steps are not assigned genes."
+  },
+  {
+   "reaction": "VANLTtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane passage of vanillate: only a generic 'porin-like protein' (PP_3739) near vanAB is present, with no annotated vanillate-specific porin."
+  },
+  {
+   "reaction": "VNDH_2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "PP_3357 is vanillin dehydrogenase; PP_0665 'putative glyceraldehyde-3-phosphate dehydrogenase' (472 aa, aldehyde-dehydrogenase-sized) is a broad-specificity dehydrogenase and is not removable."
+  },
+  {
+   "reaction": "Zn2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step assigned to two same-name 'OmpA family protein' paralogs (PP_1121, PP_4198); they are not subunits of one complex and neither is clearly a non-transporter, so the rule is left unchanged."
+  }
+ ],
+ "filter": "noIonR6 (docs/studies/transfer-v1-replication-plan.md)"
+}

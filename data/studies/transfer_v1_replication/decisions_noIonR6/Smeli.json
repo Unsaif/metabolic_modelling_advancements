@@ -1,0 +1,499 @@
+{
+ "org": "Smeli",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "2HXMPt6",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Gene-less transport of 2-hydroxymethylphenol (saligenin); genes.tsv has no transporter annotated for this substrate, only generic transporters."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "IlvIH (SMc01431 catalytic + SMc01430 regulatory subunit) is already AND-joined; SMa2211 'thiamine pyrophosphate protein' is a family-level ThDP-enzyme annotation compatible with acetolactate synthase, so it is not removed."
+  },
+  {
+   "reaction": "ANS",
+   "decision": "R6",
+   "new_rule": "SMc02725",
+   "evidence": "SMc02725 is annotated 'anthranilate synthase' (729 aa, the size of a fused TrpE(G) component I+II glutamine-dependent enzyme) and is the only anthranilate synthase in the genome (SMc04013 is aminodeoxychorismate synthase)."
+  },
+  {
+   "reaction": "ARGSL",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SMc00725 and SM_b21094 are both annotated argininosuccinate lyase; same-name paralogs are never removed."
+  },
+  {
+   "reaction": "ASNS1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SM_b20481 and SM_b20652 are both annotated asparagine synthetase (glutamine amidotransferase); same-name paralogs."
+  },
+  {
+   "reaction": "ASPTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Several aspartate/aromatic/generic aminotransferases; hypothetical SMc01969 is aminotransferase-sized (392 aa) and appears in three transaminase rules, and SM_b21537 is itself an aminotransferase; redundancy plausible."
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No ClC-family chloride/H+ antiporter or chloride channel is annotated; the only channel protein (SM_b20361 'ionic voltage-gated channel protein') is not chloride-specific."
+  },
+  {
+   "reaction": "COBALT2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SM_b20011 is a hypothetical protein, but a second annotated 'magnesium/cobalt transporter CorA' (SMc00874) lies outside the rule, so pruning to SMc00399 alone would misstate redundancy."
+  },
+  {
+   "reaction": "DARBabcpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both complexes share permease SM_b20506 and binding protein SM_b20508 and differ only in the ATPase (SM_b20507 vs SM_b21269 'ABC transporter ATPase'); ABC transporter components of a plausible substrate class are not removed."
+  },
+  {
+   "reaction": "DARBtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; removing SM_b21355 'oxidoreductase' would leave only hypothetical SMc03109, so R1 is not applied."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Three same-name paralogs annotated dihydroxy-acid dehydratase (SMc04045, SM_b20115, SM_b20890)."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Four same-name dihydrodipicolinate synthase paralogs (SMc02404, SM_b20140, SM_b20259, SM_b21508)."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SMc02166 and SMc01361 are both annotated dihydroorotase (same-name paralogs)."
+  },
+  {
+   "reaction": "DMATT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SMc03884 geranyltranstransferase (IspA) and SMc00860 octaprenyl-diphosphate synthase are trans-prenyltransferases of the same family acting on allylic diphosphates + IPP; overlapping specificity cannot be excluded."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "R1",
+   "new_rule": "SMc00016",
+   "evidence": "SMc00335 is 30S ribosomal protein S1 (translation protein, not a catalyst); SMc00016 is the annotated 4-hydroxy-3-methylbut-2-enyl diphosphate reductase (IspH), the only one in the genome."
+  },
+  {
+   "reaction": "DNMPPA",
+   "decision": "R1",
+   "new_rule": "SMc00521 or SMc03785",
+   "evidence": "Removed SMc01566 'ATP-dependent DNA helicase' (different activity) and the FixI P-type cation ATPases SMa0621/SMa1209 (transporters listed for an enzymatic reaction); the hypothetical SMc00521 and Nudix-family SMc03785 are kept, so no single gene becomes required."
+  },
+  {
+   "reaction": "DNTPPA",
+   "decision": "R1",
+   "new_rule": "SMc02554 or SMc02448 or SMc03785",
+   "evidence": "Removed SMc01566 'ATP-dependent DNA helicase' and the FixI cation-transporting ATPases SMa0621/SMa1209; kept the Nudix-family hydrolases (MutT SMc02448, dinucleoside polyphosphate hydrolase SMc03785) and the Nudix-sized hypothetical SMc02554, compatible with a NudB-type pyrophosphohydrolase."
+  },
+  {
+   "reaction": "DXPS",
+   "decision": "R6",
+   "new_rule": "SMc00972",
+   "evidence": "SMc00972 is annotated '1-deoxy-D-xylulose-5-phosphate synthase', matching the reaction's EC 2.2.1.7; it is the only Dxs in the genome."
+  },
+  {
+   "reaction": "FBA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two annotated fructose-1,6-bisphosphate aldolases plus hypothetical SM_b20498 in a sugar-catabolism cluster (L-xylulose kinase, glycerol-3-P dehydrogenase) that may itself be an aldolase; aldolases are not pruned."
+  },
+  {
+   "reaction": "FBA2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SM_b21192 is a fructose-bisphosphate aldolase and SM_b20498 a hypothetical in a sugar-catabolic cluster; aldolase family with plausible F1P activity, and removal would leave a single generic aldolase."
+  },
+  {
+   "reaction": "FBP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The only annotated fructose-1,6-bisphosphatase is the cbb-operon SM_b20202; hypothetical SMc00535 (274 aa, phosphatase-family size) was matched to FBPase and FBPase/IMPase-type redundancy is plausible."
+  },
+  {
+   "reaction": "FCI",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No L-fucose isomerase is annotated; only L-fucose dehydrogenase (SMc02775) is present."
+  },
+  {
+   "reaction": "FCLPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name 'L-fuculose phosphate aldolase' paralogs (SMc01621, SM_b20490) plus a generic aldolase (SM_b20666)."
+  },
+  {
+   "reaction": "FUCt",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No fucose-specific transporter (e.g. FucP) is annotated."
+  },
+  {
+   "reaction": "G1PACT",
+   "decision": "R1",
+   "new_rule": "SMc00232",
+   "evidence": "SMc00519 is a hypothetical protein with no enzymatic annotation (in a cluster of hypotheticals); SMc00232 is the annotated bifunctional GlmU (glucosamine-1-phosphate acetyltransferase/N-acetylglucosamine-1-phosphate uridyltransferase), the only one in the genome."
+  },
+  {
+   "reaction": "GALKr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No galactokinase is annotated (only D-galactose 1-dehydrogenase SMc00588)."
+  },
+  {
+   "reaction": "GALabc",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Chimeric sugar ABC complexes; all members are carbohydrate ABC transporter components (right substrate class)."
+  },
+  {
+   "reaction": "GARFT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SMc04334 'formyltransferase' is a family-level annotation compatible with GAR formylation, so it is not removed."
+  },
+  {
+   "reaction": "GF6PTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SMa0878 is annotated glucosamine--fructose-6-phosphate aminotransferase, SMc02610 is a generic amidotransferase and SMc02877 a hypothetical in an amino-sugar cluster; pruning is not clearly justified."
+  },
+  {
+   "reaction": "GLCabc",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Chimeric complexes built from sugar ABC transporter components (right substrate class)."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Four glutamine synthetase paralogs (SMc02613, SMc00948, SMc01973, SM_b20745)."
+  },
+  {
+   "reaction": "GLYCtpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rule already includes spontaneous diffusion; SMc02648 transport protein (ars cluster, aquaglyceroporin-like context) is compatible."
+  },
+  {
+   "reaction": "GRTT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "As for DMATT: geranyltranstransferase SMc03884 and octaprenyl-diphosphate synthase SMc00860 are same-family prenyltransferases with overlapping substrate class."
+  },
+  {
+   "reaction": "GTPCI",
+   "decision": "R1",
+   "new_rule": "SMc01005",
+   "evidence": "SMc02723 is 7-cyano-7-deazaguanine reductase (QueF, EC 1.7.1.13, queuosine pathway), a clearly different activity; SMc01005 is the only annotated GTP cyclohydrolase I."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Carbonic anhydrase SMc04083 or spontaneous; nothing to change."
+  },
+  {
+   "reaction": "HISDr",
+   "decision": "R1",
+   "new_rule": "SMc00669 or SMa0306 or SM_b21165",
+   "evidence": "SM_b21449 glutathione S-transferase has a clearly different activity; the three histidine ammonia-lyase paralogs remain."
+  },
+  {
+   "reaction": "HISTD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name histidinol dehydrogenase paralogs (SMc02307, SMa0398)."
+  },
+  {
+   "reaction": "HISTP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "HisB SMc02574 is 202 aa (monofunctional IGPD), but the alternative SM_b20159 is one of five inositol-monophosphatase paralogs and the true histidinol-phosphatase cannot be identified from annotation."
+  },
+  {
+   "reaction": "HISabcpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All members are amino-acid ABC transporter components (right substrate class)."
+  },
+  {
+   "reaction": "HIStex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step."
+  },
+  {
+   "reaction": "ICITt_kt",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No isocitrate/citrate-specific transporter is annotated."
+  },
+  {
+   "reaction": "INSCR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Lumped pseudo-reaction for inositol catabolism."
+  },
+  {
+   "reaction": "INSTt2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No myo-inositol transporter is annotated (only catabolic enzymes)."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "R1",
+   "new_rule": "SMc00016",
+   "evidence": "SMc00335 is 30S ribosomal protein S1 (translation protein, not a catalyst); SMc00016 is the annotated 4-hydroxy-3-methylbut-2-enyl diphosphate reductase (IspH), the only one in the genome."
+  },
+  {
+   "reaction": "IPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SMc02546 'alpha-isopropylmalate/homocitrate synthase family transferase' is a family-level annotation compatible with the reaction."
+  },
+  {
+   "reaction": "LCADi",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "After removing the hypothetical or the formaldehyde dehydrogenase only generic aldehyde dehydrogenases would remain."
+  },
+  {
+   "reaction": "MALT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Alpha-glucosidase SMc03064 and alpha-glycosylase SMc01532 are both compatible."
+  },
+  {
+   "reaction": "MALTabc",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Chimeric sugar ABC complexes; all members are carbohydrate transporter components (right substrate class)."
+  },
+  {
+   "reaction": "MEPCT",
+   "decision": "R6",
+   "new_rule": "SMc01040",
+   "evidence": "SMc01040 is annotated 'bifunctional 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase/2-C-methyl-D-erythritol 2,4-cyclodiphosphate synthase' (IspDF), naming exactly this reaction; it is the only IspD in the genome."
+  },
+  {
+   "reaction": "NDPK2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Adenylate kinase SMc01288 is a broad-specificity nucleotide kinase; NDK/Adk redundancy plausible."
+  },
+  {
+   "reaction": "NDPK4",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Adenylate kinase SMc01288 is a broad-specificity nucleotide kinase; NDK/Adk redundancy plausible."
+  },
+  {
+   "reaction": "NDPK5",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Adenylate kinase SMc01288 is a broad-specificity nucleotide kinase; NDK/Adk redundancy plausible."
+  },
+  {
+   "reaction": "NDPK7",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Adenylate kinase SMc01288 is a broad-specificity nucleotide kinase; NDK/Adk redundancy plausible."
+  },
+  {
+   "reaction": "NNATr",
+   "decision": "R1",
+   "new_rule": "SMc03778",
+   "evidence": "SMc02711 is a hypothetical protein with no enzymatic annotation (neighbours Fic protein and sigma-E; CoaD is separately annotated as SMc01209); SMc03778 is the annotated nicotinic acid mononucleotide adenylyltransferase (NadD), the only one in the genome."
+  },
+  {
+   "reaction": "OCBT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Two same-name ornithine carbamoyltransferases (SMc02137, SMa0695)."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SM_b21081 phosphoglucomutase/phosphomannomutase is a broad-specificity phosphohexomutase."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Generic aminotransferases; redundancy plausible."
+  },
+  {
+   "reaction": "PPND",
+   "decision": "R1",
+   "new_rule": "SMc00711",
+   "evidence": "SMc00333 is EPSP synthase (AroA, EC 2.5.1.19) and SMc03858 is a 111-aa standalone chorismate mutase (EC 5.4.99.5), both clearly different activities; SMc00711 cyclohexadienyl dehydrogenase (TyrA) is the only prephenate/arogenate dehydrogenase annotated."
+  },
+  {
+   "reaction": "PRAGSr",
+   "decision": "R1",
+   "new_rule": "SMc00993",
+   "evidence": "SMc00615 is phosphoribosylaminoimidazole synthetase (PurM, EC 6.3.3.1), a different purine step; SMc00993 is the only annotated phosphoribosylamine--glycine ligase (PurD)."
+  },
+  {
+   "reaction": "PRATPP",
+   "decision": "R1",
+   "new_rule": "SMc02568",
+   "evidence": "SMc01004 is the monofunctional phosphoribosyl-AMP cyclohydrolase (HisI, 150 aa, EC 3.5.4.19), a different step; SMc02568 is the annotated phosphoribosyl-ATP pyrophosphatase (HisE), the only one."
+  },
+  {
+   "reaction": "PYDXNtr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No pyridoxine transporter is annotated."
+  },
+  {
+   "reaction": "RBFK",
+   "decision": "R1",
+   "new_rule": "SMc00909",
+   "evidence": "SMc01502 is a 224-aa 'hydrolase phosphatase' in the sorbitol/mannitol operon and cannot catalyse ATP-dependent phosphorylation; SMc00909 is the annotated bifunctional riboflavin kinase/FMN adenylyltransferase (RibF), the only one."
+  },
+  {
+   "reaction": "RBK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SMc00473 'carbohydrate kinase' is a family-level annotation compatible with ribokinase."
+  },
+  {
+   "reaction": "RMK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No rhamnulokinase is annotated."
+  },
+  {
+   "reaction": "RNDR2",
+   "decision": "R1",
+   "new_rule": "SMc01237",
+   "evidence": "SMc02761 thioredoxin is the reductant (trdrd_c is a substrate of the reaction), not an alternative catalyst; SMc01237 is the only ribonucleotide reductase (1263 aa, single-subunit class II size; no beta subunit annotated)."
+  },
+  {
+   "reaction": "RNDR3",
+   "decision": "R1",
+   "new_rule": "SMc01237",
+   "evidence": "SMc02761 thioredoxin is the reductant (trdrd_c is a substrate of the reaction), not an alternative catalyst; SMc01237 is the only ribonucleotide reductase (1263 aa, single-subunit class II size; no beta subunit annotated)."
+  },
+  {
+   "reaction": "SALCNtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step; removing SM_b21355 'oxidoreductase' would leave only hypothetical SMc03109, so R1 is not applied."
+  },
+  {
+   "reaction": "SALCptspp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No beta-glucoside PTS permease is annotated; only PTS-Ntr components (HPr SMc02754, EIIA SMc02753, EI-Ntr SMc02437)."
+  },
+  {
+   "reaction": "SBTD_D2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are dehydrogenases (alcohol dehydrogenase, sugar-alcohol dehydrogenase); family-level, not removed."
+  },
+  {
+   "reaction": "SBTt2",
+   "decision": "R6",
+   "new_rule": "SMc01496 and SMc01497 and SMc01498 and SMc01499",
+   "evidence": "The genome's specific sorbitol transporter is an ABC system: SMc01496 'sorbitol-binding periplasmic protein' and SMc01497/SMc01498 'sorbitol/mannitol transport inner membrane protein', with the co-directional ATP-binding protein SMc01499 in the same operon next to sorbitol dehydrogenase SMc01500; no sorbitol proton symporter exists, so the complex is assigned."
+  },
+  {
+   "reaction": "SULRi",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No 'sulfite reductase' annotation exists; the nearest candidate (SMc02124) is annotated only as 'nitrite reductase'."
+  },
+  {
+   "reaction": "THZPSN",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Lumped thiazole-synthesis step; SM_b20877 'oxidoreductase' is a family-level annotation (ThiO-type oxidoreductases take part), so it is not removed."
+  },
+  {
+   "reaction": "TMDS",
+   "decision": "R1",
+   "new_rule": "SMc01444",
+   "evidence": "SM_b21570 is a 678-aa 'NADH-dependent oxidase' (flavin oxidoreductase, far larger than ThyX) with a clearly different activity; SMc01444 is the only annotated thymidylate synthase (ThyA, adjacent to dihydrofolate reductase SMc01442)."
+  },
+  {
+   "reaction": "TMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No thiamine-monophosphate kinase (ThiL) is annotated."
+  },
+  {
+   "reaction": "TMPPP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SM_b20962 (HMP-P kinase ThiD) is a different activity, but a second 'thiamine-phosphate pyrophosphorylase' (SMc03996) lies outside the rule, so pruning to SM_b20618 alone would misstate redundancy."
+  },
+  {
+   "reaction": "TPI",
+   "decision": "R1",
+   "new_rule": "SMc01023 or SMc01614",
+   "evidence": "SMc03981 is phosphoglycerate kinase (EC 2.7.2.3), a clearly different activity; the two triosephosphate isomerase paralogs remain."
+  },
+  {
+   "reaction": "TYRTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Generic/aromatic aminotransferases and HisC paralogs; redundancy plausible."
+  },
+  {
+   "reaction": "UAGDP",
+   "decision": "R1",
+   "new_rule": "SMc00232",
+   "evidence": "SMc00519 is a hypothetical protein with no enzymatic annotation; SMc00232 is the annotated bifunctional GlmU carrying the N-acetylglucosamine-1-phosphate uridyltransferase activity, the only one in the genome."
+  },
+  {
+   "reaction": "UDPG4E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Several UDP-glucose 4-epimerase paralogs plus SDR-family epimerases; redundancy plausible."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SMc00334 cytidylate kinase acts on the same substrate class (pyrimidine NMPs) as uridylate kinase SMc02099; not clearly excluded."
+  },
+  {
+   "reaction": "VALTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Branched-chain aminotransferase SMc02896 plus generic aminotransferase SMc00042; aminotransferases are not pruned."
+  },
+  {
+   "reaction": "XYLK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Xylulose kinase SMc03164 plus family-level pentose/sugar kinases; not pruned."
+  }
+ ],
+ "filter": "noIonR6 (docs/studies/transfer-v1-replication-plan.md)"
+}

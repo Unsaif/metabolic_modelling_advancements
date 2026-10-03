@@ -1,0 +1,307 @@
+{
+ "org": "MR1",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ACHBS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rule already encodes the two AHAS isozyme complexes correctly (SO2278/SO2279 IlvIH 'acetolactate synthase III small/large subunit' and SO4346/SO4347 IlvMG 'acetolactate synthase II small/large subunit'); no change needed."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Rule already encodes the two AHAS isozyme complexes correctly (SO2278 and SO2279 IlvIH; SO4346 and SO4347 IlvMG); no change needed."
+  },
+  {
+   "reaction": "ADSK",
+   "decision": "R1",
+   "new_rule": "SO3723",
+   "evidence": "SO3723 'adenylylsulfate kinase' (CysC, next to SO3726/SO3727 sulfate adenylyltransferase) is the specific catalyst; SO2618 'ATP-binding protein, Mrp/Nbp35 family' (RefSeq ApbC [4Fe-4S] cluster scaffold) is an Fe-S carrier, not an APS kinase."
+  },
+  {
+   "reaction": "ADSS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO1258 'adenylosuccinate synthetase, putative' and SO3937 PurA 'adenylosuccinate synthetase' are same-name paralogs."
+  },
+  {
+   "reaction": "ARGSS",
+   "decision": "R1",
+   "new_rule": "SO0278",
+   "evidence": "SO0278 'argininosuccinate synthase' (ArgG) is the catalyst; SO0279 'argininosuccinate lyase' (ArgH, EC 4.3.2.1) catalyses the following step, a different activity, and is not a subunit of ArgG."
+  },
+  {
+   "reaction": "ASNS1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both SO2767 (AsnB) and SO3175 are annotated 'asparagine synthetase, glutamine-hydrolyzing'; same-name paralog, kept despite the polysaccharide-cluster context of SO3175."
+  },
+  {
+   "reaction": "ASPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All four alternatives are annotated aspartokinases (ThrA SO3415, MetL SO4055, LysC-type SO3427 and SO3986); genuine isozymes."
+  },
+  {
+   "reaction": "BPNT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO0191 and SO1655 are both annotated 'cysQ protein' (3'(2'),5'-bisphosphate nucleotidase CysQ); same-name paralogs."
+  },
+  {
+   "reaction": "CA2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step catalysed by putative porins plus OmpA-family proteins; the remaining genes would all be generic porins, so R1 is not allowed and redundancy is expected."
+  },
+  {
+   "reaction": "CHORM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO1362 (TyrA, chorismate mutase/prephenate dehydrogenase) and SO1367 (PheA, chorismate mutase/prephenate dehydratase) both carry chorismate mutase domains; genuine alternatives."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step catalysed by putative porins plus OmpA-family proteins; the remaining genes would all be generic porins, so R1 is not allowed and redundancy is expected."
+  },
+  {
+   "reaction": "COBALT2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step catalysed by putative porins plus OmpA-family proteins; the remaining genes would all be generic porins, so R1 is not allowed and redundancy is expected."
+  },
+  {
+   "reaction": "CU2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step catalysed by putative porins plus OmpA-family proteins; the remaining genes would all be generic porins, so R1 is not allowed and redundancy is expected."
+  },
+  {
+   "reaction": "CUabcpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "removed by the noIonR6 filter (R6 on an inorganic-ion transport reaction); original: SO0486 'copper ABC transporter, periplasmic copper-binding protein', SO0487 'copper ABC transporter, ATP-binding protein' and SO0488 'copper ABC transporter, permease protein' are consecutive same-strand genes forming one copper-specific ABC system."
+  },
+  {
+   "reaction": "CYSS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO2903 'cysteine synthase A' (CysK) and SO3598 'cysteine synthase B' (CysM) are isozymes."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO0756 AroG, SO1361 AroF and SO2646 AroH are all DAHP synthase (phospho-2-dehydro-3-deoxyheptonate aldolase) isozymes."
+  },
+  {
+   "reaction": "DHFR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO3646 FolA plus SO0772 SDR-family oxidoreductase that RefSeq names 'dihydrofolate reductase FolM'; compatible, broad-specificity reductase."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "R1",
+   "new_rule": "SO3148 or SO3695",
+   "evidence": "SO1301 'aspartate carbamoyltransferase' (PyrB, EC 2.1.3.2) catalyses a different step; SO3695 'dihydroorotase, homodimeric type' (PyrC) is the specific enzyme and SO3148 (RefSeq 'periplasmic amidohydrolase family protein') is kept as a family-level annotation."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "R1",
+   "new_rule": "SO3529",
+   "evidence": "SO2402 is 'ribosomal protein S1' (RpsA), not a catalyst; SO3529 'penicillin tolerance protein LytB' is RefSeq IspH, 1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO3817 PanE '2-dehydropantoate 2-reductase' plus SO4349 IlvC 'ketol-acid reductoisomerase', a broad-specificity NADPH reductase with known ketopantoate reductase side activity; compatible."
+  },
+  {
+   "reaction": "E4PD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO0931 'D-erythrose-4-phosphate dehydrogenase' plus SO0538 GapA glyceraldehyde-3-phosphate dehydrogenase, a dehydrogenase that also oxidises E4P; compatible broad-specificity alternative."
+  },
+  {
+   "reaction": "GF6PTA",
+   "decision": "R1",
+   "new_rule": "SO4741",
+   "evidence": "SO4741 'glucosamine--fructose-6-phosphate aminotransferase (isomerizing)' (GlmS) is the glutamine-dependent enzyme; SO3506 is a stand-alone SIS-domain protein (RefSeq NagB glucosamine-6-phosphate deaminase, EC 3.5.99.6) beside NagA SO3505 in a GlcNAc catabolic cluster and lacks the glutamine amidotransferase domain."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO1268 is annotated 'glutamine synthetase' (same-name paralog of GlnA SO4410); RefSeq calls it PuuA gamma-glutamylputrescine synthase in a polyamine cluster, but conflicting annotations do not meet the R1 bar."
+  },
+  {
+   "reaction": "GLNtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion via three putative porins (SO0312, SO1821, SO3060); generic redundant porins, no change."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Beta-class carbonic anhydrase SO2474 OR spontaneous CO2 hydration; the chemistry is genuinely spontaneous, so no change."
+  },
+  {
+   "reaction": "HSDy",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO3415 ThrA and SO4055 MetL are both bifunctional aspartokinase/homoserine dehydrogenases; genuine isozymes."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "R1",
+   "new_rule": "SO3529",
+   "evidence": "SO2402 is 'ribosomal protein S1' (RpsA), not a catalyst; SO3529 'penicillin tolerance protein LytB' is RefSeq IspH, 1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase."
+  },
+  {
+   "reaction": "L_LACD2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No gene is annotated as L-lactate dehydrogenase (EC 1.1.2.3); SO1518-SO1521 beside L-lactate permease SO1522 carry only generic annotations (conserved hypothetical, Fe-S cluster-binding), and operon context alone is insufficient."
+  },
+  {
+   "reaction": "MCITD",
+   "decision": "R6",
+   "new_rule": "SO0343",
+   "evidence": "SO0343 (FB 'aconitate hydratase 1') is RefSeq '2-methyl citrate dehydratase Fe-S dependent AcnD' and lies in the prp operon with SO0344 'methylcitrate synthase' and SO0345 'methylisocitrate lyase'."
+  },
+  {
+   "reaction": "MICITDr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO0343 (AcnD) and SO0432 'aconitate hydratase 2' (AcnB) are both aconitase-family hydratases; AcnB-type enzymes hydrate 2-methyl-cis-aconitate, so both are plausible."
+  },
+  {
+   "reaction": "MNt2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No MntH/NRAMP or other manganese-specific transporter is annotated in the genome (only CorA/CorC Mg/Co and FeoAB ferrous iron systems)."
+  },
+  {
+   "reaction": "NDPK2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO2274 Ndk plus SO2018 adenylate kinase, a broad nucleotide kinase with known nucleoside-diphosphate kinase activity; compatible."
+  },
+  {
+   "reaction": "NDPK4",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO2274 Ndk plus SO2018 adenylate kinase, a broad nucleotide kinase with known nucleoside-diphosphate kinase activity; compatible."
+  },
+  {
+   "reaction": "NPHS",
+   "decision": "R1",
+   "new_rule": "SO4739",
+   "evidence": "SO2396 is a 'conserved hypothetical protein' (RefSeq DUF2058) with no enzymatic annotation; SO4739 'naphthoate synthase' (MenB) is the specific enzyme."
+  },
+  {
+   "reaction": "OMCDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "LeuB SO4235 '3-isopropylmalate dehydrogenase' (which catalyses this decarboxylation) OR spontaneous beta-keto acid decarboxylation; no change."
+  },
+  {
+   "reaction": "ORNTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No ornithine--oxo-acid aminotransferase (EC 2.6.1.13) is annotated; the only candidate is SO0617 'acetylornithine aminotransferase' (EC 2.6.1.11), a different specific activity."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "R1",
+   "new_rule": "SO1199",
+   "evidence": "SO1199 'phosphoglucosamine mutase' (GlmM, EC 5.4.2.10) is the specific enzyme; SO2336 'phosphoglucomutase, alpha-D-glucose phosphate-specific' (Pgm, EC 5.4.2.2) is annotated as glucose-phosphate specific."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO2350 AspC (broad-specificity aminotransferase) plus SO2282 GntR/MocR regulator that RefSeq lists with an aminotransferase domain; generic aminotransferases, redundancy plausible."
+  },
+  {
+   "reaction": "PMPK",
+   "decision": "R6",
+   "new_rule": "SO2444",
+   "evidence": "SO2444 'phosphomethylpyrimidine kinase/thiamin-phosphate pyrophosphorylase' (ThiD domain, EC 2.7.4.7) is adjacent to ThiC SO2445 and thiF/thiS/thiG/thiH in a thiamine biosynthesis operon."
+  },
+  {
+   "reaction": "PPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO4190 'inorganic pyrophosphatase, manganese-dependent' plus exopolyphosphatase SO2185 and SurE nucleotidase SO3435; broad phosphoanhydride phosphatases are protected."
+  },
+  {
+   "reaction": "PPAtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step catalysed by putative porins plus OmpA-family proteins; the remaining genes would all be generic porins, so R1 is not allowed and redundancy is expected."
+  },
+  {
+   "reaction": "PRPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO3837 PrsA plus SO1980 'phosphoribosyl transferase domain protein' that RefSeq names a ribose-phosphate pyrophosphokinase; compatible annotation."
+  },
+  {
+   "reaction": "PYRtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step catalysed by putative porins plus OmpA-family proteins; the remaining genes would all be generic porins, so R1 is not allowed and redundancy is expected."
+  },
+  {
+   "reaction": "RBFK",
+   "decision": "R1",
+   "new_rule": "SO3533",
+   "evidence": "SO3533 'riboflavin biosynthesis protein RibF' (bifunctional flavokinase/FAD synthetase) is the riboflavin kinase; SO0431 is a HAD-superfamily hydrolase (RefSeq 2-deoxyglucose-6-phosphate phosphatase YniC, EC 3.1.3.68) that cannot carry out ATP-dependent phosphorylation."
+  },
+  {
+   "reaction": "SERAT",
+   "decision": "R1",
+   "new_rule": "SO2262",
+   "evidence": "SO2262 'serine acetyltransferase' (CysE) is the specific enzyme; YP_007001387_1 is RefSeq 'O-antigen biosynthesis acetyltransferase WbnJ', a sugar O-acetyltransferase with a different substrate class."
+  },
+  {
+   "reaction": "TMDS",
+   "decision": "R1",
+   "new_rule": "SO1335",
+   "evidence": "SO1335 'thymidylate synthase' (ThyA) is specific; SO2419 is FadH, NADPH 2,4-dienoyl-CoA reductase (EC 1.3.1.34), with a different activity on acyl-CoA substrates."
+  },
+  {
+   "reaction": "TMPK",
+   "decision": "R1",
+   "new_rule": "SO3464",
+   "evidence": "SO3464 'thiamin-monophosphate kinase' (ThiL, EC 2.7.4.16) is specific; SO1531 ThiI is a thiazole/tRNA 4-thiouridine sulfurtransferase (EC 2.8.1.4), not a kinase."
+  },
+  {
+   "reaction": "UDCPDP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO1293 and SO4274 (RefSeq UppP undecaprenol diphosphatase) and SO4335 PgpB are all known undecaprenyl-diphosphate phosphatase types; genuine redundancy."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "SO1631 PyrH plus SO2403 cytidylate kinase Cmk; both are pyrimidine NMP kinases with overlapping substrate class, so Cmk is not clearly excluded."
+  },
+  {
+   "reaction": "r2465_1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Only family-level 'cation efflux (family) protein' CDF genes (SO0519, SO2045, SO4475) match; no zinc-specific transporter is annotated, and CDF proteins are efflux systems."
+  }
+ ],
+ "filter": "noIonR6 (docs/studies/transfer-v1-replication-plan.md)"
+}

@@ -1,0 +1,90 @@
+{
+ "note": "Replication on panel B (docs/studies/transfer-v1-replication-plan.md): the frozen v1 arms, unchanged, plus the secondary arm M_noIonR6 (U' plus the blind decisions without R6 assignments to inorganic-ion transport reactions).",
+ "arms": {
+  "B0": {
+   "transforms": []
+  },
+  "U": {
+   "transforms": [
+    "universal_reaction_patches",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated"
+   ]
+  },
+  "UN": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated"
+   ]
+  },
+  "UQ": {
+   "transforms": [
+    "universal_reaction_patches",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway"
+   ]
+  },
+  "UNQ": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway"
+   ]
+  },
+  "Uonly_rxn": {
+   "transforms": [
+    "universal_reaction_patches"
+   ]
+  },
+  "Uonly_atp": {
+   "transforms": [
+    "add_atp_synthase_if_annotated"
+   ]
+  },
+  "M": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway",
+    "decisions:data/studies/transfer_v1/decisions/{org}.json"
+   ]
+  },
+  "M_R6": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway",
+    "decisions:data/studies/transfer_v1/decisions/{org}.json#R6"
+   ]
+  },
+  "M_R1R2": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway",
+    "decisions:data/studies/transfer_v1/decisions/{org}.json#R1,R2,R2+R1"
+   ]
+  },
+  "M_noIonR6": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway",
+    "decisions:data/studies/transfer_v1_replication/decisions_noIonR6/{org}.json"
+   ]
+  }
+ }
+}

@@ -1,0 +1,265 @@
+{
+ "org": "Dyella79",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "ACGK_1",
+   "decision": "R6",
+   "new_rule": "ABZR86_RS08705",
+   "evidence": "ABZR86_RS08705 is annotated 'acetylglutamate kinase' (ArgB, EC 2.7.2.8), exactly this reaction; supported by its arg cluster with argC RS08700, argE RS08710, argG RS08715, argH RS08695 and N-acetylornithine carbamoyltransferase RS08730."
+  },
+  {
+   "reaction": "ACHBS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Small subunit RS15930 is already AND-paired with each large subunit; RS07005 'acetolactate synthase large subunit' is a same-name paralog of ilv-cluster RS15935, so R1 is barred and no unjoined subunits remain for R2."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Small subunit RS15930 is already AND-paired with each large subunit; RS07005 'acetolactate synthase large subunit' is a same-name paralog of ilv-cluster RS15935, so R1 is barred and no unjoined subunits remain for R2."
+  },
+  {
+   "reaction": "ACOTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS17400 is the specific acetylornithine transaminase, but RS09395 'aminotransferase class III-fold PLP-dependent enzyme' is a family-level aminotransferase compatible with the reaction and must not be removed."
+  },
+  {
+   "reaction": "AGPR",
+   "decision": "R6",
+   "new_rule": "ABZR86_RS08700",
+   "evidence": "ABZR86_RS08700 is annotated 'N-acetyl-gamma-glutamyl-phosphate reductase' (ArgC, EC 1.2.1.38, matching the reaction EC); supported by adjacency to acetylglutamate kinase RS08705 in the arg cluster."
+  },
+  {
+   "reaction": "ALAtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step (extracellular to periplasm) through non-specific porins; diffusion steps are not assigned."
+  },
+  {
+   "reaction": "ANPRT",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS12070",
+   "evidence": "RS12070 is the specific 'anthranilate phosphoribosyltransferase' (TrpD, EC 2.4.2.18) in the trpC-trpD-trpG cluster; RS14265 'anthranilate synthase family protein' (620 aa TrpE/G-like chorismate-aminating enzyme in a phenazine-like cluster with PhzF, isochorismatase and class II DAHP synthase) has a different activity and is removed."
+  },
+  {
+   "reaction": "ANS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "TrpE RS12180 and TrpG RS12075 are already joined with AND; RS14265 'anthranilate synthase family protein' carries a family-level annotation compatible with this reaction, so it cannot be removed."
+  },
+  {
+   "reaction": "ASPK",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS19560",
+   "evidence": "RS19560 'bifunctional aspartate kinase/diaminopimelate decarboxylase' (871 aa) is the only annotated aspartate kinase; RS15985 and RS19035 are monofunctional 'homoserine dehydrogenase' (355/363 aa, EC 1.1.1.3, no ThrA/MetL kinase domain) with a different activity and are removed."
+  },
+  {
+   "reaction": "ASPTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All six alternatives are generic PLP aminotransferases (RS20415 is a MocR-like PdxR regulator per RefSeq, but the genes that would remain all carry generic annotations, so R1 is barred)."
+  },
+  {
+   "reaction": "BGLA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are glycoside hydrolase family 3 proteins (RS15485 RefSeq 'beta-glucosidase family protein'), family-level annotations compatible with cellobiose hydrolysis."
+  },
+  {
+   "reaction": "CLBtpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No gene is annotated as a cellobiose-specific transporter; only generic 'sugar porter family MFS transporter' and ABC transporter genes exist."
+  },
+  {
+   "reaction": "CU2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No specific copper importer is annotated: only a 149-aa 'CopD family protein' (RS09705, family-level, uptake role unproven), periplasmic/outer-membrane copper resistance proteins (CopA/CopB) and CDF/P-type ATPase efflux systems."
+  },
+  {
+   "reaction": "DAPDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS12130 and RS19560 are specific DAP decarboxylases, but RS03475 'type III PLP-dependent enzyme' is a family-level (fold-type III decarboxylase) annotation compatible with the reaction and cannot be removed."
+  },
+  {
+   "reaction": "DDPA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All three genes are annotated 3-deoxy-7-phosphoheptulonate synthase (same-name paralogs)."
+  },
+  {
+   "reaction": "DHAD1",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS15945 or ABZR86_RS04080",
+   "evidence": "RS02735 '4a-hydroxytetrahydrobiopterin dehydratase' (114 aa pterin-4a-carbinolamine dehydratase, EC 4.2.1.96) acts on a different substrate class and is removed; RS15945 'dihydroxy-acid dehydratase' (ilv cluster) and RS04080 'IlvD/Edd family dehydratase' are kept."
+  },
+  {
+   "reaction": "DHDPRy",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are '4-hydroxy-tetrahydrodipicolinate reductase' (same-name paralogs)."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS00785 is the specific DapA; RS20490 'dihydrodipicolinate synthase family protein' is a family-level annotation compatible with the reaction."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS08760 is the specific dihydroorotase; RS08310 and WP_035322884_1 are 'amidohydrolase family protein' (family-level, same superfamily as dihydroorotase), so they are not removable."
+  },
+  {
+   "reaction": "DMPPS",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS00985",
+   "evidence": "RS05565 is '30S ribosomal protein S1' (558 aa, canonical cmk-rpsA-ihfB context), a ribosomal protein and not a catalyst; RS00985 '4-hydroxy-3-methylbut-2-enyl diphosphate reductase' (IspH) remains."
+  },
+  {
+   "reaction": "FRUtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step (extracellular to periplasm) through non-specific porins; diffusion steps are not assigned."
+  },
+  {
+   "reaction": "FUM",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are fumarate hydratases (RS05855 class II, RS19555 'fumarate hydratase'): same-name paralogs."
+  },
+  {
+   "reaction": "GALt2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both alternatives are sugar:H+ MFS transporters of the right substrate class (RS11100 FucP-family 'L-fucose:H+ symporter permease', RS01200 'sugar porter family MFS transporter')."
+  },
+  {
+   "reaction": "GARFT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS19860 is the specific PurN (adjacent to PurM); RS19345 'formyl transferase' is a family-level annotation compatible with a formyltransferase reaction, so it is not removable."
+  },
+  {
+   "reaction": "GF6PTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS18710 is the specific GlmS; RS16050 'SIS domain-containing protein' (345 aa, likely lacking the glutaminase domain) is a family-level annotation sharing GlmS's isomerase domain, so it is not removed under the procedure."
+  },
+  {
+   "reaction": "HSDy",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are 'homoserine dehydrogenase' (same-name paralogs)."
+  },
+  {
+   "reaction": "IMPD",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS05410",
+   "evidence": "RS05410 is the specific 'IMP dehydrogenase' (GuaB, 486 aa, next to GuaA); RS18910 (144 aa) and WP_051548424_1 'CBS domain-containing protein' carry only regulatory CBS domains with no catalytic annotation and are removed."
+  },
+  {
+   "reaction": "IPDPS",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS00985",
+   "evidence": "RS05565 is '30S ribosomal protein S1' (558 aa, canonical cmk-rpsA-ihfB context), a ribosomal protein and not a catalyst; RS00985 '4-hydroxy-3-methylbut-2-enyl diphosphate reductase' (IspH) remains."
+  },
+  {
+   "reaction": "NDPK2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS05460 is Ndk; RS17360 'adenylate kinase' is a broad-specificity nucleotide kinase with known NDP-kinase side activity, so it is not clearly a non-catalyst."
+  },
+  {
+   "reaction": "NDPK4",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS05460 is Ndk; RS17360 'adenylate kinase' is a broad-specificity nucleotide kinase with known NDP-kinase side activity, so it is not clearly a non-catalyst."
+  },
+  {
+   "reaction": "NDPK5",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS05460 is Ndk; RS17360 'adenylate kinase' is a broad-specificity nucleotide kinase with known NDP-kinase side activity, so it is not clearly a non-catalyst."
+  },
+  {
+   "reaction": "NDPK7",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS05460 is Ndk; RS17360 'adenylate kinase' is a broad-specificity nucleotide kinase with known NDP-kinase side activity, so it is not clearly a non-catalyst."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All eight alternatives are generic or broad-specificity aminotransferases (BCATs, PLP aminotransferases); RS03710 is a MocR-like regulator per RefSeq, but the remaining genes all carry generic annotations, so R1 is barred."
+  },
+  {
+   "reaction": "PRPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are 'ribose-phosphate diphosphokinase' (same-name paralogs)."
+  },
+  {
+   "reaction": "RNDR1",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS17550 or (ABZR86_RS16265 and ABZR86_RS16255)",
+   "evidence": "Thioredoxin TrxA (RS12605) is the reductant substrate, not the catalyst, and RS17090 'TlpA disulfide reductase/peroxiredoxin family protein' is a thiol-disulfide oxidoreductase; both are removed. Class II RNR NrdJ (RS17550) and the class I NrdA/NrdB complex (RS16265 and RS16255) are kept."
+  },
+  {
+   "reaction": "RNDR2",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS17550 or (ABZR86_RS16265 and ABZR86_RS16255)",
+   "evidence": "Thioredoxin TrxA (RS12605) is the reductant substrate, not the catalyst, and RS17090 'TlpA disulfide reductase/peroxiredoxin family protein' is a thiol-disulfide oxidoreductase; both are removed. Class II RNR NrdJ (RS17550) and the class I NrdA/NrdB complex (RS16265 and RS16255) are kept."
+  },
+  {
+   "reaction": "SHK3Dr",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are shikimate (5-)dehydrogenases (same-name paralogs)."
+  },
+  {
+   "reaction": "STPT1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No gene is annotated as phosphoserine:homoserine phosphotransferase (ThrH) or phosphoserine phosphatase; only generic HAD hydrolases (e.g. RS09400 'MtnX-like HAD-IB family phosphatase'). Homoserine kinase RS15980 is the ATP-dependent ThrB, a different reaction."
+  },
+  {
+   "reaction": "TYRTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All five alternatives are generic PLP aminotransferases; with only generic annotations no removal is allowed."
+  },
+  {
+   "reaction": "UDCPDP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "RS15435 is the specific UppP/BacA; RS07930 'phosphatase PAP2 family protein' is a family-level phosphatase (the PAP2 family includes undecaprenyl-diphosphate phosphatases), so it is not removable."
+  },
+  {
+   "reaction": "UDPG4E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Both genes are 'NAD-dependent epimerase/dehydratase family protein' (family-level; GalE belongs to this family)."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "ABZR86_RS21595",
+   "evidence": "RS21595 is the specific 'UMP kinase' (PyrH, EC 2.7.4.22, in the rpsB-tsf-pyrH-frr cluster); RS05570 '(d)CMP kinase' (Cmk, EC 2.7.4.25, cytidylate-specific NMP kinase) has a different specific activity and is removed."
+  },
+  {
+   "reaction": "ZN2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No zinc-specific uptake transporter (ZupT/ZIP, ZnuABC) is annotated; only Nramp 'divalent metal transporter', CorA (Mg/Co), CDF and P-type ATPase efflux proteins."
+  }
+ ],
+ "filter": "noIonR6 (docs/studies/transfer-v1-replication-plan.md)"
+}
