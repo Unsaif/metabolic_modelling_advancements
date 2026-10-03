@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "study": "independent-panel-v1",
+  "declared": "2026-10-03",
+  "declared_by": "Claude (Opus 5.5) working in Tim Hulshof's project repository",
+  "purpose": "Select organism-level datasets for an independent evaluation of a frozen, fitness-blind curation method for automatically reconstructed (CarveMe / EMBL GEMs) draft models, as required by docs/studies/evaluation-protocol-v1.md. Criteria are declared before any candidate organism's phenotype file is downloaded or read.",
+  "source": {
+    "fitness": "Fitness Browser (fit.genomics.lbl.gov), organism list and per-organism tables as served on the selection date",
+    "draft_models": "EMBL GEMs collection (github.com/cdanielmachado/embl_gems), model_list.tsv at the pinned commit 260d0f133802adbc151de4d7b14fb34722e1d9f4"
+  },
+  "criteria": [
+    "E1. The organism is in the Fitness Browser organism list on the selection date.",
+    "E2. It is not one of the nine organisms with archived downloads in this repository (development: Btheta, Putida, MR1, Smeli, Keio; quarantined: Bvulgatus_CL09T03C04, Koxy, SynE, DvH).",
+    "E3. It is a bacterium (archaea are excluded because the draft models come from CarveMe's bacterial universe).",
+    "E4. The EMBL GEMs collection contains a model for the same strain: genus, species and strain designation must match after normalising punctuation and known taxonomic renamings; an ambiguous or species-only match excludes the organism.",
+    "E5. The organism has at least 8 Fitness Browser experiments with expGroup 'carbon source' and no second condition other than DMSO; this count is computed by a script from the experiment metadata table without displaying condition names or any fitness value.",
+    "E6. Its carbon-source experiments use at most three distinct base media, so that the media can be mapped to BiGG components from the FEBA recipes; this is also computed by script."
+  ],
+  "panel_assignment": "Eligible organisms are ordered by orgId and assigned at random (Python random.Random(20261003).shuffle) to panel A (first ceil(n/2), used for the first frozen method) and panel B (remainder, reserved untouched for a later method). No organism is replaced after assignment; an organism that later fails a technical step (download, gene mapping, model loading) is reported as a failure, not substituted.",
+  "outcome_quarantine": [
+    "Fitness tables (fit_logratios, fit_t) for panel A are downloaded only after the method freeze and the second (inputs) freeze are committed and recorded outside the repository.",
+    "Panel B fitness tables are not downloaded in this study.",
+    "Experiment metadata tables are used before the freeze only by scripts that print counts and media names; condition names are read for compound mapping only after the method freeze."
+  ],
+  "known_limits": [
+    "Self-custodied: the same model family designs the method and runs the evaluation; separation is by recorded time order (git commits, an external project-document timestamp, download file times), not by an independent custodian.",
+    "Fitness Browser data have been public since 2015-2018 and may appear in frontier-model training data; no assumption is made either way.",
+    "The EMBL GEMs collection is historical (models built in 2017); results describe that collection, not current CarveMe output."
+  ]
+}
