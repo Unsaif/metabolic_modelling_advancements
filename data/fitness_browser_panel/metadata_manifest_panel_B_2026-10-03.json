@@ -1,0 +1,47 @@
+{
+ "note": "Panel B protein sequences (Fitness Browser orgSeqs.cgi), downloaded 2026-10-03 after the replication plan freeze; no fitness table.",
+ "files": {
+  "Caulo/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=Caulo",
+   "http_status": 200,
+   "chars": 1458861,
+   "sha256": "390e5cebdd9ef450b958e9120e6f6fe0064a45c15ae95c5edf71da6598f6ad75",
+   "retrieved": "2026-10-03T12:32:04.666Z"
+  },
+  "Cup4G11/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=Cup4G11",
+   "http_status": 200,
+   "chars": 2805511,
+   "sha256": "ec6fe456a58c4b8a9e5d36868039ba0bf4ccbf1c04a030667cbe7be3ccbcadc9",
+   "retrieved": "2026-10-03T12:32:06.954Z"
+  },
+  "Marino/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=Marino",
+   "http_status": 200,
+   "chars": 1673120,
+   "sha256": "ff278a4fbdf9ab7a4f3daae9604c1d9fd467970f6a95c186c4a078ed9f7687d9",
+   "retrieved": "2026-10-03T12:32:09.144Z"
+  },
+  "Miya/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=Miya",
+   "http_status": 200,
+   "chars": 1340533,
+   "sha256": "87561117ba00722c8c09554b16ca20f5b4c96a7b2d8e8cc119b24ef9f1532b62",
+   "retrieved": "2026-10-03T12:32:11.345Z"
+  },
+  "PV4/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=PV4",
+   "http_status": 200,
+   "chars": 1578676,
+   "sha256": "31da46bca3cc688e95f1adbd949803f844d741820c9d85f8344a060d226f958b",
+   "retrieved": "2026-10-03T12:32:13.962Z"
+  },
+  "SB2B/proteins.faa": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/orgSeqs.cgi?orgId=SB2B",
+   "http_status": 200,
+   "chars": 1514779,
+   "sha256": "bd708fc1784c97afeb21ce6d318350d9349fe54d7870798c327495a3df8d1acb",
+   "retrieved": "2026-10-03T12:32:16.535Z"
+  }
+ }
+}

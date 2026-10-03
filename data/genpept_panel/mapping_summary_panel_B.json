@@ -1,0 +1,58 @@
+{
+ "Caulo": {
+  "model_proteins": 741,
+  "fitness_browser_proteins": 3886,
+  "tiers": {
+   "exact": 740,
+   "ambiguous_exact": 1
+  }
+ },
+ "Cup4G11": {
+  "model_proteins": 1293,
+  "fitness_browser_proteins": 7358,
+  "tiers": {
+   "exact": 1147,
+   "ambiguous_exact": 2,
+   "unmatched": 83,
+   "contained": 61
+  }
+ },
+ "Marino": {
+  "model_proteins": 958,
+  "fitness_browser_proteins": 4410,
+  "tiers": {
+   "exact": 773,
+   "contained": 103,
+   "unmatched": 82
+  }
+ },
+ "Miya": {
+  "model_proteins": 664,
+  "fitness_browser_proteins": 3180,
+  "tiers": {
+   "exact": 610,
+   "ambiguous_exact": 1,
+   "unmatched": 32,
+   "contained": 21
+  }
+ },
+ "PV4": {
+  "model_proteins": 902,
+  "fitness_browser_proteins": 3859,
+  "tiers": {
+   "exact": 837,
+   "contained": 52,
+   "unmatched": 13
+  }
+ },
+ "SB2B": {
+  "model_proteins": 871,
+  "fitness_browser_proteins": 3645,
+  "tiers": {
+   "exact": 807,
+   "ambiguous_exact": 1,
+   "unmatched": 15,
+   "contained": 48
+  }
+ }
+}

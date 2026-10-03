@@ -1,0 +1,42 @@
+{
+ "retrieved": "2026-10-03T12:34Z-12:37Z",
+ "source": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi (db=protein, rettype=fasta, POST, 200 ids per request)",
+ "files": {
+  "data/genpept_panel/Caulo_model_proteins.faa": {
+   "n_accessions_requested": 741,
+   "n_records": 741,
+   "sha256": "e39a7caef7bcf6329ec09f905907447d09660ff753acc1edb429813bcca6f69c",
+   "retrieved": "2026-10-03 (panel B, NCBI efetch in the desktop browser pane)"
+  },
+  "data/genpept_panel/Cup4G11_model_proteins.faa": {
+   "n_accessions_requested": 1293,
+   "n_records": 1293,
+   "sha256": "949697372dc14df346ef5663061d94c238c9ca975cea36e9ab8af71fd0b7f587",
+   "retrieved": "2026-10-03 (panel B, NCBI efetch in the desktop browser pane)"
+  },
+  "data/genpept_panel/Marino_model_proteins.faa": {
+   "n_accessions_requested": 958,
+   "n_records": 958,
+   "sha256": "aa34aa28203d204255126b783e1824b129d0b53f3e44a72802f9edaa7e2f0d28",
+   "retrieved": "2026-10-03 (panel B, NCBI efetch in the desktop browser pane)"
+  },
+  "data/genpept_panel/Miya_model_proteins.faa": {
+   "n_accessions_requested": 664,
+   "n_records": 664,
+   "sha256": "60ebc59524e3ce23125f3e8b0b939dcd6b426818b9f08fb12a462e14f6b80d97",
+   "retrieved": "2026-10-03 (panel B, NCBI efetch in the desktop browser pane)"
+  },
+  "data/genpept_panel/PV4_model_proteins.faa": {
+   "n_accessions_requested": 902,
+   "n_records": 902,
+   "sha256": "993b4efeaff8e012378e8f9e3b5c7306c8bf7f0c6b4318bbb1788a16def2c12b",
+   "retrieved": "2026-10-03 (panel B, NCBI efetch in the desktop browser pane)"
+  },
+  "data/genpept_panel/SB2B_model_proteins.faa": {
+   "n_accessions_requested": 871,
+   "n_records": 871,
+   "sha256": "ed675c0d778b4b60248df16ed3720ca8f4e6735d1fb4ca65db55832064e7c786",
+   "retrieved": "2026-10-03 (panel B, NCBI efetch in the desktop browser pane)"
+  }
+ }
+}
