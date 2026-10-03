@@ -41,15 +41,20 @@ Tim confirmed that no external custodian is available, so the replication is sel
 
 `gembench.patches.apply_gpr_patches` applies a gene-rule patch whose genes are absent from the draft only for class R4. Four of the six accepted R6 assignments in `data/reference/gpr_patches_v0.4.json` name genes the drafts do not contain (MR1 ACGAMK → SO3507; Btheta ASPO2y → BT3184 and OCBT_2 → BT3717; Smeli DXPS → SMc00972), so they were skipped with only a log message in the cycle-6/7 arms of the [development sprint](2026-09-06-development-sprint.md). Only DHORD6 and PDX5PO2 (Btheta) were applied. The development numbers stand as computed; their description as including the cycle-6/7 R6 assignments is wrong for those four. The transfer study's `gembench.transfer.apply_decisions` adds absent genes explicitly and is not affected.
 
-## Whole-body IEM protocol v0.2 (background)
+## Whole-body IEM protocol v0.2 (complete)
 
-The corrected protocol (per-IEM state isolation, shipped bounds only) is running on Harvey 1.03d: 24 of 57 IEMs finished, 92 of 105 expected biomarker directions correct so far. These numbers use shipped bounds without the physiological and diet constraints, so they are not comparable with the published 85 percent. The run resumes from `results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json` with `python3 scripts/run_wbm_iem.py Harvey_1_03d`.
+The corrected protocol (per-IEM state isolation, shipped bounds only) finished on Harvey 1.03d on 3 October. The run was interrupted twice when the workspace was reclaimed; it resumed from its results file each time, and the last 22 IEMs ran as two disjoint shards that were merged afterwards (same run fingerprint `8f9b6aa0…`). Results: `results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json` and `Harvey_1_03d_iem_summary_v0.2.json`.
+
+- All 57 IEMs completed; 251 of 252 expected biomarkers were scored (one exchange is absent from the model).
+- **220 of 251 biomarker directions are correct (87.6%)**, and 37 of 57 IEMs have every biomarker right.
+- Of the 31 errors, 18 predict no change where a change is expected and 13 predict the opposite direction. The reversals include citrulline in three proximal urea-cycle disorders (CPS1, NAGS, OTC), where the model raises blood citrulline instead of lowering it.
+- These numbers use the shipped model bounds without the physiological constraints and the average European diet of the published protocol. They are **not comparable with the published 85 percent**; the next step is to port those constraints and rerun.
 
 ## Next
 
 1. Write up the benchmark result (draft models, the transfer study and its replication) as the core of the first paper.
 2. A method v2 (trace counter-ions limited in the media rule; base-media organic carbon flagged; phototroph handling; more gap-fill cut rounds; a reference rule that skips media without named carbon sources; no R6 assignments to ion transporters) needs new data: every Fitness Browser organism with an EMBL GEMs draft has now been used.
-3. Finish the IEM v0.2 run; then port the physiological and diet constraints.
+3. Port the physiological and diet constraints to the IEM protocol and rerun v0.2 with them.
 
 ## How to continue
 

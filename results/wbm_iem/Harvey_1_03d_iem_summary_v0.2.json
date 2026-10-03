@@ -1,0 +1,35 @@
+{
+  "model": "Harvey_1_03d",
+  "run_fingerprint": "8f9b6aa0da504afc2d9f804b297cb43c6a3aa6cada4aaaffb0ceea8e361a34ae",
+  "provenance": {
+    "engine_version": "iem-v0.2",
+    "model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+    "protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+    "min_flux_healthy": 1.0,
+    "solver": "HiGHS 1.15.1",
+    "method": "ipm",
+    "feas_tol": 1e-07,
+    "opt_tol": 1e-07,
+    "threads": 0,
+    "time_limit_per_solve_s": 1800,
+    "physiology_and_diet_ported": false
+  },
+  "n_iems_attempted": 57,
+  "n_iems_with_complete_biomarker_solves": 57,
+  "n_iems_in_protocol": 57,
+  "n_biomarkers_expected_in_attempted_iems": 252,
+  "n_biomarkers_scored": 251,
+  "n_correct": 220,
+  "accuracy_among_scored": 0.8764940239043825,
+  "scored_coverage_of_attempted_iems": 0.996031746031746,
+  "n_biomarkers_expected_in_full_protocol": 252,
+  "total_solves_in_recorded_attempts": 673,
+  "session_solves": 0,
+  "session_solve_time_s": 0.0,
+  "session_wall_s": 7.8,
+  "caveats": [
+    "Shipped bounds only: physiological constraints and the EU average diet are not ported; this is not a reproduction of the published results.",
+    "Accuracy is conditional on scored, optimal finite solve pairs; report coverage alongside accuracy.",
+    "Demand sinks are isolated per IEM. Solver is HiGHS IPM with crossover for every solve."
+  ]
+}
