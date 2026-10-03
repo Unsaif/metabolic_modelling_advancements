@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-10-03T13:06:21Z",
+  "plan": {
+    "candidate_exposure": {
+      "custody": "Self-custodied (Tim Hulshof confirmed on 3 October 2026 that no external custodian is available). Claude (Opus 5.5) designs, prepares and evaluates; separation rests on recorded order: this plan freeze (git + Claude project), then panel B inputs and an inputs freeze (git + project), then the first download of panel B fitness tables.",
+      "evidence_paths": [
+        "results/study_freezes/transfer_v1_replication_plan.json"
+      ],
+      "uninspected_evidence": "Since the replication plan freeze, panel B experiment metadata were read for medium names, aerobic flags and carbon-source condition names (mapping only); no fitness table of any panel B organism has been downloaded. This inputs freeze precedes the first download."
+    },
+    "decision_rule": "As in transfer-method-v1 section 5.3; H1 counts as replicated if H1-B is supported.",
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_organisms": [
+      "Caulo",
+      "Cup4G11",
+      "Marino",
+      "PV4",
+      "SB2B",
+      "Miya"
+    ],
+    "evaluation_role": "prospective_self_custodied",
+    "inputs_note": "Panel B inputs under the frozen v1 rules: all eight media mapped (MoLS4 keeps its unlimited D,L-lactate); 12 new carbon-source names mapped and the empty condition name of Miya's MoLS4 experiments maps to none; Miya has no reference condition under the frozen rule and is not evaluable; gap-fills succeeded for Caulo, Cup4G11, Marino, PV4 and SB2B; blind adjudication: 297 candidates, 74 R1, 12 R6, 211 abstain; all decisions applicable; the noIonR6 filter drops Caulo CLt3_2pp and PV4 CLt3_2pp and MN2tpp.",
+    "paths": [
+      "data/fitness_browser_panel/Caulo/proteins.faa",
+      "data/fitness_browser_panel/Cup4G11/proteins.faa",
+      "data/fitness_browser_panel/Marino/proteins.faa",
+      "data/fitness_browser_panel/Miya/proteins.faa",
+      "data/fitness_browser_panel/PV4/proteins.faa",
+      "data/fitness_browser_panel/SB2B/proteins.faa",
+      "data/fitness_browser_panel/metadata_manifest_panel_B_2026-10-03.json",
+      "data/genpept_panel/Caulo_genpept_map.tsv",
+      "data/genpept_panel/Caulo_model_proteins.faa",
+      "data/genpept_panel/Cup4G11_genpept_map.tsv",
+      "data/genpept_panel/Cup4G11_model_proteins.faa",
+      "data/genpept_panel/MANIFEST_panel_B.json",
+      "data/genpept_panel/Marino_genpept_map.tsv",
+      "data/genpept_panel/Marino_model_proteins.faa",
+      "data/genpept_panel/Miya_genpept_map.tsv",
+      "data/genpept_panel/Miya_model_proteins.faa",
+      "data/genpept_panel/PV4_genpept_map.tsv",
+      "data/genpept_panel/PV4_model_proteins.faa",
+      "data/genpept_panel/SB2B_genpept_map.tsv",
+      "data/genpept_panel/SB2B_model_proteins.faa",
+      "data/genpept_panel/mapping_summary_panel_B.json",
+      "data/studies/transfer_v1/decisions/Caulo.json",
+      "data/studies/transfer_v1/decisions/Cup4G11.json",
+      "data/studies/transfer_v1/decisions/Marino.json",
+      "data/studies/transfer_v1/decisions/PV4.json",
+      "data/studies/transfer_v1/decisions/SB2B.json",
+      "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+      "data/studies/transfer_v1_replication/decisions_manifest_panel_B.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Caulo.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Cup4G11.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/Marino.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/PV4.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/SB2B.json",
+      "data/studies/transfer_v1_replication/decisions_noIonR6/filter_report.json",
+      "data/studies/transfer_v1_replication/feba_component_bigg_panel_B.tsv",
+      "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+      "data/studies/transfer_v1_replication/media_mapping_report_panel_B.json",
+      "data/studies/transfer_v1_replication/organisms_panel_B.json",
+      "data/studies/transfer_v1_replication/packets/Caulo/candidates.json",
+      "data/studies/transfer_v1_replication/packets/Cup4G11/candidates.json",
+      "data/studies/transfer_v1_replication/packets/Marino/candidates.json",
+      "data/studies/transfer_v1_replication/packets/PV4/candidates.json",
+      "data/studies/transfer_v1_replication/packets/SB2B/candidates.json",
+      "models/embl_pinned/Caulo.xml.gz",
+      "models/embl_pinned/Cup4G11.xml.gz",
+      "models/embl_pinned/MANIFEST_panel_B.json",
+      "models/embl_pinned/Marino.xml.gz",
+      "models/embl_pinned/Miya.xml.gz",
+      "models/embl_pinned/PV4.xml.gz",
+      "models/embl_pinned/SB2B.xml.gz",
+      "models/transfer_v1/Caulo_base.json",
+      "models/transfer_v1/Caulo_base.xml.gz",
+      "models/transfer_v1/Cup4G11_base.json",
+      "models/transfer_v1/Cup4G11_base.xml.gz",
+      "models/transfer_v1/Marino_base.json",
+      "models/transfer_v1/Marino_base.xml.gz",
+      "models/transfer_v1/PV4_base.json",
+      "models/transfer_v1/PV4_base.xml.gz",
+      "models/transfer_v1/SB2B_base.json",
+      "models/transfer_v1/SB2B_base.xml.gz",
+      "results/study_freezes/transfer_v1_replication_plan.json",
+      "results/transfer_v1/evaluation_panel_B/Miya_reference_failure.json"
+    ],
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "question": "Do the frozen v1 results replicate on the reserved panel B, what is the pooled estimate over panels A and B, and does dropping R6 assignments to inorganic-ion transport reactions improve blind curation (H3)?",
+    "replication_plan_freeze": {
+      "content_fingerprint": "09312d9d4c4d11571a56d452706ef881835252a6c033d8fafa5f2ba751c2e44d",
+      "created_at": "2026-10-03T12:31:09Z",
+      "manifest": "results/study_freezes/transfer_v1_replication_plan.json"
+    },
+    "schema_version": 1,
+    "study_id": "transfer-v1-replication-panel-B-inputs"
+  },
+  "files": [
+    {
+      "path": "data/fitness_browser_panel/Caulo/proteins.faa",
+      "size_bytes": 1458861,
+      "sha256": "390e5cebdd9ef450b958e9120e6f6fe0064a45c15ae95c5edf71da6598f6ad75"
+    },
+    {
+      "path": "data/fitness_browser_panel/Cup4G11/proteins.faa",
+      "size_bytes": 2805511,
+      "sha256": "ec6fe456a58c4b8a9e5d36868039ba0bf4ccbf1c04a030667cbe7be3ccbcadc9"
+    },
+    {
+      "path": "data/fitness_browser_panel/Marino/proteins.faa",
+      "size_bytes": 1673120,
+      "sha256": "ff278a4fbdf9ab7a4f3daae9604c1d9fd467970f6a95c186c4a078ed9f7687d9"
+    },
+    {
+      "path": "data/fitness_browser_panel/Miya/proteins.faa",
+      "size_bytes": 1340533,
+      "sha256": "87561117ba00722c8c09554b16ca20f5b4c96a7b2d8e8cc119b24ef9f1532b62"
+    },
+    {
+      "path": "data/fitness_browser_panel/PV4/proteins.faa",
+      "size_bytes": 1578676,
+      "sha256": "31da46bca3cc688e95f1adbd949803f844d741820c9d85f8344a060d226f958b"
+    },
+    {
+      "path": "data/fitness_browser_panel/SB2B/proteins.faa",
+      "size_bytes": 1514779,
+      "sha256": "bd708fc1784c97afeb21ce6d318350d9349fe54d7870798c327495a3df8d1acb"
+    },
+    {
+      "path": "data/fitness_browser_panel/metadata_manifest_panel_B_2026-10-03.json",
+      "size_bytes": 1797,
+      "sha256": "81fd560ccb6e3ce05e984313f76159821d21108c3e0f6d4fd960193a5638be23"
+    },
+    {
+      "path": "data/genpept_panel/Caulo_genpept_map.tsv",
+      "size_bytes": 72503,
+      "sha256": "769a496664c3b695c1d9ea3dfc2374804562cd916ddb29c50b33e08528805cd7"
+    },
+    {
+      "path": "data/genpept_panel/Caulo_model_proteins.faa",
+      "size_bytes": 355731,
+      "sha256": "e39a7caef7bcf6329ec09f905907447d09660ff753acc1edb429813bcca6f69c"
+    },
+    {
+      "path": "data/genpept_panel/Cup4G11_genpept_map.tsv",
+      "size_bytes": 105192,
+      "sha256": "c7d353fe1d4a773f8949de0976da47e6297adbd735530587d495d92e04193d88"
+    },
+    {
+      "path": "data/genpept_panel/Cup4G11_model_proteins.faa",
+      "size_bytes": 613328,
+      "sha256": "949697372dc14df346ef5663061d94c238c9ca975cea36e9ab8af71fd0b7f587"
+    },
+    {
+      "path": "data/genpept_panel/MANIFEST_panel_B.json",
+      "size_bytes": 1819,
+      "sha256": "569cae95c68ce1ea46145127c2064f83ff25ce7aa077bd26b3f0669812f1e236"
+    },
+    {
+      "path": "data/genpept_panel/Marino_genpept_map.tsv",
+      "size_bytes": 81078,
+      "sha256": "ea8b6f7bd6fa2010fbdc274c0b3eb0cacda0252edd01d21842ad769412185774"
+    },
+    {
+      "path": "data/genpept_panel/Marino_model_proteins.faa",
+      "size_bytes": 453091,
+      "sha256": "aa34aa28203d204255126b783e1824b129d0b53f3e44a72802f9edaa7e2f0d28"
+    },
+    {
+      "path": "data/genpept_panel/Miya_genpept_map.tsv",
+      "size_bytes": 62505,
+      "sha256": "81906742c837f0f513a315217c562719a52977b06331244b709711e993cd2108"
+    },
+    {
+      "path": "data/genpept_panel/Miya_model_proteins.faa",
+      "size_bytes": 319273,
+      "sha256": "60ebc59524e3ce23125f3e8b0b939dcd6b426818b9f08fb12a462e14f6b80d97"
+    },
+    {
+      "path": "data/genpept_panel/PV4_genpept_map.tsv",
+      "size_bytes": 74847,
+      "sha256": "95d12e223f0e7952e171f6e6ece04ca34cef2b98b82a3ac0f8010c9cd381f3ac"
+    },
+    {
+      "path": "data/genpept_panel/PV4_model_proteins.faa",
+      "size_bytes": 433638,
+      "sha256": "993b4efeaff8e012378e8f9e3b5c7306c8bf7f0c6b4318bbb1788a16def2c12b"
+    },
+    {
+      "path": "data/genpept_panel/SB2B_genpept_map.tsv",
+      "size_bytes": 77424,
+      "sha256": "5587d6cf5a89585669970adb2d81348437316296f5ce10321ed5ad644b190fbf"
+    },
+    {
+      "path": "data/genpept_panel/SB2B_model_proteins.faa",
+      "size_bytes": 422333,
+      "sha256": "ed675c0d778b4b60248df16ed3720ca8f4e6735d1fb4ca65db55832064e7c786"
+    },
+    {
+      "path": "data/genpept_panel/mapping_summary_panel_B.json",
+      "size_bytes": 964,
+      "sha256": "e3bba90038598ab04c7d75f61f898e2078c16c41766cfbfffbbf7e582f2e5426"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Caulo.json",
+      "size_bytes": 21149,
+      "sha256": "ee13bbfe0780c535c3533b93a80dbad6b5e8af572cf05602d136724fe6c2298e"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Cup4G11.json",
+      "size_bytes": 16729,
+      "sha256": "51e51d735aff048fc687ace999ebc09bf8d9723ca54b8105ae21ea60b3fd0322"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Marino.json",
+      "size_bytes": 18936,
+      "sha256": "82999d7ab491032b3422f7a868c9bda0c9c7a5c500e32ba4abd09a0762212d75"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/PV4.json",
+      "size_bytes": 14675,
+      "sha256": "cd1581ed84617fc38d1c693bea446b1b14be8af714e42387d2da89c3bcf17369"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/SB2B.json",
+      "size_bytes": 16250,
+      "sha256": "eab0343161d1001476db87b5ee029df16fdaaf5730c2a1c483ef231a2542d160"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+      "size_bytes": 20807,
+      "sha256": "bd82abeeae1d37d76a311f52448be3a175e4c4b65d1d93d6e0ae0c888dc4892b"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_manifest_panel_B.json",
+      "size_bytes": 2986,
+      "sha256": "4b740394800fee8923888c0e9b4995d6b92f68e2343856e8b0f27ce72fe9bf1b"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Caulo.json",
+      "size_bytes": 21300,
+      "sha256": "9b6715b654ea1faf481a639cb8f37f8b7c64c02265a2da079e59cbd0b6372c82"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Cup4G11.json",
+      "size_bytes": 16798,
+      "sha256": "578905315b43a0703373480bbca484add8d89d58ab0272ec45507332f90b9780"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/Marino.json",
+      "size_bytes": 19005,
+      "sha256": "c431685e3895069b71301a675638521afcc2cc3694592f8a4a4d6587406d5960"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/PV4.json",
+      "size_bytes": 14910,
+      "sha256": "865c0c0669d143a8423fa65b32aaf44d668edd84fdda1c4138b03f98bda3c579"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/SB2B.json",
+      "size_bytes": 16319,
+      "sha256": "ed9d43f5f0072b6652e1c6ae1ccaeb2f78c32a318a64f0c0a2c88787656f4834"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/decisions_noIonR6/filter_report.json",
+      "size_bytes": 842,
+      "sha256": "b0c2c3baf5441dfeca809bc42652b4e0b62d6ecff20ab164c745f04e5b1b90ec"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/feba_component_bigg_panel_B.tsv",
+      "size_bytes": 1363,
+      "sha256": "ffcb49eab06962dd6134bba07c68f51118d456354566ae9792f10c124ef55b79"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+      "size_bytes": 3963,
+      "sha256": "c0dc049a432691b676de823320ecae865c72cfd6f28b3da213c96783c8940cfd"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/media_mapping_report_panel_B.json",
+      "size_bytes": 3176,
+      "sha256": "5961bde0e2f1d823105962cdd1439633261e614dbfe63a8265025b6e7a216ab8"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/organisms_panel_B.json",
+      "size_bytes": 3872,
+      "sha256": "1f08f4c14198d03f17c0f1e051aabe0f02a315894a0260a1157e3b05959e1482"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/packets/Caulo/candidates.json",
+      "size_bytes": 114037,
+      "sha256": "120cf2b043848955f609c25c3e7dca4957366daff9e690e4fee94aeed8987303"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/packets/Cup4G11/candidates.json",
+      "size_bytes": 124143,
+      "sha256": "6c10815924f055c42a79dd7091db6f34c31cd98993d10ecc112a87b278514756"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/packets/Marino/candidates.json",
+      "size_bytes": 122352,
+      "sha256": "ebf081fd9a22b68d87cc2cd837595c525ad471a134df50797ee31bc50a3b3a59"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/packets/PV4/candidates.json",
+      "size_bytes": 82709,
+      "sha256": "9a4dd07fc7107ddaa881f9292eec3b7ef9e6d213f5054a918cda362922bfadb1"
+    },
+    {
+      "path": "data/studies/transfer_v1_replication/packets/SB2B/candidates.json",
+      "size_bytes": 87878,
+      "sha256": "26a4086c1536de4369bc2d57bae9a4ed32023cf7c5438a6568729f746afec9f0"
+    },
+    {
+      "path": "models/embl_pinned/Caulo.xml.gz",
+      "size_bytes": 178678,
+      "sha256": "a10f3d4a2da6629ff1f37d8e344e618bf7724c3f9c1ad23e682e8fb5ca5acb6b"
+    },
+    {
+      "path": "models/embl_pinned/Cup4G11.xml.gz",
+      "size_bytes": 227393,
+      "sha256": "bc51082574bcc225b06adc2e7dc2f2a142678a244b68607725c0fb86640502d6"
+    },
+    {
+      "path": "models/embl_pinned/MANIFEST_panel_B.json",
+      "size_bytes": 2405,
+      "sha256": "f9f536645af9df6b09e71287007fa58744e0d969f3b9edc489377183a553b16d"
+    },
+    {
+      "path": "models/embl_pinned/Marino.xml.gz",
+      "size_bytes": 179576,
+      "sha256": "13c5e03e67934b36dda53d1dd6ec44762155541c49e9c8424b7f7de7904ee617"
+    },
+    {
+      "path": "models/embl_pinned/Miya.xml.gz",
+      "size_bytes": 150005,
+      "sha256": "052f42a51ba32af1046156351516c98f995fe1e983d2570336608c24fcb56a8d"
+    },
+    {
+      "path": "models/embl_pinned/PV4.xml.gz",
+      "size_bytes": 198386,
+      "sha256": "dfec4d30777c80b4215aa1958c29ef377e7df37d9671b1e2981b1c9e762a78b7"
+    },
+    {
+      "path": "models/embl_pinned/SB2B.xml.gz",
+      "size_bytes": 198436,
+      "sha256": "6e43306f5050d2a7f66a7b296b8c355cff4fd011fd81f5d52a1098495afdf651"
+    },
+    {
+      "path": "models/transfer_v1/Caulo_base.json",
+      "size_bytes": 1346,
+      "sha256": "10de3b0bbb1614782882f9ec357b6f3ff04ed82795ccaf67a44f92f93cfe57cd"
+    },
+    {
+      "path": "models/transfer_v1/Caulo_base.xml.gz",
+      "size_bytes": 167528,
+      "sha256": "78f1ceee721a644a8845ca3dc8974f89f3eba536835a7695a143d7777f69180f"
+    },
+    {
+      "path": "models/transfer_v1/Cup4G11_base.json",
+      "size_bytes": 931,
+      "sha256": "b74c83bffd2424b47f6ccef51c2656bebda0347b95880d471358f339a6b84f7a"
+    },
+    {
+      "path": "models/transfer_v1/Cup4G11_base.xml.gz",
+      "size_bytes": 211489,
+      "sha256": "37c47a0dc229b340eebd0a44fd6b5ac270b399905f7e182921968784c077da90"
+    },
+    {
+      "path": "models/transfer_v1/Marino_base.json",
+      "size_bytes": 1301,
+      "sha256": "b2464a543f2f9bdc3ea8edb718e7de787ee35dfaef34371559f9ea15ee542e74"
+    },
+    {
+      "path": "models/transfer_v1/Marino_base.xml.gz",
+      "size_bytes": 168353,
+      "sha256": "7e95c275de7f729761dc874cdec7e70edc099dbf404e7f2b68c5bd373e67fd06"
+    },
+    {
+      "path": "models/transfer_v1/PV4_base.json",
+      "size_bytes": 1173,
+      "sha256": "489bdb0db593e0df074335995bb143fc345187520a7f679c2a5e87ac0f304d8b"
+    },
+    {
+      "path": "models/transfer_v1/PV4_base.xml.gz",
+      "size_bytes": 184926,
+      "sha256": "ef0dbe3b2d6351cff66d1ac11e5459a86e364c5980febfbc8f1e9f8fa52ecc77"
+    },
+    {
+      "path": "models/transfer_v1/SB2B_base.json",
+      "size_bytes": 906,
+      "sha256": "e6df907e0777b7679aaa5eab68fd7c997fc290102e7ff73ee63573020e73795c"
+    },
+    {
+      "path": "models/transfer_v1/SB2B_base.xml.gz",
+      "size_bytes": 184168,
+      "sha256": "951611b5768be36ad0ad10b4a643e5d07e6f2be0ad8c3a9aed797e669b7102cd"
+    },
+    {
+      "path": "results/study_freezes/transfer_v1_replication_plan.json",
+      "size_bytes": 19348,
+      "sha256": "f34f88cc7821c4a15ff8c2fc9a58eb68c63e9fd576e649b63956a8195f52df52"
+    },
+    {
+      "path": "results/transfer_v1/evaluation_panel_B/Miya_reference_failure.json",
+      "size_bytes": 872,
+      "sha256": "728694dbd0d51b2a84d0b925b926bb1822c85415b692a795c5d57b0260166b55"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "23d42913dfa70f5994c8fb6dc35a76cd1a55ab9b",
+    "dirty": true,
+    "tracked_changes": [
+      {
+        "path": "results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json",
+        "status": " M"
+      }
+    ],
+    "untracked_paths": [],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "922b12b80fc60ce9d8eab5f426765d971e8af1c7e966c012dd0247891b6b78a3",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}
