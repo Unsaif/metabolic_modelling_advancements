@@ -1,0 +1,1929 @@
+{
+ "metric": "common",
+ "excluded": [],
+ "n_boot": 10000,
+ "seed": 0,
+ "unchanged_tolerance": 0.001,
+ "pairs": [
+  {
+   "A": "B0",
+   "B": "UNQ",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.03567694406717531,
+     "ci95": [
+      0.0,
+      0.08127258712479933
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.049495500803640735,
+     "ci95": [
+      0.0062020163868787715,
+      0.12154518481468067
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.06602449146104028,
+     "ci95": [
+      0.03038335770490303,
+      0.10350315648693838
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0008158387470676084,
+     "ci95": [
+      0.0,
+      0.0020984535630157275
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.031020481945329775,
+     "ci95": [
+      0.0012539757982738162,
+      0.08197915652625963
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.01755758427118087,
+     "ci95": [
+      -0.011050835767504336,
+      0.049602447199529685
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.06150678588264691,
+     "ci95": [
+      0.015283958108667678,
+      0.10932556017027369
+     ],
+     "wt_grows": [
+      15,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.04389645474864534,
+     "ci95": [
+      0.0,
+      0.09890292360828463
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.027472487072466023,
+     "ci95": [
+      0.0006511075817118392,
+      0.060873074310827655
+     ],
+     "wt_grows": [
+      9,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.03171955023534889,
+     "ci95": [
+      0.005487336434044748,
+      0.06546011089087023
+     ],
+     "wt_grows": [
+      14,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.036518611923454174,
+   "median_delta": 0.0336982471512621,
+   "organism_bootstrap_ci95": [
+    0.024714935387748008,
+    0.0478248127653521
+   ],
+   "n_improved": 9,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.00390625
+  },
+  {
+   "A": "UNQ",
+   "B": "M",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0460848177210369,
+     "ci95": [
+      0.0,
+      0.10150781642889843
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.049476128728352775,
+     "ci95": [
+      0.005099844830209407,
+      0.121942031434092
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.018884562385127368,
+     "ci95": [
+      0.0,
+      0.04637436736519097
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": -0.0021419163191018116,
+     "ci95": [
+      -0.004227126857680719,
+      -0.0004503764824297441
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": -0.007438585913204315,
+     "ci95": [
+      -0.030373077484936617,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.029828404636831896,
+     "ci95": [
+      0.0038786176408287425,
+      0.06285059824515077
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.052357294878675076,
+     "ci95": [
+      0.0,
+      0.12872278197578924
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.050991778910105146,
+     "ci95": [
+      0.0,
+      0.14273367411585502
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.016427944626768443,
+     "ci95": [
+      -0.010481320725787264,
+      0.048405529117898555
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.00854090576488642,
+     "ci95": [
+      -0.018428392332031054,
+      0.038197928528867574
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.02630113354194779,
+   "median_delta": 0.024356483510979632,
+   "organism_bootstrap_ci95": [
+    0.012698505797270505,
+    0.03950809634631538
+   ],
+   "n_improved": 8,
+   "n_worsened": 2,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.109375
+  },
+  {
+   "A": "B0",
+   "B": "U",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.016962514979438736,
+     "ci95": [
+      0.0,
+      0.042975110394775716
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.03633629823001988,
+     "ci95": [
+      0.0036018674118393256,
+      0.10029957575175777
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.006200415608217935,
+     "ci95": [
+      0.0,
+      0.020438262619121336
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0008158387470676084,
+     "ci95": [
+      0.0,
+      0.0020984535630157275
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.005151684894435321,
+     "ci95": [
+      0.0,
+      0.0214639663240577
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0019874071377092295,
+     "ci95": [
+      0.0,
+      0.004932994256886984
+     ],
+     "wt_grows": [
+      15,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.021854534547316118,
+     "ci95": [
+      0.0,
+      0.07006046894550227
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.01983737317000639,
+     "ci95": [
+      0.0,
+      0.05125878118653821
+     ],
+     "wt_grows": [
+      9,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.02409074600759964,
+     "ci95": [
+      0.0,
+      0.055351411677532894
+     ],
+     "wt_grows": [
+      14,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.013323681332181087,
+   "median_delta": 0.011581465293828336,
+   "organism_bootstrap_ci95": [
+    0.006316314034478415,
+    0.020965930061691535
+   ],
+   "n_improved": 8,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.0078125
+  },
+  {
+   "A": "U",
+   "B": "UN",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.018714429087736573,
+     "ci95": [
+      0.0,
+      0.059828029748062304
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.0013900284733084356,
+     "ci95": [
+      -0.020815828213758544,
+      0.02536289356358128
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": -0.0006199014991345453,
+     "ci95": [
+      -0.0022379792007271985,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.00770878698462929,
+     "ci95": [
+      0.0,
+      0.02596011529725811
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.007624127680229575,
+     "ci95": [
+      0.0,
+      0.026047494695411625
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.003481747072676933,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.00041583435193229376,
+    0.0077641225647764765
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 6,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "U",
+   "B": "UQ",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.013148282152580848,
+     "ci95": [
+      0.0,
+      0.043665263605010746
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.059824075852822345,
+     "ci95": [
+      0.02703665974400675,
+      0.09769857893182321
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.025865413967299994,
+     "ci95": [
+      0.0004933890437087137,
+      0.07200894353782428
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.017071771279970283,
+     "ci95": [
+      0.0,
+      0.035129887860705845
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.060041413789084896,
+     "ci95": [
+      0.013609659663987639,
+      0.10750219896733436
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.022041920201329224,
+     "ci95": [
+      0.0,
+      0.0557760438745953
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.019799287724308758,
+   "median_delta": 0.015110026716275565,
+   "organism_bootstrap_ci95": [
+    0.007038040470782015,
+    0.034385835560838275
+   ],
+   "n_improved": 6,
+   "n_worsened": 0,
+   "n_unchanged": 4,
+   "sign_test_p_two_sided": 0.03125
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_rxn",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.025754193880650478,
+     "ci95": [
+      0.0,
+      0.08525345206651337
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.021854534547316118,
+     "ci95": [
+      0.0,
+      0.07006046894550227
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.0191161194466431,
+     "ci95": [
+      0.0,
+      0.05084495049977258
+     ],
+     "wt_grows": [
+      9,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.017886929367037174,
+     "ci95": [
+      0.0,
+      0.04818704042439281
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.008461177724164687,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.0019116119446643098,
+    0.0154007094369985
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 6,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_atp",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.00601184946285338,
+     "ci95": [
+      0.0,
+      0.02049906196801011
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.010479897316072517,
+     "ci95": [
+      0.0017706512146590666,
+      0.025393379814741577
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.00036866422572961674,
+     "ci95": [
+      0.0,
+      0.0012042163576041671
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0019874071377092295,
+     "ci95": [
+      0.0,
+      0.004932994256886984
+     ],
+     "wt_grows": [
+      15,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.0007269584255040762,
+     "ci95": [
+      0.0,
+      0.0024118878646710164
+     ],
+     "wt_grows": [
+      9,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      14,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.001957477656786882,
+   "median_delta": 0.00018433211286480837,
+   "organism_bootstrap_ci95": [
+    0.00023560713634388462,
+    0.004383205509965393
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 7,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R6",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.012657381330417883,
+     "ci95": [
+      0.0,
+      0.03251961265907918
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": -0.007438585913204315,
+     "ci95": [
+      -0.030373077484936617,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": -0.0012856669171809054,
+     "ci95": [
+      -0.00432719416844653,
+      0.0
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0003933128500032662,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    -0.0022315757739612948,
+    0.0036686477074072744
+   ],
+   "n_improved": 1,
+   "n_worsened": 2,
+   "n_unchanged": 7,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R1R2",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0460848177210369,
+     "ci95": [
+      0.0,
+      0.10150781642889843
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.037387217204192524,
+     "ci95": [
+      0.0,
+      0.10625307239337965
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.018884562385127368,
+     "ci95": [
+      0.0,
+      0.04637436736519097
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": -0.0021419163191018116,
+     "ci95": [
+      -0.004227126857680719,
+      -0.0004503764824297441
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.029828404636831896,
+     "ci95": [
+      0.0038786176408287425,
+      0.06285059824515077
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.052357294878675076,
+     "ci95": [
+      0.0,
+      0.12872278197578924
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.050991778910105146,
+     "ci95": [
+      0.0,
+      0.14273367411585502
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.017667799408179308,
+     "ci95": [
+      -0.010009315011041119,
+      0.0495107834278319
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.00854090576488642,
+     "ci95": [
+      -0.018428392332031054,
+      0.038197928528867574
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.02596008645899328,
+   "median_delta": 0.024356483510979632,
+   "organism_bootstrap_ci95": [
+    0.014121612993890186,
+    0.037972849880724906
+   ],
+   "n_improved": 8,
+   "n_worsened": 1,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.0390625
+  },
+  {
+   "A": "B0",
+   "B": "M",
+   "n_organisms": 12,
+   "n_evaluable": 10,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0817617617882122,
+     "ci95": [
+      0.019942606360791853,
+      0.15194336234255934
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.09898118271090578,
+     "ci95": [
+      0.029823408468116888,
+      0.1947876466859718
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.08490905384616765,
+     "ci95": [
+      0.043454010786555676,
+      0.1299479611851126
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": -0.0013260775720342032,
+     "ci95": [
+      -0.0035371586813057057,
+      0.0007053608690111965
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.02358100534190921,
+     "ci95": [
+      0.0,
+      0.07580361826641978
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    },
+    {
+     "org": "Caulo",
+     "delta": 0.047385988908012766,
+     "ci95": [
+      0.00844859911416728,
+      0.0966468246607603
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.11381792946756047,
+     "ci95": [
+      0.03288836765078065,
+      0.2004580372189766
+     ],
+     "wt_grows": [
+      15,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.09488823365875049,
+     "ci95": [
+      0.01365937161703277,
+      0.19223954703136226
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.04367394355324844,
+     "ci95": [
+      0.005566678502921626,
+      0.08931509296028801
+     ],
+     "wt_grows": [
+      9,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.04013406578080081,
+     "ci95": [
+      0.0008939445189123241,
+      0.0862850154410536
+     ],
+     "wt_grows": [
+      14,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.06278070874835337,
+   "median_delta": 0.06457387534811249,
+   "organism_bootstrap_ci95": [
+    0.04033490451297448,
+    0.08394999954472251
+   ],
+   "n_improved": 9,
+   "n_worsened": 1,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.021484375
+  }
+ ]
+}

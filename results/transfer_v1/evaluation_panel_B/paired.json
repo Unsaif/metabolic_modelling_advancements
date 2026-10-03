@@ -1,0 +1,2030 @@
+[
+ {
+  "org": "Caulo",
+  "A": "B0",
+  "B": "UNQ",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.4307890197033595,
+  "mcc_B": 0.44834660397454035,
+  "delta": 0.01755758427118087,
+  "delta_ci95": [
+   -0.011050835767504336,
+   0.049602447199529685
+  ],
+  "to_no_growth": 20,
+  "to_no_growth_agree": 7,
+  "to_growth": 15,
+  "to_growth_agree": 15,
+  "genes_changed": 7,
+  "union_genes": 547,
+  "union_mcc_A": 0.4307890197033595,
+  "union_mcc_B": 0.44834660397454035,
+  "union_delta": 0.01755758427118087,
+  "union_delta_ci95": [
+   -0.011050835767504336,
+   0.049602447199529685
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "UNQ",
+  "B": "M",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.44834660397454035,
+  "mcc_B": 0.47817500861137224,
+  "delta": 0.029828404636831896,
+  "delta_ci95": [
+   0.0038786176408287425,
+   0.06285059824515077
+  ],
+  "to_no_growth": 20,
+  "to_no_growth_agree": 16,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 4,
+  "union_genes": 549,
+  "union_mcc_A": 0.44613207375666836,
+  "union_mcc_B": 0.4745677643137903,
+  "union_delta": 0.028435690557121918,
+  "union_delta_ci95": [
+   -0.001188879326277192,
+   0.06160466914868813
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "B0",
+  "B": "U",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.4307890197033595,
+  "mcc_B": 0.4307890197033595,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 547,
+  "union_mcc_A": 0.4307890197033595,
+  "union_mcc_B": 0.4307890197033595,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "U",
+  "B": "UN",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.4307890197033595,
+  "mcc_B": 0.4321790481766679,
+  "delta": 0.0013900284733084356,
+  "delta_ci95": [
+   -0.020815828213758544,
+   0.02536289356358128
+  ],
+  "to_no_growth": 20,
+  "to_no_growth_agree": 7,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 4,
+  "union_genes": 547,
+  "union_mcc_A": 0.4307890197033595,
+  "union_mcc_B": 0.4321790481766679,
+  "union_delta": 0.0013900284733084356,
+  "union_delta_ci95": [
+   -0.020815828213758544,
+   0.02536289356358128
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "U",
+  "B": "UQ",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.4307890197033595,
+  "mcc_B": 0.44786079098332976,
+  "delta": 0.017071771279970283,
+  "delta_ci95": [
+   0.0,
+   0.035129887860705845
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 15,
+  "to_growth_agree": 15,
+  "genes_changed": 3,
+  "union_genes": 547,
+  "union_mcc_A": 0.4307890197033595,
+  "union_mcc_B": 0.44786079098332976,
+  "union_delta": 0.017071771279970283,
+  "union_delta_ci95": [
+   0.0,
+   0.035129887860705845
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "UN",
+  "B": "UNQ",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.4321790481766679,
+  "mcc_B": 0.44834660397454035,
+  "delta": 0.016167555797872435,
+  "delta_ci95": [
+   0.0,
+   0.03323570395272414
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 15,
+  "to_growth_agree": 15,
+  "genes_changed": 3,
+  "union_genes": 547,
+  "union_mcc_A": 0.4321790481766679,
+  "union_mcc_B": 0.44834660397454035,
+  "union_delta": 0.016167555797872435,
+  "union_delta_ci95": [
+   0.0,
+   0.03323570395272414
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.4307890197033595,
+  "mcc_B": 0.4307890197033595,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 547,
+  "union_mcc_A": 0.4307890197033595,
+  "union_mcc_B": 0.4307890197033595,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.4307890197033595,
+  "mcc_B": 0.4307890197033595,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 547,
+  "union_mcc_A": 0.4307890197033595,
+  "union_mcc_B": 0.4307890197033595,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "UNQ",
+  "B": "M_R6",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.44834660397454035,
+  "mcc_B": 0.44834660397454035,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 549,
+  "union_mcc_A": 0.44613207375666836,
+  "union_mcc_B": 0.44495934064837733,
+  "union_delta": -0.0011727331082910242,
+  "union_delta_ci95": [
+   -0.0157815894669763,
+   0.010591488075146344
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.44834660397454035,
+  "mcc_B": 0.47817500861137224,
+  "delta": 0.029828404636831896,
+  "delta_ci95": [
+   0.0038786176408287425,
+   0.06285059824515077
+  ],
+  "to_no_growth": 20,
+  "to_no_growth_agree": 16,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 4,
+  "union_genes": 547,
+  "union_mcc_A": 0.44834660397454035,
+  "union_mcc_B": 0.47817500861137224,
+  "union_delta": 0.029828404636831896,
+  "union_delta_ci95": [
+   0.0038786176408287425,
+   0.06285059824515077
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "B0",
+  "B": "M",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.4307890197033595,
+  "mcc_B": 0.47817500861137224,
+  "delta": 0.047385988908012766,
+  "delta_ci95": [
+   0.00844859911416728,
+   0.0966468246607603
+  ],
+  "to_no_growth": 40,
+  "to_no_growth_agree": 23,
+  "to_growth": 15,
+  "to_growth_agree": 15,
+  "genes_changed": 11,
+  "union_genes": 549,
+  "union_mcc_A": 0.428645916057322,
+  "union_mcc_B": 0.4745677643137903,
+  "union_delta": 0.04592184825646828,
+  "union_delta_ci95": [
+   0.0038475672285307305,
+   0.09281817591290625
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "M",
+  "B": "M_noIonR6",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2740,
+  "mcc_A": 0.47977757097855495,
+  "mcc_B": 0.47977757097855495,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 549,
+  "union_mcc_A": 0.4745677643137903,
+  "union_mcc_B": 0.479922307632199,
+  "union_delta": 0.005354543318408733,
+  "union_delta_ci95": [
+   0.0,
+   0.0173916231271097
+  ]
+ },
+ {
+  "org": "Caulo",
+  "A": "UNQ",
+  "B": "M_noIonR6",
+  "wt_grows_A": 5,
+  "wt_grows_B": 5,
+  "n_mapped_conditions": 13,
+  "n_conditions_both_grow": 5,
+  "n_pairs": 2735,
+  "mcc_A": 0.44834660397454035,
+  "mcc_B": 0.47817500861137224,
+  "delta": 0.029828404636831896,
+  "delta_ci95": [
+   0.0038786176408287425,
+   0.06285059824515077
+  ],
+  "to_no_growth": 20,
+  "to_no_growth_agree": 16,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 4,
+  "union_genes": 548,
+  "union_mcc_A": 0.44598517003988536,
+  "union_mcc_B": 0.47977757097855495,
+  "union_delta": 0.03379240093866959,
+  "union_delta_ci95": [
+   0.007145942390509393,
+   0.0718143604468753
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "B0",
+  "B": "UNQ",
+  "wt_grows_A": 15,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 14370,
+  "mcc_A": 0.37311844605463035,
+  "mcc_B": 0.43462523193727726,
+  "delta": 0.06150678588264691,
+  "delta_ci95": [
+   0.015283958108667678,
+   0.10932556017027369
+  ],
+  "to_no_growth": 1,
+  "to_no_growth_agree": 0,
+  "to_growth": 78,
+  "to_growth_agree": 78,
+  "genes_changed": 9,
+  "union_genes": 958,
+  "union_mcc_A": 0.37311844605463035,
+  "union_mcc_B": 0.43462523193727726,
+  "union_delta": 0.06150678588264691,
+  "union_delta_ci95": [
+   0.015283958108667678,
+   0.10932556017027369
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "UNQ",
+  "B": "M",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 15328,
+  "mcc_A": 0.4334617003683577,
+  "mcc_B": 0.48581899524703276,
+  "delta": 0.052357294878675076,
+  "delta_ci95": [
+   0.0,
+   0.12872278197578924
+  ],
+  "to_no_growth": 32,
+  "to_no_growth_agree": 32,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 2,
+  "union_genes": 961,
+  "union_mcc_A": 0.4335053654855006,
+  "union_mcc_B": 0.4858612792943358,
+  "union_delta": 0.0523559138088352,
+  "union_delta_ci95": [
+   0.0,
+   0.13132999800553086
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "B0",
+  "B": "U",
+  "wt_grows_A": 15,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 14370,
+  "mcc_A": 0.37311844605463035,
+  "mcc_B": 0.3751058531923396,
+  "delta": 0.0019874071377092295,
+  "delta_ci95": [
+   0.0,
+   0.004932994256886984
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 3,
+  "to_growth_agree": 3,
+  "genes_changed": 3,
+  "union_genes": 958,
+  "union_mcc_A": 0.37311844605463035,
+  "union_mcc_B": 0.3751058531923396,
+  "union_delta": 0.0019874071377092295,
+  "union_delta_ci95": [
+   0.0,
+   0.004932994256886984
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "U",
+  "B": "UN",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 15328,
+  "mcc_A": 0.37432941447518664,
+  "mcc_B": 0.3737095129760521,
+  "delta": -0.0006199014991345453,
+  "delta_ci95": [
+   -0.0022379792007271985,
+   0.0
+  ],
+  "to_no_growth": 1,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 1,
+  "union_genes": 958,
+  "union_mcc_A": 0.37432941447518664,
+  "union_mcc_B": 0.3737095129760521,
+  "union_delta": -0.0006199014991345453,
+  "union_delta_ci95": [
+   -0.0022379792007271985,
+   0.0
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "U",
+  "B": "UQ",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 15328,
+  "mcc_A": 0.37432941447518664,
+  "mcc_B": 0.43437082826427154,
+  "delta": 0.060041413789084896,
+  "delta_ci95": [
+   0.013609659663987639,
+   0.10750219896733436
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 80,
+  "to_growth_agree": 80,
+  "genes_changed": 5,
+  "union_genes": 958,
+  "union_mcc_A": 0.37432941447518664,
+  "union_mcc_B": 0.43437082826427154,
+  "union_delta": 0.060041413789084896,
+  "union_delta_ci95": [
+   0.013609659663987639,
+   0.10750219896733436
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "UN",
+  "B": "UNQ",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 15328,
+  "mcc_A": 0.3737095129760521,
+  "mcc_B": 0.4334617003683577,
+  "delta": 0.05975218739230559,
+  "delta_ci95": [
+   0.013539176679133418,
+   0.10750219896733436
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 80,
+  "to_growth_agree": 80,
+  "genes_changed": 5,
+  "union_genes": 958,
+  "union_mcc_A": 0.3737095129760521,
+  "union_mcc_B": 0.4334617003683577,
+  "union_delta": 0.05975218739230559,
+  "union_delta_ci95": [
+   0.013539176679133418,
+   0.10750219896733436
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 14370,
+  "mcc_A": 0.37311844605463035,
+  "mcc_B": 0.37311844605463035,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 958,
+  "union_mcc_A": 0.37311844605463035,
+  "union_mcc_B": 0.37311844605463035,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "wt_grows_A": 15,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 14370,
+  "mcc_A": 0.37311844605463035,
+  "mcc_B": 0.3751058531923396,
+  "delta": 0.0019874071377092295,
+  "delta_ci95": [
+   0.0,
+   0.004932994256886984
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 3,
+  "to_growth_agree": 3,
+  "genes_changed": 3,
+  "union_genes": 958,
+  "union_mcc_A": 0.37311844605463035,
+  "union_mcc_B": 0.3751058531923396,
+  "union_delta": 0.0019874071377092295,
+  "union_delta_ci95": [
+   0.0,
+   0.004932994256886984
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "UNQ",
+  "B": "M_R6",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 15328,
+  "mcc_A": 0.4334617003683577,
+  "mcc_B": 0.4334617003683577,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 961,
+  "union_mcc_A": 0.4335053654855006,
+  "union_mcc_B": 0.4335053654855006,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 15328,
+  "mcc_A": 0.4334617003683577,
+  "mcc_B": 0.48581899524703276,
+  "delta": 0.052357294878675076,
+  "delta_ci95": [
+   0.0,
+   0.12872278197578924
+  ],
+  "to_no_growth": 32,
+  "to_no_growth_agree": 32,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 2,
+  "union_genes": 958,
+  "union_mcc_A": 0.4334617003683577,
+  "union_mcc_B": 0.48581899524703276,
+  "union_delta": 0.052357294878675076,
+  "union_delta_ci95": [
+   0.0,
+   0.12872278197578924
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "B0",
+  "B": "M",
+  "wt_grows_A": 15,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 14370,
+  "mcc_A": 0.37311844605463035,
+  "mcc_B": 0.4869363755221908,
+  "delta": 0.11381792946756047,
+  "delta_ci95": [
+   0.03288836765078065,
+   0.2004580372189766
+  ],
+  "to_no_growth": 31,
+  "to_no_growth_agree": 30,
+  "to_growth": 78,
+  "to_growth_agree": 78,
+  "genes_changed": 11,
+  "union_genes": 961,
+  "union_mcc_A": 0.3731763520020315,
+  "union_mcc_B": 0.4869784143578929,
+  "union_delta": 0.11380206235586143,
+  "union_delta_ci95": [
+   0.03498367551828552,
+   0.20455862860825363
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "M",
+  "B": "M_noIonR6",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 15376,
+  "mcc_A": 0.4858612792943358,
+  "mcc_B": 0.4858612792943358,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 961,
+  "union_mcc_A": 0.4858612792943358,
+  "union_mcc_B": 0.4858612792943358,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Cup4G11",
+  "A": "UNQ",
+  "B": "M_noIonR6",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 36,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 15328,
+  "mcc_A": 0.4334617003683577,
+  "mcc_B": 0.48581899524703276,
+  "delta": 0.052357294878675076,
+  "delta_ci95": [
+   0.0,
+   0.12872278197578924
+  ],
+  "to_no_growth": 32,
+  "to_no_growth_agree": 32,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 2,
+  "union_genes": 961,
+  "union_mcc_A": 0.4335053654855006,
+  "union_mcc_B": 0.4858612792943358,
+  "union_delta": 0.0523559138088352,
+  "union_delta_ci95": [
+   0.0,
+   0.13132999800553086
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "B0",
+  "B": "UNQ",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3287786591300433,
+  "mcc_B": 0.3726751138786886,
+  "delta": 0.04389645474864534,
+  "delta_ci95": [
+   0.0,
+   0.09890292360828463
+  ],
+  "to_no_growth": 14,
+  "to_no_growth_agree": 10,
+  "to_growth": 32,
+  "to_growth_agree": 32,
+  "genes_changed": 3,
+  "union_genes": 615,
+  "union_mcc_A": 0.3287786591300433,
+  "union_mcc_B": 0.3726751138786886,
+  "union_delta": 0.04389645474864534,
+  "union_delta_ci95": [
+   0.0,
+   0.09890292360828463
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "UNQ",
+  "B": "M",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3726751138786886,
+  "mcc_B": 0.42366689278879377,
+  "delta": 0.050991778910105146,
+  "delta_ci95": [
+   0.0,
+   0.14273367411585502
+  ],
+  "to_no_growth": 32,
+  "to_no_growth_agree": 24,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 2,
+  "union_genes": 615,
+  "union_mcc_A": 0.3726751138786886,
+  "union_mcc_B": 0.42366689278879377,
+  "union_delta": 0.050991778910105146,
+  "union_delta_ci95": [
+   0.0,
+   0.14273367411585502
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "B0",
+  "B": "U",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3287786591300433,
+  "mcc_B": 0.3506331936773594,
+  "delta": 0.021854534547316118,
+  "delta_ci95": [
+   0.0,
+   0.07006046894550227
+  ],
+  "to_no_growth": 14,
+  "to_no_growth_agree": 10,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 1,
+  "union_genes": 615,
+  "union_mcc_A": 0.3287786591300433,
+  "union_mcc_B": 0.3506331936773594,
+  "union_delta": 0.021854534547316118,
+  "union_delta_ci95": [
+   0.0,
+   0.07006046894550227
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "U",
+  "B": "UN",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3506331936773594,
+  "mcc_B": 0.3506331936773594,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 615,
+  "union_mcc_A": 0.3506331936773594,
+  "union_mcc_B": 0.3506331936773594,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "U",
+  "B": "UQ",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3506331936773594,
+  "mcc_B": 0.3726751138786886,
+  "delta": 0.022041920201329224,
+  "delta_ci95": [
+   0.0,
+   0.0557760438745953
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 32,
+  "to_growth_agree": 32,
+  "genes_changed": 2,
+  "union_genes": 615,
+  "union_mcc_A": 0.3506331936773594,
+  "union_mcc_B": 0.3726751138786886,
+  "union_delta": 0.022041920201329224,
+  "union_delta_ci95": [
+   0.0,
+   0.0557760438745953
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "UN",
+  "B": "UNQ",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3506331936773594,
+  "mcc_B": 0.3726751138786886,
+  "delta": 0.022041920201329224,
+  "delta_ci95": [
+   0.0,
+   0.0557760438745953
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 32,
+  "to_growth_agree": 32,
+  "genes_changed": 2,
+  "union_genes": 615,
+  "union_mcc_A": 0.3506331936773594,
+  "union_mcc_B": 0.3726751138786886,
+  "union_delta": 0.022041920201329224,
+  "union_delta_ci95": [
+   0.0,
+   0.0557760438745953
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3287786591300433,
+  "mcc_B": 0.3506331936773594,
+  "delta": 0.021854534547316118,
+  "delta_ci95": [
+   0.0,
+   0.07006046894550227
+  ],
+  "to_no_growth": 14,
+  "to_no_growth_agree": 10,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 1,
+  "union_genes": 615,
+  "union_mcc_A": 0.3287786591300433,
+  "union_mcc_B": 0.3506331936773594,
+  "union_delta": 0.021854534547316118,
+  "union_delta_ci95": [
+   0.0,
+   0.07006046894550227
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3287786591300433,
+  "mcc_B": 0.3287786591300433,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 615,
+  "union_mcc_A": 0.3287786591300433,
+  "union_mcc_B": 0.3287786591300433,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "UNQ",
+  "B": "M_R6",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3726751138786886,
+  "mcc_B": 0.3726751138786886,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 615,
+  "union_mcc_A": 0.3726751138786886,
+  "union_mcc_B": 0.3726751138786886,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3726751138786886,
+  "mcc_B": 0.42366689278879377,
+  "delta": 0.050991778910105146,
+  "delta_ci95": [
+   0.0,
+   0.14273367411585502
+  ],
+  "to_no_growth": 32,
+  "to_no_growth_agree": 24,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 2,
+  "union_genes": 615,
+  "union_mcc_A": 0.3726751138786886,
+  "union_mcc_B": 0.42366689278879377,
+  "union_delta": 0.050991778910105146,
+  "union_delta_ci95": [
+   0.0,
+   0.14273367411585502
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "B0",
+  "B": "M",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3287786591300433,
+  "mcc_B": 0.42366689278879377,
+  "delta": 0.09488823365875049,
+  "delta_ci95": [
+   0.01365937161703277,
+   0.19223954703136226
+  ],
+  "to_no_growth": 46,
+  "to_no_growth_agree": 34,
+  "to_growth": 32,
+  "to_growth_agree": 32,
+  "genes_changed": 5,
+  "union_genes": 615,
+  "union_mcc_A": 0.3287786591300433,
+  "union_mcc_B": 0.42366689278879377,
+  "union_delta": 0.09488823365875049,
+  "union_delta_ci95": [
+   0.01365937161703277,
+   0.19223954703136226
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "M",
+  "B": "M_noIonR6",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.42366689278879377,
+  "mcc_B": 0.42366689278879377,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 615,
+  "union_mcc_A": 0.42366689278879377,
+  "union_mcc_B": 0.42366689278879377,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "Marino",
+  "A": "UNQ",
+  "B": "M_noIonR6",
+  "wt_grows_A": 16,
+  "wt_grows_B": 16,
+  "n_mapped_conditions": 29,
+  "n_conditions_both_grow": 16,
+  "n_pairs": 9840,
+  "mcc_A": 0.3726751138786886,
+  "mcc_B": 0.42366689278879377,
+  "delta": 0.050991778910105146,
+  "delta_ci95": [
+   0.0,
+   0.14273367411585502
+  ],
+  "to_no_growth": 32,
+  "to_no_growth_agree": 24,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 2,
+  "union_genes": 615,
+  "union_mcc_A": 0.3726751138786886,
+  "union_mcc_B": 0.42366689278879377,
+  "union_delta": 0.050991778910105146,
+  "union_delta_ci95": [
+   0.0,
+   0.14273367411585502
+  ]
+ },
+ {
+  "org": "Miya",
+  "A": "B0",
+  "B": "UNQ",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "UNQ",
+  "B": "M",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "B0",
+  "B": "U",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "U",
+  "B": "UN",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "U",
+  "B": "UQ",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "UN",
+  "B": "UNQ",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "UNQ",
+  "B": "M_R6",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "B0",
+  "B": "M",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "M",
+  "B": "M_noIonR6",
+  "missing": true
+ },
+ {
+  "org": "Miya",
+  "A": "UNQ",
+  "B": "M_noIonR6",
+  "missing": true
+ },
+ {
+  "org": "PV4",
+  "A": "B0",
+  "B": "UNQ",
+  "wt_grows_A": 9,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 9,
+  "n_pairs": 5805,
+  "mcc_A": 0.4834249367139873,
+  "mcc_B": 0.5108974237864533,
+  "delta": 0.027472487072466023,
+  "delta_ci95": [
+   0.0006511075817118392,
+   0.060873074310827655
+  ],
+  "to_no_growth": 27,
+  "to_no_growth_agree": 26,
+  "to_growth": 1,
+  "to_growth_agree": 1,
+  "genes_changed": 4,
+  "union_genes": 645,
+  "union_mcc_A": 0.4834249367139873,
+  "union_mcc_B": 0.5108974237864533,
+  "union_delta": 0.027472487072466023,
+  "union_delta_ci95": [
+   0.0006511075817118392,
+   0.060873074310827655
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "UNQ",
+  "B": "M",
+  "wt_grows_A": 10,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 10,
+  "n_pairs": 6450,
+  "mcc_A": 0.5101334877843234,
+  "mcc_B": 0.5265614324110919,
+  "delta": 0.016427944626768443,
+  "delta_ci95": [
+   -0.010481320725787264,
+   0.048405529117898555
+  ],
+  "to_no_growth": 40,
+  "to_no_growth_agree": 27,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 5,
+  "union_genes": 647,
+  "union_mcc_A": 0.5103162800677131,
+  "union_mcc_B": 0.5146550389288326,
+  "union_delta": 0.004338758861119452,
+  "union_delta_ci95": [
+   -0.029046265458327277,
+   0.03732473059583241
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "B0",
+  "B": "U",
+  "wt_grows_A": 9,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 9,
+  "n_pairs": 5805,
+  "mcc_A": 0.4834249367139873,
+  "mcc_B": 0.5032623098839937,
+  "delta": 0.01983737317000639,
+  "delta_ci95": [
+   0.0,
+   0.05125878118653821
+  ],
+  "to_no_growth": 18,
+  "to_no_growth_agree": 18,
+  "to_growth": 1,
+  "to_growth_agree": 1,
+  "genes_changed": 3,
+  "union_genes": 645,
+  "union_mcc_A": 0.4834249367139873,
+  "union_mcc_B": 0.5032623098839937,
+  "union_delta": 0.01983737317000639,
+  "union_delta_ci95": [
+   0.0,
+   0.05125878118653821
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "U",
+  "B": "UN",
+  "wt_grows_A": 10,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 10,
+  "n_pairs": 6450,
+  "mcc_A": 0.5024247007996941,
+  "mcc_B": 0.5101334877843234,
+  "delta": 0.00770878698462929,
+  "delta_ci95": [
+   0.0,
+   0.02596011529725811
+  ],
+  "to_no_growth": 10,
+  "to_no_growth_agree": 9,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 1,
+  "union_genes": 645,
+  "union_mcc_A": 0.5024247007996941,
+  "union_mcc_B": 0.5101334877843234,
+  "union_delta": 0.00770878698462929,
+  "union_delta_ci95": [
+   0.0,
+   0.02596011529725811
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "U",
+  "B": "UQ",
+  "wt_grows_A": 10,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 10,
+  "n_pairs": 6450,
+  "mcc_A": 0.5024247007996941,
+  "mcc_B": 0.5024247007996941,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 645,
+  "union_mcc_A": 0.5024247007996941,
+  "union_mcc_B": 0.5024247007996941,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "UN",
+  "B": "UNQ",
+  "wt_grows_A": 10,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 10,
+  "n_pairs": 6450,
+  "mcc_A": 0.5101334877843234,
+  "mcc_B": 0.5101334877843234,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 645,
+  "union_mcc_A": 0.5101334877843234,
+  "union_mcc_B": 0.5101334877843234,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "wt_grows_A": 9,
+  "wt_grows_B": 9,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 9,
+  "n_pairs": 5805,
+  "mcc_A": 0.4834249367139873,
+  "mcc_B": 0.5025410561606304,
+  "delta": 0.0191161194466431,
+  "delta_ci95": [
+   0.0,
+   0.05084495049977258
+  ],
+  "to_no_growth": 18,
+  "to_no_growth_agree": 18,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 2,
+  "union_genes": 645,
+  "union_mcc_A": 0.4834249367139873,
+  "union_mcc_B": 0.5025410561606304,
+  "union_delta": 0.0191161194466431,
+  "union_delta_ci95": [
+   0.0,
+   0.05084495049977258
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "wt_grows_A": 9,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 9,
+  "n_pairs": 5805,
+  "mcc_A": 0.4834249367139873,
+  "mcc_B": 0.48415189513949136,
+  "delta": 0.0007269584255040762,
+  "delta_ci95": [
+   0.0,
+   0.0024118878646710164
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 1,
+  "to_growth_agree": 1,
+  "genes_changed": 1,
+  "union_genes": 645,
+  "union_mcc_A": 0.4834249367139873,
+  "union_mcc_B": 0.48415189513949136,
+  "union_delta": 0.0007269584255040762,
+  "union_delta_ci95": [
+   0.0,
+   0.0024118878646710164
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "UNQ",
+  "B": "M_R6",
+  "wt_grows_A": 10,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 10,
+  "n_pairs": 6450,
+  "mcc_A": 0.5101334877843234,
+  "mcc_B": 0.5088478208671425,
+  "delta": -0.0012856669171809054,
+  "delta_ci95": [
+   -0.00432719416844653,
+   0.0
+  ],
+  "to_no_growth": 2,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 1,
+  "union_genes": 647,
+  "union_mcc_A": 0.5103162800677131,
+  "union_mcc_B": 0.4965135862409844,
+  "union_delta": -0.013802693826728718,
+  "union_delta_ci95": [
+   -0.03440630277283502,
+   0.0
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "wt_grows_A": 10,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 10,
+  "n_pairs": 6450,
+  "mcc_A": 0.5101334877843234,
+  "mcc_B": 0.5278012871925027,
+  "delta": 0.017667799408179308,
+  "delta_ci95": [
+   -0.010009315011041119,
+   0.0495107834278319
+  ],
+  "to_no_growth": 38,
+  "to_no_growth_agree": 27,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 4,
+  "union_genes": 645,
+  "union_mcc_A": 0.5101334877843234,
+  "union_mcc_B": 0.5278012871925027,
+  "union_delta": 0.017667799408179308,
+  "union_delta_ci95": [
+   -0.010009315011041119,
+   0.0495107834278319
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "B0",
+  "B": "M",
+  "wt_grows_A": 9,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 9,
+  "n_pairs": 5805,
+  "mcc_A": 0.4834249367139873,
+  "mcc_B": 0.5270988802672357,
+  "delta": 0.04367394355324844,
+  "delta_ci95": [
+   0.005566678502921626,
+   0.08931509296028801
+  ],
+  "to_no_growth": 63,
+  "to_no_growth_agree": 50,
+  "to_growth": 1,
+  "to_growth_agree": 1,
+  "genes_changed": 9,
+  "union_genes": 647,
+  "union_mcc_A": 0.48360960278198833,
+  "union_mcc_B": 0.5151706428876497,
+  "union_delta": 0.03156104010566135,
+  "union_delta_ci95": [
+   -0.01179724966071045,
+   0.07944569199301742
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "M",
+  "B": "M_noIonR6",
+  "wt_grows_A": 10,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 10,
+  "n_pairs": 6450,
+  "mcc_A": 0.5265614324110919,
+  "mcc_B": 0.5265614324110919,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 647,
+  "union_mcc_A": 0.5146550389288326,
+  "union_mcc_B": 0.5267466621626299,
+  "union_delta": 0.01209162323379731,
+  "union_delta_ci95": [
+   0.0,
+   0.03163859445127449
+  ]
+ },
+ {
+  "org": "PV4",
+  "A": "UNQ",
+  "B": "M_noIonR6",
+  "wt_grows_A": 10,
+  "wt_grows_B": 10,
+  "n_mapped_conditions": 12,
+  "n_conditions_both_grow": 10,
+  "n_pairs": 6450,
+  "mcc_A": 0.5101334877843234,
+  "mcc_B": 0.5265614324110919,
+  "delta": 0.016427944626768443,
+  "delta_ci95": [
+   -0.010481320725787264,
+   0.048405529117898555
+  ],
+  "to_no_growth": 40,
+  "to_no_growth_agree": 27,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 5,
+  "union_genes": 645,
+  "union_mcc_A": 0.5101334877843234,
+  "union_mcc_B": 0.5265614324110919,
+  "union_delta": 0.016427944626768443,
+  "union_delta_ci95": [
+   -0.010481320725787264,
+   0.048405529117898555
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "B0",
+  "B": "UNQ",
+  "wt_grows_A": 14,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 14,
+  "n_pairs": 9072,
+  "mcc_A": 0.5175633493455115,
+  "mcc_B": 0.5492828995808604,
+  "delta": 0.03171955023534889,
+  "delta_ci95": [
+   0.005487336434044748,
+   0.06546011089087023
+  ],
+  "to_no_growth": 42,
+  "to_no_growth_agree": 38,
+  "to_growth": 14,
+  "to_growth_agree": 14,
+  "genes_changed": 4,
+  "union_genes": 648,
+  "union_mcc_A": 0.5175633493455115,
+  "union_mcc_B": 0.5492828995808604,
+  "union_delta": 0.03171955023534889,
+  "union_delta_ci95": [
+   0.005487336434044748,
+   0.06546011089087023
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "UNQ",
+  "B": "M",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 9720,
+  "mcc_A": 0.5510364150182474,
+  "mcc_B": 0.5595773207831338,
+  "delta": 0.00854090576488642,
+  "delta_ci95": [
+   -0.018428392332031054,
+   0.038197928528867574
+  ],
+  "to_no_growth": 72,
+  "to_no_growth_agree": 36,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 5,
+  "union_genes": 648,
+  "union_mcc_A": 0.5510364150182474,
+  "union_mcc_B": 0.5595773207831338,
+  "union_delta": 0.00854090576488642,
+  "union_delta_ci95": [
+   -0.018428392332031054,
+   0.038197928528867574
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "B0",
+  "B": "U",
+  "wt_grows_A": 14,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 14,
+  "n_pairs": 9072,
+  "mcc_A": 0.5175633493455115,
+  "mcc_B": 0.5416540953531112,
+  "delta": 0.02409074600759964,
+  "delta_ci95": [
+   0.0,
+   0.055351411677532894
+  ],
+  "to_no_growth": 28,
+  "to_no_growth_agree": 26,
+  "to_growth": 14,
+  "to_growth_agree": 14,
+  "genes_changed": 3,
+  "union_genes": 648,
+  "union_mcc_A": 0.5175633493455115,
+  "union_mcc_B": 0.5416540953531112,
+  "union_delta": 0.02409074600759964,
+  "union_delta_ci95": [
+   0.0,
+   0.055351411677532894
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "U",
+  "B": "UN",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 9720,
+  "mcc_A": 0.5434122873380178,
+  "mcc_B": 0.5510364150182474,
+  "delta": 0.007624127680229575,
+  "delta_ci95": [
+   0.0,
+   0.026047494695411625
+  ],
+  "to_no_growth": 15,
+  "to_no_growth_agree": 13,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 1,
+  "union_genes": 648,
+  "union_mcc_A": 0.5434122873380178,
+  "union_mcc_B": 0.5510364150182474,
+  "union_delta": 0.007624127680229575,
+  "union_delta_ci95": [
+   0.0,
+   0.026047494695411625
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "U",
+  "B": "UQ",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 9720,
+  "mcc_A": 0.5434122873380178,
+  "mcc_B": 0.5434122873380178,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 648,
+  "union_mcc_A": 0.5434122873380178,
+  "union_mcc_B": 0.5434122873380178,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "UN",
+  "B": "UNQ",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 9720,
+  "mcc_A": 0.5510364150182474,
+  "mcc_B": 0.5510364150182474,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 648,
+  "union_mcc_A": 0.5510364150182474,
+  "union_mcc_B": 0.5510364150182474,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "wt_grows_A": 14,
+  "wt_grows_B": 14,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 14,
+  "n_pairs": 9072,
+  "mcc_A": 0.5175633493455115,
+  "mcc_B": 0.5354502787125487,
+  "delta": 0.017886929367037174,
+  "delta_ci95": [
+   0.0,
+   0.04818704042439281
+  ],
+  "to_no_growth": 28,
+  "to_no_growth_agree": 26,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 2,
+  "union_genes": 648,
+  "union_mcc_A": 0.5175633493455115,
+  "union_mcc_B": 0.5354502787125487,
+  "union_delta": 0.017886929367037174,
+  "union_delta_ci95": [
+   0.0,
+   0.04818704042439281
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "wt_grows_A": 14,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 14,
+  "n_pairs": 9072,
+  "mcc_A": 0.5175633493455115,
+  "mcc_B": 0.5175633493455115,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 648,
+  "union_mcc_A": 0.5175633493455115,
+  "union_mcc_B": 0.5175633493455115,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "UNQ",
+  "B": "M_R6",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 9720,
+  "mcc_A": 0.5510364150182474,
+  "mcc_B": 0.5510364150182474,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 648,
+  "union_mcc_A": 0.5510364150182474,
+  "union_mcc_B": 0.5510364150182474,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 9720,
+  "mcc_A": 0.5510364150182474,
+  "mcc_B": 0.5595773207831338,
+  "delta": 0.00854090576488642,
+  "delta_ci95": [
+   -0.018428392332031054,
+   0.038197928528867574
+  ],
+  "to_no_growth": 72,
+  "to_no_growth_agree": 36,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 5,
+  "union_genes": 648,
+  "union_mcc_A": 0.5510364150182474,
+  "union_mcc_B": 0.5595773207831338,
+  "union_delta": 0.00854090576488642,
+  "union_delta_ci95": [
+   -0.018428392332031054,
+   0.038197928528867574
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "B0",
+  "B": "M",
+  "wt_grows_A": 14,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 14,
+  "n_pairs": 9072,
+  "mcc_A": 0.5175633493455115,
+  "mcc_B": 0.5576974151263123,
+  "delta": 0.04013406578080081,
+  "delta_ci95": [
+   0.0008939445189123241,
+   0.0862850154410536
+  ],
+  "to_no_growth": 109,
+  "to_no_growth_agree": 71,
+  "to_growth": 14,
+  "to_growth_agree": 14,
+  "genes_changed": 9,
+  "union_genes": 648,
+  "union_mcc_A": 0.5175633493455115,
+  "union_mcc_B": 0.5576974151263123,
+  "union_delta": 0.04013406578080081,
+  "union_delta_ci95": [
+   0.0008939445189123241,
+   0.0862850154410536
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "M",
+  "B": "M_noIonR6",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 9720,
+  "mcc_A": 0.5595773207831338,
+  "mcc_B": 0.5595773207831338,
+  "delta": 0.0,
+  "delta_ci95": [
+   0.0,
+   0.0
+  ],
+  "to_no_growth": 0,
+  "to_no_growth_agree": 0,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 0,
+  "union_genes": 648,
+  "union_mcc_A": 0.5595773207831338,
+  "union_mcc_B": 0.5595773207831338,
+  "union_delta": 0.0,
+  "union_delta_ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ {
+  "org": "SB2B",
+  "A": "UNQ",
+  "B": "M_noIonR6",
+  "wt_grows_A": 15,
+  "wt_grows_B": 15,
+  "n_mapped_conditions": 20,
+  "n_conditions_both_grow": 15,
+  "n_pairs": 9720,
+  "mcc_A": 0.5510364150182474,
+  "mcc_B": 0.5595773207831338,
+  "delta": 0.00854090576488642,
+  "delta_ci95": [
+   -0.018428392332031054,
+   0.038197928528867574
+  ],
+  "to_no_growth": 72,
+  "to_no_growth_agree": 36,
+  "to_growth": 0,
+  "to_growth_agree": 0,
+  "genes_changed": 5,
+  "union_genes": 648,
+  "union_mcc_A": 0.5510364150182474,
+  "union_mcc_B": 0.5595773207831338,
+  "union_delta": 0.00854090576488642,
+  "union_delta_ci95": [
+   -0.018428392332031054,
+   0.038197928528867574
+  ]
+ }
+]

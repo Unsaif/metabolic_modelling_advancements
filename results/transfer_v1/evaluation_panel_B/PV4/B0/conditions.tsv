@@ -1,0 +1,13 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+Potassium acetate	ShewMM_noCarbon	ac	high	2	0.0	False		645	106
+a-Ketoglutaric acid disodium salt hydrate	ShewMM_noCarbon	akg	high	2	0.0	False	EX_akg_e	645	100
+Sodium Fumarate dibasic	ShewMM_noCarbon	fum	high	1	0.10605272565051575	True		54	98
+D-Maltose monohydrate	ShewMM_noCarbon	malt	high	2	0.0	False		645	108
+Sodium L-Lactate	ShewMM_noCarbon	lac__L	high	2	0.09718122819685504	True		53	95
+Sodium D,L-Lactate	ShewMM_noCarbon	lac__D;lac__L	high	2	0.19436245639370986	True		53	99
+Sodium pyruvate	ShewMM_noCarbon	pyr	high	2	0.09718122819685565	True		54	101
+Sodium succinate dibasic hexahydrate	ShewMM_noCarbon	succ	high	2	0.10605272565051521	True		54	94
+L-Malic acid disodium salt monohydrate	ShewMM_noCarbon	mal__L	high	2	0.10605272565051405	True		53	100
+casamino acids	ShewMM_noCarbon	ala__L;arg__L;asn__L;asp__L;cys__L;glu__L;gln__L;gly;his__L;ile__L;leu__L;lys__L;met__L;phe__L;pro__L;ser__L;thr__L;tyr__L;val__L	medium	2	1.8687293653165038	True	EX_met__L_e;EX_phe__L_e	42	40
+N-Acetyl-D-Glucosamine	ShewMM_noCarbon	acgam	high	2	0.3001427710889658	True		55	112
+L-Glutamine	ShewMM_noCarbon	gln__L	high	1	0.21210545130816347	True		53	93

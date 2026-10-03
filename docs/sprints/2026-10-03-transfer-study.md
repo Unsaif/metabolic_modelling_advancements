@@ -26,6 +26,17 @@ Full write-up: [docs/studies/transfer-v1-results.md](../studies/transfer-v1-resu
 - Two organisms expose pipeline limits rather than rule failures: the *M. tuberculosis* "no carbon" medium contains organic carbon (asparagine, citrate, ethanol), so the model grows everywhere; *R. palustris* is a phototroph that the model can only run on trace nitrate.
 - Removals and joins of gene alternatives (R1/R2) helped again (+0.020); gene assignments to gene-less reactions (R6) were mixed again, with losses from metal-ion transporter assignments in both phases.
 
+## Replication on panel B (same day, after the panel A results)
+
+Tim confirmed that no external custodian is available, so the replication is self-custodied in the same way. Order: replication plan frozen (manifest 19dc96c, fingerprint `09312d9d…`, also in the project) → panel B inputs prepared under the frozen v1 rules and frozen (manifest d790b27, fingerprint `922b12b8…`, also in the project) → first download of panel B fitness tables → every arm run once → independent verification by a separate agent (exact agreement). Full write-up: [docs/studies/transfer-v1-replication-results.md](../studies/transfer-v1-replication-results.md).
+
+- **H1 replicated.** Automatic rules on panel B: +0.036 MCC [0.024, 0.051], five of five organisms up. Development, panel A and panel B estimates agree: +0.036, +0.037, +0.036.
+- **H2 supported on panel B**: +0.029 [0.011, 0.047], five of five up.
+- **Pooled over both panels (ten evaluable organisms):** H1 +0.037 [0.025, 0.048], nine up and none down. H2 +0.028 [0.009, 0.046], eight up and two down. Both are supported by the pre-declared reading.
+- Within curation, removals and joins (R1/R2) carry the gain (pooled +0.026); gene assignments to gene-less reactions (R6) do not (pooled +0.003).
+- **H3 (new, secondary):** dropping R6 assignments to inorganic-ion transport reactions. It pointed the right way (+0.003; Caulo +0.005, PV4 +0.012) but is inconclusive, because only two organisms had such assignments.
+- Miya (*Desulfovibrio*) was not evaluable: the frozen reference rule found no candidate. Its fitness table was never downloaded.
+
 ## Correction to the development sprint record
 
 `gembench.patches.apply_gpr_patches` applies a gene-rule patch whose genes are absent from the draft only for class R4. Four of the six accepted R6 assignments in `data/reference/gpr_patches_v0.4.json` name genes the drafts do not contain (MR1 ACGAMK → SO3507; Btheta ASPO2y → BT3184 and OCBT_2 → BT3717; Smeli DXPS → SMc00972), so they were skipped with only a log message in the cycle-6/7 arms of the [development sprint](2026-09-06-development-sprint.md). Only DHORD6 and PDX5PO2 (Btheta) were applied. The development numbers stand as computed; their description as including the cycle-6/7 R6 assignments is wrong for those four. The transfer study's `gembench.transfer.apply_decisions` adds absent genes explicitly and is not affected.
@@ -36,8 +47,8 @@ The corrected protocol (per-IEM state isolation, shipped bounds only) is running
 
 ## Next
 
-1. Method v2, developed on development organisms and panel A (now exposed), tested once on panel B: trace counter-ions limited in the media rule; "no carbon" media with organic carbon flagged; phototroph handling; more gap-fill cut rounds; no R6 assignments to metal-ion transporters.
-2. Ask an external custodian (for example a lab member) to hold panel B's outcomes, so that v2 is not self-custodied.
+1. Write up the benchmark result (draft models, the transfer study and its replication) as the core of the first paper.
+2. A method v2 (trace counter-ions limited in the media rule; base-media organic carbon flagged; phototroph handling; more gap-fill cut rounds; a reference rule that skips media without named carbon sources; no R6 assignments to ion transporters) needs new data: every Fitness Browser organism with an EMBL GEMs draft has now been used.
 3. Finish the IEM v0.2 run; then port the physiological and diet constraints.
 
 ## How to continue

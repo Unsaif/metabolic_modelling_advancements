@@ -1,0 +1,479 @@
+{
+  "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Marino",
+  "created": "2026-10-03T13:30:39Z",
+  "dataset_provenance": {
+    "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Marino'",
+    "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
+    "download": "5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)",
+    "n_genes_with_fitness": "3650",
+    "n_experiments": "255"
+  },
+  "model": {
+    "model_id": "Marino_transfer_v1_base",
+    "file": "models/transfer_v1/Marino_base.xml.gz",
+    "source": "transfer_v1 base (models/embl_pinned/Marino.xml.gz)",
+    "version_note": "",
+    "n_reactions": 1649,
+    "n_metabolites": 1164,
+    "n_genes": 959,
+    "sha256": "7e95c275de7f729761dc874cdec7e70edc099dbf404e7f2b68c5bd373e67fd06"
+  },
+  "protocol": {
+    "study": "transfer_v1",
+    "arm": "M_R1R2",
+    "arm_definition": {
+      "transforms": [
+        "universal_reaction_patches",
+        "normalize_conjunction_rules",
+        "universal_model_additions",
+        "add_atp_synthase_if_annotated",
+        "remove_menaquinol_if_no_pathway",
+        "decisions:data/studies/transfer_v1/decisions/{org}.json#R1,R2,R2+R1"
+      ]
+    },
+    "applied": [
+      {
+        "transform": "universal_reaction_patches",
+        "records": [
+          {
+            "reaction": "CBMKr",
+            "bounds_before": [
+              -1000.0,
+              1000.0
+            ],
+            "bounds_after": [
+              -1000.0,
+              0.0
+            ]
+          },
+          {
+            "reaction": "CBPS",
+            "gpr_before": "WP_014578297_1 or WP_014578298_1 or (WP_014578297_1 and WP_014578298_1)",
+            "gpr_after": "WP_014578297_1 and WP_014578298_1"
+          }
+        ]
+      },
+      {
+        "transform": "normalize_conjunction_rules",
+        "records": [
+          {
+            "reaction": "ACOATA",
+            "gpr_before": "WP_014577010_1 or WP_014577218_1 or WP_041644978_1 or (WP_008174976_1 and WP_014577010_1)",
+            "gpr_after": "WP_014577218_1 or WP_041644978_1 or (WP_008174976_1 and WP_014577010_1)"
+          },
+          {
+            "reaction": "ALATA_D2",
+            "gpr_before": "WP_014576041_1 or WP_014578055_1 or (WP_014576041_1 and WP_014578055_1)",
+            "gpr_after": "WP_014576041_1 and WP_014578055_1"
+          },
+          {
+            "reaction": "ALATA_L2",
+            "gpr_before": "WP_014576041_1 or WP_014578055_1 or (WP_014576041_1 and WP_014578055_1)",
+            "gpr_after": "WP_014576041_1 and WP_014578055_1"
+          },
+          {
+            "reaction": "AST",
+            "gpr_before": "WP_014578269_1 or (WP_014578269_1 and WP_014578270_1)",
+            "gpr_after": "WP_014578269_1 and WP_014578270_1"
+          },
+          {
+            "reaction": "BMOGDS1",
+            "gpr_before": "WP_014579236_1 or WP_014579237_1 or WP_014579238_1 or (WP_014579236_1 and WP_014579237_1)",
+            "gpr_after": "WP_014579238_1 or (WP_014579236_1 and WP_014579237_1)"
+          },
+          {
+            "reaction": "BMOGDS2",
+            "gpr_before": "WP_014579236_1 or WP_014579237_1 or WP_014579238_1 or (WP_014579236_1 and WP_014579237_1)",
+            "gpr_after": "WP_014579238_1 or (WP_014579236_1 and WP_014579237_1)"
+          },
+          {
+            "reaction": "INDOLEt2pp",
+            "gpr_before": "WP_014576412_1 or (WP_014576412_1 and WP_014576413_1) or (WP_014576009_1 and WP_014576412_1 and WP_014576413_1)",
+            "gpr_after": "(WP_014576412_1 and WP_014576413_1) or (WP_014576009_1 and WP_014576412_1 and WP_014576413_1)"
+          },
+          {
+            "reaction": "Kt2pp",
+            "gpr_before": "WP_008176663_1 or (WP_008169713_1 and WP_008176663_1)",
+            "gpr_after": "WP_008169713_1 and WP_008176663_1"
+          },
+          {
+            "reaction": "MCOATA",
+            "gpr_before": "WP_041645307_1 or (WP_008174976_1 and WP_041645307_1)",
+            "gpr_after": "WP_008174976_1 and WP_041645307_1"
+          },
+          {
+            "reaction": "MPTG",
+            "gpr_before": "WP_014579261_1 or WP_041644944_1 or WP_041646075_1 or (WP_041644944_1 and WP_081449808_1) or (WP_041646075_1 and WP_081449808_1)",
+            "gpr_after": "WP_014579261_1 or (WP_041644944_1 and WP_081449808_1) or (WP_041646075_1 and WP_081449808_1)"
+          },
+          {
+            "reaction": "MPTG2",
+            "gpr_before": "WP_014578042_1 or WP_014579261_1 or WP_041644944_1 or WP_041646075_1 or (WP_041644944_1 and WP_081449808_1) or (WP_041646075_1 and WP_081449808_1)",
+            "gpr_after": "WP_014578042_1 or WP_014579261_1 or (WP_041644944_1 and WP_081449808_1) or (WP_041646075_1 and WP_081449808_1)"
+          },
+          {
+            "reaction": "NAt3_1",
+            "gpr_before": "WP_014577864_1 or WP_014577868_1 or WP_014577872_1 or WP_014577873_1 or WP_014577874_1 or WP_014577876_1 or WP_041645418_1 or (WP_014577864_1 and WP_014577867_1 and WP_014577869_1 and WP_014577872_1 and WP_014577873_1 and WP_014577875_1 and WP_041645418_1)",
+            "gpr_after": "WP_014577868_1 or WP_014577874_1 or WP_014577876_1 or (WP_014577864_1 and WP_014577867_1 and WP_014577869_1 and WP_014577872_1 and WP_014577873_1 and WP_014577875_1 and WP_041645418_1)"
+          },
+          {
+            "reaction": "TRDR",
+            "gpr_before": "WP_014577420_1 or WP_014577483_1 or WP_014578771_1 or WP_041645465_1 or (WP_008169901_1 and WP_014577420_1) or (WP_014577420_1 and WP_014578279_1)",
+            "gpr_after": "WP_014577483_1 or WP_014578771_1 or WP_041645465_1 or (WP_008169901_1 and WP_014577420_1) or (WP_014577420_1 and WP_014578279_1)"
+          },
+          {
+            "reaction": "UAGAAT",
+            "gpr_before": "WP_008170364_1 or (WP_008170364_1 and WP_008174976_1)",
+            "gpr_after": "WP_008170364_1 and WP_008174976_1"
+          }
+        ]
+      },
+      {
+        "transform": "universal_model_additions",
+        "records": [
+          {
+            "reaction": "GCALDt",
+            "added": "gcald_e <=> gcald_c",
+            "gpr": "",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ]
+          },
+          {
+            "reaction": "EX_gcald_e",
+            "added": "gcald_e --> ",
+            "gpr": "",
+            "bounds": [
+              0.0,
+              1000.0
+            ]
+          }
+        ]
+      },
+      {
+        "transform": "add_atp_synthase_if_annotated",
+        "records": []
+      },
+      {
+        "transform": "remove_menaquinol_if_no_pathway",
+        "records": [
+          {
+            "reaction": "Growth",
+            "biomass_removed": {
+              "mql8_c": -9.68418998275772e-05
+            },
+            "evidence_steps": [
+              "menB_DHNA_CoA_synthase"
+            ]
+          }
+        ]
+      },
+      {
+        "transform": "decisions:data/studies/transfer_v1/decisions/{org}.json#R1,R2,R2+R1",
+        "records": [
+          {
+            "reaction": "ANS",
+            "decision": "R1",
+            "gpr_before": "WP_008177443_1 or (WP_008173393_1 and WP_041646392_1)",
+            "gpr_after": "WP_041646392_1 and WP_008173393_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "ASPTA",
+            "decision": "R1",
+            "gpr_before": "WP_008176120_1 or WP_014576347_1 or WP_014576796_1 or WP_014577032_1 or WP_014578023_1 or WP_041645088_1",
+            "gpr_after": "WP_008176120_1 or WP_014576347_1 or WP_014576796_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "DNMPPA",
+            "decision": "R1",
+            "gpr_before": "WP_014577099_1 or WP_014577455_1 or WP_041644941_1",
+            "gpr_after": "WP_041644941_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "DNTPPA",
+            "decision": "R1",
+            "gpr_before": "WP_014576113_1 or WP_014577099_1 or WP_014577455_1 or WP_041644941_1",
+            "gpr_after": "WP_014576113_1 or WP_041644941_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "GK1",
+            "decision": "R1",
+            "gpr_before": "WP_014575899_1 or WP_041645030_1",
+            "gpr_after": "WP_014575899_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "GMPS2",
+            "decision": "R1",
+            "gpr_before": "WP_014577400_1 or WP_041645039_1",
+            "gpr_after": "WP_014577400_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "IMPD",
+            "decision": "R1",
+            "gpr_before": "WP_008169151_1 or WP_014579070_1",
+            "gpr_after": "WP_008169151_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "IPDPS",
+            "decision": "R1",
+            "gpr_before": "WP_014576061_1 or WP_014576794_1",
+            "gpr_after": "WP_014576061_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "NNATr",
+            "decision": "R1",
+            "gpr_before": "WP_008171471_1 or WP_014576127_1",
+            "gpr_after": "WP_014576127_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "PDX5POi",
+            "decision": "R1",
+            "gpr_before": "WP_008176900_1 or WP_041645385_1",
+            "gpr_after": "WP_008176900_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "PGK",
+            "decision": "R1",
+            "gpr_before": "WP_014577494_1 or WP_014578163_1",
+            "gpr_after": "WP_014578163_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "PMPK",
+            "decision": "R1",
+            "gpr_before": "WP_014575936_1 or WP_081449807_1",
+            "gpr_after": "WP_081449807_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "RNDR2",
+            "decision": "R1",
+            "gpr_before": "WP_008169901_1 or WP_041646181_1 or (WP_014578797_1 and WP_014578798_1)",
+            "gpr_after": "WP_041646181_1 or (WP_014578797_1 and WP_014578798_1)",
+            "genes_added": []
+          },
+          {
+            "reaction": "RNDR3",
+            "decision": "R1",
+            "gpr_before": "WP_008169901_1 or WP_041646181_1 or (WP_014578797_1 and WP_014578798_1)",
+            "gpr_after": "WP_041646181_1 or (WP_014578797_1 and WP_014578798_1)",
+            "genes_added": []
+          },
+          {
+            "reaction": "TMDS",
+            "decision": "R1",
+            "gpr_before": "WP_014576119_1 or WP_041646188_1",
+            "gpr_after": "WP_014576119_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "TMPK",
+            "decision": "R1",
+            "gpr_before": "WP_014576045_1 or WP_041645701_1",
+            "gpr_after": "WP_014576045_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "TRDR",
+            "decision": "R1",
+            "gpr_before": "WP_014577483_1 or WP_014578771_1 or WP_041645465_1 or (WP_008169901_1 and WP_014577420_1) or (WP_014577420_1 and WP_014578279_1)",
+            "gpr_after": "WP_014578771_1 or (WP_008169901_1 and WP_014577420_1) or (WP_014577420_1 and WP_014578279_1)",
+            "genes_added": []
+          },
+          {
+            "reaction": "UMPK",
+            "decision": "R1",
+            "gpr_before": "WP_008170379_1 or WP_014576793_1",
+            "gpr_after": "WP_008170379_1",
+            "genes_added": []
+          }
+        ]
+      }
+    ],
+    "params": {
+      "carbon_uptake": -10.0,
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "drop_rich_medium_essentials": false,
+      "rich_medium_uptake": -1000.0,
+      "knockout_genes": [],
+      "processes": 1,
+      "solver": "glpk",
+      "max_conditions": null,
+      "complete_medium_transport": true,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
+    },
+    "media_mapping": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+    "carbon_source_mapping": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+    "gene_mapping": {
+      "method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed",
+      "genpept_table": "data/genpept_panel/Marino_genpept_map.tsv"
+    },
+    "role": "evaluation_panel_B",
+    "base_model": {
+      "org": "Marino",
+      "role": "evaluation_panel_B",
+      "draft": "models/embl_pinned/Marino.xml.gz",
+      "draft_sha256": "13c5e03e67934b36dda53d1dd6ec44762155541c49e9c8424b7f7de7904ee617",
+      "universe": "external/carveme/universe_bacteria.xml.gz",
+      "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+      "reference": {
+        "medium": "DinoMM_noCarbon_HighNutrient",
+        "carbon_exchange": "EX_glyc_e",
+        "condition": "Glycerol",
+        "rule": "gembench.transfer.choose_reference_condition"
+      },
+      "min_growth": 0.05,
+      "status": "Optimal",
+      "added_reactions": [
+        {
+          "id": "BZDH",
+          "reaction": "bzal_c + h2o_c + nad_c <=> bz_c + 2.0 h_c + nadh_c",
+          "name": "Benzaldehyde dehydrogenase"
+        },
+        {
+          "id": "CITACt",
+          "reaction": "ac_c + cit_e <-- ac_e + cit_c",
+          "name": "Citrate transport via acetate antiport"
+        },
+        {
+          "id": "FBP",
+          "reaction": "fdp_c + h2o_c --> f6p_c + pi_c",
+          "name": "Fructose-bisphosphatase"
+        },
+        {
+          "id": "PHPYROX",
+          "reaction": "o2_c + phpyr_c --> bzal_c + h_c + oxa_c",
+          "name": "Phenylpyruvate oxidation chemical"
+        }
+      ],
+      "rejected_energy_cycle_sets": [],
+      "growth_before": 0.0,
+      "growth_after": 0.5522020263515223,
+      "base_sha256": "7e95c275de7f729761dc874cdec7e70edc099dbf404e7f2b68c5bd373e67fd06",
+      "created": "2026-10-03T12:40:19Z"
+    }
+  },
+  "leakage": {
+    "ground_truth_used_in_model_curation": "no for the correction rules: frozen before this organism's fitness tables were downloaded (see the study freeze manifests); the base model's gap-fill uses observed wild-type growth on one reference condition",
+    "ground_truth_public_since": "Fitness Browser releases include Price et al. 2018; exact dates differ by experiment",
+    "frontier_model_training_exposure": "unknown; public accessibility does not establish inclusion in a particular model's training data",
+    "held_out_recommendation": "see docs/studies/transfer-method-v1.md and the panel selection record",
+    "notes": [
+      "Fitness < -2 is an operational importance threshold in a pooled mutant assay, not proof of lethality.",
+      "Compare arms on matched genes, conditions and finite observations; report wild-type growth coverage separately."
+    ]
+  },
+  "results": {
+    "condition_level": {
+      "n_conditions_mapped": 29,
+      "n_conditions_wt_grows": 16,
+      "conditions_with_absent_exchange": 15
+    },
+    "gene_level_conditions_where_wt_grows": {
+      "n_genes": 615,
+      "n_conditions": 16,
+      "n_gene_condition_pairs": 9840,
+      "n_missing_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "aucpr_bernstein": {
+        "point": 0.3114028723436781,
+        "ci95": [
+          0.1587039627494976,
+          0.4730213186214669
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.21950664628606706,
+        "ci95": [
+          0.11799862757186601,
+          0.34164333220440685
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.7315541367285432,
+        "ci95": [
+          0.6603125382203692,
+          0.8089496145714974
+        ]
+      },
+      "mcc": {
+        "point": 0.42366689278879377,
+        "ci95": [
+          0.27603381028513074,
+          0.5617536436368915
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.700174083606304,
+        "ci95": [
+          0.6203240090608546,
+          0.7845579473183167
+        ]
+      },
+      "accuracy": {
+        "point": 0.9613821138211383,
+        "ci95": [
+          0.9502997967479675,
+          0.9723577235772358
+        ]
+      },
+      "confusion": {
+        "tp": 9309,
+        "tn": 151,
+        "fp": 210,
+        "fn": 170
+      }
+    },
+    "gene_map": {
+      "model_genes": 959,
+      "mapped": 876,
+      "matched_by_version": 958,
+      "matched_by_accession_only": 0,
+      "no_genpept_record": 1,
+      "locus_tag_not_in_browser": 82,
+      "browser_genes_hit": 876,
+      "mapped_with_fitness_data": 615
+    },
+    "counts": {
+      "model_genes": 959,
+      "model_genes_mapped": 876,
+      "genes_with_fitness": 615,
+      "genes_after_adjustment": 615,
+      "conditions_total": 30,
+      "conditions_mapped": 29,
+      "conditions_wt_grows": 16,
+      "medium_completion_exchanges_added": 7
+    },
+    "timings_s": {
+      "rich_medium_essentials_s": 1.9073486328125e-06,
+      "knockout_simulation_s": 29.979290008544922,
+      "total_s": 30.39353108406067
+    }
+  },
+  "software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "warnings": []
+}

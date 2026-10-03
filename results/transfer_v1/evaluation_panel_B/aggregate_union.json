@@ -1,0 +1,1374 @@
+{
+ "metric": "union",
+ "excluded": [],
+ "n_boot": 10000,
+ "seed": 0,
+ "unchanged_tolerance": 0.001,
+ "pairs": [
+  {
+   "A": "B0",
+   "B": "UNQ",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.01755758427118087,
+     "ci95": [
+      -0.011050835767504336,
+      0.049602447199529685
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.06150678588264691,
+     "ci95": [
+      0.015283958108667678,
+      0.10932556017027369
+     ],
+     "wt_grows": [
+      15,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.04389645474864534,
+     "ci95": [
+      0.0,
+      0.09890292360828463
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.027472487072466023,
+     "ci95": [
+      0.0006511075817118392,
+      0.060873074310827655
+     ],
+     "wt_grows": [
+      9,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.03171955023534889,
+     "ci95": [
+      0.005487336434044748,
+      0.06546011089087023
+     ],
+     "wt_grows": [
+      14,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.03643057244205761,
+   "median_delta": 0.03171955023534889,
+   "organism_bootstrap_ci95": [
+    0.024355938584528537,
+    0.050940587202245965
+   ],
+   "n_improved": 5,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.0625
+  },
+  {
+   "A": "UNQ",
+   "B": "M",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.028435690557121918,
+     "ci95": [
+      -0.001188879326277192,
+      0.06160466914868813
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0523559138088352,
+     "ci95": [
+      0.0,
+      0.13132999800553086
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.050991778910105146,
+     "ci95": [
+      0.0,
+      0.14273367411585502
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.004338758861119452,
+     "ci95": [
+      -0.029046265458327277,
+      0.03732473059583241
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.00854090576488642,
+     "ci95": [
+      -0.018428392332031054,
+      0.038197928528867574
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.028932609580413625,
+   "median_delta": 0.028435690557121918,
+   "organism_bootstrap_ci95": [
+    0.010839003961826733,
+    0.04702621519900052
+   ],
+   "n_improved": 5,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.0625
+  },
+  {
+   "A": "B0",
+   "B": "U",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0019874071377092295,
+     "ci95": [
+      0.0,
+      0.004932994256886984
+     ],
+     "wt_grows": [
+      15,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.021854534547316118,
+     "ci95": [
+      0.0,
+      0.07006046894550227
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.01983737317000639,
+     "ci95": [
+      0.0,
+      0.05125878118653821
+     ],
+     "wt_grows": [
+      9,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.02409074600759964,
+     "ci95": [
+      0.0,
+      0.055351411677532894
+     ],
+     "wt_grows": [
+      14,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.013554012172526275,
+   "median_delta": 0.01983737317000639,
+   "organism_bootstrap_ci95": [
+    0.00476243748908497,
+    0.022345586855967582
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "U",
+   "B": "UN",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.0013900284733084356,
+     "ci95": [
+      -0.020815828213758544,
+      0.02536289356358128
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": -0.0006199014991345453,
+     "ci95": [
+      -0.0022379792007271985,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.00770878698462929,
+     "ci95": [
+      0.0,
+      0.02596011529725811
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.007624127680229575,
+     "ci95": [
+      0.0,
+      0.026047494695411625
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0032206083278065512,
+   "median_delta": 0.0013900284733084356,
+   "organism_bootstrap_ci95": [
+    3.0045095007869005e-05,
+    0.0064111715606052335
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "U",
+   "B": "UQ",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.017071771279970283,
+     "ci95": [
+      0.0,
+      0.035129887860705845
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.060041413789084896,
+     "ci95": [
+      0.013609659663987639,
+      0.10750219896733436
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.022041920201329224,
+     "ci95": [
+      0.0,
+      0.0557760438745953
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.01983102105407688,
+   "median_delta": 0.017071771279970283,
+   "organism_bootstrap_ci95": [
+    0.0034143542559940563,
+    0.04043323231371678
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "UN",
+   "B": "UNQ",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.016167555797872435,
+     "ci95": [
+      0.0,
+      0.03323570395272414
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.05975218739230559,
+     "ci95": [
+      0.013539176679133418,
+      0.10750219896733436
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.022041920201329224,
+     "ci95": [
+      0.0,
+      0.0557760438745953
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.01959233267830145,
+   "median_delta": 0.016167555797872435,
+   "organism_bootstrap_ci95": [
+    0.003233511159574487,
+    0.0402596964756492
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_rxn",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.021854534547316118,
+     "ci95": [
+      0.0,
+      0.07006046894550227
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.0191161194466431,
+     "ci95": [
+      0.0,
+      0.05084495049977258
+     ],
+     "wt_grows": [
+      9,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.017886929367037174,
+     "ci95": [
+      0.0,
+      0.04818704042439281
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.011771516672199278,
+   "median_delta": 0.017886929367037174,
+   "organism_bootstrap_ci95": [
+    0.0035773858734074347,
+    0.01996564747099112
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_atp",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0019874071377092295,
+     "ci95": [
+      0.0,
+      0.004932994256886984
+     ],
+     "wt_grows": [
+      15,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.0007269584255040762,
+     "ci95": [
+      0.0,
+      0.0024118878646710164
+     ],
+     "wt_grows": [
+      9,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      14,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0005428731126426612,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.001337835967726353
+   ],
+   "n_improved": 1,
+   "n_worsened": 0,
+   "n_unchanged": 4,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R6",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": -0.0011727331082910242,
+     "ci95": [
+      -0.0157815894669763,
+      0.010591488075146344
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": -0.013802693826728718,
+     "ci95": [
+      -0.03440630277283502,
+      0.0
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": -0.0029950853870039486,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    -0.008516162917695436,
+    0.0
+   ],
+   "n_improved": 0,
+   "n_worsened": 2,
+   "n_unchanged": 3,
+   "sign_test_p_two_sided": 0.5
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R1R2",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.029828404636831896,
+     "ci95": [
+      0.0038786176408287425,
+      0.06285059824515077
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.052357294878675076,
+     "ci95": [
+      0.0,
+      0.12872278197578924
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.050991778910105146,
+     "ci95": [
+      0.0,
+      0.14273367411585502
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.017667799408179308,
+     "ci95": [
+      -0.010009315011041119,
+      0.0495107834278319
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.00854090576488642,
+     "ci95": [
+      -0.018428392332031054,
+      0.038197928528867574
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.031877236719735566,
+   "median_delta": 0.029828404636831896,
+   "organism_bootstrap_ci95": [
+    0.01644916299659267,
+    0.047305310442878466
+   ],
+   "n_improved": 5,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.0625
+  },
+  {
+   "A": "B0",
+   "B": "M",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.04592184825646828,
+     "ci95": [
+      0.0038475672285307305,
+      0.09281817591290625
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.11380206235586143,
+     "ci95": [
+      0.03498367551828552,
+      0.20455862860825363
+     ],
+     "wt_grows": [
+      15,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 14370,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.09488823365875049,
+     "ci95": [
+      0.01365937161703277,
+      0.19223954703136226
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.03156104010566135,
+     "ci95": [
+      -0.01179724966071045,
+      0.07944569199301742
+     ],
+     "wt_grows": [
+      9,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5805,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.04013406578080081,
+     "ci95": [
+      0.0008939445189123241,
+      0.0862850154410536
+     ],
+     "wt_grows": [
+      14,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9072,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.06526145003150848,
+   "median_delta": 0.04592184825646828,
+   "organism_bootstrap_ci95": [
+    0.03786241200587852,
+    0.09528569730142712
+   ],
+   "n_improved": 5,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.0625
+  },
+  {
+   "A": "M",
+   "B": "M_noIonR6",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.005354543318408733,
+     "ci95": [
+      0.0,
+      0.0173916231271097
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2740,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15376,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.01209162323379731,
+     "ci95": [
+      0.0,
+      0.03163859445127449
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0034892333104412088,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.008325882603960133
+   ],
+   "n_improved": 2,
+   "n_worsened": 0,
+   "n_unchanged": 3,
+   "sign_test_p_two_sided": 0.5
+  },
+  {
+   "A": "UNQ",
+   "B": "M_noIonR6",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Caulo",
+     "delta": 0.03379240093866959,
+     "ci95": [
+      0.007145942390509393,
+      0.0718143604468753
+     ],
+     "wt_grows": [
+      5,
+      5
+     ],
+     "n_mapped_conditions": 13,
+     "n_pairs": 2735,
+     "status": "evaluable"
+    },
+    {
+     "org": "Cup4G11",
+     "delta": 0.0523559138088352,
+     "ci95": [
+      0.0,
+      0.13132999800553086
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 36,
+     "n_pairs": 15328,
+     "status": "evaluable"
+    },
+    {
+     "org": "Marino",
+     "delta": 0.050991778910105146,
+     "ci95": [
+      0.0,
+      0.14273367411585502
+     ],
+     "wt_grows": [
+      16,
+      16
+     ],
+     "n_mapped_conditions": 29,
+     "n_pairs": 9840,
+     "status": "evaluable"
+    },
+    {
+     "org": "Miya",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "PV4",
+     "delta": 0.016427944626768443,
+     "ci95": [
+      -0.010481320725787264,
+      0.048405529117898555
+     ],
+     "wt_grows": [
+      10,
+      10
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6450,
+     "status": "evaluable"
+    },
+    {
+     "org": "SB2B",
+     "delta": 0.00854090576488642,
+     "ci95": [
+      -0.018428392332031054,
+      0.038197928528867574
+     ],
+     "wt_grows": [
+      15,
+      15
+     ],
+     "n_mapped_conditions": 20,
+     "n_pairs": 9720,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.032421788809852956,
+   "median_delta": 0.03379240093866959,
+   "organism_bootstrap_ci95": [
+    0.016746020344395863,
+    0.04809755727531005
+   ],
+   "n_improved": 5,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.0625
+  }
+ ]
+}

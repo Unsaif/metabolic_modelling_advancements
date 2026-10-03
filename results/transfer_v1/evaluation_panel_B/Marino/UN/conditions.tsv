@@ -1,0 +1,30 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+Sodium pyruvate	DinoMM_noCarbon	pyr	high	1	0.3616585162535012	True		21	26
+Sodium succinate dibasic hexahydrate	DinoMM_noCarbon	succ	high	1	0.4379898367134096	True		22	8
+L-Malic acid disodium salt monohydrate	DinoMM_noCarbon	mal__L	high	1	0.0	False	EX_mal__L_e	615	23
+L-Glutamic acid monopotassium salt monohydrate	DinoMM_noCarbon	glu__L	high	1	0.6569350469529674	True		21	10
+L-Proline	DinoMM_noCarbon	pro__L	high	1	0.7395656153471776	True		21	15
+casamino acids	DinoMM_noCarbon	ala__L;arg__L;asn__L;asp__L;cys__L;glu__L;gln__L;gly;his__L;ile__L;leu__L;lys__L;met__L;phe__L;pro__L;ser__L;thr__L;tyr__L;val__L	medium	1	7.222003195023887	True	EX_cys__L_e;EX_phe__L_e;EX_ser__L_e;EX_thr__L_e;EX_tyr__L_e	10	7
+a-Ketoglutaric acid disodium salt hydrate	DinoMM_noCarbon	akg	high	1	0.0	False	EX_akg_e	615	2
+Potassium acetate	DinoMM_noCarbon	ac	high	1	0.22385614263996045	True		21	7
+Sodium Fumarate dibasic	DinoMM_noCarbon	fum	high	1	0.0	False	EX_fum_e	615	8
+Trisodium citrate dihydrate	DinoMM_noCarbon	cit	high	1	0.6569356268314874	True		20	30
+Sodium D-Lactate	DinoMM_noCarbon	lac__D	high	1	0.0	False	EX_lac__D_e	615	23
+Sodium L-Lactate	DinoMM_noCarbon	lac__L	high	1	0.0	False	EX_lac__L_e	615	30
+Sodium D,L-Lactate	DinoMM_noCarbon	lac__D;lac__L	high	1	0.0	False	EX_lac__D_e;EX_lac__L_e	615	18
+Sodium D,L-Lactate	DinoMM_noCarbon_HighNutrient	lac__D;lac__L	high	4	0.0	False	EX_lac__D_e;EX_lac__L_e	615	39
+a-Ketoglutaric acid disodium salt hydrate	DinoMM_noCarbon_HighNutrient	akg	high	2	0.0	False	EX_akg_e	615	33
+Potassium acetate	DinoMM_noCarbon_HighNutrient	ac	high	4	0.2238561426399748	True		21	28
+Sodium Fumarate dibasic	DinoMM_noCarbon_HighNutrient	fum	high	3	0.0	False	EX_fum_e	615	24
+Trisodium citrate dihydrate	DinoMM_noCarbon_HighNutrient	cit	high	4	0.6569356268314853	True		20	34
+Sodium L-Lactate	DinoMM_noCarbon_HighNutrient	lac__L	high	4	0.0	False	EX_lac__L_e	615	43
+Sodium pyruvate	DinoMM_noCarbon_HighNutrient	pyr	high	2	0.3616585162535104	True		21	34
+Ethanol	DinoMM_noCarbon_HighNutrient	etoh	high	2	0.3641251717602192	True		22	41
+Glycerol	DinoMM_noCarbon_HighNutrient	glyc	high	2	0.5494264892492531	True		21	31
+L-Malic acid disodium salt monohydrate	DinoMM_noCarbon_HighNutrient	mal__L	high	2	0.0	False	EX_mal__L_e	615	36
+D-Trehalose dihydrate	DinoMM_noCarbon_HighNutrient	tre	high	2	1.8004948465815818	True		27	25
+L-Proline	DinoMM_noCarbon_HighNutrient	pro__L	high	1	0.7395656153471183	True		21	22
+L-Phenylalanine	DinoMM_noCarbon_HighNutrient	phe__L	high	2	0.0	False	EX_phe__L_e	615	35
+D-Alanine	DinoMM_noCarbon_HighNutrient	ala__D	high	2	0.0	False	EX_ala__D_e	615	4
+casamino acids	DinoMM_noCarbon_HighNutrient	ala__L;arg__L;asn__L;asp__L;cys__L;glu__L;gln__L;gly;his__L;ile__L;leu__L;lys__L;met__L;phe__L;pro__L;ser__L;thr__L;tyr__L;val__L	medium	2	7.22200319502397	True	EX_cys__L_e;EX_phe__L_e;EX_ser__L_e;EX_thr__L_e;EX_tyr__L_e	10	14
+Sodium succinate dibasic hexahydrate	DinoMM_noCarbon_HighNutrient	succ	high	1	0.4379898367137428	True		22	29

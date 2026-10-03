@@ -1,0 +1,37 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+Hexanoic acid	MOPS minimal media_noCarbon	hxa	high	2	0.0	False		958	32
+Octanoic acid	MOPS minimal media_noCarbon	octa	high	2	0.0	False		958	50
+Sodium succinate dibasic hexahydrate	MOPS minimal media_noCarbon	succ	high	2	0.0	False		958	32
+Disodium Glutarate	MOPS minimal media_noCarbon	glutar	high	2	0.0	False	EX_glutar_e	958	35
+Sodium adipate	MOPS minimal media_noCarbon	adpac	high	2	0.0	False	EX_adpac_e	958	37
+Pimelic acid	MOPS minimal media_noCarbon	pime	high	2	0.0	False	EX_pime_e	958	40
+Suberic acid	MOPS minimal media_noCarbon	subeac	high	2	0.0	False	EX_subeac_e	958	39
+Azelaic acid	MOPS minimal media_noCarbon	C08261	high	2	0.0	False	EX_C08261_e	958	40
+Dodecandioic acid	MOPS minimal media_noCarbon	dodecanac	high	2	0.0	False	EX_dodecanac_e	958	40
+Protocatechuic Acid	MOPS minimal media_noCarbon	34dhbz	high	2	0.0	False		958	20
+Sodium D,L-Lactate	MOPS minimal media_noCarbon	lac__D;lac__L	high	1	0.2717387914834713	True		24	38
+Sodium propionate	MOPS minimal media_noCarbon	ppa	high	1	0.0	False		958	33
+Phenylacetic acid	RCH2_defined_noCarbon	pac	high	2	0.0	False		958	38
+Sodium D,L-Lactate	RCH2_defined_noCarbon	lac__D;lac__L	high	3	0.27185237546475827	True		22	38
+a-Ketoglutaric acid disodium salt hydrate	RCH2_defined_noCarbon	akg	high	2	0.21886127281405202	True		20	37
+Trisodium citrate dihydrate	RCH2_defined_noCarbon	cit	high	1	0.30303868543483997	True		19	35
+Sodium D-Lactate	RCH2_defined_noCarbon	lac__D	high	2	0.0	False		958	42
+Sodium L-Lactate	RCH2_defined_noCarbon	lac__L	high	2	0.2718523754258476	True		22	43
+Sodium pyruvate	RCH2_defined_noCarbon	pyr	high	2	0.20388928159859013	True		19	41
+Sodium succinate dibasic hexahydrate	RCH2_defined_noCarbon	succ	high	2	0.0	False		958	36
+Sodium propionate	RCH2_defined_noCarbon	ppa	high	2	0.0	False		958	38
+4-Hydroxybenzoic Acid	RCH2_defined_noCarbon	4hbz	high	2	0.0	False		958	48
+Ethanol	RCH2_defined_noCarbon	etoh	high	2	0.0	False		958	37
+L-Malic acid disodium salt monohydrate	RCH2_defined_noCarbon	mal__L	high	2	0.3429600469673924	True		19	37
+L-Histidine	RCH2_defined_noCarbon	his__L	high	2	0.3733020475608421	True		19	29
+L-Threonine	RCH2_defined_noCarbon	thr__L	high	1	0.2641836690605273	True		23	38
+L-Asparagine	RCH2_defined_noCarbon	asn__L	high	2	0.3429600469893273	True		21	28
+L-Glutamine	RCH2_defined_noCarbon	gln__L	high	2	0.287507523933022	True		19	29
+L-Proline	RCH2_defined_noCarbon	pro__L	high	1	0.33768326881354394	True		21	39
+L-Alanine	RCH2_defined_noCarbon	ala__L	high	2	0.22088005506513064	True		23	36
+L-Leucine	RCH2_defined_noCarbon	leu__L	high	2	0.0	False		958	37
+L-Phenylalanine	RCH2_defined_noCarbon	phe__L	high	1	0.3108240587949338	True		31	33
+L-Tryptophan	RCH2_defined_noCarbon	trp__L	high	2	0.0	False		958	36
+Sodium butyrate	RCH2_defined_noCarbon	but	high	1	0.0	False		958	44
+D-Fructose	RCH2_defined_noCarbon	fru	high	1	0.7475488122774041	True		20	40
+D-Gluconic Acid sodium salt	RCH2_defined_noCarbon	glcn	high	1	0.7088965331976966	True		22	46

@@ -1,0 +1,21 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+Sodium D,L-Lactate	ShewMM_noCarbon	lac__D;lac__L	high	10	0.09604405082656897	True		60	102
+Sodium pyruvate	ShewMM_noCarbon	pyr	high	2	0.09604405082656389	True		60	105
+L-Glutamic acid monopotassium salt monohydrate	ShewMM_noCarbon	glu__L	high	2	0.20972707646283534	True		60	69
+L-Glutamine	ShewMM_noCarbon	gln__L	high	2	0.20972707646300912	True		61	90
+casamino acids	ShewMM_noCarbon	ala__L;arg__L;asn__L;asp__L;cys__L;glu__L;gln__L;gly;his__L;ile__L;leu__L;lys__L;met__L;phe__L;pro__L;ser__L;thr__L;tyr__L;val__L	medium	4	1.3441991065828687	True	EX_met__L_e;EX_phe__L_e	52	45
+Putrescine Dihydrochloride	ShewMM_noCarbon	ptrc	high	4	0.20972707646300595	True		59	108
+N-Acetyl-D-Glucosamine	ShewMM_noCarbon	acgam	high	4	0.29652836680573386	True		63	106
+Adenosine	ShewMM_noCarbon	adn	high	2	0.4610445310223115	True		58	91
+Uridine	ShewMM_noCarbon	uri	high	2	0.3875798879197644	True		57	82
+Thymidine	ShewMM_noCarbon	thymd	high	2	0.0	False		648	92
+Inosine	ShewMM_noCarbon	ins	high	2	0.0	False		648	86
+Cytidine	ShewMM_noCarbon	cytd	high	2	0.388857846103015	True		57	91
+D-Mannose	ShewMM_noCarbon	man	high	2	0.0	False	EX_man_e	648	92
+D-Glucose	ShewMM_noCarbon	glc__D	high	4	0.310796314728799	True		59	11
+L-Serine	ShewMM_noCarbon	ser__L	high	2	0.09848871767265632	True		59	62
+D-Maltose monohydrate	ShewMM_noCarbon	malt	high	2	0.5179849874329542	True		60	103
+a-Ketoglutaric acid disodium salt hydrate	ShewMM_noCarbon	akg	high	2	0.0	False	EX_akg_e	648	107
+Potassium acetate	ShewMM_noCarbon	ac	high	2	0.0	False		648	107
+D-Cellobiose	ShewMM_noCarbon	cellb	high	2	0.7251541221034976	True		60	84
+Sodium L-Lactate	ShewMM_noCarbon	lac__L	high	2	0.0	False		648	113

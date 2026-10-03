@@ -1,0 +1,588 @@
+{
+  "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Caulo",
+  "created": "2026-10-03T13:10:29Z",
+  "dataset_provenance": {
+    "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'Caulo'",
+    "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
+    "download": "5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)",
+    "n_genes_with_fitness": "3312",
+    "n_experiments": "198"
+  },
+  "model": {
+    "model_id": "Caulo_transfer_v1_base",
+    "file": "models/transfer_v1/Caulo_base.xml.gz",
+    "source": "transfer_v1 base (models/embl_pinned/Caulo.xml.gz)",
+    "version_note": "",
+    "n_reactions": 1693,
+    "n_metabolites": 1259,
+    "n_genes": 752,
+    "sha256": "78f1ceee721a644a8845ca3dc8974f89f3eba536835a7695a143d7777f69180f"
+  },
+  "protocol": {
+    "study": "transfer_v1",
+    "arm": "M_noIonR6",
+    "arm_definition": {
+      "transforms": [
+        "universal_reaction_patches",
+        "normalize_conjunction_rules",
+        "universal_model_additions",
+        "add_atp_synthase_if_annotated",
+        "remove_menaquinol_if_no_pathway",
+        "decisions:data/studies/transfer_v1_replication/decisions_noIonR6/{org}.json"
+      ]
+    },
+    "applied": [
+      {
+        "transform": "universal_reaction_patches",
+        "records": [
+          {
+            "reaction": "CBPS",
+            "gpr_before": "YP_002518298_1 or YP_002518367_1 or (YP_002518298_1 and YP_002518367_1)",
+            "gpr_after": "YP_002518298_1 and YP_002518367_1"
+          }
+        ]
+      },
+      {
+        "transform": "normalize_conjunction_rules",
+        "records": [
+          {
+            "reaction": "AACPS1",
+            "gpr_before": "YP_002517180_1 or (YP_002517122_1 and YP_002517180_1)",
+            "gpr_after": "YP_002517122_1 and YP_002517180_1"
+          },
+          {
+            "reaction": "AACPS2",
+            "gpr_before": "YP_002517180_1 or (YP_002517122_1 and YP_002517180_1)",
+            "gpr_after": "YP_002517122_1 and YP_002517180_1"
+          },
+          {
+            "reaction": "AACPS3",
+            "gpr_before": "YP_002517180_1 or (YP_002517122_1 and YP_002517180_1)",
+            "gpr_after": "YP_002517122_1 and YP_002517180_1"
+          },
+          {
+            "reaction": "AACPS4",
+            "gpr_before": "YP_002517180_1 or (YP_002517122_1 and YP_002517180_1)",
+            "gpr_after": "YP_002517122_1 and YP_002517180_1"
+          },
+          {
+            "reaction": "AACPS5",
+            "gpr_before": "YP_002517180_1 or (YP_002517122_1 and YP_002517180_1)",
+            "gpr_after": "YP_002517122_1 and YP_002517180_1"
+          },
+          {
+            "reaction": "ACOATA",
+            "gpr_before": "YP_002516805_1 or YP_002516882_2 or YP_002517123_1 or YP_002519208_1 or (YP_002516805_1 and YP_002517122_1)",
+            "gpr_after": "YP_002516882_2 or YP_002517123_1 or YP_002519208_1 or (YP_002516805_1 and YP_002517122_1)"
+          },
+          {
+            "reaction": "ACPPAT120",
+            "gpr_before": "YP_002516804_4 or (YP_002516804_4 and YP_002517122_1)",
+            "gpr_after": "YP_002516804_4 and YP_002517122_1"
+          },
+          {
+            "reaction": "ACPPAT140",
+            "gpr_before": "YP_002516804_4 or (YP_002516804_4 and YP_002517122_1)",
+            "gpr_after": "YP_002516804_4 and YP_002517122_1"
+          },
+          {
+            "reaction": "ACPPAT141",
+            "gpr_before": "YP_002516804_4 or (YP_002516804_4 and YP_002517122_1)",
+            "gpr_after": "YP_002516804_4 and YP_002517122_1"
+          },
+          {
+            "reaction": "ACPPAT160",
+            "gpr_before": "YP_002516804_4 or (YP_002516804_4 and YP_002517122_1)",
+            "gpr_after": "YP_002516804_4 and YP_002517122_1"
+          },
+          {
+            "reaction": "ACPPAT161",
+            "gpr_before": "YP_002516804_4 or (YP_002516804_4 and YP_002517122_1)",
+            "gpr_after": "YP_002516804_4 and YP_002517122_1"
+          },
+          {
+            "reaction": "ACPPAT180",
+            "gpr_before": "YP_002516804_4 or (YP_002516804_4 and YP_002517122_1)",
+            "gpr_after": "YP_002516804_4 and YP_002517122_1"
+          },
+          {
+            "reaction": "ACPPAT181",
+            "gpr_before": "YP_002516804_4 or (YP_002516804_4 and YP_002517122_1)",
+            "gpr_after": "YP_002516804_4 and YP_002517122_1"
+          },
+          {
+            "reaction": "ANS",
+            "gpr_before": "YP_002517347_1 or (YP_002517345_1 and YP_002517347_1)",
+            "gpr_after": "YP_002517345_1 and YP_002517347_1"
+          },
+          {
+            "reaction": "IG3PS",
+            "gpr_before": "YP_002519226_1 or (YP_002519224_1 and YP_002519226_1)",
+            "gpr_after": "YP_002519224_1 and YP_002519226_1"
+          },
+          {
+            "reaction": "INDOLEt2pp",
+            "gpr_before": "YP_002516224_1 or (YP_002516223_1 and YP_002516224_1) or (YP_002516223_1 and YP_002516224_1 and YP_002516752_2)",
+            "gpr_after": "(YP_002516223_1 and YP_002516224_1) or (YP_002516223_1 and YP_002516224_1 and YP_002516752_2)"
+          },
+          {
+            "reaction": "IPPMIa",
+            "gpr_before": "YP_002515571_1 or (YP_002515570_1 and YP_002515571_1)",
+            "gpr_after": "YP_002515570_1 and YP_002515571_1"
+          },
+          {
+            "reaction": "IPPMIb",
+            "gpr_before": "YP_002515571_1 or (YP_002515570_1 and YP_002515571_1)",
+            "gpr_after": "YP_002515570_1 and YP_002515571_1"
+          },
+          {
+            "reaction": "MCOATA",
+            "gpr_before": "YP_002517119_1 or (YP_002517119_1 and YP_002517122_1)",
+            "gpr_after": "YP_002517119_1 and YP_002517122_1"
+          },
+          {
+            "reaction": "MPTG",
+            "gpr_before": "YP_002515703_1 or YP_002517324_1 or YP_002518016_1 or YP_002518759_1 or YP_002519058_1 or (YP_002515438_1 and YP_002515703_1) or (YP_002515438_1 and YP_002519058_1)",
+            "gpr_after": "YP_002517324_1 or YP_002518016_1 or YP_002518759_1 or (YP_002515438_1 and YP_002515703_1) or (YP_002515438_1 and YP_002519058_1)"
+          },
+          {
+            "reaction": "MPTG2",
+            "gpr_before": "YP_002515703_1 or YP_002519058_1 or (YP_002515438_1 and YP_002515703_1) or (YP_002515438_1 and YP_002519058_1)",
+            "gpr_after": "(YP_002515438_1 and YP_002515703_1) or (YP_002515438_1 and YP_002519058_1)"
+          },
+          {
+            "reaction": "OCOAT1",
+            "gpr_before": "YP_002515581_1 or YP_002517862_1 or (YP_002515581_1 and YP_002515582_1) or (YP_002515581_1 and YP_002517862_1)",
+            "gpr_after": "(YP_002515581_1 and YP_002515582_1) or (YP_002515581_1 and YP_002517862_1)"
+          },
+          {
+            "reaction": "OPHBDC",
+            "gpr_before": "YP_002515690_1 or YP_002518772_1 or (YP_002515690_1 and YP_002518772_1)",
+            "gpr_after": "YP_002515690_1 and YP_002518772_1"
+          },
+          {
+            "reaction": "RBFSb",
+            "gpr_before": "YP_002516303_1 or YP_002516305_1 or (YP_002516303_1 and YP_002516305_1)",
+            "gpr_after": "YP_002516303_1 and YP_002516305_1"
+          },
+          {
+            "reaction": "TRDR",
+            "gpr_before": "YP_002518337_3 or YP_002518386_1 or (YP_002518337_3 and YP_002519026_2)",
+            "gpr_after": "YP_002518386_1 or (YP_002518337_3 and YP_002519026_2)"
+          },
+          {
+            "reaction": "UAGAAT",
+            "gpr_before": "YP_002517361_1 or (YP_002517122_1 and YP_002517361_1)",
+            "gpr_after": "YP_002517122_1 and YP_002517361_1"
+          }
+        ]
+      },
+      {
+        "transform": "universal_model_additions",
+        "records": [
+          {
+            "reaction": "GCALDt",
+            "added": "gcald_e <=> gcald_c",
+            "gpr": "",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ]
+          },
+          {
+            "reaction": "EX_gcald_e",
+            "added": "gcald_e --> ",
+            "gpr": "",
+            "bounds": [
+              0.0,
+              1000.0
+            ]
+          }
+        ]
+      },
+      {
+        "transform": "add_atp_synthase_if_annotated",
+        "records": [
+          {
+            "reaction": "ATPS4rpp",
+            "added": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+            "gpr": "CCNA_00370 and CCNA_00372 and CCNA_00373 and CCNA_03558 and CCNA_03560 and CCNA_03561 and CCNA_03562 and CCNA_03563",
+            "subunit_types": [
+              "a",
+              "alpha",
+              "b",
+              "beta",
+              "c",
+              "delta",
+              "epsilon",
+              "gamma"
+            ],
+            "clusters": [
+              [
+                "CCNA_00370",
+                "CCNA_00372",
+                "CCNA_00373"
+              ],
+              [
+                "CCNA_03558",
+                "CCNA_03560",
+                "CCNA_03561",
+                "CCNA_03562",
+                "CCNA_03563"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "transform": "remove_menaquinol_if_no_pathway",
+        "records": [
+          {
+            "reaction": "Growth",
+            "biomass_removed": {
+              "mql8_c": -9.68418998275772e-05
+            },
+            "evidence_steps": []
+          }
+        ]
+      },
+      {
+        "transform": "decisions:data/studies/transfer_v1_replication/decisions_noIonR6/{org}.json",
+        "records": [
+          {
+            "reaction": "ANPRT",
+            "decision": "R1",
+            "gpr_before": "YP_002517347_1 or YP_002517348_1",
+            "gpr_after": "YP_002517348_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "DHAD1",
+            "decision": "R1",
+            "gpr_before": "YP_002515620_1 or YP_002516235_1 or YP_002516861_1 or YP_002518512_1",
+            "gpr_after": "YP_002516861_1 or YP_002518512_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "DHORD2",
+            "decision": "R6",
+            "gpr_before": "",
+            "gpr_after": "CCNA_00562",
+            "genes_added": [
+              "CCNA_00562"
+            ]
+          },
+          {
+            "reaction": "DMPPS",
+            "decision": "R1",
+            "gpr_before": "YP_002518844_1 or YP_002519075_1",
+            "gpr_after": "YP_002518844_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "DXPS",
+            "decision": "R6",
+            "gpr_before": "",
+            "gpr_after": "CCNA_02149",
+            "genes_added": [
+              "CCNA_02149"
+            ]
+          },
+          {
+            "reaction": "G1PACT",
+            "decision": "R1",
+            "gpr_before": "YP_002516583_1 or YP_002517762_1 or YP_002519023_1",
+            "gpr_after": "YP_002517762_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "GF6PTA",
+            "decision": "R1",
+            "gpr_before": "YP_002515492_1 or YP_002515828_1 or YP_002515942_1",
+            "gpr_after": "YP_002515492_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "GTPCI",
+            "decision": "R1",
+            "gpr_before": "YP_002515864_1 or YP_002518110_1",
+            "gpr_after": "YP_002515864_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "IPDPS",
+            "decision": "R1",
+            "gpr_before": "YP_002518844_1 or YP_002519075_1",
+            "gpr_after": "YP_002518844_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "MEPCT",
+            "decision": "R6",
+            "gpr_before": "",
+            "gpr_after": "YP_002517185_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "PGCD",
+            "decision": "R1",
+            "gpr_before": "YP_002517603_1 or YP_002518694_1",
+            "gpr_after": "YP_002518694_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "PPNDH",
+            "decision": "R1",
+            "gpr_before": "YP_002517678_2 or YP_002518401_1",
+            "gpr_after": "YP_002518401_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "PRAGSr",
+            "decision": "R1",
+            "gpr_before": "YP_002515674_1 or YP_002517148_1",
+            "gpr_after": "YP_002515674_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "RBFK",
+            "decision": "R1",
+            "gpr_before": "YP_002516113_1 or YP_002517554_1",
+            "gpr_after": "YP_002516113_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "RNDR1",
+            "decision": "R1",
+            "gpr_before": "YP_002519026_2 or (YP_002515636_1 and YP_002518980_1)",
+            "gpr_after": "YP_002515636_1 and YP_002518980_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "RNDR2",
+            "decision": "R1",
+            "gpr_before": "YP_002519026_2 or (YP_002515636_1 and YP_002518980_1)",
+            "gpr_after": "YP_002515636_1 and YP_002518980_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "RNDR3",
+            "decision": "R1",
+            "gpr_before": "YP_002519026_2 or (YP_002515636_1 and YP_002518980_1)",
+            "gpr_after": "YP_002515636_1 and YP_002518980_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "RNDR4",
+            "decision": "R1",
+            "gpr_before": "YP_002519026_2 or (YP_002515636_1 and YP_002518980_1)",
+            "gpr_after": "YP_002515636_1 and YP_002518980_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "SERAT",
+            "decision": "R1",
+            "gpr_before": "YP_002517308_1 or YP_002518107_1",
+            "gpr_after": "YP_002518107_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "SUCCt2r",
+            "decision": "R6",
+            "gpr_before": "",
+            "gpr_after": "YP_002515639_1 or YP_002516037_2",
+            "genes_added": []
+          },
+          {
+            "reaction": "TPI",
+            "decision": "R1",
+            "gpr_before": "YP_002517343_1 or YP_002518731_1",
+            "gpr_after": "YP_002517343_1",
+            "genes_added": []
+          },
+          {
+            "reaction": "UMPK",
+            "decision": "R1",
+            "gpr_before": "YP_002517371_1 or YP_002519076_1",
+            "gpr_after": "YP_002517371_1",
+            "genes_added": []
+          }
+        ]
+      }
+    ],
+    "params": {
+      "carbon_uptake": -10.0,
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "drop_rich_medium_essentials": false,
+      "rich_medium_uptake": -1000.0,
+      "knockout_genes": [],
+      "processes": 1,
+      "solver": "glpk",
+      "max_conditions": null,
+      "complete_medium_transport": true,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
+    },
+    "media_mapping": "data/studies/transfer_v1_replication/media_bigg_panel_B.tsv",
+    "carbon_source_mapping": "data/studies/transfer_v1_replication/carbon_sources_bigg_panel_B.tsv",
+    "gene_mapping": {
+      "method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed",
+      "genpept_table": "data/genpept_panel/Caulo_genpept_map.tsv"
+    },
+    "role": "evaluation_panel_B",
+    "base_model": {
+      "org": "Caulo",
+      "role": "evaluation_panel_B",
+      "draft": "models/embl_pinned/Caulo.xml.gz",
+      "draft_sha256": "a10f3d4a2da6629ff1f37d8e344e618bf7724c3f9c1ad23e682e8fb5ca5acb6b",
+      "universe": "external/carveme/universe_bacteria.xml.gz",
+      "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+      "reference": {
+        "medium": "M2_noCarbon",
+        "carbon_exchange": "EX_glc__D_e",
+        "condition": "D-Glucose",
+        "rule": "gembench.transfer.choose_reference_condition"
+      },
+      "min_growth": 0.05,
+      "status": "Optimal",
+      "added_reactions": [
+        {
+          "id": "ASNS2",
+          "reaction": "asp__L_c + atp_c + nh4_c --> amp_c + asn__L_c + h_c + ppi_c",
+          "name": "Asparagine synthetase"
+        },
+        {
+          "id": "CITACt",
+          "reaction": "ac_c + cit_e <-- ac_e + cit_c",
+          "name": "Citrate transport via acetate antiport"
+        },
+        {
+          "id": "DXPS",
+          "reaction": "g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c",
+          "name": "1-deoxy-D-xylulose 5-phosphate synthase"
+        },
+        {
+          "id": "PLPS",
+          "reaction": "g3p_c + gln__L_c + r5p_c --> glu__L_c + 3.0 h2o_c + h_c + pi_c + pydx5p_c",
+          "name": "Pyridoxal-5-phosphate synthase"
+        }
+      ],
+      "rejected_energy_cycle_sets": [],
+      "growth_before": 0.0,
+      "growth_after": 0.31004903368372966,
+      "base_sha256": "78f1ceee721a644a8845ca3dc8974f89f3eba536835a7695a143d7777f69180f",
+      "created": "2026-10-03T12:39:50Z"
+    }
+  },
+  "leakage": {
+    "ground_truth_used_in_model_curation": "no for the correction rules: frozen before this organism's fitness tables were downloaded (see the study freeze manifests); the base model's gap-fill uses observed wild-type growth on one reference condition",
+    "ground_truth_public_since": "Fitness Browser releases include Price et al. 2018; exact dates differ by experiment",
+    "frontier_model_training_exposure": "unknown; public accessibility does not establish inclusion in a particular model's training data",
+    "held_out_recommendation": "see docs/studies/transfer-method-v1.md and the panel selection record",
+    "notes": [
+      "Fitness < -2 is an operational importance threshold in a pooled mutant assay, not proof of lethality.",
+      "Compare arms on matched genes, conditions and finite observations; report wild-type growth coverage separately."
+    ]
+  },
+  "results": {
+    "condition_level": {
+      "n_conditions_mapped": 13,
+      "n_conditions_wt_grows": 5,
+      "conditions_with_absent_exchange": 6
+    },
+    "gene_level_conditions_where_wt_grows": {
+      "n_genes": 548,
+      "n_conditions": 5,
+      "n_gene_condition_pairs": 2740,
+      "n_missing_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "aucpr_bernstein": {
+        "point": 0.42489109550324144,
+        "ci95": [
+          0.3231245619700175,
+          0.5318897617600622
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.4267806075759544,
+        "ci95": [
+          0.3550320838500941,
+          0.512565803246307
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.7391834991151522,
+        "ci95": [
+          0.6971150282795283,
+          0.7899468206950885
+        ]
+      },
+      "mcc": {
+        "point": 0.47977757097855495,
+        "ci95": [
+          0.40085407263109085,
+          0.5600281200166871
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.7222199025971593,
+        "ci95": [
+          0.6768675429268095,
+          0.772914888511917
+        ]
+      },
+      "accuracy": {
+        "point": 0.8788321167883212,
+        "ci95": [
+          0.8550912408759124,
+          0.901286496350365
+        ]
+      },
+      "confusion": {
+        "tp": 2208,
+        "tn": 200,
+        "fp": 199,
+        "fn": 133
+      }
+    },
+    "gene_map": {
+      "model_genes": 752,
+      "mapped": 750,
+      "matched_by_version": 741,
+      "matched_by_accession_only": 0,
+      "no_genpept_record": 1,
+      "locus_tag_not_in_browser": 1,
+      "browser_genes_hit": 750,
+      "mapped_with_fitness_data": 548
+    },
+    "counts": {
+      "model_genes": 752,
+      "model_genes_mapped": 750,
+      "genes_with_fitness": 548,
+      "genes_after_adjustment": 548,
+      "conditions_total": 14,
+      "conditions_mapped": 13,
+      "conditions_wt_grows": 5,
+      "medium_completion_exchanges_added": 2
+    },
+    "timings_s": {
+      "rich_medium_essentials_s": 2.1457672119140625e-06,
+      "knockout_simulation_s": 9.118664026260376,
+      "total_s": 9.518278360366821
+    }
+  },
+  "software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "warnings": []
+}
