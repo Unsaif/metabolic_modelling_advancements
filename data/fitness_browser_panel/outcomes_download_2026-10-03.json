@@ -1,0 +1,40 @@
+{
+ "note": "First download of panel A fitness tables (transfer study v1), after the inputs freeze results/study_freezes/transfer_v1_inputs_panel_A.json (created 2026-10-03T10:11:43Z). Fetched in the Claude desktop browser pane and staged unchanged; sha256 computed in the browser before saving and verified here. PS (not evaluable) and panel B were not downloaded.",
+ "files": {
+  "data/fitness_browser_panel/Cola/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=Cola",
+   "sha256": "5d37c43d4b18ca9b0395655fe3ac740485769c46a58b78d6724be37651865d76",
+   "bytes": 5468681,
+   "fetch_started": "2026-10-03T10:12:18.565Z",
+   "fetch_finished": "2026-10-03T10:12:21.338Z"
+  },
+  "data/fitness_browser_panel/Dino/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=Dino",
+   "sha256": "c19fa12bc865e3cab7aecd1f035c47c9684af56866b4e64e42ef66fdcca79573",
+   "bytes": 4078297,
+   "fetch_started": "2026-10-03T10:12:26.906Z",
+   "fetch_finished": "2026-10-03T10:12:29.320Z"
+  },
+  "data/fitness_browser_panel/Dyella79/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=Dyella79",
+   "sha256": "7fda2efdf4b39844b358d34175a155ba5a8d97273cfdcb7acb9db41ecfe029e5",
+   "bytes": 1935861,
+   "fetch_started": "2026-10-03T10:12:30.823Z",
+   "fetch_finished": "2026-10-03T10:12:32.163Z"
+  },
+  "data/fitness_browser_panel/MycoTube/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=MycoTube",
+   "sha256": "5afaf38aa461a5e479458b667b3a172759ec07be4b2a4e1c388b6c12cad420c4",
+   "bytes": 4187282,
+   "fetch_started": "2026-10-03T10:12:33.666Z",
+   "fetch_finished": "2026-10-03T10:12:36.100Z"
+  },
+  "data/fitness_browser_panel/RPal_CGA009/fit_logratios.tsv": {
+   "url": "https://fit.genomics.lbl.gov/cgi-bin/createFitData.cgi?orgId=RPal_CGA009",
+   "sha256": "ddf8cd8ecc1062bb1267f6dc6cbe65c4311f708ae34a70c77d062d0daf65d67b",
+   "bytes": 6163447,
+   "fetch_started": "2026-10-03T10:12:37.602Z",
+   "fetch_finished": "2026-10-03T10:12:40.500Z"
+  }
+ }
+}
