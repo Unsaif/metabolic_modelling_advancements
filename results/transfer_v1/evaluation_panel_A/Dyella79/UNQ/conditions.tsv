@@ -1,0 +1,10 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+D-Glucose	RCH2_defined_noCarbon	glc__D	high	2	0.7669658210157373	True		49	86
+D-Fructose	RCH2_defined_noCarbon	fru	high	2	0.7522180098073485	True		51	85
+D-Maltose monohydrate	RCH2_defined_noCarbon	malt	high	2	0.0	False		542	87
+D-Cellobiose	RCH2_defined_noCarbon	cellb	high	2	1.5338520038509478	True		51	85
+Sodium pyruvate	RCH2_defined_noCarbon	pyr	high	2	0.14708573632994276	True		52	79
+L-Proline	RCH2_defined_noCarbon	pro__L	high	2	0.0	False		542	66
+L-Alanine	RCH2_defined_noCarbon	ala__L	high	2	0.2206286044771125	True		52	81
+N-Acetyl-D-Glucosamine	RCH2_defined_noCarbon	acgam	high	2	0.0	False	EX_acgam_e	542	89
+D-Galactose	RCH2_defined_noCarbon	gal	high	1	0.7522180098064141	True		51	101

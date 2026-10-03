@@ -1,0 +1,1164 @@
+{
+ "metric": "common",
+ "excluded": [],
+ "n_boot": 10000,
+ "seed": 0,
+ "unchanged_tolerance": 0.001,
+ "pairs": [
+  {
+   "A": "B0",
+   "B": "UNQ",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.03567694406717531,
+     "ci95": [
+      0.0,
+      0.08127258712479933
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.049495500803640735,
+     "ci95": [
+      0.0062020163868787715,
+      0.12154518481468067
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.06602449146104028,
+     "ci95": [
+      0.03038335770490303,
+      0.10350315648693838
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0008158387470676084,
+     "ci95": [
+      0.0,
+      0.0020984535630157275
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.031020481945329775,
+     "ci95": [
+      0.0012539757982738162,
+      0.08197915652625963
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.03660665140485074,
+   "median_delta": 0.03567694406717531,
+   "organism_bootstrap_ci95": [
+    0.016592699798034665,
+    0.05388547250349429
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "UNQ",
+   "B": "M",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0460848177210369,
+     "ci95": [
+      0.0,
+      0.10150781642889843
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.049476128728352775,
+     "ci95": [
+      0.005099844830209407,
+      0.121942031434092
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.018884562385127368,
+     "ci95": [
+      0.0,
+      0.04637436736519097
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": -0.0021419163191018116,
+     "ci95": [
+      -0.004227126857680719,
+      -0.0004503764824297441
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": -0.007438585913204315,
+     "ci95": [
+      -0.030373077484936617,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.020973001320442185,
+   "median_delta": 0.018884562385127368,
+   "organism_bootstrap_ci95": [
+    -5.528841589697714e-05,
+    0.04200129105678134
+   ],
+   "n_improved": 3,
+   "n_worsened": 2,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "B0",
+   "B": "U",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.016962514979438736,
+     "ci95": [
+      0.0,
+      0.042975110394775716
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.03633629823001988,
+     "ci95": [
+      0.0036018674118393256,
+      0.10029957575175777
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.006200415608217935,
+     "ci95": [
+      0.0,
+      0.020438262619121336
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0008158387470676084,
+     "ci95": [
+      0.0,
+      0.0020984535630157275
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.005151684894435321,
+     "ci95": [
+      0.0,
+      0.0214639663240577
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.013093350491835899,
+   "median_delta": 0.006200415608217935,
+   "organism_bootstrap_ci95": [
+    0.0036270925782447587,
+    0.0253574496833132
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "U",
+   "B": "UN",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.018714429087736573,
+     "ci95": [
+      0.0,
+      0.059828029748062304
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0037428858175473146,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.011228657452641944
+   ],
+   "n_improved": 1,
+   "n_worsened": 0,
+   "n_unchanged": 4,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "U",
+   "B": "UQ",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.013148282152580848,
+     "ci95": [
+      0.0,
+      0.043665263605010746
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.059824075852822345,
+     "ci95": [
+      0.02703665974400675,
+      0.09769857893182321
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.025865413967299994,
+     "ci95": [
+      0.0004933890437087137,
+      0.07200894353782428
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.019767554394540636,
+   "median_delta": 0.013148282152580848,
+   "organism_bootstrap_ci95": [
+    0.0026296564305161698,
+    0.04106752830515341
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "UN",
+   "B": "UNQ",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.013148282152580848,
+     "ci95": [
+      0.0,
+      0.043665263605010746
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.059824075852822345,
+     "ci95": [
+      0.02703665974400675,
+      0.09769857893182321
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.025865413967299994,
+     "ci95": [
+      0.0004933890437087137,
+      0.07200894353782428
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.019767554394540636,
+   "median_delta": 0.013148282152580848,
+   "organism_bootstrap_ci95": [
+    0.0026296564305161698,
+    0.04106752830515341
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_rxn",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.025754193880650478,
+     "ci95": [
+      0.0,
+      0.08525345206651337
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0051508387761300956,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.015452516328390287
+   ],
+   "n_improved": 1,
+   "n_worsened": 0,
+   "n_unchanged": 4,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_atp",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.00601184946285338,
+     "ci95": [
+      0.0,
+      0.02049906196801011
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.010479897316072517,
+     "ci95": [
+      0.0017706512146590666,
+      0.025393379814741577
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.00036866422572961674,
+     "ci95": [
+      0.0,
+      0.0012042163576041671
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0033720822009311027,
+   "median_delta": 0.00036866422572961674,
+   "organism_bootstrap_ci95": [
+    7.373284514592334e-05,
+    0.007490308282214186
+   ],
+   "n_improved": 2,
+   "n_worsened": 0,
+   "n_unchanged": 3,
+   "sign_test_p_two_sided": 0.5
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R6",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.012657381330417883,
+     "ci95": [
+      0.0,
+      0.03251961265907918
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": -0.007438585913204315,
+     "ci95": [
+      -0.030373077484936617,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0010437590834427135,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    -0.0044631515479225895,
+    0.00759442879825073
+   ],
+   "n_improved": 1,
+   "n_worsened": 1,
+   "n_unchanged": 3,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R1R2",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0460848177210369,
+     "ci95": [
+      0.0,
+      0.10150781642889843
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.037387217204192524,
+     "ci95": [
+      0.0,
+      0.10625307239337965
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.018884562385127368,
+     "ci95": [
+      0.0,
+      0.04637436736519097
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": -0.0021419163191018116,
+     "ci95": [
+      -0.004227126857680719,
+      -0.0004503764824297441
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.020042936198250996,
+   "median_delta": 0.018884562385127368,
+   "organism_bootstrap_ci95": [
+    0.002920145949384749,
+    0.03716572644711724
+   ],
+   "n_improved": 3,
+   "n_worsened": 1,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.625
+  },
+  {
+   "A": "B0",
+   "B": "M",
+   "n_organisms": 6,
+   "n_evaluable": 5,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0817617617882122,
+     "ci95": [
+      0.019942606360791853,
+      0.15194336234255934
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.09898118271090578,
+     "ci95": [
+      0.029823408468116888,
+      0.1947876466859718
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.08490905384616765,
+     "ci95": [
+      0.043454010786555676,
+      0.1299479611851126
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "MycoTube",
+     "delta": -0.0013260775720342032,
+     "ci95": [
+      -0.0035371586813057057,
+      0.0007053608690111965
+     ],
+     "wt_grows": [
+      19,
+      19
+     ],
+     "n_mapped_conditions": 19,
+     "n_pairs": 8797,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.02358100534190921,
+     "ci95": [
+      0.0,
+      0.07580361826641978
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.05758138522303213,
+   "median_delta": 0.0817617617882122,
+   "organism_bootstrap_ci95": [
+    0.020902365294394848,
+    0.08990844698047182
+   ],
+   "n_improved": 4,
+   "n_worsened": 1,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.375
+  }
+ ]
+}

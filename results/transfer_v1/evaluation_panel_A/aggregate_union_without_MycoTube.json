@@ -1,0 +1,1001 @@
+{
+ "metric": "union",
+ "excluded": [
+  "MycoTube"
+ ],
+ "n_boot": 10000,
+ "seed": 0,
+ "unchanged_tolerance": 0.001,
+ "pairs": [
+  {
+   "A": "B0",
+   "B": "UNQ",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.03567694406717531,
+     "ci95": [
+      0.0,
+      0.08127258712479933
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.049470528978088846,
+     "ci95": [
+      0.006499170602953486,
+      0.11717480038862342
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.06602449146104028,
+     "ci95": [
+      0.03038335770490303,
+      0.10350315648693838
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.031016317544044214,
+     "ci95": [
+      0.0011474551437556874,
+      0.08430055283055599
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.04554707051258716,
+   "median_delta": 0.04257373652263208,
+   "organism_bootstrap_ci95": [
+    0.03334663080560976,
+    0.05843760461257404
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "UNQ",
+   "B": "M",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.06261319484714595,
+     "ci95": [
+      0.010726832102289207,
+      0.13157994936197592
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.06981283679593442,
+     "ci95": [
+      -0.002581349116866292,
+      0.15622776310505246
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0369059744160396,
+     "ci95": [
+      0.008858904433333953,
+      0.07835144520388809
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": -0.030999786357572223,
+     "ci95": [
+      -0.08377633991972128,
+      -0.0016499867960992
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.034583054925386936,
+   "median_delta": 0.049759584631592774,
+   "organism_bootstrap_ci95": [
+    -0.0075965410563926805,
+    0.06621301582154018
+   ],
+   "n_improved": 3,
+   "n_worsened": 1,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.625
+  },
+  {
+   "A": "B0",
+   "B": "U",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.016962514979438736,
+     "ci95": [
+      0.0,
+      0.042975110394775716
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.036322246825508,
+     "ci95": [
+      0.0030621328733986515,
+      0.09818756086847172
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.006200415608217935,
+     "ci95": [
+      0.0,
+      0.020438262619121336
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.00515090357674422,
+     "ci95": [
+      0.0,
+      0.023030709149766394
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.016159020247477222,
+   "median_delta": 0.011581465293828336,
+   "organism_bootstrap_ci95": [
+    0.005675659592481078,
+    0.028791789021185482
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "U",
+   "B": "UN",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.018714429087736573,
+     "ci95": [
+      0.0,
+      0.059828029748062304
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.004678607271934143,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.01403582181580243
+   ],
+   "n_improved": 1,
+   "n_worsened": 0,
+   "n_unchanged": 3,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "U",
+   "B": "UQ",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.013148282152580848,
+     "ci95": [
+      0.0,
+      0.043665263605010746
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.059824075852822345,
+     "ci95": [
+      0.02703665974400675,
+      0.09769857893182321
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.025865413967299994,
+     "ci95": [
+      0.0004933890437087137,
+      0.07200894353782428
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.024709442993175797,
+   "median_delta": 0.01950684805994042,
+   "organism_bootstrap_ci95": [
+    0.0064663534918249985,
+    0.04815512742776197
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "UN",
+   "B": "UNQ",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.013148282152580848,
+     "ci95": [
+      0.0,
+      0.043665263605010746
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.059824075852822345,
+     "ci95": [
+      0.02703665974400675,
+      0.09769857893182321
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.025865413967299994,
+     "ci95": [
+      0.0004933890437087137,
+      0.07200894353782428
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.024709442993175797,
+   "median_delta": 0.01950684805994042,
+   "organism_bootstrap_ci95": [
+    0.0064663534918249985,
+    0.04815512742776197
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_rxn",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.025754193880650478,
+     "ci95": [
+      0.0,
+      0.08525345206651337
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0064385484701626194,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.01931564541048786
+   ],
+   "n_improved": 1,
+   "n_worsened": 0,
+   "n_unchanged": 3,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_atp",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.00601184946285338,
+     "ci95": [
+      0.0,
+      0.02049906196801011
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.010470594380151466,
+     "ci95": [
+      0.0014836039508016458,
+      0.024380920253044933
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0041206109607512115,
+   "median_delta": 0.00300592473142669,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.008241221921502423
+   ],
+   "n_improved": 2,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.5
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R6",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.018056257153657274,
+     "ci95": [
+      0.0,
+      0.06263062036544077
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.03536345161248455,
+     "ci95": [
+      -0.02077956661230121,
+      0.102198212622273
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.018637157515088765,
+     "ci95": [
+      0.0,
+      0.05144307917368238
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": -0.030999786357572223,
+     "ci95": [
+      -0.08377633991972128,
+      -0.0016499867960992
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.010264269980914592,
+   "median_delta": 0.01834670733437302,
+   "organism_bootstrap_ci95": [
+    -0.018590550389406976,
+    0.031036652997777733
+   ],
+   "n_improved": 3,
+   "n_worsened": 1,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.625
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R1R2",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.0460848177210369,
+     "ci95": [
+      0.0,
+      0.10150781642889843
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.037387217204192524,
+     "ci95": [
+      0.0,
+      0.10625307239337965
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4088,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.018884562385127368,
+     "ci95": [
+      0.0,
+      0.04637436736519097
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2037,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.025589149327589197,
+   "median_delta": 0.028135889794659946,
+   "organism_bootstrap_ci95": [
+    0.009346804301048131,
+    0.04173601746261471
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "B0",
+   "B": "M",
+   "n_organisms": 5,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "Cola",
+     "delta": 0.09796818862583762,
+     "ci95": [
+      0.034671518601227226,
+      0.17798623270929995
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 14,
+     "n_pairs": 3479,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dino",
+     "delta": 0.11831102533746213,
+     "ci95": [
+      0.03294297683219613,
+      0.22415773154264285
+     ],
+     "wt_grows": [
+      7,
+      7
+     ],
+     "n_mapped_conditions": 21,
+     "n_pairs": 4053,
+     "status": "evaluable"
+    },
+    {
+     "org": "Dyella79",
+     "delta": 0.10258925556378301,
+     "ci95": [
+      0.05554250874649033,
+      0.1537227923809631
+     ],
+     "wt_grows": [
+      6,
+      6
+     ],
+     "n_mapped_conditions": 9,
+     "n_pairs": 3252,
+     "status": "evaluable"
+    },
+    {
+     "org": "PS",
+     "delta": null,
+     "ci95": null,
+     "wt_grows": [
+      null,
+      null
+     ],
+     "n_mapped_conditions": null,
+     "n_pairs": null,
+     "status": "missing run"
+    },
+    {
+     "org": "RPal_CGA009",
+     "delta": 0.0,
+     "ci95": [
+      -0.0338716379326648,
+      0.03749929117316906
+     ],
+     "wt_grows": [
+      3,
+      3
+     ],
+     "n_mapped_conditions": 7,
+     "n_pairs": 2034,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.07971711738177069,
+   "median_delta": 0.10027872209481031,
+   "organism_bootstrap_ci95": [
+    0.025647313890945753,
+    0.113225316159556
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.25
+  }
+ ]
+}

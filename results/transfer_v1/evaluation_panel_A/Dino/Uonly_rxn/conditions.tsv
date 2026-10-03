@@ -1,0 +1,22 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+Sodium Fumarate dibasic	DinoMM_noCarbon_HighNutrient	fum	high	2	0.0	False	EX_fum_e	579	27
+Trisodium citrate dihydrate	DinoMM_noCarbon_HighNutrient	cit	high	2	0.0	False	EX_cit_e	579	28
+Sodium D-Lactate	DinoMM_noCarbon_HighNutrient	lac__D	high	2	0.0	False	EX_lac__D_e	579	31
+Sodium L-Lactate	DinoMM_noCarbon_HighNutrient	lac__L	high	2	0.0	False	EX_lac__L_e	579	32
+Sodium D,L-Lactate	DinoMM_noCarbon_HighNutrient	lac__D;lac__L	high	2	0.0	False	EX_lac__D_e;EX_lac__L_e	579	29
+Sodium pyruvate	DinoMM_noCarbon_HighNutrient	pyr	high	2	0.09769101586877353	True		23	26
+Sodium succinate dibasic hexahydrate	DinoMM_noCarbon_HighNutrient	succ	high	2	0.0	False		579	26
+Sodium propionate	DinoMM_noCarbon_HighNutrient	ppa	high	2	0.0	False		579	28
+Xylitol	DinoMM_noCarbon_HighNutrient	xylt	high	2	0.0	False	EX_xylt_e	579	36
+Glycerol	DinoMM_noCarbon_HighNutrient	glyc	high	2	0.0	False		579	27
+L-Malic acid disodium salt monohydrate	DinoMM_noCarbon_HighNutrient	mal__L	high	2	0.0	False	EX_mal__L_e	579	35
+D-Trehalose dihydrate	DinoMM_noCarbon_HighNutrient	tre	high	2	0.8351477034524218	True		20	32
+L-Glutamic acid monopotassium salt monohydrate	DinoMM_noCarbon_HighNutrient	glu__L	high	2	0.0	False		579	33
+L-Glutamine	DinoMM_noCarbon_HighNutrient	gln__L	high	2	0.0	False	EX_gln__L_e	579	27
+casamino acids	DinoMM_noCarbon_HighNutrient	ala__L;arg__L;asn__L;asp__L;cys__L;glu__L;gln__L;gly;his__L;ile__L;leu__L;lys__L;met__L;phe__L;pro__L;ser__L;thr__L;tyr__L;val__L	medium	2	0.18139835509807356	True	EX_cys__L_e;EX_gln__L_e;EX_his__L_e;EX_phe__L_e;EX_ser__L_e;EX_tyr__L_e	20	19
+D-Glucose	DinoMM_noCarbon_HighNutrient	glc__D	high	2	0.31320017642172476	True		23	34
+D-Maltose monohydrate	DinoMM_noCarbon_HighNutrient	malt	high	2	0.8351477034524165	True		23	33
+L-Rhamnose monohydrate	DinoMM_noCarbon_HighNutrient	rmn	high	2	0.3102258713081576	True		22	35
+a-Ketoglutaric acid disodium salt hydrate	DinoMM_noCarbon_HighNutrient	akg	high	2	0.0	False	EX_akg_e	579	34
+Sucrose	DinoMM_noCarbon_HighNutrient	sucr	high	4	0.7307620694434195	True		21	25
+L-Malic acid disodium salt monohydrate	DinoMM_noCarbon	mal__L	high	1	0.0	False	EX_mal__L_e	579	26

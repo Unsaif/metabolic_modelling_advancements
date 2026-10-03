@@ -1,0 +1,20 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+Glycerol	Sautons minimal media with no carbon	glyc	high	2	8.76645050150257	True		23	5
+Sodium propionate	Sautons minimal media with no carbon	ppa	high	2	8.594559315198763	True		23	19
+Potassium acetate	Sautons minimal media with no carbon	ac	high	2	8.594559315198763	True		23	2
+D-Glucose	Sautons minimal media with no carbon	glc__D	high	2	8.917691202559752	True		23	6
+Sodium pyruvate	Sautons minimal media with no carbon	pyr	high	2	8.651856377299685	True		23	1
+L-Asparagine	Sautons minimal media with no carbon	asn__L	high	2	7.93759212668716	True		23	5
+L-Aspartic Acid	Sautons minimal media with no carbon	asp__L	high	2	8.594559315198497	True	EX_asp__L_e	23	2
+L-Glutamic acid	Sautons minimal media with no carbon	glu__L	high	2	8.594559315198778	True	EX_glu__L_e	23	1
+Sodium D-Lactate	Sautons minimal media with no carbon	lac__D	high	2	8.594559315198778	True	EX_lac__D_e	23	2
+Sodium L-Lactate	Sautons minimal media with no carbon	lac__L	high	2	8.651856377300055	True		23	1
+D,L-Malic Acid	Sautons minimal media with no carbon	mal__L;mal__D	high	2	8.594559315198778	True	EX_mal__D_e	23	0
+D-Trehalose dihydrate	Sautons minimal media with no carbon	tre	high	2	9.380947888407071	True		23	1
+casamino acids	Sautons minimal media with no carbon	ala__L;arg__L;asn__L;asp__L;cys__L;glu__L;gln__L;gly;his__L;ile__L;leu__L;lys__L;met__L;phe__L;pro__L;ser__L;thr__L;tyr__L;val__L	medium	2	9.051947339635435	True	EX_ala__L_e;EX_asp__L_e;EX_cys__L_e;EX_glu__L_e;EX_gln__L_e;EX_his__L_e;EX_met__L_e;EX_phe__L_e;EX_tyr__L_e	23	0
+Sodium butyrate	Sautons minimal media with no carbon	but	high	2	8.594559315198458	True		23	1
+heptadecanoic acid	Sautons minimal media with no carbon	hpdca	high	2	8.594559315197772	True	EX_hpdca_e	23	0
+Stearic acid	Sautons minimal media with no carbon	ocdca	high	2	8.594559315197772	True	EX_ocdca_e	23	5
+Palmitic acid	Sautons minimal media with no carbon	hdca	high	2	8.594559315197772	True	EX_hdca_e	23	0
+Sodium oleate	Sautons minimal media with no carbon	ocdcea	high	2	8.594559315197772	True	EX_ocdcea_e	23	0
+cholesterol	Sautons minimal media with no carbon	chsterol	high	2	8.594559315197772	True	EX_chsterol_e	23	2
