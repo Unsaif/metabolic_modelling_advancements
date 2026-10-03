@@ -1,0 +1,63 @@
+{
+ "note": "Blind adjudication of the development organisms (transfer study v1). Packets were built by scripts/transfer_candidates.py --arm UNQ in a scratch directory outside the repository; each was given to one fresh Claude subagent (general-purpose agent type, inheriting the session model claude-opus-5-5) with docs/studies/transfer-adjudication-prompt-v1.txt. candidates.json is copied here; genes.tsv is the organism's data/fitness_browser/<org>/genes.tsv columns and PROCEDURE.md is docs/studies/transfer-adjudication-procedure-v1.md (hashes below).",
+ "date": "2026-10-03",
+ "organisms": {
+  "MR1": {
+   "packet": {
+    "candidates.json": "00ef8dc0c0a944f98e2947904cf566d94b7ee81d58a963469281e01f040e7b2c",
+    "genes.tsv": "249bb6264a65c455ca89eab2b338e8b39b7c42270f7953ab494f78583abd6526",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "8ef7a887d50d3f8cdc47e13ba43b4e35ea5548e2fb52d1ec51c7b714e1f23151",
+   "n_candidates": 50,
+   "decision_counts": {
+    "abstain": 35,
+    "R1": 12,
+    "R6": 3
+   }
+  },
+  "Btheta": {
+   "packet": {
+    "candidates.json": "c4f30ac9a4a86f0ab03c79be3c49f66f8a82e22ceaa82cbb225ee055c38cfeca",
+    "genes.tsv": "1f090bb68dec097bad27a4f6a613ef5623e7c4d13130b6f3d3159ed93eda1191",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "5b40cfdcb18c5eb070ee56e5b2e235d22a0dc2b5318ea9ea2e01c2552bb1702c",
+   "n_candidates": 68,
+   "decision_counts": {
+    "abstain": 48,
+    "R2+R1": 2,
+    "R1": 11,
+    "R6": 7
+   }
+  },
+  "Smeli": {
+   "packet": {
+    "candidates.json": "5eaa37707ccbf75198349c094e488c61cdaa0c35166ffbc3c8a01e8e6f6b7c86",
+    "genes.tsv": "57cf0f0600199fa9b55b3ace94c11949b306f9a744bda1ce82c90d2d231c23ef",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "d7ed77033c1455f9ef895846e9082b393246c3eb825d0c897bb4b1cef82e1a7c",
+   "n_candidates": 82,
+   "decision_counts": {
+    "abstain": 61,
+    "R6": 4,
+    "R1": 17
+   }
+  },
+  "Putida": {
+   "packet": {
+    "candidates.json": "ca69f70cfeb8bed6250bdbf17420b7ed9316f7121eea798eeaafe348749f38e6",
+    "genes.tsv": "3356095fa88bbfe7267fa3870ace088d656ba95235da0469476df4d11bfcf35c",
+    "PROCEDURE.md": "94a941798c7d5bcdfebffbb376e418f90a00eb90a76aaad04179bf8a116e9e34"
+   },
+   "decisions_sha256": "6e8ae0759717928c0ec33275e0a099cde1320484b5047acdb0481f7f27d768c1",
+   "n_candidates": 96,
+   "decision_counts": {
+    "R6": 4,
+    "abstain": 70,
+    "R1": 22
+   }
+  }
+ }
+}

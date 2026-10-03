@@ -1,0 +1,34 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+D-Glucose	RCH2_defined_noCarbon	glc__D	high	1	0.7271155578713809	True		45	85
+D-Fructose	RCH2_defined_noCarbon	fru	high	1	0.8312626424283506	True		45	83
+L-Arabinose	RCH2_defined_noCarbon	arab__L	high	1	0.0	False		984	89
+D-Arabinose	RCH2_defined_noCarbon	arab__D	high	1	0.6059437682684387	True		49	85
+D-Maltose monohydrate	RCH2_defined_noCarbon	malt	high	1	1.5147321902915964	True		45	87
+D-Xylose	RCH2_defined_noCarbon	xyl__D	high	1	0.6513831893694391	True		46	87
+D-Galactose	RCH2_defined_noCarbon	gal	high	1	0.7271155578713756	True		45	79
+D-Raffinose pentahydrate	RCH2_defined_noCarbon	raffin	high	1	2.3628625294617667	True		45	82
+L-Rhamnose monohydrate	RCH2_defined_noCarbon	rmn	high	1	0.7696937887635482	True		52	80
+D-Ribose	RCH2_defined_noCarbon	rib__D	high	1	0.6059437682678754	True		45	77
+L-Fucose	RCH2_defined_noCarbon	fuc__L	high	1	0.8158704290122086	True		46	85
+D-Cellobiose	RCH2_defined_noCarbon	cellb	high	1	1.6358965462022166	True		45	83
+Sodium L-Lactate	RCH2_defined_noCarbon	lac__L	high	1	0.33869079853935774	True		48	80
+Sodium D,L-Lactate	RCH2_defined_noCarbon	lac__D;lac__L	high	1	0.33869079853934464	True	EX_lac__D_e	48	83
+Sodium pyruvate	RCH2_defined_noCarbon	pyr	high	1	0.2771106533503685	True		48	80
+Sodium succinate dibasic hexahydrate	RCH2_defined_noCarbon	succ	high	1	0.0	False		984	77
+m-Inositol	RCH2_defined_noCarbon	inost	high	1	0.7446646971451003	True		46	82
+Glycerol	RCH2_defined_noCarbon	glyc	high	1	0.47943829680512445	True		45	85
+D-Sorbitol	RCH2_defined_noCarbon	sbt__D	high	1	0.8331408737740997	True		49	87
+L-Malic acid disodium salt monohydrate	RCH2_defined_noCarbon	mal__L	high	1	0.36284497891930784	True		48	76
+D-Trehalose dihydrate	RCH2_defined_noCarbon	tre	high	1	1.5147321902916389	True		49	89
+L-Histidine	RCH2_defined_noCarbon	his__L	high	1	0.03482808249629631	True		47	92
+L-Lysine	RCH2_defined_noCarbon	lys__L	high	1	0.0	False		984	93
+L-Glutamine	RCH2_defined_noCarbon	gln__L	high	1	0.0	False		984	88
+L-Proline	RCH2_defined_noCarbon	pro__L	high	1	0.0	False		984	94
+L-Leucine	RCH2_defined_noCarbon	leu__L	high	1	0.0	False		984	79
+N-Acetyl-D-Glucosamine	RCH2_defined_noCarbon	acgam	high	1	0.0	False	EX_acgam_e	984	85
+D-Glucosamine Hydrochloride	RCH2_defined_noCarbon	gam	high	1	0.0	False	EX_gam_e	984	82
+Uridine	RCH2_defined_noCarbon	uri	high	1	0.0	False	EX_uri_e	984	69
+D-Salicin	RCH2_defined_noCarbon	salcn	high	1	0.7807013988219162	True		46	79
+Beta-Lactose	RCH2_defined_noCarbon	lcts	high	1	1.5147321902916542	True		48	80
+D-Mannose	RCH2_defined_noCarbon	man	high	1	0.0	False	EX_man_e	984	89
+D-(-)-tagatose	RCH2_defined_noCarbon	tagat__D	high	1	0.0	False	EX_tagat__D_e	984	88

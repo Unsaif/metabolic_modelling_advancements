@@ -1,0 +1,414 @@
+{
+ "org": "Btheta",
+ "procedure": "transfer-adjudication-procedure-v1",
+ "decisions": [
+  {
+   "reaction": "12PPDt",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Facilitated-diffusion transport step with no substrate-specific permease annotated in the genome; no gene names a (S)-propane-1,2-diol transporter."
+  },
+  {
+   "reaction": "ACGS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No argA/argJ-type gene annotated: the only acetyl-related arginine-pathway genes are BT3395 'putative acetylglutamate kinase' (ArgB, different reaction) and BT3549/BT3758 acetylornithine deacetylase/aminotransferase; no N-acetylglutamate synthase annotation."
+  },
+  {
+   "reaction": "ACHBS",
+   "decision": "R2+R1",
+   "new_rule": "BT2076 and BT2077",
+   "evidence": "BT2076 'acetohydroxyacid synthase small subunit' and BT2077 'acetolactate synthase large subunit' are adjacent, co-oriented subunits of one obligate AHAS complex and are kept joined with AND; the alternative branch pairing BT2077 with BT0572 ('conserved hypothetical protein', no enzymatic annotation) is removed."
+  },
+  {
+   "reaction": "ACLS",
+   "decision": "R2+R1",
+   "new_rule": "BT2076 and BT2077",
+   "evidence": "Same AHAS complex as ACHBS: BT2076 (small subunit) AND BT2077 (large subunit) are the annotated obligate subunit pair; the branch substituting the unannotated hypothetical protein BT0572 for the small subunit is removed."
+  },
+  {
+   "reaction": "ADCL",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0767 is annotated 'para-aminobenzoate synthase component I' (PabB), i.e. the preceding ADC synthase step rather than the ADC lyase, so no remaining alternative is annotated for this reaction; BT0431 is a conserved hypothetical protein with a conserved domain and could be the unannotated PabC."
+  },
+  {
+   "reaction": "AICART",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0518 and BT3812 are both annotated as bifunctional AICAR transformylase/IMP cyclohydrolase (PurH) \u2014 same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "ANPRT",
+   "decision": "R1",
+   "new_rule": "BT0530",
+   "evidence": "BT0530 'anthranilate phosphoribosyltransferase' (TrpD) is exactly this reaction; BT0531 'anthranilate synthase component II' and BT0532 'anthranilate synthase component I' are the subunits of anthranilate synthase, a different reaction and EC, so both are removed."
+  },
+  {
+   "reaction": "ASPCT",
+   "decision": "R1",
+   "new_rule": "BT0741 and BT0742",
+   "evidence": "The AND-pair BT0741 'aspartate carbamoyltransferase regulatory chain' + BT0742 'aspartate carbamoyltransferase catalytic chain' (PyrI/PyrB) is exactly this reaction; the alternative BT0557 'carbamyl phosphate synthetase' is a different enzyme (it makes the carbamoyl phosphate substrate) and is removed."
+  },
+  {
+   "reaction": "ASPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT1375 'aspartokinase' and BT2403 'aspartokinase/homoserine dehydrogenase' are both genuine aspartokinase annotations \u2014 same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "ASPO4",
+   "decision": "R6",
+   "new_rule": "BT3184",
+   "evidence": "BT3184 is annotated 'L-aspartate oxidase' (NadB), exactly the enzyme of this reaction; it is the only such annotation in the genome."
+  },
+  {
+   "reaction": "ASPTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All six alternatives are aminotransferases (four annotated 'aspartate aminotransferase', plus a generic aminotransferase and a pyruvate-dependent aminotransferase); aminotransferases are broad-specificity enzymes that the procedure does not remove."
+  },
+  {
+   "reaction": "CHORM",
+   "decision": "R1",
+   "new_rule": "BT3933 or BT3934",
+   "evidence": "BT3933 'chorismate mutase/prephenate dehydratase' and BT3934, whose annotation also names a chorismate mutase domain, are both compatible with chorismate -> prephenate; BT3936 is annotated solely 'prephenate dehydratase' (EC 4.2.1.51, the following reaction) and is removed."
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT3944 'putative chloride channel protein' and BT4650 'voltage-gated chloride channel protein' are both chloride transporters of the right substrate class, so neither is removed."
+  },
+  {
+   "reaction": "CLtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Non-specific outer-membrane diffusion step; both alternatives carry only broad structural annotations (OmpA-family outer membrane protein, putative MotB), so removing one would leave only a family-level annotation."
+  },
+  {
+   "reaction": "CU2tex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Non-specific outer-membrane diffusion step with the same two broadly annotated alternatives (OmpA-family outer membrane protein, putative MotB); no removal is justified."
+  },
+  {
+   "reaction": "CU2tpp",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Periplasm-to-cytoplasm Cu2+ permease step; no copper-specific permease is annotated (no copA/copper transporter entries), only generic transporter families."
+  },
+  {
+   "reaction": "DDGLK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0488 is annotated '2-dehydro-3-deoxygluconokinase' (exactly this reaction) but the alternative BT2799 is a 'PfkB family carbohydrate kinase', the very family that contains KdgK, i.e. a compatible family-level annotation that is not removed."
+  },
+  {
+   "reaction": "DHDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0895 and BT2814 are both annotated 'dihydrodipicolinate synthase' \u2014 same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "DHORD6",
+   "decision": "R6",
+   "new_rule": "BT0892 and BT0891",
+   "evidence": "BT0892 'dihydroorotate dehydrogenase' and the immediately adjacent, co-oriented BT0891 'dihydroorotate dehydrogenase electron transfer subunit' are PyrD/PyrK, the NAD-dependent class 1B heterocomplex that performs exactly this NAD-linked reaction."
+  },
+  {
+   "reaction": "DHORTS",
+   "decision": "R1",
+   "new_rule": "BT0250",
+   "evidence": "BT0250 'dihydroorotase (DHOase)' is exactly this reaction; the alternative BT0557 'carbamyl phosphate synthetase' is a different enzyme of the upstream step and is removed."
+  },
+  {
+   "reaction": "DMATT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT2058 'putative isoprenyl synthetase' and BT3261 'octaprenyl-diphosphate synthase' are both trans-prenyltransferases acting on the same substrate class; chain-length specificity cannot be decided from the annotation, so neither is removed."
+  },
+  {
+   "reaction": "DPR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No ketopantoate (2-dehydropantoate) reductase annotation in the genome; the only pantothenate-pathway hit is BT4308 'pantoate--beta-alanine ligase' (PanC, a later step)."
+  },
+  {
+   "reaction": "DTMPK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No thymidylate (dTMP) kinase is annotated; BT2047 is thymidylate synthase (ThyA, a different reaction) and the other nucleotide kinases present are cytidylate/uridylate/adenylate kinases."
+  },
+  {
+   "reaction": "DXPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT1403 and BT4099 are both annotated '1-deoxy-D-xylulose 5-phosphate synthase' \u2014 same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "FBA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT1106 'fructose-bisphosphate aldolase class I' and BT1691 'fructose-bisphosphate aldolase' are same-name paralogs, and aldolases are explicitly protected from removal."
+  },
+  {
+   "reaction": "FCLK",
+   "decision": "R6",
+   "new_rule": "BT1275 or BT3763",
+   "evidence": "BT1275 'L-fuculose kinase' lies in the fucose operon with L-fucose isomerase, L-fuculose-1-phosphate aldolase and L-fucose permease; BT3763 is annotated 'rhamnulose kinase/L-fuculose kinase'. Both annotations name this enzyme, so they are given as alternatives."
+  },
+  {
+   "reaction": "FE3abc",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No Fe3+-specific ABC import system is annotated (only outer-membrane 'putative ferric aerobactin receptor' BT0150 and family-level ABC transporter components), so only a family-level match is available."
+  },
+  {
+   "reaction": "FRD2",
+   "decision": "R6",
+   "new_rule": "BT3054 and BT3055",
+   "evidence": "BT3054 'succinate dehydrogenase flavoprotein subunit' and the adjacent, co-oriented BT3055 'succinate dehydrogenase iron-sulfur protein' form the succinate:quinone oxidoreductase complex that catalyses exactly this menaquinol/fumarate interconversion; the two catalytic subunits are joined as an obligate complex."
+  },
+  {
+   "reaction": "GALT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No galactose-1-phosphate uridylyltransferase (galT) annotation exists; the only galactose-pathway hits are UDP-galactose 4-epimerase (BT2887) and sugar phosphomutases, which are different reactions."
+  },
+  {
+   "reaction": "GALt2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT3589 'glucose/galactose transporter' is the better match, but BT0436 'arabinose-proton symporter' is an MFS sugar/H+ symporter of the right substrate class and transporters of the right class are not removed."
+  },
+  {
+   "reaction": "GF6PTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0554 and BT3601 are both annotated 'glucosamine--fructose-6-phosphate aminotransferase' \u2014 same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "GLNS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0785 'glutamine synthetase I' and BT4339 'glutamine synthetase' are same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "GLUPRT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0555 and BT4582 are both annotated 'amidophosphoribosyltransferase' (PurF) \u2014 same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "GRTT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Same two prenyltransferases as DMATT (BT2058 'putative isoprenyl synthetase', BT3261 'octaprenyl-diphosphate synthase'); both act on the same substrate class, so neither is removed."
+  },
+  {
+   "reaction": "GTPCI",
+   "decision": "R1",
+   "new_rule": "BT3931",
+   "evidence": "BT3931 is annotated 'GTP cyclohydrolase I' (FolE), exactly this reaction; BT1564 is annotated '7-cyano-7-deazaguanine reductase' (QueF), a different enzyme and EC in the queuosine pathway, and is removed."
+  },
+  {
+   "reaction": "HCO3E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "CO2 hydration is a genuinely spontaneous equilibration, and the alternative 'spontaneous' is not a gene; BT1681 'carbonic anhydrase' is correctly annotated for it, so the rule is left unchanged."
+  },
+  {
+   "reaction": "HISTP",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0203 (hisB, bifunctional imidazoleglycerol-phosphate dehydratase/histidinol phosphatase) and BT4257 'putative histidinol-phosphatase' both fit, and the third alternative BT2801 'inositol-1-monophosphatase' is a broad-specificity phosphatase, which the procedure protects from removal."
+  },
+  {
+   "reaction": "HSK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No homoserine kinase (thrB) is annotated; the homoserine-related genes present are O-acetylhomoserine (thiol)-lyase, homoserine O-succinyltransferase and the aspartokinase/homoserine dehydrogenase BT2403, all different reactions."
+  },
+  {
+   "reaction": "IPPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT1858 and BT1861 are both annotated '2-isopropylmalate synthase' \u2014 same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "KARA1i",
+   "decision": "R6",
+   "new_rule": "BT2074",
+   "evidence": "BT2074 is annotated 'ketol-acid reductoisomerase' (IlvC), exactly this enzyme, and sits in the branched-chain amino acid operon with acetohydroxyacid synthase subunits BT2076/BT2077 and dihydroxy-acid dehydratase BT2078."
+  },
+  {
+   "reaction": "KARA2",
+   "decision": "R6",
+   "new_rule": "BT2074",
+   "evidence": "Same enzyme as KARA1i: BT2074 'ketol-acid reductoisomerase' (IlvC) carries out the reductoisomerase step on 2-aceto-2-hydroxybutanoate as well, and is the only such annotation in the genome."
+  },
+  {
+   "reaction": "LCARS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT3767 'lactaldehyde reductase / L-1,2-propanediol oxidoreductase' is exactly this reaction, but the alternative BT0535 'iron-containing alcohol dehydrogenase' is a broad-specificity group III Fe-ADH of the same family as FucO and is not removed."
+  },
+  {
+   "reaction": "LCTSt",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No lactose permease or beta-galactoside symporter is annotated in the genome; only family-level sugar transporters are present."
+  },
+  {
+   "reaction": "LMN2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT3300 'beta-glucosidase' and BT4714 'periplasmic beta-glucosidase, xylosidase/arabinosidase' are both beta-glucosidases of the right substrate class for laminaribiose hydrolysis, so neither is removed."
+  },
+  {
+   "reaction": "LMN2abc",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No laminaribiose- or beta-1,3-glucoside-specific ABC importer is annotated; only generic 'ABC transporter permease/ATP-binding protein' family annotations are available."
+  },
+  {
+   "reaction": "MEPCT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT2881 and BT3923 are both annotated '2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase' (same-name paralogs) and the third alternative BT1651 'pyrophosphorylase' is a family-level nucleotidyltransferase annotation, which is not removed."
+  },
+  {
+   "reaction": "MMCD",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No methylmalonyl-CoA decarboxylase annotation exists; BT2090/BT2091 are methylmalonyl-CoA mutase subunits (a different reaction) and the remaining hits are family-level biotin-carboxylase/carboxyltransferase subunits."
+  },
+  {
+   "reaction": "NNATr",
+   "decision": "R1",
+   "new_rule": "BT2011",
+   "evidence": "BT2011 'putative nicotinate-nucleotide adenylyltransferase' (NadD) is exactly this reaction; BT2815 'putative mutT family protein' is a Nudix pyrophosphohydrolase, a hydrolase of clearly different activity that cannot perform an adenylyl transfer, and is removed."
+  },
+  {
+   "reaction": "OCBT",
+   "decision": "R6",
+   "new_rule": "BT3717",
+   "evidence": "BT3717 is annotated 'ornithine carbamoyltransferase', matching the reaction's EC 2.1.3.3 exactly, and it is the only such gene; it lies next to the arginine/proline-pathway genes BT3718/BT3719."
+  },
+  {
+   "reaction": "OMCDC",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The decarboxylation of 3-carboxy-4-methyl-2-oxopentanoate proceeds spontaneously after the LeuB oxidation step, and the 'spontaneous' alternative is not a gene; the rule is left unchanged."
+  },
+  {
+   "reaction": "PC",
+   "decision": "R1",
+   "new_rule": "BT1697 and BT1915",
+   "evidence": "The AND-pair BT1697 'pyruvate carboxylase subunit B' + BT1915 'pyruvate carboxylase subunit A' is exactly this reaction; BT1448 and BT1688 are 'biotin carboxyl carrier protein' subunits listed alone as alternatives to that complex (and sit in separate carboxylase operons), so both lone-subunit branches are removed."
+  },
+  {
+   "reaction": "PGAMT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No phosphoglucosamine mutase (glmM) annotation; BT1548 and BT3950 are 'phosphoglucomutase/phosphomannomutase', a family-level match of the alpha-D-phosphohexomutase superfamily on different substrates."
+  },
+  {
+   "reaction": "PHETA1",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "All four alternatives are broad-specificity aminotransferases (three 'aspartate aminotransferase', one generic 'aminotransferase'); redundancy is plausible and aminotransferases are not removed."
+  },
+  {
+   "reaction": "PMDPHT",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No specific 5-amino-6-(5'-phosphoribitylamino)uracil phosphatase is annotated; only generic haloacid-dehalogenase-like hydrolases/phosphatases, i.e. a family-level match."
+  },
+  {
+   "reaction": "PNTK",
+   "decision": "R1",
+   "new_rule": "BT_4366",
+   "evidence": "BT_4366 is annotated 'pantothenate kinase' (CoaA), exactly this reaction; BT0184 'uridine kinase (uridine monophosphokinase)' is a pyrimidine nucleoside kinase of clearly different substrate class and EC, and is removed."
+  },
+  {
+   "reaction": "PYDXS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The only PLP-biosynthesis gene is BT3918 'pyridoxal phosphate biosynthetic protein pdxJ', which catalyses the DXP-dependent PNP synthase step, not EC 4.3.3.6; no pdxS/pdxT (Pdx1/Pdx2) genes are annotated."
+  },
+  {
+   "reaction": "RAFFINt2",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No raffinose or alpha-galactoside proton symporter is annotated in the genome; only family-level sugar transporters are present."
+  },
+  {
+   "reaction": "RBK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT2803, BT2804 and BT3576 are all annotated as ribokinases \u2014 same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "RIBtex",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Outer-membrane diffusion step with no substrate-specific gene product; porin/diffusion reactions are left gene-less."
+  },
+  {
+   "reaction": "RPI",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0346 'ribose 5-phosphate isomerase B' and BT1986 'putative ribose 5-phosphate isomerase' are same-name paralogs, which are not removed."
+  },
+  {
+   "reaction": "THDPS",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "No tetrahydrodipicolinate succinylase (dapD) annotation; BT2085 'putative succinyl-diaminopimelate desuccinylase' is the downstream DapE reaction and BT0895/BT2814 are dihydrodipicolinate synthases, so only different reactions are annotated."
+  },
+  {
+   "reaction": "TMPPP",
+   "decision": "R1",
+   "new_rule": "BT0652",
+   "evidence": "BT0652 'putative thiamine-phosphate pyrophosphorylase' (ThiE) is exactly this reaction; BT0790 'phosphomethylpyrimidine kinase' (ThiD) is a kinase of different EC that makes the HMP-PP substrate, and is removed."
+  },
+  {
+   "reaction": "TPI",
+   "decision": "R1",
+   "new_rule": "BT3929",
+   "evidence": "BT3929 'triosephosphate isomerase' is exactly this reaction; BT1672 'phosphoglycerate kinase' is a different enzyme and EC acting on a different substrate, and is removed."
+  },
+  {
+   "reaction": "TRDR",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "The rule mixes the catalyst BT4336 'thioredoxin reductase' with its thioredoxin substrates and with BT2811 'alkyl hydroperoxide reductase subunit F', a broad-specificity NAD(P)H flavoprotein disulfide reductase; collapsing it would require judgements the annotations do not settle, so the rule is left unchanged."
+  },
+  {
+   "reaction": "TYRTA",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "Same four broad-specificity aminotransferases as PHETA1; aminotransferases are not removed."
+  },
+  {
+   "reaction": "UDPG4E",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0623 'putative UDP-glucose 4-epimerase' fits exactly, but BT1370 'NAD dependent nucleotide-diphosphate-sugar epimerase' and BT0381 capD are sugar-nucleotide epimerase-family annotations compatible with the reaction, so neither is removed."
+  },
+  {
+   "reaction": "UMPK",
+   "decision": "R1",
+   "new_rule": "BT2060 or BT2242",
+   "evidence": "BT2242 'uridylate kinase' (PyrH) is exactly this reaction and BT2060 'cytidylate kinase' is a pyrimidine-nucleotide monophosphate kinase of compatible substrate class, so both are kept; BT4308 'pantoate--beta-alanine ligase' (PanC) is an unrelated ligase and is removed."
+  },
+  {
+   "reaction": "XYLK",
+   "decision": "abstain",
+   "new_rule": null,
+   "evidence": "BT0792 'xylulose kinase (xylulokinase)' and BT4423 'xylulose kinase' are same-name paralogs, which are not removed."
+  }
+ ]
+}

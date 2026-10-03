@@ -1,0 +1,2361 @@
+{
+ "org": "MR1",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 9,
+ "candidates": [
+  {
+   "reaction": "ACHBS",
+   "name": "2-aceto-2-hydroxybutanoate synthase",
+   "equation_ids": "2obut_c + h_c + pyr_c --> 2ahbut_c + co2_c",
+   "equation_names": "2-Oxobutanoate + H+ + Pyruvate --> (S)-2-Aceto-2-hydroxybutanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+   "n_growth_conditions_essential": 8,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717874_1",
+     "locus": "SO2278",
+     "fitness_browser_desc": "acetolactate synthase III, small subunit",
+     "refseq_definition": "acetolactate synthase III small subunit IlvH",
+     "neighbourhood": [
+      "SO2275 (+) ISSod10, transposase OrfA",
+      "SO2276 (+) ISSod10, transposase OrfB",
+      "SO2277 (+) 16 kDa heat shock protein A",
+      "SO2278 (-) acetolactate synthase III, small subunit",
+      "SO2279 (-) acetolactate synthase III, large subunit",
+      "SO2280 (-) bicyclomycin resistance protein",
+      "SO2281 (+) alkaline phosphatase"
+     ]
+    },
+    {
+     "model_gene": "NP_717875_1",
+     "locus": "SO2279",
+     "fitness_browser_desc": "acetolactate synthase III, large subunit",
+     "refseq_definition": "acetolactate synthase III large subunit IlvI",
+     "neighbourhood": [
+      "SO2276 (+) ISSod10, transposase OrfB",
+      "SO2277 (+) 16 kDa heat shock protein A",
+      "SO2278 (-) acetolactate synthase III, small subunit",
+      "SO2279 (-) acetolactate synthase III, large subunit",
+      "SO2280 (-) bicyclomycin resistance protein",
+      "SO2281 (+) alkaline phosphatase",
+      "SO2282 (-) transcriptional regulator, GntR family"
+     ]
+    },
+    {
+     "model_gene": "NP_719870_1",
+     "locus": "SO4346",
+     "fitness_browser_desc": "acetolactate synthase II, small subunit",
+     "refseq_definition": "acetolactate synthase II small subunit IlvM",
+     "neighbourhood": [
+      "SO4343 (-) aminotransferase, class V",
+      "SO4344 (-) threonine dehydratase",
+      "SO4345 (-) dihydroxy-acid dehydratase",
+      "SO4346 (-) acetolactate synthase II, small subunit",
+      "SO4347 (-) acetolactate synthase II, large subunit",
+      "SO4349 (-) ketol-acid reductoisomerase",
+      "SO4350 (+) transcriptional regulator ilvY"
+     ]
+    },
+    {
+     "model_gene": "NP_719871_1",
+     "locus": "SO4347",
+     "fitness_browser_desc": "acetolactate synthase II, large subunit",
+     "refseq_definition": "acetolactate synthase II large subunit IlvG",
+     "neighbourhood": [
+      "SO4344 (-) threonine dehydratase",
+      "SO4345 (-) dihydroxy-acid dehydratase",
+      "SO4346 (-) acetolactate synthase II, small subunit",
+      "SO4347 (-) acetolactate synthase II, large subunit",
+      "SO4349 (-) ketol-acid reductoisomerase",
+      "SO4350 (+) transcriptional regulator ilvY",
+      "SO4351 (-) CBS domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_717874_1 and NP_717875_1) or (NP_719870_1 and NP_719871_1)",
+   "n_growth_conditions_essential": 8,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717874_1",
+     "locus": "SO2278",
+     "fitness_browser_desc": "acetolactate synthase III, small subunit",
+     "refseq_definition": "acetolactate synthase III small subunit IlvH",
+     "neighbourhood": [
+      "SO2275 (+) ISSod10, transposase OrfA",
+      "SO2276 (+) ISSod10, transposase OrfB",
+      "SO2277 (+) 16 kDa heat shock protein A",
+      "SO2278 (-) acetolactate synthase III, small subunit",
+      "SO2279 (-) acetolactate synthase III, large subunit",
+      "SO2280 (-) bicyclomycin resistance protein",
+      "SO2281 (+) alkaline phosphatase"
+     ]
+    },
+    {
+     "model_gene": "NP_717875_1",
+     "locus": "SO2279",
+     "fitness_browser_desc": "acetolactate synthase III, large subunit",
+     "refseq_definition": "acetolactate synthase III large subunit IlvI",
+     "neighbourhood": [
+      "SO2276 (+) ISSod10, transposase OrfB",
+      "SO2277 (+) 16 kDa heat shock protein A",
+      "SO2278 (-) acetolactate synthase III, small subunit",
+      "SO2279 (-) acetolactate synthase III, large subunit",
+      "SO2280 (-) bicyclomycin resistance protein",
+      "SO2281 (+) alkaline phosphatase",
+      "SO2282 (-) transcriptional regulator, GntR family"
+     ]
+    },
+    {
+     "model_gene": "NP_719870_1",
+     "locus": "SO4346",
+     "fitness_browser_desc": "acetolactate synthase II, small subunit",
+     "refseq_definition": "acetolactate synthase II small subunit IlvM",
+     "neighbourhood": [
+      "SO4343 (-) aminotransferase, class V",
+      "SO4344 (-) threonine dehydratase",
+      "SO4345 (-) dihydroxy-acid dehydratase",
+      "SO4346 (-) acetolactate synthase II, small subunit",
+      "SO4347 (-) acetolactate synthase II, large subunit",
+      "SO4349 (-) ketol-acid reductoisomerase",
+      "SO4350 (+) transcriptional regulator ilvY"
+     ]
+    },
+    {
+     "model_gene": "NP_719871_1",
+     "locus": "SO4347",
+     "fitness_browser_desc": "acetolactate synthase II, large subunit",
+     "refseq_definition": "acetolactate synthase II large subunit IlvG",
+     "neighbourhood": [
+      "SO4344 (-) threonine dehydratase",
+      "SO4345 (-) dihydroxy-acid dehydratase",
+      "SO4346 (-) acetolactate synthase II, small subunit",
+      "SO4347 (-) acetolactate synthase II, large subunit",
+      "SO4349 (-) ketol-acid reductoisomerase",
+      "SO4350 (+) transcriptional regulator ilvY",
+      "SO4351 (-) CBS domain protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ADSK",
+   "name": "Adenylyl-sulfate kinase",
+   "equation_ids": "aps_c + atp_c --> adp_c + h_c + paps_c",
+   "equation_names": "Adenosine 5'-phosphosulfate + ATP --> ADP + H+ + 3'-Phosphoadenylyl sulfate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_718203_1 or NP_719263_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_718203_1",
+     "locus": "SO2618",
+     "fitness_browser_desc": "ATP-binding protein, Mrp/Nbp35 family",
+     "refseq_definition": "scaffold protein for",
+     "neighbourhood": [
+      "SO2615 (-) 4-amino-4-deoxychorismate lyase",
+      "SO2616 (-) deoxycytidine triphosphate deaminase",
+      "SO2617 (-) uridine kinase",
+      "SO2618 (-) ATP-binding protein, Mrp/Nbp35 family",
+      "SO2619 (+) methionyl-tRNA synthetase",
+      "SO2620 (+) conserved hypothetical protein",
+      "SO2621 (-) conserved hypothetical protein TIGR00486"
+     ]
+    },
+    {
+     "model_gene": "NP_719263_1",
+     "locus": "SO3723",
+     "fitness_browser_desc": "adenylylsulfate kinase",
+     "refseq_definition": "adenylylsulfate kinase CysC",
+     "neighbourhood": [
+      "SO3719 (-) hypothetical protein",
+      "SO3720 (-) conserved hypothetical protein",
+      "SO3722 (+) conserved hypothetical protein",
+      "SO3723 (-) adenylylsulfate kinase",
+      "SO3725 (-) hypothetical protein",
+      "SO3726 (-) sulfate adenylyltransferase, subunit 1",
+      "SO3727 (-) sulfate adenylyltransferase, subunit 2"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ADSS",
+   "name": "Adenylosuccinate synthase",
+   "equation_ids": "asp__L_c + gtp_c + imp_c --> dcamp_c + gdp_c + 2.0 h_c + pi_c",
+   "equation_names": "L-Aspartate + GTP + IMP --> N6-(1,2-Dicarboxyethyl)-AMP + GDP + 2.0 H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716881_1 or NP_719468_1",
+   "n_growth_conditions_essential": 8,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716881_1",
+     "locus": "SO1258",
+     "fitness_browser_desc": "adenylosuccinate synthetase, putative",
+     "refseq_definition": "adenylosuccinate synthetase",
+     "neighbourhood": [
+      "SO1254 (+) conserved hypothetical protein",
+      "SO1255 (+) cyclic nucleotide phosphodiesterase, putative",
+      "SO1256 (-) hypothetical 4-hydroxybenzoyl-CoA thioesterase",
+      "SO1258 (-) adenylosuccinate synthetase, putative",
+      "SO1259 (+) transcriptional regulator, LysR family",
+      "SO1260 (-) hypothetical amino acid ABC transporter",
+      "SO1261 (+) mercaptopyruvate sulfurtransferase"
+     ]
+    },
+    {
+     "model_gene": "NP_719468_1",
+     "locus": "SO3937",
+     "fitness_browser_desc": "adenylosuccinate synthetase",
+     "refseq_definition": "adenylosuccinate synthetase PurA",
+     "neighbourhood": [
+      "SO3934 (-) RNA methyltransferase, TrmH family, group 3",
+      "SO3935 (-) ribonuclease R",
+      "SO3936 (-) sodium-type flagellar protein MotX",
+      "SO3937 (-) adenylosuccinate synthetase",
+      "SO3938 (-) conserved hypothetical protein",
+      "SO3939 (-) ribosomal protein S9",
+      "SO3940 (-) ribosomal protein L13"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ARGSS",
+   "name": "Argininosuccinate synthase",
+   "equation_ids": "asp__L_c + atp_c + citr__L_c --> amp_c + argsuc_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + L-Citrulline --> AMP + N(omega)-(L-Arginino)succinate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715918_1 or NP_715919_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715918_1",
+     "locus": "SO0278",
+     "fitness_browser_desc": "argininosuccinate synthase",
+     "refseq_definition": "argininosuccinate synthase ArgG",
+     "neighbourhood": [
+      "SO0275 (+) N-acetyl-gamma-glutamyl-phosphate reductase",
+      "SO0276 (+) acetylglutamate kinase",
+      "SO0277 (+) ornithine carbamoyltransferase",
+      "SO0278 (+) argininosuccinate synthase",
+      "SO0279 (+) argininosuccinate lyase",
+      "SO0280 (-) penicillin-binding protein 1A",
+      "SO0281 (+) type IV pilus biogenesis protein PilM"
+     ]
+    },
+    {
+     "model_gene": "NP_715919_1",
+     "locus": "SO0279",
+     "fitness_browser_desc": "argininosuccinate lyase",
+     "refseq_definition": "argininosuccinate lyase ArgH",
+     "neighbourhood": [
+      "SO0276 (+) acetylglutamate kinase",
+      "SO0277 (+) ornithine carbamoyltransferase",
+      "SO0278 (+) argininosuccinate synthase",
+      "SO0279 (+) argininosuccinate lyase",
+      "SO0280 (-) penicillin-binding protein 1A",
+      "SO0281 (+) type IV pilus biogenesis protein PilM",
+      "SO0282 (+) type IV pilus biogenesis protein PilN"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASNS1",
+   "name": "Asparagine synthase (glutamine-hydrolysing)",
+   "equation_ids": "asp__L_c + atp_c + gln__L_c + h2o_c --> amp_c + asn__L_c + glu__L_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + L-Glutamine + H2O --> AMP + L-Asparagine + L-Glutamate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_718348_1 or NP_718731_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_718348_1",
+     "locus": "SO2767",
+     "fitness_browser_desc": "asparagine synthetase B, glutamine-hydrolyzing",
+     "refseq_definition": "asparagine synthase glutamine-hydrolyzing AsnB",
+     "neighbourhood": [
+      "SO2763.1 (-) hypothetical protein",
+      "SO_2764 (+) ",
+      "SO2766 (+) conserved hypothetical protein",
+      "SO2767 (+) asparagine synthetase B, glutamine-hydrolyzing",
+      "SO2768 (-) acyl-CoA dehydrogenase family protein",
+      "SO2769 (+) conserved hypothetical protein",
+      "SO2771 (-) 2-hydroxy-3-oxopropionate reductase"
+     ]
+    },
+    {
+     "model_gene": "NP_718731_1",
+     "locus": "SO3175",
+     "fitness_browser_desc": "asparagine synthetase, glutamine-hydrolyzing",
+     "refseq_definition": "asparagine synthase glutamine-hydrolyzing WbpQ",
+     "neighbourhood": [
+      "SO3172 (-) galactosyl transferase",
+      "SO3173 (-) UDP-galactose 4-epimerase, putative",
+      "SO3174 (-) glycosyl transferase, group 1 family protein",
+      "SO3175 (-) asparagine synthetase, glutamine-hydrolyzing",
+      "SO3176 (-) glycosyl transferase, group 1 family protein",
+      "SO3177 (-) formyl transferase domain protein",
+      "SO3178 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPK",
+   "name": "Aspartate kinase",
+   "equation_ids": "asp__L_c + atp_c <=> 4pasp_c + adp_c",
+   "equation_names": "L-Aspartate + ATP <=> 4-Phospho-L-aspartate + ADP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_718968_1 or NP_718980_1 or NP_719516_1 or NP_719585_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_718968_1",
+     "locus": "SO3415",
+     "fitness_browser_desc": "aspartokinase I/homoserine dehydrogenase, threonine-sensitive",
+     "refseq_definition": "bifunctional aspartokinase I / homoserine dehydrogenase I ThrA",
+     "neighbourhood": [
+      "SO3412 (-) extracellular solute-binding proteins, family 3 protein",
+      "SO3413 (-) threonine synthase",
+      "SO3414 (-) homoserine kinase",
+      "SO3415 (-) aspartokinase I/homoserine dehydrogenase, threonine-sensitive",
+      "SO3417 (+) peptidyl-prolyl cis-trans isomerase SlyD",
+      "SO3417.1 (+) peptidyl-prolyl cis-trans isomerase SlyD",
+      "SO3418 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718980_1",
+     "locus": "SO3427",
+     "fitness_browser_desc": "aspartokinase",
+     "refseq_definition": "lysine-sensitive monofunctional aspartokinase LysC family",
+     "neighbourhood": [
+      "SO_t089 (-) tRNA-Arg",
+      "SO_t090 (-) tRNA-Ser",
+      "SO3426 (-) carbon storage regulator",
+      "SO3427 (-) aspartokinase",
+      "SO3428 (-) alanyl-tRNA synthetase",
+      "SO3429 (-) regulatory protein RecX",
+      "SO3430 (-) recA protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719516_1",
+     "locus": "SO3986",
+     "fitness_browser_desc": "aspartokinase III, lysine-sensitive",
+     "refseq_definition": "lysine-sensitive aspartokinase III LysC",
+     "neighbourhood": [
+      "SO3983 (-) conserved hypothetical protein",
+      "SO3984 (+) magnesium transporter, putative",
+      "SO3985 (-) conserved hypothetical protein",
+      "SO3986 (-) aspartokinase III, lysine-sensitive",
+      "SO3987 (-) conserved hypothetical protein",
+      "SO3988 (+) aerobic respiration control protein ArcA",
+      "SO3990 (-) dipeptidyl peptidase IV"
+     ]
+    },
+    {
+     "model_gene": "NP_719585_1",
+     "locus": "SO4055",
+     "fitness_browser_desc": "aspartokinase II/homoserine dehydrogenase, methionine-sensitive",
+     "refseq_definition": "bifunctional aspartokinase II/homoserine dehydrogenase methionine-sensitive MetL",
+     "neighbourhood": [
+      "SO4052 (-) transcriptional regulator, MarR family",
+      "SO4053 (+) methyl-accepting chemotaxis protein",
+      "SO4054 (-) 5,10-methylenetetrahydrofolate reductase",
+      "SO4055 (-) aspartokinase II/homoserine dehydrogenase, methionine-sensitive",
+      "SO4056 (-) cystathionine gamma-synthase",
+      "SO4057 (+) met repressor",
+      "SO4058 (+) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "BPNT",
+   "name": "3',5'-bisphosphate nucleotidase",
+   "equation_ids": "h2o_c + pap_c --> amp_c + pi_c",
+   "equation_names": "H2O + Adenosine 3',5'-bisphosphate --> AMP + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715833_1 or NP_717266_2",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715833_1",
+     "locus": "SO0191",
+     "fitness_browser_desc": "cysQ protein",
+     "refseq_definition": "3'(2')5'-bisphosphate nucleotidase CysQ",
+     "neighbourhood": [
+      "SO0188 (+) hypothetical protein",
+      "SO0189 (+) fibronectin type III domain protein",
+      "SO0190 (+) MutT/nudix family protein",
+      "SO0191 (+) cysQ protein",
+      "SO0192 (+) acetyltransferase, GNAT family",
+      "SO0193 (+) transcriptional regulator, TetR family",
+      "SO0194 (+) acyltransferase family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717266_2",
+     "locus": "SO1655",
+     "fitness_browser_desc": "cysQ protein",
+     "refseq_definition": "3'(2')5'-bisphosphate nucleotidase CysQ",
+     "neighbourhood": [
+      "SO1652 (+) conserved hypothetical protein",
+      "SO1653 (+) dTDP-4-dehydrorhamnose reductase",
+      "SO1654 (-) hypothetical protein",
+      "SO1655 (+) cysQ protein",
+      "SO1656 (+) ROK family protein",
+      "SO1657 (+) conserved hypothetical protein",
+      "SO1658 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CA2tex",
+   "name": "Calcium (Ca+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "ca2_e <=> ca2_p",
+   "equation_names": "Calcium <=> Calcium",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715952_1",
+     "locus": "SO0312",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO0308 (-) conserved hypothetical protein",
+      "SO0309 (+) conserved hypothetical protein",
+      "SO0311 (+) hypothetical Fe-S oxidoreductase",
+      "SO0312 (-) outer membrane porin, putative",
+      "SO0313 (-) putrescine-ornithine antiporter",
+      "SO0314 (-) ornithine decarboxylase, inducible",
+      "SO0316 (+) hypothetical phosphatidylethanolamine-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717429_1",
+     "locus": "SO1821",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO1818 (-) conserved hypothetical protein",
+      "SO1819 (-) ATP-dependent helicase DinG",
+      "SO1820 (+) DNA polymerase II",
+      "SO1821 (+) outer membrane porin, putative",
+      "SO1822 (+) TonB-dependent receptor, putative",
+      "SO1824 (+) conserved hypothetical protein",
+      "SO1825 (+) MotA/TolQ/ExbB proton channel family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718625_1",
+     "locus": "SO3060",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO3057 (-) Pal/histidase family protein",
+      "SO3058 (-) flavocytochrome c flavin subunit, putative",
+      "SO3059 (+) formate hydrogenlyase transcriptional activator, putative",
+      "SO3060 (-) outer membrane porin, putative",
+      "SO3061 (-) DNA topoisomerase III",
+      "SO3062 (+) hypothetical protein",
+      "SO3063 (+) sodium:alanine symporter family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719499_1",
+     "locus": "SO3969",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "putative outer membrane lipoprotein YiaD",
+     "neighbourhood": [
+      "SO3965 (+) phosphocarrier protein NPR",
+      "SO3966 (+) magnesium transporter",
+      "SO3967 (-) molybdenum ABC transporter, periplasmic molybdenum-binding protein, putative",
+      "SO3969 (-) OmpA family protein",
+      "SO3972 (+) hypothetical transposase",
+      "SO3973 (-) RIO1/ZK632.3/MJ0444 family, putative",
+      "SO3974 (+) conserved domain protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719846_1",
+     "locus": "SO4321",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "Pal-like T1SS-linked outer membrane lipoprotein",
+     "neighbourhood": [
+      "SO4318 (+) toxin secretion ATP-binding protein",
+      "SO4319 (+) HlyD family secretion protein",
+      "SO4320 (+) agglutination protein",
+      "SO4321 (+) OmpA family protein",
+      "SO4322 (+) conserved hypothetical protein",
+      "SO4323 (+) GGDEF domain protein",
+      "SO_t097 (-) tRNA-Pro"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CHORM",
+   "name": "Chorismate mutase",
+   "equation_ids": "chor_c --> pphn_c",
+   "equation_names": "Chorismate --> Prephenate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716982_1 or NP_716987_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716982_1",
+     "locus": "SO1362",
+     "fitness_browser_desc": "chorismate mutase/prephenate dehydrogenase",
+     "refseq_definition": "bifunctional chorismate mutase T/prephenate dehydrogenase TyrA",
+     "neighbourhood": [
+      "SO1359 (+) tRNA (guanine-N1)-methyltransferase",
+      "SO1360 (+) ribosomal protein L19",
+      "SO1361 (+) phospho-2-dehydro-3-deoxyheptonate aldolase, tyr-sensitive",
+      "SO1362 (+) chorismate mutase/prephenate dehydrogenase",
+      "SO1363 (+) prismane protein",
+      "SO1364 (+) iron-sulfur cluster-binding protein",
+      "SO1365 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_716987_1",
+     "locus": "SO1367",
+     "fitness_browser_desc": "chorismate mutase/prephenate dehydratase",
+     "refseq_definition": "multifunctional chorismate mutase P/prephenate dehydratase/DAHP synthetase PheA",
+     "neighbourhood": [
+      "SO1364 (+) iron-sulfur cluster-binding protein",
+      "SO1365 (+) hypothetical protein",
+      "SO1366 (+) sodium/hydrogen exchanger family protein",
+      "SO1367 (-) chorismate mutase/prephenate dehydratase",
+      "SO1368 (-) cytosol aminopeptidase",
+      "SO1369 (+) conserved hypothetical protein",
+      "SO1370 (+) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLtex",
+   "name": "Chloride (Cl-1) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cl_e <=> cl_p",
+   "equation_names": "Chloride <=> Chloride",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715952_1",
+     "locus": "SO0312",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO0308 (-) conserved hypothetical protein",
+      "SO0309 (+) conserved hypothetical protein",
+      "SO0311 (+) hypothetical Fe-S oxidoreductase",
+      "SO0312 (-) outer membrane porin, putative",
+      "SO0313 (-) putrescine-ornithine antiporter",
+      "SO0314 (-) ornithine decarboxylase, inducible",
+      "SO0316 (+) hypothetical phosphatidylethanolamine-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717429_1",
+     "locus": "SO1821",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO1818 (-) conserved hypothetical protein",
+      "SO1819 (-) ATP-dependent helicase DinG",
+      "SO1820 (+) DNA polymerase II",
+      "SO1821 (+) outer membrane porin, putative",
+      "SO1822 (+) TonB-dependent receptor, putative",
+      "SO1824 (+) conserved hypothetical protein",
+      "SO1825 (+) MotA/TolQ/ExbB proton channel family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718625_1",
+     "locus": "SO3060",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO3057 (-) Pal/histidase family protein",
+      "SO3058 (-) flavocytochrome c flavin subunit, putative",
+      "SO3059 (+) formate hydrogenlyase transcriptional activator, putative",
+      "SO3060 (-) outer membrane porin, putative",
+      "SO3061 (-) DNA topoisomerase III",
+      "SO3062 (+) hypothetical protein",
+      "SO3063 (+) sodium:alanine symporter family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719499_1",
+     "locus": "SO3969",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "putative outer membrane lipoprotein YiaD",
+     "neighbourhood": [
+      "SO3965 (+) phosphocarrier protein NPR",
+      "SO3966 (+) magnesium transporter",
+      "SO3967 (-) molybdenum ABC transporter, periplasmic molybdenum-binding protein, putative",
+      "SO3969 (-) OmpA family protein",
+      "SO3972 (+) hypothetical transposase",
+      "SO3973 (-) RIO1/ZK632.3/MJ0444 family, putative",
+      "SO3974 (+) conserved domain protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719846_1",
+     "locus": "SO4321",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "Pal-like T1SS-linked outer membrane lipoprotein",
+     "neighbourhood": [
+      "SO4318 (+) toxin secretion ATP-binding protein",
+      "SO4319 (+) HlyD family secretion protein",
+      "SO4320 (+) agglutination protein",
+      "SO4321 (+) OmpA family protein",
+      "SO4322 (+) conserved hypothetical protein",
+      "SO4323 (+) GGDEF domain protein",
+      "SO_t097 (-) tRNA-Pro"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "COBALT2tex",
+   "name": "Cobalt (Co+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cobalt2_e <=> cobalt2_p",
+   "equation_names": "Co2+ <=> Co2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715952_1",
+     "locus": "SO0312",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO0308 (-) conserved hypothetical protein",
+      "SO0309 (+) conserved hypothetical protein",
+      "SO0311 (+) hypothetical Fe-S oxidoreductase",
+      "SO0312 (-) outer membrane porin, putative",
+      "SO0313 (-) putrescine-ornithine antiporter",
+      "SO0314 (-) ornithine decarboxylase, inducible",
+      "SO0316 (+) hypothetical phosphatidylethanolamine-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717429_1",
+     "locus": "SO1821",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO1818 (-) conserved hypothetical protein",
+      "SO1819 (-) ATP-dependent helicase DinG",
+      "SO1820 (+) DNA polymerase II",
+      "SO1821 (+) outer membrane porin, putative",
+      "SO1822 (+) TonB-dependent receptor, putative",
+      "SO1824 (+) conserved hypothetical protein",
+      "SO1825 (+) MotA/TolQ/ExbB proton channel family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718625_1",
+     "locus": "SO3060",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO3057 (-) Pal/histidase family protein",
+      "SO3058 (-) flavocytochrome c flavin subunit, putative",
+      "SO3059 (+) formate hydrogenlyase transcriptional activator, putative",
+      "SO3060 (-) outer membrane porin, putative",
+      "SO3061 (-) DNA topoisomerase III",
+      "SO3062 (+) hypothetical protein",
+      "SO3063 (+) sodium:alanine symporter family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719499_1",
+     "locus": "SO3969",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "putative outer membrane lipoprotein YiaD",
+     "neighbourhood": [
+      "SO3965 (+) phosphocarrier protein NPR",
+      "SO3966 (+) magnesium transporter",
+      "SO3967 (-) molybdenum ABC transporter, periplasmic molybdenum-binding protein, putative",
+      "SO3969 (-) OmpA family protein",
+      "SO3972 (+) hypothetical transposase",
+      "SO3973 (-) RIO1/ZK632.3/MJ0444 family, putative",
+      "SO3974 (+) conserved domain protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719846_1",
+     "locus": "SO4321",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "Pal-like T1SS-linked outer membrane lipoprotein",
+     "neighbourhood": [
+      "SO4318 (+) toxin secretion ATP-binding protein",
+      "SO4319 (+) HlyD family secretion protein",
+      "SO4320 (+) agglutination protein",
+      "SO4321 (+) OmpA family protein",
+      "SO4322 (+) conserved hypothetical protein",
+      "SO4323 (+) GGDEF domain protein",
+      "SO_t097 (-) tRNA-Pro"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CU2tex",
+   "name": "Copper (Cu+2) transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "cu2_e <=> cu2_p",
+   "equation_names": "Cu2+ <=> Cu2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715952_1",
+     "locus": "SO0312",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO0308 (-) conserved hypothetical protein",
+      "SO0309 (+) conserved hypothetical protein",
+      "SO0311 (+) hypothetical Fe-S oxidoreductase",
+      "SO0312 (-) outer membrane porin, putative",
+      "SO0313 (-) putrescine-ornithine antiporter",
+      "SO0314 (-) ornithine decarboxylase, inducible",
+      "SO0316 (+) hypothetical phosphatidylethanolamine-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717429_1",
+     "locus": "SO1821",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO1818 (-) conserved hypothetical protein",
+      "SO1819 (-) ATP-dependent helicase DinG",
+      "SO1820 (+) DNA polymerase II",
+      "SO1821 (+) outer membrane porin, putative",
+      "SO1822 (+) TonB-dependent receptor, putative",
+      "SO1824 (+) conserved hypothetical protein",
+      "SO1825 (+) MotA/TolQ/ExbB proton channel family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718625_1",
+     "locus": "SO3060",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO3057 (-) Pal/histidase family protein",
+      "SO3058 (-) flavocytochrome c flavin subunit, putative",
+      "SO3059 (+) formate hydrogenlyase transcriptional activator, putative",
+      "SO3060 (-) outer membrane porin, putative",
+      "SO3061 (-) DNA topoisomerase III",
+      "SO3062 (+) hypothetical protein",
+      "SO3063 (+) sodium:alanine symporter family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719499_1",
+     "locus": "SO3969",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "putative outer membrane lipoprotein YiaD",
+     "neighbourhood": [
+      "SO3965 (+) phosphocarrier protein NPR",
+      "SO3966 (+) magnesium transporter",
+      "SO3967 (-) molybdenum ABC transporter, periplasmic molybdenum-binding protein, putative",
+      "SO3969 (-) OmpA family protein",
+      "SO3972 (+) hypothetical transposase",
+      "SO3973 (-) RIO1/ZK632.3/MJ0444 family, putative",
+      "SO3974 (+) conserved domain protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719846_1",
+     "locus": "SO4321",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "Pal-like T1SS-linked outer membrane lipoprotein",
+     "neighbourhood": [
+      "SO4318 (+) toxin secretion ATP-binding protein",
+      "SO4319 (+) HlyD family secretion protein",
+      "SO4320 (+) agglutination protein",
+      "SO4321 (+) OmpA family protein",
+      "SO4322 (+) conserved hypothetical protein",
+      "SO4323 (+) GGDEF domain protein",
+      "SO_t097 (-) tRNA-Pro"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CUabcpp",
+   "name": "Copper transport via ABC system (periplasm)",
+   "equation_ids": "atp_c + cu2_p + h2o_c --> adp_c + cu2_c + h_c + pi_c",
+   "equation_names": "ATP + Cu2+ + H2O --> ADP + Cu2+ + H+ + Phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": []
+  },
+  {
+   "reaction": "CYSS",
+   "name": "Cysteine synthase",
+   "equation_ids": "acser_c + h2s_c --> ac_c + cys__L_c + h_c",
+   "equation_names": "O-Acetyl-L-serine + Hydrogen sulfide --> Acetate + L-Cysteine + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_718475_1 or NP_719141_2",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_718475_1",
+     "locus": "SO2903",
+     "fitness_browser_desc": "cysteine synthase A",
+     "refseq_definition": "cysteine synthase CysK",
+     "neighbourhood": [
+      "SO2900 (+) hypothetical protein",
+      "SO2901 (-) 3-oxoacyl-(acyl-carrier-protein) synthase III",
+      "SO2902 (-) hypothetical protein",
+      "SO2903 (+) cysteine synthase A",
+      "SO2905 (+) O-methyltransferase, putative",
+      "SO2906 (+) conserved hypothetical protein",
+      "SO2907 (+) TonB-dependent receptor domain protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719141_2",
+     "locus": "SO3598",
+     "fitness_browser_desc": "cysteine synthase B",
+     "refseq_definition": "cysteine synthase B CysM",
+     "neighbourhood": [
+      "SO3595 (+) sensor protein RstB, putative",
+      "SO3596 (-) conserved hypothetical protein",
+      "SO3597 (+) conserved hypothetical protein",
+      "SO3598 (-) cysteine synthase B",
+      "SO3599 (+) sulfate ABC transporter, periplasmic sulfate-binding protein",
+      "SO3600 (+) sulfate ABC transporter, permease protein",
+      "SO3601 (+) sulfate ABC transporter, permease protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DDPA",
+   "name": "3-deoxy-D-arabino-heptulosonate 7-phosphate synthetase",
+   "equation_ids": "e4p_c + h2o_c + pep_c --> 2dda7p_c + pi_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Phosphoenolpyruvate --> 2-Dehydro-3-deoxy-D-arabino-heptonate 7-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716387_1 or NP_716981_1 or NP_718230_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716387_1",
+     "locus": "SO0756",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase, phe-sensitive",
+     "refseq_definition": "phospho-2-dehydro-3-deoxyheptonate aldolase phe-sensitive AroG",
+     "neighbourhood": [
+      "SO0753 (-) hypothetical protein",
+      "SO0754 (-) ABC transporter, ATP-binding protein",
+      "SO0755 (+) hypothetical protein",
+      "SO0756 (-) phospho-2-dehydro-3-deoxyheptonate aldolase, phe-sensitive",
+      "SO0757 (-) TPR domain protein",
+      "SO0758 (-) hypothetical protein",
+      "SO0760 (-) ammonium transporter"
+     ]
+    },
+    {
+     "model_gene": "NP_716981_1",
+     "locus": "SO1361",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase, tyr-sensitive",
+     "refseq_definition": "phospho-2-dehydro-3-deoxyheptonate aldolase tyr-sensitive AroF",
+     "neighbourhood": [
+      "SO1358 (+) 16S rRNA processing protein RimM",
+      "SO1359 (+) tRNA (guanine-N1)-methyltransferase",
+      "SO1360 (+) ribosomal protein L19",
+      "SO1361 (+) phospho-2-dehydro-3-deoxyheptonate aldolase, tyr-sensitive",
+      "SO1362 (+) chorismate mutase/prephenate dehydrogenase",
+      "SO1363 (+) prismane protein",
+      "SO1364 (+) iron-sulfur cluster-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718230_1",
+     "locus": "SO2646",
+     "fitness_browser_desc": "phospho-2-dehydro-3-deoxyheptonate aldolase, trp-sensitive",
+     "refseq_definition": "phospho-2-dehydro-3-deoxyheptonate aldolase trp-sensitive AroH",
+     "neighbourhood": [
+      "SO2643 (-) oxidoreductase, FAD-binding, putative",
+      "SO2644 (-) phosphoenolpyruvate synthase",
+      "SO2645 (+) conserved hypothetical protein",
+      "SO2646 (+) phospho-2-dehydro-3-deoxyheptonate aldolase, trp-sensitive",
+      "SO2647 (+) cytosolic long-chain acyl-CoA thioester hydrolase family protein",
+      "SO2648 (+) DNA-binding response regulator, LuxR family",
+      "SO2649 (-) cys regulon transcriptional activator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHFR",
+   "name": "Dihydrofolate reductase",
+   "equation_ids": "dhf_c + h_c + nadph_c <=> nadp_c + thf_c",
+   "equation_names": "7,8-Dihydrofolate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced <=> Nicotinamide adenine dinucleotide phosphate + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716403_1 or NP_719188_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716403_1",
+     "locus": "SO0772",
+     "fitness_browser_desc": "oxidoreductase, short chain dehydrogenase/reductase family",
+     "refseq_definition": "dihydrofolate reductase FolM",
+     "neighbourhood": [
+      "SO0769 (-) arginine repressor",
+      "SO0770 (+) malate dehydrogenase",
+      "SO0771 (-) conserved hypothetical protein",
+      "SO0772 (+) oxidoreductase, short chain dehydrogenase/reductase family",
+      "SO0773 (+) ISSod6, transposase",
+      "SO0774 (-) 5-formyltetrahydrofolate cyclo-ligase family protein",
+      "SO0775 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719188_1",
+     "locus": "SO3646",
+     "fitness_browser_desc": "dihydrofolate reductase",
+     "refseq_definition": "dihydrofolate reductase FolA",
+     "neighbourhood": [
+      "SO3642 (+) methyl-accepting chemotaxis protein",
+      "SO3643 (-) hypothetical protein",
+      "SO3645 (-) hypothetical protein",
+      "SO3646 (-) dihydrofolate reductase",
+      "SO3647 (-) conserved hypothetical protein",
+      "SO3648 (-) conserved hypothetical protein",
+      "SO3649 (-) GTP-binding protein, GTP1/Obg family"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716921_1 or NP_718704_2 or NP_719235_1",
+   "n_growth_conditions_essential": 7,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716921_1",
+     "locus": "SO1301",
+     "fitness_browser_desc": "aspartate carbamoyltransferase",
+     "refseq_definition": "aspartate carbamoyltransferase PyrB",
+     "neighbourhood": [
+      "SO1298.3 (-) hypothetical Na+/H+ antiporter",
+      "SO1298.4 (-) hypothetical Na+/H+ antiporter",
+      "SO1300 (-) glutamate-1-semialdehyde-2,1-aminomutase",
+      "SO1301 (-) aspartate carbamoyltransferase",
+      "SO1302 (-) chloride channel",
+      "SO1303 (+) hypothetical protein",
+      "SO1304 (+) HesB/YadR/YfhF family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718704_2",
+     "locus": "SO3148",
+     "fitness_browser_desc": "conserved hypothetical protein",
+     "refseq_definition": "periplasmic amidohydrolase family protein",
+     "neighbourhood": [
+      "SO3145 (-) electron transfer flavoprotein, beta subunit",
+      "SO3146 (+) DNA-binding protein, H-NS family",
+      "SO3147 (-) hypothetical protein",
+      "SO3148 (+) conserved hypothetical protein",
+      "SO3149 (+) conserved hypothetical protein",
+      "SO3150 (+) lipoprotein, putative",
+      "SO3151 (+) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719235_1",
+     "locus": "SO3695",
+     "fitness_browser_desc": "dihydroorotase, homodimeric type",
+     "refseq_definition": "dihydroorotase homodimeric type PyrC",
+     "neighbourhood": [
+      "SO3692 (-) ABC transporter, ATP-binding protein",
+      "SO3693 (-) hypothetical protein",
+      "SO3694 (-) conserved hypothetical protein",
+      "SO3695 (+) dihydroorotase, homodimeric type",
+      "SO3696 (+) hypothetical protein",
+      "SO3697 (+) steroid delta-isomerase domain protein",
+      "SO3698 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717992_1 or NP_719076_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717992_1",
+     "locus": "SO2402",
+     "fitness_browser_desc": "ribosomal protein S1",
+     "refseq_definition": "ribosomal protein S1 RpsA",
+     "neighbourhood": [
+      "SO2399 (-) conserved hypothetical protein",
+      "SO2400 (-) conserved hypothetical protein",
+      "SO2401 (-) integration host factor, beta subunit",
+      "SO2402 (-) ribosomal protein S1",
+      "SO2403 (-) cytidylate kinase",
+      "SO2404 (-) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "SO2406 (+) aspartate aminotransferase"
+     ]
+    },
+    {
+     "model_gene": "NP_719076_1",
+     "locus": "SO3529",
+     "fitness_browser_desc": "penicillin tolerance protein LytB",
+     "refseq_definition": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase IspH",
+     "neighbourhood": [
+      "SO3526 (-) hypothetical protein",
+      "SO3527 (-) hypothetical protein",
+      "SO3528 (-) hypothetical protein",
+      "SO3529 (-) penicillin tolerance protein LytB",
+      "SO3530 (-) peptidyl-prolyl cis-trans isomerase FkbP",
+      "SO3531 (-) lipoprotein signal peptidase",
+      "SO3532 (-) isoleucyl-tRNA synthetase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DPR",
+   "name": "2-dehydropantoate 2-reductase",
+   "equation_ids": "2dhp_c + h_c + nadph_c --> nadp_c + pant__R_c",
+   "equation_names": "2-Dehydropantoate + H+ + Nicotinamide adenine dinucleotide phosphate - reduced --> Nicotinamide adenine dinucleotide phosphate + (R)-Pantoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_719353_1 or NP_719873_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_719353_1",
+     "locus": "SO3817",
+     "fitness_browser_desc": "2-dehydropantoate 2-reductase",
+     "refseq_definition": "2-dehydropantoate 2-reductase PanE",
+     "neighbourhood": [
+      "SO3814 (+) ampG protein, putative",
+      "SO3815 (-) conserved hypothetical protein",
+      "SO3816 (+) conserved hypothetical protein",
+      "SO3817 (+) 2-dehydropantoate 2-reductase",
+      "SO3819 (+) nitrogen regulatory protein P-II",
+      "SO3819.1 (+) hypothetical ammonia permease",
+      "SO3819.2 (+) hypothetical ammonia permease"
+     ]
+    },
+    {
+     "model_gene": "NP_719873_1",
+     "locus": "SO4349",
+     "fitness_browser_desc": "ketol-acid reductoisomerase",
+     "refseq_definition": "ketol-acid reductoisomerase IlvC",
+     "neighbourhood": [
+      "SO4345 (-) dihydroxy-acid dehydratase",
+      "SO4346 (-) acetolactate synthase II, small subunit",
+      "SO4347 (-) acetolactate synthase II, large subunit",
+      "SO4349 (-) ketol-acid reductoisomerase",
+      "SO4350 (+) transcriptional regulator ilvY",
+      "SO4351 (-) CBS domain protein",
+      "SO4351.1 (+) amino acid ABC transporter protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "E4PD",
+   "name": "Erythrose 4-phosphate dehydrogenase",
+   "equation_ids": "e4p_c + h2o_c + nad_c <=> 4per_c + 2.0 h_c + nadh_c",
+   "equation_names": "D-Erythrose 4-phosphate + H2O + Nicotinamide adenine dinucleotide <=> 4-Phospho-D-erythronate + 2.0 H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716174_1 or NP_716560_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716174_1",
+     "locus": "SO0538",
+     "fitness_browser_desc": "glyceraldehyde 3-phosphate dehydrogenase",
+     "refseq_definition": "glyceraldehyde-3-phosphate dehydrogenase (NAD+) GapA",
+     "neighbourhood": [
+      "SO0534 (+) arsenical pump membrane protein, putative",
+      "SO0535 (+) conserved hypothetical protein",
+      "SO0536 (+) redox-active disulfide protein 2",
+      "SO0538 (+) glyceraldehyde 3-phosphate dehydrogenase",
+      "SO0539 (+) transporter, putative",
+      "SO0540 (+) conserved hypothetical protein",
+      "SO0541 (+) metallo-beta-lactamase family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_716560_1",
+     "locus": "SO0931",
+     "fitness_browser_desc": "D-erythrose-4-phosphate dehydrogenase",
+     "refseq_definition": "D-erythrose-4-phosphate dehydrogenase E4pd",
+     "neighbourhood": [
+      "SO0928 (+) GGDEF domain protein",
+      "SO0929 (-) S-adenosylmethionine synthetase",
+      "SO0930 (+) transketolase",
+      "SO0931 (+) D-erythrose-4-phosphate dehydrogenase",
+      "SO0932 (+) phosphoglycerate kinase",
+      "SO0933 (+) fructose-bisphosphate aldolase, class II, Calvin cycle subtype",
+      "SO0934 (+) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GF6PTA",
+   "name": "Glutamine-fructose-6-phosphate transaminase",
+   "equation_ids": "f6p_c + gln__L_c --> gam6p_c + glu__L_c",
+   "equation_names": "D-Fructose 6-phosphate + L-Glutamine --> D-Glucosamine 6-phosphate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_719053_1 or NP_720257_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_719053_1",
+     "locus": "SO3506",
+     "fitness_browser_desc": "SIS domain protein",
+     "refseq_definition": "glucosamine-6-phosphate deaminase NagB",
+     "neighbourhood": [
+      "SO3503 (-) glucose/galactose transporter",
+      "SO3504 (-) conserved hypothetical protein",
+      "SO3505 (-) N-acetylglucosamine-6-phosphate deacetylase",
+      "SO3506 (-) SIS domain protein",
+      "SO3507 (-) conserved hypothetical protein",
+      "SO3508 (+) hypothetical protein",
+      "SO3509 (-) beta-hexosaminidase b precursor"
+     ]
+    },
+    {
+     "model_gene": "NP_720257_1",
+     "locus": "SO4741",
+     "fitness_browser_desc": "glucosamine--fructose-6-phosphate aminotransferase (isomerizing)",
+     "refseq_definition": "glutamine:fructose-6-phosphate transaminase (isomerizing) GlmS",
+     "neighbourhood": [
+      "SO4738 (+) hypothetical protein",
+      "SO4739 (+) naphthoate synthase",
+      "SO4740 (+) conserved hypothetical protein",
+      "SO4741 (-) glucosamine--fructose-6-phosphate aminotransferase (isomerizing)",
+      "SO4742 (-) transcriptional regulator, DeoR family",
+      "SO4743 (-) TonB-dependent receptor, putative",
+      "SO4745 (-) UDP-N-acetylglucosamine pyrophosphorylase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNS",
+   "name": "Glutamine synthetase",
+   "equation_ids": "atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c",
+   "equation_names": "ATP + L-Glutamate + Ammonium --> ADP + L-Glutamine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716891_1 or NP_719933_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716891_1",
+     "locus": "SO1268",
+     "fitness_browser_desc": "glutamine synthetase",
+     "refseq_definition": "gamma-glutamyl-putrescine synthase PuuA",
+     "neighbourhood": [
+      "SO1264 (-) hypothetical oxidoreductase",
+      "SO1265 (+) transcriptional regulator, putative",
+      "SO1267 (+) hypothetical Glutamine amidotransferase",
+      "SO1268 (+) glutamine synthetase",
+      "SO1269 (+) ISSod4, transposase",
+      "SO1270 (+) polyamine ABC transporter, periplasmic polyamine-binding protein",
+      "SO1271 (+) polyamine ABC transporter, ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719933_1",
+     "locus": "SO4410",
+     "fitness_browser_desc": "glutamine synthetase, type I",
+     "refseq_definition": "glutamine synthetase GlnA",
+     "neighbourhood": [
+      "SO4407 (+) GGDEF family protein",
+      "SO4408 (-) virulence regulator BipA",
+      "SO4409 (-) hypothetical protein",
+      "SO4410 (+) glutamine synthetase, type I",
+      "SO4411 (-) hypothetical protein",
+      "SO4412 (+) conserved domain protein",
+      "SO4413 (-) hypothetical kynureninase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNtex",
+   "name": "L-glutamine transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "gln__L_e <=> gln__L_p",
+   "equation_names": "L-Glutamine <=> L-Glutamine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715952_1 or NP_717429_1 or NP_718625_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715952_1",
+     "locus": "SO0312",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO0308 (-) conserved hypothetical protein",
+      "SO0309 (+) conserved hypothetical protein",
+      "SO0311 (+) hypothetical Fe-S oxidoreductase",
+      "SO0312 (-) outer membrane porin, putative",
+      "SO0313 (-) putrescine-ornithine antiporter",
+      "SO0314 (-) ornithine decarboxylase, inducible",
+      "SO0316 (+) hypothetical phosphatidylethanolamine-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717429_1",
+     "locus": "SO1821",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO1818 (-) conserved hypothetical protein",
+      "SO1819 (-) ATP-dependent helicase DinG",
+      "SO1820 (+) DNA polymerase II",
+      "SO1821 (+) outer membrane porin, putative",
+      "SO1822 (+) TonB-dependent receptor, putative",
+      "SO1824 (+) conserved hypothetical protein",
+      "SO1825 (+) MotA/TolQ/ExbB proton channel family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718625_1",
+     "locus": "SO3060",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO3057 (-) Pal/histidase family protein",
+      "SO3058 (-) flavocytochrome c flavin subunit, putative",
+      "SO3059 (+) formate hydrogenlyase transcriptional activator, putative",
+      "SO3060 (-) outer membrane porin, putative",
+      "SO3061 (-) DNA topoisomerase III",
+      "SO3062 (+) hypothetical protein",
+      "SO3063 (+) sodium:alanine symporter family protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_718061_1 or spontaneous",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_718061_1",
+     "locus": "SO2474",
+     "fitness_browser_desc": "carbonic anhydrase family protein",
+     "refseq_definition": "beta-class carbonic anhydrase Can",
+     "neighbourhood": [
+      "SO2471 (+) succinyl-diaminopimelate desuccinylase",
+      "SO2472 (+) D-alanyl-D-alanine carboxypeptidase-related protein",
+      "SO2473 (+) hydrolase, alpha/beta fold family",
+      "SO2474 (+) carbonic anhydrase family protein",
+      "SO2476 (+) polysaccharide biosynthesis protein",
+      "SO2477 (+) alcohol dehydrogenase, iron-containing",
+      "SO2478 (+) 3-deoxy-D-manno-octulosonate cytidylyltransferase"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HSDy",
+   "name": "Homoserine dehydrogenase (NADPH)",
+   "equation_ids": "hom__L_c + nadp_c <=> aspsa_c + h_c + nadph_c",
+   "equation_names": "L-Homoserine + Nicotinamide adenine dinucleotide phosphate <=> L-Aspartate 4-semialdehyde + H+ + Nicotinamide adenine dinucleotide phosphate - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_718968_1 or NP_719585_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_718968_1",
+     "locus": "SO3415",
+     "fitness_browser_desc": "aspartokinase I/homoserine dehydrogenase, threonine-sensitive",
+     "refseq_definition": "bifunctional aspartokinase I / homoserine dehydrogenase I ThrA",
+     "neighbourhood": [
+      "SO3412 (-) extracellular solute-binding proteins, family 3 protein",
+      "SO3413 (-) threonine synthase",
+      "SO3414 (-) homoserine kinase",
+      "SO3415 (-) aspartokinase I/homoserine dehydrogenase, threonine-sensitive",
+      "SO3417 (+) peptidyl-prolyl cis-trans isomerase SlyD",
+      "SO3417.1 (+) peptidyl-prolyl cis-trans isomerase SlyD",
+      "SO3418 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719585_1",
+     "locus": "SO4055",
+     "fitness_browser_desc": "aspartokinase II/homoserine dehydrogenase, methionine-sensitive",
+     "refseq_definition": "bifunctional aspartokinase II/homoserine dehydrogenase methionine-sensitive MetL",
+     "neighbourhood": [
+      "SO4052 (-) transcriptional regulator, MarR family",
+      "SO4053 (+) methyl-accepting chemotaxis protein",
+      "SO4054 (-) 5,10-methylenetetrahydrofolate reductase",
+      "SO4055 (-) aspartokinase II/homoserine dehydrogenase, methionine-sensitive",
+      "SO4056 (-) cystathionine gamma-synthase",
+      "SO4057 (+) met repressor",
+      "SO4058 (+) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717992_1 or NP_719076_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717992_1",
+     "locus": "SO2402",
+     "fitness_browser_desc": "ribosomal protein S1",
+     "refseq_definition": "ribosomal protein S1 RpsA",
+     "neighbourhood": [
+      "SO2399 (-) conserved hypothetical protein",
+      "SO2400 (-) conserved hypothetical protein",
+      "SO2401 (-) integration host factor, beta subunit",
+      "SO2402 (-) ribosomal protein S1",
+      "SO2403 (-) cytidylate kinase",
+      "SO2404 (-) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "SO2406 (+) aspartate aminotransferase"
+     ]
+    },
+    {
+     "model_gene": "NP_719076_1",
+     "locus": "SO3529",
+     "fitness_browser_desc": "penicillin tolerance protein LytB",
+     "refseq_definition": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase IspH",
+     "neighbourhood": [
+      "SO3526 (-) hypothetical protein",
+      "SO3527 (-) hypothetical protein",
+      "SO3528 (-) hypothetical protein",
+      "SO3529 (-) penicillin tolerance protein LytB",
+      "SO3530 (-) peptidyl-prolyl cis-trans isomerase FkbP",
+      "SO3531 (-) lipoprotein signal peptidase",
+      "SO3532 (-) isoleucyl-tRNA synthetase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "L_LACD2",
+   "name": "L-Lactate dehydrogenase (ubiquinone)",
+   "equation_ids": "lac__L_c + q8_c --> pyr_c + q8h2_c",
+   "equation_names": "L-Lactate + Ubiquinone-8 --> Pyruvate + Ubiquinol-8",
+   "annotation": {
+    "ec-code": "1.1.2.3",
+    "metanetx.reaction": "MNXR101273"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 9,
+   "genes": []
+  },
+  {
+   "reaction": "MCITD",
+   "name": "2-methylcitrate dehydratase",
+   "equation_ids": "2mcit_c --> 2mcacn_c + h2o_c",
+   "equation_names": "2-Methylcitrate --> Cis-2-Methylaconitate + H2O",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 9,
+   "genes": []
+  },
+  {
+   "reaction": "MICITDr",
+   "name": "2-methylisocitrate dehydratase",
+   "equation_ids": "2mcacn_c + h2o_c <=> micit_c",
+   "equation_names": "Cis-2-Methylaconitate + H2O <=> Methylisocitrate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715983_1 or NP_716069_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715983_1",
+     "locus": "SO0343",
+     "fitness_browser_desc": "aconitate hydratase 1",
+     "refseq_definition": "2-methyl citrate dehydratase Fe-S dependent AcnD",
+     "neighbourhood": [
+      "SO0340 (+) branched-chain amino acid aminotransferase",
+      "SO0341 (-) sensory box protein",
+      "SO0342 (-) conserved hypothetical protein",
+      "SO0343 (-) aconitate hydratase 1",
+      "SO0344 (-) methylcitrate synthase",
+      "SO0345 (-) methylisocitrate lyase",
+      "SO0346 (-) transcriptional regulator. GntR family"
+     ]
+    },
+    {
+     "model_gene": "NP_716069_1",
+     "locus": "SO0432",
+     "fitness_browser_desc": "aconitate hydratase 2",
+     "refseq_definition": "aconitate hydratase AcnB",
+     "neighbourhood": [
+      "SO0429 (+) peptidase, M13 family",
+      "SO0430 (-) conserved hypothetical protein",
+      "SO0431 (-) HAD-superfamily hydrolase, subfamily IA, variant 3 protein family",
+      "SO0432 (+) aconitate hydratase 2",
+      "SO0433 (-) regulator of sigma D",
+      "SO0435 (+) uroporphyrinogen decarboxylase",
+      "SO0437 (+) sensory box protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MNt2",
+   "name": "Manganese transport in via proton symport",
+   "equation_ids": "h_e + mn2_e --> h_c + mn2_c",
+   "equation_names": "H+ + Mn2+ --> H+ + Mn2+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": []
+  },
+  {
+   "reaction": "NDPK2",
+   "name": "Nucleoside-diphosphate kinase (ATP:UDP)",
+   "equation_ids": "atp_c + udp_c <=> adp_c + utp_c",
+   "equation_names": "ATP + UDP <=> ADP + UTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717624_1 or NP_717870_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717624_1",
+     "locus": "SO2018",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase Adk",
+     "neighbourhood": [
+      "SO2015 (+) recombination protein RecR",
+      "SO2016 (+) heat shock protein HtpG",
+      "SO2017 (+) hypothetical thioredoxin-like protein",
+      "SO2018 (+) adenylate kinase",
+      "SO2019 (+) ferrochelatase",
+      "SO2020 (+) inosine-guanosine kinase",
+      "SO2021 (+) NH(3)-dependent NAD(+) synthetase"
+     ]
+    },
+    {
+     "model_gene": "NP_717870_1",
+     "locus": "SO2274",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside diphosphate kinase Ndk",
+     "neighbourhood": [
+      "SO2270 (+) ribosomal protein S6 modification protein",
+      "SO2271 (+) conserved hypothetical protein",
+      "SO2272 (+) ISSod4, transposase",
+      "SO2274 (+) nucleoside diphosphate kinase",
+      "SO2275 (+) ISSod10, transposase OrfA",
+      "SO2276 (+) ISSod10, transposase OrfB",
+      "SO2277 (+) 16 kDa heat shock protein A"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK4",
+   "name": "Nucleoside-diphosphate kinase (ATP:dTDP)",
+   "equation_ids": "atp_c + dtdp_c <=> adp_c + dttp_c",
+   "equation_names": "ATP + DTDP <=> ADP + DTTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717624_1 or NP_717870_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717624_1",
+     "locus": "SO2018",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase Adk",
+     "neighbourhood": [
+      "SO2015 (+) recombination protein RecR",
+      "SO2016 (+) heat shock protein HtpG",
+      "SO2017 (+) hypothetical thioredoxin-like protein",
+      "SO2018 (+) adenylate kinase",
+      "SO2019 (+) ferrochelatase",
+      "SO2020 (+) inosine-guanosine kinase",
+      "SO2021 (+) NH(3)-dependent NAD(+) synthetase"
+     ]
+    },
+    {
+     "model_gene": "NP_717870_1",
+     "locus": "SO2274",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside diphosphate kinase Ndk",
+     "neighbourhood": [
+      "SO2270 (+) ribosomal protein S6 modification protein",
+      "SO2271 (+) conserved hypothetical protein",
+      "SO2272 (+) ISSod4, transposase",
+      "SO2274 (+) nucleoside diphosphate kinase",
+      "SO2275 (+) ISSod10, transposase OrfA",
+      "SO2276 (+) ISSod10, transposase OrfB",
+      "SO2277 (+) 16 kDa heat shock protein A"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NPHS",
+   "name": "Naphthoate synthase",
+   "equation_ids": "sbzcoa_c --> coa_c + dhna_c",
+   "equation_names": "O-Succinylbenzoyl-CoA --> Coenzyme A + 1,4-Dihydroxy-2-naphthoate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717986_1 or NP_720255_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717986_1",
+     "locus": "SO2396",
+     "fitness_browser_desc": "conserved hypothetical protein",
+     "refseq_definition": "protein of unknown function DUF2058",
+     "neighbourhood": [
+      "SO2393 (+) hypothetical protein",
+      "SO2394 (+) penicillin-binding protein 4",
+      "SO2395 (-) acyl-CoA dehydrogenase family protein",
+      "SO2396 (-) conserved hypothetical protein",
+      "SO2397 (-) oxidoreductase, short-chain dehydrogenase/reductase family",
+      "SO2398 (-) orotidine 5`-phosphate decarboxylase",
+      "SO2399 (-) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_720255_1",
+     "locus": "SO4739",
+     "fitness_browser_desc": "naphthoate synthase",
+     "refseq_definition": "naphthoate synthase MenB",
+     "neighbourhood": [
+      "SO_r027 (-) 16S ribosomal RNA",
+      "SO4737 (-) iron-sulfur cluster-binding protein",
+      "SO4738 (+) hypothetical protein",
+      "SO4739 (+) naphthoate synthase",
+      "SO4740 (+) conserved hypothetical protein",
+      "SO4741 (-) glucosamine--fructose-6-phosphate aminotransferase (isomerizing)",
+      "SO4742 (-) transcriptional regulator, DeoR family"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "OMCDC",
+   "name": "2-Oxo-4-methyl-3-carboxypentanoate decarboxylation",
+   "equation_ids": "3c4mop_c + h_c --> 4mop_c + co2_c",
+   "equation_names": "3-Carboxy-4-methyl-2-oxopentanoate + H+ --> 4-Methyl-2-oxopentanoate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_719762_1 or spontaneous",
+   "n_growth_conditions_essential": 8,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_719762_1",
+     "locus": "SO4235",
+     "fitness_browser_desc": "3-isopropylmalate dehydrogenase",
+     "refseq_definition": "3-isopropylmalate dehydrogenase LeuB",
+     "neighbourhood": [
+      "SO4232 (-) long-chain fatty acid transport protein",
+      "SO4233 (-) 3-isopropylmalate dehydratase, small subunit",
+      "SO4234 (-) 3-isopropylmalate dehydratase, large subunit",
+      "SO4235 (-) 3-isopropylmalate dehydrogenase",
+      "SO4236 (-) 2-isopropylmalate synthase",
+      "SO4238 (+) TPR domain protein",
+      "SO4239 (-) ISSod3, transposase"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "ORNTA",
+   "name": "Ornithine transaminase",
+   "equation_ids": "akg_c + orn_c <=> glu5sa_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + Ornithine <=> L-Glutamate 5-semialdehyde + L-Glutamate",
+   "annotation": {
+    "ec-code": "2.6.1.13",
+    "rhea": [
+     "25160",
+     "25161",
+     "25162",
+     "25163"
+    ],
+    "metanetx.reaction": "MNXR102220",
+    "kegg.reaction": "R00667"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": []
+  },
+  {
+   "reaction": "PGAMT",
+   "name": "Phosphoglucosamine mutase",
+   "equation_ids": "gam1p_c <=> gam6p_c",
+   "equation_names": "D-Glucosamine 1-phosphate <=> D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716824_1 or NP_717926_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716824_1",
+     "locus": "SO1199",
+     "fitness_browser_desc": "phosphoglucosamine mutase",
+     "refseq_definition": "phosphoglucosamine mutase GlmM",
+     "neighbourhood": [
+      "SO1196 (+) ribosomal RNA large subunit methyltransferase J",
+      "SO1197 (+) cell division protein FtsH",
+      "SO1198 (+) dihydropteroate synthase",
+      "SO1199 (+) phosphoglucosamine mutase",
+      "SO1200 (+) triosephosphate isomerase",
+      "SO1201 (+) preprotein translocase, SecG subunit",
+      "SO_t021 (+) tRNA-Leu"
+     ]
+    },
+    {
+     "model_gene": "NP_717926_1",
+     "locus": "SO2336",
+     "fitness_browser_desc": "phosphoglucomutase, alpha-D-glucose phosphate-specific",
+     "refseq_definition": "phosphoglucomutase alpha-D-glucose phosphate-specific Pgm",
+     "neighbourhood": [
+      "SO2332 (-) conserved hypothetical protein",
+      "SO2333 (-) hydrolase, alpha/beta fold family",
+      "SO2335 (+) seqA protein",
+      "SO2336 (+) phosphoglucomutase, alpha-D-glucose phosphate-specific",
+      "SO2337 (-) peptide methionine sulfoxide reductase",
+      "SO2338 (+) succinylglutamate desuccinylase",
+      "SO2339 (+) alpha keto acid dehydrogenase complex, E1 component, alpha subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717878_1 or NP_717940_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717878_1",
+     "locus": "SO2282",
+     "fitness_browser_desc": "transcriptional regulator, GntR family",
+     "refseq_definition": "bifunctional transcriptional repressor of amino acid efflux GntR family / aminotransferase",
+     "neighbourhood": [
+      "SO2279 (-) acetolactate synthase III, large subunit",
+      "SO2280 (-) bicyclomycin resistance protein",
+      "SO2281 (+) alkaline phosphatase",
+      "SO2282 (-) transcriptional regulator, GntR family",
+      "SO2283 (-) ISSod3, transposase",
+      "SO2284 (-) ISSod11, transposase",
+      "SO2285 (+) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717940_1",
+     "locus": "SO2350",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase AspC",
+     "neighbourhood": [
+      "SO_t042 (+) tRNA-Cys",
+      "SO_t043 (+) tRNA-Leu",
+      "SO2349 (-) hypothetical protein",
+      "SO2350 (+) aspartate aminotransferase",
+      "SO2351 (-) conserved hypothetical protein",
+      "SO2352 (+) bax protein, putative",
+      "SO2353 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PMPK",
+   "name": "Phosphomethylpyrimidine kinase",
+   "equation_ids": "4ampm_c + atp_c --> 2mahmp_c + adp_c",
+   "equation_names": "4-Amino-2-methyl-5-phosphomethylpyrimidine + ATP --> 2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate + ADP",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": []
+  },
+  {
+   "reaction": "PPA",
+   "name": "Inorganic diphosphatase",
+   "equation_ids": "h2o_c + ppi_c --> h_c + 2.0 pi_c",
+   "equation_names": "H2O + Diphosphate --> H+ + 2.0 Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717785_1 or NP_718988_2 or NP_719718_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717785_1",
+     "locus": "SO2185",
+     "fitness_browser_desc": "exopolyphosphatase",
+     "refseq_definition": "exopolyphosphatase Ppx",
+     "neighbourhood": [
+      "SO2181 (-) hypothetical protein",
+      "SO2182 (-) conserved hypothetical protein",
+      "SO2183 (-) conserved hypothetical protein",
+      "SO2185 (-) exopolyphosphatase",
+      "SO_2186 (-) ",
+      "SO2187 (-) ISSod11, transposase",
+      "SO_2188 (-) "
+     ]
+    },
+    {
+     "model_gene": "NP_718988_2",
+     "locus": "SO3435",
+     "fitness_browser_desc": "stationary-phase survival protein SurE",
+     "refseq_definition": "5'/3'-nucleotidase SurE",
+     "neighbourhood": [
+      "SO3432 (-) RNA polymerase sigma-38 factor",
+      "SO3433 (-) lipoprotein NlpD",
+      "SO3434 (-) protein-L-isoaspartate O-methyltransferase",
+      "SO3435 (-) stationary-phase survival protein SurE",
+      "SO3436 (-) conserved hypothetical protein",
+      "SO3437 (-) 2C-methyl-D-erythritol 2,4-cyclodiphosphate synthase",
+      "SO3438 (-) 4-diphosphocytidyl-2C-methyl-D-erythritol synthase"
+     ]
+    },
+    {
+     "model_gene": "NP_719718_1",
+     "locus": "SO4190",
+     "fitness_browser_desc": "inorganic pyrophosphatase, manganese-dependent",
+     "refseq_definition": "inorganic pyrophosphatase manganese-dependent PpaC",
+     "neighbourhood": [
+      "SO4187 (-) hypothetical protein",
+      "SO4188 (+) hypothetical protein",
+      "SO4189 (+) conserved hypothetical protein",
+      "SO4190 (+) inorganic pyrophosphatase, manganese-dependent",
+      "SO4191 (+) DedA family protein",
+      "SO4193 (-) conserved hypothetical protein",
+      "SO4194 (-) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PPAtex",
+   "name": "Propionate transport via diffusion",
+   "equation_ids": "ppa_e <=> ppa_p",
+   "equation_names": "Propionate (n-C3:0) <=> Propionate (n-C3:0)",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715952_1",
+     "locus": "SO0312",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO0308 (-) conserved hypothetical protein",
+      "SO0309 (+) conserved hypothetical protein",
+      "SO0311 (+) hypothetical Fe-S oxidoreductase",
+      "SO0312 (-) outer membrane porin, putative",
+      "SO0313 (-) putrescine-ornithine antiporter",
+      "SO0314 (-) ornithine decarboxylase, inducible",
+      "SO0316 (+) hypothetical phosphatidylethanolamine-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717429_1",
+     "locus": "SO1821",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO1818 (-) conserved hypothetical protein",
+      "SO1819 (-) ATP-dependent helicase DinG",
+      "SO1820 (+) DNA polymerase II",
+      "SO1821 (+) outer membrane porin, putative",
+      "SO1822 (+) TonB-dependent receptor, putative",
+      "SO1824 (+) conserved hypothetical protein",
+      "SO1825 (+) MotA/TolQ/ExbB proton channel family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718625_1",
+     "locus": "SO3060",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO3057 (-) Pal/histidase family protein",
+      "SO3058 (-) flavocytochrome c flavin subunit, putative",
+      "SO3059 (+) formate hydrogenlyase transcriptional activator, putative",
+      "SO3060 (-) outer membrane porin, putative",
+      "SO3061 (-) DNA topoisomerase III",
+      "SO3062 (+) hypothetical protein",
+      "SO3063 (+) sodium:alanine symporter family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719499_1",
+     "locus": "SO3969",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "putative outer membrane lipoprotein YiaD",
+     "neighbourhood": [
+      "SO3965 (+) phosphocarrier protein NPR",
+      "SO3966 (+) magnesium transporter",
+      "SO3967 (-) molybdenum ABC transporter, periplasmic molybdenum-binding protein, putative",
+      "SO3969 (-) OmpA family protein",
+      "SO3972 (+) hypothetical transposase",
+      "SO3973 (-) RIO1/ZK632.3/MJ0444 family, putative",
+      "SO3974 (+) conserved domain protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719846_1",
+     "locus": "SO4321",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "Pal-like T1SS-linked outer membrane lipoprotein",
+     "neighbourhood": [
+      "SO4318 (+) toxin secretion ATP-binding protein",
+      "SO4319 (+) HlyD family secretion protein",
+      "SO4320 (+) agglutination protein",
+      "SO4321 (+) OmpA family protein",
+      "SO4322 (+) conserved hypothetical protein",
+      "SO4323 (+) GGDEF domain protein",
+      "SO_t097 (-) tRNA-Pro"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRPPS",
+   "name": "Phosphoribosylpyrophosphate synthetase",
+   "equation_ids": "atp_c + r5p_c <=> amp_c + h_c + prpp_c",
+   "equation_names": "ATP + Alpha-D-Ribose 5-phosphate <=> AMP + H+ + 5-Phospho-alpha-D-ribose 1-diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717587_1 or NP_719370_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717587_1",
+     "locus": "SO1980",
+     "fitness_browser_desc": "phosphoribosyl transferase domain protein",
+     "refseq_definition": "ribose phosphate pyrophosphokinase NadR",
+     "neighbourhood": [
+      "SO1977 (-) conserved hypothetical protein",
+      "SO1978 (+) conserved hypothetical protein",
+      "SO1979 (+) MutT/nudix family protein",
+      "SO1980 (+) phosphoribosyl transferase domain protein",
+      "SO1981 (+) conserved hypothetical protein",
+      "SO1985 (-) transcriptional activator, putative",
+      "SO1986 (-) RNA polymerase sigma-70 factor, ECF subfamily"
+     ]
+    },
+    {
+     "model_gene": "NP_719370_1",
+     "locus": "SO3837",
+     "fitness_browser_desc": "ribose-phosphate pyrophosphokinase",
+     "refseq_definition": "ribose-phosphate pyrophosphokinase PrsA",
+     "neighbourhood": [
+      "SO3834 (-) glutamyl-tRNA reductase",
+      "SO3835 (+) outer membrane lipoprotein LolB",
+      "SO3836 (+) 4-diphosphocytidyl-2C-methyl-D-erythritol kinase",
+      "SO3837 (+) ribose-phosphate pyrophosphokinase",
+      "SO3838 (-) methyl-accepting chemotaxis protein",
+      "SO3840 (+) RNA polymerase sigma-70 factor, ECF subfamily",
+      "SO3841 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PYRtex",
+   "name": "Pyruvate transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "pyr_e <=> pyr_p",
+   "equation_names": "Pyruvate <=> Pyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_715952_1 or NP_717429_1 or NP_718625_1 or NP_719499_1 or NP_719846_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_715952_1",
+     "locus": "SO0312",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO0308 (-) conserved hypothetical protein",
+      "SO0309 (+) conserved hypothetical protein",
+      "SO0311 (+) hypothetical Fe-S oxidoreductase",
+      "SO0312 (-) outer membrane porin, putative",
+      "SO0313 (-) putrescine-ornithine antiporter",
+      "SO0314 (-) ornithine decarboxylase, inducible",
+      "SO0316 (+) hypothetical phosphatidylethanolamine-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_717429_1",
+     "locus": "SO1821",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO1818 (-) conserved hypothetical protein",
+      "SO1819 (-) ATP-dependent helicase DinG",
+      "SO1820 (+) DNA polymerase II",
+      "SO1821 (+) outer membrane porin, putative",
+      "SO1822 (+) TonB-dependent receptor, putative",
+      "SO1824 (+) conserved hypothetical protein",
+      "SO1825 (+) MotA/TolQ/ExbB proton channel family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_718625_1",
+     "locus": "SO3060",
+     "fitness_browser_desc": "outer membrane porin, putative",
+     "refseq_definition": "outer membrane porin",
+     "neighbourhood": [
+      "SO3057 (-) Pal/histidase family protein",
+      "SO3058 (-) flavocytochrome c flavin subunit, putative",
+      "SO3059 (+) formate hydrogenlyase transcriptional activator, putative",
+      "SO3060 (-) outer membrane porin, putative",
+      "SO3061 (-) DNA topoisomerase III",
+      "SO3062 (+) hypothetical protein",
+      "SO3063 (+) sodium:alanine symporter family protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719499_1",
+     "locus": "SO3969",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "putative outer membrane lipoprotein YiaD",
+     "neighbourhood": [
+      "SO3965 (+) phosphocarrier protein NPR",
+      "SO3966 (+) magnesium transporter",
+      "SO3967 (-) molybdenum ABC transporter, periplasmic molybdenum-binding protein, putative",
+      "SO3969 (-) OmpA family protein",
+      "SO3972 (+) hypothetical transposase",
+      "SO3973 (-) RIO1/ZK632.3/MJ0444 family, putative",
+      "SO3974 (+) conserved domain protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719846_1",
+     "locus": "SO4321",
+     "fitness_browser_desc": "OmpA family protein",
+     "refseq_definition": "Pal-like T1SS-linked outer membrane lipoprotein",
+     "neighbourhood": [
+      "SO4318 (+) toxin secretion ATP-binding protein",
+      "SO4319 (+) HlyD family secretion protein",
+      "SO4320 (+) agglutination protein",
+      "SO4321 (+) OmpA family protein",
+      "SO4322 (+) conserved hypothetical protein",
+      "SO4323 (+) GGDEF domain protein",
+      "SO_t097 (-) tRNA-Pro"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RBFK",
+   "name": "Riboflavin kinase",
+   "equation_ids": "atp_c + ribflv_c --> adp_c + fmn_c + h_c",
+   "equation_names": "ATP + Riboflavin --> ADP + FMN + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716068_1 or NP_719080_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716068_1",
+     "locus": "SO0431",
+     "fitness_browser_desc": "HAD-superfamily hydrolase, subfamily IA, variant 3 protein family",
+     "refseq_definition": "2-deoxyglucose-6-phosphate hydrolase YniC",
+     "neighbourhood": [
+      "SO0428 (+) conserved hypothetical protein",
+      "SO0429 (+) peptidase, M13 family",
+      "SO0430 (-) conserved hypothetical protein",
+      "SO0431 (-) HAD-superfamily hydrolase, subfamily IA, variant 3 protein family",
+      "SO0432 (+) aconitate hydratase 2",
+      "SO0433 (-) regulator of sigma D",
+      "SO0435 (+) uroporphyrinogen decarboxylase"
+     ]
+    },
+    {
+     "model_gene": "NP_719080_1",
+     "locus": "SO3533",
+     "fitness_browser_desc": "riboflavin biosynthesis protein RibF",
+     "refseq_definition": "bifunctional flavokinase/FAD synthetase RibF",
+     "neighbourhood": [
+      "SO3530 (-) peptidyl-prolyl cis-trans isomerase FkbP",
+      "SO3531 (-) lipoprotein signal peptidase",
+      "SO3532 (-) isoleucyl-tRNA synthetase",
+      "SO3533 (-) riboflavin biosynthesis protein RibF",
+      "SO3534 (-) MviN protein",
+      "SO3537 (+) ribosomal protein S20",
+      "SO3538 (-) transcriptional regulator HlyU"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SERAT",
+   "name": "Serine O-acetyltransferase",
+   "equation_ids": "accoa_c + ser__L_c <=> acser_c + coa_c",
+   "equation_names": "Acetyl-CoA + L-Serine <=> O-Acetyl-L-serine + Coenzyme A",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717858_1 or YP_007001387_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717858_1",
+     "locus": "SO2262",
+     "fitness_browser_desc": "serine acetyltransferase",
+     "refseq_definition": "serine acetyltransferase CysE",
+     "neighbourhood": [
+      "SO2259 (+) lipoprotein releasing system transmembrane protein LolC, putative",
+      "SO2260 (-) extragenic suppressor protein SuhB",
+      "SO2261 (+) RNA methyltransferase, TrmH family, group 1",
+      "SO2262 (+) serine acetyltransferase",
+      "SO2263 (+) Rrf2 family protein",
+      "SO2264 (+) cysteine desulfurase",
+      "SO2265 (+) NifU family protein"
+     ]
+    },
+    {
+     "model_gene": "YP_007001387_1",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": "O-antigen biosynthesis acetyltransferase WbnJ"
+    }
+   ]
+  },
+  {
+   "reaction": "TMDS",
+   "name": "Thymidylate synthase",
+   "equation_ids": "dump_c + mlthf_c --> dhf_c + dtmp_c",
+   "equation_names": "DUMP + 5,10-Methylenetetrahydrofolate --> 7,8-Dihydrofolate + DTMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716955_1 or NP_718009_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716955_1",
+     "locus": "SO1335",
+     "fitness_browser_desc": "thymidylate synthase",
+     "refseq_definition": "thymidylate synthase ThyA",
+     "neighbourhood": [
+      "SO1332 (+) phosphoenolpyruvate-protein phosphotransferase PtsP",
+      "SO1333 (+) conserved hypothetical protein",
+      "SO1334 (+) prolipoprotein diacylglyceryl transferase",
+      "SO1335 (+) thymidylate synthase",
+      "SO1336 (+) Na+/H+ antiporter",
+      "SO1337 (+) hypothetical protein",
+      "SO1338 (+) transcriptional activator protein NhaR"
+     ]
+    },
+    {
+     "model_gene": "NP_718009_1",
+     "locus": "SO2419",
+     "fitness_browser_desc": "2,4-dienoyl-CoA reductase, putative",
+     "refseq_definition": "NADP-dependent 24-dienoyl-CoA reductase FadH",
+     "neighbourhood": [
+      "SO2416 (+) ribonucleoside-diphosphate reductase, beta subunit",
+      "SO2417 (+) iron-sulfur cluster-binding protein",
+      "SO2418 (+) ISSod5, transposase",
+      "SO2419 (-) 2,4-dienoyl-CoA reductase, putative",
+      "SO2420 (+) signal peptide peptidase SppA, 67K type",
+      "SO2421 (+) L-asparaginase I",
+      "SO2422 (-) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMPK",
+   "name": "Thiamine-phosphate kinase",
+   "equation_ids": "atp_c + thmmp_c --> adp_c + thmpp_c",
+   "equation_names": "ATP + Thiamin monophosphate --> ADP + Thiamine diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717147_1 or NP_719013_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717147_1",
+     "locus": "SO1531",
+     "fitness_browser_desc": "thiamine biosynthesis protein ThiI",
+     "refseq_definition": "thiazole biosynthesis/tRNA modification proteinThiI",
+     "neighbourhood": [
+      "SO_1527 (-) ",
+      "SO1529 (+) chemotaxis motA protein",
+      "SO1530 (+) sodium-driven polar flagellar protein PomB",
+      "SO1531 (+) thiamine biosynthesis protein ThiI",
+      "SO1532 (-) hypothetical protein",
+      "SO1533 (+) glycine cleavage system transcriptional activator, putative",
+      "SO1534 (+) conserved hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_719013_1",
+     "locus": "SO3464",
+     "fitness_browser_desc": "thiamin-monophosphate kinase",
+     "refseq_definition": "thiamine-phosphate kinase ThiL",
+     "neighbourhood": [
+      "SO3461 (+) transporter, putative",
+      "SO3462 (+) DNA repair protein RecN",
+      "SO3463 (-) phosphatidylglycerophosphatase A",
+      "SO3464 (-) thiamin-monophosphate kinase",
+      "SO3465 (-) N utilization substance protein B",
+      "SO3466 (-) riboflavin synthase, beta subunit",
+      "SO3467 (-) 3,4-dihydroxy-2-butanone 4-phosphate synthase/GTP cyclohydrolase II, putative"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDCPDP",
+   "name": "Undecaprenyl-diphosphatase",
+   "equation_ids": "h2o_c + udcpdp_c --> h_c + pi_c + udcpp_c",
+   "equation_names": "H2O + Undecaprenyl diphosphate --> H+ + Phosphate + Undecaprenyl phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_716915_1 or NP_719799_1 or NP_719859_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_716915_1",
+     "locus": "SO1293",
+     "fitness_browser_desc": "undecaprenol kinase, putative",
+     "refseq_definition": "undecaprenol diphosphatase UppP",
+     "neighbourhood": [
+      "SO1290 (-) conserved hypothetical protein TIGR00023",
+      "SO1291 (+) dihydroneopterin aldolase",
+      "SO1292 (+) 2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase",
+      "SO1293 (+) undecaprenol kinase, putative",
+      "SO1294 (+) ribosomal RNA large subunit methyltransferase A, putative",
+      "SO1295 (-) major outer membrane lipoprotein, putative",
+      "SO_1296 (-) "
+     ]
+    },
+    {
+     "model_gene": "NP_719799_1",
+     "locus": "SO4274",
+     "fitness_browser_desc": "undecaprenol kinase, putative",
+     "refseq_definition": "undecaprenol diphosphatase UppP",
+     "neighbourhood": [
+      "SO4275.3 (-) hypothetical prophage Sf6-like integrase",
+      "SO4275.4 (+) hypothetical transposase",
+      "SO4273 (-) hypothetical protein",
+      "SO4274 (-) undecaprenol kinase, putative",
+      "SO4275 (+) hypothetical protein",
+      "SO4276 (+) hypothetical protein",
+      "SO4277 (-) ISSod1, transposase OrfB"
+     ]
+    },
+    {
+     "model_gene": "NP_719859_1",
+     "locus": "SO4335",
+     "fitness_browser_desc": "phosphatidylglycerophosphatase B, putative",
+     "refseq_definition": "phosphatidylglycerophosphatase B PgpB",
+     "neighbourhood": [
+      "SO4332 (-) conserved hypothetical protein",
+      "SO4333 (+) hypothetical protein",
+      "SO4334 (+) inner membrane protein, putative",
+      "SO4335 (+) phosphatidylglycerophosphatase B, putative",
+      "SO4337 (+) transcriptional regulator, AsnC family",
+      "SO4339 (+) sodium-dependent transporter, putative",
+      "SO4340 (-) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_717242_1 or NP_717993_1",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": [
+    {
+     "model_gene": "NP_717242_1",
+     "locus": "SO1631",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "uridylate kinase PyrH",
+     "neighbourhood": [
+      "SO1627 (-) methionine aminopeptidase, type I",
+      "SO1629 (+) ribosomal protein S2",
+      "SO1630 (+) translation elongation factor Ts",
+      "SO1631 (+) uridylate kinase",
+      "SO1632 (+) ribosome recycling factor",
+      "SO1633 (+) undecaprenyl diphosphate synthase",
+      "SO1634 (+) phosphatidate cytidylyltransferase"
+     ]
+    },
+    {
+     "model_gene": "NP_717993_1",
+     "locus": "SO2403",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "cytidylate kinase Cmk",
+     "neighbourhood": [
+      "SO2400 (-) conserved hypothetical protein",
+      "SO2401 (-) integration host factor, beta subunit",
+      "SO2402 (-) ribosomal protein S1",
+      "SO2403 (-) cytidylate kinase",
+      "SO2404 (-) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "SO2406 (+) aspartate aminotransferase",
+      "SO2407 (+) conserved hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "r2465_1",
+   "name": "Cation Diffusion Facilitator (Cdf) Tcdb:2.A.4.2.3",
+   "equation_ids": "zn2_c <-- zn2_e",
+   "equation_names": "Zinc <-- Zinc",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 9,
+   "n_growth_conditions": 9,
+   "genes": []
+  }
+ ]
+}

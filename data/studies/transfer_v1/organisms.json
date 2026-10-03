@@ -1,0 +1,13 @@
+{
+  "note": "Per-organism inputs for transfer study v1. Development organisms use the archived Fitness Browser downloads and GenPept maps; independent-panel organisms are added only after the method freeze.",
+  "organisms": {
+    "Btheta": {"role": "development", "fb_dir": "data/fitness_browser/Btheta", "embl_model": "models/embl_pinned/Btheta.xml.gz",
+               "genpept_map": "data/genpept/Btheta_genpept_map.tsv", "reference": {"medium": "Varel_Bryant_medium", "carbon_exchange": "EX_glc__D_e"}},
+    "Putida": {"role": "development", "fb_dir": "data/fitness_browser/Putida", "embl_model": "models/embl_pinned/Putida.xml.gz",
+               "genpept_map": "data/genpept/Putida_genpept_map.tsv", "reference": {"medium": "MOPS minimal media_noCarbon", "carbon_exchange": "EX_glc__D_e"}},
+    "MR1": {"role": "development", "fb_dir": "data/fitness_browser/MR1", "embl_model": "models/embl_pinned/MR1.xml.gz",
+            "genpept_map": "data/genpept/MR1_genpept_map.tsv", "reference": {"medium": "ShewMM_noCarbon", "carbon_exchange": "EX_lac__L_e"}},
+    "Smeli": {"role": "development", "fb_dir": "data/fitness_browser/Smeli", "embl_model": "models/embl_pinned/Smeli.xml.gz",
+              "genpept_map": "data/genpept/Smeli_genpept_map.tsv", "reference": {"medium": "RCH2_defined_noCarbon", "carbon_exchange": "EX_glc__D_e"}}
+  }
+}

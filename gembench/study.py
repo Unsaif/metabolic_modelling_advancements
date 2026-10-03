@@ -89,8 +89,9 @@ def _normalize_plan(plan):
     if not isinstance(study_id, str) or not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9_.-]{0,127}", study_id):
         raise ValueError("study_id must be a 1-128 character identifier beginning with a letter or digit")
     role = normalized.get("evaluation_role")
-    if role not in {"development", "prospective_external"}:
-        raise ValueError("evaluation_role must be development or documented prospective_external")
+    if role not in {"development", "prospective_external", "prospective_self_custodied"}:
+        raise ValueError("evaluation_role must be development, documented prospective_external or "
+                         "documented prospective_self_custodied")
     development = _names(normalized.get("development_organisms"), "development_organisms")
     if set(development) != set(DEVELOPMENT_ORGANISMS):
         raise ValueError(f"development_organisms must declare the known exposed set: {list(DEVELOPMENT_ORGANISMS)}")
@@ -118,6 +119,27 @@ def _normalize_plan(plan):
         if len(set(evidence)) != len(evidence) or not set(evidence) <= set(paths):
             raise ValueError("Exposure evidence paths must be unique and included in paths")
         exposure["evidence_paths"] = sorted(evidence)
+    if role == "prospective_self_custodied":
+        # The same team (or model family) designs the method and runs the evaluation. Separation rests on recorded
+        # time order only, so the declaration must say who holds the outcomes and how access is recorded.
+        exposure = normalized.get("candidate_exposure")
+        if not isinstance(exposure, dict):
+            raise ValueError("prospective_self_custodied requires documented candidate_exposure")
+        for field in ("custody", "uninspected_evidence"):
+            if not isinstance(exposure.get(field), str) or not exposure[field].strip():
+                raise ValueError(f"candidate_exposure.{field} must document the self-custodied evaluation")
+        evidence = exposure.get("evidence_paths")
+        if not isinstance(evidence, list) or not evidence:
+            raise ValueError("candidate_exposure.evidence_paths must name frozen documentation files")
+        evidence = [_relative_path(path) for path in evidence]
+        if len(set(evidence)) != len(evidence) or not set(evidence) <= set(paths):
+            raise ValueError("Exposure evidence paths must be unique and included in paths")
+        exposure["evidence_paths"] = sorted(evidence)
+        evaluation = _names(normalized.get("evaluation_organisms"), "evaluation_organisms")
+        if not evaluation:
+            raise ValueError("prospective_self_custodied requires at least one evaluation organism")
+        if set(evaluation) & (set(development) | set(quarantined)):
+            raise ValueError("Evaluation organisms cannot be development or quarantined organisms")
     return normalized
 
 

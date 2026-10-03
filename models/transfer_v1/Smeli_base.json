@@ -1,0 +1,26 @@
+{
+ "org": "Smeli",
+ "role": "development",
+ "draft": "models/embl_pinned/Smeli.xml.gz",
+ "draft_sha256": "9881183f0104a2966fa81e80e471c3ab26c948ac2206911e9363da0ec2341362",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "RCH2_defined_noCarbon",
+  "carbon_exchange": "EX_glc__D_e"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "DXPS",
+   "reaction": "g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c",
+   "name": "1-deoxy-D-xylulose 5-phosphate synthase"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.21292960010995632,
+ "base_sha256": "f2709520e35ba1dd1991b80938dfbe7c34688ac6e95178f1c314c32ab609b671",
+ "created": "2026-10-03T07:54:59Z"
+}

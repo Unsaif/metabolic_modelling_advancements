@@ -1,0 +1,283 @@
+{
+  "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism MR1",
+  "created": "2026-10-03T07:57:18Z",
+  "dataset_provenance": {
+    "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'MR1'",
+    "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
+    "download": "5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)",
+    "n_genes_with_fitness": "3782",
+    "n_experiments": "176"
+  },
+  "model": {
+    "model_id": "MR1_transfer_v1_base",
+    "file": "models/transfer_v1/MR1_base.xml.gz",
+    "source": "transfer_v1 base (models/embl_pinned/MR1.xml.gz)",
+    "version_note": "",
+    "n_reactions": 1978,
+    "n_metabolites": 1363,
+    "n_genes": 903,
+    "sha256": "405850d4656d42f4c367ec1a8a247b4bdea549505974389bc0478a41eec5a69d"
+  },
+  "protocol": {
+    "study": "transfer_v1",
+    "arm": "UQ",
+    "arm_definition": {
+      "transforms": [
+        "universal_reaction_patches",
+        "universal_model_additions",
+        "add_atp_synthase_if_annotated",
+        "remove_menaquinol_if_no_pathway"
+      ]
+    },
+    "applied": [
+      {
+        "transform": "universal_reaction_patches",
+        "records": [
+          {
+            "reaction": "CBPS",
+            "gpr_before": "NP_716766_1 or NP_716767_1 or NP_716921_1 or (NP_716766_1 and NP_716767_1)",
+            "gpr_after": "NP_716766_1 and NP_716767_1"
+          }
+        ]
+      },
+      {
+        "transform": "universal_model_additions",
+        "records": [
+          {
+            "reaction": "GCALDt",
+            "added": "gcald_e <=> gcald_c",
+            "gpr": "",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ]
+          },
+          {
+            "reaction": "EX_gcald_e",
+            "added": "gcald_e --> ",
+            "gpr": "",
+            "bounds": [
+              0.0,
+              1000.0
+            ]
+          }
+        ]
+      },
+      {
+        "transform": "add_atp_synthase_if_annotated",
+        "records": [
+          {
+            "reaction": "ATPS4rpp",
+            "added": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+            "gpr": "SO4746 and SO4747 and SO4748 and SO4749 and SO4750 and SO4751 and SO4752 and SO4753",
+            "subunit_types": [
+              "a",
+              "alpha",
+              "b",
+              "beta",
+              "c",
+              "delta",
+              "epsilon",
+              "gamma"
+            ],
+            "clusters": [
+              [
+                "SO4746",
+                "SO4747",
+                "SO4748",
+                "SO4749",
+                "SO4750",
+                "SO4751",
+                "SO4752",
+                "SO4753"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "transform": "remove_menaquinol_if_no_pathway",
+        "records": [
+          {
+            "reaction": "Growth",
+            "kept_menaquinone": true,
+            "evidence_steps": [
+              "menA_DHNA_prenyltransferase",
+              "menB_DHNA_CoA_synthase",
+              "menE_OSB_CoA_ligase",
+              "menF_isochorismate_synthase_for_menaquinone",
+              "menH_SHCHC_synthase"
+            ]
+          }
+        ]
+      }
+    ],
+    "params": {
+      "carbon_uptake": -10.0,
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "drop_rich_medium_essentials": false,
+      "rich_medium_uptake": -1000.0,
+      "knockout_genes": [],
+      "processes": 2,
+      "solver": "glpk",
+      "max_conditions": null,
+      "complete_medium_transport": true,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
+    },
+    "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
+    "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+    "gene_mapping": {
+      "method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed",
+      "genpept_table": "data/genpept/MR1_genpept_map.tsv"
+    },
+    "role": "development",
+    "base_model": {
+      "org": "MR1",
+      "role": "development",
+      "draft": "models/embl_pinned/MR1.xml.gz",
+      "draft_sha256": "591d8e5b5fdd1124a4e78a947b0ad9907398c9a64f1c4028c6dee92452f1220e",
+      "universe": "external/carveme/universe_bacteria.xml.gz",
+      "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+      "reference": {
+        "medium": "ShewMM_noCarbon",
+        "carbon_exchange": "EX_lac__L_e"
+      },
+      "min_growth": 0.05,
+      "status": "Optimal",
+      "added_reactions": [
+        {
+          "id": "L_LACD2",
+          "reaction": "lac__L_c + q8_c --> pyr_c + q8h2_c",
+          "name": "L-Lactate dehydrogenase (ubiquinone)"
+        },
+        {
+          "id": "ORNTA",
+          "reaction": "akg_c + orn_c <=> glu5sa_c + glu__L_c",
+          "name": "Ornithine transaminase"
+        },
+        {
+          "id": "r2465_1",
+          "reaction": "zn2_c <-- zn2_e",
+          "name": "Cation Diffusion Facilitator (Cdf) Tcdb:2.A.4.2.3"
+        }
+      ],
+      "rejected_energy_cycle_sets": [],
+      "growth_before": 0.0,
+      "growth_after": 0.0967000211899488,
+      "base_sha256": "405850d4656d42f4c367ec1a8a247b4bdea549505974389bc0478a41eec5a69d",
+      "created": "2026-10-03T07:54:47Z"
+    }
+  },
+  "leakage": {
+    "ground_truth_used_in_model_curation": "yes: development organism; its phenotypes guided the correction rules under test (development cycles 1-7 and this study's rule selection); scores are retrospective",
+    "ground_truth_public_since": "Fitness Browser releases include Price et al. 2018; exact dates differ by experiment",
+    "frontier_model_training_exposure": "unknown; public accessibility does not establish inclusion in a particular model's training data",
+    "held_out_recommendation": "see docs/studies/transfer-method-v1.md and the panel selection record",
+    "notes": [
+      "Fitness < -2 is an operational importance threshold in a pooled mutant assay, not proof of lethality.",
+      "Compare arms on matched genes, conditions and finite observations; report wild-type growth coverage separately."
+    ]
+  },
+  "results": {
+    "condition_level": {
+      "n_conditions_mapped": 12,
+      "n_conditions_wt_grows": 9,
+      "conditions_with_absent_exchange": 1
+    },
+    "gene_level_conditions_where_wt_grows": {
+      "n_genes": 713,
+      "n_conditions": 9,
+      "n_gene_condition_pairs": 6417,
+      "n_missing_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "aucpr_bernstein": {
+        "point": 0.450640274164021,
+        "ci95": [
+          0.3493271215430855,
+          0.5546873834315055
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.47936849386190283,
+        "ci95": [
+          0.40742159538506156,
+          0.5545211845864843
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.700239829610448,
+        "ci95": [
+          0.6664596401019427,
+          0.7364277020267836
+        ]
+      },
+      "mcc": {
+        "point": 0.4809591240404217,
+        "ci95": [
+          0.40777528255437206,
+          0.5501446951895358
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.6740436640771384,
+        "ci95": [
+          0.6371822207477474,
+          0.7095476619383672
+        ]
+      },
+      "accuracy": {
+        "point": 0.8778245285959171,
+        "ci95": [
+          0.8582632071061244,
+          0.8974676640174536
+        ]
+      },
+      "confusion": {
+        "tp": 5240,
+        "tn": 393,
+        "fp": 672,
+        "fn": 112
+      }
+    },
+    "gene_map": {
+      "model_genes": 903,
+      "mapped": 899,
+      "matched_by_version": 894,
+      "matched_by_accession_only": 0,
+      "no_genpept_record": 1,
+      "locus_tag_not_in_browser": 3,
+      "browser_genes_hit": 899,
+      "mapped_with_fitness_data": 713
+    },
+    "counts": {
+      "model_genes": 903,
+      "model_genes_mapped": 899,
+      "genes_with_fitness": 713,
+      "genes_after_adjustment": 713,
+      "conditions_total": 16,
+      "conditions_mapped": 12,
+      "conditions_wt_grows": 9,
+      "medium_completion_exchanges_added": 7
+    },
+    "timings_s": {
+      "rich_medium_essentials_s": 1.1920928955078125e-06,
+      "knockout_simulation_s": 27.679209232330322,
+      "total_s": 28.065638542175293
+    }
+  },
+  "software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "warnings": []
+}

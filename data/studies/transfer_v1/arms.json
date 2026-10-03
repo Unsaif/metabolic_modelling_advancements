@@ -1,0 +1,80 @@
+{
+ "note": "Development arms (cumulative transforms on the gap-filled base model). U' = UNQ and M (UNQ + blind adjudication) are the primary arms declared in docs/studies/transfer-method-v1.md; M_R6 and M_R1R2 split M by decision kind (development attribution).",
+ "arms": {
+  "B0": {
+   "transforms": []
+  },
+  "U": {
+   "transforms": [
+    "universal_reaction_patches",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated"
+   ]
+  },
+  "UN": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated"
+   ]
+  },
+  "UQ": {
+   "transforms": [
+    "universal_reaction_patches",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway"
+   ]
+  },
+  "UNQ": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway"
+   ]
+  },
+  "Uonly_rxn": {
+   "transforms": [
+    "universal_reaction_patches"
+   ]
+  },
+  "Uonly_atp": {
+   "transforms": [
+    "add_atp_synthase_if_annotated"
+   ]
+  },
+  "M": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway",
+    "decisions:data/studies/transfer_v1/decisions/{org}.json"
+   ]
+  },
+  "M_R6": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway",
+    "decisions:data/studies/transfer_v1/decisions/{org}.json#R6"
+   ]
+  },
+  "M_R1R2": {
+   "transforms": [
+    "universal_reaction_patches",
+    "normalize_conjunction_rules",
+    "universal_model_additions",
+    "add_atp_synthase_if_annotated",
+    "remove_menaquinol_if_no_pathway",
+    "decisions:data/studies/transfer_v1/decisions/{org}.json#R1,R2,R2+R1"
+   ]
+  }
+ }
+}

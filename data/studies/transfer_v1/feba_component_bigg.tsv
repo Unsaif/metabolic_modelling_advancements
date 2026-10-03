@@ -1,0 +1,78 @@
+# FEBA medium components (controlled vocabulary of bitbucket.org/berkeleylab/feba metadata/media and mixes) -> BiGG metabolite ids.
+# Columns: bigg_ids = the compound's own metabolite(s); counter_ions = ions it brings (never trace-limited). Classes (gembench/feba_media.py): inorganic | trace_organic | organic | ignore | undefined.
+# inorganic: ions only (water of hydration dropped; elements without a CarveMe-universe metabolite, e.g. boron, aluminium, are dropped).
+# trace_organic: vitamins, cofactors, hemin, nucleobases and reductants (limited to trace uptake). organic: other defined organics (unlimited).
+# ignore: buffers and chelators (their listed ids are counter-ions only). undefined: complex ingredients (medium not mapped).
+# Section 1 (2026-10-03, before the method freeze): every component of the development media (data/reference/feba_media_extract.tsv).
+component	class	bigg_ids	counter_ions	note
+Magnesium sulfate	inorganic	mg2;so4		
+Magnesium Sulfate Heptahydrate	inorganic	mg2;so4		
+Calcium chloride	inorganic	ca2;cl		
+Calcium Chloride Dihydrate	inorganic	ca2;cl		
+Sodium phosphate dibasic heptahydrate	inorganic	na1;pi		
+Sodium phosphate monobasic monohydrate	inorganic	na1;pi		
+Potassium phosphate monobasic	inorganic	k;pi		
+Potassium phosphate dibasic	inorganic	k;pi		
+Sodium Chloride	inorganic	na1;cl		
+Potassium Chloride	inorganic	k;cl		
+Ammonium chloride	inorganic	nh4;cl		
+Iron (II) sulfate heptahydrate	inorganic	fe2;so4		
+Aluminum potassium sulfate dodecahydrate	inorganic	k;so4		aluminium has no universe metabolite
+Magnesium chloride hexahydrate	inorganic	mg2;cl		
+Ammonium heptamolybdate tetrahydrate	inorganic	nh4;mobd		
+Boric Acid	inorganic			boron has no universe metabolite
+Cobalt chloride hexahydrate	inorganic	cobalt2;cl		
+Copper (II) sulfate pentahydrate	inorganic	cu2;so4		
+Manganese (II) chloride tetrahydrate	inorganic	mn2;cl		
+Manganese (II) sulfate monohydrate	inorganic	mn2;so4		
+Zinc sulfate heptahydrate	inorganic	zn2;so4		
+Nickel (II) chloride hexahydrate	inorganic	ni2;cl		
+Sodium Molybdate Dihydrate	inorganic	na1;mobd		
+Sodium selenite pentahydrate	inorganic	na1;slnt		
+Sodium sulfate	inorganic	na1;so4		
+Sodium bicarbonate	inorganic	na1;hco3		
+Potassium hydroxide	inorganic	k		
+3-(N-morpholino)propanesulfonic acid	ignore			MOPS buffer
+Tricine	ignore			buffer
+PIPES sesquisodium salt	ignore		na1	PIPES buffer; sodium counter-ion
+Nitrilotriacetic acid	ignore			chelator
+Adenine hydrochloride hydrate	trace_organic	ade	cl	nucleobase
+Cytosine	trace_organic	csn		nucleobase
+Uracil	trace_organic	ura		nucleobase
+Guanine	trace_organic	gua		nucleobase
+L-Alanine	organic	ala__L		
+L-Arginine	organic	arg__L		
+L-Asparagine	organic	asn__L		
+L-Aspartic acid potassium salt	organic	asp__L	k	
+L-Glutamic acid monopotassium salt monohydrate	organic	glu__L	k	
+L-Glutamine	organic	gln__L		
+Glycine	organic	gly		
+L-Histidine	organic	his__L		
+L-Isoleucine	organic	ile__L		
+L-Proline	organic	pro__L		
+L-Serine	organic	ser__L		
+L-Threonine	organic	thr__L		
+L-Tryptophan	organic	trp__L		
+L-Valine	organic	val__L		
+L-Leucine	organic	leu__L		
+L-Lysine	organic	lys__L		
+L-Methionine	organic	met__L		
+L-Phenylalanine	organic	phe__L		
+L-tyrosine	organic	tyr__L		
+L-Cysteine hydrochloride monohydrate	trace_organic	cys__L	cl	reductant
+L-Cysteine	trace_organic	cys__L		reductant
+Thiamine HCl	trace_organic	thm	cl	vitamin
+calcium pantothenate	trace_organic	pnto__R	ca2	vitamin
+4-Aminobenzoic acid	trace_organic	4abz		vitamin
+4-Hydroxybenzoic Acid	trace_organic	4hbz		cofactor precursor
+2,3-dihydroxybenzoic acid	trace_organic	23dhb		siderophore precursor
+pyridoxine HCl	trace_organic	pydxn	cl	vitamin
+Lipoic acid	trace_organic	lipoate		cofactor
+Nicotinic Acid	trace_organic	nac		vitamin
+Riboflavin	trace_organic	ribflv		vitamin
+biotin	trace_organic	btn		vitamin
+Folic Acid	trace_organic	fol		vitamin
+Cyanocobalamin	trace_organic	cbl1;adocbl		vitamin B12 (represented by cob(I)alamin and adenosylcobalamin as in the development table)
+Hemin	trace_organic	pheme		cofactor
+Tryptone	undefined			
+Yeast Extract	undefined			

@@ -1,0 +1,417 @@
+{
+  "benchmark": "carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism MR1",
+  "created": "2026-10-03T07:56:43Z",
+  "dataset_provenance": {
+    "dataset": "Fitness Browser RB-TnSeq gene fitness, orgId 'MR1'",
+    "primary_source": "Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov",
+    "download": "5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)",
+    "n_genes_with_fitness": "3782",
+    "n_experiments": "176"
+  },
+  "model": {
+    "model_id": "MR1_transfer_v1_base",
+    "file": "models/transfer_v1/MR1_base.xml.gz",
+    "source": "transfer_v1 base (models/embl_pinned/MR1.xml.gz)",
+    "version_note": "",
+    "n_reactions": 1978,
+    "n_metabolites": 1363,
+    "n_genes": 903,
+    "sha256": "405850d4656d42f4c367ec1a8a247b4bdea549505974389bc0478a41eec5a69d"
+  },
+  "protocol": {
+    "study": "transfer_v1",
+    "arm": "UN",
+    "arm_definition": {
+      "transforms": [
+        "universal_reaction_patches",
+        "normalize_conjunction_rules",
+        "universal_model_additions",
+        "add_atp_synthase_if_annotated"
+      ]
+    },
+    "applied": [
+      {
+        "transform": "universal_reaction_patches",
+        "records": [
+          {
+            "reaction": "CBPS",
+            "gpr_before": "NP_716766_1 or NP_716767_1 or NP_716921_1 or (NP_716766_1 and NP_716767_1)",
+            "gpr_after": "NP_716766_1 and NP_716767_1"
+          }
+        ]
+      },
+      {
+        "transform": "normalize_conjunction_rules",
+        "records": [
+          {
+            "reaction": "ACOATA",
+            "gpr_before": "NP_717352_1 or NP_718359_1 or NP_718425_1 or NP_718636_2 or NP_719904_1 or NP_719907_1 or (NP_718356_1 and NP_718359_1)",
+            "gpr_after": "NP_717352_1 or NP_718425_1 or NP_718636_2 or NP_719904_1 or NP_719907_1 or (NP_718356_1 and NP_718359_1)"
+          },
+          {
+            "reaction": "ALATA_D2",
+            "gpr_before": "NP_718892_1 or NP_719020_1 or (NP_718892_1 and NP_719020_1)",
+            "gpr_after": "NP_718892_1 and NP_719020_1"
+          },
+          {
+            "reaction": "ALATA_L2",
+            "gpr_before": "NP_718892_1 or NP_719020_1 or (NP_718892_1 and NP_719020_1)",
+            "gpr_after": "NP_718892_1 and NP_719020_1"
+          },
+          {
+            "reaction": "FRUpts",
+            "gpr_before": "NP_719493_1 or (NP_716952_1 and NP_719493_1 and NP_719495_1)",
+            "gpr_after": "NP_716952_1 and NP_719493_1 and NP_719495_1"
+          },
+          {
+            "reaction": "G3PAT120",
+            "gpr_before": "NP_720118_1 or (NP_718356_1 and NP_720118_1)",
+            "gpr_after": "NP_718356_1 and NP_720118_1"
+          },
+          {
+            "reaction": "G3PAT140",
+            "gpr_before": "NP_720118_1 or (NP_718356_1 and NP_720118_1)",
+            "gpr_after": "NP_718356_1 and NP_720118_1"
+          },
+          {
+            "reaction": "G3PAT141",
+            "gpr_before": "NP_720118_1 or (NP_718356_1 and NP_720118_1)",
+            "gpr_after": "NP_718356_1 and NP_720118_1"
+          },
+          {
+            "reaction": "G3PAT160",
+            "gpr_before": "NP_719343_1 or NP_720118_1 or (NP_718356_1 and NP_720118_1)",
+            "gpr_after": "NP_719343_1 or (NP_718356_1 and NP_720118_1)"
+          },
+          {
+            "reaction": "G3PAT161",
+            "gpr_before": "NP_719343_1 or NP_720118_1 or (NP_718356_1 and NP_720118_1)",
+            "gpr_after": "NP_719343_1 or (NP_718356_1 and NP_720118_1)"
+          },
+          {
+            "reaction": "G3PAT180",
+            "gpr_before": "NP_719343_1 or NP_720118_1 or (NP_718356_1 and NP_720118_1)",
+            "gpr_after": "NP_719343_1 or (NP_718356_1 and NP_720118_1)"
+          },
+          {
+            "reaction": "G3PAT181",
+            "gpr_before": "NP_719343_1 or NP_720118_1 or (NP_718356_1 and NP_720118_1)",
+            "gpr_after": "NP_719343_1 or (NP_718356_1 and NP_720118_1)"
+          },
+          {
+            "reaction": "INDOLEt2pp",
+            "gpr_before": "NP_720209_1 or (NP_720208_1 and NP_720209_1) or (NP_719435_1 and NP_720208_1 and NP_720209_1)",
+            "gpr_after": "(NP_720208_1 and NP_720209_1) or (NP_719435_1 and NP_720208_1 and NP_720209_1)"
+          },
+          {
+            "reaction": "Kt2pp",
+            "gpr_before": "NP_715671_1 or NP_720426_1 or (NP_715666_1 and NP_715671_1) or (NP_715671_1 and NP_717410_1) or (NP_715666_1 and NP_715671_1 and NP_717410_1)",
+            "gpr_after": "NP_720426_1 or (NP_715666_1 and NP_715671_1) or (NP_715671_1 and NP_717410_1) or (NP_715666_1 and NP_715671_1 and NP_717410_1)"
+          },
+          {
+            "reaction": "Kt2r",
+            "gpr_before": "NP_715666_1 or NP_715670_1 or NP_717258_1 or NP_719806_1 or (NP_715699_1 and NP_719806_1)",
+            "gpr_after": "NP_715666_1 or NP_715670_1 or NP_717258_1 or (NP_715699_1 and NP_719806_1)"
+          },
+          {
+            "reaction": "MCOATA",
+            "gpr_before": "NP_718358_1 or (NP_718356_1 and NP_718358_1)",
+            "gpr_after": "NP_718356_1 and NP_718358_1"
+          },
+          {
+            "reaction": "MPTG",
+            "gpr_before": "NP_715709_1 or NP_715920_1 or NP_716266_1 or (NP_715709_1 and NP_719081_1) or (NP_715920_1 and NP_719081_1) or (NP_716266_1 and NP_719081_1)",
+            "gpr_after": "(NP_715709_1 and NP_719081_1) or (NP_715920_1 and NP_719081_1) or (NP_716266_1 and NP_719081_1)"
+          },
+          {
+            "reaction": "MPTG2",
+            "gpr_before": "NP_715709_1 or NP_715920_1 or NP_716266_1 or NP_719274_1 or (NP_715709_1 and NP_719081_1) or (NP_715920_1 and NP_719081_1) or (NP_716266_1 and NP_719081_1)",
+            "gpr_after": "NP_719274_1 or (NP_715709_1 and NP_719081_1) or (NP_715920_1 and NP_719081_1) or (NP_716266_1 and NP_719081_1)"
+          },
+          {
+            "reaction": "OBTFL",
+            "gpr_before": "NP_718482_1 or (NP_718482_1 and NP_718483_1)",
+            "gpr_after": "NP_718482_1 and NP_718483_1"
+          },
+          {
+            "reaction": "OCOAT1",
+            "gpr_before": "NP_717499_1 or NP_717500_1 or (NP_717499_1 and NP_717500_1)",
+            "gpr_after": "NP_717499_1 and NP_717500_1"
+          },
+          {
+            "reaction": "PAPSR",
+            "gpr_before": "NP_716044_1 or NP_719275_2 or (NP_716044_1 and NP_719275_2) or (NP_716089_1 and NP_719275_2)",
+            "gpr_after": "(NP_716044_1 and NP_719275_2) or (NP_716089_1 and NP_719275_2)"
+          },
+          {
+            "reaction": "PAPSR2",
+            "gpr_before": "NP_718329_1 or NP_718452_2 or NP_719275_2 or (NP_718329_1 and NP_719275_2) or (NP_718452_2 and NP_719275_2)",
+            "gpr_after": "(NP_718329_1 and NP_719275_2) or (NP_718452_2 and NP_719275_2)"
+          },
+          {
+            "reaction": "PFL",
+            "gpr_before": "NP_718482_1 or (NP_718482_1 and NP_718483_1)",
+            "gpr_after": "NP_718482_1 and NP_718483_1"
+          },
+          {
+            "reaction": "PIabc",
+            "gpr_before": "NP_719814_1 or (NP_719814_1 and NP_719815_2 and NP_719816_2 and NP_719817_1)",
+            "gpr_after": "NP_719814_1 and NP_719815_2 and NP_719816_2 and NP_719817_1"
+          },
+          {
+            "reaction": "RNDR1",
+            "gpr_before": "NP_716044_1 or (NP_718005_1 and NP_718006_1) or (NP_716044_1 and NP_718005_1 and NP_718006_1) or (NP_716089_1 and NP_718005_1 and NP_718006_1)",
+            "gpr_after": "(NP_718005_1 and NP_718006_1) or (NP_716044_1 and NP_718005_1 and NP_718006_1) or (NP_716089_1 and NP_718005_1 and NP_718006_1)"
+          },
+          {
+            "reaction": "RNDR2",
+            "gpr_before": "NP_716044_1 or (NP_718005_1 and NP_718006_1) or (NP_716044_1 and NP_718005_1 and NP_718006_1) or (NP_716089_1 and NP_718005_1 and NP_718006_1)",
+            "gpr_after": "(NP_718005_1 and NP_718006_1) or (NP_716044_1 and NP_718005_1 and NP_718006_1) or (NP_716089_1 and NP_718005_1 and NP_718006_1)"
+          },
+          {
+            "reaction": "RNDR3",
+            "gpr_before": "NP_716044_1 or (NP_718005_1 and NP_718006_1) or (NP_716044_1 and NP_718005_1 and NP_718006_1) or (NP_716089_1 and NP_718005_1 and NP_718006_1)",
+            "gpr_after": "(NP_718005_1 and NP_718006_1) or (NP_716044_1 and NP_718005_1 and NP_718006_1) or (NP_716089_1 and NP_718005_1 and NP_718006_1)"
+          },
+          {
+            "reaction": "RNDR4",
+            "gpr_before": "NP_716044_1 or (NP_718005_1 and NP_718006_1) or (NP_716044_1 and NP_718005_1 and NP_718006_1) or (NP_716089_1 and NP_718005_1 and NP_718006_1)",
+            "gpr_after": "(NP_718005_1 and NP_718006_1) or (NP_716044_1 and NP_718005_1 and NP_718006_1) or (NP_716089_1 and NP_718005_1 and NP_718006_1)"
+          },
+          {
+            "reaction": "TRDR",
+            "gpr_before": "NP_716089_1 or NP_716585_1 or NP_717899_1 or (NP_716044_1 and NP_717899_1) or (NP_716089_1 and NP_717899_1)",
+            "gpr_after": "NP_716585_1 or (NP_716044_1 and NP_717899_1) or (NP_716089_1 and NP_717899_1)"
+          },
+          {
+            "reaction": "UAGAAT",
+            "gpr_before": "NP_717252_1 or (NP_717252_1 and NP_718356_1)",
+            "gpr_after": "NP_717252_1 and NP_718356_1"
+          }
+        ]
+      },
+      {
+        "transform": "universal_model_additions",
+        "records": [
+          {
+            "reaction": "GCALDt",
+            "added": "gcald_e <=> gcald_c",
+            "gpr": "",
+            "bounds": [
+              -1000.0,
+              1000.0
+            ]
+          },
+          {
+            "reaction": "EX_gcald_e",
+            "added": "gcald_e --> ",
+            "gpr": "",
+            "bounds": [
+              0.0,
+              1000.0
+            ]
+          }
+        ]
+      },
+      {
+        "transform": "add_atp_synthase_if_annotated",
+        "records": [
+          {
+            "reaction": "ATPS4rpp",
+            "added": "adp_c + 4.0 h_p + pi_c <=> atp_c + h2o_c + 3.0 h_c",
+            "gpr": "SO4746 and SO4747 and SO4748 and SO4749 and SO4750 and SO4751 and SO4752 and SO4753",
+            "subunit_types": [
+              "a",
+              "alpha",
+              "b",
+              "beta",
+              "c",
+              "delta",
+              "epsilon",
+              "gamma"
+            ],
+            "clusters": [
+              [
+                "SO4746",
+                "SO4747",
+                "SO4748",
+                "SO4749",
+                "SO4750",
+                "SO4751",
+                "SO4752",
+                "SO4753"
+              ]
+            ]
+          }
+        ]
+      }
+    ],
+    "params": {
+      "carbon_uptake": -10.0,
+      "growth_threshold": 0.001,
+      "fitness_threshold": -2.0,
+      "drop_rich_medium_essentials": false,
+      "rich_medium_uptake": -1000.0,
+      "knockout_genes": [],
+      "processes": 2,
+      "solver": "glpk",
+      "max_conditions": null,
+      "complete_medium_transport": true,
+      "medium_completion_exclude": [
+        "pnto__R",
+        "fol",
+        "hco3"
+      ],
+      "genes_subset": null
+    },
+    "media_mapping": "data/reference/fitness_browser_media_bigg.tsv",
+    "carbon_source_mapping": "data/reference/fitness_browser_carbon_sources_bigg.tsv",
+    "gene_mapping": {
+      "method": "RefSeq protein accession -> /locus_tag from NCBI GenPept records (efetch, db=protein, rettype=gp), 5 September 2026; locus tags normalised to Fitness Browser sysName by removing underscores where needed",
+      "genpept_table": "data/genpept/MR1_genpept_map.tsv"
+    },
+    "role": "development",
+    "base_model": {
+      "org": "MR1",
+      "role": "development",
+      "draft": "models/embl_pinned/MR1.xml.gz",
+      "draft_sha256": "591d8e5b5fdd1124a4e78a947b0ad9907398c9a64f1c4028c6dee92452f1220e",
+      "universe": "external/carveme/universe_bacteria.xml.gz",
+      "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+      "reference": {
+        "medium": "ShewMM_noCarbon",
+        "carbon_exchange": "EX_lac__L_e"
+      },
+      "min_growth": 0.05,
+      "status": "Optimal",
+      "added_reactions": [
+        {
+          "id": "L_LACD2",
+          "reaction": "lac__L_c + q8_c --> pyr_c + q8h2_c",
+          "name": "L-Lactate dehydrogenase (ubiquinone)"
+        },
+        {
+          "id": "ORNTA",
+          "reaction": "akg_c + orn_c <=> glu5sa_c + glu__L_c",
+          "name": "Ornithine transaminase"
+        },
+        {
+          "id": "r2465_1",
+          "reaction": "zn2_c <-- zn2_e",
+          "name": "Cation Diffusion Facilitator (Cdf) Tcdb:2.A.4.2.3"
+        }
+      ],
+      "rejected_energy_cycle_sets": [],
+      "growth_before": 0.0,
+      "growth_after": 0.0967000211899488,
+      "base_sha256": "405850d4656d42f4c367ec1a8a247b4bdea549505974389bc0478a41eec5a69d",
+      "created": "2026-10-03T07:54:47Z"
+    }
+  },
+  "leakage": {
+    "ground_truth_used_in_model_curation": "yes: development organism; its phenotypes guided the correction rules under test (development cycles 1-7 and this study's rule selection); scores are retrospective",
+    "ground_truth_public_since": "Fitness Browser releases include Price et al. 2018; exact dates differ by experiment",
+    "frontier_model_training_exposure": "unknown; public accessibility does not establish inclusion in a particular model's training data",
+    "held_out_recommendation": "see docs/studies/transfer-method-v1.md and the panel selection record",
+    "notes": [
+      "Fitness < -2 is an operational importance threshold in a pooled mutant assay, not proof of lethality.",
+      "Compare arms on matched genes, conditions and finite observations; report wild-type growth coverage separately."
+    ]
+  },
+  "results": {
+    "condition_level": {
+      "n_conditions_mapped": 12,
+      "n_conditions_wt_grows": 9,
+      "conditions_with_absent_exchange": 1
+    },
+    "gene_level_conditions_where_wt_grows": {
+      "n_genes": 713,
+      "n_conditions": 9,
+      "n_gene_condition_pairs": 6417,
+      "n_missing_fitness": 0,
+      "n_nonfinite_simulation": 0,
+      "aucpr_bernstein": {
+        "point": 0.45217817842144575,
+        "ci95": [
+          0.3505784930706552,
+          0.555931646255938
+        ]
+      },
+      "aucpr_standard": {
+        "point": 0.488041375962039,
+        "ci95": [
+          0.4151647584298368,
+          0.5666759109740964
+        ]
+      },
+      "auroc_standard": {
+        "point": 0.7029881330835035,
+        "ci95": [
+          0.6674120294308549,
+          0.7414112002151396
+        ]
+      },
+      "mcc": {
+        "point": 0.4871326735717379,
+        "ci95": [
+          0.41232942401789385,
+          0.5588771723095586
+        ]
+      },
+      "balanced_accuracy": {
+        "point": 0.6777061096023074,
+        "ci95": [
+          0.6408559999539774,
+          0.7154348781795122
+        ]
+      },
+      "accuracy": {
+        "point": 0.8789153810191679,
+        "ci95": [
+          0.8595098955898395,
+          0.8983948885772167
+        ]
+      },
+      "confusion": {
+        "tp": 5239,
+        "tn": 401,
+        "fp": 664,
+        "fn": 113
+      }
+    },
+    "gene_map": {
+      "model_genes": 903,
+      "mapped": 899,
+      "matched_by_version": 894,
+      "matched_by_accession_only": 0,
+      "no_genpept_record": 1,
+      "locus_tag_not_in_browser": 3,
+      "browser_genes_hit": 899,
+      "mapped_with_fitness_data": 713
+    },
+    "counts": {
+      "model_genes": 903,
+      "model_genes_mapped": 899,
+      "genes_with_fitness": 713,
+      "genes_after_adjustment": 713,
+      "conditions_total": 16,
+      "conditions_mapped": 12,
+      "conditions_wt_grows": 9,
+      "medium_completion_exchanges_added": 7
+    },
+    "timings_s": {
+      "rich_medium_essentials_s": 1.6689300537109375e-06,
+      "knockout_simulation_s": 27.16238021850586,
+      "total_s": 27.63380241394043
+    }
+  },
+  "software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+  },
+  "warnings": []
+}

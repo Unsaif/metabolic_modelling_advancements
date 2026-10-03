@@ -1,0 +1,4002 @@
+{
+ "org": "Smeli",
+ "arm": "UNQ",
+ "n_growth_conditions_simulated": 22,
+ "candidates": [
+  {
+   "reaction": "2HXMPt6",
+   "name": "2  hydroxymethyl phenol transport inout via proton symport",
+   "equation_ids": "2hxmp_e + h_e <=> 2hxmp_c + h_c",
+   "equation_names": "2  Hydroxymethyl phenol C7H8O2 + H+ <=> 2  Hydroxymethyl phenol C7H8O2 + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "ACLS",
+   "name": "Acetolactate synthase",
+   "equation_ids": "h_c + 2.0 pyr_c --> alac__S_c + co2_c",
+   "equation_names": "H+ + 2.0 Pyruvate --> (S)-2-Acetolactate + CO2",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_436439_1 or (NP_386219_1 and NP_386220_1)",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386219_1",
+     "locus": "SMc01430",
+     "fitness_browser_desc": "acetolactate synthase 3 regulatory subunit",
+     "refseq_definition": "acetolactate synthase 3 regulatory subunit",
+     "neighbourhood": [
+      "SMc01427 (-) hypothetical protein",
+      "SMc01428 (-) cold shock transcription regulator protein",
+      "SMc01429 (+) oxidoreductase",
+      "SMc01430 (-) acetolactate synthase 3 regulatory subunit",
+      "SMc01431 (-) acetolactate synthase 3 catalytic subunit",
+      "SMc01432 (+) hypothetical protein",
+      "SMc01433 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386220_1",
+     "locus": "SMc01431",
+     "fitness_browser_desc": "acetolactate synthase 3 catalytic subunit",
+     "refseq_definition": "acetolactate synthase 3 catalytic subunit",
+     "neighbourhood": [
+      "SMc01428 (-) cold shock transcription regulator protein",
+      "SMc01429 (+) oxidoreductase",
+      "SMc01430 (-) acetolactate synthase 3 regulatory subunit",
+      "SMc01431 (-) acetolactate synthase 3 catalytic subunit",
+      "SMc01432 (+) hypothetical protein",
+      "SMc01433 (+) hypothetical protein",
+      "SMc01434 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_436439_1",
+     "locus": "SMa2211",
+     "fitness_browser_desc": "thiamine pyrophosphate protein",
+     "refseq_definition": "thiamine pyrophosphate protein (plasmid)",
+     "neighbourhood": [
+      "SMa2205 (-) ABC transporter permease",
+      "SMa2207 (-) ABC transporter ATP-binding protein",
+      "SMa2209 (-) ABC transporter substrate-binding protein",
+      "SMa2211 (-) thiamine pyrophosphate protein",
+      "SMa2213 (-) aldehyde dehydrogenase",
+      "SMa2215 (+) GntR family transcriptional regulator",
+      "SMa2217 (+) decarboxylase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ANS",
+   "name": "Anthranilate synthase",
+   "equation_ids": "chor_c + gln__L_c --> anth_c + glu__L_c + h_c + pyr_c",
+   "equation_names": "Chorismate + L-Glutamine --> Anthranilate + L-Glutamate + H+ + Pyruvate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "ARGSL",
+   "name": "Argininosuccinate lyase",
+   "equation_ids": "argsuc_c <=> arg__L_c + fum_c",
+   "equation_names": "N(omega)-(L-Arginino)succinate <=> L-Arginine + Fumarate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386753_1 or NP_437213_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386753_1",
+     "locus": "SMc00725",
+     "fitness_browser_desc": "argininosuccinate lyase",
+     "refseq_definition": "argininosuccinate lyase",
+     "neighbourhood": [
+      "SMc00728 (+) electron transfer flavoprotein alpha-subunit alpha-ETF flavoprotein",
+      "SMc00727 (+) 3-hydroxybutyryl-CoA dehydrogenase",
+      "SMc00726 (-) thiol:disulfide interchange redox-active center transmembrane protein",
+      "SMc00725 (+) argininosuccinate lyase",
+      "SMc00724 (+) hypothetical protein",
+      "SMc00723 (+) diaminopimelate DAP decarboxylase",
+      "SMc00722 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437213_1",
+     "locus": "SM_b21094",
+     "fitness_browser_desc": "argininosuccinate lyase",
+     "refseq_definition": "argininosuccinate lyase (plasmid)",
+     "neighbourhood": [
+      "SM_b21091 (+) cell-wall lytic enzyme, muramidase (lysozyme) protein",
+      "SM_b21092 (+) acetyltransferase",
+      "SM_b21093 (-) LysR family transcriptional regulator",
+      "SM_b21094 (+) argininosuccinate lyase",
+      "SM_b21095 (+) amino acid ABC transporter permease",
+      "SM_b21096 (+) amino acid transporter ABC transporter ATP-binding protein",
+      "SM_b21097 (+) amino acid ABC transporter substrate-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASNS1",
+   "name": "Asparagine synthase (glutamine-hydrolysing)",
+   "equation_ids": "asp__L_c + atp_c + gln__L_c + h2o_c --> amp_c + asn__L_c + glu__L_c + h_c + ppi_c",
+   "equation_names": "L-Aspartate + ATP + L-Glutamine + H2O --> AMP + L-Asparagine + L-Glutamate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_437003_1 or NP_437900_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_437003_1",
+     "locus": "SM_b20481",
+     "fitness_browser_desc": "asparagine synthetase (glutamine amidotransferase) protein",
+     "refseq_definition": "asparagine synthetase (glutamine amidotransferase) protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20478 (+) dipeptide ABC transporter permease and ATP-binding protein",
+      "SM_b20479 (+) dipeptide ABC transporter ATP-binding protein",
+      "SM_b20480 (+) transcriptional regulator",
+      "SM_b20481 (+) asparagine synthetase (glutamine amidotransferase) protein",
+      "SM_b20482 (+) hypothetical protein",
+      "SM_b20483 (-) catabolite repressor protein",
+      "SM_b20484 (+) sugar ABC transporter substrate-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437900_1",
+     "locus": "SM_b20652",
+     "fitness_browser_desc": "asparagine synthetase",
+     "refseq_definition": "asparagine synthetase (plasmid)",
+     "neighbourhood": [
+      "SM_b20649 (-) NAD synthetase",
+      "SM_b20650 (-) long-chain fatty acid CoA ligase",
+      "SM_b20651 (-) hypothetical protein",
+      "SM_b20652 (-) asparagine synthetase",
+      "SM_b20654 (+) hypothetical protein",
+      "SM_b20655 (+) hypothetical protein",
+      "SM_b20656 (+) oxidoreductase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "ASPTA",
+   "name": "Aspartate transaminase",
+   "equation_ids": "akg_c + asp__L_c <=> glu__L_c + oaa_c",
+   "equation_names": "2-Oxoglutarate + L-Aspartate <=> L-Glutamate + Oxaloacetate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384413_1 or NP_384661_1 or NP_384672_1 or NP_385430_1 or NP_386431_1 or NP_386609_1 or NP_387397_1 or NP_437517_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384413_1",
+     "locus": "SMc00387",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "aromatic amino acid aminotransferase",
+     "neighbourhood": [
+      "SMc00384 (+) transcriptional regulation protein",
+      "SMc00385 (-) hypothetical protein",
+      "SMc00386 (-) hypothetical protein",
+      "SMc00387 (-) aromatic amino acid aminotransferase",
+      "SMc00388 (-) hypothetical protein",
+      "SMc00389 (-) hypothetical protein",
+      "SMc00390 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_384661_1",
+     "locus": "SMc02251",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "SMc02248 (+) transcriptional regulator",
+      "SMc02249 (-) sensory transduction histidine kinase transmembrane protein",
+      "SMc02250 (+) large-conductance mechanosensitive channel",
+      "SMc02251 (+) aspartate aminotransferase",
+      "SMc02252 (+) UDP-glucose 4-epimerase",
+      "SMc02253 (-) salicylate biosynthesis protein",
+      "SMc02254 (-) quinol oxidase subunit II transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_384672_1",
+     "locus": "SMc02262",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "SMc02259 (-) periplasmic binding ABC transporter protein",
+      "SMc02260 (-) ABC transporter ATP-binding protein",
+      "SMc02261 (+) transcriptional regulator",
+      "SMc02262 (+) aminotransferase",
+      "SMc02263 (+) hypothetical protein",
+      "SMc02264 (+) hypothetical protein",
+      "SMc02265 (+) preprotein translocase subunit SecD/SecF"
+     ]
+    },
+    {
+     "model_gene": "NP_385430_1",
+     "locus": "SMc01340",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "SMc01343 (-) 3-dehydroquinate dehydratase",
+      "SMc01342 (-) hypothetical protein",
+      "SMc01341 (-) hypothetical protein",
+      "SMc01340 (+) aminotransferase",
+      "SMc01339 (+) transposase ISRM11/ISRM2011-2",
+      "SMc01338 (+) transposase ISRM11/ISRM2011-2",
+      "SMc01337 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386431_1",
+     "locus": "SMc01578",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "SMc01571 (+) oxidoreductase",
+      "SMc01572 (+) oxidoreductase",
+      "SMc01577 (+) hypothetical protein",
+      "SMc01578 (-) aspartate aminotransferase",
+      "SMc01580 (+) hypothetical protein",
+      "SMc01581 (+) hypothetical protein",
+      "SMc01583 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386609_1",
+     "locus": "SMc01969",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc01969",
+     "neighbourhood": [
+      "SMc01966 (-) spermidine/putrescine ABC transporter periplasmic protein",
+      "SMc01967 (-) agmatinase",
+      "SMc01968 (+) transcriptional regulator",
+      "SMc01969 (+) hypothetical protein",
+      "SMc01970 (-) hypothetical protein",
+      "SMc01971 (-) aldehyde dehydrogenase",
+      "SMc01972 (-) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "NP_387397_1",
+     "locus": "SMc04386",
+     "fitness_browser_desc": "aspartate aminotransferase B protein",
+     "refseq_definition": "aspartate aminotransferase B protein",
+     "neighbourhood": [
+      "SMc04383 (+) hypothetical protein",
+      "SMc04384 (+) oxidoreductase",
+      "SMc04385 (+) aldehyde dehydrogenase transmembrane protein",
+      "SMc04386 (+) aspartate aminotransferase B protein",
+      "SMc04387 (-) aldehyde dehydrogenase",
+      "SMc04388 (+) beta alanine--pyruvate transaminase",
+      "SMc04389 (-) hydroxypyruvate reductase"
+     ]
+    },
+    {
+     "model_gene": "NP_437517_1",
+     "locus": "SM_b21537",
+     "fitness_browser_desc": "2-aminoethylphosphonate--pyruvate transaminase",
+     "refseq_definition": "2-aminoethylphosphonate--pyruvate transaminase (plasmid)",
+     "neighbourhood": [
+      "SM_b21534 (+) dehydrogenase",
+      "SM_b21535 (-) LysR family transcriptional regulator",
+      "SM_b21536 (+) hypothetical protein",
+      "SM_b21537 (+) 2-aminoethylphosphonate--pyruvate transaminase",
+      "SM_b21538 (+) phosphonoacetate hydrolase",
+      "SM_b21539 (+) aldehyde dehydrogenase",
+      "SM_b21671 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "CLt3_2pp",
+   "name": "Chloride transport out via proton antiport (2:1) (periplasm)",
+   "equation_ids": "2.0 cl_p + h_c --> 2.0 cl_c + h_p",
+   "equation_names": "2.0 Chloride + H+ --> 2.0 Chloride + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "COBALT2tpp",
+   "name": "Cobalt transport in via permease (no H+)",
+   "equation_ids": "cobalt2_p --> cobalt2_c",
+   "equation_names": "Co2+ --> Co2+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384425_1 or NP_436554_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384425_1",
+     "locus": "SMc00399",
+     "fitness_browser_desc": "magnesium/cobalt transporter CorA",
+     "refseq_definition": "magnesium/cobalt transporter CorA",
+     "neighbourhood": [
+      "SMc00396 (-) hypothetical protein",
+      "SMc00397 (+) hypothetical protein",
+      "SMc00460 (-) hypothetical protein",
+      "SMc00399 (-) magnesium/cobalt transporter CorA",
+      "SMc00400 (-) signal peptide protein",
+      "SMc00401 (-) hypothetical protein",
+      "SMc00402 (-) signal peptide protein"
+     ]
+    },
+    {
+     "model_gene": "NP_436554_1",
+     "locus": "SM_b20011",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SM_b20011 (plasmid)",
+     "neighbourhood": [
+      "SM_b20008 (+) ATP-dependent DNA ligase",
+      "SM_b20009 (-) transcriptional regulator",
+      "SM_b20010 (+) hypothetical protein",
+      "SM_b20011 (+) hypothetical protein",
+      "SM_b20012 (-) hypothetical protein",
+      "SM_b20013 (-) hypothetical protein",
+      "SM_b20014 (-) transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DARBabcpp",
+   "name": "D-arabinose transport via ABC system (periplasm)",
+   "equation_ids": "arab__D_p + atp_c + h2o_c --> adp_c + arab__D_c + h_c + pi_c",
+   "equation_names": "D Arabinose C5H10O5 + ATP + H2O --> ADP + D Arabinose C5H10O5 + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_437028_1 and NP_437029_1 and NP_437030_1) or (NP_437028_1 and NP_437030_1 and NP_437313_1)",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_437028_1",
+     "locus": "SM_b20506",
+     "fitness_browser_desc": "L-arabinose transporter permease",
+     "refseq_definition": "L-arabinose transporter permease (plasmid)",
+     "neighbourhood": [
+      "SM_b20503 (-) sugar ABC transporter ATP-binding protein",
+      "SM_b20504 (-) sugar ABC transporter substrate-binding protein",
+      "SM_b20505 (+) trifolitoxin immunity protein",
+      "SM_b20506 (-) L-arabinose transporter permease",
+      "SM_b20507 (-) L-arabinose transporter ATP-binding protein",
+      "SM_b20508 (-) sugar ABC transporter substrate-binding protein",
+      "SM_b20509 (+) transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "NP_437029_1",
+     "locus": "SM_b20507",
+     "fitness_browser_desc": "L-arabinose transporter ATP-binding protein",
+     "refseq_definition": "L-arabinose transporter ATP-binding protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20504 (-) sugar ABC transporter substrate-binding protein",
+      "SM_b20505 (+) trifolitoxin immunity protein",
+      "SM_b20506 (-) L-arabinose transporter permease",
+      "SM_b20507 (-) L-arabinose transporter ATP-binding protein",
+      "SM_b20508 (-) sugar ABC transporter substrate-binding protein",
+      "SM_b20509 (+) transcriptional regulator",
+      "SM_b20510 (+) galactonate dehydratase"
+     ]
+    },
+    {
+     "model_gene": "NP_437030_1",
+     "locus": "SM_b20508",
+     "fitness_browser_desc": "sugar ABC transporter substrate-binding protein",
+     "refseq_definition": "sugar ABC transporter substrate-binding protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20505 (+) trifolitoxin immunity protein",
+      "SM_b20506 (-) L-arabinose transporter permease",
+      "SM_b20507 (-) L-arabinose transporter ATP-binding protein",
+      "SM_b20508 (-) sugar ABC transporter substrate-binding protein",
+      "SM_b20509 (+) transcriptional regulator",
+      "SM_b20510 (+) galactonate dehydratase",
+      "SM_b20511 (+) short-chain dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "NP_437313_1",
+     "locus": "SM_b21269",
+     "fitness_browser_desc": "ABC transporter ATPase",
+     "refseq_definition": "ABC transporter ATPase (plasmid)",
+     "neighbourhood": [
+      "SM_b21266 (+) hypothetical protein",
+      "SM_b21267 (+) hypothetical protein",
+      "SM_b21268 (+) hypothetical protein",
+      "SM_b21269 (+) ABC transporter ATPase",
+      "SM_b21270 (+) transcriptional regulator",
+      "SM_b21271 (+) nucleotide-binding protein",
+      "SM_b21272 (+) LacI family transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DARBtex",
+   "name": "D-arabinose transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "arab__D_e <=> arab__D_p",
+   "equation_names": "D Arabinose C5H10O5 <=> D Arabinose C5H10O5",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_387090_1 or NP_437471_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_387090_1",
+     "locus": "SMc03109",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc03109",
+     "neighbourhood": [
+      "SMc03112 (-) B12-dependent methionine synthase",
+      "SMc03111 (-) mannose-6-phosphate isomerase",
+      "SMc03110 (-) hypothetical protein",
+      "SMc03109 (-) hypothetical protein",
+      "SMc03076 (+) tRNA-Arg",
+      "SMc03108 (+) calcium-binding protein",
+      "SMc03107 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437471_1",
+     "locus": "SM_b21355",
+     "fitness_browser_desc": "oxidoreductase",
+     "refseq_definition": "oxidoreductase (plasmid)",
+     "neighbourhood": [
+      "SM_b21352 (-) C4-dicarboxylate small membrane transport protein",
+      "SM_b21353 (-) periplasmic C4-dicarboxylate transport protein",
+      "SM_b21354 (-) glucuronate isomerase",
+      "SM_b21355 (+) oxidoreductase",
+      "SM_b21356 (+) hypothetical protein",
+      "SM_b21357 (+) hypothetical protein",
+      "SM_b21358 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHAD1",
+   "name": "Dihydroxy-acid dehydratase (2,3-dihydroxy-3-methylbutanoate)",
+   "equation_ids": "23dhmb_c --> 3mob_c + h2o_c",
+   "equation_names": "(R)-2,3-Dihydroxy-3-methylbutanoate --> 3-Methyl-2-oxobutanoate + H2O",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386934_1 or NP_436655_1 or NP_437724_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386934_1",
+     "locus": "SMc04045",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase",
+     "neighbourhood": [
+      "SMc04043 (-) hypothetical protein",
+      "SMc04044 (+) 2-component receiver domain-containing protein",
+      "SMc04060 (+) tRNA-Val",
+      "SMc04045 (+) dihydroxy-acid dehydratase",
+      "SMc04046 (-) hypothetical protein",
+      "SMc04047 (-) pseudoazurin (blue copper protein)",
+      "SMc04048 (-) cytochrome c protein"
+     ]
+    },
+    {
+     "model_gene": "NP_436655_1",
+     "locus": "SM_b20115",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase (plasmid)",
+     "neighbourhood": [
+      "SM_b20112 (+) hypothetical protein",
+      "SM_b20113 (-) dehydrogenase",
+      "SM_b20114 (-) hypothetical protein",
+      "SM_b20115 (-) dihydroxy-acid dehydratase",
+      "SM_b20116 (-) hypothetical protein",
+      "SM_b20117 (-) sugar transferase",
+      "SM_b20118 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437724_1",
+     "locus": "SM_b20890",
+     "fitness_browser_desc": "dihydroxy-acid dehydratase",
+     "refseq_definition": "dihydroxy-acid dehydratase (plasmid)",
+     "neighbourhood": [
+      "SM_b20887 (+) hypothetical protein",
+      "SM_b20888 (+) hypothetical protein",
+      "SM_b20889 (-) hypothetical protein",
+      "SM_b20890 (-) dihydroxy-acid dehydratase",
+      "SM_b20891 (-) dehydrogenase",
+      "SM_b20892 (-) hypothetical protein",
+      "SM_b20893 (-) sugar uptake ABC transporter permease"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHDPS",
+   "name": "Dihydrodipicolinate synthase",
+   "equation_ids": "aspsa_c + pyr_c --> 23dhdp_c + 2.0 h2o_c + h_c",
+   "equation_names": "L-Aspartate 4-semialdehyde + Pyruvate --> 2,3-Dihydrodipicolinate + 2.0 H2O + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385165_1 or NP_436680_1 or NP_436789_1 or NP_437878_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385165_1",
+     "locus": "SMc02404",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "dihydrodipicolinate synthase",
+     "neighbourhood": [
+      "SMc02400 (-) outer membrane protein",
+      "SMc02401 (-) hypothetical protein",
+      "SMc02403 (-) murein transglycosylase",
+      "SMc02404 (+) dihydrodipicolinate synthase",
+      "SMc02405 (+) SsrA-binding protein",
+      "SMc02406 (-) hypothetical protein",
+      "SMc02422 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_436680_1",
+     "locus": "SM_b20140",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "dihydrodipicolinate synthase (plasmid)",
+     "neighbourhood": [
+      "SM_b20137 (-) hypothetical protein",
+      "SM_b20138 (-) hypothetical protein",
+      "SM_b20139 (+) hypothetical protein",
+      "SM_b20140 (-) dihydrodipicolinate synthase",
+      "SM_b20141 (-) oligopeptide ABC transporter ATP-binding protein",
+      "SM_b20142 (-) oligopeptide ABC transporter permease",
+      "SM_b20143 (-) oligopeptide ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "NP_436789_1",
+     "locus": "SM_b20259",
+     "fitness_browser_desc": "dihydrodipicolinate synthase",
+     "refseq_definition": "dihydrodipicolinate synthase (plasmid)",
+     "neighbourhood": [
+      "SM_b20256 (-) hypothetical protein",
+      "SM_b20257 (+) adenylate cyclase",
+      "SM_b20258 (+) transcriptional regulator",
+      "SM_b20259 (+) dihydrodipicolinate synthase",
+      "SM_b20260 (-) hypothetical protein",
+      "SM_b20261 (-) malate dehydrogenase",
+      "SM_b20262 (+) semialdehyde dehydrogenase"
+     ]
+    },
+    {
+     "model_gene": "NP_437878_1",
+     "locus": "SM_b21508",
+     "fitness_browser_desc": "dihydrodipicolinate synthetase",
+     "refseq_definition": "dihydrodipicolinate synthetase (plasmid)",
+     "neighbourhood": [
+      "SM_b21505 (-) membrane protein, Wzy-like polysaccharide polymerase ExoQ",
+      "SM_b21506 (-) cell surface polysaccharides export protein",
+      "SM_b21507 (+) amino acid transporter, exporter protein",
+      "SM_b21508 (-) dihydrodipicolinate synthetase",
+      "SM_b21509 (+) plasmid stability protein",
+      "SM_b21510 (+) plasmid stability protein",
+      "SM_b21511 (+) plasmid stability protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DHORTS",
+   "name": "Dihydroorotase",
+   "equation_ids": "dhor__S_c + h2o_c <=> cbasp_c + h_c",
+   "equation_names": "(S)-Dihydroorotate + H2O <=> N-Carbamoyl-L-aspartate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384586_1 or NP_385409_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384586_1",
+     "locus": "SMc02166",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "SMc02170 (+) ABC transporter permease",
+      "SMc02169 (+) ABC transporter ATP-binding protein",
+      "SMc02167 (+) fructose transport system kinase",
+      "SMc02166 (+) dihydroorotase",
+      "SMc02165 (+) orotate phosphoribosyltransferase",
+      "SMc02164 (+) fructokinase",
+      "SMc02163 (-) glucose-6-phosphate isomerase"
+     ]
+    },
+    {
+     "model_gene": "NP_385409_1",
+     "locus": "SMc01361",
+     "fitness_browser_desc": "dihydroorotase",
+     "refseq_definition": "dihydroorotase",
+     "neighbourhood": [
+      "SMc01364 (-) DNA topoisomerase I",
+      "SMc01363 (-) hypothetical protein",
+      "SMc01362 (-) glycerol-3-phosphate acyltransferase PlsY",
+      "SMc01361 (-) dihydroorotase",
+      "SMc01360 (-) aspartate carbamoyltransferase catalytic subunit",
+      "SMc01359 (+) oxidoreductase",
+      "SMc01358 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMATT",
+   "name": "Dimethylallyltranstransferase",
+   "equation_ids": "dmpp_c + ipdp_c --> grdp_c + ppi_c",
+   "equation_names": "Dimethylallyl diphosphate + Isopentenyl diphosphate --> Geranyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384952_1 or NP_387373_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384952_1",
+     "locus": "SMc00860",
+     "fitness_browser_desc": "octaprenyl-diphosphate synthase",
+     "refseq_definition": "octaprenyl-diphosphate synthase",
+     "neighbourhood": [
+      "SMc00863 (-) molybdenum cofactor biosynthesis protein B",
+      "SMc00862 (-) 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase",
+      "SMc00861 (-) signal peptide protein",
+      "SMc00860 (-) octaprenyl-diphosphate synthase",
+      "SMc00859 (+) hypothetical protein",
+      "SMc00858 (+) hypothetical protein",
+      "SMc00857 (+) protease"
+     ]
+    },
+    {
+     "model_gene": "NP_387373_1",
+     "locus": "SMc03884",
+     "fitness_browser_desc": "geranyltranstransferase",
+     "refseq_definition": "geranyltranstransferase",
+     "neighbourhood": [
+      "SMc03881 (-) 50S ribosomal protein L32",
+      "SMc03882 (-) glutathione S-transferase",
+      "SMc03883 (-) monofunctional biosynthetic peptidoglycan transglycosylase",
+      "SMc03884 (+) geranyltranstransferase",
+      "SMc03885 (+) histidinol-phosphate aminotransferase",
+      "SMc03886 (-) transposase",
+      "SMc03887 (+) amino acid efflux protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DMPPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (dmpp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> dmpp_c + h2o_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> Dimethylallyl diphosphate + H2O + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384361_1 or NP_385018_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384361_1",
+     "locus": "SMc00335",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "SMc00332 (-) hypothetical protein",
+      "SMc00333 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "SMc00334 (+) cytidylate kinase",
+      "SMc00335 (+) 30S ribosomal protein S1",
+      "SMc00336 (-) hypothetical protein",
+      "SMc00337 (+) hypothetical protein",
+      "SMc00338 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_385018_1",
+     "locus": "SMc00016",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "SMc00013 (+) cytochrome C oxidase subunit III transmembrane protein",
+      "SMc00014 (+) hypothetical protein",
+      "SMc00085 (+) cytochrome oxidase complex biogenesis factor transmembrane protein",
+      "SMc00016 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "SMc00017 (+) homoserine kinase",
+      "SMc00018 (+) ribonuclease H",
+      "SMc00072 (-) peroxiredoxin protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNMPPA",
+   "name": "Dihydroneopterin monophosphate dephosphorylase",
+   "equation_ids": "dhpmp_c + h2o_c --> dhnpt_c + pi_c",
+   "equation_names": "Dihydroneopterin monophosphate + H2O --> Dihydroneopterin + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385852_1 or NP_386423_1 or NP_387274_1 or NP_435571_1 or NP_435905_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385852_1",
+     "locus": "SMc00521",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc00521",
+     "neighbourhood": [
+      "SMc00540 (+) hypothetical protein",
+      "SMc00539 (+) hypothetical protein",
+      "SMc00522 (+) ATP-dependent RNA helicase",
+      "SMc00521 (+) hypothetical protein",
+      "SMc00520 (-) hypothetical protein",
+      "SMc00519 (-) hypothetical protein",
+      "SMc00518 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386423_1",
+     "locus": "SMc01566",
+     "fitness_browser_desc": "ATP-dependent DNA helicase",
+     "refseq_definition": "ATP-dependent DNA helicase",
+     "neighbourhood": [
+      "SMc01563 (-) RNA polymerase sigma factor RpoD",
+      "SMc01564 (-) L-threonine 3-dehydrogenase",
+      "SMc01565 (-) 2-amino-3-ketobutyrate CoA ligase",
+      "SMc01566 (-) ATP-dependent DNA helicase",
+      "SMc01567 (-) DNA primase",
+      "SMc01568 (-) hypothetical protein",
+      "SMc01569 (+) carbamoyl phosphate synthase small subunit"
+     ]
+    },
+    {
+     "model_gene": "NP_387274_1",
+     "locus": "SMc03785",
+     "fitness_browser_desc": "dinucleoside polyphosphate hydrolase",
+     "refseq_definition": "dinucleoside polyphosphate hydrolase",
+     "neighbourhood": [
+      "SMc03782 (+) signal peptide protein",
+      "SMc03783 (+) carboxy-terminal processing protease precursor signal peptide protein",
+      "SMc03784 (+) hypothetical protein",
+      "SMc03785 (+) dinucleoside polyphosphate hydrolase",
+      "SMc03786 (-) bacterioferritin",
+      "SMc03787 (-) hypothetical protein",
+      "SMc03788 (-) DNA polymerase III subunit alpha"
+     ]
+    },
+    {
+     "model_gene": "NP_435571_1",
+     "locus": "SMa0621",
+     "fitness_browser_desc": "FixI2 E1-E2 type cation ATPase",
+     "refseq_definition": "FixI2 E1-E2 type cation ATPase (plasmid)",
+     "neighbourhood": [
+      "SMa0616 (+) FixQ3 nitrogen fixation protein",
+      "SMa0617 (+) FixP3 Diheme c-type cytochrome",
+      "SMa0620 (+) hypothetical protein",
+      "SMa0621 (+) FixI2 E1-E2 type cation ATPase",
+      "SMa0622 (+) FixS2 nitrogen fixation protein",
+      "SMa0625 (+) hypothetical protein",
+      "SMa0626 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_435905_1",
+     "locus": "SMa1209",
+     "fitness_browser_desc": "FixI1 ATPase",
+     "refseq_definition": "FixI1 ATPase (plasmid)",
+     "neighbourhood": [
+      "SMa1201 (-) hypothetical protein",
+      "SMa1207 (-) Crp family transcriptional regulator",
+      "SMa1208 (-) FixS1 nitrogen fixation protein",
+      "SMa1209 (-) FixI1 ATPase",
+      "SMa1210 (-) nitrogen fixation protein FixH",
+      "SMa1211 (-) FixG iron sulfur membrane protein",
+      "SMa1213 (-) FixP1 di-heme cytochrome c"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DNTPPA",
+   "name": "Dihydroneopterin triphosphate pyrophosphatase",
+   "equation_ids": "ahdt_c + h2o_c --> dhpmp_c + h_c + ppi_c",
+   "equation_names": "2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + H2O --> Dihydroneopterin monophosphate + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385214_1 or NP_386423_1 or NP_386729_1 or NP_387274_1 or NP_435571_1 or NP_435905_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385214_1",
+     "locus": "SMc02554",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc02554",
+     "neighbourhood": [
+      "SMc02557 (-) hypothetical protein",
+      "SMc02556 (-) hypothetical protein",
+      "SMc02555 (-) signal peptide protein",
+      "SMc02554 (-) hypothetical protein",
+      "SMc02553 (+) hypothetical protein",
+      "SMc02552 (-) hypothetical protein",
+      "SMc02551 (+) cysteinyl-tRNA synthetase"
+     ]
+    },
+    {
+     "model_gene": "NP_386423_1",
+     "locus": "SMc01566",
+     "fitness_browser_desc": "ATP-dependent DNA helicase",
+     "refseq_definition": "ATP-dependent DNA helicase",
+     "neighbourhood": [
+      "SMc01563 (-) RNA polymerase sigma factor RpoD",
+      "SMc01564 (-) L-threonine 3-dehydrogenase",
+      "SMc01565 (-) 2-amino-3-ketobutyrate CoA ligase",
+      "SMc01566 (-) ATP-dependent DNA helicase",
+      "SMc01567 (-) DNA primase",
+      "SMc01568 (-) hypothetical protein",
+      "SMc01569 (+) carbamoyl phosphate synthase small subunit"
+     ]
+    },
+    {
+     "model_gene": "NP_386729_1",
+     "locus": "SMc02448",
+     "fitness_browser_desc": "mutator protein 7,8-dihydro-8-oxoguanine-triphosphatase",
+     "refseq_definition": "mutator protein 7,8-dihydro-8-oxoguanine-triphosphatase",
+     "neighbourhood": [
+      "SMc02445 (+) hypothetical protein",
+      "SMc02446 (-) hypothetical protein",
+      "SMc02447 (-) hypothetical protein",
+      "SMc02448 (-) mutator protein 7,8-dihydro-8-oxoguanine-triphosphatase",
+      "SMc02449 (-) acetyltransferase",
+      "SMc02450 (-) bifunctional ornithine acetyltransferase/N-acetylglutamate synthase",
+      "SMc02451 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_387274_1",
+     "locus": "SMc03785",
+     "fitness_browser_desc": "dinucleoside polyphosphate hydrolase",
+     "refseq_definition": "dinucleoside polyphosphate hydrolase",
+     "neighbourhood": [
+      "SMc03782 (+) signal peptide protein",
+      "SMc03783 (+) carboxy-terminal processing protease precursor signal peptide protein",
+      "SMc03784 (+) hypothetical protein",
+      "SMc03785 (+) dinucleoside polyphosphate hydrolase",
+      "SMc03786 (-) bacterioferritin",
+      "SMc03787 (-) hypothetical protein",
+      "SMc03788 (-) DNA polymerase III subunit alpha"
+     ]
+    },
+    {
+     "model_gene": "NP_435571_1",
+     "locus": "SMa0621",
+     "fitness_browser_desc": "FixI2 E1-E2 type cation ATPase",
+     "refseq_definition": "FixI2 E1-E2 type cation ATPase (plasmid)",
+     "neighbourhood": [
+      "SMa0616 (+) FixQ3 nitrogen fixation protein",
+      "SMa0617 (+) FixP3 Diheme c-type cytochrome",
+      "SMa0620 (+) hypothetical protein",
+      "SMa0621 (+) FixI2 E1-E2 type cation ATPase",
+      "SMa0622 (+) FixS2 nitrogen fixation protein",
+      "SMa0625 (+) hypothetical protein",
+      "SMa0626 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_435905_1",
+     "locus": "SMa1209",
+     "fitness_browser_desc": "FixI1 ATPase",
+     "refseq_definition": "FixI1 ATPase (plasmid)",
+     "neighbourhood": [
+      "SMa1201 (-) hypothetical protein",
+      "SMa1207 (-) Crp family transcriptional regulator",
+      "SMa1208 (-) FixS1 nitrogen fixation protein",
+      "SMa1209 (-) FixI1 ATPase",
+      "SMa1210 (-) nitrogen fixation protein FixH",
+      "SMa1211 (-) FixG iron sulfur membrane protein",
+      "SMa1213 (-) FixP1 di-heme cytochrome c"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "DXPS",
+   "name": "1-deoxy-D-xylulose 5-phosphate synthase",
+   "equation_ids": "g3p_c + h_c + pyr_c --> co2_c + dxyl5p_c",
+   "equation_names": "Glyceraldehyde 3-phosphate + H+ + Pyruvate --> CO2 + 1-deoxy-D-xylulose 5-phosphate",
+   "annotation": {
+    "rhea": [
+     "12605",
+     "12606",
+     "12607",
+     "12608"
+    ],
+    "ec-code": "2.2.1.7",
+    "metanetx.reaction": "MNXR97831",
+    "kegg.reaction": "R05636"
+   },
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "FBA",
+   "name": "Fructose-bisphosphate aldolase",
+   "equation_ids": "fdp_c <=> dhap_c + g3p_c",
+   "equation_names": "D-Fructose 1,6-bisphosphate <=> Dihydroxyacetone phosphate + Glyceraldehyde 3-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_436732_1 or NP_437020_1 or NP_437398_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_436732_1",
+     "locus": "SM_b20199",
+     "fitness_browser_desc": "fructose-1,6-bisphosphate aldolase",
+     "refseq_definition": "fructose-1,6-bisphosphate aldolase (plasmid)",
+     "neighbourhood": [
+      "SM_b20196 (-) CbbX protein",
+      "SM_b20197 (-) ribulose-1,5-bisphosphate carboxylase small subunit protein",
+      "SM_b20198 (-) ribulose bisophosphate carboxylase",
+      "SM_b20199 (-) fructose-1,6-bisphosphate aldolase",
+      "SM_b20200 (-) transketolase",
+      "SM_b20201 (-) phosphoribulokinase",
+      "SM_b20202 (-) fructose-1,6-bisphosphatase"
+     ]
+    },
+    {
+     "model_gene": "NP_437020_1",
+     "locus": "SM_b20498",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SM_b20498 (plasmid)",
+     "neighbourhood": [
+      "SM_b20495 (+) hypothetical protein",
+      "SM_b20496 (-) GMC oxidoreductase",
+      "SM_b20497 (-) L-xylulose kinase",
+      "SM_b20498 (-) hypothetical protein",
+      "SM_b20499 (-) glycerol-3-phosphate dehydrogenase",
+      "SM_b20500 (-) aldoketo reductase",
+      "SM_b20501 (-) transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "NP_437398_1",
+     "locus": "SM_b21192",
+     "fitness_browser_desc": "fructose-1,6-bisphosphate aldolase",
+     "refseq_definition": "fructose-1,6-bisphosphate aldolase (plasmid)",
+     "neighbourhood": [
+      "SM_b21189 (+) glycosyltransferase",
+      "SM_b21190 (+) glycosyltransferase",
+      "SM_b21191 (+) surface saccharide ABC transporter ATP-binding/membrane spanning protein",
+      "SM_b21192 (-) fructose-1,6-bisphosphate aldolase",
+      "SM_b21196 (+) oligopeptide uptake ABC transporter substrate-binding protein precursor",
+      "SM_b21197 (+) oligopeptide uptake ABC transporter permease",
+      "SM_b21198 (+) oligopeptide uptake ABC transporter permease"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FBA2",
+   "name": "D Fructose 1 phosphate D glyceraldehyde 3 phosphate lyase",
+   "equation_ids": "f1p_c <=> dhap_c + glyald_c",
+   "equation_names": "D-Fructose 1-phosphate <=> Dihydroxyacetone phosphate + D-Glyceraldehyde",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_437020_1 or NP_437398_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_437020_1",
+     "locus": "SM_b20498",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SM_b20498 (plasmid)",
+     "neighbourhood": [
+      "SM_b20495 (+) hypothetical protein",
+      "SM_b20496 (-) GMC oxidoreductase",
+      "SM_b20497 (-) L-xylulose kinase",
+      "SM_b20498 (-) hypothetical protein",
+      "SM_b20499 (-) glycerol-3-phosphate dehydrogenase",
+      "SM_b20500 (-) aldoketo reductase",
+      "SM_b20501 (-) transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "NP_437398_1",
+     "locus": "SM_b21192",
+     "fitness_browser_desc": "fructose-1,6-bisphosphate aldolase",
+     "refseq_definition": "fructose-1,6-bisphosphate aldolase (plasmid)",
+     "neighbourhood": [
+      "SM_b21189 (+) glycosyltransferase",
+      "SM_b21190 (+) glycosyltransferase",
+      "SM_b21191 (+) surface saccharide ABC transporter ATP-binding/membrane spanning protein",
+      "SM_b21192 (-) fructose-1,6-bisphosphate aldolase",
+      "SM_b21196 (+) oligopeptide uptake ABC transporter substrate-binding protein precursor",
+      "SM_b21197 (+) oligopeptide uptake ABC transporter permease",
+      "SM_b21198 (+) oligopeptide uptake ABC transporter permease"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FBP",
+   "name": "Fructose-bisphosphatase",
+   "equation_ids": "fdp_c + h2o_c --> f6p_c + pi_c",
+   "equation_names": "D-Fructose 1,6-bisphosphate + H2O --> D-Fructose 6-phosphate + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385890_1 or NP_436735_1",
+   "n_growth_conditions_essential": 10,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385890_1",
+     "locus": "SMc00535",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc00535",
+     "neighbourhood": [
+      "SMc00538 (+) hypothetical protein",
+      "SMc00537 (+) transporter",
+      "SMc00536 (+) transporter",
+      "SMc00535 (-) hypothetical protein",
+      "SMc00534 (-) C32 tRNA thiolase",
+      "SMc00486 (-) glutaminase",
+      "SMc00485 (-) 30S ribosomal protein S4"
+     ]
+    },
+    {
+     "model_gene": "NP_436735_1",
+     "locus": "SM_b20202",
+     "fitness_browser_desc": "fructose-1,6-bisphosphatase",
+     "refseq_definition": "fructose-1,6-bisphosphatase (plasmid)",
+     "neighbourhood": [
+      "SM_b20199 (-) fructose-1,6-bisphosphate aldolase",
+      "SM_b20200 (-) transketolase",
+      "SM_b20201 (-) phosphoribulokinase",
+      "SM_b20202 (-) fructose-1,6-bisphosphatase",
+      "SM_b20203 (+) transcriptional regulator",
+      "SM_b20204 (+) coenzyme PQQ synthesis protein PqqA",
+      "SM_b20205 (+) pyrroloquinoline quinone biosynthesis protein PqqB"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FCI",
+   "name": "L-fucose isomerase",
+   "equation_ids": "fuc__L_c <=> fcl__L_c",
+   "equation_names": "L-Fucose <=> L-fuculose",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "FCLPA",
+   "name": "L-fuculose 1-phosphate aldolase",
+   "equation_ids": "fc1p_c <=> dhap_c + lald__L_c",
+   "equation_names": "L-Fuculose 1-phosphate <=> Dihydroxyacetone phosphate + L-Lactaldehyde",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386339_1 or NP_437012_1 or NP_437913_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386339_1",
+     "locus": "SMc01621",
+     "fitness_browser_desc": "L-fuculose phosphate aldolase",
+     "refseq_definition": "L-fuculose phosphate aldolase",
+     "neighbourhood": [
+      "SMc01618 (-) carbohydrate kinase",
+      "SMc01619 (-) hypothetical protein",
+      "SMc01620 (-) glycerol-3-phosphate dehydrogenase",
+      "SMc01621 (-) L-fuculose phosphate aldolase",
+      "SMc01622 (-) oxidoreductase",
+      "SMc01623 (-) erythritol kinase",
+      "SMc01624 (-) ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437012_1",
+     "locus": "SM_b20490",
+     "fitness_browser_desc": "L-fuculose phosphate aldolase",
+     "refseq_definition": "L-fuculose phosphate aldolase (plasmid)",
+     "neighbourhood": [
+      "SM_b20487 (+) sugar ABC transporter permease",
+      "SM_b20488 (+) hypothetical protein",
+      "SM_b20489 (+) carbohydrate kinase",
+      "SM_b20490 (+) L-fuculose phosphate aldolase",
+      "SM_b22020 (-) hypothetical protein",
+      "SM_b20491 (-) hypothetical protein",
+      "SM_b20492 (-) short-chain oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "NP_437913_1",
+     "locus": "SM_b20666",
+     "fitness_browser_desc": "aldolase",
+     "refseq_definition": "aldolase (plasmid)",
+     "neighbourhood": [
+      "SM_b20663 (-) hypothetical protein",
+      "SM_b20664 (-) GntR family transcriptional regulator",
+      "SM_b20665 (-) partial transposase of insertion sequence ISRm17 protein",
+      "SM_b20666 (-) aldolase",
+      "SM_b20667 (-) LacI family transcriptional regulator",
+      "SM_b20668 (+) hypothetical protein",
+      "SM_b20669 (+) hydroxypyruvate isomerase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "FUCt",
+   "name": "L-fucose transport via proton symport",
+   "equation_ids": "fuc__L_e + h_e <=> fuc__L_c + h_c",
+   "equation_names": "L-Fucose + H+ <=> L-Fucose + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "G1PACT",
+   "name": "Glucosamine-1-phosphate N-acetyltransferase",
+   "equation_ids": "accoa_c + gam1p_c --> acgam1p_c + coa_c + h_c",
+   "equation_names": "Acetyl-CoA + D-Glucosamine 1-phosphate --> N-Acetyl-D-glucosamine 1-phosphate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385763_1 or NP_385854_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385763_1",
+     "locus": "SMc00232",
+     "fitness_browser_desc": "bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase",
+     "refseq_definition": "bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase",
+     "neighbourhood": [
+      "SMc00229 (-) hypothetical protein",
+      "SMc00230 (-) hypothetical protein",
+      "SMc00231 (-) glucosamine--fructose-6-phosphate aminotransferase",
+      "SMc00232 (-) bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase",
+      "SMc00233 (-) hypothetical protein",
+      "SMc00234 (+) peptidyl-prolyl cis-trans isomerase",
+      "SMc00235 (+) anthranilate phosphoribosyltransferase"
+     ]
+    },
+    {
+     "model_gene": "NP_385854_1",
+     "locus": "SMc00519",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc00519",
+     "neighbourhood": [
+      "SMc00522 (+) ATP-dependent RNA helicase",
+      "SMc00521 (+) hypothetical protein",
+      "SMc00520 (-) hypothetical protein",
+      "SMc00519 (-) hypothetical protein",
+      "SMc00518 (-) hypothetical protein",
+      "SMc00517 (-) hypothetical protein",
+      "SMc00516 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GALKr",
+   "name": "Galactokinase",
+   "equation_ids": "atp_c + gal_c <=> adp_c + gal1p_c + h_c",
+   "equation_names": "ATP + D-Galactose <=> ADP + Alpha-D-Galactose 1-phosphate + H+",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "GALabc",
+   "name": "D-galactose transport via ABC system",
+   "equation_ids": "atp_c + gal_e + h2o_c --> adp_c + gal_c + h_c + pi_c",
+   "equation_names": "ATP + D-Galactose + H2O --> ADP + D-Galactose + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_384738_1 and NP_437959_1 and NP_437960_2) or (NP_386618_1 and NP_435623_1 and NP_437575_1)",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384738_1",
+     "locus": "SMc03000",
+     "fitness_browser_desc": "ABC transporter permease",
+     "refseq_definition": "ABC transporter permease",
+     "neighbourhood": [
+      "SMc02323 (+) transcriptional regulator",
+      "SMc02324 (+) periplasmic binding ABC transporter protein",
+      "SMc02325 (+) ABC transporter ATP-binding protein",
+      "SMc03000 (+) ABC transporter permease",
+      "SMc03001 (+) ABC transporter permease",
+      "SMc03002 (+) hypothetical protein",
+      "SMc03003 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386618_1",
+     "locus": "SMc01978",
+     "fitness_browser_desc": "sugar transport system permease ABC transporter protein",
+     "refseq_definition": "sugar transport system permease ABC transporter protein",
+     "neighbourhood": [
+      "SMc01975 (+) transcriptional regulator",
+      "SMc01976 (+) hypothetical protein",
+      "SMc01977 (+) sugar-binding periplasmic ABC transporter protein",
+      "SMc01978 (+) sugar transport system permease ABC transporter protein",
+      "SMc01979 (+) sugar transport system permease ABC transporter protein",
+      "SMc01980 (+) sugar transport system ATP-binding ABC transporter protein",
+      "SMc01981 (+) cytochrome C transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_435623_1",
+     "locus": "SMa0711",
+     "fitness_browser_desc": "ABC transporter permease",
+     "refseq_definition": "ABC transporter permease (plasmid)",
+     "neighbourhood": [
+      "SMa0708 (+) enolase",
+      "SMa0709 (+) ABC transporter substrate-binding protein",
+      "SMa0710 (+) ABC transporter permease",
+      "SMa0711 (+) ABC transporter permease",
+      "SMa0713 (+) ABC transporter ATP-binding protein",
+      "SMa0714 (+) ABC transporter ATP-binding protein",
+      "SMa0715 (+) Nucleoside-diphosphate-sugar epimerase"
+     ]
+    },
+    {
+     "model_gene": "NP_437575_1",
+     "locus": "SM_b21595",
+     "fitness_browser_desc": "sugar uptake ABC transporter substrate-binding protein precursor",
+     "refseq_definition": "sugar uptake ABC transporter substrate-binding protein precursor (plasmid)",
+     "neighbourhood": [
+      "SM_b21592 (-) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b21593 (-) sugar uptake ABC transporter permease",
+      "SM_b21594 (-) sugar uptake ABC transporter permease",
+      "SM_b21595 (-) sugar uptake ABC transporter substrate-binding protein precursor",
+      "SM_b21596 (-) hypothetical protein",
+      "SM_b21597 (-) exported oxidoreductase",
+      "SM_b21598 (+) transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "NP_437959_1",
+     "locus": "SM_b20712",
+     "fitness_browser_desc": "rhizopine uptake ABC transporter substrate-binding protein precursor",
+     "refseq_definition": "rhizopine uptake ABC transporter substrate-binding protein precursor (plasmid)",
+     "neighbourhood": [
+      "SM_b20709 (+) 3-methyladenine DNA glycosylase",
+      "SM_b20710 (+) dehydrogenase",
+      "SM_b20711 (+) hypothetical protein",
+      "SM_b20712 (+) rhizopine uptake ABC transporter substrate-binding protein precursor",
+      "SM_b20713 (+) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b20714 (+) sugar uptake ABC transporter permease",
+      "SM_b20715 (-) LysR family transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "NP_437960_2",
+     "locus": "SM_b20713",
+     "fitness_browser_desc": "sugar uptake ABC transporter ATP-binding protein",
+     "refseq_definition": "sugar uptake ABC transporter ATP-binding protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20710 (+) dehydrogenase",
+      "SM_b20711 (+) hypothetical protein",
+      "SM_b20712 (+) rhizopine uptake ABC transporter substrate-binding protein precursor",
+      "SM_b20713 (+) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b20714 (+) sugar uptake ABC transporter permease",
+      "SM_b20715 (-) LysR family transcriptional regulator",
+      "SM_b20716 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GARFT",
+   "name": "Phosphoribosylglycinamide formyltransferase",
+   "equation_ids": "10fthf_c + gar_c <=> fgam_c + h_c + thf_c",
+   "equation_names": "10-Formyltetrahydrofolate + N1-(5-Phospho-D-ribosyl)glycinamide <=> N2-Formyl-N1-(5-phospho-D-ribosyl)glycinamide + H+ + 5,6,7,8-Tetrahydrofolate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385289_1 or NP_386086_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385289_1",
+     "locus": "SMc00614",
+     "fitness_browser_desc": "phosphoribosylglycinamide formyltransferase",
+     "refseq_definition": "phosphoribosylglycinamide formyltransferase",
+     "neighbourhood": [
+      "SMc00611 (+) hypothetical protein",
+      "SMc00612 (+) hypothetical protein",
+      "SMc00613 (+) hypothetical protein",
+      "SMc00614 (-) phosphoribosylglycinamide formyltransferase",
+      "SMc00615 (-) phosphoribosylaminoimidazole synthetase",
+      "SMc00616 (+) permease",
+      "SMc00617 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386086_1",
+     "locus": "SMc04334",
+     "fitness_browser_desc": "formyltransferase",
+     "refseq_definition": "formyltransferase",
+     "neighbourhood": [
+      "SMc04331 (+) dimethylamine corrinoid protein",
+      "SMc04332 (-) entericidin B signal peptide protein",
+      "SMc04333 (+) hypothetical protein",
+      "SMc04334 (+) formyltransferase",
+      "SMc05020 (-) entericidin A precursor",
+      "SMc04335 (+) lipoprotein transmembrane",
+      "SMc04336 (-) transmembrane signal peptide protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GF6PTA",
+   "name": "Glutamine-fructose-6-phosphate transaminase",
+   "equation_ids": "f6p_c + gln__L_c --> gam6p_c + glu__L_c",
+   "equation_names": "D-Fructose 6-phosphate + L-Glutamine --> D-Glucosamine 6-phosphate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384193_1 or NP_384308_1 or NP_435728_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384193_1",
+     "locus": "SMc02610",
+     "fitness_browser_desc": "amidotransferase",
+     "refseq_definition": "amidotransferase",
+     "neighbourhood": [
+      "SMc02607 (-) sarcosine oxidase subunit delta",
+      "SMc02608 (-) sarcosine oxidase subunit beta",
+      "SMc02609 (+) transcriptional regulator",
+      "SMc02610 (+) amidotransferase",
+      "SMc02611 (+) oxidoreductase",
+      "SMc02612 (+) oxidoreductase",
+      "SMc02613 (+) glutamine synthetase"
+     ]
+    },
+    {
+     "model_gene": "NP_384308_1",
+     "locus": "SMc02877",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc02877",
+     "neighbourhood": [
+      "SMc02874 (-) N-acetylmuramic acid 6-phosphate etherase",
+      "SMc02875 (+) hypothetical protein",
+      "SMc02876 (+) transcriptional regulator",
+      "SMc02877 (+) hypothetical protein",
+      "SMc02878 (+) N-acetylglucosamine-6-phosphate deacetylase",
+      "SMc02879 (-) hypothetical protein",
+      "SMc02880 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_435728_1",
+     "locus": "SMa0878",
+     "fitness_browser_desc": "glucosamine--fructose-6-phosphate aminotransferase",
+     "refseq_definition": "glucosamine--fructose-6-phosphate aminotransferase (plasmid)",
+     "neighbourhood": [
+      "SMa0874 (-) NodN dehydratase",
+      "SMa0875 (-) NolG efflux transporter",
+      "SMa0876 (-) NolF secretion protein",
+      "SMa0878 (-) glucosamine--fructose-6-phosphate aminotransferase",
+      "SMa0882 (-) hypothetical protein",
+      "SMa0883 (+) hypothetical protein",
+      "SMa0886 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLCabc",
+   "name": "GLCabc",
+   "equation_ids": "atp_c + glc__D_e + h2o_c --> adp_c + glc__D_c + h_c + pi_c",
+   "equation_names": "ATP + D-Glucose + H2O --> ADP + D-Glucose + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_386618_1 and NP_435623_1 and NP_437575_1) or (NP_436945_1 and NP_437824_1 and NP_437825_1)",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386618_1",
+     "locus": "SMc01978",
+     "fitness_browser_desc": "sugar transport system permease ABC transporter protein",
+     "refseq_definition": "sugar transport system permease ABC transporter protein",
+     "neighbourhood": [
+      "SMc01975 (+) transcriptional regulator",
+      "SMc01976 (+) hypothetical protein",
+      "SMc01977 (+) sugar-binding periplasmic ABC transporter protein",
+      "SMc01978 (+) sugar transport system permease ABC transporter protein",
+      "SMc01979 (+) sugar transport system permease ABC transporter protein",
+      "SMc01980 (+) sugar transport system ATP-binding ABC transporter protein",
+      "SMc01981 (+) cytochrome C transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_435623_1",
+     "locus": "SMa0711",
+     "fitness_browser_desc": "ABC transporter permease",
+     "refseq_definition": "ABC transporter permease (plasmid)",
+     "neighbourhood": [
+      "SMa0708 (+) enolase",
+      "SMa0709 (+) ABC transporter substrate-binding protein",
+      "SMa0710 (+) ABC transporter permease",
+      "SMa0711 (+) ABC transporter permease",
+      "SMa0713 (+) ABC transporter ATP-binding protein",
+      "SMa0714 (+) ABC transporter ATP-binding protein",
+      "SMa0715 (+) Nucleoside-diphosphate-sugar epimerase"
+     ]
+    },
+    {
+     "model_gene": "NP_436945_1",
+     "locus": "SM_b20419",
+     "fitness_browser_desc": "glycerol-3-phosphate ABC transporter ATP-binding protein",
+     "refseq_definition": "glycerol-3-phosphate ABC transporter ATP-binding protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20416 (+) glycerol-3-phosphate ABC transporter substrate-binding protein",
+      "SM_b20417 (+) glycerol-3-phosphate ABC transporter permease",
+      "SM_b20418 (+) glycerol-3-phosphate ABC transporter permease",
+      "SM_b20419 (+) glycerol-3-phosphate ABC transporter ATP-binding protein",
+      "SM_b20420 (+) glutathione S-transferase",
+      "SM_b20421 (+) transposase",
+      "SM_b20422 (-) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "NP_437575_1",
+     "locus": "SM_b21595",
+     "fitness_browser_desc": "sugar uptake ABC transporter substrate-binding protein precursor",
+     "refseq_definition": "sugar uptake ABC transporter substrate-binding protein precursor (plasmid)",
+     "neighbourhood": [
+      "SM_b21592 (-) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b21593 (-) sugar uptake ABC transporter permease",
+      "SM_b21594 (-) sugar uptake ABC transporter permease",
+      "SM_b21595 (-) sugar uptake ABC transporter substrate-binding protein precursor",
+      "SM_b21596 (-) hypothetical protein",
+      "SM_b21597 (-) exported oxidoreductase",
+      "SM_b21598 (+) transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "NP_437824_1",
+     "locus": "SM_b21458",
+     "fitness_browser_desc": "sugar uptake ABC transporter permease",
+     "refseq_definition": "sugar uptake ABC transporter permease (plasmid)",
+     "neighbourhood": [
+      "SM_b21454 (-) hypothetical protein",
+      "SM_b21455 (-) hypothetical protein",
+      "SM_b21456 (-) hypothetical protein",
+      "SM_b21458 (-) sugar uptake ABC transporter permease",
+      "SM_b21459 (-) sugar uptake ABC transporter permease",
+      "SM_b21460 (-) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b21461 (-) sugar uptake ABC transporter substrate-binding protein precursor"
+     ]
+    },
+    {
+     "model_gene": "NP_437825_1",
+     "locus": "SM_b21459",
+     "fitness_browser_desc": "sugar uptake ABC transporter permease",
+     "refseq_definition": "sugar uptake ABC transporter permease (plasmid)",
+     "neighbourhood": [
+      "SM_b21455 (-) hypothetical protein",
+      "SM_b21456 (-) hypothetical protein",
+      "SM_b21458 (-) sugar uptake ABC transporter permease",
+      "SM_b21459 (-) sugar uptake ABC transporter permease",
+      "SM_b21460 (-) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b21461 (-) sugar uptake ABC transporter substrate-binding protein precursor",
+      "SM_b21462 (-) sugar kinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLNS",
+   "name": "Glutamine synthetase",
+   "equation_ids": "atp_c + glu__L_c + nh4_c --> adp_c + gln__L_c + h_c + pi_c",
+   "equation_names": "ATP + L-Glutamate + Ammonium --> ADP + L-Glutamine + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384196_1 or NP_385746_1 or NP_386613_1 or NP_437977_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384196_1",
+     "locus": "SMc02613",
+     "fitness_browser_desc": "glutamine synthetase",
+     "refseq_definition": "glutamine synthetase",
+     "neighbourhood": [
+      "SMc02610 (+) amidotransferase",
+      "SMc02611 (+) oxidoreductase",
+      "SMc02612 (+) oxidoreductase",
+      "SMc02613 (+) glutamine synthetase",
+      "SMc02614 (-) hypothetical protein",
+      "SMc02615 (-) signal peptide protein",
+      "SMc02616 (-) permease transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_385746_1",
+     "locus": "SMc00948",
+     "fitness_browser_desc": "glutamine synthetase",
+     "refseq_definition": "glutamine synthetase",
+     "neighbourhood": [
+      "SMc00945 (+) xanthine-guanine phosphoribosyltransferase",
+      "SMc00946 (-) hypothetical protein",
+      "SMc00947 (+) nitrogen regulatory protein PII",
+      "SMc00948 (+) glutamine synthetase",
+      "SMc00949 (+) hypothetical protein",
+      "SMc00950 (-) signal peptide protein",
+      "SMc00951 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386613_1",
+     "locus": "SMc01973",
+     "fitness_browser_desc": "glutamine synthetase",
+     "refseq_definition": "glutamine synthetase",
+     "neighbourhood": [
+      "SMc01970 (-) hypothetical protein",
+      "SMc01971 (-) aldehyde dehydrogenase",
+      "SMc01972 (-) oxidoreductase",
+      "SMc01973 (-) glutamine synthetase",
+      "SMc01974 (+) transcriptional regulator",
+      "SMc01975 (+) transcriptional regulator",
+      "SMc01976 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437977_1",
+     "locus": "SM_b20745",
+     "fitness_browser_desc": "glutatmine synthetase II protein",
+     "refseq_definition": "glutatmine synthetase II protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20727 (+) hypothetical protein",
+      "SM_b20728 (-) hypothetical protein",
+      "SM_b20729 (-) hypothetical protein",
+      "SM_b20745 (-) glutatmine synthetase II protein",
+      "SM_b20746 (+) hypothetical protein",
+      "SM_b20747 (-) hypothetical protein",
+      "SM_b20748 (-) glycosyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GLYCtpp",
+   "name": "Glycerol transport via channel (periplasm)",
+   "equation_ids": "glyc_c <=> glyc_p",
+   "equation_names": "Glycerol <=> Glycerol",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385182_1 or spontaneous",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385182_1",
+     "locus": "SMc02648",
+     "fitness_browser_desc": "transport transmembrane protein",
+     "refseq_definition": "transport transmembrane protein",
+     "neighbourhood": [
+      "SMc02651 (+) GTP-binding protein Era",
+      "SMc02650 (-) hypothetical protein",
+      "SMc02649 (-) arsenate reductase",
+      "SMc02648 (-) transport transmembrane protein",
+      "SMc02647 (-) transcriptional regulator",
+      "SMc02646 (-) hypothetical protein",
+      "SMc02645 (+) cyclopropane-fatty-acyl-phospholipid synthase"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "GRTT",
+   "name": "Geranyltranstransferase",
+   "equation_ids": "grdp_c + ipdp_c --> frdp_c + ppi_c",
+   "equation_names": "Geranyl diphosphate + Isopentenyl diphosphate --> Farnesyl diphosphate + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384952_1 or NP_387373_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384952_1",
+     "locus": "SMc00860",
+     "fitness_browser_desc": "octaprenyl-diphosphate synthase",
+     "refseq_definition": "octaprenyl-diphosphate synthase",
+     "neighbourhood": [
+      "SMc00863 (-) molybdenum cofactor biosynthesis protein B",
+      "SMc00862 (-) 4-diphosphocytidyl-2-C-methyl-D-erythritol kinase",
+      "SMc00861 (-) signal peptide protein",
+      "SMc00860 (-) octaprenyl-diphosphate synthase",
+      "SMc00859 (+) hypothetical protein",
+      "SMc00858 (+) hypothetical protein",
+      "SMc00857 (+) protease"
+     ]
+    },
+    {
+     "model_gene": "NP_387373_1",
+     "locus": "SMc03884",
+     "fitness_browser_desc": "geranyltranstransferase",
+     "refseq_definition": "geranyltranstransferase",
+     "neighbourhood": [
+      "SMc03881 (-) 50S ribosomal protein L32",
+      "SMc03882 (-) glutathione S-transferase",
+      "SMc03883 (-) monofunctional biosynthetic peptidoglycan transglycosylase",
+      "SMc03884 (+) geranyltranstransferase",
+      "SMc03885 (+) histidinol-phosphate aminotransferase",
+      "SMc03886 (-) transposase",
+      "SMc03887 (+) amino acid efflux protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "GTPCI",
+   "name": "GTP cyclohydrolase I",
+   "equation_ids": "gtp_c + h2o_c --> ahdt_c + for_c + h_c",
+   "equation_names": "GTP + H2O --> 2-Amino-4-hydroxy-6-(erythro-1,2,3-trihydroxypropyl)dihydropteridine triphosphate + Formate + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385526_1 or NP_386491_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385526_1",
+     "locus": "SMc01005",
+     "fitness_browser_desc": "GTP cyclohydrolase I",
+     "refseq_definition": "GTP cyclohydrolase I",
+     "neighbourhood": [
+      "SMc01002 (+) hypothetical protein",
+      "SMc01003 (-) hypothetical protein",
+      "SMc01004 (-) phosphoribosyl-AMP cyclohydrolase",
+      "SMc01005 (-) GTP cyclohydrolase I",
+      "SMc01006 (+) hypothetical protein",
+      "SMc01007 (+) hypothetical protein",
+      "SMc01008 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386491_1",
+     "locus": "SMc02723",
+     "fitness_browser_desc": "7-cyano-7-deazaguanine reductase",
+     "refseq_definition": "7-cyano-7-deazaguanine reductase",
+     "neighbourhood": [
+      "SMc02720 (-) ATP-dependent Clp protease proteolytic subunit",
+      "SMc02721 (+) outer membrane receptor protein",
+      "SMc02722 (-) aminoglycoside 3'-phosphotransferase",
+      "SMc02723 (-) 7-cyano-7-deazaguanine reductase",
+      "SMc02724 (-) hypothetical protein",
+      "SMc02725 (-) anthranilate synthase",
+      "SMc02726 (-) iron transport protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HCO3E",
+   "name": "HCO3 equilibration reaction",
+   "equation_ids": "co2_c + h2o_c <=> h_c + hco3_c",
+   "equation_names": "CO2 + H2O <=> H+ + Bicarbonate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_387424_1 or spontaneous",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_387424_1",
+     "locus": "SMc04083",
+     "fitness_browser_desc": "carbonic anhydrase",
+     "refseq_definition": "carbonic anhydrase",
+     "neighbourhood": [
+      "SMc04409 (+) hypothetical protein",
+      "SMc04410 (+) aspartate-semialdehyde dehydrogenase",
+      "SMc04411 (+) membrane-bound lytic murein transglycosylase signal peptide protein",
+      "SMc04083 (-) carbonic anhydrase",
+      "SMc04084 (-) pyridoxamine kinase",
+      "SMc04085 (+) hypothetical protein",
+      "SMc04087 (+) transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "spontaneous",
+     "locus": null,
+     "fitness_browser_desc": null,
+     "refseq_definition": null
+    }
+   ]
+  },
+  {
+   "reaction": "HISDr",
+   "name": "Histidase r",
+   "equation_ids": "his__L_c --> nh4_c + urcan_c",
+   "equation_names": "L-Histidine --> Ammonium + Urocanate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386809_1 or NP_435411_1 or NP_437371_1 or NP_437818_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386809_1",
+     "locus": "SMc00669",
+     "fitness_browser_desc": "histidine ammonia-lyase",
+     "refseq_definition": "histidine ammonia-lyase",
+     "neighbourhood": [
+      "SMc00672 (+) histidine-binding periplasmic signal peptide protein",
+      "SMc00671 (+) histidine transport system permease ABC transporter protein",
+      "SMc00670 (+) histidine transport ATP-binding ABC transporter protein",
+      "SMc00669 (+) histidine ammonia-lyase",
+      "SMc00668 (+) hypothetical protein",
+      "SMc00667 (+) hypothetical protein",
+      "SMc00666 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_435411_1",
+     "locus": "SMa0306",
+     "fitness_browser_desc": "histidine ammonia-lyase",
+     "refseq_definition": "histidine ammonia-lyase (plasmid)",
+     "neighbourhood": [
+      "SMa0301 (-) hypothetical protein",
+      "SMa0302 (-) ABC transporter substrate-binding protein",
+      "SMa0303 (+) LysR family transcriptional regulator",
+      "SMa0306 (-) histidine ammonia-lyase",
+      "SMa0307 (-) LysR family transcriptional regulator",
+      "SMa0308 (+) hypothetical protein",
+      "SMa0310 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437371_1",
+     "locus": "SM_b21165",
+     "fitness_browser_desc": "histidine ammonia-lyase",
+     "refseq_definition": "histidine ammonia-lyase (plasmid)",
+     "neighbourhood": [
+      "SM_b21162 (+) integral membrane transporter protein",
+      "SM_b21163 (-) urocanate hydratase",
+      "SM_b21164 (-) formiminoglutamase",
+      "SM_b21165 (-) histidine ammonia-lyase",
+      "SM_b21166 (-) imidazolonepropionase",
+      "SM_b21167 (-) reverse transcriptasematurase",
+      "SM_b21168 (-) integral membrane transporter protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437818_1",
+     "locus": "SM_b21449",
+     "fitness_browser_desc": "glutathione S-transferase",
+     "refseq_definition": "glutathione S-transferase (plasmid)",
+     "neighbourhood": [
+      "SM_b21446 (-) glycosyl hydrolase",
+      "SM_b21447 (+) 1,4-alpha-glucan-branching protein",
+      "SM_b21448 (+) DNA polymerase related protein",
+      "SM_b21449 (-) glutathione S-transferase",
+      "SM_b21450 (+) hypothetical protein",
+      "SM_b21452 (+) hypothetical protein",
+      "SM_b21454 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HISTD",
+   "name": "Histidinol dehydrogenase",
+   "equation_ids": "h2o_c + histd_c + 2.0 nad_c --> 3.0 h_c + his__L_c + 2.0 nadh_c",
+   "equation_names": "H2O + L-Histidinol + 2.0 Nicotinamide adenine dinucleotide --> 3.0 H+ + L-Histidine + 2.0 Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384717_1 or NP_435458_3",
+   "n_growth_conditions_essential": 21,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384717_1",
+     "locus": "SMc02307",
+     "fitness_browser_desc": "histidinol dehydrogenase",
+     "refseq_definition": "histidinol dehydrogenase",
+     "neighbourhood": [
+      "SMc02304 (+) hypothetical protein",
+      "SMc02305 (+) UDP-N-acetylglucosamine 1-carboxyvinyltransferase",
+      "SMc02306 (+) hypothetical protein",
+      "SMc02307 (+) histidinol dehydrogenase",
+      "SMc02308 (+) hypothetical protein",
+      "SMc02309 (+) arsenate reductase",
+      "SMc02310 (+) translation initiation factor IF-1"
+     ]
+    },
+    {
+     "model_gene": "NP_435458_3",
+     "locus": "SMa0398",
+     "fitness_browser_desc": "histidinol dehydrogenase",
+     "refseq_definition": "histidinol dehydrogenase (plasmid)",
+     "neighbourhood": [
+      "SMa0392 (+) ABC transporter substrate-binding protein",
+      "SMa0394 (+) ABC transporter permease",
+      "SMa0396 (+) ABC transporter permease",
+      "SMa0398 (+) histidinol dehydrogenase",
+      "SMa0400 (+) Dehydrogenase, Zn-dependent",
+      "SMa0402 (+) GntR family transcriptional regulator",
+      "SMa0403 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HISTP",
+   "name": "Histidinol-phosphatase",
+   "equation_ids": "h2o_c + hisp_c --> histd_c + pi_c",
+   "equation_names": "H2O + L-Histidinol phosphate --> L-Histidinol + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384161_1 or NP_436699_1",
+   "n_growth_conditions_essential": 21,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384161_1",
+     "locus": "SMc02574",
+     "fitness_browser_desc": "imidazoleglycerol-phosphate dehydratase",
+     "refseq_definition": "imidazoleglycerol-phosphate dehydratase",
+     "neighbourhood": [
+      "SMc02570 (-) 1-(5-phosphoribosyl)-5-[(5- phosphoribosylamino)methylideneamino] imidazole-4-carboxamide isomerase",
+      "SMc02572 (-) imidazole glycerol phosphate synthase subunit HisH",
+      "SMc02573 (-) hypothetical protein",
+      "SMc02574 (-) imidazoleglycerol-phosphate dehydratase",
+      "SMc02575 (+) ATP-dependent protease peptidase subunit",
+      "SMc02576 (+) acetyltransferase",
+      "SMc02577 (+) ATP-dependent protease ATP-binding subunit HslU"
+     ]
+    },
+    {
+     "model_gene": "NP_436699_1",
+     "locus": "SM_b20159",
+     "fitness_browser_desc": "inositol monophosphatase",
+     "refseq_definition": "inositol monophosphatase (plasmid)",
+     "neighbourhood": [
+      "SM_b20156 (+) ABC transporter ATP-binding protein",
+      "SM_b20157 (+) ABC transporter substrate-binding protein",
+      "SM_b20158 (+) ABC transporter substrate-binding protein",
+      "SM_b20159 (+) inositol monophosphatase",
+      "SM_b22005 (+) hypothetical protein",
+      "SM_b20161 (+) hypothetical protein",
+      "SM_b20162 (+) transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HISabcpp",
+   "name": "L-histidine transport via ABC system (periplasm)",
+   "equation_ids": "atp_c + h2o_c + his__L_p --> adp_c + h_c + his__L_c + pi_c",
+   "equation_names": "ATP + H2O + L-Histidine --> ADP + H+ + L-Histidine + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_387354_1 and NP_436796_1) or (NP_385581_1 and NP_385582_1 and NP_385583_1 and NP_385584_1)",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385581_1",
+     "locus": "SMc02121",
+     "fitness_browser_desc": "general L-amino acid transport ATP-binding ABC transporter protein",
+     "refseq_definition": "general L-amino acid transport ATP-binding ABC transporter protein",
+     "neighbourhood": [
+      "SMc02123 (+) hypothetical protein",
+      "SMc02122 (+) ferredoxin--NADP reductase",
+      "SMc04436 (-) hypothetical protein",
+      "SMc02121 (-) general L-amino acid transport ATP-binding ABC transporter protein",
+      "SMc02120 (-) general L-amino acid transport permease ABC transporter protein",
+      "SMc02119 (-) general L-amino acid transport permease ABC transporter protein",
+      "SMc02118 (-) general L-amino acid-binding periplasmic ABC transporter protein"
+     ]
+    },
+    {
+     "model_gene": "NP_385582_1",
+     "locus": "SMc02120",
+     "fitness_browser_desc": "general L-amino acid transport permease ABC transporter protein",
+     "refseq_definition": "general L-amino acid transport permease ABC transporter protein",
+     "neighbourhood": [
+      "SMc02122 (+) ferredoxin--NADP reductase",
+      "SMc04436 (-) hypothetical protein",
+      "SMc02121 (-) general L-amino acid transport ATP-binding ABC transporter protein",
+      "SMc02120 (-) general L-amino acid transport permease ABC transporter protein",
+      "SMc02119 (-) general L-amino acid transport permease ABC transporter protein",
+      "SMc02118 (-) general L-amino acid-binding periplasmic ABC transporter protein",
+      "SMc02117 (+) cystathionine beta-lyase"
+     ]
+    },
+    {
+     "model_gene": "NP_385583_1",
+     "locus": "SMc02119",
+     "fitness_browser_desc": "general L-amino acid transport permease ABC transporter protein",
+     "refseq_definition": "general L-amino acid transport permease ABC transporter protein",
+     "neighbourhood": [
+      "SMc04436 (-) hypothetical protein",
+      "SMc02121 (-) general L-amino acid transport ATP-binding ABC transporter protein",
+      "SMc02120 (-) general L-amino acid transport permease ABC transporter protein",
+      "SMc02119 (-) general L-amino acid transport permease ABC transporter protein",
+      "SMc02118 (-) general L-amino acid-binding periplasmic ABC transporter protein",
+      "SMc02117 (+) cystathionine beta-lyase",
+      "SMc02116 (-) salicylate hydroxylase"
+     ]
+    },
+    {
+     "model_gene": "NP_385584_1",
+     "locus": "SMc02118",
+     "fitness_browser_desc": "general L-amino acid-binding periplasmic ABC transporter protein",
+     "refseq_definition": "general L-amino acid-binding periplasmic ABC transporter protein",
+     "neighbourhood": [
+      "SMc02121 (-) general L-amino acid transport ATP-binding ABC transporter protein",
+      "SMc02120 (-) general L-amino acid transport permease ABC transporter protein",
+      "SMc02119 (-) general L-amino acid transport permease ABC transporter protein",
+      "SMc02118 (-) general L-amino acid-binding periplasmic ABC transporter protein",
+      "SMc02117 (+) cystathionine beta-lyase",
+      "SMc02116 (-) salicylate hydroxylase",
+      "SMc02115 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_387354_1",
+     "locus": "SMc03865",
+     "fitness_browser_desc": "amino-acid transport system permease ABC transporter protein",
+     "refseq_definition": "amino-acid transport system permease ABC transporter protein",
+     "neighbourhood": [
+      "SMc03862 (-) hypothetical protein",
+      "SMc03863 (+) 50S ribosomal protein L19",
+      "SMc03864 (+) amino acid-binding periplasmic (signal peptide) ABC transporter protein",
+      "SMc03865 (+) amino-acid transport system permease ABC transporter protein",
+      "SMc03866 (-) ABC transporter ATP-binding protein",
+      "SMc03867 (-) hypothetical protein",
+      "SMc03868 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_436796_1",
+     "locus": "SM_b20266",
+     "fitness_browser_desc": "amino acid ABC transporter ATP-binding protein",
+     "refseq_definition": "amino acid ABC transporter ATP-binding protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20263 (+) amino acid ABC transporter substrate-binding protein",
+      "SM_b20264 (+) amino acid ABC transporter permease",
+      "SM_b20265 (+) amino acid ABC transporter permease",
+      "SM_b20266 (+) amino acid ABC transporter ATP-binding protein",
+      "SM_b20267 (+) D-amino acid dehydrogenase",
+      "SM_b20268 (+) hydroxyproline-2-epimerase",
+      "SM_b20269 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "HIStex",
+   "name": "L-histidine transport via diffusion (extracellular to periplasm)",
+   "equation_ids": "his__L_e <=> his__L_p",
+   "equation_names": "L-Histidine <=> L-Histidine",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "ICITt_kt",
+   "name": "ICITt kt",
+   "equation_ids": "h_p + icit_p <=> h_c + icit_c",
+   "equation_names": "H+ + Isocitrate <=> H+ + Isocitrate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "INSCR",
+   "name": "Inositol catabolic reactions  lumped",
+   "equation_ids": "2ins_c + atp_c --> adp_c + dhap_c + 2.0 h_c + msa_c",
+   "equation_names": "2-Inosose + ATP --> ADP + Dihydroxyacetone phosphate + 2.0 H+ + Malonate semialdehyde",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "INSTt2",
+   "name": "Inositol transport in via proton symport",
+   "equation_ids": "h_e + inost_e <=> h_c + inost_c",
+   "equation_names": "H+ + Myo-Inositol <=> H+ + Myo-Inositol",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "IPDPS",
+   "name": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate reductase (ipdp)",
+   "equation_ids": "h2mb4p_c + h_c + nadh_c --> h2o_c + ipdp_c + nad_c",
+   "equation_names": "1-hydroxy-2-methyl-2-(E)-butenyl 4-diphosphate + H+ + Nicotinamide adenine dinucleotide - reduced --> H2O + Isopentenyl diphosphate + Nicotinamide adenine dinucleotide",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384361_1 or NP_385018_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384361_1",
+     "locus": "SMc00335",
+     "fitness_browser_desc": "30S ribosomal protein S1",
+     "refseq_definition": "30S ribosomal protein S1",
+     "neighbourhood": [
+      "SMc00332 (-) hypothetical protein",
+      "SMc00333 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "SMc00334 (+) cytidylate kinase",
+      "SMc00335 (+) 30S ribosomal protein S1",
+      "SMc00336 (-) hypothetical protein",
+      "SMc00337 (+) hypothetical protein",
+      "SMc00338 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_385018_1",
+     "locus": "SMc00016",
+     "fitness_browser_desc": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "refseq_definition": "4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+     "neighbourhood": [
+      "SMc00013 (+) cytochrome C oxidase subunit III transmembrane protein",
+      "SMc00014 (+) hypothetical protein",
+      "SMc00085 (+) cytochrome oxidase complex biogenesis factor transmembrane protein",
+      "SMc00016 (+) 4-hydroxy-3-methylbut-2-enyl diphosphate reductase",
+      "SMc00017 (+) homoserine kinase",
+      "SMc00018 (+) ribonuclease H",
+      "SMc00072 (-) peroxiredoxin protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "IPPS",
+   "name": "2-isopropylmalate synthase",
+   "equation_ids": "3mob_c + accoa_c + h2o_c --> 3c3hmp_c + coa_c + h_c",
+   "equation_names": "3-Methyl-2-oxobutanoate + Acetyl-CoA + H2O --> 3-Carboxy-3-hydroxy-4-methylpentanoate + Coenzyme A + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385222_1 or NP_386485_3",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385222_1",
+     "locus": "SMc02546",
+     "fitness_browser_desc": "alpha-isopropylmalate/homocitrate synthase family transferase",
+     "refseq_definition": "alpha-isopropylmalate/homocitrate synthase family transferase",
+     "neighbourhood": [
+      "SMc02549 (+) hypothetical protein",
+      "SMc02548 (+) hypothetical protein",
+      "SMc02547 (+) proline iminopeptidase",
+      "SMc02546 (+) alpha-isopropylmalate/homocitrate synthase family transferase",
+      "SMc02545 (+) hypothetical protein",
+      "SMc02544 (-) hypothetical protein",
+      "SMc02543 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386485_3",
+     "locus": "SMc02717",
+     "fitness_browser_desc": "2-isopropylmalate synthase",
+     "refseq_definition": "2-isopropylmalate synthase",
+     "neighbourhood": [
+      "SMc02714 (+) hypothetical protein",
+      "SMc02715 (-) hypothetical protein",
+      "SMc02716 (-) hypothetical protein",
+      "SMc02717 (-) 2-isopropylmalate synthase",
+      "SMc02718 (-) hypothetical protein",
+      "SMc02719 (-) transposase",
+      "SMc02720 (-) ATP-dependent Clp protease proteolytic subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "LCADi",
+   "name": "Lactaldehyde dehydrogenase",
+   "equation_ids": "h2o_c + lald__L_c + nad_c --> 2.0 h_c + lac__L_c + nadh_c",
+   "equation_names": "H2O + L-Lactaldehyde + Nicotinamide adenine dinucleotide --> 2.0 H+ + L-Lactate + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386457_1 or NP_435677_1 or NP_436440_1 or NP_436710_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386457_1",
+     "locus": "SMc02689",
+     "fitness_browser_desc": "aldehyde dehydrogenase",
+     "refseq_definition": "aldehyde dehydrogenase",
+     "neighbourhood": [
+      "SMc02686 (+) ribose-phosphate pyrophosphokinase",
+      "SMc02687 (-) hypothetical protein",
+      "SMc02688 (-) hypothetical protein",
+      "SMc02689 (-) aldehyde dehydrogenase",
+      "SMc02690 (-) hypothetical protein",
+      "SMc02691 (+) membrane transporter",
+      "SMc02692 (+) 50S ribosomal protein L25"
+     ]
+    },
+    {
+     "model_gene": "NP_435677_1",
+     "locus": "SMa0796",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMa0796 (plasmid)",
+     "neighbourhood": [
+      "SMa0792 (+) hypothetical protein",
+      "SMa0793 (+) hypothetical protein",
+      "SMa0794 (+) Monoxygenase",
+      "SMa0796 (+) hypothetical protein",
+      "SMa0797 (+) hypothetical protein",
+      "SMa0799 (+) ABC transporter substrate-binding protein",
+      "SMa0800 (+) ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "NP_436440_1",
+     "locus": "SMa2213",
+     "fitness_browser_desc": "aldehyde dehydrogenase",
+     "refseq_definition": "aldehyde dehydrogenase (plasmid)",
+     "neighbourhood": [
+      "SMa2207 (-) ABC transporter ATP-binding protein",
+      "SMa2209 (-) ABC transporter substrate-binding protein",
+      "SMa2211 (-) thiamine pyrophosphate protein",
+      "SMa2213 (-) aldehyde dehydrogenase",
+      "SMa2215 (+) GntR family transcriptional regulator",
+      "SMa2217 (+) decarboxylase",
+      "SMa2219 (+) decarboxylase"
+     ]
+    },
+    {
+     "model_gene": "NP_436710_1",
+     "locus": "SM_b20170",
+     "fitness_browser_desc": "glutathione-dependent formaldehyde dehydrogenase",
+     "refseq_definition": "glutathione-dependent formaldehyde dehydrogenase (plasmid)",
+     "neighbourhood": [
+      "SM_b20167 (-) hypothetical protein",
+      "SM_b20168 (+) hypothetical protein",
+      "SM_b20169 (-) hypothetical protein",
+      "SM_b20170 (+) glutathione-dependent formaldehyde dehydrogenase",
+      "SM_b20171 (+) carboxylesterase",
+      "SM_b20172 (+) cytochrome c protein",
+      "SM_b20173 (+) methanol dehydrogenase, large subunit"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MALT",
+   "name": "Alpha glucosidase",
+   "equation_ids": "h2o_c + malt_c --> 2.0 glc__D_c",
+   "equation_names": "H2O + Maltose --> 2.0 D-Glucose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384804_1 or NP_386512_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384804_1",
+     "locus": "SMc03064",
+     "fitness_browser_desc": "alpha-glucosidase",
+     "refseq_definition": "alpha-glucosidase",
+     "neighbourhood": [
+      "SMc03061 (+) alpha-glucoside ABC transporter periplasmic-binding protein",
+      "SMc03062 (+) alpha-glucoside ABC transporter permease",
+      "SMc03063 (+) alpha-glucoside ABC transporter permease",
+      "SMc03064 (+) alpha-glucosidase",
+      "SMc03065 (+) alpha-glucoside ABC transporter ATP-binding protein",
+      "SMc03066 (+) hypothetical protein",
+      "SMc03067 (-) transposase"
+     ]
+    },
+    {
+     "model_gene": "NP_386512_1",
+     "locus": "SMc01532",
+     "fitness_browser_desc": "alpha-glycosylase",
+     "refseq_definition": "alpha-glycosylase",
+     "neighbourhood": [
+      "SMc01535 (+) hypothetical protein",
+      "SMc01534 (+) omega amino acid--pyruvate transaminase",
+      "SMc01533 (+) adenine deaminase",
+      "SMc01532 (-) alpha-glycosylase",
+      "SMc01531 (+) 2-dehydro-3-deoxygluconokinase",
+      "SMc01530 (+) transposase ISRM3",
+      "SMc01529 (-) peptide ABC transporter ATP-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MALTabc",
+   "name": "Maltose transport via ABC system",
+   "equation_ids": "atp_c + h2o_c + malt_e --> adp_c + h_c + malt_c + pi_c",
+   "equation_names": "ATP + H2O + Maltose --> ADP + H+ + Maltose + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "(NP_386618_1 and NP_435623_1 and NP_437575_1) or (NP_435623_1 and NP_436851_1 and NP_437355_1) or (NP_436945_1 and NP_437824_1 and NP_437825_1)",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386618_1",
+     "locus": "SMc01978",
+     "fitness_browser_desc": "sugar transport system permease ABC transporter protein",
+     "refseq_definition": "sugar transport system permease ABC transporter protein",
+     "neighbourhood": [
+      "SMc01975 (+) transcriptional regulator",
+      "SMc01976 (+) hypothetical protein",
+      "SMc01977 (+) sugar-binding periplasmic ABC transporter protein",
+      "SMc01978 (+) sugar transport system permease ABC transporter protein",
+      "SMc01979 (+) sugar transport system permease ABC transporter protein",
+      "SMc01980 (+) sugar transport system ATP-binding ABC transporter protein",
+      "SMc01981 (+) cytochrome C transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_435623_1",
+     "locus": "SMa0711",
+     "fitness_browser_desc": "ABC transporter permease",
+     "refseq_definition": "ABC transporter permease (plasmid)",
+     "neighbourhood": [
+      "SMa0708 (+) enolase",
+      "SMa0709 (+) ABC transporter substrate-binding protein",
+      "SMa0710 (+) ABC transporter permease",
+      "SMa0711 (+) ABC transporter permease",
+      "SMa0713 (+) ABC transporter ATP-binding protein",
+      "SMa0714 (+) ABC transporter ATP-binding protein",
+      "SMa0715 (+) Nucleoside-diphosphate-sugar epimerase"
+     ]
+    },
+    {
+     "model_gene": "NP_436851_1",
+     "locus": "SM_b20325",
+     "fitness_browser_desc": "trehalosemaltose-binding protein",
+     "refseq_definition": "trehalosemaltose-binding protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20322 (-) TRAP-type small permease component",
+      "SM_b20323 (+) transcriptional regulator",
+      "SM_b20324 (-) ThuR, regulatory protein for trehalosemaltose transport system",
+      "SM_b20325 (+) trehalosemaltose-binding protein",
+      "SM_b20326 (+) trehalosemaltose transporter permease",
+      "SM_b20327 (+) trehalosemaltose transporter permease",
+      "SM_b20328 (+) trehalosemaltose transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_436945_1",
+     "locus": "SM_b20419",
+     "fitness_browser_desc": "glycerol-3-phosphate ABC transporter ATP-binding protein",
+     "refseq_definition": "glycerol-3-phosphate ABC transporter ATP-binding protein (plasmid)",
+     "neighbourhood": [
+      "SM_b20416 (+) glycerol-3-phosphate ABC transporter substrate-binding protein",
+      "SM_b20417 (+) glycerol-3-phosphate ABC transporter permease",
+      "SM_b20418 (+) glycerol-3-phosphate ABC transporter permease",
+      "SM_b20419 (+) glycerol-3-phosphate ABC transporter ATP-binding protein",
+      "SM_b20420 (+) glutathione S-transferase",
+      "SM_b20421 (+) transposase",
+      "SM_b20422 (-) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "NP_437355_1",
+     "locus": "SM_b21149",
+     "fitness_browser_desc": "sugar uptake ABC transporter permease",
+     "refseq_definition": "sugar uptake ABC transporter permease (plasmid)",
+     "neighbourhood": [
+      "SM_b21146 (+) choline uptake ABC transporter ATP-binding protein",
+      "SM_b21147 (+) choline uptake ABC transporter permease",
+      "SM_b21148 (+) oxidoreductase",
+      "SM_b21149 (+) sugar uptake ABC transporter permease",
+      "SM_b21150 (+) sugar uptake ABC transporter permease",
+      "SM_b21151 (+) substrate-binding protein of a sugar uptake ABC transporter system",
+      "SM_b21152 (+) sugar uptake ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437575_1",
+     "locus": "SM_b21595",
+     "fitness_browser_desc": "sugar uptake ABC transporter substrate-binding protein precursor",
+     "refseq_definition": "sugar uptake ABC transporter substrate-binding protein precursor (plasmid)",
+     "neighbourhood": [
+      "SM_b21592 (-) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b21593 (-) sugar uptake ABC transporter permease",
+      "SM_b21594 (-) sugar uptake ABC transporter permease",
+      "SM_b21595 (-) sugar uptake ABC transporter substrate-binding protein precursor",
+      "SM_b21596 (-) hypothetical protein",
+      "SM_b21597 (-) exported oxidoreductase",
+      "SM_b21598 (+) transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "NP_437824_1",
+     "locus": "SM_b21458",
+     "fitness_browser_desc": "sugar uptake ABC transporter permease",
+     "refseq_definition": "sugar uptake ABC transporter permease (plasmid)",
+     "neighbourhood": [
+      "SM_b21454 (-) hypothetical protein",
+      "SM_b21455 (-) hypothetical protein",
+      "SM_b21456 (-) hypothetical protein",
+      "SM_b21458 (-) sugar uptake ABC transporter permease",
+      "SM_b21459 (-) sugar uptake ABC transporter permease",
+      "SM_b21460 (-) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b21461 (-) sugar uptake ABC transporter substrate-binding protein precursor"
+     ]
+    },
+    {
+     "model_gene": "NP_437825_1",
+     "locus": "SM_b21459",
+     "fitness_browser_desc": "sugar uptake ABC transporter permease",
+     "refseq_definition": "sugar uptake ABC transporter permease (plasmid)",
+     "neighbourhood": [
+      "SM_b21455 (-) hypothetical protein",
+      "SM_b21456 (-) hypothetical protein",
+      "SM_b21458 (-) sugar uptake ABC transporter permease",
+      "SM_b21459 (-) sugar uptake ABC transporter permease",
+      "SM_b21460 (-) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b21461 (-) sugar uptake ABC transporter substrate-binding protein precursor",
+      "SM_b21462 (-) sugar kinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "MEPCT",
+   "name": "2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase",
+   "equation_ids": "2me4p_c + ctp_c + h_c --> 4c2me_c + ppi_c",
+   "equation_names": "2-C-methyl-D-erythritol 4-phosphate + CTP + H+ --> 4-(cytidine 5'-diphospho)-2-C-methyl-D-erythritol + Diphosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "NDPK2",
+   "name": "Nucleoside-diphosphate kinase (ATP:UDP)",
+   "equation_ids": "atp_c + udp_c <=> adp_c + utp_c",
+   "equation_names": "ATP + UDP <=> ADP + UTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385270_1 or NP_385483_2",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385270_1",
+     "locus": "SMc00595",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside diphosphate kinase",
+     "neighbourhood": [
+      "SMc00592 (+) hypothetical protein",
+      "SMc00593 (-) hypothetical protein",
+      "SMc00594 (+) beta-etherase (BETA-aryl ether cleaving enzyme) protein",
+      "SMc00595 (+) nucleoside diphosphate kinase",
+      "SMc00596 (-) hypothetical protein",
+      "SMc00597 (-) hypothetical protein",
+      "SMc00598 (+) branched chain amino acid ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "NP_385483_2",
+     "locus": "SMc01288",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "SMc01291 (+) 50S ribosomal protein L30",
+      "SMc01290 (+) 50S ribosomal protein L15",
+      "SMc01289 (+) preprotein translocase subunit SecY",
+      "SMc01288 (+) adenylate kinase",
+      "SMc01287 (+) 30S ribosomal protein S13",
+      "SMc01286 (+) 30S ribosomal protein S11",
+      "SMc01285 (+) DNA-directed RNA polymerase subunit alpha"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK4",
+   "name": "Nucleoside-diphosphate kinase (ATP:dTDP)",
+   "equation_ids": "atp_c + dtdp_c <=> adp_c + dttp_c",
+   "equation_names": "ATP + DTDP <=> ADP + DTTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385270_1 or NP_385483_2",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385270_1",
+     "locus": "SMc00595",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside diphosphate kinase",
+     "neighbourhood": [
+      "SMc00592 (+) hypothetical protein",
+      "SMc00593 (-) hypothetical protein",
+      "SMc00594 (+) beta-etherase (BETA-aryl ether cleaving enzyme) protein",
+      "SMc00595 (+) nucleoside diphosphate kinase",
+      "SMc00596 (-) hypothetical protein",
+      "SMc00597 (-) hypothetical protein",
+      "SMc00598 (+) branched chain amino acid ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "NP_385483_2",
+     "locus": "SMc01288",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "SMc01291 (+) 50S ribosomal protein L30",
+      "SMc01290 (+) 50S ribosomal protein L15",
+      "SMc01289 (+) preprotein translocase subunit SecY",
+      "SMc01288 (+) adenylate kinase",
+      "SMc01287 (+) 30S ribosomal protein S13",
+      "SMc01286 (+) 30S ribosomal protein S11",
+      "SMc01285 (+) DNA-directed RNA polymerase subunit alpha"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK5",
+   "name": "Nucleoside-diphosphate kinase (ATP:dGDP)",
+   "equation_ids": "atp_c + dgdp_c <=> adp_c + dgtp_c",
+   "equation_names": "ATP + DGDP <=> ADP + DGTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385270_1 or NP_385483_2",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385270_1",
+     "locus": "SMc00595",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside diphosphate kinase",
+     "neighbourhood": [
+      "SMc00592 (+) hypothetical protein",
+      "SMc00593 (-) hypothetical protein",
+      "SMc00594 (+) beta-etherase (BETA-aryl ether cleaving enzyme) protein",
+      "SMc00595 (+) nucleoside diphosphate kinase",
+      "SMc00596 (-) hypothetical protein",
+      "SMc00597 (-) hypothetical protein",
+      "SMc00598 (+) branched chain amino acid ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "NP_385483_2",
+     "locus": "SMc01288",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "SMc01291 (+) 50S ribosomal protein L30",
+      "SMc01290 (+) 50S ribosomal protein L15",
+      "SMc01289 (+) preprotein translocase subunit SecY",
+      "SMc01288 (+) adenylate kinase",
+      "SMc01287 (+) 30S ribosomal protein S13",
+      "SMc01286 (+) 30S ribosomal protein S11",
+      "SMc01285 (+) DNA-directed RNA polymerase subunit alpha"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NDPK7",
+   "name": "Nucleoside-diphosphate kinase (ATP:dCDP)",
+   "equation_ids": "atp_c + dcdp_c <=> adp_c + dctp_c",
+   "equation_names": "ATP + DCDP <=> ADP + DCTP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385270_1 or NP_385483_2",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385270_1",
+     "locus": "SMc00595",
+     "fitness_browser_desc": "nucleoside diphosphate kinase",
+     "refseq_definition": "nucleoside diphosphate kinase",
+     "neighbourhood": [
+      "SMc00592 (+) hypothetical protein",
+      "SMc00593 (-) hypothetical protein",
+      "SMc00594 (+) beta-etherase (BETA-aryl ether cleaving enzyme) protein",
+      "SMc00595 (+) nucleoside diphosphate kinase",
+      "SMc00596 (-) hypothetical protein",
+      "SMc00597 (-) hypothetical protein",
+      "SMc00598 (+) branched chain amino acid ABC transporter permease"
+     ]
+    },
+    {
+     "model_gene": "NP_385483_2",
+     "locus": "SMc01288",
+     "fitness_browser_desc": "adenylate kinase",
+     "refseq_definition": "adenylate kinase",
+     "neighbourhood": [
+      "SMc01291 (+) 50S ribosomal protein L30",
+      "SMc01290 (+) 50S ribosomal protein L15",
+      "SMc01289 (+) preprotein translocase subunit SecY",
+      "SMc01288 (+) adenylate kinase",
+      "SMc01287 (+) 30S ribosomal protein S13",
+      "SMc01286 (+) 30S ribosomal protein S11",
+      "SMc01285 (+) DNA-directed RNA polymerase subunit alpha"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "NNATr",
+   "name": "Nicotinate-nucleotide adenylyltransferase",
+   "equation_ids": "atp_c + h_c + nicrnt_c <=> dnad_c + ppi_c",
+   "equation_names": "ATP + H+ + Nicotinate D-ribonucleotide <=> Deamino-NAD+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386479_1 or NP_387268_2",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386479_1",
+     "locus": "SMc02711",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc02711",
+     "neighbourhood": [
+      "SMc02708 (+) hypothetical protein",
+      "SMc02709 (+) hypothetical protein",
+      "SMc02710 (+) cell filamentation protein",
+      "SMc02711 (-) hypothetical protein",
+      "SMc02712 (+) hypothetical protein",
+      "SMc02713 (+) RNA polymerase sigma-E factor (sigma-24) protein",
+      "SMc02714 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_387268_2",
+     "locus": "SMc03778",
+     "fitness_browser_desc": "nicotinic acid mononucleotide adenylyltransferase",
+     "refseq_definition": "nicotinic acid mononucleotide adenylyltransferase",
+     "neighbourhood": [
+      "SMc03775 (+) GTPase ObgE",
+      "SMc03776 (+) gamma-glutamyl kinase",
+      "SMc03777 (+) gamma-glutamyl phosphate reductase",
+      "SMc03778 (+) nicotinic acid mononucleotide adenylyltransferase",
+      "SMc03780 (+) hypothetical protein",
+      "SMc03781 (+) rRNA large subunit methyltransferase",
+      "SMc03782 (+) signal peptide protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "OCBT",
+   "name": "Ornithine carbamoyltransferase",
+   "equation_ids": "cbp_c + orn_c <=> citr__L_c + h_c + pi_c",
+   "equation_names": "Carbamoyl phosphate + Ornithine <=> L-Citrulline + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384624_1 or NP_435614_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384624_1",
+     "locus": "SMc02137",
+     "fitness_browser_desc": "ornithine carbamoyltransferase",
+     "refseq_definition": "ornithine carbamoyltransferase",
+     "neighbourhood": [
+      "SMc02140 (+) phosphate regulon transcriptional regulatory protein",
+      "SMc02139 (-) hypothetical protein",
+      "SMc02138 (+) acetylornithine transaminase",
+      "SMc02137 (+) ornithine carbamoyltransferase",
+      "SMc02136 (+) Hsp33-like chaperonin",
+      "SMc02135 (-) ApaG protein",
+      "SMc02134 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_435614_1",
+     "locus": "SMa0695",
+     "fitness_browser_desc": "ornithine carbamoyltransferase",
+     "refseq_definition": "ornithine carbamoyltransferase (plasmid)",
+     "neighbourhood": [
+      "SMa0689 (-) hypothetical protein",
+      "SMa0690 (-) hypothetical protein",
+      "SMa0693 (+) arginine deiminase",
+      "SMa0695 (+) ornithine carbamoyltransferase",
+      "SMa0697 (+) carbamate kinase",
+      "SMa0699 (+) hypothetical protein",
+      "SMa0702 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PGAMT",
+   "name": "Phosphoglucosamine mutase",
+   "equation_ids": "gam1p_c <=> gam6p_c",
+   "equation_names": "D-Glucosamine 1-phosphate <=> D-Glucosamine 6-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386840_1 or NP_437200_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386840_1",
+     "locus": "SMc00637",
+     "fitness_browser_desc": "phosphoglucosamine mutase",
+     "refseq_definition": "phosphoglucosamine mutase",
+     "neighbourhood": [
+      "SMc00640 (-) phosphoserine aminotransferase",
+      "SMc00639 (-) heat resistant agglutinin 1 signal peptide protein",
+      "SMc00638 (-) HEAT resistant agglutinin 1 protein",
+      "SMc00637 (-) phosphoglucosamine mutase",
+      "SMc04459 (-) metalloprotease transmembrane protein",
+      "SMc02940 (-) hypothetical protein",
+      "SMc02941 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437200_1",
+     "locus": "SM_b21081",
+     "fitness_browser_desc": "phosphoglucomutase phosphomannomutase",
+     "refseq_definition": "phosphoglucomutase phosphomannomutase (plasmid)",
+     "neighbourhood": [
+      "SM_b21078 (+) glycosyltransferase",
+      "SM_b21079 (+) transcriptional regulator",
+      "SM_b21080 (+) response regulator protein",
+      "SM_b21081 (+) phosphoglucomutase phosphomannomutase",
+      "SM_b21082 (+) mannose-6-phosphate isomerase, GDP-mannose pyrophosphorylase",
+      "SM_b21083 (+) hypothetical protein",
+      "SM_b21084 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PHETA1",
+   "name": "Phenylalanine transaminase",
+   "equation_ids": "akg_c + phe__L_c <=> glu__L_c + phpyr_c",
+   "equation_names": "2-Oxoglutarate + L-Phenylalanine <=> L-Glutamate + Phenylpyruvate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384413_1 or NP_384661_1 or NP_385077_2 or NP_385155_1 or NP_386078_1 or NP_386168_1 or NP_386431_1 or NP_386609_1 or NP_387397_1 or NP_435452_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384413_1",
+     "locus": "SMc00387",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "aromatic amino acid aminotransferase",
+     "neighbourhood": [
+      "SMc00384 (+) transcriptional regulation protein",
+      "SMc00385 (-) hypothetical protein",
+      "SMc00386 (-) hypothetical protein",
+      "SMc00387 (-) aromatic amino acid aminotransferase",
+      "SMc00388 (-) hypothetical protein",
+      "SMc00389 (-) hypothetical protein",
+      "SMc00390 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_384661_1",
+     "locus": "SMc02251",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "SMc02248 (+) transcriptional regulator",
+      "SMc02249 (-) sensory transduction histidine kinase transmembrane protein",
+      "SMc02250 (+) large-conductance mechanosensitive channel",
+      "SMc02251 (+) aspartate aminotransferase",
+      "SMc02252 (+) UDP-glucose 4-epimerase",
+      "SMc02253 (-) salicylate biosynthesis protein",
+      "SMc02254 (-) quinol oxidase subunit II transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_385077_2",
+     "locus": "SMc00042",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "SMc00103 (-) alpha-halocarboxylic acid dehalogenase",
+      "SMc00104 (-) hypothetical protein",
+      "SMc00105 (-) oxidoreductase transmembrane protein",
+      "SMc00042 (+) aminotransferase",
+      "SMc00106 (-) hypothetical protein",
+      "SMc00043 (+) superoxide dismutase Fe protein",
+      "SMc00107 (-) transcriptional regulator"
+     ]
+    },
+    {
+     "model_gene": "NP_385155_1",
+     "locus": "SMc02393",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate aminotransferase",
+     "neighbourhood": [
+      "SMc02390 (+) glutathione S-transferase",
+      "SMc02391 (-) hypothetical protein",
+      "SMc02392 (+) hypothetical protein",
+      "SMc02393 (-) histidinol-phosphate aminotransferase",
+      "SMc02409 (+) tRNA-Ser",
+      "SMc02394 (-) hypothetical protein",
+      "SMc02461 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386078_1",
+     "locus": "SMc04326",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "SMc04314 (-) hypothetical protein",
+      "SMc04315 (+) transcriptional regulator",
+      "SMc04325 (+) methionine synthase I",
+      "SMc04326 (-) aminotransferase",
+      "SMc04327 (-) hypothetical protein",
+      "SMc04328 (-) lipoprotein signal peptide",
+      "SMc04329 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386168_1",
+     "locus": "SMc04323",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "SMc04320 (+) 30S ribosomal protein S21",
+      "SMc04321 (+) glutathione S-transferase",
+      "SMc04322 (+) oxidoreductase",
+      "SMc04323 (-) aminotransferase",
+      "SMc04324 (-) hypothetical protein",
+      "SMc04338 (-) hypothetical protein",
+      "SMc04341 (-) amino acid-binding periplasmic protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386431_1",
+     "locus": "SMc01578",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "SMc01571 (+) oxidoreductase",
+      "SMc01572 (+) oxidoreductase",
+      "SMc01577 (+) hypothetical protein",
+      "SMc01578 (-) aspartate aminotransferase",
+      "SMc01580 (+) hypothetical protein",
+      "SMc01581 (+) hypothetical protein",
+      "SMc01583 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386609_1",
+     "locus": "SMc01969",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc01969",
+     "neighbourhood": [
+      "SMc01966 (-) spermidine/putrescine ABC transporter periplasmic protein",
+      "SMc01967 (-) agmatinase",
+      "SMc01968 (+) transcriptional regulator",
+      "SMc01969 (+) hypothetical protein",
+      "SMc01970 (-) hypothetical protein",
+      "SMc01971 (-) aldehyde dehydrogenase",
+      "SMc01972 (-) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "NP_387397_1",
+     "locus": "SMc04386",
+     "fitness_browser_desc": "aspartate aminotransferase B protein",
+     "refseq_definition": "aspartate aminotransferase B protein",
+     "neighbourhood": [
+      "SMc04383 (+) hypothetical protein",
+      "SMc04384 (+) oxidoreductase",
+      "SMc04385 (+) aldehyde dehydrogenase transmembrane protein",
+      "SMc04386 (+) aspartate aminotransferase B protein",
+      "SMc04387 (-) aldehyde dehydrogenase",
+      "SMc04388 (+) beta alanine--pyruvate transaminase",
+      "SMc04389 (-) hydroxypyruvate reductase"
+     ]
+    },
+    {
+     "model_gene": "NP_435452_1",
+     "locus": "SMa0387",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate aminotransferase (plasmid)",
+     "neighbourhood": [
+      "SMa5019 (+) hypothetical protein",
+      "SMa0383 (+) hypothetical protein",
+      "SMa0384 (-) TRm3 transposase",
+      "SMa0387 (-) histidinol-phosphate aminotransferase",
+      "SMa0389 (+) short chain alcohol dehydrogenase-related dehydrogenase",
+      "SMa0391 (+) ABC transporter ATP-binding protein",
+      "SMa0392 (+) ABC transporter substrate-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PPND",
+   "name": "Prephenate dehydrogenase",
+   "equation_ids": "nad_c + pphn_c --> 34hpp_c + co2_c + nadh_c",
+   "equation_names": "Nicotinamide adenine dinucleotide + Prephenate --> 3-(4-Hydroxyphenyl)pyruvate + CO2 + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384359_1 or NP_386767_1 or NP_387347_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384359_1",
+     "locus": "SMc00333",
+     "fitness_browser_desc": "3-phosphoshikimate 1-carboxyvinyltransferase",
+     "refseq_definition": "3-phosphoshikimate 1-carboxyvinyltransferase",
+     "neighbourhood": [
+      "SMc00331 (-) hypothetical protein",
+      "SMc00435 (-) tRNA-Ala",
+      "SMc00332 (-) hypothetical protein",
+      "SMc00333 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "SMc00334 (+) cytidylate kinase",
+      "SMc00335 (+) 30S ribosomal protein S1",
+      "SMc00336 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386767_1",
+     "locus": "SMc00711",
+     "fitness_browser_desc": "cyclohexadienyl dehydrogenase",
+     "refseq_definition": "cyclohexadienyl dehydrogenase",
+     "neighbourhood": [
+      "SMc00714 (+) 1-acyl-SN-glycerol-3-phosphate acyltransferase (PLSC) protein",
+      "SMc00713 (-) cation transport protein",
+      "SMc00712 (+) hypothetical protein",
+      "SMc00711 (-) cyclohexadienyl dehydrogenase",
+      "SMc00710 (-) histidinol-phosphate aminotransferase",
+      "SMc00709 (-) hypothetical protein",
+      "SMc00708 (+) hydroxyacylglutathione hydrolase (glyoxalase II) (GLX II) protein"
+     ]
+    },
+    {
+     "model_gene": "NP_387347_1",
+     "locus": "SMc03858",
+     "fitness_browser_desc": "chorismate mutase",
+     "refseq_definition": "chorismate mutase",
+     "neighbourhood": [
+      "SMc03855 (-) hypothetical protein",
+      "SMc03856 (-) diaminopimelate epimerase",
+      "SMc03857 (+) signal recognition particle protein",
+      "SMc03858 (+) chorismate mutase",
+      "SMc03859 (+) 30S ribosomal protein S16",
+      "SMc03860 (+) 16S rRNA-processing protein RimM",
+      "SMc03861 (+) tRNA (guanine-N(1)-)-methyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRAGSr",
+   "name": "Phosphoribosylglycinamide synthase",
+   "equation_ids": "atp_c + gly_c + pram_c <=> adp_c + gar_c + h_c + pi_c",
+   "equation_names": "ATP + Glycine + 5-Phospho-beta-D-ribosylamine <=> ADP + N1-(5-Phospho-D-ribosyl)glycinamide + H+ + Phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384964_1 or NP_385290_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384964_1",
+     "locus": "SMc00993",
+     "fitness_browser_desc": "phosphoribosylamine--glycine ligase",
+     "refseq_definition": "phosphoribosylamine--glycine ligase",
+     "neighbourhood": [
+      "SMc00851 (+) glycyl-tRNA synthetase subunit beta",
+      "SMc00850 (+) hypothetical protein",
+      "SMc00849 (-) hypothetical protein",
+      "SMc00993 (-) phosphoribosylamine--glycine ligase",
+      "SMc00992 (-) hypothetical protein",
+      "SMc00991 (-) putrescine-binding periplasmic protein",
+      "SMc00990 (-) fosmidomycin resistance antibiotic resistance transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_385290_1",
+     "locus": "SMc00615",
+     "fitness_browser_desc": "phosphoribosylaminoimidazole synthetase",
+     "refseq_definition": "phosphoribosylaminoimidazole synthetase",
+     "neighbourhood": [
+      "SMc00612 (+) hypothetical protein",
+      "SMc00613 (+) hypothetical protein",
+      "SMc00614 (-) phosphoribosylglycinamide formyltransferase",
+      "SMc00615 (-) phosphoribosylaminoimidazole synthetase",
+      "SMc00616 (+) permease",
+      "SMc00617 (+) hypothetical protein",
+      "SMc00618 (+) polyphosphate kinase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PRATPP",
+   "name": "Phosphoribosyl-ATP pyrophosphatase",
+   "equation_ids": "h2o_c + prbatp_c --> h_c + ppi_c + prbamp_c",
+   "equation_names": "H2O + 1-(5-Phosphoribosyl)-ATP --> H+ + Diphosphate + 1-(5-Phosphoribosyl)-AMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384156_1 or NP_385525_1",
+   "n_growth_conditions_essential": 21,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384156_1",
+     "locus": "SMc02568",
+     "fitness_browser_desc": "phosphoribosyl-ATP pyrophosphatase",
+     "refseq_definition": "phosphoribosyl-ATP pyrophosphatase",
+     "neighbourhood": [
+      "SMc02564 (+) LysM domain/BON superfamily protein",
+      "SMc02566 (+) alkylated DNA repair protein",
+      "SMc02567 (-) pantothenate kinase",
+      "SMc02568 (-) phosphoribosyl-ATP pyrophosphatase",
+      "SMc02569 (-) imidazole glycerol phosphate synthase subunit HisF",
+      "SMc02570 (-) 1-(5-phosphoribosyl)-5-[(5- phosphoribosylamino)methylideneamino] imidazole-4-carboxamide isomerase",
+      "SMc02572 (-) imidazole glycerol phosphate synthase subunit HisH"
+     ]
+    },
+    {
+     "model_gene": "NP_385525_1",
+     "locus": "SMc01004",
+     "fitness_browser_desc": "phosphoribosyl-AMP cyclohydrolase",
+     "refseq_definition": "phosphoribosyl-AMP cyclohydrolase",
+     "neighbourhood": [
+      "SMc01001 (+) hypothetical protein",
+      "SMc01002 (+) hypothetical protein",
+      "SMc01003 (-) hypothetical protein",
+      "SMc01004 (-) phosphoribosyl-AMP cyclohydrolase",
+      "SMc01005 (-) GTP cyclohydrolase I",
+      "SMc01006 (+) hypothetical protein",
+      "SMc01007 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "PYDXNtr",
+   "name": "PYDXNtr",
+   "equation_ids": "pydxn_e <=> pydxn_c",
+   "equation_names": "Pyridoxine <=> Pyridoxine",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "RBFK",
+   "name": "Riboflavin kinase",
+   "equation_ids": "atp_c + ribflv_c --> adp_c + fmn_c + h_c",
+   "equation_names": "ATP + Riboflavin --> ADP + FMN + H+",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384902_1 or NP_386545_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384902_1",
+     "locus": "SMc00909",
+     "fitness_browser_desc": "bifunctional riboflavin kinase/FMN adenylyltransferase",
+     "refseq_definition": "bifunctional riboflavin kinase/FMN adenylyltransferase",
+     "neighbourhood": [
+      "SMc00912 (-) co-chaperonin GroES",
+      "SMc00911 (+) hypothetical protein",
+      "SMc00910 (+) hypothetical protein",
+      "SMc00909 (+) bifunctional riboflavin kinase/FMN adenylyltransferase",
+      "SMc00908 (+) isoleucyl-tRNA synthetase",
+      "SMc00907 (+) hypothetical protein",
+      "SMc00906 (+) acetyltransferase"
+     ]
+    },
+    {
+     "model_gene": "NP_386545_1",
+     "locus": "SMc01502",
+     "fitness_browser_desc": "hydrolase phosphatase",
+     "refseq_definition": "hydrolase phosphatase",
+     "neighbourhood": [
+      "SMc01505 (-) hypothetical protein",
+      "SMc01504 (+) two-component response regulator",
+      "SMc01503 (-) sugar kinase",
+      "SMc01502 (-) hydrolase phosphatase",
+      "SMc01501 (-) mannitol 2-dehydrogenase",
+      "SMc01500 (-) sorbitol dehydrogenase",
+      "SMc01499 (-) ATP-binding transport ABC transporter protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RBK",
+   "name": "Ribokinase",
+   "equation_ids": "atp_c + rib__D_c --> adp_c + h_c + r5p_c",
+   "equation_names": "ATP + D-Ribose --> ADP + H+ + Alpha-D-Ribose 5-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384523_1 or NP_385906_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384523_1",
+     "locus": "SMc01103",
+     "fitness_browser_desc": "ribokinase",
+     "refseq_definition": "ribokinase",
+     "neighbourhood": [
+      "SMc01106 (-) small heat shock protein",
+      "SMc01105 (+) nucleoside hydrolase",
+      "SMc01104 (-) chemoreceptor methyl-accepting chemotaxis transmembrane protein",
+      "SMc01103 (-) ribokinase",
+      "SMc01102 (-) hypothetical protein",
+      "SMc01101 (+) peptide deformylase",
+      "SMc01100 (+) methionyl-tRNA formyltransferase"
+     ]
+    },
+    {
+     "model_gene": "NP_385906_1",
+     "locus": "SMc00473",
+     "fitness_browser_desc": "carbohydrate kinase",
+     "refseq_definition": "carbohydrate kinase",
+     "neighbourhood": [
+      "SMc00476 (+) transport transmembrane protein",
+      "SMc00475 (-) alanyl-tRNA synthetase",
+      "SMc00760 (-) recombinase A",
+      "SMc00473 (+) carbohydrate kinase",
+      "SMc00472 (+) hypothetical protein",
+      "SMc00471 (-) sensor histidine kinase transmembrane protein",
+      "SMc00470 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RMK",
+   "name": "Rhamnulokinase",
+   "equation_ids": "atp_c + rml_c --> adp_c + h_c + rml1p_c",
+   "equation_names": "ATP + L-Rhamnulose --> ADP + H+ + L-Rhamnulose 1-phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "RNDR2",
+   "name": "Ribonucleoside-diphosphate reductase (GDP)",
+   "equation_ids": "gdp_c + trdrd_c --> dgdp_c + h2o_c + trdox_c",
+   "equation_names": "GDP + Reduced thioredoxin --> DGDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384139_1 or NP_385661_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384139_1",
+     "locus": "SMc02761",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "SMc02764 (+) acetyl-CoA carboxylase subunit beta",
+      "SMc02763 (+) bifunctional folylpolyglutamate synthase/dihydrofolate synthase",
+      "SMc02762 (+) transposase",
+      "SMc02761 (-) thioredoxin",
+      "SMc02760 (-) ATP-dependent nuclease/helicase",
+      "SMc02759 (-) hypothetical protein",
+      "SMc02758 (-) nucleotidyl transferase"
+     ]
+    },
+    {
+     "model_gene": "NP_385661_1",
+     "locus": "SMc01237",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase subunit alpha",
+     "refseq_definition": "ribonucleotide-diphosphate reductase subunit alpha",
+     "neighbourhood": [
+      "SMc01240 (-) transposase ISRM3",
+      "SMc01239 (-) hypothetical protein",
+      "SMc01238 (+) glutathione S-transferase",
+      "SMc01237 (-) ribonucleotide-diphosphate reductase subunit alpha",
+      "SMc01236 (-) hypothetical protein",
+      "SMc01235 (-) excinuclease ABC subunit A",
+      "SMc01233 (+) single-stranded DNA-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "RNDR3",
+   "name": "Ribonucleoside-diphosphate reductase (CDP)",
+   "equation_ids": "cdp_c + trdrd_c --> dcdp_c + h2o_c + trdox_c",
+   "equation_names": "CDP + Reduced thioredoxin --> DCDP + H2O + Oxidized thioredoxin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384139_1 or NP_385661_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384139_1",
+     "locus": "SMc02761",
+     "fitness_browser_desc": "thioredoxin",
+     "refseq_definition": "thioredoxin",
+     "neighbourhood": [
+      "SMc02764 (+) acetyl-CoA carboxylase subunit beta",
+      "SMc02763 (+) bifunctional folylpolyglutamate synthase/dihydrofolate synthase",
+      "SMc02762 (+) transposase",
+      "SMc02761 (-) thioredoxin",
+      "SMc02760 (-) ATP-dependent nuclease/helicase",
+      "SMc02759 (-) hypothetical protein",
+      "SMc02758 (-) nucleotidyl transferase"
+     ]
+    },
+    {
+     "model_gene": "NP_385661_1",
+     "locus": "SMc01237",
+     "fitness_browser_desc": "ribonucleotide-diphosphate reductase subunit alpha",
+     "refseq_definition": "ribonucleotide-diphosphate reductase subunit alpha",
+     "neighbourhood": [
+      "SMc01240 (-) transposase ISRM3",
+      "SMc01239 (-) hypothetical protein",
+      "SMc01238 (+) glutathione S-transferase",
+      "SMc01237 (-) ribonucleotide-diphosphate reductase subunit alpha",
+      "SMc01236 (-) hypothetical protein",
+      "SMc01235 (-) excinuclease ABC subunit A",
+      "SMc01233 (+) single-stranded DNA-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SALCNtex",
+   "name": "Salicin transport transport via diffusion extracellular to periplasm",
+   "equation_ids": "salcn_e <=> salcn_p",
+   "equation_names": "Salicin <=> Salicin",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_387090_1 or NP_437471_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_387090_1",
+     "locus": "SMc03109",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc03109",
+     "neighbourhood": [
+      "SMc03112 (-) B12-dependent methionine synthase",
+      "SMc03111 (-) mannose-6-phosphate isomerase",
+      "SMc03110 (-) hypothetical protein",
+      "SMc03109 (-) hypothetical protein",
+      "SMc03076 (+) tRNA-Arg",
+      "SMc03108 (+) calcium-binding protein",
+      "SMc03107 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437471_1",
+     "locus": "SM_b21355",
+     "fitness_browser_desc": "oxidoreductase",
+     "refseq_definition": "oxidoreductase (plasmid)",
+     "neighbourhood": [
+      "SM_b21352 (-) C4-dicarboxylate small membrane transport protein",
+      "SM_b21353 (-) periplasmic C4-dicarboxylate transport protein",
+      "SM_b21354 (-) glucuronate isomerase",
+      "SM_b21355 (+) oxidoreductase",
+      "SM_b21356 (+) hypothetical protein",
+      "SM_b21357 (+) hypothetical protein",
+      "SM_b21358 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SALCptspp",
+   "name": "Salicin transport via PEPPyr  periplasm",
+   "equation_ids": "pep_c + salcn_p --> pyr_c + salcn6p_c",
+   "equation_names": "Phosphoenolpyruvate + Salicin --> Pyruvate + Salicin 6-phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "SBTD_D2",
+   "name": "D sorbitol dehydrogenase  D fructose producing",
+   "equation_ids": "nad_c + sbt__D_c --> fru_c + h_c + nadh_c",
+   "equation_names": "Nicotinamide adenine dinucleotide + D-Sorbitol --> D-Fructose + H+ + Nicotinamide adenine dinucleotide - reduced",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386632_1 or NP_437686_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386632_1",
+     "locus": "SMc01992",
+     "fitness_browser_desc": "alcohol dehydrogenase",
+     "refseq_definition": "alcohol dehydrogenase",
+     "neighbourhood": [
+      "SMc01989 (+) hypothetical protein",
+      "SMc01990 (-) ferredoxin reductase",
+      "SMc01991 (-) short chain dehydrogenase",
+      "SMc01992 (-) alcohol dehydrogenase",
+      "SMc01993 (-) dioxygenase ferredoxin protein",
+      "SMc02016 (-) ferredoxin reductase",
+      "SMc02017 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437686_1",
+     "locus": "SM_b20853",
+     "fitness_browser_desc": "sugar-alcohol dehydrogenase",
+     "refseq_definition": "sugar-alcohol dehydrogenase (plasmid)",
+     "neighbourhood": [
+      "SM_b20850 (+) L-lactate dehydrogenase",
+      "SM_b20851 (-) SorC family transcriptional regulator",
+      "SM_b20852 (-) sugar kinase",
+      "SM_b20853 (-) sugar-alcohol dehydrogenase",
+      "SM_b20854 (-) sugar uptake ABC transporter permease",
+      "SM_b20855 (-) sugar uptake ABC transporter ATP-binding protein",
+      "SM_b20856 (-) sugar uptake ABC transporter substrate-binding protein precursor"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "SBTt2",
+   "name": "D sorbitol transport in via proton symport",
+   "equation_ids": "h_e + sbt__D_e --> h_c + sbt__D_c",
+   "equation_names": "H+ + D-Sorbitol --> H+ + D-Sorbitol",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "SULRi",
+   "name": "Sulfite reductase (NADPH2)",
+   "equation_ids": "5.0 h_c + 3.0 nadph_c + so3_c --> 3.0 h2o_c + h2s_c + 3.0 nadp_c",
+   "equation_names": "5.0 H+ + 3.0 Nicotinamide adenine dinucleotide phosphate - reduced + Sulfite --> 3.0 H2O + Hydrogen sulfide + 3.0 Nicotinamide adenine dinucleotide phosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "THZPSN",
+   "name": "Thiazole phosphate synthesis",
+   "equation_ids": "atp_c + cys__L_c + dxyl5p_c + tyr__L_c --> 4hba_c + 4mpetz_c + ala__L_c + amp_c + co2_c + h2o_c + h_c + ppi_c",
+   "equation_names": "ATP + L-Cysteine + 1-deoxy-D-xylulose 5-phosphate + L-Tyrosine --> 4-Hydroxy-benzyl alcohol + 4-Methyl-5-(2-phosphoethyl)-thiazole + L-Alanine + AMP + CO2 + H2O + H+ + Diphosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_437711_1 or NP_438069_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_437711_1",
+     "locus": "SM_b20877",
+     "fitness_browser_desc": "oxidoreductase",
+     "refseq_definition": "oxidoreductase (plasmid)",
+     "neighbourhood": [
+      "SM_b20874 (-) hypothetical protein",
+      "SM_b20875 (-) hypothetical protein",
+      "SM_b20876 (-) hypothetical protein",
+      "SM_b20877 (-) oxidoreductase",
+      "SM_b20878 (+) hypothetical protein",
+      "SM_b20879 (-) hypothetical protein",
+      "SM_b20880 (+) ATP-dependent RNA helicase"
+     ]
+    },
+    {
+     "model_gene": "NP_438069_1",
+     "locus": "SM_b20617",
+     "fitness_browser_desc": "thiazole synthase",
+     "refseq_definition": "thiazole synthase (plasmid)",
+     "neighbourhood": [
+      "SM_b20614 (-) hypothetical protein",
+      "SM_b20615 (+) thiamine biosynthesis protein ThiC",
+      "SM_b20616 (+) thiamine biosynthesis oxidoreductase",
+      "SM_b20617 (+) thiazole synthase",
+      "SM_b20618 (+) thiamine-phosphate pyrophosphorylase",
+      "SM_b20619 (+) regulatory protein",
+      "SM_b20620 (-) sugar uptake ABC transporter substrate-binding protein precursor"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMDS",
+   "name": "Thymidylate synthase",
+   "equation_ids": "dump_c + mlthf_c --> dhf_c + dtmp_c",
+   "equation_names": "DUMP + 5,10-Methylenetetrahydrofolate --> 7,8-Dihydrofolate + DTMP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386233_1 or NP_437550_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386233_1",
+     "locus": "SMc01444",
+     "fitness_browser_desc": "thymidylate synthase",
+     "refseq_definition": "thymidylate synthase",
+     "neighbourhood": [
+      "SMc01441 (-) membrane bound protease",
+      "SMc01442 (-) dihydrofolate reductase",
+      "SMc01443 (-) glutathione S-transferase",
+      "SMc01444 (-) thymidylate synthase",
+      "SMc01445 (-) hypothetical protein",
+      "SMc01446 (-) hypothetical protein",
+      "SMc01447 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437550_1",
+     "locus": "SM_b21570",
+     "fitness_browser_desc": "NADH-dependent oxidase",
+     "refseq_definition": "NADH-dependent oxidase (plasmid)",
+     "neighbourhood": [
+      "SM_b22023 (-) molecular chaperone GroES",
+      "SM_b21568 (+) hypothetical protein",
+      "SM_b21569 (-) transcriptional regulator",
+      "SM_b21570 (-) NADH-dependent oxidase",
+      "SM_b21571 (+) TetR family transcriptional regulator",
+      "SM_b21572 (+) amino acid uptake ABC transporter substrate-binding protein precursor",
+      "SM_b21573 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TMPK",
+   "name": "Thiamine-phosphate kinase",
+   "equation_ids": "atp_c + thmmp_c --> adp_c + thmpp_c",
+   "equation_names": "ATP + Thiamin monophosphate --> ADP + Thiamine diphosphate",
+   "annotation": {},
+   "type": "A_geneless",
+   "current_rule": "",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": []
+  },
+  {
+   "reaction": "TMPPP",
+   "name": "Thiamine-phosphate diphosphorylase",
+   "equation_ids": "2mahmp_c + 4mpetz_c + h_c --> ppi_c + thmmp_c",
+   "equation_names": "2-Methyl-4-amino-5-hydroxymethylpyrimidine diphosphate + 4-Methyl-5-(2-phosphoethyl)-thiazole + H+ --> Diphosphate + Thiamin monophosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_437627_1 or NP_438070_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_437627_1",
+     "locus": "SM_b20962",
+     "fitness_browser_desc": "phoshomethylpyrimidine kinase",
+     "refseq_definition": "phoshomethylpyrimidine kinase (plasmid)",
+     "neighbourhood": [
+      "SM_b20959 (+) glucosyltransferase",
+      "SM_b20960 (+) UDP-glucose pyrophosphorylase",
+      "SM_b20961 (+) protein tyrosine kinase MPA1 family protein",
+      "SM_b20962 (-) phoshomethylpyrimidine kinase",
+      "SM_b20963 (+) transcriptional regulator",
+      "SM_b20964 (+) Ahp/CTSA family anti-oxidant protein",
+      "SM_b20965 (-) exported enzyme, 6-aminohexanoate-dimer hydrolase"
+     ]
+    },
+    {
+     "model_gene": "NP_438070_1",
+     "locus": "SM_b20618",
+     "fitness_browser_desc": "thiamine-phosphate pyrophosphorylase",
+     "refseq_definition": "thiamine-phosphate pyrophosphorylase (plasmid)",
+     "neighbourhood": [
+      "SM_b20615 (+) thiamine biosynthesis protein ThiC",
+      "SM_b20616 (+) thiamine biosynthesis oxidoreductase",
+      "SM_b20617 (+) thiazole synthase",
+      "SM_b20618 (+) thiamine-phosphate pyrophosphorylase",
+      "SM_b20619 (+) regulatory protein",
+      "SM_b20620 (-) sugar uptake ABC transporter substrate-binding protein precursor",
+      "SM_b20621 (-) sugar uptake ABC transporter permease"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TPI",
+   "name": "Triose-phosphate isomerase",
+   "equation_ids": "dhap_c <=> g3p_c",
+   "equation_names": "Dihydroxyacetone phosphate <=> Glyceraldehyde 3-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385544_1 or NP_386332_1 or NP_386871_1",
+   "n_growth_conditions_essential": 5,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385544_1",
+     "locus": "SMc01023",
+     "fitness_browser_desc": "triosephosphate isomerase",
+     "refseq_definition": "triosephosphate isomerase",
+     "neighbourhood": [
+      "SMc01020 (+) hypothetical protein",
+      "SMc01021 (-) hypothetical protein",
+      "SMc01022 (-) cytochrome B transmembrane protein",
+      "SMc01023 (+) triosephosphate isomerase",
+      "SMc01024 (+) preprotein translocase subunit SecG",
+      "SMc01025 (+) CTP synthetase",
+      "SMc01026 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386332_1",
+     "locus": "SMc01614",
+     "fitness_browser_desc": "triosephosphate isomerase",
+     "refseq_definition": "triosephosphate isomerase",
+     "neighbourhood": [
+      "SMc01611 (+) ferrichrome receptor precursor protein",
+      "SMc01612 (-) transposase ISRM3",
+      "SMc01613 (-) ribose-5-phosphate isomerase B",
+      "SMc01614 (-) triosephosphate isomerase",
+      "SMc01615 (-) transcriptional regulator",
+      "SMc01616 (-) D-erythrulose-1-phosphate dehydrogenase",
+      "SMc01617 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386871_1",
+     "locus": "SMc03981",
+     "fitness_browser_desc": "phosphoglycerate kinase",
+     "refseq_definition": "phosphoglycerate kinase",
+     "neighbourhood": [
+      "SMc03978 (+) transketolase",
+      "SMc03979 (+) glyceraldehyde-3-phosphate dehydrogenase",
+      "SMc03980 (+) hypothetical protein",
+      "SMc03981 (+) phosphoglycerate kinase",
+      "SMc03982 (-) transposase ISRM3",
+      "SMc03983 (+) fructose-bisphosphate aldolase class I protein",
+      "SMc03984 (+) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "TYRTA",
+   "name": "Tyrosine transaminase",
+   "equation_ids": "akg_c + tyr__L_c <=> 34hpp_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Tyrosine <=> 3-(4-Hydroxyphenyl)pyruvate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384413_1 or NP_384661_1 or NP_385155_1 or NP_386078_1 or NP_386431_1 or NP_386609_1 or NP_387397_1 or NP_435452_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384413_1",
+     "locus": "SMc00387",
+     "fitness_browser_desc": "aromatic amino acid aminotransferase",
+     "refseq_definition": "aromatic amino acid aminotransferase",
+     "neighbourhood": [
+      "SMc00384 (+) transcriptional regulation protein",
+      "SMc00385 (-) hypothetical protein",
+      "SMc00386 (-) hypothetical protein",
+      "SMc00387 (-) aromatic amino acid aminotransferase",
+      "SMc00388 (-) hypothetical protein",
+      "SMc00389 (-) hypothetical protein",
+      "SMc00390 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_384661_1",
+     "locus": "SMc02251",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "SMc02248 (+) transcriptional regulator",
+      "SMc02249 (-) sensory transduction histidine kinase transmembrane protein",
+      "SMc02250 (+) large-conductance mechanosensitive channel",
+      "SMc02251 (+) aspartate aminotransferase",
+      "SMc02252 (+) UDP-glucose 4-epimerase",
+      "SMc02253 (-) salicylate biosynthesis protein",
+      "SMc02254 (-) quinol oxidase subunit II transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_385155_1",
+     "locus": "SMc02393",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate aminotransferase",
+     "neighbourhood": [
+      "SMc02390 (+) glutathione S-transferase",
+      "SMc02391 (-) hypothetical protein",
+      "SMc02392 (+) hypothetical protein",
+      "SMc02393 (-) histidinol-phosphate aminotransferase",
+      "SMc02409 (+) tRNA-Ser",
+      "SMc02394 (-) hypothetical protein",
+      "SMc02461 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386078_1",
+     "locus": "SMc04326",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "SMc04314 (-) hypothetical protein",
+      "SMc04315 (+) transcriptional regulator",
+      "SMc04325 (+) methionine synthase I",
+      "SMc04326 (-) aminotransferase",
+      "SMc04327 (-) hypothetical protein",
+      "SMc04328 (-) lipoprotein signal peptide",
+      "SMc04329 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386431_1",
+     "locus": "SMc01578",
+     "fitness_browser_desc": "aspartate aminotransferase",
+     "refseq_definition": "aspartate aminotransferase",
+     "neighbourhood": [
+      "SMc01571 (+) oxidoreductase",
+      "SMc01572 (+) oxidoreductase",
+      "SMc01577 (+) hypothetical protein",
+      "SMc01578 (-) aspartate aminotransferase",
+      "SMc01580 (+) hypothetical protein",
+      "SMc01581 (+) hypothetical protein",
+      "SMc01583 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386609_1",
+     "locus": "SMc01969",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc01969",
+     "neighbourhood": [
+      "SMc01966 (-) spermidine/putrescine ABC transporter periplasmic protein",
+      "SMc01967 (-) agmatinase",
+      "SMc01968 (+) transcriptional regulator",
+      "SMc01969 (+) hypothetical protein",
+      "SMc01970 (-) hypothetical protein",
+      "SMc01971 (-) aldehyde dehydrogenase",
+      "SMc01972 (-) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "NP_387397_1",
+     "locus": "SMc04386",
+     "fitness_browser_desc": "aspartate aminotransferase B protein",
+     "refseq_definition": "aspartate aminotransferase B protein",
+     "neighbourhood": [
+      "SMc04383 (+) hypothetical protein",
+      "SMc04384 (+) oxidoreductase",
+      "SMc04385 (+) aldehyde dehydrogenase transmembrane protein",
+      "SMc04386 (+) aspartate aminotransferase B protein",
+      "SMc04387 (-) aldehyde dehydrogenase",
+      "SMc04388 (+) beta alanine--pyruvate transaminase",
+      "SMc04389 (-) hydroxypyruvate reductase"
+     ]
+    },
+    {
+     "model_gene": "NP_435452_1",
+     "locus": "SMa0387",
+     "fitness_browser_desc": "histidinol-phosphate aminotransferase",
+     "refseq_definition": "histidinol-phosphate aminotransferase (plasmid)",
+     "neighbourhood": [
+      "SMa5019 (+) hypothetical protein",
+      "SMa0383 (+) hypothetical protein",
+      "SMa0384 (-) TRm3 transposase",
+      "SMa0387 (-) histidinol-phosphate aminotransferase",
+      "SMa0389 (+) short chain alcohol dehydrogenase-related dehydrogenase",
+      "SMa0391 (+) ABC transporter ATP-binding protein",
+      "SMa0392 (+) ABC transporter substrate-binding protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UAGDP",
+   "name": "UDP-N-acetylglucosamine diphosphorylase",
+   "equation_ids": "acgam1p_c + h_c + utp_c --> ppi_c + uacgam_c",
+   "equation_names": "N-Acetyl-D-glucosamine 1-phosphate + H+ + UTP --> Diphosphate + UDP-N-acetyl-D-glucosamine",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_385763_1 or NP_385854_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_385763_1",
+     "locus": "SMc00232",
+     "fitness_browser_desc": "bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase",
+     "refseq_definition": "bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase",
+     "neighbourhood": [
+      "SMc00229 (-) hypothetical protein",
+      "SMc00230 (-) hypothetical protein",
+      "SMc00231 (-) glucosamine--fructose-6-phosphate aminotransferase",
+      "SMc00232 (-) bifunctional N-acetylglucosamine-1-phosphate uridyltransferase/glucosamine-1-phosphate acetyltransferase",
+      "SMc00233 (-) hypothetical protein",
+      "SMc00234 (+) peptidyl-prolyl cis-trans isomerase",
+      "SMc00235 (+) anthranilate phosphoribosyltransferase"
+     ]
+    },
+    {
+     "model_gene": "NP_385854_1",
+     "locus": "SMc00519",
+     "fitness_browser_desc": "hypothetical protein",
+     "refseq_definition": "hypothetical protein SMc00519",
+     "neighbourhood": [
+      "SMc00522 (+) ATP-dependent RNA helicase",
+      "SMc00521 (+) hypothetical protein",
+      "SMc00520 (-) hypothetical protein",
+      "SMc00519 (-) hypothetical protein",
+      "SMc00518 (-) hypothetical protein",
+      "SMc00517 (-) hypothetical protein",
+      "SMc00516 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UDPG4E",
+   "name": "UDPglucose 4-epimerase",
+   "equation_ids": "udpg_c <=> udpgal_c",
+   "equation_names": "UDPglucose <=> UDPgalactose",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384662_1 or NP_386853_1 or NP_435374_1 or NP_436774_1 or NP_436775_1 or NP_436981_1 or NP_437171_1 or NP_437605_1",
+   "n_growth_conditions_essential": 2,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384662_1",
+     "locus": "SMc02252",
+     "fitness_browser_desc": "UDP-glucose 4-epimerase",
+     "refseq_definition": "UDP-glucose 4-epimerase",
+     "neighbourhood": [
+      "SMc02249 (-) sensory transduction histidine kinase transmembrane protein",
+      "SMc02250 (+) large-conductance mechanosensitive channel",
+      "SMc02251 (+) aspartate aminotransferase",
+      "SMc02252 (+) UDP-glucose 4-epimerase",
+      "SMc02253 (-) salicylate biosynthesis protein",
+      "SMc02254 (-) quinol oxidase subunit II transmembrane protein",
+      "SMc02255 (-) quinol oxidase subunit I transmembrane protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386853_1",
+     "locus": "SMc03963",
+     "fitness_browser_desc": "sulfolipid biosynthesis protein",
+     "refseq_definition": "sulfolipid biosynthesis protein",
+     "neighbourhood": [
+      "SMc03960 (-) hypothetical protein",
+      "SMc03961 (+) sulfolipid (UDP-sulfoquinovose) biosynthesis protein",
+      "SMc04081 (+) glycosyl transferase (sulfolipid biosynthesis) protein",
+      "SMc03963 (+) sulfolipid biosynthesis protein",
+      "SMc03964 (-) hypothetical protein",
+      "SMc03965 (-) Holliday junction DNA helicase RuvB",
+      "SMc03966 (-) Holliday junction DNA helicase RuvA"
+     ]
+    },
+    {
+     "model_gene": "NP_435374_1",
+     "locus": "SMa0241",
+     "fitness_browser_desc": "epimerase",
+     "refseq_definition": "epimerase (plasmid)",
+     "neighbourhood": [
+      "SMa0233 (-) OtsA trehalose-6-phosphate synthase",
+      "SMa0235 (-) dihydroxy-acid dehydratase",
+      "SMa0237 (-) dehydrogenase",
+      "SMa0241 (-) epimerase",
+      "SMa0244 (+) Dehydrogenase, FAD-dependent",
+      "SMa0246 (+) GntR family transcriptional regulator",
+      "SMa0247 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_436774_1",
+     "locus": "SM_b20244",
+     "fitness_browser_desc": "CDP-tyvelose-2-epimerase",
+     "refseq_definition": "CDP-tyvelose-2-epimerase (plasmid)",
+     "neighbourhood": [
+      "SM_b20241 (-) hypothetical protein",
+      "SM_b20242 (-) hypothetical protein",
+      "SM_b20243 (-) glycosyltransferase",
+      "SM_b20244 (-) CDP-tyvelose-2-epimerase",
+      "SM_b20245 (-) UDP-glucose 4-epimerase",
+      "SM_b20246 (+) oxidoreductase",
+      "SM_b20247 (+) oxidoreductase"
+     ]
+    },
+    {
+     "model_gene": "NP_436775_1",
+     "locus": "SM_b20245",
+     "fitness_browser_desc": "UDP-glucose 4-epimerase",
+     "refseq_definition": "UDP-glucose 4-epimerase (plasmid)",
+     "neighbourhood": [
+      "SM_b20242 (-) hypothetical protein",
+      "SM_b20243 (-) glycosyltransferase",
+      "SM_b20244 (-) CDP-tyvelose-2-epimerase",
+      "SM_b20245 (-) UDP-glucose 4-epimerase",
+      "SM_b20246 (+) oxidoreductase",
+      "SM_b20247 (+) oxidoreductase",
+      "SM_b20248 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_436981_1",
+     "locus": "SM_b20459",
+     "fitness_browser_desc": "UDP-glucose 4-epimerase",
+     "refseq_definition": "UDP-glucose 4-epimerase (plasmid)",
+     "neighbourhood": [
+      "SM_b20456 (+) dehydrogenasereductase",
+      "SM_b20457 (-) transcriptional regulator transcription regulator protein",
+      "SM_b20458 (+) dTDP-glucose 4,6-dehydratase",
+      "SM_b20459 (+) UDP-glucose 4-epimerase",
+      "SM_b20460 (+) cellulose synthase",
+      "SM_b20461 (+) hypothetical protein",
+      "SM_b20462 (+) cellulase H protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437171_1",
+     "locus": "SM_b21052",
+     "fitness_browser_desc": "epimerase dehydratase",
+     "refseq_definition": "epimerase dehydratase (plasmid)",
+     "neighbourhood": [
+      "SM_b21049 (-) hypothetical protein",
+      "SM_b21050 (+) PST type surface saccharide translocase, ExoT protein",
+      "SM_b21051 (-) udpglucosegdpmannose dehydrogenase",
+      "SM_b21052 (+) epimerase dehydratase",
+      "SM_b21053 (+) membrane-anchored glycosyltransferase",
+      "SM_b21054 (-) hypothetical protein",
+      "SM_b21055 (-) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_437605_1",
+     "locus": "SM_b20942",
+     "fitness_browser_desc": "UDP glucose 4-epimerase",
+     "refseq_definition": "UDP glucose 4-epimerase (plasmid)",
+     "neighbourhood": [
+      "SM_b20939 (-) 6-pyruvoyl-tetrahydropterin synthase",
+      "SM_b20940 (-) hypothetical protein",
+      "SM_b20941 (-) MsbA-like saccharide exporting ABC transporter ATP-binding/permease subunits",
+      "SM_b20942 (+) UDP glucose 4-epimerase",
+      "SM_b20943 (-) acetyltransferase",
+      "SM_b20944 (-) polysaccharide polymerase, Wzy protein",
+      "SM_b20945 (-) hypothetical protein"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "UMPK",
+   "name": "UMP kinase",
+   "equation_ids": "atp_c + ump_c <=> adp_c + udp_c",
+   "equation_names": "ATP + UMP <=> ADP + UDP",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384360_1 or NP_385603_1",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384360_1",
+     "locus": "SMc00334",
+     "fitness_browser_desc": "cytidylate kinase",
+     "refseq_definition": "cytidylate kinase",
+     "neighbourhood": [
+      "SMc00435 (-) tRNA-Ala",
+      "SMc00332 (-) hypothetical protein",
+      "SMc00333 (+) 3-phosphoshikimate 1-carboxyvinyltransferase",
+      "SMc00334 (+) cytidylate kinase",
+      "SMc00335 (+) 30S ribosomal protein S1",
+      "SMc00336 (-) hypothetical protein",
+      "SMc00337 (+) hypothetical protein"
+     ]
+    },
+    {
+     "model_gene": "NP_385603_1",
+     "locus": "SMc02099",
+     "fitness_browser_desc": "uridylate kinase",
+     "refseq_definition": "uridylate kinase",
+     "neighbourhood": [
+      "SMc02102 (+) hypothetical protein",
+      "SMc02101 (+) 30S ribosomal protein S2",
+      "SMc02100 (+) elongation factor Ts",
+      "SMc02099 (+) uridylate kinase",
+      "SMc02098 (+) ribosome recycling factor",
+      "SMc02097 (+) UDP pyrophosphate synthase",
+      "SMc02096 (+) phosphatidate cytidylyltransferase"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "VALTA",
+   "name": "Valine transaminase",
+   "equation_ids": "akg_c + val__L_c <=> 3mob_c + glu__L_c",
+   "equation_names": "2-Oxoglutarate + L-Valine <=> 3-Methyl-2-oxobutanoate + L-Glutamate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_384327_1 or NP_385077_2",
+   "n_growth_conditions_essential": 22,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_384327_1",
+     "locus": "SMc02896",
+     "fitness_browser_desc": "branched-chain amino acid aminotransferase",
+     "refseq_definition": "branched-chain amino acid aminotransferase",
+     "neighbourhood": [
+      "SMc02893 (+) transcriptional regulator",
+      "SMc02894 (-) hypothetical protein",
+      "SMc02895 (+) hypothetical protein",
+      "SMc02896 (-) branched-chain amino acid aminotransferase",
+      "SMc02897 (-) cytochrome C transmembrane protein",
+      "SMc02898 (+) 3-deoxy-manno-octulosonate cytidylyltransferase",
+      "SMc02899 (+) prephenate dehydratase"
+     ]
+    },
+    {
+     "model_gene": "NP_385077_2",
+     "locus": "SMc00042",
+     "fitness_browser_desc": "aminotransferase",
+     "refseq_definition": "aminotransferase",
+     "neighbourhood": [
+      "SMc00103 (-) alpha-halocarboxylic acid dehalogenase",
+      "SMc00104 (-) hypothetical protein",
+      "SMc00105 (-) oxidoreductase transmembrane protein",
+      "SMc00042 (+) aminotransferase",
+      "SMc00106 (-) hypothetical protein",
+      "SMc00043 (+) superoxide dismutase Fe protein",
+      "SMc00107 (-) transcriptional regulator"
+     ]
+    }
+   ]
+  },
+  {
+   "reaction": "XYLK",
+   "name": "Xylulokinase",
+   "equation_ids": "atp_c + xylu__D_c --> adp_c + h_c + xu5p__D_c",
+   "equation_names": "ATP + D-Xylulose --> ADP + H+ + D-Xylulose 5-phosphate",
+   "annotation": {},
+   "type": "B_or_rule",
+   "current_rule": "NP_386668_1 or NP_386675_1 or NP_387001_1",
+   "n_growth_conditions_essential": 1,
+   "n_growth_conditions": 22,
+   "genes": [
+    {
+     "model_gene": "NP_386668_1",
+     "locus": "SMc02335",
+     "fitness_browser_desc": "pentose kinase",
+     "refseq_definition": "pentose kinase",
+     "neighbourhood": [
+      "SMc02460 (+) hypothetical protein",
+      "SMc02333 (+) hypothetical protein",
+      "SMc02334 (+) pentose kinase transmembrane protein",
+      "SMc02335 (+) pentose kinase",
+      "SMc02336 (+) oxidoreductase",
+      "SMc02452 (-) ABC transporter permease",
+      "SMc02337 (-) ABC transporter ATP-binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_386675_1",
+     "locus": "SMc02341",
+     "fitness_browser_desc": "sugar kinase",
+     "refseq_definition": "sugar kinase",
+     "neighbourhood": [
+      "SMc02338 (-) periplasmic binding ABC transporter protein",
+      "SMc02339 (-) oxidoreductase",
+      "SMc02340 (+) transcriptional regulator",
+      "SMc02341 (-) sugar kinase",
+      "SMc02342 (-) transketolase",
+      "SMc02343 (-) transport transmembrane protein",
+      "SMc02344 (-) periplasmic binding protein"
+     ]
+    },
+    {
+     "model_gene": "NP_387001_1",
+     "locus": "SMc03164",
+     "fitness_browser_desc": "xylulose kinase",
+     "refseq_definition": "xylulose kinase",
+     "neighbourhood": [
+      "SMc03161 (-) oxidoreductase",
+      "SMc03162 (-) hypothetical protein",
+      "SMc03163 (-) xylose isomerase",
+      "SMc03164 (-) xylulose kinase",
+      "SMc03165 (-) transcriptional regulator",
+      "SMc03166 (-) hypothetical protein",
+      "SMc03167 (-) multidrug efflux system protein"
+     ]
+    }
+   ]
+  }
+ ]
+}

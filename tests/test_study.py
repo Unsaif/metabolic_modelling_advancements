@@ -131,6 +131,27 @@ def test_external_declaration_requires_frozen_custodian_and_exposure_evidence(tm
     assert verify_study(tmp_path, frozen)["valid"]
 
 
+def test_self_custodied_declaration_requires_custody_evidence_and_disjoint_organisms(tmp_path):
+    populate(tmp_path)
+    own = plan(evaluation_role="prospective_self_custodied")
+    with pytest.raises(ValueError, match="candidate_exposure"):
+        freeze_study(tmp_path, own)
+    own["candidate_exposure"] = {"custody": "Same model family; outcomes downloaded only after this freeze",
+                                 "uninspected_evidence": "Download log written after the freeze",
+                                 "evidence_paths": ["custody.txt"]}
+    (tmp_path / "custody.txt").write_text("Test custody declaration, not proof of independence.")
+    own["paths"].append("custody.txt")
+    with pytest.raises(ValueError, match="evaluation_organisms"):
+        freeze_study(tmp_path, own)
+    own["evaluation_organisms"] = ["Keio"]
+    with pytest.raises(ValueError, match="cannot be development"):
+        freeze_study(tmp_path, own)
+    own["evaluation_organisms"] = ["new-organism"]
+    frozen = freeze_study(tmp_path, own)
+    assert frozen["plan"]["evaluation_role"] == "prospective_self_custodied"
+    assert verify_study(tmp_path, frozen)["valid"]
+
+
 @pytest.mark.parametrize("mutation", [
     lambda m: m["files"].pop(),
     lambda m: m["files"].append(deepcopy(m["files"][0])),

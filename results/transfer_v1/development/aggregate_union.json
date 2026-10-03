@@ -1,0 +1,867 @@
+{
+ "metric": "union",
+ "excluded": [],
+ "n_boot": 10000,
+ "seed": 0,
+ "unchanged_tolerance": 0.001,
+ "pairs": [
+  {
+   "A": "B0",
+   "B": "UNQ",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.022170666721901655,
+     "ci95": [
+      0.0,
+      0.05127177624008272
+     ],
+     "wt_grows": [
+      8,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5704,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.012722014899707645,
+     "ci95": [
+      -0.01363803735909586,
+      0.049585708081620515
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.051439373088538076,
+     "ci95": [
+      0.01720162064982438,
+      0.09583345280577057
+     ],
+     "wt_grows": [
+      21,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 20559,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.05738056424601745,
+     "ci95": [
+      0.016531394436301593,
+      0.10356662173891575
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.03592815473904121,
+   "median_delta": 0.036805019905219866,
+   "organism_bootstrap_ci95": [
+    0.01744634081080465,
+    0.054409968667277764
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "UNQ",
+   "B": "M",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": -0.00887045443030704,
+     "ci95": [
+      -0.03504138616346913,
+      0.018079435286300218
+     ],
+     "wt_grows": [
+      9,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6417,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.055754194238855304,
+     "ci95": [
+      0.0009242024737859173,
+      0.11139201396073177
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.027570017093828336,
+     "ci95": [
+      -0.0007282335529059797,
+      0.060718312153646106
+     ],
+     "wt_grows": [
+      22,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 21538,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.03717946958480001,
+     "ci95": [
+      0.0027499021396727003,
+      0.07959672647362925
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.02790830662179415,
+   "median_delta": 0.03237474333931417,
+   "organism_bootstrap_ci95": [
+    0.002642026573469722,
+    0.04870814995259856
+   ],
+   "n_improved": 3,
+   "n_worsened": 1,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.625
+  },
+  {
+   "A": "B0",
+   "B": "U",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.01604169938279698,
+     "ci95": [
+      0.0,
+      0.04118174297443124
+     ],
+     "wt_grows": [
+      8,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5704,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": -0.006331505593374587,
+     "ci95": [
+      -0.020613849605136833,
+      0.0
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.02645823867038144,
+     "ci95": [
+      0.0029442622818858706,
+      0.06003247107124151
+     ],
+     "wt_grows": [
+      21,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 20559,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.030900887403143673,
+     "ci95": [
+      0.0,
+      0.07105424431782856
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.016767329965736877,
+   "median_delta": 0.02124996902658921,
+   "organism_bootstrap_ci95": [
+    0.00186593047256442,
+    0.028679563036762556
+   ],
+   "n_improved": 3,
+   "n_worsened": 1,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.625
+  },
+  {
+   "A": "U",
+   "B": "UN",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.006173549531316214,
+     "ci95": [
+      0.0,
+      0.020530695787745724
+     ],
+     "wt_grows": [
+      9,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6417,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.019053520493082232,
+     "ci95": [
+      0.0,
+      0.05364874621069886
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.009837394232450447,
+     "ci95": [
+      0.0,
+      0.03339939812013734
+     ],
+     "wt_grows": [
+      22,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 21538,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.008766116064212223,
+   "median_delta": 0.00800547188188333,
+   "organism_bootstrap_ci95": [
+    0.0024593485581126118,
+    0.015833527752640728
+   ],
+   "n_improved": 3,
+   "n_worsened": 0,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 0.25
+  },
+  {
+   "A": "U",
+   "B": "UQ",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      9,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6417,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.015249761519853133,
+     "ci95": [
+      0.0,
+      0.03919927793688331
+     ],
+     "wt_grows": [
+      22,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 21538,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.02647967684287378,
+     "ci95": [
+      0.005307937935109422,
+      0.05390640959660466
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.010432359590681728,
+   "median_delta": 0.007624880759926567,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.020864719181363456
+   ],
+   "n_improved": 2,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.5
+  },
+  {
+   "A": "UN",
+   "B": "UNQ",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      9,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6417,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.015127035723317417,
+     "ci95": [
+      0.0,
+      0.03909624665830149
+     ],
+     "wt_grows": [
+      22,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 21538,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.02647967684287378,
+     "ci95": [
+      0.005307937935109422,
+      0.05390640959660466
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.010401678141547799,
+   "median_delta": 0.007563517861658708,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.020803356283095598
+   ],
+   "n_improved": 2,
+   "n_worsened": 0,
+   "n_unchanged": 2,
+   "sign_test_p_two_sided": 0.5
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_rxn",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.01604169938279698,
+     "ci95": [
+      0.0,
+      0.04118174297443124
+     ],
+     "wt_grows": [
+      8,
+      8
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5704,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": -0.006331505593374587,
+     "ci95": [
+      -0.020613849605136833,
+      0.0
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.0202321744738867,
+     "ci95": [
+      0.0,
+      0.05128314813348175
+     ],
+     "wt_grows": [
+      21,
+      21
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 20559,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.024702914866327252,
+     "ci95": [
+      0.0,
+      0.06447548629798608
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.013661320782409087,
+   "median_delta": 0.01813693692834184,
+   "organism_bootstrap_ci95": [
+    0.0003094144234407348,
+    0.022537610995444685
+   ],
+   "n_improved": 3,
+   "n_worsened": 1,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.625
+  },
+  {
+   "A": "B0",
+   "B": "Uonly_atp",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      8,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5704,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.006317446532986826,
+     "ci95": [
+      0.0,
+      0.016402009968479205
+     ],
+     "wt_grows": [
+      21,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 20559,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.0,
+     "ci95": [
+      0.0,
+      0.0
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.0015793616332467064,
+   "median_delta": 0.0,
+   "organism_bootstrap_ci95": [
+    0.0,
+    0.004738084899740119
+   ],
+   "n_improved": 1,
+   "n_worsened": 0,
+   "n_unchanged": 3,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R6",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": -0.01709252217628565,
+     "ci95": [
+      -0.040189510622772776,
+      0.0007793859658087567
+     ],
+     "wt_grows": [
+      9,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6417,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.04989644596573184,
+     "ci95": [
+      0.010620288944987238,
+      0.09787363537071937
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.008853959045938775,
+     "ci95": [
+      -0.0018262700828068272,
+      0.03268085973924314
+     ],
+     "wt_grows": [
+      22,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 21538,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.0006724764023262608,
+     "ci95": [
+      -0.0004916137557011785,
+      0.002296796071357694
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.010582589809427806,
+   "median_delta": 0.004763217724132518,
+   "organism_bootstrap_ci95": [
+    -0.010605901870729545,
+    0.037590453574880445
+   ],
+   "n_improved": 2,
+   "n_worsened": 1,
+   "n_unchanged": 1,
+   "sign_test_p_two_sided": 1.0
+  },
+  {
+   "A": "UNQ",
+   "B": "M_R1R2",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.007650657599524546,
+     "ci95": [
+      -0.00939779921734681,
+      0.030057709029445934
+     ],
+     "wt_grows": [
+      9,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 6417,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.00706874053300266,
+     "ci95": [
+      -0.026247751788943945,
+      0.048047745647442
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.019067267947360245,
+     "ci95": [
+      0.0,
+      0.050166802066301225
+     ],
+     "wt_grows": [
+      22,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 21538,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.036555528328955256,
+     "ci95": [
+      0.0021551855889323152,
+      0.08190968891600171
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.017585548602210677,
+   "median_delta": 0.013358962773442395,
+   "organism_bootstrap_ci95": [
+    0.007359699066263603,
+    0.02932931064659758
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.125
+  },
+  {
+   "A": "B0",
+   "B": "M",
+   "n_organisms": 4,
+   "n_evaluable": 4,
+   "per_organism": [
+    {
+     "org": "MR1",
+     "delta": 0.012423938174298876,
+     "ci95": [
+      -0.019349256619628215,
+      0.05085927519533906
+     ],
+     "wt_grows": [
+      8,
+      9
+     ],
+     "n_mapped_conditions": 12,
+     "n_pairs": 5704,
+     "status": "evaluable"
+    },
+    {
+     "org": "Btheta",
+     "delta": 0.0680861650672886,
+     "ci95": [
+      0.005969160441795238,
+      0.1334648163710644
+     ],
+     "wt_grows": [
+      14,
+      14
+     ],
+     "n_mapped_conditions": 25,
+     "n_pairs": 7098,
+     "status": "evaluable"
+    },
+    {
+     "org": "Smeli",
+     "delta": 0.07875966759337893,
+     "ci95": [
+      0.034123084095725495,
+      0.1318587994287773
+     ],
+     "wt_grows": [
+      21,
+      22
+     ],
+     "n_mapped_conditions": 33,
+     "n_pairs": 20559,
+     "status": "evaluable"
+    },
+    {
+     "org": "Putida",
+     "delta": 0.09453752716231284,
+     "ci95": [
+      0.03947510491246798,
+      0.14900989887853278
+     ],
+     "wt_grows": [
+      28,
+      28
+     ],
+     "n_mapped_conditions": 43,
+     "n_pairs": 29064,
+     "status": "evaluable"
+    }
+   ],
+   "mean_delta": 0.06345182449931981,
+   "median_delta": 0.07342291633033377,
+   "organism_bootstrap_ci95": [
+    0.02900787052906889,
+    0.08792468663855678
+   ],
+   "n_improved": 4,
+   "n_worsened": 0,
+   "n_unchanged": 0,
+   "sign_test_p_two_sided": 0.125
+  }
+ ]
+}

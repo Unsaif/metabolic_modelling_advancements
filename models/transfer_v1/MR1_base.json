@@ -1,0 +1,36 @@
+{
+ "org": "MR1",
+ "role": "development",
+ "draft": "models/embl_pinned/MR1.xml.gz",
+ "draft_sha256": "591d8e5b5fdd1124a4e78a947b0ad9907398c9a64f1c4028c6dee92452f1220e",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "ShewMM_noCarbon",
+  "carbon_exchange": "EX_lac__L_e"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "L_LACD2",
+   "reaction": "lac__L_c + q8_c --> pyr_c + q8h2_c",
+   "name": "L-Lactate dehydrogenase (ubiquinone)"
+  },
+  {
+   "id": "ORNTA",
+   "reaction": "akg_c + orn_c <=> glu5sa_c + glu__L_c",
+   "name": "Ornithine transaminase"
+  },
+  {
+   "id": "r2465_1",
+   "reaction": "zn2_c <-- zn2_e",
+   "name": "Cation Diffusion Facilitator (Cdf) Tcdb:2.A.4.2.3"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.0967000211899488,
+ "base_sha256": "405850d4656d42f4c367ec1a8a247b4bdea549505974389bc0478a41eec5a69d",
+ "created": "2026-10-03T07:54:47Z"
+}

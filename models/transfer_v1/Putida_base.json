@@ -1,0 +1,31 @@
+{
+ "org": "Putida",
+ "role": "development",
+ "draft": "models/embl_pinned/Putida.xml.gz",
+ "draft_sha256": "5b69bf07cf15fdecb7cf5a6c87e35271cd94e97c7d16747aee62f4c7594fd7c1",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "MOPS minimal media_noCarbon",
+  "carbon_exchange": "EX_glc__D_e"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "OXADC",
+   "reaction": "h_c + oxa_c --> co2_c + for_c",
+   "name": "Oxalate decarboxylase"
+  },
+  {
+   "id": "PHPYROX",
+   "reaction": "o2_c + phpyr_c --> bzal_c + h_c + oxa_c",
+   "name": "Phenylpyruvate oxidation chemical"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.9240026512496076,
+ "base_sha256": "d35b0827b289142b79d3fd28ce75f7df7f4d032a6d8e964e2020270f6f5ad9e2",
+ "created": "2026-10-03T07:54:33Z"
+}

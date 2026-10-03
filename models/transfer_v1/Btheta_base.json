@@ -1,0 +1,46 @@
+{
+ "org": "Btheta",
+ "role": "development",
+ "draft": "models/embl_pinned/Btheta.xml.gz",
+ "draft_sha256": "0d38cb19d7e2deba4224c12eb114ec4b9f812678284091dd6a30cb5f394cd985",
+ "universe": "external/carveme/universe_bacteria.xml.gz",
+ "universe_sha256": "b983aec83c4f6c30ec58ded6684d15e90355e7d6c9d573747dde9d0bbae35d19",
+ "reference": {
+  "medium": "Varel_Bryant_medium",
+  "carbon_exchange": "EX_glc__D_e"
+ },
+ "min_growth": 0.05,
+ "status": "Optimal",
+ "added_reactions": [
+  {
+   "id": "DHORD6",
+   "reaction": "dhor__S_c + nad_c --> h_c + nadh_c + orot_c",
+   "name": "Dihydoorotic acid dehydrogenase NAD"
+  },
+  {
+   "id": "FE3abc",
+   "reaction": "atp_c + fe3_e + h2o_c --> adp_c + fe3_c + h_c + pi_c",
+   "name": "Iron (III) transport via ABC system"
+  },
+  {
+   "id": "FRD2",
+   "reaction": "fum_c + mql8_c --> mqn8_c + succ_c",
+   "name": "Fumarate reductase"
+  },
+  {
+   "id": "OCBT",
+   "reaction": "cbp_c + orn_c <=> citr__L_c + h_c + pi_c",
+   "name": "Ornithine carbamoyltransferase"
+  },
+  {
+   "id": "PYDXS",
+   "reaction": "g3p_c + gln__L_c + ru5p__D_c <=> glu__L_c + 3.0 h2o_c + h_c + pi_c + pydx5p_c",
+   "name": "Pyridoxal 5-phosphate synthase"
+  }
+ ],
+ "rejected_energy_cycle_sets": [],
+ "growth_before": 0.0,
+ "growth_after": 0.38532312544753894,
+ "base_sha256": "f4c4fd384ebd27ff390c51a2b084ca2a4662b46e9d9bdd68846f25128948a5a8",
+ "created": "2026-10-03T07:54:21Z"
+}
