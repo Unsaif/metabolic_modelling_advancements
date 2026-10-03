@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-10-03T10:11:43Z",
+  "plan": {
+    "candidate_exposure": {
+      "custody": "Self-custodied. Claude (Opus 5.5, in Tim Hulshof's project) designed the method, prepares the inputs and will run the evaluation; no external custodian. Separation rests on recorded order: this method freeze (git commit + Claude project record), then panel A inputs (media, carbon sources, base models, adjudication packets and decisions) and an inputs freeze, then the first download of panel A fitness tables.",
+      "evidence_paths": [
+        "results/study_freezes/transfer_v1_method.json"
+      ],
+      "uninspected_evidence": "Since the method freeze, panel A experiment metadata were read for medium names, aerobic flags and carbon-source condition names (mapping only); no fitness table of any panel organism has been downloaded. This inputs freeze precedes the first download."
+    },
+    "decision_rule": "Supported if the mean difference is positive and the organism-bootstrap 95% interval excludes zero; not supported if the mean is zero or negative; inconclusive otherwise. Every organism and every arm is reported, including failures.",
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_organisms": [
+      "Cola",
+      "Dino",
+      "Dyella79",
+      "MycoTube",
+      "PS",
+      "RPal_CGA009"
+    ],
+    "evaluation_role": "prospective_self_custodied",
+    "inputs_note": "Panel A inputs prepared under the frozen method: media mapped by rule (R2A undefined, excluded); 16 new carbon-source names mapped; reference conditions chosen by rule; base models gap-filled for Cola (not needed), Dino, Dyella79, MycoTube (not needed), RPal_CGA009 (gap-fill added a nitrate reductase: the trace nitrate of cobalt nitrate is an unlimited ion under the frozen media rule); PS failed (every gap-fill solution created an energy-generating cycle) and is not evaluable; blind adjudication of the five others (265 candidates: 25 R6, 2 R2, 76 R1, 162 abstain; all applicable).",
+    "method_freeze": {
+      "content_fingerprint": "7ffb4213c6ad834280079b0b176c655cdd9a6be97fc3d0143ab1edf8af94d907",
+      "created_at": "2026-10-03T09:40:45Z",
+      "manifest": "results/study_freezes/transfer_v1_method.json"
+    },
+    "paths": [
+      "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+      "data/studies/transfer_v1/decisions/Cola.json",
+      "data/studies/transfer_v1/decisions/Dino.json",
+      "data/studies/transfer_v1/decisions/Dyella79.json",
+      "data/studies/transfer_v1/decisions/MANIFEST_panel_A.json",
+      "data/studies/transfer_v1/decisions/MycoTube.json",
+      "data/studies/transfer_v1/decisions/RPal_CGA009.json",
+      "data/studies/transfer_v1/feba_component_bigg_panel_A.tsv",
+      "data/studies/transfer_v1/media_bigg.tsv",
+      "data/studies/transfer_v1/media_mapping_report.json",
+      "data/studies/transfer_v1/organisms_panel_A.json",
+      "data/studies/transfer_v1/packets/Cola/candidates.json",
+      "data/studies/transfer_v1/packets/Dino/candidates.json",
+      "data/studies/transfer_v1/packets/Dyella79/candidates.json",
+      "data/studies/transfer_v1/packets/MycoTube/candidates.json",
+      "data/studies/transfer_v1/packets/RPal_CGA009/candidates.json",
+      "models/transfer_v1/Cola_base.json",
+      "models/transfer_v1/Cola_base.xml.gz",
+      "models/transfer_v1/Dino_base.json",
+      "models/transfer_v1/Dino_base.xml.gz",
+      "models/transfer_v1/Dyella79_base.json",
+      "models/transfer_v1/Dyella79_base.xml.gz",
+      "models/transfer_v1/MycoTube_base.json",
+      "models/transfer_v1/MycoTube_base.xml.gz",
+      "models/transfer_v1/RPal_CGA009_base.json",
+      "models/transfer_v1/RPal_CGA009_base.xml.gz",
+      "results/study_freezes/transfer_v1_method.json",
+      "results/transfer_v1/evaluation_panel_A/PS_prepare_failure.json"
+    ],
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "question": "Do fitness-blind, annotation-driven corrections (U') and blind AI adjudication of gene rules (M) improve EMBL GEMs draft-model predictions of carbon-source gene fitness on six organisms not used in development?",
+    "reserved_organisms": [
+      "Caulo",
+      "Cup4G11",
+      "Marino",
+      "Miya",
+      "PV4",
+      "SB2B"
+    ],
+    "schema_version": 1,
+    "study_id": "transfer-v1-inputs-panel-A"
+  },
+  "files": [
+    {
+      "path": "data/studies/transfer_v1/carbon_sources_bigg.tsv",
+      "size_bytes": 18498,
+      "sha256": "88aaf4587539dc1484d29929d7902d89e733817966e2b608a93b3859c0255f2f"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Cola.json",
+      "size_bytes": 14401,
+      "sha256": "3a1afd5d652628a4986f324d86d10c6934dab524cdd10749b2bf0e5873341bf6"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Dino.json",
+      "size_bytes": 17491,
+      "sha256": "42fb46f2a56a23e03297d9d6a3b3caafbc63d0b7cf312f9813bd83af4371890a"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/Dyella79.json",
+      "size_bytes": 12274,
+      "sha256": "62905d908572ae744cf941572de50e7b4f289d9bec8bd501c99b5f2397e3d1db"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/MANIFEST_panel_A.json",
+      "size_bytes": 3175,
+      "sha256": "77ed58a544bb375516116867c3aa0a54f9701f741337aff4b2fc2a2b224abf35"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/MycoTube.json",
+      "size_bytes": 17346,
+      "sha256": "96059c6b7fb922688d79dfb991280a3bca655630ec03d6131d13aed023b56afc"
+    },
+    {
+      "path": "data/studies/transfer_v1/decisions/RPal_CGA009.json",
+      "size_bytes": 17993,
+      "sha256": "2567181de73ab9a5f657e6d8c51daf05e3fe2fdcd1cb0857aa3bcffe12ba9220"
+    },
+    {
+      "path": "data/studies/transfer_v1/feba_component_bigg_panel_A.tsv",
+      "size_bytes": 2303,
+      "sha256": "35f8023410d8ba52f14aafcdaee404bc1913db9d11a9b5122d5741379106cf82"
+    },
+    {
+      "path": "data/studies/transfer_v1/media_bigg.tsv",
+      "size_bytes": 3727,
+      "sha256": "c0133a08bc728cb121d484ffdbb270f9191e3e474678238744f941b298663226"
+    },
+    {
+      "path": "data/studies/transfer_v1/media_mapping_report.json",
+      "size_bytes": 3209,
+      "sha256": "bb9cccbc23973a6fe9f2f999d5ba2949b4e65eee608a3d56db9eac87ac9d9294"
+    },
+    {
+      "path": "data/studies/transfer_v1/organisms_panel_A.json",
+      "size_bytes": 3898,
+      "sha256": "24e6f6a7df7ece8a2c02f5084a7d8cc9668077bc25143744d6611c6c4ae5b62b"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/Cola/candidates.json",
+      "size_bytes": 93464,
+      "sha256": "5312d96f6a193e5c58126dc71633273b02625c9d58379f3c28280192eeffcf3b"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/Dino/candidates.json",
+      "size_bytes": 107659,
+      "sha256": "9c948aea81ef0e58e4efe327c26098fecbd89d58ed10b51d4beb20cc5c1146fb"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/Dyella79/candidates.json",
+      "size_bytes": 84165,
+      "sha256": "2af6dcd6943cd4245f98a685da215ea25a6999d0c21973542cadc51cc1e6d7c8"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/MycoTube/candidates.json",
+      "size_bytes": 98535,
+      "sha256": "a02a364d0c8dba937cebe864002bc81197eddb6353082f3a408c4f63286b66a2"
+    },
+    {
+      "path": "data/studies/transfer_v1/packets/RPal_CGA009/candidates.json",
+      "size_bytes": 115105,
+      "sha256": "cfdd08106b061561bbedd1c8757f515d49d52a1bc6bfc16cec2b0cac84247d18"
+    },
+    {
+      "path": "models/transfer_v1/Cola_base.json",
+      "size_bytes": 811,
+      "sha256": "33b3c9d6feaf7b5aa5e39912328a97e77de735b80366526402f3c23b8a82020f"
+    },
+    {
+      "path": "models/transfer_v1/Cola_base.xml.gz",
+      "size_bytes": 155024,
+      "sha256": "2940de8c6e0497e446bf1d220ad34ee2351831e0de04b7ab466c8160b76a7af4"
+    },
+    {
+      "path": "models/transfer_v1/Dino_base.json",
+      "size_bytes": 1783,
+      "sha256": "6062e21bd1f7c4b26edf850bcea2cc3811b10da0fa07d3cab568fddd1412de74"
+    },
+    {
+      "path": "models/transfer_v1/Dino_base.xml.gz",
+      "size_bytes": 170597,
+      "sha256": "b409621713f7dc2cb1e31ce4db773426e04ae1609ab5ae4a4f034ff4d226888c"
+    },
+    {
+      "path": "models/transfer_v1/Dyella79_base.json",
+      "size_bytes": 1202,
+      "sha256": "d24397969c3bd59fbfcfa096e9ae9514df8ebaccdc67522ca28017d51d5cc2c7"
+    },
+    {
+      "path": "models/transfer_v1/Dyella79_base.xml.gz",
+      "size_bytes": 166681,
+      "sha256": "2b44f8c3f2ac7e46bbe757fa432b76ae187e705940e5823adaa288b1bdaa271f"
+    },
+    {
+      "path": "models/transfer_v1/MycoTube_base.json",
+      "size_bytes": 823,
+      "sha256": "f131c1a3fbb6ace442f4a5a6a6b2bb15ec31409d64013aad2fadc797d3d717ca"
+    },
+    {
+      "path": "models/transfer_v1/MycoTube_base.xml.gz",
+      "size_bytes": 136512,
+      "sha256": "4bdd558f8e542aa476183236cd0d16e8c84a6cb1a30659dd0bd1813769f731f4"
+    },
+    {
+      "path": "models/transfer_v1/RPal_CGA009_base.json",
+      "size_bytes": 1466,
+      "sha256": "e2547ae78b6976107991c0859c9f75d1ddc9242862b7e23df8e660e62d34c50a"
+    },
+    {
+      "path": "models/transfer_v1/RPal_CGA009_base.xml.gz",
+      "size_bytes": 183955,
+      "sha256": "98523291d5d082d65d580cfdd57565b171a983664756c30d68030cefa56ca1e9"
+    },
+    {
+      "path": "results/study_freezes/transfer_v1_method.json",
+      "size_bytes": 50232,
+      "sha256": "d7abb56b3f9c247431b407d111aa1ebcb7e486c08fbaebc31be1080ec1393138"
+    },
+    {
+      "path": "results/transfer_v1/evaluation_panel_A/PS_prepare_failure.json",
+      "size_bytes": 913,
+      "sha256": "a72ef5df74f3136e7c80c557d4de9c8fc0618f3e87ec3cd1ba5dc3e3e0ae71bf"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "2364a2dd2ee24fe50184425db18fb2fbb4727e43",
+    "dirty": true,
+    "tracked_changes": [],
+    "untracked_paths": [
+      "results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json"
+    ],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "ddf371e28cd08f4321e4e9a63afaf99ef6fcf749f73b59511241f40701a2bc76",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}
