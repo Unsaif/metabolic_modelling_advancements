@@ -1,0 +1,570 @@
+[
+ {
+  "phase": "development",
+  "component": "Universal reaction patches",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "n_evaluable": 4,
+  "mean": 0.013661320782409087,
+  "ci95": [
+   0.0003094144234407348,
+   0.022537610995444685
+  ],
+  "up_down_unchanged": [
+   3,
+   1,
+   0
+  ],
+  "per_organism": {
+   "MR1": 0.01604169938279698,
+   "Btheta": -0.006331505593374587,
+   "Smeli": 0.0202321744738867,
+   "Putida": 0.024702914866327252
+  }
+ },
+ {
+  "phase": "development",
+  "component": "ATP synthase if annotated",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "n_evaluable": 4,
+  "mean": 0.0015793616332467064,
+  "ci95": [
+   0.0,
+   0.004738084899740119
+  ],
+  "up_down_unchanged": [
+   1,
+   0,
+   3
+  ],
+  "per_organism": {
+   "MR1": 0.0,
+   "Btheta": 0.0,
+   "Smeli": 0.006317446532986826,
+   "Putida": 0.0
+  }
+ },
+ {
+  "phase": "development",
+  "component": "Rule normalisation",
+  "A": "U",
+  "B": "UN",
+  "n_evaluable": 4,
+  "mean": 0.008766116064212223,
+  "ci95": [
+   0.0024593485581126118,
+   0.015833527752640728
+  ],
+  "up_down_unchanged": [
+   3,
+   0,
+   1
+  ],
+  "per_organism": {
+   "MR1": 0.006173549531316214,
+   "Btheta": 0.019053520493082232,
+   "Smeli": 0.009837394232450447,
+   "Putida": 0.0
+  }
+ },
+ {
+  "phase": "development",
+  "component": "Menaquinone rule",
+  "A": "U",
+  "B": "UQ",
+  "n_evaluable": 4,
+  "mean": 0.010432359590681728,
+  "ci95": [
+   0.0,
+   0.020864719181363456
+  ],
+  "up_down_unchanged": [
+   2,
+   0,
+   2
+  ],
+  "per_organism": {
+   "MR1": 0.0,
+   "Btheta": 0.0,
+   "Smeli": 0.015249761519853133,
+   "Putida": 0.02647967684287378
+  }
+ },
+ {
+  "phase": "development",
+  "component": "All automatic rules (H1)",
+  "A": "B0",
+  "B": "UNQ",
+  "n_evaluable": 4,
+  "mean": 0.03592815473904121,
+  "ci95": [
+   0.01744634081080465,
+   0.054409968667277764
+  ],
+  "up_down_unchanged": [
+   4,
+   0,
+   0
+  ],
+  "per_organism": {
+   "MR1": 0.022170666721901655,
+   "Btheta": 0.012722014899707645,
+   "Smeli": 0.051439373088538076,
+   "Putida": 0.05738056424601745
+  }
+ },
+ {
+  "phase": "development",
+  "component": "Curation: removals and joins (R1/R2)",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "n_evaluable": 4,
+  "mean": 0.017585548602210677,
+  "ci95": [
+   0.007359699066263603,
+   0.02932931064659758
+  ],
+  "up_down_unchanged": [
+   4,
+   0,
+   0
+  ],
+  "per_organism": {
+   "MR1": 0.007650657599524546,
+   "Btheta": 0.00706874053300266,
+   "Smeli": 0.019067267947360245,
+   "Putida": 0.036555528328955256
+  }
+ },
+ {
+  "phase": "development",
+  "component": "Curation: gene assignments (R6)",
+  "A": "UNQ",
+  "B": "M_R6",
+  "n_evaluable": 4,
+  "mean": 0.010582589809427806,
+  "ci95": [
+   -0.010605901870729545,
+   0.037590453574880445
+  ],
+  "up_down_unchanged": [
+   2,
+   1,
+   1
+  ],
+  "per_organism": {
+   "MR1": -0.01709252217628565,
+   "Btheta": 0.04989644596573184,
+   "Smeli": 0.008853959045938775,
+   "Putida": 0.0006724764023262608
+  }
+ },
+ {
+  "phase": "development",
+  "component": "All blind curation (H2)",
+  "A": "UNQ",
+  "B": "M",
+  "n_evaluable": 4,
+  "mean": 0.02790830662179415,
+  "ci95": [
+   0.002642026573469722,
+   0.04870814995259856
+  ],
+  "up_down_unchanged": [
+   3,
+   1,
+   0
+  ],
+  "per_organism": {
+   "MR1": -0.00887045443030704,
+   "Btheta": 0.055754194238855304,
+   "Smeli": 0.027570017093828336,
+   "Putida": 0.03717946958480001
+  }
+ },
+ {
+  "phase": "evaluation_panel_A",
+  "component": "Universal reaction patches",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "n_evaluable": 5,
+  "mean": 0.0051508387761300956,
+  "ci95": [
+   0.0,
+   0.015452516328390287
+  ],
+  "up_down_unchanged": [
+   1,
+   0,
+   4
+  ],
+  "per_organism": {
+   "Cola": 0.0,
+   "Dino": 0.025754193880650478,
+   "Dyella79": 0.0,
+   "MycoTube": 0.0,
+   "RPal_CGA009": 0.0
+  }
+ },
+ {
+  "phase": "evaluation_panel_A",
+  "component": "ATP synthase if annotated",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "n_evaluable": 5,
+  "mean": 0.0033702216137468924,
+  "ci95": [
+   7.373284514592334e-05,
+   0.007484726520661555
+  ],
+  "up_down_unchanged": [
+   2,
+   0,
+   3
+  ],
+  "per_organism": {
+   "Cola": 0.00601184946285338,
+   "Dino": 0.010470594380151466,
+   "Dyella79": 0.0,
+   "MycoTube": 0.00036866422572961674,
+   "RPal_CGA009": 0.0
+  }
+ },
+ {
+  "phase": "evaluation_panel_A",
+  "component": "Rule normalisation",
+  "A": "U",
+  "B": "UN",
+  "n_evaluable": 5,
+  "mean": 0.0037428858175473146,
+  "ci95": [
+   0.0,
+   0.011228657452641944
+  ],
+  "up_down_unchanged": [
+   1,
+   0,
+   4
+  ],
+  "per_organism": {
+   "Cola": 0.018714429087736573,
+   "Dino": 0.0,
+   "Dyella79": 0.0,
+   "MycoTube": 0.0,
+   "RPal_CGA009": 0.0
+  }
+ },
+ {
+  "phase": "evaluation_panel_A",
+  "component": "Menaquinone rule",
+  "A": "U",
+  "B": "UQ",
+  "n_evaluable": 5,
+  "mean": 0.019767554394540636,
+  "ci95": [
+   0.0026296564305161698,
+   0.04106752830515341
+  ],
+  "up_down_unchanged": [
+   3,
+   0,
+   2
+  ],
+  "per_organism": {
+   "Cola": 0.0,
+   "Dino": 0.013148282152580848,
+   "Dyella79": 0.059824075852822345,
+   "MycoTube": 0.0,
+   "RPal_CGA009": 0.025865413967299994
+  }
+ },
+ {
+  "phase": "evaluation_panel_A",
+  "component": "All automatic rules (H1)",
+  "A": "B0",
+  "B": "UNQ",
+  "n_evaluable": 5,
+  "mean": 0.03660082415948325,
+  "ci95": [
+   0.016586872552667175,
+   0.05388547250349429
+  ],
+  "up_down_unchanged": [
+   4,
+   0,
+   1
+  ],
+  "per_organism": {
+   "Cola": 0.03567694406717531,
+   "Dino": 0.049470528978088846,
+   "Dyella79": 0.06602449146104028,
+   "MycoTube": 0.0008158387470676084,
+   "RPal_CGA009": 0.031016317544044214
+  }
+ },
+ {
+  "phase": "evaluation_panel_A",
+  "component": "Curation: removals and joins (R1/R2)",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "n_evaluable": 5,
+  "mean": 0.020042936198250996,
+  "ci95": [
+   0.002920145949384749,
+   0.03716572644711724
+  ],
+  "up_down_unchanged": [
+   3,
+   1,
+   1
+  ],
+  "per_organism": {
+   "Cola": 0.0460848177210369,
+   "Dino": 0.037387217204192524,
+   "Dyella79": 0.018884562385127368,
+   "MycoTube": -0.0021419163191018116,
+   "RPal_CGA009": 0.0
+  }
+ },
+ {
+  "phase": "evaluation_panel_A",
+  "component": "Curation: gene assignments (R6)",
+  "A": "UNQ",
+  "B": "M_R6",
+  "n_evaluable": 5,
+  "mean": 0.008211415984731674,
+  "ci95": [
+   -0.012399914543028889,
+   0.025211495081760783
+  ],
+  "up_down_unchanged": [
+   3,
+   1,
+   1
+  ],
+  "per_organism": {
+   "Cola": 0.018056257153657274,
+   "Dino": 0.03536345161248455,
+   "Dyella79": 0.018637157515088765,
+   "MycoTube": 0.0,
+   "RPal_CGA009": -0.030999786357572223
+  }
+ },
+ {
+  "phase": "evaluation_panel_A",
+  "component": "All blind curation (H2)",
+  "A": "UNQ",
+  "B": "M",
+  "n_evaluable": 5,
+  "mean": 0.027238060676489186,
+  "ci95": [
+   -0.006505616108934506,
+   0.06035160754044007
+  ],
+  "up_down_unchanged": [
+   3,
+   2,
+   0
+  ],
+  "per_organism": {
+   "Cola": 0.06261319484714595,
+   "Dino": 0.06981283679593442,
+   "Dyella79": 0.0369059744160396,
+   "MycoTube": -0.0021419163191018116,
+   "RPal_CGA009": -0.030999786357572223
+  }
+ },
+ {
+  "phase": "evaluation_panel_B",
+  "component": "Universal reaction patches",
+  "A": "B0",
+  "B": "Uonly_rxn",
+  "n_evaluable": 5,
+  "mean": 0.011771516672199278,
+  "ci95": [
+   0.0035773858734074347,
+   0.01996564747099112
+  ],
+  "up_down_unchanged": [
+   3,
+   0,
+   2
+  ],
+  "per_organism": {
+   "Caulo": 0.0,
+   "Cup4G11": 0.0,
+   "Marino": 0.021854534547316118,
+   "PV4": 0.0191161194466431,
+   "SB2B": 0.017886929367037174
+  }
+ },
+ {
+  "phase": "evaluation_panel_B",
+  "component": "ATP synthase if annotated",
+  "A": "B0",
+  "B": "Uonly_atp",
+  "n_evaluable": 5,
+  "mean": 0.0005428731126426612,
+  "ci95": [
+   0.0,
+   0.001337835967726353
+  ],
+  "up_down_unchanged": [
+   1,
+   0,
+   4
+  ],
+  "per_organism": {
+   "Caulo": 0.0,
+   "Cup4G11": 0.0019874071377092295,
+   "Marino": 0.0,
+   "PV4": 0.0007269584255040762,
+   "SB2B": 0.0
+  }
+ },
+ {
+  "phase": "evaluation_panel_B",
+  "component": "Rule normalisation",
+  "A": "U",
+  "B": "UN",
+  "n_evaluable": 5,
+  "mean": 0.0032206083278065512,
+  "ci95": [
+   3.0045095007869005e-05,
+   0.0064111715606052335
+  ],
+  "up_down_unchanged": [
+   3,
+   0,
+   2
+  ],
+  "per_organism": {
+   "Caulo": 0.0013900284733084356,
+   "Cup4G11": -0.0006199014991345453,
+   "Marino": 0.0,
+   "PV4": 0.00770878698462929,
+   "SB2B": 0.007624127680229575
+  }
+ },
+ {
+  "phase": "evaluation_panel_B",
+  "component": "Menaquinone rule",
+  "A": "U",
+  "B": "UQ",
+  "n_evaluable": 5,
+  "mean": 0.01983102105407688,
+  "ci95": [
+   0.0034143542559940563,
+   0.04043323231371678
+  ],
+  "up_down_unchanged": [
+   3,
+   0,
+   2
+  ],
+  "per_organism": {
+   "Caulo": 0.017071771279970283,
+   "Cup4G11": 0.060041413789084896,
+   "Marino": 0.022041920201329224,
+   "PV4": 0.0,
+   "SB2B": 0.0
+  }
+ },
+ {
+  "phase": "evaluation_panel_B",
+  "component": "All automatic rules (H1)",
+  "A": "B0",
+  "B": "UNQ",
+  "n_evaluable": 5,
+  "mean": 0.03643057244205761,
+  "ci95": [
+   0.024355938584528537,
+   0.050940587202245965
+  ],
+  "up_down_unchanged": [
+   5,
+   0,
+   0
+  ],
+  "per_organism": {
+   "Caulo": 0.01755758427118087,
+   "Cup4G11": 0.06150678588264691,
+   "Marino": 0.04389645474864534,
+   "PV4": 0.027472487072466023,
+   "SB2B": 0.03171955023534889
+  }
+ },
+ {
+  "phase": "evaluation_panel_B",
+  "component": "Curation: removals and joins (R1/R2)",
+  "A": "UNQ",
+  "B": "M_R1R2",
+  "n_evaluable": 5,
+  "mean": 0.031877236719735566,
+  "ci95": [
+   0.01644916299659267,
+   0.047305310442878466
+  ],
+  "up_down_unchanged": [
+   5,
+   0,
+   0
+  ],
+  "per_organism": {
+   "Caulo": 0.029828404636831896,
+   "Cup4G11": 0.052357294878675076,
+   "Marino": 0.050991778910105146,
+   "PV4": 0.017667799408179308,
+   "SB2B": 0.00854090576488642
+  }
+ },
+ {
+  "phase": "evaluation_panel_B",
+  "component": "Curation: gene assignments (R6)",
+  "A": "UNQ",
+  "B": "M_R6",
+  "n_evaluable": 5,
+  "mean": -0.0029950853870039486,
+  "ci95": [
+   -0.008516162917695436,
+   0.0
+  ],
+  "up_down_unchanged": [
+   0,
+   2,
+   3
+  ],
+  "per_organism": {
+   "Caulo": -0.0011727331082910242,
+   "Cup4G11": 0.0,
+   "Marino": 0.0,
+   "PV4": -0.013802693826728718,
+   "SB2B": 0.0
+  }
+ },
+ {
+  "phase": "evaluation_panel_B",
+  "component": "All blind curation (H2)",
+  "A": "UNQ",
+  "B": "M",
+  "n_evaluable": 5,
+  "mean": 0.028932609580413625,
+  "ci95": [
+   0.010839003961826733,
+   0.04702621519900052
+  ],
+  "up_down_unchanged": [
+   5,
+   0,
+   0
+  ],
+  "per_organism": {
+   "Caulo": 0.028435690557121918,
+   "Cup4G11": 0.0523559138088352,
+   "Marino": 0.050991778910105146,
+   "PV4": 0.004338758861119452,
+   "SB2B": 0.00854090576488642
+  }
+ }
+]
