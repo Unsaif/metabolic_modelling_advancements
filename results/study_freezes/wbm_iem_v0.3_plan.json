@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-10-04T10:02:36Z",
+  "plan": {
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_role": "development",
+    "model_file": "external/COBRA.models/mat/Harvey_1_03d.mat",
+    "model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+    "note": "Whole-body IEM protocol v0.3 and v0.2b on Harvey 1.03d (docs/studies/wbm-iem-v0.3-plan.md). Not an independent evaluation: the IEM ground truth and the v0.2 results are known. The freeze fixes the protocol, the constraint port and the solver settings before the runs. The organism fields are required by the freeze schema and do not apply to this study.",
+    "paths": [
+      "data/iem/iem_protocol_v0.2.json",
+      "data/iem/iem_protocol_v0.2.provenance.json",
+      "data/iem/wbm_constraint_inputs_v0.3.json",
+      "docs/studies/wbm-iem-v0.3-plan.md",
+      "gembench/wbm.py",
+      "gembench/wbm_constraints.py",
+      "gembench/wbm_iem.py",
+      "results/wbm_iem/Harvey_1_03d_constraint_port_check_v0.3.json",
+      "results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json",
+      "results/wbm_iem/Harvey_1_03d_iem_summary_v0.2.json",
+      "scripts/check_wbm_constraint_port.py",
+      "scripts/extract_wbm_constraint_inputs.py",
+      "scripts/parse_iem_protocol.py",
+      "scripts/run_wbm_iem.py",
+      "tests/test_run_wbm_iem.py",
+      "tests/test_wbm_constraints.py",
+      "tests/test_wbm_iem.py"
+    ],
+    "primary": "v0.3 accuracy among scored biomarkers and coverage; per-biomarker comparison with v0.2",
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "runs": {
+      "v0.2b": "python3 scripts/run_wbm_iem.py Harvey_1_03d --model-setup shipped --bile-duct toolbox --out-suffix _v0.2b",
+      "v0.3": "python3 scripts/run_wbm_iem.py Harvey_1_03d --model-setup toolbox --bile-duct toolbox --out-suffix _v0.3"
+    },
+    "schema_version": 1,
+    "secondary": "v0.2b; decomposition v0.2 -> v0.2b (bile-duct correction) and v0.2b -> v0.3 (re-applied constraints)",
+    "study_id": "wbm-iem-v0.3"
+  },
+  "files": [
+    {
+      "path": "data/iem/iem_protocol_v0.2.json",
+      "size_bytes": 39406,
+      "sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5"
+    },
+    {
+      "path": "data/iem/iem_protocol_v0.2.provenance.json",
+      "size_bytes": 614,
+      "sha256": "a82fb9cac83c5c81b7b60a6ab6b800be9bdca9d4dfca5dc7190d489c66673a85"
+    },
+    {
+      "path": "data/iem/wbm_constraint_inputs_v0.3.json",
+      "size_bytes": 134498,
+      "sha256": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473"
+    },
+    {
+      "path": "docs/studies/wbm-iem-v0.3-plan.md",
+      "size_bytes": 6051,
+      "sha256": "4c62a2ff863601be892dba94dd844728e67346d286990acc2bae683e06547a32"
+    },
+    {
+      "path": "gembench/wbm.py",
+      "size_bytes": 10661,
+      "sha256": "c525a92e917a58d440c4d38544dc1aecdfd44b51e847f8eaae3e6d53ceaf67fb"
+    },
+    {
+      "path": "gembench/wbm_constraints.py",
+      "size_bytes": 23747,
+      "sha256": "2673b3f9bf6e8f898f9ff592d9fcc62281b1fea04e8a3bed8dedbde1600716f9"
+    },
+    {
+      "path": "gembench/wbm_iem.py",
+      "size_bytes": 19019,
+      "sha256": "e33d053c93408c753a57ed60dfb846ec30662c3ab964b7b1385372a1f2e5e9c1"
+    },
+    {
+      "path": "results/wbm_iem/Harvey_1_03d_constraint_port_check_v0.3.json",
+      "size_bytes": 6174,
+      "sha256": "6a00e2d614c3f48063fcb352785c0cfa536b30ab8a528e9b454b7c7830866d12"
+    },
+    {
+      "path": "results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json",
+      "size_bytes": 159026,
+      "sha256": "ecc7754febf2fcb59001f8fd28a10fcc073d4eb98d29f840d3c1a2a7e5058476"
+    },
+    {
+      "path": "results/wbm_iem/Harvey_1_03d_iem_summary_v0.2.json",
+      "size_bytes": 1417,
+      "sha256": "858d1eb2cddd37319d0b82afa303e8e75f31c9c80513e2b58cf203fc40beae9f"
+    },
+    {
+      "path": "scripts/check_wbm_constraint_port.py",
+      "size_bytes": 5786,
+      "sha256": "902531b6ca3eadf06535ae92fafd2696585c70200e23510088a25f4effdf9048"
+    },
+    {
+      "path": "scripts/extract_wbm_constraint_inputs.py",
+      "size_bytes": 11132,
+      "sha256": "77017e08e968e52742d753589ebcc953430b2a1168f048d6cec077fcc356536f"
+    },
+    {
+      "path": "scripts/parse_iem_protocol.py",
+      "size_bytes": 8153,
+      "sha256": "e0e1d1085e90ff97f00df401a8eef80511eecc90c39e6091e85ed60226ba7589"
+    },
+    {
+      "path": "scripts/run_wbm_iem.py",
+      "size_bytes": 10274,
+      "sha256": "fc9f9552f93125f0163e716b11b9c79071c941560ae8140046639d9d0c041daa"
+    },
+    {
+      "path": "tests/test_run_wbm_iem.py",
+      "size_bytes": 3055,
+      "sha256": "dfdf8eac1428f7bc77377af311e49d43d7242a5063233dab8dbb2e4b8c267bb5"
+    },
+    {
+      "path": "tests/test_wbm_constraints.py",
+      "size_bytes": 14064,
+      "sha256": "bb8d691f78ceb694cdbae511cf5249b84762d3fe1ff84d223c5f2236913c6273"
+    },
+    {
+      "path": "tests/test_wbm_iem.py",
+      "size_bytes": 5785,
+      "sha256": "005ccfb0555412b55b9910a7df5ad6667075efe0e496c3c924f0da9b32b6c2af"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "05bf57424fce2189687ee1364e9220d452fe7ea2",
+    "dirty": false,
+    "tracked_changes": [],
+    "untracked_paths": [],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "66bd36b0ca14bafd60f6bb6b13ea0604c2ded08a69d7fd65e6d541722a947d0d",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}

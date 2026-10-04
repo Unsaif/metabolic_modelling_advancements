@@ -1,0 +1,13 @@
+{
+ "study_id": "wbm-iem-v0.3",
+ "original_freeze": {
+  "created_at": "2026-10-04T02:06:26Z",
+  "content_fingerprint": "66bd36b0ca14bafd60f6bb6b13ea0604c2ded08a69d7fd65e6d541722a947d0d",
+  "repository_head": "f004c69 (clean)",
+  "external_record": "Claude project doc studies/2026-10-04-wbm-iem-v0.3-plan-freeze.md, written immediately after the freeze"
+ },
+ "loss": "The cloud workspace was reset at about 09:50Z on 4 October 2026, before the commits after 7d06d8f had been transferred to Tim's repository. The original manifest, the commits f004c69..57702f8 and the partial v0.3 and v0.2b results were lost.",
+ "recovery": "The repository was restored at 7d06d8f (GitHub plus a bundle from Tim's copy). The file operations of the session were replayed from the session transcript and the generated inputs were regenerated from the pinned Toolbox commit 67c790d and the model file (sha256 10e6cb6d...). The 17 frozen files reproduce the original content fingerprint exactly.",
+ "recreated_manifest": "results/study_freezes/wbm_iem_v0.3_plan.json (created 2026-10-04T10:02:36Z on a clean tree at 05bf574; same content fingerprint)",
+ "runs": "Both runs (v0.3 and v0.2b) restart from the beginning under the frozen plan; no result of the lost partial runs is reused."
+}
