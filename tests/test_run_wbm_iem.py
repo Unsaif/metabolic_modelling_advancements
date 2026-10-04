@@ -38,7 +38,8 @@ def test_runner_retries_unknown_results_and_writes_strict_json(tmp_path, monkeyp
     protocol.write_text(json.dumps([{"iem": "toy", "call_index": 1, "include_patterns": ["_IEM"],
                                      "exclude_patterns": [], "bound_tweaks": [], "biomarkers": [["EX_a", "Increased"]]}]))
     monkeypatch.setattr(runner, "OUT", str(tmp_path))
-    monkeypatch.setattr(sys, "argv", ["run_wbm_iem.py", "toy", "--model-file", str(model_file), "--protocol", str(protocol)])
+    monkeypatch.setattr(sys, "argv", ["run_wbm_iem.py", "toy", "--model-file", str(model_file), "--protocol", str(protocol),
+                                     "--model-setup", "shipped"])
     original = HighsWBM.solve
 
     def interrupted_solve(self):
@@ -49,7 +50,7 @@ def test_runner_retries_unknown_results_and_writes_strict_json(tmp_path, monkeyp
 
     monkeypatch.setattr(HighsWBM, "solve", interrupted_solve)
     runner.main()
-    output = tmp_path / "toy_iem_results_v0.2.json"
+    output = tmp_path / "toy_iem_results_v0.3.json"
     first = json.loads(output.read_text())
     assert len(first) == 1
     assert first[0]["status"] == "partial"
@@ -63,7 +64,7 @@ def test_runner_retries_unknown_results_and_writes_strict_json(tmp_path, monkeyp
     assert second[0]["status"] == "complete"
     assert second[0]["biomarkers"][0]["correct"] is True
     runner.main()
-    summary = json.loads((tmp_path / "toy_iem_summary_v0.2.json").read_text())
+    summary = json.loads((tmp_path / "toy_iem_summary_v0.3.json").read_text())
     assert summary["session_solves"] == 0
     assert summary["n_biomarkers_scored"] == summary["n_biomarkers_expected_in_attempted_iems"] == 1
     assert summary["total_solves_in_recorded_attempts"] == 5

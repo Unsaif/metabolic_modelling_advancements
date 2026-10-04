@@ -194,8 +194,29 @@ def match_reactions(wbm_rxns: np.ndarray, include: Sequence[str], exclude: Seque
     return [i for i in idx if "Micro_" not in wbm_rxns[i]]
 
 
-def apply_runiem_global_constraints(hw: HighsWBM) -> Dict[str, int]:
-    """The unified reaction constraints set at the top of runIEM_HH.m before any IEM."""
+# runIEM_HH.m, `Rnew`: the 28 bile-duct exits whose upper bound is set to 100 before the IEM loop.
+RUNIEM_BILE_DUCT_UB100 = [
+    "BileDuct_EX_12dhchol[bd]_[luSI]", "BileDuct_EX_3dhcdchol[bd]_[luSI]", "BileDuct_EX_3dhchol[bd]_[luSI]",
+    "BileDuct_EX_3dhdchol[bd]_[luSI]", "BileDuct_EX_3dhlchol[bd]_[luSI]", "BileDuct_EX_7dhcdchol[bd]_[luSI]",
+    "BileDuct_EX_7dhchol[bd]_[luSI]", "BileDuct_EX_cdca24g[bd]_[luSI]", "BileDuct_EX_cdca3g[bd]_[luSI]",
+    "BileDuct_EX_cholate[bd]_[luSI]", "BileDuct_EX_dca24g[bd]_[luSI]", "BileDuct_EX_dca3g[bd]_[luSI]",
+    "BileDuct_EX_dchac[bd]_[luSI]", "BileDuct_EX_dgchol[bd]_[luSI]", "BileDuct_EX_gchola[bd]_[luSI]",
+    "BileDuct_EX_hca24g[bd]_[luSI]", "BileDuct_EX_hca6g[bd]_[luSI]", "BileDuct_EX_hdca24g[bd]_[luSI]",
+    "BileDuct_EX_hdca6g[bd]_[luSI]", "BileDuct_EX_hyochol[bd]_[luSI]", "BileDuct_EX_icdchol[bd]_[luSI]",
+    "BileDuct_EX_isochol[bd]_[luSI]", "BileDuct_EX_lca24g[bd]_[luSI]", "BileDuct_EX_tchola[bd]_[luSI]",
+    "BileDuct_EX_tdchola[bd]_[luSI]", "BileDuct_EX_tdechola[bd]_[luSI]", "BileDuct_EX_thyochol[bd]_[luSI]",
+    "BileDuct_EX_uchol[bd]_[luSI]"]
+
+
+def apply_runiem_global_constraints(hw: HighsWBM, bile_duct: str = "toolbox") -> Dict[str, int]:
+    """The unified reaction constraints set at the top of runIEM_HH.m before any IEM.
+
+    bile_duct="toolbox" sets ub = 100 on the 28 reactions listed in runIEM_HH.m (`Rnew`).
+    bile_duct="v0.2_all" reproduces protocol v0.2, which applied it to every
+    BileDuct_EX_*[bd]_[luSI] reaction (261 in Harvey 1.03d) - a deviation found on 4 October 2026.
+    """
+    if bile_duct not in ("toolbox", "v0.2_all"):
+        raise ValueError("bile_duct must be 'toolbox' or 'v0.2_all'")
     rx = hw.wbm.rxns
     irreversible = ["_ARGSL", "_GACMTRc", "_FUM", "_FUMm", "_HMR_7698", "_UAG4E", "_UDPG4E", "_GALT", "_G6PDH2c", "_G6PDH2r",
                     "_G6PDH2rer", "_GLUTCOADHm", "_r0541", "_ACOAD8m", "_RE2410C", "_RE2410N"]
@@ -204,7 +225,11 @@ def apply_runiem_global_constraints(hw: HighsWBM) -> Dict[str, int]:
     hw.set_bounds(irr, lb=[0.0] * len(irr))
     closed = match_reactions(rx, ["_r0784", "_r0463"])
     hw.set_bounds(closed, lb=[0.0] * len(closed), ub=[0.0] * len(closed))
-    bile = [i for i, r in enumerate(rx) if r.startswith("BileDuct_EX_") and r.endswith("[bd]_[luSI]")]
+    if bile_duct == "toolbox":
+        listed = set(RUNIEM_BILE_DUCT_UB100)
+        bile = [i for i, r in enumerate(rx) if r in listed]
+    else:
+        bile = [i for i, r in enumerate(rx) if r.startswith("BileDuct_EX_") and r.endswith("[bd]_[luSI]")]
     hw.set_bounds(bile, ub=[100.0] * len(bile))
     return {"set_irreversible": len(irr), "closed": len(closed), "bile_duct_ub_100": len(bile)}
 

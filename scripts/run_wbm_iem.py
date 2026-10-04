@@ -1,7 +1,15 @@
-"""Run the corrected exploratory whole-body IEM protocol with HiGHS.
+"""Run the whole-body IEM protocol of runIEM_HH.m with HiGHS.
 
-Usage: python scripts/run_wbm_iem.py Harvey_1_03d [--limit N] [--iems HIS AGAT ...]
-The v0.2 output suffix prevents overwriting earlier exploratory results.
+Usage: python scripts/run_wbm_iem.py Harvey_1_03d [--model-setup toolbox|shipped] [--bile-duct toolbox|v0.2_all]
+                                     [--limit N] [--iems HIS AGAT ...] [--out-suffix _v0.3]
+
+--model-setup toolbox  re-applies physiologicalConstraintsHMDBbased and the EU average diet as runIEM_HH.m
+                       does at the pinned Toolbox commit (gembench.wbm_constraints);
+--model-setup shipped  keeps the bounds stored in the model file (Harvey 1.03d ships with an earlier
+                       version of the same constraints already applied).
+--bile-duct v0.2_all   reproduces the v0.2 deviation (ub = 100 on all 261 bile-duct exits instead of 28).
+Results are fingerprinted by model, protocol, setup and the resulting LP bounds; a results file is
+only resumed under the same fingerprint.
 """
 from __future__ import annotations
 
@@ -14,13 +22,22 @@ import os
 import sys
 import time
 
+import numpy as np
+
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from gembench import wbm as W  # noqa: E402
 from gembench import wbm_iem as I  # noqa: E402
+from gembench import wbm_constraints as WC  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "results", "wbm_iem")
-ENGINE_VERSION = "iem-v0.2"
+ENGINE_VERSION = "iem-v0.3"
+CAVEATS = {
+    "toolbox": "Model bounds: the shipped model with physiologicalConstraintsHMDBbased and the EU average diet re-applied "
+               "as runIEM_HH.m does at the pinned Toolbox commit (gembench.wbm_constraints).",
+    "shipped": "Model bounds as shipped; Harvey 1.03d already carries an earlier version of the physiological and diet "
+               "constraints (GFR 129.75 ml/min, CSF export from 0.35 ml/min, older AGORA and diet lists).",
+}
 TERMINAL_STATUSES = {"complete", "inactive", "no_reactions", "disease_infeasible", "wb_infeasible", "missing_wb_objective"}
 
 
@@ -79,7 +96,10 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--iems", nargs="*", default=None)
     ap.add_argument("--min-flux-healthy", type=float, default=1.0)
-    ap.add_argument("--out-suffix", default="_v0.2", help="Use distinct suffixes for disjoint shards; legacy results cannot be resumed")
+    ap.add_argument("--out-suffix", default="_v0.3", help="Use distinct suffixes for disjoint shards; legacy results cannot be resumed")
+    ap.add_argument("--model-setup", choices=["toolbox", "shipped"], default="toolbox")
+    ap.add_argument("--bile-duct", choices=["toolbox", "v0.2_all"], default="toolbox")
+    ap.add_argument("--constraint-inputs", default=WC.DEFAULT_INPUTS)
     args = ap.parse_args()
     os.makedirs(OUT, exist_ok=True)
     with open(args.protocol) as fh:
@@ -98,20 +118,33 @@ def main() -> None:
     t0 = time.time()
     model_file = args.model_file or os.path.join(ROOT, "external", "COBRA.models", "mat", f"{args.model}.mat")
     import highspy
+    m = W.load_wbm(model_file)
+    setup = {"model_setup": args.model_setup}
+    if args.model_setup == "toolbox":
+        inputs = WC.load_inputs(args.constraint_inputs)
+        lb, ub, report = WC.runiem_model_setup(m.rxns, m.mets, m.S, m.lb, m.ub, sex=m.meta.get("sex") or "male", inputs=inputs)
+        setup.update(constraint_inputs_sha256=sha256_file(args.constraint_inputs),
+                     toolbox_commit=inputs["provenance"]["toolbox_commit"],
+                     n_lb_changed=int((lb != m.lb).sum()), n_ub_changed=int((ub != m.ub).sum()),
+                     warnings=report["warnings"], parameters=report["parameters"])
+        m.lb, m.ub = lb, ub
+    hw = I.HighsWBM(m)
+    g = I.apply_runiem_global_constraints(hw, bile_duct=args.bile_duct)
+    bounds_sha256 = hashlib.sha256(np.ascontiguousarray(hw.lb).tobytes() + np.ascontiguousarray(hw.ub).tobytes()).hexdigest()
     provenance = {"engine_version": ENGINE_VERSION, "model_sha256": sha256_file(model_file),
                   "protocol_sha256": sha256_file(args.protocol), "min_flux_healthy": args.min_flux_healthy,
                   "solver": f"HiGHS {highspy.Highs().version()}", "method": "ipm", "feas_tol": 1e-7,
-                  "opt_tol": 1e-7, "threads": 0, "time_limit_per_solve_s": 1800, "physiology_and_diet_ported": False}
+                  "opt_tol": 1e-7, "threads": 0, "time_limit_per_solve_s": 1800,
+                  "model_setup": setup, "bile_duct": args.bile_duct, "global_constraints": g,
+                  "lp_bounds_sha256": bounds_sha256}
     fingerprint = hashlib.sha256(json.dumps(provenance, sort_keys=True).encode()).hexdigest()
     out_json = os.path.join(OUT, f"{args.model}_iem_results{args.out_suffix}.json")
     results = load_resume(out_json, fingerprint)
     # Retry interrupted or numerically unavailable IEMs, replacing their previous attempt.
     done = {(r["iem"], r["call_index"]) for r in results if r.get("status") in TERMINAL_STATUSES}
     protocol = [p for p in protocol if (p["iem"], p["call_index"]) not in done]
-    m = W.load_wbm(model_file)
-    hw = I.HighsWBM(m)
-    g = I.apply_runiem_global_constraints(hw)
-    print(f"== {args.model}: {m.n_rxns} rxns; global constraints {g}; {len(protocol)} IEMs to run", flush=True)
+    print(f"== {args.model}: {m.n_rxns} rxns; setup {args.model_setup}; global constraints {g}; "
+          f"bounds {bounds_sha256[:12]}; {len(protocol)} IEMs to run", flush=True)
 
     for p in protocol:
         # Reset every per-IEM tweak even if a solver raises an exception.
@@ -146,7 +179,7 @@ def main() -> None:
                "total_solves_in_recorded_attempts": sum(r["n_solves"] for r in results),
                "session_solves": hw.n_solves, "session_solve_time_s": round(hw.solve_time, 1),
                "session_wall_s": round(time.time() - t0, 1),
-               "caveats": ["Shipped bounds only: physiological constraints and the EU average diet are not ported; this is not a reproduction of the published results.",
+               "caveats": [CAVEATS[args.model_setup],
                            "Accuracy is conditional on scored, optimal finite solve pairs; report coverage alongside accuracy.",
                            "Demand sinks are isolated per IEM. Solver is HiGHS IPM with crossover for every solve."]}
     write_json(os.path.join(OUT, f"{args.model}_iem_summary{args.out_suffix}.json"), summary)

@@ -1,0 +1,35 @@
+{
+ "schema_version": 1,
+ "study_id": "wbm-iem-v0.3",
+ "evaluation_role": "development",
+ "note": "Whole-body IEM protocol v0.3 and v0.2b on Harvey 1.03d (docs/studies/wbm-iem-v0.3-plan.md). Not an independent evaluation: the IEM ground truth and the v0.2 results are known. The freeze fixes the protocol, the constraint port and the solver settings before the runs. The organism fields are required by the freeze schema and do not apply to this study.",
+ "development_organisms": ["Btheta", "Putida", "MR1", "Smeli", "Keio"],
+ "quarantined_organisms": ["Bvulgatus_CL09T03C04", "Koxy", "SynE", "DvH"],
+ "model_file": "external/COBRA.models/mat/Harvey_1_03d.mat",
+ "model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+ "runs": {
+  "v0.3": "python3 scripts/run_wbm_iem.py Harvey_1_03d --model-setup toolbox --bile-duct toolbox --out-suffix _v0.3",
+  "v0.2b": "python3 scripts/run_wbm_iem.py Harvey_1_03d --model-setup shipped --bile-duct toolbox --out-suffix _v0.2b"
+ },
+ "primary": "v0.3 accuracy among scored biomarkers and coverage; per-biomarker comparison with v0.2",
+ "secondary": "v0.2b; decomposition v0.2 -> v0.2b (bile-duct correction) and v0.2b -> v0.3 (re-applied constraints)",
+ "paths": [
+  "docs/studies/wbm-iem-v0.3-plan.md",
+  "gembench/wbm.py",
+  "gembench/wbm_iem.py",
+  "gembench/wbm_constraints.py",
+  "scripts/run_wbm_iem.py",
+  "scripts/extract_wbm_constraint_inputs.py",
+  "scripts/check_wbm_constraint_port.py",
+  "scripts/parse_iem_protocol.py",
+  "data/iem/iem_protocol_v0.2.json",
+  "data/iem/iem_protocol_v0.2.provenance.json",
+  "data/iem/wbm_constraint_inputs_v0.3.json",
+  "results/wbm_iem/Harvey_1_03d_constraint_port_check_v0.3.json",
+  "results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json",
+  "results/wbm_iem/Harvey_1_03d_iem_summary_v0.2.json",
+  "tests/test_wbm_constraints.py",
+  "tests/test_wbm_iem.py",
+  "tests/test_run_wbm_iem.py"
+ ]
+}
