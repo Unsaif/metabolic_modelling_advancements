@@ -1,0 +1,63 @@
+{
+  "model": "Harvey_1_03d",
+  "run_fingerprint": "92385e328c9287deda5f3fc4316de0a381def08dafd4f1a2ab208feac515bb11",
+  "provenance": {
+    "engine_version": "iem-v0.3",
+    "model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+    "protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+    "min_flux_healthy": 1.0,
+    "solver": "HiGHS 1.15.1",
+    "method": "ipm",
+    "feas_tol": 1e-07,
+    "opt_tol": 1e-07,
+    "threads": 0,
+    "time_limit_per_solve_s": 1800,
+    "model_setup": {
+      "model_setup": "toolbox",
+      "constraint_inputs_sha256": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473",
+      "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc",
+      "n_lb_changed": 1001,
+      "n_ub_changed": 571,
+      "warnings": [],
+      "parameters": {
+        "sex": "male",
+        "body_weight_kg": 70.0,
+        "brain_weight_g": 1400.0,
+        "cardiac_output_ml_min": 5360,
+        "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc"
+      }
+    },
+    "bile_duct": "toolbox",
+    "global_constraints": {
+      "set_irreversible": 319,
+      "closed": 24,
+      "bile_duct_ub_100": 28
+    },
+    "lp_bounds_sha256": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+    "senses": [
+      "min"
+    ]
+  },
+  "n_iems_attempted": 57,
+  "n_iems_with_complete_biomarker_solves": 57,
+  "n_iems_in_protocol": 57,
+  "n_biomarkers_expected_in_attempted_iems": 252,
+  "n_biomarkers_scored": 0,
+  "n_correct": 0,
+  "accuracy_among_scored": null,
+  "scored_coverage_of_attempted_iems": 0.0,
+  "n_biomarkers_expected_in_full_protocol": 252,
+  "total_solves_in_recorded_attempts": 673,
+  "session_solves": 673,
+  "session_solve_time_s": 22065.8,
+  "session_wall_s": 22084.3,
+  "senses": [
+    "min"
+  ],
+  "n_biomarkers_with_optimal_minima": 251,
+  "caveats": [
+    "Model bounds: the shipped model with physiologicalConstraintsHMDBbased and the EU average diet re-applied as runIEM_HH.m does at the pinned Toolbox commit (gembench.wbm_constraints).",
+    "Accuracy is conditional on scored, optimal finite solve pairs; report coverage alongside accuracy.",
+    "Demand sinks are isolated per IEM. Solver is HiGHS IPM with crossover for every solve."
+  ]
+}
