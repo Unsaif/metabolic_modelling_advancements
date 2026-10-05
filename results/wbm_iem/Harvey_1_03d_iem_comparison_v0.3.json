@@ -1,0 +1,1058 @@
+{
+ "protocol": "data/iem/iem_protocol_v0.2.json",
+ "runs": {
+  "v0.2": {
+   "path": "results/wbm_iem/Harvey_1_03d_iem_results_v0.2.json",
+   "run_fingerprint": "8f9b6aa0da504afc2d9f804b297cb43c6a3aa6cada4aaaffb0ceea8e361a34ae",
+   "n_iems": 57,
+   "iem_status": {
+    "complete": 57
+   },
+   "n_biomarkers_in_protocol": 252,
+   "n_scored": 251,
+   "n_correct": 220,
+   "accuracy_among_scored": 0.8764940239043825,
+   "coverage": 0.996031746031746,
+   "errors": {
+    "opposite direction": 13,
+    "no change predicted": 18
+   },
+   "n_iems_all_scored_correct": 37,
+   "n_iems_all_correct_among_scored": 38,
+   "per_iem": {
+    "HIS#1": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "AGAT#2": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "ARG#3": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "CPS1#4": {
+     "scored": 6,
+     "correct": 5,
+     "expected": 6
+    },
+    "3MGA#5": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "AMA1#6": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "AADC#7": {
+     "scored": 10,
+     "correct": 8,
+     "expected": 10
+    },
+    "3MCC#8": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "CYP21D#9": {
+     "scored": 6,
+     "correct": 4,
+     "expected": 6
+    },
+    "HYCARO#10": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "BTD#11": {
+     "scored": 8,
+     "correct": 6,
+     "expected": 8
+    },
+    "STAR#13": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "CMO1#14": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "DGK#15": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "DPYR#16": {
+     "scored": 4,
+     "correct": 3,
+     "expected": 4
+    },
+    "FED#17": {
+     "scored": 2,
+     "correct": 1,
+     "expected": 2
+    },
+    "EF#18": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "FIGLU#19": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "GA1#20": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "GA2#21": {
+     "scored": 15,
+     "correct": 15,
+     "expected": 15
+    },
+    "OXOP#22": {
+     "scored": 8,
+     "correct": 7,
+     "expected": 8
+    },
+    "GMT#24": {
+     "scored": 5,
+     "correct": 4,
+     "expected": 5
+    },
+    "GACR#25": {
+     "scored": 8,
+     "correct": 6,
+     "expected": 8
+    },
+    "HMG#27": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "HCYS#28": {
+     "scored": 7,
+     "correct": 4,
+     "expected": 7
+    },
+    "HLYS1#29": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "HLYS2#30": {
+     "scored": 4,
+     "correct": 2,
+     "expected": 4
+    },
+    "HYPRO1#31": {
+     "scored": 4,
+     "correct": 3,
+     "expected": 4
+    },
+    "HPII#32": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "IVA#33": {
+     "scored": 3,
+     "correct": 2,
+     "expected": 3
+    },
+    "LNS#34": {
+     "scored": 3,
+     "correct": 2,
+     "expected": 3
+    },
+    "LTC4S#35": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "MSUD#36": {
+     "scored": 6,
+     "correct": 5,
+     "expected": 6
+    },
+    "MMA#37": {
+     "scored": 7,
+     "correct": 2,
+     "expected": 7
+    },
+    "NAGS#38": {
+     "scored": 6,
+     "correct": 4,
+     "expected": 6
+    },
+    "OTC#39": {
+     "scored": 9,
+     "correct": 8,
+     "expected": 9
+    },
+    "PKU#41": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "SUCLA#43": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "SSADHD#44": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "TETB#45": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "CIT1#46": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "TYR1#47": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "TYR3#48": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "XAN1#49": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "AKGD#50": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "EP#51": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "HYPVLI#52": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "ASNSD#53": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "ASA#54": {
+     "scored": 7,
+     "correct": 7,
+     "expected": 7
+    },
+    "PC#56": {
+     "scored": 15,
+     "correct": 14,
+     "expected": 15
+    },
+    "PHOX1#57": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "ADSL#58": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "CD#59": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "HPC#60": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 4
+    },
+    "HMET#61": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "DESMO#62": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "2OAA#63": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    }
+   }
+  },
+  "v0.2b": {
+   "path": "results/wbm_iem/Harvey_1_03d_iem_results_v0.2b.json",
+   "run_fingerprint": "90e581fc26d6927cf221973805d30c33f1c79d3d9e9d191b9ac7aac91a392c1b",
+   "n_iems": 57,
+   "iem_status": {
+    "complete": 57
+   },
+   "n_biomarkers_in_protocol": 252,
+   "n_scored": 251,
+   "n_correct": 217,
+   "accuracy_among_scored": 0.8645418326693227,
+   "coverage": 0.996031746031746,
+   "errors": {
+    "opposite direction": 13,
+    "no change predicted": 21
+   },
+   "n_iems_all_scored_correct": 38,
+   "n_iems_all_correct_among_scored": 39,
+   "per_iem": {
+    "HIS#1": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "AGAT#2": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "ARG#3": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "CPS1#4": {
+     "scored": 6,
+     "correct": 5,
+     "expected": 6
+    },
+    "3MGA#5": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "AMA1#6": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "AADC#7": {
+     "scored": 10,
+     "correct": 8,
+     "expected": 10
+    },
+    "3MCC#8": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "CYP21D#9": {
+     "scored": 6,
+     "correct": 4,
+     "expected": 6
+    },
+    "HYCARO#10": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "BTD#11": {
+     "scored": 8,
+     "correct": 6,
+     "expected": 8
+    },
+    "STAR#13": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "CMO1#14": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "DGK#15": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "DPYR#16": {
+     "scored": 4,
+     "correct": 1,
+     "expected": 4
+    },
+    "FED#17": {
+     "scored": 2,
+     "correct": 1,
+     "expected": 2
+    },
+    "EF#18": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "FIGLU#19": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "GA1#20": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "GA2#21": {
+     "scored": 15,
+     "correct": 15,
+     "expected": 15
+    },
+    "OXOP#22": {
+     "scored": 8,
+     "correct": 7,
+     "expected": 8
+    },
+    "GMT#24": {
+     "scored": 5,
+     "correct": 4,
+     "expected": 5
+    },
+    "GACR#25": {
+     "scored": 8,
+     "correct": 6,
+     "expected": 8
+    },
+    "HMG#27": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "HCYS#28": {
+     "scored": 7,
+     "correct": 2,
+     "expected": 7
+    },
+    "HLYS1#29": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "HLYS2#30": {
+     "scored": 4,
+     "correct": 2,
+     "expected": 4
+    },
+    "HYPRO1#31": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "HPII#32": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "IVA#33": {
+     "scored": 3,
+     "correct": 2,
+     "expected": 3
+    },
+    "LNS#34": {
+     "scored": 3,
+     "correct": 2,
+     "expected": 3
+    },
+    "LTC4S#35": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "MSUD#36": {
+     "scored": 6,
+     "correct": 5,
+     "expected": 6
+    },
+    "MMA#37": {
+     "scored": 7,
+     "correct": 2,
+     "expected": 7
+    },
+    "NAGS#38": {
+     "scored": 6,
+     "correct": 4,
+     "expected": 6
+    },
+    "OTC#39": {
+     "scored": 9,
+     "correct": 8,
+     "expected": 9
+    },
+    "PKU#41": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "SUCLA#43": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "SSADHD#44": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "TETB#45": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "CIT1#46": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "TYR1#47": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "TYR3#48": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "XAN1#49": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "AKGD#50": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "EP#51": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "HYPVLI#52": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "ASNSD#53": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "ASA#54": {
+     "scored": 7,
+     "correct": 7,
+     "expected": 7
+    },
+    "PC#56": {
+     "scored": 15,
+     "correct": 14,
+     "expected": 15
+    },
+    "PHOX1#57": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "ADSL#58": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "CD#59": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "HPC#60": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 4
+    },
+    "HMET#61": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "DESMO#62": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "2OAA#63": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    }
+   }
+  },
+  "v0.3": {
+   "path": "results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json",
+   "run_fingerprint": "c85ebde9a52350e43d035fd3bad750ec6426821887d7f6c058a61a106dd4650c",
+   "n_iems": 57,
+   "iem_status": {
+    "complete": 57
+   },
+   "n_biomarkers_in_protocol": 252,
+   "n_scored": 251,
+   "n_correct": 217,
+   "accuracy_among_scored": 0.8645418326693227,
+   "coverage": 0.996031746031746,
+   "errors": {
+    "opposite direction": 13,
+    "no change predicted": 21
+   },
+   "n_iems_all_scored_correct": 38,
+   "n_iems_all_correct_among_scored": 39,
+   "per_iem": {
+    "HIS#1": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "AGAT#2": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "ARG#3": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "CPS1#4": {
+     "scored": 6,
+     "correct": 5,
+     "expected": 6
+    },
+    "3MGA#5": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "AMA1#6": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "AADC#7": {
+     "scored": 10,
+     "correct": 8,
+     "expected": 10
+    },
+    "3MCC#8": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "CYP21D#9": {
+     "scored": 6,
+     "correct": 4,
+     "expected": 6
+    },
+    "HYCARO#10": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "BTD#11": {
+     "scored": 8,
+     "correct": 6,
+     "expected": 8
+    },
+    "STAR#13": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "CMO1#14": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "DGK#15": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "DPYR#16": {
+     "scored": 4,
+     "correct": 1,
+     "expected": 4
+    },
+    "FED#17": {
+     "scored": 2,
+     "correct": 1,
+     "expected": 2
+    },
+    "EF#18": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "FIGLU#19": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "GA1#20": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "GA2#21": {
+     "scored": 15,
+     "correct": 15,
+     "expected": 15
+    },
+    "OXOP#22": {
+     "scored": 8,
+     "correct": 7,
+     "expected": 8
+    },
+    "GMT#24": {
+     "scored": 5,
+     "correct": 4,
+     "expected": 5
+    },
+    "GACR#25": {
+     "scored": 8,
+     "correct": 6,
+     "expected": 8
+    },
+    "HMG#27": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "HCYS#28": {
+     "scored": 7,
+     "correct": 2,
+     "expected": 7
+    },
+    "HLYS1#29": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "HLYS2#30": {
+     "scored": 4,
+     "correct": 2,
+     "expected": 4
+    },
+    "HYPRO1#31": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "HPII#32": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "IVA#33": {
+     "scored": 3,
+     "correct": 2,
+     "expected": 3
+    },
+    "LNS#34": {
+     "scored": 3,
+     "correct": 2,
+     "expected": 3
+    },
+    "LTC4S#35": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "MSUD#36": {
+     "scored": 6,
+     "correct": 5,
+     "expected": 6
+    },
+    "MMA#37": {
+     "scored": 7,
+     "correct": 2,
+     "expected": 7
+    },
+    "NAGS#38": {
+     "scored": 6,
+     "correct": 4,
+     "expected": 6
+    },
+    "OTC#39": {
+     "scored": 9,
+     "correct": 8,
+     "expected": 9
+    },
+    "PKU#41": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "SUCLA#43": {
+     "scored": 2,
+     "correct": 2,
+     "expected": 2
+    },
+    "SSADHD#44": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "TETB#45": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "CIT1#46": {
+     "scored": 6,
+     "correct": 6,
+     "expected": 6
+    },
+    "TYR1#47": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "TYR3#48": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "XAN1#49": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "AKGD#50": {
+     "scored": 5,
+     "correct": 5,
+     "expected": 5
+    },
+    "EP#51": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "HYPVLI#52": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "ASNSD#53": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "ASA#54": {
+     "scored": 7,
+     "correct": 7,
+     "expected": 7
+    },
+    "PC#56": {
+     "scored": 15,
+     "correct": 14,
+     "expected": 15
+    },
+    "PHOX1#57": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "ADSL#58": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "CD#59": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    },
+    "HPC#60": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 4
+    },
+    "HMET#61": {
+     "scored": 4,
+     "correct": 4,
+     "expected": 4
+    },
+    "DESMO#62": {
+     "scored": 1,
+     "correct": 1,
+     "expected": 1
+    },
+    "2OAA#63": {
+     "scored": 3,
+     "correct": 3,
+     "expected": 3
+    }
+   }
+  }
+ },
+ "transitions": {
+  "v0.2->v0.2b": {
+   "counts": {
+    "right->right": 216,
+    "wrong->wrong": 30,
+    "right->wrong": 4,
+    "wrong->right": 1,
+    "unscored->unscored": 1
+   },
+   "n_prediction_changes": 5,
+   "changed": [
+    {
+     "iem": "DPYR",
+     "call_index": 16,
+     "biomarker": "EX_ura[u]",
+     "expected": "Increased (urine)",
+     "from": "Increased",
+     "to": "Unchanged",
+     "from_status": "right",
+     "to_status": "wrong"
+    },
+    {
+     "iem": "DPYR",
+     "call_index": 16,
+     "biomarker": "EX_56dura[u]",
+     "expected": "Increased (urine)",
+     "from": "Increased",
+     "to": "Unchanged",
+     "from_status": "right",
+     "to_status": "wrong"
+    },
+    {
+     "iem": "HCYS",
+     "call_index": 28,
+     "biomarker": "DM_Lhcystin[bc]",
+     "expected": "Increased (urine/blood)",
+     "from": "Increased",
+     "to": "Unchanged",
+     "from_status": "right",
+     "to_status": "wrong"
+    },
+    {
+     "iem": "HCYS",
+     "call_index": 28,
+     "biomarker": "DM_hcys_L[bc]",
+     "expected": "Increased (urine/blood)",
+     "from": "Increased",
+     "to": "Unchanged",
+     "from_status": "right",
+     "to_status": "wrong"
+    },
+    {
+     "iem": "HYPRO1",
+     "call_index": 31,
+     "biomarker": "EX_4hpro_LT[u]",
+     "expected": "Increased (urine)",
+     "from": "Unchanged",
+     "to": "Increased",
+     "from_status": "wrong",
+     "to_status": "right"
+    }
+   ]
+  },
+  "v0.2b->v0.3": {
+   "counts": {
+    "right->right": 217,
+    "wrong->wrong": 34,
+    "unscored->unscored": 1
+   },
+   "n_prediction_changes": 0,
+   "changed": []
+  },
+  "v0.2->v0.3": {
+   "counts": {
+    "right->right": 216,
+    "wrong->wrong": 30,
+    "right->wrong": 4,
+    "wrong->right": 1,
+    "unscored->unscored": 1
+   },
+   "n_prediction_changes": 5,
+   "changed": [
+    {
+     "iem": "DPYR",
+     "call_index": 16,
+     "biomarker": "EX_ura[u]",
+     "expected": "Increased (urine)",
+     "from": "Increased",
+     "to": "Unchanged",
+     "from_status": "right",
+     "to_status": "wrong"
+    },
+    {
+     "iem": "DPYR",
+     "call_index": 16,
+     "biomarker": "EX_56dura[u]",
+     "expected": "Increased (urine)",
+     "from": "Increased",
+     "to": "Unchanged",
+     "from_status": "right",
+     "to_status": "wrong"
+    },
+    {
+     "iem": "HCYS",
+     "call_index": 28,
+     "biomarker": "DM_Lhcystin[bc]",
+     "expected": "Increased (urine/blood)",
+     "from": "Increased",
+     "to": "Unchanged",
+     "from_status": "right",
+     "to_status": "wrong"
+    },
+    {
+     "iem": "HCYS",
+     "call_index": 28,
+     "biomarker": "DM_hcys_L[bc]",
+     "expected": "Increased (urine/blood)",
+     "from": "Increased",
+     "to": "Unchanged",
+     "from_status": "right",
+     "to_status": "wrong"
+    },
+    {
+     "iem": "HYPRO1",
+     "call_index": 31,
+     "biomarker": "EX_4hpro_LT[u]",
+     "expected": "Increased (urine)",
+     "from": "Unchanged",
+     "to": "Increased",
+     "from_status": "wrong",
+     "to_status": "right"
+    }
+   ]
+  }
+ }
+}

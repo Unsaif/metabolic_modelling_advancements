@@ -1,0 +1,339 @@
+{
+ "note": "Post hoc, descriptive; not part of the frozen protocol.",
+ "taus": [
+  0.0,
+  0.001,
+  0.01,
+  0.05,
+  0.1
+ ],
+ "runs": {
+  "v0.2": {
+   "n_scored": 251,
+   "tau_0.0": {
+    "correct": 220,
+    "accuracy": 0.8764940239043825
+   },
+   "tau_0.001": {
+    "correct": 215,
+    "accuracy": 0.8565737051792829
+   },
+   "tau_0.01": {
+    "correct": 209,
+    "accuracy": 0.8326693227091634
+   },
+   "tau_0.05": {
+    "correct": 204,
+    "accuracy": 0.8127490039840638
+   },
+   "tau_0.1": {
+    "correct": 204,
+    "accuracy": 0.8127490039840638
+   },
+   "protocol_correct_with_relative_change_below_5pct": [
+    {
+     "iem": "GACR",
+     "biomarker": "DM_gln_L[bc]",
+     "healthy": 789.5039388608291,
+     "disease": 789.4874131761496,
+     "relative_change": 2.0931731769801177e-05
+    },
+    {
+     "iem": "HPC",
+     "biomarker": "EX_C05770[u]",
+     "healthy": 236.8309524758898,
+     "disease": 236.85022605401772,
+     "relative_change": 8.137453972083966e-05
+    },
+    {
+     "iem": "HPC",
+     "biomarker": "DM_C05770[csf]",
+     "healthy": 256.73236533822484,
+     "disease": 256.79508623628175,
+     "relative_change": 0.00024424493075852224
+    },
+    {
+     "iem": "HPC",
+     "biomarker": "DM_C05770[bc]",
+     "healthy": 327.5266930963256,
+     "disease": 327.6396177460379,
+     "relative_change": 0.00034466115694186674
+    },
+    {
+     "iem": "MSUD",
+     "biomarker": "EX_ile_L[u]",
+     "healthy": 22.42062121481932,
+     "disease": 22.43070036332936,
+     "relative_change": 0.0004493461348410989
+    },
+    {
+     "iem": "MMA",
+     "biomarker": "EX_3aib[u]",
+     "healthy": 124.6749960108024,
+     "disease": 124.99448963556172,
+     "relative_change": 0.002556061676725465
+    },
+    {
+     "iem": "HCYS",
+     "biomarker": "DM_Lhcystin[bc]",
+     "healthy": 28.18252052112752,
+     "disease": 28.266720947796845,
+     "relative_change": 0.0029787829591139507
+    },
+    {
+     "iem": "HCYS",
+     "biomarker": "DM_hcys_L[bc]",
+     "healthy": 56.365041041511965,
+     "disease": 56.53344189561429,
+     "relative_change": 0.0029787829726211535
+    },
+    {
+     "iem": "HYPRO1",
+     "biomarker": "EX_pro_L[u]",
+     "healthy": 1289.2240430715017,
+     "disease": 1294.4141623933988,
+     "relative_change": 0.004009628040765918
+    },
+    {
+     "iem": "DPYR",
+     "biomarker": "EX_ura[u]",
+     "healthy": 120.28109169192143,
+     "disease": 120.85041147468755,
+     "relative_change": 0.004710946167405982
+    },
+    {
+     "iem": "DPYR",
+     "biomarker": "EX_56dura[u]",
+     "healthy": 120.28109169192565,
+     "disease": 120.85041147469485,
+     "relative_change": 0.0047109461674312144
+    },
+    {
+     "iem": "HYPRO1",
+     "biomarker": "EX_gly[u]",
+     "healthy": 1431.7482629342273,
+     "disease": 1446.4276855125831,
+     "relative_change": 0.010148742813335825
+    },
+    {
+     "iem": "GACR",
+     "biomarker": "EX_glu_L[u]",
+     "healthy": 1031.939159669838,
+     "disease": 1006.8665317803836,
+     "relative_change": 0.024296614441374886
+    },
+    {
+     "iem": "TYR1",
+     "biomarker": "DM_met_L[bc]",
+     "healthy": 515.4687860136694,
+     "disease": 533.276980093077,
+     "relative_change": 0.033393892375214465
+    },
+    {
+     "iem": "DPYR",
+     "biomarker": "EX_thym[u]",
+     "healthy": 120.28109169192462,
+     "disease": 124.67499578277815,
+     "relative_change": 0.03524286536579523
+    },
+    {
+     "iem": "HYPRO1",
+     "biomarker": "DM_pro_L[bc]",
+     "healthy": 1509.6242489783076,
+     "disease": 1579.0078921970937,
+     "relative_change": 0.043941289693139526
+    }
+   ]
+  },
+  "v0.2b": {
+   "n_scored": 251,
+   "tau_0.0": {
+    "correct": 217,
+    "accuracy": 0.8645418326693227
+   },
+   "tau_0.001": {
+    "correct": 212,
+    "accuracy": 0.8446215139442231
+   },
+   "tau_0.01": {
+    "correct": 210,
+    "accuracy": 0.8366533864541833
+   },
+   "tau_0.05": {
+    "correct": 207,
+    "accuracy": 0.8247011952191236
+   },
+   "tau_0.1": {
+    "correct": 207,
+    "accuracy": 0.8247011952191236
+   },
+   "protocol_correct_with_relative_change_below_5pct": [
+    {
+     "iem": "GACR",
+     "biomarker": "DM_gln_L[bc]",
+     "healthy": 771.957903613127,
+     "disease": 771.9417872224453,
+     "relative_change": 2.0877292150534623e-05
+    },
+    {
+     "iem": "HPC",
+     "biomarker": "EX_C05770[u]",
+     "healthy": 234.5107880232147,
+     "disease": 234.5304961736012,
+     "relative_change": 8.40323570198056e-05
+    },
+    {
+     "iem": "HPC",
+     "biomarker": "DM_C05770[csf]",
+     "healthy": 249.71680489184584,
+     "disease": 249.7820531038804,
+     "relative_change": 0.0002612205769940777
+    },
+    {
+     "iem": "HPC",
+     "biomarker": "DM_C05770[bc]",
+     "healthy": 322.2958188692761,
+     "disease": 322.40912449553883,
+     "relative_change": 0.00035143430397639703
+    },
+    {
+     "iem": "MSUD",
+     "biomarker": "EX_ile_L[u]",
+     "healthy": 22.420621159923073,
+     "disease": 22.43070036332936,
+     "relative_change": 0.00044934858221218663
+    },
+    {
+     "iem": "DPYR",
+     "biomarker": "EX_thym[u]",
+     "healthy": 124.44795669192567,
+     "disease": 124.67499578275599,
+     "relative_change": 0.001821047511611139
+    },
+    {
+     "iem": "MMA",
+     "biomarker": "EX_3aib[u]",
+     "healthy": 124.67499578510615,
+     "disease": 124.99448963556098,
+     "relative_change": 0.002556063482369203
+    },
+    {
+     "iem": "GACR",
+     "biomarker": "EX_glu_L[u]",
+     "healthy": 1026.0691326278895,
+     "disease": 1000.8565543718289,
+     "relative_change": 0.024572007337837074
+    },
+    {
+     "iem": "HCYS",
+     "biomarker": "DM_met_L[bc]",
+     "healthy": 514.7069289458644,
+     "disease": 531.0876809457887,
+     "relative_change": 0.03084378076846485
+    },
+    {
+     "iem": "TYR1",
+     "biomarker": "DM_met_L[bc]",
+     "healthy": 513.2795668569737,
+     "disease": 531.0876809458767,
+     "relative_change": 0.03353140117501213
+    }
+   ]
+  },
+  "v0.3": {
+   "n_scored": 251,
+   "tau_0.0": {
+    "correct": 217,
+    "accuracy": 0.8645418326693227
+   },
+   "tau_0.001": {
+    "correct": 212,
+    "accuracy": 0.8446215139442231
+   },
+   "tau_0.01": {
+    "correct": 210,
+    "accuracy": 0.8366533864541833
+   },
+   "tau_0.05": {
+    "correct": 207,
+    "accuracy": 0.8247011952191236
+   },
+   "tau_0.1": {
+    "correct": 207,
+    "accuracy": 0.8247011952191236
+   },
+   "protocol_correct_with_relative_change_below_5pct": [
+    {
+     "iem": "HPC",
+     "biomarker": "EX_C05770[u]",
+     "healthy": 179.476014246906,
+     "disease": 179.47603802442538,
+     "relative_change": 1.3248297452746252e-07
+    },
+    {
+     "iem": "GACR",
+     "biomarker": "DM_gln_L[bc]",
+     "healthy": 793.1333468189673,
+     "disease": 793.1094006252589,
+     "relative_change": 3.0191888670994532e-05
+    },
+    {
+     "iem": "HPC",
+     "biomarker": "DM_C05770[csf]",
+     "healthy": 251.04944140056725,
+     "disease": 251.11417603799322,
+     "relative_change": 0.0002577896574671154
+    },
+    {
+     "iem": "HPC",
+     "biomarker": "DM_C05770[bc]",
+     "healthy": 305.39329183647897,
+     "disease": 305.48554827339785,
+     "relative_change": 0.00030199934969205695
+    },
+    {
+     "iem": "MSUD",
+     "biomarker": "EX_ile_L[u]",
+     "healthy": 15.551999911319992,
+     "disease": 15.566975114286834,
+     "relative_change": 0.0009619854118670472
+    },
+    {
+     "iem": "MMA",
+     "biomarker": "EX_3aib[u]",
+     "healthy": 86.7665782697461,
+     "disease": 86.9881942673821,
+     "relative_change": 0.002547656029676805
+    },
+    {
+     "iem": "DPYR",
+     "biomarker": "EX_thym[u]",
+     "healthy": 86.53953917655726,
+     "disease": 86.76657826738709,
+     "relative_change": 0.0026166652571013157
+    },
+    {
+     "iem": "GACR",
+     "biomarker": "EX_glu_L[u]",
+     "healthy": 740.0355333425005,
+     "disease": 722.4552608041258,
+     "relative_change": 0.023755984336279422
+    },
+    {
+     "iem": "HCYS",
+     "biomarker": "DM_met_L[bc]",
+     "healthy": 514.7058414142136,
+     "disease": 531.0865934141324,
+     "relative_change": 0.03084384392875327
+    },
+    {
+     "iem": "TYR1",
+     "biomarker": "DM_met_L[bc]",
+     "healthy": 513.2795668569996,
+     "disease": 531.0865934140678,
+     "relative_change": 0.033529422090278094
+    }
+   ]
+  }
+ }
+}
