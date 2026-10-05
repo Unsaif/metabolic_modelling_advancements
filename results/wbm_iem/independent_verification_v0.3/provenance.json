@@ -1,0 +1,328 @@
+{
+ "runs": {
+  "v0.2": {
+   "n_records": 57,
+   "n_distinct_fingerprints": 1,
+   "fingerprint": "8f9b6aa0da504afc2d9f804b297cb43c6a3aa6cada4aaaffb0ceea8e361a34ae",
+   "n_distinct_provenance_blocks": 1,
+   "fingerprint_equals_sha256_of_provenance_json": true,
+   "model_setup": null,
+   "bile_duct": null,
+   "solver": "HiGHS 1.15.1",
+   "method": "ipm",
+   "feas_tol": 1e-07,
+   "opt_tol": 1e-07,
+   "model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+   "protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+   "engine_version": "iem-v0.2",
+   "global_constraints": null,
+   "lp_bounds_sha256": null,
+   "constraint_inputs_sha256": null,
+   "toolbox_commit": null,
+   "n_lb_changed": null,
+   "n_ub_changed": null,
+   "physiology_and_diet_ported": false,
+   "statuses": [
+    "complete"
+   ]
+  },
+  "v0.2b": {
+   "n_records": 57,
+   "n_distinct_fingerprints": 1,
+   "fingerprint": "90e581fc26d6927cf221973805d30c33f1c79d3d9e9d191b9ac7aac91a392c1b",
+   "n_distinct_provenance_blocks": 1,
+   "fingerprint_equals_sha256_of_provenance_json": true,
+   "model_setup": "shipped",
+   "bile_duct": "toolbox",
+   "solver": "HiGHS 1.15.1",
+   "method": "ipm",
+   "feas_tol": 1e-07,
+   "opt_tol": 1e-07,
+   "model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+   "protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+   "engine_version": "iem-v0.3",
+   "global_constraints": {
+    "set_irreversible": 319,
+    "closed": 24,
+    "bile_duct_ub_100": 28
+   },
+   "lp_bounds_sha256": "bd8de4c4db04afea019d0a891ee8aca7f6e323e690069701255290d325f74067",
+   "constraint_inputs_sha256": null,
+   "toolbox_commit": null,
+   "n_lb_changed": null,
+   "n_ub_changed": null,
+   "physiology_and_diet_ported": null,
+   "statuses": [
+    "complete"
+   ]
+  },
+  "v0.3": {
+   "n_records": 57,
+   "n_distinct_fingerprints": 1,
+   "fingerprint": "c85ebde9a52350e43d035fd3bad750ec6426821887d7f6c058a61a106dd4650c",
+   "n_distinct_provenance_blocks": 1,
+   "fingerprint_equals_sha256_of_provenance_json": true,
+   "model_setup": "toolbox",
+   "bile_duct": "toolbox",
+   "solver": "HiGHS 1.15.1",
+   "method": "ipm",
+   "feas_tol": 1e-07,
+   "opt_tol": 1e-07,
+   "model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+   "protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+   "engine_version": "iem-v0.3",
+   "global_constraints": {
+    "set_irreversible": 319,
+    "closed": 24,
+    "bile_duct_ub_100": 28
+   },
+   "lp_bounds_sha256": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+   "constraint_inputs_sha256": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473",
+   "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc",
+   "n_lb_changed": 1001,
+   "n_ub_changed": 571,
+   "physiology_and_diet_ported": null,
+   "statuses": [
+    "complete"
+   ]
+  }
+ },
+ "file_sha256": {
+  "model": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+  "protocol": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+  "constraint_inputs": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473"
+ },
+ "installed_highs": "1.15.1",
+ "freeze": {
+  "created_at": "2026-10-04T10:02:36Z",
+  "repository": {
+   "available": true,
+   "head": "05bf57424fce2189687ee1364e9220d452fe7ea2",
+   "dirty": false,
+   "tracked_changes": [],
+   "untracked_paths": [],
+   "excluded_untracked_roots": [
+    ".venv"
+   ]
+  },
+  "n_files": 17,
+  "n_size_ok": 17,
+  "n_sha256_ok": 17,
+  "failing": [],
+  "content_fingerprint_recorded": "66bd36b0ca14bafd60f6bb6b13ea0604c2ded08a69d7fd65e6d541722a947d0d",
+  "content_fingerprint_recomputed": "66bd36b0ca14bafd60f6bb6b13ea0604c2ded08a69d7fd65e6d541722a947d0d",
+  "recovery_original_fingerprint": "66bd36b0ca14bafd60f6bb6b13ea0604c2ded08a69d7fd65e6d541722a947d0d",
+  "matches": true,
+  "plan_runs": {
+   "v0.2b": "python3 scripts/run_wbm_iem.py Harvey_1_03d --model-setup shipped --bile-duct toolbox --out-suffix _v0.2b",
+   "v0.3": "python3 scripts/run_wbm_iem.py Harvey_1_03d --model-setup toolbox --bile-duct toolbox --out-suffix _v0.3"
+  },
+  "plan_model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+  "frozen_constraint_inputs_sha256": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473",
+  "frozen_protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+  "frozen_v0_2_results_sha256": "ecc7754febf2fcb59001f8fd28a10fcc073d4eb98d29f840d3c1a2a7e5058476",
+  "v0_2_results_sha256_now": "ecc7754febf2fcb59001f8fd28a10fcc073d4eb98d29f840d3c1a2a7e5058476"
+ },
+ "git": {
+  "commits": {
+   "plan": [
+    {
+     "rev": "4012fd3",
+     "hash": "4012fd32b663f9d8bb351a6d16c8e727d6cc2b6a",
+     "committed": "2026-10-04T10:02:23+00:00",
+     "authored": "2026-10-04T10:02:23+00:00",
+     "subject": "IEM v0.3 plan: port of the Toolbox diet and physiological constraints; correct the v0.2 bile-duct step"
+    }
+   ],
+   "freeze_manifest": [
+    {
+     "rev": "a0b6c51",
+     "hash": "a0b6c512886429793191838b41658611085b45a8",
+     "committed": "2026-10-04T10:02:47+00:00",
+     "authored": "2026-10-04T10:02:47+00:00",
+     "subject": "Re-create the IEM v0.3 freeze manifest after the workspace reset (same content fingerprint 66bd36b0...)"
+    }
+   ],
+   "v0.3_results": [
+    {
+     "rev": "c08d0bb",
+     "hash": "c08d0bbdc23bef877565b301446ecd21e4be67a0",
+     "committed": "2026-10-05T11:49:18+00:00",
+     "authored": "2026-10-05T11:49:18+00:00",
+     "subject": "IEM v0.3 and v0.2b complete: 217 of 251 biomarker directions correct in both (v0.2: 220)"
+    },
+    {
+     "rev": "1dea776",
+     "hash": "1dea776cec06625eea2ce7d5dc3ae64af10d8b8e",
+     "committed": "2026-10-04T15:27:18+00:00",
+     "authored": "2026-10-04T15:27:18+00:00",
+     "subject": "IEM v0.3 and v0.2b: partial results checkpoint (runs continuing)"
+    }
+   ],
+   "v0.2b_results": [
+    {
+     "rev": "c08d0bb",
+     "hash": "c08d0bbdc23bef877565b301446ecd21e4be67a0",
+     "committed": "2026-10-05T11:49:18+00:00",
+     "authored": "2026-10-05T11:49:18+00:00",
+     "subject": "IEM v0.3 and v0.2b complete: 217 of 251 biomarker directions correct in both (v0.2: 220)"
+    },
+    {
+     "rev": "1dea776",
+     "hash": "1dea776cec06625eea2ce7d5dc3ae64af10d8b8e",
+     "committed": "2026-10-04T15:27:18+00:00",
+     "authored": "2026-10-04T15:27:18+00:00",
+     "subject": "IEM v0.3 and v0.2b: partial results checkpoint (runs continuing)"
+    }
+   ],
+   "v0.2_results": [
+    {
+     "rev": "36d6b1e",
+     "hash": "36d6b1ee1c454f4e9ad4e4b775f9367888946bc7",
+     "committed": "2026-10-03T19:09:42+00:00",
+     "authored": "2026-10-03T19:09:42+00:00",
+     "subject": "IEM protocol v0.2 on Harvey 1.03d complete: 220 of 251 biomarker directions correct (shipped bounds only)"
+    },
+    {
+     "rev": "8de9c7a",
+     "hash": "8de9c7a1cd81f53dde188d004263376080089ef5",
+     "committed": "2026-10-03T13:58:05+00:00",
+     "authored": "2026-10-03T13:58:05+00:00",
+     "subject": "IEM protocol v0.2 on Harvey 1.03d: partial results (35 of 57 IEMs, run continuing)"
+    },
+    {
+     "rev": "111ad7a",
+     "hash": "111ad7ac1eb3787addc94fc66bd285c944221578",
+     "committed": "2026-10-03T10:51:17+00:00",
+     "authored": "2026-10-03T10:51:17+00:00",
+     "subject": "IEM protocol v0.2 on Harvey 1.03d: partial results (26 of 57 IEMs, run continuing)"
+    }
+   ],
+   "matlab_step2": [
+    {
+     "rev": "996deb2",
+     "hash": "996deb235e0702ce22b975f49e8152f4b4fbdc6e",
+     "committed": "2026-10-05T11:09:30+00:00",
+     "authored": "2026-10-05T11:09:30+00:00",
+     "subject": "MATLAB reference, step 2: runIEM_HH.m on Harvey 1.03d with Gurobi (2.8 h), outputs and categorised comparison"
+    }
+   ]
+  },
+  "plan_commit_is_ancestor_of_first_results": [
+   true,
+   true
+  ],
+  "freeze_commit_is_ancestor_of_first_results": [
+   true,
+   true
+  ],
+  "freeze_manifest_created_at": "2026-10-04T10:02:36Z",
+  "frozen_paths_changed_between_freeze_commit_and_HEAD": [],
+  "frozen_paths_changed_in_working_tree": [],
+  "results_changed_in_working_tree": [],
+  "status_porcelain": [
+   "?? results/wbm_iem/independent_verification_v0.3/",
+   "?? results/wbm_iem/matlab_reference/certified_python_optima_v0.3.json"
+  ],
+  "head": {
+   "rev": "HEAD",
+   "hash": "c08d0bbdc23bef877565b301446ecd21e4be67a0",
+   "committed": "2026-10-05T11:49:18+00:00",
+   "authored": "2026-10-05T11:49:18+00:00",
+   "subject": "IEM v0.3 and v0.2b complete: 217 of 251 biomarker directions correct in both (v0.2: 220)"
+  }
+ },
+ "checkpoint": {
+  "v0.3": {
+   "commit": "1dea776",
+   "n_records_at_checkpoint": 35,
+   "n_identical_in_final": 35,
+   "fingerprints_at_checkpoint": [
+    "c85ebde9a52350e43d035fd3bad750ec6426821887d7f6c058a61a106dd4650c"
+   ],
+   "iems_at_checkpoint": [
+    "HIS",
+    "AGAT",
+    "ARG",
+    "CPS1",
+    "3MGA",
+    "AMA1",
+    "AADC",
+    "3MCC",
+    "CYP21D",
+    "HYCARO",
+    "BTD",
+    "STAR",
+    "CMO1",
+    "DGK",
+    "DPYR",
+    "FED",
+    "EF",
+    "FIGLU",
+    "GA1",
+    "GA2",
+    "OXOP",
+    "GMT",
+    "GACR",
+    "HMG",
+    "HCYS",
+    "HLYS1",
+    "HLYS2",
+    "HYPRO1",
+    "HPII",
+    "IVA",
+    "LNS",
+    "LTC4S",
+    "MSUD",
+    "MMA",
+    "NAGS"
+   ]
+  },
+  "v0.2b": {
+   "commit": "1dea776",
+   "n_records_at_checkpoint": 36,
+   "n_identical_in_final": 36,
+   "fingerprints_at_checkpoint": [
+    "90e581fc26d6927cf221973805d30c33f1c79d3d9e9d191b9ac7aac91a392c1b"
+   ],
+   "iems_at_checkpoint": [
+    "HIS",
+    "AGAT",
+    "ARG",
+    "CPS1",
+    "3MGA",
+    "AMA1",
+    "AADC",
+    "3MCC",
+    "CYP21D",
+    "HYCARO",
+    "BTD",
+    "STAR",
+    "CMO1",
+    "DGK",
+    "DPYR",
+    "FED",
+    "EF",
+    "FIGLU",
+    "GA1",
+    "GA2",
+    "OXOP",
+    "GMT",
+    "GACR",
+    "HMG",
+    "HCYS",
+    "HLYS1",
+    "HLYS2",
+    "HYPRO1",
+    "HPII",
+    "IVA",
+    "LNS",
+    "LTC4S",
+    "MSUD",
+    "MMA",
+    "NAGS",
+    "OTC"
+   ]
+  }
+ }
+}

@@ -1,0 +1,1309 @@
+{
+ "model": "Harvey_1_03d",
+ "iems": {
+  "EF": {
+   "status": "complete",
+   "seconds": 188.8,
+   "n_solves": 5,
+   "biomarkers": [
+    {
+     "biomarker": "EX_fru[u]",
+     "healthy": 0.0,
+     "disease": 2709.3378438881427,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 5.346664693206549e-07,
+      "seconds": 100.53089666366577,
+      "objective_reactions": [
+       "EX_fru[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 6.857140988358879e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286999136675e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 5.346664693206549e-07,
+       "objective_reported": 5.346664693206549e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 2709.3378438881427,
+      "seconds": 17.58586549758911,
+      "objective_reactions": [
+       "EX_fru[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 9.999996564147295e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 2709.3378438881427,
+       "objective_reported": 2709.3378438881427,
+       "objective_abs_diff": 0.0
+      }
+     }
+    }
+   ],
+   "setup_solves": [
+    {
+     "status": "Optimal",
+     "objective": 32882.794695924815,
+     "seconds": 32.09042692184448,
+     "objective_reactions": [
+      "sIEC_KHK",
+      "Colon_KHK",
+      "Colon_KHK2"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 32882.79469592482,
+      "objective_reported": 32882.794695924815,
+      "objective_abs_diff": 7.275957614183426e-12
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 0.0,
+     "seconds": 18.69509720802307,
+     "objective_reactions": [
+      "sIEC_KHK",
+      "Colon_KHK",
+      "Colon_KHK2"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 0.0,
+      "objective_reported": 0.0,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 1.0,
+     "seconds": 19.100672721862793,
+     "objective_reactions": [
+      "Whole_body_objective_rxn"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 1.0,
+      "objective_reported": 1.0,
+      "objective_abs_diff": 0.0
+     }
+    }
+   ]
+  },
+  "ASNSD": {
+   "status": "complete",
+   "seconds": 1078.3,
+   "n_solves": 11,
+   "biomarkers": [
+    {
+     "biomarker": "DM_asn_L[bc]",
+     "healthy": 130.7481152764068,
+     "disease": 49.7445737316032,
+     "call": "Decreased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 130.7481152764068,
+      "seconds": 212.52877974510193,
+      "objective_reactions": [
+       "DM_asn_L[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 8.708571286319966e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 130.7481152764068,
+       "objective_reported": 130.7481152764068,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 49.7445737316032,
+      "seconds": 18.184470891952515,
+      "objective_reactions": [
+       "DM_asn_L[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 49.7445737316032,
+       "objective_reported": 49.7445737316032,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "DM_asn_L[csf]",
+     "healthy": 730.9043036670262,
+     "disease": 49.74457373153005,
+     "call": "Decreased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 730.9043036670262,
+      "seconds": 39.728095293045044,
+      "objective_reactions": [
+       "DM_asn_L[csf]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999985195463523e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 1.229636836796999e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 730.9043036670262,
+       "objective_reported": 730.9043036670262,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 49.74457373153005,
+      "seconds": 18.681260585784912,
+      "objective_reactions": [
+       "DM_asn_L[csf]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 49.74457373153005,
+       "objective_reported": 49.74457373153005,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "DM_gln_L[bc]",
+     "healthy": 0.0,
+     "disease": 793.1035699347967,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 5.912577307753963e-07,
+      "seconds": 192.62339854240417,
+      "objective_reactions": [
+       "DM_gln_L[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286999136675e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 5.912577307753963e-07,
+       "objective_reported": 5.912577307753963e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 793.1035699347967,
+      "seconds": 287.02257347106934,
+      "objective_reactions": [
+       "DM_gln_L[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 5.714286999136675e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 7.142857142827114e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 793.1035699347967,
+       "objective_reported": 793.1035699347967,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "DM_gln_L[csf]",
+     "healthy": 0.0,
+     "disease": 1078.7545264786486,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 9.879931894829497e-07,
+      "seconds": 135.96419024467468,
+      "objective_reactions": [
+       "DM_gln_L[csf]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 4.571427325572586e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 9.879931894829497e-07,
+       "objective_reported": 9.879931894829497e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 1078.7545264786486,
+      "seconds": 18.310363054275513,
+      "objective_reactions": [
+       "DM_gln_L[csf]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 9.999996564147295e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 1078.7545264786486,
+       "objective_reported": 1078.7545264786486,
+       "objective_abs_diff": 0.0
+      }
+     }
+    }
+   ],
+   "setup_solves": [
+    {
+     "status": "Optimal",
+     "objective": 10826.689981587238,
+     "seconds": 115.96546006202698,
+     "objective_reactions": [
+      "Liver_ASNS1",
+      "Gall_ASNS1",
+      "Pancreas_ASNS1"
+     ],
+     "certificate": {
+      "max_row_violation": 9.142854651145171e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 5.714286999136675e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 10826.689981587238,
+      "objective_reported": 10826.689981587238,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 0.0,
+     "seconds": 18.91861391067505,
+     "objective_reactions": [
+      "Liver_ASNS1",
+      "Gall_ASNS1",
+      "Pancreas_ASNS1"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 0.0,
+      "objective_reported": 0.0,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 1.0,
+     "seconds": 19.02024006843567,
+     "objective_reactions": [
+      "Whole_body_objective_rxn"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 1.0,
+      "objective_reported": 1.0,
+      "objective_abs_diff": 0.0
+     }
+    }
+   ]
+  },
+  "GMT": {
+   "status": "complete",
+   "seconds": 294.3,
+   "n_solves": 13,
+   "biomarkers": [
+    {
+     "biomarker": "EX_creat[u]",
+     "healthy": 53.835839999997916,
+     "disease": 0.0,
+     "call": "Decreased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 53.835839999997916,
+      "seconds": 21.86884617805481,
+      "objective_reactions": [
+       "EX_creat[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 53.835839999997916,
+       "objective_reported": 53.835839999997916,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 0.0,
+      "seconds": 16.744287252426147,
+      "objective_reactions": [
+       "EX_creat[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 0.0,
+       "objective_reported": 0.0,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "DM_creat[bc]",
+     "healthy": 544.8180887022689,
+     "disease": 0.0,
+     "call": "Decreased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 544.8180887022689,
+      "seconds": 19.025596857070923,
+      "objective_reactions": [
+       "DM_creat[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 4.3542842220745115e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 544.8180887022689,
+       "objective_reported": 544.8180887022689,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 0.0,
+      "seconds": 17.580111980438232,
+      "objective_reactions": [
+       "DM_creat[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 0.0,
+       "objective_reported": 0.0,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "DM_crtn[bc]",
+     "healthy": 90.94426045170832,
+     "disease": 0.0,
+     "call": "Decreased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 90.94426045170832,
+      "seconds": 20.388183116912842,
+      "objective_reactions": [
+       "DM_crtn[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 4.354285543239911e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 90.94426045170832,
+       "objective_reported": 90.94426045170832,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 0.0,
+      "seconds": 17.35639190673828,
+      "objective_reactions": [
+       "DM_crtn[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 0.0,
+       "objective_reported": 0.0,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_urate[u]",
+     "healthy": 5.3634575356053995,
+     "disease": 140.76577742669903,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 5.3634575356053995,
+      "seconds": 19.672264099121094,
+      "objective_reactions": [
+       "EX_urate[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 4.354285713936701e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 5.3634575356053995,
+       "objective_reported": 5.3634575356053995,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 140.76577742669903,
+      "seconds": 18.502315044403076,
+      "objective_reactions": [
+       "EX_urate[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 140.76577742669903,
+       "objective_reported": 140.76577742669903,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_gudac[u]",
+     "healthy": 0.0,
+     "disease": 4.7951999999999995,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 7.021815111585283e-07,
+      "seconds": 68.90156435966492,
+      "objective_reactions": [
+       "EX_gudac[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 5.8928577573169605e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142869633580035e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 7.021815111585283e-07,
+       "objective_reported": 7.021815111585283e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 4.7951999999999995,
+      "seconds": 16.390735149383545,
+      "objective_reactions": [
+       "EX_gudac[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 4.7951999999999995,
+       "objective_reported": 4.7951999999999995,
+       "objective_abs_diff": 0.0
+      }
+     }
+    }
+   ],
+   "setup_solves": [
+    {
+     "status": "Optimal",
+     "objective": 544.818088702162,
+     "seconds": 19.034460306167603,
+     "objective_reactions": [
+      "Colon_GACMTRc",
+      "Liver_GACMTRc",
+      "Gall_GACMTRc"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 4.3542869310186916e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 544.818088702162,
+      "objective_reported": 544.818088702162,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 0.0,
+     "seconds": 18.575438261032104,
+     "objective_reactions": [
+      "Colon_GACMTRc",
+      "Liver_GACMTRc",
+      "Gall_GACMTRc"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 0.0,
+      "objective_reported": 0.0,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 1.0,
+     "seconds": 18.68699026107788,
+     "objective_reactions": [
+      "Whole_body_objective_rxn"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 1.0,
+      "objective_reported": 1.0,
+      "objective_abs_diff": 0.0
+     }
+    }
+   ]
+  },
+  "PHOX1": {
+   "status": "complete",
+   "seconds": 380.7,
+   "n_solves": 9,
+   "biomarkers": [
+    {
+     "biomarker": "EX_oxa[u]",
+     "healthy": 0.0,
+     "disease": 3.452544000000001,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 9.831155693973415e-07,
+      "seconds": 69.69104170799255,
+      "objective_reactions": [
+       "EX_oxa[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 8.70857101986644e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 9.831155693973415e-07,
+       "objective_reported": 9.831155693973415e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 3.452544000000001,
+      "seconds": 16.7913978099823,
+      "objective_reactions": [
+       "EX_oxa[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 2.3571431029267842e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 7.142857142827114e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 3.452544000000001,
+       "objective_reported": 3.452544000000001,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_glyclt[u]",
+     "healthy": 0.0,
+     "disease": 1.64592,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 3.504357763972621e-07,
+      "seconds": 67.28977918624878,
+      "objective_reactions": [
+       "EX_glyclt[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286999136675e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 3.504357763972621e-07,
+       "objective_reported": 3.504357763972621e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 1.64592,
+      "seconds": 16.27158784866333,
+      "objective_reactions": [
+       "EX_glyclt[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 9.999985195463523e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 1.64592,
+       "objective_reported": 1.64592,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_glx[u]",
+     "healthy": 0.0,
+     "disease": 1.656288,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 5.315566040664521e-07,
+      "seconds": 72.63833451271057,
+      "objective_reactions": [
+       "EX_glx[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 6.857135304016992e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286999136675e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 5.315566040664521e-07,
+       "objective_reported": 5.315566040664521e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 1.656288,
+      "seconds": 16.94822859764099,
+      "objective_reactions": [
+       "EX_glx[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 1.656288,
+       "objective_reported": 1.656288,
+       "objective_abs_diff": 0.0
+      }
+     }
+    }
+   ],
+   "setup_solves": [
+    {
+     "status": "Optimal",
+     "objective": 70837.42793631867,
+     "seconds": 81.60663962364197,
+     "objective_reactions": [
+      "Colon_r0160",
+      "Liver_r0160",
+      "Gall_r0160"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 5.714286999136675e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 70837.42793631868,
+      "objective_reported": 70837.42793631867,
+      "objective_abs_diff": 1.4551915228366852e-11
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 0.0,
+     "seconds": 19.47496795654297,
+     "objective_reactions": [
+      "Colon_r0160",
+      "Liver_r0160",
+      "Gall_r0160"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 0.0,
+      "objective_reported": 0.0,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 1.0,
+     "seconds": 18.954484224319458,
+     "objective_reactions": [
+      "Whole_body_objective_rxn"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 1.0,
+      "objective_reported": 1.0,
+      "objective_abs_diff": 0.0
+     }
+    }
+   ]
+  },
+  "SUCLA": {
+   "status": "complete",
+   "seconds": 358.8,
+   "n_solves": 7,
+   "biomarkers": [
+    {
+     "biomarker": "DM_lac_L[bc]",
+     "healthy": 0.0,
+     "disease": 6595.195761605972,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 7.789835763105657e-07,
+      "seconds": 101.75843334197998,
+      "objective_reactions": [
+       "DM_lac_L[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142860335487057e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286962729166e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 7.789835763105657e-07,
+       "objective_reported": 7.789835763105657e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 6595.195761605972,
+      "seconds": 17.537144660949707,
+      "objective_reactions": [
+       "DM_lac_L[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 9.999985195463523e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 6595.195761605972,
+       "objective_reported": 6595.195761605972,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "DM_pyr[bc]",
+     "healthy": 5.227421809195221e-06,
+     "disease": 6931.506129070808,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 5.227421809195221e-06,
+      "seconds": 116.53436803817749,
+      "objective_reactions": [
+       "DM_pyr[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286962729166e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 5.227421809195221e-06,
+       "objective_reported": 5.227421809195221e-06,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 6931.506129070808,
+      "seconds": 19.449039697647095,
+      "objective_reactions": [
+       "DM_pyr[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 2.8571428571568663e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 6931.506129070808,
+       "objective_reported": 6931.506129070808,
+       "objective_abs_diff": 0.0
+      }
+     }
+    }
+   ],
+   "setup_solves": [
+    {
+     "status": "Optimal",
+     "objective": 58607.71303368147,
+     "seconds": 63.979127407073975,
+     "objective_reactions": [
+      "sIEC_SUCOAS1m",
+      "sIEC_SUCOASm",
+      "Colon_ITCOAL1m"
+     ],
+     "certificate": {
+      "max_row_violation": 5.8928577573169605e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 7.142857142827114e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 58607.71303368154,
+      "objective_reported": 58607.71303368147,
+      "objective_abs_diff": 6.548361852765083e-11
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 0.0,
+     "seconds": 19.425949811935425,
+     "objective_reactions": [
+      "sIEC_SUCOAS1m",
+      "sIEC_SUCOASm",
+      "Colon_ITCOAL1m"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 0.0,
+      "objective_reported": 0.0,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 1.0,
+     "seconds": 19.307623386383057,
+     "objective_reactions": [
+      "Whole_body_objective_rxn"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 9.999985195463523e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 1.0,
+      "objective_reported": 1.0,
+      "objective_abs_diff": 0.0
+     }
+    }
+   ]
+  },
+  "BTD": {
+   "status": "complete",
+   "seconds": 1306.6,
+   "n_solves": 19,
+   "biomarkers": [
+    {
+     "biomarker": "DM_acac[bc]",
+     "healthy": 118.57424902880639,
+     "disease": 4990.398986684058,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 118.57424902880639,
+      "seconds": 146.13527250289917,
+      "objective_reactions": [
+       "DM_acac[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 6.857140988358879e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857142920486e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 118.57424902880639,
+       "objective_reported": 118.57424902880639,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 4990.398986684058,
+      "seconds": 143.2104606628418,
+      "objective_reactions": [
+       "DM_acac[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286999136675e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 4990.398986684058,
+       "objective_reported": 4990.398986684058,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "DM_acetone[bc]",
+     "healthy": 118.57424512370739,
+     "disease": 4973.073597256995,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 118.57424512370739,
+      "seconds": 18.73581862449646,
+      "objective_reactions": [
+       "DM_acetone[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 2.0065573380634305e-07,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 118.57424512370739,
+       "objective_reported": 118.57424512370739,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 4973.073597256995,
+      "seconds": 130.45049619674683,
+      "objective_reactions": [
+       "DM_acetone[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142860335487057e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 8.708571286319966e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 4973.073597256995,
+       "objective_reported": 4973.073597256995,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "DM_bhb[bc]",
+     "healthy": 0.0,
+     "disease": 4684.845211190666,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 2.747808451886158e-07,
+      "seconds": 138.63489723205566,
+      "objective_reactions": [
+       "DM_bhb[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 5.714286999136675e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857142920486e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 2.747808451886158e-07,
+       "objective_reported": 2.747808451886158e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 4684.845211190666,
+      "seconds": 162.24665713310242,
+      "objective_reactions": [
+       "DM_bhb[bc]"
+      ],
+      "certificate": {
+       "max_row_violation": 6.857140988358879e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142869633580035e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 4684.845211190666,
+       "objective_reported": 4684.845211190666,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_lac_L[u]",
+     "healthy": 0.0,
+     "disease": 5605.424563688057,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": -3.247767402952441e-08,
+      "seconds": 100.17050814628601,
+      "objective_reactions": [
+       "EX_lac_L[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 7.142857142827114e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": -3.247767402952441e-08,
+       "objective_reported": -3.247767402952441e-08,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 5605.424563688057,
+      "seconds": 17.494779586791992,
+      "objective_reactions": [
+       "EX_lac_L[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 9.999985195463523e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 5605.424563688057,
+       "objective_reported": 5605.424563688057,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_nh4[u]",
+     "healthy": 43.900102585568675,
+     "disease": 835.5685903316889,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 43.900102585568675,
+      "seconds": 95.20644545555115,
+      "objective_reactions": [
+       "EX_nh4[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.142854651145171e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 8.708570842230756e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 43.900102585568675,
+       "objective_reported": 43.900102585568675,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 835.5685903316889,
+      "seconds": 18.52568006515503,
+      "objective_reactions": [
+       "EX_nh4[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 4.28570956501062e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 835.5685903316889,
+       "objective_reported": 835.5685903316889,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_3hpp[u]",
+     "healthy": 0.0,
+     "disease": 0.0,
+     "call": "Unchanged",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 1.136175766802694e-07,
+      "seconds": 76.35551953315735,
+      "objective_reactions": [
+       "EX_3hpp[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 8.571430498705013e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286962729166e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 1.136175766802694e-07,
+       "objective_reported": 1.136175766802694e-07,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 0.0,
+      "seconds": 20.067808151245117,
+      "objective_reactions": [
+       "EX_3hpp[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 0.0,
+       "objective_reported": 0.0,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_CE2026[u]",
+     "healthy": 0.04367268568857918,
+     "disease": 2.592,
+     "call": "Increased",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 0.04367268568857918,
+      "seconds": 76.49106407165527,
+      "objective_reactions": [
+       "EX_CE2026[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 5.8928577573169605e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.714286962729166e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 0.04367268568857918,
+       "objective_reported": 0.04367268568857918,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 2.592,
+      "seconds": 18.06057643890381,
+      "objective_reactions": [
+       "EX_CE2026[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 2.592,
+       "objective_reported": 2.592,
+       "objective_abs_diff": 0.0
+      }
+     }
+    },
+    {
+     "biomarker": "EX_2mcit[u]",
+     "healthy": 0.03369600000000001,
+     "disease": 0.03369600000000001,
+     "call": "Unchanged",
+     "healthy_solve": {
+      "status": "Optimal",
+      "objective": 0.03369600000000001,
+      "seconds": 71.68629860877991,
+      "objective_reactions": [
+       "EX_2mcit[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 6.857146672700765e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 8.57142826429444e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 0.03369600000000001,
+       "objective_reported": 0.03369600000000001,
+       "objective_abs_diff": 0.0
+      }
+     },
+     "disease_solve": {
+      "status": "Optimal",
+      "objective": 0.03369600000000001,
+      "seconds": 16.96206545829773,
+      "objective_reactions": [
+       "EX_2mcit[u]"
+      ],
+      "certificate": {
+       "max_row_violation": 9.999996564147295e-08,
+       "n_rows_over_1e-6": 0,
+       "max_bound_violation": 5.7142857112779666e-08,
+       "n_bounds_over_1e-6": 0,
+       "objective_recomputed": 0.03369600000000001,
+       "objective_reported": 0.03369600000000001,
+       "objective_abs_diff": 0.0
+      }
+     }
+    }
+   ],
+   "setup_solves": [
+    {
+     "status": "Optimal",
+     "objective": 74620.75637307017,
+     "seconds": 15.704432964324951,
+     "objective_reactions": [
+      "sIEC_PCm",
+      "sIEC_PPCOACm",
+      "Colon_ACCOACm"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 1.7501875353872118e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 74620.75637307017,
+      "objective_reported": 74620.75637307017,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 0.0,
+     "seconds": 19.026583909988403,
+     "objective_reactions": [
+      "sIEC_PCm",
+      "sIEC_PPCOACm",
+      "Colon_ACCOACm"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 5.7142857112779666e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 0.0,
+      "objective_reported": 0.0,
+      "objective_abs_diff": 0.0
+     }
+    },
+    {
+     "status": "Optimal",
+     "objective": 1.0,
+     "seconds": 19.173506021499634,
+     "objective_reactions": [
+      "Whole_body_objective_rxn"
+     ],
+     "certificate": {
+      "max_row_violation": 9.999996564147295e-08,
+      "n_rows_over_1e-6": 0,
+      "max_bound_violation": 5.7142857112779666e-08,
+      "n_bounds_over_1e-6": 0,
+      "objective_recomputed": 1.0,
+      "objective_reported": 1.0,
+      "objective_abs_diff": 0.0
+     }
+    }
+   ]
+  }
+ }
+}

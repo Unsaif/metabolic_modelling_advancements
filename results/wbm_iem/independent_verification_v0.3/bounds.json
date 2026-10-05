@@ -1,0 +1,143 @@
+{
+ "model_variable": "male",
+ "n_rxns": {
+  "model": 81094,
+  "matlab_setup": 81094,
+  "matlab_global": 81094
+ },
+ "same_order_setup": true,
+ "same_order_global": true,
+ "n_unique_rxns": 81094,
+ "negative_zeros": {
+  "stored_lb": 36,
+  "stored_ub": 715,
+  "setup_lb": 36,
+  "setup_ub": 715,
+  "global_lb": 36,
+  "global_ub": 715
+ },
+ "nan_count": {
+  "stored_lb": 0,
+  "stored_ub": 0,
+  "global_lb": 0,
+  "global_ub": 0
+ },
+ "recorded_lp_bounds_sha256": {
+  "v0.2b": "bd8de4c4db04afea019d0a891ee8aca7f6e323e690069701255290d325f74067",
+  "v0.3": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030"
+ },
+ "matlab_global_sha256": {
+  "raw": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+  "neg_zero_normalised": "d31341aef22a1107207a61629099c110c49b883e0b272b0f40fcf040af6914ef",
+  "raw_matches_v0.3": true,
+  "normalised_matches_v0.3": false
+ },
+ "unified_constraints_counts_on_setup": {
+  "set_irreversible": 319,
+  "closed": 24,
+  "bile_duct_ub_100": 28
+ },
+ "my_global_from_matlab_setup_vs_matlab_global": {
+  "lb_bitwise_equal": 81094,
+  "ub_bitwise_equal": 81094,
+  "lb_numeric_equal": 81094,
+  "ub_numeric_equal": 81094,
+  "sha256": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+  "sha256_matches_v0.3": true
+ },
+ "matlab_setup_to_global": {
+  "lb_changed": 218,
+  "ub_changed": 52
+ },
+ "setup_changes_on_overwritten_entries": {
+  "n_lb_entries_written_by_unified_constraints": 343,
+  "n_ub_entries_written_by_unified_constraints": 52,
+  "n_setup_lb_changes_there": 0,
+  "n_setup_ub_changes_there": 0
+ },
+ "shipped_plus_unified": {
+  "counts": {
+   "set_irreversible": 319,
+   "closed": 24,
+   "bile_duct_ub_100": 28
+  },
+  "sha256": "bd8de4c4db04afea019d0a891ee8aca7f6e323e690069701255290d325f74067",
+  "sha256_neg_zero_normalised": "990f12f79b710f044f2decc6e0bb1b660557bdfb11c95a7837a5169fc581c9a1",
+  "matches_v0.2b": true,
+  "normalised_matches_v0.2b": false
+ },
+ "matlab_setup_vs_stored": {
+  "n_lb_changed": 1001,
+  "n_ub_changed": 571,
+  "categories": {
+   "kidney x0.6936 (lb)": 962,
+   "BBB uptake constrained (lb)": 3,
+   "diet uptake opened at 0.1 (lb)": 31,
+   "diet 10 +/-20% (lb)": 5,
+   "kidney x0.6936 (ub)": 49,
+   "CSF export x1.4857 (ub)": 517,
+   "diet 10 +/-20% (ub)": 5
+  },
+  "examples": {
+   "kidney x0.6936 (lb)": {
+    "rxn": "Kidney_EX_13_cis_retnglc(e)_[bc]",
+    "bound": "lb",
+    "stored": -0.0021673267207409663,
+    "matlab_setup": -0.00150336
+   },
+   "BBB uptake constrained (lb)": {
+    "rxn": "BBB_KYNATE[CSF]upt",
+    "bound": "lb",
+    "stored": -1000000.0,
+    "matlab_setup": -0.024075020313907194
+   },
+   "diet uptake opened at 0.1 (lb)": {
+    "rxn": "Diet_EX_5HPET[d]",
+    "bound": "lb",
+    "stored": 0.0,
+    "matlab_setup": -0.1
+   },
+   "diet 10 +/-20% (lb)": {
+    "rxn": "Diet_EX_dgchol[d]",
+    "bound": "lb",
+    "stored": 0.0,
+    "matlab_setup": -12.0
+   },
+   "kidney x0.6936 (ub)": {
+    "rxn": "Kidney_EX_4hphac(e)_[bc]",
+    "bound": "ub",
+    "stored": -0.013078695728609284,
+    "matlab_setup": -0.009072
+   },
+   "CSF export x1.4857 (ub)": {
+    "rxn": "BBB_2HB[CSF]exp",
+    "bound": "ub",
+    "stored": 0.044351999999999996,
+    "matlab_setup": 0.0658944
+   },
+   "diet 10 +/-20% (ub)": {
+    "rxn": "Diet_EX_dgchol[d]",
+    "bound": "ub",
+    "stored": 0.0,
+    "matlab_setup": -8.0
+   }
+  },
+  "unclassified": [],
+  "n_unclassified": 0
+ },
+ "matlab_global_vs_shipped_plus_unified": {
+  "n_lb_changed": 1001,
+  "n_ub_changed": 571,
+  "categories": {
+   "kidney x0.6936 (lb)": 962,
+   "BBB uptake constrained (lb)": 3,
+   "diet uptake opened at 0.1 (lb)": 31,
+   "diet 10 +/-20% (lb)": 5,
+   "kidney x0.6936 (ub)": 49,
+   "CSF export x1.4857 (ub)": 517,
+   "diet 10 +/-20% (ub)": 5
+  },
+  "n_unclassified": 0,
+  "unclassified": []
+ }
+}

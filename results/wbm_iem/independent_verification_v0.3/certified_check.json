@@ -1,0 +1,495 @@
+{
+ "iems_present": [
+  "EF",
+  "ASNSD",
+  "GMT",
+  "PHOX1",
+  "SUCLA",
+  "BTD"
+ ],
+ "missing": [],
+ "n_matlab_healthy_nonfinite": 15,
+ "n_differing_calls": 13,
+ "nan_biomarkers": [
+  {
+   "iem": "BTD",
+   "biomarker": "DM_acac[bc]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "DM_acac[bc]"
+   ],
+   "max_row_violation": 6.857140988358879e-08,
+   "max_bound_violation": 5.7142857142920486e-08,
+   "objective_recomputed": 118.57424902880639,
+   "v0.3_reported_healthy": 118.57424521052886,
+   "abs_diff_vs_v0.3": 3.818277534151093e-06,
+   "certify_run_healthy": 118.57424902880639,
+   "certify_run_matches_v0.3": false,
+   "passes": true
+  },
+  {
+   "iem": "BTD",
+   "biomarker": "DM_acetone[bc]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "DM_acetone[bc]"
+   ],
+   "max_row_violation": 9.999996564147295e-08,
+   "max_bound_violation": 2.0065573380634305e-07,
+   "objective_recomputed": 118.57424512370739,
+   "v0.3_reported_healthy": 118.57424904987363,
+   "abs_diff_vs_v0.3": 3.926166243672924e-06,
+   "certify_run_healthy": 118.57424512370739,
+   "certify_run_matches_v0.3": false,
+   "passes": true
+  },
+  {
+   "iem": "BTD",
+   "biomarker": "DM_bhb[bc]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "DM_bhb[bc]"
+   ],
+   "max_row_violation": 5.714286999136675e-08,
+   "max_bound_violation": 5.7142857142920486e-08,
+   "objective_recomputed": 2.747808451886158e-07,
+   "v0.3_reported_healthy": 0.0,
+   "abs_diff_vs_v0.3": 2.747808451886158e-07,
+   "certify_run_healthy": 0.0,
+   "certify_run_matches_v0.3": true,
+   "passes": true
+  },
+  {
+   "iem": "BTD",
+   "biomarker": "EX_nh4[u]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "EX_nh4[u]"
+   ],
+   "max_row_violation": 9.142854651145171e-08,
+   "max_bound_violation": 8.708570842230756e-08,
+   "objective_recomputed": 43.900102585568675,
+   "v0.3_reported_healthy": 43.90001476308316,
+   "abs_diff_vs_v0.3": 8.782248551142402e-05,
+   "certify_run_healthy": 43.900102585568675,
+   "certify_run_matches_v0.3": false,
+   "passes": false
+  },
+  {
+   "iem": "BTD",
+   "biomarker": "EX_3hpp[u]",
+   "available": true,
+   "in_differing_calls": false,
+   "status": "Optimal",
+   "objective_reactions": [
+    "EX_3hpp[u]"
+   ],
+   "max_row_violation": 8.571430498705013e-08,
+   "max_bound_violation": 5.714286962729166e-08,
+   "objective_recomputed": 1.136175766802694e-07,
+   "v0.3_reported_healthy": 0.0,
+   "abs_diff_vs_v0.3": 1.136175766802694e-07,
+   "certify_run_healthy": 0.0,
+   "certify_run_matches_v0.3": true,
+   "passes": true
+  },
+  {
+   "iem": "EF",
+   "biomarker": "EX_fru[u]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "EX_fru[u]"
+   ],
+   "max_row_violation": 6.857140988358879e-08,
+   "max_bound_violation": 5.714286999136675e-08,
+   "objective_recomputed": 5.346664693206549e-07,
+   "v0.3_reported_healthy": 0.0,
+   "abs_diff_vs_v0.3": 5.346664693206549e-07,
+   "certify_run_healthy": 0.0,
+   "certify_run_matches_v0.3": true,
+   "passes": true
+  },
+  {
+   "iem": "GMT",
+   "biomarker": "EX_urate[u]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "EX_urate[u]"
+   ],
+   "max_row_violation": 9.999996564147295e-08,
+   "max_bound_violation": 4.354285713936701e-08,
+   "objective_recomputed": 5.3634575356053995,
+   "v0.3_reported_healthy": 5.363457531359064,
+   "abs_diff_vs_v0.3": 4.246335727486894e-09,
+   "certify_run_healthy": 5.3634575356053995,
+   "certify_run_matches_v0.3": false,
+   "passes": true
+  },
+  {
+   "iem": "SUCLA",
+   "biomarker": "DM_lac_L[bc]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "DM_lac_L[bc]"
+   ],
+   "max_row_violation": 9.142860335487057e-08,
+   "max_bound_violation": 5.714286962729166e-08,
+   "objective_recomputed": 7.789835763105657e-07,
+   "v0.3_reported_healthy": 0.0,
+   "abs_diff_vs_v0.3": 7.789835763105657e-07,
+   "certify_run_healthy": 0.0,
+   "certify_run_matches_v0.3": true,
+   "passes": true
+  },
+  {
+   "iem": "SUCLA",
+   "biomarker": "DM_pyr[bc]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "DM_pyr[bc]"
+   ],
+   "max_row_violation": 9.142854651145171e-08,
+   "max_bound_violation": 5.714286962729166e-08,
+   "objective_recomputed": 5.227421809195221e-06,
+   "v0.3_reported_healthy": 4.475513492252503e-06,
+   "abs_diff_vs_v0.3": 7.519083169427176e-07,
+   "certify_run_healthy": 5.227421809195221e-06,
+   "certify_run_matches_v0.3": false,
+   "passes": true
+  },
+  {
+   "iem": "ASNSD",
+   "biomarker": "DM_asn_L[bc]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "DM_asn_L[bc]"
+   ],
+   "max_row_violation": 9.142854651145171e-08,
+   "max_bound_violation": 8.708571286319966e-08,
+   "objective_recomputed": 130.7481152764068,
+   "v0.3_reported_healthy": 130.74810742194313,
+   "abs_diff_vs_v0.3": 7.854463660805777e-06,
+   "certify_run_healthy": 130.7481152764068,
+   "certify_run_matches_v0.3": false,
+   "passes": true
+  },
+  {
+   "iem": "ASNSD",
+   "biomarker": "DM_asn_L[csf]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "DM_asn_L[csf]"
+   ],
+   "max_row_violation": 9.999985195463523e-08,
+   "max_bound_violation": 1.229636836796999e-08,
+   "objective_recomputed": 730.9043036670262,
+   "v0.3_reported_healthy": 730.9043035595562,
+   "abs_diff_vs_v0.3": 1.0746998668764718e-07,
+   "certify_run_healthy": 730.9043036670262,
+   "certify_run_matches_v0.3": false,
+   "passes": true
+  },
+  {
+   "iem": "PHOX1",
+   "biomarker": "EX_oxa[u]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "EX_oxa[u]"
+   ],
+   "max_row_violation": 9.142854651145171e-08,
+   "max_bound_violation": 8.70857101986644e-08,
+   "objective_recomputed": 9.831155693973415e-07,
+   "v0.3_reported_healthy": 0.0,
+   "abs_diff_vs_v0.3": 9.831155693973415e-07,
+   "certify_run_healthy": 0.0,
+   "certify_run_matches_v0.3": true,
+   "passes": true
+  },
+  {
+   "iem": "PHOX1",
+   "biomarker": "EX_glyclt[u]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "EX_glyclt[u]"
+   ],
+   "max_row_violation": 9.142854651145171e-08,
+   "max_bound_violation": 5.714286999136675e-08,
+   "objective_recomputed": 3.504357763972621e-07,
+   "v0.3_reported_healthy": 0.0,
+   "abs_diff_vs_v0.3": 3.504357763972621e-07,
+   "certify_run_healthy": 0.0,
+   "certify_run_matches_v0.3": true,
+   "passes": true
+  },
+  {
+   "iem": "PHOX1",
+   "biomarker": "EX_glx[u]",
+   "available": true,
+   "in_differing_calls": true,
+   "status": "Optimal",
+   "objective_reactions": [
+    "EX_glx[u]"
+   ],
+   "max_row_violation": 6.857135304016992e-08,
+   "max_bound_violation": 5.714286999136675e-08,
+   "objective_recomputed": 5.315566040664521e-07,
+   "v0.3_reported_healthy": 0.0,
+   "abs_diff_vs_v0.3": 5.315566040664521e-07,
+   "certify_run_healthy": 0.0,
+   "certify_run_matches_v0.3": true,
+   "passes": true
+  },
+  {
+   "iem": "HPC",
+   "biomarker": "EX_25aics[u]",
+   "available": false
+  }
+ ],
+ "n_available": 14,
+ "n_pass": 13,
+ "n_differing_available_pass": 12,
+ "worst_row_violation_nan_set": 9.999996564147295e-08,
+ "worst_bound_violation_nan_set": 2.0065573380634305e-07,
+ "worst_objective_abs_diff_nan_set": 8.782248551142402e-05,
+ "iem_status": {
+  "EF": {
+   "status": "complete",
+   "n_solves": 5,
+   "seconds": 188.8,
+   "vmax": 32882.794695924815,
+   "vmax_v0.3": 32882.79469618848
+  },
+  "ASNSD": {
+   "status": "complete",
+   "n_solves": 11,
+   "seconds": 1078.3,
+   "vmax": 10826.689981587238,
+   "vmax_v0.3": 10826.68998158579
+  },
+  "GMT": {
+   "status": "complete",
+   "n_solves": 13,
+   "seconds": 294.3,
+   "vmax": 544.818088702162,
+   "vmax_v0.3": 544.8180887023073
+  },
+  "PHOX1": {
+   "status": "complete",
+   "n_solves": 9,
+   "seconds": 380.7,
+   "vmax": 70837.42793631867,
+   "vmax_v0.3": 70837.42793634854
+  },
+  "SUCLA": {
+   "status": "complete",
+   "n_solves": 7,
+   "seconds": 358.8,
+   "vmax": 58607.71303368147,
+   "vmax_v0.3": 58607.71303360227
+  },
+  "BTD": {
+   "status": "complete",
+   "n_solves": 19,
+   "seconds": 1306.6,
+   "vmax": 74620.75637307017,
+   "vmax_v0.3": 74620.75637318216
+  }
+ },
+ "all_solves": {
+  "n": 64,
+  "n_with_certificate": 64,
+  "statuses": [
+   "Optimal"
+  ],
+  "worst_row_violation": 9.999996564147295e-08,
+  "worst_bound_violation": 2.0065573380634305e-07,
+  "worst_objective_abs_diff": 6.548361852765083e-11
+ },
+ "certify_rerun_vs_v0.3": {
+  "n": 23,
+  "n_healthy_equal": 12,
+  "n_disease_equal": 10,
+  "n_call_equal": 23,
+  "max_healthy_abs_diff": 8.782248551142402e-05,
+  "max_disease_abs_diff": 5.4339579946827143e-08,
+  "not_equal": [
+   {
+    "iem": "EF",
+    "biomarker": "EX_fru[u]",
+    "healthy_equal": true,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 0.0,
+    "disease_abs_diff": 3.597051545511931e-09
+   },
+   {
+    "iem": "ASNSD",
+    "biomarker": "DM_asn_L[bc]",
+    "healthy_equal": false,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 7.854463660805777e-06,
+    "disease_abs_diff": 9.947598300641403e-13
+   },
+   {
+    "iem": "ASNSD",
+    "biomarker": "DM_asn_L[csf]",
+    "healthy_equal": false,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 1.0746998668764718e-07,
+    "disease_abs_diff": 3.242917046009097e-11
+   },
+   {
+    "iem": "ASNSD",
+    "biomarker": "DM_gln_L[bc]",
+    "healthy_equal": true,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 0.0,
+    "disease_abs_diff": 1.5465957403648645e-09
+   },
+   {
+    "iem": "ASNSD",
+    "biomarker": "DM_gln_L[csf]",
+    "healthy_equal": true,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 0.0,
+    "disease_abs_diff": 2.2373569663614035e-10
+   },
+   {
+    "iem": "GMT",
+    "biomarker": "EX_creat[u]",
+    "healthy_equal": false,
+    "disease_equal": true,
+    "call_equal": true,
+    "healthy_abs_diff": 3.637978807091713e-12,
+    "disease_abs_diff": 0.0
+   },
+   {
+    "iem": "GMT",
+    "biomarker": "DM_creat[bc]",
+    "healthy_equal": false,
+    "disease_equal": true,
+    "call_equal": true,
+    "healthy_abs_diff": 1.0436451702844352e-10,
+    "disease_abs_diff": 0.0
+   },
+   {
+    "iem": "GMT",
+    "biomarker": "DM_crtn[bc]",
+    "healthy_equal": false,
+    "disease_equal": true,
+    "call_equal": true,
+    "healthy_abs_diff": 1.0393577554168587e-08,
+    "disease_abs_diff": 0.0
+   },
+   {
+    "iem": "GMT",
+    "biomarker": "EX_urate[u]",
+    "healthy_equal": false,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 4.246335727486894e-09,
+    "disease_abs_diff": 4.0103032006300054e-11
+   },
+   {
+    "iem": "SUCLA",
+    "biomarker": "DM_lac_L[bc]",
+    "healthy_equal": true,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 0.0,
+    "disease_abs_diff": 2.402157406322658e-08
+   },
+   {
+    "iem": "SUCLA",
+    "biomarker": "DM_pyr[bc]",
+    "healthy_equal": false,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 7.519083169427176e-07,
+    "disease_abs_diff": 7.503331289626658e-10
+   },
+   {
+    "iem": "BTD",
+    "biomarker": "DM_acac[bc]",
+    "healthy_equal": false,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 3.818277534151093e-06,
+    "disease_abs_diff": 3.430614015087485e-08
+   },
+   {
+    "iem": "BTD",
+    "biomarker": "DM_acetone[bc]",
+    "healthy_equal": false,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 3.926166243672924e-06,
+    "disease_abs_diff": 5.4339579946827143e-08
+   },
+   {
+    "iem": "BTD",
+    "biomarker": "DM_bhb[bc]",
+    "healthy_equal": true,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 0.0,
+    "disease_abs_diff": 4.325283953221515e-08
+   },
+   {
+    "iem": "BTD",
+    "biomarker": "EX_lac_L[u]",
+    "healthy_equal": true,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 0.0,
+    "disease_abs_diff": 3.374225343577564e-10
+   },
+   {
+    "iem": "BTD",
+    "biomarker": "EX_nh4[u]",
+    "healthy_equal": false,
+    "disease_equal": false,
+    "call_equal": true,
+    "healthy_abs_diff": 8.782248551142402e-05,
+    "disease_abs_diff": 1.1550582712516189e-10
+   },
+   {
+    "iem": "BTD",
+    "biomarker": "EX_CE2026[u]",
+    "healthy_equal": false,
+    "disease_equal": true,
+    "call_equal": true,
+    "healthy_abs_diff": 5.9283231212958754e-08,
+    "disease_abs_diff": 0.0
+   }
+  ]
+ }
+}
