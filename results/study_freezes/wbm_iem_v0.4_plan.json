@@ -1,0 +1,198 @@
+{
+  "schema_version": 1,
+  "manifest_type": "gembench-study-freeze",
+  "created_at": "2026-10-05T13:39:37Z",
+  "plan": {
+    "development_organisms": [
+      "Btheta",
+      "Putida",
+      "MR1",
+      "Smeli",
+      "Keio"
+    ],
+    "evaluation_role": "development",
+    "harvey_maxima_for_Q2": "results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json (run B must report lp_bounds_sha256 693af5c9...)",
+    "models": {
+      "Harvetta_1_03d": {
+        "file": "external/COBRA.models/mat/Harvetta_1_03d.mat",
+        "sha256": "98810012918a5df1e46499fe2bd59cfc9730a570c10d1d4e146ab82ef671fad3",
+        "source": "opencobra/COBRA.models commit 75c070d01e16b3adfa764e9b090e7b3c85a04751, mat/Harvetta_1_03d.mat"
+      },
+      "Harvey_1_03d": {
+        "file": "external/COBRA.models/mat/Harvey_1_03d.mat",
+        "sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c"
+      }
+    },
+    "note": "Whole-body IEM protocol v0.4: the v0.3 protocol on Harvetta 1.03d, biomarker minima on Harvey and Harvetta, and a MATLAB runIEM_HH reference on Harvetta (docs/studies/wbm-iem-v0.4-plan.md). Not an independent evaluation: the IEM ground truth, the Harvey v0.3 results and the published Harvetta accuracy are known. The freeze fixes the runs, the scoring and the reading rules before any Harvetta IEM result or any biomarker minimum exists. The organism fields are required by the freeze schema and do not apply to this study.",
+    "paths": [
+      "data/iem/iem_protocol_v0.2.json",
+      "data/iem/iem_protocol_v0.2.provenance.json",
+      "data/iem/wbm_constraint_inputs_v0.3.json",
+      "docs/studies/wbm-iem-v0.4-plan.md",
+      "gembench/wbm.py",
+      "gembench/wbm_constraints.py",
+      "gembench/wbm_iem.py",
+      "results/wbm_iem/Harvetta_1_03d_constraint_port_check_v0.3.json",
+      "results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json",
+      "results/wbm_iem/matlab_reference/harvetta_step1/run_info_harvetta_step1.txt",
+      "results/wbm_iem/matlab_reference/harvetta_step1_setup_bounds_comparison.json",
+      "scripts/check_wbm_constraint_port.py",
+      "scripts/compare_matlab_reference.py",
+      "scripts/iem_effect_size_sensitivity.py",
+      "scripts/iem_range_calls.py",
+      "scripts/run_wbm_iem.py",
+      "tests/test_iem_range_calls.py",
+      "tests/test_run_wbm_iem.py",
+      "tests/test_wbm_iem.py",
+      "tools/matlab/runner/iem_reference_harvetta_step1_setup.m",
+      "tools/matlab/runner/iem_reference_harvetta_step2_runiem.m",
+      "tools/matlab/runner/load_reference_harvetta.m"
+    ],
+    "primary": "Q1 on Harvetta: A1 accuracy and coverage; A2 Python vs MATLAB (bounds, calls, non-finite MATLAB optima, runIEM_HH formula); A3 equal positive maxima among no-change errors; A4 correct calls by relative threshold tau in {0, 0.001, 0.01, 0.05, 0.10}",
+    "quarantined_organisms": [
+      "Bvulgatus_CL09T03C04",
+      "Koxy",
+      "SynE",
+      "DvH"
+    ],
+    "reading_rules": {
+      "Q1": "(a) identical setup bounds; (b) identical calls wherever both MATLAB optima are finite; (c) at least one non-finite MATLAB optimum for a directional biomarker and runIEM_HH formula below Python accuracy among scored; (d) more than half of no-change errors have equal positive maxima; (e) descriptive count of correct calls below tau = 0.05",
+      "Q2_R1": "supported if R1 has more correct calls than max-only on both models; harmful if fewer on either; inconclusive otherwise",
+      "Q2_R2": "useful if on both models R2 turns more max-only errors into correct calls than into opposite-direction calls"
+    },
+    "runs": {
+      "A_harvetta_v0.4": "python3 scripts/run_wbm_iem.py Harvetta_1_03d --model-setup toolbox --bile-duct toolbox --out-suffix _v0.4",
+      "B_harvey_minima": "python3 scripts/run_wbm_iem.py Harvey_1_03d --model-setup toolbox --bile-duct toolbox --senses min --out-suffix _v0.4_min",
+      "C_harvetta_minima": "python3 scripts/run_wbm_iem.py Harvetta_1_03d --model-setup toolbox --bile-duct toolbox --senses min --out-suffix _v0.4_min",
+      "M_matlab_harvetta": "matlab-agent-runner queue job iem_ref_harvetta_20261005_step2_runiem (tools/matlab/runner/iem_reference_harvetta_step2_runiem.m)"
+    },
+    "schema_version": 1,
+    "secondary": "Q2 on both models: range rules R1 (full range) and R2 (tie-break) from scripts/iem_range_calls.py against the maximum-only protocol on directional biomarkers with four optimal finite optima",
+    "shards": "Runs B and C may be split into disjoint --iems shards with suffixes _v0.4_min_a and _v0.4_min_b, merged only under one run fingerprint.",
+    "study_id": "wbm-iem-v0.4"
+  },
+  "files": [
+    {
+      "path": "data/iem/iem_protocol_v0.2.json",
+      "size_bytes": 39406,
+      "sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5"
+    },
+    {
+      "path": "data/iem/iem_protocol_v0.2.provenance.json",
+      "size_bytes": 614,
+      "sha256": "a82fb9cac83c5c81b7b60a6ab6b800be9bdca9d4dfca5dc7190d489c66673a85"
+    },
+    {
+      "path": "data/iem/wbm_constraint_inputs_v0.3.json",
+      "size_bytes": 134498,
+      "sha256": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473"
+    },
+    {
+      "path": "docs/studies/wbm-iem-v0.4-plan.md",
+      "size_bytes": 9220,
+      "sha256": "881bb337380fa436b5965e73862901a8b9eee68cb6d89faebf35cbcdfba217c0"
+    },
+    {
+      "path": "gembench/wbm.py",
+      "size_bytes": 10661,
+      "sha256": "c525a92e917a58d440c4d38544dc1aecdfd44b51e847f8eaae3e6d53ceaf67fb"
+    },
+    {
+      "path": "gembench/wbm_constraints.py",
+      "size_bytes": 23747,
+      "sha256": "2673b3f9bf6e8f898f9ff592d9fcc62281b1fea04e8a3bed8dedbde1600716f9"
+    },
+    {
+      "path": "gembench/wbm_iem.py",
+      "size_bytes": 21253,
+      "sha256": "51c431c880aa9dd537994a4aef3a55e4419567ecab37c357c14b9c8d06e5eb6b"
+    },
+    {
+      "path": "results/wbm_iem/Harvetta_1_03d_constraint_port_check_v0.3.json",
+      "size_bytes": 6165,
+      "sha256": "da018219ce984470d1da0055a846ffe1ef8c8dc8198804dc97d084cc629d0746"
+    },
+    {
+      "path": "results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json",
+      "size_bytes": 202635,
+      "sha256": "0b928a9ba3e967842f7e2728ee0abaa1f282b1ef9a49bfe8658ff0d3967f9137"
+    },
+    {
+      "path": "results/wbm_iem/matlab_reference/harvetta_step1/run_info_harvetta_step1.txt",
+      "size_bytes": 1933,
+      "sha256": "5ccb44cdf4fe918a64ee768423d945a2ff8999e708c616599737c2cae6697b15"
+    },
+    {
+      "path": "results/wbm_iem/matlab_reference/harvetta_step1_setup_bounds_comparison.json",
+      "size_bytes": 465,
+      "sha256": "7ac29a6cb1c0a6a4fab759289c50de3650dcd91f0a95f18739338db90e48e371"
+    },
+    {
+      "path": "scripts/check_wbm_constraint_port.py",
+      "size_bytes": 5786,
+      "sha256": "902531b6ca3eadf06535ae92fafd2696585c70200e23510088a25f4effdf9048"
+    },
+    {
+      "path": "scripts/compare_matlab_reference.py",
+      "size_bytes": 8464,
+      "sha256": "a8c43747538d46110dbff05ff3ee9d9adb6a2cfb16fd2a917fc56c894ceb4f7c"
+    },
+    {
+      "path": "scripts/iem_effect_size_sensitivity.py",
+      "size_bytes": 3401,
+      "sha256": "7a0bb26c9abbe20706450fe8efa9e095c6f3712ece4016885ecff47d08f83b58"
+    },
+    {
+      "path": "scripts/iem_range_calls.py",
+      "size_bytes": 8671,
+      "sha256": "ec2820c2e876945607a8c456afe4e744d2f8ca487c5b0ada41ddf503ae0d794b"
+    },
+    {
+      "path": "scripts/run_wbm_iem.py",
+      "size_bytes": 11451,
+      "sha256": "ca63ff6d9d489fb80e1bf4d02d1d128b4b0c5a77b040cbfc9a19f49f4e2bdd87"
+    },
+    {
+      "path": "tests/test_iem_range_calls.py",
+      "size_bytes": 3441,
+      "sha256": "00252d8235c9f927cbe203169067bb02e7782d97458a1b3d357e61b7ab7a65e1"
+    },
+    {
+      "path": "tests/test_run_wbm_iem.py",
+      "size_bytes": 3055,
+      "sha256": "dfdf8eac1428f7bc77377af311e49d43d7242a5063233dab8dbb2e4b8c267bb5"
+    },
+    {
+      "path": "tests/test_wbm_iem.py",
+      "size_bytes": 7933,
+      "sha256": "cf70d50682a472690ad9d1bb9827a4e4f2fd5c8db14f3ef7e7e139446566bf37"
+    },
+    {
+      "path": "tools/matlab/runner/iem_reference_harvetta_step1_setup.m",
+      "size_bytes": 5830,
+      "sha256": "08197fdc2f66edf17fffbc63e893130280816044a2c71237542ca7aab4de2fac"
+    },
+    {
+      "path": "tools/matlab/runner/iem_reference_harvetta_step2_runiem.m",
+      "size_bytes": 3050,
+      "sha256": "3398850dfdb375afc32cec8ba0e7c60b9ce1ceb7daa041db362eba7a91a72a4d"
+    },
+    {
+      "path": "tools/matlab/runner/load_reference_harvetta.m",
+      "size_bytes": 792,
+      "sha256": "709e4cd69cb50ac0d661d007b3398bc79f16aea40b61c605846487f368864e6a"
+    }
+  ],
+  "repository": {
+    "available": true,
+    "head": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+    "dirty": false,
+    "tracked_changes": [],
+    "untracked_paths": [],
+    "excluded_untracked_roots": [
+      ".venv"
+    ]
+  },
+  "content_fingerprint": "f3dde4e2c2d53d6f2a6c0b488bd186952239b4cc9f2b37f044200e772099b363",
+  "evaluation_caveat": "File hashes record declared inputs, not evaluation independence. The five named development organisms are exposed. Other downloaded organisms have unknown prior exposure and remain quarantined pending independent evaluation. Documentary claims about prospective external evaluation require independent review."
+}
