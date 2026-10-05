@@ -1,0 +1,28 @@
+IEM reference run, step 1 (checks and setup bounds)
+started 2026-10-05 08:15:53
+MATLAB 24.2.0.3212159 (R2024b) Update 9 on GLNXA64
+LP solver gurobi
+model sha256 10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c
+COBRA Toolbox at /home/matlab/cobratoolbox
+same      src/analysis/wholeBody/PSCMToolbox/runIEM_HH.m
+same      src/analysis/wholeBody/PSCMToolbox/checkIEM_WBM.m
+same      src/analysis/wholeBody/PSCMToolbox/optimizeWBModel.m
+same      src/analysis/wholeBody/PSCMToolbox/io/loadPSCMfile.m
+same      src/analysis/wholeBody/PSCMToolbox/io/OrganLists.m
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/physiologicalConstraintsHMDBbased.m
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/setDietConstraints.m
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/standardPhysiolDefaultParameters.m
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/diets/EUAverageDietNew.m
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/organWeight/getOrganWeightFraction.m
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/inputData/NormalBloodConcExtractedHMDB.txt
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/inputData/NormalCSFConcExtractedHMDB.txt
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/inputData/NormalUrineConcExtractedHMDB.txt
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/inputData/16_01_26_BloodFlowRatesPercentages.xlsx
+same      src/analysis/wholeBody/PSCMToolbox/setConstraints/inputData/Numbers_organWeightData_fromxls_16_01_29_OrganWeigths.mat
+same      src/analysis/wholeBody/PSCMToolbox/hostMicrobeInteraction/AGORAEssentialMetabolites.m
+same      src/analysis/FBA/changeRxnBounds.m
+same      src/reconstruction/refinement/addDemandReaction.m
+same      src/base/solvers/solveCobraLP.m
+0 of 19 checked Toolbox files differ from commit 67c790d
+setup bounds saved after 19.2 s
+finished 2026-10-05 08:16:13
