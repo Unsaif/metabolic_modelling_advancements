@@ -93,14 +93,21 @@ def parse_iemsol(path: str) -> dict:
     return out
 
 
+def expected_from_label(label: str) -> str:
+    """runIEM_HH: 'Incre' -> increased, 'Decre' -> decreased, anything else -> unchanged."""
+    return "Increased" if "Incre" in label else "Decreased" if "Decre" in label else "Unchanged"
+
+
 def compare_results(matlab: dict, python_results: list) -> dict:
     py = {(r["iem"], b["reaction"]): b for r in python_results for b in r["biomarkers"]}
     rows, agree, n_both = [], 0, 0
     for iem, items in sorted(matlab.items()):
         for m in items:
             p = py.get((iem, m["biomarker"]))
-            entry = {"iem": iem, "biomarker": m["biomarker"], "matlab_healthy": m["healthy"], "matlab_disease": m["disease"],
-                     "matlab_call": m["call"]}
+            finite_m = math.isfinite(m["healthy"]) and math.isfinite(m["disease"])
+            entry = {"iem": iem, "biomarker": m["biomarker"], "expected": expected_from_label(m["label"]),
+                     "matlab_healthy": m["healthy"], "matlab_disease": m["disease"], "matlab_call": m["call"],
+                     "matlab_finite": finite_m}
             if p is None:
                 entry["python_call"] = "absent"
             else:
@@ -109,12 +116,15 @@ def compare_results(matlab: dict, python_results: list) -> dict:
                     n_both += 1
                     agree += p["predicted"] == m["call"]
             rows.append(entry)
-    expected = {(r["iem"], b["reaction"]): b["expected"] for r in python_results for b in r["biomarkers"]}
-    m_correct = sum(1 for e in rows if expected.get((e["iem"], e["biomarker"])) == e["matlab_call"])
-    return {"n_matlab_biomarkers": len(rows), "n_compared": n_both, "n_same_call": agree,
-            "n_matlab_correct": m_correct,
-            "differences": [e for e in rows if e.get("python_call") not in (None, "absent", "NA") and e["python_call"] != e["matlab_call"]],
-            "rows": rows}
+    scored = [e for e in rows if e["matlab_finite"] and e["expected"] != "Unchanged"]
+    differences = [e for e in rows if e.get("python_call") not in (None, "absent", "NA") and e["python_call"] != e["matlab_call"]]
+    return {"n_matlab_biomarkers": len(rows), "n_matlab_not_finite": sum(not e["matlab_finite"] for e in rows),
+            "matlab_accuracy_runiem_definition": sum(e["matlab_call"] == e["expected"] != "Unchanged" for e in rows) / len(rows) if rows else None,
+            "n_matlab_scored": len(scored), "n_matlab_correct_among_scored": sum(e["matlab_call"] == e["expected"] for e in scored),
+            "n_compared": n_both, "n_same_call": agree,
+            "n_differences_matlab_not_finite": sum(not e["matlab_finite"] for e in differences),
+            "n_differences_both_finite": sum(e["matlab_finite"] for e in differences),
+            "differences": differences, "rows": rows}
 
 
 def main() -> None:

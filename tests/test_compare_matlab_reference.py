@@ -38,7 +38,8 @@ def test_iemsol_parsing_pairs_healthy_and_disease_rows(tmp_path):
         {"reaction": "EX_a[u]", "expected": "Increased", "healthy": 0.0, "disease": 12.5, "predicted": "Increased"},
         {"reaction": "DM_b[bc]", "expected": "Decreased", "healthy": 3.0, "disease": 2.0, "predicted": "Decreased"}]}]
     report = CMR.compare_results(parsed, python)
-    assert (report["n_compared"], report["n_same_call"], report["n_matlab_correct"]) == (2, 1, 1)
+    assert (report["n_compared"], report["n_same_call"], report["n_matlab_correct_among_scored"]) == (2, 1, 1)
+    assert report["n_differences_both_finite"] == 1
     assert report["differences"][0]["biomarker"] == "DM_b[bc]"
 
 
