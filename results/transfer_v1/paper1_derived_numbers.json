@@ -1,0 +1,315 @@
+{
+ "note": "Derived from existing transfer_v1 results only; see the module docstring.",
+ "U_prime_vs_B0": {
+  "genes_changed_common": 53,
+  "to_important": 117,
+  "to_important_agree": 94,
+  "to_unimportant": 274,
+  "to_unimportant_agree": 273,
+  "per_organism": {
+   "Cola": {
+    "genes_changed_common": 3,
+    "union_delta": 0.03567694406717531
+   },
+   "Dino": {
+    "genes_changed_common": 6,
+    "union_delta": 0.049470528978088846
+   },
+   "Dyella79": {
+    "genes_changed_common": 10,
+    "union_delta": 0.06602449146104028
+   },
+   "MycoTube": {
+    "genes_changed_common": 2,
+    "union_delta": 0.0008158387470676084
+   },
+   "RPal_CGA009": {
+    "genes_changed_common": 5,
+    "union_delta": 0.031016317544044214
+   },
+   "Caulo": {
+    "genes_changed_common": 7,
+    "union_delta": 0.01755758427118087
+   },
+   "Cup4G11": {
+    "genes_changed_common": 9,
+    "union_delta": 0.06150678588264691
+   },
+   "Marino": {
+    "genes_changed_common": 3,
+    "union_delta": 0.04389645474864534
+   },
+   "PV4": {
+    "genes_changed_common": 4,
+    "union_delta": 0.027472487072466023
+   },
+   "SB2B": {
+    "genes_changed_common": 4,
+    "union_delta": 0.03171955023534889
+   }
+  }
+ },
+ "menaquinone_rule_U_vs_UQ": {
+  "genes_changed_common": 24,
+  "to_important": 0,
+  "to_important_agree": 0,
+  "to_unimportant": 200,
+  "to_unimportant_agree": 199,
+  "per_organism": {
+   "Cola": {
+    "genes_changed_common": 0,
+    "union_delta": 0.0
+   },
+   "Dino": {
+    "genes_changed_common": 1,
+    "union_delta": 0.013148282152580848
+   },
+   "Dyella79": {
+    "genes_changed_common": 9,
+    "union_delta": 0.059824075852822345
+   },
+   "MycoTube": {
+    "genes_changed_common": 0,
+    "union_delta": 0.0
+   },
+   "RPal_CGA009": {
+    "genes_changed_common": 4,
+    "union_delta": 0.025865413967299994
+   },
+   "Caulo": {
+    "genes_changed_common": 3,
+    "union_delta": 0.017071771279970283
+   },
+   "Cup4G11": {
+    "genes_changed_common": 5,
+    "union_delta": 0.060041413789084896
+   },
+   "Marino": {
+    "genes_changed_common": 2,
+    "union_delta": 0.022041920201329224
+   },
+   "PV4": {
+    "genes_changed_common": 0,
+    "union_delta": 0.0
+   },
+   "SB2B": {
+    "genes_changed_common": 0,
+    "union_delta": 0.0
+   }
+  }
+ },
+ "removals_joins_UNQ_vs_M_R1R2": {
+  "genes_changed_common": 29,
+  "to_important": 328,
+  "to_important_agree": 174,
+  "to_unimportant": 0,
+  "to_unimportant_agree": 0,
+  "per_organism": {
+   "Cola": {
+    "genes_changed_common": 3,
+    "union_delta": 0.0460848177210369
+   },
+   "Dino": {
+    "genes_changed_common": 2,
+    "union_delta": 0.037387217204192524
+   },
+   "Dyella79": {
+    "genes_changed_common": 2,
+    "union_delta": 0.018884562385127368
+   },
+   "MycoTube": {
+    "genes_changed_common": 5,
+    "union_delta": -0.0021419163191018116
+   },
+   "RPal_CGA009": {
+    "genes_changed_common": 0,
+    "union_delta": 0.0
+   },
+   "Caulo": {
+    "genes_changed_common": 4,
+    "union_delta": 0.029828404636831896
+   },
+   "Cup4G11": {
+    "genes_changed_common": 2,
+    "union_delta": 0.052357294878675076
+   },
+   "Marino": {
+    "genes_changed_common": 2,
+    "union_delta": 0.050991778910105146
+   },
+   "PV4": {
+    "genes_changed_common": 4,
+    "union_delta": 0.017667799408179308
+   },
+   "SB2B": {
+    "genes_changed_common": 5,
+    "union_delta": 0.00854090576488642
+   }
+  }
+ },
+ "t_intervals": {
+  "H1_U_prime_vs_B0": {
+   "evaluation_panel_A": {
+    "n": 5,
+    "mean": 0.03660082415948325,
+    "t95": [
+     0.006543404981389292,
+     0.06665824333757721
+    ]
+   },
+   "evaluation_panel_B": {
+    "n": 5,
+    "mean": 0.03643057244205761,
+    "t95": [
+     0.015439595423053242,
+     0.05742154946106197
+    ]
+   },
+   "pooled": {
+    "n": 10,
+    "mean": 0.03651569830077043,
+    "t95": [
+     0.022434396337233837,
+     0.050597000264307024
+    ]
+   }
+  },
+  "H2_M_vs_U_prime": {
+   "evaluation_panel_A": {
+    "n": 5,
+    "mean": 0.027238060676489186,
+    "t95": [
+     -0.026212329980323745,
+     0.08068845133330212
+    ]
+   },
+   "evaluation_panel_B": {
+    "n": 5,
+    "mean": 0.028932609580413625,
+    "t95": [
+     0.0007808791181461369,
+     0.05708434004268111
+    ]
+   },
+   "pooled": {
+    "n": 10,
+    "mean": 0.028085335128451405,
+    "t95": [
+     0.004873656356447608,
+     0.0512970139004552
+    ]
+   }
+  }
+ },
+ "menaquinone_rule_changed_genes": {
+  "Dino": [
+   {
+    "locus": "Dshi_1107",
+    "description": null
+   }
+  ],
+  "Dyella79": [
+   {
+    "locus": "ABZR86_RS05470",
+    "description": "3-hydroxyacyl-CoA dehydrogenase/enoyl-CoA hydratase family protein"
+   },
+   {
+    "locus": "ABZR86_RS05475",
+    "description": "acetyl-CoA C-acyltransferase"
+   },
+   {
+    "locus": "ABZR86_RS06805",
+    "description": "acetyl-CoA hydrolase/transferase C-terminal domain-containing protein"
+   },
+   {
+    "locus": "ABZR86_RS07010",
+    "description": "aldehyde dehydrogenase family protein"
+   },
+   {
+    "locus": "ABZR86_RS07575",
+    "description": "acyl-CoA dehydrogenase family protein"
+   },
+   {
+    "locus": "ABZR86_RS08425",
+    "description": "bifunctional 2-methylcitrate dehydratase/aconitate hydratase"
+   },
+   {
+    "locus": "ABZR86_RS08475",
+    "description": "2-methylcitrate synthase"
+   },
+   {
+    "locus": "ABZR86_RS08480",
+    "description": "methylisocitrate lyase"
+   },
+   {
+    "locus": "ABZR86_RS10825",
+    "description": "tol-pal system-associated acyl-CoA thioesterase"
+   }
+  ],
+  "RPal_CGA009": [
+   {
+    "locus": "TX73_003385",
+    "description": "2-ketocyclohexanecarboxyl-CoA hydrolase"
+   },
+   {
+    "locus": "TX73_003470",
+    "description": "4-hydroxybenzoyl-CoA reductase subunit gamma"
+   },
+   {
+    "locus": "TX73_003475",
+    "description": "4-hydroxybenzoyl-CoA reductase subunit alpha"
+   },
+   {
+    "locus": "TX73_019685",
+    "description": "xanthine dehydrogenase family protein subunit M"
+   }
+  ],
+  "Caulo": [
+   {
+    "locus": "CCNA_00752",
+    "description": "3-hydroxybutyryl-CoA dehydrogenase"
+   },
+   {
+    "locus": "CCNA_00820",
+    "description": "3-ketoacyl-CoA thiolase"
+   },
+   {
+    "locus": "CCNA_03342",
+    "description": "short-chain acyl-CoA hydrolase"
+   }
+  ],
+  "Cup4G11": [
+   {
+    "locus": "RR42_RS13620",
+    "description": "ferredoxin"
+   },
+   {
+    "locus": "RR42_RS13625",
+    "description": "4-hydroxybenzoyl-CoA reductase"
+   },
+   {
+    "locus": "RR42_RS13630",
+    "description": "4-hydroxybenzoyl-CoA reductase"
+   },
+   {
+    "locus": "RR42_RS23695",
+    "description": "dihydroxynaphthoic acid synthetase"
+   },
+   {
+    "locus": "RR42_RS32965",
+    "description": "salicylaldehyde dehydrogenase"
+   }
+  ],
+  "Marino": [
+   {
+    "locus": "HP15_2798",
+    "description": null
+   },
+   {
+    "locus": "HP15_3575",
+    "description": null
+   }
+  ]
+ },
+ "menaquinone_rule_n_genes": 24
+}
