@@ -74,12 +74,16 @@ def main() -> None:
         tot_n = sum(t["new_calls"] for t in table if t["arm"] == arm and t["phase"] != "Development")
         tot_k = sum(t["new_confirmed"] for t in table if t["arm"] == arm and t["phase"] != "Development")
         no_tb = sum(t["new_calls"] for t in table if t["arm"] == arm and t["phase"] != "Development" and t["org"] != "MycoTube")
-        ax.set_title(f"{name}\nnew panels: {tot_k} of {tot_n} new calls confirmed ({tot_k} of {no_tb} without M. tuberculosis)",
+        ax.set_title(f"{name}\nnew panels: {tot_k} of {tot_n} new calls confirmed\n({tot_k} of {no_tb} without M. tuberculosis)",
                      fontsize=8.5)
-        ax.set_xlabel("New 'important gene' calls (gene x condition cells)\nfilled: confirmed by fitness < -2; hatched: not confirmed", fontsize=8)
+        ax.set_xlabel("New 'important gene' calls (gene x condition cells)\nfilled: confirmed (fitness ≤ −2); hatched: not confirmed", fontsize=8)
         ax.tick_params(axis="x", labelsize=8)
     axes[0].set_yticks(list(ypos.values()))
-    axes[0].set_yticklabels([f"{org} ({label})" for label, org in ypos], fontsize=8)
+    names = {"MR1": "S. oneidensis MR-1", "Btheta": "B. thetaiotaomicron", "Smeli": "S. meliloti", "Putida": "P. putida",
+             "Cola": "E. vietnamensis", "Dino": "D. shibae", "Dyella79": "D. japonica", "MycoTube": "M. tuberculosis",
+             "RPal_CGA009": "R. palustris", "Caulo": "C. crescentus", "Cup4G11": "C. basilensis", "Marino": "M. adhaerens",
+             "PV4": "S. loihica", "SB2B": "S. amazonensis"}
+    axes[0].set_yticklabels([f"{names.get(org, org)} ({label})" for label, org in ypos], fontsize=8)
     xmax = max(t["new_calls"] for t in table if t["arm"] in ("M_R1R2", "M_R6")) * 1.25
     for ax in axes:
         ax.set_xlim(0, xmax)
