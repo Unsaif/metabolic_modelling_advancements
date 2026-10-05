@@ -9,7 +9,7 @@ from gembench.wbm import WBM
 from gembench.wbm_iem import HighsWBM, run_iem
 
 
-def toy_model(capacity=10.0, product_outlet=True):
+def toy_model(capacity=10.0, product_outlet=True, supply_lb=0.0):
     # supply -> A --IEM--> B, with separate A and B outlets.
     return WBM(
         name="toy", rxns=np.array(["supply", "organ_IEM", "EX_a", "EX_b", "Whole_body_objective_rxn"]),
@@ -17,7 +17,7 @@ def toy_model(capacity=10.0, product_outlet=True):
         S=sp.csc_matrix([[1, -1, -1, 0, 0], [0, 1, 0, -1, 0]]),
         b=np.zeros(2), csense=np.array(["E", "E"]), C=sp.csc_matrix((0, 5)),
         d=np.array([]), dsense=np.array([]), ctrs=np.array([]),
-        lb=np.array([0., 0., 0., 0., 1.]),
+        lb=np.array([supply_lb, 0., 0., 0., 1.]),
         ub=np.array([capacity, capacity, capacity, capacity if product_outlet else 0., 1.]),
         c=np.array([0., 0., 0., 0., 1.]), osense="max",
     )
@@ -151,3 +151,42 @@ assert previous.run() == highspy.HighsStatus.kOk
 """
     completed = subprocess.run([sys.executable, "-c", script], capture_output=True, text=True, timeout=30)
     assert completed.returncode == 0, completed.stdout + completed.stderr
+
+
+def test_flux_ranges_add_minima_without_changing_the_maximum_protocol():
+    # A forced supply of 5 must leave through EX_a once the IEM step is blocked: the minimum rises.
+    biomarkers = [("EX_a", "Increased"), ("EX_b", "Decreased")]
+    max_only = run_iem(HighsWBM(toy_model(supply_lb=5.0)), "toy", ["_IEM"], [], biomarkers, verbose=False)
+    model = toy_model(supply_lb=5.0)
+    hw = HighsWBM(model)
+    both = run_iem(hw, "toy", ["_IEM"], [], biomarkers, verbose=False, senses=("max", "min"))
+    assert [(b.healthy, b.disease, b.predicted) for b in both.biomarkers] == \
+        [(b.healthy, b.disease, b.predicted) for b in max_only.biomarkers]
+    a, b = both.biomarkers
+    assert (a.healthy_min, a.disease_min) == (pytest.approx(0.0), pytest.approx(5.0))
+    assert (b.healthy_min, b.disease_min) == (pytest.approx(10.0), pytest.approx(0.0))
+    assert a.status_healthy_min == a.status_disease_min == "Optimal"
+    assert max_only.biomarkers[0].healthy_min is None and max_only.biomarkers[0].status_healthy_min is None
+    assert both.n_solves == 3 + 2 * 2 * 2
+    assert both.status == "complete"
+    np.testing.assert_array_equal(hw.lb, model.lb)
+    np.testing.assert_array_equal(hw.ub, model.ub)
+
+
+def test_minimum_only_run_leaves_the_maximum_fields_unscored():
+    hw = HighsWBM(toy_model(supply_lb=5.0))
+    result = run_iem(hw, "toy", ["_IEM"], [], [("EX_a", "Increased"), ("EX_missing", "Increased")],
+                     verbose=False, senses=("min",))
+    a, missing = result.biomarkers
+    assert np.isnan(a.healthy) and np.isnan(a.disease)
+    assert (a.predicted, a.correct, a.status_healthy) == ("NA", None, "not_run")
+    assert (a.healthy_min, a.disease_min) == (pytest.approx(0.0), pytest.approx(5.0))
+    assert missing.status_healthy_min == "absent"
+    assert result.n_solves == 3 + 2
+    assert result.status == "complete"
+
+
+@pytest.mark.parametrize("senses", [(), ("max", "max"), ("mean",)])
+def test_invalid_senses_are_rejected(senses):
+    with pytest.raises(ValueError):
+        run_iem(HighsWBM(toy_model()), "toy", ["_IEM"], [], [("EX_a", "Increased")], verbose=False, senses=senses)

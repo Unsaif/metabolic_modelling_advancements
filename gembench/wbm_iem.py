@@ -171,6 +171,11 @@ class BiomarkerResult:
     correct: Optional[bool]  # None for an unscored label or unavailable/non-optimal solve
     status_healthy: str
     status_disease: str
+    # Minimum biomarker flux in each state (flux-range analysis, plan v0.4); None when not computed.
+    healthy_min: Optional[float] = None
+    disease_min: Optional[float] = None
+    status_healthy_min: Optional[str] = None
+    status_disease_min: Optional[str] = None
 
 
 @dataclass
@@ -236,16 +241,25 @@ def apply_runiem_global_constraints(hw: HighsWBM, bile_duct: str = "toolbox") ->
 
 def run_iem(hw: HighsWBM, iem: str, include_patterns: Sequence[str], exclude_patterns: Sequence[str],
             biomarkers: Sequence[Tuple[str, str]], min_flux_healthy: float = 1.0, tol: float = 1e-6,
-            verbose: bool = True, demand_metabolites: Optional[Sequence[str]] = None) -> IEMResult:
-    """biomarkers: list of (reaction id, expected label text such as 'Increased (blood)')."""
+            verbose: bool = True, demand_metabolites: Optional[Sequence[str]] = None,
+            senses: Sequence[str] = ("max",)) -> IEMResult:
+    """biomarkers: list of (reaction id, expected label text such as 'Increased (blood)').
+
+    senses: which biomarker optima to compute in each state. ("max",) is the runIEM_HH protocol.
+    "min" adds (or, alone, computes only) the minimum biomarker flux in the healthy and disease states,
+    stored in the *_min fields; the max-based fields then read NaN / "not_run" if "max" is absent.
+    """
     if not np.isfinite(min_flux_healthy) or not 0 <= min_flux_healthy <= 1:
         raise ValueError("min_flux_healthy must be a finite fraction between 0 and 1")
     if not np.isfinite(tol) or tol <= 0:
         raise ValueError("tol must be finite and positive")
+    senses = tuple(senses)
+    if not senses or len(set(senses)) != len(senses) or not set(senses) <= {"max", "min"}:
+        raise ValueError("senses must be a non-empty selection of 'max' and 'min' without repeats")
     started, n0 = time.time(), hw.n_solves
     with hw.temporary_state():
         result = _run_iem(hw, iem, include_patterns, exclude_patterns, biomarkers,
-                          min_flux_healthy, tol, verbose, demand_metabolites)
+                          min_flux_healthy, tol, verbose, demand_metabolites, senses)
     result.n_solves = hw.n_solves - n0
     result.time_s = time.time() - started
     return result
@@ -253,7 +267,8 @@ def run_iem(hw: HighsWBM, iem: str, include_patterns: Sequence[str], exclude_pat
 
 def _run_iem(hw: HighsWBM, iem: str, include_patterns: Sequence[str], exclude_patterns: Sequence[str],
              biomarkers: Sequence[Tuple[str, str]], min_flux_healthy: float, tol: float,
-             verbose: bool, demand_metabolites: Optional[Sequence[str]]) -> IEMResult:
+             verbose: bool, demand_metabolites: Optional[Sequence[str]],
+             senses: Tuple[str, ...] = ("max",)) -> IEMResult:
     t0 = time.time()
     n0 = hw.n_solves
     rx = hw.wbm.rxns
@@ -327,37 +342,66 @@ def _run_iem(hw: HighsWBM, iem: str, include_patterns: Sequence[str], exclude_pa
         return result
     # 3. biomarkers
     for rid, label in biomarkers:
+        exp = _expected(label)
         if rid not in hw.rxn_pos:
-            result.biomarkers.append(BiomarkerResult(rid, _expected(label), float("nan"), float("nan"), "NA", None, "absent", "absent"))
+            absent_min = "absent" if "min" in senses else None
+            result.biomarkers.append(BiomarkerResult(rid, exp, float("nan"), float("nan"), "NA", None, "absent", "absent",
+                                                     None, None, absent_min, absent_min))
             continue
         j = hw.rxn_pos[rid]
         old_ub = hw.ub[j]
         hw.set_bounds([j], ub=[1e5])
-        hw.set_objective({j: 1.0}, "max")
-        healthy_state(); sth, fh, _, _ = hw.solve()
-        disease_state(); std, fd, _, _ = hw.solve()
-        valid_h = sth == "Optimal" and np.isfinite(fh)
-        valid_d = std == "Optimal" and np.isfinite(fd)
-        fh = (0.0 if abs(fh) <= tol else fh) if valid_h else float("nan")
-        fd = (0.0 if abs(fd) <= tol else fd) if valid_d else float("nan")
+        optima = {}
+        for sense in senses:
+            hw.set_objective({j: 1.0}, sense)
+            healthy_state(); sth, fh, _, _ = hw.solve()
+            disease_state(); std, fd, _, _ = hw.solve()
+            valid_h = sth == "Optimal" and np.isfinite(fh)
+            valid_d = std == "Optimal" and np.isfinite(fd)
+            fh = (0.0 if abs(fh) <= tol else fh) if valid_h else float("nan")
+            fd = (0.0 if abs(fd) <= tol else fd) if valid_d else float("nan")
+            optima[sense] = (sth, fh, std, fd, valid_h and valid_d)
         hw.set_bounds([j], ub=[old_ub])
-        exp = _expected(label)
-        if valid_h and valid_d:
-            diff = fd - fh
-            pred = "Increased" if diff > tol else "Decreased" if diff < -tol else "Unchanged"
-            correct = None if exp == "Unchanged" else (pred == exp)
+        if "max" in optima:
+            sth, fh, std, fd, valid = optima["max"]
+            if valid:
+                diff = fd - fh
+                pred = "Increased" if diff > tol else "Decreased" if diff < -tol else "Unchanged"
+                correct = None if exp == "Unchanged" else (pred == exp)
+            else:
+                pred, correct = "NA", None
+                notes.append(f"{rid}: biomarker prediction unavailable (healthy {sth}, disease {std})")
         else:
+            sth, fh, std, fd = "not_run", float("nan"), "not_run", float("nan")
             pred, correct = "NA", None
-            notes.append(f"{rid}: biomarker prediction unavailable (healthy {sth}, disease {std})")
-        result.biomarkers.append(BiomarkerResult(rid, exp, fh, fd, pred, correct, sth, std))
+        b = BiomarkerResult(rid, exp, fh, fd, pred, correct, sth, std)
+        if "min" in optima:
+            sth_min, b.healthy_min, std_min, b.disease_min, valid_min = optima["min"]
+            b.status_healthy_min, b.status_disease_min = sth_min, std_min
+            if not valid_min:
+                notes.append(f"{rid}: biomarker minimum unavailable (healthy {sth_min}, disease {std_min})")
+        result.biomarkers.append(b)
         if verbose:
-            print(f"    {iem:8s} {rid:28s} healthy={fh:11.4g} disease={fd:11.4g} pred={pred:9s} expected={exp:9s} {'OK' if correct else ('--' if correct is None else 'X')}", flush=True)
+            mins = f" min: healthy={b.healthy_min:11.4g} disease={b.disease_min:11.4g}" if "min" in optima else ""
+            print(f"    {iem:8s} {rid:28s} healthy={fh:11.4g} disease={fd:11.4g} pred={pred:9s} expected={exp:9s} "
+                  f"{'OK' if correct else ('--' if correct is None else 'X')}{mins}", flush=True)
     healthy_state(); hw.set_row_bounds(row, -np.inf, np.inf)   # leave the model as found (row inert)
     result.n_solves = hw.n_solves - n0; result.time_s = time.time() - t0
-    result.status = "partial" if any(b.status_healthy not in {"Optimal", "absent"} or
-                                    b.status_disease not in {"Optimal", "absent"} or
-                                    (b.status_healthy != "absent" and (not np.isfinite(b.healthy) or not np.isfinite(b.disease)))
-                                    for b in result.biomarkers) else "complete"
+
+    def unavailable(b: BiomarkerResult) -> bool:
+        if b.status_healthy == "absent":
+            return False
+        bad = False
+        if "max" in senses:
+            bad |= (b.status_healthy != "Optimal" or b.status_disease != "Optimal"
+                    or not np.isfinite(b.healthy) or not np.isfinite(b.disease))
+        if "min" in senses:
+            bad |= (b.status_healthy_min != "Optimal" or b.status_disease_min != "Optimal"
+                    or b.healthy_min is None or b.disease_min is None
+                    or not np.isfinite(b.healthy_min) or not np.isfinite(b.disease_min))
+        return bad
+
+    result.status = "partial" if any(unavailable(b) for b in result.biomarkers) else "complete"
     return result
 
 

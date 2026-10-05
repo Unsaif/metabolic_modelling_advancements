@@ -8,6 +8,9 @@ Usage: python scripts/run_wbm_iem.py Harvey_1_03d [--model-setup toolbox|shipped
 --model-setup shipped  keeps the bounds stored in the model file (Harvey 1.03d ships with an earlier
                        version of the same constraints already applied).
 --bile-duct v0.2_all   reproduces the v0.2 deviation (ub = 100 on all 261 bile-duct exits instead of 28).
+--senses min           computes the minimum biomarker flux in each state instead of the maximum (plan v0.4
+                       flux-range analysis; scripts/iem_range_calls.py joins it with a maximum run);
+                       --senses max min computes both. The default (max) is the runIEM_HH protocol.
 Results are fingerprinted by model, protocol, setup and the resulting LP bounds; a results file is
 only resumed under the same fingerprint.
 """
@@ -100,7 +103,11 @@ def main() -> None:
     ap.add_argument("--model-setup", choices=["toolbox", "shipped"], default="toolbox")
     ap.add_argument("--bile-duct", choices=["toolbox", "v0.2_all"], default="toolbox")
     ap.add_argument("--constraint-inputs", default=WC.DEFAULT_INPUTS)
+    ap.add_argument("--senses", nargs="+", choices=["max", "min"], default=["max"],
+                    help="Biomarker optima per state: max (runIEM_HH protocol), min (flux-range analysis), or both")
     args = ap.parse_args()
+    if len(set(args.senses)) != len(args.senses):
+        ap.error("--senses must not repeat a sense")
     os.makedirs(OUT, exist_ok=True)
     with open(args.protocol) as fh:
         full_protocol = json.load(fh)
@@ -137,6 +144,9 @@ def main() -> None:
                   "opt_tol": 1e-7, "threads": 0, "time_limit_per_solve_s": 1800,
                   "model_setup": setup, "bile_duct": args.bile_duct, "global_constraints": g,
                   "lp_bounds_sha256": bounds_sha256}
+    if args.senses != ["max"]:
+        # Recorded only when it differs from the protocol default, so max-only runs keep their v0.3 fingerprints.
+        provenance["senses"] = list(args.senses)
     fingerprint = hashlib.sha256(json.dumps(provenance, sort_keys=True).encode()).hexdigest()
     out_json = os.path.join(OUT, f"{args.model}_iem_results{args.out_suffix}.json")
     results = load_resume(out_json, fingerprint)
@@ -154,7 +164,7 @@ def main() -> None:
                 hw.set_bounds(idx, **{tw["bound"]: [tw["value"]] * len(idx)})
             r = I.run_iem(hw, p["iem"], p["include_patterns"], p["exclude_patterns"],
                           [tuple(b) for b in p["biomarkers"]], min_flux_healthy=args.min_flux_healthy,
-                          demand_metabolites=p.get("demand_metabolites"))
+                          demand_metabolites=p.get("demand_metabolites"), senses=tuple(args.senses))
         record = asdict(r)
         record.update(call_index=p["call_index"], run_fingerprint=fingerprint, provenance=provenance)
         scored = scored_biomarkers([record])
@@ -179,6 +189,11 @@ def main() -> None:
                "total_solves_in_recorded_attempts": sum(r["n_solves"] for r in results),
                "session_solves": hw.n_solves, "session_solve_time_s": round(hw.solve_time, 1),
                "session_wall_s": round(time.time() - t0, 1),
+               "senses": list(args.senses),
+               "n_biomarkers_with_optimal_minima": sum(
+                   1 for r in results for b in r["biomarkers"]
+                   if b.get("status_healthy_min") == b.get("status_disease_min") == "Optimal"
+                   and finite(b.get("healthy_min")) and finite(b.get("disease_min"))),
                "caveats": [CAVEATS[args.model_setup],
                            "Accuracy is conditional on scored, optimal finite solve pairs; report coverage alongside accuracy.",
                            "Demand sinks are isolated per IEM. Solver is HiGHS IPM with crossover for every solve."]}

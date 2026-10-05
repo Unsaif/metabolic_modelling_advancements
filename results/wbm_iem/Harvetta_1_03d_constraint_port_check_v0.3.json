@@ -1,0 +1,312 @@
+{
+ "model": "Harvetta_1_03d",
+ "model_sha256": "98810012918a5df1e46499fe2bd59cfc9730a570c10d1d4e146ab82ef671fad3",
+ "constraint_inputs_sha256": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473",
+ "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc",
+ "sex": "female",
+ "physiology_current": {
+  "blood_kidney": {
+   "n": 1010,
+   "bounds": {
+    "lb": 961,
+    "ub": 49
+   },
+   "ratio_port_to_stored": {
+    "0.6996": 1010
+   },
+   "examples": [
+    {
+     "rxn": "Kidney_EX_13_cis_retnglc(e)_[bc]",
+     "bound": "lb",
+     "stored": -0.0021488025599999995,
+     "port": -0.00150336,
+     "section": "blood_kidney"
+    },
+    {
+     "rxn": "Kidney_EX_1glyc_hs(e)_[bc]",
+     "bound": "lb",
+     "stored": -3.7048319999999997,
+     "port": -2.592,
+     "section": "blood_kidney"
+    },
+    {
+     "rxn": "Kidney_EX_2425dhvitd3(e)_[bc]",
+     "bound": "lb",
+     "stored": -3.7048319999999997,
+     "port": -2.592,
+     "section": "blood_kidney"
+    },
+    {
+     "rxn": "Kidney_EX_25hvitd2(e)_[bc]",
+     "bound": "lb",
+     "stored": -0.02480385024,
+     "port": -0.017353439999999998,
+     "section": "blood_kidney"
+    },
+    {
+     "rxn": "Kidney_EX_25hvitd3(e)_[bc]",
+     "bound": "lb",
+     "stored": -0.013059532799999999,
+     "port": -0.009136799999999997,
+     "section": "blood_kidney"
+    }
+   ]
+  },
+  "blood_uptake": {
+   "n": 3,
+   "bounds": {
+    "lb": 3
+   },
+   "ratio_port_to_stored": {
+    "0.0": 2,
+    "0.0001": 1
+   },
+   "examples": [
+    {
+     "rxn": "BBB_KYNATE[CSF]upt",
+     "bound": "lb",
+     "stored": -1000000.0,
+     "port": -0.02231841906809856,
+     "section": "blood_uptake"
+    },
+    {
+     "rxn": "BBB_LKYNR[CSF]upt",
+     "bound": "lb",
+     "stored": -1000000.0,
+     "port": -1.7246051098076158,
+     "section": "blood_uptake"
+    },
+    {
+     "rxn": "BBB_TRP_L[CSF]upt",
+     "bound": "lb",
+     "stored": -1000000.0,
+     "port": -79.07821665264922,
+     "section": "blood_uptake"
+    }
+   ]
+  },
+  "csf_export": {
+   "n": 508,
+   "bounds": {
+    "ub": 508
+   },
+   "ratio_port_to_stored": {
+    "1.4857": 508
+   },
+   "examples": [
+    {
+     "rxn": "BBB_2HB[CSF]exp",
+     "bound": "ub",
+     "stored": 0.044351999999999996,
+     "port": 0.0658944,
+     "section": "csf_export"
+    },
+    {
+     "rxn": "BBB_2MCIT[CSF]exp",
+     "bound": "ub",
+     "stored": 0.00053928,
+     "port": 0.0008012159999999999,
+     "section": "csf_export"
+    },
+    {
+     "rxn": "BBB_34DHPHE[CSF]exp",
+     "bound": "ub",
+     "stored": 5.04e-06,
+     "port": 7.488e-06,
+     "section": "csf_export"
+    },
+    {
+     "rxn": "BBB_35CGMP[CSF]exp",
+     "bound": "ub",
+     "stored": 1.7135999999999996e-06,
+     "port": 2.5459199999999998e-06,
+     "section": "csf_export"
+    },
+    {
+     "rxn": "BBB_4HPHAC[CSF]exp",
+     "bound": "ub",
+     "stored": 3.0239999999999995e-05,
+     "port": 4.4927999999999994e-05,
+     "section": "csf_export"
+    }
+   ]
+  }
+ },
+ "physiology_legacy": {
+  "gfr_ml_min": 128.64,
+  "csf_export_ub_flow_ml_min": 0.35,
+  "differences": [
+   {
+    "rxn": "BBB_KYNATE[CSF]upt",
+    "bound": "lb",
+    "stored": -1000000.0,
+    "port": -0.02231841906809856,
+    "section": "blood_uptake"
+   },
+   {
+    "rxn": "BBB_LKYNR[CSF]upt",
+    "bound": "lb",
+    "stored": -1000000.0,
+    "port": -1.7246051098076158,
+    "section": "blood_uptake"
+   },
+   {
+    "rxn": "BBB_TRP_L[CSF]upt",
+    "bound": "lb",
+    "stored": -1000000.0,
+    "port": -79.07821665264922,
+    "section": "blood_uptake"
+   }
+  ]
+ },
+ "diet_current": {
+  "diet": {
+   "n": 10,
+   "bounds": {
+    "lb": 5,
+    "ub": 5
+   },
+   "ratio_port_to_stored": {
+    "None": 10
+   },
+   "examples": [
+    {
+     "rxn": "Diet_EX_dgchol[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -12.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_gchola[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -12.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_tchola[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -12.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_tdchola[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -12.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_M01989[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -12.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_dgchol[d]",
+     "bound": "ub",
+     "stored": 0.0,
+     "port": -8.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_gchola[d]",
+     "bound": "ub",
+     "stored": 0.0,
+     "port": -8.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_tchola[d]",
+     "bound": "ub",
+     "stored": 0.0,
+     "port": -8.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_tdchola[d]",
+     "bound": "ub",
+     "stored": 0.0,
+     "port": -8.0,
+     "section": "diet"
+    },
+    {
+     "rxn": "Diet_EX_M01989[d]",
+     "bound": "ub",
+     "stored": 0.0,
+     "port": -8.0,
+     "section": "diet"
+    }
+   ]
+  },
+  "diet_agora_essential": {
+   "n": 31,
+   "bounds": {
+    "lb": 31
+   },
+   "ratio_port_to_stored": {
+    "None": 31
+   },
+   "examples": [
+    {
+     "rxn": "Diet_EX_5HPET[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -0.1,
+     "section": "diet_agora_essential"
+    },
+    {
+     "rxn": "Diet_EX_appnn[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -0.1,
+     "section": "diet_agora_essential"
+    },
+    {
+     "rxn": "Diet_EX_coa[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -0.1,
+     "section": "diet_agora_essential"
+    },
+    {
+     "rxn": "Diet_EX_gam[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -0.1,
+     "section": "diet_agora_essential"
+    },
+    {
+     "rxn": "Diet_EX_gd1c_hs[d]",
+     "bound": "lb",
+     "stored": 0.0,
+     "port": -0.1,
+     "section": "diet_agora_essential"
+    }
+   ]
+  }
+ },
+ "diet_warnings": [],
+ "full_setup_current": {
+  "n_lb_changed": 1000,
+  "n_ub_changed": 562,
+  "warnings": []
+ },
+ "bile_duct": {
+  "n_bile_duct_exits": 262,
+  "n_toolbox_list": 28,
+  "n_differ_v02_vs_toolbox": 234,
+  "stored_ub_of_differing": {
+   "0.0": 230,
+   "15.0": 1,
+   "10.0": 3
+  },
+  "toolbox_list_stored_ub": {
+   "0.0": 23,
+   "1000.0": 5
+  }
+ }
+}
