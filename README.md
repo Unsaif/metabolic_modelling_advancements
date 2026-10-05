@@ -4,6 +4,8 @@ Working repository for the "Metabolic modelling improvements" project: bringing 
 effort to constraint-based metabolic modelling, with verification first. Tim Hulshof (Thiele lab,
 University of Galway), with AI-assisted research and independent review.
 
+**October 2026:** first drafts of two papers. The [benchmark paper](docs/paper/paper1-draft.md) reports a pre-specified, replicated test of draft-model corrections on ten held-out bacteria. The second paper (open whole-body IEM simulation and the robustness of its predictions) is being written from the [IEM v0.3 results](docs/studies/wbm-iem-v0.3-results.md) and the [v0.4 study](docs/studies/wbm-iem-v0.4-plan.md) (Harvetta and flux ranges, frozen 5 October, running).
+
 Start with the **[6 September scientific audit](docs/reviews/2026-09-06-scientific-audit.md)** and its **[reproducible artifacts](results/audit_2026_09_06/)**. The benchmark improvements are retrospective development results; independent validation remains to be done. The IEM port required corrections and its legacy results must not be used as validation.
 
 The follow-up development sprint completes both existing patch configurations across all four draft organisms. Read the **[new sprint results](docs/sprints/2026-09-06-development-sprint.md)** together with two mechanism investigations: the **[historical ATP-synthase scoring issue](docs/evidence/07-atp-synthase-mechanism-audit.md)** and the **[closed quinone pool hidden by a biomass deletion](docs/evidence/08-quinone-biomass-audit.md)**. A higher development score does not resolve these biological questions. The **[evaluation protocol](docs/studies/evaluation-protocol-v1.md)** records exposure and the procedure for a future independent test; its file-freeze utility is available now.

@@ -1,5 +1,11 @@
 # Handover — "Metabolic modelling improvements" (Tim Hulshof / Claude sessions), 6 September 2026
 
+> **Papers and IEM v0.4, 5 October 2026 (Claude Opus 5.5):** Tim agreed two directions (roadmap D23).
+> - **Paper 1** (benchmark/transfer) is drafted as a Claude Doc (https://claude.ai/code/artifact/58c661c0-bff9-419c-a2e4-bbf1a6e4b3c3; repository copy `docs/paper/paper1-draft.md`), reviewed by a separate agent and revised.
+> - **Paper 2** (open whole-body IEM simulation and robustness) is a Claude Doc in progress (https://claude.ai/code/artifact/11c54dd2-869a-43a5-af19-9aed235e9eea).
+> - **IEM v0.4** ([plan](studies/wbm-iem-v0.4-plan.md), frozen 13:39:37Z, fingerprint `f3dde4e2…`): Harvetta under the v0.3 protocol (run A), biomarker minima on Harvey (B) and Harvetta (C), MATLAB `runIEM_HH` on Harvetta through the queue (M). `logs/watch_v04.sh` keeps A, B, C going and starts C after B. Checkpoints go to Tim's `_repo/iem_checkpoints/`.
+> - Harvetta setup bounds equal MATLAB's for all 83,521 reactions (checked before the freeze). For Harvetta the older GFR is 128.64 ml/min, not Harvey's 129.75 (the plan quotes Harvey's value).
+
 > **IEM v0.3, 4–5 October 2026 (Claude Opus 5.5):** read [the v0.3 results](studies/wbm-iem-v0.3-results.md) and [the plan](studies/wbm-iem-v0.3-plan.md).
 > - **Constraint port.** The diet and physiological constraints are ported (`gembench/wbm_constraints.py`). They are bit-identical to the COBRA Toolbox's own setup, checked with MATLAB on Tim's Mac.
 > - **Accuracy.** v0.3: 217 of 251 biomarker directions are correct (86.5%). The MATLAB reference agrees on every call where it returned an optimum.
