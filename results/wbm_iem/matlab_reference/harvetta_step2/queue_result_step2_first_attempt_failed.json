@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "job_id": "4bf2c1a10473444fb36bee2f34d27abc",
+  "script": "iem_ref_harvetta_20261005_step2_runiem.m",
+  "code_sha256": "3398850dfdb375afc32cec8ba0e7c60b9ce1ceb7daa041db362eba7a91a72a4d",
+  "timeout_seconds": 21600,
+  "status": "error",
+  "submitted_at": 1791207627.813917,
+  "finished_at": 1791210866.753515,
+  "api_calls": 0,
+  "automatic_retry": false,
+  "error": "Command '['/usr/local/bin/docker', 'container', 'inspect', '--format', '{{json .State}}', 'matlab-agent-c1a05d80555746128502b79f880e59f2']' timed out after 10 seconds",
+  "may_have_executed": true
+}
