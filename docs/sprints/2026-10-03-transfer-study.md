@@ -51,6 +51,14 @@ The corrected protocol (per-IEM state isolation, shipped bounds only) finished o
 - These numbers use the shipped model bounds without the physiological constraints and the average European diet of the published protocol. They are **not comparable with the published 85 percent**; the next step is to port those constraints and rerun.
 - **Correction (4 October 2026):** the previous point is wrong. Porting the constraints showed that Harvey 1.03d is shipped with them already applied: its `SetupInfo` records the EU average diet, and the port reproduces the stored bounds once two older parameter values are used (GFR 129.75 rather than 90 ml/min; CSF export from 0.35 rather than 0.52 ml/min). v0.2 therefore ran with the constraints as released with the model. v0.2 also deviated from `runIEM_HH.m` in one step: it set ub = 100 on all 261 bile-duct exits instead of the Toolbox's 28. See [the v0.3 plan](../studies/wbm-iem-v0.3-plan.md).
 
+## IEM v0.3 and the MATLAB reference run (4–5 October)
+
+Results: [wbm-iem-v0.3-results.md](../studies/wbm-iem-v0.3-results.md).
+- **Port confirmed against MATLAB.** The Python port of the Toolbox's diet and physiological setup equals the COBRA Toolbox's own setup, bit for bit, for all 81,094 reactions. The MATLAB run used the Toolbox on Tim's Mac with Gurobi.
+- **Accuracy.** With the protocol as the Toolbox runs it today, 217 of 251 biomarker directions are correct (86.5%).
+- **MATLAB comparison.** MATLAB makes the same call wherever it returned an optimum. It scores 204 of 252 (81.0%) by `runIEM_HH`'s formula, because 13 solves without an optimum count as "no change".
+- **What moved the calls.** The bile-duct correction changes 5 calls (net −3); the newer constraint parameters change none.
+
 ## Next
 
 1. Write up the benchmark result (draft models, the transfer study and its replication) as the core of the first paper.

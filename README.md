@@ -59,7 +59,7 @@ commands documented there rather than stored here.
   S. oneidensis and S. meliloti scored against Fitness Browser fitness, as shipped and after a one-condition minimal
   gap-fill, with iML1515 as control — `results/carbon_fitness_multi/`, summary in `summary.tsv`.
 - Harvey/Harvetta 1.03d solve with HiGHS (interior point, ~20 s) and GLPK in Python, coupling constraints included, solutions certified.
-- IEM biomarker protocol ported to Python; full 63-IEM run in progress (shipped bounds; physiological/diet constraints not yet ported).
+- IEM biomarker protocol and the Toolbox's diet and physiological constraints ported to Python. They are verified against a MATLAB run of `runIEM_HH.m`: identical bounds, and identical calls wherever MATLAB returned an optimum. On Harvey 1.03d, 217 of 251 biomarker directions are correct; see docs/studies/wbm-iem-v0.3-results.md.
 - IEM ground truth v0.1: 279 tuples from the lab's benchmark, linked outward; HPO cross-check done.
 - Fitness Browser data for 9 organisms downloaded (5 Sept 2026).
 
