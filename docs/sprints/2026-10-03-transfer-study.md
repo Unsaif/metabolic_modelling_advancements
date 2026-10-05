@@ -63,7 +63,7 @@ Results: [wbm-iem-v0.3-results.md](../studies/wbm-iem-v0.3-results.md).
 
 1. Write up the benchmark result (draft models, the transfer study and its replication) as the core of the first paper.
 2. A method v2 (trace counter-ions limited in the media rule; base-media organic carbon flagged; phototroph handling; more gap-fill cut rounds; a reference rule that skips media without named carbon sources; no R6 assignments to ion transporters) needs new data: every Fitness Browser organism with an EMBL GEMs draft has now been used.
-3. Port the physiological and diet constraints to the IEM protocol and rerun v0.2 with them.
+3. IEM protocol: the constraint port and rerun are done (v0.3, above). The next IEM steps are listed in the [v0.3 results note](../studies/wbm-iem-v0.3-results.md).
 
 ## How to continue
 
