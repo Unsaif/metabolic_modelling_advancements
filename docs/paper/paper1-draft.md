@@ -35,7 +35,7 @@ As the yardstick we used published genome-wide mutant screens (RB-TnSeq), which 
 
 Ten of the twelve could be tested. Before correction, the models agreed with the screens only moderately (Matthews correlation coefficient 0.33 to 0.52 in the eight bacteria whose experiments they could represent; 0 is chance and 1 is perfect). The automatic rules raised it by 0.037 on average (95% interval 0.025 to 0.048). The gain was the same in both rounds and in development, nine bacteria improved and none got worse, and 94% of the predictions the rules changed now agree with the screens. AI curation added 0.028 (eight improved, two worse; 0.029 on the held-back round alone), almost entirely by removing genes the drafts wrongly listed as backup enzymes. Four bacteria exposed limits of the locked pipeline. For two, the locked rules could not set up a model to test. Two others had experiments the models cannot represent: one grows by photosynthesis, and one "carbon-free" medium contains organic carbon. All four are reported.
 
-In a comparison added after the study, hand-curated models scored with the same protocol also agreed only moderately with the screens: the extensively curated *E. coli* model iML1515 scores 0.59. In *P. putida*, the one study organism with a compatible hand-curated model, the corrected draft scored as well as the curated model on the genes and conditions both cover (0.57 with the automatic rules and 0.61 with AI curation, against 0.56). But it grew in only 28 of the 43 conditions in which the bacterium was screened, against 36 for the curated model. Across the study, the drafts grew in 150 of 267 screened conditions (56%), and the corrections barely changed this.
+In a comparison added after the study, hand-curated models scored with the same protocol also agreed only moderately with the screens: the extensively curated *E. coli* model iML1515 scores 0.59. In *P. putida*, the one study organism with a usable hand-curated model, the corrected draft scored as well as the curated model on the genes and conditions both cover (0.57 with the automatic rules and 0.61 with AI curation, against 0.56). But it grew in only 28 of the 43 conditions in which the bacterium was screened, against 36 for the curated model. Across the study, the drafts grew in 150 of 267 screened conditions (56%), and the corrections barely changed this.
 
 Simple annotation-based corrections carry over to new bacteria. Their gain is small in absolute terms, but in the one organism where it could be checked they brought the draft's gene-level predictions to the level of a hand-curated model. The larger remaining gap is coverage: the drafts cannot grow on many of the carbon sources the bacteria use.
 
@@ -116,7 +116,7 @@ Before any correction, the drafts predict gene importance with MCC 0.33–0.52 i
 
 This comparison was added after the study, to put the size of the gains in context. It is descriptive, not a held-out test: both organisms involved were used in development.
 
-We scored two hand-curated models with exactly the protocol the study used for the drafts, without gap-filling them: iML1515 for *E. coli* \[17\] and iJN1463 for *P. putida* \[18\]. iJN1463 is the only hand-curated model of a study organism whose gene identifiers match the Fitness Browser's.
+We scored two hand-curated models with exactly the protocol the study used for the drafts, without gap-filling them: iML1515 for *E. coli* \[17\] and iJN1463 for *P. putida* \[18\]. Of the study organisms, only *P. putida* and *M. tuberculosis* have hand-curated models in BiGG \[13\], and the pipeline cannot represent the *M. tuberculosis* screens.
 
 - **Hand-curated models score only moderately too.** iML1515 grows in all 32 *E. coli* conditions and scores MCC 0.59. Pooled mutant fitness and growth simulations agree only partly even for the best-studied bacterium, so on this benchmark a realistic target for a draft is nearer 0.6 than 1.
 - **Where both models grow, the corrected *P. putida* draft is as good as the curated one.** On the 764 genes and 28 conditions both cover:
@@ -257,7 +257,7 @@ An external custodian of the outcome data, or a community challenge on newly mea
 - **Blinding of the curator.** It rests on instructions. The packets' gene descriptions came from the Fitness Browser gene table. Whether any of them reflect the Browser's fitness-based re-annotations remains to be checked.
 - **Unknown training exposure.** The AI curator's training may include published phenotypes; the pre-declared sensitivity analysis without *M. tuberculosis* did not change the reading.
 - **Locked pipeline choices.** These excluded or misrepresented four of twelve organisms.
-- **One curated comparison.** Only *P. putida* had a hand-curated model whose gene identifiers match the Fitness Browser's. It is a development organism, and the comparison was made after the study.
+- **One curated comparison.** Only *P. putida* had a usable hand-curated model (*M. tuberculosis* has curated models, but the pipeline cannot represent its screens). *P. putida* is a development organism, and the comparison was made after the study.
 
 **Next tests.**
 
