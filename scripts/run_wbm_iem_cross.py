@@ -503,6 +503,7 @@ def main():
     ap.add_argument("--order", choices=["iem", "readout"], default="iem")
     ap.add_argument("--first", choices=["ipm", "warm"], default="ipm", help="--order readout: first solve of each readout")
     ap.add_argument("--readout-limit", type=int, default=0, help="only the first N readouts of the panel (timing tests)")
+    ap.add_argument("--readout-stride", type=int, default=0, help="only every K-th readout of the panel (timing tests)")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
 
@@ -512,6 +513,8 @@ def main():
     if args.extra_readouts:
         with open(args.extra_readouts) as fh:
             readouts = list(dict.fromkeys(readouts + [line.strip() for line in fh if line.strip()]))
+    if args.readout_stride:
+        readouts = readouts[::args.readout_stride]
     if args.readout_limit:
         readouts = readouts[:args.readout_limit]
     protocol = full_protocol
