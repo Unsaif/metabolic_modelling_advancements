@@ -1,0 +1,1526 @@
+{
+ "iSO783": {
+  "label": "iSO783",
+  "n_reactions": [
+   870,
+   870
+  ],
+  "n_metabolites": [
+   713,
+   713
+  ],
+  "n_genes": [
+   783,
+   783
+  ],
+  "sbml_boundary_species": 0,
+  "collapsed_two_step_exchanges_verified": 0,
+  "collapsed_flipped": 0,
+  "published_reactions_unaccounted": [],
+  "published_metabolites_unaccounted": [],
+  "view_metabolites_not_in_published": [],
+  "genes_identical": true,
+  "objective_direction": [
+   "max",
+   "max"
+  ],
+  "mismatches": {
+   "missing_in_published": [],
+   "stoichiometry": [],
+   "bounds": [],
+   "gene_rule": [],
+   "objective": [],
+   "collapse_not_clean": []
+  },
+  "mismatch_counts": {
+   "missing_in_published": 0,
+   "stoichiometry": 0,
+   "bounds": 0,
+   "gene_rule": 0,
+   "objective": 0,
+   "collapse_not_clean": 0
+  },
+  "boundary_species_not_collapsed": [],
+  "growth_tests": [
+   {
+    "test": "published bounds",
+    "published": 17.920307643913606,
+    "view": 17.920307643913606,
+    "equal": true
+   },
+   {
+    "test": "every boundary reaction open (-1000, 1000)",
+    "published": 17.92030764391387,
+    "view": 17.92030764391387,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Sodium L-Lactate",
+    "published": 0.27882112144217586,
+    "view": 0.27882112144217586,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Sodium pyruvate",
+    "published": 0.24894742985909435,
+    "view": 0.24894742985909435,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Sodium propionate",
+    "published": 0.3089199576599384,
+    "view": 0.3089199576599384,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: N-Acetyl-D-Glucosamine",
+    "published": 0.8102182714558062,
+    "view": 0.8102182714558062,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Adenosine",
+    "published": -3.669727898738599e-15,
+    "view": -3.669727898738599e-15,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Uridine",
+    "published": 0.5514959538078915,
+    "view": 0.5514959538078915,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Inosine",
+    "published": 7.783094283674043e-16,
+    "view": 7.783094283674043e-16,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Cytidine",
+    "published": 0.5568339631475723,
+    "view": 0.5568339631475723,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Sodium D,L-Lactate",
+    "published": 0.5576422428843966,
+    "view": 0.5576422428843966,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Glutamine",
+    "published": 0.46245396407134953,
+    "view": 0.46245396407134953,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Isoleucine",
+    "published": 0.0,
+    "view": 0.0,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: casamino acids",
+    "published": 2.7682899738164704,
+    "view": 2.7682899738164704,
+    "equal": true
+   },
+   {
+    "test": "random medium 0",
+    "published": 7.833544494693978,
+    "view": 7.833544494693978,
+    "equal": true
+   },
+   {
+    "test": "random medium 1",
+    "published": 16.727778818638765,
+    "view": 16.727778818638765,
+    "equal": true
+   },
+   {
+    "test": "random medium 2",
+    "published": 3.330347122086515,
+    "view": 3.330347122086515,
+    "equal": true
+   },
+   {
+    "test": "random medium 3",
+    "published": 15.850572892310867,
+    "view": 15.850572892310867,
+    "equal": true
+   },
+   {
+    "test": "random medium 4",
+    "published": 11.169020901131306,
+    "view": 11.169020901131306,
+    "equal": true
+   },
+   {
+    "test": "random medium 5",
+    "published": 10.018459907835602,
+    "view": 10.018459907835602,
+    "equal": true
+   },
+   {
+    "test": "random medium 6",
+    "published": 13.912704730535847,
+    "view": 13.912704730535847,
+    "equal": true
+   },
+   {
+    "test": "random medium 7",
+    "published": 3.3455557637273183,
+    "view": 3.3455557637273183,
+    "equal": true
+   },
+   {
+    "test": "random medium 8",
+    "published": 3.3455557637275017,
+    "view": 3.3455557637275017,
+    "equal": true
+   },
+   {
+    "test": "random medium 9",
+    "published": 1.6727778816961247,
+    "view": 1.6727778816961247,
+    "equal": true
+   },
+   {
+    "test": "random medium 10",
+    "published": 11.278598295802997,
+    "view": 11.278598295802997,
+    "equal": true
+   },
+   {
+    "test": "random medium 11",
+    "published": 1.6651735613361376,
+    "view": 1.6651735613361376,
+    "equal": true
+   },
+   {
+    "test": "random medium 12",
+    "published": 8.533052321374683,
+    "view": 8.533052321374683,
+    "equal": true
+   },
+   {
+    "test": "random medium 13",
+    "published": 16.727778818618496,
+    "view": 16.727778818618496,
+    "equal": true
+   },
+   {
+    "test": "random medium 14",
+    "published": 14.317415029982717,
+    "view": 14.317415029982717,
+    "equal": true
+   },
+   {
+    "test": "random medium 15",
+    "published": 17.688537095704145,
+    "view": 17.688537095704145,
+    "equal": true
+   },
+   {
+    "test": "random medium 16",
+    "published": 1.6727778818433108,
+    "view": 1.6727778818433108,
+    "equal": true
+   },
+   {
+    "test": "random medium 17",
+    "published": 7.909129500687598,
+    "view": 7.909129500687598,
+    "equal": true
+   },
+   {
+    "test": "random medium 18",
+    "published": 8.033557133099599,
+    "view": 8.033557133099599,
+    "equal": true
+   },
+   {
+    "test": "random medium 19",
+    "published": 7.913580996511138,
+    "view": 7.913580996511138,
+    "equal": true
+   },
+   {
+    "test": "random medium 20",
+    "published": 9.953126472117562,
+    "view": 9.953126472117562,
+    "equal": true
+   },
+   {
+    "test": "random medium 21",
+    "published": 5.933483362466217,
+    "view": 5.933483362466217,
+    "equal": true
+   },
+   {
+    "test": "random medium 22",
+    "published": 1.6651735610413958,
+    "view": 1.6651735610413958,
+    "equal": true
+   },
+   {
+    "test": "random medium 23",
+    "published": 1.672777881861527,
+    "view": 1.672777881861527,
+    "equal": true
+   },
+   {
+    "test": "random medium 24",
+    "published": 17.506821523124593,
+    "view": 17.506821523124593,
+    "equal": true
+   },
+   {
+    "test": "random medium 25",
+    "published": 2.1148913547750836,
+    "view": 2.1148913547750836,
+    "equal": true
+   },
+   {
+    "test": "random medium 26",
+    "published": 8.584093381536498,
+    "view": 8.584093381536498,
+    "equal": true
+   },
+   {
+    "test": "random medium 27",
+    "published": 15.786594231886916,
+    "view": 15.786594231886916,
+    "equal": true
+   },
+   {
+    "test": "random medium 28",
+    "published": 17.663753812378392,
+    "view": 17.663753812378392,
+    "equal": true
+   },
+   {
+    "test": "random medium 29",
+    "published": 16.727778818579434,
+    "view": 16.727778818579434,
+    "equal": true
+   }
+  ],
+  "growth_tests_all_equal": true,
+  "growth_tests_summary": {
+   "n": 44,
+   "n_equal": 44,
+   "n_positive_growth": 41
+  },
+  "single_gene_deletions": {
+   "condition": "Sodium L-Lactate",
+   "deletions": [
+    {
+     "gene": "SO4520",
+     "published": 0.2788211214421664,
+     "view": 0.2788211214421664,
+     "equal": true
+    },
+    {
+     "gene": "SO1108",
+     "published": 0.2788211214421669,
+     "view": 0.2788211214421669,
+     "equal": true
+    },
+    {
+     "gene": "SO1682",
+     "published": 0.2788211214421669,
+     "view": 0.2788211214421669,
+     "equal": true
+    },
+    {
+     "gene": "SO3863",
+     "published": 0.2788211214421669,
+     "view": 0.2788211214421669,
+     "equal": true
+    },
+    {
+     "gene": "SO3067",
+     "published": 9.610846845819717e-16,
+     "view": 9.610846845819717e-16,
+     "equal": true
+    },
+    {
+     "gene": "SO1962",
+     "published": 0.2788211214421672,
+     "view": 0.2788211214421672,
+     "equal": true
+    },
+    {
+     "gene": "SO4513",
+     "published": 0.2788211214421669,
+     "view": 0.2788211214421669,
+     "equal": true
+    },
+    {
+     "gene": "SO3613",
+     "published": 0.2788211214421669,
+     "view": 0.2788211214421669,
+     "equal": true
+    },
+    {
+     "gene": "SO4591",
+     "published": 0.2788211214417075,
+     "view": 0.2788211214417075,
+     "equal": true
+    },
+    {
+     "gene": "SO1523",
+     "published": 0.2788211214421731,
+     "view": 0.2788211214421731,
+     "equal": true
+    },
+    {
+     "gene": "SO3546",
+     "published": 0.278657396347098,
+     "view": 0.278657396347098,
+     "equal": true
+    },
+    {
+     "gene": "SO2406",
+     "published": 0.2788211214421667,
+     "view": 0.2788211214421667,
+     "equal": true
+    },
+    {
+     "gene": "SO3646",
+     "published": -4.968430919916333e-16,
+     "view": -4.968430919916333e-16,
+     "equal": true
+    },
+    {
+     "gene": "SO3079",
+     "published": 0.0,
+     "view": 0.0,
+     "equal": true
+    },
+    {
+     "gene": "SO1293",
+     "published": 0.27882112144216964,
+     "view": 0.27882112144216964,
+     "equal": true
+    },
+    {
+     "gene": "SO1324",
+     "published": 0.27882112144217114,
+     "view": 0.27882112144217114,
+     "equal": true
+    },
+    {
+     "gene": "SO3108",
+     "published": 0.27882112144217114,
+     "view": 0.27882112144217114,
+     "equal": true
+    },
+    {
+     "gene": "SO3780",
+     "published": 0.27882112144217114,
+     "view": 0.27882112144217114,
+     "equal": true
+    },
+    {
+     "gene": "SO3683",
+     "published": 0.27882112144217114,
+     "view": 0.27882112144217114,
+     "equal": true
+    },
+    {
+     "gene": "SO2073",
+     "published": -9.936442454438326e-16,
+     "view": -9.936442454438326e-16,
+     "equal": true
+    },
+    {
+     "gene": "SO1481",
+     "published": 0.2788211214421671,
+     "view": 0.2788211214421671,
+     "equal": true
+    },
+    {
+     "gene": "SO0468",
+     "published": 0.27882112144217114,
+     "view": 0.27882112144217114,
+     "equal": true
+    },
+    {
+     "gene": "SO2593",
+     "published": 0.27882112144217114,
+     "view": 0.27882112144217114,
+     "equal": true
+    },
+    {
+     "gene": "SO1521",
+     "published": 0.27882112144218024,
+     "view": 0.27882112144218024,
+     "equal": true
+    },
+    {
+     "gene": "SO0031",
+     "published": 0.27882112144218024,
+     "view": 0.27882112144218024,
+     "equal": true
+    },
+    {
+     "gene": "SO1641",
+     "published": 0.0,
+     "view": 0.0,
+     "equal": true
+    },
+    {
+     "gene": "SO4234",
+     "published": 0.0,
+     "view": 0.0,
+     "equal": true
+    },
+    {
+     "gene": "SO3652",
+     "published": 0.0,
+     "view": 0.0,
+     "equal": true
+    },
+    {
+     "gene": "SO3771",
+     "published": 0.27882112144216736,
+     "view": 0.27882112144216736,
+     "equal": true
+    },
+    {
+     "gene": "SO1792",
+     "published": 0.2782543065035993,
+     "view": 0.2782543065035993,
+     "equal": true
+    },
+    {
+     "gene": "SO4720",
+     "published": 0.27882112144212745,
+     "view": 0.27882112144212745,
+     "equal": true
+    },
+    {
+     "gene": "SO1233",
+     "published": 0.27882112144216,
+     "view": 0.27882112144216,
+     "equal": true
+    },
+    {
+     "gene": "SO1563",
+     "published": 0.27882112144216,
+     "view": 0.27882112144216,
+     "equal": true
+    },
+    {
+     "gene": "SO0933",
+     "published": -1.7304461907063518e-13,
+     "view": -1.7304461907063518e-13,
+     "equal": true
+    },
+    {
+     "gene": "SO1678",
+     "published": 0.2788211214421667,
+     "view": 0.2788211214421667,
+     "equal": true
+    },
+    {
+     "gene": "SO1724",
+     "published": 0.27882112144216,
+     "view": 0.27882112144216,
+     "equal": true
+    },
+    {
+     "gene": "SO0750",
+     "published": 0.27882112144216,
+     "view": 0.27882112144216,
+     "equal": true
+    },
+    {
+     "gene": "SO2012",
+     "published": 0.27882112144216,
+     "view": 0.27882112144216,
+     "equal": true
+    },
+    {
+     "gene": "SO2299",
+     "published": -5.4076443459573494e-15,
+     "view": -5.4076443459573494e-15,
+     "equal": true
+    },
+    {
+     "gene": "SO2055",
+     "published": 0.27882112144217014,
+     "view": 0.27882112144217014,
+     "equal": true
+    },
+    {
+     "gene": "SO4702",
+     "published": 0.27882112144216,
+     "view": 0.27882112144216,
+     "equal": true
+    },
+    {
+     "gene": "SO0196",
+     "published": 0.27882112144216,
+     "view": 0.27882112144216,
+     "equal": true
+    },
+    {
+     "gene": "SO1258",
+     "published": 0.27882112144216,
+     "view": 0.27882112144216,
+     "equal": true
+    },
+    {
+     "gene": "SO1171",
+     "published": 7.066168866862469e-11,
+     "view": 7.066168866862469e-11,
+     "equal": true
+    },
+    {
+     "gene": "SO1021",
+     "published": 0.23963107204371764,
+     "view": 0.23963107204371764,
+     "equal": true
+    },
+    {
+     "gene": "SO1145",
+     "published": 0.2788211214421406,
+     "view": 0.2788211214421406,
+     "equal": true
+    },
+    {
+     "gene": "SO2511",
+     "published": 0.2788211214421708,
+     "view": 0.2788211214421708,
+     "equal": true
+    },
+    {
+     "gene": "SO3555",
+     "published": 3.744861719433152e-15,
+     "view": 3.744861719433152e-15,
+     "equal": true
+    },
+    {
+     "gene": "SO0714",
+     "published": 0.2788211214421627,
+     "view": 0.2788211214421627,
+     "equal": true
+    },
+    {
+     "gene": "SO1642",
+     "published": -1.4343722638935006e-16,
+     "view": -1.4343722638935006e-16,
+     "equal": true
+    },
+    {
+     "gene": "SO2302",
+     "published": 0.0,
+     "view": 0.0,
+     "equal": true
+    },
+    {
+     "gene": "SO0314",
+     "published": 0.2788211214421664,
+     "view": 0.2788211214421664,
+     "equal": true
+    },
+    {
+     "gene": "SO3641",
+     "published": 0.2788211214421799,
+     "view": 0.2788211214421799,
+     "equal": true
+    },
+    {
+     "gene": "SO3019",
+     "published": 7.992801162326091e-16,
+     "view": 7.992801162326091e-16,
+     "equal": true
+    },
+    {
+     "gene": "SO4751",
+     "published": 0.034588074442970476,
+     "view": 0.034588074442970476,
+     "equal": true
+    },
+    {
+     "gene": "SO0432",
+     "published": 0.2788211214421505,
+     "view": 0.2788211214421505,
+     "equal": true
+    },
+    {
+     "gene": "SO4719",
+     "published": 0.2788211214421773,
+     "view": 0.2788211214421773,
+     "equal": true
+    },
+    {
+     "gene": "SO1218",
+     "published": 0.2788211214421773,
+     "view": 0.2788211214421773,
+     "equal": true
+    },
+    {
+     "gene": "SO4510",
+     "published": 0.2788211214421773,
+     "view": 0.2788211214421773,
+     "equal": true
+    },
+    {
+     "gene": "SO2416",
+     "published": 0.2788211214421773,
+     "view": 0.2788211214421773,
+     "equal": true
+    }
+   ]
+  },
+  "single_gene_deletions_all_equal": true
+ },
+ "iGD1575": {
+  "label": "iGD1575",
+  "n_reactions": [
+   2116,
+   1826
+  ],
+  "n_metabolites": [
+   1870,
+   1580
+  ],
+  "n_genes": [
+   1577,
+   1577
+  ],
+  "sbml_boundary_species": 291,
+  "collapsed_two_step_exchanges_verified": 290,
+  "collapsed_flipped": 21,
+  "published_reactions_unaccounted": [],
+  "published_metabolites_unaccounted": [],
+  "view_metabolites_not_in_published": [],
+  "genes_identical": true,
+  "objective_direction": [
+   "max",
+   "max"
+  ],
+  "mismatches": {
+   "missing_in_published": [],
+   "stoichiometry": [],
+   "bounds": [],
+   "gene_rule": [
+    {
+     "view": "rxn09310_c0",
+     "published": "rxn09310_c0",
+     "view_rule": "smb23463 and smb20617",
+     "published_rule_as_read": "",
+     "documented_repair": true
+    }
+   ],
+   "objective": [],
+   "collapse_not_clean": []
+  },
+  "mismatch_counts": {
+   "missing_in_published": 0,
+   "stoichiometry": 0,
+   "bounds": 0,
+   "gene_rule": 1,
+   "objective": 0,
+   "collapse_not_clean": 0
+  },
+  "boundary_species_not_collapsed": [
+   {
+    "id": "cpd01107_b",
+    "reactions": [
+     "Demand_cpd01107: cpd01107_b <=> cpd01107_c0 (-1000.0, 1000.0)",
+     "EX_cpd01107_b: cpd01107_b <=>  (-1000.0, 1000.0)",
+     "EX_cpd01107_e0: cpd01107_e0 <=> cpd01107_b (-1000.0, 1000.0)"
+    ]
+   }
+  ],
+  "growth_tests": [
+   {
+    "test": "published bounds",
+    "published": 328.7919323930079,
+    "view": 328.79193239299207,
+    "equal": true
+   },
+   {
+    "test": "every boundary reaction open (-1000, 1000)",
+    "published": 328.7919323930077,
+    "view": 328.79193239300776,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Glucose",
+    "published": 58.06112358116875,
+    "view": 58.06112358116906,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Fructose",
+    "published": 58.061123581168864,
+    "view": 58.061123581169035,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Arabinose",
+    "published": 57.5601099965477,
+    "view": 57.56010999654777,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Arabinose",
+    "published": 57.51071429102187,
+    "view": 57.510714291021905,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Maltose monohydrate",
+    "published": 58.816172222781255,
+    "view": 58.816172222781155,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Xylose",
+    "published": 57.955275640756824,
+    "view": 57.95527564075613,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Galactose",
+    "published": 57.948219111395055,
+    "view": 57.94821911139525,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Raffinose pentahydrate",
+    "published": 59.4583163946192,
+    "view": 59.458316394619814,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Rhamnose monohydrate",
+    "published": 57.94821911139483,
+    "view": 57.94821911139522,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Ribose",
+    "published": 57.95527564075628,
+    "view": 57.95527564075613,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Fucose",
+    "published": 57.51071429102167,
+    "view": 57.510714291021905,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Cellobiose",
+    "published": 58.81617222278126,
+    "view": 58.81617222278119,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Sodium L-Lactate",
+    "published": 57.570694790589016,
+    "view": 57.5706947905892,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Sodium D,L-Lactate",
+    "published": 57.57069479058911,
+    "view": 57.5706947905892,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Sodium pyruvate",
+    "published": 57.60597743739338,
+    "view": 57.605977437393484,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Sodium succinate dibasic hexahydrate",
+    "published": 57.510714291021394,
+    "view": 57.510714291021905,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: m-Inositol",
+    "published": 57.8353146416211,
+    "view": 57.83531464162134,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Glycerol",
+    "published": 57.62361876079544,
+    "view": 57.62361876079552,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Sorbitol",
+    "published": 57.94116258203403,
+    "view": 57.94116258203442,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Malic acid disodium salt monohydrate",
+    "published": 57.510714291021394,
+    "view": 57.510714291021905,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Trehalose dihydrate",
+    "published": 58.816172222780935,
+    "view": 58.81617222278119,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Histidine",
+    "published": 58.379706916111125,
+    "view": 58.37970691611139,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Lysine",
+    "published": 58.15038158929626,
+    "view": 58.150381589296565,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Glutamine",
+    "published": 57.63067529015631,
+    "view": 57.63067529015648,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Proline",
+    "published": 57.5953926433518,
+    "view": 57.595392643352184,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: L-Leucine",
+    "published": 58.149330198179456,
+    "view": 58.149330198179825,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: N-Acetyl-D-Glucosamine",
+    "published": 58.36808260836622,
+    "view": 58.36808260836639,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Glucosamine Hydrochloride",
+    "published": 58.1810845803032,
+    "view": 58.181084580303725,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Uridine",
+    "published": 57.51071429102201,
+    "view": 57.51071429102193,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Salicin",
+    "published": 57.510714291021664,
+    "view": 57.510714291022,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: Beta-Lactose",
+    "published": 58.70326775300721,
+    "view": 58.70326775300724,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-Mannose",
+    "published": 58.145801933499385,
+    "view": 58.14580193349905,
+    "equal": true
+   },
+   {
+    "test": "protocol medium, no completion: D-(-)-tagatose",
+    "published": 57.510714291022,
+    "view": 57.51071429102138,
+    "equal": true
+   },
+   {
+    "test": "random medium 0",
+    "published": 3.273556270336161e-15,
+    "view": -2.748981462986606e-12,
+    "equal": true
+   },
+   {
+    "test": "random medium 1",
+    "published": 83.64364918070255,
+    "view": 83.64364918070248,
+    "equal": true
+   },
+   {
+    "test": "random medium 2",
+    "published": 7.415547536326566,
+    "view": 7.415547536333118,
+    "equal": true
+   },
+   {
+    "test": "random medium 3",
+    "published": 8.364364918070232,
+    "view": 8.364364918070262,
+    "equal": true
+   },
+   {
+    "test": "random medium 4",
+    "published": 83.64364918070255,
+    "view": 83.64364918070264,
+    "equal": true
+   },
+   {
+    "test": "random medium 5",
+    "published": 8.364364918070253,
+    "view": 8.36436491807025,
+    "equal": true
+   },
+   {
+    "test": "random medium 6",
+    "published": 83.64364918069803,
+    "view": 83.64364918070117,
+    "equal": true
+   },
+   {
+    "test": "random medium 7",
+    "published": 8.364364918070612,
+    "view": 8.36436491807025,
+    "equal": true
+   },
+   {
+    "test": "random medium 8",
+    "published": -2.4348118080681016e-12,
+    "view": 0.0,
+    "equal": true
+   },
+   {
+    "test": "random medium 9",
+    "published": -1.7516557973034443e-12,
+    "view": -4.2971215406934974e-12,
+    "equal": true
+   },
+   {
+    "test": "random medium 10",
+    "published": 57.47049340657222,
+    "view": 57.470493406581035,
+    "equal": true
+   },
+   {
+    "test": "random medium 11",
+    "published": 8.364364918070148,
+    "view": 8.364364918077426,
+    "equal": true
+   },
+   {
+    "test": "random medium 12",
+    "published": 83.64364918070244,
+    "view": 83.64364918070252,
+    "equal": true
+   },
+   {
+    "test": "random medium 13",
+    "published": 245.42506934426314,
+    "view": 245.42506934426262,
+    "equal": true
+   },
+   {
+    "test": "random medium 14",
+    "published": 6.09107984070035e-12,
+    "view": -3.3901263257306735e-13,
+    "equal": true
+   },
+   {
+    "test": "random medium 15",
+    "published": 8.364364918070253,
+    "view": 8.36436491807025,
+    "equal": true
+   },
+   {
+    "test": "random medium 16",
+    "published": 318.40424444129013,
+    "view": 318.40424444125637,
+    "equal": true
+   },
+   {
+    "test": "random medium 17",
+    "published": 1.8538868840831535,
+    "view": 1.853886884082985,
+    "equal": true
+   },
+   {
+    "test": "random medium 18",
+    "published": 59.32438029066746,
+    "view": 59.32438029065044,
+    "equal": true
+   },
+   {
+    "test": "random medium 19",
+    "published": 40.78551144981652,
+    "view": 40.785511449826,
+    "equal": true
+   },
+   {
+    "test": "random medium 20",
+    "published": 7.872437264562705e-15,
+    "view": -9.052077147435709e-12,
+    "equal": true
+   },
+   {
+    "test": "random medium 21",
+    "published": -1.2363120437599252e-11,
+    "view": 1.3008984076420657e-11,
+    "equal": true
+   },
+   {
+    "test": "random medium 22",
+    "published": 24.100529493083947,
+    "view": 24.100529493023775,
+    "equal": true
+   },
+   {
+    "test": "random medium 23",
+    "published": 313.2473033663167,
+    "view": 313.2473033662099,
+    "equal": true
+   },
+   {
+    "test": "random medium 24",
+    "published": 2.3590961184341674e-14,
+    "view": -3.088928068243189e-12,
+    "equal": true
+   },
+   {
+    "test": "random medium 25",
+    "published": 0.0,
+    "view": 2.1533454011677537e-12,
+    "equal": true
+   },
+   {
+    "test": "random medium 26",
+    "published": 236.67486636784997,
+    "view": 236.6748663678495,
+    "equal": true
+   },
+   {
+    "test": "random medium 27",
+    "published": -1.4649301923541385e-13,
+    "view": 4.647589499185149e-12,
+    "equal": true
+   },
+   {
+    "test": "random medium 28",
+    "published": 5.56166065225551,
+    "view": 5.561660652262839,
+    "equal": true
+   },
+   {
+    "test": "random medium 29",
+    "published": 299.9376966710377,
+    "view": 299.9376966710371,
+    "equal": true
+   }
+  ],
+  "growth_tests_all_equal": true,
+  "growth_tests_summary": {
+   "n": 65,
+   "n_equal": 65,
+   "n_positive_growth": 56
+  },
+  "single_gene_deletions": {
+   "condition": "D-Glucose",
+   "deletions": [
+    {
+     "gene": "smb20444",
+     "published": 58.06112358116906,
+     "view": 58.06112358116904,
+     "equal": true
+    },
+    {
+     "gene": "smb20590",
+     "published": 58.0611235811687,
+     "view": 58.06112358116837,
+     "equal": true
+    },
+    {
+     "gene": "smb20903",
+     "published": 58.0611235811687,
+     "view": 58.06112358116837,
+     "equal": true
+    },
+    {
+     "gene": "smc02169",
+     "published": 58.0611235811687,
+     "view": 58.06112358116837,
+     "equal": true
+    },
+    {
+     "gene": "smc00493",
+     "published": 7.761567304124144e-12,
+     "view": 0.0,
+     "equal": true
+    },
+    {
+     "gene": "smc04305",
+     "published": 58.06112358116978,
+     "view": 58.06112358116897,
+     "equal": true
+    },
+    {
+     "gene": "smc01814",
+     "published": 58.061123581168644,
+     "view": 58.061123581168594,
+     "equal": true
+    },
+    {
+     "gene": "smc00090",
+     "published": 58.061123581168644,
+     "view": 58.061123581168594,
+     "equal": true
+    },
+    {
+     "gene": "smb21096",
+     "published": 58.061123581168644,
+     "view": 58.061123581168594,
+     "equal": true
+    },
+    {
+     "gene": "smc02482",
+     "published": 2.745753283285021,
+     "view": 2.7457532832224563,
+     "equal": true
+    },
+    {
+     "gene": "smc02677",
+     "published": 58.06112358116672,
+     "view": 58.061123581166385,
+     "equal": true
+    },
+    {
+     "gene": "smc02516",
+     "published": 58.061123581168694,
+     "view": 58.06112358116851,
+     "equal": true
+    },
+    {
+     "gene": "smb20326",
+     "published": 58.061123581168694,
+     "view": 58.06112358116851,
+     "equal": true
+    },
+    {
+     "gene": "sma0007",
+     "published": 58.061123581168694,
+     "view": 58.06112358116851,
+     "equal": true
+    },
+    {
+     "gene": "smc01914",
+     "published": 58.061123581168694,
+     "view": 58.06112358116851,
+     "equal": true
+    },
+    {
+     "gene": "smc02158",
+     "published": 58.061123581168694,
+     "view": 58.06112358116851,
+     "equal": true
+    },
+    {
+     "gene": "smb20986",
+     "published": 58.061123581168694,
+     "view": 58.06112358116851,
+     "equal": true
+    },
+    {
+     "gene": "smb21690",
+     "published": 0.0,
+     "view": -2.0773095039885745e-14,
+     "equal": true
+    },
+    {
+     "gene": "smc04153",
+     "published": 58.06112358116883,
+     "view": 58.06112358116833,
+     "equal": true
+    },
+    {
+     "gene": "sma0110",
+     "published": 58.06112358116914,
+     "view": 58.061123581168374,
+     "equal": true
+    },
+    {
+     "gene": "sma0765",
+     "published": 58.06112358116914,
+     "view": 58.061123581168374,
+     "equal": true
+    },
+    {
+     "gene": "smb20578",
+     "published": 58.06112358116914,
+     "view": 58.061123581168374,
+     "equal": true
+    },
+    {
+     "gene": "smc00571",
+     "published": 58.034350614661044,
+     "view": 58.03435061465997,
+     "equal": true
+    },
+    {
+     "gene": "smc03793",
+     "published": 56.08193072579713,
+     "view": 56.08193072579673,
+     "equal": true
+    },
+    {
+     "gene": "smb20200",
+     "published": 58.06112358116936,
+     "view": 58.06112358116877,
+     "equal": true
+    },
+    {
+     "gene": "smb21342",
+     "published": 58.06112358116862,
+     "view": 58.0611235811685,
+     "equal": true
+    },
+    {
+     "gene": "smc03795",
+     "published": -6.753931115034406e-11,
+     "view": 2.203088381861908e-11,
+     "equal": true
+    },
+    {
+     "gene": "smc04393",
+     "published": 58.061123581161304,
+     "view": 58.061123581167344,
+     "equal": true
+    },
+    {
+     "gene": "smb21429",
+     "published": 58.0611235811686,
+     "view": 58.06112358116841,
+     "equal": true
+    },
+    {
+     "gene": "smb20661",
+     "published": 58.0611235811686,
+     "view": 58.06112358116841,
+     "equal": true
+    },
+    {
+     "gene": "smc00725",
+     "published": 58.0611235811686,
+     "view": 58.06112358116841,
+     "equal": true
+    },
+    {
+     "gene": "smc03963",
+     "published": 58.0611235811686,
+     "view": 58.06112358116841,
+     "equal": true
+    },
+    {
+     "gene": "sma1965",
+     "published": 58.0611235811686,
+     "view": 58.06112358116841,
+     "equal": true
+    },
+    {
+     "gene": "smc01303",
+     "published": 6.981014971024616e-13,
+     "view": 4.9412722822069465e-12,
+     "equal": true
+    },
+    {
+     "gene": "smc01046",
+     "published": 58.06112358116897,
+     "view": 58.06112358116764,
+     "equal": true
+    },
+    {
+     "gene": "smc03941",
+     "published": 58.061123581168886,
+     "view": 58.061123581168495,
+     "equal": true
+    },
+    {
+     "gene": "smc01867",
+     "published": 3.179599802707672e-14,
+     "view": 5.14002772126037e-12,
+     "equal": true
+    },
+    {
+     "gene": "smb20985",
+     "published": 58.06112358116949,
+     "view": 58.061123581168,
+     "equal": true
+    },
+    {
+     "gene": "smc03204",
+     "published": 58.061123581168815,
+     "view": 58.06112358116846,
+     "equal": true
+    },
+    {
+     "gene": "smc04151",
+     "published": 58.061123581168815,
+     "view": 58.06112358116846,
+     "equal": true
+    },
+    {
+     "gene": "smb20282",
+     "published": 58.061123581168815,
+     "view": 58.06112358116846,
+     "equal": true
+    },
+    {
+     "gene": "smc04085",
+     "published": 58.061123581168694,
+     "view": 58.06112358116832,
+     "equal": true
+    },
+    {
+     "gene": "smc01290",
+     "published": 2.990414878955392e-13,
+     "view": 3.644551499953498e-11,
+     "equal": true
+    },
+    {
+     "gene": "sma2075",
+     "published": 58.06112358116878,
+     "view": 58.0611235811683,
+     "equal": true
+    },
+    {
+     "gene": "sma1046",
+     "published": 58.06112358116862,
+     "view": 58.06112358116835,
+     "equal": true
+    },
+    {
+     "gene": "smb21256",
+     "published": 58.06112358116862,
+     "view": 58.06112358116835,
+     "equal": true
+    },
+    {
+     "gene": "smc00588",
+     "published": 58.06112358116862,
+     "view": 58.06112358116835,
+     "equal": true
+    },
+    {
+     "gene": "sma0391",
+     "published": 58.06112358116862,
+     "view": 58.06112358116835,
+     "equal": true
+    },
+    {
+     "gene": "smc04460",
+     "published": 58.06112358116856,
+     "view": 58.06112358116869,
+     "equal": true
+    },
+    {
+     "gene": "sma1371",
+     "published": 58.06112358116856,
+     "view": 58.06112358116869,
+     "equal": true
+    },
+    {
+     "gene": "sma1731",
+     "published": 58.06112358116856,
+     "view": 58.06112358116869,
+     "equal": true
+    },
+    {
+     "gene": "smc02276",
+     "published": 58.06112358116856,
+     "view": 58.06112358116869,
+     "equal": true
+    },
+    {
+     "gene": "smc01934",
+     "published": -3.8205278227348587e-13,
+     "view": -2.963460698743049e-12,
+     "equal": true
+    },
+    {
+     "gene": "smc01035",
+     "published": 58.061123581168935,
+     "view": 58.061123581139896,
+     "equal": true
+    },
+    {
+     "gene": "smc01006",
+     "published": 58.061123581168054,
+     "view": 58.06112358116856,
+     "equal": true
+    },
+    {
+     "gene": "smc02885",
+     "published": 58.061123581168054,
+     "view": 58.06112358116856,
+     "equal": true
+    },
+    {
+     "gene": "smb21326",
+     "published": 58.061123581168054,
+     "view": 58.06112358116856,
+     "equal": true
+    },
+    {
+     "gene": "smb20057",
+     "published": 58.061123581168054,
+     "view": 58.06112358116856,
+     "equal": true
+    },
+    {
+     "gene": "smc02268",
+     "published": 58.061123581168054,
+     "view": 58.06112358116856,
+     "equal": true
+    },
+    {
+     "gene": "smc00568",
+     "published": 6.411938125384535e-13,
+     "view": -2.0151638092061953e-12,
+     "equal": true
+    }
+   ]
+  },
+  "single_gene_deletions_all_equal": true,
+  "published_notes_vs_cobrapy_rules": {
+   "reactions_with_notes": 1825,
+   "gene_set_differences": [
+    {
+     "reaction": "rxn09310_c0",
+     "notes": "(smb23463 and smb20617",
+     "cobra_rule": ""
+    }
+   ],
+   "n_genes_read": 1577,
+   "genes_not_shaped_like_sm_locus_tags": [
+    "Spontaneous",
+    "Unknown"
+   ],
+   "genes_in_no_reaction": [
+    "smb20617",
+    "smb23463"
+   ]
+  }
+ }
+}

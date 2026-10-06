@@ -75,6 +75,9 @@ def main() -> None:
     ap.add_argument("--n-boot", type=int, default=1000)
     args = ap.parse_args()
     report = {"note": "post hoc and descriptive; development organisms and the E. coli control are not held out",
+              "notes": ["share_of_gap_closed is exploratory (not in docs/studies/transfer-v1-curated-references-plan.md): "
+                        "a ratio of differences whose intervals include zero",
+                        "entries whose card says exploratory=true used a medium supplement (protocol deviation)"],
               "organisms": {}}
     for org_dir in sorted(glob.glob(os.path.join(REF, "*"))):
         if not os.path.isdir(org_dir):
@@ -88,9 +91,21 @@ def main() -> None:
             card = json.load(open(os.path.join(ref_dir, "card.json")))
             own = card["results"]["gene_level_conditions_where_wt_grows"]
             entry = {"reference": label, "coverage": {label: coverage(ref)},
-                     "own_mcc": {label: own.get("mcc", {}).get("point")}}
+                     "own_mcc": {label: own.get("mcc", {}).get("point")},
+                     "exploratory": bool(card["protocol"].get("exploratory", False)),
+                     "medium_supplement": card["protocol"].get("medium_supplement", {}),
+                     "conditions_reference_grows": [c for c, w in zip(ref["conditions"], ref["wt_growth"])
+                                                    if np.isfinite(w) and w >= ref["params"]["growth_threshold"]]}
             arm_dirs = {name: os.path.join(RES, "development", org, arm) for name, arm in ARMS}
-            if all(os.path.exists(os.path.join(d, "card.json")) for d in arm_dirs.values()):
+            have_arms = all(os.path.exists(os.path.join(d, "card.json")) for d in arm_dirs.values())
+            if have_arms and coverage(ref)["n_conditions_grows"] == 0:
+                for name, d in arm_dirs.items():
+                    r = load_run(d)
+                    entry["coverage"][name] = coverage(r)
+                    c = json.load(open(os.path.join(d, "card.json")))
+                    entry["own_mcc"][name] = c["results"]["gene_level_conditions_where_wt_grows"].get("mcc", {}).get("point")
+                entry["gene_level"] = "not computed: the reference model grows in none of the mapped conditions"
+            elif have_arms:
                 arms = {name: load_run(d) for name, d in arm_dirs.items()}
                 for name, r in arms.items():
                     entry["coverage"][name] = coverage(r)
@@ -128,6 +143,7 @@ def main() -> None:
                 ok_o = np.isfinite(sim_o) & np.isfinite(fit_o)
                 imp = ok_o & (sim_o < st)
                 entry["curated_only_genes"] = {"n_genes": len(only), "n_conditions": len(cols),
+                                               "conditions": [ref["conditions"][j] for j in cols],
                                                "important_calls": int(imp.sum()),
                                                "important_calls_confirmed": int((imp & (fit_o <= ft)).sum())}
                 # Why models do not grow: conditions without growth that lack an exchange reaction for the carbon source.

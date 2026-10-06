@@ -1,0 +1,151 @@
+{
+ "provenance_at_6cabc1e": {
+  "commit_time": "2026-09-05T07:24:46+00:00",
+  "rows": {
+   "Keio": "reference organism; Bernstein et al. 2023 regression test (their copy is from 2022; this is current)",
+   "Btheta": "gut commensal; in AGORA2 and with a curated model (iAH991); 519 experiments",
+   "Putida": "curated BiGG model iJN1463; 314 experiments; ChatGEM's organism",
+   "MR1": "curated model iSO783; 176 experiments",
+   "SynE": "curated BiGG model iJB785 (photoautotroph); 129 experiments",
+   "Smeli": "curated model iGD1575; 90 experiments",
+   "DvH": "curated model iJF744; 757 experiments"
+  },
+  "changed_since": []
+ },
+ "development_organisms": [
+  "Btheta",
+  "MR1",
+  "Putida",
+  "Smeli"
+ ],
+ "commits": [
+  {
+   "hash": "260b92f",
+   "time": "2026-10-06T10:53:09+00:00",
+   "subject": "Paper 1: plan for scoring the curated models outside BiGG (iSO783, iGD1575, iAH991), written before scoring; models downloaded and checksummed; identifier translation (relabelling only, equivalence-checked)"
+  },
+  {
+   "hash": "bfc8817",
+   "time": "2026-10-06T10:03:43+00:00",
+   "subject": "Paper 1: wording of the hand-curated comparison corrected after an independent check (no ceiling claim; similarity within noise; mappable-condition denominators; circularity and BiGG scope disclosed); error overlap and gap causes computed; check report saved"
+  },
+  {
+   "hash": "855acd3",
+   "time": "2026-10-06T09:26:53+00:00",
+   "subject": "Paper 1: curated-model availability stated precisely (BiGG has P. putida and M. tuberculosis models)"
+  },
+  {
+   "hash": "5c6d198",
+   "time": "2026-10-06T09:18:56+00:00",
+   "subject": "Paper 1: hand-curated reference comparison (iJN1463, iML1515) scored with the transfer protocol; coverage across organisms; exact times moved to Supplementary Table S1; Figure 1 without clock times"
+  },
+  {
+   "hash": "d59680e",
+   "time": "2026-10-06T08:38:16+00:00",
+   "subject": "Paper 1: abstract rewritten with Tim (baseline MCC, two rounds, plain wording); frozen -> locked throughout; time order moved from Results to Methods; Figure 1 relabelled"
+  },
+  {
+   "hash": "c1edc65",
+   "time": "2026-10-06T07:31:07+00:00",
+   "subject": "Handover: v0.4 verification and open checks"
+  }
+ ],
+ "plan_commit_files": " 16 files changed, 206740 insertions(+), 4 deletions(-)",
+ "last_commit_touching": {
+  "docs/studies/transfer-v1-curated-references-plan.md": "260b92f 2026-10-06T10:53:09+00:00",
+  "scripts/translate_curated_model.py": "260b92f 2026-10-06T10:53:09+00:00",
+  "scripts/score_reference_model.py": "260b92f 2026-10-06T10:53:09+00:00",
+  "scripts/compare_reference_models.py": "bfc8817 2026-10-06T10:03:43+00:00",
+  "gembench/protocols/carbon_fitness_generic.py": "e4193ad 2026-09-06T11:12:59+01:00",
+  "gembench/checks.py": "e4193ad 2026-09-06T11:12:59+01:00",
+  "data/reference/fitness_browser_media_bigg.tsv": "931776b 2026-09-05T20:42:52+00:00",
+  "data/reference/fitness_browser_carbon_sources_bigg.tsv": "95639a0 2026-09-05T12:36:55+00:00"
+ },
+ "mtimes_utc": [
+  [
+   "2026-10-06T10:32:41.152+00:00",
+   "models/curated/iSO783/MODEL1507180036_url.xml"
+  ],
+  [
+   "2026-10-06T10:42:50.969+00:00",
+   "models/curated/iGD1575/41467_2016_BFncomms12219_MOESM594_ESM.zip"
+  ],
+  [
+   "2026-10-06T10:42:55.924+00:00",
+   "models/curated/iGD1575/ncomms12219-s7.xml"
+  ],
+  [
+   "2026-10-06T10:51:22.363+00:00",
+   "scripts/translate_curated_model.py"
+  ],
+  [
+   "2026-10-06T10:51:22.367+00:00",
+   "data/reference/namespace/curated_model_id_overrides.tsv"
+  ],
+  [
+   "2026-10-06T10:51:29.134+00:00",
+   "models/curated/iGD1575/iGD1575_bigg_view.xml.gz"
+  ],
+  [
+   "2026-10-06T10:51:49.870+00:00",
+   "models/curated/iSO783/iSO783_bigg_view.xml.gz"
+  ],
+  [
+   "2026-10-06T10:52:08.826+00:00",
+   "scripts/score_reference_model.py"
+  ],
+  [
+   "2026-10-06T10:52:48.982+00:00",
+   "docs/studies/transfer-v1-curated-references-plan.md"
+  ],
+  [
+   "2026-10-06T10:53:22.054+00:00",
+   "results/transfer_v1/reference_models/Smeli/iGD1575"
+  ],
+  [
+   "2026-10-06T10:53:35.299+00:00",
+   "results/transfer_v1/reference_models/MR1/iSO783/card.json"
+  ],
+  [
+   "2026-10-06T10:53:35.302+00:00",
+   "results/transfer_v1/reference_models/MR1/iSO783/matrices.npz"
+  ],
+  [
+   "2026-10-06T10:56:03.562+00:00",
+   "results/transfer_v1/reference_models/comparison.json"
+  ]
+ ],
+ "card_created": "2026-10-06T10:53:35Z",
+ "iGD1575_results_dir_contents": [],
+ "iGD1575_logs": [],
+ "uncommitted": [
+  " M results/transfer_v1/reference_models/comparison.json",
+  "?? models/curated/iAH991/",
+  "?? results/transfer_v1/reference_models/MR1/",
+  "?? results/transfer_v1/reference_models/independent_check_curated/",
+  "?? scripts/rebuild_iAH991_from_pdf.py"
+ ],
+ "plan_sha256": {
+  "iSO783 xml": [
+   "2d4d60b9522bfe9d329ca614949e3af016ecf3a635d6df667ae8f9a1075d56ee",
+   "2d4d60b9522bfe9d329ca614949e3af016ecf3a635d6df667ae8f9a1075d56ee"
+  ],
+  "iGD1575 zip": [
+   "1f01e9c7b0d5f03d690b53e1b3e2bb028656cd0e11daf94a6fe78381660fcb1b",
+   "1f01e9c7b0d5f03d690b53e1b3e2bb028656cd0e11daf94a6fe78381660fcb1b"
+  ],
+  "iGD1575 xml": [
+   "49a0b6e1d7a675f3fe6bc245772557d5fc4d2d58c579455832a2a9926d021894",
+   "49a0b6e1d7a675f3fe6bc245772557d5fc4d2d58c579455832a2a9926d021894"
+  ],
+  "iSO783 bigg view (card)": [
+   "67dafd323dcd0d6e08cf79fc9c29634d91afd1ba5d5f70b8131e5d9c9f431cf7",
+   "67dafd323dcd0d6e08cf79fc9c29634d91afd1ba5d5f70b8131e5d9c9f431cf7"
+  ]
+ },
+ "plan_sha256_all_match": true,
+ "plan_text_regex_hits": {
+  "MODEL1507180036_url.xml": "2d4d60b9522bfe9d329ca614949e3af016ecf3a635d6df667ae8f9a1075d56ee",
+  "41467_2016_BFncomms12219_MOESM594_ESM.zip": "1f01e9c7b0d5f03d690b53e1b3e2bb028656cd0e11daf94a6fe78381660fcb1b"
+ }
+}

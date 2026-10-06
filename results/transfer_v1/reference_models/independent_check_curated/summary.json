@@ -1,0 +1,707 @@
+{
+ "rows": [
+  {
+   "quantity": "iSO783 own MCC",
+   "reported": 0.5473133138976899,
+   "reproduced": 0.5473133138976899,
+   "corrected_gene_map": 0.5459974788756303,
+   "match": true
+  },
+  {
+   "quantity": "iSO783 genes scored",
+   "reported": 560,
+   "reproduced": 560,
+   "corrected_gene_map": 570,
+   "match": true
+  },
+  {
+   "quantity": "B0 own MCC",
+   "reported": 0.4699120128786607,
+   "reproduced": 0.4699120128786607,
+   "corrected_gene_map": 0.4699120128786607,
+   "match": true
+  },
+  {
+   "quantity": "U' own MCC",
+   "reported": 0.4871326735717379,
+   "reproduced": 0.4871326735717379,
+   "corrected_gene_map": 0.4871326735717379,
+   "match": true
+  },
+  {
+   "quantity": "M own MCC",
+   "reported": 0.47852167019017006,
+   "reproduced": 0.47852167019017006,
+   "corrected_gene_map": 0.47852167019017006,
+   "match": true
+  },
+  {
+   "quantity": "iSO783 coverage (grows / mapped)",
+   "reported": "9/12",
+   "reproduced": "9/12",
+   "corrected_gene_map": "9/12",
+   "match": true
+  },
+  {
+   "quantity": "B0 coverage (grows / mapped)",
+   "reported": "8/12",
+   "reproduced": "8/12",
+   "corrected_gene_map": "8/12",
+   "match": true
+  },
+  {
+   "quantity": "U' coverage (grows / mapped)",
+   "reported": "9/12",
+   "reproduced": "9/12",
+   "corrected_gene_map": "9/12",
+   "match": true
+  },
+  {
+   "quantity": "M coverage (grows / mapped)",
+   "reported": "9/12",
+   "reproduced": "9/12",
+   "corrected_gene_map": "9/12",
+   "match": true
+  },
+  {
+   "quantity": "four-way union genes",
+   "reported": 839,
+   "reproduced": 839,
+   "corrected_gene_map": 843,
+   "match": true
+  },
+  {
+   "quantity": "four-way conditions",
+   "reported": 7,
+   "reproduced": 7,
+   "corrected_gene_map": 7,
+   "match": true
+  },
+  {
+   "quantity": "four-way MCC B0",
+   "reported": 0.47127117950700464,
+   "reproduced": 0.47127117950700464,
+   "corrected_gene_map": 0.4707920548439193,
+   "match": true
+  },
+  {
+   "quantity": "four-way MCC U'",
+   "reported": 0.49251794474324223,
+   "reproduced": 0.49251794474324223,
+   "corrected_gene_map": 0.49200854075345696,
+   "match": true
+  },
+  {
+   "quantity": "four-way MCC M",
+   "reported": 0.4831198433222228,
+   "reproduced": 0.4831198433222228,
+   "corrected_gene_map": 0.4826300598421346,
+   "match": true
+  },
+  {
+   "quantity": "four-way MCC iSO783",
+   "reported": 0.5273463407972131,
+   "reproduced": 0.5273463407972131,
+   "corrected_gene_map": 0.5337142216064343,
+   "match": true
+  },
+  {
+   "quantity": "share of gap closed U' (not in plan)",
+   "reported": 0.3788979781311406,
+   "reproduced": 0.3788979781311406,
+   "corrected_gene_map": 0.33718619369250774,
+   "match": true
+  },
+  {
+   "quantity": "share of gap closed M (not in plan)",
+   "reported": 0.21129968318587972,
+   "reproduced": 0.21129968318587972,
+   "corrected_gene_map": 0.18813727510203315,
+   "match": true
+  },
+  {
+   "quantity": "common genes (B0)",
+   "reported": 434,
+   "reproduced": 434,
+   "corrected_gene_map": 440,
+   "match": true
+  },
+  {
+   "quantity": "common conditions (B0)",
+   "reported": 7,
+   "reproduced": 7,
+   "corrected_gene_map": 7,
+   "match": true
+  },
+  {
+   "quantity": "common MCC arm B0",
+   "reported": 0.47543301769446544,
+   "reproduced": 0.47543301769446544,
+   "corrected_gene_map": 0.47681223715151994,
+   "match": true
+  },
+  {
+   "quantity": "common MCC iSO783 vs B0",
+   "reported": 0.5477123745781802,
+   "reproduced": 0.5477123745781802,
+   "corrected_gene_map": 0.5466626592307081,
+   "match": true
+  },
+  {
+   "quantity": "common curated - B0",
+   "reported": 0.07227935688371478,
+   "reproduced": 0.07227935688371478,
+   "corrected_gene_map": 0.06985042207918818,
+   "match": true,
+   "reported_ci95": [
+    -0.013657562835895554,
+    0.15284265180192694
+   ],
+   "reproduced_ci95_seed0": [
+    -0.013657562835895554,
+    0.15284265180192694
+   ],
+   "corrected_ci95_seed0": [
+    -0.013424241552145758,
+    0.14912264158740368
+   ]
+  },
+  {
+   "quantity": "union curated - B0",
+   "reported": 0.05607516129020845,
+   "reproduced": 0.05607516129020845,
+   "corrected_gene_map": 0.06292216676251505,
+   "match": true,
+   "reported_ci95": [
+    -0.018885052117781118,
+    0.13168203972503112
+   ],
+   "reproduced_ci95_seed0": [
+    -0.018885052117781118,
+    0.13168203972503112
+   ],
+   "corrected_ci95_seed0": [
+    -0.003620681094075666,
+    0.13342460457799765
+   ]
+  },
+  {
+   "quantity": "common genes (U')",
+   "reported": 434,
+   "reproduced": 434,
+   "corrected_gene_map": 440,
+   "match": true
+  },
+  {
+   "quantity": "common conditions (U')",
+   "reported": 8,
+   "reproduced": 8,
+   "corrected_gene_map": 8,
+   "match": true
+  },
+  {
+   "quantity": "common MCC arm U'",
+   "reported": 0.4950574544540179,
+   "reproduced": 0.4950574544540179,
+   "corrected_gene_map": 0.4961128913199595,
+   "match": true
+  },
+  {
+   "quantity": "common MCC iSO783 vs U'",
+   "reported": 0.5481563679736646,
+   "reproduced": 0.5481563679736646,
+   "corrected_gene_map": 0.5473893641830931,
+   "match": true
+  },
+  {
+   "quantity": "common curated - U'",
+   "reported": 0.05309891351964674,
+   "reproduced": 0.05309891351964674,
+   "corrected_gene_map": 0.05127647286313364,
+   "match": true,
+   "reported_ci95": [
+    -0.022456259618258232,
+    0.13038142270148628
+   ],
+   "reproduced_ci95_seed0": [
+    -0.022456259618258232,
+    0.13038142270148628
+   ],
+   "corrected_ci95_seed0": [
+    -0.02783575708961776,
+    0.12548377098304395
+   ]
+  },
+  {
+   "quantity": "union curated - U'",
+   "reported": 0.04273210543891465,
+   "reproduced": 0.04273210543891465,
+   "corrected_gene_map": 0.04939522991568557,
+   "match": true,
+   "reported_ci95": [
+    -0.025133800886631235,
+    0.11483100413348793
+   ],
+   "reproduced_ci95_seed0": [
+    -0.025133800886631235,
+    0.11483100413348793
+   ],
+   "corrected_ci95_seed0": [
+    -0.011096123988227088,
+    0.11243457898487853
+   ]
+  },
+  {
+   "quantity": "common genes (M)",
+   "reported": 437,
+   "reproduced": 437,
+   "corrected_gene_map": 443,
+   "match": true
+  },
+  {
+   "quantity": "common conditions (M)",
+   "reported": 8,
+   "reproduced": 8,
+   "corrected_gene_map": 8,
+   "match": true
+  },
+  {
+   "quantity": "common MCC arm M",
+   "reported": 0.4830488898676954,
+   "reproduced": 0.4830488898676954,
+   "corrected_gene_map": 0.4840628792675862,
+   "match": true
+  },
+  {
+   "quantity": "common MCC iSO783 vs M",
+   "reported": 0.5489563106035112,
+   "reproduced": 0.5489563106035112,
+   "corrected_gene_map": 0.5481829141534912,
+   "match": true
+  },
+  {
+   "quantity": "common curated - M",
+   "reported": 0.06590742073581585,
+   "reproduced": 0.06590742073581585,
+   "corrected_gene_map": 0.06412003488590501,
+   "match": true,
+   "reported_ci95": [
+    -0.01147218715790062,
+    0.14480831628851443
+   ],
+   "reproduced_ci95_seed0": [
+    -0.01147218715790062,
+    0.14480831628851443
+   ],
+   "corrected_ci95_seed0": [
+    -0.010300943173359903,
+    0.1433498125633666
+   ]
+  },
+  {
+   "quantity": "union curated - M",
+   "reported": 0.051107954238409525,
+   "reproduced": 0.051107954238409525,
+   "corrected_gene_map": 0.05775141422047242,
+   "match": true,
+   "reported_ci95": [
+    -0.01410959038466833,
+    0.12150519877525907
+   ],
+   "reproduced_ci95_seed0": [
+    -0.01410959038466833,
+    0.12150519877525907
+   ],
+   "corrected_ci95_seed0": [
+    -0.0023930640392876594,
+    0.1252844758742536
+   ]
+  },
+  {
+   "quantity": "error overlap n_genes",
+   "reported": 434,
+   "reproduced": 434,
+   "corrected_gene_map": 440,
+   "match": true
+  },
+  {
+   "quantity": "error overlap n_conditions",
+   "reported": 8,
+   "reproduced": 8,
+   "corrected_gene_map": 8,
+   "match": true
+  },
+  {
+   "quantity": "error overlap n_observations",
+   "reported": 3472,
+   "reproduced": 3472,
+   "corrected_gene_map": 3520,
+   "match": true
+  },
+  {
+   "quantity": "error overlap wrong_Uprime",
+   "reported": 569,
+   "reproduced": 569,
+   "corrected_gene_map": 580,
+   "match": true
+  },
+  {
+   "quantity": "error overlap wrong_curated",
+   "reported": 531,
+   "reproduced": 531,
+   "corrected_gene_map": 542,
+   "match": true
+  },
+  {
+   "quantity": "error overlap wrong_both",
+   "reported": 372,
+   "reproduced": 372,
+   "corrected_gene_map": 383,
+   "match": true
+  },
+  {
+   "quantity": "error overlap expected_both_if_independent",
+   "reported": 87.02160138248848,
+   "reproduced": 87.02160138248848,
+   "corrected_gene_map": 89.30681818181819,
+   "match": true
+  },
+  {
+   "quantity": "curated-only n_genes",
+   "reported": 123,
+   "reproduced": 123,
+   "corrected_gene_map": 127,
+   "match": true
+  },
+  {
+   "quantity": "curated-only n_conditions",
+   "reported": 8,
+   "reproduced": 8,
+   "corrected_gene_map": 8,
+   "match": true
+  },
+  {
+   "quantity": "curated-only important_calls",
+   "reported": 43,
+   "reproduced": 43,
+   "corrected_gene_map": 43,
+   "match": true
+  },
+  {
+   "quantity": "curated-only important_calls_confirmed",
+   "reported": 16,
+   "reproduced": 16,
+   "corrected_gene_map": 16,
+   "match": true
+  }
+ ],
+ "all_reported_numbers_reproduced": true,
+ "seed_sensitivity": {
+  "as_scored": {
+   "B0": {
+    "common": {
+     "point": 0.07227935688371478,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.015013330970772343,
+      -0.0010157505095979066
+     ],
+     "upper_min_max": [
+      0.148427399962237,
+      0.16165600270362318
+     ],
+     "seeds_excluding_zero": 0
+    },
+    "union": {
+     "point": 0.05607516129020845,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.022215692462009416,
+      -0.008721109233100552
+     ],
+     "upper_min_max": [
+      0.12307475561225732,
+      0.13543955676405278
+     ],
+     "seeds_excluding_zero": 0
+    }
+   },
+   "U'": {
+    "common": {
+     "point": 0.05309891351964674,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.029468547478809358,
+      -0.01718443169505303
+     ],
+     "upper_min_max": [
+      0.12355613644076643,
+      0.14027781198940578
+     ],
+     "seeds_excluding_zero": 0
+    },
+    "union": {
+     "point": 0.04273210543891465,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.030364389830915058,
+      -0.018924560114760108
+     ],
+     "upper_min_max": [
+      0.10568877891367891,
+      0.11734280105801181
+     ],
+     "seeds_excluding_zero": 0
+    }
+   },
+   "M": {
+    "common": {
+     "point": 0.06590742073581585,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.01862113348865175,
+      -0.006168344751498378
+     ],
+     "upper_min_max": [
+      0.13927931040947,
+      0.15224934533149112
+     ],
+     "seeds_excluding_zero": 0
+    },
+    "union": {
+     "point": 0.051107954238409525,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.02148725050983816,
+      -0.010643324972462639
+     ],
+     "upper_min_max": [
+      0.11341027290612486,
+      0.12390914713672248
+     ],
+     "seeds_excluding_zero": 0
+    }
+   }
+  },
+  "corrected_gene_map": {
+   "B0": {
+    "common": {
+     "point": 0.06985042207918818,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.015736936676113995,
+      -0.0028830454281749793
+     ],
+     "upper_min_max": [
+      0.14365399770194506,
+      0.16047381843422526
+     ],
+     "seeds_excluding_zero": 0
+    },
+    "union": {
+     "point": 0.06292216676251505,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.012176968437092714,
+      0.0031457690663082285
+     ],
+     "upper_min_max": [
+      0.12536115875297643,
+      0.13981008129185646
+     ],
+     "seeds_excluding_zero": 2
+    }
+   },
+   "U'": {
+    "common": {
+     "point": 0.05127647286313364,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.03014378560464375,
+      -0.018731454205474295
+     ],
+     "upper_min_max": [
+      0.12291794133420078,
+      0.13802904072644007
+     ],
+     "seeds_excluding_zero": 0
+    },
+    "union": {
+     "point": 0.04939522991568557,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.02308682557058038,
+      -0.008841817086474104
+     ],
+     "upper_min_max": [
+      0.11012450463579442,
+      0.12299205228156793
+     ],
+     "seeds_excluding_zero": 0
+    }
+   },
+   "M": {
+    "common": {
+     "point": 0.06412003488590501,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.020235206020411834,
+      -0.00539471913675888
+     ],
+     "upper_min_max": [
+      0.1341772884800201,
+      0.15031463343252918
+     ],
+     "seeds_excluding_zero": 0
+    },
+    "union": {
+     "point": 0.05775141422047242,
+     "n_seeds": 50,
+     "lower_min_max": [
+      -0.016204579099992303,
+      -6.725806194705153e-05
+     ],
+     "upper_min_max": [
+      0.11672892255248615,
+      0.12818975958617101
+     ],
+     "seeds_excluding_zero": 0
+    }
+   }
+  }
+ },
+ "translation": {
+  "iSO783": {
+   "mismatch_counts": {
+    "missing_in_published": 0,
+    "stoichiometry": 0,
+    "bounds": 0,
+    "gene_rule": 0,
+    "objective": 0,
+    "collapse_not_clean": 0
+   },
+   "collapsed_two_step_exchanges_verified": 0,
+   "collapsed_flipped": 0,
+   "growth_tests_summary": {
+    "n": 44,
+    "n_equal": 44,
+    "n_positive_growth": 41
+   },
+   "single_gene_deletions_all_equal": true,
+   "genes_identical": true
+  },
+  "iGD1575": {
+   "mismatch_counts": {
+    "missing_in_published": 0,
+    "stoichiometry": 0,
+    "bounds": 0,
+    "gene_rule": 1,
+    "objective": 0,
+    "collapse_not_clean": 0
+   },
+   "collapsed_two_step_exchanges_verified": 290,
+   "collapsed_flipped": 21,
+   "growth_tests_summary": {
+    "n": 65,
+    "n_equal": 65,
+    "n_positive_growth": 56
+   },
+   "single_gene_deletions_all_equal": true,
+   "genes_identical": true
+  }
+ },
+ "gate": {
+  "iGD1575_published_as_read": {
+   "atp": 1000.0,
+   "nadh": 125.0000000000005,
+   "nadph": 125.00000000000007,
+   "q8h2": 125.00000000000027,
+   "h_e (no-periplasm analogue)": 1000.0
+  },
+  "iSO783_view_after_medium_completion": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": null,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "iGD1575_view_after_medium_completion": {
+   "atp": 1000.0,
+   "nadh": 124.99999999999991,
+   "nadph": 124.9999999999999,
+   "q8h2": 125.00000000000016,
+   "h_p": null,
+   "h_e (no-periplasm analogue)": 1000.0
+  },
+  "Smeli_B0_after_medium_completion": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "Smeli_UNQ_after_medium_completion": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "Smeli_M_after_medium_completion": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "MR1_B0_after_medium_completion": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "MR1_UNQ_after_medium_completion": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "MR1_M_after_medium_completion": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  }
+ },
+ "gene_mapping": {
+  "iSO783": {
+   "model_genes": 783,
+   "mapped": 769,
+   "mapped_with_fitness_data": 560
+  },
+  "iGD1575": {
+   "model_genes": 1577,
+   "mapped": 1574,
+   "mapped_with_fitness_data": 1206
+  }
+ },
+ "rescore_reproduction": {
+  "n_genes": 560,
+  "same_gene_set_as_saved": true,
+  "conditions_same_order": true,
+  "max_abs_diff_wt": 3.8957725934096743e-13,
+  "max_abs_diff_sim": 3.3472330462913646e-09,
+  "binary_calls_differ": 0,
+  "max_abs_diff_fitness": 0.0
+ }
+}

@@ -1,0 +1,6008 @@
+{
+ "modelseed_compounds_tsv": {
+  "url": "https://raw.githubusercontent.com/ModelSEED/ModelSEEDDatabase/194ac8afe48f8a606c0dd07ba3c7af10c02ba2fd/Biochemistry/compounds.tsv",
+  "sha256": "ff17c9ce623d6feebb94554df484e29c05ed5aa291cf1f6f01ba6736a782709f"
+ },
+ "iSO783": {
+  "medium": "ShewMM_noCarbon",
+  "n_conditions_mapped": 12,
+  "items": [
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "h2o",
+    "published_name": "h2o[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00001",
+      "name": "H2O",
+      "formula": "H2O",
+      "charge": "0",
+      "bigg_aliases": [
+       "h2o",
+       "oh1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h2o",
+     "name": "H2O H2O",
+     "formula": "H2O"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "h2o",
+    "published_name": "h2o[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00001",
+      "name": "H2O",
+      "formula": "H2O",
+      "charge": "0",
+      "bigg_aliases": [
+       "h2o",
+       "oh1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h2o",
+     "name": "H2O H2O",
+     "formula": "H2O"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "h",
+    "published_name": "h[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00067",
+      "name": "H+",
+      "formula": "H",
+      "charge": "1",
+      "bigg_aliases": [
+       "h"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h",
+     "name": "H+",
+     "formula": "H"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "h",
+    "published_name": "h[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00067",
+      "name": "H+",
+      "formula": "H",
+      "charge": "1",
+      "bigg_aliases": [
+       "h"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h",
+     "name": "H+",
+     "formula": "H"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "co2",
+    "published_name": "co2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00011",
+      "name": "CO2",
+      "formula": "CO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "co2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "co2",
+     "name": "CO2 CO2",
+     "formula": "CO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "co2",
+    "published_name": "co2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00011",
+      "name": "CO2",
+      "formula": "CO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "co2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "co2",
+     "name": "CO2 CO2",
+     "formula": "CO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "pi",
+    "published_name": "pi[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00009",
+      "name": "Phosphate",
+      "formula": "HO4P",
+      "charge": "-2",
+      "bigg_aliases": [
+       "pi"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pi",
+     "name": "Phosphate",
+     "formula": "HO4P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "pi",
+    "published_name": "pi[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00009",
+      "name": "Phosphate",
+      "formula": "HO4P",
+      "charge": "-2",
+      "bigg_aliases": [
+       "pi"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pi",
+     "name": "Phosphate",
+     "formula": "HO4P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "nh4",
+    "published_name": "nh4[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00013",
+      "name": "NH3",
+      "formula": "H4N",
+      "charge": "1",
+      "bigg_aliases": [
+       "nh3",
+       "nh4"
+      ]
+     },
+     {
+      "cpd": "cpd19013",
+      "name": "NH4+",
+      "formula": "H4N",
+      "charge": "1",
+      "bigg_aliases": [
+       "nh3",
+       "nh4"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nh4",
+     "name": "Ammonium",
+     "formula": "H4N"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "nh4",
+    "published_name": "nh4[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00013",
+      "name": "NH3",
+      "formula": "H4N",
+      "charge": "1",
+      "bigg_aliases": [
+       "nh3",
+       "nh4"
+      ]
+     },
+     {
+      "cpd": "cpd19013",
+      "name": "NH4+",
+      "formula": "H4N",
+      "charge": "1",
+      "bigg_aliases": [
+       "nh3",
+       "nh4"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nh4",
+     "name": "Ammonium",
+     "formula": "H4N"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "so4",
+    "published_name": "so4[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00048",
+      "name": "Sulfate",
+      "formula": "O4S",
+      "charge": "-2",
+      "bigg_aliases": [
+       "so4"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "so4",
+     "name": "Sulfate",
+     "formula": "O4S"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "so4",
+    "published_name": "so4[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00048",
+      "name": "Sulfate",
+      "formula": "O4S",
+      "charge": "-2",
+      "bigg_aliases": [
+       "so4"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "so4",
+     "name": "Sulfate",
+     "formula": "O4S"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "k",
+    "published_name": "k[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00205",
+      "name": "K+",
+      "formula": "K",
+      "charge": "1",
+      "bigg_aliases": [
+       "k"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "k",
+     "name": "Potassium",
+     "formula": "K"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "k",
+    "published_name": "k[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00205",
+      "name": "K+",
+      "formula": "K",
+      "charge": "1",
+      "bigg_aliases": [
+       "k"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "k",
+     "name": "Potassium",
+     "formula": "K"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "na1",
+    "published_name": "na1[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00971",
+      "name": "Na+",
+      "formula": "Na",
+      "charge": "1",
+      "bigg_aliases": [
+       "na1"
+      ]
+     },
+     {
+      "cpd": "cpd16174",
+      "name": "Na(2+)",
+      "formula": "Na",
+      "charge": "1",
+      "bigg_aliases": [
+       "na1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "na1",
+     "name": "Sodium",
+     "formula": "Na"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "na1",
+    "published_name": "na1[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00971",
+      "name": "Na+",
+      "formula": "Na",
+      "charge": "1",
+      "bigg_aliases": [
+       "na1"
+      ]
+     },
+     {
+      "cpd": "cpd16174",
+      "name": "Na(2+)",
+      "formula": "Na",
+      "charge": "1",
+      "bigg_aliases": [
+       "na1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "na1",
+     "name": "Sodium",
+     "formula": "Na"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cl",
+    "published_name": "cl[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00099",
+      "name": "Cl-",
+      "formula": "Cl",
+      "charge": "-1",
+      "bigg_aliases": [
+       "cl"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cl",
+     "name": "Chloride",
+     "formula": "Cl"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cl",
+    "published_name": "cl[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00099",
+      "name": "Cl-",
+      "formula": "Cl",
+      "charge": "-1",
+      "bigg_aliases": [
+       "cl"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cl",
+     "name": "Chloride",
+     "formula": "Cl"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "mg2",
+    "published_name": "mg2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00254",
+      "name": "Mg",
+      "formula": "Mg",
+      "charge": "2",
+      "bigg_aliases": [
+       "mg2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mg2",
+     "name": "Magnesium",
+     "formula": "Mg"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "mg2",
+    "published_name": "mg2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00254",
+      "name": "Mg",
+      "formula": "Mg",
+      "charge": "2",
+      "bigg_aliases": [
+       "mg2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mg2",
+     "name": "Magnesium",
+     "formula": "Mg"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "ca2",
+    "published_name": "ca2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd29674",
+      "name": "Calcium",
+      "formula": "Ca",
+      "charge": "2",
+      "bigg_aliases": [
+       "ca2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ca2",
+     "name": "Calcium",
+     "formula": "Ca"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "ca2",
+    "published_name": "ca2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd29674",
+      "name": "Calcium",
+      "formula": "Ca",
+      "charge": "2",
+      "bigg_aliases": [
+       "ca2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ca2",
+     "name": "Calcium",
+     "formula": "Ca"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "fe2",
+    "published_name": "fe2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd10515",
+      "name": "Fe+2",
+      "formula": "Fe",
+      "charge": "2",
+      "bigg_aliases": [
+       "fe2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fe2",
+     "name": "Fe2+ mitochondria",
+     "formula": "Fe"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "fe2",
+    "published_name": "fe2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd10515",
+      "name": "Fe+2",
+      "formula": "Fe",
+      "charge": "2",
+      "bigg_aliases": [
+       "fe2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fe2",
+     "name": "Fe2+ mitochondria",
+     "formula": "Fe"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "fe3",
+    "published_name": "fe3[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd10516",
+      "name": "Fe+3",
+      "formula": "Fe",
+      "charge": "3",
+      "bigg_aliases": [
+       "fe3"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fe3",
+     "name": "Iron (Fe3+)",
+     "formula": "Fe"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "fe3",
+    "published_name": "fe3[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd10516",
+      "name": "Fe+3",
+      "formula": "Fe",
+      "charge": "3",
+      "bigg_aliases": [
+       "fe3"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fe3",
+     "name": "Iron (Fe3+)",
+     "formula": "Fe"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "mn2",
+    "published_name": "mn2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00030",
+      "name": "Mn2+",
+      "formula": "Mn",
+      "charge": "2",
+      "bigg_aliases": [
+       "mn2"
+      ]
+     },
+     {
+      "cpd": "cpd20863",
+      "name": "Manganese(2+)",
+      "formula": "Mn",
+      "charge": "2",
+      "bigg_aliases": [
+       "mn2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mn2",
+     "name": "Manganese",
+     "formula": "Mn"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cu2",
+    "published_name": "cu2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00058",
+      "name": "Cu2+",
+      "formula": "Cu",
+      "charge": "2",
+      "bigg_aliases": [
+       "cu2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cu2",
+     "name": "Copper",
+     "formula": "Cu"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cu2",
+    "published_name": "cu2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00058",
+      "name": "Cu2+",
+      "formula": "Cu",
+      "charge": "2",
+      "bigg_aliases": [
+       "cu2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cu2",
+     "name": "Copper",
+     "formula": "Cu"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cobalt2",
+    "published_name": "cobalt2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00149",
+      "name": "Co2+",
+      "formula": "Co",
+      "charge": "2",
+      "bigg_aliases": [
+       "cobalt2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cobalt2",
+     "name": "Co2+",
+     "formula": "Co"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cobalt2",
+    "published_name": "cobalt2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00149",
+      "name": "Co2+",
+      "formula": "Co",
+      "charge": "2",
+      "bigg_aliases": [
+       "cobalt2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cobalt2",
+     "name": "Co2+",
+     "formula": "Co"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "mobd",
+    "published_name": "mobd[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd11574",
+      "name": "Molybdate",
+      "formula": "MoO4",
+      "charge": "-2",
+      "bigg_aliases": [
+       "mobd"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mobd",
+     "name": "Molybdate",
+     "formula": "MoO4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "mobd",
+    "published_name": "mobd[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd11574",
+      "name": "Molybdate",
+      "formula": "MoO4",
+      "charge": "-2",
+      "bigg_aliases": [
+       "mobd"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mobd",
+     "name": "Molybdate",
+     "formula": "MoO4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "ni2",
+    "published_name": "ni2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00244",
+      "name": "Ni2+",
+      "formula": "Ni",
+      "charge": "2",
+      "bigg_aliases": [
+       "ni2"
+      ]
+     },
+     {
+      "cpd": "cpd20862",
+      "name": "Nickel(2+)",
+      "formula": "Ni",
+      "charge": "2",
+      "bigg_aliases": [
+       "ni2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ni2",
+     "name": "Nickel",
+     "formula": "Ni"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "ni2",
+    "published_name": "ni2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00244",
+      "name": "Ni2+",
+      "formula": "Ni",
+      "charge": "2",
+      "bigg_aliases": [
+       "ni2"
+      ]
+     },
+     {
+      "cpd": "cpd20862",
+      "name": "Nickel(2+)",
+      "formula": "Ni",
+      "charge": "2",
+      "bigg_aliases": [
+       "ni2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ni2",
+     "name": "Nickel",
+     "formula": "Ni"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "wo4",
+    "published_name": "wo4[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd15574",
+      "name": "tungstate",
+      "formula": "O4W",
+      "charge": "-2",
+      "bigg_aliases": [
+       "tungs"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "tungs",
+     "name": "Tungstate",
+     "formula": "O4W1"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "wo4",
+    "published_name": "wo4[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd15574",
+      "name": "tungstate",
+      "formula": "O4W",
+      "charge": "-2",
+      "bigg_aliases": [
+       "tungs"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "tungs",
+     "name": "Tungstate",
+     "formula": "O4W1"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "4abz",
+    "published_name": "4abz[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00443",
+      "name": "ABEE",
+      "formula": "C7H6NO2",
+      "charge": "-1",
+      "bigg_aliases": [
+       "4abz"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "4abz",
+     "name": "4-Aminobenzoate",
+     "formula": "C7H6NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "nac",
+    "published_name": "nac[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00218",
+      "name": "Niacin",
+      "formula": "C6H4NO2",
+      "charge": "-1",
+      "bigg_aliases": [
+       "nac"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nac",
+     "name": "Nicotinate",
+     "formula": "C6H4NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "ribflv",
+    "published_name": "ribflv[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00220",
+      "name": "Riboflavin",
+      "formula": "C17H19N4O6",
+      "charge": "-1",
+      "bigg_aliases": [
+       "ribflv"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ribflv",
+     "name": "Riboflavin C17H20N4O6",
+     "formula": "C17H22N4O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "thm",
+    "published_name": "thm[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00305",
+      "name": "Thiamin",
+      "formula": "C12H17N4OS",
+      "charge": "1",
+      "bigg_aliases": [
+       "thm"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "thm",
+     "name": "Thiamin",
+     "formula": "C12H17N4OS"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "thm",
+    "published_name": "thm[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00305",
+      "name": "Thiamin",
+      "formula": "C12H17N4OS",
+      "charge": "1",
+      "bigg_aliases": [
+       "thm"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "thm",
+     "name": "Thiamin",
+     "formula": "C12H17N4OS"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "pnto__R",
+    "published_name": "pnto-R[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00644",
+      "name": "PAN",
+      "formula": "C9H16NO5",
+      "charge": "-1",
+      "bigg_aliases": [
+       "pnto__R"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pnto__R",
+     "name": "(R)-Pantothenate",
+     "formula": "C9H16NO5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "btn",
+    "published_name": "btn[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00104",
+      "name": "BIOT",
+      "formula": "C10H15N2O3S",
+      "charge": "-1",
+      "bigg_aliases": [
+       "btn"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "btn",
+     "name": "Biotin",
+     "formula": "C10H15N2O3S"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cbl1",
+    "published_name": "cbl1[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00635",
+      "name": "Cbl",
+      "formula": "C62H88CoN13O14P",
+      "charge": "-1",
+      "bigg_aliases": [
+       "cbl1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cbl1",
+     "name": "Cob(I)alamin",
+     "formula": "C62H88CoN13O14P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cbl1",
+    "published_name": "cbl1[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00635",
+      "name": "Cbl",
+      "formula": "C62H88CoN13O14P",
+      "charge": "-1",
+      "bigg_aliases": [
+       "cbl1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cbl1",
+     "name": "Cob(I)alamin",
+     "formula": "C62H88CoN13O14P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cobamcoa",
+    "published_name": "cobamcoa[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00166",
+      "name": "Calomide",
+      "formula": "C72H100CoN18O17P",
+      "charge": "0",
+      "bigg_aliases": [
+       "adocbl"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "adocbl",
+     "name": "Adenosylcobalamin",
+     "formula": "C72H100CoN18O17P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "o2",
+    "published_name": "o2[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00007",
+      "name": "O2",
+      "formula": "O2",
+      "charge": "0",
+      "bigg_aliases": [
+       "o2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "o2",
+     "name": "O2 O2",
+     "formula": "O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "o2",
+    "published_name": "o2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00007",
+      "name": "O2",
+      "formula": "O2",
+      "charge": "0",
+      "bigg_aliases": [
+       "o2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "o2",
+     "name": "O2 O2",
+     "formula": "O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "acgam",
+    "published_name": "acgam[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00122",
+      "name": "N-Acetyl-D-glucosamine",
+      "formula": "C8H15NO6",
+      "charge": "0",
+      "bigg_aliases": [
+       "acgam"
+      ]
+     },
+     {
+      "cpd": "cpd27608",
+      "name": "N-acetyl-D-glucosamine",
+      "formula": "C8H15NO6",
+      "charge": "0",
+      "bigg_aliases": [
+       "acgam"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "acgam",
+     "name": "N-Acetyl-D-glucosamine",
+     "formula": "C8H15NO6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "adn",
+    "published_name": "adn[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00182",
+      "name": "Adenosine",
+      "formula": "C10H13N5O4",
+      "charge": "0",
+      "bigg_aliases": [
+       "adn"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "adn",
+     "name": "Adenosine",
+     "formula": "C10H13N5O4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "ala__L",
+    "published_name": "ala-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00035",
+      "name": "L-Alanine",
+      "formula": "C3H7NO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "ala__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ala__L",
+     "name": "L-Alanine",
+     "formula": "C3H7NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "arg__L",
+    "published_name": "arg-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00051",
+      "name": "L-Arginine",
+      "formula": "C6H15N4O2",
+      "charge": "1",
+      "bigg_aliases": [
+       "arg__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "arg__L",
+     "name": "L-Arginine",
+     "formula": "C6H15N4O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "asp__L",
+    "published_name": "asp-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00041",
+      "name": "L-Aspartate",
+      "formula": "C4H6NO4",
+      "charge": "-1",
+      "bigg_aliases": [
+       "asp__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "asp__L",
+     "name": "L-Aspartate",
+     "formula": "C4H6NO4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cys__L",
+    "published_name": "cys-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00084",
+      "name": "L-Cysteine",
+      "formula": "C3H7NO2S",
+      "charge": "0",
+      "bigg_aliases": [
+       "cys__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cys__L",
+     "name": "L-Cysteine",
+     "formula": "C3H7NO2S"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cytd",
+    "published_name": "cytd[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00367",
+      "name": "Cytidine",
+      "formula": "C9H13N3O5",
+      "charge": "0",
+      "bigg_aliases": [
+       "cytd"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cytd",
+     "name": "Cytidine",
+     "formula": "C9H13N3O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "gln__L",
+    "published_name": "gln-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00053",
+      "name": "L-Glutamine",
+      "formula": "C5H10N2O3",
+      "charge": "0",
+      "bigg_aliases": [
+       "gln__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "gln__L",
+     "name": "L-Glutamine",
+     "formula": "C5H10N2O3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "glu__L",
+    "published_name": "glu-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00023",
+      "name": "L-Glutamate",
+      "formula": "C5H8NO4",
+      "charge": "-1",
+      "bigg_aliases": [
+       "glu__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "glu__L",
+     "name": "L-Glutamate",
+     "formula": "C5H8NO4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "gly",
+    "published_name": "gly[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00033",
+      "name": "Glycine",
+      "formula": "C2H5NO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "gly"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "gly",
+     "name": "Glycine",
+     "formula": "C2H5NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "ile__L",
+    "published_name": "ile-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00322",
+      "name": "L-Isoleucine",
+      "formula": "C6H13NO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "ile__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ile__L",
+     "name": "L-Isoleucine",
+     "formula": "C6H13NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "ins",
+    "published_name": "ins[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00246",
+      "name": "Inosine",
+      "formula": "C10H12N4O5",
+      "charge": "0",
+      "bigg_aliases": [
+       "ins"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ins",
+     "name": "Inosine",
+     "formula": "C10H12N4O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "lac__D",
+    "published_name": "lac-D[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00221",
+      "name": "D-Lactate",
+      "formula": "C3H5O3",
+      "charge": "-1",
+      "bigg_aliases": [
+       "lac__D"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "lac__D",
+     "name": "D-Lactate",
+     "formula": "C3H5O3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "lac__L",
+    "published_name": "lac-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00159",
+      "name": "L-Lactate",
+      "formula": "C3H5O3",
+      "charge": "-1",
+      "bigg_aliases": [
+       "lac__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "lac__L",
+     "name": "L-Lactate",
+     "formula": "C3H5O3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "leu__L",
+    "published_name": "leu-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00107",
+      "name": "L-Leucine",
+      "formula": "C6H13NO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "leu__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "leu__L",
+     "name": "L-Leucine",
+     "formula": "C6H13NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "lys__L",
+    "published_name": "lys-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00039",
+      "name": "L-Lysine",
+      "formula": "C6H15N2O2",
+      "charge": "1",
+      "bigg_aliases": [
+       "lys__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "lys__L",
+     "name": "L-Lysine",
+     "formula": "C6H15N2O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "ppa",
+    "published_name": "ppa[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00141",
+      "name": "Propionate",
+      "formula": "C3H5O2",
+      "charge": "-1",
+      "bigg_aliases": [
+       "ppa"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ppa",
+     "name": "Propionate (n-C3:0)",
+     "formula": "C3H5O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "pyr",
+    "published_name": "pyr[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00020",
+      "name": "Pyruvate",
+      "formula": "C3H3O3",
+      "charge": "-1",
+      "bigg_aliases": [
+       "pyr"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pyr",
+     "name": "Pyruvate",
+     "formula": "C3H3O3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "ser__L",
+    "published_name": "ser-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00054",
+      "name": "L-Serine",
+      "formula": "C3H7NO3",
+      "charge": "0",
+      "bigg_aliases": [
+       "ser__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ser__L",
+     "name": "L-Serine",
+     "formula": "C3H7NO3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "thr__L",
+    "published_name": "thr-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00161",
+      "name": "L-Threonine",
+      "formula": "C4H9NO3",
+      "charge": "0",
+      "bigg_aliases": [
+       "thr__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "thr__L",
+     "name": "L-Threonine",
+     "formula": "C4H9NO3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "tyr__L",
+    "published_name": "tyr-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00069",
+      "name": "L-Tyrosine",
+      "formula": "C9H11NO3",
+      "charge": "0",
+      "bigg_aliases": [
+       "tyr__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "tyr__L",
+     "name": "L-Tyrosine",
+     "formula": "C9H11NO3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "uri",
+    "published_name": "uri[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00249",
+      "name": "Uridine",
+      "formula": "C9H12N2O6",
+      "charge": "0",
+      "bigg_aliases": [
+       "uri"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "uri",
+     "name": "Uridine",
+     "formula": "C9H12N2O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "val__L",
+    "published_name": "val-L[e]",
+    "modelseed": [
+     {
+      "cpd": "cpd00156",
+      "name": "L-Valine",
+      "formula": "C5H11NO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "val__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "val__L",
+     "name": "L-Valine",
+     "formula": "C5H11NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "atp",
+    "published_name": "atp[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00002",
+      "name": "ATP",
+      "formula": "C10H13N5O13P3",
+      "charge": "-3",
+      "bigg_aliases": [
+       "atp"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "atp",
+     "name": "ATP C10H12N5O13P3",
+     "formula": "C10H12N5O13P3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "adp",
+    "published_name": "adp[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00008",
+      "name": "ADP",
+      "formula": "C10H13N5O10P2",
+      "charge": "-2",
+      "bigg_aliases": [
+       "adp"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "adp",
+     "name": "ADP C10H12N5O10P2",
+     "formula": "C10H12N5O10P2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "pi",
+    "published_name": "pi[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00009",
+      "name": "Phosphate",
+      "formula": "HO4P",
+      "charge": "-2",
+      "bigg_aliases": [
+       "pi"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pi",
+     "name": "Phosphate",
+     "formula": "HO4P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "h",
+    "published_name": "h[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00067",
+      "name": "H+",
+      "formula": "H",
+      "charge": "1",
+      "bigg_aliases": [
+       "h"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h",
+     "name": "H+",
+     "formula": "H"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "h2o",
+    "published_name": "h2o[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00001",
+      "name": "H2O",
+      "formula": "H2O",
+      "charge": "0",
+      "bigg_aliases": [
+       "h2o",
+       "oh1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h2o",
+     "name": "H2O H2O",
+     "formula": "H2O"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "nadh",
+    "published_name": "nadh[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00004",
+      "name": "NADH",
+      "formula": "C21H27N7O14P2",
+      "charge": "-2",
+      "bigg_aliases": [
+       "nadh"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nadh",
+     "name": "Nicotinamide adenine dinucleotide - reduced",
+     "formula": "C21H27N7O14P2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "nad",
+    "published_name": "nad[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00003",
+      "name": "NAD",
+      "formula": "C21H26N7O14P2",
+      "charge": "-1",
+      "bigg_aliases": [
+       "nad"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nad",
+     "name": "Nicotinamide adenine dinucleotide",
+     "formula": "C21H26N7O14P2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "nadph",
+    "published_name": "nadph[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00005",
+      "name": "NADPH",
+      "formula": "C21H26N7O17P3",
+      "charge": "-4",
+      "bigg_aliases": [
+       "nadph"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nadph",
+     "name": "Nicotinamide adenine dinucleotide phosphate - reduced",
+     "formula": "C21H26N7O17P3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "nadp",
+    "published_name": "nadp[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd00006",
+      "name": "NADP",
+      "formula": "C21H25N7O17P3",
+      "charge": "-3",
+      "bigg_aliases": [
+       "nadp"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nadp",
+     "name": "Nicotinamide adenine dinucleotide phosphate",
+     "formula": "C21H25N7O17P3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "ubq8h2",
+    "published_name": "ubq8h2[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd15561",
+      "name": "Ubiquinol-8",
+      "formula": "C49H76O4",
+      "charge": "0",
+      "bigg_aliases": [
+       "q8",
+       "q8h2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "q8h2",
+     "name": "Ubiquinol-8",
+     "formula": "C49H76O4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "ubq8",
+    "published_name": "ubq8[c]",
+    "modelseed": [
+     {
+      "cpd": "cpd15560",
+      "name": "Ubiquinone-8",
+      "formula": "C49H74O4",
+      "charge": "0",
+      "bigg_aliases": [
+       "q8",
+       "q8h2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "q8",
+     "name": "Ubiquinone-8",
+     "formula": "C49H74O4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   }
+  ],
+  "absent": {
+   "zn2_e": {
+    "target_modelseed_compounds": [
+     "cpd00034"
+    ],
+    "bigg_name": "Zinc",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "sel_e": {
+    "target_modelseed_compounds": [
+     "cpd03396"
+    ],
+    "bigg_name": "Selenate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "slnt_e": {
+    "target_modelseed_compounds": [
+     "cpd03387"
+    ],
+    "bigg_name": "Selenite",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "pydxn_e": {
+    "target_modelseed_compounds": [
+     "cpd00263"
+    ],
+    "bigg_name": "Pyridoxine",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "4abz_e": {
+    "target_modelseed_compounds": [
+     "cpd00443"
+    ],
+    "bigg_name": "4-Aminobenzoate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "4abz_c",
+      "name": "4abz[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "ADCL",
+       "DHPS3"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "lipoate_e": {
+    "target_modelseed_compounds": [
+     "cpd00541"
+    ],
+    "bigg_name": "Lipoate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "nac_e": {
+    "target_modelseed_compounds": [
+     "cpd00218"
+    ],
+    "bigg_name": "Nicotinate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "nac_c",
+      "name": "nac[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "NCTPPRT",
+       "NNDMBRT"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "ribflv_e": {
+    "target_modelseed_compounds": [
+     "cpd00220"
+    ],
+    "bigg_name": "Riboflavin C17H20N4O6",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "ribflv_c",
+      "name": "ribflv[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "RBFSb",
+       "RBFK",
+       "NNDMBRT2"
+      ],
+      "n_reactions": 3,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "pnto__R_e": {
+    "target_modelseed_compounds": [
+     "cpd00644"
+    ],
+    "bigg_name": "(R)-Pantothenate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "pnto__R_c",
+      "name": "pnto-R[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "PANTS",
+       "PNTK"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "btn_e": {
+    "target_modelseed_compounds": [
+     "cpd00104"
+    ],
+    "bigg_name": "Biotin",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "btn_c",
+      "name": "btn[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "BTS2"
+      ],
+      "n_reactions": 1,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "fol_e": {
+    "target_modelseed_compounds": [
+     "cpd00393"
+    ],
+    "bigg_name": "Folate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "adocbl_e": {
+    "target_modelseed_compounds": [
+     "cpd00166"
+    ],
+    "bigg_name": "Adenosylcobalamin",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cobamcoa_c",
+      "name": "cobamcoa[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id"
+      ],
+      "reactions": [
+       "COBPS",
+       "CBLAT"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "asn__L_e": {
+    "target_modelseed_compounds": [
+     "cpd00132"
+    ],
+    "bigg_name": "L-Asparagine",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "asn__L_c",
+      "name": "asn-L[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "ASNTRS",
+       "ASNN",
+       "ASNS1"
+      ],
+      "n_reactions": 3,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "his__L_e": {
+    "target_modelseed_compounds": [
+     "cpd00119"
+    ],
+    "bigg_name": "L-Histidine",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "his__L_c",
+      "name": "his-L[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "HISD1",
+       "HISTRS",
+       "HISTD"
+      ],
+      "n_reactions": 3,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "met__L_e": {
+    "target_modelseed_compounds": [
+     "cpd00060"
+    ],
+    "bigg_name": "L-Methionine",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "met__L_c",
+      "name": "met-L[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "METAT",
+       "METTRS",
+       "CPPPGOAN",
+       "METS",
+       "UNK3",
+       "METGL",
+       "AHSERL"
+      ],
+      "n_reactions": 7,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "phe__L_e": {
+    "target_modelseed_compounds": [
+     "cpd00066"
+    ],
+    "bigg_name": "L-Phenylalanine",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "phe__L_c",
+      "name": "phe-L[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "PHEAL",
+       "PHETA1",
+       "PHE4MO",
+       "PHETRS"
+      ],
+      "n_reactions": 4,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "pro__L_e": {
+    "target_modelseed_compounds": [
+     "cpd00129"
+    ],
+    "bigg_name": "L-Proline",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "pro__L_c",
+      "name": "pro-L[c]",
+      "compartment": "c",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "same identifier stem"
+      ],
+      "reactions": [
+       "PRO1q",
+       "PROTRS",
+       "P5CR"
+      ],
+      "n_reactions": 3,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   }
+  },
+  "conditions_with_absent_exchange": [
+   {
+    "condition": "casamino acids",
+    "missing": [
+     "asn__L",
+     "his__L",
+     "met__L",
+     "phe__L",
+     "pro__L"
+    ]
+   }
+  ],
+  "all_renames": {
+   "counts": {
+    "same compound": 52
+   },
+   "not_confirmed": []
+  },
+  "identifiers_kept": {
+   "counts": {
+    "kept id is a BiGG alias of ModelSEED's compound for it": 610,
+    "kept id is NOT a BiGG alias of ModelSEED's compound": 49,
+    "no ModelSEED placement": 2
+   },
+   "disagreements": [
+    {
+     "id": "fa1ACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17011",
+       "name": "Iso-C14:0 ACP",
+       "formula": "C14H27OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "fa3ACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17012",
+       "name": "iso-C15:0 ACP",
+       "formula": "C15H29OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "fa6ACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17013",
+       "name": "Iso-C16:0 ACP",
+       "formula": "C16H31OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "fa11ACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17007",
+       "name": "Iso-C17:0 ACP",
+       "formula": "C17H33OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "pde_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17030",
+       "name": "pentadecenoate (n-C15:1)",
+       "formula": "C15H27O2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "pdeACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17031",
+       "name": "pentadecenoyl-ACP (C15:1ACP)",
+       "formula": "C15H27OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "hpde_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17020",
+       "name": "heptadecenoate (n-C17:1)",
+       "formula": "C17H31O2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "hpdeACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17021",
+       "name": "heptadecenoyl ACP (C17:1ACP)",
+       "formula": "C17H31OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "pdACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17029",
+       "name": "pentadecanoyl-ACP (n-C15:0ACP)",
+       "formula": "C15H29OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "hpdACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17018",
+       "name": "heptadecanoyl-ACP (n-C17:0ACP)",
+       "formula": "C17H33OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "fa13_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17008",
+       "name": "Iso-C13:0",
+       "formula": "C13H25O2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "fa13ACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17009",
+       "name": "Iso-C13:0 ACP",
+       "formula": "C13H25OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "mmqn7_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17027",
+       "name": "methylmenaquinone 7",
+       "formula": "C47H66O2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "mmql7_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17026",
+       "name": "methymenaquinol 7",
+       "formula": "C47H68O2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "fa7ACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17014",
+       "name": "Iso-C7:0 ACP",
+       "formula": "C7H13OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "fa8ACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17015",
+       "name": "Iso-C6:0 ACP",
+       "formula": "C6H11OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "fa14ACP_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17010",
+       "name": "Fatty Acid (n-C5:0 ACP)",
+       "formula": "C5H9OX",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "cobalt3_e",
+     "modelseed": [
+      {
+       "cpd": "cpd17005",
+       "name": "Co3+",
+       "formula": "Co",
+       "charge": "3",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "ckdo8n_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17004",
+       "name": "CMP-8-amino-3,8-dideoxy-D-manno-oct-2-ulosonic acid",
+       "formula": "C17H26N4O14P",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "cmac_c",
+     "modelseed": [
+      {
+       "cpd": "cpd02267",
+       "name": "Chloramphenicol 3-acetate",
+       "formula": "C13H14Cl2N2O6",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "Cr_LPAREN_OH_RPAREN_3_e",
+     "modelseed": [
+      {
+       "cpd": "cpd17003",
+       "name": "Cr(OH)3",
+       "formula": "H3CrO3",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "focytcc_c",
+     "modelseed": [
+      {
+       "cpd": "cpd00110",
+       "name": "Cytochrome c2+",
+       "formula": "C42H42FeN8O8R4S2",
+       "charge": "-2",
+       "bigg_aliases": [
+        "focytC",
+        "focytc",
+        "focytcc553"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "ficytcc_c",
+     "modelseed": [
+      {
+       "cpd": "cpd00109",
+       "name": "Cytochrome c3+",
+       "formula": "C42H42FeN8O8R4S2",
+       "charge": "-1",
+       "bigg_aliases": [
+        "ficytC",
+        "ficytc",
+        "ficytcc553"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "gly__glu__L_e",
+     "modelseed": [
+      {
+       "cpd": "cpd11592",
+       "name": "gly-glu-L",
+       "formula": "C7H11N2O5",
+       "charge": "-1",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "gly__glu__L_c",
+     "modelseed": [
+      {
+       "cpd": "cpd11592",
+       "name": "gly-glu-L",
+       "formula": "C7H11N2O5",
+       "charge": "-1",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "gly__asp__L_e",
+     "modelseed": [
+      {
+       "cpd": "cpd11589",
+       "name": "gly-asp-L",
+       "formula": "C6H9N2O5",
+       "charge": "-1",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "gly__asp__L_c",
+     "modelseed": [
+      {
+       "cpd": "cpd11589",
+       "name": "gly-asp-L",
+       "formula": "C6H9N2O5",
+       "charge": "-1",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "dna_Son_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17006",
+       "name": "DNA, Shewanella oneidensis MR-1",
+       "formula": "C977H1127N373O600P100",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "kdo8nlipid4_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17023",
+       "name": "Kdo8N-lipid IV(A)",
+       "formula": "C76H139N3O29P2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "kdo8nlipid4L_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17024",
+       "name": "Kdo8N-lipid IV(A) with laurate",
+       "formula": "C88H161N3O30P2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "kdo8nlipa_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17022",
+       "name": "Kdo8N-lipid (A)",
+       "formula": "C102H187N3O31P2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "adphep__D_COMMA_D_c",
+     "modelseed": [
+      {
+       "cpd": "cpd29671",
+       "name": "ADP-D-glycero-D-manno-heptose",
+       "formula": "C17H25N5O16P2",
+       "charge": "-2",
+       "bigg_aliases": [
+        "adphep_DD"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "mmalsa_c",
+     "modelseed": [
+      {
+       "cpd": "cpd19044",
+       "name": "(S)-Methylmalonate semialdehyde",
+       "formula": "C4H5O3",
+       "charge": "-1",
+       "bigg_aliases": [
+        "2mop",
+        "mmtsa"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "2h3opp_c",
+     "modelseed": [
+      {
+       "cpd": "cpd00843",
+       "name": "Tartronate semialdehyde",
+       "formula": "C3H3O4",
+       "charge": "-1",
+       "bigg_aliases": [
+        "2h3oppan"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "5678thh_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17001",
+       "name": "(6R)-6-(L-erythro-1,2-Dihydroxypropyl)-5,6,7,8-tetrahydro-4a-hydroypterin",
+       "formula": "C9H14N4O3",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "78dhp_c",
+     "modelseed": [
+      {
+       "cpd": "cpd00231",
+       "name": "Dihydrobiopterin",
+       "formula": "C9H13N5O3",
+       "charge": "0",
+       "bigg_aliases": [
+        "dhbpt"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "lps_SO_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17025",
+       "name": "lps (S. oneidensis MR-1)",
+       "formula": "C135H241N4O63P4",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "malylcoa_c",
+     "modelseed": [
+      {
+       "cpd": "cpd02662",
+       "name": "Malyl-CoA",
+       "formula": "C25H35N7O20P3S",
+       "charge": "-5",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "mn4o_e",
+     "modelseed": [
+      {
+       "cpd": "cpd17028",
+       "name": "Manganese(IV) oxide",
+       "formula": "MnO2",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "unknown1_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17036",
+       "name": "Unknown Product",
+       "formula": "C8H10N2O6",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "peptx_e",
+     "modelseed": [
+      {
+       "cpd": "cpd17032",
+       "name": "Peptidoglycan subunit crosslinked",
+       "formula": "C37H55N7O19",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "inoshp_e",
+     "modelseed": [
+      {
+       "cpd": "cpd00885",
+       "name": "Phytate",
+       "formula": "C6H6O24P6",
+       "charge": "-12",
+       "bigg_aliases": [
+        "minohp",
+        "ppmi1346p"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "protein_Son_aerobic_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17033",
+       "name": "protein for shewanella MR-1 (aerobic growth)",
+       "formula": "C47395H74290N13364O15024S364",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "rna_Son_c",
+     "modelseed": [
+      {
+       "cpd": "cpd17035",
+       "name": "RNA, Shewanella oneidensis MR-1",
+       "formula": "C950H1073N373O700P100",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "shcl_c",
+     "modelseed": [
+      {
+       "cpd": "cpd01620",
+       "name": "Precorrin 2",
+       "formula": "C42H41N4O16",
+       "charge": "-7",
+       "bigg_aliases": [
+        "dscl",
+        "pre2"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "slcys_c",
+     "modelseed": [
+      {
+       "cpd": "cpd01608",
+       "name": "L-Selenocysteine",
+       "formula": "C3H6NO5S2",
+       "charge": "-1",
+       "bigg_aliases": [
+        "scys__L",
+        "selcys"
+       ]
+      }
+     ]
+    },
+    {
+     "id": "uagnr_c",
+     "modelseed": [
+      {
+       "cpd": "cpd09739",
+       "name": "UDP-N-acetyl-D-galactosaminuronic acid",
+       "formula": "C17H22N3O18P2",
+       "charge": "-3",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "urnyl_e",
+     "modelseed": [
+      {
+       "cpd": "cpd17038",
+       "name": "Uranyl",
+       "formula": "O2U",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    },
+    {
+     "id": "urdio_e",
+     "modelseed": [
+      {
+       "cpd": "cpd17037",
+       "name": "Uranium dioxide",
+       "formula": "O2U",
+       "charge": "0",
+       "bigg_aliases": []
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "iGD1575": {
+  "medium": "RCH2_defined_noCarbon",
+  "n_conditions_mapped": 33,
+  "items": [
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00001",
+    "published_name": "H2O_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00001",
+      "name": "H2O",
+      "formula": "H2O",
+      "charge": "0",
+      "bigg_aliases": [
+       "h2o",
+       "oh1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h2o",
+     "name": "H2O H2O",
+     "formula": "H2O"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00001",
+    "published_name": "H2O_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00001",
+      "name": "H2O",
+      "formula": "H2O",
+      "charge": "0",
+      "bigg_aliases": [
+       "h2o",
+       "oh1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h2o",
+     "name": "H2O H2O",
+     "formula": "H2O"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00067",
+    "published_name": "H_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00067",
+      "name": "H+",
+      "formula": "H",
+      "charge": "1",
+      "bigg_aliases": [
+       "h"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h",
+     "name": "H+",
+     "formula": "H"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00067",
+    "published_name": "H_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00067",
+      "name": "H+",
+      "formula": "H",
+      "charge": "1",
+      "bigg_aliases": [
+       "h"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h",
+     "name": "H+",
+     "formula": "H"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00011",
+    "published_name": "CO2_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00011",
+      "name": "CO2",
+      "formula": "CO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "co2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "co2",
+     "name": "CO2 CO2",
+     "formula": "CO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00011",
+    "published_name": "CO2_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00011",
+      "name": "CO2",
+      "formula": "CO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "co2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "co2",
+     "name": "CO2 CO2",
+     "formula": "CO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00009",
+    "published_name": "Phosphate_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00009",
+      "name": "Phosphate",
+      "formula": "HO4P",
+      "charge": "-2",
+      "bigg_aliases": [
+       "pi"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pi",
+     "name": "Phosphate",
+     "formula": "HO4P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00009",
+    "published_name": "Phosphate_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00009",
+      "name": "Phosphate",
+      "formula": "HO4P",
+      "charge": "-2",
+      "bigg_aliases": [
+       "pi"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pi",
+     "name": "Phosphate",
+     "formula": "HO4P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00013",
+    "published_name": "NH3_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00013",
+      "name": "NH3",
+      "formula": "H4N",
+      "charge": "1",
+      "bigg_aliases": [
+       "nh3",
+       "nh4"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nh4",
+     "name": "Ammonium",
+     "formula": "H4N"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00013",
+    "published_name": "NH3_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00013",
+      "name": "NH3",
+      "formula": "H4N",
+      "charge": "1",
+      "bigg_aliases": [
+       "nh3",
+       "nh4"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nh4",
+     "name": "Ammonium",
+     "formula": "H4N"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00048",
+    "published_name": "Sulfate_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00048",
+      "name": "Sulfate",
+      "formula": "O4S",
+      "charge": "-2",
+      "bigg_aliases": [
+       "so4"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "so4",
+     "name": "Sulfate",
+     "formula": "O4S"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00048",
+    "published_name": "Sulfate_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00048",
+      "name": "Sulfate",
+      "formula": "O4S",
+      "charge": "-2",
+      "bigg_aliases": [
+       "so4"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "so4",
+     "name": "Sulfate",
+     "formula": "O4S"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00205",
+    "published_name": "K_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00205",
+      "name": "K+",
+      "formula": "K",
+      "charge": "1",
+      "bigg_aliases": [
+       "k"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "k",
+     "name": "Potassium",
+     "formula": "K"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00205",
+    "published_name": "K_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00205",
+      "name": "K+",
+      "formula": "K",
+      "charge": "1",
+      "bigg_aliases": [
+       "k"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "k",
+     "name": "Potassium",
+     "formula": "K"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00971",
+    "published_name": "Na_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00971",
+      "name": "Na+",
+      "formula": "Na",
+      "charge": "1",
+      "bigg_aliases": [
+       "na1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "na1",
+     "name": "Sodium",
+     "formula": "Na"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00971",
+    "published_name": "Na_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00971",
+      "name": "Na+",
+      "formula": "Na",
+      "charge": "1",
+      "bigg_aliases": [
+       "na1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "na1",
+     "name": "Sodium",
+     "formula": "Na"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00099",
+    "published_name": "Cl__e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00099",
+      "name": "Cl-",
+      "formula": "Cl",
+      "charge": "-1",
+      "bigg_aliases": [
+       "cl"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cl",
+     "name": "Chloride",
+     "formula": "Cl"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00099",
+    "published_name": "Cl__c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00099",
+      "name": "Cl-",
+      "formula": "Cl",
+      "charge": "-1",
+      "bigg_aliases": [
+       "cl"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cl",
+     "name": "Chloride",
+     "formula": "Cl"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00254",
+    "published_name": "Mg_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00254",
+      "name": "Mg",
+      "formula": "Mg",
+      "charge": "2",
+      "bigg_aliases": [
+       "mg2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mg2",
+     "name": "Magnesium",
+     "formula": "Mg"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00254",
+    "published_name": "Mg_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00254",
+      "name": "Mg",
+      "formula": "Mg",
+      "charge": "2",
+      "bigg_aliases": [
+       "mg2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mg2",
+     "name": "Magnesium",
+     "formula": "Mg"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00063",
+    "published_name": "Ca2_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00063",
+      "name": "Ca2+",
+      "formula": "Ca",
+      "charge": "2",
+      "bigg_aliases": [
+       "ca2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ca2",
+     "name": "Calcium",
+     "formula": "Ca"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00063",
+    "published_name": "Ca2_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00063",
+      "name": "Ca2+",
+      "formula": "Ca",
+      "charge": "2",
+      "bigg_aliases": [
+       "ca2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ca2",
+     "name": "Calcium",
+     "formula": "Ca"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd10515",
+    "published_name": "Fe2_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd10515",
+      "name": "Fe+2",
+      "formula": "Fe",
+      "charge": "2",
+      "bigg_aliases": [
+       "fe2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fe2",
+     "name": "Fe2+ mitochondria",
+     "formula": "Fe"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd10515",
+    "published_name": "Fe2_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd10515",
+      "name": "Fe+2",
+      "formula": "Fe",
+      "charge": "2",
+      "bigg_aliases": [
+       "fe2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fe2",
+     "name": "Fe2+ mitochondria",
+     "formula": "Fe"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd10516",
+    "published_name": "fe3_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd10516",
+      "name": "Fe+3",
+      "formula": "Fe",
+      "charge": "3",
+      "bigg_aliases": [
+       "fe3"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fe3",
+     "name": "Iron (Fe3+)",
+     "formula": "Fe"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd10516",
+    "published_name": "fe3_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd10516",
+      "name": "Fe+3",
+      "formula": "Fe",
+      "charge": "3",
+      "bigg_aliases": [
+       "fe3"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fe3",
+     "name": "Iron (Fe3+)",
+     "formula": "Fe"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00030",
+    "published_name": "Mn2_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00030",
+      "name": "Mn2+",
+      "formula": "Mn",
+      "charge": "2",
+      "bigg_aliases": [
+       "mn2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mn2",
+     "name": "Manganese",
+     "formula": "Mn"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00030",
+    "published_name": "Mn2_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00030",
+      "name": "Mn2+",
+      "formula": "Mn",
+      "charge": "2",
+      "bigg_aliases": [
+       "mn2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mn2",
+     "name": "Manganese",
+     "formula": "Mn"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00034",
+    "published_name": "Zn2_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00034",
+      "name": "Zn2+",
+      "formula": "Zn",
+      "charge": "2",
+      "bigg_aliases": [
+       "zn2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "zn2",
+     "name": "Zinc",
+     "formula": "Zn"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00034",
+    "published_name": "Zn2_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00034",
+      "name": "Zn2+",
+      "formula": "Zn",
+      "charge": "2",
+      "bigg_aliases": [
+       "zn2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "zn2",
+     "name": "Zinc",
+     "formula": "Zn"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00058",
+    "published_name": "Cu2_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00058",
+      "name": "Cu2+",
+      "formula": "Cu",
+      "charge": "2",
+      "bigg_aliases": [
+       "cu2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cu2",
+     "name": "Copper",
+     "formula": "Cu"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00058",
+    "published_name": "Cu2_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00058",
+      "name": "Cu2+",
+      "formula": "Cu",
+      "charge": "2",
+      "bigg_aliases": [
+       "cu2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cu2",
+     "name": "Copper",
+     "formula": "Cu"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00149",
+    "published_name": "Co2_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00149",
+      "name": "Co2+",
+      "formula": "Co",
+      "charge": "2",
+      "bigg_aliases": [
+       "cobalt2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cobalt2",
+     "name": "Co2+",
+     "formula": "Co"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00149",
+    "published_name": "Co2_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00149",
+      "name": "Co2+",
+      "formula": "Co",
+      "charge": "2",
+      "bigg_aliases": [
+       "cobalt2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cobalt2",
+     "name": "Co2+",
+     "formula": "Co"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd11574",
+    "published_name": "molybdate_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd11574",
+      "name": "Molybdate",
+      "formula": "MoO4",
+      "charge": "-2",
+      "bigg_aliases": [
+       "mobd"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mobd",
+     "name": "Molybdate",
+     "formula": "MoO4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd11574",
+    "published_name": "molybdate_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd11574",
+      "name": "Molybdate",
+      "formula": "MoO4",
+      "charge": "-2",
+      "bigg_aliases": [
+       "mobd"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mobd",
+     "name": "Molybdate",
+     "formula": "MoO4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00263",
+    "published_name": "Pyridoxol_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00263",
+      "name": "Pyridoxol",
+      "formula": "C8H11NO3",
+      "charge": "0",
+      "bigg_aliases": [
+       "pydxn"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pydxn",
+     "name": "Pyridoxine",
+     "formula": "C8H11NO3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00443",
+    "published_name": "ABEE_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00443",
+      "name": "ABEE",
+      "formula": "C7H6NO2",
+      "charge": "-1",
+      "bigg_aliases": [
+       "4abz"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "4abz",
+     "name": "4-Aminobenzoate",
+     "formula": "C7H6NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00218",
+    "published_name": "Niacin_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00218",
+      "name": "Niacin",
+      "formula": "C6H4NO2",
+      "charge": "-1",
+      "bigg_aliases": [
+       "nac"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nac",
+     "name": "Nicotinate",
+     "formula": "C6H4NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00220",
+    "published_name": "Riboflavin_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00220",
+      "name": "Riboflavin",
+      "formula": "C17H19N4O6",
+      "charge": "-1",
+      "bigg_aliases": [
+       "ribflv"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "ribflv",
+     "name": "Riboflavin C17H20N4O6",
+     "formula": "C17H22N4O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00305",
+    "published_name": "Thiamin_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00305",
+      "name": "Thiamin",
+      "formula": "C12H17N4OS",
+      "charge": "1",
+      "bigg_aliases": [
+       "thm"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "thm",
+     "name": "Thiamin",
+     "formula": "C12H17N4OS"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00305",
+    "published_name": "Thiamin_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00305",
+      "name": "Thiamin",
+      "formula": "C12H17N4OS",
+      "charge": "1",
+      "bigg_aliases": [
+       "thm"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "thm",
+     "name": "Thiamin",
+     "formula": "C12H17N4OS"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00644",
+    "published_name": "PAN_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00644",
+      "name": "PAN",
+      "formula": "C9H16NO5",
+      "charge": "-1",
+      "bigg_aliases": [
+       "pnto__R"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pnto__R",
+     "name": "(R)-Pantothenate",
+     "formula": "C9H16NO5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00104",
+    "published_name": "BIOT_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00104",
+      "name": "BIOT",
+      "formula": "C10H15N2O3S",
+      "charge": "-1",
+      "bigg_aliases": [
+       "btn"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "btn",
+     "name": "Biotin",
+     "formula": "C10H15N2O3S"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00104",
+    "published_name": "BIOT_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00104",
+      "name": "BIOT",
+      "formula": "C10H15N2O3S",
+      "charge": "-1",
+      "bigg_aliases": [
+       "btn"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "btn",
+     "name": "Biotin",
+     "formula": "C10H15N2O3S"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00393",
+    "published_name": "Folate_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00393",
+      "name": "Folate",
+      "formula": "C19H17N7O6",
+      "charge": "-2",
+      "bigg_aliases": [
+       "fol"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fol",
+     "name": "Folate",
+     "formula": "C19H17N7O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00635",
+    "published_name": "Cbl_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00635",
+      "name": "Cbl",
+      "formula": "C62H88CoN13O14P",
+      "charge": "-1",
+      "bigg_aliases": [
+       "cbl1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cbl1",
+     "name": "Cob(I)alamin",
+     "formula": "C62H88CoN13O14P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00635",
+    "published_name": "Cbl_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00635",
+      "name": "Cbl",
+      "formula": "C62H88CoN13O14P",
+      "charge": "-1",
+      "bigg_aliases": [
+       "cbl1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cbl1",
+     "name": "Cob(I)alamin",
+     "formula": "C62H88CoN13O14P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00166",
+    "published_name": "Calomide_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00166",
+      "name": "Calomide",
+      "formula": "C72H100CoN18O17P",
+      "charge": "0",
+      "bigg_aliases": [
+       "adocbl"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "adocbl",
+     "name": "Adenosylcobalamin",
+     "formula": "C72H100CoN18O17P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "e",
+    "published_id_base": "cpd00007",
+    "published_name": "O2_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00007",
+      "name": "O2",
+      "formula": "O2",
+      "charge": "0",
+      "bigg_aliases": [
+       "o2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "o2",
+     "name": "O2 O2",
+     "formula": "O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "medium",
+    "compartment": "c",
+    "published_id_base": "cpd00007",
+    "published_name": "O2_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00007",
+      "name": "O2",
+      "formula": "O2",
+      "charge": "0",
+      "bigg_aliases": [
+       "o2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "o2",
+     "name": "O2 O2",
+     "formula": "O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00122",
+    "published_name": "N_Acetyl_D_glucosamine_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00122",
+      "name": "N-Acetyl-D-glucosamine",
+      "formula": "C8H15NO6",
+      "charge": "0",
+      "bigg_aliases": [
+       "acgam"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "acgam",
+     "name": "N-Acetyl-D-glucosamine",
+     "formula": "C8H15NO6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00185",
+    "published_name": "D-Arabinose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00185",
+      "name": "D-Arabinose",
+      "formula": "C5H10O5",
+      "charge": "0",
+      "bigg_aliases": [
+       "arab__D"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "arab__D",
+     "name": "D Arabinose C5H10O5",
+     "formula": "C5H10O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00224",
+    "published_name": "L_Arabinose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00224",
+      "name": "L-Arabinose",
+      "formula": "C5H10O5",
+      "charge": "0",
+      "bigg_aliases": [
+       "arab__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "arab__L",
+     "name": "L-Arabinose",
+     "formula": "C5H10O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00158",
+    "published_name": "D-Cellobiose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00158",
+      "name": "CELB",
+      "formula": "C12H22O11",
+      "charge": "0",
+      "bigg_aliases": [
+       "cellb"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "cellb",
+     "name": "Cellobiose",
+     "formula": "C12H22O11"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00082",
+    "published_name": "D_Fructose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00082",
+      "name": "D-Fructose",
+      "formula": "C6H12O6",
+      "charge": "0",
+      "bigg_aliases": [
+       "fru"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fru",
+     "name": "D-Fructose",
+     "formula": "C6H12O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00751",
+    "published_name": "L-Fucose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00751",
+      "name": "L-Fucose",
+      "formula": "C6H12O5",
+      "charge": "0",
+      "bigg_aliases": [
+       "fuc__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "fuc__L",
+     "name": "L-Fucose",
+     "formula": "C6H12O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00108",
+    "published_name": "Galactose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00108",
+      "name": "Galactose",
+      "formula": "C6H12O6",
+      "charge": "0",
+      "bigg_aliases": [
+       "gal"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "gal",
+     "name": "D-Galactose",
+     "formula": "C6H12O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00276",
+    "published_name": "D-Glucosamine_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00276",
+      "name": "GLUM",
+      "formula": "C6H14NO5",
+      "charge": "1",
+      "bigg_aliases": [
+       "gam"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "gam",
+     "name": "D-Glucosamine",
+     "formula": "C6H14NO5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00027",
+    "published_name": "D_Glucose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00027",
+      "name": "D-Glucose",
+      "formula": "C6H12O6",
+      "charge": "0",
+      "bigg_aliases": [
+       "glc__D"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "glc__D",
+     "name": "D-Glucose",
+     "formula": "C6H12O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00053",
+    "published_name": "L_Glutamine_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00053",
+      "name": "L-Glutamine",
+      "formula": "C5H10N2O3",
+      "charge": "0",
+      "bigg_aliases": [
+       "gln__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "gln__L",
+     "name": "L-Glutamine",
+     "formula": "C5H10N2O3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00100",
+    "published_name": "Glycerol_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00100",
+      "name": "Glycerol",
+      "formula": "C3H8O3",
+      "charge": "0",
+      "bigg_aliases": [
+       "glyc"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "glyc",
+     "name": "Glycerol",
+     "formula": "C3H8O3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00119",
+    "published_name": "L_Histidine_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00119",
+      "name": "L-Histidine",
+      "formula": "C6H9N3O2",
+      "charge": "0",
+      "bigg_aliases": [
+       "his__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "his__L",
+     "name": "L-Histidine",
+     "formula": "C6H9N3O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00121",
+    "published_name": "L_Inositol_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00121",
+      "name": "L-Inositol",
+      "formula": "C6H12O6",
+      "charge": "0",
+      "bigg_aliases": [
+       "inost"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "inost",
+     "name": "Myo-Inositol",
+     "formula": "C6H12O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00159",
+    "published_name": "L_Lactate_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00159",
+      "name": "L-Lactate",
+      "formula": "C3H5O3",
+      "charge": "-1",
+      "bigg_aliases": [
+       "lac__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "lac__L",
+     "name": "L-Lactate",
+     "formula": "C3H5O3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00208",
+    "published_name": "alpha-D-Lactose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00208",
+      "name": "LACT",
+      "formula": "C12H22O11",
+      "charge": "0",
+      "bigg_aliases": [
+       "lcts"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "lcts",
+     "name": "Lactose C12H22O11",
+     "formula": "C12H22O11"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00107",
+    "published_name": "L_Leucine_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00107",
+      "name": "L-Leucine",
+      "formula": "C6H13NO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "leu__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "leu__L",
+     "name": "L-Leucine",
+     "formula": "C6H13NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00039",
+    "published_name": "L_Lysine_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00039",
+      "name": "L-Lysine",
+      "formula": "C6H15N2O2",
+      "charge": "1",
+      "bigg_aliases": [
+       "lys__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "lys__L",
+     "name": "L-Lysine",
+     "formula": "C6H15N2O2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00130",
+    "published_name": "L_Malate_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00130",
+      "name": "L-Malate",
+      "formula": "C4H4O5",
+      "charge": "-2",
+      "bigg_aliases": [
+       "mal__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "mal__L",
+     "name": "L-Malate",
+     "formula": "C4H4O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00179",
+    "published_name": "Maltose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00179",
+      "name": "Maltose",
+      "formula": "C12H22O11",
+      "charge": "0",
+      "bigg_aliases": [
+       "malt"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "malt",
+     "name": "Maltose C12H22O11",
+     "formula": "C12H22O11"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00138",
+    "published_name": "D-Mannose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00138",
+      "name": "D-Mannose",
+      "formula": "C6H12O6",
+      "charge": "0",
+      "bigg_aliases": [
+       "man"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "man",
+     "name": "D-Mannose",
+     "formula": "C6H12O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00129",
+    "published_name": "L_Proline_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00129",
+      "name": "L-Proline",
+      "formula": "C5H9NO2",
+      "charge": "0",
+      "bigg_aliases": [
+       "pro__L"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pro__L",
+     "name": "L-Proline",
+     "formula": "C5H9NO2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00020",
+    "published_name": "Pyruvate_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00020",
+      "name": "Pyruvate",
+      "formula": "C3H3O3",
+      "charge": "-1",
+      "bigg_aliases": [
+       "pyr"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pyr",
+     "name": "Pyruvate",
+     "formula": "C3H3O3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00382",
+    "published_name": "Melitose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00382",
+      "name": "Melitose",
+      "formula": "C18H32O16",
+      "charge": "0",
+      "bigg_aliases": [
+       "raffin"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "raffin",
+     "name": "Raffinose C18H32O16",
+     "formula": "C18H32O16"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00105",
+    "published_name": "D_Ribose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00105",
+      "name": "D-Ribose",
+      "formula": "C5H10O5",
+      "charge": "0",
+      "bigg_aliases": [
+       "rib__D"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "rib__D",
+     "name": "D-Ribose",
+     "formula": "C5H10O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00396",
+    "published_name": "L-rhamnose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00396",
+      "name": "L-Rhamnose",
+      "formula": "C6H12O5",
+      "charge": "0",
+      "bigg_aliases": [
+       "rmn"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "rmn",
+     "name": "L-Rhamnose",
+     "formula": "C6H12O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd01030",
+    "published_name": "Salicin_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd01030",
+      "name": "Salicin",
+      "formula": "C13H18O7",
+      "charge": "0",
+      "bigg_aliases": [
+       "salcn"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "salcn",
+     "name": "Salicin C13H18O7",
+     "formula": "C13H18O7"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00588",
+    "published_name": "Sorbitol_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00588",
+      "name": "Sorbitol",
+      "formula": "C6H14O6",
+      "charge": "0",
+      "bigg_aliases": [
+       "sbt__D"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "sbt__D",
+     "name": "D-Sorbitol",
+     "formula": "C6H14O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00036",
+    "published_name": "Succinate_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00036",
+      "name": "Succinate",
+      "formula": "C4H4O4",
+      "charge": "-2",
+      "bigg_aliases": [
+       "succ"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "succ",
+     "name": "Succinate",
+     "formula": "C4H4O4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00794",
+    "published_name": "TRHL_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00794",
+      "name": "TRHL",
+      "formula": "C12H22O11",
+      "charge": "0",
+      "bigg_aliases": [
+       "tre"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "tre",
+     "name": "Trehalose",
+     "formula": "C12H22O11"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00249",
+    "published_name": "Uridine_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00249",
+      "name": "Uridine",
+      "formula": "C9H12N2O6",
+      "charge": "0",
+      "bigg_aliases": [
+       "uri"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "uri",
+     "name": "Uridine",
+     "formula": "C9H12N2O6"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "carbon",
+    "compartment": "e",
+    "published_id_base": "cpd00154",
+    "published_name": "Xylose_e0",
+    "modelseed": [
+     {
+      "cpd": "cpd00154",
+      "name": "Xylose",
+      "formula": "C5H10O5",
+      "charge": "0",
+      "bigg_aliases": [
+       "xyl__D"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "xyl__D",
+     "name": "D-Xylose",
+     "formula": "C5H10O5"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00002",
+    "published_name": "ATP_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00002",
+      "name": "ATP",
+      "formula": "C10H13N5O13P3",
+      "charge": "-3",
+      "bigg_aliases": [
+       "atp"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "atp",
+     "name": "ATP C10H12N5O13P3",
+     "formula": "C10H12N5O13P3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00008",
+    "published_name": "ADP_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00008",
+      "name": "ADP",
+      "formula": "C10H13N5O10P2",
+      "charge": "-2",
+      "bigg_aliases": [
+       "adp"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "adp",
+     "name": "ADP C10H12N5O10P2",
+     "formula": "C10H12N5O10P2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00009",
+    "published_name": "Phosphate_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00009",
+      "name": "Phosphate",
+      "formula": "HO4P",
+      "charge": "-2",
+      "bigg_aliases": [
+       "pi"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "pi",
+     "name": "Phosphate",
+     "formula": "HO4P"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00067",
+    "published_name": "H_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00067",
+      "name": "H+",
+      "formula": "H",
+      "charge": "1",
+      "bigg_aliases": [
+       "h"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h",
+     "name": "H+",
+     "formula": "H"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00001",
+    "published_name": "H2O_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00001",
+      "name": "H2O",
+      "formula": "H2O",
+      "charge": "0",
+      "bigg_aliases": [
+       "h2o",
+       "oh1"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "h2o",
+     "name": "H2O H2O",
+     "formula": "H2O"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": false,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00004",
+    "published_name": "NADH_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00004",
+      "name": "NADH",
+      "formula": "C21H27N7O14P2",
+      "charge": "-2",
+      "bigg_aliases": [
+       "nadh"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nadh",
+     "name": "Nicotinamide adenine dinucleotide - reduced",
+     "formula": "C21H27N7O14P2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00003",
+    "published_name": "NAD_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00003",
+      "name": "NAD",
+      "formula": "C21H26N7O14P2",
+      "charge": "-1",
+      "bigg_aliases": [
+       "nad"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nad",
+     "name": "Nicotinamide adenine dinucleotide",
+     "formula": "C21H26N7O14P2"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00005",
+    "published_name": "NADPH_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00005",
+      "name": "NADPH",
+      "formula": "C21H26N7O17P3",
+      "charge": "-4",
+      "bigg_aliases": [
+       "nadph"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nadph",
+     "name": "Nicotinamide adenine dinucleotide phosphate - reduced",
+     "formula": "C21H26N7O17P3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd00006",
+    "published_name": "NADP_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd00006",
+      "name": "NADP",
+      "formula": "C21H25N7O17P3",
+      "charge": "-3",
+      "bigg_aliases": [
+       "nadp"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "nadp",
+     "name": "Nicotinamide adenine dinucleotide phosphate",
+     "formula": "C21H25N7O17P3"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd15561",
+    "published_name": "Ubiquinol_8_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd15561",
+      "name": "Ubiquinol-8",
+      "formula": "C49H76O4",
+      "charge": "0",
+      "bigg_aliases": [
+       "q8",
+       "q8h2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "q8h2",
+     "name": "Ubiquinol-8",
+     "formula": "C49H76O4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   },
+   {
+    "role": "currency",
+    "compartment": "c",
+    "published_id_base": "cpd15560",
+    "published_name": "Ubiquinone_8_c0",
+    "modelseed": [
+     {
+      "cpd": "cpd15560",
+      "name": "Ubiquinone-8",
+      "formula": "C49H74O4",
+      "charge": "0",
+      "bigg_aliases": [
+       "q8",
+       "q8h2"
+      ]
+     }
+    ],
+    "bigg": {
+     "id": "q8",
+     "name": "Ubiquinone-8",
+     "formula": "C49H74O4"
+    },
+    "bigg_alias_of_modelseed_compound": true,
+    "name_match": true,
+    "formula_match_ignoring_H": true,
+    "verdict": "same compound"
+   }
+  ],
+  "absent": {
+   "ni2_e": {
+    "target_modelseed_compounds": [
+     "cpd00244",
+     "cpd20862"
+    ],
+    "bigg_name": "Nickel",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "sel_e": {
+    "target_modelseed_compounds": [
+     "cpd03396"
+    ],
+    "bigg_name": "Selenate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "slnt_e": {
+    "target_modelseed_compounds": [
+     "cpd03387"
+    ],
+    "bigg_name": "Selenite",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "tungs_e": {
+    "target_modelseed_compounds": [
+     "cpd15574"
+    ],
+    "bigg_name": "Tungstate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "pydxn_e": {
+    "target_modelseed_compounds": [
+     "cpd00263"
+    ],
+    "bigg_name": "Pyridoxine",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00263_c0",
+      "name": "Pyridoxol_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxn01396_c0",
+       "rxnSymCof_c0"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "4abz_e": {
+    "target_modelseed_compounds": [
+     "cpd00443"
+    ],
+    "bigg_name": "4-Aminobenzoate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00443_c0",
+      "name": "ABEE_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxn02200_c0",
+       "rxn02201_c0",
+       "rxn03841_c0"
+      ],
+      "n_reactions": 3,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "lipoate_e": {
+    "target_modelseed_compounds": [
+     "cpd00541"
+    ],
+    "bigg_name": "Lipoate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [],
+    "condition_names_searched": []
+   },
+   "nac_e": {
+    "target_modelseed_compounds": [
+     "cpd00218"
+    ],
+    "bigg_name": "Nicotinate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00218_c0",
+      "name": "Niacin_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxn01265_c0",
+       "rxn01647_c0",
+       "rxn02897_c0",
+       "rxn00938_c0"
+      ],
+      "n_reactions": 4,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "ribflv_e": {
+    "target_modelseed_compounds": [
+     "cpd00220"
+    ],
+    "bigg_name": "Riboflavin C17H20N4O6",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00220_c0",
+      "name": "Riboflavin_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxn00392_c0",
+       "rxn00048_c0"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "pnto__R_e": {
+    "target_modelseed_compounds": [
+     "cpd00644"
+    ],
+    "bigg_name": "(R)-Pantothenate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00644_c0",
+      "name": "PAN_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxn01791_c0",
+       "rxn12510_c0"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "fol_e": {
+    "target_modelseed_compounds": [
+     "cpd00393"
+    ],
+    "bigg_name": "Folate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00393_c0",
+      "name": "Folate_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxn01602_c0"
+      ],
+      "n_reactions": 1,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "adocbl_e": {
+    "target_modelseed_compounds": [
+     "cpd00166"
+    ],
+    "bigg_name": "Adenosylcobalamin",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00166_c0",
+      "name": "Calomide_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxn03538_c0",
+       "rxnSymCof_c0",
+       "rxn08194_c0"
+      ],
+      "n_reactions": 3,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "lac__D_e": {
+    "target_modelseed_compounds": [
+     "cpd00221"
+    ],
+    "bigg_name": "D-Lactate",
+    "bigg_id_in_universe": true,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00221_c0",
+      "name": "D_Lactate_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED compound has this BiGG alias",
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxn00146",
+       "rxn01274_c0"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     }
+    ],
+    "condition_names_searched": []
+   },
+   "tagat__D_e": {
+    "target_modelseed_compounds": [],
+    "bigg_name": null,
+    "bigg_id_in_universe": false,
+    "hits_in_published_model": [
+     {
+      "published_id": "cpd00589_c0",
+      "name": "D-Tagatose_c0",
+      "compartment": "c0",
+      "why": [
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "rxnBLTPcpd00589",
+       "rxn02094"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     },
+     {
+      "published_id": "cpd00589_e0",
+      "name": "D-Tagatose_e0",
+      "compartment": "e0",
+      "why": [
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "EX_cpd00589_e0",
+       "rxnBLTPcpd00589"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": false
+     },
+     {
+      "published_id": "cpd00589_b",
+      "name": "D-Tagatose_b",
+      "compartment": "e0",
+      "why": [
+       "ModelSEED name of the published id",
+       "name"
+      ],
+      "reactions": [
+       "EX_cpd00589_b",
+       "EX_cpd00589_e0"
+      ],
+      "n_reactions": 2,
+      "has_boundary_reaction": true
+     }
+    ],
+    "condition_names_searched": [
+     "D-(-)-tagatose"
+    ]
+   }
+  },
+  "conditions_with_absent_exchange": [
+   {
+    "condition": "Sodium D,L-Lactate",
+    "missing": [
+     "lac__D"
+    ]
+   },
+   {
+    "condition": "D-(-)-tagatose",
+    "missing": [
+     "tagat__D"
+    ]
+   }
+  ],
+  "all_renames": {
+   "counts": {
+    "same compound": 1197
+   },
+   "not_confirmed": []
+  }
+ }
+}

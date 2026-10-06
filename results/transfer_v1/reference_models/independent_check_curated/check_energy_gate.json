@@ -1,0 +1,4068 @@
+{
+ "iGD1575_published_as_read": {
+  "values": {
+   "atp": 1000.0,
+   "nadh": 125.0000000000005,
+   "nadph": 125.00000000000007,
+   "q8h2": 125.00000000000027,
+   "h_e (no-periplasm analogue)": 1000.0
+  },
+  "atp_cycles": {
+   "n_lps": 13,
+   "n_distinct_minimal_flux_supports": 4,
+   "cycles": [
+    {
+     "blocked_to_find": [],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00058_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00237_c0",
+       "name": "ATP_nucleoside_diphosphate_phosphatransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00031_c0 <=> cpd00008_c0 + cpd00038_c0",
+       "equation_names": "ATP_c0 + GDP_c0 <=> ADP_c0 + GTP_c0",
+       "gene_rule": "smc00595"
+      },
+      {
+       "id": "rxn00379_c0",
+       "name": "ATP_sulfate_adenylyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00048_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00193_c0",
+       "equation_names": "ATP_c0 + Sulfate_c0 + H_c0 <=> PPi_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) or (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn09240_c0",
+       "name": "Sulfate_adenyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00002_c0 + cpd00038_c0 + cpd00048_c0 <=> cpd00009_c0 + cpd00012_c0 + cpd00031_c0 + cpd00193_c0",
+       "equation_names": "H2O_c0 + ATP_c0 + GTP_c0 + Sulfate_c0 <=> Phosphate_c0 + PPi_c0 + GDP_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) and (smb21224 or smc00090 or sma0857)"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00058_c0",
+      "rxn00237_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00324_c0",
+       "name": "Glycolate_NADP_oxidoreductase_c0",
+       "flux": 0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00006_c0 + cpd00139_c0 <=> cpd00005_c0 + cpd00040_c0 + cpd00067_c0",
+       "equation_names": "NADP_c0 + Glycolate_c0 <=> NADPH_c0 + Glyoxalate_c0 + H_c0",
+       "gene_rule": "smc02849 and (smc00340 or sma2137 or smc02849 or smc01943 or smb20535)"
+      },
+      {
+       "id": "rxn08655_c0",
+       "name": "Glycolate_oxidase_c0",
+       "flux": -0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00139_c0 + cpd15560_c0 <=> cpd00040_c0 + cpd15561_c0",
+       "equation_names": "Glycolate_c0 + Ubiquinone_8_c0 <=> Glyoxalate_c0 + Ubiquinol_8_c0",
+       "gene_rule": "smc00926 and smc00832 and smc00833"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10122_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__35_protons_c0",
+       "flux": 0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + 4.5 cpd00067_c0 + cpd15560_c0 <=> cpd00003_c0 + 3.5 cpd00067_e0 + cpd15561_c0",
+       "equation_names": "NADH_c0 + 4.5 H_c0 + Ubiquinone_8_c0 <=> NAD_c0 + 3.5 H_e0 + Ubiquinol_8_c0",
+       "gene_rule": "(smc01924 or sma1544) and (smc01925 or sma1538 or sma1541) and (smc01923 or sma1545) and (sma1535 or smc01927) and (smc01917 or sma1526 or smc01919) and (sma1516 or smc01921) and (smc01913 or sma1532) and (smc01922 or sma1519) and (sma1536 or smc01926) and (sma1525 or smc01918) and (smc01920 or sma1523) and (smc01914 or sma1531) and (sma1533 or smc01912) and (smc01915 or sma1529)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00237_c0",
+      "rxn10042_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00772_c0",
+       "name": "ATP_D_ribose_5_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00105_c0 <=> cpd00008_c0 + cpd00101_c0",
+       "equation_names": "ATP_c0 + D_Ribose_c0 <=> ADP_c0 + ribose_5_phosphate_c0",
+       "gene_rule": "smc01103"
+      },
+      {
+       "id": "rxn00778_c0",
+       "name": "D_Ribose_1_5_phosphomutase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00475_c0 <=> cpd00101_c0",
+       "equation_names": "Ribose_1_phosphate_c0 <=> ribose_5_phosphate_c0",
+       "gene_rule": "smc04119"
+      },
+      {
+       "id": "rxn01545_c0",
+       "name": "Xanthosine_ribohydrolase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd01217_c0 <=> cpd00105_c0 + cpd00309_c0",
+       "equation_names": "H2O_c0 + Xanthosine_c0 <=> D_Ribose_c0 + XAN_c0",
+       "gene_rule": "smc03175 or smc01105 or smb21277"
+      },
+      {
+       "id": "rxn01649_c0",
+       "name": "Xanthosine_orthophosphate_ribosyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00009_c0 + cpd00067_c0 + cpd01217_c0 <=> cpd00309_c0 + cpd00475_c0",
+       "equation_names": "Phosphate_c0 + H_c0 + Xanthosine_c0 <=> XAN_c0 + Ribose_1_phosphate_c0",
+       "gene_rule": "smc00850 or smc04123"
+      }
+     ]
+    }
+   ],
+   "reactions_in_any_found_cycle": 14,
+   "single_reaction_cuts": []
+  },
+  "nadh_cycles": {
+   "n_lps": 17,
+   "n_distinct_minimal_flux_supports": 5,
+   "cycles": [
+    {
+     "blocked_to_find": [],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.25,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00058_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn00237_c0",
+       "name": "ATP_nucleoside_diphosphate_phosphatransferase_c0",
+       "flux": -0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00031_c0 <=> cpd00008_c0 + cpd00038_c0",
+       "equation_names": "ATP_c0 + GDP_c0 <=> ADP_c0 + GTP_c0",
+       "gene_rule": "smc00595"
+      },
+      {
+       "id": "rxn00379_c0",
+       "name": "ATP_sulfate_adenylyltransferase_c0",
+       "flux": 0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00048_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00193_c0",
+       "equation_names": "ATP_c0 + Sulfate_c0 + H_c0 <=> PPi_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) or (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09240_c0",
+       "name": "Sulfate_adenyltransferase_c0",
+       "flux": -0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00002_c0 + cpd00038_c0 + cpd00048_c0 <=> cpd00009_c0 + cpd00012_c0 + cpd00031_c0 + cpd00193_c0",
+       "equation_names": "H2O_c0 + ATP_c0 + GTP_c0 + Sulfate_c0 <=> Phosphate_c0 + PPi_c0 + GDP_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) and (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00148_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.25,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn00173_c0",
+       "name": "Acetyl_CoA_orthophosphate_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00009_c0 + cpd00022_c0 + cpd00067_c0 <=> cpd00010_c0 + cpd00196_c0",
+       "equation_names": "Phosphate_c0 + Acetyl_CoA_c0 + H_c0 <=> CoA_c0 + Acetylphosphate_c0",
+       "gene_rule": "smb21532"
+      },
+      {
+       "id": "rxn00175_c0",
+       "name": "Acetate_CoA_ligase_AMP_forming_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00029_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00022_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + Acetate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Acetyl_CoA_c0",
+       "gene_rule": "smc04093 or smc04095 or smc00741"
+      },
+      {
+       "id": "rxn00225_c0",
+       "name": "ATP_acetate_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00029_c0 + cpd00067_c0 <=> cpd00008_c0 + cpd00196_c0",
+       "equation_names": "ATP_c0 + Acetate_c0 + H_c0 <=> ADP_c0 + Acetylphosphate_c0",
+       "gene_rule": "smb21184"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn10042_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00083_c0",
+       "name": "NADPH_NAD_oxidoreductase_B_specific_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00003_c0 + cpd00005_c0 <=> cpd00004_c0 + cpd00006_c0",
+       "equation_names": "NAD_c0 + NADPH_c0 <=> NADH_c0 + NADP_c0",
+       "gene_rule": "(smc03950 or smc03939) or smc03938 or smc00300"
+      },
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn00237_c0",
+       "name": "ATP_nucleoside_diphosphate_phosphatransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00031_c0 <=> cpd00008_c0 + cpd00038_c0",
+       "equation_names": "ATP_c0 + GDP_c0 <=> ADP_c0 + GTP_c0",
+       "gene_rule": "smc00595"
+      },
+      {
+       "id": "rxn00379_c0",
+       "name": "ATP_sulfate_adenylyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00048_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00193_c0",
+       "equation_names": "ATP_c0 + Sulfate_c0 + H_c0 <=> PPi_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) or (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09240_c0",
+       "name": "Sulfate_adenyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00002_c0 + cpd00038_c0 + cpd00048_c0 <=> cpd00009_c0 + cpd00012_c0 + cpd00031_c0 + cpd00193_c0",
+       "equation_names": "H2O_c0 + ATP_c0 + GTP_c0 + Sulfate_c0 <=> Phosphate_c0 + PPi_c0 + GDP_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) and (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn10125_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn00083_c0",
+       "name": "NADPH_NAD_oxidoreductase_B_specific_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00003_c0 + cpd00005_c0 <=> cpd00004_c0 + cpd00006_c0",
+       "equation_names": "NAD_c0 + NADPH_c0 <=> NADH_c0 + NADP_c0",
+       "gene_rule": "(smc03950 or smc03939) or smc03938 or smc00300"
+      },
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    }
+   ],
+   "reactions_in_any_found_cycle": 23,
+   "single_reaction_cuts": [
+    {
+     "id": "rxn05347_c0",
+     "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+     "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+     "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+    },
+    {
+     "id": "rxn05349_c0",
+     "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+     "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+     "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+    },
+    {
+     "id": "rxn05465",
+     "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+     "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+     "gene_rule": "smc00571"
+    },
+    {
+     "id": "rxn08088_c0",
+     "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+     "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+     "gene_rule": "smc02158 or smc01116"
+    },
+    {
+     "id": "rxn08808_c0",
+     "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+     "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+     "gene_rule": "smc04041 or smc02818"
+    },
+    {
+     "id": "rxn08809_c0",
+     "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+     "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+     "gene_rule": "smc04041 or smc02818"
+    },
+    {
+     "id": "rxn09449_c0",
+     "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+     "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+     "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+    },
+    {
+     "id": "rxn10030_c0",
+     "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+     "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+     "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+    },
+    {
+     "id": "rxn10213_c0",
+     "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+     "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+     "gene_rule": "smc02158 or smc01116"
+    },
+    {
+     "id": "rxn10954_c0",
+     "name": "C180SN_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+     "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+     "gene_rule": "Unknown"
+    }
+   ]
+  },
+  "nadph_cycles": {
+   "n_lps": 16,
+   "n_distinct_minimal_flux_supports": 3,
+   "cycles": [
+    {
+     "blocked_to_find": [],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00058_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn00237_c0",
+       "name": "ATP_nucleoside_diphosphate_phosphatransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00031_c0 <=> cpd00008_c0 + cpd00038_c0",
+       "equation_names": "ATP_c0 + GDP_c0 <=> ADP_c0 + GTP_c0",
+       "gene_rule": "smc00595"
+      },
+      {
+       "id": "rxn00379_c0",
+       "name": "ATP_sulfate_adenylyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00048_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00193_c0",
+       "equation_names": "ATP_c0 + Sulfate_c0 + H_c0 <=> PPi_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) or (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09240_c0",
+       "name": "Sulfate_adenyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00002_c0 + cpd00038_c0 + cpd00048_c0 <=> cpd00009_c0 + cpd00012_c0 + cpd00031_c0 + cpd00193_c0",
+       "equation_names": "H2O_c0 + ATP_c0 + GTP_c0 + Sulfate_c0 <=> Phosphate_c0 + PPi_c0 + GDP_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) and (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00148_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn00173_c0",
+       "name": "Acetyl_CoA_orthophosphate_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00009_c0 + cpd00022_c0 + cpd00067_c0 <=> cpd00010_c0 + cpd00196_c0",
+       "equation_names": "Phosphate_c0 + Acetyl_CoA_c0 + H_c0 <=> CoA_c0 + Acetylphosphate_c0",
+       "gene_rule": "smb21532"
+      },
+      {
+       "id": "rxn00175_c0",
+       "name": "Acetate_CoA_ligase_AMP_forming_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00029_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00022_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + Acetate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Acetyl_CoA_c0",
+       "gene_rule": "smc04093 or smc04095 or smc00741"
+      },
+      {
+       "id": "rxn00225_c0",
+       "name": "ATP_acetate_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00029_c0 + cpd00067_c0 <=> cpd00008_c0 + cpd00196_c0",
+       "equation_names": "ATP_c0 + Acetate_c0 + H_c0 <=> ADP_c0 + Acetylphosphate_c0",
+       "gene_rule": "smb21184"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    }
+   ],
+   "reactions_in_any_found_cycle": 21,
+   "single_reaction_cuts": [
+    {
+     "id": "rxn05347_c0",
+     "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+     "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+     "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+    },
+    {
+     "id": "rxn05349_c0",
+     "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+     "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+     "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+    },
+    {
+     "id": "rxn05465",
+     "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+     "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+     "gene_rule": "smc00571"
+    },
+    {
+     "id": "rxn08088_c0",
+     "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+     "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+     "gene_rule": "smc02158 or smc01116"
+    },
+    {
+     "id": "rxn08808_c0",
+     "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+     "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+     "gene_rule": "smc04041 or smc02818"
+    },
+    {
+     "id": "rxn08809_c0",
+     "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+     "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+     "gene_rule": "smc04041 or smc02818"
+    },
+    {
+     "id": "rxn09449_c0",
+     "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+     "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+     "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+    },
+    {
+     "id": "rxn10030_c0",
+     "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+     "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+     "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+    },
+    {
+     "id": "rxn10213_c0",
+     "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+     "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+     "gene_rule": "smc02158 or smc01116"
+    },
+    {
+     "id": "rxn10954_c0",
+     "name": "C180SN_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+     "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+     "gene_rule": "Unknown"
+    }
+   ]
+  },
+  "q8h2_cycles": {
+   "n_lps": 18,
+   "n_distinct_minimal_flux_supports": 7,
+   "cycles": [
+    {
+     "blocked_to_find": [],
+     "reactions": [
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn00324_c0",
+       "name": "Glycolate_NADP_oxidoreductase_c0",
+       "flux": -0.272727,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00006_c0 + cpd00139_c0 <=> cpd00005_c0 + cpd00040_c0 + cpd00067_c0",
+       "equation_names": "NADP_c0 + Glycolate_c0 <=> NADPH_c0 + Glyoxalate_c0 + H_c0",
+       "gene_rule": "smc02849 and (smc00340 or sma2137 or smc02849 or smc01943 or smb20535)"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08655_c0",
+       "name": "Glycolate_oxidase_c0",
+       "flux": 0.272727,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00139_c0 + cpd15560_c0 <=> cpd00040_c0 + cpd15561_c0",
+       "equation_names": "Glycolate_c0 + Ubiquinone_8_c0 <=> Glyoxalate_c0 + Ubiquinol_8_c0",
+       "gene_rule": "smc00926 and smc00832 and smc00833"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10122_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__35_protons_c0",
+       "flux": 0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + 4.5 cpd00067_c0 + cpd15560_c0 <=> cpd00003_c0 + 3.5 cpd00067_e0 + cpd15561_c0",
+       "equation_names": "NADH_c0 + 4.5 H_c0 + Ubiquinone_8_c0 <=> NAD_c0 + 3.5 H_e0 + Ubiquinol_8_c0",
+       "gene_rule": "(smc01924 or sma1544) and (smc01925 or sma1538 or sma1541) and (smc01923 or sma1545) and (sma1535 or smc01927) and (smc01917 or sma1526 or smc01919) and (sma1516 or smc01921) and (smc01913 or sma1532) and (smc01922 or sma1519) and (sma1536 or smc01926) and (sma1525 or smc01918) and (smc01920 or sma1523) and (smc01914 or sma1531) and (sma1533 or smc01912) and (smc01915 or sma1529)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00148_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00173_c0",
+       "name": "Acetyl_CoA_orthophosphate_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00009_c0 + cpd00022_c0 + cpd00067_c0 <=> cpd00010_c0 + cpd00196_c0",
+       "equation_names": "Phosphate_c0 + Acetyl_CoA_c0 + H_c0 <=> CoA_c0 + Acetylphosphate_c0",
+       "gene_rule": "smb21532"
+      },
+      {
+       "id": "rxn00175_c0",
+       "name": "Acetate_CoA_ligase_AMP_forming_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00029_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00022_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + Acetate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Acetyl_CoA_c0",
+       "gene_rule": "smc04093 or smc04095 or smc00741"
+      },
+      {
+       "id": "rxn00225_c0",
+       "name": "ATP_acetate_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00029_c0 + cpd00067_c0 <=> cpd00008_c0 + cpd00196_c0",
+       "equation_names": "ATP_c0 + Acetate_c0 + H_c0 <=> ADP_c0 + Acetylphosphate_c0",
+       "gene_rule": "smb21184"
+      },
+      {
+       "id": "rxn00324_c0",
+       "name": "Glycolate_NADP_oxidoreductase_c0",
+       "flux": -0.272727,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00006_c0 + cpd00139_c0 <=> cpd00005_c0 + cpd00040_c0 + cpd00067_c0",
+       "equation_names": "NADP_c0 + Glycolate_c0 <=> NADPH_c0 + Glyoxalate_c0 + H_c0",
+       "gene_rule": "smc02849 and (smc00340 or sma2137 or smc02849 or smc01943 or smb20535)"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08655_c0",
+       "name": "Glycolate_oxidase_c0",
+       "flux": 0.272727,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00139_c0 + cpd15560_c0 <=> cpd00040_c0 + cpd15561_c0",
+       "equation_names": "Glycolate_c0 + Ubiquinone_8_c0 <=> Glyoxalate_c0 + Ubiquinol_8_c0",
+       "gene_rule": "smc00926 and smc00832 and smc00833"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10122_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__35_protons_c0",
+       "flux": 0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + 4.5 cpd00067_c0 + cpd15560_c0 <=> cpd00003_c0 + 3.5 cpd00067_e0 + cpd15561_c0",
+       "equation_names": "NADH_c0 + 4.5 H_c0 + Ubiquinone_8_c0 <=> NAD_c0 + 3.5 H_e0 + Ubiquinol_8_c0",
+       "gene_rule": "(smc01924 or sma1544) and (smc01925 or sma1538 or sma1541) and (smc01923 or sma1545) and (sma1535 or smc01927) and (smc01917 or sma1526 or smc01919) and (sma1516 or smc01921) and (smc01913 or sma1532) and (smc01922 or sma1519) and (sma1536 or smc01926) and (sma1525 or smc01918) and (smc01920 or sma1523) and (smc01914 or sma1531) and (sma1533 or smc01912) and (smc01915 or sma1529)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00324_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn00612_c0",
+       "name": "sn_Glycerol_3_phosphate_NADP_2_oxidoreductase_c0",
+       "flux": -0.272727,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00006_c0 + cpd00080_c0 <=> cpd00005_c0 + cpd00067_c0 + cpd00095_c0",
+       "equation_names": "NADP_c0 + Glycerol_3_phosphate_c0 <=> NADPH_c0 + H_c0 + Glycerone_phosphate_c0",
+       "gene_rule": "smc03229"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08556_c0",
+       "name": "glycerol_3_phosphate_dehydrogenase_ubiquinone_8_c0",
+       "flux": 0.272727,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00080_c0 + cpd15560_c0 --> cpd00095_c0 + cpd15561_c0",
+       "equation_names": "Glycerol_3_phosphate_c0 + Ubiquinone_8_c0 --> Glycerone_phosphate_c0 + Ubiquinol_8_c0",
+       "gene_rule": "smc02520"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10122_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__35_protons_c0",
+       "flux": 0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + 4.5 cpd00067_c0 + cpd15560_c0 <=> cpd00003_c0 + 3.5 cpd00067_e0 + cpd15561_c0",
+       "equation_names": "NADH_c0 + 4.5 H_c0 + Ubiquinone_8_c0 <=> NAD_c0 + 3.5 H_e0 + Ubiquinol_8_c0",
+       "gene_rule": "(smc01924 or sma1544) and (smc01925 or sma1538 or sma1541) and (smc01923 or sma1545) and (sma1535 or smc01927) and (smc01917 or sma1526 or smc01919) and (sma1516 or smc01921) and (smc01913 or sma1532) and (smc01922 or sma1519) and (sma1536 or smc01926) and (sma1525 or smc01918) and (smc01920 or sma1523) and (smc01914 or sma1531) and (sma1533 or smc01912) and (smc01915 or sma1529)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -0.727273,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn08655_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00083_c0",
+       "name": "NADPH_NAD_oxidoreductase_B_specific_c0",
+       "flux": 0.75,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00003_c0 + cpd00005_c0 <=> cpd00004_c0 + cpd00006_c0",
+       "equation_names": "NAD_c0 + NADPH_c0 <=> NADH_c0 + NADP_c0",
+       "gene_rule": "(smc03950 or smc03939) or smc03938 or smc00300"
+      },
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10122_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__35_protons_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + 4.5 cpd00067_c0 + cpd15560_c0 <=> cpd00003_c0 + 3.5 cpd00067_e0 + cpd15561_c0",
+       "equation_names": "NADH_c0 + 4.5 H_c0 + Ubiquinone_8_c0 <=> NAD_c0 + 3.5 H_e0 + Ubiquinol_8_c0",
+       "gene_rule": "(smc01924 or sma1544) and (smc01925 or sma1538 or sma1541) and (smc01923 or sma1545) and (sma1535 or smc01927) and (smc01917 or sma1526 or smc01919) and (sma1516 or smc01921) and (smc01913 or sma1532) and (smc01922 or sma1519) and (sma1536 or smc01926) and (sma1525 or smc01918) and (smc01920 or sma1523) and (smc01914 or sma1531) and (sma1533 or smc01912) and (smc01915 or sma1529)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -0.25,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn10042_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn00237_c0",
+       "name": "ATP_nucleoside_diphosphate_phosphatransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00031_c0 <=> cpd00008_c0 + cpd00038_c0",
+       "equation_names": "ATP_c0 + GDP_c0 <=> ADP_c0 + GTP_c0",
+       "gene_rule": "smc00595"
+      },
+      {
+       "id": "rxn00379_c0",
+       "name": "ATP_sulfate_adenylyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00048_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00193_c0",
+       "equation_names": "ATP_c0 + Sulfate_c0 + H_c0 <=> PPi_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) or (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn00612_c0",
+       "name": "sn_Glycerol_3_phosphate_NADP_2_oxidoreductase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00006_c0 + cpd00080_c0 <=> cpd00005_c0 + cpd00067_c0 + cpd00095_c0",
+       "equation_names": "NADP_c0 + Glycerol_3_phosphate_c0 <=> NADPH_c0 + H_c0 + Glycerone_phosphate_c0",
+       "gene_rule": "smc03229"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08556_c0",
+       "name": "glycerol_3_phosphate_dehydrogenase_ubiquinone_8_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00080_c0 + cpd15560_c0 --> cpd00095_c0 + cpd15561_c0",
+       "equation_names": "Glycerol_3_phosphate_c0 + Ubiquinone_8_c0 --> Glycerone_phosphate_c0 + Ubiquinol_8_c0",
+       "gene_rule": "smc02520"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09240_c0",
+       "name": "Sulfate_adenyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00002_c0 + cpd00038_c0 + cpd00048_c0 <=> cpd00009_c0 + cpd00012_c0 + cpd00031_c0 + cpd00193_c0",
+       "equation_names": "H2O_c0 + ATP_c0 + GTP_c0 + Sulfate_c0 <=> Phosphate_c0 + PPi_c0 + GDP_c0 + APS_c0",
+       "gene_rule": "(smc00091 or sma0855 or smb21223) and (smb21224 or smc00090 or sma0857)"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn10122_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.25,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08975_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00067_c0 + cpd15560_c0 --> cpd00003_c0 + cpd15561_c0",
+       "equation_names": "NADH_c0 + H_c0 + Ubiquinone_8_c0 --> NAD_c0 + Ubiquinol_8_c0",
+       "gene_rule": "smc04452 or smb20861"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 0.5,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn10125_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.0625,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn00083_c0",
+       "name": "NADPH_NAD_oxidoreductase_B_specific_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00003_c0 + cpd00005_c0 <=> cpd00004_c0 + cpd00006_c0",
+       "equation_names": "NAD_c0 + NADPH_c0 <=> NADH_c0 + NADP_c0",
+       "gene_rule": "(smc03950 or smc03939) or smc03938 or smc00300"
+      },
+      {
+       "id": "rxn00148_c0",
+       "name": "ATP_pyruvate_O2_phosphotransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00020_c0 <=> cpd00008_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Pyruvate_c0 <=> ADP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc04005"
+      },
+      {
+       "id": "rxn00151_c0",
+       "name": "ATP_pyruvate_orthophosphate_phosphotransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00009_c0 + cpd00020_c0 + cpd00067_c0 <=> cpd00012_c0 + cpd00018_c0 + cpd00061_c0",
+       "equation_names": "ATP_c0 + Phosphate_c0 + Pyruvate_c0 + H_c0 <=> PPi_c0 + AMP_c0 + Phosphoenolpyruvate_c0",
+       "gene_rule": "smc00025"
+      },
+      {
+       "id": "rxn05347_c0",
+       "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+       "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05349_c0",
+       "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+       "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+       "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+      },
+      {
+       "id": "rxn05465",
+       "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+       "flux": -8.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+       "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "smc00571"
+      },
+      {
+       "id": "rxn08088_c0",
+       "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+       "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn08808_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+       "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn08809_c0",
+       "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+       "flux": -1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+       "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+       "gene_rule": "smc04041 or smc02818"
+      },
+      {
+       "id": "rxn09449_c0",
+       "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+       "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+       "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+      },
+      {
+       "id": "rxn10030_c0",
+       "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+       "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+       "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+      },
+      {
+       "id": "rxn10042_c0",
+       "name": "ATP_synthase_four_protons_for_one_ATP_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00008_c0 + cpd00009_c0 + 4.0 cpd00067_e0 <=> cpd00001_c0 + cpd00002_c0 + 3.0 cpd00067_c0",
+       "equation_names": "ADP_c0 + Phosphate_c0 + 4.0 H_e0 <=> H2O_c0 + ATP_c0 + 3.0 H_c0",
+       "gene_rule": "smc00870 and smc02498 and (smc00868 or smc00869) and smc00872 and smc02501 and smc02500 and smc02499 and smc00871 and smc02502"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 0.125,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      },
+      {
+       "id": "rxn10122_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__35_protons_c0",
+       "flux": 1.0,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + 4.5 cpd00067_c0 + cpd15560_c0 <=> cpd00003_c0 + 3.5 cpd00067_e0 + cpd15561_c0",
+       "equation_names": "NADH_c0 + 4.5 H_c0 + Ubiquinone_8_c0 <=> NAD_c0 + 3.5 H_e0 + Ubiquinol_8_c0",
+       "gene_rule": "(smc01924 or sma1544) and (smc01925 or sma1538 or sma1541) and (smc01923 or sma1545) and (sma1535 or smc01927) and (smc01917 or sma1526 or smc01919) and (sma1516 or smc01921) and (smc01913 or sma1532) and (smc01922 or sma1519) and (sma1536 or smc01926) and (sma1525 or smc01918) and (smc01920 or sma1523) and (smc01914 or sma1531) and (sma1533 or smc01912) and (smc01915 or sma1529)"
+      },
+      {
+       "id": "rxn10213_c0",
+       "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+       "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+       "gene_rule": "smc02158 or smc01116"
+      },
+      {
+       "id": "rxn10954_c0",
+       "name": "C180SN_c0",
+       "flux": 1.0,
+       "bounds": [
+        0.0,
+        1000.0
+       ],
+       "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+       "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+       "gene_rule": "Unknown"
+      }
+     ]
+    }
+   ],
+   "reactions_in_any_found_cycle": 29,
+   "single_reaction_cuts": [
+    {
+     "id": "rxn05347_c0",
+     "name": "Acyl_acyl_carrier_protein_malonyl_acyl_carrier_protein_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00067_c0 + cpd11492_c0 + cpd11494_c0 <=> cpd00011_c0 + cpd11488_c0 + cpd11493_c0",
+     "equation_names": "H_c0 + Malonyl_acyl_carrierprotein__c0 + Acetyl_ACP_c0 <=> CO2_c0 + Acetoacetyl_ACP_c0 + ACP_c0",
+     "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+    },
+    {
+     "id": "rxn05349_c0",
+     "name": "acetyl_CoA_acyl_carrier_protein_S_acetyltransferase_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00022_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11494_c0",
+     "equation_names": "Acetyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Acetyl_ACP_c0",
+     "gene_rule": "(smc01785 and (smc00574 or smc04273 or smc04275)) or smc00327"
+    },
+    {
+     "id": "rxn05465",
+     "name": "malonyl-ACP:[acyl-carrier-protein] transferase",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00070_c0 + cpd11493_c0 <=> cpd00010_c0 + cpd11492_c0",
+     "equation_names": "Malonyl_CoA_c0 + ACP_c0 <=> CoA_c0 + Malonyl_acyl_carrierprotein__c0",
+     "gene_rule": "smc00571"
+    },
+    {
+     "id": "rxn08088_c0",
+     "name": "1_octadecanoyl_sn_glycerol_3_phosphate_O_acyltransferase_n_C18_0_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd15268_c0 + cpd15329_c0 <=> cpd11493_c0 + cpd15526_c0",
+     "equation_names": "Octadecanoyl_ACP_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 <=> ACP_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+     "gene_rule": "smc02158 or smc01116"
+    },
+    {
+     "id": "rxn08808_c0",
+     "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_0_periplasm_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00001_c0 + cpd00067_c0 + cpd12547_c0 --> cpd00908_c0 + cpd01080_c0",
+     "equation_names": "H2O_c0 + H_c0 + L_2_Lysophosphatidylethanolamine_c0 --> Glycerophosphoethanolamine_c0 + ocdca_c0",
+     "gene_rule": "smc04041 or smc02818"
+    },
+    {
+     "id": "rxn08809_c0",
+     "name": "Lysophospholipase_L1_2_acylglycerophosphoethanolamine__n_C18_1_periplasm_c0",
+     "flux": 0.0,
+     "bounds": [
+      -1000.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00001_c0 + cpd12547_c0 <=> cpd00067_c0 + cpd00908_c0 + cpd15269_c0",
+     "equation_names": "H2O_c0 + L_2_Lysophosphatidylethanolamine_c0 <=> H_c0 + Glycerophosphoethanolamine_c0 + octadecenoate_c0",
+     "gene_rule": "smc04041 or smc02818"
+    },
+    {
+     "id": "rxn09449_c0",
+     "name": "fatty_acid__CoA_ligase_octadecanoate_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00002_c0 + cpd00010_c0 + cpd00067_c0 + cpd01080_c0 --> cpd00012_c0 + cpd00018_c0 + cpd00327_c0",
+     "equation_names": "ATP_c0 + CoA_c0 + H_c0 + ocdca_c0 --> PPi_c0 + AMP_c0 + strcoa_c0",
+     "gene_rule": "smc00592 or smc02162 or smc00965 or smc00261"
+    },
+    {
+     "id": "rxn10030_c0",
+     "name": "b_ketoacyl_synthetase_n_C18_1_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "15.0 cpd00005_c0 + cpd00022_c0 + 22.0 cpd00067_c0 + 8.0 cpd00070_c0 --> 7.0 cpd00001_c0 + 15.0 cpd00006_c0 + 9.0 cpd00010_c0 + 8.0 cpd00011_c0 + cpd15269_c0",
+     "equation_names": "15.0 NADPH_c0 + Acetyl_CoA_c0 + 22.0 H_c0 + 8.0 Malonyl_CoA_c0 --> 7.0 H2O_c0 + 15.0 NADP_c0 + 9.0 CoA_c0 + 8.0 CO2_c0 + octadecenoate_c0",
+     "gene_rule": "smc00327 or smc00574 or smc01785 or smc04273"
+    },
+    {
+     "id": "rxn10213_c0",
+     "name": "stearoyl_1_acylglycerol_3_phosphate_O_acyltransferase_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "cpd00327_c0 + cpd15329_c0 --> cpd00010_c0 + cpd15526_c0",
+     "equation_names": "strcoa_c0 + 1_octadecanoyl_sn_glycerol_3_phosphate_c0 --> CoA_c0 + 1_2_dioctadecanoyl_sn_glycerol_3_phosphate_c0",
+     "gene_rule": "smc02158 or smc01116"
+    },
+    {
+     "id": "rxn10954_c0",
+     "name": "C180SN_c0",
+     "flux": 0.0,
+     "bounds": [
+      0.0,
+      1000.0
+     ],
+     "equation_ids": "8.0 cpd00001_c0 + 16.0 cpd00006_c0 + 7.0 cpd00011_c0 + 7.0 cpd11493_c0 + cpd15268_c0 --> 16.0 cpd00005_c0 + 23.0 cpd00067_c0 + cpd11488_c0 + 7.0 cpd11492_c0",
+     "equation_names": "8.0 H2O_c0 + 16.0 NADP_c0 + 7.0 CO2_c0 + 7.0 ACP_c0 + Octadecanoyl_ACP_c0 --> 16.0 NADPH_c0 + 23.0 H_c0 + Acetoacetyl_ACP_c0 + 7.0 Malonyl_acyl_carrierprotein__c0",
+     "gene_rule": "Unknown"
+    }
+   ]
+  },
+  "h_e (no-periplasm analogue)_cycles": {
+   "n_lps": 3,
+   "n_distinct_minimal_flux_supports": 2,
+   "cycles": [
+    {
+     "blocked_to_find": [],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.125,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00007_c0 + 4.0 cpd00067_c0 + 4.0 cpd00110_c0 <=> 2.0 cpd00001_c0 + 4.0 cpd00109_c0",
+       "equation_names": "O2_c0 + 4.0 H_c0 + 4.0 Cytochrome_c2_c0 <=> 2.0 H2O_c0 + 4.0 Cytochrome_c3_c0",
+       "gene_rule": "(sma0769 or sma1213 or sma0617) or smc01983 or (smc00009 or smb20174 or smb21368) or smc01985 or (smc00010 or smb21370) or (sma0766 or sma0615 or sma1216) or (sma0616 or sma1214 or sma0767) or (sma0765 or sma1220 or sma0612) or (smb21370 or smc00013) or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 0.25,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "0.5 cpd00007_c0 + 6.0 cpd00067_c0 + 2.0 cpd00110_c0 <=> cpd00001_c0 + 4.0 cpd00067_e0 + 2.0 cpd00109_c0",
+       "equation_names": "0.5 O2_c0 + 6.0 H_c0 + 2.0 Cytochrome_c2_c0 <=> H2O_c0 + 4.0 H_e0 + 2.0 Cytochrome_c3_c0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00058_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00324_c0",
+       "name": "Glycolate_NADP_oxidoreductase_c0",
+       "flux": 0.181818,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00006_c0 + cpd00139_c0 <=> cpd00005_c0 + cpd00040_c0 + cpd00067_c0",
+       "equation_names": "NADP_c0 + Glycolate_c0 <=> NADPH_c0 + Glyoxalate_c0 + H_c0",
+       "gene_rule": "smc02849 and (smc00340 or sma2137 or smc02849 or smc01943 or smb20535)"
+      },
+      {
+       "id": "rxn08655_c0",
+       "name": "Glycolate_oxidase_c0",
+       "flux": -0.181818,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00139_c0 + cpd15560_c0 <=> cpd00040_c0 + cpd15561_c0",
+       "equation_names": "Glycolate_c0 + Ubiquinone_8_c0 <=> Glyoxalate_c0 + Ubiquinol_8_c0",
+       "gene_rule": "smc00926 and smc00832 and smc00833"
+      },
+      {
+       "id": "rxn10122_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__35_protons_c0",
+       "flux": 0.181818,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + 4.5 cpd00067_c0 + cpd15560_c0 <=> cpd00003_c0 + 3.5 cpd00067_e0 + cpd15561_c0",
+       "equation_names": "NADH_c0 + 4.5 H_c0 + Ubiquinone_8_c0 <=> NAD_c0 + 3.5 H_e0 + Ubiquinol_8_c0",
+       "gene_rule": "(smc01924 or sma1544) and (smc01925 or sma1538 or sma1541) and (smc01923 or sma1545) and (sma1535 or smc01927) and (smc01917 or sma1526 or smc01919) and (sma1516 or smc01921) and (smc01913 or sma1532) and (smc01922 or sma1519) and (sma1536 or smc01926) and (sma1525 or smc01918) and (smc01920 or sma1523) and (smc01914 or sma1531) and (sma1533 or smc01912) and (smc01915 or sma1529)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -0.181818,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "cpd00004_c0 + cpd00006_c0 + 2.0 cpd00067_e0 <=> cpd00003_c0 + cpd00005_c0 + 2.0 cpd00067_c0",
+       "equation_names": "NADH_c0 + NADP_c0 + 2.0 H_e0 <=> NAD_c0 + NADPH_c0 + 2.0 H_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      }
+     ]
+    }
+   ],
+   "reactions_in_any_found_cycle": 6,
+   "single_reaction_cuts": []
+  }
+ },
+ "iSO783_view_after_medium_completion": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_adocbl_e",
+   "EX_btn_e",
+   "EX_nac_e",
+   "EX_ribflv_e"
+  ],
+  "values": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": null,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "gate_keys_testable": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2"
+  ],
+  "gate_fails": false
+ },
+ "iGD1575_view_after_medium_completion": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_adocbl_e",
+   "EX_nac_e",
+   "EX_pydxn_e",
+   "EX_ribflv_e"
+  ],
+  "values": {
+   "atp": 1000.0,
+   "nadh": 124.99999999999991,
+   "nadph": 124.9999999999999,
+   "q8h2": 125.00000000000016,
+   "h_p": null,
+   "h_e (no-periplasm analogue)": 1000.0
+  },
+  "gate_keys_testable": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2"
+  ],
+  "gate_fails": true,
+  "h_e_cycles": {
+   "n_lps": 3,
+   "n_distinct_minimal_flux_supports": 2,
+   "cycles": [
+    {
+     "blocked_to_find": [],
+     "reactions": [
+      {
+       "id": "rxn00058_c0",
+       "name": "Ferrocytochrome_c_oxygen_oxidoreductase_c0",
+       "flux": -0.125,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "4.0 focytc_c + 4.0 h_c + o2_c <=> 4.0 ficytc_c + 2.0 h2o_c",
+       "equation_names": "4.0 Cytochrome_c2_c0 + 4.0 H_c0 + O2_c0 <=> 4.0 Cytochrome_c3_c0 + 2.0 H2O_c0",
+       "gene_rule": "sma0769 or sma1213 or sma0617 or smc01983 or smc00009 or smb20174 or smb21368 or smc01985 or smc00010 or smb21370 or sma0766 or sma0615 or sma1216 or sma0616 or sma1214 or sma0767 or sma0765 or sma1220 or sma0612 or smb21370 or smc00013 or smc01982 or smc03941 or smc01984"
+      },
+      {
+       "id": "rxn10043_c0",
+       "name": "cytochrome_c_oxidase_He___2_c0",
+       "flux": 0.25,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "2.0 focytc_c + 6.0 h_c + 0.5 o2_c <=> 2.0 ficytc_c + h2o_c + 4.0 h_e",
+       "equation_names": "2.0 Cytochrome_c2_c0 + 6.0 H_c0 + 0.5 O2_c0 <=> 2.0 Cytochrome_c3_c0 + H2O_c0 + 4.0 H_e0",
+       "gene_rule": "(smb21370 or smc00013) and smc03941 and (smc00010 or smb21370) and (smc00009 or smb20174 or smb21368)"
+      }
+     ]
+    },
+    {
+     "blocked_to_find": [
+      "rxn00058_c0"
+     ],
+     "reactions": [
+      {
+       "id": "rxn00324_c0",
+       "name": "Glycolate_NADP_oxidoreductase_c0",
+       "flux": 0.181818,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "glyclt_c + nadp_c <=> glx_c + h_c + nadph_c",
+       "equation_names": "Glycolate_c0 + NADP_c0 <=> Glyoxalate_c0 + H_c0 + NADPH_c0",
+       "gene_rule": "smc02849 and (smc00340 or sma2137 or smc02849 or smc01943 or smb20535)"
+      },
+      {
+       "id": "rxn08655_c0",
+       "name": "Glycolate_oxidase_c0",
+       "flux": -0.181818,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "glyclt_c + q8_c <=> glx_c + q8h2_c",
+       "equation_names": "Glycolate_c0 + Ubiquinone_8_c0 <=> Glyoxalate_c0 + Ubiquinol_8_c0",
+       "gene_rule": "smc00926 and smc00832 and smc00833"
+      },
+      {
+       "id": "rxn10122_c0",
+       "name": "NADH_dehydrogenase_ubiquinone_8__35_protons_c0",
+       "flux": 0.181818,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "4.5 h_c + nadh_c + q8_c <=> 3.5 h_e + nad_c + q8h2_c",
+       "equation_names": "4.5 H_c0 + NADH_c0 + Ubiquinone_8_c0 <=> 3.5 H_e0 + NAD_c0 + Ubiquinol_8_c0",
+       "gene_rule": "(smc01924 or sma1544) and (smc01925 or sma1538 or sma1541) and (smc01923 or sma1545) and (sma1535 or smc01927) and (smc01917 or sma1526 or smc01919) and (sma1516 or smc01921) and (smc01913 or sma1532) and (smc01922 or sma1519) and (sma1536 or smc01926) and (sma1525 or smc01918) and (smc01920 or sma1523) and (smc01914 or sma1531) and (sma1533 or smc01912) and (smc01915 or sma1529)"
+      },
+      {
+       "id": "rxn10125_c0",
+       "name": "NADP_transhydrogenase_c0",
+       "flux": -0.181818,
+       "bounds": [
+        -1000.0,
+        1000.0
+       ],
+       "equation_ids": "2.0 h_e + nadh_c + nadp_c <=> 2.0 h_c + nad_c + nadph_c",
+       "equation_names": "2.0 H_e0 + NADH_c0 + NADP_c0 <=> 2.0 H_c0 + NAD_c0 + NADPH_c0",
+       "gene_rule": "(smc03938 and (smc03950 or smc03939)) or smc00300"
+      }
+     ]
+    }
+   ],
+   "reactions_in_any_found_cycle": 6,
+   "single_reaction_cuts": []
+  }
+ },
+ "Smeli_B0_after_medium_completion": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_btn_e",
+   "EX_na1_e",
+   "EX_nac_e",
+   "EX_ni2_e",
+   "EX_ribflv_e"
+  ],
+  "values": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "gate_keys_testable": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2",
+   "h_p"
+  ],
+  "gate_fails": false
+ },
+ "Smeli_UNQ_after_medium_completion": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_btn_e",
+   "EX_na1_e",
+   "EX_nac_e",
+   "EX_ni2_e",
+   "EX_ribflv_e"
+  ],
+  "values": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "gate_keys_testable": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2",
+   "h_p"
+  ],
+  "gate_fails": false
+ },
+ "Smeli_M_after_medium_completion": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_btn_e",
+   "EX_na1_e",
+   "EX_nac_e",
+   "EX_ni2_e",
+   "EX_ribflv_e"
+  ],
+  "values": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "gate_keys_testable": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2",
+   "h_p"
+  ],
+  "gate_fails": false
+ },
+ "MR1_B0_after_medium_completion": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_adocbl_e",
+   "EX_btn_e",
+   "EX_cbl1_e",
+   "EX_na1_e",
+   "EX_ni2_e",
+   "EX_ribflv_e"
+  ],
+  "values": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "gate_keys_testable": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2",
+   "h_p"
+  ],
+  "gate_fails": false
+ },
+ "MR1_UNQ_after_medium_completion": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_adocbl_e",
+   "EX_btn_e",
+   "EX_cbl1_e",
+   "EX_na1_e",
+   "EX_ni2_e",
+   "EX_ribflv_e"
+  ],
+  "values": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "gate_keys_testable": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2",
+   "h_p"
+  ],
+  "gate_fails": false
+ },
+ "MR1_M_after_medium_completion": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_adocbl_e",
+   "EX_btn_e",
+   "EX_cbl1_e",
+   "EX_na1_e",
+   "EX_ni2_e",
+   "EX_ribflv_e"
+  ],
+  "values": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0,
+   "h_p": 0.0,
+   "h_e (no-periplasm analogue)": 0.0
+  },
+  "gate_keys_testable": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2",
+   "h_p"
+  ],
+  "gate_fails": false
+ }
+}

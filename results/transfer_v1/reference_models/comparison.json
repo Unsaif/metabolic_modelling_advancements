@@ -1,6 +1,243 @@
 {
  "note": "post hoc and descriptive; development organisms and the E. coli control are not held out",
+ "notes": [
+  "share_of_gap_closed is exploratory (not in docs/studies/transfer-v1-curated-references-plan.md): a ratio of differences whose intervals include zero",
+  "entries whose card says exploratory=true used a medium supplement (protocol deviation)"
+ ],
  "organisms": {
+  "Btheta/iAH991": {
+   "reference": "iAH991",
+   "coverage": {
+    "iAH991": {
+     "n_conditions_mapped": 25,
+     "n_conditions_grows": 0
+    },
+    "B0": {
+     "n_conditions_mapped": 25,
+     "n_conditions_grows": 14
+    },
+    "U'": {
+     "n_conditions_mapped": 25,
+     "n_conditions_grows": 14
+    },
+    "M": {
+     "n_conditions_mapped": 25,
+     "n_conditions_grows": 14
+    }
+   },
+   "own_mcc": {
+    "iAH991": null,
+    "B0": 0.49699929899068823,
+    "U'": 0.5097213138903959,
+    "M": 0.5512413042153798
+   },
+   "exploratory": false,
+   "medium_supplement": {},
+   "conditions_reference_grows": [],
+   "gene_level": "not computed: the reference model grows in none of the mapped conditions"
+  },
+  "Btheta/iAH991_exploratory_B12_H2S": {
+   "reference": "iAH991_exploratory_B12_H2S",
+   "coverage": {
+    "iAH991_exploratory_B12_H2S": {
+     "n_conditions_mapped": 25,
+     "n_conditions_grows": 24
+    },
+    "B0": {
+     "n_conditions_mapped": 25,
+     "n_conditions_grows": 14
+    },
+    "U'": {
+     "n_conditions_mapped": 25,
+     "n_conditions_grows": 14
+    },
+    "M": {
+     "n_conditions_mapped": 25,
+     "n_conditions_grows": 14
+    }
+   },
+   "own_mcc": {
+    "iAH991_exploratory_B12_H2S": 0.4485042354800323,
+    "B0": 0.49699929899068823,
+    "U'": 0.5097213138903959,
+    "M": 0.5512413042153798
+   },
+   "exploratory": true,
+   "medium_supplement": {
+    "cbl1": -0.001,
+    "h2s": -1000.0
+   },
+   "conditions_reference_grows": [
+    "Maltotetraose | Varel_Bryant_medium",
+    "Maltohexaose | Varel_Bryant_medium",
+    "Laminaribiose | Varel_Bryant_medium",
+    "Stachyose - 70% | Varel_Bryant_medium",
+    "Melibiose | Varel_Bryant_medium",
+    "D-Glucose | Varel_Bryant_medium",
+    "D-Trehalose dihydrate | Varel_Bryant_medium",
+    "D-Raffinose pentahydrate | Varel_Bryant_medium",
+    "L-Fucose | Varel_Bryant_medium",
+    "Beta-Lactose | Varel_Bryant_medium",
+    "D-Fructose | Varel_Bryant_medium",
+    "D-Maltose monohydrate | Varel_Bryant_medium",
+    "L-Rhamnose monohydrate | Varel_Bryant_medium",
+    "D-Mannose | Varel_Bryant_medium",
+    "D-Xylose | Varel_Bryant_medium",
+    "D-Galacturonic Acid monohydrate | Varel_Bryant_medium",
+    "N-Acetyl-D-Glucosamine | Varel_Bryant_medium",
+    "L-Arabinose | Varel_Bryant_medium",
+    "D-Galactose | Varel_Bryant_medium",
+    "D-Glucosamine Hydrochloride | Varel_Bryant_medium",
+    "D-Ribose | Varel_Bryant_medium",
+    "Red Arabinan from sugar-beet | Varel_Bryant_medium",
+    "Amylose from potato | Varel_Bryant_medium",
+    "Starch | Varel_Bryant_medium"
+   ],
+   "four_way": {
+    "union_genes": 958,
+    "conditions_all_grow": 14,
+    "n_observations": 13412,
+    "mcc": {
+     "B0": 0.49229495501987625,
+     "U'": 0.5042808778554904,
+     "M": 0.5569100174159979,
+     "iAH991_exploratory_B12_H2S": 0.44479155011839244
+    },
+    "share_of_gap_closed": null
+   },
+   "error_overlap_common_genes_Uprime_vs_curated": {
+    "n_genes": 367,
+    "n_conditions": 14,
+    "n_observations": 5138,
+    "wrong_Uprime": 711,
+    "wrong_curated": 753,
+    "wrong_both": 478,
+    "expected_both_if_independent": 104.20066173608409
+   },
+   "curated_only_genes": {
+    "n_genes": 447,
+    "n_conditions": 14,
+    "conditions": [
+     "Laminaribiose | Varel_Bryant_medium",
+     "D-Glucose | Varel_Bryant_medium",
+     "D-Raffinose pentahydrate | Varel_Bryant_medium",
+     "L-Fucose | Varel_Bryant_medium",
+     "Beta-Lactose | Varel_Bryant_medium",
+     "L-Rhamnose monohydrate | Varel_Bryant_medium",
+     "D-Xylose | Varel_Bryant_medium",
+     "D-Galacturonic Acid monohydrate | Varel_Bryant_medium",
+     "L-Arabinose | Varel_Bryant_medium",
+     "D-Galactose | Varel_Bryant_medium",
+     "D-Ribose | Varel_Bryant_medium",
+     "Red Arabinan from sugar-beet | Varel_Bryant_medium",
+     "Amylose from potato | Varel_Bryant_medium",
+     "Starch | Varel_Bryant_medium"
+    ],
+    "important_calls": 568,
+    "important_calls_confirmed": 30
+   },
+   "no_growth_conditions": {
+    "B0": {
+     "no_growth": 11,
+     "no_growth_missing_exchange": 9
+    },
+    "U'": {
+     "no_growth": 11,
+     "no_growth_missing_exchange": 9
+    },
+    "M": {
+     "no_growth": 11,
+     "no_growth_missing_exchange": 9
+    },
+    "iAH991_exploratory_B12_H2S": {
+     "no_growth": 1,
+     "no_growth_missing_exchange": 1
+    }
+   },
+   "pairwise_curated_minus_arm": {
+    "B0": {
+     "union": {
+      "union_genes": 958,
+      "union_mcc_A": 0.49229495501987625,
+      "union_mcc_B": 0.44479155011839244,
+      "union_delta": -0.0475034049014838,
+      "union_delta_ci95": [
+       -0.12781957160088256,
+       0.03462375216456803
+      ]
+     },
+     "common": {
+      "n_common_genes": 367,
+      "n_conditions_both_grow": 14,
+      "mcc_arm": 0.4897874660879152,
+      "mcc_curated": 0.5167431637771321,
+      "difference": {
+       "point": 0.026955697689216962,
+       "ci95": [
+        -0.06280344132819382,
+        0.12033859454540834
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    },
+    "U'": {
+     "union": {
+      "union_genes": 958,
+      "union_mcc_A": 0.5042808778554904,
+      "union_mcc_B": 0.44479155011839244,
+      "union_delta": -0.05948932773709792,
+      "union_delta_ci95": [
+       -0.13844971808327353,
+       0.026519724842939633
+      ]
+     },
+     "common": {
+      "n_common_genes": 367,
+      "n_conditions_both_grow": 14,
+      "mcc_arm": 0.5023843555099725,
+      "mcc_curated": 0.5167431637771321,
+      "difference": {
+       "point": 0.014358808267159628,
+       "ci95": [
+        -0.07084728039411088,
+        0.09692869665466058
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    },
+    "M": {
+     "union": {
+      "union_genes": 958,
+      "union_mcc_A": 0.5569100174159979,
+      "union_mcc_B": 0.44479155011839244,
+      "union_delta": -0.11211846729760544,
+      "union_delta_ci95": [
+       -0.1880520804140571,
+       -0.03937409271977611
+      ]
+     },
+     "common": {
+      "n_common_genes": 371,
+      "n_conditions_both_grow": 14,
+      "mcc_arm": 0.5434712126030118,
+      "mcc_curated": 0.5316425407024025,
+      "difference": {
+       "point": -0.011828671900609322,
+       "ci95": [
+        -0.08824243894684491,
+        0.07345673454113023
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    }
+   }
+  },
   "Keio/iML1515": {
    "reference": "iML1515",
    "coverage": {
@@ -11,6 +248,223 @@
    },
    "own_mcc": {
     "iML1515": 0.5863313832288578
+   },
+   "exploratory": false,
+   "medium_supplement": {},
+   "conditions_reference_grows": [
+    "D-Glucose | M9 minimal media_noCarbon",
+    "D-Fructose | M9 minimal media_noCarbon",
+    "D-Maltose monohydrate | M9 minimal media_noCarbon",
+    "D-Xylose | M9 minimal media_noCarbon",
+    "D-Galactose | M9 minimal media_noCarbon",
+    "D-Ribose | M9 minimal media_noCarbon",
+    "L-Fucose | M9 minimal media_noCarbon",
+    "a-Ketoglutaric acid disodium salt hydrate | M9 minimal media_noCarbon",
+    "D-Glucuronic Acid | M9 minimal media_noCarbon",
+    "D-Gluconic Acid sodium salt | M9 minimal media_noCarbon",
+    "D-Glucose-6-Phosphate sodium salt | M9 minimal media_noCarbon",
+    "Potassium acetate | M9 minimal media_noCarbon",
+    "Sodium D-Lactate | M9 minimal media_noCarbon",
+    "Sodium D,L-Lactate | M9 minimal media_noCarbon",
+    "Sodium pyruvate | M9 minimal media_noCarbon",
+    "Sodium succinate dibasic hexahydrate | M9 minimal media_noCarbon",
+    "Glycolic Acid | M9 minimal media_noCarbon",
+    "D-Galacturonic Acid monohydrate | M9 minimal media_noCarbon",
+    "Glycerol | M9 minimal media_noCarbon",
+    "D-Sorbitol | M9 minimal media_noCarbon",
+    "L-Malic acid disodium salt monohydrate | M9 minimal media_noCarbon",
+    "D-Trehalose dihydrate | M9 minimal media_noCarbon",
+    "D-Serine | M9 minimal media_noCarbon",
+    "casamino acids | M9 minimal media_noCarbon",
+    "N-Acetyl-D-Glucosamine | M9 minimal media_noCarbon",
+    "D-Glucosamine Hydrochloride | M9 minimal media_noCarbon",
+    "D-Mannose | M9 minimal media_noCarbon",
+    "D-Galacturonic Acid monohydrate | MOPS Rich Defined media_noCarbon",
+    "D-Glucose | MOPS Rich Defined media_noCarbon",
+    "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+    "D-Glucose | MOPS minimal media_noCarbon",
+    "D-Mannitol | RCH2_defined_noCarbon"
+   ]
+  },
+  "MR1/iSO783": {
+   "reference": "iSO783",
+   "coverage": {
+    "iSO783": {
+     "n_conditions_mapped": 12,
+     "n_conditions_grows": 9
+    },
+    "B0": {
+     "n_conditions_mapped": 12,
+     "n_conditions_grows": 8
+    },
+    "U'": {
+     "n_conditions_mapped": 12,
+     "n_conditions_grows": 9
+    },
+    "M": {
+     "n_conditions_mapped": 12,
+     "n_conditions_grows": 9
+    }
+   },
+   "own_mcc": {
+    "iSO783": 0.5459974788756303,
+    "B0": 0.4699120128786607,
+    "U'": 0.4871326735717379,
+    "M": 0.47852167019017006
+   },
+   "exploratory": false,
+   "medium_supplement": {},
+   "conditions_reference_grows": [
+    "Sodium L-Lactate | ShewMM_noCarbon",
+    "Sodium pyruvate | ShewMM_noCarbon",
+    "Sodium propionate | ShewMM_noCarbon",
+    "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+    "Uridine | ShewMM_noCarbon",
+    "Cytidine | ShewMM_noCarbon",
+    "Sodium D,L-Lactate | ShewMM_noCarbon",
+    "L-Glutamine | ShewMM_noCarbon",
+    "casamino acids | ShewMM_noCarbon"
+   ],
+   "four_way": {
+    "union_genes": 843,
+    "conditions_all_grow": 7,
+    "n_observations": 5901,
+    "mcc": {
+     "B0": 0.4707920548439193,
+     "U'": 0.49200854075345696,
+     "M": 0.4826300598421346,
+     "iSO783": 0.5337142216064343
+    },
+    "share_of_gap_closed": {
+     "U'": 0.33718619369250774,
+     "M": 0.18813727510203315
+    }
+   },
+   "error_overlap_common_genes_Uprime_vs_curated": {
+    "n_genes": 440,
+    "n_conditions": 8,
+    "n_observations": 3520,
+    "wrong_Uprime": 580,
+    "wrong_curated": 542,
+    "wrong_both": 383,
+    "expected_both_if_independent": 89.30681818181819
+   },
+   "curated_only_genes": {
+    "n_genes": 127,
+    "n_conditions": 8,
+    "conditions": [
+     "Sodium L-Lactate | ShewMM_noCarbon",
+     "Sodium pyruvate | ShewMM_noCarbon",
+     "Sodium propionate | ShewMM_noCarbon",
+     "Uridine | ShewMM_noCarbon",
+     "Cytidine | ShewMM_noCarbon",
+     "Sodium D,L-Lactate | ShewMM_noCarbon",
+     "L-Glutamine | ShewMM_noCarbon",
+     "casamino acids | ShewMM_noCarbon"
+    ],
+    "important_calls": 43,
+    "important_calls_confirmed": 16
+   },
+   "no_growth_conditions": {
+    "B0": {
+     "no_growth": 4,
+     "no_growth_missing_exchange": 0
+    },
+    "U'": {
+     "no_growth": 3,
+     "no_growth_missing_exchange": 0
+    },
+    "M": {
+     "no_growth": 3,
+     "no_growth_missing_exchange": 0
+    },
+    "iSO783": {
+     "no_growth": 3,
+     "no_growth_missing_exchange": 0
+    }
+   },
+   "pairwise_curated_minus_arm": {
+    "B0": {
+     "union": {
+      "union_genes": 843,
+      "union_mcc_A": 0.4707920548439193,
+      "union_mcc_B": 0.5337142216064343,
+      "union_delta": 0.06292216676251505,
+      "union_delta_ci95": [
+       -0.003620681094075666,
+       0.13342460457799765
+      ]
+     },
+     "common": {
+      "n_common_genes": 440,
+      "n_conditions_both_grow": 7,
+      "mcc_arm": 0.47681223715151994,
+      "mcc_curated": 0.5466626592307081,
+      "difference": {
+       "point": 0.06985042207918818,
+       "ci95": [
+        -0.013424241552145758,
+        0.14912264158740368
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    },
+    "U'": {
+     "union": {
+      "union_genes": 843,
+      "union_mcc_A": 0.48504289162755476,
+      "union_mcc_B": 0.5344381215432403,
+      "union_delta": 0.04939522991568557,
+      "union_delta_ci95": [
+       -0.011096123988227088,
+       0.11243457898487853
+      ]
+     },
+     "common": {
+      "n_common_genes": 440,
+      "n_conditions_both_grow": 8,
+      "mcc_arm": 0.4961128913199595,
+      "mcc_curated": 0.5473893641830931,
+      "difference": {
+       "point": 0.05127647286313364,
+       "ci95": [
+        -0.02783575708961776,
+        0.12548377098304395
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    },
+    "M": {
+     "union": {
+      "union_genes": 843,
+      "union_mcc_A": 0.4766867073227679,
+      "union_mcc_B": 0.5344381215432403,
+      "union_delta": 0.05775141422047242,
+      "union_delta_ci95": [
+       -0.0023930640392876594,
+       0.1252844758742536
+      ]
+     },
+     "common": {
+      "n_common_genes": 443,
+      "n_conditions_both_grow": 8,
+      "mcc_arm": 0.4840628792675862,
+      "mcc_curated": 0.5481829141534912,
+      "difference": {
+       "point": 0.06412003488590501,
+       "ci95": [
+        -0.010300943173359903,
+        0.1433498125633666
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    }
    }
   },
   "Putida/iJN1463": {
@@ -39,6 +493,46 @@
     "U'": 0.5531090772976097,
     "M": 0.5901527631792
    },
+   "exploratory": false,
+   "medium_supplement": {},
+   "conditions_reference_grows": [
+    "L-Arginine | MOPS minimal media_noCarbon",
+    "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+    "L-Histidine | MOPS minimal media_noCarbon",
+    "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+    "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+    "Vanillin | MOPS minimal media_noCarbon",
+    "Sodium propionate | MOPS minimal media_noCarbon",
+    "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+    "Vanillic Acid | MOPS minimal media_noCarbon",
+    "Protocatechuic Acid | MOPS minimal media_noCarbon",
+    "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+    "L-Lysine | MOPS minimal media_noCarbon",
+    "p-Coumaric acid | MOPS minimal media_noCarbon",
+    "benzoic acid | MOPS minimal media_noCarbon",
+    "Ferulic Acid | MOPS minimal media_noCarbon",
+    "D-Glucose | MOPS minimal media_noCarbon",
+    "Phenylacetic acid | MOPS minimal media_noCarbon",
+    "Hexanoic acid | MOPS minimal media_noCarbon",
+    "Decanoic acid | MOPS minimal media_noCarbon",
+    "Lauric acid | MOPS minimal media_noCarbon",
+    "Octanoic acid | MOPS minimal media_noCarbon",
+    "Myristic acid | MOPS minimal media_noCarbon",
+    "Oleic acid | MOPS minimal media_noCarbon",
+    "Ethanol | MOPS minimal media_noCarbon",
+    "L-Valine | MOPS minimal media_noCarbon",
+    "L-Leucine | MOPS minimal media_noCarbon",
+    "L-Isoleucine | MOPS minimal media_noCarbon",
+    "D-Glucose | RCH2_defined_noCarbon",
+    "Potassium acetate | RCH2_defined_noCarbon",
+    "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+    "Vanillin | RCH2_defined_noCarbon",
+    "p-Coumaric acid | RCH2_defined_noCarbon",
+    "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+    "4-Aminobutyric acid | MOPS minimal media_noCarbon",
+    "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+    "D-Lysine | MOPS minimal media_noCarbon"
+   ],
    "four_way": {
     "union_genes": 1423,
     "conditions_all_grow": 28,
@@ -63,6 +557,36 @@
    "curated_only_genes": {
     "n_genes": 383,
     "n_conditions": 28,
+    "conditions": [
+     "L-Arginine | MOPS minimal media_noCarbon",
+     "L-Glutamic acid monopotassium salt monohydrate | MOPS minimal media_noCarbon",
+     "L-Histidine | MOPS minimal media_noCarbon",
+     "Sodium succinate dibasic hexahydrate | MOPS minimal media_noCarbon",
+     "a-Ketoglutaric acid disodium salt hydrate | MOPS minimal media_noCarbon",
+     "Vanillin | MOPS minimal media_noCarbon",
+     "Sodium propionate | MOPS minimal media_noCarbon",
+     "Vanillic Acid | MOPS minimal media_noCarbon",
+     "Protocatechuic Acid | MOPS minimal media_noCarbon",
+     "4-Hydroxybenzoic Acid | MOPS minimal media_noCarbon",
+     "L-Lysine | MOPS minimal media_noCarbon",
+     "p-Coumaric acid | MOPS minimal media_noCarbon",
+     "benzoic acid | MOPS minimal media_noCarbon",
+     "D-Glucose | MOPS minimal media_noCarbon",
+     "Phenylacetic acid | MOPS minimal media_noCarbon",
+     "Decanoic acid | MOPS minimal media_noCarbon",
+     "Lauric acid | MOPS minimal media_noCarbon",
+     "Octanoic acid | MOPS minimal media_noCarbon",
+     "Myristic acid | MOPS minimal media_noCarbon",
+     "Oleic acid | MOPS minimal media_noCarbon",
+     "Ethanol | MOPS minimal media_noCarbon",
+     "L-Valine | MOPS minimal media_noCarbon",
+     "L-Isoleucine | MOPS minimal media_noCarbon",
+     "D-Glucose | RCH2_defined_noCarbon",
+     "Potassium acetate | RCH2_defined_noCarbon",
+     "Vanillin | RCH2_defined_noCarbon",
+     "p-Coumaric acid | RCH2_defined_noCarbon",
+     "4-Aminobutyric acid | MOPS minimal media_noCarbon"
+    ],
     "important_calls": 1287,
     "important_calls_confirmed": 52
    },

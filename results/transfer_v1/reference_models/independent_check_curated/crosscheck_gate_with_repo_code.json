@@ -1,0 +1,46 @@
+{
+ "iSO783": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_adocbl_e",
+   "EX_btn_e",
+   "EX_nac_e",
+   "EX_ribflv_e"
+  ],
+  "energy_from_nothing": {
+   "atp": 0.0,
+   "nadh": 0.0,
+   "nadph": 0.0,
+   "q8h2": 0.0
+  },
+  "gate_fails": false,
+  "currencies_tested": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2"
+  ]
+ },
+ "iGD1575": {
+  "medium_completion_added": [
+   "EX_4abz_e",
+   "EX_adocbl_e",
+   "EX_nac_e",
+   "EX_pydxn_e",
+   "EX_ribflv_e"
+  ],
+  "energy_from_nothing": {
+   "atp": 1000.0,
+   "nadh": 124.99999999999991,
+   "nadph": 124.9999999999999,
+   "q8h2": 125.00000000000016
+  },
+  "gate_fails": true,
+  "currencies_tested": [
+   "atp",
+   "nadh",
+   "nadph",
+   "q8h2"
+  ]
+ }
+}

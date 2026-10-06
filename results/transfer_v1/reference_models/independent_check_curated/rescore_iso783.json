@@ -1,0 +1,113 @@
+{
+ "medium_completion_added": [
+  "EX_4abz_e",
+  "EX_adocbl_e",
+  "EX_btn_e",
+  "EX_nac_e",
+  "EX_ribflv_e"
+ ],
+ "energy_check": {
+  "atp": 0.0,
+  "nadh": 0.0,
+  "nadph": 0.0,
+  "q8h2": 0.0,
+  "h_p": null,
+  "h_e (no-periplasm analogue)": 0.0
+ },
+ "conditions": [
+  "Sodium L-Lactate | ShewMM_noCarbon",
+  "Sodium pyruvate | ShewMM_noCarbon",
+  "Sodium propionate | ShewMM_noCarbon",
+  "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+  "Adenosine | ShewMM_noCarbon",
+  "Uridine | ShewMM_noCarbon",
+  "Inosine | ShewMM_noCarbon",
+  "Cytidine | ShewMM_noCarbon",
+  "Sodium D,L-Lactate | ShewMM_noCarbon",
+  "L-Glutamine | ShewMM_noCarbon",
+  "L-Isoleucine | ShewMM_noCarbon",
+  "casamino acids | ShewMM_noCarbon"
+ ],
+ "part_A_reproduction": {
+  "n_genes": 560,
+  "same_gene_set_as_saved": true,
+  "conditions_same_order": true,
+  "max_abs_diff_wt": 3.8957725934096743e-13,
+  "max_abs_diff_sim": 3.3472330462913646e-09,
+  "binary_calls_differ": 0,
+  "max_abs_diff_fitness": 0.0
+ },
+ "part_B_extra_genes": [
+  {
+   "model_gene": "SO0419",
+   "sysName": "SO_0419",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 5,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO1223",
+   "sysName": "SO_1223",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 8,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO1900",
+   "sysName": "SO_1900",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 0,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO2304",
+   "sysName": "SO_2304",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 0,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO2784",
+   "sysName": "SO_2784",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 0,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO2937",
+   "sysName": "SO_2937",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 0,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO3068",
+   "sysName": "SO_3068",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 1,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO3079",
+   "sysName": "SO_3079",
+   "ko_no_growth_in_growing_conditions": 9,
+   "fitness_le_-2_in_growing_conditions": 9,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO3442",
+   "sysName": "SO_3442",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 0,
+   "n_growing_conditions": 9
+  },
+  {
+   "model_gene": "SO3579",
+   "sysName": "SO_3579",
+   "ko_no_growth_in_growing_conditions": 0,
+   "fitness_le_-2_in_growing_conditions": 2,
+   "n_growing_conditions": 9
+  }
+ ],
+ "part_B_matrices": "results/transfer_v1/reference_models/independent_check_curated/matrices_iSO783_corrected_gene_map.npz"
+}

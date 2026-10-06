@@ -1,0 +1,6770 @@
+{
+ "tool": {
+  "script": "scripts/rebuild_iAH991_from_pdf.py",
+  "python": "3.13.16",
+  "cobra": "0.32.1",
+  "pdfplumber": "0.11.10",
+  "solver": "glpk"
+ },
+ "source": {
+  "pdf_file": "2012GUTMICROBES0043R-Sup.pdf",
+  "sha256": "49502d765c7d049208aeb03a140aa7973d4569b7cddf22b9ca2ea4fa019975b9",
+  "sha256_matches_expected": true,
+  "citation": "Heinken A, Sahoo S, Fleming RMT, Thiele I. Systems-level characterization of a host-microbe metabolic symbiosis in the mammalian gut. Gut Microbes 2013;4(1):28-40. doi:10.4161/gmic.22370 (supplementary material)",
+  "pages": 564
+ },
+ "extraction": {
+  "S10a": {
+   "pages": [
+    36,
+    262
+   ],
+   "rows": 1488,
+   "pages_with_clipped_rows": [
+    {
+     "page": 89,
+     "rows": 1,
+     "rect_clip_pt": 944.1,
+     "char_clip_pt": 5.3,
+     "rows_without_bottom_edge": 0
+    },
+    {
+     "page": 179,
+     "rows": 1,
+     "rect_clip_pt": 14.9,
+     "char_clip_pt": 5.3,
+     "rows_without_bottom_edge": 0
+    }
+   ],
+   "recovered_rows": [
+    {
+     "page": 89,
+     "rows_with_bottom_edge": 1,
+     "rows_default_settings": 0
+    },
+    {
+     "page": 179,
+     "rows_with_bottom_edge": 1,
+     "rows_default_settings": 0
+    }
+   ]
+  },
+  "S10b": {
+   "pages": [
+    263,
+    306
+   ],
+   "rows": 988,
+   "pages_with_clipped_rows": []
+  },
+  "S12_bt": {
+   "pages": [
+    472,
+    490
+   ],
+   "first_mouse_page": 490,
+   "rows": 1488
+  },
+  "table_settings": "pdfplumber extract_tables with explicit_horizontal_lines=[page.height - 0.25] (closes rows clipped at the page bottom)"
+ },
+ "counts": {
+  "rebuilt": {
+   "reactions": 1488,
+   "exchange": 270,
+   "demand": 3,
+   "sink": 2,
+   "exchange_and_demand": 275,
+   "metabolic_and_transport": 1213,
+   "metabolites": 1152,
+   "unique_metabolites_without_compartment": 987,
+   "s10b_metabolites": 988,
+   "s10b_metabolites_unused": [
+    "pectin"
+   ],
+   "genes": 991
+  },
+  "published": {
+   "reactions": 1488,
+   "metabolic_and_transport": 1213,
+   "exchange_and_demand": 275,
+   "metabolites": 1152,
+   "genes": 991
+  },
+  "match": {
+   "reactions": true,
+   "metabolic_and_transport": true,
+   "exchange_and_demand": true,
+   "metabolites": true,
+   "genes": true
+  }
+ },
+ "joins": {
+  "formula_line_breaks": {
+   "space": 2986,
+   "joined": 215
+  },
+  "formula_breaks_after_a_number": 137,
+  "formula_breaks_after_a_number_also_valid_as_metabolite": [],
+  "gene_rule_line_breaks": {
+   "space": 1831
+  },
+  "text_columns": {
+   "space": 9011,
+   "punctuation_join": 2116,
+   "space_unverified": 791,
+   "word_rejoined": 558
+  },
+  "tokens_a_naive_space_join_would_break": 430
+ },
+ "parse_failures": [],
+ "manual_interventions": [
+  {
+   "kind": "clipped_row_replaced_from_S12",
+   "table": "S10a",
+   "page": 89,
+   "row": 1,
+   "visible_text": {
+    "BIGG Rxn ID": "",
+    "Formula": "34.7965 h2o[c] + 0.25601 glu-L[c] + 0.50006 ala-L[c] + 0.004668 ACP[c] + 0.004668 coa[c] + 0.004668 nadp[c] + 0.004668 nad[c] + 0.004668 na1[c] + 40.1701 atp[c] + 0.004668 adocbl[c] + 0.23468 asp-L[c] + 0.2091 gtp[c] + 0.004668 10fthf[c] + 0.004668 thf[c] + 0.25601 gln-L[c] + 0.5958 gly[c] + 0.092623 his-L[c] + 0.43866 leu-L[c] + 0.24665 thr-L[c] + 0.004668 amet[c] + 0.004668 mql8[c] + 0.004668 mql10[c] + 0.004668 mql11[c] + 0.004668 mql7[c] + 0.004668 mql9[c] + 0.08898 cys-L[c] + 0.21543 pro-L[c] + 0.28828 arg-L[c] + 0.18056 phe-L[c] + 0.23468 asn-L[c] + 0.004668 btn[c] + 0.14934 met-L[c] + 0.004668 ca2[c] + 0.12988 ctp[c] + 0.010648 pg140[c] + 0.010648 clpn140[c] + 0.010648 pg160[c] +",
+    "Rev": "",
+    "LB": "",
+    "UB": ""
+   },
+   "clipped_at_page_bottom": true,
+   "action": "row taken from Table S12",
+   "reaction": "Biomass_BT_v2",
+   "s12_page": 475,
+   "visible_tokens_matched": 111,
+   "s12_tokens": 290,
+   "s12_lb": "0",
+   "s12_ub": "1000",
+   "s12_gene_rule": "",
+   "reason": "The S10a cell is taller than the page and is clipped by the page edge (cell border at y=1539.4 pt on a 595.3 pt page); only the first 111 formula tokens are printed and the BIGG id, Rev, LB, UB and GA cells are not visible. Table S12 is the only complete rendering in the PDF; its formula (BT prefix removed) starts with exactly the visible S10a tokens and its id is the only S12 reaction missing from S10a."
+  },
+  {
+   "kind": "bound_cell_number_format",
+   "table": "S10a",
+   "page": 84,
+   "row": 2,
+   "reaction": "ARAI",
+   "column": "LB",
+   "printed": "-1.000",
+   "readings": {
+    "decimal_point": -1.0,
+    "thousands_separator": -1000.0
+   },
+   "s12_value": -1000.0,
+   "s12_printed": "-1000",
+   "s12_page": 475,
+   "action": "used the Table S12 value -1000",
+   "reason": "Every other S10a bound cell is an integer (-1000, 0 or 1000); this cell is printed with three decimals, so it is either a decimal number or a number with a thousands separator, and the printing alone does not say which. Table S12 lists the same reaction's bound in an unambiguous format and was used."
+  },
+  {
+   "kind": "bound_cell_number_format",
+   "table": "S10a",
+   "page": 88,
+   "row": 2,
+   "reaction": "ATPM",
+   "column": "LB",
+   "printed": "84.300",
+   "readings": {
+    "decimal_point": 84.3,
+    "thousands_separator": 84300.0
+   },
+   "s12_value": 8.43,
+   "s12_printed": "8,43",
+   "s12_page": 475,
+   "action": "used the Table S12 value 8.43",
+   "reason": "Every other S10a bound cell is an integer (-1000, 0 or 1000); this cell is printed with three decimals, so it is either a decimal number or a number with a thousands separator, and the printing alone does not say which. Table S12 lists the same reaction's bound in an unambiguous format and was used."
+  }
+ ],
+ "rev_vs_bounds_disagreements": [
+  {
+   "reaction": "FORt",
+   "page": 144,
+   "row": 3,
+   "Rev": "1",
+   "arrow": "<=>",
+   "LB": 0.0,
+   "UB": 1000.0,
+   "note": "bounds kept"
+  }
+ ],
+ "exchange_orientation_issues": [],
+ "same_metabolite_on_both_sides": [],
+ "id_collisions": [],
+ "renamed_reaction_ids": {
+  "PFK(ppi)": "PFK_ppi_"
+ },
+ "s12_crosscheck": {
+  "reactions_compared": 1217,
+  "stoichiometry_mismatch": [],
+  "arrow_mismatch": [],
+  "bound_mismatch": [],
+  "gpr_text_differs_logic_same": [],
+  "gpr_logic_mismatch": [
+   {
+    "reaction": "GLCNACASE_OGLYCAN1e",
+    "s10a": "(BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or (BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821))",
+    "s12": "((BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821)))",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule malformed (trailing token ')')",
+    "s12_page": 479
+   },
+   {
+    "reaction": "GLCNACASE_OGLYCAN2e",
+    "s10a": "(BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or (BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821))",
+    "s12": "((BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821)))",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule malformed (trailing token ')')",
+    "s12_page": 479
+   },
+   {
+    "reaction": "GLCNACASE_OGLYCAN3e",
+    "s10a": "(BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or (BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821))",
+    "s12": "((BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821)))",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule malformed (trailing token ')')",
+    "s12_page": 479
+   },
+   {
+    "reaction": "GLCNACASE_OGLYCAN4e",
+    "s10a": "(BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or (BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821))",
+    "s12": "((BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821)))",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule malformed (trailing token ')')",
+    "s12_page": 479
+   },
+   {
+    "reaction": "GLCNACASE_OGLYCAN5e",
+    "s10a": "(BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or (BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821))",
+    "s12": "((BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821)))",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule malformed (trailing token ')')",
+    "s12_page": 479
+   },
+   {
+    "reaction": "GLCNACASE_OGLYCAN6e",
+    "s10a": "(BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or (BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821))",
+    "s12": "((BT_2825 or BT_1038 or BT_1044 or BT_1048 or BT_0865 or BT_1282 or BT_3753 or BT_4132 or BT_4406 or BT_3985 or BT_3987) and ((BT_1039 and BT_1040) or (BT_1042 and BT_1043) or (BT_1046 and BT_1047) or (BT_4134 and BT_4135) or (BT_4404 and BT_4405) or (BT_3983 and BT_3984) or BT_0866 and BT_0867) or (BT_3751 and BT_3752) or (BT_1280 and BT_1281) or (BT_3958 and BT_3959) or (BT_4633 and BT_4634) or (BT_2818 and BT_2819) or (BT_2820 and BT_2821)))",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule malformed (trailing token ')')",
+    "s12_page": 479
+   },
+   {
+    "reaction": "GLYASNt",
+    "s10a": "(BT_0580 or BT_4385 or BT_1086)",
+    "s12": "",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule empty",
+    "s12_page": 479
+   },
+   {
+    "reaction": "GLYASPt",
+    "s10a": "(BT_0580 or BT_4385 or BT_1086)",
+    "s12": "",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule empty",
+    "s12_page": 479
+   },
+   {
+    "reaction": "HSK",
+    "s10a": "BT_2402",
+    "s12": "",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule empty",
+    "s12_page": 480
+   },
+   {
+    "reaction": "RHAMNOGALURASEe_I",
+    "s10a": "(BT_1021 and BT_3662 and (BT_4152 or BT_0983 or BT_0992 or BT_0993 or BT_0996) and (BT_1001 or BT_1013 or BT_1019) and (BT_4146 or BT_4149 or BT_4153 or BT_4155 or BT_4183 or BT_4115 or BT_4116 or BT_1011 or BT_1018) and (BT_4150 or BT_4173) and BT_4175 and (BT_4109 or BT_4110) and ((BT_4670 and BT_4671) or (BT_4164 and BT_4165) or (BT_4113 and BT_4114) or (BT_1028 and BT_1029) or (BT_1683 and BT_1683) or (BT_3670 and BT_3671)))",
+    "s12": "(BT_1021 and BT_3662 and (BT_4152 or BT_0983 or BT_0992 or BT_0993 ot BT_0996) and (BT_1001 or BT_1013 or BT_1019) and (BT_4146 or BT_4149 or BT_4153 or BT_4155 or BT_4183 or BT_4115 or BT_4116 or BT_1011 or BT_1018) and (BT_4150 or BT_4173) and BT_4175 and (BT_4109 or BT_4110) and ((BT_4670 and BT_4671) or (BT_4164 and BT_4165) or (BT_4113 and BT_4114) or (BT_1028 and BT_1029) or (BT_1683 and BT_1683) or (BT_3670 and BT_3671)))",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule has invalid token(s) ['ot']",
+    "s12_page": 485
+   },
+   {
+    "reaction": "RHAMNOGALURASEe_II",
+    "s10a": "(BT_1021 or BT_0348) and (BT_3662 or BT_3663) and BT_1011 and BT_3664 and BT_3665 and (BT_4152 or BT_0983 or BT_0992 or BT_0993 or BT_0996) and (BT_1001 or BT_1013 or BT_1019) and (BT_4146 or BT_4149 or BT_4153 or BT_4155 or BT_4183 or BT_4115 or BT_4116 or BT_1018) and (BT_4150 or BT_4173) and BT_4175 and (BT_4109 or BT_4110) and ((BT_4670 and BT_4671) or (BT_4164 and BT_4165) or (BT_4113 and BT_4114) or (BT_1028 and BT_1029) or (BT_1683 and BT_1683) or (BT_3670 and BT_3671) or (BT_1024 and BT_1025))",
+    "s12": "((BT_1021 or BT_0348) and (BT_3662 or BT_3663) and BT_1011 and BT_3664 and BT_3665 and (BT_4152 or BT_0983 or BT_0992 or BT_0993 ot BT_0996) and (BT_1001 or BT_1013 or BT_1019) and (BT_4146 or BT_4149 or BT_4153 or BT_4155 or BT_4183 or BT_4115 or BT_4116 or BT_1018) and (BT_4150 or BT_4173) and BT_4175 and (BT_4109 or BT_4110) and ((BT_4670 and BT_4671) or (BT_4164 and BT_4165) or (BT_4113 and BT_4114) or (BT_1028 and BT_1029) or (BT_1683 and BT_1683) or (BT_3670 and BT_3671) or (BT_1024 and BT_1025)))",
+    "s10a_rule_valid": true,
+    "s12_problem": "S12 rule has invalid token(s) ['ot']",
+    "s12_page": 485
+   }
+  ],
+  "missing_in_s12": [],
+  "missing_in_s10a": [],
+  "s12_parse_failures": [],
+  "exchange_metabolites": {
+   "s10a": 270,
+   "s12": 270,
+   "only_in_s10a": [],
+   "only_in_s12": []
+  }
+ },
+ "biomass": {
+  "s10a_biomass_reactions": [
+   "Biomass_BT_v2"
+  ],
+  "s12_bt_biomass_reactions": [
+   "Biomass_BT_v2"
+  ],
+  "objective": "Biomass_BT_v2",
+  "evidence_checked": {
+   "s10a_rows_named_biomass": 1,
+   "s10c_p307_mentions_bio01632_and_Biomass_BT_v2": true,
+   "s12_bt_biomass_rows": 1
+  },
+  "evidence": [
+   "Table S10a contains a single biomass row (p. 89; clipped, see manual interventions).",
+   "Table S10c (p. 307) lists the Model SEED draft biomass bio01632 as rejected and 'Replaced with Biomass_BT_v2' ('The biomass reaction was modified based on literature').",
+   "Table S12 (joint model) contains exactly one B. thetaiotaomicron biomass reaction, BTBiomass_BT_v2 (p. 475)."
+  ],
+  "formula": "34.7965 h2o[c] + 0.25601 glu-L[c] + 0.50006 ala-L[c] + 0.004668 ACP[c] + 0.004668 coa[c] + 0.004668 nadp[c] + 0.004668 nad[c] + 0.004668 na1[c] + 40.1701 atp[c] + 0.004668 adocbl[c] + 0.23468 asp-L[c] + 0.2091 gtp[c] + 0.004668 10fthf[c] + 0.004668 thf[c] + 0.25601 gln-L[c] + 0.5958 gly[c] + 0.092623 his-L[c] + 0.43866 leu-L[c] + 0.24665 thr-L[c] + 0.004668 amet[c] + 0.004668 mql8[c] + 0.004668 mql10[c] + 0.004668 mql11[c] + 0.004668 mql7[c] + 0.004668 mql9[c] + 0.08898 cys-L[c] + 0.21543 pro-L[c] + 0.28828 arg-L[c] + 0.18056 phe-L[c] + 0.23468 asn-L[c] + 0.004668 btn[c] + 0.14934 met-L[c] + 0.004668 ca2[c] + 0.12988 ctp[c] + 0.010648 pg140[c] + 0.010648 clpn140[c] + 0.010648 pg160[c] + 0.010648 clpn160[c] + 0.010648 pg180[c] + 0.010648 clpn180[c] + 0.010648 clpnai15[c] + 0.010648 pgai17[c] + 0.010648 clpnai17[c] + 0.010648 clpni14[c] + 0.010648 clpni15[c] + 0.010648 clpni16[c] + 0.010648 pgi17[c] + 0.010648 clpni17[c] + 0.004668 cobalt2[c] + 0.004668 cps_bt[e] + 0.004668 spmd[c] + 0.14027 utp[c] + 0.33355 lys-L[c] + 0.01945 lps_bt[e] + 0.004668 pe_cer1_bt[e] + 0.004668 sphmyln_bt[e] + 0.004668 fe2[c] + 0.004668 fe3[c] + 0.004668 fad[c] + 0.023503 dttp[c] + 0.2097 ser-L[c] + 0.023503 datp[c] + 0.004668 pheme[c] + 0.28255 ile-L[c] + 0.004668 k[c] + 0.004668 5mthf[c] + 0.004668 mg2[c] + 0.004668 mn2[c] + 0.023503 dgtp[c] + 0.023503 dctp[c] + 0.004668 pydx5p[c] + 0.010648 pe160[c] + 0.010648 pg120[c] + 0.010648 pg181[c] + 0.092476 peptido_EC[c] + 0.092476 udcpdp[c] + 0.010648 pe120[c] + 0.010648 pe140[c] + 0.010648 pe180[c] + 0.010648 pe181[c] + 0.010648 peai15[c] + 0.010648 peai17[c] + 0.010648 pei14[c] + 0.010648 pei15[c] + 0.010648 pei16[c] + 0.010648 pei17[c] + 0.004668 ribflv[c] + 0.004668 thmpp[c] + 0.13425 tyr-L[c] + 0.055157 trp-L[c] + 0.4116 val-L[c] + 0.004668 zn2[c] -> 40 h[c] + 39.9953 pi[c] + 40 adp[c] + 0.004668 apoACP[c] + 0.60238 ppi[c]"
+ },
+ "sbml_round_trip": {
+  "reactions": true,
+  "metabolites": true,
+  "genes": true,
+  "differences": [],
+  "objective": [
+   "Biomass_BT_v2"
+  ],
+  "ok": true,
+  "libsbml_validation": {
+   "SBML_FATAL": 0,
+   "SBML_ERROR": 0,
+   "SBML_SCHEMA_ERROR": 0,
+   "SBML_WARNING": 0,
+   "COBRA_FATAL": 0,
+   "COBRA_ERROR": 0,
+   "COBRA_WARNING": 0,
+   "COBRA_CHECK": 0
+  },
+  "libsbml_messages_sample": {}
+ },
+ "validation": {
+  "table_S3_growth": {
+   "transcription_matches_pdf_column": true,
+   "pdf_column_values": [
+    "0.23",
+    "0.24",
+    "0.0012",
+    "0.24",
+    "0.14",
+    "0.24",
+    "0.24",
+    "0.27",
+    "0.14",
+    "0.16",
+    "0.17",
+    "0.18",
+    "0",
+    "0.0012",
+    "0.23",
+    "0.23",
+    "0.23",
+    "0.23",
+    "0.12",
+    "0.22",
+    "0.13",
+    "0.08",
+    "0.25",
+    "0.25",
+    "0.26",
+    "0.24",
+    "0.24",
+    "0.15",
+    "0.12",
+    "0.11",
+    "0.11",
+    "0.17",
+    "0.15",
+    "0.14",
+    "0",
+    "0.01",
+    "0.16",
+    "0.05",
+    "0.02",
+    "0.05",
+    "0.13",
+    "0.11",
+    "0.25",
+    "0.23",
+    "0"
+   ],
+   "setup": "Table S8a minerals/cofactors + Table S8b carbon source; every other exchange lower bound set to 0; upper bounds as published; sinks/demands as published; objective Biomass_BT_v2",
+   "rows": [
+    {
+     "condition": "Arabinose",
+     "uptake": {
+      "arab-L": {
+       "rate": 12.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.23",
+     "rebuilt": 0.229596,
+     "abs_diff": 0.000404,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Fructose",
+     "uptake": {
+      "fru": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.24",
+     "rebuilt": 0.236918,
+     "abs_diff": 0.003082,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Fucose",
+     "uptake": {
+      "fuc-L": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.0012",
+     "rebuilt": 0.001223,
+     "abs_diff": 2.3e-05,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Galactose",
+     "uptake": {
+      "gal": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.24",
+     "rebuilt": 0.236918,
+     "abs_diff": 0.003082,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Galacturonate",
+     "uptake": {
+      "galur": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.14",
+     "rebuilt": 0.141276,
+     "abs_diff": 0.001276,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Glucosamine",
+     "uptake": {
+      "gam": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.24",
+     "rebuilt": 0.243576,
+     "abs_diff": 0.003576,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Glucose",
+     "uptake": {
+      "glc-D": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.24",
+     "rebuilt": 0.236918,
+     "abs_diff": 0.003082,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Glucose + 1 mmol/gDW/h oxygen",
+     "uptake": {
+      "glc-D": {
+       "rate": 10.0,
+       "source": "S8b"
+      },
+      "o2": {
+       "rate": 1.0,
+       "source": "fixed"
+      }
+     },
+     "published": "0.27",
+     "rebuilt": 0.27353,
+     "abs_diff": 0.00353,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Glucuronate",
+     "uptake": {
+      "glcur": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.14",
+     "rebuilt": 0.141276,
+     "abs_diff": 0.001276,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Mannose",
+     "uptake": {
+      "man": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.16",
+     "rebuilt": 0.163694,
+     "abs_diff": 0.003694,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "N-acetylgalactosamine",
+     "uptake": {
+      "acgal": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.17",
+     "rebuilt": 0.172874,
+     "abs_diff": 0.002874,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "N-acetylglucosamine",
+     "uptake": {
+      "acgam": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.18",
+     "rebuilt": 0.183876,
+     "abs_diff": 0.003876,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "N-acetylneuraminate",
+     "uptake": {
+      "acnam": {
+       "rate": 10.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0",
+     "rebuilt": 0.0,
+     "abs_diff": 0.0,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Rhamnose",
+     "uptake": {
+      "rmn": {
+       "rate": 12.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.0012",
+     "rebuilt": 0.016003,
+     "abs_diff": 0.014803,
+     "rounds_to_published": false,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Ribose",
+     "uptake": {
+      "rib-D": {
+       "rate": 12.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.23",
+     "rebuilt": 0.229596,
+     "abs_diff": 0.000404,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Xylose",
+     "uptake": {
+      "xyl-D": {
+       "rate": 12.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0.23",
+     "rebuilt": 0.229596,
+     "abs_diff": 0.000404,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Arabinan",
+     "uptake": {
+      "arabinan101": {
+       "rate": 0.1179,
+       "source": "S8b"
+      }
+     },
+     "published": "0.23",
+     "rebuilt": 0.226116,
+     "abs_diff": 0.003884,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Arabinogalactan",
+     "uptake": {
+      "arabinogal": {
+       "rate": 0.0155,
+       "source": "S8b"
+      }
+     },
+     "published": "0.23",
+     "rebuilt": 0.233582,
+     "abs_diff": 0.003582,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Homogalacturonan",
+     "uptake": {
+      "homogal": {
+       "rate": 0.09091,
+       "source": "S8b"
+      }
+     },
+     "published": "0.12",
+     "rebuilt": 0.12117,
+     "abs_diff": 0.00117,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Pectic galactan",
+     "uptake": {
+      "pecticgal": {
+       "rate": 0.1005,
+       "source": "S8b"
+      }
+     },
+     "published": "0.22",
+     "rebuilt": 0.219064,
+     "abs_diff": 0.000936,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Rhamnogalacturonan I",
+     "uptake": {
+      "rhamnogalurI": {
+       "rate": 0.010274,
+       "source": "S8b"
+      }
+     },
+     "published": "0.13",
+     "rebuilt": 0.134033,
+     "abs_diff": 0.004033,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Rhamnogalacturonan II",
+     "uptake": {
+      "rhamnogalurII": {
+       "rate": 0.18927,
+       "source": "S8b"
+      }
+     },
+     "published": "0.08",
+     "rebuilt": 0.079411,
+     "abs_diff": 0.000589,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Amylopectin",
+     "uptake": {
+      "strch1": {
+       "rate": 0.91,
+       "source": "S8b"
+      }
+     },
+     "published": "0.25",
+     "rebuilt": 0.240579,
+     "abs_diff": 0.009421,
+     "rounds_to_published": false,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Pullulan",
+     "uptake": {
+      "pullulan1200": {
+       "rate": 0.00833,
+       "source": "S8b"
+      }
+     },
+     "published": "0.25",
+     "rebuilt": 0.248985,
+     "abs_diff": 0.001015,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Dextran",
+     "uptake": {
+      "dextran40": {
+       "rate": 0.125,
+       "source": "S8b"
+      }
+     },
+     "published": "0.26",
+     "rebuilt": 0.255224,
+     "abs_diff": 0.004776,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Inulin",
+     "uptake": {
+      "inulin": {
+       "rate": 0.33333,
+       "source": "S8b"
+      }
+     },
+     "published": "0.24",
+     "rebuilt": 0.236915,
+     "abs_diff": 0.003085,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Levan",
+     "uptake": {
+      "levan1000": {
+       "rate": 0.01,
+       "source": "S8b"
+      }
+     },
+     "published": "0.24",
+     "rebuilt": 0.236918,
+     "abs_diff": 0.003082,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "F1alpha (mucin O-glycan)",
+     "uptake": {
+      "f1a": {
+       "rate": 2.7273,
+       "source": "S8b"
+      }
+     },
+     "published": "0.15",
+     "rebuilt": 0.153325,
+     "abs_diff": 0.003325,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Core 4",
+     "uptake": {
+      "core4": {
+       "rate": 2.5,
+       "source": "S8b"
+      }
+     },
+     "published": "0.12",
+     "rebuilt": 0.116658,
+     "abs_diff": 0.003342,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Core 5",
+     "uptake": {
+      "core5": {
+       "rate": 3.75,
+       "source": "S8b"
+      }
+     },
+     "published": "0.11",
+     "rebuilt": 0.109678,
+     "abs_diff": 0.000322,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Core 7",
+     "uptake": {
+      "core7": {
+       "rate": 3.75,
+       "source": "S8b"
+      }
+     },
+     "published": "0.11",
+     "rebuilt": 0.109678,
+     "abs_diff": 0.000322,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Core 8",
+     "uptake": {
+      "core8": {
+       "rate": 4.2857,
+       "source": "S8b"
+      }
+     },
+     "published": "0.17",
+     "rebuilt": 0.169182,
+     "abs_diff": 0.000818,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "GlcNAc-alpha-1,4-Core 1",
+     "uptake": {
+      "gncore1": {
+       "rate": 2.7273,
+       "source": "S8b"
+      }
+     },
+     "published": "0.15",
+     "rebuilt": 0.153325,
+     "abs_diff": 0.003325,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "GlcNAc-alpha-1,4-Core 2",
+     "uptake": {
+      "gncore2": {
+       "rate": 2.7273,
+       "source": "S8b"
+      }
+     },
+     "published": "0.14",
+     "rebuilt": 0.226655,
+     "abs_diff": 0.086655,
+     "rounds_to_published": false,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Sialyl-Tn antigen",
+     "uptake": {
+      "sTn_antigen": {
+       "rate": 3.1579,
+       "source": "S8b"
+      }
+     },
+     "published": "0",
+     "rebuilt": 0.0,
+     "abs_diff": 0.0,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Disialyl-T antigen",
+     "uptake": {
+      "dsT_antigen": {
+       "rate": 1.6667,
+       "source": "S8b"
+      }
+     },
+     "published": "0.01",
+     "rebuilt": 0.011144,
+     "abs_diff": 0.001144,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "alpha-mannan",
+     "uptake": {
+      "amannan140": {
+       "rate": 0.07143,
+       "source": "S8b"
+      }
+     },
+     "published": "0.16",
+     "rebuilt": 0.163699,
+     "abs_diff": 0.003699,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Chondroitin sulfate A",
+     "uptake": {
+      "cspg_a": {
+       "rate": 1.33,
+       "source": "S8b"
+      }
+     },
+     "published": "0.05",
+     "rebuilt": 0.046165,
+     "abs_diff": 0.003835,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Chondroitin sulfate B",
+     "uptake": {
+      "cspg_b": {
+       "rate": 1.33,
+       "source": "S8b"
+      }
+     },
+     "published": "0.02",
+     "rebuilt": 0.016747,
+     "abs_diff": 0.003253,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Chondroitin sulfate (C)",
+     "uptake": {
+      "cspg_c": {
+       "rate": 1.33,
+       "source": "S8b"
+      }
+     },
+     "published": "0.05",
+     "rebuilt": 0.046165,
+     "abs_diff": 0.003835,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Hyaluronan",
+     "uptake": {
+      "ha": {
+       "rate": 2.12,
+       "source": "S8b"
+      }
+     },
+     "published": "0.13",
+     "rebuilt": 0.128757,
+     "abs_diff": 0.001243,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Heparin",
+     "uptake": {
+      "hspg": {
+       "rate": 0.76,
+       "source": "S8b"
+      }
+     },
+     "published": "0.11",
+     "rebuilt": 0.114238,
+     "abs_diff": 0.004238,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Glycogen",
+     "uptake": {
+      "glycogen1500": {
+       "rate": 0.0067,
+       "source": "S8b"
+      }
+     },
+     "published": "0.25",
+     "rebuilt": 0.247764,
+     "abs_diff": 0.002236,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Laminarin",
+     "uptake": {
+      "lmn30": {
+       "rate": 0.33,
+       "source": "S8b"
+      }
+     },
+     "published": "0.23",
+     "rebuilt": 0.233623,
+     "abs_diff": 0.003623,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Cellobiose",
+     "uptake": {
+      "cellb": {
+       "rate": 5.0,
+       "source": "S8b"
+      }
+     },
+     "published": "0",
+     "rebuilt": 0.0,
+     "abs_diff": 0.0,
+     "rounds_to_published": true,
+     "missing_exchange": [
+      "cellb"
+     ],
+     "alternative_mapping": false
+    },
+    {
+     "condition": "Amylopectin (alternative mapping: starch1200)",
+     "uptake": {
+      "starch1200": {
+       "rate": 0.00833,
+       "source": "S8b"
+      }
+     },
+     "published": "0.25",
+     "rebuilt": 0.248985,
+     "abs_diff": 0.001015,
+     "rounds_to_published": true,
+     "missing_exchange": [],
+     "alternative_mapping": true
+    }
+   ],
+   "max_abs_diff": 0.086655,
+   "n_rounding_to_published": 42,
+   "n": 45,
+   "diagnostics": {
+    "s8b_rate_vs_60_mmol_C": [
+     {
+      "id": "acgal",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 8,
+      "rate_60_mmol_C": 7.5,
+      "ratio_printed_to_60C": 1.333,
+      "deviates_gt_2pct": true
+     },
+     {
+      "id": "acgam",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 8,
+      "rate_60_mmol_C": 7.5,
+      "ratio_printed_to_60C": 1.333,
+      "deviates_gt_2pct": true
+     },
+     {
+      "id": "acnam",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 11,
+      "rate_60_mmol_C": 5.45455,
+      "ratio_printed_to_60C": 1.833,
+      "deviates_gt_2pct": true
+     },
+     {
+      "id": "amannan140",
+      "printed_rate": 0.07143,
+      "n_carbon_S10b": 840,
+      "rate_60_mmol_C": 0.07143,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "arabinan101",
+      "printed_rate": 0.1179,
+      "n_carbon_S10b": 509,
+      "rate_60_mmol_C": 0.11788,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "arabinogal",
+      "printed_rate": 0.0155,
+      "n_carbon_S10b": 3862,
+      "rate_60_mmol_C": 0.01554,
+      "ratio_printed_to_60C": 0.998,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "arab-L",
+      "printed_rate": 12.0,
+      "n_carbon_S10b": 5,
+      "rate_60_mmol_C": 12.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "cellb",
+      "printed_rate": 5.0,
+      "n_carbon_S10b": 12,
+      "rate_60_mmol_C": 5.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "core4",
+      "printed_rate": 2.5,
+      "n_carbon_S10b": 24,
+      "rate_60_mmol_C": 2.5,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "core5",
+      "printed_rate": 3.75,
+      "n_carbon_S10b": 16,
+      "rate_60_mmol_C": 3.75,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "core7",
+      "printed_rate": 3.75,
+      "n_carbon_S10b": 16,
+      "rate_60_mmol_C": 3.75,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "core8",
+      "printed_rate": 4.2857,
+      "n_carbon_S10b": 14,
+      "rate_60_mmol_C": 4.28571,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "cspg_a",
+      "printed_rate": 1.33,
+      "n_carbon_S10b": 45,
+      "rate_60_mmol_C": 1.33333,
+      "ratio_printed_to_60C": 0.998,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "cspg_b",
+      "printed_rate": 1.33,
+      "n_carbon_S10b": 45,
+      "rate_60_mmol_C": 1.33333,
+      "ratio_printed_to_60C": 0.998,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "cspg_c",
+      "printed_rate": 1.33,
+      "n_carbon_S10b": 45,
+      "rate_60_mmol_C": 1.33333,
+      "ratio_printed_to_60C": 0.998,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "dextran40",
+      "printed_rate": 0.125,
+      "n_carbon_S10b": 480,
+      "rate_60_mmol_C": 0.125,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "dsT_antigen",
+      "printed_rate": 1.6667,
+      "n_carbon_S10b": 36,
+      "rate_60_mmol_C": 1.66667,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "f1a",
+      "printed_rate": 2.7273,
+      "n_carbon_S10b": 22,
+      "rate_60_mmol_C": 2.72727,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "fru",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "fuc-L",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "gal",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "galur",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "gam",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "glc-D",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "glcur",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "glycogen1500",
+      "printed_rate": 0.0067,
+      "n_carbon_S10b": 9000,
+      "rate_60_mmol_C": 0.00667,
+      "ratio_printed_to_60C": 1.005,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "gncore1",
+      "printed_rate": 2.7273,
+      "n_carbon_S10b": 22,
+      "rate_60_mmol_C": 2.72727,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "gncore2",
+      "printed_rate": 2.7273,
+      "n_carbon_S10b": 30,
+      "rate_60_mmol_C": 2.0,
+      "ratio_printed_to_60C": 1.364,
+      "deviates_gt_2pct": true
+     },
+     {
+      "id": "ha",
+      "printed_rate": 2.12,
+      "n_carbon_S10b": 28,
+      "rate_60_mmol_C": 2.14286,
+      "ratio_printed_to_60C": 0.989,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "homogal",
+      "printed_rate": 0.09091,
+      "n_carbon_S10b": 660,
+      "rate_60_mmol_C": 0.09091,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "hspg",
+      "printed_rate": 0.76,
+      "n_carbon_S10b": 79,
+      "rate_60_mmol_C": 0.75949,
+      "ratio_printed_to_60C": 1.001,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "inulin",
+      "printed_rate": 0.33333,
+      "n_carbon_S10b": 180,
+      "rate_60_mmol_C": 0.33333,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "levan1000",
+      "printed_rate": 0.01,
+      "n_carbon_S10b": 6000,
+      "rate_60_mmol_C": 0.01,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "lmn30",
+      "printed_rate": 0.33,
+      "n_carbon_S10b": 180,
+      "rate_60_mmol_C": 0.33333,
+      "ratio_printed_to_60C": 0.99,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "man",
+      "printed_rate": 10.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "pecticgal",
+      "printed_rate": 0.1005,
+      "n_carbon_S10b": 597,
+      "rate_60_mmol_C": 0.1005,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "pullulan1200",
+      "printed_rate": 0.00833,
+      "n_carbon_S10b": 7200,
+      "rate_60_mmol_C": 0.00833,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "rhamnogalurI",
+      "printed_rate": 0.010274,
+      "n_carbon_S10b": 5840,
+      "rate_60_mmol_C": 0.01027,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "rhamnogalurII",
+      "printed_rate": 0.18927,
+      "n_carbon_S10b": 317,
+      "rate_60_mmol_C": 0.18927,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "rib-D",
+      "printed_rate": 12.0,
+      "n_carbon_S10b": 5,
+      "rate_60_mmol_C": 12.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "rmn",
+      "printed_rate": 12.0,
+      "n_carbon_S10b": 6,
+      "rate_60_mmol_C": 10.0,
+      "ratio_printed_to_60C": 1.2,
+      "deviates_gt_2pct": true
+     },
+     {
+      "id": "starch1200",
+      "printed_rate": 0.00833,
+      "n_carbon_S10b": 7200,
+      "rate_60_mmol_C": 0.00833,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "sTn_antigen",
+      "printed_rate": 3.1579,
+      "n_carbon_S10b": 19,
+      "rate_60_mmol_C": 3.15789,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "strch1",
+      "printed_rate": 0.91,
+      "n_carbon_S10b": 66,
+      "rate_60_mmol_C": 0.90909,
+      "ratio_printed_to_60C": 1.001,
+      "deviates_gt_2pct": false
+     },
+     {
+      "id": "xyl-D",
+      "printed_rate": 12.0,
+      "n_carbon_S10b": 5,
+      "rate_60_mmol_C": 12.0,
+      "ratio_printed_to_60C": 1.0,
+      "deviates_gt_2pct": false
+     }
+    ],
+    "s8b_entries_deviating_from_60C_with_S3_row": [
+     {
+      "id": "acgal",
+      "s3_row": "N-acetylgalactosamine",
+      "published": "0.17",
+      "printed_rate": 10.0,
+      "growth_at_printed_rate": 0.172874,
+      "rate_60_mmol_C": 7.5,
+      "growth_at_60_mmol_C": 0.109678,
+      "printed_rate_reproduces": true,
+      "60C_rate_reproduces": false
+     },
+     {
+      "id": "acgam",
+      "s3_row": "N-acetylglucosamine",
+      "published": "0.18",
+      "printed_rate": 10.0,
+      "growth_at_printed_rate": 0.183876,
+      "rate_60_mmol_C": 7.5,
+      "growth_at_60_mmol_C": 0.116658,
+      "printed_rate_reproduces": true,
+      "60C_rate_reproduces": false
+     },
+     {
+      "id": "acnam",
+      "s3_row": "N-acetylneuraminate",
+      "published": "0",
+      "printed_rate": 10.0,
+      "growth_at_printed_rate": 0.0,
+      "rate_60_mmol_C": 5.45455,
+      "growth_at_60_mmol_C": 0.0,
+      "printed_rate_reproduces": true,
+      "60C_rate_reproduces": true
+     },
+     {
+      "id": "gncore2",
+      "s3_row": "GlcNAc-alpha-1,4-Core 2",
+      "published": "0.14",
+      "printed_rate": 2.7273,
+      "growth_at_printed_rate": 0.226655,
+      "rate_60_mmol_C": 2.0,
+      "growth_at_60_mmol_C": 0.143545,
+      "printed_rate_reproduces": false,
+      "60C_rate_reproduces": true
+     },
+     {
+      "id": "rmn",
+      "s3_row": "Rhamnose",
+      "published": "0.0012",
+      "printed_rate": 12.0,
+      "growth_at_printed_rate": 0.016003,
+      "rate_60_mmol_C": 10.0,
+      "growth_at_60_mmol_C": 0.00122,
+      "printed_rate_reproduces": false,
+      "60C_rate_reproduces": true
+     }
+    ],
+    "non_reproducing_rows": [
+     {
+      "condition": "Rhamnose",
+      "published": "0.0012",
+      "rebuilt": 0.016003,
+      "alternatives": [
+       {
+        "what": "rmn at 10.0 (60 mmol C/gDW/h) instead of the printed 12.0",
+        "rebuilt": 0.00122,
+        "rounds_to_published": true
+       }
+      ]
+     },
+     {
+      "condition": "Amylopectin",
+      "published": "0.25",
+      "rebuilt": 0.240579,
+      "alternatives": [
+       {
+        "what": "Amylopectin (alternative mapping: starch1200)",
+        "rebuilt": 0.248985,
+        "rounds_to_published": true
+       }
+      ]
+     },
+     {
+      "condition": "GlcNAc-alpha-1,4-Core 2",
+      "published": "0.14",
+      "rebuilt": 0.226655,
+      "alternatives": [
+       {
+        "what": "gncore2 at 2.0 (60 mmol C/gDW/h) instead of the printed 2.7273",
+        "rebuilt": 0.143545,
+        "rounds_to_published": true
+       }
+      ]
+     }
+    ],
+    "max_abs_diff_if_alternatives_accepted": 0.004776,
+    "n_rows_reproduced_if_alternatives_accepted": 45
+   },
+   "sensitivity_sinks_closed": {
+    "max_abs_diff": 0.27,
+    "n_published_growth_lost": 42,
+    "sink_roles": {
+     "sink_chols": {
+      "flux_at_optimum_glucose": -0.001106,
+      "growth_glucose_if_uptake_closed": 0.0,
+      "other_reactions_of_metabolite": [
+       "CHOLSH"
+      ]
+     },
+     "sink_s": {
+      "flux_at_optimum_glucose": -0.001106,
+      "growth_glucose_if_uptake_closed": 0.0,
+      "other_reactions_of_metabolite": [
+       "BTS4"
+      ]
+     }
+    },
+    "rows": [
+     {
+      "condition": "Arabinose",
+      "published": "0.23",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Fructose",
+      "published": "0.24",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Fucose",
+      "published": "0.0012",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Galactose",
+      "published": "0.24",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Galacturonate",
+      "published": "0.14",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Glucosamine",
+      "published": "0.24",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Glucose",
+      "published": "0.24",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Glucose + 1 mmol/gDW/h oxygen",
+      "published": "0.27",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Glucuronate",
+      "published": "0.14",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Mannose",
+      "published": "0.16",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "N-acetylgalactosamine",
+      "published": "0.17",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "N-acetylglucosamine",
+      "published": "0.18",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "N-acetylneuraminate",
+      "published": "0",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Rhamnose",
+      "published": "0.0012",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Ribose",
+      "published": "0.23",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Xylose",
+      "published": "0.23",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Arabinan",
+      "published": "0.23",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Arabinogalactan",
+      "published": "0.23",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Homogalacturonan",
+      "published": "0.12",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Pectic galactan",
+      "published": "0.22",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Rhamnogalacturonan I",
+      "published": "0.13",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Rhamnogalacturonan II",
+      "published": "0.08",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Amylopectin",
+      "published": "0.25",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Pullulan",
+      "published": "0.25",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Dextran",
+      "published": "0.26",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Inulin",
+      "published": "0.24",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Levan",
+      "published": "0.24",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "F1alpha (mucin O-glycan)",
+      "published": "0.15",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Core 4",
+      "published": "0.12",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Core 5",
+      "published": "0.11",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Core 7",
+      "published": "0.11",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Core 8",
+      "published": "0.17",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "GlcNAc-alpha-1,4-Core 1",
+      "published": "0.15",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "GlcNAc-alpha-1,4-Core 2",
+      "published": "0.14",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Sialyl-Tn antigen",
+      "published": "0",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Disialyl-T antigen",
+      "published": "0.01",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "alpha-mannan",
+      "published": "0.16",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Chondroitin sulfate A",
+      "published": "0.05",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Chondroitin sulfate B",
+      "published": "0.02",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Chondroitin sulfate (C)",
+      "published": "0.05",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Hyaluronan",
+      "published": "0.13",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Heparin",
+      "published": "0.11",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Glycogen",
+      "published": "0.25",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Laminarin",
+      "published": "0.23",
+      "rebuilt_sinks_closed": 0.0
+     },
+     {
+      "condition": "Cellobiose",
+      "published": "0",
+      "rebuilt_sinks_closed": 0.0
+     }
+    ]
+   }
+  },
+  "atpm_lower_bound_readings_glucose_S8c": {
+   "LB=0": 0.326274,
+   "LB=8.43": 0.236918,
+   "LB=84.3": "infeasible",
+   "LB=84300": "invalid (lower bound above the upper bound of 1000)"
+  },
+  "table_S3b_secretion": {
+   "method_assumed": "FVA of the exchange fluxes at 100% of maximal growth, Table S8a + 10 mmol/gDW/h substrate (the paper does not state the method)",
+   "rows": [
+    {
+     "substrate": "Glucose",
+     "published": {
+      "ac": "5.56",
+      "ppa": "0 to 8.95",
+      "succ": "0 to 8.95",
+      "co2": "-1.53 to 7.41",
+      "h2": "2.10"
+     },
+     "rebuilt": {
+      "ac": [
+       5.5564,
+       5.5564
+      ],
+      "ppa": [
+       0.0,
+       8.9463
+      ],
+      "succ": [
+       0.0,
+       8.9463
+      ],
+      "co2": [
+       -1.5329,
+       7.4134
+      ],
+      "h2": [
+       2.0968,
+       2.0968
+      ]
+     },
+     "matches": {
+      "ac": true,
+      "ppa": true,
+      "succ": true,
+      "co2": true,
+      "h2": true
+     }
+    },
+    {
+     "substrate": "N-acetylglucosamine",
+     "published": {
+      "ac": "8.10 to 12.63",
+      "ppa": "0 to 14.56",
+      "succ": "0 to 14.56",
+      "co2": "-5.82 to 8.75",
+      "h2": "< 0.001"
+     },
+     "rebuilt": {
+      "ac": [
+       8.1045,
+       12.6277
+      ],
+      "ppa": [
+       0.0,
+       14.5602
+      ],
+      "succ": [
+       0.0,
+       14.5602
+      ],
+      "co2": [
+       -5.8157,
+       8.7484
+      ],
+      "h2": [
+       0.0,
+       0.0
+      ]
+     },
+     "matches": {
+      "ac": true,
+      "ppa": true,
+      "succ": true,
+      "co2": true,
+      "h2": "True"
+     }
+    },
+    {
+     "substrate": "Glucuronate",
+     "published": {
+      "ac": "7.72 to 8.16",
+      "ppa": "0 to 7.66",
+      "succ": "0 to 7.66",
+      "co2": "7.60 to 14.66",
+      "h2": "< 0.001"
+     },
+     "rebuilt": {
+      "ac": [
+       7.7165,
+       8.1552
+      ],
+      "ppa": [
+       0.0,
+       7.0597
+      ],
+      "succ": [
+       0.0,
+       7.0597
+      ],
+      "co2": [
+       7.5953,
+       14.658
+      ],
+      "h2": [
+       0.0,
+       0.0
+      ]
+     },
+     "matches": {
+      "ac": true,
+      "ppa": false,
+      "succ": false,
+      "co2": true,
+      "h2": "True"
+     }
+    },
+    {
+     "substrate": "Fructose",
+     "published": {
+      "ac": "5.56",
+      "ppa": "0 to 8.95",
+      "succ": "0 to 8.95",
+      "co2": "-1.53 to 7.41",
+      "h2": "2.10"
+     },
+     "rebuilt": {
+      "ac": [
+       5.5564,
+       5.5564
+      ],
+      "ppa": [
+       0.0,
+       8.9463
+      ],
+      "succ": [
+       0.0,
+       8.9463
+      ],
+      "co2": [
+       -1.5329,
+       7.4134
+      ],
+      "h2": [
+       2.0968,
+       2.0968
+      ]
+     },
+     "matches": {
+      "ac": true,
+      "ppa": true,
+      "succ": true,
+      "co2": true,
+      "h2": true
+     }
+    }
+   ],
+   "n_values_matching": "18",
+   "n_values": 20
+  },
+  "table_S1_carbon_sources": {
+   "setup": "Table S8a + the listed carbohydrate as the only carbon source, at the Table S8b rate when listed there, otherwise at 60 mmol C/gDW/h (10 mmol hexose units, the Table S3 scaling); grows = growth > 1e-6/h",
+   "rows": [
+    {
+     "carbohydrate": "D-glucose",
+     "ids": [
+      "glc-D"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "glc-D",
+       "tested_as": "glc-D",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "D-mannose",
+     "ids": [
+      "man"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "man",
+       "tested_as": "man",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.163694,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "D-galactose",
+     "ids": [
+      "gal"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "gal",
+       "tested_as": "gal",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "D-fructose",
+     "ids": [
+      "fru"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "fru",
+       "tested_as": "fru",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "D-xylose",
+     "ids": [
+      "xyl-D"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "xyl-D",
+       "tested_as": "xyl-D",
+       "rate": {
+        "rate": 12.0,
+        "source": "S8b"
+       },
+       "growth": 0.229596,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "L-arabinose",
+     "ids": [
+      "ara-L"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "yes",
+     "members": [
+      {
+       "id": "ara-L",
+       "tested_as": "arab-L",
+       "rate": {
+        "rate": 12.0,
+        "source": "S8b"
+       },
+       "growth": 0.229596,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "N-acetylglucosamine",
+     "ids": [
+      "acgam"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "acgam",
+       "tested_as": "acgam",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.183876,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "N-acetylgalactosamine",
+     "ids": [
+      "acgal"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "acgal",
+       "tested_as": "acgal",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.172874,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "D-glucuronate",
+     "ids": [
+      "glcur"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "glcur",
+       "tested_as": "glcur",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.141276,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "D-galacturonate",
+     "ids": [
+      "galur"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "galur",
+       "tested_as": "galur",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.141276,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "D-glucosamine",
+     "ids": [
+      "gam"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "gam",
+       "tested_as": "gam",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.243576,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "L-fucose",
+     "ids": [
+      "fuc-L"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "fuc-L",
+       "tested_as": "fuc-L",
+       "rate": {
+        "rate": 10.0,
+        "source": "S8b"
+       },
+       "growth": 0.001223,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "L-rhamnose",
+     "ids": [
+      "rmn"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "rmn",
+       "tested_as": "rmn",
+       "rate": {
+        "rate": 12.0,
+        "source": "S8b"
+       },
+       "growth": 0.016003,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "D-ribose",
+     "ids": [
+      "rib-D"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "rib-D",
+       "tested_as": "rib-D",
+       "rate": {
+        "rate": 12.0,
+        "source": "S8b"
+       },
+       "growth": 0.229596,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Trehalose",
+     "ids": [
+      "tre"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "tre",
+       "tested_as": "tre",
+       "rate": {
+        "rate": 5.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Raffinose",
+     "ids": [
+      "raffin"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "raffin",
+       "tested_as": "raffin",
+       "rate": {
+        "rate": 3.3333333333333335,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Melibiose",
+     "ids": [
+      "melib"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "melib",
+       "tested_as": "melib",
+       "rate": {
+        "rate": 5.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.218612,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Maltose",
+     "ids": [
+      "malt"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "malt",
+       "tested_as": "malt",
+       "rate": {
+        "rate": 5.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.255224,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Maltotriose",
+     "ids": [
+      "malttr"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "malttr",
+       "tested_as": "malttr",
+       "rate": {
+        "rate": 3.3333333333333335,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.249122,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Maltotetraose",
+     "ids": [
+      "maltttr"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "maltttr",
+       "tested_as": "maltttr",
+       "rate": {
+        "rate": 2.5,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.246071,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Maltopentose",
+     "ids": [
+      "maltpt"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "maltpt",
+       "tested_as": "maltpt",
+       "rate": {
+        "rate": 2.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.244241,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Maltohexose",
+     "ids": [
+      "malthx"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "malthx",
+       "tested_as": "malthx",
+       "rate": {
+        "rate": 1.6666666666666667,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.24302,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Maltoheptaose",
+     "ids": [
+      "malthp"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "malthp",
+       "tested_as": "malthp",
+       "rate": {
+        "rate": 1.4285714285714286,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.242148,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Sucrose",
+     "ids": [
+      "sucr"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "sucr",
+       "tested_as": "sucr",
+       "rate": {
+        "rate": 5.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.255224,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Kestose",
+     "ids": [
+      "kesto"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "kesto",
+       "tested_as": "kesto",
+       "rate": {
+        "rate": 3.3333333333333335,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Kestotetraose",
+     "ids": [
+      "kestottr"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "kestottr",
+       "tested_as": "kestottr",
+       "rate": {
+        "rate": 2.5,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Kestopentaose",
+     "ids": [
+      "kestopt"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "kestopt",
+       "tested_as": "kestopt",
+       "rate": {
+        "rate": 2.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Levanbiose",
+     "ids": [
+      "levanb"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "levanb",
+       "tested_as": "levanb",
+       "rate": {
+        "rate": 5.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Levantriose",
+     "ids": [
+      "levanttr"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "levanttr",
+       "tested_as": "levanttr",
+       "rate": {
+        "rate": 3.3333333333333335,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Levantetraose",
+     "ids": [
+      "levantttr"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "levantttr",
+       "tested_as": "levantttr",
+       "rate": {
+        "rate": 2.5,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Lactose",
+     "ids": [
+      "lcts"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "lcts",
+       "tested_as": "lcts",
+       "rate": {
+        "rate": 5.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Oligofructose",
+     "ids": [
+      "oligofru4"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "oligofru4",
+       "tested_as": "oligofru4",
+       "rate": {
+        "rate": 2.5,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Human milk oligosaccharides (HMO)",
+     "ids": [
+      "2fuclac",
+      "3fuclac",
+      "lacdfucttr",
+      "lacndfuchx",
+      "lacnfucpt",
+      "lacnttr",
+      "neulacnttr",
+      "fucneulacnhx"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "2fuclac",
+       "tested_as": "2fuclac",
+       "rate": {
+        "rate": 3.3333333333333335,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.167905,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "3fuclac",
+       "tested_as": "3fuclac",
+       "rate": {
+        "rate": 3.3333333333333335,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.167905,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "lacdfucttr",
+       "tested_as": "lacdfucttr",
+       "rate": {
+        "rate": 2.5,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.129777,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "lacndfuchx",
+       "tested_as": "lacndfuchx",
+       "rate": {
+        "rate": 1.5789473684210527,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.14875,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "lacnfucpt",
+       "tested_as": "lacnfucpt",
+       "rate": {
+        "rate": 1.875,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.173667,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "lacnttr",
+       "tested_as": "lacnttr",
+       "rate": {
+        "rate": 2.3076923076923075,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.209729,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "neulacnttr",
+       "tested_as": "neulacnttr",
+       "rate": {
+        "rate": 1.6216216216216217,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.119112,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "fucneulacnhx",
+       "tested_as": "fucneulacnhx",
+       "rate": {
+        "rate": 1.0526315789473684,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.056611,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Stachyose",
+     "ids": [
+      "stys"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "stys",
+       "tested_as": "stys",
+       "rate": {
+        "rate": 2.5,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.246071,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Mannobiose",
+     "ids": [
+      "manb"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "manb",
+       "tested_as": "manb",
+       "rate": {
+        "rate": 5.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.163694,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Mannotriose",
+     "ids": [
+      "mantr"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "mantr",
+       "tested_as": "mantr",
+       "rate": {
+        "rate": 3.3333333333333335,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Mannotetraose",
+     "ids": [
+      "manttr"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "manttr",
+       "tested_as": "manttr",
+       "rate": {
+        "rate": 2.5,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.218612,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Mannopentaose",
+     "ids": [
+      "manpt"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "manpt",
+       "tested_as": "manpt",
+       "rate": {
+        "rate": 2.0,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.207628,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Chitobiose",
+     "ids": [
+      "chtbs"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "chtbs",
+       "tested_as": "chtbs",
+       "rate": {
+        "rate": 3.75,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.116658,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Amylose",
+     "ids": [
+      "amylose300"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "amylose300",
+       "tested_as": "amylose300",
+       "rate": {
+        "rate": 0.03333333333333333,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.249122,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Starch (insoluble)",
+     "ids": [
+      "starch1200"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "starch1200",
+       "tested_as": "starch1200",
+       "rate": {
+        "rate": 0.00833,
+        "source": "S8b"
+       },
+       "growth": 0.248985,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Starch (human enzyme- accessible form)",
+     "ids": [
+      "strch1",
+      "strch2"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "strch1",
+       "tested_as": "strch1",
+       "rate": {
+        "rate": 0.91,
+        "source": "S8b"
+       },
+       "growth": 0.240579,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "strch2",
+       "tested_as": "strch2",
+       "rate": {
+        "rate": 3.3333333333333335,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.249122,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Pullulan",
+     "ids": [
+      "pullulan1200"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "pullulan1200",
+       "tested_as": "pullulan1200",
+       "rate": {
+        "rate": 0.00833,
+        "source": "S8b"
+       },
+       "growth": 0.248985,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Dextran",
+     "ids": [
+      "dextran40"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "dextran40",
+       "tested_as": "dextran40",
+       "rate": {
+        "rate": 0.125,
+        "source": "S8b"
+       },
+       "growth": 0.255224,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Pectin",
+     "ids": [
+      "pect"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "pect",
+       "tested_as": "pect",
+       "rate": {
+        "rate": 0.023668639053254437,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.124262,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Larch arabinogalactan",
+     "ids": [
+      "arabinogal"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "arabinogal",
+       "tested_as": "arabinogal",
+       "rate": {
+        "rate": 0.0155,
+        "source": "S8b"
+       },
+       "growth": 0.233582,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Laminarin",
+     "ids": [
+      "lmn30"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "lmn30",
+       "tested_as": "lmn30",
+       "rate": {
+        "rate": 0.33,
+        "source": "S8b"
+       },
+       "growth": 0.233623,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Inulin",
+     "ids": [
+      "inulin"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "inulin",
+       "tested_as": "inulin",
+       "rate": {
+        "rate": 0.33333,
+        "source": "S8b"
+       },
+       "growth": 0.236915,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Levan",
+     "ids": [
+      "levan1000"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "levan1000",
+       "tested_as": "levan1000",
+       "rate": {
+        "rate": 0.01,
+        "source": "S8b"
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Glycogen",
+     "ids": [
+      "glycogen1500"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "glycogen1500",
+       "tested_as": "glycogen1500",
+       "rate": {
+        "rate": 0.0067,
+        "source": "S8b"
+       },
+       "growth": 0.247764,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Chondroitin sulfate A",
+     "ids": [
+      "cspg_a"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "cspg_a",
+       "tested_as": "cspg_a",
+       "rate": {
+        "rate": 1.33,
+        "source": "S8b"
+       },
+       "growth": 0.046165,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Chondroitin sulfate B",
+     "ids": [
+      "cspg_b"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "cspg_b",
+       "tested_as": "cspg_b",
+       "rate": {
+        "rate": 1.33,
+        "source": "S8b"
+       },
+       "growth": 0.016747,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Chondroitin sulfate C",
+     "ids": [
+      "cspg_c"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "cspg_c",
+       "tested_as": "cspg_c",
+       "rate": {
+        "rate": 1.33,
+        "source": "S8b"
+       },
+       "growth": 0.046165,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Heparan sulfate",
+     "ids": [
+      "hspg"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "hspg",
+       "tested_as": "hspg",
+       "rate": {
+        "rate": 0.76,
+        "source": "S8b"
+       },
+       "growth": 0.114238,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Hyaluronan",
+     "ids": [
+      "ha"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "ha",
+       "tested_as": "ha",
+       "rate": {
+        "rate": 2.12,
+        "source": "S8b"
+       },
+       "growth": 0.128757,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "PA6 (a N-glycan containing L-fucose)",
+     "ids": [
+      "s2l2fn2m2masn"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "s2l2fn2m2masn",
+       "tested_as": "s2l2fn2m2masn",
+       "rate": {
+        "rate": 0.6666666666666666,
+        "source": "60 mmol C/gDW/h (S3 scaling)"
+       },
+       "growth": 0.0,
+       "grows": false,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "no",
+     "agrees": false
+    },
+    {
+     "carbohydrate": "Mucin-type O-glycans",
+     "ids": [
+      "f1a",
+      "core4",
+      "core5",
+      "core7",
+      "core7",
+      "gncore1",
+      "gncore2",
+      "sTn_antigen",
+      "dsT_antigen"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "f1a",
+       "tested_as": "f1a",
+       "rate": {
+        "rate": 2.7273,
+        "source": "S8b"
+       },
+       "growth": 0.153325,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "core4",
+       "tested_as": "core4",
+       "rate": {
+        "rate": 2.5,
+        "source": "S8b"
+       },
+       "growth": 0.116658,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "core5",
+       "tested_as": "core5",
+       "rate": {
+        "rate": 3.75,
+        "source": "S8b"
+       },
+       "growth": 0.109678,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "core7",
+       "tested_as": "core7",
+       "rate": {
+        "rate": 3.75,
+        "source": "S8b"
+       },
+       "growth": 0.109678,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "gncore1",
+       "tested_as": "gncore1",
+       "rate": {
+        "rate": 2.7273,
+        "source": "S8b"
+       },
+       "growth": 0.153325,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "gncore2",
+       "tested_as": "gncore2",
+       "rate": {
+        "rate": 2.7273,
+        "source": "S8b"
+       },
+       "growth": 0.226655,
+       "grows": true,
+       "has_exchange": true
+      },
+      {
+       "id": "sTn_antigen",
+       "tested_as": "sTn_antigen",
+       "rate": {
+        "rate": 3.1579,
+        "source": "S8b"
+       },
+       "growth": 0.0,
+       "grows": false,
+       "has_exchange": true
+      },
+      {
+       "id": "dsT_antigen",
+       "tested_as": "dsT_antigen",
+       "rate": {
+        "rate": 1.6667,
+        "source": "S8b"
+       },
+       "growth": 0.011144,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "alpha-mannan (yeast)",
+     "ids": [
+      "amannan140"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "amannan140",
+       "tested_as": "amannan140",
+       "rate": {
+        "rate": 0.07143,
+        "source": "S8b"
+       },
+       "growth": 0.163699,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Homogalacturonan",
+     "ids": [
+      "homogal"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "homogal",
+       "tested_as": "homogal",
+       "rate": {
+        "rate": 0.09091,
+        "source": "S8b"
+       },
+       "growth": 0.12117,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Rhamnogalactorunan I",
+     "ids": [
+      "rhamnogalurI"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "rhamnogalurI",
+       "tested_as": "rhamnogalurI",
+       "rate": {
+        "rate": 0.010274,
+        "source": "S8b"
+       },
+       "growth": 0.134033,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Rhamnogalacturonan II",
+     "ids": [
+      "rhamnogalurII"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "rhamnogalurII",
+       "tested_as": "rhamnogalurII",
+       "rate": {
+        "rate": 0.18927,
+        "source": "S8b"
+       },
+       "growth": 0.079411,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Arabinan",
+     "ids": [
+      "arabinan101"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "arabinan101",
+       "tested_as": "arabinan101",
+       "rate": {
+        "rate": 0.1179,
+        "source": "S8b"
+       },
+       "growth": 0.226116,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    },
+    {
+     "carbohydrate": "Pectic galactan",
+     "ids": [
+      "pecticgal"
+     ],
+     "published_iAH991": "yes",
+     "published_BTheta_Seed_v1": "no",
+     "members": [
+      {
+       "id": "pecticgal",
+       "tested_as": "pecticgal",
+       "rate": {
+        "rate": 0.1005,
+        "source": "S8b"
+       },
+       "growth": 0.219064,
+       "grows": true,
+       "has_exchange": true
+      }
+     ],
+     "rebuilt": "yes",
+     "agrees": true
+    }
+   ],
+   "rows_agreeing": 62,
+   "n_rows": 63,
+   "ids_growing": 76,
+   "n_ids": 78,
+   "ids_not_growing": [
+    "s2l2fn2m2masn",
+    "sTn_antigen"
+   ],
+   "diagnostics_non_growing_ids": [
+    {
+     "id": "s2l2fn2m2masn",
+     "growth_at_set_up_rate": 0.0,
+     "growth_at_10": 0.001223,
+     "growth_at_100": 0.668116,
+     "reactions_using_it": [
+      "FUCASEe"
+     ]
+    },
+    {
+     "id": "sTn_antigen",
+     "growth_at_set_up_rate": 0.0,
+     "growth_at_10": 0.172874,
+     "growth_at_100": 0.972534,
+     "reactions_using_it": [
+      "SIAASE_OGLYCAN1e"
+     ]
+    }
+   ],
+   "id_aliases_used": {
+    "ara-L": "arab-L"
+   },
+   "core8_extra": {
+    "id": "core8",
+    "rate": {
+     "rate": 4.2857,
+     "source": "S8b"
+    },
+    "growth": 0.169182
+   }
+  },
+  "gene_essentiality": {
+   "definition": "single-gene deletion (cobra single_gene_deletion, FBA); a gene is essential if growth after deletion is < 1e-6/h; counts at relative thresholds are given for sensitivity",
+   "published_counts_source": "supplementary text p.8 (glucose minimal 204/991, rich 61/991, TYG 116 essential/875 non-essential); Western diet 160 from the main text",
+   "media": {
+    "glucose_minimal_S8c": {
+     "wild_type_growth": 0.236918,
+     "missing_exchange_for": [],
+     "essential_growth_below_1e-6": 205,
+     "essential_genes": [
+      "BT_0033",
+      "BT_0057",
+      "BT_0200",
+      "BT_0201",
+      "BT_0202",
+      "BT_0203",
+      "BT_0205",
+      "BT_0250",
+      "BT_0347",
+      "BT_0373",
+      "BT_0378",
+      "BT_0381",
+      "BT_0382",
+      "BT_0391",
+      "BT_0394",
+      "BT_0398",
+      "BT_0409",
+      "BT_0475",
+      "BT_0477",
+      "BT_0481",
+      "BT_0527",
+      "BT_0528",
+      "BT_0529",
+      "BT_0530",
+      "BT_0531",
+      "BT_0532",
+      "BT_0533",
+      "BT_0544",
+      "BT_0554",
+      "BT_0556",
+      "BT_0557",
+      "BT_0558",
+      "BT_0590",
+      "BT_0598",
+      "BT_0602",
+      "BT_0613",
+      "BT_0624",
+      "BT_0629",
+      "BT_0648",
+      "BT_0650",
+      "BT_0651",
+      "BT_0653",
+      "BT_0674",
+      "BT_0698",
+      "BT_0741",
+      "BT_0742",
+      "BT_0745",
+      "BT_0748",
+      "BT_0768",
+      "BT_0789",
+      "BT_0790",
+      "BT_0870",
+      "BT_0875",
+      "BT_0876",
+      "BT_1224",
+      "BT_1225",
+      "BT_1317",
+      "BT_1335",
+      "BT_1343",
+      "BT_1346",
+      "BT_1355",
+      "BT_1356",
+      "BT_1362",
+      "BT_1368",
+      "BT_1374",
+      "BT_1377",
+      "BT_1378",
+      "BT_1379",
+      "BT_1380",
+      "BT_1442",
+      "BT_1445",
+      "BT_1446",
+      "BT_1525",
+      "BT_1560",
+      "BT_1644",
+      "BT_1653",
+      "BT_1672",
+      "BT_1681",
+      "BT_1708",
+      "BT_1713",
+      "BT_1714",
+      "BT_1715",
+      "BT_1718",
+      "BT_1719",
+      "BT_1720",
+      "BT_1721",
+      "BT_1722",
+      "BT_1733",
+      "BT_1843",
+      "BT_1857",
+      "BT_1858",
+      "BT_1859",
+      "BT_1860",
+      "BT_1861",
+      "BT_1880",
+      "BT_1882",
+      "BT_1998",
+      "BT_1999",
+      "BT_2002",
+      "BT_2005",
+      "BT_2009",
+      "BT_2011",
+      "BT_2047",
+      "BT_2061",
+      "BT_2074",
+      "BT_2076",
+      "BT_2077",
+      "BT_2078",
+      "BT_2084",
+      "BT_2123",
+      "BT_2149",
+      "BT_2152",
+      "BT_2186",
+      "BT_2231",
+      "BT_2232",
+      "BT_2238",
+      "BT_2242",
+      "BT_2401",
+      "BT_2402",
+      "BT_2403",
+      "BT_2413",
+      "BT_2416",
+      "BT_2517",
+      "BT_2518",
+      "BT_2543",
+      "BT_2747",
+      "BT_2760",
+      "BT_2797",
+      "BT_2842",
+      "BT_2863",
+      "BT_2872",
+      "BT_3034",
+      "BT_3164",
+      "BT_3184",
+      "BT_3212",
+      "BT_3219",
+      "BT_3253",
+      "BT_3256",
+      "BT_3306",
+      "BT_3320",
+      "BT_3358",
+      "BT_3393",
+      "BT_3394",
+      "BT_3395",
+      "BT_3447",
+      "BT_3448",
+      "BT_3450",
+      "BT_3451",
+      "BT_3452",
+      "BT_3549",
+      "BT_3636",
+      "BT_3646",
+      "BT_3697",
+      "BT_3713",
+      "BT_3717",
+      "BT_3722",
+      "BT_3726",
+      "BT_3728",
+      "BT_3731",
+      "BT_3733",
+      "BT_3758",
+      "BT_3759",
+      "BT_3760",
+      "BT_3767",
+      "BT_3812",
+      "BT_3821",
+      "BT_3845",
+      "BT_3866",
+      "BT_3871",
+      "BT_3884",
+      "BT_3892",
+      "BT_3917",
+      "BT_3925",
+      "BT_3931",
+      "BT_3933",
+      "BT_3934",
+      "BT_3936",
+      "BT_3950",
+      "BT_3975",
+      "BT_4004",
+      "BT_4101",
+      "BT_4188",
+      "BT_4206",
+      "BT_4207",
+      "BT_4209",
+      "BT_4211",
+      "BT_4215",
+      "BT_4217",
+      "BT_4253",
+      "BT_4263",
+      "BT_4308",
+      "BT_4309",
+      "BT_4321",
+      "BT_4336",
+      "BT_4366",
+      "BT_4387",
+      "BT_4451",
+      "BT_4572",
+      "BT_4594",
+      "BT_4679",
+      "BT_4700",
+      "BT_4701",
+      "BT_4702",
+      "BT_4703",
+      "BT_4704"
+     ],
+     "essential_below_1pct_of_wt": 205,
+     "essential_below_5pct_of_wt": 205,
+     "essential_below_10pct_of_wt": 217,
+     "essential_below_50pct_of_wt": 218,
+     "published": 204,
+     "s14_reports_viable_but_essential_here": [
+      "BT_3767"
+     ],
+     "count_without_those": 204
+    },
+    "TYG_S8d": {
+     "wild_type_growth": 0.565391,
+     "missing_exchange_for": [],
+     "essential_growth_below_1e-6": 127,
+     "essential_genes": [
+      "BT_0033",
+      "BT_0057",
+      "BT_0205",
+      "BT_0347",
+      "BT_0378",
+      "BT_0381",
+      "BT_0382",
+      "BT_0391",
+      "BT_0394",
+      "BT_0398",
+      "BT_0409",
+      "BT_0475",
+      "BT_0477",
+      "BT_0481",
+      "BT_0554",
+      "BT_0558",
+      "BT_0598",
+      "BT_0602",
+      "BT_0613",
+      "BT_0624",
+      "BT_0629",
+      "BT_0698",
+      "BT_0745",
+      "BT_0748",
+      "BT_0768",
+      "BT_0789",
+      "BT_0870",
+      "BT_1224",
+      "BT_1225",
+      "BT_1335",
+      "BT_1343",
+      "BT_1346",
+      "BT_1355",
+      "BT_1356",
+      "BT_1362",
+      "BT_1368",
+      "BT_1442",
+      "BT_1445",
+      "BT_1446",
+      "BT_1525",
+      "BT_1560",
+      "BT_1644",
+      "BT_1653",
+      "BT_1681",
+      "BT_1708",
+      "BT_1713",
+      "BT_1714",
+      "BT_1715",
+      "BT_1718",
+      "BT_1719",
+      "BT_1720",
+      "BT_1721",
+      "BT_1722",
+      "BT_1880",
+      "BT_1998",
+      "BT_1999",
+      "BT_2002",
+      "BT_2005",
+      "BT_2009",
+      "BT_2011",
+      "BT_2061",
+      "BT_2084",
+      "BT_2123",
+      "BT_2149",
+      "BT_2152",
+      "BT_2186",
+      "BT_2231",
+      "BT_2232",
+      "BT_2238",
+      "BT_2242",
+      "BT_2517",
+      "BT_2543",
+      "BT_2747",
+      "BT_2760",
+      "BT_2797",
+      "BT_2842",
+      "BT_2863",
+      "BT_2872",
+      "BT_3034",
+      "BT_3164",
+      "BT_3184",
+      "BT_3212",
+      "BT_3219",
+      "BT_3306",
+      "BT_3320",
+      "BT_3358",
+      "BT_3393",
+      "BT_3447",
+      "BT_3448",
+      "BT_3450",
+      "BT_3451",
+      "BT_3452",
+      "BT_3636",
+      "BT_3646",
+      "BT_3697",
+      "BT_3713",
+      "BT_3722",
+      "BT_3726",
+      "BT_3767",
+      "BT_3821",
+      "BT_3884",
+      "BT_3917",
+      "BT_3925",
+      "BT_3931",
+      "BT_3934",
+      "BT_3950",
+      "BT_3975",
+      "BT_4004",
+      "BT_4101",
+      "BT_4188",
+      "BT_4206",
+      "BT_4207",
+      "BT_4215",
+      "BT_4308",
+      "BT_4309",
+      "BT_4321",
+      "BT_4336",
+      "BT_4366",
+      "BT_4387",
+      "BT_4451",
+      "BT_4594",
+      "BT_4679",
+      "BT_4700",
+      "BT_4701",
+      "BT_4702",
+      "BT_4703",
+      "BT_4704"
+     ],
+     "essential_below_1pct_of_wt": 127,
+     "essential_below_5pct_of_wt": 127,
+     "essential_below_10pct_of_wt": 127,
+     "essential_below_50pct_of_wt": 127,
+     "published": 116,
+     "exploratory_vitamin_additions": [
+      {
+       "added_at_10": [
+        "btn"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 122,
+       "no_longer_essential": [
+        "BT_0409",
+        "BT_1442",
+        "BT_1445",
+        "BT_1446",
+        "BT_4451"
+       ]
+      },
+      {
+       "added_at_10": [
+        "pnto-R"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 124,
+       "no_longer_essential": [
+        "BT_0698",
+        "BT_4308",
+        "BT_4309"
+       ]
+      },
+      {
+       "added_at_10": [
+        "nac"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 124,
+       "no_longer_essential": [
+        "BT_1560",
+        "BT_3164",
+        "BT_3184"
+       ]
+      },
+      {
+       "added_at_10": [
+        "fol"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 121,
+       "no_longer_essential": [
+        "BT_0768",
+        "BT_1335",
+        "BT_2149",
+        "BT_3646",
+        "BT_3767",
+        "BT_3931"
+       ]
+      },
+      {
+       "added_at_10": [
+        "btn",
+        "pnto-R"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 119,
+       "no_longer_essential": [
+        "BT_0409",
+        "BT_0698",
+        "BT_1442",
+        "BT_1445",
+        "BT_1446",
+        "BT_4308",
+        "BT_4309",
+        "BT_4451"
+       ]
+      },
+      {
+       "added_at_10": [
+        "btn",
+        "nac"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 119,
+       "no_longer_essential": [
+        "BT_0409",
+        "BT_1442",
+        "BT_1445",
+        "BT_1446",
+        "BT_1560",
+        "BT_3164",
+        "BT_3184",
+        "BT_4451"
+       ]
+      },
+      {
+       "added_at_10": [
+        "btn",
+        "fol"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 116,
+       "no_longer_essential": [
+        "BT_0409",
+        "BT_0768",
+        "BT_1335",
+        "BT_1442",
+        "BT_1445",
+        "BT_1446",
+        "BT_2149",
+        "BT_3646",
+        "BT_3767",
+        "BT_3931",
+        "BT_4451"
+       ]
+      },
+      {
+       "added_at_10": [
+        "pnto-R",
+        "nac"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 121,
+       "no_longer_essential": [
+        "BT_0698",
+        "BT_1560",
+        "BT_3164",
+        "BT_3184",
+        "BT_4308",
+        "BT_4309"
+       ]
+      },
+      {
+       "added_at_10": [
+        "pnto-R",
+        "fol"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 118,
+       "no_longer_essential": [
+        "BT_0698",
+        "BT_0768",
+        "BT_1335",
+        "BT_2149",
+        "BT_3646",
+        "BT_3767",
+        "BT_3931",
+        "BT_4308",
+        "BT_4309"
+       ]
+      },
+      {
+       "added_at_10": [
+        "nac",
+        "fol"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 118,
+       "no_longer_essential": [
+        "BT_0768",
+        "BT_1335",
+        "BT_1560",
+        "BT_2149",
+        "BT_3164",
+        "BT_3184",
+        "BT_3646",
+        "BT_3767",
+        "BT_3931"
+       ]
+      },
+      {
+       "added_at_10": [
+        "btn",
+        "pnto-R",
+        "nac"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 116,
+       "no_longer_essential": [
+        "BT_0409",
+        "BT_0698",
+        "BT_1442",
+        "BT_1445",
+        "BT_1446",
+        "BT_1560",
+        "BT_3164",
+        "BT_3184",
+        "BT_4308",
+        "BT_4309",
+        "BT_4451"
+       ]
+      },
+      {
+       "added_at_10": [
+        "btn",
+        "pnto-R",
+        "fol"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 113,
+       "no_longer_essential": [
+        "BT_0409",
+        "BT_0698",
+        "BT_0768",
+        "BT_1335",
+        "BT_1442",
+        "BT_1445",
+        "BT_1446",
+        "BT_2149",
+        "BT_3646",
+        "BT_3767",
+        "BT_3931",
+        "BT_4308",
+        "BT_4309",
+        "BT_4451"
+       ]
+      },
+      {
+       "added_at_10": [
+        "btn",
+        "nac",
+        "fol"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 113,
+       "no_longer_essential": [
+        "BT_0409",
+        "BT_0768",
+        "BT_1335",
+        "BT_1442",
+        "BT_1445",
+        "BT_1446",
+        "BT_1560",
+        "BT_2149",
+        "BT_3164",
+        "BT_3184",
+        "BT_3646",
+        "BT_3767",
+        "BT_3931",
+        "BT_4451"
+       ]
+      },
+      {
+       "added_at_10": [
+        "pnto-R",
+        "nac",
+        "fol"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 115,
+       "no_longer_essential": [
+        "BT_0698",
+        "BT_0768",
+        "BT_1335",
+        "BT_1560",
+        "BT_2149",
+        "BT_3164",
+        "BT_3184",
+        "BT_3646",
+        "BT_3767",
+        "BT_3931",
+        "BT_4308",
+        "BT_4309"
+       ]
+      },
+      {
+       "added_at_10": [
+        "btn",
+        "pnto-R",
+        "nac",
+        "fol"
+       ],
+       "wild_type_growth": 0.565391,
+       "essential": 110,
+       "no_longer_essential": [
+        "BT_0409",
+        "BT_0698",
+        "BT_0768",
+        "BT_1335",
+        "BT_1442",
+        "BT_1445",
+        "BT_1446",
+        "BT_1560",
+        "BT_2149",
+        "BT_3164",
+        "BT_3184",
+        "BT_3646",
+        "BT_3767",
+        "BT_3931",
+        "BT_4308",
+        "BT_4309",
+        "BT_4451"
+       ]
+      }
+     ]
+    },
+    "rich": {
+     "wild_type_growth": 86.947846,
+     "missing_exchange_for": [],
+     "essential_growth_below_1e-6": 61,
+     "essential_genes": [
+      "BT_0205",
+      "BT_0347",
+      "BT_0624",
+      "BT_0629",
+      "BT_0748",
+      "BT_0789",
+      "BT_1362",
+      "BT_1368",
+      "BT_1525",
+      "BT_1681",
+      "BT_1998",
+      "BT_1999",
+      "BT_2002",
+      "BT_2005",
+      "BT_2009",
+      "BT_2011",
+      "BT_2061",
+      "BT_2084",
+      "BT_2123",
+      "BT_2186",
+      "BT_2231",
+      "BT_2232",
+      "BT_2238",
+      "BT_2242",
+      "BT_2517",
+      "BT_2543",
+      "BT_2797",
+      "BT_2842",
+      "BT_3034",
+      "BT_3212",
+      "BT_3219",
+      "BT_3320",
+      "BT_3358",
+      "BT_3393",
+      "BT_3447",
+      "BT_3448",
+      "BT_3450",
+      "BT_3451",
+      "BT_3452",
+      "BT_3636",
+      "BT_3713",
+      "BT_3722",
+      "BT_3726",
+      "BT_3821",
+      "BT_3884",
+      "BT_3917",
+      "BT_3925",
+      "BT_3934",
+      "BT_3975",
+      "BT_4188",
+      "BT_4206",
+      "BT_4215",
+      "BT_4336",
+      "BT_4366",
+      "BT_4594",
+      "BT_4679",
+      "BT_4700",
+      "BT_4701",
+      "BT_4702",
+      "BT_4703",
+      "BT_4704"
+     ],
+     "essential_below_1pct_of_wt": 61,
+     "essential_below_5pct_of_wt": 61,
+     "essential_below_10pct_of_wt": 61,
+     "essential_below_50pct_of_wt": 61,
+     "published": 61
+    },
+    "western_diet_S9": {
+     "wild_type_growth": 0.263127,
+     "missing_exchange_for": [],
+     "essential_growth_below_1e-6": 164,
+     "essential_genes": [
+      "BT_0033",
+      "BT_0057",
+      "BT_0205",
+      "BT_0250",
+      "BT_0347",
+      "BT_0378",
+      "BT_0381",
+      "BT_0382",
+      "BT_0391",
+      "BT_0394",
+      "BT_0398",
+      "BT_0409",
+      "BT_0475",
+      "BT_0477",
+      "BT_0481",
+      "BT_0554",
+      "BT_0556",
+      "BT_0557",
+      "BT_0558",
+      "BT_0590",
+      "BT_0598",
+      "BT_0602",
+      "BT_0613",
+      "BT_0624",
+      "BT_0629",
+      "BT_0648",
+      "BT_0650",
+      "BT_0651",
+      "BT_0653",
+      "BT_0674",
+      "BT_0698",
+      "BT_0741",
+      "BT_0742",
+      "BT_0745",
+      "BT_0748",
+      "BT_0768",
+      "BT_0789",
+      "BT_0790",
+      "BT_0870",
+      "BT_0875",
+      "BT_0876",
+      "BT_1224",
+      "BT_1225",
+      "BT_1317",
+      "BT_1335",
+      "BT_1343",
+      "BT_1346",
+      "BT_1355",
+      "BT_1356",
+      "BT_1362",
+      "BT_1368",
+      "BT_1442",
+      "BT_1445",
+      "BT_1446",
+      "BT_1525",
+      "BT_1560",
+      "BT_1644",
+      "BT_1653",
+      "BT_1672",
+      "BT_1681",
+      "BT_1708",
+      "BT_1713",
+      "BT_1714",
+      "BT_1715",
+      "BT_1718",
+      "BT_1719",
+      "BT_1720",
+      "BT_1721",
+      "BT_1722",
+      "BT_1733",
+      "BT_1843",
+      "BT_1880",
+      "BT_1882",
+      "BT_1998",
+      "BT_1999",
+      "BT_2002",
+      "BT_2005",
+      "BT_2009",
+      "BT_2011",
+      "BT_2047",
+      "BT_2061",
+      "BT_2084",
+      "BT_2123",
+      "BT_2149",
+      "BT_2152",
+      "BT_2186",
+      "BT_2231",
+      "BT_2232",
+      "BT_2238",
+      "BT_2242",
+      "BT_2416",
+      "BT_2517",
+      "BT_2518",
+      "BT_2543",
+      "BT_2747",
+      "BT_2760",
+      "BT_2797",
+      "BT_2842",
+      "BT_2863",
+      "BT_2872",
+      "BT_3034",
+      "BT_3164",
+      "BT_3184",
+      "BT_3212",
+      "BT_3219",
+      "BT_3253",
+      "BT_3306",
+      "BT_3320",
+      "BT_3358",
+      "BT_3393",
+      "BT_3394",
+      "BT_3447",
+      "BT_3448",
+      "BT_3450",
+      "BT_3451",
+      "BT_3452",
+      "BT_3636",
+      "BT_3646",
+      "BT_3697",
+      "BT_3713",
+      "BT_3722",
+      "BT_3726",
+      "BT_3728",
+      "BT_3731",
+      "BT_3767",
+      "BT_3812",
+      "BT_3821",
+      "BT_3845",
+      "BT_3866",
+      "BT_3871",
+      "BT_3884",
+      "BT_3917",
+      "BT_3925",
+      "BT_3929",
+      "BT_3931",
+      "BT_3934",
+      "BT_3950",
+      "BT_3975",
+      "BT_4004",
+      "BT_4101",
+      "BT_4188",
+      "BT_4206",
+      "BT_4207",
+      "BT_4209",
+      "BT_4211",
+      "BT_4215",
+      "BT_4217",
+      "BT_4253",
+      "BT_4263",
+      "BT_4308",
+      "BT_4309",
+      "BT_4321",
+      "BT_4336",
+      "BT_4366",
+      "BT_4387",
+      "BT_4451",
+      "BT_4572",
+      "BT_4594",
+      "BT_4679",
+      "BT_4700",
+      "BT_4701",
+      "BT_4702",
+      "BT_4703",
+      "BT_4704"
+     ],
+     "essential_below_1pct_of_wt": 164,
+     "essential_below_5pct_of_wt": 164,
+     "essential_below_10pct_of_wt": 164,
+     "essential_below_50pct_of_wt": 177,
+     "published": 160
+    }
+   },
+   "western_diet_note": "Table S9 defines the Western diet for the joint mouse/B. theta model (lumen uptake rates); applying it to iAH991 alone is an approximation of the paper's setting.",
+   "western_diet_unmapped_ids": [
+    "ttdca",
+    "hdca",
+    "ocdca",
+    "glyc",
+    "hdcea",
+    "ocdcea"
+   ]
+  },
+  "table_S14_knockouts": {
+   "transcription_matches_pdf_column": true,
+   "rows": [
+    {
+     "deleted": "BT_3763-BT_3767",
+     "condition": "L-rhamnose as sole carbon source",
+     "published_in_silico": "no",
+     "rebuilt": "no",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3763",
+        "BT_3764",
+        "BT_3765",
+        "BT_3766",
+        "BT_3767"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "rmn": {
+         "rate": 12.0,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_3763-BT_3767",
+     "condition": "Glucose minimal medium",
+     "published_in_silico": "yes",
+     "rebuilt": "no",
+     "agrees": false,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3763",
+        "BT_3764",
+        "BT_3765",
+        "BT_3766",
+        "BT_3767"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "glc-D": {
+         "rate": 10.0,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": [
+      {
+       "deleted": [
+        "BT_3763",
+        "BT_3764",
+        "BT_3765",
+        "BT_3766",
+        "BT_3767"
+       ],
+       "substrates": [
+        "glc-D"
+       ],
+       "single_deletions_that_are_lethal": [
+        {
+         "gene": "BT_3767",
+         "lethal_reactions": [
+          {
+           "reaction": "LCAR2",
+           "equation": "gcald_c + h_c + nadh_c <=> 12ethd_c + nad_c",
+           "gene_rule": "BT_3767"
+          }
+         ]
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "deleted": "BT_3767",
+     "condition": "L-rhamnose as sole carbon source",
+     "published_in_silico": "no",
+     "rebuilt": "no",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3767"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "rmn": {
+         "rate": 12.0,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_3717",
+     "condition": "Glucose minimal medium",
+     "published_in_silico": "no",
+     "rebuilt": "no",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3717"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "glc-D": {
+         "rate": 10.0,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_3717",
+     "condition": "Glucose minimal medium with L-arginine supply",
+     "published_in_silico": "yes",
+     "rebuilt": "yes",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3717"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "glc-D": {
+         "rate": 10.0,
+         "source": "S8b"
+        },
+        "arg-L": {
+         "rate": 10.0,
+         "source": "fixed"
+        }
+       },
+       "growth": 0.242698,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "SusC (BT_3702) or SusD (BT_3701) or SusG (BT_3698)",
+     "condition": "Maltose or maltotriose as sole carbon source",
+     "published_in_silico": "yes",
+     "rebuilt": "yes",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3702"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malt": {
+         "rate": 5.0,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.255224,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3702"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malttr": {
+         "rate": 3.3333333333333335,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.249122,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3701"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malt": {
+         "rate": 5.0,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.255224,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3701"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malttr": {
+         "rate": 3.3333333333333335,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.249122,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3698"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malt": {
+         "rate": 5.0,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.255224,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3698"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malttr": {
+         "rate": 3.3333333333333335,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.249122,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "SusC (BT_3702) or SusD (BT_3701) or SusG (BT_3698)",
+     "condition": "Starch as sole carbon source",
+     "published_in_silico": "no",
+     "rebuilt": "mixed",
+     "agrees": false,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3702"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "starch1200": {
+         "rate": 0.00833,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3701"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "starch1200": {
+         "rate": 0.00833,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3698"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "starch1200": {
+         "rate": 0.00833,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.248985,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": [
+      {
+       "deleted": [
+        "BT_3698"
+       ],
+       "substrates": [
+        "starch1200"
+       ],
+       "reactions_of_deleted_genes_still_carrying_flux": [
+        {
+         "reaction": "AMYe",
+         "flux": 0.00833,
+         "gene_rule": "(BT_3698 and BT_3701 and BT_3702) or (BT_0773 and BT_3701 and BT_3702) or (BT_4305 and BT_3701 and BT_3702)"
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "deleted": "SusG (BT_3698)",
+     "condition": "Maltoheptaose as sole carbon source",
+     "published_in_silico": "yes",
+     "rebuilt": "yes",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3698"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malthp": {
+         "rate": 1.4285714285714286,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.242148,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "SusC (BT_3702) or SusD (BT_3701)",
+     "condition": "Maltoheptaose as sole carbon source",
+     "published_in_silico": "no",
+     "rebuilt": "no",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3702"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malthp": {
+         "rate": 1.4285714285714286,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3701"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "malthp": {
+         "rate": 1.4285714285714286,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_1663 or BT_4689",
+     "condition": "Pullulan as sole carbon source",
+     "published_in_silico": "yes",
+     "rebuilt": "yes",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_1663"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "pullulan1200": {
+         "rate": 0.00833,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.248985,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_4689"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "pullulan1200": {
+         "rate": 0.00833,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.248985,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_0238",
+     "condition": "Chondroitin sulfate A, B or C as sole carbon source",
+     "published_in_silico": "no",
+     "rebuilt": "no",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_0238"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_a": {
+         "rate": 1.33,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_0238"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_b": {
+         "rate": 1.33,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_0238"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_c": {
+         "rate": 1.33,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_0238",
+     "condition": "Glucose minimal medium",
+     "published_in_silico": "yes",
+     "rebuilt": "yes",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_0238"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "glc-D": {
+         "rate": 10.0,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "csuF (BT_3332)",
+     "condition": "Chondroitin sulfate A, B or C as sole carbon source",
+     "published_in_silico": "no",
+     "rebuilt": "no",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3332"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_a": {
+         "rate": 1.33,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3332"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_b": {
+         "rate": 1.33,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3332"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_c": {
+         "rate": 1.33,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "csuF (BT_3332)",
+     "condition": "Sulfated disaccharides as sole carbon source",
+     "published_in_silico": "yes",
+     "rebuilt": "yes",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_3332"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_a_degr": {
+         "rate": 4.285714285714286,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.12322,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3332"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_b_degr": {
+         "rate": 4.285714285714286,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.028425,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_3332"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "cspg_c_degr": {
+         "rate": 4.285714285714286,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.12322,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_2970",
+     "condition": "Glucose minimal medium",
+     "published_in_silico": "yes",
+     "rebuilt": "yes",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_2970"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "glc-D": {
+         "rate": 10.0,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_1760",
+     "condition": "Levan as sole carbon source",
+     "published_in_silico": "no",
+     "rebuilt": "no",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_1760"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "levan1000": {
+         "rate": 0.01,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.0,
+       "grows": false,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    },
+    {
+     "deleted": "BT_1760",
+     "condition": "Glucose, fructose, sucrose or oligofructose as sole carbon source",
+     "published_in_silico": "yes",
+     "rebuilt": "yes",
+     "agrees": true,
+     "cases": [
+      {
+       "deleted": [
+        "BT_1760"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "glc-D": {
+         "rate": 10.0,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_1760"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "fru": {
+         "rate": 10.0,
+         "source": "S8b"
+        }
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_1760"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "sucr": {
+         "rate": 5.0,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.255224,
+       "grows": true,
+       "missing_exchange": []
+      },
+      {
+       "deleted": [
+        "BT_1760"
+       ],
+       "deleted_not_in_model": [],
+       "substrates": {
+        "oligofru4": {
+         "rate": 2.5,
+         "source": "60 mmol C/gDW/h (S3 scaling)"
+        }
+       },
+       "growth": 0.236918,
+       "grows": true,
+       "missing_exchange": []
+      }
+     ],
+     "explanation": []
+    }
+   ],
+   "n_agree": 15,
+   "n": 17
+  }
+ },
+ "s8_tables": {
+  "S8a": {
+   "page": 30,
+   "entries": [
+    {
+     "name": "Calcium",
+     "id": "ca2",
+     "rate": 10.0
+    },
+    {
+     "name": "Cob(I)alamin",
+     "id": "cbl1",
+     "rate": 10.0
+    },
+    {
+     "name": "Co2+",
+     "id": "cobalt2",
+     "rate": 10.0
+    },
+    {
+     "name": "Fe2+",
+     "id": "fe2",
+     "rate": 10.0
+    },
+    {
+     "name": "Fe3+",
+     "id": "fe3",
+     "rate": 10.0
+    },
+    {
+     "name": "Hydrogen sulfide",
+     "id": "h2s",
+     "rate": 10.0
+    },
+    {
+     "name": "Potassium",
+     "id": "k",
+     "rate": 10.0
+    },
+    {
+     "name": "Magnesium",
+     "id": "mg2",
+     "rate": 10.0
+    },
+    {
+     "name": "Mn2+",
+     "id": "mn2",
+     "rate": 10.0
+    },
+    {
+     "name": "Sodium",
+     "id": "na1",
+     "rate": 10.0
+    },
+    {
+     "name": "Protoheme",
+     "id": "pheme",
+     "rate": 10.0
+    },
+    {
+     "name": "Hydrogenphosphate",
+     "id": "pi",
+     "rate": 10.0
+    },
+    {
+     "name": "Zinc",
+     "id": "zn2",
+     "rate": 10.0
+    },
+    {
+     "name": "Ammonium",
+     "id": "nh4",
+     "rate": 100.0
+    },
+    {
+     "name": "CO2",
+     "id": "co2",
+     "rate": 100.0
+    },
+    {
+     "name": "H2O",
+     "id": "h2o",
+     "rate": 100.0
+    }
+   ]
+  },
+  "S8b": {
+   "page": 31,
+   "entries": [
+    {
+     "name": "N-Acetyl-D-galactosamine",
+     "id": "acgal",
+     "rate": 10.0
+    },
+    {
+     "name": "N-Acetyl-D-glucosamine",
+     "id": "acgam",
+     "rate": 10.0
+    },
+    {
+     "name": "N-acetylneuraminate",
+     "id": "acnam",
+     "rate": 10.0
+    },
+    {
+     "name": "Alpha-mannan (yeast)",
+     "id": "amannan140",
+     "rate": 0.07143
+    },
+    {
+     "name": "Arabinan",
+     "id": "arabinan101",
+     "rate": 0.1179
+    },
+    {
+     "name": "Arabinogalactan",
+     "id": "arabinogal",
+     "rate": 0.0155
+    },
+    {
+     "name": "L-Arabinose",
+     "id": "arab-L",
+     "rate": 12.0
+    },
+    {
+     "name": "Cellobiose",
+     "id": "cellb",
+     "rate": 5.0
+    },
+    {
+     "name": "Core 4 (mucin O-glycan)",
+     "id": "core4",
+     "rate": 2.5
+    },
+    {
+     "name": "Core 5 (mucin O-glycan)",
+     "id": "core5",
+     "rate": 3.75
+    },
+    {
+     "name": "Core 7 (mucin O-glycan)",
+     "id": "core7",
+     "rate": 3.75
+    },
+    {
+     "name": "Core 8 (mucin O-glycan)",
+     "id": "core8",
+     "rate": 4.2857
+    },
+    {
+     "name": "Chondroitin sulfate A (GalNAc4S-GlcA) proteoglycan",
+     "id": "cspg_a",
+     "rate": 1.33
+    },
+    {
+     "name": "Chondroitin sulfate B / dermatan sulfate (IdoA2S-GalNAc4S) proteoglycan",
+     "id": "cspg_b",
+     "rate": 1.33
+    },
+    {
+     "name": "Chondroitin sulfate C (GalNAc6S-GlcA) proteoglycan",
+     "id": "cspg_c",
+     "rate": 1.33
+    },
+    {
+     "name": "Dextran 40, 1,6-alpha-D-Glucan",
+     "id": "dextran40",
+     "rate": 0.125
+    },
+    {
+     "name": "Disialyl-T antigen (mucin O-glycan)",
+     "id": "dsT_antigen",
+     "rate": 1.6667
+    },
+    {
+     "name": "F1alpha (mucin O-glycan)",
+     "id": "f1a",
+     "rate": 2.7273
+    },
+    {
+     "name": "D-Fructose",
+     "id": "fru",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Fucose",
+     "id": "fuc-L",
+     "rate": 10.0
+    },
+    {
+     "name": "D-Galactose",
+     "id": "gal",
+     "rate": 10.0
+    },
+    {
+     "name": "D-Galacturonate",
+     "id": "galur",
+     "rate": 10.0
+    },
+    {
+     "name": "D-Glucosamine",
+     "id": "gam",
+     "rate": 10.0
+    },
+    {
+     "name": "D-Glucose",
+     "id": "glc-D",
+     "rate": 10.0
+    },
+    {
+     "name": "D-Glucuronate",
+     "id": "glcur",
+     "rate": 10.0
+    },
+    {
+     "name": "glycogen (n=1500 repeat units) (glc alpha 1,4/6 glc)",
+     "id": "glycogen1500",
+     "rate": 0.0067
+    },
+    {
+     "name": "GlcNAc-alpha-1,4-Core 1 (mucin O-glycan)",
+     "id": "gncore1",
+     "rate": 2.7273
+    },
+    {
+     "name": "GlcNAc-alpha-1,4-Core 2 (mucin O-glycan)",
+     "id": "gncore2",
+     "rate": 2.7273
+    },
+    {
+     "name": "Hyaluronan",
+     "id": "ha",
+     "rate": 2.12
+    },
+    {
+     "name": "Homogalacturonan",
+     "id": "homogal",
+     "rate": 0.09091
+    },
+    {
+     "name": "Heparin sulfate proteoglycan",
+     "id": "hspg",
+     "rate": 0.76
+    },
+    {
+     "name": "Inulin",
+     "id": "inulin",
+     "rate": 0.33333
+    },
+    {
+     "name": "Levan, 1000 fructose units",
+     "id": "levan1000",
+     "rate": 0.01
+    },
+    {
+     "name": "Laminarin (n=30 repeat units, beta -1,3 glc)",
+     "id": "lmn30",
+     "rate": 0.33
+    },
+    {
+     "name": "D-Mannose",
+     "id": "man",
+     "rate": 10.0
+    },
+    {
+     "name": "Pectic galactan",
+     "id": "pecticgal",
+     "rate": 0.1005
+    },
+    {
+     "name": "Pullulan (n=1200 repeat units, alpha-1,4 and alpha-1,6 bounds)",
+     "id": "pullulan1200",
+     "rate": 0.00833
+    },
+    {
+     "name": "Rhamnogalacturonan I",
+     "id": "rhamnogalurI",
+     "rate": 0.010274
+    },
+    {
+     "name": "Rhamnogalacturonan II",
+     "id": "rhamnogalurII",
+     "rate": 0.18927
+    },
+    {
+     "name": "D-ribose",
+     "id": "rib-D",
+     "rate": 12.0
+    },
+    {
+     "name": "L-Rhamnose",
+     "id": "rmn",
+     "rate": 12.0
+    },
+    {
+     "name": "Starch n=1200 repeat units (300 repeat uni p ts o t a a m to y e lo s s t e ar , c 9 h 0 ) 0 repeat units amylopectin, corresponds to",
+     "id": "starch1200",
+     "rate": 0.00833
+    },
+    {
+     "name": "Sialyl-Tn antigen (mucin O-glycan)",
+     "id": "sTn_antigen",
+     "rate": 3.1579
+    },
+    {
+     "name": "Starch, structure 1 (1,6-7[1,4-Glc], 4[1,4-Glc]",
+     "id": "strch1",
+     "rate": 0.91
+    },
+    {
+     "name": "D-Xylose",
+     "id": "xyl-D",
+     "rate": 12.0
+    }
+   ]
+  },
+  "S8c": {
+   "page": 32,
+   "entries": [
+    {
+     "name": "Calcium",
+     "id": "ca2",
+     "rate": 10.0
+    },
+    {
+     "name": "Cob(I)alamin",
+     "id": "cbl1",
+     "rate": 10.0
+    },
+    {
+     "name": "Co2+",
+     "id": "cobalt2",
+     "rate": 10.0
+    },
+    {
+     "name": "Fe2+",
+     "id": "fe2",
+     "rate": 10.0
+    },
+    {
+     "name": "Fe3+",
+     "id": "fe3",
+     "rate": 10.0
+    },
+    {
+     "name": "Hydrogen sulfide",
+     "id": "h2s",
+     "rate": 10.0
+    },
+    {
+     "name": "Potassium",
+     "id": "k",
+     "rate": 10.0
+    },
+    {
+     "name": "Magnesium",
+     "id": "mg2",
+     "rate": 10.0
+    },
+    {
+     "name": "Mn2+",
+     "id": "mn2",
+     "rate": 10.0
+    },
+    {
+     "name": "Sodium",
+     "id": "na1",
+     "rate": 10.0
+    },
+    {
+     "name": "Protoheme",
+     "id": "pheme",
+     "rate": 10.0
+    },
+    {
+     "name": "Hydrogenphosphate",
+     "id": "pi",
+     "rate": 10.0
+    },
+    {
+     "name": "Zinc",
+     "id": "zn2",
+     "rate": 10.0
+    },
+    {
+     "name": "Ammonium",
+     "id": "nh4",
+     "rate": 100.0
+    },
+    {
+     "name": "CO2",
+     "id": "co2",
+     "rate": 100.0
+    },
+    {
+     "name": "H2O",
+     "id": "h2o",
+     "rate": 100.0
+    },
+    {
+     "name": "D-Glucose",
+     "id": "glc-D",
+     "rate": 10.0
+    }
+   ]
+  },
+  "S8d": {
+   "page": 33,
+   "entries": [
+    {
+     "name": "Calcium",
+     "id": "ca2",
+     "rate": 1.0
+    },
+    {
+     "name": "Cob(I)alamin",
+     "id": "cbl1",
+     "rate": 1.0
+    },
+    {
+     "name": "Co2+",
+     "id": "cobalt2",
+     "rate": 1.0
+    },
+    {
+     "name": "Fe2+",
+     "id": "fe2",
+     "rate": 1.0
+    },
+    {
+     "name": "Fe3+",
+     "id": "fe3",
+     "rate": 1.0
+    },
+    {
+     "name": "Hydrogen sulfide",
+     "id": "h2s",
+     "rate": 1.0
+    },
+    {
+     "name": "potassium",
+     "id": "k",
+     "rate": 1.0
+    },
+    {
+     "name": "magnesium",
+     "id": "mg2",
+     "rate": 1.0
+    },
+    {
+     "name": "Mn2+",
+     "id": "mn2",
+     "rate": 1.0
+    },
+    {
+     "name": "Sodium",
+     "id": "na1",
+     "rate": 1.0
+    },
+    {
+     "name": "Protoheme",
+     "id": "pheme",
+     "rate": 1.0
+    },
+    {
+     "name": "hydrogenphosphate",
+     "id": "pi",
+     "rate": 1.0
+    },
+    {
+     "name": "Zinc",
+     "id": "zn2",
+     "rate": 1.0
+    },
+    {
+     "name": "Ammonium",
+     "id": "nh4",
+     "rate": 10.0
+    },
+    {
+     "name": "CO2",
+     "id": "co2",
+     "rate": 10.0
+    },
+    {
+     "name": "H2O",
+     "id": "h2o",
+     "rate": 10.0
+    },
+    {
+     "name": "D-Glucose",
+     "id": "glc-D",
+     "rate": 10.0
+    },
+    {
+     "name": "Alpha-mannan (yeast)",
+     "id": "amannan140",
+     "rate": 10.0
+    },
+    {
+     "name": "4-Aminobutanoate",
+     "id": "4abut",
+     "rate": 10.0
+    },
+    {
+     "name": "Acetate",
+     "id": "ac",
+     "rate": 10.0
+    },
+    {
+     "name": "Adenosine",
+     "id": "adn",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Alanine",
+     "id": "ala-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Arginine",
+     "id": "arg-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Asparagine",
+     "id": "asn-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Aspartate",
+     "id": "asp-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Cys-Gly",
+     "id": "cgly",
+     "rate": 10.0
+    },
+    {
+     "name": "Citrate",
+     "id": "cit",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Cysteine",
+     "id": "cys-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Cytidine",
+     "id": "cytd",
+     "rate": 10.0
+    },
+    {
+     "name": "Deoxyadenosine",
+     "id": "dad-2",
+     "rate": 10.0
+    },
+    {
+     "name": "Deoxycytidine",
+     "id": "dcyt",
+     "rate": 10.0
+    },
+    {
+     "name": "Deoxyguanosine",
+     "id": "dgsn",
+     "rate": 10.0
+    },
+    {
+     "name": "Deoxyinosine",
+     "id": "din",
+     "rate": 10.0
+    },
+    {
+     "name": "Deoxyuridine",
+     "id": "duri",
+     "rate": 10.0
+    },
+    {
+     "name": "Ethanol",
+     "id": "etoh",
+     "rate": 10.0
+    },
+    {
+     "name": "Formate",
+     "id": "for",
+     "rate": 10.0
+    },
+    {
+     "name": "Fumarate",
+     "id": "fum",
+     "rate": 10.0
+    },
+    {
+     "name": "D-Galactose",
+     "id": "gal",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Glutamine",
+     "id": "gln-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Glutamate",
+     "id": "glu-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Glycine",
+     "id": "gly",
+     "rate": 10.0
+    },
+    {
+     "name": "Guanosine",
+     "id": "gsn",
+     "rate": 10.0
+    },
+    {
+     "name": "proton",
+     "id": "h",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Histidine",
+     "id": "his-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Isoleucine",
+     "id": "ile-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Inosine",
+     "id": "ins",
+     "rate": 10.0
+    },
+    {
+     "name": "D-Lactate",
+     "id": "lac-D",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Lactate",
+     "id": "lac-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Leucine",
+     "id": "leu-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Lysine",
+     "id": "lys-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Methionine",
+     "id": "met-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Methylglyoxal",
+     "id": "mthgxl",
+     "rate": 10.0
+    },
+    {
+     "name": "NMN",
+     "id": "nmn",
+     "rate": 10.0
+    },
+    {
+     "name": "Ornithine",
+     "id": "orn",
+     "rate": 10.0
+    },
+    {
+     "name": "Phenylacetic acid",
+     "id": "pac",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Phenylalanine",
+     "id": "phe-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Proline",
+     "id": "pro-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Putrescine",
+     "id": "ptrc",
+     "rate": 10.0
+    },
+    {
+     "name": "Pyridoxine",
+     "id": "pydxn",
+     "rate": 10.0
+    },
+    {
+     "name": "pyruvate",
+     "id": "pyr",
+     "rate": 10.0
+    },
+    {
+     "name": "Riboflavin",
+     "id": "ribflv",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Serine",
+     "id": "ser-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Sulfate",
+     "id": "so4",
+     "rate": 10.0
+    },
+    {
+     "name": "Spermidine",
+     "id": "spmd",
+     "rate": 10.0
+    },
+    {
+     "name": "Succinate",
+     "id": "succ",
+     "rate": 10.0
+    },
+    {
+     "name": "Taurine",
+     "id": "taur",
+     "rate": 10.0
+    },
+    {
+     "name": "taurocholic acid",
+     "id": "tchola",
+     "rate": 10.0
+    },
+    {
+     "name": "Thiamin",
+     "id": "thm",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Threonine",
+     "id": "thr-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Thymidine",
+     "id": "thymd",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Tryptophan",
+     "id": "trp-L",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Tyrosine",
+     "id": "tyr-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Uracil",
+     "id": "ura",
+     "rate": 10.0
+    },
+    {
+     "name": "Urea",
+     "id": "urea",
+     "rate": 10.0
+    },
+    {
+     "name": "Uridine",
+     "id": "uri",
+     "rate": 10.0
+    },
+    {
+     "name": "L-Valine",
+     "id": "val-L",
+     "rate": 10.0
+    },
+    {
+     "name": "Xanthine",
+     "id": "xan",
+     "rate": 10.0
+    }
+   ]
+  }
+ },
+ "s9_western": {
+  "page": 35,
+  "entries": [
+   {
+    "name": "D-Fructose",
+    "id": "fru",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 0.1,
+     "HC": 1.5,
+     "HF": 0.1,
+     "KD": 0.01,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Lactose",
+    "id": "lcts",
+    "western": 0.5,
+    "all_diets": {
+     "HP": 0.05,
+     "HC": 0.75,
+     "HF": 0.05,
+     "KD": 0.005,
+     "W": 0.5
+    }
+   },
+   {
+    "name": "Maltose",
+    "id": "malt",
+    "western": 0.5,
+    "all_diets": {
+     "HP": 0.05,
+     "HC": 0.75,
+     "HF": 0.05,
+     "KD": 0.005,
+     "W": 0.5
+    }
+   },
+   {
+    "name": "Sucrose",
+    "id": "sucr",
+    "western": 0.5,
+    "all_diets": {
+     "HP": 0.05,
+     "HC": 0.75,
+     "HF": 0.05,
+     "KD": 0.005,
+     "W": 0.5
+    }
+   },
+   {
+    "name": "Dextran 40, 1,6-alpha-D-Glucan",
+    "id": "dextran40",
+    "western": 0.00625,
+    "all_diets": {
+     "HP": 0.000625,
+     "HC": 0.009375,
+     "HF": 0.000625,
+     "KD": 6.3e-05,
+     "W": 0.00625
+    }
+   },
+   {
+    "name": "Starch n=1200 repeat units (300 repeat units amylose, 900 repeat units amylopectin)",
+    "id": "starch1200",
+    "western": 0.00042,
+    "all_diets": {
+     "HP": 4.2e-05,
+     "HC": 0.000626,
+     "HF": 4.2e-05,
+     "KD": 4e-06,
+     "W": 0.00042
+    }
+   },
+   {
+    "name": "Pullulan (n=1200 repeat units, alpha-1,4 and alph-1,6 bounds)",
+    "id": "pullulan1200",
+    "western": 0.00042,
+    "all_diets": {
+     "HP": 4.2e-05,
+     "HC": 0.000626,
+     "HF": 4.2e-05,
+     "KD": 4e-06,
+     "W": 0.00042
+    }
+   },
+   {
+    "name": "Pectins",
+    "id": "pect",
+    "western": 0.00118,
+    "all_diets": {
+     "HP": 0.000118,
+     "HC": 0.001775,
+     "HF": 0.000118,
+     "KD": 1.18e-05,
+     "W": 0.00118
+    }
+   },
+   {
+    "name": "Amylose (n=300 repeat units, alpha-1,4-glc)",
+    "id": "amylose300",
+    "western": 0.00167,
+    "all_diets": {
+     "HP": 0.000167,
+     "HC": 0.002501,
+     "HF": 0.000167,
+     "KD": 1.7e-05,
+     "W": 0.00167
+    }
+   },
+   {
+    "name": "Larch arabinogalactan",
+    "id": "arabinogal",
+    "western": 0.00078,
+    "all_diets": {
+     "HP": 7.8e-05,
+     "HC": 0.001167,
+     "HF": 7.8e-05,
+     "KD": 8e-06,
+     "W": 0.00078
+    }
+   },
+   {
+    "name": "Mannopentaose",
+    "id": "manpt",
+    "western": 0.1,
+    "all_diets": {
+     "HP": 0.01,
+     "HC": 0.15,
+     "HF": 0.01,
+     "KD": 0.001,
+     "W": 0.1
+    }
+   },
+   {
+    "name": "Laminarin (n=30 repeat units, beta -1,3 glc)",
+    "id": "lmn30",
+    "western": 0.01667,
+    "all_diets": {
+     "HP": 0.001667,
+     "HC": 0.025005,
+     "HF": 0.001667,
+     "KD": 0.000167,
+     "W": 0.01667
+    }
+   },
+   {
+    "name": "Levan, 1000 fructose units",
+    "id": "levan1000",
+    "western": 0.0005,
+    "all_diets": {
+     "HP": 5e-05,
+     "HC": 0.00075,
+     "HF": 5e-05,
+     "KD": 5e-06,
+     "W": 0.0005
+    }
+   },
+   {
+    "name": "Raffinose",
+    "id": "raffin",
+    "western": 0.1667,
+    "all_diets": {
+     "HP": 0.01667,
+     "HC": 0.25005,
+     "HF": 0.01667,
+     "KD": 0.001667,
+     "W": 0.1667
+    }
+   },
+   {
+    "name": "tetradecanoate (n-C14:0)",
+    "id": "ttdca",
+    "western": 0.24899,
+    "all_diets": {
+     "HP": 0.14228,
+     "HC": 0.03557,
+     "HF": 0.53355,
+     "KD": 0.67583,
+     "W": 0.24899
+    }
+   },
+   {
+    "name": "Hexadecanoate (n-C16:0)",
+    "id": "hdca",
+    "western": 0.21788,
+    "all_diets": {
+     "HP": 0.1245,
+     "HC": 0.031125,
+     "HF": 0.466875,
+     "KD": 0.591375,
+     "W": 0.21788
+    }
+   },
+   {
+    "name": "octadecanoate (n-C18:0)",
+    "id": "ocdca",
+    "western": 0.19367,
+    "all_diets": {
+     "HP": 0.110668,
+     "HC": 0.027667,
+     "HF": 0.415005,
+     "KD": 0.525673,
+     "W": 0.19367
+    }
+   },
+   {
+    "name": "Glycerol",
+    "id": "glyc",
+    "western": 1.162,
+    "all_diets": {
+     "HP": 0.664,
+     "HC": 0.166,
+     "HF": 2.49,
+     "KD": 3.154,
+     "W": 1.162
+    }
+   },
+   {
+    "name": "Hexadecenoate (n-C16:1)",
+    "id": "hdcea",
+    "western": 0.21788,
+    "all_diets": {
+     "HP": 0.1245,
+     "HC": 0.031125,
+     "HF": 0.466875,
+     "KD": 0.591375,
+     "W": 0.21788
+    }
+   },
+   {
+    "name": "octadecenoate (n-C18:1)",
+    "id": "ocdcea",
+    "western": 0.19367,
+    "all_diets": {
+     "HP": 0.110668,
+     "HC": 0.027667,
+     "HF": 0.415005,
+     "KD": 0.525673,
+     "W": 0.19367
+    }
+   },
+   {
+    "name": "L-Alanine",
+    "id": "ala-L",
+    "western": 0.3,
+    "all_diets": {
+     "HP": 1.5,
+     "HC": 0.4,
+     "HF": 0.4,
+     "KD": 0.09,
+     "W": 0.3
+    }
+   },
+   {
+    "name": "L-Arginine",
+    "id": "arg-L",
+    "western": 0.15,
+    "all_diets": {
+     "HP": 0.75,
+     "HC": 0.2,
+     "HF": 0.2,
+     "KD": 0.045,
+     "W": 0.15
+    }
+   },
+   {
+    "name": "L-Glutamate",
+    "id": "glu-L",
+    "western": 0.18,
+    "all_diets": {
+     "HP": 0.9,
+     "HC": 0.24,
+     "HF": 0.24,
+     "KD": 0.054,
+     "W": 0.18
+    }
+   },
+   {
+    "name": "Glycine",
+    "id": "gly",
+    "western": 0.45,
+    "all_diets": {
+     "HP": 2.25,
+     "HC": 0.6,
+     "HF": 0.6,
+     "KD": 0.135,
+     "W": 0.45
+    }
+   },
+   {
+    "name": "L-Isoleucine",
+    "id": "ile-L",
+    "western": 0.15,
+    "all_diets": {
+     "HP": 0.75,
+     "HC": 0.2,
+     "HF": 0.2,
+     "KD": 0.045,
+     "W": 0.15
+    }
+   },
+   {
+    "name": "L-Leucine",
+    "id": "leu-L",
+    "western": 0.15,
+    "all_diets": {
+     "HP": 0.75,
+     "HC": 0.2,
+     "HF": 0.2,
+     "KD": 0.045,
+     "W": 0.15
+    }
+   },
+   {
+    "name": "L-Lysine",
+    "id": "lys-L",
+    "western": 0.15,
+    "all_diets": {
+     "HP": 0.75,
+     "HC": 0.2,
+     "HF": 0.2,
+     "KD": 0.045,
+     "W": 0.15
+    }
+   },
+   {
+    "name": "L-Methionine",
+    "id": "met-L",
+    "western": 0.18,
+    "all_diets": {
+     "HP": 0.9,
+     "HC": 0.24,
+     "HF": 0.24,
+     "KD": 0.054,
+     "W": 0.18
+    }
+   },
+   {
+    "name": "L-Proline",
+    "id": "pro-L",
+    "western": 0.18,
+    "all_diets": {
+     "HP": 0.9,
+     "HC": 0.24,
+     "HF": 0.24,
+     "KD": 0.054,
+     "W": 0.18
+    }
+   },
+   {
+    "name": "L-Asparagine",
+    "id": "asn-L",
+    "western": 0.225,
+    "all_diets": {
+     "HP": 1.125,
+     "HC": 0.3,
+     "HF": 0.3,
+     "KD": 0.0675,
+     "W": 0.225
+    }
+   },
+   {
+    "name": "L-Aspartate",
+    "id": "asp-L",
+    "western": 0.225,
+    "all_diets": {
+     "HP": 1.125,
+     "HC": 0.3,
+     "HF": 0.3,
+     "KD": 0.0675,
+     "W": 0.225
+    }
+   },
+   {
+    "name": "L-Histidine",
+    "id": "his-L",
+    "western": 0.15,
+    "all_diets": {
+     "HP": 0.75,
+     "HC": 0.2,
+     "HF": 0.2,
+     "KD": 0.045,
+     "W": 0.15
+    }
+   },
+   {
+    "name": "L-Phenylalanine",
+    "id": "phe-L",
+    "western": 0.099,
+    "all_diets": {
+     "HP": 0.495,
+     "HC": 0.132,
+     "HF": 0.132,
+     "KD": 0.0297,
+     "W": 0.099
+    }
+   },
+   {
+    "name": "L-Serine",
+    "id": "ser-L",
+    "western": 0.3,
+    "all_diets": {
+     "HP": 1.5,
+     "HC": 0.4,
+     "HF": 0.4,
+     "KD": 0.09,
+     "W": 0.3
+    }
+   },
+   {
+    "name": "L-Threonine",
+    "id": "thr-L",
+    "western": 0.225,
+    "all_diets": {
+     "HP": 1.125,
+     "HC": 0.3,
+     "HF": 0.3,
+     "KD": 0.0675,
+     "W": 0.225
+    }
+   },
+   {
+    "name": "L-Tryptophan",
+    "id": "trp-L",
+    "western": 0.081,
+    "all_diets": {
+     "HP": 0.405,
+     "HC": 0.108,
+     "HF": 0.108,
+     "KD": 0.0243,
+     "W": 0.081
+    }
+   },
+   {
+    "name": "L-Tyrosine",
+    "id": "tyr-L",
+    "western": 0.099,
+    "all_diets": {
+     "HP": 0.495,
+     "HC": 0.132,
+     "HF": 0.132,
+     "KD": 0.0297,
+     "W": 0.099
+    }
+   },
+   {
+    "name": "L-Glutamine",
+    "id": "gln-L",
+    "western": 0.18,
+    "all_diets": {
+     "HP": 0.9,
+     "HC": 0.24,
+     "HF": 0.24,
+     "KD": 0.054,
+     "W": 0.18
+    }
+   },
+   {
+    "name": "L-Valine",
+    "id": "val-L",
+    "western": 0.18,
+    "all_diets": {
+     "HP": 0.9,
+     "HC": 0.24,
+     "HF": 0.24,
+     "KD": 0.054,
+     "W": 0.18
+    }
+   },
+   {
+    "name": "L-Cysteine",
+    "id": "cys-L",
+    "western": 0.3,
+    "all_diets": {
+     "HP": 1.5,
+     "HC": 0.4,
+     "HF": 0.4,
+     "KD": 0.09,
+     "W": 0.3
+    }
+   },
+   {
+    "name": "Calcium",
+    "id": "ca2",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Cob(I)alamin",
+    "id": "cbl1",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Co2+",
+    "id": "cobalt2",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Fe2+",
+    "id": "fe2",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Fe3+",
+    "id": "fe3",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Hydrogen sulfide",
+    "id": "h2s",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Potassium",
+    "id": "k",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Magnesium",
+    "id": "mg2",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Mn2+",
+    "id": "mn2",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Sodium",
+    "id": "na1",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Protoheme",
+    "id": "pheme",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Zinc",
+    "id": "zn2",
+    "western": 1.0,
+    "all_diets": {
+     "HP": 1.0,
+     "HC": 1.0,
+     "HF": 1.0,
+     "KD": 1.0,
+     "W": 1.0
+    }
+   },
+   {
+    "name": "Ammonium",
+    "id": "nh4",
+    "western": 100.0,
+    "all_diets": {
+     "HP": 100.0,
+     "HC": 100.0,
+     "HF": 100.0,
+     "KD": 100.0,
+     "W": 100.0
+    }
+   },
+   {
+    "name": "Phosphate",
+    "id": "pi",
+    "western": 100.0,
+    "all_diets": {
+     "HP": 100.0,
+     "HC": 100.0,
+     "HF": 100.0,
+     "KD": 100.0,
+     "W": 100.0
+    }
+   }
+  ]
+ }
+}

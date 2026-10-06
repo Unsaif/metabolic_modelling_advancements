@@ -1,0 +1,358 @@
+{
+ "curated_matrices": "results/transfer_v1/reference_models/independent_check_curated/matrices_iSO783_corrected_gene_map.npz",
+ "exact_minus_two_fitness_values": 0,
+ "own": {
+  "iSO783": {
+   "n_genes": 570,
+   "n_conditions": 9,
+   "n_cells": 5130,
+   "confusion_important_positive": {
+    "tp": 556,
+    "tn": 3885,
+    "fp": 217,
+    "fn": 472
+   },
+   "mcc": 0.5459974788756303
+  },
+  "B0": {
+   "n_genes": 713,
+   "n_conditions": 8,
+   "n_cells": 5704,
+   "confusion_important_positive": {
+    "tp": 329,
+    "tn": 4685,
+    "fp": 100,
+    "fn": 590
+   },
+   "mcc": 0.4699120128786607
+  },
+  "U'": {
+   "n_genes": 713,
+   "n_conditions": 9,
+   "n_cells": 6417,
+   "confusion_important_positive": {
+    "tp": 401,
+    "tn": 5239,
+    "fp": 113,
+    "fn": 664
+   },
+   "mcc": 0.4871326735717379
+  },
+  "M": {
+   "n_genes": 716,
+   "n_conditions": 9,
+   "n_cells": 6444,
+   "confusion_important_positive": {
+    "tp": 419,
+    "tn": 5229,
+    "fp": 150,
+    "fn": 646
+   },
+   "mcc": 0.47852167019017006
+  }
+ },
+ "coverage": {
+  "iSO783": {
+   "mapped": 12,
+   "grows": 9,
+   "grows_in": [
+    "Cytidine | ShewMM_noCarbon",
+    "L-Glutamine | ShewMM_noCarbon",
+    "N-Acetyl-D-Glucosamine | ShewMM_noCarbon",
+    "Sodium D,L-Lactate | ShewMM_noCarbon",
+    "Sodium L-Lactate | ShewMM_noCarbon",
+    "Sodium propionate | ShewMM_noCarbon",
+    "Sodium pyruvate | ShewMM_noCarbon",
+    "Uridine | ShewMM_noCarbon",
+    "casamino acids | ShewMM_noCarbon"
+   ]
+  },
+  "B0": {
+   "mapped": 12,
+   "grows": 8,
+   "grows_in": [
+    "Adenosine | ShewMM_noCarbon",
+    "Cytidine | ShewMM_noCarbon",
+    "L-Glutamine | ShewMM_noCarbon",
+    "Sodium D,L-Lactate | ShewMM_noCarbon",
+    "Sodium L-Lactate | ShewMM_noCarbon",
+    "Sodium pyruvate | ShewMM_noCarbon",
+    "Uridine | ShewMM_noCarbon",
+    "casamino acids | ShewMM_noCarbon"
+   ]
+  },
+  "U'": {
+   "mapped": 12,
+   "grows": 9,
+   "grows_in": [
+    "Adenosine | ShewMM_noCarbon",
+    "Cytidine | ShewMM_noCarbon",
+    "L-Glutamine | ShewMM_noCarbon",
+    "Sodium D,L-Lactate | ShewMM_noCarbon",
+    "Sodium L-Lactate | ShewMM_noCarbon",
+    "Sodium propionate | ShewMM_noCarbon",
+    "Sodium pyruvate | ShewMM_noCarbon",
+    "Uridine | ShewMM_noCarbon",
+    "casamino acids | ShewMM_noCarbon"
+   ]
+  },
+  "M": {
+   "mapped": 12,
+   "grows": 9,
+   "grows_in": [
+    "Adenosine | ShewMM_noCarbon",
+    "Cytidine | ShewMM_noCarbon",
+    "L-Glutamine | ShewMM_noCarbon",
+    "Sodium D,L-Lactate | ShewMM_noCarbon",
+    "Sodium L-Lactate | ShewMM_noCarbon",
+    "Sodium propionate | ShewMM_noCarbon",
+    "Sodium pyruvate | ShewMM_noCarbon",
+    "Uridine | ShewMM_noCarbon",
+    "casamino acids | ShewMM_noCarbon"
+   ]
+  }
+ },
+ "four_way": {
+  "union_genes": 843,
+  "conditions_all_grow": 7,
+  "conditions": [
+   "Cytidine | ShewMM_noCarbon",
+   "L-Glutamine | ShewMM_noCarbon",
+   "Sodium D,L-Lactate | ShewMM_noCarbon",
+   "Sodium L-Lactate | ShewMM_noCarbon",
+   "Sodium pyruvate | ShewMM_noCarbon",
+   "Uridine | ShewMM_noCarbon",
+   "casamino acids | ShewMM_noCarbon"
+  ],
+  "n_observations": 5901,
+  "mcc": {
+   "B0": 0.4707920548439193,
+   "U'": 0.49200854075345696,
+   "M": 0.4826300598421346,
+   "iSO783": 0.5337142216064343
+  },
+  "share_of_gap_closed": {
+   "U'": 0.33718619369250774,
+   "M": 0.18813727510203315
+  }
+ },
+ "pairwise_curated_minus_arm": {
+  "B0": {
+   "common": {
+    "n_genes": 440,
+    "n_conditions": 7,
+    "mcc_arm": 0.47681223715151994,
+    "mcc_curated": 0.5466626592307081,
+    "curated_minus_arm": 0.06985042207918818,
+    "ci95_by_seed": [
+     [
+      -0.013424241552145758,
+      0.14912264158740368
+     ],
+     [
+      -0.010605523028777793,
+      0.1485637416881069
+     ],
+     [
+      -0.006580732243500499,
+      0.15072854962235607
+     ],
+     [
+      -0.010374676604067852,
+      0.15131409533484824
+     ],
+     [
+      -0.014770405006580702,
+      0.15974262457651997
+     ]
+    ]
+   },
+   "union": {
+    "n_genes": 843,
+    "n_conditions": 7,
+    "mcc_arm": 0.4707920548439193,
+    "mcc_curated": 0.5337142216064343,
+    "curated_minus_arm": 0.06292216676251505,
+    "ci95_by_seed": [
+     [
+      -0.003620681094075666,
+      0.13342460457799765
+     ],
+     [
+      -0.009513579213388614,
+      0.1355510627869838
+     ],
+     [
+      -0.005420181406370265,
+      0.13462300971275923
+     ],
+     [
+      -0.002848102503681454,
+      0.12845090707576118
+     ],
+     [
+      -0.007841689896000068,
+      0.1278918072420725
+     ]
+    ]
+   }
+  },
+  "U'": {
+   "common": {
+    "n_genes": 440,
+    "n_conditions": 8,
+    "mcc_arm": 0.4961128913199595,
+    "mcc_curated": 0.5473893641830931,
+    "curated_minus_arm": 0.05127647286313364,
+    "ci95_by_seed": [
+     [
+      -0.02783575708961776,
+      0.12548377098304395
+     ],
+     [
+      -0.02781520724875039,
+      0.12922745146655626
+     ],
+     [
+      -0.02639715680210923,
+      0.12876876344671834
+     ],
+     [
+      -0.021292654632716252,
+      0.1278548597736672
+     ],
+     [
+      -0.030775314354486463,
+      0.13912340462832345
+     ]
+    ]
+   },
+   "union": {
+    "n_genes": 843,
+    "n_conditions": 8,
+    "mcc_arm": 0.48504289162755476,
+    "mcc_curated": 0.5344381215432403,
+    "curated_minus_arm": 0.04939522991568557,
+    "ci95_by_seed": [
+     [
+      -0.011096123988227088,
+      0.11243457898487853
+     ],
+     [
+      -0.015737244840333356,
+      0.11473177232064856
+     ],
+     [
+      -0.011411036392653928,
+      0.11629266461686305
+     ],
+     [
+      -0.011867077329489628,
+      0.11317417839909084
+     ],
+     [
+      -0.014591019750833328,
+      0.11529542010161617
+     ]
+    ]
+   }
+  },
+  "M": {
+   "common": {
+    "n_genes": 443,
+    "n_conditions": 8,
+    "mcc_arm": 0.4840628792675862,
+    "mcc_curated": 0.5481829141534912,
+    "curated_minus_arm": 0.06412003488590501,
+    "ci95_by_seed": [
+     [
+      -0.010300943173359903,
+      0.1433498125633666
+     ],
+     [
+      -0.015990956620717204,
+      0.14305412439328521
+     ],
+     [
+      -0.015742433049878962,
+      0.14561810573921533
+     ],
+     [
+      -0.010152694595303623,
+      0.14507393518071257
+     ],
+     [
+      -0.01070533415260278,
+      0.14417747156657928
+     ]
+    ]
+   },
+   "union": {
+    "n_genes": 843,
+    "n_conditions": 8,
+    "mcc_arm": 0.4766867073227679,
+    "mcc_curated": 0.5344381215432403,
+    "curated_minus_arm": 0.05775141422047242,
+    "ci95_by_seed": [
+     [
+      -0.0023930640392876594,
+      0.1252844758742536
+     ],
+     [
+      -0.005670454878932639,
+      0.11950975826856101
+     ],
+     [
+      -0.007238611295395586,
+      0.12410800097488837
+     ],
+     [
+      -0.0033365095478631057,
+      0.11965307416032624
+     ],
+     [
+      -0.009631475375006445,
+      0.11980328133603818
+     ]
+    ]
+   }
+  }
+ },
+ "error_overlap_common_genes_Uprime_vs_curated": {
+  "n_genes": 440,
+  "n_conditions": 8,
+  "n_observations": 3520,
+  "wrong_Uprime": 580,
+  "wrong_curated": 542,
+  "wrong_both": 383,
+  "expected_both_if_independent": 89.30681818181819,
+  "wrong_both_by_type": {
+   "both_false_important": 24,
+   "both_false_no_effect": 359
+  },
+  "share_of_Uprime_errors_shared": 0.6603448275862069
+ },
+ "curated_only_genes": {
+  "n_genes": 127,
+  "n_conditions": 8,
+  "important_calls": 43,
+  "important_calls_confirmed": 16,
+  "observed_important_cells": 56,
+  "genes_with_any_important_call": 8,
+  "conditions_used": [
+   "Sodium L-Lactate | ShewMM_noCarbon",
+   "Sodium pyruvate | ShewMM_noCarbon",
+   "Sodium propionate | ShewMM_noCarbon",
+   "Uridine | ShewMM_noCarbon",
+   "Cytidine | ShewMM_noCarbon",
+   "Sodium D,L-Lactate | ShewMM_noCarbon",
+   "L-Glutamine | ShewMM_noCarbon",
+   "casamino acids | ShewMM_noCarbon"
+  ]
+ },
+ "curated_only_genes_all_curated_conditions": {
+  "n_conditions": 9,
+  "important_calls": 49,
+  "important_calls_confirmed": 19
+ }
+}

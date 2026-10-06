@@ -1,0 +1,885 @@
+{
+ "model": "models/curated/iAH991/iAH991_rebuilt.xml",
+ "label": "iAH991",
+ "scheme": "bigg",
+ "counts_before": {
+  "reactions": 1488,
+  "metabolites": 1152,
+  "genes": 991
+ },
+ "gpr_repairs": [],
+ "collapsed_two_step_exchanges": [],
+ "equivalence_check": {
+  "published_bounds": [
+   86.94784638625451,
+   86.9478463862547
+  ],
+  "all_exchanges_open": [
+   86.94784638625458,
+   86.94784638625457
+  ]
+ },
+ "protocol_needs": {
+  "n_conditions_mapped": 25,
+  "medium_exchanges_present": {
+   "Varel_Bryant_medium": [
+    "EX_ca2_e",
+    "EX_cl_e",
+    "EX_co2_e",
+    "EX_cobalt2_e",
+    "EX_cu2_e",
+    "EX_cys__L_e",
+    "EX_fe2_e",
+    "EX_fe3_e",
+    "EX_h2o_e",
+    "EX_h_e",
+    "EX_k_e",
+    "EX_met__L_e",
+    "EX_mg2_e",
+    "EX_mn2_e",
+    "EX_na1_e",
+    "EX_nh4_e",
+    "EX_pheme_e",
+    "EX_pi_e",
+    "EX_so4_e",
+    "EX_zn2_e"
+   ]
+  },
+  "medium_exchanges_absent": {
+   "Varel_Bryant_medium": [
+    "EX_hco3_e",
+    "EX_mobd_e",
+    "EX_ni2_e",
+    "EX_sel_e",
+    "EX_slnt_e",
+    "EX_tungs_e"
+   ]
+  },
+  "carbon_exchanges_present": [
+   "EX_acgam_e",
+   "EX_amylose300_e",
+   "EX_arab__L_e",
+   "EX_araban__L_e",
+   "EX_fru_e",
+   "EX_fuc__L_e",
+   "EX_gal_e",
+   "EX_galur_e",
+   "EX_gam_e",
+   "EX_glc__D_e",
+   "EX_lcts_e",
+   "EX_lmn2_e",
+   "EX_malt_e",
+   "EX_malthx_e",
+   "EX_maltttr_e",
+   "EX_man_e",
+   "EX_melib_e",
+   "EX_raffin_e",
+   "EX_rib__D_e",
+   "EX_rmn_e",
+   "EX_starch1200_e",
+   "EX_stys_e",
+   "EX_tre_e",
+   "EX_xyl__D_e"
+  ],
+  "carbon_exchanges_absent": [
+   "EX_arab__D_e"
+  ],
+  "energy_check_metabolites_present": [
+   "atp_c",
+   "adp_c",
+   "pi_c",
+   "h_c",
+   "h2o_c",
+   "nadh_c",
+   "nad_c",
+   "nadph_c",
+   "nadp_c",
+   "q8h2_c",
+   "q8_c"
+  ],
+  "energy_check_metabolites_absent": []
+ },
+ "unmapped_extracellular": [
+  {
+   "id": "12ethd_e",
+   "name": "1,2-Ethanediol",
+   "formula": "C2H6O2",
+   "why": "no alias"
+  },
+  {
+   "id": "2fuclac_e",
+   "name": "2-Fucosyllactose (HMO, PMID:11425797)",
+   "formula": "C18H32O15",
+   "why": "no alias"
+  },
+  {
+   "id": "2omfuc_e",
+   "name": "2-o-methylfucose (rare sugar in rhamnogalacturonan II)",
+   "formula": "C7H14O5",
+   "why": "no alias"
+  },
+  {
+   "id": "2omxyl_e",
+   "name": "2-O-methylxylose (rare sugar in rhamnogalacturonan II)",
+   "formula": "C6H12O5",
+   "why": "no alias"
+  },
+  {
+   "id": "3ddlhept_e",
+   "name": "3-deoxy-d-lyxo-heptulosaric acid (rare sugar in rhamnogalacturonan II)",
+   "formula": "C7H9O8",
+   "why": "no alias"
+  },
+  {
+   "id": "3fuclac_e",
+   "name": "3-Fucosyllactose (HMO, PMID:11425797)",
+   "formula": "C18H32O15",
+   "why": "no alias"
+  },
+  {
+   "id": "7ocholate_e",
+   "name": "3alpha,12alpha-Dihydroxy-7-oxo-5beta-cholanate",
+   "formula": "C24H37O5",
+   "why": "no alias"
+  },
+  {
+   "id": "Ser_Thr_e",
+   "name": "protein-linked serine or threonine residue (O-glycosylation site)",
+   "formula": "XH",
+   "why": "no alias"
+  },
+  {
+   "id": "T_antigen_e",
+   "name": "T antigen (core 1)",
+   "formula": "C14H24NO10X",
+   "why": "no alias"
+  },
+  {
+   "id": "Tn_antigen_e",
+   "name": "Tn antigen",
+   "formula": "C8H14NO5X",
+   "why": "no alias"
+  },
+  {
+   "id": "acerA_e",
+   "name": "Aceric acid (3-C-carboxy-5-deoxy-l-xylose) (rare sugar in rhamnogalacturonan II)",
+   "formula": "C6H9O6",
+   "why": "no alias"
+  },
+  {
+   "id": "acgalglcur_e",
+   "name": "Dimer GalNAc-GlcA",
+   "formula": "C14H22NO12",
+   "why": "no alias"
+  },
+  {
+   "id": "acgalidour2s_e",
+   "name": "Dimer GalNAc-IdoA2S",
+   "formula": "C14H21NO15S",
+   "why": "no alias"
+  },
+  {
+   "id": "acgalidour_e",
+   "name": "Dimer GalNAc-IdoA",
+   "formula": "C14H22NO12",
+   "why": "no alias"
+  },
+  {
+   "id": "alaasp_e",
+   "name": "L-alanyl-L-aspartate",
+   "formula": "C7H11N2O5",
+   "why": "no alias"
+  },
+  {
+   "id": "alagln_e",
+   "name": "L-alanyl-L-glutamine",
+   "formula": "C8H15N3O4",
+   "why": "no alias"
+  },
+  {
+   "id": "alaglu_e",
+   "name": "L-alanyl-L-glutamate",
+   "formula": "C8H13N2O5",
+   "why": "no alias"
+  },
+  {
+   "id": "amannan140_e",
+   "name": "Alpha-mannan, yeast, has a MW of about 25000 (PMID: 5461381), equals ~ 140 mannose units.",
+   "formula": "C840H1402O701",
+   "why": "no alias"
+  },
+  {
+   "id": "amylose300_e",
+   "name": "amylose (n=300 repeat units, alpha-1,4-glc)",
+   "formula": "C1800H3002O1501",
+   "why": "no alias"
+  },
+  {
+   "id": "apio__D_e",
+   "name": "D-Apiose (rare sugar in rhamnogalacturonan II)",
+   "formula": "C5H10O5",
+   "why": "no alias"
+  },
+  {
+   "id": "arabinogal_e",
+   "name": "Larch arabinogalactan, gal/ara 6:1, small amount of glcur, MW ~ 116000",
+   "formula": "C3862H6376O3218",
+   "why": "no alias"
+  },
+  {
+   "id": "arabttr_e",
+   "name": "Arabinotriose",
+   "formula": "C15H26O13",
+   "why": "no alias"
+  },
+  {
+   "id": "argarg_e",
+   "name": "L-argininyl-L-arginine",
+   "formula": "C12H28N8O3",
+   "why": "no alias"
+  },
+  {
+   "id": "core2_e",
+   "name": "Core 2",
+   "formula": "C22H37N2O15X",
+   "why": "no alias"
+  },
+  {
+   "id": "core5_e",
+   "name": "Core 5",
+   "formula": "C16H27N2O10X",
+   "why": "no alias"
+  },
+  {
+   "id": "core6_e",
+   "name": "Core 6",
+   "formula": "C16H27N2O10X",
+   "why": "no alias"
+  },
+  {
+   "id": "core7_e",
+   "name": "Core 7",
+   "formula": "C16H27N2O10X",
+   "why": "no alias"
+  },
+  {
+   "id": "core8_e",
+   "name": "Core 8",
+   "formula": "C14H24NO10X",
+   "why": "no alias"
+  },
+  {
+   "id": "cps_bt_e",
+   "name": "Capsule polysaccharide (B.thetaiotaomicron specific)",
+   "formula": "C69H102O67P8N14",
+   "why": "no alias"
+  },
+  {
+   "id": "cspg_a_degr_e",
+   "name": "Dimer GalNAc4S-GlcA",
+   "formula": "C14H21NO15S",
+   "why": "no alias"
+  },
+  {
+   "id": "cspg_a_e",
+   "name": "chondroitin sulfate A (GalNAc4S-GlcA) proteoglycan",
+   "formula": "C45H66N2O45S3X",
+   "why": "no alias"
+  },
+  {
+   "id": "cspg_ab_rest_e",
+   "name": "Not degradable product CSABCPASE_A/B, Gal4S-Gal-Xyl-L-Ser-protein",
+   "formula": "C17H28O17SX",
+   "why": "no alias"
+  },
+  {
+   "id": "cspg_b_degr_e",
+   "name": "Dimer GalNAc4S-IdoA2S",
+   "formula": "C14H20NO18S2",
+   "why": "no alias"
+  },
+  {
+   "id": "cspg_b_e",
+   "name": "chondroitin sulfate B / dermatan sulfate (IdoA2S-GalNAc4S) proteoglycan",
+   "formula": "C45H65N2O48S4X",
+   "why": "no alias"
+  },
+  {
+   "id": "cspg_c_degr_e",
+   "name": "Dimer GalNAc6S-GlcA",
+   "formula": "C14H21NO15S",
+   "why": "no alias"
+  },
+  {
+   "id": "cspg_c_e",
+   "name": "chondroitin sulfate C (GalNAc6S-GlcA) proteoglycan",
+   "formula": "C45H66N2O45S3X",
+   "why": "no alias"
+  },
+  {
+   "id": "cspg_c_rest_e",
+   "name": "Not degradable product CSABCPASE_C, Gal6S-Gal-Xyl-L-Ser-protein",
+   "formula": "C17H28O17SX",
+   "why": "no alias"
+  },
+  {
+   "id": "dextran40_e",
+   "name": "Dextran 40, 1,6-alpha-D-Glucan",
+   "formula": "C480H800O400",
+   "why": "no alias"
+  },
+  {
+   "id": "dsT_antigen_e",
+   "name": "disialyl-T antigen",
+   "formula": "C36H56N3O26X",
+   "why": "no alias"
+  },
+  {
+   "id": "f1a_e",
+   "name": "F1alpha",
+   "formula": "C22H37N2O15X",
+   "why": "no alias"
+  },
+  {
+   "id": "fucneulacnhx_e",
+   "name": "monofucosyl-monosialyl-lacto-N-hexaose (HMO, PMID: 17002410)",
+   "formula": "C57H94N3O43",
+   "why": "no alias"
+  },
+  {
+   "id": "gam26s_e",
+   "name": "Glucosamine 2,6-sulfate",
+   "formula": "C6H11NO11S2",
+   "why": "no alias"
+  },
+  {
+   "id": "glyasn_e",
+   "name": "Glycyl-L-asparagine",
+   "formula": "C6H11N3O4",
+   "why": "no alias"
+  },
+  {
+   "id": "glyasp_e",
+   "name": "Glycyl-L-aspartate",
+   "formula": "C6H9N2O5",
+   "why": "no alias"
+  },
+  {
+   "id": "glycogen1500_e",
+   "name": "glycogen (n=1500 repeat units) (glc alpha 1,4/6 glc)",
+   "formula": "C9000H15002O7501",
+   "why": "no alias"
+  },
+  {
+   "id": "glyleu_e",
+   "name": "Glycylleucine",
+   "formula": "C8H16N2O3",
+   "why": "no alias"
+  },
+  {
+   "id": "glypro_e",
+   "name": "Glycylproline",
+   "formula": "C7H12N2O3",
+   "why": "no alias"
+  },
+  {
+   "id": "glytyr_e",
+   "name": "Glycyl-L-tyrosine",
+   "formula": "C11H14N2O4",
+   "why": "no alias"
+  },
+  {
+   "id": "gncore1_e",
+   "name": "GlcNAc-alpha-1,4-Core 1",
+   "formula": "C22H37N2O15X",
+   "why": "no alias"
+  },
+  {
+   "id": "gncore2_e",
+   "name": "GlcNAc-alpha-1,4-Core 2",
+   "formula": "C30H50N3O20X",
+   "why": "no alias"
+  },
+  {
+   "id": "ha_deg1_e",
+   "name": "hyaluronan degradation product 1",
+   "formula": "C22H33N2O16",
+   "why": "no alias"
+  },
+  {
+   "id": "ha_e",
+   "name": "hyaluronan",
+   "formula": "C28H40N2O22",
+   "why": "no alias"
+  },
+  {
+   "id": "homogal_e",
+   "name": "Homogalacturonan, 100 galacturonate residues. Assumed to be methylated/acetylated in every 5th residue. Citrus HG consists of 72-100 galacturonate residues and has a methylesterification degree of 22,9% (PMID: 11278866).",
+   "formula": "C660H840O660",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_10_e",
+   "name": "Product AS3TASE_HS2, GlcN2S-IdoA-GlcNAc-GlcA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C43H66N2O38SX",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_11_e",
+   "name": "Product GAM2STASE_HS3, GlcN-IdoA-GlcNAc-GlcA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C43H67N2O35X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_12_e",
+   "name": "Product GLCNACASE_HS2, GlcA-GlcNAc-IdoA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C37H56NO31X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_13_e",
+   "name": "Product GLCAASE_HS, GlcNAc-IdoA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C31H49NO25X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_14_e",
+   "name": "Product GLCNACASE_HS3, IdoA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C23H36O20X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_15_e",
+   "name": "Product IDOURASE_HS3, Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C17H29O14X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_1_e",
+   "name": "Product 1 HEPARL1_e, IdoA-GlcN2,6diS-GlcA-GlcN2,3,6triS",
+   "formula": "C24H33O36N2S5",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_2_e",
+   "name": "Product 2 HEPARL1_e, IdoA2S-GlcN2,6diS-IdoA2S-GlcNAc3S-GlcA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C49H71N2O56S5X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_3_e",
+   "name": "Product IDOURASE_HS1, GlcN2,6diS-GlcA-GlcN2,3,6triS",
+   "formula": "C18H26O30N2S5",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_4_e",
+   "name": "Product AS6TASE_HS1, GlcN2S-GlcA-GlcN2,3diS",
+   "formula": "C18H28O24N2S3",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_5_e",
+   "name": "Product AS3TASE_HS1, GlcN2S-GlcA-GlcN2S",
+   "formula": "C18H29O21N2S2",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_6_e",
+   "name": "Product GAM2STASE_HS2, GlcN-GlcA-GlcN",
+   "formula": "C18H31O15N2",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_7_e",
+   "name": "Product IS2TASE_HS1, IdoA-GlcN2,6diS-IdoA-GlcNAc3S-GlcA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C49H71N2O50S3X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_8_e",
+   "name": "Product IDOURASE_HS2, GlcN2,6diS-IdoA-GlcNAc3S-GlcA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C43H64N2O44S3X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_degr_9_e",
+   "name": "Product AS6TASE_HS2, GlcN2S-IdoA-GlcNAc3S-GlcA-Gal-Gal-Xyl-L-Ser (protein)",
+   "formula": "C43H65N2O41S2X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_e",
+   "name": "heparan sulfate proteoglycan",
+   "formula": "C79H113N5O101S12X",
+   "why": "no alias"
+  },
+  {
+   "id": "hspg_rest_e",
+   "name": "Undegradable product GALASE_HS, Xyl-L-Ser (protein)",
+   "formula": "C5H9O4X",
+   "why": "no alias"
+  },
+  {
+   "id": "inulin_e",
+   "name": "Chicory inulin, 30 monosaccharide units (29 fru, 1 glc) on average",
+   "formula": "C180H302O151",
+   "why": "no alias"
+  },
+  {
+   "id": "isobut_e",
+   "name": "Isobutyrate, 2-Methylpropanoate",
+   "formula": "C4H7O2",
+   "why": "no alias"
+  },
+  {
+   "id": "isocapr_e",
+   "name": "Isocaproate",
+   "formula": "C6H11O2",
+   "why": "no alias"
+  },
+  {
+   "id": "isoval_e",
+   "name": "Isovalerate, 3-Methylbutanoate",
+   "formula": "C5H9O2",
+   "why": "no alias"
+  },
+  {
+   "id": "kesto_e",
+   "name": "Kestose (2 fru, 1 glc inulin-type fructo-oligosaccharide)",
+   "formula": "C18H32O16",
+   "why": "no alias"
+  },
+  {
+   "id": "kestopt_e",
+   "name": "Kestopentaose (4 fru, 1 glc inulin-type fructo-oligosaccharide)",
+   "formula": "C30H52O26",
+   "why": "no alias"
+  },
+  {
+   "id": "kestottr_e",
+   "name": "Kestotetraose (3 fru, 1 glc inulin-type fructo-oligosaccharide)",
+   "formula": "C24H42O21",
+   "why": "no alias"
+  },
+  {
+   "id": "l2n2m2mn_e",
+   "name": "de-Fuc, reducing GlcNAc removed, de-Sia form of PA6 (w/o peptide linkage)",
+   "formula": "C54H91N3O41",
+   "why": "no alias"
+  },
+  {
+   "id": "lacdfucttr_e",
+   "name": "Lactodifucotetraose (HMO, PMID:11425797)",
+   "formula": "C24H42O19",
+   "why": "no alias"
+  },
+  {
+   "id": "lacndfuchx_e",
+   "name": "Lacto-N-difucohexaose (HMO, PMID:11425797)",
+   "formula": "C38H65NO29",
+   "why": "no alias"
+  },
+  {
+   "id": "lacnfucpt_e",
+   "name": "Lacto-N-fucopentaose (HMO, PMID:11425797)",
+   "formula": "C32H55NO25",
+   "why": "no alias"
+  },
+  {
+   "id": "lacnnttr_e",
+   "name": "Lacto-N-neotetraose (HMO, PMID:11425797)",
+   "formula": "C26H45NO21",
+   "why": "no alias"
+  },
+  {
+   "id": "lacnttr_e",
+   "name": "Lacto-N-tetraose (HMO, PMID:11425797)",
+   "formula": "C26H45NO21",
+   "why": "no alias"
+  },
+  {
+   "id": "leugly_e",
+   "name": "Leucylglycine",
+   "formula": "C8H16N2O3",
+   "why": "no alias"
+  },
+  {
+   "id": "levan1000_e",
+   "name": "Levan, 1000 fructose units",
+   "formula": "C6000H10002O5001",
+   "why": "no alias"
+  },
+  {
+   "id": "levanb_e",
+   "name": "Levanbiose",
+   "formula": "C12H22O11",
+   "why": "no alias"
+  },
+  {
+   "id": "levanttr_e",
+   "name": "Levantriose",
+   "formula": "C18H32O16",
+   "why": "no alias"
+  },
+  {
+   "id": "levantttr_e",
+   "name": "Levantetraose",
+   "formula": "C24H42O21",
+   "why": "no alias"
+  },
+  {
+   "id": "lmn30_e",
+   "name": "laminarin (n=30 repeat units, beta -1,3 glc)",
+   "formula": "C180H302O151",
+   "why": "no alias"
+  },
+  {
+   "id": "lps_bt_e",
+   "name": "Lipopolysacharide (B. thetaiotaomicron specific)",
+   "formula": "C198H360N4O109P3",
+   "why": "no alias"
+  },
+  {
+   "id": "m2mn_e",
+   "name": "(alpha-D-mannosyl)2-beta-D-mannosyl-N-acetylglucosamine",
+   "formula": "C26H45NO21",
+   "why": "no alias"
+  },
+  {
+   "id": "manpt_e",
+   "name": "mannopentaose",
+   "formula": "C30H52O26",
+   "why": "no alias"
+  },
+  {
+   "id": "metala_e",
+   "name": "L-methionyl-L-alanine",
+   "formula": "C8H15N2O3S",
+   "why": "no alias"
+  },
+  {
+   "id": "mn_e",
+   "name": "beta-1,4-mannose-N-acetylglucosamine",
+   "formula": "C14H25NO11",
+   "why": "no alias"
+  },
+  {
+   "id": "mqn10_e",
+   "name": "Menaquinone 10",
+   "formula": "C61H88O2",
+   "why": "no alias"
+  },
+  {
+   "id": "mqn11_e",
+   "name": "Menaquinone 11",
+   "formula": "C66H96O2",
+   "why": "no alias"
+  },
+  {
+   "id": "mqn9_e",
+   "name": "Menaquinone 9",
+   "formula": "C56H80O2",
+   "why": "no alias"
+  },
+  {
+   "id": "n2m2mn_e",
+   "name": "de-Fuc, reducing GlcNAc removed, de-Sia, de-Gal form of PA6 (w/o peptide linkage)",
+   "formula": "C42H71N3O31",
+   "why": "no alias"
+  },
+  {
+   "id": "neulacnttr_e",
+   "name": "Sialyllacto-N-tetraose (HMO, PMID: 17002410)",
+   "formula": "C37H61N2O29",
+   "why": "no alias"
+  },
+  {
+   "id": "oligofru4_e",
+   "name": "Oligofructose, polymerization average 4 units of beta-2,1-fructose per chain",
+   "formula": "C24H40O20",
+   "why": "no alias"
+  },
+  {
+   "id": "pb_e",
+   "name": "Lead",
+   "formula": "Pb",
+   "why": "no alias"
+  },
+  {
+   "id": "pe_cer1_bt_e",
+   "name": "Ceramide phosphoethanolamine (B. thetaiotaomicron specific)",
+   "formula": "C37H77N2O6P",
+   "why": "no alias"
+  },
+  {
+   "id": "pect_e",
+   "name": "pectins",
+   "formula": "C2535H3509O2535",
+   "why": "no alias"
+  },
+  {
+   "id": "pecticgal_e",
+   "name": "Pectic galactan (potato), gal: arab-L: rmn: galur = 78: 9: 4: 9 (www.megazyme.com). Assumed to consist of 100 sugars per macromolecule (I could not find information).",
+   "formula": "C597H971O503",
+   "why": "no alias"
+  },
+  {
+   "id": "phearg_e",
+   "name": "L-phenylalanyl-L-arginine",
+   "formula": "C15H24N5O3",
+   "why": "no alias"
+  },
+  {
+   "id": "pullulan1200_e",
+   "name": "pullulan (n=1200 repeat units, alpha-1,4 and alph-1,6 bounds)",
+   "formula": "C7200H12002O6001",
+   "why": "no alias"
+  },
+  {
+   "id": "rhamnogalurII_e",
+   "name": "Wine rhamnogalacturonan II, MW ~ 5-10 kDa, 37% galur, 16% rmn, 3% fuc-L, 11% arab-L, 6% gal, 5% glcur, 4% 2omfuc, 3% 2omxyl, 6% apio-D, 2% acerA, 4% kdo, 3% 3ddlhept, 53 sugars in total (http://www.ccrc.uga.edu/~mao/rg2/intro.htm, doi:10.1155/2011/964521)",
+   "formula": "C317H445O273",
+   "why": "no alias"
+  },
+  {
+   "id": "rhamnogalurI_e",
+   "name": "Potato rhamnogalacturonan I, MW assumed ~200000, 62 galur, 20 rmn, 12 gal, 3 arab-L, 1 xyl-D (www.megazyme.com, PMID: 16661590)",
+   "formula": "C5840H7862O5281",
+   "why": "no alias"
+  },
+  {
+   "id": "s2l2fn2m2masn_e",
+   "name": "PA6",
+   "formula": "C90H145N6O65X",
+   "why": "no alias"
+  },
+  {
+   "id": "s2l2n2m2m_e",
+   "name": "de-Fuc form of PA6 (w/o peptide linkage)",
+   "formula": "C84H136N6O62",
+   "why": "no alias"
+  },
+  {
+   "id": "s2l2n2m2masn_e",
+   "name": "de-Fuc form of PA6",
+   "formula": "C84H135N6O61X",
+   "why": "no alias"
+  },
+  {
+   "id": "s2l2n2m2mn_e",
+   "name": "de-Fuc, reducing GlcNAc removed form of PA6 (w/o peptide linkage)",
+   "formula": "C76H123N5O57",
+   "why": "no alias"
+  },
+  {
+   "id": "sT_antigen_e",
+   "name": "sialyl-T antigen",
+   "formula": "C25H40N2O18X",
+   "why": "no alias"
+  },
+  {
+   "id": "sTn_antigen_e",
+   "name": "sialyl-Tn antigen",
+   "formula": "C19H30N2O13X",
+   "why": "no alias"
+  },
+  {
+   "id": "sphmyln_bt_e",
+   "name": "Sphingomyelin (B. thetaiotaomicron specific)",
+   "formula": "C40H83N2O6P",
+   "why": "no alias"
+  },
+  {
+   "id": "starch1200_e",
+   "name": "starch n=1200 repeat units (300 repeat units amylose, 900 repeat units amylopectin, corresponds to potatoe starch)",
+   "formula": "C7200H12002O6001",
+   "why": "no alias"
+  },
+  {
+   "id": "strch1_e",
+   "name": "starch, structure 1 (1,6-{7[1,4-Glc], 4[1,4-Glc]})",
+   "formula": "C66H112O56",
+   "why": "no alias"
+  },
+  {
+   "id": "strch2_e",
+   "name": "starch, structure 2 (1,6-{2[1,4-Glc], [1,4-Glc]})",
+   "formula": "C18H32O16",
+   "why": "no alias"
+  },
+  {
+   "id": "unsdigalur_e",
+   "name": "4-(4-Deoxy-alpha-D-gluc-4-enuronosyl)-D-galacturonate, Unsaturated digalacturonate",
+   "formula": "C12H14O12",
+   "why": "no alias"
+  }
+ ],
+ "metabolites_renamed": 13,
+ "metabolite_renames": {
+  "26dap__LL_c": "26dap_LL_c",
+  "4hpro__LT_c": "4hpro_LT_c",
+  "acon__C_c": "acon_C_c",
+  "adphep__DD_c": "adphep_DD_c",
+  "adphep__LD_c": "adphep_LD_c",
+  "ala__B_c": "ala_B_c",
+  "arabinan101_e": "araban__L_e",
+  "cdpddg_c": "cdp4dh6doglc_c",
+  "dad__2_c": "dad_2_c",
+  "dad__2_e": "dad_2_e",
+  "dad__5_c": "dad_5_c",
+  "g1p__B_c": "g1p_B_c",
+  "g6p__B_c": "g6p_B_c"
+ },
+ "metabolite_clashes_kept_original": [],
+ "exchange_renames": {
+  "EX_12ppd_R_e": "EX_12ppd__R_e",
+  "EX_12ppd_S_e": "EX_12ppd__S_e",
+  "EX_ala_D_e": "EX_ala__D_e",
+  "EX_ala_L_e": "EX_ala__L_e",
+  "EX_arab_L_e": "EX_arab__L_e",
+  "EX_arabinan101_e": "EX_araban__L_e",
+  "EX_arg_L_e": "EX_arg__L_e",
+  "EX_asn_L_e": "EX_asn__L_e",
+  "EX_asp_L_e": "EX_asp__L_e",
+  "EX_cys_L_e": "EX_cys__L_e",
+  "EX_fuc_L_e": "EX_fuc__L_e",
+  "EX_glc_e": "EX_glc__D_e",
+  "EX_gln_L_e": "EX_gln__L_e",
+  "EX_glu_L_e": "EX_glu__L_e",
+  "EX_his_L_e": "EX_his__L_e",
+  "EX_ile_L_e": "EX_ile__L_e",
+  "EX_lac_D_e": "EX_lac__D_e",
+  "EX_lac_L_e": "EX_lac__L_e",
+  "EX_leu_L_e": "EX_leu__L_e",
+  "EX_lys_L_e": "EX_lys__L_e",
+  "EX_met_L_e": "EX_met__L_e",
+  "EX_pe_cer1_BT_e": "EX_pe_cer1_bt_e",
+  "EX_phe_L_e": "EX_phe__L_e",
+  "EX_pnto_R_e": "EX_pnto__R_e",
+  "EX_pro_L_e": "EX_pro__L_e",
+  "EX_rib_D_e": "EX_rib__D_e",
+  "EX_ser_L_e": "EX_ser__L_e",
+  "EX_sphmyln_BT_e": "EX_sphmyln_bt_e",
+  "EX_thr_L_e": "EX_thr__L_e",
+  "EX_trp_L_e": "EX_trp__L_e",
+  "EX_tyr_L_e": "EX_tyr__L_e",
+  "EX_val_L_e": "EX_val__L_e",
+  "EX_xyl_D_e": "EX_xyl__D_e"
+ },
+ "exchange_rename_clashes": [],
+ "mapping_method_counts": {
+  "identical": 821,
+  "no alias": 318,
+  "BiGG1 alias": 12,
+  "override": 1
+ },
+ "overrides_used": {
+  "arabinan101": "araban__L"
+ },
+ "counts_after": {
+  "reactions": 1488,
+  "metabolites": 1152,
+  "genes": 991
+ }
+}

@@ -1,0 +1,620 @@
+{
+ "iSO783": {
+  "model_genes": 783,
+  "mapped": 769,
+  "mapped_rate": 0.9821200510855683,
+  "mapped_with_fitness_data": 560,
+  "mapped_with_fitness_rate": 0.7151979565772669,
+  "fitness_browser_genes_with_fitness": 3782,
+  "duplicate_targets": {},
+  "unmapped": [
+   {
+    "gene": "SO0419",
+    "rule_result": "SO0419",
+    "near_matches": [
+     "SO_0419"
+    ],
+    "reactions": [
+     "NNDPR"
+    ]
+   },
+   {
+    "gene": "SO0590",
+    "rule_result": "SO0590",
+    "near_matches": [
+     "SO_0590"
+    ],
+    "reactions": [
+     "PSD"
+    ]
+   },
+   {
+    "gene": "SO1140",
+    "rule_result": "SO1140",
+    "near_matches": [
+     "SO_1140"
+    ],
+    "reactions": [
+     "DHDPRy"
+    ]
+   },
+   {
+    "gene": "SO1223",
+    "rule_result": "SO1223",
+    "near_matches": [
+     "SO_1223"
+    ],
+    "reactions": [
+     "PSP_L"
+    ]
+   },
+   {
+    "gene": "SO1900",
+    "rule_result": "SO1900",
+    "near_matches": [
+     "SO_1900"
+    ],
+    "reactions": [
+     "ACCOAL"
+    ]
+   },
+   {
+    "gene": "SO2304",
+    "rule_result": "SO2304",
+    "near_matches": [
+     "SO_2304"
+    ],
+    "reactions": [
+     "ALAD_L"
+    ]
+   },
+   {
+    "gene": "SO2784",
+    "rule_result": "SO2784",
+    "near_matches": [
+     "SO_2784"
+    ],
+    "reactions": [
+     "PSUDS"
+    ]
+   },
+   {
+    "gene": "SO2937",
+    "rule_result": "SO2937",
+    "near_matches": [
+     "SO_2937"
+    ],
+    "reactions": [
+     "PSUDS"
+    ]
+   },
+   {
+    "gene": "SO3068",
+    "rule_result": "SO3068",
+    "near_matches": [
+     "SO_3068"
+    ],
+    "reactions": [
+     "PSUDS"
+    ]
+   },
+   {
+    "gene": "SO3079",
+    "rule_result": "SO3079",
+    "near_matches": [
+     "SO_3079"
+    ],
+    "reactions": [
+     "CHORS"
+    ]
+   },
+   {
+    "gene": "SO3130",
+    "rule_result": "SO3130",
+    "near_matches": [
+     "SO_3130"
+    ],
+    "reactions": [
+     "GLUTRS"
+    ]
+   },
+   {
+    "gene": "SO3442",
+    "rule_result": "SO3442",
+    "near_matches": [
+     "SO_3442"
+    ],
+    "reactions": [
+     "NTPP1",
+     "NTPP4",
+     "NTPP7",
+     "NTPP2",
+     "NTPP5",
+     "NTPP8",
+     "NTPP3",
+     "NTPP6"
+    ]
+   },
+   {
+    "gene": "SO3579",
+    "rule_result": "SO3579",
+    "near_matches": [
+     "SO_3579"
+    ],
+    "reactions": [
+     "PSUDS"
+    ]
+   },
+   {
+    "gene": "SO4778",
+    "rule_result": "SO4778",
+    "near_matches": [],
+    "reactions": [
+     "SUCD7"
+    ]
+   }
+  ],
+  "unmapped_with_a_near_match": [
+   {
+    "gene": "SO0419",
+    "rule_result": "SO0419",
+    "near_matches": [
+     "SO_0419"
+    ],
+    "reactions": [
+     "NNDPR"
+    ]
+   },
+   {
+    "gene": "SO0590",
+    "rule_result": "SO0590",
+    "near_matches": [
+     "SO_0590"
+    ],
+    "reactions": [
+     "PSD"
+    ]
+   },
+   {
+    "gene": "SO1140",
+    "rule_result": "SO1140",
+    "near_matches": [
+     "SO_1140"
+    ],
+    "reactions": [
+     "DHDPRy"
+    ]
+   },
+   {
+    "gene": "SO1223",
+    "rule_result": "SO1223",
+    "near_matches": [
+     "SO_1223"
+    ],
+    "reactions": [
+     "PSP_L"
+    ]
+   },
+   {
+    "gene": "SO1900",
+    "rule_result": "SO1900",
+    "near_matches": [
+     "SO_1900"
+    ],
+    "reactions": [
+     "ACCOAL"
+    ]
+   },
+   {
+    "gene": "SO2304",
+    "rule_result": "SO2304",
+    "near_matches": [
+     "SO_2304"
+    ],
+    "reactions": [
+     "ALAD_L"
+    ]
+   },
+   {
+    "gene": "SO2784",
+    "rule_result": "SO2784",
+    "near_matches": [
+     "SO_2784"
+    ],
+    "reactions": [
+     "PSUDS"
+    ]
+   },
+   {
+    "gene": "SO2937",
+    "rule_result": "SO2937",
+    "near_matches": [
+     "SO_2937"
+    ],
+    "reactions": [
+     "PSUDS"
+    ]
+   },
+   {
+    "gene": "SO3068",
+    "rule_result": "SO3068",
+    "near_matches": [
+     "SO_3068"
+    ],
+    "reactions": [
+     "PSUDS"
+    ]
+   },
+   {
+    "gene": "SO3079",
+    "rule_result": "SO3079",
+    "near_matches": [
+     "SO_3079"
+    ],
+    "reactions": [
+     "CHORS"
+    ]
+   },
+   {
+    "gene": "SO3130",
+    "rule_result": "SO3130",
+    "near_matches": [
+     "SO_3130"
+    ],
+    "reactions": [
+     "GLUTRS"
+    ]
+   },
+   {
+    "gene": "SO3442",
+    "rule_result": "SO3442",
+    "near_matches": [
+     "SO_3442"
+    ],
+    "reactions": [
+     "NTPP1",
+     "NTPP4",
+     "NTPP7",
+     "NTPP2",
+     "NTPP5",
+     "NTPP8",
+     "NTPP3",
+     "NTPP6"
+    ]
+   },
+   {
+    "gene": "SO3579",
+    "rule_result": "SO3579",
+    "near_matches": [
+     "SO_3579"
+    ],
+    "reactions": [
+     "PSUDS"
+    ]
+   }
+  ],
+  "spot_checks": [
+   {
+    "model_gene": "SO0424",
+    "sysName": "SO0424",
+    "fitness_browser_desc": "pyruvate dehydrogenase complex, E1 component, pyruvate dehydrogenase (NCBI ptt file)",
+    "model_reactions": [
+     "PDH (Pyruvate dehydrogenase)"
+    ]
+   },
+   {
+    "model_gene": "SO4349",
+    "sysName": "SO4349",
+    "fitness_browser_desc": "ketol-acid reductoisomerase (NCBI ptt file)",
+    "model_reactions": [
+     "AHAI",
+     "DPR (2-dehydropantoate 2-reductase)",
+     "KARA2i"
+    ]
+   },
+   {
+    "model_gene": "SO3864",
+    "sysName": "SO3864",
+    "fitness_browser_desc": "molybdenum ABC transporter, permease protein (NCBI ptt file)",
+    "model_reactions": [
+     "MOBDabc (Molybdate transport via ABC system)"
+    ]
+   },
+   {
+    "model_gene": "SO4480",
+    "sysName": "SO4480",
+    "fitness_browser_desc": "aldehyde dehydrogenase (NCBI ptt file)",
+    "model_reactions": [
+     "ALDD2x (Aldehyde dehydrogenase (acetaldehyde, NAD))"
+    ]
+   },
+   {
+    "model_gene": "SO2853",
+    "sysName": "SO2853",
+    "fitness_browser_desc": "3-oxoacyl-(acyl-carrier-protein) synthase III, putative (NCBI ptt file)",
+    "model_reactions": [
+     "ACOATA",
+     "C50SN",
+     "C60ISN",
+     "C70ISN",
+     "KAS15"
+    ]
+   },
+   {
+    "model_gene": "SO3365",
+    "sysName": "SO3365",
+    "fitness_browser_desc": "glutaminase A (NCBI ptt file)",
+    "model_reactions": [
+     "GLUN (Glutaminase)"
+    ]
+   },
+   {
+    "model_gene": "SO2338",
+    "sysName": "SO2338",
+    "fitness_browser_desc": "succinylglutamate desuccinylase (NCBI ptt file)",
+    "model_reactions": [
+     "SGDS (Succinylglutamate desuccinylase)"
+    ]
+   },
+   {
+    "model_gene": "SO3745",
+    "sysName": "SO3745",
+    "fitness_browser_desc": "ADP-heptose synthase (NCBI ptt file)",
+    "model_reactions": [
+     "GMHEPAT",
+     "GMHEPK"
+    ]
+   },
+   {
+    "model_gene": "SO4309",
+    "sysName": "SO4309",
+    "fitness_browser_desc": "diaminopimelate decarboxylase (NCBI ptt file)",
+    "model_reactions": [
+     "DAPDC (Diaminopimelate decarboxylase)"
+    ]
+   },
+   {
+    "model_gene": "SO1233",
+    "sysName": "SO1233",
+    "fitness_browser_desc": "tetraheme cytochrome c (NCBI ptt file)",
+    "model_reactions": [
+     "TMAOR3e"
+    ]
+   }
+  ]
+ },
+ "iGD1575": {
+  "model_genes": 1577,
+  "mapped": 1574,
+  "mapped_rate": 0.9980976537729866,
+  "mapped_with_fitness_data": 1206,
+  "mapped_with_fitness_rate": 0.7647431832593532,
+  "fitness_browser_genes_with_fitness": 5133,
+  "duplicate_targets": {},
+  "unmapped": [
+   {
+    "gene": "smb23463",
+    "rule_result": "SM_b23463",
+    "near_matches": [],
+    "reactions": [
+     "rxn09310_c0"
+    ]
+   },
+   {
+    "gene": "Unknown",
+    "rule_result": "Unknown",
+    "near_matches": [],
+    "reactions": [
+     "rxn00623_c0",
+     "rxn01176_c0",
+     "rxn08713_c0",
+     "rxn03916_c0",
+     "rxn03087_c0",
+     "rxn02898_c0",
+     "rxn05383_c0",
+     "rxn02004",
+     "rxnEPS9",
+     "rxn03150_c0",
+     "rxn06848_c0",
+     "rxn10120_c0",
+     "rxnGFTPcpd00919",
+     "rxn08708_c0",
+     "rxn03919_c0",
+     "rxn09225_c0",
+     "rxn05294_c0",
+     "rxn04139_c0",
+     "rxn06433",
+     "rxn02831_c0",
+     "rxn13784_c0",
+     "rxn01830_c0",
+     "rxn08711_c0",
+     "rxn01258_c0",
+     "rxn08583_c0",
+     "rxn01289_c0",
+     "rxn03130_c0",
+     "rxn02404_c0",
+     "rxn05195_c0",
+     "rxn01633_c0",
+     "rxn05452_c0",
+     "rxn05167_c0",
+     "rxn00966_c0",
+     "rxnBLTPcpd00276",
+     "rxn00062_c0",
+     "rxn13477_c0",
+     "rxn06436",
+     "rxn03439_c0",
+     "rxn10113_c0",
+     "rxn02832_c0",
+     "rxn04675_c0",
+     "rxn02304_c0",
+     "rxn05454_c0",
+     "rxn08018",
+     "rxn13085_c0",
+     "rxn05555_c0",
+     "rxn00438_c0",
+     "rxn08333_c0",
+     "rxnGFTP9",
+     "rxn05667_c0",
+     "rxn08954_c0",
+     "rxn03511_c0",
+     "rxn12008_c0",
+     "rxnEryD",
+     "rxn08712_c0",
+     "rxn08015",
+     "rxnEryE",
+     "rxn03917_c0",
+     "rxn00979_c0",
+     "rxn03182_c0",
+     "rxn03891_c0",
+     "rxn04457_c0",
+     "rxn08573",
+     "rxn08710_c0",
+     "rxn03918_c0",
+     "rxnBLTPcpd00227",
+     "rxn00549_c0",
+     "rxn13799_e0",
+     "rxn04456_c0",
+     "rxnBLTPcpd00274",
+     "rxn10954_c0",
+     "rxn05039_c0",
+     "rxn08709_c0"
+    ]
+   },
+   {
+    "gene": "Spontaneous",
+    "rule_result": "Spontaneous",
+    "near_matches": [],
+    "reactions": [
+     "rxn03012_c0",
+     "rxn02666_c0",
+     "rxn02916_c0",
+     "rxn02374_c0",
+     "rxn05064_c0",
+     "rxn01208_c0",
+     "rxn05116_c0",
+     "rxn01664_c0",
+     "rxnSymCof_c0",
+     "rxn04133_c0"
+    ]
+   }
+  ],
+  "unmapped_with_a_near_match": [],
+  "spot_checks": [
+   {
+    "model_gene": "smc04029",
+    "sysName": "SMc04029",
+    "fitness_browser_desc": "low specificity L-threonine aldolase",
+    "model_reactions": [
+     "rxn00541_c0 (L_Threonine_acetaldehyde_lyase_c0)"
+    ]
+   },
+   {
+    "model_gene": "smc03063",
+    "sysName": "SMc03063",
+    "fitness_browser_desc": "alpha-glucoside ABC transporter permease",
+    "model_reactions": [
+     "rxn05170_c0 (Maltose_ABC_transport_c0)",
+     "rxn10839 (D-trehalose ABC transport)",
+     "rxnBLTPcpd00076 (Sucrose ABC transport)"
+    ]
+   },
+   {
+    "model_gene": "smc00671",
+    "sysName": "SMc00671",
+    "fitness_browser_desc": "histidine transport system permease ABC transporter protein",
+    "model_reactions": [
+     "rxn05164_c0 (L_Histidine_ABC_transport_c0)",
+     "rxn05637 (proline betaine transport in via ABC system)"
+    ]
+   },
+   {
+    "model_gene": "smc00264",
+    "sysName": "SMc00264",
+    "fitness_browser_desc": "oxidoreductase",
+    "model_reactions": [
+     "rxn05336_c0 (3R_3_Hydroxypalmitoyl_acyl_carrier_protein_NADP_oxidoreductase_c0)",
+     "rxn05337_c0 (3R_3_Hydroxyhexanoyl_acyl_carrier_protein_NADP_oxidoreductase_c0)",
+     "rxn05338_c0 (3R_3_Hydroxydecanoyl_acyl_carrier_protein_NADP_oxidoreductase_c0)",
+     "rxn05339_c0 (3R_3_Hydroxybutanoyl_acyl_carrier_protein_NADP_oxidoreductase_c0)",
+     "rxn05340_c0 (3R_3_Hydroxydodecanoyl_acyl_carrier_protein_NADP_oxidoreductase_c0)",
+     "rxn05341_c0 (3R_3_Hydroxyoctanoyl_acyl_carrier_protein_NADP_oxidoreductase_c0)",
+     "rxn05342_c0 (3R_3_Hydroxytetradecanoyl_acyl_carrier_protein_NADP_c0)",
+     "rxn05360_c0 (4_methyl_3_oxo_hexanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05364_c0 (6_methyl_3_oxo_octanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05368_c0 (8_methyl_3_oxo_decanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05372_c0 (10_methyl_3_oxo_dodecanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05376_c0 (12_methyl_3_oxo_tetra_decanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05380_c0 (14_methyl_3_oxo_hexa_decanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05385_c0 (5_methyl_3_oxo_hexanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05389_c0 (7_methyl_3_oxo_octanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05393_c0 (9_methyl_3_oxo_decanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05397_c0 (11_methyl_3_oxo_dodecanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05401_c0 (13_methyl_3_oxo_tetra_decanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05405_c0 (15_methyl_3_oxo_hexa_decanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05410_c0 (4_methyl_3_oxo_pentanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05414_c0 (6_methyl_3_oxo_heptanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05418_c0 (8_methyl_3_oxo_nonanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05422_c0 (10_methyl_3_oxo_undecanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05426_c0 (12_methyl_3_oxo_tridecanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05430_c0 (14_methyl_3_oxo_pentadecanoyl_ACP_NADP_oxidoreductase_c0)",
+     "rxn05461_c0 (3_Hydroxyoctodecanoyl_ACP_NADP_oxidoreductase_c0)"
+    ]
+   },
+   {
+    "model_gene": "smc01105",
+    "sysName": "SMc01105",
+    "fitness_browser_desc": "nucleoside hydrolase",
+    "model_reactions": [
+     "rxn00927_c0 (Adenosine_ribohydrolase_c0)",
+     "rxn01226_c0 (Guanosine_ribohydrolase_c0)",
+     "rxn01299_c0 (Inosine_ribohydrolase_c0)",
+     "rxn01545_c0 (Xanthosine_ribohydrolase_c0)"
+    ]
+   },
+   {
+    "model_gene": "smc01852",
+    "sysName": "SMc01852",
+    "fitness_browser_desc": "pyrophosphate--fructose-6-phosphate 1-phosphotransferase",
+    "model_reactions": [
+     "rxn00551_c0 (Pyrophosphate_D_fructose_6_phosphate_1_phosphotransferase_c0)"
+    ]
+   },
+   {
+    "model_gene": "smc03826",
+    "sysName": "SMc03826",
+    "fitness_browser_desc": "argininosuccinate synthase",
+    "model_reactions": [
+     "rxn01434_c0 (L_Citrulline_L_aspartate_ligase_AMP_forming_c0)"
+    ]
+   },
+   {
+    "model_gene": "smc04389",
+    "sysName": "SMc04389",
+    "fitness_browser_desc": "hydroxypyruvate reductase",
+    "model_reactions": [
+     "rxn01011 (D-Glycerate:NADP+ 2-oxidoreductase)"
+    ]
+   },
+   {
+    "model_gene": "smb21277",
+    "sysName": "SM_b21277",
+    "fitness_browser_desc": "inosine-uridine preferring nucleoside hydrolase",
+    "model_reactions": [
+     "rxn00927_c0 (Adenosine_ribohydrolase_c0)",
+     "rxn01226_c0 (Guanosine_ribohydrolase_c0)",
+     "rxn01299_c0 (Inosine_ribohydrolase_c0)",
+     "rxn01545_c0 (Xanthosine_ribohydrolase_c0)"
+    ]
+   },
+   {
+    "model_gene": "smc00013",
+    "sysName": "SMc00013",
+    "fitness_browser_desc": "cytochrome C oxidase subunit III transmembrane protein",
+    "model_reactions": [
+     "rxn00058_c0 (Ferrocytochrome_c_oxygen_oxidoreductase_c0)",
+     "rxn10043_c0 (cytochrome_c_oxidase_He___2_c0)"
+    ]
+   }
+  ]
+ }
+}

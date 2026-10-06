@@ -1,0 +1,60 @@
+# Benchmark card — carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Btheta
+
+Created: 2026-10-06T12:18:11Z
+
+## Model
+
+- model_id: iAH991_bigg_view
+- file: models/curated/iAH991/iAH991_bigg_view.xml.gz
+- source: Rebuilt from Heinken et al. 2013 Gut Microbes Supplementary Tables S10a/S10b (scripts/rebuild_iAH991_from_pdf.py), BiGG identifiers via scripts/translate_curated_model.py
+- version_note: 
+- n_reactions: 1488
+- n_metabolites: 1152
+- n_genes: 991
+- sha256: bafc8663ea5c6a30f16697be88add4abdfc7ec32ae7e3de9103324cce4cf9f8c
+
+## Dataset provenance
+
+- dataset: Fitness Browser RB-TnSeq gene fitness, orgId 'Btheta'
+- primary_source: Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov
+- download: 5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)
+- n_genes_with_fitness: 4055
+- n_experiments: 542
+
+## Protocol
+
+- study: transfer_v1 reference models (post hoc)
+- arm: REF_iAH991
+- applied: []
+- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": false, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null, "complete_medium_transport": true, "medium_completion_exclude": ["pnto__R", "fol", "hco3"], "genes_subset": null}
+- media_mapping: data/reference/fitness_browser_media_bigg.tsv
+- carbon_source_mapping: data/reference/fitness_browser_carbon_sources_bigg.tsv
+- gene_mapping: {"method": "locus tag with the underscore removed (BT_0554 -> BT0554 = Fitness Browser sysName)"}
+- role: development
+- medium_supplement: {}
+- exploratory: false
+
+## Leakage
+
+- ground_truth_used_in_model_curation: unknown for the published curated model; its authors may have used these or related phenotypes
+- ground_truth_public_since: Fitness Browser releases include Price et al. 2018
+- frontier_model_training_exposure: not applicable (no AI step)
+- held_out_recommendation: reference point only; not a held-out test
+- notes: ["Scored post hoc with the transfer study's fixed protocol, for context in Paper 1."]
+
+## Results
+
+- condition_level: {"n_conditions_mapped": 25, "n_conditions_wt_grows": 0, "conditions_with_absent_exchange": 1}
+- gene_level_conditions_where_wt_grows: {"n_genes": 0, "n_conditions": 0, "n_gene_condition_pairs": 0, "n_missing_fitness": 0, "n_nonfinite_simulation": 0}
+- gene_map: {"model_genes": 991, "mapped": 986, "mapped_with_fitness_data": 818}
+- counts: {"model_genes": 991, "model_genes_mapped": 986, "genes_with_fitness": 818, "genes_after_adjustment": 818, "conditions_total": 47, "conditions_mapped": 25, "conditions_wt_grows": 0, "medium_completion_exchanges_added": 0}
+- timings_s: {"rich_medium_essentials_s": 2.384185791015625e-06, "knockout_simulation_s": 0.41486525535583496, "total_s": 0.9061815738677979}
+
+## Software
+
+- python: 3.13.16
+- cobra: 0.32.1
+- optlang: 1.9.1
+- numpy: 2.5.3
+- scipy: 1.18.1
+- scikit-learn: 1.9.1

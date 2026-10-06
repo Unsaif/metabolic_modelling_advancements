@@ -24,6 +24,7 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import re
 import sys
 import time
 
@@ -56,6 +57,8 @@ def config(org):
 GENE_NORMALIZE = {
     "identity": (lambda g: g, "identity (BiGG gene ids are locus tags = Fitness Browser sysName)"),
     "remove_underscore": (lambda g: g.replace("_", ""), "locus tag with the underscore removed (BT_0554 -> BT0554 = Fitness Browser sysName)"),
+    "identity_then_underscore": (None, "identity, else the same locus tag with an underscore after the letter prefix "
+                                 "(SO0419 -> SO_0419: the Fitness Browser lists a few MR-1 loci in the RefSeq form)"),
     "sm_prefix": (lambda g: ("SM_b" + g[3:]) if g[:3].lower() == "smb" else ("SM" + g[2:]) if g[:2].lower() == "sm" else g,
                   "S. meliloti locus tag in the Fitness Browser's form (smc04029 -> SMc04029, sma2091 -> SMa2091, smb21184 -> SM_b21184)"),
 }
@@ -63,6 +66,8 @@ GENE_NORMALIZE = {
 
 def identity_gene_map(org, model, sysnames, normalize="identity"):
     fn, how = GENE_NORMALIZE[normalize]
+    if normalize == "identity_then_underscore":
+        fn = lambda g: g if g in sysnames else re.sub(r"^([A-Za-z]+)(\d)", r"\1_\2", g)  # noqa: E731
     ids = [g.id for g in model.genes]
     mp = {g: fn(g) for g in ids if fn(g) in sysnames}
     return GeneMap(org_id=org, model_to_browser=mp, unmapped_model_genes=[g for g in ids if g not in mp],
@@ -78,6 +83,8 @@ def main() -> None:
     ap.add_argument("--source", default="")
     ap.add_argument("--processes", type=int, default=2)
     ap.add_argument("--gene-normalize", choices=sorted(GENE_NORMALIZE), default="identity")
+    ap.add_argument("--medium-supplement", action="append", default=[], metavar="BIGG_ID=UPTAKE",
+                    help="EXPLORATORY: add this uptake to every base medium (e.g. cbl1=-0.001); recorded in the card")
     args = ap.parse_args()
     cfg = config(args.org)
     outdir = os.path.join(OUT, args.org, args.label)
@@ -89,12 +96,26 @@ def main() -> None:
     model = RT.read_sbml(os.path.join(ROOT, args.model))
     model.solver = "glpk"
     t0 = time.time()
+    supplement = {k: float(v) for k, v in (x.split("=", 1) for x in args.medium_supplement)}
+    orig_base_medium = P.base_medium
+    if supplement:
+        from gembench.media import bigg_exchange
+
+        def base_medium_plus(name, *a, **k):
+            med = orig_base_medium(name, *a, **k)
+            for cid, rate in supplement.items():
+                med.uptakes[bigg_exchange(cid)] = rate
+            return med
+        P.base_medium = base_medium_plus
     with RT.reference_tables(cfg) as (media_table, carbon_table):
         gm = identity_gene_map(args.org, model, sysnames, args.gene_normalize)
         gm.stats["mapped_with_fitness_data"] = sum(1 for v in gm.model_to_browser.values() if v in set(fb.fitness.index))
         conds = FB.carbon_source_conditions(fb)
         params = P.GenericParams(processes=args.processes, **RT.FIXED)
-        res = P.run(model, fb, conds, gm, params, verbose=False)
+        try:
+            res = P.run(model, fb, conds, gm, params, verbose=False)
+        finally:
+            P.base_medium = orig_base_medium
     grows = res.wt_growth >= params.growth_threshold
     results = {"condition_level": {"n_conditions_mapped": int(len(res.conditions)), "n_conditions_wt_grows": int(grows.sum()),
                                    "conditions_with_absent_exchange": int(sum(1 for c in res.conditions if res.missing_carbon_exchanges.get(c.key)))},
@@ -105,7 +126,8 @@ def main() -> None:
         ground_truth_public_since="Fitness Browser releases include Price et al. 2018",
         frontier_model_training_exposure="not applicable (no AI step)",
         held_out_recommendation="reference point only; not a held-out test",
-        notes=["Scored post hoc with the transfer study's fixed protocol, for context in Paper 1."])
+        notes=["Scored post hoc with the transfer study's fixed protocol, for context in Paper 1."]
+        + ([f"EXPLORATORY deviation from the protocol: every base medium supplemented with {supplement}"] if supplement else []))
     card = BenchmarkCard(
         benchmark=f"carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism {args.org}",
         created=now(), dataset_provenance=fb.provenance,
@@ -115,7 +137,9 @@ def main() -> None:
         protocol={"study": "transfer_v1 reference models (post hoc)", "arm": f"REF_{args.label}", "applied": [],
                   "params": res.params.__dict__, "media_mapping": os.path.relpath(media_table, ROOT),
                   "carbon_source_mapping": os.path.relpath(carbon_table, ROOT), "gene_mapping": gm.provenance,
-                  "role": cfg.get("role", "reference")},
+                  "role": cfg.get("role", "reference"),
+                  "medium_supplement": supplement,
+                  "exploratory": bool(supplement)},
         leakage=leakage, results=results, warnings=[])
     card.write(os.path.join(outdir, "card.json"), os.path.join(outdir, "card.md"))
     np.savez_compressed(os.path.join(outdir, "matrices.npz"), sim_growth=res.sim_growth, wt_growth=res.wt_growth,
