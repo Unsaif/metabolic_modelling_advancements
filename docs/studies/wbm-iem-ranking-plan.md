@@ -21,7 +21,8 @@ This study measures that specificity.
   - **HIS with Gurobi, one IEM at a time** (Tim's Mac).
     - All five own biomarkers reproduce v0.3: same calls, values within 6e-8.
     - It took 45 minutes for one IEM, because primal warm starts needed about 12,800 iterations on average.
-  - **Gurobi, one readout at a time, timing test.** 12 IEMs × 6 readouts, described under "Solver" below.
+  - **HiGHS, one readout at a time** (12 IEMs, 4 readouts). The first dual-simplex warm start was still running after 9
+    minutes, and the run was stopped.
 - **HPO maps.**
   - v0.1 was written from the list of HPO terms and Harvey's metabolite list, before any cross-disease value existed.
   - v0.2 (links, term map, profiles) was written from Orphanet, HPO and Harvey's metabolite list. Only the HIS
@@ -87,19 +88,23 @@ then the same LPs as v0.3.
     model with both solvers.
 - **Primary solver: Gurobi 13.0.1.** It runs on Tim's MacBook with his academic licence, and Tim starts the command.
   - The protocol solves and the first solve of each readout use barrier with crossover.
-  - The other solves start from the previous basis with dual simplex.
+  - The other solves use Gurobi's concurrent method (`--warm concurrent`). Dual and primal simplex start from the
+    previous basis while barrier runs in parallel, and the first to finish is used. A slow warm start therefore costs
+    no more than a barrier solve, about 5 s here.
   - FeasibilityTol = OptimalityTol = 1e-7, with a time limit of 1,800 s per solve.
   - A warm solve that does not end optimal is solved again by barrier, and this is recorded.
   - About 1 in 100 warm solves is re-solved from scratch by barrier as a check (`--recheck-every 100`). They are chosen
     by a hash of IEM, state and readout.
-- **Fallback: HiGHS 1.15.1, same settings and order.** It runs in the cloud and is slower.
+- **No practical fallback.** HiGHS 1.15.1 runs the same LPs, but its warm starts on this model take many minutes (see
+  above), and interior point alone needs about 17 s per solve on the 2-core cloud machine, about 100 hours for the
+  matrix. If Gurobi is unavailable, the study waits.
 - **On the real model.** The HIS readouts of the timing test are compared by program with the HIS feasibility run
   (one IEM at a time). We report the maximum difference and call agreement.
 
 Command, from the repository root:
 
 ```
-caffeinate -i python3 scripts/run_wbm_iem_cross.py Harvey_1_03d --backend gurobi --order readout --warm dual \
+caffeinate -i python3 scripts/run_wbm_iem_cross.py Harvey_1_03d --backend gurobi --order readout --warm concurrent \
   --context protocol --extra-readouts data/iem/iem_ranking_extra_readouts_v0.2.txt --recheck-every 100 \
   --out-suffix _ranking_v1 --check-against results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json --quiet
 ```

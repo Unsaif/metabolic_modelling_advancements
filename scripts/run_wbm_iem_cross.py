@@ -23,6 +23,8 @@ In both contexts a demand sink that is not open is closed (ub 0) except while it
                     start from the previous basis with primal simplex: only the objective, and the upper
                     bound of the readout being maximised, change between them. A warm solve that does not
                     end optimal is solved again by interior point, and this is recorded.
+--warm concurrent   (Gurobi only) warm-started simplex and barrier run in parallel and the first to finish is used, so
+                    a slow warm start costs no more than a barrier solve.
 --warm ipm          interior point with crossover for every solve, as the protocol runs.
 
 --order iem         (default) one IEM at a time: all readouts in its healthy state, then in its disease state.
@@ -491,7 +493,8 @@ def main():
     ap.add_argument("--model-file")
     ap.add_argument("--protocol", default=os.path.join(ROOT, "data", "iem", "iem_protocol_v0.2.json"))
     ap.add_argument("--backend", choices=["highs", "gurobi"], default="highs")
-    ap.add_argument("--warm", choices=["primal", "dual", "ipm"], default="primal")
+    ap.add_argument("--warm", choices=["primal", "dual", "concurrent", "ipm"], default="primal",
+                    help="concurrent (Gurobi only): warm simplex and barrier in parallel, first to finish")
     ap.add_argument("--context", choices=["protocol", "minimal"], default="protocol")
     ap.add_argument("--iems", nargs="*")
     ap.add_argument("--limit", type=int, default=0)

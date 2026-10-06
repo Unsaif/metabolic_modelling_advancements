@@ -128,7 +128,8 @@ class GurobiWBM:
     def solve(self) -> Tuple[str, float, np.ndarray, float]:
         # "ipm": barrier with crossover (Gurobi's default crossover), as the HiGHS protocol runs.
         # "primal"/"dual": simplex from the basis of the previous solve (LPWarmStart default).
-        self.model.Params.Method = {"ipm": 2, "primal": 0, "dual": 1}[self.method]
+        # "concurrent": primal and dual simplex (warm) and barrier in parallel; the first to finish is used.
+        self.model.Params.Method = {"ipm": 2, "primal": 0, "dual": 1, "concurrent": 3}[self.method]
         self.model.Params.TimeLimit = self.per_solve_time_limit
         t = time.time()
         self.model.optimize()

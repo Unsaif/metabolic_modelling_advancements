@@ -1,0 +1,38 @@
+== Harvey_1_03d HiGHS 1.15.1 warm=dual context=protocol order=readout: 4 readouts; bounds 693af5c9bdda; 12 IEMs to run; setup 8s
+      HIS v_max (healthy)                          Optimal    f=     66.713282   16.54s it=0
+      HIS summed IEM flux (disease)                Optimal    f=             0   17.96s it=0
+      HIS whole-body objective (disease)           Optimal    f=             1   18.10s it=0
+      AGAT v_max (healthy)                         Optimal    f=     544.81809   18.05s it=0
+      AGAT summed IEM flux (disease)               Optimal    f=             0   18.02s it=0
+      AGAT whole-body objective (disease)          Optimal    f=             1   18.43s it=0
+      ARG v_max (healthy)                          Optimal    f=     817.22713  125.96s it=91565
+      ARG summed IEM flux (disease)                Optimal    f=             0   18.38s it=0
+      ARG whole-body objective (disease)           Optimal    f=             1   18.75s it=0
+      CPS1 v_max (healthy)                         Optimal    f=     793.13335   16.95s it=0
+      CPS1 summed IEM flux (disease)               Optimal    f=             0   18.14s it=0
+      CPS1 whole-body objective (disease)          Optimal    f=             1   18.19s it=0
+      3MGA v_max (healthy)                         Optimal    f=     55.866627   17.60s it=0
+      3MGA summed IEM flux (disease)               Optimal    f=             0   17.69s it=0
+      3MGA whole-body objective (disease)          Optimal    f=             1   17.67s it=0
+      AMA1 v_max (healthy)                         Optimal    f=     13036.878   89.42s it=61835
+      AMA1 summed IEM flux (disease)               Optimal    f=             0   18.88s it=0
+      AMA1 whole-body objective (disease)          Optimal    f=             1   18.74s it=0
+      AADC v_max (healthy)                         Optimal    f=     48.704593   16.75s it=0
+      AADC summed IEM flux (disease)               Optimal    f=             0   17.84s it=0
+      AADC whole-body objective (disease)          Optimal    f=             1   17.96s it=0
+      3MCC v_max (healthy)                         Optimal    f=     55.866627   16.31s it=0
+      3MCC summed IEM flux (disease)               Optimal    f=             0   17.49s it=0
+      3MCC whole-body objective (disease)          Optimal    f=             1   17.58s it=0
+      CYP21D v_max (healthy)                       Optimal    f=   0.008486737   16.26s it=1
+      CYP21D summed IEM flux (disease)             Optimal    f=             0   18.05s it=0
+      CYP21D whole-body objective (disease)        Optimal    f=             1   19.48s it=0
+      HYCARO v_max (healthy)                       Optimal    f=  0.0043026972   17.94s it=0
+      HYCARO summed IEM flux (disease)             Optimal    f=             0   18.68s it=0
+      HYCARO whole-body objective (disease)        Optimal    f=             1   19.45s it=0
+      BTD v_max (healthy)                          Optimal    f=     74620.756   14.55s it=0
+      BTD summed IEM flux (disease)                Optimal    f=             0   18.82s it=0
+      BTD whole-body objective (disease)           Optimal    f=             1   18.73s it=0
+      STAR v_max (healthy)                         Optimal    f=  0.0042433602   16.37s it=0
+      STAR summed IEM flux (disease)               Optimal    f=             0   17.50s it=0
+      STAR whole-body objective (disease)          Optimal    f=             1   18.24s it=0
+      EX_hista[u] 1/4 HIS disease                  Optimal    f=     29.017723   17.06s it=0

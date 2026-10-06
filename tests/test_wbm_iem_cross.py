@@ -155,7 +155,8 @@ def test_rechecked_selection_is_deterministic():
 
 @pytest.mark.parametrize("context", ["protocol", "minimal"])
 @pytest.mark.parametrize("name,warm,first", [("highs", "dual", "ipm"), ("highs", "primal", "warm"), ("highs", "ipm", "ipm"),
-                                             ("gurobi", "dual", "ipm"), ("gurobi", "dual", "warm")])
+                                             ("gurobi", "dual", "ipm"), ("gurobi", "dual", "warm"),
+                                             ("gurobi", "concurrent", "ipm")])
 def test_readout_major_equals_iem_major(core_wbm, context, name, warm, first):
     base = cross(backend("highs", core_wbm), "ipm", context)
     hw = backend(name, core_wbm)

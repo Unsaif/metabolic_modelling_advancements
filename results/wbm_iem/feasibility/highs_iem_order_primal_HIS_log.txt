@@ -1,0 +1,16 @@
+== Harvey_1_03d HiGHS 1.15.1 warm=primal context=protocol: 162 readouts; bounds 693af5c9bdda; 2 IEMs to run; setup 8s
+      v_max (healthy)                              Optimal    f=     66.713282   17.02s it=0
+      summed IEM flux (disease)                    Optimal    f=             0   19.34s it=0
+      whole-body objective (disease)               Optimal    f=             1   18.88s it=0
+      HIS healthy 1/162 EX_hista[u]                Optimal    f= 0.00028540511   17.63s it=0
+      HIS healthy 2/162 DM_hista[bc]               Optimal    f=            50    0.18s it=7
+      HIS healthy 3/162 EX_im4ac[u]                Optimal    f=   0.014541405    0.10s it=3
+      HIS healthy 4/162 EX_his_L[u]                Optimal    f= 2.8512382e-07    3.35s it=4206
+      HIS healthy 5/162 DM_his_L[bc]               Optimal    f= 2.8512382e-07    0.10s it=1
+      HIS healthy 6/162 EX_creat[u]                Optimal                        0.58s it=213
+      HIS healthy 7/162 EX_gudac[u]                Optimal                        3.48s it=2273
+      HIS healthy 8/162 EX_argsuc[u]               Optimal                     1733.61s it=464892
+      HIS healthy 9/162 EX_orot[u]                 Optimal                        3.97s it=2232
+      HIS healthy 10/162 EX_ura[u]                 Optimal                        5.43s it=2655
+      HIS healthy 11/162 DM_creat[bc]              Optimal                       75.36s it=10877
+      HIS healthy 12/162 DM_arg_L[bc]              Optimal                      606.63s it=128674
