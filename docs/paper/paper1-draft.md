@@ -1,12 +1,14 @@
 # Paper 1 draft: do corrections to draft metabolic models transfer?
 
-> Repository copy of the Claude Docs draft (https://claude.ai/code/artifact/58c661c0-bff9-419c-a2e4-bbf1a6e4b3c3), exported 5 October 2026. The doc is the working version; this copy records the text at export.
+> Repository copy of the Claude Docs draft (https://claude.ai/code/artifact/58c661c0-bff9-419c-a2e4-bbf1a6e4b3c3), exported 6 October 2026 after the abstract was rewritten with Tim. The doc is the working version; this copy records the text at export.
 
 Oct 5, 2026 · @Tim Hulshof
 
 ## Note for Tim
 
-This is a first full draft of the benchmark paper, written only from the frozen transfer study and its replication. No number in it is new: each comes from a result file in the repository (branch `claude/opus-continuation`), listed under Data and code availability; numbers derived for the paper are in `results/transfer_v1/paper1_derived_numbers.json`.
+This is a first full draft of the benchmark paper, written only from the locked transfer study and its held-back second round. No number in it is new: each one comes from a result file in the repository (branch `claude/opus-continuation`), listed under Data and code availability. Numbers derived for the paper (gene counts, t-intervals) are in results/transfer\_v1/paper1\_derived\_numbers.json.
+
+The abstract was rewritten with Tim on 6 October, and "frozen" became "locked" throughout. The abstract's one new figure, 94%, is 367 of the 391 changed predictions ((273 + 94) / (274 + 117)), from counts in the derived-numbers file.
 
 Decisions that are yours:
 
@@ -22,16 +24,16 @@ Decisions that are yours:
 
 Working titles:
 
-1. Do corrections to draft metabolic models transfer to new organisms? A pre-specified, replicated test on twelve bacteria
-2. Fitness-blind curation of automatically reconstructed metabolic models, tested on held-out bacteria against genome-wide mutant fitness
+1. Do corrections to draft metabolic models transfer to new organisms? A pre-specified test on twelve bacteria
+2. Blind curation of automatically reconstructed metabolic models, tested on held-out bacteria against genome-wide mutant screens
 
-**Abstract.** Automatically reconstructed genome-scale metabolic models are the only models available for most bacteria. Improvements to them are usually judged on the same data that guided them. We asked whether corrections developed on four bacteria improve predictions for organisms that played no part in their development.
+**Abstract.** Most bacteria have only automatically built metabolic models, and corrections to these models are usually judged on the same data that inspired them. We asked whether corrections developed on four bacteria also improve the models of other bacteria.
 
-We scored historical CarveMe drafts (EMBL GEMs) against genome-wide mutant fitness (RB-TnSeq) on carbon sources. On four development bacteria, with the curated *E. coli* model as a reference, we derived five automatic correction rules that use only the genome annotation. We also wrote a procedure in which an AI model curates gene–reaction rules from annotation alone. We froze both in time-stamped manifests. Only then did we download fitness data for a first panel of new organisms and score every model once. We then repeated the test unchanged on a second panel.
+As the yardstick we used published genome-wide mutant screens (RB-TnSeq), which show which genes a bacterium needs to grow on a given carbon source. We compared them with the genes that automatically built models (2017 CarveMe drafts from the EMBL GEMs collection) predict to be needed. On the four development bacteria we wrote five automatic correction rules that use only the genome annotation, and a procedure in which an AI model corrects gene–reaction links without seeing any screening data. We locked both methods, with a time-stamped record, before downloading the screens of twelve new bacteria: all remaining bacteria in the screening database that met criteria set in advance. We tested them in two rounds of six, holding the second round back until the first had been analysed.
 
-The automatic rules raised the Matthews correlation coefficient (MCC) by +0.036 in development and by +0.037 and +0.036 on the two new panels. Pooled over the ten evaluable new organisms the gain was +0.037 (95% interval 0.025 to 0.048): nine organisms improved, one was unchanged and none got worse. Blind AI curation added +0.028 (0.009 to 0.046; eight up, two down). The gain came from removing gene alternatives that are not catalysts (+0.026; the curator joined subunits only twice). Assigning genes to gene-less reactions gave no net gain (+0.003). Rules fixed in advance left two of the twelve organisms unevaluable and misrepresented two more.
+Ten of the twelve could be tested. Before correction, the models agreed with the screens only moderately (Matthews correlation coefficient 0.33 to 0.52 in the eight bacteria whose experiments they could represent; 0 is chance and 1 is perfect). The automatic rules raised it by 0.037 on average (95% interval 0.025 to 0.048). The gain was the same in both rounds and in development, nine bacteria improved and none got worse, and 94% of the predictions the rules changed now agree with the screens. AI curation added 0.028 (eight improved, two worse; 0.029 on the held-back round alone), almost entirely by removing genes the drafts wrongly listed as backup enzymes. Four bacteria exposed limits of the locked pipeline. For two, the locked rules could not set up a model to test. Two others had experiments the models cannot represent: one grows by photosynthesis, and one "carbon-free" medium contains organic carbon. All four are reported.
 
-Simple annotation-based corrections transferred to ten held-out bacteria, within one assay platform and one 2017 draft collection. A self-custodied, time-stamped protocol is a cheap way to test whether a model change helps. Code, freeze manifests and every curation decision are in the project repository.
+Simple annotation-based corrections carry over to new bacteria. The gain is modest but consistent.
 
 ## Introduction
 
@@ -43,15 +45,15 @@ How do we know that a correction helps? Usually by scoring it against phenotype 
 
 Randomly barcoded transposon sequencing (RB-TnSeq) measures the fitness of mutants in nearly every gene, for dozens of bacteria across many carbon sources \[9,10\]. Bernstein et al. showed how to use such data to evaluate *Escherichia coli* models \[11\]. Because the data cover many organisms, they allow a stronger test: develop corrections on some organisms, then score them on organisms that played no part.
 
-AI models are entering curation as well. For Human2 (Human-GEM 2.0), GPT-4 assessed all 26,246 gene–reaction pairs; the pairs it flagged were reviewed by hand, and the updated model was evaluated against CRISPR gene essentiality \[12\]. Machine-learning gap-filling has also been shown to improve phenotype predictions of draft models \[15\]. To our knowledge, no fully automated correction procedure has been frozen before any outcome was accessed, tested on several held-out organisms with an isolated, paired effect estimate, and then replicated.
+AI models are entering curation as well. For Human2 (Human-GEM 2.0), GPT-4 assessed all 26,246 gene–reaction pairs; the pairs it flagged were reviewed by hand, and the updated model was evaluated against CRISPR gene essentiality \[12\]. Machine-learning gap-filling has also been shown to improve phenotype predictions of draft models \[15\]. To our knowledge, no fully automated correction procedure has been locked before any outcome was accessed, tested on several held-out organisms with an isolated, paired effect estimate, and then repeated on a held-back set.
 
-Here we developed five annotation-based correction rules and a written AI curation procedure on four bacteria, and froze both. We then scored them once on six new bacteria whose fitness data were downloaded only after the freeze, and repeated the test unchanged on six more. We report what transferred, what did not, and where the fixed pipeline itself limited the test.
+Here we developed five annotation-based correction rules and a written AI curation procedure on four bacteria, and locked both: every file they use was fingerprinted and recorded with a timestamp, so any later change would show. We then scored them once on six new bacteria whose fitness data were downloaded only after the lock, and repeated the test unchanged on six more that had been held back. We report what transferred, what did not, and where the locked pipeline itself limited the test.
 
 ## Results
 
-### A panel declared before any outcome, and a recorded time order
+### Study design: develop on four bacteria, test on twelve
 
-Every outcome of a new organism was first accessed after the method and that organism's inputs were frozen (Figure 1).
+We developed the corrections on four bacteria, locked them, and tested them on twelve new bacteria in two rounds (Figure 1).
 
 **Panel.** Eligibility was declared before anything was downloaded:
 
@@ -60,7 +62,7 @@ Every outcome of a new organism was first accessed after the method and that org
 - at least eight carbon-source experiments;
 - at most three base media.
 
-Twelve organisms qualified. A seeded random split assigned six to panel A and six to a reserved panel B. Until each panel's inputs were frozen, only non-outcome data were downloaded: gene and experiment metadata, protein sequences and the draft models.
+Twelve organisms qualified: every remaining bacterium in the Fitness Browser that met these criteria. A seeded random split assigned six to panel A, tested first, and six to panel B, held back until panel A had been analysed. Until each panel's inputs were locked, only non-outcome data were downloaded: gene and experiment metadata, protein sequences and the draft models.
 
 **Arms.** Three models were built per organism:
 
@@ -70,20 +72,11 @@ Twelve organisms qualified. A seeded random split assigned six to panel A and si
 
 **Primary metric.** The paired difference in MCC between two arms, on the union of their scored genes. Per organism it carries a gene-bootstrap 95% interval. Across organisms it is the mean of the per-organism differences, with an organism-bootstrap 95% interval. The pre-declared reading: **supported** if the mean is positive and its interval excludes zero, **not supported** if the mean is zero or negative, and **inconclusive** otherwise.
 
-**Time order.** Each freeze is a manifest of file hashes, committed to git. Each was also recorded in a private project document, whose server timestamps follow the freezes by less than half a minute (09:41:01, 10:11:50, 12:31:17 and 13:06:45). All times are on 3 October 2026 (UTC):
-
-1. method frozen at 09:40:45;
-2. panel A inputs (media, carbon sources, base models, curation decisions) frozen at 10:11:43;
-3. panel A fitness tables first downloaded between 10:12:18 and 10:12:40, then every arm run once;
-4. replication plan frozen at 12:31:09;
-5. panel B inputs frozen at 13:06:21;
-6. panel B fitness tables first downloaded between 13:07:00 and 13:07:20, then every arm run once.
-
-On 3 October a separate agent, using its own code, recomputed the primary and secondary results from the run matrices, with exact agreement. It checked the fitness values of every arm against the downloaded tables (376,620 arm × gene × condition cells on panel A and 881,911 on panel B). It also confirmed the time order from git history, the manifests, the download records and the external timestamps. A second agent checked this paper's derived tables, figures and counts against the result files on 5 October.
+**Locking.** The method, and then each panel's inputs including every AI curation decision, were locked before that panel's fitness data were downloaded. Locking means that every file was fingerprinted (hashed), committed to git and recorded with an external timestamp, so any later change would show. The full time order and its independent check are in Methods.
 
 ![Figure 1. Time order of the transfer study](fig1_timeline.png)
 
-*Figure 1. Time order of the transfer study on 3 October 2026 (UTC). The panel was drawn from metadata only. The organism-specific corrections behind the development arms were made in September. Their annotation-triggered form, and the arms shown here, were written and run on 3 October, after the panel was drawn and before any panel outcome was downloaded. Times come from the freeze manifests, the download records and the run cards.*
+*Figure 1. Time order of the transfer study on 3 October 2026 (UTC). The panel was drawn from metadata only. The organism-specific corrections behind the development arms were made in September. Their annotation-triggered form, and the arms shown here, were written and run on 3 October, after the panel was drawn and before any panel outcome was downloaded. Times come from the lock manifests, the download records and the run cards.*
 
 ### The drafts agree only moderately with mutant fitness
 
@@ -141,7 +134,7 @@ The five automatic rules improved agreement on new organisms by the same amount 
 
 ![Figure 2. Per-organism paired MCC differences](fig2_paired_differences.png)
 
-*Figure 2. Paired MCC differences per organism, union of genes. Left: automatic rules (U′ vs B0, H1). Right: blind AI curation (M vs U′, H2); the two panels have different x-axis ranges. Circles: organisms, with 95% gene-bootstrap intervals. Diamonds: means over organisms, with 95% organism-bootstrap intervals. Grey: development organisms (retrospective). Blue: panel A. Red: panel B. Black: pooled new organisms. D. suillum and D. vulgaris Miyazaki F were not evaluable under the frozen rules.*
+*Figure 2. Paired MCC differences per organism, union of genes. Left: automatic rules (U′ vs B0, H1). Right: blind AI curation (M vs U′, H2); the two panels have different x-axis ranges. Circles: organisms, with 95% gene-bootstrap intervals. Diamonds: means over organisms, with 95% organism-bootstrap intervals. Grey: development organisms (retrospective). Blue: panel A. Red: panel B. Black: pooled new organisms. D. suillum and D. vulgaris Miyazaki F were not evaluable under the locked rules.*
 
 ![Figure 3. Components of the corrections](fig3_attribution.png)
 
@@ -188,9 +181,9 @@ Blind AI curation of gene rules added +0.028 MCC pooled over the ten new organis
 
 *Figure 4. New "important gene" calls made by blind curation, by decision kind and organism. Filled: confirmed by the fitness data (fitness ≤ −2). Hatched: not confirmed. Counts are gene × condition cells on the union of genes.*
 
-### The fixed pipeline set its own limits
+### The locked pipeline set its own limits
 
-Rules fixed in advance left two organisms unevaluable and misrepresented two more. None was replaced or dropped after the outcomes were seen.
+Applied as locked, the pipeline could not set up a model for two organisms and misrepresented the experiments of two more. None was replaced or dropped after the outcomes were seen.
 
 | Organism | What happened | Rule responsible |
 | --- | --- | --- |
@@ -219,11 +212,11 @@ Corrections derived from four bacteria improved predictions for nine of ten held
 
 **AI curation works within limits.** Without seeing outcomes, an AI curator improved predictions on eight of ten new organisms; the clean replication on panel B gave +0.029. The gain came from one kind of decision: removing gene alternatives that are not catalysts. Assigning genes to gene-less reactions did not help on balance, and two thirds of its wrong calls involved ion transporters. That suggests a practical policy: let AI curators remove alternatives, and hold their gene assignments, especially to ion transporters, to a stricter standard. Joins of subunits were too rare here to judge.
 
-**Pre-specification is cheap.** It took hours, not months, to do four things: freeze a method, record the freeze, download outcomes only afterwards and have an independent agent recompute every number. The same design suits other claims that a model change helps. Here it has three weaknesses:
+**Pre-specification is cheap.** It took hours, not months, to do four things: lock a method, record the lock, download outcomes only afterwards and have an independent agent recompute every number. The same design suits other claims that a model change helps. Here it has three weaknesses:
 
 - **Self-custody.** The same model family designed, prepared and scored the test, and checked it.
 - **A private record.** The external time record is a private project document. A public registration would be stronger.
-- **One manifest changed.** The replication plan's manifest no longer verifies at the current head, because one input file gained panel B entries before the panel B inputs were frozen.
+- **One manifest changed.** The replication plan's manifest no longer verifies at the current head, because one input file gained panel B entries before the panel B inputs were locked.
 
 An external custodian of the outcome data, or a community challenge on newly measured organisms, would remove the first weakness.
 
@@ -236,14 +229,14 @@ An external custodian of the outcome data, or a community challenge on newly mea
 - **Development exposure.** The curated *E. coli* model helped flag one reaction patch, so *E. coli* counts as a fifth exposed organism.
 - **Blinding of the curator.** It rests on instructions. The packets' gene descriptions came from the Fitness Browser gene table. Whether any of them reflect the Browser's fitness-based re-annotations remains to be checked.
 - **Unknown training exposure.** The AI curator's training may include published phenotypes; the pre-declared sensitivity analysis without *M. tuberculosis* did not change the reading.
-- **Fixed pipeline choices.** These excluded or misrepresented four of twelve organisms.
+- **Locked pipeline choices.** These excluded or misrepresented four of twelve organisms.
 
 **Next tests.**
 
 - Current CarveMe drafts of the same organisms (a robustness check, since these organisms are now exposed).
 - A random-removal control for the curator's removals.
 - Other phenotype types, such as growth profiles.
-- Organisms whose fitness data are published after a method is frozen.
+- Organisms whose fitness data are published after a method is locked.
 
 ## Methods
 
@@ -294,7 +287,7 @@ Water, protons, CO2 and trace metals (capped at 0.1 mmol/gDW/h) were always avai
 
 The rules generalise organism-specific corrections made in September. One reaction patch was found partly with the curated *E. coli* model iML1515. Their annotation-triggered form was written on 3 October, after the panel had been drawn from metadata and before any panel outcome was downloaded. U′ was chosen after all development arms had been run, as the arm with the highest development MCC.
 
-**Blind adjudication (M).** For each organism, a packet was built from the U′ model and metadata only. It listed the gene-less reactions and the alternative-gene rules of reactions essential in at least one mapped condition where U′ grows. Each came with its equation, annotations and current rule. Every gene came with its description from the Fitness Browser gene table, its RefSeq definition and its genomic neighbourhood. One fresh subagent per organism wrote its decisions in one attempt. It was instructed to read only its packet and the written procedure and not to use the web. The procedure was not revised after development. All decisions were frozen with the inputs before any outcome was downloaded.
+**Blind adjudication (M).** For each organism, a packet was built from the U′ model and metadata only. It listed the gene-less reactions and the alternative-gene rules of reactions essential in at least one mapped condition where U′ grows. Each came with its equation, annotations and current rule. Every gene came with its description from the Fitness Browser gene table, its RefSeq definition and its genomic neighbourhood. One fresh subagent per organism wrote its decisions in one attempt. It was instructed to read only its packet and the written procedure and not to use the web. The procedure was not revised after development. All decisions were locked with the inputs before any outcome was downloaded.
 
 **Scoring.**
 
@@ -303,16 +296,27 @@ The rules generalise organism-specific corrections made in September. One reacti
 - **Metric.** MCC \[14\] on all gene × condition pairs where both arms grow. The primary gene set was the union of both arms' genes: a gene absent from a model counts as predicted unimportant there.
 - **Uncertainty and reading.** Per-organism intervals: 1,000 gene-bootstrap resamples. Means: 10,000 organism-bootstrap resamples, with t-based intervals as a sensitivity analysis. Organisms changing by less than 0.001 counted as unchanged. Sign tests were exact and two-sided. The pre-declared reading is given in Results.
 
-**Custody and verification.** Each freeze is a manifest of file hashes with a content fingerprint, committed to git and recorded in a private project document with a server timestamp. Outcome files were downloaded only after the corresponding freeze, and their hashes and download times were recorded. All four manifests verify at their own commits. At the current head the replication plan's manifest differs in one file, `filter_report.json`, which gained panel B entries before the panel B inputs freeze; its earlier entries are unchanged. An independent agent recomputed the primary and secondary results with its own code, and a second agent checked the paper's derived tables and figures.
+**Locking, time order and verification.** Each lock is a manifest of file hashes with a content fingerprint, committed to git and recorded in a private project document whose server timestamp follows the commit by less than half a minute. Outcome files were downloaded only after the corresponding lock, and their hashes and download times were recorded. All times are on 3 October 2026 (UTC), with the external record in brackets:
+
+1. method locked at 09:40:45 (09:41:01);
+2. panel A inputs (media, carbon sources, base models, curation decisions) locked at 10:11:43 (10:11:50);
+3. panel A fitness tables first downloaded between 10:12:18 and 10:12:40, then every arm run once;
+4. replication plan for panel B locked at 12:31:09 (12:31:17);
+5. panel B inputs locked at 13:06:21 (13:06:45);
+6. panel B fitness tables first downloaded between 13:07:00 and 13:07:20, then every arm run once.
+
+All four manifests verify at their own commits. At the current head the replication plan's manifest differs in one file, `filter_report.json`, which gained panel B entries before the panel B inputs were locked; its earlier entries are unchanged.
+
+On 3 October a separate agent, using its own code, recomputed the primary and secondary results from the run matrices, with exact agreement. It checked the fitness values of every arm against the downloaded tables (376,620 arm × gene × condition cells on panel A and 881,911 on panel B), and confirmed the time order from git history, the manifests, the download records and the external timestamps. A second agent checked this paper's derived tables, figures and counts against the result files on 5 October.
 
 ## Data and code availability
 
-All code, inputs, freeze manifests, run matrices and curation decisions are in the project repository (github.com/Unsaif/metabolic\_modelling\_advancements, branch `claude/opus-continuation`). It should be archived with a DOI before submission.
+All code, inputs, lock manifests, run matrices and curation decisions are in the project repository (github.com/Unsaif/metabolic\_modelling\_advancements, branch `claude/opus-continuation`). It should be archived with a DOI before submission.
 
 | What | Where in the repository |
 | --- | --- |
 | Method, replication plan and adjudication procedure (with the verbatim prompt) | `docs/studies/transfer-method-v1.md`, `transfer-v1-replication-plan.md`, `transfer-adjudication-procedure-v1.md`, `transfer-adjudication-prompt-v1.txt` |
-| Freeze manifests | `results/study_freezes/transfer_v1_method.json`, `transfer_v1_inputs_panel_A.json`, `transfer_v1_replication_plan.json`, `transfer_v1_inputs_panel_B.json` |
+| Lock manifests | `results/study_freezes/transfer_v1_method.json`, `transfer_v1_inputs_panel_A.json`, `transfer_v1_replication_plan.json`, `transfer_v1_inputs_panel_B.json` |
 | Every curation decision | `data/studies/transfer_v1/decisions/<organism>.json` |
 | Run matrices, paired comparisons and aggregates | `results/transfer_v1/development/`, `evaluation_panel_A/`, `evaluation_panel_B/`, `pooled_panels_A_B_*.json` |
 | Fitness download records (hashes and times) | `data/fitness_browser_panel/` |

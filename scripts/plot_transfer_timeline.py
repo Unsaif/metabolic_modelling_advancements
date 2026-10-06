@@ -59,7 +59,7 @@ def main() -> None:
     import matplotlib.dates as mdates
     import matplotlib.pyplot as plt
     fig, ax = plt.subplots(figsize=(9, 3.6))
-    lanes = {"Development\n(4 organisms)": 2, "Panel A\n(6 new organisms)": 1, "Panel B\n(6 new, replication)": 0}
+    lanes = {"Development\n(4 organisms)": 2, "Panel A\n(6 new organisms)": 1, "Panel B\n(6 new, held back)": 0}
     grey, blue, red = "#7f7f7f", "#1f77b4", "#d62728"
 
     def span(lane, a, b, colour, text, alpha=0.35):
@@ -78,15 +78,15 @@ def main() -> None:
 
     span(2, *ev["development_runs"], grey, "arms developed and scored")
     mark(2, ev["panel_selected"], "black", "panel drawn\n(metadata only)", marker="o", dy=0.3)
-    mark(2, ev["method_freeze"], "black", "method frozen", marker="v")
+    mark(2, ev["method_freeze"], "black", "method locked", marker="v")
     span(1, ev["method_freeze"], ev["panel_A_inputs_freeze"], blue, "inputs, blind\ncuration", alpha=0.15)
-    mark(1, ev["panel_A_inputs_freeze"], blue, "inputs frozen")
+    mark(1, ev["panel_A_inputs_freeze"], blue, "inputs locked")
     span(1, *ev["panel_A_runs"], blue, "scored once")
     ax.plot(mdates.date2num(t(ev["panel_A_download"][0])), 1 - 0.3, "^", color=blue, ms=7)
     ax.text(mdates.date2num(t(ev["panel_A_download"][0])), 1 - 0.48, "fitness first\ndownloaded", ha="center", va="top", fontsize=7, color=blue)
-    mark(0, ev["replication_plan_freeze"], red, "replication\nplan frozen")
+    mark(0, ev["replication_plan_freeze"], red, "second-round\nplan locked")
     span(0, ev["replication_plan_freeze"], ev["panel_B_inputs_freeze"], red, "inputs, blind\ncuration", alpha=0.15)
-    mark(0, ev["panel_B_inputs_freeze"], red, "inputs frozen", dy=0.3)
+    mark(0, ev["panel_B_inputs_freeze"], red, "inputs locked", dy=0.3)
     span(0, *ev["panel_B_runs"], red, "scored once")
     ax.plot(mdates.date2num(t(ev["panel_B_download"][0])), 0 - 0.3, "^", color=red, ms=7)
     ax.text(mdates.date2num(t(ev["panel_B_download"][0])), 0 - 0.48, "fitness first\ndownloaded", ha="center", va="top", fontsize=7, color=red)
@@ -96,8 +96,8 @@ def main() -> None:
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%H:%M"))
     ax.xaxis.set_major_locator(mdates.HourLocator())
     ax.tick_params(axis="x", labelsize=8)
-    ax.set_xlabel("3 October 2026, UTC (times from freeze manifests, download records and run cards)", fontsize=8)
-    ax.set_title("Time order of the transfer study: every outcome was first accessed after its inputs were frozen", fontsize=9)
+    ax.set_xlabel("3 October 2026, UTC (times from lock manifests, download records and run cards)", fontsize=8)
+    ax.set_title("Time order of the transfer study: every outcome was first accessed after its inputs were locked", fontsize=9)
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)
     fig.tight_layout()
