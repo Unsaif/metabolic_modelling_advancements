@@ -1,0 +1,49 @@
+{
+ "note": "Results of web checks made on 2026-10-06 by the independent verifier with web tools (recorded here as data; not re-runnable offline). The container's proxy blocked bigg.ucsd.edu, api.crossref.org and api.github.com for curl/gh; WebFetch was used for BiGG and Crossref, and raw.githubusercontent.com was reachable with curl.",
+ "bigg_models_list": {
+  "url": "http://bigg.ucsd.edu/api/v2/models",
+  "results_count": 108,
+  "study_genera_found": {"Pseudomonas": ["iJN1463", "iJN746"], "Mycobacterium": ["iEK1008", "iNJ661"]},
+  "study_genera_not_found": ["Shewanella", "Sinorhizobium", "Bacteroides", "Caulobacter", "Cupriavidus", "Marinobacter",
+                             "Dinoroseobacter", "Rhodopseudomonas", "Desulfovibrio", "Dyella", "Echinicola", "Dechlorosoma", "Azospira"],
+  "verdict": "Of the 16 study organisms only P. putida KT2440 and M. tuberculosis H37Rv have models in BiGG"
+ },
+ "curated_models_outside_bigg_for_study_organisms": {
+  "also_listed_in_repo": "data/fitness_browser/PROVENANCE.md lists Btheta 'with a curated model (iAH991)', MR1 'curated model iSO783', Smeli 'curated model iGD1575'",
+  "B_thetaiotaomicron_VPI-5482": {"model": "iAH991", "source": "Heinken A, Sahoo S, Fleming RMT, Thiele I. Systems-level characterization of a host-microbe metabolic symbiosis in the mammalian gut. Gut Microbes 2013", "checked_at": "https://orbilu.uni.lu/handle/10993/13034"},
+  "S_oneidensis_MR-1": {"model": "iSO783 (Pinchuk et al. 2010, PLoS Comput Biol, doi:10.1371/journal.pcbi.1000822); updated iMR1_799 (Ong et al. 2014, BMC Syst Biol 8:31)", "checked_at": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4007644"},
+  "S_meliloti_1021": {"model": "iGD1575", "source": "diCenzo GC ... Fondi M. Metabolic modelling reveals the specialization of secondary replicons for niche adaptation in Sinorhizobium meliloti. Nat Commun 2016;7:12219 (draft from KBase, then manually curated and validated)", "checked_at": "https://www.nature.com/articles/ncomms12219"},
+  "R_palustris_CGA009": {"model": "published genome-scale models exist (search hits PMC6718658; bioRxiv 10.1101/2022.03.03.482919); identifier not confirmed", "checked_at": "web search only"}
+ },
+ "iML1515_source": {
+  "url": "https://raw.githubusercontent.com/dbernste/E_coli_GEM_validation/master/Models/iML1515.xml (main branch identical)",
+  "bytes": 11412293,
+  "sha256": "9c772d44ca43350e40dc7ee86c7aa148796856be1eea45e5406c6df8f7dcde28",
+  "equals_local_file_and_card": true,
+  "sbml": {"model_id": "iML1515", "reactions": 2712, "gene_products": 1516},
+  "repo_readme": "This repository contains the code and data used for the analysis of the E. coli genome-scale metabolic model prediction accuracy using high-throughput mutant fitness data for gene knockouts across carbon sources."
+ },
+ "iJN1463_source": {
+  "local_sha256": "d573833328ffae0dfa752a1fa3262ed939ed5862288beab287fca30d0fefb4a1",
+  "equals_card": true,
+  "sbml": {"model_id": "iJN1463", "reactions": 2927, "gene_products": 1462, "gene_ids": "PP_ locus tags"},
+  "current_bigg_file_compared": false,
+  "why_not": "bigg.ucsd.edu blocked for downloads from the container; WebFetch cannot hash a file"
+ },
+ "reference_17_crossref": {
+  "doi": "10.1038/nbt.3956",
+  "authors": "Monk JM, Lloyd CJ, Brunk E, Mih N, Sastry A, King Z, Takeuchi R, Nomura W, Zhang Z, Mori H, Feist AM, Palsson BO",
+  "title": "iML1515, a knowledgebase that computes Escherichia coli traits",
+  "journal": "Nature Biotechnology", "year": 2017, "volume": "35", "issue": "10", "pages": "904-908",
+  "paper_entry_matches": true
+ },
+ "reference_18_crossref": {
+  "doi": "10.1111/1462-2920.14843",
+  "authors": "Nogales J, Mueller J, Gudmundsson S, Canalejo FJ, Duque E, Monk J, Feist AM, Ramos JL, Niu W, Palsson BO",
+  "title": "High-quality genome-scale metabolic modelling of Pseudomonas putida highlights its broad metabolic capabilities",
+  "journal": "Environmental Microbiology", "issued": "2019-11-11 (online)", "print": "2020-01", "volume": "22", "issue": "1", "pages": "255-269",
+  "paper_entry_matches": true,
+  "naming_note": "The article names its model iJN1462 (project NOTICE models/bigg/NOTICE and docs/evidence/08-quinone-biomass-audit.md; literature uses iJN1462); BiGG distributes it as iJN1463. Publisher page returned 403, so the abstract wording was not re-read."
+ },
+ "pubmed": "PubMed returned a captcha and Europe PMC was rate-limited (HTTP 429); references were checked against Crossref publisher records only"
+}

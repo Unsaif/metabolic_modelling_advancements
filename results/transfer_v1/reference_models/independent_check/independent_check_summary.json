@@ -1,0 +1,577 @@
+{
+ "claims": [
+  {
+   "id": 1,
+   "claim": "iML1515 grows in all 32 E. coli conditions; MCC 0.59",
+   "paper": "32/32; 0.59",
+   "recomputed": "32/32; 0.5863",
+   "verdict": "confirmed"
+  },
+  {
+   "id": 2,
+   "claim": "common genes 764, 28 conditions; B0 0.53, U' 0.57, M 0.61, iJN1463 0.56",
+   "paper": "764/28; 0.53/0.57/0.61/0.56",
+   "recomputed": "764 (M: 765)/28; 0.529/0.57/0.607/0.564",
+   "verdict": "confirmed (M's common set has 765 genes)"
+  },
+  {
+   "id": "2b",
+   "claim": "curated - B0 +0.035 [-0.063, 0.140]; curated - M -0.042 [-0.139, 0.054]",
+   "paper": "+0.035 [-0.063, 0.140]; -0.042 [-0.139, 0.054]",
+   "recomputed": {
+    "B0": [
+     0.035,
+     [
+      -0.069,
+      0.137
+     ]
+    ],
+    "U'": [
+     -0.006,
+     [
+      -0.12,
+      0.1
+     ]
+    ],
+    "M": [
+     -0.042,
+     [
+      -0.148,
+      0.051
+     ]
+    ],
+    "ci95_by_seed": {
+     "B0": {
+      "20261006": [
+       -0.0693859080477687,
+       0.13741841239
+      ],
+      "1": [
+       -0.06796667507358796,
+       0.14328284350417636
+      ],
+      "2": [
+       -0.06771751081843554,
+       0.12972209224977874
+      ],
+      "3": [
+       -0.06463625261532882,
+       0.14769645075685148
+      ],
+      "4": [
+       -0.06987572251013784,
+       0.13313262892071334
+      ]
+     },
+     "U'": {
+      "20261006": [
+       -0.11968023732706824,
+       0.10029010584447459
+      ],
+      "1": [
+       -0.11223221838333321,
+       0.10303701291899292
+      ],
+      "2": [
+       -0.10908764038276246,
+       0.09287180052910374
+      ],
+      "3": [
+       -0.11093324545044893,
+       0.10992748053382426
+      ],
+      "4": [
+       -0.1155575131957766,
+       0.0950940837953065
+      ]
+     },
+     "M": {
+      "20261006": [
+       -0.14831828563814456,
+       0.05088158483501036
+      ],
+      "1": [
+       -0.1386897107777913,
+       0.05608550544085291
+      ],
+      "2": [
+       -0.13120188464360388,
+       0.05040291051293403
+      ],
+      "3": [
+       -0.13666625703308138,
+       0.06205864885434144
+      ],
+      "4": [
+       -0.14394779283806527,
+       0.047999518487140645
+      ]
+     }
+    }
+   },
+   "verdict": "confirmed in substance (intervals differ by seed only)"
+  },
+  {
+   "id": 3,
+   "claim": "union: iJN1463 0.45 against 0.49 to 0.58",
+   "paper": "0.45; 0.49-0.58",
+   "recomputed": {
+    "B0": 0.486,
+    "U'": 0.541,
+    "M": 0.577,
+    "iJN1463": 0.447
+   },
+   "pairwise_union_curated_minus_arm": {
+    "B0": [
+     -0.04,
+     [
+      -0.137,
+      0.062
+     ]
+    ],
+    "U'": [
+     -0.095,
+     [
+      -0.195,
+      0.015
+     ]
+    ],
+    "M": [
+     -0.13,
+     [
+      -0.215,
+      -0.034
+     ]
+    ]
+   },
+   "verdict": "confirmed"
+  },
+  {
+   "id": 4,
+   "claim": "iJN1463 grows in 36 of 43, drafts 28; 28 subset of 36",
+   "recomputed": {
+    "iJN1463": 36,
+    "drafts": 28,
+    "subset": true,
+    "screened_carbon_source_conditions": 57
+   },
+   "verdict": "numbers confirmed; '43 conditions in which P. putida was screened' is wrong (57 screened, 43 mapped to BiGG)"
+  },
+  {
+   "id": 5,
+   "claim": "12 organisms: 33%-75%, median 60%, 150 of 267; U' 155 of 267",
+   "recomputed": {
+    "B0_fraction_min": 0.3333333333333333,
+    "B0_fraction_max": 0.75,
+    "B0_fraction_median": 0.5981818181818181,
+    "B0_grows_total": 150,
+    "U_grows_total": 155,
+    "mapped_total": 267,
+    "conditions_total_screened_in_mapped_media": 321,
+    "B0_share_of_all_screened_in_mapped_media": 0.4672897196261682
+   },
+   "verdict": "numbers confirmed; denominator is mapped conditions, not screened (>=321 screened)"
+  },
+  {
+   "id": 6,
+   "claim": "same protocol, no gap-fill, identity mapping, iML1515 sha256 and source",
+   "recomputed": {
+    "iJN1463": {
+     "params_equal_to_putida_arms": true,
+     "media_table_equal": true,
+     "carbon_table_equal": true,
+     "applied_transforms": [],
+     "identity_mapping_in_matrices": true,
+     "sha256_matches": true,
+     "fitness_rebuilt_from_raw": {
+      "cells": 49364,
+      "nan_pattern_equal": true,
+      "max_abs_diff": 0.0
+     },
+     "software": {
+      "python": "3.13.16",
+      "cobra": "0.32.1",
+      "optlang": "1.9.1",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1"
+     }
+    },
+    "iML1515": {
+     "params_equal_to_putida_arms": true,
+     "media_table_equal": true,
+     "carbon_table_equal": true,
+     "applied_transforms": [],
+     "identity_mapping_in_matrices": true,
+     "sha256_matches": true,
+     "fitness_rebuilt_from_raw": {
+      "cells": 42848,
+      "nan_pattern_equal": true,
+      "max_abs_diff": 0.0
+     },
+     "software": {
+      "python": "3.13.16",
+      "cobra": "0.32.1",
+      "optlang": "1.9.1",
+      "numpy": "2.5.3",
+      "scipy": "1.18.1",
+      "scikit-learn": "1.9.1"
+     }
+    }
+   },
+   "putida_arms_software": {
+    "python": "3.11.15",
+    "cobra": "0.32.1",
+    "optlang": "1.9.1",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0"
+   },
+   "iML1515_github_sha256_equal": true,
+   "verdict": "confirmed; environment differs (Python 3.13.16 vs 3.11.15) and BW25113 deletions not applied to iML1515"
+  },
+  {
+   "id": 7,
+   "claim": "94% = (273+94)/(274+117)",
+   "recomputed": {
+    "to_important": 117,
+    "to_important_agree": 94,
+    "to_unimportant": 274,
+    "to_unimportant_agree": 273,
+    "genes": 53
+   },
+   "share": 0.9386189258312021,
+   "verdict": "confirmed (recomputed from matrices)"
+  },
+  {
+   "id": 8,
+   "claim": "Supplementary Table S1",
+   "recomputed": {
+    "transfer_v1_method": {
+     "created_at": "2026-10-03T09:40:45Z",
+     "commit_time": "2026-10-03T09:40:50+00:00",
+     "external_minus_commit_s": 11.0
+    },
+    "transfer_v1_inputs_panel_A": {
+     "created_at": "2026-10-03T10:11:43Z",
+     "commit_time": "2026-10-03T10:11:43+00:00",
+     "external_minus_commit_s": 7.0
+    },
+    "transfer_v1_replication_plan": {
+     "created_at": "2026-10-03T12:31:09Z",
+     "commit_time": "2026-10-03T12:31:09+00:00",
+     "external_minus_commit_s": 8.0
+    },
+    "transfer_v1_inputs_panel_B": {
+     "created_at": "2026-10-03T13:06:21Z",
+     "commit_time": "2026-10-03T13:06:21+00:00",
+     "external_minus_commit_s": 24.0
+    }
+   },
+   "downloads": {
+    "panel_A_download": [
+     "2026-10-03T10:12:18.565000+00:00",
+     "2026-10-03T10:12:40.500000+00:00"
+    ],
+    "panel_B_download": [
+     "2026-10-03T13:07:00.845000+00:00",
+     "2026-10-03T13:07:19.691000+00:00"
+    ]
+   },
+   "verdict": "confirmed except 13:07:20 (record 13:07:19.691; other times truncated)"
+  },
+  {
+   "id": 9,
+   "claim": "only P. putida and M. tuberculosis have hand-curated models in BiGG",
+   "recomputed": {
+    "url": "http://bigg.ucsd.edu/api/v2/models",
+    "results_count": 108,
+    "study_genera_found": {
+     "Pseudomonas": [
+      "iJN1463",
+      "iJN746"
+     ],
+     "Mycobacterium": [
+      "iEK1008",
+      "iNJ661"
+     ]
+    },
+    "study_genera_not_found": [
+     "Shewanella",
+     "Sinorhizobium",
+     "Bacteroides",
+     "Caulobacter",
+     "Cupriavidus",
+     "Marinobacter",
+     "Dinoroseobacter",
+     "Rhodopseudomonas",
+     "Desulfovibrio",
+     "Dyella",
+     "Echinicola",
+     "Dechlorosoma",
+     "Azospira"
+    ],
+    "verdict": "Of the 16 study organisms only P. putida KT2440 and M. tuberculosis H37Rv have models in BiGG"
+   },
+   "verdict": "confirmed for BiGG; abstract/Limits wording broader than BiGG is wrong (iAH991, iSO783, iGD1575)"
+  },
+  {
+   "id": 10,
+   "claim": "references 17 and 18",
+   "recomputed": [
+    {
+     "doi": "10.1038/nbt.3956",
+     "authors": "Monk JM, Lloyd CJ, Brunk E, Mih N, Sastry A, King Z, Takeuchi R, Nomura W, Zhang Z, Mori H, Feist AM, Palsson BO",
+     "title": "iML1515, a knowledgebase that computes Escherichia coli traits",
+     "journal": "Nature Biotechnology",
+     "year": 2017,
+     "volume": "35",
+     "issue": "10",
+     "pages": "904-908",
+     "paper_entry_matches": true
+    },
+    {
+     "doi": "10.1111/1462-2920.14843",
+     "authors": "Nogales J, Mueller J, Gudmundsson S, Canalejo FJ, Duque E, Monk J, Feist AM, Ramos JL, Niu W, Palsson BO",
+     "title": "High-quality genome-scale metabolic modelling of Pseudomonas putida highlights its broad metabolic capabilities",
+     "journal": "Environmental Microbiology",
+     "issued": "2019-11-11 (online)",
+     "print": "2020-01",
+     "volume": "22",
+     "issue": "1",
+     "pages": "255-269",
+     "paper_entry_matches": true,
+     "naming_note": "The article names its model iJN1462 (project NOTICE models/bigg/NOTICE and docs/evidence/08-quinone-biomass-audit.md; literature uses iJN1462); BiGG distributes it as iJN1463. Publisher page returned 403, so the abstract wording was not re-read."
+    }
+   ],
+   "verdict": "confirmed against Crossref; ref 18 names the model iJN1462"
+  }
+ ],
+ "context": {
+  "own_scope_mcc_putida": {
+   "B0": 0.496,
+   "U'": 0.553,
+   "M": 0.59,
+   "iJN1463": 0.439
+  },
+  "error_overlap_common": {
+   "B0": {
+    "n_cells": 21392,
+    "errors_arm": 1297,
+    "errors_curated": 1533,
+    "errors_both": 763,
+    "share_of_arm_errors_also_curated_errors": 0.5882806476484195,
+    "share_of_curated_errors_also_arm_errors": 0.4977168949771689,
+    "jaccard": 0.3691340106434446,
+    "expected_both_if_independent": 92.94600785340315,
+    "arm_false_important": 380,
+    "arm_missed_important": 917,
+    "curated_false_important": 969,
+    "curated_missed_important": 564,
+    "missed_by_both": 469,
+    "false_important_by_both": 294,
+    "observed_important_cells": 1710,
+    "genes_with_any_error_arm": 175,
+    "genes_with_any_error_curated": 184,
+    "genes_with_errors_in_both": 160
+   },
+   "U'": {
+    "n_cells": 21392,
+    "errors_arm": 1190,
+    "errors_curated": 1533,
+    "errors_both": 710,
+    "share_of_arm_errors_also_curated_errors": 0.5966386554621849,
+    "share_of_curated_errors_also_arm_errors": 0.46314416177429873,
+    "jaccard": 0.35270740188772975,
+    "expected_both_if_independent": 85.27814136125654,
+    "arm_false_important": 326,
+    "arm_missed_important": 864,
+    "curated_false_important": 969,
+    "curated_missed_important": 564,
+    "missed_by_both": 416,
+    "false_important_by_both": 294,
+    "observed_important_cells": 1710,
+    "genes_with_any_error_arm": 173,
+    "genes_with_any_error_curated": 184,
+    "genes_with_errors_in_both": 160
+   },
+   "M": {
+    "n_cells": 21420,
+    "errors_arm": 1118,
+    "errors_curated": 1533,
+    "errors_both": 731,
+    "share_of_arm_errors_also_curated_errors": 0.6538461538461539,
+    "share_of_curated_errors_also_arm_errors": 0.47684279191128504,
+    "jaccard": 0.3807291666666667,
+    "expected_both_if_independent": 80.01372549019608,
+    "arm_false_important": 348,
+    "arm_missed_important": 770,
+    "curated_false_important": 969,
+    "curated_missed_important": 564,
+    "missed_by_both": 415,
+    "false_important_by_both": 316,
+    "observed_important_cells": 1711,
+    "genes_with_any_error_arm": 170,
+    "genes_with_any_error_curated": 184,
+    "genes_with_errors_in_both": 160
+   }
+  },
+  "union_decomposition_Uprime_vs_iJN1463": {
+   "curated_only_genes_curated_calls": {
+    "n_genes": 384,
+    "predicted_important": 1288,
+    "confirmed": 53,
+    "observed_important_cells": 107,
+    "missed": 54
+   },
+   "draft_only_genes_draft_calls": {
+    "n_genes": 274,
+    "predicted_important": 80,
+    "confirmed": 0,
+    "observed_important_cells": 17,
+    "missed": 17
+   },
+   "shared_genes_curated_calls": {
+    "n_genes": 764,
+    "predicted_important": 2115,
+    "confirmed": 1146,
+    "observed_important_cells": 1710,
+    "missed": 564
+   },
+   "shared_genes_draft_calls": {
+    "n_genes": 764,
+    "predicted_important": 1172,
+    "confirmed": 846,
+    "observed_important_cells": 1710,
+    "missed": 864
+   }
+  },
+  "curated_by_condition_set": {
+   "own_genes_28_shared_conditions": {
+    "mcc": 0.44075737064435533,
+    "confusion": {
+     "tp": 1199,
+     "tn": 28123,
+     "fp": 2204,
+     "fn": 618,
+     "n": 32144
+    }
+   },
+   "own_genes_8_extra_conditions": {
+    "n_conditions": 8,
+    "mcc": 0.4351945923940491,
+    "confusion": {
+     "tp": 331,
+     "tn": 8018,
+     "fp": 692,
+     "fn": 143,
+     "n": 9184
+    },
+    "ci95": [
+     0.3622114520611607,
+     0.5055740534998339
+    ]
+   }
+  },
+  "replicate_agreement": {
+   "replicate_agreement_Keio_iML1515_scope": {
+    "mcc_all_replicate_pairs": 0.941063133627637,
+    "by_set": {
+     "same_set": {
+      "pairs": 44,
+      "mcc": 0.9471076196367174,
+      "cells": 58916
+     },
+     "different_set": {
+      "pairs": 4,
+      "mcc": 0.8794503883059256,
+      "cells": 5356
+     }
+    }
+   },
+   "replicate_agreement_Putida_764_genes_28_conditions": {
+    "mcc_all_replicate_pairs": 0.9030784102857881,
+    "by_set": {
+     "same_set": {
+      "pairs": 34,
+      "mcc": 0.9275137709135762,
+      "cells": 25976
+     },
+     "different_set": {
+      "pairs": 16,
+      "mcc": 0.8462948495902111,
+      "cells": 12224
+     }
+    }
+   }
+  },
+  "equivalence": {
+   "iJN1463_minus_B0": {
+    "point": 0.03473387740014644,
+    "ci90": [
+     -0.05075508702581939,
+     0.1252357830362937
+    ],
+    "ci95": [
+     -0.06750731388181098,
+     0.14348303889291508
+    ],
+    "smallest_equivalence_margin_90": 0.1252357830362937,
+    "share_of_resamples_B_better": 0.749
+   },
+   "iJN1463_minus_U'": {
+    "point": -0.005685202900202135,
+    "ci90": [
+     -0.09571261282613305,
+     0.08568268172463094
+    ],
+    "ci95": [
+     -0.11099766991094885,
+     0.10681771892048603
+    ],
+    "smallest_equivalence_margin_90": 0.09571261282613305,
+    "share_of_resamples_B_better": 0.4605
+   },
+   "iJN1463_minus_M": {
+    "point": -0.04239955688142616,
+    "ci90": [
+     -0.1274356907429964,
+     0.03800906251464865
+    ],
+    "ci95": [
+     -0.1421501717023695,
+     0.04850182090632669
+    ],
+    "smallest_equivalence_margin_90": 0.1274356907429964,
+    "share_of_resamples_B_better": 0.2045
+   },
+   "U'_minus_B0_on_764_shared_genes": {
+    "point": 0.040419080300348575,
+    "ci90": [
+     0.009140937849376026,
+     0.0770251103177356
+    ],
+    "ci95": [
+     0.0074346198085895685,
+     0.08312718499019581
+    ],
+    "smallest_equivalence_margin_90": 0.0770251103177356,
+    "share_of_resamples_B_better": 0.9825
+   },
+   "M_minus_B0_on_764_shared_genes": {
+    "point": 0.07711503680107823,
+    "ci90": [
+     0.03460985037338113,
+     0.12551507401809056
+    ],
+    "ci95": [
+     0.027954658043812607,
+     0.1360853241636294
+    ],
+    "smallest_equivalence_margin_90": 0.12551507401809056,
+    "share_of_resamples_B_better": 1.0
+   }
+  },
+  "late_H3_arms": "MR1 12:28:54, Cola 12:29:12, RPal_CGA009 12:29:25 (M_noIonR6), after panel A analysis, before the 12:31:09 plan lock"
+ }
+}

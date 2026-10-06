@@ -1,0 +1,154 @@
+{
+ "manifests": {
+  "transfer_v1_method": {
+   "created_at": "2026-10-03T09:40:45Z",
+   "commit": "e43a3c248470ca8a343bfa9cd91382cb903fec70",
+   "commit_time": "2026-10-03T09:40:50+00:00",
+   "table_s1": "09:40:45",
+   "table_s1_matches_created_at": true,
+   "external": "2026-10-03T09:41:01Z",
+   "external_minus_created_s": 16.0,
+   "external_minus_commit_s": 11.0,
+   "commit_minus_created_s": 5.0,
+   "verify": {
+    "n_files": 190,
+    "at_commit_mismatch": [],
+    "at_commit_untracked": [],
+    "at_head_mismatch": [],
+    "worktree_mismatch": []
+   }
+  },
+  "transfer_v1_inputs_panel_A": {
+   "created_at": "2026-10-03T10:11:43Z",
+   "commit": "d15bbed3f20b29401db8a2f08b4e02700ad93040",
+   "commit_time": "2026-10-03T10:11:43+00:00",
+   "table_s1": "10:11:43",
+   "table_s1_matches_created_at": true,
+   "external": "2026-10-03T10:11:50Z",
+   "external_minus_created_s": 7.0,
+   "external_minus_commit_s": 7.0,
+   "commit_minus_created_s": 0.0,
+   "verify": {
+    "n_files": 28,
+    "at_commit_mismatch": [],
+    "at_commit_untracked": [],
+    "at_head_mismatch": [],
+    "worktree_mismatch": []
+   }
+  },
+  "transfer_v1_replication_plan": {
+   "created_at": "2026-10-03T12:31:09Z",
+   "commit": "19dc96cb3465baea9239bbeacfc655c30a461a2a",
+   "commit_time": "2026-10-03T12:31:09+00:00",
+   "table_s1": "12:31:09",
+   "table_s1_matches_created_at": true,
+   "external": "2026-10-03T12:31:17Z",
+   "external_minus_created_s": 8.0,
+   "external_minus_commit_s": 8.0,
+   "commit_minus_created_s": 0.0,
+   "verify": {
+    "n_files": 69,
+    "at_commit_mismatch": [],
+    "at_commit_untracked": [],
+    "at_head_mismatch": [
+     "data/studies/transfer_v1_replication/decisions_noIonR6/filter_report.json"
+    ],
+    "worktree_mismatch": []
+   }
+  },
+  "transfer_v1_inputs_panel_B": {
+   "created_at": "2026-10-03T13:06:21Z",
+   "commit": "d790b275f420c77760441ac8363695c146a45827",
+   "commit_time": "2026-10-03T13:06:21+00:00",
+   "table_s1": "13:06:21",
+   "table_s1_matches_created_at": true,
+   "external": "2026-10-03T13:06:45Z",
+   "external_minus_created_s": 24.0,
+   "external_minus_commit_s": 24.0,
+   "commit_minus_created_s": 0.0,
+   "verify": {
+    "n_files": 62,
+    "at_commit_mismatch": [],
+    "at_commit_untracked": [],
+    "at_head_mismatch": [],
+    "worktree_mismatch": []
+   }
+  }
+ },
+ "downloads": {
+  "panel_A_download": {
+   "n_files": 5,
+   "first_start": "2026-10-03T10:12:18.565000+00:00",
+   "last_finish": "2026-10-03T10:12:40.500000+00:00",
+   "files_hash_ok": true,
+   "hash_failures": [],
+   "record_commit_time": "2026-10-03T10:13:27+00:00",
+   "table_s1": [
+    "10:12:18",
+    "10:12:40"
+   ],
+   "fit_files_first_commit": [
+    "2026-10-03T10:13:27+00:00"
+   ]
+  },
+  "panel_B_download": {
+   "n_files": 5,
+   "first_start": "2026-10-03T13:07:00.845000+00:00",
+   "last_finish": "2026-10-03T13:07:19.691000+00:00",
+   "files_hash_ok": true,
+   "hash_failures": [],
+   "record_commit_time": "2026-10-03T13:07:51+00:00",
+   "table_s1": [
+    "13:07:00",
+    "13:07:20"
+   ],
+   "fit_files_first_commit": [
+    "2026-10-03T13:07:51+00:00"
+   ]
+  }
+ },
+ "runs": {
+  "evaluation_panel_A": {
+   "n_arm_cards": 52,
+   "first": "2026-10-03T10:13:44+00:00",
+   "last": "2026-10-03T12:29:25+00:00",
+   "all_after_first_download": true,
+   "all_after_last_download": true
+  },
+  "evaluation_panel_B": {
+   "n_arm_cards": 55,
+   "first": "2026-10-03T13:08:08+00:00",
+   "last": "2026-10-03T13:46:06+00:00",
+   "all_after_first_download": true,
+   "all_after_last_download": true
+  },
+  "development": {
+   "n_arm_cards": 41,
+   "first": "2026-10-03T07:55:37+00:00",
+   "last": "2026-10-03T12:28:54+00:00"
+  }
+ },
+ "replication_plan_head_diff": {
+  "data/studies/transfer_v1_replication/decisions_noIonR6/filter_report.json": {
+   "keys_old": 9,
+   "keys_new": 14,
+   "old_keys_changed": [],
+   "old_keys_removed": [],
+   "new_top_level_keys": [
+    "Caulo",
+    "Cup4G11",
+    "Marino",
+    "PV4",
+    "SB2B"
+   ],
+   "commits_touching_after_plan": "23d4291 2026-10-03T13:06:21+00:00 Panel B inputs prepared under the frozen v1 rules (no outcome downloaded)"
+  }
+ },
+ "order": {
+  "method_lock_before_panel_A_lock": true,
+  "panel_A_lock_before_panel_A_download": true,
+  "plan_lock_before_panel_B_lock": true,
+  "panel_B_lock_before_panel_B_download": true,
+  "external_within_30s_of_commit": true
+ }
+}

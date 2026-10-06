@@ -106,6 +106,38 @@ def main() -> None:
                                      "n_observations": int(np.isfinite(fit).sum()), "mcc": m,
                                      "share_of_gap_closed": ({"U'": (m["U'"] - m["B0"]) / gap, "M": (m["M"] - m["B0"]) / gap}
                                                              if gap > 0 else None)}
+                # Error overlap on common genes (U' vs curated) and the curated model's calls on genes only it contains.
+                from gembench.comparison import aligned_pairs
+                su, sc, fitc, cgenes, cgrows, _ = aligned_pairs(arms["U'"], ref)
+                ok = np.isfinite(su) & np.isfinite(sc) & np.isfinite(fitc)
+                obs = np.where(ok, fitc <= ft, False)
+                wrong_u = ok & ((su < st) != obs)
+                wrong_c = ok & ((sc < st) != obs)
+                n_ok = int(ok.sum())
+                entry["error_overlap_common_genes_Uprime_vs_curated"] = {
+                    "n_genes": len(cgenes), "n_conditions": len(cgrows), "n_observations": n_ok,
+                    "wrong_Uprime": int(wrong_u.sum()), "wrong_curated": int(wrong_c.sum()), "wrong_both": int((wrong_u & wrong_c).sum()),
+                    "expected_both_if_independent": float(wrong_u.sum() * wrong_c.sum() / n_ok) if n_ok else None}
+                draft_genes = set().union(*[set(arms[n]["browser_genes"]) for n, _ in ARMS])
+                only = [g for g in ref["browser_genes"] if g not in draft_genes]
+                gi = {g: i for i, g in enumerate(ref["browser_genes"])}
+                cols = [j for j, w in enumerate(ref["wt_growth"]) if np.isfinite(w) and w >= st
+                        and ref["conditions"][j] in set(cgrows)]
+                sim_o = ref["sim_growth"][np.ix_([gi[g] for g in only], cols)]
+                fit_o = ref["fitness"][np.ix_([gi[g] for g in only], cols)]
+                ok_o = np.isfinite(sim_o) & np.isfinite(fit_o)
+                imp = ok_o & (sim_o < st)
+                entry["curated_only_genes"] = {"n_genes": len(only), "n_conditions": len(cols),
+                                               "important_calls": int(imp.sum()),
+                                               "important_calls_confirmed": int((imp & (fit_o <= ft)).sum())}
+                # Why models do not grow: conditions without growth that lack an exchange reaction for the carbon source.
+                import pandas as pd
+                gaps = {}
+                for name, d in list(arm_dirs.items()) + [(label, ref_dir)]:
+                    ct = pd.read_table(os.path.join(d, "conditions.tsv"), keep_default_na=False)
+                    no = ct[~ct["wt_grows"].astype(str).str.lower().eq("true")]
+                    gaps[name] = {"no_growth": int(len(no)), "no_growth_missing_exchange": int((no["missing_exchanges"].astype(str) != "").sum())}
+                entry["no_growth_conditions"] = gaps
                 entry["pairwise_curated_minus_arm"] = {}
                 for n in names[:-1]:
                     un = TC.union_delta(arms[n], ref, n_boot=args.n_boot)

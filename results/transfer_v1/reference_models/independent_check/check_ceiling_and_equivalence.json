@@ -1,0 +1,175 @@
+{
+ "n_boot": 2000,
+ "seed": 7,
+ "replicate_agreement_Keio_iML1515_scope": {
+  "conditions_with_replicates": 30,
+  "conditions_scored": 32,
+  "mcc_all_replicate_pairs": 0.941063133627637,
+  "cells_all_pairs": 64272,
+  "mcc_first_pair_per_condition": 0.9379685789975881,
+  "cells_first_pair": 40170,
+  "by_set": {
+   "same_set": {
+    "pairs": 44,
+    "mcc": 0.9471076196367174,
+    "cells": 58916
+   },
+   "different_set": {
+    "pairs": 4,
+    "mcc": 0.8794503883059256,
+    "cells": 5356
+   }
+  },
+  "replicate_counts": [
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   3,
+   3,
+   6
+  ]
+ },
+ "replicate_agreement_Putida_764_genes_28_conditions": {
+  "conditions_with_replicates": 23,
+  "conditions_scored": 28,
+  "mcc_all_replicate_pairs": 0.9030784102857881,
+  "cells_all_pairs": 38200,
+  "mcc_first_pair_per_condition": 0.9280855545015121,
+  "cells_first_pair": 17572,
+  "by_set": {
+   "same_set": {
+    "pairs": 34,
+    "mcc": 0.9275137709135762,
+    "cells": 25976
+   },
+   "different_set": {
+    "pairs": 16,
+    "mcc": 0.8462948495902111,
+    "cells": 12224
+   }
+  },
+  "replicate_counts": [
+   1,
+   1,
+   1,
+   1,
+   1,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   3,
+   3,
+   3,
+   3,
+   4,
+   6
+  ]
+ },
+ "equivalence": {
+  "iJN1463_minus_B0": {
+   "point": 0.03473387740014644,
+   "ci90": [
+    -0.05075508702581939,
+    0.1252357830362937
+   ],
+   "ci95": [
+    -0.06750731388181098,
+    0.14348303889291508
+   ],
+   "smallest_equivalence_margin_90": 0.1252357830362937,
+   "share_of_resamples_B_better": 0.749
+  },
+  "iJN1463_minus_U'": {
+   "point": -0.005685202900202135,
+   "ci90": [
+    -0.09571261282613305,
+    0.08568268172463094
+   ],
+   "ci95": [
+    -0.11099766991094885,
+    0.10681771892048603
+   ],
+   "smallest_equivalence_margin_90": 0.09571261282613305,
+   "share_of_resamples_B_better": 0.4605
+  },
+  "iJN1463_minus_M": {
+   "point": -0.04239955688142616,
+   "ci90": [
+    -0.1274356907429964,
+    0.03800906251464865
+   ],
+   "ci95": [
+    -0.1421501717023695,
+    0.04850182090632669
+   ],
+   "smallest_equivalence_margin_90": 0.1274356907429964,
+   "share_of_resamples_B_better": 0.2045
+  },
+  "U'_minus_B0_on_764_shared_genes": {
+   "point": 0.040419080300348575,
+   "ci90": [
+    0.009140937849376026,
+    0.0770251103177356
+   ],
+   "ci95": [
+    0.0074346198085895685,
+    0.08312718499019581
+   ],
+   "smallest_equivalence_margin_90": 0.0770251103177356,
+   "share_of_resamples_B_better": 0.9825
+  },
+  "M_minus_B0_on_764_shared_genes": {
+   "point": 0.07711503680107823,
+   "ci90": [
+    0.03460985037338113,
+    0.12551507401809056
+   ],
+   "ci95": [
+    0.027954658043812607,
+    0.1360853241636294
+   ],
+   "smallest_equivalence_margin_90": 0.12551507401809056,
+   "share_of_resamples_B_better": 1.0
+  }
+ }
+}

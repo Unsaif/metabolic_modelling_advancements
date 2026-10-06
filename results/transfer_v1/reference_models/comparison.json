@@ -51,6 +51,39 @@
     },
     "share_of_gap_closed": null
    },
+   "error_overlap_common_genes_Uprime_vs_curated": {
+    "n_genes": 764,
+    "n_conditions": 28,
+    "n_observations": 21392,
+    "wrong_Uprime": 1190,
+    "wrong_curated": 1533,
+    "wrong_both": 710,
+    "expected_both_if_independent": 85.27814136125654
+   },
+   "curated_only_genes": {
+    "n_genes": 383,
+    "n_conditions": 28,
+    "important_calls": 1287,
+    "important_calls_confirmed": 52
+   },
+   "no_growth_conditions": {
+    "B0": {
+     "no_growth": 15,
+     "no_growth_missing_exchange": 10
+    },
+    "U'": {
+     "no_growth": 15,
+     "no_growth_missing_exchange": 10
+    },
+    "M": {
+     "no_growth": 15,
+     "no_growth_missing_exchange": 10
+    },
+    "iJN1463": {
+     "no_growth": 7,
+     "no_growth_missing_exchange": 7
+    }
+   },
    "pairwise_curated_minus_arm": {
     "B0": {
      "union": {

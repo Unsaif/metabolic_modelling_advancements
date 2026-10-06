@@ -1,0 +1,450 @@
+{
+ "definitions": "Independent check of the hand-curated reference comparison in Paper 1 (docs/paper/paper1-draft.md).",
+ "n_boot": 1000,
+ "seeds": [
+  20261006,
+  1,
+  2,
+  3,
+  4
+ ],
+ "thresholds": {
+  "growth": 0.001,
+  "fitness": -2.0
+ },
+ "cells_with_fitness_exactly_at_threshold": {
+  "B0": 0,
+  "U'": 0,
+  "M": 0,
+  "iJN1463": 0,
+  "iML1515": 0
+ },
+ "check1_iML1515": {
+  "n_conditions_mapped": 32,
+  "n_conditions_wt_grows": 32,
+  "n_genes": 1339,
+  "n_cells": 42848,
+  "mcc_le": 0.5863313832288578,
+  "mcc_lt": 0.5863313832288578,
+  "confusion_le": {
+   "tp": 2012,
+   "tn": 38294,
+   "fp": 872,
+   "fn": 1670,
+   "n": 42848
+  },
+  "mcc_ci95_gene_bootstrap": [
+   0.5132207043518093,
+   0.6524866426257958
+  ],
+  "card_mcc": 0.5863313832288578,
+  "card_confusion_(positive=no defect)": {
+   "tp": 38294,
+   "tn": 2012,
+   "fp": 1670,
+   "fn": 872
+  },
+  "wt_growth_min": 0.15309063711203075
+ },
+ "own_scope_mcc_putida": {
+  "B0": {
+   "n_genes": 1038,
+   "n_conditions": 28,
+   "mcc_le": 0.49572851305159227,
+   "mcc_lt": 0.49572851305159227,
+   "card_mcc": 0.49572851305159227
+  },
+  "U'": {
+   "n_genes": 1038,
+   "n_conditions": 28,
+   "mcc_le": 0.5531090772976097,
+   "mcc_lt": 0.5531090772976097,
+   "card_mcc": 0.5531090772976097
+  },
+  "M": {
+   "n_genes": 1040,
+   "n_conditions": 28,
+   "mcc_le": 0.5901527631792,
+   "mcc_lt": 0.5901527631792,
+   "card_mcc": 0.5901527631792
+  },
+  "iJN1463": {
+   "n_genes": 1148,
+   "n_conditions": 36,
+   "mcc_le": 0.43928526513569544,
+   "mcc_lt": 0.43928526513569544,
+   "card_mcc": 0.43928526513569544
+  }
+ },
+ "check4_coverage": {
+  "per_model": {
+   "B0": {
+    "mapped": 43,
+    "grows": 28,
+    "card": {
+     "n_conditions_mapped": 43,
+     "n_conditions_wt_grows": 28,
+     "conditions_with_absent_exchange": 10
+    }
+   },
+   "U'": {
+    "mapped": 43,
+    "grows": 28,
+    "card": {
+     "n_conditions_mapped": 43,
+     "n_conditions_wt_grows": 28,
+     "conditions_with_absent_exchange": 10
+    }
+   },
+   "M": {
+    "mapped": 43,
+    "grows": 28,
+    "card": {
+     "n_conditions_mapped": 43,
+     "n_conditions_wt_grows": 28,
+     "conditions_with_absent_exchange": 10
+    }
+   },
+   "iJN1463": {
+    "mapped": 43,
+    "grows": 36,
+    "card": {
+     "n_conditions_mapped": 43,
+     "n_conditions_wt_grows": 36,
+     "conditions_with_absent_exchange": 7
+    }
+   }
+  },
+  "draft_growth_sets_identical_B0_U_M": true,
+  "draft_28_subset_of_curated_36": true,
+  "curated_only_conditions": [
+   "5-Aminovaleric acid | MOPS minimal media_noCarbon",
+   "D-Galacturonic Acid monohydrate | MOPS minimal media_noCarbon",
+   "D-Glucuronic Acid | MOPS minimal media_noCarbon",
+   "D-Lysine | MOPS minimal media_noCarbon",
+   "Ferulic Acid | MOPS minimal media_noCarbon",
+   "Hexanoic acid | MOPS minimal media_noCarbon",
+   "Hydroxy-L-Proline | MOPS minimal media_noCarbon",
+   "L-Leucine | MOPS minimal media_noCarbon"
+  ],
+  "draft_only_conditions": [],
+  "neither_grows": [
+   "1,2-Propanediol | MOPS minimal media_noCarbon",
+   "3-Methyl-2-Oxobutanoic Acid | MOPS minimal media_noCarbon",
+   "3-methyl-1-butanol | MOPS minimal media_noCarbon",
+   "3-methyl-2-oxopentanoic acid | MOPS minimal media_noCarbon",
+   "4-Methyl-2-oxovaleric acid | MOPS minimal media_noCarbon",
+   "Butanol | MOPS minimal media_noCarbon",
+   "Sodium butyrate | MOPS minimal media_noCarbon"
+  ],
+  "draft_nongrowth_with_absent_exchange": 10,
+  "curated_nongrowth_with_absent_exchange": 7,
+  "conditions_total_in_card_counts": {
+   "B0": 57,
+   "U'": 57,
+   "M": 57,
+   "iJN1463": 57
+  }
+ },
+ "check2_common": {
+  "B0": {
+   "n_common_genes": 764,
+   "n_conditions_both_grow": 28,
+   "n_cells": 21392,
+   "fitness_cells_cross_checked": 21392,
+   "mcc_arm_le": 0.5294351515447147,
+   "mcc_curated_le": 0.5641690289448611,
+   "mcc_arm_lt": 0.5294351515447147,
+   "mcc_curated_lt": 0.5641690289448611,
+   "curated_minus_arm": 0.03473387740014644,
+   "ci95_by_seed": {
+    "20261006": [
+     -0.0693859080477687,
+     0.13741841239
+    ],
+    "1": [
+     -0.06796667507358796,
+     0.14328284350417636
+    ],
+    "2": [
+     -0.06771751081843554,
+     0.12972209224977874
+    ],
+    "3": [
+     -0.06463625261532882,
+     0.14769645075685148
+    ],
+    "4": [
+     -0.06987572251013784,
+     0.13313262892071334
+    ]
+   },
+   "ci95": [
+    -0.0693859080477687,
+    0.13741841239
+   ]
+  },
+  "U'": {
+   "n_common_genes": 764,
+   "n_conditions_both_grow": 28,
+   "n_cells": 21392,
+   "fitness_cells_cross_checked": 21392,
+   "mcc_arm_le": 0.5698542318450632,
+   "mcc_curated_le": 0.5641690289448611,
+   "mcc_arm_lt": 0.5698542318450632,
+   "mcc_curated_lt": 0.5641690289448611,
+   "curated_minus_arm": -0.005685202900202135,
+   "ci95_by_seed": {
+    "20261006": [
+     -0.11968023732706824,
+     0.10029010584447459
+    ],
+    "1": [
+     -0.11223221838333321,
+     0.10303701291899292
+    ],
+    "2": [
+     -0.10908764038276246,
+     0.09287180052910374
+    ],
+    "3": [
+     -0.11093324545044893,
+     0.10992748053382426
+    ],
+    "4": [
+     -0.1155575131957766,
+     0.0950940837953065
+    ]
+   },
+   "ci95": [
+    -0.11968023732706824,
+    0.10029010584447459
+   ]
+  },
+  "M": {
+   "n_common_genes": 765,
+   "n_conditions_both_grow": 28,
+   "n_cells": 21420,
+   "fitness_cells_cross_checked": 21420,
+   "mcc_arm_le": 0.6068284702857376,
+   "mcc_curated_le": 0.5644289134043114,
+   "mcc_arm_lt": 0.6068284702857376,
+   "mcc_curated_lt": 0.5644289134043114,
+   "curated_minus_arm": -0.04239955688142616,
+   "ci95_by_seed": {
+    "20261006": [
+     -0.14831828563814456,
+     0.05088158483501036
+    ],
+    "1": [
+     -0.1386897107777913,
+     0.05608550544085291
+    ],
+    "2": [
+     -0.13120188464360388,
+     0.05040291051293403
+    ],
+    "3": [
+     -0.13666625703308138,
+     0.06205864885434144
+    ],
+    "4": [
+     -0.14394779283806527,
+     0.047999518487140645
+    ]
+   },
+   "ci95": [
+    -0.14831828563814456,
+    0.05088158483501036
+   ]
+  }
+ },
+ "common_all_four": {
+  "n_genes": 764,
+  "n_conditions": 28,
+  "mcc": {
+   "B0": 0.5294351515447147,
+   "U'": 0.5698542318450632,
+   "M": 0.6065501883457929,
+   "iJN1463": 0.5641690289448611
+  }
+ },
+ "check3_union": {
+  "four_way": {
+   "union_genes": 1423,
+   "conditions_all_grow": 28,
+   "n_cells": 39844,
+   "mcc": {
+    "B0": 0.48648392979609495,
+    "U'": 0.5412453645509097,
+    "M": 0.5770786378164985,
+    "iJN1463": 0.4466903810119367
+   },
+   "mcc_lt": {
+    "B0": 0.48648392979609495,
+    "U'": 0.5412453645509097,
+    "M": 0.5770786378164985,
+    "iJN1463": 0.4466903810119367
+   }
+  },
+  "pairwise": {
+   "B0": {
+    "union_genes": 1422,
+    "conditions": 28,
+    "mcc_arm": 0.4864693384296674,
+    "mcc_curated": 0.4466654206034657,
+    "curated_minus_arm": -0.039803917826201685,
+    "ci95": [
+     -0.1369700884086176,
+     0.06210283122781168
+    ]
+   },
+   "U'": {
+    "union_genes": 1422,
+    "conditions": 28,
+    "mcc_arm": 0.5412328978403135,
+    "mcc_curated": 0.4466654206034657,
+    "curated_minus_arm": -0.09456747723684777,
+    "ci95": [
+     -0.19480232962476043,
+     0.015373485408755803
+    ]
+   },
+   "M": {
+    "union_genes": 1423,
+    "conditions": 28,
+    "mcc_arm": 0.5770786378164985,
+    "mcc_curated": 0.4466903810119367,
+    "curated_minus_arm": -0.1303882568045618,
+    "ci95": [
+     -0.2152518701608808,
+     -0.034000016526562434
+    ]
+   }
+  }
+ },
+ "union_decomposition_Uprime_vs_iJN1463": {
+  "curated_only_genes_curated_calls": {
+   "n_genes": 384,
+   "predicted_important": 1288,
+   "confirmed": 53,
+   "observed_important_cells": 107,
+   "missed": 54
+  },
+  "draft_only_genes_draft_calls": {
+   "n_genes": 274,
+   "predicted_important": 80,
+   "confirmed": 0,
+   "observed_important_cells": 17,
+   "missed": 17
+  },
+  "shared_genes_curated_calls": {
+   "n_genes": 764,
+   "predicted_important": 2115,
+   "confirmed": 1146,
+   "observed_important_cells": 1710,
+   "missed": 564
+  },
+  "shared_genes_draft_calls": {
+   "n_genes": 764,
+   "predicted_important": 1172,
+   "confirmed": 846,
+   "observed_important_cells": 1710,
+   "missed": 864
+  }
+ },
+ "curated_by_condition_set": {
+  "own_genes_28_shared_conditions": {
+   "mcc": 0.44075737064435533,
+   "confusion": {
+    "tp": 1199,
+    "tn": 28123,
+    "fp": 2204,
+    "fn": 618,
+    "n": 32144
+   }
+  },
+  "own_genes_8_extra_conditions": {
+   "n_conditions": 8,
+   "mcc": 0.4351945923940491,
+   "confusion": {
+    "tp": 331,
+    "tn": 8018,
+    "fp": 692,
+    "fn": 143,
+    "n": 9184
+   },
+   "ci95": [
+    0.3622114520611607,
+    0.5055740534998339
+   ]
+  }
+ },
+ "error_overlap_common": {
+  "B0": {
+   "n_cells": 21392,
+   "errors_arm": 1297,
+   "errors_curated": 1533,
+   "errors_both": 763,
+   "share_of_arm_errors_also_curated_errors": 0.5882806476484195,
+   "share_of_curated_errors_also_arm_errors": 0.4977168949771689,
+   "jaccard": 0.3691340106434446,
+   "expected_both_if_independent": 92.94600785340315,
+   "arm_false_important": 380,
+   "arm_missed_important": 917,
+   "curated_false_important": 969,
+   "curated_missed_important": 564,
+   "missed_by_both": 469,
+   "false_important_by_both": 294,
+   "observed_important_cells": 1710,
+   "genes_with_any_error_arm": 175,
+   "genes_with_any_error_curated": 184,
+   "genes_with_errors_in_both": 160
+  },
+  "U'": {
+   "n_cells": 21392,
+   "errors_arm": 1190,
+   "errors_curated": 1533,
+   "errors_both": 710,
+   "share_of_arm_errors_also_curated_errors": 0.5966386554621849,
+   "share_of_curated_errors_also_arm_errors": 0.46314416177429873,
+   "jaccard": 0.35270740188772975,
+   "expected_both_if_independent": 85.27814136125654,
+   "arm_false_important": 326,
+   "arm_missed_important": 864,
+   "curated_false_important": 969,
+   "curated_missed_important": 564,
+   "missed_by_both": 416,
+   "false_important_by_both": 294,
+   "observed_important_cells": 1710,
+   "genes_with_any_error_arm": 173,
+   "genes_with_any_error_curated": 184,
+   "genes_with_errors_in_both": 160
+  },
+  "M": {
+   "n_cells": 21420,
+   "errors_arm": 1118,
+   "errors_curated": 1533,
+   "errors_both": 731,
+   "share_of_arm_errors_also_curated_errors": 0.6538461538461539,
+   "share_of_curated_errors_also_arm_errors": 0.47684279191128504,
+   "jaccard": 0.3807291666666667,
+   "expected_both_if_independent": 80.01372549019608,
+   "arm_false_important": 348,
+   "arm_missed_important": 770,
+   "curated_false_important": 969,
+   "curated_missed_important": 564,
+   "missed_by_both": 415,
+   "false_important_by_both": 316,
+   "observed_important_cells": 1711,
+   "genes_with_any_error_arm": 170,
+   "genes_with_any_error_curated": 184,
+   "genes_with_errors_in_both": 160
+  }
+ },
+ "B0_to_Uprime_changes_on_four_way_common": {
+  "n_cells_changed": 109,
+  "now_agree_with_curated": 55,
+  "now_agree_with_data": 108
+ }
+}
