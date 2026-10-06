@@ -1,0 +1,78 @@
+hpo_id	hpo_term	decision	vmh_metabolite	biofluid	direction	readout	reason
+HP:0003535	3-Methylglutaconic aciduria	include	3mglutac	urine	Increased	EX_3mglutac[u]	
+HP:0003344	3-Methylglutaric aciduria	include	3mglutr	urine	Increased	EX_3mglutr[u]	
+HP:0033111	3-hydroxyisovaleric aciduria	include	3hivac	urine	Increased	EX_3hivac[u]	Harvey also lists the same compound as CE2028; 3hivac is the identifier the lab table uses
+HP:0003161	4-Hydroxyphenylpyruvic aciduria	include	34hpp	urine	Increased	EX_34hpp[u]	
+HP:0003607	4-hydroxyphenylacetic aciduria	include	4hphac	urine	Increased	EX_4hphac[u]	
+HP:0003355	Aminoaciduria	exclude					class of compounds, not one metabolite
+HP:0025630	Argininosuccinic aciduria	include	argsuc	urine	Increased	EX_argsuc[u]	
+HP:0032397	Citrullinuria	include	citr_L	urine	Increased	EX_citr_L[u]	
+HP:0003131	Cystinuria	exclude					L-cystine has no blood or urine form in Harvey (organ cytosols only)
+HP:0025455	Decreased CSF 5-hydroxyindolacetic acid concentration	include	5hoxindoa	csf	Decreased	DM_5hoxindoa[csf]	
+HP:0034597	Decreased CSF creatinine concentration	include	crtn	csf	Decreased	DM_crtn[csf]	
+HP:0003785	Decreased CSF homovanillic acid concentration	include	homoval	csf	Decreased	DM_homoval[csf]	
+HP:0004319	Decreased circulating aldosterone level	include	aldstrn	blood	Decreased	DM_aldstrn[bc]	
+HP:0012101	Decreased serum creatinine	include	crtn	blood	Decreased	DM_crtn[bc]	
+HP:6000748	Decreased urinary creatine level	include	creat	urine	Decreased	EX_creat[u]	
+HP:6000115	Decreased urine creatinine level	include	crtn	urine	Decreased	EX_crtn[u]	
+HP:0034888	Decreased urine guanidinoacetic acid level	include	gudac	urine	Decreased	EX_gudac[u]	
+HP:0008339	Diaminoaciduria	exclude					class of compounds, not one metabolite
+HP:0003236	Elevated circulating creatine kinase concentration	exclude					enzyme, not a metabolite
+HP:0002910	Elevated circulating hepatic transaminase concentration	exclude					enzymes, not metabolites
+HP:0033447	Elevated circulating isovalerylcarnitine concentration	include	ivcrn	blood	Increased	DM_ivcrn[bc]	
+HP:0011966	Elevated plasma citrulline	include	citr_L	blood	Increased	DM_citr_L[bc]	
+HP:0025436	Elevated serum 11-deoxycortisol	include	11docrtsl	blood	Increased	DM_11docrtsl[bc]	11-deoxycortisol is cortexolone (11docrtsl), not deoxycorticosterone (11docrtstrn)
+HP:0031962	Elevated serum anion gap	exclude					derived quantity of electrolytes
+HP:0003163	Elevated urinary delta-aminolevulinic acid	include	5aop	urine	Increased	EX_5aop[u]	
+HP:6000119	Elevated urinary dihydrothymine level	include	56dthm	urine	Increased	EX_56dthm[u]	
+HP:6000598	Elevated urinary succinylacetone level	include	sucaceto	urine	Increased	EX_sucaceto[u]	mapped for completeness; its only annotation (TYR3) has frequency Excluded (0%) and is dropped by the frequency rule
+HP:6000479	Elevated urine N-acetyltyrosine level	include	actyr	urine	Increased	EX_actyr[u]	
+HP:6001004	Elevated urine hydroxyphenyllactic acid level	include	34hpl	urine	Increased	EX_34hpl[u]	
+HP:0002909	Generalized aminoaciduria	exclude					class of compounds, not one metabolite
+HP:0003150	Glutaric aciduria	include	glutar	urine	Increased	EX_glutar[u]	
+HP:0002927	Histidinuria	include	his_L	urine	Increased	EX_his_L[u]	
+HP:0003080	Hydroxyprolinuria	include	4hpro_LT	urine	Increased	EX_4hpro_LT[u]	
+HP:0003348	Hyperalaninemia	include	ala_L	blood	Increased	DM_ala_L[bc]	
+HP:0001987	Hyperammonemia	include	nh4	blood	Increased	DM_nh4[bc]	
+HP:0500151	Hypercystinemia	exclude					L-cystine has no blood form in Harvey (organ cytosols only)
+HP:0003217	Hyperglutaminemia	include	gln_L	blood	Increased	DM_gln_L[bc]	
+HP:0003074	Hyperglycemia	include	glc_D	blood	Increased	DM_glc_D[bc]	its only annotation (EF) has frequency Excluded (0%) and is dropped by the frequency rule
+HP:0002154	Hyperglycinemia	include	gly	blood	Increased	DM_gly[bc]	
+HP:0010906	Hyperhistidinemia	include	his_L	blood	Increased	DM_his_L[bc]	
+HP:0002160	Hyperhomocystinemia	include	Lhcystin	blood	Increased	DM_Lhcystin[bc]	HPO defines the term as increased homocystine in the blood
+HP:0002153	Hyperkalemia	exclude					inorganic ion
+HP:0002161	Hyperlysinemia	include	lys_L	blood	Increased	DM_lys_L[bc]	
+HP:0003297	Hyperlysinuria	include	lys_L	urine	Increased	EX_lys_L[u]	
+HP:0003235	Hypermethioninemia	include	met_L	blood	Increased	DM_met_L[bc]	
+HP:0012026	Hyperornithinemia	include	orn	blood	Increased	DM_orn[bc]	
+HP:0003159	Hyperoxaluria	include	oxa	urine	Increased	EX_oxa[u]	
+HP:0008358	Hyperprolinemia	include	pro_L	blood	Increased	DM_pro_L[bc]	
+HP:0002155	Hypertriglyceridemia	include	tag_hs	blood	Increased	DM_tag_hs[bc]	Harvey's lumped triglyceride (tag_hs)
+HP:0003231	Hypertyrosinemia	include	tyr_L	blood	Increased	DM_tyr_L[bc]	
+HP:0002149	Hyperuricemia	include	urate	blood	Increased	DM_urate[bc]	
+HP:0003073	Hypoalbuminemia	exclude					protein, not a metabolite
+HP:0005961	Hypoargininemia	include	arg_L	blood	Decreased	DM_arg_L[bc]	
+HP:0002901	Hypocalcemia	exclude					inorganic ion
+HP:0011900	Hypofibrinogenemia	exclude					protein, not a metabolite
+HP:0001943	Hypoglycemia	include	glc_D	blood	Decreased	DM_glc_D[bc]	
+HP:0002900	Hypokalemia	exclude					inorganic ion
+HP:0002902	Hyponatremia	exclude					inorganic ion
+HP:0002490	Increased CSF lactate	include	lac_L	csf	Increased	DM_lac_L[csf]	
+HP:0002922	Increased CSF protein concentration	exclude					protein, not a metabolite
+HP:0032164	Increased blood folate concentration	exclude					group of vitamers (folic acid and reduced folates); no single model metabolite
+HP:0032491	Increased circulating argininosuccinic acid	include	argsuc	blood	Increased	DM_argsuc[bc]	
+HP:0002151	Increased circulating lactate concentration	include	lac_L	blood	Increased	DM_lac_L[bc]	
+HP:0000870	Increased circulating prolactin concentration	exclude					protein hormone, not a metabolite
+HP:0000848	Increased circulating renin level	exclude					enzyme, not a metabolite
+HP:0012217	Increased urinary porphobilinogen	include	ppbng	urine	Increased	EX_ppbng[u]	
+HP:0012402	Increased urine alpha-ketoglutarate concentration	include	akg	urine	Increased	EX_akg[u]	
+HP:0003572	Low plasma citrulline	include	citr_L	blood	Decreased	DM_citr_L[bc]	
+HP:0012120	Methylmalonic aciduria	include	HC00900	urine	Increased	EX_HC00900[u]	
+HP:0001992	Organic aciduria	exclude					class of compounds, not one metabolite
+HP:0003218	Oroticaciduria	include	orot	urine	Increased	EX_orot[u]	
+HP:0010473	Porphyrinuria	exclude					class of compounds (porphyrins), not one metabolite
+HP:0003137	Prolinuria	include	pro_L	urine	Increased	EX_pro_L[u]	
+HP:0003637	Reduced circulating 4-Hydroxyphenylpyruvate dioxygenase activity	exclude					enzyme activity, not a metabolite
+HP:0034292	Reduced circulating creatine concentration	include	creat	blood	Decreased	DM_creat[bc]	
+HP:0008326	Reduced circulating vitamin B6 level	exclude					group of vitamers; no single model metabolite
+HP:0012127	Uraciluria	include	ura	urine	Increased	EX_ura[u]	

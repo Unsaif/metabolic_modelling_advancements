@@ -1,0 +1,58 @@
+iem	call_index	iem_name	v01_orpha_codes	v02_orpha_codes	v02_orpha_names	v02_n_hpo_annotations	change	reason
+HIS	1	Histidinemia HIS	2157	2157	Histidinemia	7	kept	v0.1 link kept: same disease, annotated
+AGAT	2	AGAT def	35704	35704	L-Arginine:glycine amidinotransferase deficiency	17	kept	v0.1 link kept: same disease, annotated
+ARG	3	Arginase def ARG	90	90	Argininemia	10	kept	v0.1 link kept: same disease, annotated
+CPS1	4	CPS1 'Carbamoyl phosphate synthetase I deficiency	147	147	Carbamoyl-phosphate synthetase 1 deficiency	7	kept	v0.1 link kept: same disease, annotated
+3MGA	5	3MGA 3-Methylglutaconic Aciduria Type I	67046	67046	3-methylglutaconic aciduria type 1	13	kept	v0.1 link kept: same disease, annotated
+AMA1	6	AMA1 Aminoacylase 1 Deficiency	137754	137754	Aminoacylase 1 deficiency	13	kept	v0.1 link kept: same disease, annotated
+AADC	7	Aromatic L-amino acid decarboxylase deficiency	35708	35708	Aromatic L-amino acid decarboxylase deficiency	38	kept	v0.1 link kept: same disease, annotated
+3MCC	8	3-methylcrotonyl coA carboxylase deficiency	6	6	3-methylcrotonyl-CoA carboxylase deficiency	10	kept	v0.1 link kept: same disease, annotated
+CYP21D	9	CYP21D '21-hydroxylase deficiency	315306	90794	Classic congenital adrenal hyperplasia due to 21-hydroxylase deficiency	56	changed	v0.1 entry 315306 has no HPO annotations; 90794 is the annotated classic 21-hydroxylase deficiency (CYP21A2 reactions knocked out)
+HYCARO	10	Autosomal Dominant Hypercarotenemia And Vitamin A Deficiency	199285			0	none (v0.1 entry has no HPO annotations)	v0.1 entry 199285 has no HPO annotations and no annotated entry for BCO1-related hypercarotenemia was found
+BTD	11	BTD Biotinidase Deficiency	79241	79241	Biotinidase deficiency	38	kept	v0.1 link kept: same disease, annotated
+STAR	13	STAR Congenital Lipoid Adrenal Hyperplasia (Clah)/ Star Deficiency		90790	Congenital lipoid adrenal hyperplasia due to STAR deficency	25	added	unlinked in v0.1 (header Entrez id did not map); 90790 is congenital lipoid adrenal hyperplasia due to STAR deficiency
+CMO1	14	CMO1 Corticosterone Methyloxidase Type I Deficiency	556030	556030	Early-onset familial hypoaldosteronism	16	kept	v0.1 link kept: same disease, annotated
+DGK	15	DGK Deoxyguanosine Kinase Deficiency	329314	329314	Adult-onset multiple mitochondrial DNA deletion syndrome due to DGUOK deficiency	21	kept	v0.1 link kept: same disease, annotated
+DPYR	16	DPYR Dihydropyrimidinuria	38874	38874	Dihydropyrimidinuria	20	kept	v0.1 link kept: same disease, annotated
+FED	17	FED Fish-Eye Disease/ Lcat Deficiency	79293	650	LCAT deficiency	13	changed	v0.1 entry 79293 has no HPO annotations; the protocol knocks out every LCAT reaction (complete deficiency), so the annotated LCAT deficiency entry 650 is used rather than fish-eye disease (partial)
+EF	18	EF Fructosuria(Essential Fructosuria)	2056	2056	Essential fructosuria	6	kept	v0.1 link kept: same disease, annotated
+FIGLU	19	FIGLU Glutamate Formiminotransferase Deficiency	51208	51208	Formiminoglutamic aciduria	13	kept	v0.1 link kept: same disease, annotated
+GA1	20	GA1 Glutaric Acidemia Type I.	25	25	Glutaryl-CoA dehydrogenase deficiency	43	kept	v0.1 link kept: same disease, annotated
+GA2	21	GA2 Glutaric Acidemia Type II	394532	26791	Multiple acyl-CoA dehydrogenase deficiency	58	changed	v0.1 entry 394532 has no HPO annotations; 26791 is the annotated multiple acyl-CoA dehydrogenase deficiency (ETF reactions knocked out)
+OXOP	22	OXOP Glutathione Synthetase Deficiency And 5-Oxoprolinuria	289846	32	Glutathione synthetase deficiency	14	changed	v0.1 entry 289846 has no HPO annotations; the protocol knocks out glutathione synthetase (_GTHS), so 32 Glutathione synthetase deficiency (not 5-oxoprolinase deficiency)
+GMT	24	GMT Guanidinoacetate Methyltransferase Deficiency	382	382	Guanidinoacetate methyltransferase deficiency	22	kept	v0.1 link kept: same disease, annotated
+GACR	25	GACR Gyrate Atrophy Of The Choroid And Retina	414	414	Gyrate atrophy of choroid and retina	16	kept	v0.1 link kept: same disease, annotated
+HMG	27	HMG Hmg-Coa Lyase Deficiency	20	20	3-hydroxy-3-methylglutaric aciduria	54	kept	v0.1 link kept: same disease, annotated
+HCYS	28	HCYS Homocystinuria	394	394	Homocystinuria due to cystathionine beta-synthase deficiency	62	kept	v0.1 link kept: same disease, annotated
+HLYS1	29	HLYS1 Hyperlysinemia I, Familial	3124	2203	Hyperlysinemia	57	changed	v0.1 entry 3124 (Saccharopinuria) is hyperlysinemia type II; 2203 is Hyperlysinemia (type I)
+HLYS2	30	HLYS2 Hyperlysinemia II Or Saccharopinuria	3124	3124	Saccharopinuria	19	kept	v0.1 link kept: same disease, annotated
+HYPRO1	31	HYPRO1 Hyperprolinemia Type I	419	419	Hyperprolinemia type 1	6	kept	v0.1 link kept: same disease, annotated
+HPII	32	HPII Hyperprolinemia Type Ii	79101	79101	Hyperprolinemia type 2	51	kept	v0.1 link kept: same disease, annotated
+IVA	33	IVA Isovaleric Acidemia	33	33	Isovaleric acidemia	29	kept	v0.1 link kept: same disease, annotated
+LNS	34	LNS Lesch-Nyhan Syndrome	510	510	Lesch-Nyhan syndrome	11	kept	v0.1 link kept: same disease, annotated
+LTC4S	35	LTC4S Leukotriene C4 Synthase Deficiency (Ltc4 Synthase Deficiency)				0	none (no annotated entry)	unlinked in v0.1; no annotated Orphanet entry for leukotriene C4 synthase deficiency
+MSUD	36	MSUD Maple Syrup Urine Disease	268145	511	Maple syrup urine disease	11	changed	v0.1 entry 268145 has no HPO annotations; 511 is the annotated maple syrup urine disease
+MMA	37	MMA Methylmalonic Acidemia (Mma)	79310;79312	27	Vitamin B12-unresponsive methylmalonic acidemia	25	changed	v0.1 entries 79310 (no annotations) and 79312 (mut- only); the protocol knocks out methylmalonyl-CoA mutase, so the annotated parent entry 27 Vitamin B12-unresponsive methylmalonic acidemia (mut0 and mut-)
+NAGS	38	NAGS N-Acetylglutamate Synthase Deficiency	927	927	Hyperammonemia due to N-acetylglutamate synthase deficiency	42	kept	v0.1 link kept: same disease, annotated
+OTC	39	OTC Ornithine Transcarbamylase Deficiency	664	664	Ornithine transcarbamylase deficiency	29	kept	v0.1 link kept: same disease, annotated
+PKU	41	PKU Phenylketonuria	293284	716	Phenylketonuria	25	changed	v0.1 entry 293284 has no HPO annotations; 716 is the annotated phenylketonuria
+SUCLA	43	SUCLA Succinate-Coenzyme A (Coa) Ligase Deficiency/Lactic Acidosis, Fatal Infantile	1933	1933	Mitochondrial DNA depletion syndrome, encephalomyopathic form with methylmalonic aciduria	23	kept	v0.1 link kept: same disease, annotated
+SSADHD	44	SSADHD Succinic Semialdehyde Dehydrogenase Deficiency	22	22	Succinic semialdehyde dehydrogenase deficiency	9	kept	v0.1 link kept: same disease, annotated
+TETB	45	TETB Tetrahydrobiopterin Deficiency	2102	238583	Hyperphenylalaninemia due to tetrahydrobiopterin deficiency	24	changed	v0.1 entry 2102 has no HPO annotations; the protocol knocks out the BH4 pathway as a whole, so the annotated group entry 238583 Hyperphenylalaninemia due to tetrahydrobiopterin deficiency
+CIT1	46	CIT1 Type I Citrullinemia	247546	247525	Citrullinemia type I	28	changed	v0.1 entry 247546 has no HPO annotations; 247525 is the annotated citrullinemia type I (argininosuccinate synthase knocked out)
+TYR1	47	TYR1 Tyrosinemia Type I	882	882	Tyrosinemia type 1	6	kept	v0.1 link kept: same disease, annotated
+TYR3	48	TYR3 Tyrosinemia Type III	69723	69723	Tyrosinemia type 3	19	kept	v0.1 link kept: same disease, annotated
+XAN1	49	XAN1 Xanthinuria Type 1	93601	3467	Hereditary xanthinuria	21	changed	v0.1 entry 93601 has no HPO annotations; 3467 is the annotated hereditary xanthinuria
+AKGD	50	AKGD Alpha-Ketoglutarate Dehydrogenase Deficiency	31	31	Oxoglutaric aciduria	10	kept	v0.1 link kept: same disease, annotated
+EP	51	EP Essential Pentosuria		2843	Pentosuria	3	added	unlinked in v0.1; 2843 is the annotated pentosuria (xylulose reductase knocked out)
+HYPVLI	52	HYPVLI Hypervalinemia And Hyperleucine-Isoleucinemia				0	none (no annotated entry)	unlinked in v0.1; no annotated Orphanet entry for hypervalinemia and hyperleucine-isoleucinemia
+ASNSD	53	ASNSD Asparagine Synthetase Deficiency	391376			0	none (v0.1 entry has no HPO annotations)	v0.1 entry 391376 has no HPO annotations and no annotated alternative was found
+ASA	54	Argininosuccinic Aciduria	23	23	Argininosuccinic aciduria	51	kept	v0.1 link kept: same disease, annotated
+PC	56	PC Pyruvate Carboxylase Deficiency	353320	3008	Pyruvate carboxylase deficiency	70	changed	v0.1 entry 353320 has no HPO annotations; 3008 is the annotated pyruvate carboxylase deficiency
+PHOX1	57	PHOX1 Primary Hyperoxaluria-Type 1	93598	93598	Primary hyperoxaluria type 1	19	kept	v0.1 link kept: same disease, annotated
+ADSL	58	ADSL Adenylosuccinase Deficiency	31	46	Adenylosuccinate lyase deficiency	17	changed	v0.1 entry 31 (Oxoglutaric aciduria) is a different disease; 46 is adenylosuccinate lyase deficiency
+CD	59	CD Canavan Disease - only milder forms of this disease have been reported (there is an isozyme in Recon -- due to mild form report I included this IEM anyway)	314918	314918	Mild Canavan disease	16	kept	v0.1 link kept: same disease, annotated
+HPC	60	HPC Hereditary Coproporphyria	79273	79273	Hereditary coproporphyria	33	kept	v0.1 link kept: same disease, annotated
+HMET	61	HMET Hypermethioninemia	88618			0	removed	v0.1 entry 88618 (S-adenosylhomocysteine hydrolase deficiency) is a different enzyme; the protocol knocks out glycine N-methyltransferase (_GNMT), which has no annotated Orphanet entry
+DESMO	62	DESMO Desmosterolosis	35107	35107	Desmosterolosis	57	kept	v0.1 link kept: same disease, annotated
+2OAA	63	2OAA 2-Oxoadipate Acidemia		79154	2-aminoadipic 2-oxoadipic aciduria	11	added	unlinked in v0.1 (header gene SLC25A21); 79154 is 2-aminoadipic 2-oxoadipic aciduria

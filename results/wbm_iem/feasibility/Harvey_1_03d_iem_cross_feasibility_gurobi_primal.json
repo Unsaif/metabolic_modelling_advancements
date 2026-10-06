@@ -1,0 +1,4024 @@
+[
+ {
+  "iem": "HIS",
+  "call_index": 1,
+  "context": "protocol",
+  "status": "complete",
+  "notes": [],
+  "vmax_healthy": 66.71328228511247,
+  "vmax_disease": -0.0,
+  "wb_objective_disease_feasible": true,
+  "iem_reactions": [
+   "sIEC_HISD",
+   "Colon_HISD",
+   "Liver_HISD",
+   "Gall_HISD",
+   "Pancreas_HISD",
+   "Kidney_HISD",
+   "Spleen_HISD",
+   "Brain_HISD",
+   "Lung_HISD",
+   "Muscle_HISD",
+   "Skin_HISD",
+   "Adipocytes_HISD",
+   "Heart_HISD",
+   "Agland_HISD",
+   "Urinarybladder_HISD",
+   "Thyroidgland_HISD",
+   "Pthyroidgland_HISD",
+   "Stomach_HISD",
+   "Testis_HISD",
+   "Prostate_HISD"
+  ],
+  "readouts": [
+   {
+    "reaction": "EX_hista[u]",
+    "own": true,
+    "expected": "Increased",
+    "healthy": 0.00028540508780849905,
+    "disease": 29.01772334856625,
+    "predicted": "Increased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 4.26,
+    "time_disease_s": 5.862,
+    "solve_healthy": {
+     "method": "ipm",
+     "simplex_iterations": 26803,
+     "ipm_iterations": 124
+    },
+    "solve_disease": {
+     "method": "ipm",
+     "simplex_iterations": 26626,
+     "ipm_iterations": 159
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_hista[bc]",
+    "own": true,
+    "expected": "Increased",
+    "healthy": 50.000000285113174,
+    "disease": 116.71328228511949,
+    "predicted": "Increased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.075,
+    "time_disease_s": 0.399,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 361,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_im4ac[u]",
+    "own": true,
+    "expected": "Increased",
+    "healthy": 0.014541405113176652,
+    "disease": 8.313631833377281,
+    "predicted": "Increased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.077,
+    "time_disease_s": 0.256,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 230,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_his_L[u]",
+    "own": true,
+    "expected": "Increased",
+    "healthy": 0.0,
+    "disease": 29.01743822856588,
+    "predicted": "Increased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.076,
+    "time_disease_s": 0.114,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 3,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 66,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_his_L[bc]",
+    "own": true,
+    "expected": "Increased",
+    "healthy": 0.0,
+    "disease": 66.71328228511949,
+    "predicted": "Increased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.073,
+    "time_disease_s": 0.107,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 40,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_creat[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 53.835839999997916,
+    "disease": 53.835839999997916,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 37.683,
+    "time_disease_s": 20.17,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 47270,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 26740,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_gudac[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 4.7951999999999995,
+    "disease": 4.7951999999999995,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.498,
+    "time_disease_s": 0.508,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 653,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 614,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_argsuc[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.255,
+    "time_disease_s": 0.097,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 300,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 29,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_orot[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 11.769442267388513,
+    "disease": 11.769442267388104,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.281,
+    "time_disease_s": 0.272,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 238,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 252,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_ura[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 84.11366626739066,
+    "disease": 84.11366626739168,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 32.145,
+    "time_disease_s": 0.609,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 42753,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 892,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_creat[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 544.8180887406467,
+    "disease": 478.1048064564097,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 13.787,
+    "time_disease_s": 9.522,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 23405,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 16611,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_arg_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 408.61356655516545,
+    "disease": 358.5786048424094,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 5.184,
+    "time_disease_s": 3.555,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 8393,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 5170,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_gudac[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 79.76654960687026,
+    "disease": 79.76654960687364,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.081,
+    "time_disease_s": 1.575,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1544,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2071,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_lys_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 39.43253499944671,
+    "disease": 39.432534999548,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.507,
+    "time_disease_s": 0.432,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 750,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 551,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_gly[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 1014.1162548324155,
+    "disease": 924.2260772724076,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 6.903,
+    "time_disease_s": 34.362,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 11335,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 50748,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_5oxpro[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 741.3730580883348,
+    "disease": 712.7602596333302,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 21.624,
+    "time_disease_s": 25.34,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 35115,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 40833,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_citr_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 544.8180887405124,
+    "disease": 478.1048064543335,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 8.53,
+    "time_disease_s": 7.525,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 14364,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 11360,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_gln_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 793.1333468767383,
+    "disease": 693.0634234480353,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 3.706,
+    "time_disease_s": 3.514,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 5987,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 5706,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_3ivcrn[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 11.017762267388104,
+    "disease": 11.017762267388102,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 36.918,
+    "time_disease_s": 41.692,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 49612,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 56118,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_acglu[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 461.0577846759111,
+    "disease": 444.08947773612425,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 16.206,
+    "time_disease_s": 65.406,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 27292,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 94917,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_acgly[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 993.7877405630708,
+    "disease": 915.2548450140072,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 10.22,
+    "time_disease_s": 12.742,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 16867,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 19769,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_34dhphe[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 4.15087634868864,
+    "disease": 4.15087634868864,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 2.6,
+    "time_disease_s": 3.385,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 3642,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 4434,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_34dhphe[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 43.25096890726099,
+    "disease": 43.25096890713635,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.475,
+    "time_disease_s": 1.117,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 728,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1699,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_5htrp[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 4.15272055668864,
+    "disease": 4.15272055668864,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.41,
+    "time_disease_s": 0.519,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 552,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 637,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_5htrp[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 5.453624240916551,
+    "disease": 5.45362424069364,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.232,
+    "time_disease_s": 0.165,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 277,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 232,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_adrnl[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 43.250968907204374,
+    "disease": 43.25096890705751,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.688,
+    "time_disease_s": 0.26,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 940,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 405,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_dopa[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 6.674399999999878,
+    "disease": 6.674399999999878,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.482,
+    "time_disease_s": 0.325,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 573,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 462,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_CE2176[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 4.17070514868864,
+    "disease": 4.17070514868864,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.198,
+    "time_disease_s": 0.138,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 177,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 113,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_CE2176[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 43.2509689071903,
+    "disease": 43.250968907060205,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.286,
+    "time_disease_s": 0.207,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 371,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 281,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_nrpphr[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 43.25096890719334,
+    "disease": 43.25096890705101,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.69,
+    "time_disease_s": 0.408,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 912,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 517,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_3moxtyr[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.00037584,
+    "disease": 0.00037584,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.409,
+    "time_disease_s": 0.141,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 502,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 68,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_CE2026[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.083,
+    "time_disease_s": 0.095,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 56,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_3hivac[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 11.017762267388102,
+    "disease": 11.017762267388102,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 50.324,
+    "time_disease_s": 0.342,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 68227,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 363,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_aldstrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.004243360246256156,
+    "disease": 0.004243360246256156,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.485,
+    "time_disease_s": 0.28,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 512,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 287,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_crtsl[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.004243360246256168,
+    "disease": 0.004243360246256168,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.082,
+    "time_disease_s": 0.078,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 11,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 16,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_prgstrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.004243360246256156,
+    "disease": 0.004243360246256157,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.078,
+    "time_disease_s": 0.077,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 10,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 13,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_andrstndn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.004243360246371006,
+    "disease": 0.004243360248469466,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.103,
+    "time_disease_s": 0.086,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 16,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 31,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_andrstrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.004243360245898916,
+    "disease": 0.004243360247246433,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.084,
+    "time_disease_s": 0.076,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 22,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 13,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_dhea[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.004243360246256156,
+    "disease": 0.004243360243338268,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.088,
+    "time_disease_s": 0.081,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 29,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 15,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_caro[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.0043026971999999995,
+    "disease": 0.0043026971999999995,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.074,
+    "time_disease_s": 0.079,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 4,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 14,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_acac[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 5152.253818062698,
+    "disease": 5054.752854006738,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 23.179,
+    "time_disease_s": 21.973,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 39296,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 38477,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_acetone[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 5116.910566479592,
+    "disease": 5027.256313329192,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 10.716,
+    "time_disease_s": 12.339,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 20270,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 22018,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_bhb[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 4850.679501494,
+    "disease": 4765.562672462556,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 8.566,
+    "time_disease_s": 11.905,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 15423,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 20295,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_lac_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 5872.175418141711,
+    "disease": 5779.310557492591,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 21.145,
+    "time_disease_s": 20.029,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 34669,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 32774,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_nh4[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 835.5685903317125,
+    "disease": 743.3326527717236,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 37.541,
+    "time_disease_s": 32.095,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 49066,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 45872,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_3hpp[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.5184,
+    "disease": 0.5184,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.705,
+    "time_disease_s": 1.457,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2654,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1946,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_2mcit[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.03369600000000001,
+    "disease": 0.03369600000000001,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.074,
+    "time_disease_s": 51.378,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 71205,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_crtstrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.00424336024625634,
+    "disease": 0.004243360246256156,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.124,
+    "time_disease_s": 0.083,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 25,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 8,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_11docrtstrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.00424336024625634,
+    "disease": 0.004243360246256156,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.074,
+    "time_disease_s": 0.083,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 5,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 5,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_lac_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 6648.388836870137,
+    "disease": 6522.063477322159,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 21.699,
+    "time_disease_s": 19.139,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 37728,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 35277,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_thym[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 86.76657826739041,
+    "disease": 86.76657826738908,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 2.745,
+    "time_disease_s": 2.434,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 4214,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 4112,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_56dura[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 84.11366626738985,
+    "disease": 84.1136662673915,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.736,
+    "time_disease_s": 1.109,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1090,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1738,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_56dthm[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.369,
+    "time_disease_s": 0.803,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 524,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1122,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_chsterol[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 556.6765449474835,
+    "disease": 545.9852104643883,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 14.191,
+    "time_disease_s": 16.531,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 25162,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 28554,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_tag_hs[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 81.79043836958817,
+    "disease": 81.79043836957213,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.729,
+    "time_disease_s": 3.325,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 3462,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 6503,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_fru[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2723.1198656795186,
+    "disease": 2674.509120597586,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 11.384,
+    "time_disease_s": 14.518,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 20911,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 24810,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_forglu[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 31.609438228571335,
+    "disease": 0.0,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.211,
+    "time_disease_s": 0.922,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1944,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1204,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_c5dc[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 21.943742399998328,
+    "disease": 21.943742400000147,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.587,
+    "time_disease_s": 0.434,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 843,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 620,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_c5dc[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 44.886159240360726,
+    "disease": 44.88615924011519,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.208,
+    "time_disease_s": 0.353,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 335,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 445,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_c10crn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 49.99999999999096,
+    "disease": 50.00000000004205,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.556,
+    "time_disease_s": 0.759,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 829,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1137,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_c4crn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 50.00000000024116,
+    "disease": 50.000000000006644,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.634,
+    "time_disease_s": 0.391,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 914,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 487,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_ddeccrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 49.99999999975056,
+    "disease": 50.000000000105395,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.405,
+    "time_disease_s": 0.368,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 499,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 483,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_ttdcrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 50.000000000136424,
+    "disease": 49.999999999503956,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.556,
+    "time_disease_s": 0.435,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 830,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 589,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_pmtcrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 50.00000000001138,
+    "disease": 50.00000000004957,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.46,
+    "time_disease_s": 0.298,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 734,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 410,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_4hpro_LT[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 19.701687916688623,
+    "disease": 19.701687916688634,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.63,
+    "time_disease_s": 0.505,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1146,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 648,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_CE4970[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 18.158975114286214,
+    "disease": 18.158975114286445,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 33.154,
+    "time_disease_s": 11.844,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 44821,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 16159,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_CE4969[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 45.01884037614641,
+    "disease": 45.01884037613531,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.669,
+    "time_disease_s": 1.155,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 911,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1793,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_CE4968[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.029808,
+    "disease": 0.029808,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.492,
+    "time_disease_s": 34.497,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 650,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 49042,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_ethmalac[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 908.355968735699,
+    "disease": 886.1751883475819,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 49.493,
+    "time_disease_s": 22.807,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 73849,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 37804,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_adpac[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.014256000000000001,
+    "disease": 0.014256000000000001,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.49,
+    "time_disease_s": 3.626,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1822,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 4960,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_subeac[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 1.296,
+    "disease": 1.296,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.077,
+    "time_disease_s": 0.081,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 12,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_sebacid[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.08,
+    "time_disease_s": 0.082,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 7,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 13,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_pro_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 889.9365880860005,
+    "disease": 797.7006505260924,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 6.592,
+    "time_disease_s": 8.301,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 11328,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 13235,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_leuktrE4[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 6.74178770868864,
+    "disease": 6.74178770868864,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.976,
+    "time_disease_s": 0.981,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 3014,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1382,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_leuktrC4[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.00017612640000000003,
+    "disease": 0.00017612640000000003,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.29,
+    "time_disease_s": 0.137,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 308,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 54,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_5oxpro[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 1586.266693752378,
+    "disease": 1386.1268468962553,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 11.575,
+    "time_disease_s": 14.485,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 21038,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 24220,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_leuktrE4[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 125.54797893318039,
+    "disease": 125.54797893331249,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 6.77,
+    "time_disease_s": 5.607,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 10877,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 8233,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_leuktrC4[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 125.54797893313358,
+    "disease": 125.54797893328583,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.284,
+    "time_disease_s": 1.656,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2100,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2427,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_leuktrD4[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 125.54797893317813,
+    "disease": 125.5479789331845,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.359,
+    "time_disease_s": 1.201,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1813,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1701,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_pro_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 1586.26669375343,
+    "disease": 1386.126846897138,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 9.877,
+    "time_disease_s": 6.28,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 17056,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 10670,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_crtn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 91.04276842391118,
+    "disease": 91.04276842391347,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 3.367,
+    "time_disease_s": 2.621,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 4601,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 3688,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_urate[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 140.76558900645787,
+    "disease": 124.96230771532757,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 65.987,
+    "time_disease_s": 8.629,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 93315,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 14842,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_arg_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 36.93600000000151,
+    "disease": 36.93600000000333,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.376,
+    "time_disease_s": 2.014,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2145,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 3054,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_glu_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 740.0326238025644,
+    "disease": 711.4575949494507,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 20.204,
+    "time_disease_s": 28.222,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 33460,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 45800,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_lys_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 39.432534999459016,
+    "disease": 39.43253499946758,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.78,
+    "time_disease_s": 1.844,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2496,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2679,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_orn[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 417.7522931573949,
+    "disease": 371.63432437732627,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 4.281,
+    "time_disease_s": 41.904,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6897,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 61195,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_orn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 793.1333468762671,
+    "disease": 693.0634234485158,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 8.398,
+    "time_disease_s": 8.115,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 15639,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 13871,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_orn[csf]",
+    "own": false,
+    "expected": null,
+    "healthy": 1000.5693122423653,
+    "disease": 917.2166774265434,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 15.429,
+    "time_disease_s": 5.831,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 25826,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 10112,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_c6dc[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 49.9999999999474,
+    "disease": 49.999999999887635,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 2.276,
+    "time_disease_s": 2.015,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 3292,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 3081,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_met_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 531.0865934143612,
+    "disease": 520.3601467704785,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 3.857,
+    "time_disease_s": 3.015,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6251,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 4938,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_Lhcystin[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.685,
+    "time_disease_s": 1.451,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 940,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1846,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_Lhcystin[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 28.2716169475711,
+    "disease": 28.27161694778031,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.688,
+    "time_disease_s": 0.825,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1058,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1125,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_hcys_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.09952,
+    "disease": 2.09952,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.576,
+    "time_disease_s": 0.358,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 704,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 370,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_hcys_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 56.543233895562395,
+    "disease": 56.543233895559204,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.628,
+    "time_disease_s": 0.392,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 920,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 607,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_cyst_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.7128,
+    "disease": 0.7128,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.58,
+    "time_disease_s": 21.704,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 745,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 29414,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_Lpipecol[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 39.43253499956971,
+    "disease": 39.43253499946303,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.276,
+    "time_disease_s": 0.44,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 460,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 552,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_citr_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 7.13224336024723,
+    "disease": 7.132243360250868,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 38.918,
+    "time_disease_s": 0.25,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 52989,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 237,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_3bcrn[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 21.943742400000147,
+    "disease": 21.943742399997365,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 59.606,
+    "time_disease_s": 54.61,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 79639,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 77808,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_ivcrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 49.99999999948794,
+    "disease": 50.000000000329045,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.831,
+    "time_disease_s": 0.508,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2547,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 732,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_fol[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 69.99961186380018,
+    "disease": 69.99961186380897,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 3.491,
+    "time_disease_s": 1.835,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 4998,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2998,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_urate[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 402.08046482500816,
+    "disease": 352.0455031122515,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 21.417,
+    "time_disease_s": 15.131,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 33419,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 25606,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_leuktrE4[csf]",
+    "own": false,
+    "expected": null,
+    "healthy": 100.2790255220558,
+    "disease": 100.27902552205552,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 5.964,
+    "time_disease_s": 3.214,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 8463,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 4426,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_ile_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 15.566975114286215,
+    "disease": 15.566975114287718,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.098,
+    "time_disease_s": 1.261,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1533,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1666,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_3mop[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.085,
+    "time_disease_s": 27.434,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 22,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 37769,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_ile_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 34.54443389198551,
+    "disease": 34.54443392055635,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.175,
+    "time_disease_s": 0.1,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 111,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 49,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_leu_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 55.86662727715432,
+    "disease": 55.86662727721531,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.652,
+    "time_disease_s": 0.378,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 954,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 448,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_val_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 45.01884037610312,
+    "disease": 45.01884037609853,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.655,
+    "time_disease_s": 0.226,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 818,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 297,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_3mop[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 34.544433891796004,
+    "disease": 34.54443392049966,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.275,
+    "time_disease_s": 0.086,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 264,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 35,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_3aib[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 86.98819426738662,
+    "disease": 86.98819426738616,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 2.291,
+    "time_disease_s": 1.358,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 3680,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2168,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_c4dc[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 49.999999999914394,
+    "disease": 49.99999999999124,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.438,
+    "time_disease_s": 1.554,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2251,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2421,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_crn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 50.00000000029002,
+    "disease": 49.99999999993286,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.697,
+    "time_disease_s": 0.783,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 833,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1078,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_HC00900[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 5186.98629344405,
+    "disease": 5096.366208424966,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 38.868,
+    "time_disease_s": 22.526,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 62848,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 18636,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_3hpp[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 6966.408302231739,
+    "disease": 6841.031248113961,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 18.148,
+    "time_disease_s": 20.957,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 29012,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 25436,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_pcrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 49.99999999983342,
+    "disease": 49.999999999943576,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 2.79,
+    "time_disease_s": 5.42,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 3620,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 7282,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_3hdececrn[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 49.9999999998365,
+    "disease": 50.00000000014738,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.506,
+    "time_disease_s": 0.794,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 808,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1081,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_ala_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 1586.266693751264,
+    "disease": 1386.1268468986236,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 8.561,
+    "time_disease_s": 8.112,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 14289,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 12666,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_nh4[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 1586.2666937499462,
+    "disease": 1386.1268468998185,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 5.354,
+    "time_disease_s": 6.049,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 8333,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 9315,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_ura[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 793.1333468752475,
+    "disease": 693.0634234490932,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 7.775,
+    "time_disease_s": 6.978,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 12920,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 10858,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_phe_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 24.62071943980989,
+    "disease": 24.620719440009665,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.437,
+    "time_disease_s": 1.882,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2009,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2529,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_2hyoxplac[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.8376047999999999,
+    "disease": 0.8376047999999999,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.079,
+    "time_disease_s": 0.074,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 13,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 12,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_phpyr[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.09072,
+    "disease": 0.09072,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 26.859,
+    "time_disease_s": 25.921,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 35901,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 33670,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_pyr[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 6960.203874561494,
+    "disease": 6833.305186173975,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 26.534,
+    "time_disease_s": 22.537,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 45411,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 37803,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_sucsal[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 5.227,
+    "time_disease_s": 3.169,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6226,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 4320,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_gly[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 1586.2666937496606,
+    "disease": 1386.1268468995459,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 6.707,
+    "time_disease_s": 4.814,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 11282,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 7853,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_sucsal[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 5019.033772171324,
+    "disease": 4921.19973757768,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 33.214,
+    "time_disease_s": 17.769,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 53816,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 15337,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_4abut[csf]",
+    "own": false,
+    "expected": null,
+    "healthy": 2157.5090530618504,
+    "disease": 1957.3692062074956,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 12.589,
+    "time_disease_s": 11.487,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 20261,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 18746,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_tyr_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 43.25096890752006,
+    "disease": 43.250968907235674,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.532,
+    "time_disease_s": 1.444,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 685,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2153,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_34hpl[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.145152,
+    "disease": 0.145152,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.144,
+    "time_disease_s": 0.171,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 46,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 98,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_34hpp[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.10756800000000001,
+    "disease": 0.10756800000000001,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 37.127,
+    "time_disease_s": 40.049,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 50170,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 55283,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_hxan[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 132.82527653606908,
+    "disease": 117.0219952449419,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 9.466,
+    "time_disease_s": 12.689,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 15133,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 20596,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_xan[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 0.366768,
+    "disease": 0.366768,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.439,
+    "time_disease_s": 0.963,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2073,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1325,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_xan[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 402.03172569009746,
+    "disease": 351.99676397799874,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 13.303,
+    "time_disease_s": 13.675,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 21981,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 23640,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_akg[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 567.624304836896,
+    "disease": 546.6159254864106,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 18.606,
+    "time_disease_s": 14.668,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 30737,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 24439,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_glu_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 1586.2666937519975,
+    "disease": 1386.1268468975443,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 10.541,
+    "time_disease_s": 8.976,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 17391,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 14561,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_xylu_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 932.7215795087446,
+    "disease": 904.0006558955552,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 20.294,
+    "time_disease_s": 19.592,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 31787,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 32005,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_val_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 45.018840376097906,
+    "disease": 45.01884037595664,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.117,
+    "time_disease_s": 1.588,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1707,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 2660,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_leu_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 39.0096017714277,
+    "disease": 39.00960177142901,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.347,
+    "time_disease_s": 0.17,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 390,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 149,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_asn_L[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 793.1333468763762,
+    "disease": 693.0634234491898,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 7.27,
+    "time_disease_s": 5.013,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 12899,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 9900,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_asn_L[csf]",
+    "own": false,
+    "expected": null,
+    "healthy": 1078.7545265318506,
+    "disease": 978.6846031023626,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 4.931,
+    "time_disease_s": 5.943,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 7562,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 9600,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_gln_L[csf]",
+    "own": false,
+    "expected": null,
+    "healthy": 1078.7545265309186,
+    "disease": 978.6846031039066,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 4.169,
+    "time_disease_s": 5.056,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6541,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 7687,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_glc_D[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 2722.1282704575597,
+    "disease": 2673.5175308837192,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 22.222,
+    "time_disease_s": 23.891,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 37874,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 39616,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_fum[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.962,
+    "time_disease_s": 1.052,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1249,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1280,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_succ[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2128.324412708415,
+    "disease": 2099.2044871436933,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 23.561,
+    "time_disease_s": 13.518,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 40060,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 25483,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_acetone[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 299.376,
+    "disease": 299.376,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 24.807,
+    "time_disease_s": 16.177,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 31521,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 21168,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_acac[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 48.03152226738894,
+    "disease": 48.03152226738894,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.853,
+    "time_disease_s": 0.371,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1153,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 508,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_bhb[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 48.03152226738894,
+    "disease": 48.03152226738894,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.36,
+    "time_disease_s": 0.177,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 484,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 225,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_oxa[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 3.452544000000001,
+    "disease": 3.452544000000001,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.117,
+    "time_disease_s": 0.226,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 95,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 293,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_glyclt[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 1.64592,
+    "disease": 1.64592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 35.067,
+    "time_disease_s": 0.145,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 48970,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 74,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_glx[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 1.656288,
+    "disease": 1.656288,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.074,
+    "time_disease_s": 0.121,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 10,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_Brain_25aics[c]",
+    "own": false,
+    "expected": null,
+    "healthy": 539.3772632656128,
+    "disease": 489.34230155249054,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 5.556,
+    "time_disease_s": 5.941,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 9975,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 11278,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_Nacasp[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 4.029,
+    "time_disease_s": 3.566,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 6450,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 4799,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_Nacasp[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 1586.2666937554834,
+    "disease": 1386.1268469008946,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 23.215,
+    "time_disease_s": 16.524,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 37980,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 28227,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_Nacasp[csf]",
+    "own": false,
+    "expected": null,
+    "healthy": 10.943191051776001,
+    "disease": 10.943191051776001,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 3.027,
+    "time_disease_s": 4.153,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 4194,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 5737,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_25aics[u]",
+    "own": false,
+    "expected": null,
+    "healthy": null,
+    "disease": null,
+    "predicted": "NA",
+    "status_healthy": "absent",
+    "status_disease": "absent",
+    "time_healthy_s": 0.0,
+    "time_disease_s": 0.0,
+    "solve_healthy": {},
+    "solve_disease": {},
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_C05770[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 179.47215108156337,
+    "disease": 177.6374539526191,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 26.733,
+    "time_disease_s": 96.828,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 45205,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 139368,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_C05770[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 305.4855482868474,
+    "disease": 289.79472472879417,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 20.405,
+    "time_disease_s": 15.695,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 33679,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 26789,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_C05770[csf]",
+    "own": false,
+    "expected": null,
+    "healthy": 251.1141760396125,
+    "disease": 247.77676207391787,
+    "predicted": "Decreased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 37.518,
+    "time_disease_s": 32.264,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 61412,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 54165,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_met_L[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 9.320478887399258,
+    "disease": 9.320855727929608,
+    "predicted": "Increased",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 1.173,
+    "time_disease_s": 0.852,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1777,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1240,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_dsmsterol[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 7.992687786756841,
+    "disease": 7.992687786756825,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.771,
+    "time_disease_s": 1.008,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 1304,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1855,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "DM_L2aadp[bc]",
+    "own": false,
+    "expected": null,
+    "healthy": 39.432534999541254,
+    "disease": 39.43253499971432,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.453,
+    "time_disease_s": 0.861,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 732,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 1392,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_2oxoadp[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.478,
+    "time_disease_s": 0.522,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 590,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 641,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   },
+   {
+    "reaction": "EX_adpoh[u]",
+    "own": false,
+    "expected": null,
+    "healthy": 2.592,
+    "disease": 2.592,
+    "predicted": "Unchanged",
+    "status_healthy": "Optimal",
+    "status_disease": "Optimal",
+    "time_healthy_s": 0.071,
+    "time_disease_s": 17.986,
+    "solve_healthy": {
+     "method": "primal",
+     "simplex_iterations": 2,
+     "ipm_iterations": 0
+    },
+    "solve_disease": {
+     "method": "primal",
+     "simplex_iterations": 23187,
+     "ipm_iterations": 0
+    },
+    "fallback_healthy": false,
+    "fallback_disease": false
+   }
+  ],
+  "healthy_pin": 66.713282,
+  "n_solves": 325,
+  "time_s": 2730.5,
+  "run_fingerprint": "320e3d5d78f18a93305928ef078656b84175039d5b444309281caca3351e1f25",
+  "provenance": {
+   "engine_version": "iem-cross-v0.1",
+   "model_sha256": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+   "protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+   "constraint_inputs_sha256": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473",
+   "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc",
+   "model_setup": "toolbox",
+   "bile_duct": "toolbox",
+   "global_constraints": {
+    "set_irreversible": 319,
+    "closed": 24,
+    "bile_duct_ub_100": 28
+   },
+   "lp_bounds_sha256_before_sinks": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+   "solver": "Gurobi 13.0.1",
+   "warm": "primal",
+   "context": "protocol",
+   "feas_tol": 1e-07,
+   "opt_tol": 1e-07,
+   "time_limit_per_solve_s": 1800,
+   "threads": 0,
+   "readouts_sha256": "2d7405c3362e017408db682baf2876d29da6bc31bc3a33ec5086c8127270038b",
+   "n_readouts": 162,
+   "sink_metabolites_absent_from_model": [
+    "17ahprgnlone[bc]",
+    "17ahprgstrn[bc]",
+    "M00603[bc]",
+    "C05284[bc]",
+    "CE2211[bc]",
+    "M00429[bc]",
+    "CE5068[bc]",
+    "4hdxbutn[bc]"
+   ],
+   "tol": 1e-06
+  },
+  "check_against_reference": {
+   "file": "results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json",
+   "n": 5,
+   "n_same_call": 5,
+   "vmax_abs_diff": 2.7682744985213503e-11,
+   "max_abs_diff": 5.708386652258923e-08,
+   "rows": [
+    {
+     "reaction": "EX_hista[u]",
+     "ref_healthy": 0.00028540510962127286,
+     "ref_disease": 29.01772334857378,
+     "healthy": 0.00028540508780849905,
+     "disease": 29.01772334856625,
+     "abs_diff_healthy": 2.1812773809415376e-11,
+     "abs_diff_disease": 7.531752999057062e-12,
+     "ref_call": "Increased",
+     "call": "Increased",
+     "same_call": true
+    },
+    {
+     "reaction": "DM_hista[bc]",
+     "ref_healthy": 50.00000028510462,
+     "ref_disease": 116.71328234220205,
+     "healthy": 50.000000285113174,
+     "disease": 116.71328228511949,
+     "abs_diff_healthy": 8.554934538551606e-12,
+     "abs_diff_disease": 5.7082559123955434e-08,
+     "ref_call": "Increased",
+     "call": "Increased",
+     "same_call": true
+    },
+    {
+     "reaction": "EX_im4ac[u]",
+     "ref_healthy": 0.014541405104579973,
+     "ref_disease": 8.31363183337728,
+     "healthy": 0.014541405113176652,
+     "disease": 8.313631833377281,
+     "abs_diff_healthy": 8.596678924277512e-12,
+     "abs_diff_disease": 1.7763568394002505e-15,
+     "ref_call": "Increased",
+     "call": "Increased",
+     "same_call": true
+    },
+    {
+     "reaction": "EX_his_L[u]",
+     "ref_healthy": 0.0,
+     "ref_disease": 29.01743822857263,
+     "healthy": 0.0,
+     "disease": 29.01743822856588,
+     "abs_diff_healthy": 0.0,
+     "abs_diff_disease": 6.750155989720952e-12,
+     "ref_call": "Increased",
+     "call": "Increased",
+     "same_call": true
+    },
+    {
+     "reaction": "DM_his_L[bc]",
+     "ref_healthy": 0.0,
+     "ref_disease": 66.71328234220336,
+     "healthy": 0.0,
+     "disease": 66.71328228511949,
+     "abs_diff_healthy": 0.0,
+     "abs_diff_disease": 5.708386652258923e-08,
+     "ref_call": "Increased",
+     "call": "Increased",
+     "same_call": true
+    }
+   ]
+  }
+ }
+]

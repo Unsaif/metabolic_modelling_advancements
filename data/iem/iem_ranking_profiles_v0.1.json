@@ -1,0 +1,3956 @@
+{
+ "provenance": {
+  "protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+  "lab_table_sha256": "2da16484937f0e3bac0c4a98b1abf1a5f863b725ead9b24d2881f0f701a41d0f",
+  "hpo_only_sha256": "1bff5f85c6bb7d4b50a8c96916b41d2b50c0911b530cd2293519a0d4690a980a",
+  "hpo_map_sha256": "93af8a88886b7885f53e89c24fdcc5434488aca758d61291c45d1fcd5d7c7832",
+  "model_file": "external/COBRA.models/mat/Harvey_1_03d.mat"
+ },
+ "candidates": [
+  {
+   "iem": "HIS",
+   "call_index": 1
+  },
+  {
+   "iem": "AGAT",
+   "call_index": 2
+  },
+  {
+   "iem": "ARG",
+   "call_index": 3
+  },
+  {
+   "iem": "CPS1",
+   "call_index": 4
+  },
+  {
+   "iem": "3MGA",
+   "call_index": 5
+  },
+  {
+   "iem": "AMA1",
+   "call_index": 6
+  },
+  {
+   "iem": "AADC",
+   "call_index": 7
+  },
+  {
+   "iem": "3MCC",
+   "call_index": 8
+  },
+  {
+   "iem": "CYP21D",
+   "call_index": 9
+  },
+  {
+   "iem": "HYCARO",
+   "call_index": 10
+  },
+  {
+   "iem": "BTD",
+   "call_index": 11
+  },
+  {
+   "iem": "STAR",
+   "call_index": 13
+  },
+  {
+   "iem": "CMO1",
+   "call_index": 14
+  },
+  {
+   "iem": "DGK",
+   "call_index": 15
+  },
+  {
+   "iem": "DPYR",
+   "call_index": 16
+  },
+  {
+   "iem": "FED",
+   "call_index": 17
+  },
+  {
+   "iem": "EF",
+   "call_index": 18
+  },
+  {
+   "iem": "FIGLU",
+   "call_index": 19
+  },
+  {
+   "iem": "GA1",
+   "call_index": 20
+  },
+  {
+   "iem": "GA2",
+   "call_index": 21
+  },
+  {
+   "iem": "OXOP",
+   "call_index": 22
+  },
+  {
+   "iem": "GMT",
+   "call_index": 24
+  },
+  {
+   "iem": "GACR",
+   "call_index": 25
+  },
+  {
+   "iem": "HMG",
+   "call_index": 27
+  },
+  {
+   "iem": "HCYS",
+   "call_index": 28
+  },
+  {
+   "iem": "HLYS1",
+   "call_index": 29
+  },
+  {
+   "iem": "HLYS2",
+   "call_index": 30
+  },
+  {
+   "iem": "HYPRO1",
+   "call_index": 31
+  },
+  {
+   "iem": "HPII",
+   "call_index": 32
+  },
+  {
+   "iem": "IVA",
+   "call_index": 33
+  },
+  {
+   "iem": "LNS",
+   "call_index": 34
+  },
+  {
+   "iem": "LTC4S",
+   "call_index": 35
+  },
+  {
+   "iem": "MSUD",
+   "call_index": 36
+  },
+  {
+   "iem": "MMA",
+   "call_index": 37
+  },
+  {
+   "iem": "NAGS",
+   "call_index": 38
+  },
+  {
+   "iem": "OTC",
+   "call_index": 39
+  },
+  {
+   "iem": "PKU",
+   "call_index": 41
+  },
+  {
+   "iem": "SUCLA",
+   "call_index": 43
+  },
+  {
+   "iem": "SSADHD",
+   "call_index": 44
+  },
+  {
+   "iem": "TETB",
+   "call_index": 45
+  },
+  {
+   "iem": "CIT1",
+   "call_index": 46
+  },
+  {
+   "iem": "TYR1",
+   "call_index": 47
+  },
+  {
+   "iem": "TYR3",
+   "call_index": 48
+  },
+  {
+   "iem": "XAN1",
+   "call_index": 49
+  },
+  {
+   "iem": "AKGD",
+   "call_index": 50
+  },
+  {
+   "iem": "EP",
+   "call_index": 51
+  },
+  {
+   "iem": "HYPVLI",
+   "call_index": 52
+  },
+  {
+   "iem": "ASNSD",
+   "call_index": 53
+  },
+  {
+   "iem": "ASA",
+   "call_index": 54
+  },
+  {
+   "iem": "PC",
+   "call_index": 56
+  },
+  {
+   "iem": "PHOX1",
+   "call_index": 57
+  },
+  {
+   "iem": "ADSL",
+   "call_index": 58
+  },
+  {
+   "iem": "CD",
+   "call_index": 59
+  },
+  {
+   "iem": "HPC",
+   "call_index": 60
+  },
+  {
+   "iem": "HMET",
+   "call_index": 61
+  },
+  {
+   "iem": "DESMO",
+   "call_index": 62
+  },
+  {
+   "iem": "2OAA",
+   "call_index": 63
+  }
+ ],
+ "panel_protocol": [
+  "EX_hista[u]",
+  "DM_hista[bc]",
+  "EX_im4ac[u]",
+  "EX_his_L[u]",
+  "DM_his_L[bc]",
+  "EX_creat[u]",
+  "EX_gudac[u]",
+  "EX_argsuc[u]",
+  "EX_orot[u]",
+  "EX_ura[u]",
+  "DM_creat[bc]",
+  "DM_arg_L[bc]",
+  "DM_gudac[bc]",
+  "EX_lys_L[u]",
+  "EX_gly[u]",
+  "EX_5oxpro[u]",
+  "DM_citr_L[bc]",
+  "DM_gln_L[bc]",
+  "EX_3ivcrn[u]",
+  "EX_acglu[u]",
+  "EX_acgly[u]",
+  "EX_34dhphe[u]",
+  "DM_34dhphe[bc]",
+  "EX_5htrp[u]",
+  "DM_5htrp[bc]",
+  "DM_adrnl[bc]",
+  "EX_dopa[u]",
+  "EX_CE2176[u]",
+  "DM_CE2176[bc]",
+  "DM_nrpphr[bc]",
+  "EX_3moxtyr[u]",
+  "EX_CE2026[u]",
+  "EX_3hivac[u]",
+  "DM_aldstrn[bc]",
+  "DM_crtsl[bc]",
+  "DM_prgstrn[bc]",
+  "DM_andrstndn[bc]",
+  "DM_andrstrn[bc]",
+  "DM_dhea[bc]",
+  "DM_caro[bc]",
+  "DM_acac[bc]",
+  "DM_acetone[bc]",
+  "DM_bhb[bc]",
+  "EX_lac_L[u]",
+  "EX_nh4[u]",
+  "EX_3hpp[u]",
+  "EX_2mcit[u]",
+  "DM_crtstrn[bc]",
+  "DM_11docrtstrn[bc]",
+  "DM_lac_L[bc]",
+  "EX_thym[u]",
+  "EX_56dura[u]",
+  "EX_56dthm[u]",
+  "DM_chsterol[bc]",
+  "DM_tag_hs[bc]",
+  "EX_fru[u]",
+  "EX_forglu[u]",
+  "EX_c5dc[u]",
+  "DM_c5dc[bc]",
+  "DM_c10crn[bc]",
+  "DM_c4crn[bc]",
+  "DM_ddeccrn[bc]",
+  "DM_ttdcrn[bc]",
+  "DM_pmtcrn[bc]",
+  "EX_4hpro_LT[u]",
+  "EX_CE4970[u]",
+  "EX_CE4969[u]",
+  "EX_CE4968[u]",
+  "EX_ethmalac[u]",
+  "EX_adpac[u]",
+  "EX_subeac[u]",
+  "EX_sebacid[u]",
+  "EX_pro_L[u]",
+  "EX_leuktrE4[u]",
+  "EX_leuktrC4[u]",
+  "DM_5oxpro[bc]",
+  "DM_leuktrE4[bc]",
+  "DM_leuktrC4[bc]",
+  "DM_leuktrD4[bc]",
+  "DM_pro_L[bc]",
+  "DM_crtn[bc]",
+  "EX_urate[u]",
+  "EX_arg_L[u]",
+  "EX_glu_L[u]",
+  "DM_lys_L[bc]",
+  "EX_orn[u]",
+  "DM_orn[bc]",
+  "DM_orn[csf]",
+  "DM_c6dc[bc]",
+  "DM_met_L[bc]",
+  "EX_Lhcystin[u]",
+  "DM_Lhcystin[bc]",
+  "EX_hcys_L[u]",
+  "DM_hcys_L[bc]",
+  "EX_cyst_L[u]",
+  "DM_Lpipecol[bc]",
+  "EX_citr_L[u]",
+  "EX_3bcrn[u]",
+  "DM_ivcrn[bc]",
+  "DM_fol[bc]",
+  "DM_urate[bc]",
+  "DM_leuktrE4[csf]",
+  "EX_ile_L[u]",
+  "EX_3mop[u]",
+  "DM_ile_L[bc]",
+  "DM_leu_L[bc]",
+  "DM_val_L[bc]",
+  "DM_3mop[bc]",
+  "EX_3aib[u]",
+  "DM_c4dc[bc]",
+  "DM_crn[bc]",
+  "DM_HC00900[bc]",
+  "DM_3hpp[bc]",
+  "DM_pcrn[bc]",
+  "DM_3hdececrn[bc]",
+  "DM_ala_L[bc]",
+  "DM_nh4[bc]",
+  "DM_ura[bc]",
+  "DM_phe_L[bc]",
+  "EX_2hyoxplac[u]",
+  "EX_phpyr[u]",
+  "DM_pyr[bc]",
+  "EX_sucsal[u]",
+  "DM_gly[bc]",
+  "DM_sucsal[bc]",
+  "DM_4abut[csf]",
+  "DM_tyr_L[bc]",
+  "EX_34hpl[u]",
+  "EX_34hpp[u]",
+  "EX_hxan[u]",
+  "EX_xan[u]",
+  "DM_xan[bc]",
+  "EX_akg[u]",
+  "DM_glu_L[bc]",
+  "EX_xylu_L[u]",
+  "EX_val_L[u]",
+  "EX_leu_L[u]",
+  "DM_asn_L[bc]",
+  "DM_asn_L[csf]",
+  "DM_gln_L[csf]",
+  "DM_glc_D[bc]",
+  "EX_fum[u]",
+  "EX_succ[u]",
+  "EX_acetone[u]",
+  "EX_acac[u]",
+  "EX_bhb[u]",
+  "EX_oxa[u]",
+  "EX_glyclt[u]",
+  "EX_glx[u]",
+  "DM_Brain_25aics[c]",
+  "EX_Nacasp[u]",
+  "DM_Nacasp[bc]",
+  "DM_Nacasp[csf]",
+  "EX_25aics[u]",
+  "EX_C05770[u]",
+  "DM_C05770[bc]",
+  "DM_C05770[csf]",
+  "EX_met_L[u]",
+  "DM_dsmsterol[bc]",
+  "DM_L2aadp[bc]",
+  "EX_2oxoadp[u]",
+  "EX_adpoh[u]"
+ ],
+ "extra_readouts": [
+  "DM_11docrtsl[bc]",
+  "DM_5hoxindoa[csf]",
+  "DM_argsuc[bc]",
+  "DM_crtn[csf]",
+  "DM_homoval[csf]",
+  "DM_lac_L[csf]",
+  "EX_3mglutac[u]",
+  "EX_3mglutr[u]",
+  "EX_4hphac[u]",
+  "EX_5aop[u]",
+  "EX_HC00900[u]",
+  "EX_actyr[u]",
+  "EX_crtn[u]",
+  "EX_glutar[u]",
+  "EX_ppbng[u]"
+ ],
+ "readouts_missing_from_model": {
+  "panel": [
+   "EX_25aics[u]"
+  ],
+  "extra": []
+ },
+ "summary": {
+  "lab": {
+   "n_profiles": 57,
+   "n_tuples": 252,
+   "n_conflicts_dropped": 0
+  },
+  "lab_hpo_corroborated": {
+   "n_profiles": 19,
+   "n_tuples": 37,
+   "n_conflicts_dropped": 0
+  },
+  "hpo": {
+   "n_profiles": 29,
+   "n_tuples": 79,
+   "n_conflicts_dropped": 0
+  },
+  "hpo_frequent": {
+   "n_profiles": 29,
+   "n_tuples": 66,
+   "n_conflicts_dropped": 0
+  }
+ },
+ "profiles": {
+  "lab": {
+   "HIS": [
+    [
+     "DM_his_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_hista[bc]",
+     "Increased"
+    ],
+    [
+     "EX_his_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_hista[u]",
+     "Increased"
+    ],
+    [
+     "EX_im4ac[u]",
+     "Increased"
+    ]
+   ],
+   "AGAT": [
+    [
+     "EX_creat[u]",
+     "Decreased"
+    ],
+    [
+     "EX_gudac[u]",
+     "Decreased"
+    ]
+   ],
+   "ARG": [
+    [
+     "DM_arg_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_creat[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gudac[bc]",
+     "Increased"
+    ],
+    [
+     "EX_argsuc[u]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ],
+    [
+     "EX_ura[u]",
+     "Increased"
+    ]
+   ],
+   "CPS1": [
+    [
+     "DM_citr_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_5oxpro[u]",
+     "Increased"
+    ],
+    [
+     "EX_gly[u]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_ura[u]",
+     "Increased"
+    ]
+   ],
+   "3MGA": [
+    [
+     "EX_3ivcrn[u]",
+     "Increased"
+    ]
+   ],
+   "AMA1": [
+    [
+     "EX_acglu[u]",
+     "Increased"
+    ],
+    [
+     "EX_acgly[u]",
+     "Increased"
+    ]
+   ],
+   "AADC": [
+    [
+     "DM_34dhphe[bc]",
+     "Increased"
+    ],
+    [
+     "DM_5htrp[bc]",
+     "Increased"
+    ],
+    [
+     "DM_CE2176[bc]",
+     "Increased"
+    ],
+    [
+     "DM_adrnl[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_nrpphr[bc]",
+     "Decreased"
+    ],
+    [
+     "EX_34dhphe[u]",
+     "Increased"
+    ],
+    [
+     "EX_3moxtyr[u]",
+     "Increased"
+    ],
+    [
+     "EX_5htrp[u]",
+     "Increased"
+    ],
+    [
+     "EX_CE2176[u]",
+     "Increased"
+    ],
+    [
+     "EX_dopa[u]",
+     "Increased"
+    ]
+   ],
+   "3MCC": [
+    [
+     "EX_3hivac[u]",
+     "Increased"
+    ],
+    [
+     "EX_3ivcrn[u]",
+     "Increased"
+    ],
+    [
+     "EX_CE2026[u]",
+     "Increased"
+    ]
+   ],
+   "CYP21D": [
+    [
+     "DM_aldstrn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_andrstndn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_andrstrn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_crtsl[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_dhea[bc]",
+     "Increased"
+    ],
+    [
+     "DM_prgstrn[bc]",
+     "Increased"
+    ]
+   ],
+   "HYCARO": [
+    [
+     "DM_caro[bc]",
+     "Increased"
+    ]
+   ],
+   "BTD": [
+    [
+     "DM_acac[bc]",
+     "Increased"
+    ],
+    [
+     "DM_acetone[bc]",
+     "Increased"
+    ],
+    [
+     "DM_bhb[bc]",
+     "Increased"
+    ],
+    [
+     "EX_2mcit[u]",
+     "Increased"
+    ],
+    [
+     "EX_3hpp[u]",
+     "Increased"
+    ],
+    [
+     "EX_CE2026[u]",
+     "Increased"
+    ],
+    [
+     "EX_lac_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_nh4[u]",
+     "Increased"
+    ]
+   ],
+   "STAR": [
+    [
+     "DM_11docrtstrn[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_andrstndn[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_crtsl[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_crtstrn[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_dhea[bc]",
+     "Decreased"
+    ]
+   ],
+   "CMO1": [
+    [
+     "DM_aldstrn[bc]",
+     "Decreased"
+    ]
+   ],
+   "DGK": [
+    [
+     "DM_lac_L[bc]",
+     "Increased"
+    ]
+   ],
+   "DPYR": [
+    [
+     "EX_56dthm[u]",
+     "Increased"
+    ],
+    [
+     "EX_56dura[u]",
+     "Increased"
+    ],
+    [
+     "EX_thym[u]",
+     "Increased"
+    ],
+    [
+     "EX_ura[u]",
+     "Increased"
+    ]
+   ],
+   "FED": [
+    [
+     "DM_chsterol[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_tag_hs[bc]",
+     "Increased"
+    ]
+   ],
+   "EF": [
+    [
+     "EX_fru[u]",
+     "Increased"
+    ]
+   ],
+   "FIGLU": [
+    [
+     "EX_forglu[u]",
+     "Increased"
+    ]
+   ],
+   "GA1": [
+    [
+     "DM_c5dc[bc]",
+     "Increased"
+    ],
+    [
+     "EX_c5dc[u]",
+     "Increased"
+    ]
+   ],
+   "GA2": [
+    [
+     "DM_c10crn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_c4crn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_ddeccrn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_pmtcrn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_ttdcrn[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3hivac[u]",
+     "Increased"
+    ],
+    [
+     "EX_4hpro_LT[u]",
+     "Increased"
+    ],
+    [
+     "EX_CE4968[u]",
+     "Increased"
+    ],
+    [
+     "EX_CE4969[u]",
+     "Increased"
+    ],
+    [
+     "EX_CE4970[u]",
+     "Increased"
+    ],
+    [
+     "EX_adpac[u]",
+     "Increased"
+    ],
+    [
+     "EX_ethmalac[u]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_sebacid[u]",
+     "Increased"
+    ],
+    [
+     "EX_subeac[u]",
+     "Increased"
+    ]
+   ],
+   "OXOP": [
+    [
+     "DM_5oxpro[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_leuktrC4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_leuktrD4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_leuktrE4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_5oxpro[u]",
+     "Increased"
+    ],
+    [
+     "EX_leuktrC4[u]",
+     "Increased"
+    ],
+    [
+     "EX_leuktrE4[u]",
+     "Increased"
+    ]
+   ],
+   "GMT": [
+    [
+     "DM_creat[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_crtn[bc]",
+     "Increased"
+    ],
+    [
+     "EX_creat[u]",
+     "Decreased"
+    ],
+    [
+     "EX_gudac[u]",
+     "Increased"
+    ],
+    [
+     "EX_urate[u]",
+     "Increased"
+    ]
+   ],
+   "GACR": [
+    [
+     "DM_gln_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_lys_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_orn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_orn[csf]",
+     "Increased"
+    ],
+    [
+     "EX_arg_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_glu_L[u]",
+     "Decreased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Decreased"
+    ],
+    [
+     "EX_orn[u]",
+     "Increased"
+    ]
+   ],
+   "HMG": [
+    [
+     "DM_c6dc[bc]",
+     "Increased"
+    ],
+    [
+     "EX_adpac[u]",
+     "Increased"
+    ]
+   ],
+   "HCYS": [
+    [
+     "DM_Lhcystin[bc]",
+     "Increased"
+    ],
+    [
+     "DM_hcys_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_met_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_orn[bc]",
+     "Increased"
+    ],
+    [
+     "EX_Lhcystin[u]",
+     "Increased"
+    ],
+    [
+     "EX_cyst_L[u]",
+     "Decreased"
+    ],
+    [
+     "EX_hcys_L[u]",
+     "Increased"
+    ]
+   ],
+   "HLYS1": [
+    [
+     "DM_Lpipecol[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ]
+   ],
+   "HLYS2": [
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_citr_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ]
+   ],
+   "HYPRO1": [
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_4hpro_LT[u]",
+     "Increased"
+    ],
+    [
+     "EX_gly[u]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ]
+   ],
+   "HPII": [
+    [
+     "DM_orn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_4hpro_LT[u]",
+     "Increased"
+    ],
+    [
+     "EX_gly[u]",
+     "Increased"
+    ],
+    [
+     "EX_orn[u]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ]
+   ],
+   "IVA": [
+    [
+     "DM_ivcrn[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3bcrn[u]",
+     "Increased"
+    ],
+    [
+     "EX_3ivcrn[u]",
+     "Increased"
+    ]
+   ],
+   "LNS": [
+    [
+     "DM_fol[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_urate[bc]",
+     "Increased"
+    ],
+    [
+     "EX_urate[u]",
+     "Increased"
+    ]
+   ],
+   "LTC4S": [
+    [
+     "DM_leuktrC4[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_leuktrD4[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_leuktrE4[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_leuktrE4[csf]",
+     "Decreased"
+    ],
+    [
+     "EX_leuktrC4[u]",
+     "Decreased"
+    ],
+    [
+     "EX_leuktrE4[u]",
+     "Decreased"
+    ]
+   ],
+   "MSUD": [
+    [
+     "DM_3mop[bc]",
+     "Increased"
+    ],
+    [
+     "DM_ile_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_leu_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_val_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3mop[u]",
+     "Increased"
+    ],
+    [
+     "EX_ile_L[u]",
+     "Increased"
+    ]
+   ],
+   "MMA": [
+    [
+     "DM_3hdececrn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_3hpp[bc]",
+     "Increased"
+    ],
+    [
+     "DM_HC00900[bc]",
+     "Increased"
+    ],
+    [
+     "DM_c4dc[bc]",
+     "Increased"
+    ],
+    [
+     "DM_crn[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_pcrn[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3aib[u]",
+     "Increased"
+    ]
+   ],
+   "NAGS": [
+    [
+     "DM_ala_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_citr_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_orn[bc]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Decreased"
+    ]
+   ],
+   "OTC": [
+    [
+     "DM_citr_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_orn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_ura[bc]",
+     "Increased"
+    ],
+    [
+     "EX_5oxpro[u]",
+     "Increased"
+    ],
+    [
+     "EX_gly[u]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ]
+   ],
+   "PKU": [
+    [
+     "DM_phe_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_2hyoxplac[u]",
+     "Increased"
+    ],
+    [
+     "EX_phpyr[u]",
+     "Increased"
+    ]
+   ],
+   "SUCLA": [
+    [
+     "DM_lac_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_pyr[bc]",
+     "Increased"
+    ]
+   ],
+   "SSADHD": [
+    [
+     "DM_4abut[csf]",
+     "Increased"
+    ],
+    [
+     "DM_gly[bc]",
+     "Increased"
+    ],
+    [
+     "DM_sucsal[bc]",
+     "Increased"
+    ],
+    [
+     "EX_gly[u]",
+     "Increased"
+    ],
+    [
+     "EX_sucsal[u]",
+     "Increased"
+    ]
+   ],
+   "TETB": [
+    [
+     "DM_phe_L[bc]",
+     "Increased"
+    ]
+   ],
+   "CIT1": [
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gly[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "EX_citr_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_gly[u]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ]
+   ],
+   "TYR1": [
+    [
+     "DM_met_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_tyr_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_34hpl[u]",
+     "Increased"
+    ],
+    [
+     "EX_34hpp[u]",
+     "Increased"
+    ]
+   ],
+   "TYR3": [
+    [
+     "DM_tyr_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_34hpl[u]",
+     "Increased"
+    ],
+    [
+     "EX_34hpp[u]",
+     "Increased"
+    ]
+   ],
+   "XAN1": [
+    [
+     "DM_urate[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_xan[bc]",
+     "Increased"
+    ],
+    [
+     "EX_hxan[u]",
+     "Increased"
+    ],
+    [
+     "EX_urate[u]",
+     "Decreased"
+    ],
+    [
+     "EX_xan[u]",
+     "Increased"
+    ]
+   ],
+   "AKGD": [
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_glu_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lac_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_akg[u]",
+     "Increased"
+    ],
+    [
+     "EX_lac_L[u]",
+     "Increased"
+    ]
+   ],
+   "EP": [
+    [
+     "EX_xylu_L[u]",
+     "Increased"
+    ]
+   ],
+   "HYPVLI": [
+    [
+     "DM_val_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_leu_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_val_L[u]",
+     "Increased"
+    ]
+   ],
+   "ASNSD": [
+    [
+     "DM_asn_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_asn_L[csf]",
+     "Decreased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gln_L[csf]",
+     "Increased"
+    ]
+   ],
+   "ASA": [
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_argsuc[u]",
+     "Increased"
+    ],
+    [
+     "EX_gly[u]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ],
+    [
+     "EX_ura[u]",
+     "Increased"
+    ]
+   ],
+   "PC": [
+    [
+     "DM_acac[bc]",
+     "Increased"
+    ],
+    [
+     "DM_ala_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_bhb[bc]",
+     "Increased"
+    ],
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_glc_D[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_lac_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_acac[u]",
+     "Increased"
+    ],
+    [
+     "EX_acetone[u]",
+     "Increased"
+    ],
+    [
+     "EX_akg[u]",
+     "Increased"
+    ],
+    [
+     "EX_bhb[u]",
+     "Increased"
+    ],
+    [
+     "EX_fum[u]",
+     "Increased"
+    ],
+    [
+     "EX_succ[u]",
+     "Increased"
+    ]
+   ],
+   "PHOX1": [
+    [
+     "EX_glx[u]",
+     "Increased"
+    ],
+    [
+     "EX_glyclt[u]",
+     "Increased"
+    ],
+    [
+     "EX_oxa[u]",
+     "Increased"
+    ]
+   ],
+   "ADSL": [
+    [
+     "DM_Brain_25aics[c]",
+     "Increased"
+    ]
+   ],
+   "CD": [
+    [
+     "DM_Nacasp[bc]",
+     "Increased"
+    ],
+    [
+     "DM_Nacasp[csf]",
+     "Increased"
+    ],
+    [
+     "EX_Nacasp[u]",
+     "Increased"
+    ]
+   ],
+   "HPC": [
+    [
+     "DM_C05770[bc]",
+     "Increased"
+    ],
+    [
+     "DM_C05770[csf]",
+     "Increased"
+    ],
+    [
+     "EX_25aics[u]",
+     "Increased"
+    ],
+    [
+     "EX_C05770[u]",
+     "Increased"
+    ]
+   ],
+   "HMET": [
+    [
+     "DM_hcys_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_met_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_hcys_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_met_L[u]",
+     "Increased"
+    ]
+   ],
+   "DESMO": [
+    [
+     "DM_dsmsterol[bc]",
+     "Increased"
+    ]
+   ],
+   "2OAA": [
+    [
+     "DM_L2aadp[bc]",
+     "Increased"
+    ],
+    [
+     "EX_2oxoadp[u]",
+     "Increased"
+    ],
+    [
+     "EX_adpoh[u]",
+     "Increased"
+    ]
+   ]
+  },
+  "lab_hpo_corroborated": {
+   "HIS": [
+    [
+     "DM_his_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_his_L[u]",
+     "Increased"
+    ]
+   ],
+   "AGAT": [
+    [
+     "EX_creat[u]",
+     "Decreased"
+    ],
+    [
+     "EX_gudac[u]",
+     "Decreased"
+    ]
+   ],
+   "ARG": [],
+   "CPS1": [],
+   "3MGA": [],
+   "AMA1": [],
+   "AADC": [],
+   "3MCC": [],
+   "CYP21D": [],
+   "HYCARO": [],
+   "BTD": [],
+   "STAR": [],
+   "CMO1": [
+    [
+     "DM_aldstrn[bc]",
+     "Decreased"
+    ]
+   ],
+   "DGK": [],
+   "DPYR": [
+    [
+     "EX_56dthm[u]",
+     "Increased"
+    ],
+    [
+     "EX_56dura[u]",
+     "Increased"
+    ],
+    [
+     "EX_thym[u]",
+     "Increased"
+    ],
+    [
+     "EX_ura[u]",
+     "Increased"
+    ]
+   ],
+   "FED": [],
+   "EF": [],
+   "FIGLU": [],
+   "GA1": [
+    [
+     "EX_c5dc[u]",
+     "Increased"
+    ]
+   ],
+   "GA2": [],
+   "OXOP": [],
+   "GMT": [],
+   "GACR": [
+    [
+     "DM_orn[bc]",
+     "Increased"
+    ]
+   ],
+   "HMG": [],
+   "HCYS": [
+    [
+     "DM_Lhcystin[bc]",
+     "Increased"
+    ]
+   ],
+   "HLYS1": [
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ]
+   ],
+   "HLYS2": [
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_citr_L[u]",
+     "Increased"
+    ]
+   ],
+   "HYPRO1": [
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_4hpro_LT[u]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ]
+   ],
+   "HPII": [
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_4hpro_LT[u]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ]
+   ],
+   "IVA": [
+    [
+     "DM_ivcrn[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3ivcrn[u]",
+     "Increased"
+    ]
+   ],
+   "LNS": [],
+   "LTC4S": [],
+   "MSUD": [],
+   "MMA": [],
+   "NAGS": [
+    [
+     "DM_ala_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ]
+   ],
+   "OTC": [
+    [
+     "DM_citr_L[bc]",
+     "Decreased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ]
+   ],
+   "PKU": [],
+   "SUCLA": [],
+   "SSADHD": [],
+   "TETB": [],
+   "CIT1": [],
+   "TYR1": [],
+   "TYR3": [
+    [
+     "DM_tyr_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_34hpl[u]",
+     "Increased"
+    ],
+    [
+     "EX_34hpp[u]",
+     "Increased"
+    ]
+   ],
+   "XAN1": [],
+   "AKGD": [],
+   "EP": [],
+   "HYPVLI": [],
+   "ASNSD": [],
+   "ASA": [
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ]
+   ],
+   "PC": [],
+   "PHOX1": [
+    [
+     "EX_oxa[u]",
+     "Increased"
+    ]
+   ],
+   "ADSL": [],
+   "CD": [],
+   "HPC": [
+    [
+     "EX_C05770[u]",
+     "Increased"
+    ]
+   ],
+   "HMET": [
+    [
+     "DM_met_L[bc]",
+     "Increased"
+    ]
+   ],
+   "DESMO": [],
+   "2OAA": []
+  },
+  "hpo": {
+   "3MCC": [
+    [
+     "DM_glc_D[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "3MGA": [
+    [
+     "DM_glc_D[bc]",
+     "Decreased"
+    ],
+    [
+     "EX_3mglutac[u]",
+     "Increased"
+    ]
+   ],
+   "AADC": [
+    [
+     "DM_5hoxindoa[csf]",
+     "Decreased"
+    ],
+    [
+     "DM_glc_D[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_homoval[csf]",
+     "Decreased"
+    ]
+   ],
+   "AGAT": [
+    [
+     "DM_creat[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_crtn[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_crtn[csf]",
+     "Decreased"
+    ],
+    [
+     "EX_creat[u]",
+     "Decreased"
+    ],
+    [
+     "EX_crtn[u]",
+     "Decreased"
+    ],
+    [
+     "EX_gudac[u]",
+     "Decreased"
+    ]
+   ],
+   "ARG": [
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "ASA": [
+    [
+     "DM_arg_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_argsuc[bc]",
+     "Increased"
+    ],
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_tag_hs[bc]",
+     "Increased"
+    ],
+    [
+     "EX_argsuc[u]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ]
+   ],
+   "BTD": [
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "CMO1": [
+    [
+     "DM_11docrtsl[bc]",
+     "Increased"
+    ],
+    [
+     "DM_aldstrn[bc]",
+     "Decreased"
+    ]
+   ],
+   "CPS1": [
+    [
+     "DM_arg_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "DPYR": [
+    [
+     "EX_56dthm[u]",
+     "Increased"
+    ],
+    [
+     "EX_ura[u]",
+     "Increased"
+    ]
+   ],
+   "GA1": [
+    [
+     "EX_glutar[u]",
+     "Increased"
+    ]
+   ],
+   "GACR": [
+    [
+     "DM_orn[bc]",
+     "Increased"
+    ]
+   ],
+   "HCYS": [
+    [
+     "DM_Lhcystin[bc]",
+     "Increased"
+    ]
+   ],
+   "HIS": [
+    [
+     "DM_his_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_his_L[u]",
+     "Increased"
+    ]
+   ],
+   "HLYS1": [
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ]
+   ],
+   "HLYS2": [
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "EX_citr_L[u]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ]
+   ],
+   "HMET": [
+    [
+     "DM_Lhcystin[bc]",
+     "Increased"
+    ],
+    [
+     "DM_met_L[bc]",
+     "Increased"
+    ]
+   ],
+   "HMG": [
+    [
+     "DM_lac_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_urate[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3mglutr[u]",
+     "Increased"
+    ]
+   ],
+   "HPC": [
+    [
+     "EX_5aop[u]",
+     "Increased"
+    ],
+    [
+     "EX_ppbng[u]",
+     "Increased"
+    ]
+   ],
+   "HPII": [
+    [
+     "DM_ala_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gly[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lac_L[csf]",
+     "Increased"
+    ],
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_4hpro_LT[u]",
+     "Increased"
+    ],
+    [
+     "EX_akg[u]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ]
+   ],
+   "HYPRO1": [
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ]
+   ],
+   "IVA": [
+    [
+     "DM_ivcrn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3hivac[u]",
+     "Increased"
+    ]
+   ],
+   "LNS": [
+    [
+     "DM_urate[bc]",
+     "Increased"
+    ]
+   ],
+   "MMA": [
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "NAGS": [
+    [
+     "DM_ala_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "OTC": [
+    [
+     "DM_arg_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_citr_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_glc_D[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ]
+   ],
+   "PHOX1": [
+    [
+     "EX_oxa[u]",
+     "Increased"
+    ]
+   ],
+   "SUCLA": [
+    [
+     "EX_HC00900[u]",
+     "Increased"
+    ]
+   ],
+   "TYR3": [
+    [
+     "DM_tyr_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_34hpl[u]",
+     "Increased"
+    ],
+    [
+     "EX_34hpp[u]",
+     "Increased"
+    ],
+    [
+     "EX_4hphac[u]",
+     "Increased"
+    ],
+    [
+     "EX_actyr[u]",
+     "Increased"
+    ]
+   ]
+  },
+  "hpo_frequent": {
+   "3MCC": [
+    [
+     "DM_glc_D[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "3MGA": [
+    [
+     "EX_3mglutac[u]",
+     "Increased"
+    ]
+   ],
+   "AADC": [
+    [
+     "DM_5hoxindoa[csf]",
+     "Decreased"
+    ],
+    [
+     "DM_homoval[csf]",
+     "Decreased"
+    ]
+   ],
+   "AGAT": [
+    [
+     "DM_creat[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_crtn[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_crtn[csf]",
+     "Decreased"
+    ],
+    [
+     "EX_creat[u]",
+     "Decreased"
+    ],
+    [
+     "EX_crtn[u]",
+     "Decreased"
+    ],
+    [
+     "EX_gudac[u]",
+     "Decreased"
+    ]
+   ],
+   "ARG": [
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "ASA": [
+    [
+     "DM_arg_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_argsuc[bc]",
+     "Increased"
+    ],
+    [
+     "DM_citr_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gln_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "EX_argsuc[u]",
+     "Increased"
+    ]
+   ],
+   "BTD": [
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "CMO1": [
+    [
+     "DM_11docrtsl[bc]",
+     "Increased"
+    ],
+    [
+     "DM_aldstrn[bc]",
+     "Decreased"
+    ]
+   ],
+   "CPS1": [
+    [
+     "DM_arg_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "DPYR": [
+    [
+     "EX_56dthm[u]",
+     "Increased"
+    ],
+    [
+     "EX_ura[u]",
+     "Increased"
+    ]
+   ],
+   "GA1": [
+    [
+     "EX_glutar[u]",
+     "Increased"
+    ]
+   ],
+   "GACR": [
+    [
+     "DM_orn[bc]",
+     "Increased"
+    ]
+   ],
+   "HCYS": [
+    [
+     "DM_Lhcystin[bc]",
+     "Increased"
+    ]
+   ],
+   "HIS": [
+    [
+     "DM_his_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_his_L[u]",
+     "Increased"
+    ]
+   ],
+   "HLYS1": [
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ]
+   ],
+   "HLYS2": [
+    [
+     "DM_lys_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_lys_L[u]",
+     "Increased"
+    ]
+   ],
+   "HMET": [
+    [
+     "DM_Lhcystin[bc]",
+     "Increased"
+    ]
+   ],
+   "HMG": [
+    [
+     "DM_lac_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "DM_urate[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3mglutr[u]",
+     "Increased"
+    ]
+   ],
+   "HPC": [
+    [
+     "EX_5aop[u]",
+     "Increased"
+    ],
+    [
+     "EX_ppbng[u]",
+     "Increased"
+    ]
+   ],
+   "HPII": [
+    [
+     "DM_ala_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_gly[bc]",
+     "Increased"
+    ],
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_4hpro_LT[u]",
+     "Increased"
+    ],
+    [
+     "EX_akg[u]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ]
+   ],
+   "HYPRO1": [
+    [
+     "DM_pro_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_pro_L[u]",
+     "Increased"
+    ]
+   ],
+   "IVA": [
+    [
+     "DM_ivcrn[bc]",
+     "Increased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "EX_3hivac[u]",
+     "Increased"
+    ]
+   ],
+   "LNS": [
+    [
+     "DM_urate[bc]",
+     "Increased"
+    ]
+   ],
+   "MMA": [
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "NAGS": [
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ]
+   ],
+   "OTC": [
+    [
+     "DM_arg_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_citr_L[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_glc_D[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_nh4[bc]",
+     "Increased"
+    ],
+    [
+     "EX_orot[u]",
+     "Increased"
+    ]
+   ],
+   "PHOX1": [
+    [
+     "EX_oxa[u]",
+     "Increased"
+    ]
+   ],
+   "SUCLA": [
+    [
+     "EX_HC00900[u]",
+     "Increased"
+    ]
+   ],
+   "TYR3": [
+    [
+     "DM_tyr_L[bc]",
+     "Increased"
+    ],
+    [
+     "EX_34hpl[u]",
+     "Increased"
+    ],
+    [
+     "EX_34hpp[u]",
+     "Increased"
+    ],
+    [
+     "EX_4hphac[u]",
+     "Increased"
+    ]
+   ]
+  }
+ },
+ "conflicting_readouts_dropped": {
+  "lab": {},
+  "lab_hpo_corroborated": {},
+  "hpo": {},
+  "hpo_frequent": {}
+ },
+ "hpo_annotations": [
+  {
+   "iem": "3MCC",
+   "hpo_id": "HP:0001943",
+   "hpo_term": "Hypoglycemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_glc_D[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "3MCC",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "3MCC",
+   "hpo_id": "HP:0001992",
+   "hpo_term": "Organic aciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "3MGA",
+   "hpo_id": "HP:0001943",
+   "hpo_term": "Hypoglycemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_glc_D[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "3MGA",
+   "hpo_id": "HP:0003535",
+   "hpo_term": "3-Methylglutaconic aciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:EX_3mglutac[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_3mglutac[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "AADC",
+   "hpo_id": "HP:0000870",
+   "hpo_term": "Increased circulating prolactin concentration",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "protein hormone, not a metabolite"
+  },
+  {
+   "iem": "AADC",
+   "hpo_id": "HP:0001943",
+   "hpo_term": "Hypoglycemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_glc_D[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "AADC",
+   "hpo_id": "HP:0003785",
+   "hpo_term": "Decreased CSF homovanillic acid concentration",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_homoval[csf]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "AADC",
+   "hpo_id": "HP:0025455",
+   "hpo_term": "Decreased CSF 5-hydroxyindolacetic acid concentration",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_5hoxindoa[csf]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "AGAT",
+   "hpo_id": "HP:0012101",
+   "hpo_term": "Decreased serum creatinine",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_crtn[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "AGAT",
+   "hpo_id": "HP:0034292",
+   "hpo_term": "Reduced circulating creatine concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_creat[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "AGAT",
+   "hpo_id": "HP:0034597",
+   "hpo_term": "Decreased CSF creatinine concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_crtn[csf]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "AGAT",
+   "hpo_id": "HP:0034888",
+   "hpo_term": "Decreased urine guanidinoacetic acid level",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_gudac[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_gudac[u]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "AGAT",
+   "hpo_id": "HP:6000115",
+   "hpo_term": "Decreased urine creatinine level",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_crtn[u]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "AGAT",
+   "hpo_id": "HP:6000748",
+   "hpo_term": "Decreased urinary creatine level",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_creat[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_creat[u]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "ARG",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "ARG",
+   "hpo_id": "HP:0008339",
+   "hpo_term": "Diaminoaciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0002155",
+   "hpo_term": "Hypertriglyceridemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_tag_hs[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0002900",
+   "hpo_term": "Hypokalemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "inorganic ion"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0002910",
+   "hpo_term": "Elevated circulating hepatic transaminase concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzymes, not metabolites"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0003217",
+   "hpo_term": "Hyperglutaminemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:DM_gln_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_gln_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0003218",
+   "hpo_term": "Oroticaciduria",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "lab:EX_orot[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_orot[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0003355",
+   "hpo_term": "Aminoaciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0005961",
+   "hpo_term": "Hypoargininemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_arg_L[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0011966",
+   "hpo_term": "Elevated plasma citrulline",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:DM_citr_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_citr_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0025630",
+   "hpo_term": "Argininosuccinic aciduria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_argsuc[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "ASA",
+   "hpo_id": "HP:0032491",
+   "hpo_term": "Increased circulating argininosuccinic acid",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_argsuc[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "BTD",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "BTD",
+   "hpo_id": "HP:0001992",
+   "hpo_term": "Organic aciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "CMO1",
+   "hpo_id": "HP:0000848",
+   "hpo_term": "Increased circulating renin level",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzyme, not a metabolite"
+  },
+  {
+   "iem": "CMO1",
+   "hpo_id": "HP:0002153",
+   "hpo_term": "Hyperkalemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "inorganic ion"
+  },
+  {
+   "iem": "CMO1",
+   "hpo_id": "HP:0002902",
+   "hpo_term": "Hyponatremia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "inorganic ion"
+  },
+  {
+   "iem": "CMO1",
+   "hpo_id": "HP:0004319",
+   "hpo_term": "Decreased circulating aldosterone level",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:DM_aldstrn[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_aldstrn[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "CMO1",
+   "hpo_id": "HP:0025436",
+   "hpo_term": "Elevated serum 11-deoxycortisol",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_11docrtsl[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "CPS1",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "CPS1",
+   "hpo_id": "HP:0003355",
+   "hpo_term": "Aminoaciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "CPS1",
+   "hpo_id": "HP:0005961",
+   "hpo_term": "Hypoargininemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_arg_L[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "DPYR",
+   "hpo_id": "HP:0012127",
+   "hpo_term": "Uraciluria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_56dura[u]",
+    "lab:EX_ura[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_ura[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "DPYR",
+   "hpo_id": "HP:6000119",
+   "hpo_term": "Elevated urinary dihydrothymine level",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_56dthm[u]",
+    "lab:EX_thym[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_56dthm[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "EF",
+   "hpo_id": "HP:0003074",
+   "hpo_term": "Hyperglycemia",
+   "frequency": "Excluded (0%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "frequency Excluded (0%)"
+  },
+  {
+   "iem": "FIGLU",
+   "hpo_id": "HP:0032164",
+   "hpo_term": "Increased blood folate concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "group of vitamers (folic acid and reduced folates); no single model metabolite"
+  },
+  {
+   "iem": "GA1",
+   "hpo_id": "HP:0003150",
+   "hpo_term": "Glutaric aciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:DM_c5dc[bc]",
+    "lab:EX_c5dc[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_glutar[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "GACR",
+   "hpo_id": "HP:0003355",
+   "hpo_term": "Aminoaciduria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "GACR",
+   "hpo_id": "HP:0012026",
+   "hpo_term": "Hyperornithinemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:DM_orn[bc]",
+    "lab:DM_orn[csf]",
+    "lab:EX_orn[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_orn[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HCYS",
+   "hpo_id": "HP:0002160",
+   "hpo_term": "Hyperhomocystinemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:DM_Lhcystin[bc]",
+    "lab:EX_Lhcystin[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_Lhcystin[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HCYS",
+   "hpo_id": "HP:0002910",
+   "hpo_term": "Elevated circulating hepatic transaminase concentration",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzymes, not metabolites"
+  },
+  {
+   "iem": "HIS",
+   "hpo_id": "HP:0002927",
+   "hpo_term": "Histidinuria",
+   "frequency": "Obligate (100%)",
+   "sources": [
+    "lab:EX_his_L[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_his_L[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HIS",
+   "hpo_id": "HP:0010906",
+   "hpo_term": "Hyperhistidinemia",
+   "frequency": "Obligate (100%)",
+   "sources": [
+    "lab:DM_his_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_his_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS1",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS1",
+   "hpo_id": "HP:0002161",
+   "hpo_term": "Hyperlysinemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:DM_lys_L[bc]",
+    "lab:EX_lys_L[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_lys_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS1",
+   "hpo_id": "HP:0003131",
+   "hpo_term": "Cystinuria",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "L-cystine has no blood or urine form in Harvey (organ cytosols only)"
+  },
+  {
+   "iem": "HLYS1",
+   "hpo_id": "HP:0003297",
+   "hpo_term": "Hyperlysinuria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_lys_L[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS1",
+   "hpo_id": "HP:0500151",
+   "hpo_term": "Hypercystinemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "L-cystine has no blood form in Harvey (organ cytosols only)"
+  },
+  {
+   "iem": "HLYS2",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS2",
+   "hpo_id": "HP:0002161",
+   "hpo_term": "Hyperlysinemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:DM_lys_L[bc]",
+    "lab:EX_lys_L[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_lys_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS2",
+   "hpo_id": "HP:0003131",
+   "hpo_term": "Cystinuria",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "L-cystine has no blood or urine form in Harvey (organ cytosols only)"
+  },
+  {
+   "iem": "HLYS2",
+   "hpo_id": "HP:0003297",
+   "hpo_term": "Hyperlysinuria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_lys_L[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS2",
+   "hpo_id": "HP:0011966",
+   "hpo_term": "Elevated plasma citrulline",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "lab:DM_citr_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_citr_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS2",
+   "hpo_id": "HP:0032397",
+   "hpo_term": "Citrullinuria",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "lab:EX_citr_L[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_citr_L[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HLYS2",
+   "hpo_id": "HP:0500151",
+   "hpo_term": "Hypercystinemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "L-cystine has no blood form in Harvey (organ cytosols only)"
+  },
+  {
+   "iem": "HMET",
+   "hpo_id": "HP:0002160",
+   "hpo_term": "Hyperhomocystinemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_Lhcystin[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HMET",
+   "hpo_id": "HP:0002910",
+   "hpo_term": "Elevated circulating hepatic transaminase concentration",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzymes, not metabolites"
+  },
+  {
+   "iem": "HMET",
+   "hpo_id": "HP:0003073",
+   "hpo_term": "Hypoalbuminemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "protein, not a metabolite"
+  },
+  {
+   "iem": "HMET",
+   "hpo_id": "HP:0003235",
+   "hpo_term": "Hypermethioninemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "lab:DM_met_L[bc]",
+    "lab:EX_met_L[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_met_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HMET",
+   "hpo_id": "HP:0003236",
+   "hpo_term": "Elevated circulating creatine kinase concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzyme, not a metabolite"
+  },
+  {
+   "iem": "HMET",
+   "hpo_id": "HP:0011900",
+   "hpo_term": "Hypofibrinogenemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "protein, not a metabolite"
+  },
+  {
+   "iem": "HMG",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HMG",
+   "hpo_id": "HP:0002149",
+   "hpo_term": "Hyperuricemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_urate[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HMG",
+   "hpo_id": "HP:0002151",
+   "hpo_term": "Increased circulating lactate concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_lac_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HMG",
+   "hpo_id": "HP:0002910",
+   "hpo_term": "Elevated circulating hepatic transaminase concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzymes, not metabolites"
+  },
+  {
+   "iem": "HMG",
+   "hpo_id": "HP:0003344",
+   "hpo_term": "3-Methylglutaric aciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_3mglutr[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPC",
+   "hpo_id": "HP:0002902",
+   "hpo_term": "Hyponatremia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "inorganic ion"
+  },
+  {
+   "iem": "HPC",
+   "hpo_id": "HP:0003163",
+   "hpo_term": "Elevated urinary delta-aminolevulinic acid",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_5aop[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPC",
+   "hpo_id": "HP:0010473",
+   "hpo_term": "Porphyrinuria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:DM_C05770[bc]",
+    "lab:DM_C05770[csf]",
+    "lab:EX_C05770[u]"
+   ],
+   "used": false,
+   "reason": "class of compounds (porphyrins), not one metabolite"
+  },
+  {
+   "iem": "HPC",
+   "hpo_id": "HP:0012217",
+   "hpo_term": "Increased urinary porphobilinogen",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_ppbng[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0002154",
+   "hpo_term": "Hyperglycinemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only",
+    "lab:EX_gly[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_gly[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0002490",
+   "hpo_term": "Increased CSF lactate",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_lac_L[csf]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0002922",
+   "hpo_term": "Increased CSF protein concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "protein, not a metabolite"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0003080",
+   "hpo_term": "Hydroxyprolinuria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_4hpro_LT[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0003137",
+   "hpo_term": "Prolinuria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:EX_4hpro_LT[u]",
+    "lab:EX_pro_L[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_pro_L[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0003348",
+   "hpo_term": "Hyperalaninemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_ala_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0008326",
+   "hpo_term": "Reduced circulating vitamin B6 level",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "group of vitamers; no single model metabolite"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0008358",
+   "hpo_term": "Hyperprolinemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:DM_pro_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_pro_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HPII",
+   "hpo_id": "HP:0012402",
+   "hpo_term": "Increased urine alpha-ketoglutarate concentration",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_akg[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HYPRO1",
+   "hpo_id": "HP:0003137",
+   "hpo_term": "Prolinuria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_4hpro_LT[u]",
+    "lab:EX_pro_L[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_pro_L[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "HYPRO1",
+   "hpo_id": "HP:0008358",
+   "hpo_term": "Hyperprolinemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:DM_pro_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_pro_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "IVA",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "IVA",
+   "hpo_id": "HP:0002901",
+   "hpo_term": "Hypocalcemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "inorganic ion"
+  },
+  {
+   "iem": "IVA",
+   "hpo_id": "HP:0031962",
+   "hpo_term": "Elevated serum anion gap",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "derived quantity of electrolytes"
+  },
+  {
+   "iem": "IVA",
+   "hpo_id": "HP:0033111",
+   "hpo_term": "3-hydroxyisovaleric aciduria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_3ivcrn[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_3hivac[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "IVA",
+   "hpo_id": "HP:0033447",
+   "hpo_term": "Elevated circulating isovalerylcarnitine concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:DM_ivcrn[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_ivcrn[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "LNS",
+   "hpo_id": "HP:0002149",
+   "hpo_term": "Hyperuricemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_urate[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "MMA",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "NAGS",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "NAGS",
+   "hpo_id": "HP:0003217",
+   "hpo_term": "Hyperglutaminemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "lab:DM_gln_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_gln_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "NAGS",
+   "hpo_id": "HP:0003348",
+   "hpo_term": "Hyperalaninemia",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "lab:DM_ala_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_ala_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "OTC",
+   "hpo_id": "HP:0001943",
+   "hpo_term": "Hypoglycemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_glc_D[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "OTC",
+   "hpo_id": "HP:0001987",
+   "hpo_term": "Hyperammonemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_nh4[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "OTC",
+   "hpo_id": "HP:0002910",
+   "hpo_term": "Elevated circulating hepatic transaminase concentration",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzymes, not metabolites"
+  },
+  {
+   "iem": "OTC",
+   "hpo_id": "HP:0003218",
+   "hpo_term": "Oroticaciduria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_orot[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_orot[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "OTC",
+   "hpo_id": "HP:0003355",
+   "hpo_term": "Aminoaciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "OTC",
+   "hpo_id": "HP:0003572",
+   "hpo_term": "Low plasma citrulline",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:DM_citr_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_citr_L[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "OTC",
+   "hpo_id": "HP:0005961",
+   "hpo_term": "Hypoargininemia",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_arg_L[bc]",
+   "direction": "Decreased"
+  },
+  {
+   "iem": "PHOX1",
+   "hpo_id": "HP:0003159",
+   "hpo_term": "Hyperoxaluria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:EX_oxa[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_oxa[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "SUCLA",
+   "hpo_id": "HP:0003236",
+   "hpo_term": "Elevated circulating creatine kinase concentration",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzyme, not a metabolite"
+  },
+  {
+   "iem": "SUCLA",
+   "hpo_id": "HP:0003355",
+   "hpo_term": "Aminoaciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "SUCLA",
+   "hpo_id": "HP:0012120",
+   "hpo_term": "Methylmalonic aciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_HC00900[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "TYR1",
+   "hpo_id": "HP:0002909",
+   "hpo_term": "Generalized aminoaciduria",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "class of compounds, not one metabolite"
+  },
+  {
+   "iem": "TYR3",
+   "hpo_id": "HP:0003161",
+   "hpo_term": "4-Hydroxyphenylpyruvic aciduria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_34hpp[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_34hpp[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "TYR3",
+   "hpo_id": "HP:0003231",
+   "hpo_term": "Hypertyrosinemia",
+   "frequency": "Very frequent (99-80%)",
+   "sources": [
+    "lab:DM_tyr_L[bc]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "DM_tyr_L[bc]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "TYR3",
+   "hpo_id": "HP:0003607",
+   "hpo_term": "4-hydroxyphenylacetic aciduria",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_4hphac[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "TYR3",
+   "hpo_id": "HP:0003637",
+   "hpo_term": "Reduced circulating 4-Hydroxyphenylpyruvate dioxygenase activity",
+   "frequency": "Obligate (100%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "enzyme activity, not a metabolite"
+  },
+  {
+   "iem": "TYR3",
+   "hpo_id": "HP:6000479",
+   "hpo_term": "Elevated urine N-acetyltyrosine level",
+   "frequency": "Occasional (29-5%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_actyr[u]",
+   "direction": "Increased"
+  },
+  {
+   "iem": "TYR3",
+   "hpo_id": "HP:6000598",
+   "hpo_term": "Elevated urinary succinylacetone level",
+   "frequency": "Excluded (0%)",
+   "sources": [
+    "hpo_only"
+   ],
+   "used": false,
+   "reason": "frequency Excluded (0%)"
+  },
+  {
+   "iem": "TYR3",
+   "hpo_id": "HP:6001004",
+   "hpo_term": "Elevated urine hydroxyphenyllactic acid level",
+   "frequency": "Frequent (79-30%)",
+   "sources": [
+    "lab:EX_34hpl[u]"
+   ],
+   "used": true,
+   "reason": "",
+   "readout": "EX_34hpl[u]",
+   "direction": "Increased"
+  }
+ ]
+}
