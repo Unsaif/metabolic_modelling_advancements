@@ -110,6 +110,8 @@ Values move, though. For example, urinary maxima limited by filtration scale by 
 
 The protocol maximises each biomarker, so once both states reach the cap it cannot see a difference. The other three are zero in both states (CYP21D aldosterone and cortisol; BTD urinary 3-hydroxypropionate).
 
+> **Correction, 6 October 2026 (from the v0.4 verification).** "Each such value is a cap" overstates what was checked. Equal positive maxima show that something other than the blocked pathway limits the biomarker, but only 6 of the 18 values equal a bound on the same metabolite (five kidney filtration limits and the dietary carnitine bound for blood carnitine); the rest were not traced. The uracil example is wrong: no bound in the LP has magnitude 84.11. See the [v0.4 results](wbm-iem-v0.4-results.md).
+
 ## Post hoc: how much rests on tiny differences
 
 This analysis was not in the plan. It recomputes the calls with a minimum relative change τ between healthy and disease maxima (`results/wbm_iem/Harvey_1_03d_iem_effect_size_v0.3.json`):

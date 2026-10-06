@@ -1,18 +1,19 @@
 # Paper 2 draft: open whole-body IEM simulation and the robustness of its predictions
 
-> Exported on 6 October 2026 from the Claude Doc "Paper 2 draft" (https://claude.ai/code/artifact/11c54dd2-869a-43a5-af19-9aed235e9eea), which is the working copy. Figures are screenshots of the doc's drawn figures.
+> Exported on 6 October 2026 from the Claude Doc "Paper 2 draft" (https://claude.ai/code/artifact/11c54dd2-869a-43a5-af19-9aed235e9eea), which is the working copy, after the corrections from the independent verification. Figures are screenshots of the doc's drawn figures.
 
-Oct 5, 2026 · @Tim Hulshof
+Oct 6, 2026 · @Tim Hulshof
 
 ## Note for Tim
 
-All results are in. Harvey comes from the v0.3 study. Harvetta and the flux-range analysis come from the v0.4 study, frozen on 5 October at 13:39 UTC before any of its results existed; every run finished on 6 October. The numbers here are in the two results notes in the repository (`docs/studies/wbm-iem-v0.3-results.md`, `wbm-iem-v0.4-results.md`) and are being checked by an independent agent.
+All results are in and checked. Harvey comes from the v0.3 study. Harvetta and the flux-range analysis come from the v0.4 study, frozen on 5 October at 13:39 UTC, before any Harvetta IEM result or biomarker minimum existed; the runs finished on 5 and 6 October. The numbers are in the two results notes in the repository (`docs/studies/wbm-iem-v0.3-results.md`, `wbm-iem-v0.4-results.md`). An independent agent rechecked them from the raw files (`results/wbm_iem/independent_verification_v0.4/REPORT.md`), and its corrections are applied here. The most important one: the published accuracies are 84.9% for Harvey and 85.3% for Harvetta, the other way round from our earlier drafts.
 
 Decisions that are yours:
 
-- [ ] Framing towards the lab. The paper shows that `runIEM_HH`'s own score depends on solver failures and that the shipped Harvey carries older parameters. These points are best raised with the Toolbox's maintainers before submission, and a maintainer may want to be a co-author.
+- [ ] Framing towards the lab. The paper shows that `runIEM_HH`'s own score depends on solver failures and that the shipped models carry older parameters. These points are best raised with the Toolbox's maintainers before submission, and a maintainer may want to be a co-author.
 - [ ] Target journal (for example Bioinformatics, PLOS Computational Biology or Molecular Systems Biology).
 - [ ] Authors, and the statement of how AI was used.
+- [ ] Confirm by hand one cited figure the checks could not reach: Shlomi et al. 2009, recall 0.10 on a clinical database (Introduction). Also confirm the volume and pages of ref 6.
 
 ## Title and abstract
 
@@ -24,7 +25,7 @@ Title options:
 
 **Motivation.** The whole-body models Harvey and Harvetta predict the direction in which biofluid biomarkers change in 57 inborn errors of metabolism, and agree with the literature for about 85% of them. The protocol runs only in MATLAB with a commercial solver, and the robustness of its predictions has not been examined.
 
-**Results.** We ported the protocol and its physiological and diet setup to Python with the open solver HiGHS. The port sets every reaction bound exactly as the COBRA Toolbox does (81,094 in Harvey, 83,521 in Harvetta) and makes the same call wherever MATLAB returns an optimum. It gets 217 and 218 of 251 directions right (86.5%, 86.9%). The Toolbox's own figures are lower (81.0%, 75.8%) because Gurobi returned no optimum for 14 and 30 biomarkers, which the protocol scores as "no change". Some predictions are fragile: one protocol detail flipped five calls resting on differences below 0.5%, and requiring a 5% change removes 10 and 5 correct calls. Most "no change" errors (18 of 21; 16 of 18) are values held at a physiological cap, which a comparison of maxima cannot see. Comparing flux ranges, tested under a plan fixed before the runs, recovered none of them and cost 10 and 13 correct calls, because the protocol's healthy state forces maximal flux through the affected pathway.
+**Results.** We ported the protocol and its physiological and diet setup to Python with the open solver HiGHS. The port sets every reaction bound exactly as the COBRA Toolbox does (81,094 in Harvey, 83,521 in Harvetta) and makes the same call wherever MATLAB returns an optimum. It gets 217 and 218 of 251 directions right (86.5%, 86.9%). The Toolbox's own figures are lower (81.0%, 75.8%) because Gurobi returned no optimum for 14 and 30 biomarkers, which the protocol scores as "no change". Some predictions are fragile: one protocol detail flipped five calls, four of them resting on differences below 0.5%, and requiring a 5% change removes 10 and 5 correct calls. Most "no change" errors (18 of 21; 16 of 18) have the same positive maximum in health and disease, which a comparison of maxima cannot separate. Comparing flux ranges, tested under a plan fixed before the runs, recovered none of them and cost 10 and 13 correct calls. In every loss the healthy minimum was above zero, which we attribute to the protocol's healthy state forcing maximal flux through the affected pathway.
 
 **Conclusions.** The whole-body IEM protocol can now be run and checked without MATLAB. Its accuracy should be reported together with how solver failures and capped values are counted. Reporting capped values as indeterminate (post hoc) leaves 93.1% and 92.8% of the remaining calls correct.
 
@@ -34,7 +35,7 @@ Title options:
 
 Whole-body metabolic models can predict which blood and urine metabolites change in inherited metabolic diseases. Using those predictions in diagnosis needs two things: an implementation anyone can run and check, and an honest account of how robust the predictions are.
 
-The whole-body models Harvey and Harvetta combine organ-resolved human metabolism with physiological constraints: blood flow, kidney filtration and a defined diet \[1\]. Thiele et al. used them to simulate 57 inborn errors of metabolism (IEMs) and compared the predicted change of 252 known biofluid biomarkers with the literature. The direction was right for 85.3% of biomarkers in Harvey and 84.9% in Harvetta, against 50.2% for the generic reconstruction Recon3D \[1\].
+The whole-body models Harvey and Harvetta combine organ-resolved human metabolism with physiological constraints: blood flow, kidney filtration and a defined diet \[1\]. Thiele et al. used them to simulate 57 inborn errors of metabolism (IEMs) and compared the predicted change of 252 known biofluid biomarkers with the literature. The direction was right for 84.9% of the biomarkers in Harvey and 85.3% in Harvetta, against 50.2% of the 205 biomarkers that the generic reconstruction Recon3D could represent \[1\].
 
 That protocol, `runIEM_HH`, runs in the COBRA Toolbox for MATLAB \[2\]. Using it requires a MATLAB licence, and in practice a commercial solver. The Python ecosystem built around COBRApy \[3\] has no whole-body equivalent. An open implementation is only useful if it demonstrably does the same thing as the original, ideally bit for bit.
 
@@ -46,9 +47,9 @@ Here we ported the protocol and its physiological and diet setup to Python with 
 - to parameter drift between software versions;
 - to small protocol details;
 - to tiny healthy–disease differences;
-- to saturation at physiological caps.
+- to saturation, where the disease leaves a biomarker's maximum unchanged.
 
-We repeated the analysis on Harvetta under a plan fixed before any Harvetta result existed. There we also tested comparing flux ranges, rather than maxima alone, as a remedy for saturation.
+We repeated the analysis on Harvetta under a plan fixed before any Harvetta IEM result existed. There we also tested comparing flux ranges, rather than maxima alone, as a remedy for saturation.
 
 ## Results
 
@@ -62,14 +63,14 @@ The Python port sets every lower and upper bound exactly as the COBRA Toolbox do
 
 **What is ported.** `runIEM_HH` loads a whole-body model and re-applies the physiological constraints and the EU average diet, using the Toolbox's default physiological parameters. It then sets a few global constraints (reactions made irreversible or closed, and bile-duct exits opened) before simulating any disease. The port implements these steps from the Toolbox source at commit 67c790d, with the input tables extracted from the same commit: HMDB metabolite concentrations, blood-flow fractions and organ weights.
 
-**How it was checked.** We ran the Toolbox's own setup in MATLAB R2024b with Gurobi 12 and compared the resulting bounds with the port's, bit for bit, both after the setup and after the global constraints. On both models they are identical. For Harvey the hash of MATLAB's final bounds also equals the one the Python run recorded. Before any MATLAB check, an independent re-implementation written from the Toolbox files had matched the port on both models.
+**How it was checked.** We ran the Toolbox's own setup in MATLAB R2024b with Gurobi 12.0.0 and compared the resulting bounds with the port's, bit for bit, both after the setup and after the global constraints. On both models they are identical. For Harvey the hash of MATLAB's final bounds also equals the one the Python run recorded.
 
 **The shipped models carry older parameters.** Harvey 1.03d and Harvetta 1.03d are released with these constraints already applied, but with two older parameter values:
 
 - a glomerular filtration rate computed as 20% of renal plasma flow (129.75 ml/min in Harvey, 128.64 in Harvetta) instead of 90 ml/min;
 - cerebrospinal-fluid (CSF) export derived from 0.35 instead of 0.52 ml/min.
 
-With those two values the port reproduces every stored bound of both models except three blood–brain-barrier uptakes. The current code therefore changes the released models when `runIEM_HH` re-applies it:
+With those two values the port reproduces every stored physiological-constraint bound of both models except three blood–brain-barrier uptakes. The current diet code changes 41 further bounds. The current code therefore changes the released models when `runIEM_HH` re-applies it:
 
 | Bounds changed by re-applying the current code | Harvey | Harvetta |
 | --- | --- | --- |
@@ -83,13 +84,13 @@ On Harvey these changes alter values but no call (below).
 
 ### Same calls as MATLAB wherever MATLAB returns an answer
 
-Wherever the MATLAB run returned an optimum, the two implementations make the same direction call for every biomarker. The headline accuracies differ only because the Toolbox scores solver failures as "no change".
+Wherever the MATLAB run returned an optimum, the two implementations make the same direction call for every biomarker. The headline accuracies differ mainly because the Toolbox scores solver failures as "no change"; its formula also divides by all 252 biomarkers, including one absent from the models.
 
 **Harvey.**
 
 - **Calls.** Python and MATLAB agree on 238 of 251 biomarkers.
 - **The 13 differences.** Every one is a biomarker whose healthy optimum MATLAB recorded as NaN: Gurobi did not report an optimal solution, so the Toolbox wrote no value. `runIEM_HH` compares the printed values, and a comparison with NaN is false, so it calls each of these "unchanged".
-- **Python on those 13.** HiGHS solved all 13 problems and made the expected call every time. The solutions were certified against the LP the solver held: row and bound violations at most 2 × 10⁻⁷. An independent agent rebuilt each LP from the model file and MATLAB's own bounds and obtained the same optima within 2.6 × 10⁻⁵.
+- **Python on those 13.** HiGHS solved all 13 problems and made the expected call every time. A re-run of these solves was certified against the LP the solver held (row and bound violations at most 2 × 10⁻⁷) and reproduced the reported optima within 8.8 × 10⁻⁵. An independent agent rebuilt each LP from the model file and MATLAB's own bounds and obtained the same optima within 2.6 × 10⁻⁵.
 - **Values.** Above 10⁻³, the two implementations agree within 0.03% for all but one value, which differs by 0.3% (blood cholesterol in FED, healthy).
 - **The figures.** By `runIEM_HH`'s own formula, which divides by all 252 biomarkers, MATLAB scores 204 of 252 (81.0%). On the 237 biomarkers where MATLAB returned values, both implementations get the same 204 right (86.1%).
 
@@ -124,7 +125,7 @@ So the 85% headline can read 76%, 81% or 86–87% for the same models and the sa
 
 ### Accuracy, and what moves it
 
-Run the way the Toolbox runs it today, the Python protocol gets 217 of 251 scored biomarker directions right in Harvey (86.5%) and 218 in Harvetta (86.9%). The published figures are 85.3% and 84.9%, from other model and code versions.
+Run the way the Toolbox runs it today, the Python protocol gets 217 of 251 scored biomarker directions right in Harvey (86.5%) and 218 in Harvetta (86.9%). The published figures are 84.9% for Harvey and 85.3% for Harvetta, from other model and code versions.
 
 | Run | Model bounds | Bile-duct step | Correct / scored | Errors: opposite / no change | IEMs fully correct |
 | --- | --- | --- | --- | --- | --- |
@@ -135,7 +136,7 @@ Run the way the Toolbox runs it today, the Python protocol gets 217 of 251 score
 
 "Scored" means an expected direction and both optima available. The one unscored biomarker (`EX_25aics[u]` in HPC) is absent from the model.
 
-**A small protocol detail flips calls.** Our first Python run (v0.2) opened all 261 bile-duct exits where `runIEM_HH` opens a list of 28. Correcting that changed 5 calls, with a net loss of 3, and every one of them rested on a difference below 0.5%:
+**A small protocol detail flips calls.** Our first Python run (v0.2) opened all 261 bile-duct exits where `runIEM_HH` opens a list of 28. Correcting that changed 5 calls, with a net loss of 3. Four had rested on differences below 0.5%; the fifth changed because a healthy maximum fell to zero:
 
 | IEM | Biomarker | v0.2 healthy → disease | v0.2b | Expected | Effect |
 | --- | --- | --- | --- | --- | --- |
@@ -149,7 +150,7 @@ Run the way the Toolbox runs it today, the Python protocol gets 217 of 251 score
 
 ### Fragile calls and capped values
 
-Some correct calls rest on very small differences, and most "no change" errors are values stuck at a physiological cap.
+Some correct calls rest on very small differences, and most "no change" errors are values with the same positive maximum in health and disease.
 
 **Small differences.** The protocol calls a change when the disease maximum differs from the healthy maximum by more than 10⁻⁶ in absolute terms. Requiring a minimum relative change τ instead removes some correct calls:
 
@@ -177,13 +178,14 @@ In Harvey, five correct calls rest on changes below 0.1%. The smallest is coprop
 | ASNSD | blood asparagine | rises | falls | Harvetta |
 | BTD | urinary 3-hydroxypropionate | falls to zero | rises | Harvetta |
 
-Two of the three errors only Harvetta makes sit at an edge. Blood carnitine in MMA was at its cap in both states on Harvey, a no-change error. In Harvetta's healthy state it stays below the cap (32.8 against 50 mmol/day), so the call becomes "increased". Urinary 3-hydroxypropionate in BTD is the threshold case above. The third reflects a real difference between the models: blood asparagine in ASNSD has a healthy maximum of 131 mmol/day in Harvey but zero in Harvetta, in MATLAB as well as in Python. In the other direction, blood 3-hydroxypropionate in MMA is right in Harvetta, on a change of 0.3%.
+Two of the three errors only Harvetta makes sit at an edge. Blood carnitine in MMA was at its cap in both states on Harvey, a no-change error. In Harvetta's healthy state it stays below the cap (32.8 against 50 mmol/day), so the call becomes "increased". Urinary 3-hydroxypropionate in BTD is the threshold case above. The third reflects a difference between the models: blood asparagine in ASNSD has a healthy maximum of 131 mmol/day in Harvey (Python; MATLAB returned no optimum) but essentially zero in Harvetta (1.3 × 10⁻⁶ in Python, 0 in MATLAB). In the other direction, blood 3-hydroxypropionate in MMA is right in Harvetta, on a change of 0.3%.
 
-**No change predicted (21 errors in Harvey, 18 in Harvetta, 12 of them shared).** In 18 of Harvey's and 16 of Harvetta's, the healthy and disease maxima are equal and positive. Each such value sits at a cap set by the constraints, for example:
+**No change predicted (21 errors in Harvey, 18 in Harvetta, 12 of them shared).** In 18 of Harvey's and 16 of Harvetta's, the healthy and disease maxima are equal and positive, so something other than the blocked pathway limits the biomarker. We call these values capped. In 6 of Harvey's 18 and 7 of Harvetta's 16, the shared maximum equals a bound on the same metabolite:
 
-- the urinary filtration limit for a metabolite without a measured blood range (20 µM × the filtration rate = 2.592 mmol/day);
-- a measured filtration or excretion limit (uracil, 84.11 mmol/day);
-- most likely the carnitine supply in the diet (methylmalonic acidemia acylcarnitines at 50 mmol/day, the carnitine uptake limit).
+- the kidney filtration limit, for example 2.592 mmol/day (20 µM × the filtration rate) for a metabolite without a measured blood range;
+- the dietary carnitine supply of 50 mmol/day, for blood carnitine in MMA on Harvey. The three MMA acylcarnitines capped at 50 are most likely limited by the same supply.
+
+The other capped values are limited by combinations of constraints that we did not trace.
 
 The protocol maximises each biomarker, so once both states reach the cap it cannot see a difference. The remaining errors are zero in both states: aldosterone and cortisol in CYP21D on both models, and urinary 3-hydroxypropionate in BTD on Harvey. Which values hit a cap depends on the model: 10 of Harvetta's 16 capped errors are also capped errors in Harvey.
 
@@ -201,35 +203,35 @@ Comparing minima as well as maxima recovered none of the capped calls on either 
 
 **Why the minima do not help.**
 
-- **The capped biomarkers.** Their minimum is zero in both states in 17 of 18 cases in Harvey and 13 of 16 in Harvetta. The model can always send the metabolite elsewhere, so a blocked pathway forces nothing into urine or blood.
+- **The capped biomarkers.** Their minimum is zero in both states in 17 of 18 cases in Harvey and 13 of 16 in Harvetta. In those cases the model can send the metabolite elsewhere, so a blocked pathway forces nothing into urine or blood.
 - **The full-range rule's losses.** All of them (10 in Harvey, 13 in Harvetta) are "conflicting" calls: the disease maximum rises while the disease minimum falls to zero.
 
-The second point follows from how the protocol defines health. The healthy state forces maximal flux through the IEM's reactions, which forces some downstream metabolites to be made and excreted (healthy minimum above zero). The disease state blocks those reactions and forces nothing (minimum zero). So the healthy reference is an extreme state, not a typical one, and the flux-range logic of Shlomi et al. \[5\] does not carry over to it.
+We read the second point as a consequence of how the protocol defines health. The healthy state forces maximal flux through the IEM's reactions, which forces some downstream metabolites to be made and excreted (healthy minimum above zero). The disease state blocks those reactions and forces nothing (minimum zero). On this reading, the healthy reference is an extreme state, not a typical one, and the flux-range logic of Shlomi et al. \[5\] does not carry over to it.
 
-**Readings.** By the rules declared before the runs, R1 is harmful: it lost correct calls on both models and fixed none. R2 is not useful: it fixed no error on either model. In one capped case on Harvey and three on Harvetta, the healthy minimum is above zero and the disease minimum is zero, so the tie-break turns a "no change" error into a "decreased" one.
+**Readings.** By the rules declared before the runs, R1 is harmful: it lost correct calls on both models and fixed none. R2 is not useful: it fixed no error on either model. In one capped case on Harvey and three on Harvetta, the healthy minimum is above zero and the disease minimum is zero, so both rules turn a "no change" error into a "decreased" one.
 
 ## Discussion
 
 An open implementation now reproduces the whole-body IEM protocol exactly, and the reproduction shows that its headline accuracy depends on choices outside the model. Bounds match the COBRA Toolbox on both models, and calls match wherever MATLAB returns an optimum. The 57-disease benchmark can therefore be rerun and checked without a MATLAB or Gurobi licence.
 
-**Accuracy belongs to the whole pipeline.** The same models and protocol give 75.8% to 86.9%, depending on the solver and on how its failures are counted. The published 85.3% and 84.9% come from other model and code versions \[1\]. We suggest reporting accuracy among scored biomarkers together with coverage, and treating a failed solve as unscored rather than as "no change".
+**Accuracy belongs to the whole pipeline.** The same models and protocol give 75.8% to 86.9%, depending on the solver and on how its failures are counted. The published 84.9% (Harvey) and 85.3% (Harvetta) come from other model and code versions \[1\]. We suggest reporting accuracy among scored biomarkers together with coverage, and treating a failed solve as unscored rather than as "no change".
 
 **Parameter drift changed values, not calls.** The released models carry an older filtration rate and CSF export, so re-applying the current code changes over 1,500 bounds in each model. On Harvey this moved values, for example urinary maxima by a factor of 0.69, but no call. Any use of magnitudes will be sensitive to it, so the constraint version should be stated with every result.
 
 **Calls need effect sizes.** Some correct calls rest on changes below 0.1%, and a healthy value just above the zero threshold turned one call into an error. A relative threshold of 5% costs 10 correct calls in Harvey and 5 in Harvetta. Reporting the relative change with each call would let users judge how far a call can be trusted.
 
-**Caps cause most "no change" errors, and flux ranges do not fix them.** Flux-range comparison \[5\] did not carry over because the protocol's healthy state forces maximal flux through the affected reactions; its minima reflect that choice rather than physiology. Three other remedies are open, each to be planned and tested before use:
+**Capped values cause most "no change" errors, and flux ranges do not fix them.** Flux-range comparison \[5\] did not carry over. We attribute this to the protocol's healthy state, which forces maximal flux through the affected reactions, so its minima reflect that choice rather than physiology. Three other remedies are open, each to be planned and tested before use:
 
 - reporting capped values as indeterminate (post hoc: 93.1% and 92.8% of the remaining calls correct);
 - defining a typical rather than maximal healthy state;
-- relaxing the biomarker's own binding cap.
+- relaxing the constraint that limits the biomarker, once it has been traced.
 
 **Limitations.**
 
 - The study is not blind: the disease labels and the published figures were known throughout.
 - Harvetta shares its structure, labels, diet and constraints with Harvey. Its results are a replication on a closely related model, not an independent validation.
-- MATLAB was run once per model, with one solver version and the protocol's own settings. We did not try to reduce Gurobi's failures.
-- Calls are directions scored against the protocol's literature labels. We did not re-curate those labels or test magnitudes.
+- MATLAB completed one run per model, with one solver version (Gurobi 12.0.0) and the protocol's own settings. We did not try to reduce Gurobi's failures.
+- Calls are directions scored against the protocol's literature labels. We did not re-curate those labels or test magnitudes, and we traced only some capped values to the bound that limits them.
 
 **Next steps.** The open pipeline makes the next tests possible without a licence: predicted changes against measured patient profiles, magnitudes rather than directions, and pre-registered remedies for the caps.
 
@@ -252,11 +254,11 @@ Its input tables are extracted from the same commit. Where the MATLAB code takes
 - **Calls.** A biomarker is called increased or decreased when the disease maximum exceeds or falls below the healthy maximum by more than 10⁻⁶, after values of at most 10⁻⁶ in magnitude are set to zero.
 - **Isolation.** Each IEM starts from the same global state.
 
-**Solver.** HiGHS 1.15.1 \[4\], interior point with crossover, primal and dual tolerances 10⁻⁷, at most 1,800 s per solve. A solve that does not end optimal gives no call, and the biomarker is reported as unscored rather than "unchanged".
+**Solver.** HiGHS 1.15.1 \[4\] with its interior-point solver \[6\] and crossover, primal and dual tolerances 10⁻⁷, at most 1,800 s per solve. A solve that does not end optimal gives no call, and the biomarker is reported as unscored rather than "unchanged".
 
 **Scoring.** Accuracy is the number of correct calls among scored biomarkers, i.e. those with an expected direction and both optima available, reported with coverage. `runIEM_HH`'s own figure, (correct increases + correct decreases) / all biomarkers, is reported alongside.
 
-**MATLAB reference.** `runIEM_HH.m` was run unchanged in MATLAB R2024b with the COBRA Toolbox at commit 67c790d and Gurobi 12, except for two edits: the model was loaded from the 1.03d file instead of the newest version on the path, and a stray `edit` command was removed. The jobs ran through a local job queue; their scripts and outputs are in the repository. Python and MATLAB bounds were compared bit for bit, and calls were compared on MATLAB's printed values, as `runIEM_HH` compares them.
+**MATLAB reference.** `runIEM_HH.m` was run unchanged in MATLAB R2024b with the COBRA Toolbox at commit 67c790d and Gurobi 12.0.0 (the versions recorded by the job runner's own verification), except for two edits: the model was loaded from the 1.03d file instead of the newest version on the path, and a stray `edit` command was removed. The jobs ran through a local job queue; their scripts and outputs are in the repository. Python and MATLAB bounds were compared bit for bit, and calls were compared on MATLAB's printed values, as `runIEM_HH` compares them.
 
 **Effect sizes.** For a relative threshold τ, a change is called when (disease − healthy) / max(|healthy|, |disease|) exceeds τ in absolute value, on the biomarkers scored by the protocol.
 
@@ -267,7 +269,7 @@ Its input tables are extracted from the same commit. Where the MATLAB code takes
 
 They are scored on directional biomarkers whose four optima are all optimal and finite.
 
-**Study plans and verification.** Each study was frozen before its runs: a manifest of file hashes committed to git and recorded in a private project document. v0.3 was frozen on 4 October 2026 and v0.4 on 5 October at 13:39 UTC. An independent agent with its own code recomputed every reported number from the result files.
+**Study plans and verification.** Each study was frozen before its runs: a manifest of file hashes committed to git and recorded in a private project document. v0.3 was frozen on 4 October 2026 and v0.4 on 5 October at 13:39 UTC. For each study, an independent agent with its own code recomputed the reported numbers from the result files and checked the references. Its reports are in the repository, and the corrections it found are applied in this draft. One cited figure (Shlomi et al.'s recall) could not be checked against the full text.
 
 ## Data and code availability
 
@@ -278,17 +280,19 @@ All code, protocol files, freeze manifests, Python results and MATLAB outputs ar
 | Port and protocol engine | `gembench/wbm_constraints.py`, `gembench/wbm_iem.py`, `scripts/run_wbm_iem.py` |
 | Constraint inputs and IEM protocol | `data/iem/wbm_constraint_inputs_v0.3.json`, `data/iem/iem_protocol_v0.2.json` |
 | Study plans and freezes | `docs/studies/wbm-iem-v0.3-plan.md`, `wbm-iem-v0.4-plan.md`; `results/study_freezes/wbm_iem_v0.3_plan.json`, `wbm_iem_v0.4_plan.json` |
-| Python results | `results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json` and the v0.4 files |
-| MATLAB jobs and outputs | `tools/matlab/runner/`, `results/wbm_iem/matlab_reference/` |
-| Comparisons and analyses | `scripts/compare_matlab_reference.py`, `iem_effect_size_sensitivity.py`, `iem_range_calls.py`, `certify_iem_solutions.py` |
-| Independent verification | `results/wbm_iem/independent_verification_v0.3/REPORT.md` |
+| Results notes | `docs/studies/wbm-iem-v0.3-results.md`, `wbm-iem-v0.4-results.md` |
+| Python results | `results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json`, `Harvetta_1_03d_iem_results_v0.4.json`, and the minima files `*_v0.4_min.json` |
+| MATLAB jobs and outputs | `tools/matlab/runner/` (with the runner's verification record), `results/wbm_iem/matlab_reference/` |
+| Comparisons and analyses | `scripts/compare_matlab_reference.py`, `iem_effect_size_sensitivity.py`, `iem_range_calls.py`, `iem_error_anatomy.py`, `v04_report.py`, `certify_iem_solutions.py` |
+| Independent verification | `results/wbm_iem/independent_verification_v0.3/REPORT.md`, `independent_verification_v0.4/REPORT.md` |
 
 ## References
 
-Draft list; to be checked against publisher records.
+References 1–5 were checked against publisher records on 6 October 2026; reference 6 was added on the verifier's advice.
 
 1. Thiele I, et al. Personalized whole-body models integrate metabolism, physiology, and the gut microbiome. *Mol Syst Biol.* 2020;16:e8982.
 2. Heirendt L, et al. Creation and analysis of biochemical constraint-based models using the COBRA Toolbox v.3.0. *Nat Protoc.* 2019;14:639–702.
 3. Ebrahim A, Lerman JA, Palsson BO, Hyduke DR. COBRApy: COnstraints-Based Reconstruction and Analysis for Python. *BMC Syst Biol.* 2013;7:74.
 4. Huangfu Q, Hall JAJ. Parallelizing the dual revised simplex method. *Math Program Comput.* 2018;10:119–142.
 5. Shlomi T, Cabili MN, Ruppin E. Predicting metabolic biomarkers of human inborn errors of metabolism. *Mol Syst Biol.* 2009;5:263.
+6. Schork L, Gondzio J. Implementation of an interior point method with basis preconditioning. *Math Program Comput.* 2020;12:603–635. doi:10.1007/s12532-020-00181-8.

@@ -1,0 +1,366 @@
+{
+ "Harvey": {
+  "n_capped": 18,
+  "n_with_same_metabolite_bound": 6,
+  "n_with_any_bound": 9,
+  "rows": [
+   {
+    "iem": "BTD",
+    "reaction": "EX_2mcit[u]",
+    "value": 0.03369600000000001,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_2mcit(e)_[bc]",
+      "lb",
+      -0.03369600000000001
+     ]
+    ],
+    "n_any_reaction_bound_matches": 1
+   },
+   {
+    "iem": "DPYR",
+    "reaction": "EX_ura[u]",
+    "value": 84.1136662673896,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "DPYR",
+    "reaction": "EX_56dura[u]",
+    "value": 84.11366626738747,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "DPYR",
+    "reaction": "EX_56dthm[u]",
+    "value": 2.592,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_56dthm(e)_[bc]",
+      "lb",
+      -2.592
+     ]
+    ],
+    "n_any_reaction_bound_matches": 557
+   },
+   {
+    "iem": "GACR",
+    "reaction": "EX_lys_L[u]",
+    "value": 39.43253494236069,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "GACR",
+    "reaction": "DM_lys_L[bc]",
+    "value": 39.43253494235469,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "HCYS",
+    "reaction": "EX_Lhcystin[u]",
+    "value": 2.592,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_Lhcystin(e)_[bc]",
+      "lb",
+      -2.592
+     ]
+    ],
+    "n_any_reaction_bound_matches": 557
+   },
+   {
+    "iem": "HCYS",
+    "reaction": "DM_Lhcystin[bc]",
+    "value": 28.271616947794207,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "HCYS",
+    "reaction": "EX_hcys_L[u]",
+    "value": 2.09952,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_hcys_L(e)_[bc]",
+      "lb",
+      -2.09952
+     ]
+    ],
+    "n_any_reaction_bound_matches": 1
+   },
+   {
+    "iem": "HCYS",
+    "reaction": "DM_hcys_L[bc]",
+    "value": 56.54323389555974,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "HLYS2",
+    "reaction": "EX_citr_L[u]",
+    "value": 7.13224336024723,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "HLYS2",
+    "reaction": "DM_citr_L[bc]",
+    "value": 544.8180887022596,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "IVA",
+    "reaction": "EX_3bcrn[u]",
+    "value": 21.94374240001288,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "MSUD",
+    "reaction": "EX_3mop[u]",
+    "value": 2.592,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_3mop(e)_[bc]",
+      "lb",
+      -2.592
+     ]
+    ],
+    "n_any_reaction_bound_matches": 557
+   },
+   {
+    "iem": "MMA",
+    "reaction": "DM_c4dc[bc]",
+    "value": 50.00000000014526,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 16
+   },
+   {
+    "iem": "MMA",
+    "reaction": "DM_crn[bc]",
+    "value": 49.99999999978373,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Diet_EX_crn[d]",
+      "lb",
+      -50.0
+     ]
+    ],
+    "n_any_reaction_bound_matches": 16
+   },
+   {
+    "iem": "MMA",
+    "reaction": "DM_pcrn[bc]",
+    "value": 50.00000000041166,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 16
+   },
+   {
+    "iem": "MMA",
+    "reaction": "DM_3hdececrn[bc]",
+    "value": 49.999999999940066,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 16
+   }
+  ]
+ },
+ "Harvetta": {
+  "n_capped": 16,
+  "n_with_same_metabolite_bound": 7,
+  "n_with_any_bound": 8,
+  "rows": [
+   {
+    "iem": "BTD",
+    "reaction": "EX_2mcit[u]",
+    "value": 0.03369600000000001,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_2mcit(e)_[bc]",
+      "lb",
+      -0.03369600000000001
+     ]
+    ],
+    "n_any_reaction_bound_matches": 1
+   },
+   {
+    "iem": "GACR",
+    "reaction": "EX_lys_L[u]",
+    "value": 39.36136711118161,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "GACR",
+    "reaction": "DM_lys_L[bc]",
+    "value": 39.3613671111777,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "HCYS",
+    "reaction": "EX_Lhcystin[u]",
+    "value": 2.592,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_Lhcystin(e)_[bc]",
+      "lb",
+      -2.592
+     ]
+    ],
+    "n_any_reaction_bound_matches": 557
+   },
+   {
+    "iem": "HCYS",
+    "reaction": "EX_hcys_L[u]",
+    "value": 2.09952,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_hcys_L(e)_[bc]",
+      "lb",
+      -2.09952
+     ]
+    ],
+    "n_any_reaction_bound_matches": 1
+   },
+   {
+    "iem": "HLYS2",
+    "reaction": "EX_citr_L[u]",
+    "value": 7.13224336024723,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "HLYS2",
+    "reaction": "DM_citr_L[bc]",
+    "value": 564.993533419485,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "IVA",
+    "reaction": "EX_3bcrn[u]",
+    "value": 22.365655089577004,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "MSUD",
+    "reaction": "EX_ile_L[u]",
+    "value": 18.143999051724677,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "MSUD",
+    "reaction": "EX_3mop[u]",
+    "value": 2.592,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_3mop(e)_[bc]",
+      "lb",
+      -2.592
+     ]
+    ],
+    "n_any_reaction_bound_matches": 557
+   },
+   {
+    "iem": "MMA",
+    "reaction": "DM_c4dc[bc]",
+    "value": 50.0000000003338,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 16
+   },
+   {
+    "iem": "TYR1",
+    "reaction": "DM_met_L[bc]",
+    "value": 56.729607051356865,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "PC",
+    "reaction": "EX_acetone[u]",
+    "value": 299.376,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_acetone(e)_[bc]",
+      "lb",
+      -299.376
+     ]
+    ],
+    "n_any_reaction_bound_matches": 1
+   },
+   {
+    "iem": "PHOX1",
+    "reaction": "EX_glyclt[u]",
+    "value": 1.64592,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_glyclt(e)_[bc]",
+      "lb",
+      -1.64592
+     ]
+    ],
+    "n_any_reaction_bound_matches": 1
+   },
+   {
+    "iem": "HPC",
+    "reaction": "EX_C05770[u]",
+    "value": 183.70663846249147,
+    "n_same_metabolite_bound_matches": 0,
+    "same_metabolite_matches": [],
+    "n_any_reaction_bound_matches": 0
+   },
+   {
+    "iem": "HMET",
+    "reaction": "EX_hcys_L[u]",
+    "value": 2.09952,
+    "n_same_metabolite_bound_matches": 1,
+    "same_metabolite_matches": [
+     [
+      "Kidney_EX_hcys_L(e)_[bc]",
+      "lb",
+      -2.09952
+     ]
+    ],
+    "n_any_reaction_bound_matches": 1
+   }
+  ]
+ }
+}

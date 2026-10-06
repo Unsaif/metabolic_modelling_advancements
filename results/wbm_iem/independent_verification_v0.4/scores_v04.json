@@ -1,0 +1,5021 @@
+{
+ "protocol": {
+  "n_iems": 57,
+  "n_biomarkers": 252,
+  "expected": {
+   "Increased": 215,
+   "Decreased": 37
+  },
+  "iem_names_unique": true
+ },
+ "harvey_max_v0.2": {
+  "n_biomarkers": 252,
+  "n_directional": 252,
+  "n_scored": 251,
+  "n_correct": 220,
+  "accuracy": 0.8764940239043825,
+  "errors": {
+   "opposite": 13,
+   "no_change": 18
+  },
+  "no_change_breakdown": {
+   "zero": 3,
+   "capped": 15
+  },
+  "n_iems": 57,
+  "n_iems_fully_correct": 37,
+  "iems_not_fully_correct": [
+   "CPS1",
+   "AADC",
+   "CYP21D",
+   "BTD",
+   "DPYR",
+   "FED",
+   "OXOP",
+   "GMT",
+   "GACR",
+   "HCYS",
+   "HLYS2",
+   "HYPRO1",
+   "IVA",
+   "LNS",
+   "MSUD",
+   "MMA",
+   "NAGS",
+   "OTC",
+   "PC",
+   "HPC"
+  ],
+  "unscored": [
+   [
+    "HPC",
+    "EX_25aics[u]",
+    "absent",
+    "absent",
+    null,
+    null
+   ]
+  ],
+  "opposite_errors": [
+   [
+    "CPS1",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    24.093786234415504
+   ],
+   [
+    "AADC",
+    "EX_dopa[u]",
+    "Increased",
+    "Decreased",
+    9.622183286048312,
+    0.0
+   ],
+   [
+    "AADC",
+    "EX_3moxtyr[u]",
+    "Increased",
+    "Decreased",
+    0.0005418316801852416,
+    0.0
+   ],
+   [
+    "FED",
+    "DM_chsterol[bc]",
+    "Decreased",
+    "Increased",
+    480.56075920686226,
+    553.2146202287103
+   ],
+   [
+    "OXOP",
+    "DM_5oxpro[bc]",
+    "Decreased",
+    "Increased",
+    1.5448676471407907e-06,
+    1578.975865500896
+   ],
+   [
+    "GMT",
+    "DM_crtn[bc]",
+    "Increased",
+    "Decreased",
+    90.94425934363215,
+    0.0
+   ],
+   [
+    "HCYS",
+    "DM_orn[bc]",
+    "Increased",
+    "Decreased",
+    784.8766722559507,
+    783.089585666296
+   ],
+   [
+    "LNS",
+    "DM_fol[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    69.99961186379453
+   ],
+   [
+    "MMA",
+    "DM_3hpp[bc]",
+    "Increased",
+    "Decreased",
+    6978.1599093304985,
+    6903.2762263371715
+   ],
+   [
+    "NAGS",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    542.3984833903695
+   ],
+   [
+    "NAGS",
+    "EX_orot[u]",
+    "Decreased",
+    "Increased",
+    0.0,
+    16.599152232462075
+   ],
+   [
+    "OTC",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    24.093786234265856
+   ],
+   [
+    "PC",
+    "DM_glc_D[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    2741.5265184890927
+   ]
+  ],
+  "no_change_errors": [
+   [
+    "CYP21D",
+    "DM_aldstrn[bc]",
+    "Increased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "CYP21D",
+    "DM_crtsl[bc]",
+    "Decreased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "BTD",
+    "EX_3hpp[u]",
+    "Increased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "BTD",
+    "EX_2mcit[u]",
+    "Increased",
+    "capped",
+    0.04857801270626304,
+    0.04857801270626304
+   ],
+   [
+    "DPYR",
+    "EX_56dthm[u]",
+    "Increased",
+    "capped",
+    3.7367702081740792,
+    3.7367702081740792
+   ],
+   [
+    "GACR",
+    "EX_lys_L[u]",
+    "Decreased",
+    "capped",
+    39.432534999496056,
+    39.432534999714335
+   ],
+   [
+    "GACR",
+    "DM_lys_L[bc]",
+    "Decreased",
+    "capped",
+    39.43253499972235,
+    39.43253499948952
+   ],
+   [
+    "HCYS",
+    "EX_Lhcystin[u]",
+    "Increased",
+    "capped",
+    3.7367702081740792,
+    3.7367702081740792
+   ],
+   [
+    "HCYS",
+    "EX_hcys_L[u]",
+    "Increased",
+    "capped",
+    3.0267838686210045,
+    3.0267838686210045
+   ],
+   [
+    "HLYS2",
+    "EX_citr_L[u]",
+    "Increased",
+    "capped",
+    10.280824536727323,
+    10.280824536723685
+   ],
+   [
+    "HLYS2",
+    "DM_citr_L[bc]",
+    "Increased",
+    "capped",
+    542.398483390574,
+    542.398483390669
+   ],
+   [
+    "HYPRO1",
+    "EX_4hpro_LT[u]",
+    "Increased",
+    "capped",
+    28.22164019102423,
+    28.22164019102423
+   ],
+   [
+    "IVA",
+    "EX_3bcrn[u]",
+    "Increased",
+    "capped",
+    31.63530974389595,
+    31.63530974389718
+   ],
+   [
+    "MSUD",
+    "EX_3mop[u]",
+    "Increased",
+    "capped",
+    3.7367702081740792,
+    3.7367702081740792
+   ],
+   [
+    "MMA",
+    "DM_c4dc[bc]",
+    "Increased",
+    "capped",
+    50.000000000578574,
+    50.00000000016163
+   ],
+   [
+    "MMA",
+    "DM_crn[bc]",
+    "Decreased",
+    "capped",
+    49.99999999983459,
+    49.99999999989104
+   ],
+   [
+    "MMA",
+    "DM_pcrn[bc]",
+    "Increased",
+    "capped",
+    50.00000000022988,
+    50.00000000015662
+   ],
+   [
+    "MMA",
+    "DM_3hdececrn[bc]",
+    "Increased",
+    "capped",
+    50.00000000004845,
+    50.0000000001951
+   ]
+  ],
+  "stored_predicted_mismatch": [],
+  "stored_expected_mismatch": [],
+  "stored_correct_mismatch": [],
+  "zeroing_changes_call": []
+ },
+ "harvey_max_v0.2b": {
+  "n_biomarkers": 252,
+  "n_directional": 252,
+  "n_scored": 251,
+  "n_correct": 217,
+  "accuracy": 0.8645418326693227,
+  "errors": {
+   "opposite": 13,
+   "no_change": 21
+  },
+  "no_change_breakdown": {
+   "zero": 3,
+   "capped": 18
+  },
+  "n_iems": 57,
+  "n_iems_fully_correct": 38,
+  "iems_not_fully_correct": [
+   "CPS1",
+   "AADC",
+   "CYP21D",
+   "BTD",
+   "DPYR",
+   "FED",
+   "OXOP",
+   "GMT",
+   "GACR",
+   "HCYS",
+   "HLYS2",
+   "IVA",
+   "LNS",
+   "MSUD",
+   "MMA",
+   "NAGS",
+   "OTC",
+   "PC",
+   "HPC"
+  ],
+  "unscored": [
+   [
+    "HPC",
+    "EX_25aics[u]",
+    "absent",
+    "absent",
+    null,
+    null
+   ]
+  ],
+  "opposite_errors": [
+   [
+    "CPS1",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.228379914584854e-06,
+    24.093786234279584
+   ],
+   [
+    "AADC",
+    "EX_dopa[u]",
+    "Increased",
+    "Decreased",
+    9.622183286048312,
+    0.0
+   ],
+   [
+    "AADC",
+    "EX_3moxtyr[u]",
+    "Increased",
+    "Decreased",
+    0.0005418316801852416,
+    0.0
+   ],
+   [
+    "FED",
+    "DM_chsterol[bc]",
+    "Decreased",
+    "Increased",
+    292.93217057223615,
+    547.1736910633625
+   ],
+   [
+    "OXOP",
+    "DM_5oxpro[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    1543.6647683087517
+   ],
+   [
+    "GMT",
+    "DM_crtn[bc]",
+    "Increased",
+    "Decreased",
+    90.94426000679246,
+    0.0
+   ],
+   [
+    "HCYS",
+    "DM_orn[bc]",
+    "Increased",
+    "Decreased",
+    771.927361893934,
+    764.159631608192
+   ],
+   [
+    "LNS",
+    "DM_fol[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    69.99961186384611
+   ],
+   [
+    "MMA",
+    "DM_3hpp[bc]",
+    "Increased",
+    "Decreased",
+    6963.945361574588,
+    6887.915203161181
+   ],
+   [
+    "NAGS",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.3235715843329388e-06,
+    530.7011265751283
+   ],
+   [
+    "NAGS",
+    "EX_orot[u]",
+    "Decreased",
+    "Increased",
+    1.0938900487644787e-06,
+    16.59915223252574
+   ],
+   [
+    "OTC",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.2303482316497472e-06,
+    24.09378623426323
+   ],
+   [
+    "PC",
+    "DM_glc_D[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    2716.53078710678
+   ]
+  ],
+  "no_change_errors": [
+   [
+    "CYP21D",
+    "DM_aldstrn[bc]",
+    "Increased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "CYP21D",
+    "DM_crtsl[bc]",
+    "Decreased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "BTD",
+    "EX_3hpp[u]",
+    "Increased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "BTD",
+    "EX_2mcit[u]",
+    "Increased",
+    "capped",
+    0.04857801270626304,
+    0.04857801270626304
+   ],
+   [
+    "DPYR",
+    "EX_ura[u]",
+    "Increased",
+    "capped",
+    120.85041147469359,
+    120.85041147468905
+   ],
+   [
+    "DPYR",
+    "EX_56dura[u]",
+    "Increased",
+    "capped",
+    120.850411474691,
+    120.85041147468954
+   ],
+   [
+    "DPYR",
+    "EX_56dthm[u]",
+    "Increased",
+    "capped",
+    3.7367702081740792,
+    3.7367702081740792
+   ],
+   [
+    "GACR",
+    "EX_lys_L[u]",
+    "Decreased",
+    "capped",
+    39.43253494212877,
+    39.432534942350685
+   ],
+   [
+    "GACR",
+    "DM_lys_L[bc]",
+    "Decreased",
+    "capped",
+    39.43253494211439,
+    39.43253494234904
+   ],
+   [
+    "HCYS",
+    "EX_Lhcystin[u]",
+    "Increased",
+    "capped",
+    3.7367702081740792,
+    3.7367702081740792
+   ],
+   [
+    "HCYS",
+    "DM_Lhcystin[bc]",
+    "Increased",
+    "capped",
+    28.266720947786503,
+    28.266720947782478
+   ],
+   [
+    "HCYS",
+    "EX_hcys_L[u]",
+    "Increased",
+    "capped",
+    3.0267838686210045,
+    3.0267838686210045
+   ],
+   [
+    "HCYS",
+    "DM_hcys_L[bc]",
+    "Increased",
+    "capped",
+    56.533441895555015,
+    56.533441895559136
+   ],
+   [
+    "HLYS2",
+    "EX_citr_L[u]",
+    "Increased",
+    "capped",
+    10.280361432723657,
+    10.280361432727297
+   ],
+   [
+    "HLYS2",
+    "DM_citr_L[bc]",
+    "Increased",
+    "capped",
+    530.7011265648256,
+    530.7011265650227
+   ],
+   [
+    "IVA",
+    "EX_3bcrn[u]",
+    "Increased",
+    "capped",
+    31.63530974389718,
+    31.635309743893544
+   ],
+   [
+    "MSUD",
+    "EX_3mop[u]",
+    "Increased",
+    "capped",
+    3.7367702081740792,
+    3.7367702081740792
+   ],
+   [
+    "MMA",
+    "DM_c4dc[bc]",
+    "Increased",
+    "capped",
+    49.99999999998738,
+    50.00000000044565
+   ],
+   [
+    "MMA",
+    "DM_crn[bc]",
+    "Decreased",
+    "capped",
+    50.000000000357254,
+    49.9999999998368
+   ],
+   [
+    "MMA",
+    "DM_pcrn[bc]",
+    "Increased",
+    "capped",
+    50.00000000002499,
+    50.00000000009673
+   ],
+   [
+    "MMA",
+    "DM_3hdececrn[bc]",
+    "Increased",
+    "capped",
+    50.00000000021143,
+    49.999999999818655
+   ]
+  ],
+  "stored_predicted_mismatch": [],
+  "stored_expected_mismatch": [],
+  "stored_correct_mismatch": [],
+  "zeroing_changes_call": []
+ },
+ "harvey_max_v0.3": {
+  "n_biomarkers": 252,
+  "n_directional": 252,
+  "n_scored": 251,
+  "n_correct": 217,
+  "accuracy": 0.8645418326693227,
+  "errors": {
+   "opposite": 13,
+   "no_change": 21
+  },
+  "no_change_breakdown": {
+   "zero": 3,
+   "capped": 18
+  },
+  "n_iems": 57,
+  "n_iems_fully_correct": 38,
+  "iems_not_fully_correct": [
+   "CPS1",
+   "AADC",
+   "CYP21D",
+   "BTD",
+   "DPYR",
+   "FED",
+   "OXOP",
+   "GMT",
+   "GACR",
+   "HCYS",
+   "HLYS2",
+   "IVA",
+   "LNS",
+   "MSUD",
+   "MMA",
+   "NAGS",
+   "OTC",
+   "PC",
+   "HPC"
+  ],
+  "unscored": [
+   [
+    "HPC",
+    "EX_25aics[u]",
+    "absent",
+    "absent",
+    null,
+    null
+   ]
+  ],
+  "opposite_errors": [
+   [
+    "CPS1",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.638731635722479e-06,
+    24.093786234284128
+   ],
+   [
+    "AADC",
+    "EX_dopa[u]",
+    "Increased",
+    "Decreased",
+    6.674399999999325,
+    0.0
+   ],
+   [
+    "AADC",
+    "EX_3moxtyr[u]",
+    "Increased",
+    "Decreased",
+    0.00037584,
+    0.0
+   ],
+   [
+    "FED",
+    "DM_chsterol[bc]",
+    "Decreased",
+    "Increased",
+    336.7501426197462,
+    551.0071932598555
+   ],
+   [
+    "OXOP",
+    "DM_5oxpro[bc]",
+    "Decreased",
+    "Increased",
+    1.2695095108483656e-06,
+    1586.0014092898539
+   ],
+   [
+    "GMT",
+    "DM_crtn[bc]",
+    "Increased",
+    "Decreased",
+    90.9442604621019,
+    0.0
+   ],
+   [
+    "HCYS",
+    "DM_orn[bc]",
+    "Increased",
+    "Decreased",
+    793.090902925109,
+    785.1252298777442
+   ],
+   [
+    "LNS",
+    "DM_fol[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    69.99961186378545
+   ],
+   [
+    "MMA",
+    "DM_3hpp[bc]",
+    "Increased",
+    "Decreased",
+    7012.016233916127,
+    6935.991632791248
+   ],
+   [
+    "NAGS",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.1062597060629287e-06,
+    544.818088701953
+   ],
+   [
+    "NAGS",
+    "EX_orot[u]",
+    "Decreased",
+    "Increased",
+    1.0525363904889673e-06,
+    11.769442267388513
+   ],
+   [
+    "OTC",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.6661708625229088e-06,
+    24.09378623425889
+   ],
+   [
+    "PC",
+    "DM_glc_D[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    2720.326641653544
+   ]
+  ],
+  "no_change_errors": [
+   [
+    "CYP21D",
+    "DM_aldstrn[bc]",
+    "Increased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "CYP21D",
+    "DM_crtsl[bc]",
+    "Decreased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "BTD",
+    "EX_3hpp[u]",
+    "Increased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "BTD",
+    "EX_2mcit[u]",
+    "Increased",
+    "capped",
+    0.03369600000000001,
+    0.03369600000000001
+   ],
+   [
+    "DPYR",
+    "EX_ura[u]",
+    "Increased",
+    "capped",
+    84.1136662673896,
+    84.11366626738052
+   ],
+   [
+    "DPYR",
+    "EX_56dura[u]",
+    "Increased",
+    "capped",
+    84.11366626738747,
+    84.11366626738383
+   ],
+   [
+    "DPYR",
+    "EX_56dthm[u]",
+    "Increased",
+    "capped",
+    2.592,
+    2.592
+   ],
+   [
+    "GACR",
+    "EX_lys_L[u]",
+    "Decreased",
+    "capped",
+    39.43253494236069,
+    39.43253494234705
+   ],
+   [
+    "GACR",
+    "DM_lys_L[bc]",
+    "Decreased",
+    "capped",
+    39.43253494212897,
+    39.43253494235469
+   ],
+   [
+    "HCYS",
+    "EX_Lhcystin[u]",
+    "Increased",
+    "capped",
+    2.592,
+    2.592
+   ],
+   [
+    "HCYS",
+    "DM_Lhcystin[bc]",
+    "Increased",
+    "capped",
+    28.271616947794207,
+    28.271616947769214
+   ],
+   [
+    "HCYS",
+    "EX_hcys_L[u]",
+    "Increased",
+    "capped",
+    2.09952,
+    2.09952
+   ],
+   [
+    "HCYS",
+    "DM_hcys_L[bc]",
+    "Increased",
+    "capped",
+    56.54323389555974,
+    56.54323389555435
+   ],
+   [
+    "HLYS2",
+    "EX_citr_L[u]",
+    "Increased",
+    "capped",
+    7.13224336024723,
+    7.13224336024323
+   ],
+   [
+    "HLYS2",
+    "DM_citr_L[bc]",
+    "Increased",
+    "capped",
+    544.8180887022596,
+    544.8180887020674
+   ],
+   [
+    "IVA",
+    "EX_3bcrn[u]",
+    "Increased",
+    "capped",
+    21.94374240001288,
+    21.943742400009242
+   ],
+   [
+    "MSUD",
+    "EX_3mop[u]",
+    "Increased",
+    "capped",
+    2.592,
+    2.592
+   ],
+   [
+    "MMA",
+    "DM_c4dc[bc]",
+    "Increased",
+    "capped",
+    50.00000000014526,
+    50.00000000001431
+   ],
+   [
+    "MMA",
+    "DM_crn[bc]",
+    "Decreased",
+    "capped",
+    49.99999999978373,
+    49.99999999954528
+   ],
+   [
+    "MMA",
+    "DM_pcrn[bc]",
+    "Increased",
+    "capped",
+    50.00000000041166,
+    49.99999999942698
+   ],
+   [
+    "MMA",
+    "DM_3hdececrn[bc]",
+    "Increased",
+    "capped",
+    49.999999999940066,
+    49.99999999944246
+   ]
+  ],
+  "stored_predicted_mismatch": [],
+  "stored_expected_mismatch": [],
+  "stored_correct_mismatch": [],
+  "zeroing_changes_call": []
+ },
+ "harvetta_max_A": {
+  "n_biomarkers": 252,
+  "n_directional": 252,
+  "n_scored": 251,
+  "n_correct": 218,
+  "accuracy": 0.8685258964143426,
+  "errors": {
+   "opposite": 15,
+   "no_change": 18
+  },
+  "no_change_breakdown": {
+   "zero": 2,
+   "capped": 16
+  },
+  "n_iems": 57,
+  "n_iems_fully_correct": 35,
+  "iems_not_fully_correct": [
+   "CPS1",
+   "AADC",
+   "CYP21D",
+   "BTD",
+   "FED",
+   "OXOP",
+   "GMT",
+   "GACR",
+   "HCYS",
+   "HLYS2",
+   "IVA",
+   "LNS",
+   "MSUD",
+   "MMA",
+   "NAGS",
+   "OTC",
+   "TYR1",
+   "ASNSD",
+   "PC",
+   "PHOX1",
+   "HPC",
+   "HMET"
+  ],
+  "unscored": [
+   [
+    "HPC",
+    "EX_25aics[u]",
+    "absent",
+    "absent",
+    null,
+    null
+   ]
+  ],
+  "opposite_errors": [
+   [
+    "CPS1",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.7655874835834084e-06,
+    24.050604244277938
+   ],
+   [
+    "AADC",
+    "EX_dopa[u]",
+    "Increased",
+    "Decreased",
+    9.825542352000411,
+    0.0
+   ],
+   [
+    "AADC",
+    "EX_3moxtyr[u]",
+    "Increased",
+    "Decreased",
+    0.00037584,
+    0.0
+   ],
+   [
+    "BTD",
+    "EX_3hpp[u]",
+    "Increased",
+    "Decreased",
+    1.8519067028766045e-06,
+    0.0
+   ],
+   [
+    "FED",
+    "DM_chsterol[bc]",
+    "Decreased",
+    "Increased",
+    1032.30777148026,
+    1089.244363432552
+   ],
+   [
+    "OXOP",
+    "DM_5oxpro[bc]",
+    "Decreased",
+    "Increased",
+    1.8813611539769681e-06,
+    1646.2013450492113
+   ],
+   [
+    "GMT",
+    "DM_crtn[bc]",
+    "Increased",
+    "Decreased",
+    117.30124522134585,
+    0.0
+   ],
+   [
+    "HCYS",
+    "DM_orn[bc]",
+    "Increased",
+    "Decreased",
+    823.3763438641132,
+    816.3376391143877
+   ],
+   [
+    "LNS",
+    "DM_fol[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    69.999539745548
+   ],
+   [
+    "MMA",
+    "DM_crn[bc]",
+    "Decreased",
+    "Increased",
+    32.81834690706397,
+    49.99999999982652
+   ],
+   [
+    "NAGS",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.1271497406539766e-06,
+    564.9935334188683
+   ],
+   [
+    "NAGS",
+    "EX_orot[u]",
+    "Decreased",
+    "Increased",
+    1.00783680423433e-06,
+    9.738157157360405
+   ],
+   [
+    "OTC",
+    "DM_citr_L[bc]",
+    "Decreased",
+    "Increased",
+    1.7679893424826787e-06,
+    24.05060424419983
+   ],
+   [
+    "ASNSD",
+    "DM_asn_L[bc]",
+    "Decreased",
+    "Increased",
+    1.3411958494913279e-06,
+    49.71099089327296
+   ],
+   [
+    "PC",
+    "DM_glc_D[bc]",
+    "Decreased",
+    "Increased",
+    0.0,
+    7253.875505437429
+   ]
+  ],
+  "no_change_errors": [
+   [
+    "CYP21D",
+    "DM_aldstrn[bc]",
+    "Increased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "CYP21D",
+    "DM_crtsl[bc]",
+    "Decreased",
+    "zero",
+    0.0,
+    0.0
+   ],
+   [
+    "BTD",
+    "EX_2mcit[u]",
+    "Increased",
+    "capped",
+    0.03369600000000001,
+    0.03369600000000001
+   ],
+   [
+    "GACR",
+    "EX_lys_L[u]",
+    "Decreased",
+    "capped",
+    39.36136711118161,
+    39.36136711117979
+   ],
+   [
+    "GACR",
+    "DM_lys_L[bc]",
+    "Decreased",
+    "capped",
+    39.36136711115893,
+    39.3613671111777
+   ],
+   [
+    "HCYS",
+    "EX_Lhcystin[u]",
+    "Increased",
+    "capped",
+    2.592,
+    2.592
+   ],
+   [
+    "HCYS",
+    "EX_hcys_L[u]",
+    "Increased",
+    "capped",
+    2.09952,
+    2.09952
+   ],
+   [
+    "HLYS2",
+    "EX_citr_L[u]",
+    "Increased",
+    "capped",
+    7.13224336024723,
+    7.132243360246868
+   ],
+   [
+    "HLYS2",
+    "DM_citr_L[bc]",
+    "Increased",
+    "capped",
+    564.993533419485,
+    564.9935334194371
+   ],
+   [
+    "IVA",
+    "EX_3bcrn[u]",
+    "Increased",
+    "capped",
+    22.365655089575185,
+    22.365655089577004
+   ],
+   [
+    "MSUD",
+    "EX_ile_L[u]",
+    "Increased",
+    "capped",
+    18.143999051724677,
+    18.143999051724677
+   ],
+   [
+    "MSUD",
+    "EX_3mop[u]",
+    "Increased",
+    "capped",
+    2.592,
+    2.592
+   ],
+   [
+    "MMA",
+    "DM_c4dc[bc]",
+    "Increased",
+    "capped",
+    49.999999999784386,
+    50.0000000003338
+   ],
+   [
+    "TYR1",
+    "DM_met_L[bc]",
+    "Increased",
+    "capped",
+    56.72960705134658,
+    56.729607051356865
+   ],
+   [
+    "PC",
+    "EX_acetone[u]",
+    "Increased",
+    "capped",
+    299.376,
+    299.376
+   ],
+   [
+    "PHOX1",
+    "EX_glyclt[u]",
+    "Increased",
+    "capped",
+    1.64592,
+    1.64592
+   ],
+   [
+    "HPC",
+    "EX_C05770[u]",
+    "Increased",
+    "capped",
+    183.70663846248857,
+    183.70663846249147
+   ],
+   [
+    "HMET",
+    "EX_hcys_L[u]",
+    "Increased",
+    "capped",
+    2.09952,
+    2.09952
+   ]
+  ],
+  "stored_predicted_mismatch": [],
+  "stored_expected_mismatch": [],
+  "stored_correct_mismatch": [],
+  "zeroing_changes_call": []
+ },
+ "shared_errors_harvey_v0.3_vs_harvetta": {
+  "opposite_both": [
+   [
+    "CPS1",
+    "DM_citr_L[bc]"
+   ],
+   [
+    "AADC",
+    "EX_dopa[u]"
+   ],
+   [
+    "AADC",
+    "EX_3moxtyr[u]"
+   ],
+   [
+    "FED",
+    "DM_chsterol[bc]"
+   ],
+   [
+    "OXOP",
+    "DM_5oxpro[bc]"
+   ],
+   [
+    "GMT",
+    "DM_crtn[bc]"
+   ],
+   [
+    "HCYS",
+    "DM_orn[bc]"
+   ],
+   [
+    "LNS",
+    "DM_fol[bc]"
+   ],
+   [
+    "NAGS",
+    "DM_citr_L[bc]"
+   ],
+   [
+    "NAGS",
+    "EX_orot[u]"
+   ],
+   [
+    "OTC",
+    "DM_citr_L[bc]"
+   ],
+   [
+    "PC",
+    "DM_glc_D[bc]"
+   ]
+  ],
+  "opposite_harvey_only": [
+   [
+    [
+     "MMA",
+     "DM_3hpp[bc]"
+    ],
+    "opposite",
+    "correct"
+   ]
+  ],
+  "opposite_harvetta_only": [
+   [
+    [
+     "BTD",
+     "EX_3hpp[u]"
+    ],
+    "no_change",
+    "zero"
+   ],
+   [
+    [
+     "MMA",
+     "DM_crn[bc]"
+    ],
+    "no_change",
+    "capped"
+   ],
+   [
+    [
+     "ASNSD",
+     "DM_asn_L[bc]"
+    ],
+    "correct",
+    null
+   ]
+  ],
+  "no_change_both": [
+   [
+    "CYP21D",
+    "DM_aldstrn[bc]"
+   ],
+   [
+    "CYP21D",
+    "DM_crtsl[bc]"
+   ],
+   [
+    "BTD",
+    "EX_2mcit[u]"
+   ],
+   [
+    "GACR",
+    "EX_lys_L[u]"
+   ],
+   [
+    "GACR",
+    "DM_lys_L[bc]"
+   ],
+   [
+    "HCYS",
+    "EX_Lhcystin[u]"
+   ],
+   [
+    "HCYS",
+    "EX_hcys_L[u]"
+   ],
+   [
+    "HLYS2",
+    "EX_citr_L[u]"
+   ],
+   [
+    "HLYS2",
+    "DM_citr_L[bc]"
+   ],
+   [
+    "IVA",
+    "EX_3bcrn[u]"
+   ],
+   [
+    "MSUD",
+    "EX_3mop[u]"
+   ],
+   [
+    "MMA",
+    "DM_c4dc[bc]"
+   ]
+  ],
+  "capped_both": [
+   [
+    "BTD",
+    "EX_2mcit[u]"
+   ],
+   [
+    "GACR",
+    "EX_lys_L[u]"
+   ],
+   [
+    "GACR",
+    "DM_lys_L[bc]"
+   ],
+   [
+    "HCYS",
+    "EX_Lhcystin[u]"
+   ],
+   [
+    "HCYS",
+    "EX_hcys_L[u]"
+   ],
+   [
+    "HLYS2",
+    "EX_citr_L[u]"
+   ],
+   [
+    "HLYS2",
+    "DM_citr_L[bc]"
+   ],
+   [
+    "IVA",
+    "EX_3bcrn[u]"
+   ],
+   [
+    "MSUD",
+    "EX_3mop[u]"
+   ],
+   [
+    "MMA",
+    "DM_c4dc[bc]"
+   ]
+  ],
+  "capped_harvetta_not_capped_harvey": [
+   [
+    [
+     "MSUD",
+     "EX_ile_L[u]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "TYR1",
+     "DM_met_L[bc]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "PC",
+     "EX_acetone[u]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "PHOX1",
+     "EX_glyclt[u]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "HPC",
+     "EX_C05770[u]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "HMET",
+     "EX_hcys_L[u]"
+    ],
+    null,
+    null,
+    true
+   ]
+  ],
+  "capped_harvey_not_capped_harvetta": [
+   [
+    [
+     "DPYR",
+     "EX_ura[u]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "DPYR",
+     "EX_56dura[u]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "DPYR",
+     "EX_56dthm[u]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "HCYS",
+     "DM_Lhcystin[bc]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "HCYS",
+     "DM_hcys_L[bc]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "MMA",
+     "DM_crn[bc]"
+    ],
+    "opposite",
+    null,
+    false
+   ],
+   [
+    [
+     "MMA",
+     "DM_pcrn[bc]"
+    ],
+    null,
+    null,
+    true
+   ],
+   [
+    [
+     "MMA",
+     "DM_3hdececrn[bc]"
+    ],
+    null,
+    null,
+    true
+   ]
+  ],
+  "no_change_harvetta_only": [
+   [
+    [
+     "MSUD",
+     "EX_ile_L[u]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "TYR1",
+     "DM_met_L[bc]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "PC",
+     "EX_acetone[u]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "PHOX1",
+     "EX_glyclt[u]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "HPC",
+     "EX_C05770[u]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "HMET",
+     "EX_hcys_L[u]"
+    ],
+    null,
+    true
+   ]
+  ],
+  "no_change_harvey_only": [
+   [
+    [
+     "BTD",
+     "EX_3hpp[u]"
+    ],
+    "opposite",
+    false
+   ],
+   [
+    [
+     "DPYR",
+     "EX_ura[u]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "DPYR",
+     "EX_56dura[u]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "DPYR",
+     "EX_56dthm[u]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "HCYS",
+     "DM_Lhcystin[bc]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "HCYS",
+     "DM_hcys_L[bc]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "MMA",
+     "DM_crn[bc]"
+    ],
+    "opposite",
+    false
+   ],
+   [
+    [
+     "MMA",
+     "DM_pcrn[bc]"
+    ],
+    null,
+    true
+   ],
+   [
+    [
+     "MMA",
+     "DM_3hdececrn[bc]"
+    ],
+    null,
+    true
+   ]
+  ],
+  "counts": {
+   "opposite_both": 12,
+   "opposite_harvey_only": 1,
+   "opposite_harvetta_only": 3,
+   "no_change_both": 12,
+   "capped_both": 10,
+   "capped_harvetta_not_capped_harvey": 6,
+   "capped_harvey_not_capped_harvetta": 8,
+   "no_change_harvetta_only": 6,
+   "no_change_harvey_only": 9
+  },
+  "any_error_both": 26,
+  "same_call_both_models": 235
+ },
+ "values_errors_and_named": {
+  "CPS1 DM_citr_L[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 1.638731635722479e-06,
+    "d": 24.093786234284128,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999319853002
+   },
+   "harvetta": {
+    "h": 1.7655874835834084e-06,
+    "d": 24.050604244277938,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999265886435
+   }
+  },
+  "AADC EX_dopa[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 6.674399999999325,
+    "d": 0.0,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -1.0
+   },
+   "harvetta": {
+    "h": 9.825542352000411,
+    "d": 0.0,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -1.0
+   }
+  },
+  "AADC EX_3moxtyr[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 0.00037584,
+    "d": 0.0,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -1.0
+   },
+   "harvetta": {
+    "h": 0.00037584,
+    "d": 0.0,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -1.0
+   }
+  },
+  "CYP21D DM_aldstrn[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 0.0,
+    "d": 0.0,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "zero",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 0.0,
+    "d": 0.0,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "zero",
+    "rel": 0.0
+   }
+  },
+  "CYP21D DM_crtsl[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 0.0,
+    "d": 0.0,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "zero",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 0.0,
+    "d": 0.0,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "zero",
+    "rel": 0.0
+   }
+  },
+  "BTD EX_3hpp[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 0.0,
+    "d": 0.0,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "zero",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 1.8519067028766045e-06,
+    "d": 0.0,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -1.0
+   }
+  },
+  "BTD EX_2mcit[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 0.03369600000000001,
+    "d": 0.03369600000000001,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 0.03369600000000001,
+    "d": 0.03369600000000001,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   }
+  },
+  "DPYR EX_ura[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 84.1136662673896,
+    "d": 84.11366626738052,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -1.0795791654292247e-13
+   },
+   "harvetta": {
+    "h": 12.755485670792082,
+    "d": 82.08238115736117,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.844601417613137
+   }
+  },
+  "DPYR EX_56dura[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 84.11366626738747,
+    "d": 84.11366626738383,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -4.325074590765079e-14
+   },
+   "harvetta": {
+    "h": 12.755485670808431,
+    "d": 82.08238115736133,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.8446014176129382
+   }
+  },
+  "DPYR EX_56dthm[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 2.592,
+    "d": 2.592,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 12.755485670828337,
+    "d": 87.32729315736358,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.8539347183492453
+   }
+  },
+  "FED DM_chsterol[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 336.7501426197462,
+    "d": 551.0071932598555,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.388846195223926
+   },
+   "harvetta": {
+    "h": 1032.30777148026,
+    "d": 1089.244363432552,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.052271642492476976
+   }
+  },
+  "OXOP DM_5oxpro[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 1.2695095108483656e-06,
+    "d": 1586.0014092898539,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999991995533
+   },
+   "harvetta": {
+    "h": 1.8813611539769681e-06,
+    "d": 1646.2013450492113,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.99999999885715
+   }
+  },
+  "GMT DM_crtn[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 90.9442604621019,
+    "d": 0.0,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -1.0
+   },
+   "harvetta": {
+    "h": 117.30124522134585,
+    "d": 0.0,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -1.0
+   }
+  },
+  "GACR DM_gln_L[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 793.1333468189673,
+    "d": 793.1094006252589,
+    "call": "Decreased",
+    "err": null,
+    "sub": null,
+    "rel": -3.0191888670994532e-05
+   },
+   "harvetta": {
+    "h": 823.4396244271994,
+    "d": 823.4191885037518,
+    "call": "Decreased",
+    "err": null,
+    "sub": null,
+    "rel": -2.481775571807962e-05
+   }
+  },
+  "GACR EX_glu_L[u]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 740.0355333425005,
+    "d": 722.4552608041258,
+    "call": "Decreased",
+    "err": null,
+    "sub": null,
+    "rel": -0.023755984336279422
+   },
+   "harvetta": {
+    "h": 752.7506128759808,
+    "d": 734.7647917436086,
+    "call": "Decreased",
+    "err": null,
+    "sub": null,
+    "rel": -0.023893465943063158
+   }
+  },
+  "GACR EX_lys_L[u]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 39.43253494236069,
+    "d": 39.43253494234705,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -3.459686410355134e-13
+   },
+   "harvetta": {
+    "h": 39.36136711118161,
+    "d": 39.36136711117979,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -4.6212556550890884e-14
+   }
+  },
+  "GACR DM_lys_L[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 39.43253494212897,
+    "d": 39.43253494235469,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 5.724339473134302e-12
+   },
+   "harvetta": {
+    "h": 39.36136711115893,
+    "d": 39.3613671111777,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 4.769280250291634e-13
+   }
+  },
+  "HCYS DM_orn[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 793.090902925109,
+    "d": 785.1252298777442,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -0.010043833585766156
+   },
+   "harvetta": {
+    "h": 823.3763438641132,
+    "d": 816.3376391143877,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -0.008548587534945218
+   }
+  },
+  "HCYS EX_Lhcystin[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 2.592,
+    "d": 2.592,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 2.592,
+    "d": 2.592,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   }
+  },
+  "HCYS DM_Lhcystin[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 28.271616947794207,
+    "d": 28.271616947769214,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -8.840435542301567e-13
+   },
+   "harvetta": {
+    "h": 20.484641525677688,
+    "d": 28.364803525668364,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.27781479229565703
+   }
+  },
+  "HCYS EX_hcys_L[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 2.09952,
+    "d": 2.09952,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 2.09952,
+    "d": 2.09952,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   }
+  },
+  "HCYS DM_hcys_L[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 56.54323389555974,
+    "d": 56.54323389555435,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -9.525302261646035e-14
+   },
+   "harvetta": {
+    "h": 40.96928305129998,
+    "d": 56.7296070513436,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.27781479229672096
+   }
+  },
+  "HLYS2 EX_citr_L[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 7.13224336024723,
+    "d": 7.13224336024323,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -5.608832172813993e-13
+   },
+   "harvetta": {
+    "h": 7.13224336024723,
+    "d": 7.132243360246868,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -5.0808248812347e-14
+   }
+  },
+  "HLYS2 DM_citr_L[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 544.8180887022596,
+    "d": 544.8180887020674,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -3.528598748348705e-13
+   },
+   "harvetta": {
+    "h": 564.993533419485,
+    "d": 564.9935334194371,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -8.471275483654894e-14
+   }
+  },
+  "IVA EX_3bcrn[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 21.94374240001288,
+    "d": 21.943742400009242,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -1.6578661655678103e-13
+   },
+   "harvetta": {
+    "h": 22.365655089575185,
+    "d": 22.365655089577004,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 8.132958307103441e-14
+   }
+  },
+  "LNS DM_fol[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 0.0,
+    "d": 69.99961186378545,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 1.0
+   },
+   "harvetta": {
+    "h": 0.0,
+    "d": 69.999539745548,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 1.0
+   }
+  },
+  "MSUD EX_ile_L[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 15.551999911319992,
+    "d": 15.566975114286834,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.0009619854118670472
+   },
+   "harvetta": {
+    "h": 18.143999051724677,
+    "d": 18.143999051724677,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   }
+  },
+  "MSUD EX_3mop[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 2.592,
+    "d": 2.592,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 2.592,
+    "d": 2.592,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   }
+  },
+  "MMA DM_c4dc[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 50.00000000014526,
+    "d": 50.00000000001431,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -2.61906052400412e-12
+   },
+   "harvetta": {
+    "h": 49.999999999784386,
+    "d": 50.0000000003338,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 1.0988259191362288e-11
+   }
+  },
+  "MMA DM_crn[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 49.99999999978373,
+    "d": 49.99999999954528,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -4.769020733895268e-12
+   },
+   "harvetta": {
+    "h": 32.81834690706397,
+    "d": 49.99999999982652,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.3436330618564433
+   }
+  },
+  "MMA DM_3hpp[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 7012.016233916127,
+    "d": 6935.991632791248,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -0.010842045795210649
+   },
+   "harvetta": {
+    "h": 16308.427454172022,
+    "d": 16355.490826147907,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.0028775273378309776
+   }
+  },
+  "MMA DM_pcrn[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 50.00000000041166,
+    "d": 49.99999999942698,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -1.9693544572711948e-11
+   },
+   "harvetta": {
+    "h": 32.81834690668942,
+    "d": 49.999999999713474,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.34363306186245024
+   }
+  },
+  "MMA DM_3hdececrn[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 49.999999999940066,
+    "d": 49.99999999944246,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -9.952145774162197e-12
+   },
+   "harvetta": {
+    "h": 32.818346906636975,
+    "d": 49.99999999995896,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.3436330618667217
+   }
+  },
+  "NAGS DM_citr_L[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 1.1062597060629287e-06,
+    "d": 544.818088701953,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.999999997969488
+   },
+   "harvetta": {
+    "h": 1.1271497406539766e-06,
+    "d": 564.9935334188683,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999980050218
+   }
+  },
+  "NAGS EX_orot[u]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 1.0525363904889673e-06,
+    "d": 11.769442267388513,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999105704105
+   },
+   "harvetta": {
+    "h": 1.00783680423433e-06,
+    "d": 9.738157157360405,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999998965064141
+   }
+  },
+  "OTC DM_citr_L[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 1.6661708625229088e-06,
+    "d": 24.09378623425889,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999308464494
+   },
+   "harvetta": {
+    "h": 1.7679893424826787e-06,
+    "d": 24.05060424419983,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999264887766
+   }
+  },
+  "TYR1 DM_met_L[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 513.2795668569996,
+    "d": 531.0865934140678,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.033529422090278094
+   },
+   "harvetta": {
+    "h": 56.72960705134658,
+    "d": 56.729607051356865,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 1.812378742045726e-13
+   }
+  },
+  "ASNSD DM_asn_L[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 130.74810742194313,
+    "d": 49.7445737316022,
+    "call": "Decreased",
+    "err": null,
+    "sub": null,
+    "rel": -0.6195388620726322
+   },
+   "harvetta": {
+    "h": 1.3411958494913279e-06,
+    "d": 49.71099089327296,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999730201345
+   }
+  },
+  "ASNSD DM_asn_L[csf]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 730.9043035595562,
+    "d": 49.744573731497624,
+    "call": "Decreased",
+    "err": null,
+    "sub": null,
+    "rel": -0.9319410578248917
+   },
+   "harvetta": {
+    "h": 941.1041003764049,
+    "d": 49.20197989542216,
+    "call": "Decreased",
+    "err": null,
+    "sub": null,
+    "rel": -0.9477188762903666
+   }
+  },
+  "PC DM_glc_D[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 0.0,
+    "d": 2720.326641653544,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 1.0
+   },
+   "harvetta": {
+    "h": 0.0,
+    "d": 7253.875505437429,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 1.0
+   }
+  },
+  "PC EX_acetone[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 55.23266024406195,
+    "d": 299.376,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.8155073878865976
+   },
+   "harvetta": {
+    "h": 299.376,
+    "d": 299.376,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   }
+  },
+  "PHOX1 EX_glyclt[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 0.0,
+    "d": 1.64592,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 1.0
+   },
+   "harvetta": {
+    "h": 1.64592,
+    "d": 1.64592,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   }
+  },
+  "HPC EX_C05770[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 179.476014246906,
+    "d": 179.47603802442538,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 1.3248297452746252e-07
+   },
+   "harvetta": {
+    "h": 183.70663846248857,
+    "d": 183.70663846249147,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 1.578067284973547e-14
+   }
+  },
+  "HPC DM_C05770[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 305.39329183647897,
+    "d": 305.48554827339785,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.00030199934969205695
+   },
+   "harvetta": {
+    "h": 329.50449285155,
+    "d": 329.58553116917614,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.0002458794757725965
+   }
+  },
+  "HPC DM_C05770[csf]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 251.04944140056725,
+    "d": 251.11417603799322,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.0002577896574671154
+   },
+   "harvetta": {
+    "h": 225.00540326082356,
+    "d": 225.04585362743825,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.00017974277669499986
+   }
+  },
+  "HMET EX_hcys_L[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 9.664902415273957e-05,
+    "d": 2.09952,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.9999539661331387
+   },
+   "harvetta": {
+    "h": 2.09952,
+    "d": 2.09952,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": 0.0
+   }
+  }
+ },
+ "effect_size": {
+  "harvey_max_v0.3": {
+   "n_scored": 251,
+   "protocol": 217,
+   "tau=0.001 (raw)": {
+    "correct": 212,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 212
+   },
+   "tau=0.01 (raw)": {
+    "correct": 210,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 210
+   },
+   "tau=0.05 (raw)": {
+    "correct": 207,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_met_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 207
+   },
+   "tau=0.1 (raw)": {
+    "correct": 207,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_met_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 207
+   },
+   "tau=0.001 (zeroed)": {
+    "correct": 212,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 212
+   },
+   "tau=0.01 (zeroed)": {
+    "correct": 210,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 210
+   },
+   "tau=0.05 (zeroed)": {
+    "correct": 207,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_met_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 207
+   },
+   "tau=0.1 (zeroed)": {
+    "correct": 207,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_met_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 207
+   },
+   "correct_below_5pct": [
+    {
+     "iem": "HPC",
+     "reaction": "EX_C05770[u]",
+     "h": 179.476014246906,
+     "d": 179.47603802442538,
+     "rel": 1.3248297452746252e-07
+    },
+    {
+     "iem": "GACR",
+     "reaction": "DM_gln_L[bc]",
+     "h": 793.1333468189673,
+     "d": 793.1094006252589,
+     "rel": 3.0191888670994532e-05
+    },
+    {
+     "iem": "HPC",
+     "reaction": "DM_C05770[csf]",
+     "h": 251.04944140056725,
+     "d": 251.11417603799322,
+     "rel": 0.0002577896574671154
+    },
+    {
+     "iem": "HPC",
+     "reaction": "DM_C05770[bc]",
+     "h": 305.39329183647897,
+     "d": 305.48554827339785,
+     "rel": 0.00030199934969205695
+    },
+    {
+     "iem": "MSUD",
+     "reaction": "EX_ile_L[u]",
+     "h": 15.551999911319992,
+     "d": 15.566975114286834,
+     "rel": 0.0009619854118670472
+    },
+    {
+     "iem": "MMA",
+     "reaction": "EX_3aib[u]",
+     "h": 86.7665782697461,
+     "d": 86.9881942673821,
+     "rel": 0.002547656029676805
+    },
+    {
+     "iem": "DPYR",
+     "reaction": "EX_thym[u]",
+     "h": 86.53953917655726,
+     "d": 86.76657826738709,
+     "rel": 0.0026166652571013157
+    },
+    {
+     "iem": "GACR",
+     "reaction": "EX_glu_L[u]",
+     "h": 740.0355333425005,
+     "d": 722.4552608041258,
+     "rel": 0.023755984336279422
+    },
+    {
+     "iem": "HCYS",
+     "reaction": "DM_met_L[bc]",
+     "h": 514.7058414142136,
+     "d": 531.0865934141324,
+     "rel": 0.03084384392875327
+    },
+    {
+     "iem": "TYR1",
+     "reaction": "DM_met_L[bc]",
+     "h": 513.2795668569996,
+     "d": 531.0865934140678,
+     "rel": 0.033529422090278094
+    }
+   ],
+   "n_correct_below_5pct": 10,
+   "n_correct_below_0.1pct": 5,
+   "correct_5_to_10pct": []
+  },
+  "harvetta_max_A": {
+   "n_scored": 251,
+   "protocol": 218,
+   "tau=0.001 (raw)": {
+    "correct": 215,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 215
+   },
+   "tau=0.01 (raw)": {
+    "correct": 214,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MMA",
+      "DM_3hpp[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 214
+   },
+   "tau=0.05 (raw)": {
+    "correct": 213,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "MMA",
+      "DM_3hpp[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 213
+   },
+   "tau=0.1 (raw)": {
+    "correct": 212,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "MMA",
+      "DM_3hpp[bc]"
+     ],
+     [
+      "SUCLA",
+      "DM_pyr[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 212
+   },
+   "tau=0.001 (zeroed)": {
+    "correct": 215,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 215
+   },
+   "tau=0.01 (zeroed)": {
+    "correct": 214,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MMA",
+      "DM_3hpp[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 214
+   },
+   "tau=0.05 (zeroed)": {
+    "correct": 213,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "MMA",
+      "DM_3hpp[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 213
+   },
+   "tau=0.1 (zeroed)": {
+    "correct": 212,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "MMA",
+      "DM_3hpp[bc]"
+     ],
+     [
+      "SUCLA",
+      "DM_pyr[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 212
+   },
+   "correct_below_5pct": [
+    {
+     "iem": "GACR",
+     "reaction": "DM_gln_L[bc]",
+     "h": 823.4396244271994,
+     "d": 823.4191885037518,
+     "rel": 2.481775571807962e-05
+    },
+    {
+     "iem": "HPC",
+     "reaction": "DM_C05770[csf]",
+     "h": 225.00540326082356,
+     "d": 225.04585362743825,
+     "rel": 0.00017974277669499986
+    },
+    {
+     "iem": "HPC",
+     "reaction": "DM_C05770[bc]",
+     "h": 329.50449285155,
+     "d": 329.58553116917614,
+     "rel": 0.0002458794757725965
+    },
+    {
+     "iem": "MMA",
+     "reaction": "DM_3hpp[bc]",
+     "h": 16308.427454172022,
+     "d": 16355.490826147907,
+     "rel": 0.0028775273378309776
+    },
+    {
+     "iem": "GACR",
+     "reaction": "EX_glu_L[u]",
+     "h": 752.7506128759808,
+     "d": 734.7647917436086,
+     "rel": 0.023893465943063158
+    }
+   ],
+   "n_correct_below_5pct": 5,
+   "n_correct_below_0.1pct": 3,
+   "correct_5_to_10pct": [
+    {
+     "iem": "SUCLA",
+     "reaction": "DM_pyr[bc]",
+     "h": 13750.129031768965,
+     "d": 14758.121599109887,
+     "rel": 0.0683008715283737
+    }
+   ]
+  },
+  "harvey_max_v0.2": {
+   "n_scored": 251,
+   "protocol": 220,
+   "tau=0.001 (raw)": {
+    "correct": 215,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 215
+   },
+   "tau=0.01 (raw)": {
+    "correct": 209,
+    "lost": [
+     [
+      "DPYR",
+      "EX_ura[u]"
+     ],
+     [
+      "DPYR",
+      "EX_56dura[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "HCYS",
+      "DM_Lhcystin[bc]"
+     ],
+     [
+      "HCYS",
+      "DM_hcys_L[bc]"
+     ],
+     [
+      "HYPRO1",
+      "EX_pro_L[u]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 209
+   },
+   "tau=0.05 (raw)": {
+    "correct": 204,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "DPYR",
+      "EX_ura[u]"
+     ],
+     [
+      "DPYR",
+      "EX_56dura[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_Lhcystin[bc]"
+     ],
+     [
+      "HCYS",
+      "DM_hcys_L[bc]"
+     ],
+     [
+      "HYPRO1",
+      "EX_gly[u]"
+     ],
+     [
+      "HYPRO1",
+      "EX_pro_L[u]"
+     ],
+     [
+      "HYPRO1",
+      "DM_pro_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 204
+   },
+   "tau=0.1 (raw)": {
+    "correct": 204,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "DPYR",
+      "EX_ura[u]"
+     ],
+     [
+      "DPYR",
+      "EX_56dura[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_Lhcystin[bc]"
+     ],
+     [
+      "HCYS",
+      "DM_hcys_L[bc]"
+     ],
+     [
+      "HYPRO1",
+      "EX_gly[u]"
+     ],
+     [
+      "HYPRO1",
+      "EX_pro_L[u]"
+     ],
+     [
+      "HYPRO1",
+      "DM_pro_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 204
+   },
+   "tau=0.001 (zeroed)": {
+    "correct": 215,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 215
+   },
+   "tau=0.01 (zeroed)": {
+    "correct": 209,
+    "lost": [
+     [
+      "DPYR",
+      "EX_ura[u]"
+     ],
+     [
+      "DPYR",
+      "EX_56dura[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "HCYS",
+      "DM_Lhcystin[bc]"
+     ],
+     [
+      "HCYS",
+      "DM_hcys_L[bc]"
+     ],
+     [
+      "HYPRO1",
+      "EX_pro_L[u]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 209
+   },
+   "tau=0.05 (zeroed)": {
+    "correct": 204,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "DPYR",
+      "EX_ura[u]"
+     ],
+     [
+      "DPYR",
+      "EX_56dura[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_Lhcystin[bc]"
+     ],
+     [
+      "HCYS",
+      "DM_hcys_L[bc]"
+     ],
+     [
+      "HYPRO1",
+      "EX_gly[u]"
+     ],
+     [
+      "HYPRO1",
+      "EX_pro_L[u]"
+     ],
+     [
+      "HYPRO1",
+      "DM_pro_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 204
+   },
+   "tau=0.1 (zeroed)": {
+    "correct": 204,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "DPYR",
+      "EX_ura[u]"
+     ],
+     [
+      "DPYR",
+      "EX_56dura[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_Lhcystin[bc]"
+     ],
+     [
+      "HCYS",
+      "DM_hcys_L[bc]"
+     ],
+     [
+      "HYPRO1",
+      "EX_gly[u]"
+     ],
+     [
+      "HYPRO1",
+      "EX_pro_L[u]"
+     ],
+     [
+      "HYPRO1",
+      "DM_pro_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 204
+   },
+   "correct_below_5pct": [
+    {
+     "iem": "GACR",
+     "reaction": "DM_gln_L[bc]",
+     "h": 789.5039388608291,
+     "d": 789.4874131761496,
+     "rel": 2.0931731769801177e-05
+    },
+    {
+     "iem": "HPC",
+     "reaction": "EX_C05770[u]",
+     "h": 236.8309524758898,
+     "d": 236.85022605401772,
+     "rel": 8.137453972083966e-05
+    },
+    {
+     "iem": "HPC",
+     "reaction": "DM_C05770[csf]",
+     "h": 256.73236533822484,
+     "d": 256.79508623628175,
+     "rel": 0.00024424493075852224
+    },
+    {
+     "iem": "HPC",
+     "reaction": "DM_C05770[bc]",
+     "h": 327.5266930963256,
+     "d": 327.6396177460379,
+     "rel": 0.00034466115694186674
+    },
+    {
+     "iem": "MSUD",
+     "reaction": "EX_ile_L[u]",
+     "h": 22.42062121481932,
+     "d": 22.43070036332936,
+     "rel": 0.0004493461348410989
+    },
+    {
+     "iem": "MMA",
+     "reaction": "EX_3aib[u]",
+     "h": 124.6749960108024,
+     "d": 124.99448963556172,
+     "rel": 0.002556061676725465
+    },
+    {
+     "iem": "HCYS",
+     "reaction": "DM_Lhcystin[bc]",
+     "h": 28.18252052112752,
+     "d": 28.266720947796845,
+     "rel": 0.0029787829591139507
+    },
+    {
+     "iem": "HCYS",
+     "reaction": "DM_hcys_L[bc]",
+     "h": 56.365041041511965,
+     "d": 56.53344189561429,
+     "rel": 0.0029787829726211535
+    },
+    {
+     "iem": "HYPRO1",
+     "reaction": "EX_pro_L[u]",
+     "h": 1289.2240430715017,
+     "d": 1294.4141623933988,
+     "rel": 0.004009628040765918
+    },
+    {
+     "iem": "DPYR",
+     "reaction": "EX_ura[u]",
+     "h": 120.28109169192143,
+     "d": 120.85041147468755,
+     "rel": 0.004710946167405982
+    },
+    {
+     "iem": "DPYR",
+     "reaction": "EX_56dura[u]",
+     "h": 120.28109169192565,
+     "d": 120.85041147469485,
+     "rel": 0.0047109461674312144
+    },
+    {
+     "iem": "HYPRO1",
+     "reaction": "EX_gly[u]",
+     "h": 1431.7482629342273,
+     "d": 1446.4276855125831,
+     "rel": 0.010148742813335825
+    },
+    {
+     "iem": "GACR",
+     "reaction": "EX_glu_L[u]",
+     "h": 1031.939159669838,
+     "d": 1006.8665317803836,
+     "rel": 0.024296614441374886
+    },
+    {
+     "iem": "TYR1",
+     "reaction": "DM_met_L[bc]",
+     "h": 515.4687860136694,
+     "d": 533.276980093077,
+     "rel": 0.033393892375214465
+    },
+    {
+     "iem": "DPYR",
+     "reaction": "EX_thym[u]",
+     "h": 120.28109169192462,
+     "d": 124.67499578277815,
+     "rel": 0.03524286536579523
+    },
+    {
+     "iem": "HYPRO1",
+     "reaction": "DM_pro_L[bc]",
+     "h": 1509.6242489783076,
+     "d": 1579.0078921970937,
+     "rel": 0.043941289693139526
+    }
+   ],
+   "n_correct_below_5pct": 16,
+   "n_correct_below_0.1pct": 5,
+   "correct_5_to_10pct": []
+  },
+  "harvey_max_v0.2b": {
+   "n_scored": 251,
+   "protocol": 217,
+   "tau=0.001 (raw)": {
+    "correct": 212,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 212
+   },
+   "tau=0.01 (raw)": {
+    "correct": 210,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 210
+   },
+   "tau=0.05 (raw)": {
+    "correct": 207,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_met_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 207
+   },
+   "tau=0.1 (raw)": {
+    "correct": 207,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_met_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 207
+   },
+   "tau=0.001 (zeroed)": {
+    "correct": 212,
+    "lost": [
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 212
+   },
+   "tau=0.01 (zeroed)": {
+    "correct": 210,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 210
+   },
+   "tau=0.05 (zeroed)": {
+    "correct": 207,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_met_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 207
+   },
+   "tau=0.1 (zeroed)": {
+    "correct": 207,
+    "lost": [
+     [
+      "DPYR",
+      "EX_thym[u]"
+     ],
+     [
+      "GACR",
+      "DM_gln_L[bc]"
+     ],
+     [
+      "GACR",
+      "EX_glu_L[u]"
+     ],
+     [
+      "HCYS",
+      "DM_met_L[bc]"
+     ],
+     [
+      "MSUD",
+      "EX_ile_L[u]"
+     ],
+     [
+      "MMA",
+      "EX_3aib[u]"
+     ],
+     [
+      "TYR1",
+      "DM_met_L[bc]"
+     ],
+     [
+      "HPC",
+      "EX_C05770[u]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[bc]"
+     ],
+     [
+      "HPC",
+      "DM_C05770[csf]"
+     ]
+    ],
+    "gained": [],
+    "protocol_and_rel": 207
+   },
+   "correct_below_5pct": [
+    {
+     "iem": "GACR",
+     "reaction": "DM_gln_L[bc]",
+     "h": 771.957903613127,
+     "d": 771.9417872224453,
+     "rel": 2.0877292150534623e-05
+    },
+    {
+     "iem": "HPC",
+     "reaction": "EX_C05770[u]",
+     "h": 234.5107880232147,
+     "d": 234.5304961736012,
+     "rel": 8.40323570198056e-05
+    },
+    {
+     "iem": "HPC",
+     "reaction": "DM_C05770[csf]",
+     "h": 249.71680489184584,
+     "d": 249.7820531038804,
+     "rel": 0.0002612205769940777
+    },
+    {
+     "iem": "HPC",
+     "reaction": "DM_C05770[bc]",
+     "h": 322.2958188692761,
+     "d": 322.40912449553883,
+     "rel": 0.00035143430397639703
+    },
+    {
+     "iem": "MSUD",
+     "reaction": "EX_ile_L[u]",
+     "h": 22.420621159923073,
+     "d": 22.43070036332936,
+     "rel": 0.00044934858221218663
+    },
+    {
+     "iem": "DPYR",
+     "reaction": "EX_thym[u]",
+     "h": 124.44795669192567,
+     "d": 124.67499578275599,
+     "rel": 0.001821047511611139
+    },
+    {
+     "iem": "MMA",
+     "reaction": "EX_3aib[u]",
+     "h": 124.67499578510615,
+     "d": 124.99448963556098,
+     "rel": 0.002556063482369203
+    },
+    {
+     "iem": "GACR",
+     "reaction": "EX_glu_L[u]",
+     "h": 1026.0691326278895,
+     "d": 1000.8565543718289,
+     "rel": 0.024572007337837074
+    },
+    {
+     "iem": "HCYS",
+     "reaction": "DM_met_L[bc]",
+     "h": 514.7069289458644,
+     "d": 531.0876809457887,
+     "rel": 0.03084378076846485
+    },
+    {
+     "iem": "TYR1",
+     "reaction": "DM_met_L[bc]",
+     "h": 513.2795668569737,
+     "d": 531.0876809458767,
+     "rel": 0.03353140117501213
+    }
+   ],
+   "n_correct_below_5pct": 10,
+   "n_correct_below_0.1pct": 5,
+   "correct_5_to_10pct": []
+  }
+ },
+ "flux_ranges": {
+  "Harvey": {
+   "n_directional": 252,
+   "n_range_scored": 251,
+   "excluded": [
+    [
+     "HPC",
+     "EX_25aics[u]",
+     "absent",
+     "absent",
+     "absent",
+     "absent"
+    ]
+   ],
+   "maxima_only_correct": 217,
+   "r1": {
+    "correct": 207,
+    "transitions": {
+     "right_to_right": 207,
+     "wrong_same_wrong": 33,
+     "right_to_wrong": 10,
+     "wrong_to_other_wrong": 1
+    },
+    "calls": {
+     "Increased": 190,
+     "Decreased": 31,
+     "Unchanged": 20,
+     "Conflicting": 10
+    },
+    "right_to_wrong_new_calls": {
+     "Conflicting": 10
+    },
+    "right_to_wrong_pattern": {
+     "smax=1 smin=-1 dmin_zero hmin_pos": 10
+    },
+    "right_to_wrong": [
+     [
+      "BTD",
+      "EX_CE2026[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      0.043672744971810395,
+      2.592,
+      0.004243365770792096,
+      0.0
+     ],
+     [
+      "GA2",
+      "DM_c4crn[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      2.6504561394067423,
+      50.00000000002863,
+      2.6457530878764364,
+      0.0
+     ],
+     [
+      "GA2",
+      "EX_CE4970[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      0.02500421393094543,
+      18.158975114286445,
+      0.0006971693003379187,
+      0.0
+     ],
+     [
+      "OXOP",
+      "DM_leuktrE4[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      0.0008344895996013721,
+      0.19999999983656735,
+      0.0007321398251504657,
+      0.0
+     ],
+     [
+      "OXOP",
+      "DM_leuktrD4[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      0.01359668610302786,
+      0.19999999976496863,
+      0.013594128845995408,
+      0.0
+     ],
+     [
+      "GMT",
+      "EX_urate[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      5.363457531359064,
+      140.76577742673913,
+      0.03496132126291185,
+      0.0
+     ],
+     [
+      "LNS",
+      "DM_urate[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      0.778894241964688,
+      402.08046479888935,
+      0.5616556930927958,
+      0.0
+     ],
+     [
+      "PC",
+      "DM_acac[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      55.232653815823554,
+      5136.373445051853,
+      55.228202134176,
+      0.0
+     ],
+     [
+      "PC",
+      "EX_succ[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      71.09263593750075,
+      388.4546142285841,
+      0.004239827089008941,
+      0.0
+     ],
+     [
+      "ADSL",
+      "DM_Brain_25aics[c]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      298.6709861219948,
+      539.3772632398384,
+      298.6709731005989,
+      0.0
+     ]
+    ],
+    "wrong_to_right": [],
+    "wrong_to_other_wrong": [
+     [
+      "BTD",
+      "EX_2mcit[u]",
+      "Increased",
+      "Unchanged",
+      "Decreased",
+      0.03369600000000001,
+      0.03369600000000001,
+      0.006068005021777179,
+      0.0,
+      true
+     ]
+    ],
+    "conflicting_total": 10,
+    "by_fluid": {
+     "blood": {
+      "n": 122,
+      "maxima_only": 102,
+      "rule": 97
+     },
+     "csf": {
+      "n": 7,
+      "maxima_only": 7,
+      "rule": 7
+     },
+     "other": {
+      "n": 1,
+      "maxima_only": 1,
+      "rule": 0
+     },
+     "urine": {
+      "n": 121,
+      "maxima_only": 107,
+      "rule": 103
+     }
+    }
+   },
+   "r2": {
+    "correct": 217,
+    "transitions": {
+     "right_to_right": 217,
+     "wrong_same_wrong": 33,
+     "wrong_to_other_wrong": 1
+    },
+    "calls": {
+     "Increased": 200,
+     "Decreased": 31,
+     "Unchanged": 20
+    },
+    "right_to_wrong_new_calls": {},
+    "right_to_wrong_pattern": {},
+    "right_to_wrong": [],
+    "wrong_to_right": [],
+    "wrong_to_other_wrong": [
+     [
+      "BTD",
+      "EX_2mcit[u]",
+      "Increased",
+      "Unchanged",
+      "Decreased",
+      0.03369600000000001,
+      0.03369600000000001,
+      0.006068005021777179,
+      0.0,
+      true
+     ]
+    ],
+    "conflicting_total": 0,
+    "by_fluid": {
+     "blood": {
+      "n": 122,
+      "maxima_only": 102,
+      "rule": 102
+     },
+     "csf": {
+      "n": 7,
+      "maxima_only": 7,
+      "rule": 7
+     },
+     "other": {
+      "n": 1,
+      "maxima_only": 1,
+      "rule": 1
+     },
+     "urine": {
+      "n": 121,
+      "maxima_only": 107,
+      "rule": 107
+     }
+    }
+   },
+   "capped": {
+    "n": 18,
+    "zero_minima_both": 17,
+    "differing_minima": 1,
+    "differing": [
+     [
+      "BTD",
+      "EX_2mcit[u]",
+      "Increased",
+      0.03369600000000001,
+      0.03369600000000001,
+      0.006068005021777179,
+      0.0,
+      "Decreased"
+     ]
+    ],
+    "nonzero_equal_minima": [],
+    "r1_correct": 0,
+    "r2_correct": 0
+   },
+   "zero_no_change_errors": [
+    [
+     "CYP21D",
+     "DM_aldstrn[bc]",
+     0.0,
+     0.0,
+     "Unchanged",
+     "Unchanged"
+    ],
+    [
+     "CYP21D",
+     "DM_crtsl[bc]",
+     0.0,
+     0.0,
+     "Unchanged",
+     "Unchanged"
+    ],
+    [
+     "BTD",
+     "EX_3hpp[u]",
+     0.0,
+     0.0,
+     "Unchanged",
+     "Unchanged"
+    ]
+   ],
+   "raw_variant_same_counts": true,
+   "raw_variant_counts": {
+    "r1": 207,
+    "r2": 217,
+    "maxima_only": 217
+   },
+   "min_file_maxima_statuses": {
+    "not_run | not_run": 251,
+    "absent | absent": 1
+   },
+   "min_file_min_statuses": {
+    "Optimal | Optimal": 251,
+    "absent | absent": 1
+   },
+   "n_min_pairs_optimal_finite": 251
+  },
+  "Harvetta": {
+   "n_directional": 252,
+   "n_range_scored": 251,
+   "excluded": [
+    [
+     "HPC",
+     "EX_25aics[u]",
+     "absent",
+     "absent",
+     "absent",
+     "absent"
+    ]
+   ],
+   "maxima_only_correct": 218,
+   "r1": {
+    "correct": 205,
+    "transitions": {
+     "right_to_right": 205,
+     "wrong_same_wrong": 30,
+     "right_to_wrong": 13,
+     "wrong_to_other_wrong": 3
+    },
+    "calls": {
+     "Increased": 191,
+     "Decreased": 32,
+     "Unchanged": 15,
+     "Conflicting": 13
+    },
+    "right_to_wrong_new_calls": {
+     "Conflicting": 13
+    },
+    "right_to_wrong_pattern": {
+     "smax=1 smin=-1 dmin_zero hmin_pos": 13
+    },
+    "right_to_wrong": [
+     [
+      "BTD",
+      "DM_acac[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      3291.4577866843724,
+      11047.945438562254,
+      894.2376830201488,
+      0.0
+     ],
+     [
+      "BTD",
+      "DM_acetone[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      2658.419444182802,
+      10252.758374978386,
+      894.2376843479572,
+      0.0
+     ],
+     [
+      "BTD",
+      "EX_CE2026[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      0.027822208769417323,
+      2.592,
+      0.004243224506353727,
+      0.0
+     ],
+     [
+      "GMT",
+      "EX_urate[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      5.362925369624063,
+      140.6893819961254,
+      0.034964189834738146,
+      0.0
+     ],
+     [
+      "LNS",
+      "DM_urate[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      0.8479681177671474,
+      417.2039451951129,
+      0.630715764063285,
+      0.0
+     ],
+     [
+      "SUCLA",
+      "DM_pyr[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      13750.129031768965,
+      14758.121599109887,
+      999.9999990164879,
+      0.0
+     ],
+     [
+      "PC",
+      "DM_acac[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      3164.6852752310065,
+      11285.292588646567,
+      999.9999940691989,
+      0.0
+     ],
+     [
+      "PC",
+      "EX_succ[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      144.90652655785073,
+      475.8157793872192,
+      0.004242359444477373,
+      0.0
+     ],
+     [
+      "PC",
+      "EX_akg[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      126.98546583796815,
+      390.43055538720847,
+      0.177432752068853,
+      0.0
+     ],
+     [
+      "PC",
+      "EX_acac[u]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      40.92276648876851,
+      46.00023715736097,
+      0.01420802831535184,
+      0.0
+     ],
+     [
+      "ADSL",
+      "DM_Brain_25aics[c]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      406.88552562896854,
+      537.7142310182838,
+      406.88516242075775,
+      0.0
+     ],
+     [
+      "HMET",
+      "DM_hcys_L[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      8.189622123658461,
+      56.72960705136373,
+      8.188572708061438,
+      0.0
+     ],
+     [
+      "DESMO",
+      "DM_dsmsterol[bc]",
+      "Increased",
+      "Increased",
+      "Conflicting",
+      127.89899506950208,
+      578.8739370920752,
+      127.89413919885307,
+      0.0
+     ]
+    ],
+    "wrong_to_right": [],
+    "wrong_to_other_wrong": [
+     [
+      "BTD",
+      "EX_2mcit[u]",
+      "Increased",
+      "Unchanged",
+      "Decreased",
+      0.03369600000000001,
+      0.03369600000000001,
+      0.006067993934266269,
+      0.0,
+      true
+     ],
+     [
+      "MMA",
+      "DM_c4dc[bc]",
+      "Increased",
+      "Unchanged",
+      "Decreased",
+      49.999999999784386,
+      50.0000000003338,
+      17.177409732883483,
+      0.0,
+      true
+     ],
+     [
+      "PC",
+      "EX_acetone[u]",
+      "Increased",
+      "Unchanged",
+      "Decreased",
+      299.376,
+      299.376,
+      0.0042298629249444275,
+      0.0,
+      true
+     ]
+    ],
+    "conflicting_total": 13,
+    "by_fluid": {
+     "blood": {
+      "n": 122,
+      "maxima_only": 105,
+      "rule": 98
+     },
+     "csf": {
+      "n": 7,
+      "maxima_only": 7,
+      "rule": 7
+     },
+     "other": {
+      "n": 1,
+      "maxima_only": 1,
+      "rule": 0
+     },
+     "urine": {
+      "n": 121,
+      "maxima_only": 105,
+      "rule": 100
+     }
+    }
+   },
+   "r2": {
+    "correct": 218,
+    "transitions": {
+     "right_to_right": 218,
+     "wrong_same_wrong": 30,
+     "wrong_to_other_wrong": 3
+    },
+    "calls": {
+     "Increased": 204,
+     "Decreased": 32,
+     "Unchanged": 15
+    },
+    "right_to_wrong_new_calls": {},
+    "right_to_wrong_pattern": {},
+    "right_to_wrong": [],
+    "wrong_to_right": [],
+    "wrong_to_other_wrong": [
+     [
+      "BTD",
+      "EX_2mcit[u]",
+      "Increased",
+      "Unchanged",
+      "Decreased",
+      0.03369600000000001,
+      0.03369600000000001,
+      0.006067993934266269,
+      0.0,
+      true
+     ],
+     [
+      "MMA",
+      "DM_c4dc[bc]",
+      "Increased",
+      "Unchanged",
+      "Decreased",
+      49.999999999784386,
+      50.0000000003338,
+      17.177409732883483,
+      0.0,
+      true
+     ],
+     [
+      "PC",
+      "EX_acetone[u]",
+      "Increased",
+      "Unchanged",
+      "Decreased",
+      299.376,
+      299.376,
+      0.0042298629249444275,
+      0.0,
+      true
+     ]
+    ],
+    "conflicting_total": 0,
+    "by_fluid": {
+     "blood": {
+      "n": 122,
+      "maxima_only": 105,
+      "rule": 105
+     },
+     "csf": {
+      "n": 7,
+      "maxima_only": 7,
+      "rule": 7
+     },
+     "other": {
+      "n": 1,
+      "maxima_only": 1,
+      "rule": 1
+     },
+     "urine": {
+      "n": 121,
+      "maxima_only": 105,
+      "rule": 105
+     }
+    }
+   },
+   "capped": {
+    "n": 16,
+    "zero_minima_both": 13,
+    "differing_minima": 3,
+    "differing": [
+     [
+      "BTD",
+      "EX_2mcit[u]",
+      "Increased",
+      0.03369600000000001,
+      0.03369600000000001,
+      0.006067993934266269,
+      0.0,
+      "Decreased"
+     ],
+     [
+      "MMA",
+      "DM_c4dc[bc]",
+      "Increased",
+      49.999999999784386,
+      50.0000000003338,
+      17.177409732883483,
+      0.0,
+      "Decreased"
+     ],
+     [
+      "PC",
+      "EX_acetone[u]",
+      "Increased",
+      299.376,
+      299.376,
+      0.0042298629249444275,
+      0.0,
+      "Decreased"
+     ]
+    ],
+    "nonzero_equal_minima": [],
+    "r1_correct": 0,
+    "r2_correct": 0
+   },
+   "zero_no_change_errors": [
+    [
+     "CYP21D",
+     "DM_aldstrn[bc]",
+     0.0,
+     0.0,
+     "Unchanged",
+     "Unchanged"
+    ],
+    [
+     "CYP21D",
+     "DM_crtsl[bc]",
+     0.0,
+     0.0,
+     "Unchanged",
+     "Unchanged"
+    ]
+   ],
+   "raw_variant_same_counts": true,
+   "raw_variant_counts": {
+    "r1": 205,
+    "r2": 218,
+    "maxima_only": 218
+   },
+   "min_file_maxima_statuses": {
+    "not_run | not_run": 251,
+    "absent | absent": 1
+   },
+   "min_file_min_statuses": {
+    "Optimal | Optimal": 251,
+    "absent | absent": 1
+   },
+   "n_min_pairs_optimal_finite": 251
+  }
+ },
+ "post_hoc_indeterminate": {
+  "harvey_max_v0.3": {
+   "n_capped": 18,
+   "n_equal_positive_maxima_among_scored": 18,
+   "n_rest": 233,
+   "correct": 217,
+   "accuracy": 0.9313304721030042
+  },
+  "harvetta_max_A": {
+   "n_capped": 16,
+   "n_equal_positive_maxima_among_scored": 16,
+   "n_rest": 235,
+   "correct": 218,
+   "accuracy": 0.9276595744680851
+  }
+ },
+ "harvey_v0.2_to_v0.2b_changes": [
+  {
+   "iem": "DPYR",
+   "reaction": "EX_ura[u]",
+   "expected": "Increased",
+   "v02": [
+    120.28109169192143,
+    120.85041147468755,
+    "Increased"
+   ],
+   "v02b": [
+    120.85041147469359,
+    120.85041147468905,
+    "Unchanged"
+   ],
+   "rel_v02": 0.004710946167405982,
+   "rel_v02b": -3.751135473046128e-14,
+   "effect": "right->wrong"
+  },
+  {
+   "iem": "DPYR",
+   "reaction": "EX_56dura[u]",
+   "expected": "Increased",
+   "v02": [
+    120.28109169192565,
+    120.85041147469485,
+    "Increased"
+   ],
+   "v02b": [
+    120.850411474691,
+    120.85041147468954,
+    "Unchanged"
+   ],
+   "rel_v02": 0.0047109461674312144,
+   "rel_v02b": -1.2111816731152333e-14,
+   "effect": "right->wrong"
+  },
+  {
+   "iem": "HCYS",
+   "reaction": "DM_Lhcystin[bc]",
+   "expected": "Increased",
+   "v02": [
+    28.18252052112752,
+    28.266720947796845,
+    "Increased"
+   ],
+   "v02b": [
+    28.266720947786503,
+    28.266720947782478,
+    "Unchanged"
+   ],
+   "rel_v02": 0.0029787829591139507,
+   "rel_v02b": -1.4240154015445407e-13,
+   "effect": "right->wrong"
+  },
+  {
+   "iem": "HCYS",
+   "reaction": "DM_hcys_L[bc]",
+   "expected": "Increased",
+   "v02": [
+    56.365041041511965,
+    56.53344189561429,
+    "Increased"
+   ],
+   "v02b": [
+    56.533441895555015,
+    56.533441895559136,
+    "Unchanged"
+   ],
+   "rel_v02": 0.0029787829726211535,
+   "rel_v02b": 7.289752276222739e-14,
+   "effect": "right->wrong"
+  },
+  {
+   "iem": "HYPRO1",
+   "reaction": "EX_4hpro_LT[u]",
+   "expected": "Increased",
+   "v02": [
+    28.22164019102423,
+    28.22164019102423,
+    "Unchanged"
+   ],
+   "v02b": [
+    0.0,
+    28.22164019102423,
+    "Increased"
+   ],
+   "rel_v02": 0.0,
+   "rel_v02b": 1.0,
+   "effect": "wrong->right"
+  }
+ ],
+ "harvey_v0.2b_to_v0.3_call_changes": []
+}

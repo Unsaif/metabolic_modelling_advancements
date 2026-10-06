@@ -1,0 +1,1380 @@
+{
+ "completeness_provenance": {
+  "A_harvetta_max": {
+   "n_records": 57,
+   "statuses": {
+    "complete": 57
+   },
+   "n_fingerprints": 1,
+   "fingerprint": "51d7bda77122e72385194d5385dd2fbf4b9605195ad1fdcb2ac2f4ad8c14a2c8",
+   "fp_equals_sha256_provenance": true,
+   "senses": "(field absent)",
+   "lp_bounds_sha256": "8b2d70b5667cb303488585c9a0f724e571489e4ebebe7509b71fb61a80628532",
+   "model_sha_ok": true,
+   "protocol_sha_ok": true,
+   "wall_h": 12.936,
+   "sum_time_h": 12.933,
+   "inferred_start_utc": "2026-10-05T13:39:58.219746+00:00",
+   "end_utc": "2026-10-06T02:36:08.019746+00:00"
+  },
+  "B_harvey_min": {
+   "n_records": 57,
+   "statuses": {
+    "complete": 57
+   },
+   "n_fingerprints": 1,
+   "fingerprint": "92385e328c9287deda5f3fc4316de0a381def08dafd4f1a2ab208feac515bb11",
+   "fp_equals_sha256_provenance": true,
+   "senses": [
+    "min"
+   ],
+   "lp_bounds_sha256": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+   "model_sha_ok": true,
+   "protocol_sha_ok": true,
+   "wall_h": 6.135,
+   "sum_time_h": 6.132,
+   "inferred_start_utc": "2026-10-05T13:39:58.286876+00:00",
+   "end_utc": "2026-10-05T19:48:02.586876+00:00"
+  },
+  "C_harvetta_min": {
+   "n_records": 57,
+   "statuses": {
+    "complete": 57
+   },
+   "n_fingerprints": 1,
+   "fingerprint": "5b6c8d075cf66e4299762473bf47f60f75b4e0423d6134efe1733307f8942eb3",
+   "fp_equals_sha256_provenance": true,
+   "senses": [
+    "min"
+   ],
+   "lp_bounds_sha256": "8b2d70b5667cb303488585c9a0f724e571489e4ebebe7509b71fb61a80628532",
+   "model_sha_ok": true,
+   "protocol_sha_ok": true,
+   "wall_h": 6.82,
+   "sum_time_h": 6.817,
+   "inferred_start_utc": "2026-10-05T19:49:02.688364+00:00",
+   "end_utc": "2026-10-06T02:38:12.988364+00:00"
+  },
+  "v0.3_harvey_max": {
+   "n_records": 57,
+   "statuses": {
+    "complete": 57
+   },
+   "n_fingerprints": 1,
+   "fingerprint": "c85ebde9a52350e43d035fd3bad750ec6426821887d7f6c058a61a106dd4650c",
+   "fp_equals_sha256_provenance": true,
+   "senses": "(field absent)",
+   "lp_bounds_sha256": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+   "model_sha_ok": true,
+   "protocol_sha_ok": true,
+   "wall_h": 4.47,
+   "sum_time_h": 9.653,
+   "inferred_start_utc": "2026-10-05T07:17:00.226796+00:00",
+   "end_utc": "2026-10-05T11:45:10.926796+00:00"
+  },
+  "B_lp_bounds_equals_v0.3": true
+ },
+ "freeze_and_time_order": {
+  "freeze_valid": true,
+  "fingerprint_recomputed": "f3dde4e2c2d53d6f2a6c0b488bd186952239b4cc9f2b37f044200e772099b363",
+  "fingerprint_match": true,
+  "n_files_ok": 22,
+  "created_at": "2026-10-05T13:39:37Z",
+  "freeze_head": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+  "freeze_dirty": false,
+  "plan_commit": {
+   "hash": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+   "committed": "2026-10-05T13:39:28+00:00",
+   "authored": "2026-10-05T13:39:28+00:00",
+   "subject": "IEM v0.4 plan: Harvetta under the v0.3 protocol, biomarker minima on both models, MATLAB reference on Harvetta"
+  },
+  "freeze_commit": {
+   "hash": "9f9ebab2cd1f28ba79e76e36e6e5cd6bef05720e",
+   "committed": "2026-10-05T13:39:41+00:00",
+   "authored": "2026-10-05T13:39:41+00:00",
+   "subject": "Freeze IEM v0.4 plan (22 files, fingerprint f3dde4e2\u2026) before any Harvetta IEM run or biomarker minimum"
+  },
+  "first_in_git": [
+   [
+    "62b41c09d5122daf247e8e8ad346cfae7ff20277|2026-10-05T18:40:47+00:00",
+    "results/wbm_iem/matlab_reference/harvetta_step2/matlab_iem_results_Harvetta_1_03d.mat"
+   ],
+   [
+    "f5959516fb08dcffce0d04ddbb472f7d205a8c40|2026-10-05T19:51:43+00:00",
+    "results/wbm_iem/Harvey_1_03d_iem_results_v0.4_min.json"
+   ],
+   [
+    "c14e7027dfa74b5fd996438e357d3cec5c59e20c|2026-10-06T02:43:47+00:00",
+    "results/wbm_iem/Harvetta_1_03d_iem_results_v0.4.json"
+   ],
+   [
+    "c14e7027dfa74b5fd996438e357d3cec5c59e20c|2026-10-06T02:43:47+00:00",
+    "results/wbm_iem/Harvetta_1_03d_iem_results_v0.4_min.json"
+   ]
+  ],
+  "plan_ancestor": {
+   "A_results": true,
+   "B_results": true,
+   "C_results": true,
+   "M_matlab_results": true
+  },
+  "freeze_ancestor": {
+   "A_results": true,
+   "B_results": true,
+   "C_results": true,
+   "M_matlab_results": true
+  },
+  "frozen_changed_to_HEAD": [],
+  "external_record_created_at": "2026-10-05T13:39:50.613661Z (Claude project doc studies/2026-10-05-wbm-iem-v0.4-plan-freeze.md, fingerprint f3dde4e2..., read with the Projects tool)",
+  "matlab_jobs": {
+   "first": {
+    "script": "iem_ref_harvetta_20261005_step2_runiem.m",
+    "status": "error",
+    "submitted": "2026-10-05T13:40:27.813917+00:00",
+    "finished": "2026-10-05T14:34:26.753515+00:00",
+    "hours": 0.8997054439120823,
+    "error": "Command '['/usr/local/bin/docker', 'container', 'inspect', '--format', '{{json .State}}', 'matlab-agent-c1a05d80555746128502b79f880e59f2']' timed out after 10 seconds",
+    "code_sha256": "3398850dfdb375afc32cec8ba0e7c60b9ce1ceb7daa041db362eba7a91a72a4d",
+    "automatic_retry": false,
+    "may_have_executed": true
+   },
+   "second": {
+    "script": "iem_ref_harvetta_20261005_step2b_runiem.m",
+    "status": "completed",
+    "submitted": "2026-10-05T15:28:09.668429+00:00",
+    "finished": "2026-10-05T18:31:09.642728+00:00",
+    "hours": 3.049992860754331,
+    "elapsed_h": 3.0499530766666667,
+    "code_sha256": "3398850dfdb375afc32cec8ba0e7c60b9ce1ceb7daa041db362eba7a91a72a4d",
+    "errors": []
+   },
+   "code_equals_frozen_job_script": true,
+   "agent_job_m_sha256": "3398850dfdb375afc32cec8ba0e7c60b9ce1ceb7daa041db362eba7a91a72a4d",
+   "run_info": [
+    "IEM reference run, step 2 (runIEM_HH)",
+    "started 2026-10-05 15:28:09",
+    "LP solver gurobi",
+    "executing /outbox/jobs/00000001/runIEM_HH_harvetta_ref.m",
+    "runIEM_HH finished after 10979 s",
+    "Accuracy as defined at the end of runIEM_HH.m: 0.7579",
+    "finished 2026-10-05 18:31:09"
+   ]
+  }
+ },
+ "accuracy_and_anatomy": {
+  "Harvey_v0.2": {
+   "scored": 251,
+   "correct": 220,
+   "accuracy": 0.8765,
+   "errors": {
+    "opposite": 13,
+    "no_change": 18
+   },
+   "no_change": {
+    "zero": 3,
+    "capped": 15
+   },
+   "iems_fully_correct": 37,
+   "unscored": [
+    [
+     "HPC",
+     "EX_25aics[u]",
+     "absent",
+     "absent",
+     null,
+     null
+    ]
+   ]
+  },
+  "Harvey_v0.2b": {
+   "scored": 251,
+   "correct": 217,
+   "accuracy": 0.8645,
+   "errors": {
+    "opposite": 13,
+    "no_change": 21
+   },
+   "no_change": {
+    "zero": 3,
+    "capped": 18
+   },
+   "iems_fully_correct": 38,
+   "unscored": [
+    [
+     "HPC",
+     "EX_25aics[u]",
+     "absent",
+     "absent",
+     null,
+     null
+    ]
+   ]
+  },
+  "Harvey_v0.3": {
+   "scored": 251,
+   "correct": 217,
+   "accuracy": 0.8645,
+   "errors": {
+    "opposite": 13,
+    "no_change": 21
+   },
+   "no_change": {
+    "zero": 3,
+    "capped": 18
+   },
+   "iems_fully_correct": 38,
+   "unscored": [
+    [
+     "HPC",
+     "EX_25aics[u]",
+     "absent",
+     "absent",
+     null,
+     null
+    ]
+   ]
+  },
+  "Harvetta_v0.4": {
+   "scored": 251,
+   "correct": 218,
+   "accuracy": 0.8685,
+   "errors": {
+    "opposite": 15,
+    "no_change": 18
+   },
+   "no_change": {
+    "zero": 2,
+    "capped": 16
+   },
+   "iems_fully_correct": 35,
+   "unscored": [
+    [
+     "HPC",
+     "EX_25aics[u]",
+     "absent",
+     "absent",
+     null,
+     null
+    ]
+   ]
+  }
+ },
+ "shared_errors": {
+  "opposite_both": 12,
+  "opposite_harvey_only": 1,
+  "opposite_harvetta_only": 3,
+  "no_change_both": 12,
+  "capped_both": 10,
+  "capped_harvetta_not_capped_harvey": 6,
+  "capped_harvey_not_capped_harvetta": 8,
+  "no_change_harvetta_only": 6,
+  "no_change_harvey_only": 9
+ },
+ "shared_error_lists": {
+  "opposite_both": [
+   [
+    "CPS1",
+    "DM_citr_L[bc]"
+   ],
+   [
+    "AADC",
+    "EX_dopa[u]"
+   ],
+   [
+    "AADC",
+    "EX_3moxtyr[u]"
+   ],
+   [
+    "FED",
+    "DM_chsterol[bc]"
+   ],
+   [
+    "OXOP",
+    "DM_5oxpro[bc]"
+   ],
+   [
+    "GMT",
+    "DM_crtn[bc]"
+   ],
+   [
+    "HCYS",
+    "DM_orn[bc]"
+   ],
+   [
+    "LNS",
+    "DM_fol[bc]"
+   ],
+   [
+    "NAGS",
+    "DM_citr_L[bc]"
+   ],
+   [
+    "NAGS",
+    "EX_orot[u]"
+   ],
+   [
+    "OTC",
+    "DM_citr_L[bc]"
+   ],
+   [
+    "PC",
+    "DM_glc_D[bc]"
+   ]
+  ],
+  "opposite_harvetta_only": [
+   [
+    [
+     "BTD",
+     "EX_3hpp[u]"
+    ],
+    "no_change",
+    "zero"
+   ],
+   [
+    [
+     "MMA",
+     "DM_crn[bc]"
+    ],
+    "no_change",
+    "capped"
+   ],
+   [
+    [
+     "ASNSD",
+     "DM_asn_L[bc]"
+    ],
+    "correct",
+    null
+   ]
+  ],
+  "opposite_harvey_only": [
+   [
+    [
+     "MMA",
+     "DM_3hpp[bc]"
+    ],
+    "opposite",
+    "correct"
+   ]
+  ]
+ },
+ "named_values": {
+  "ASNSD DM_asn_L[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 130.74810742194313,
+    "d": 49.7445737316022,
+    "call": "Decreased",
+    "err": null,
+    "sub": null,
+    "rel": -0.6195388620726322
+   },
+   "harvetta": {
+    "h": 1.3411958494913279e-06,
+    "d": 49.71099089327296,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.9999999730201345
+   }
+  },
+  "MMA DM_crn[bc]": {
+   "expected": "Decreased",
+   "harvey": {
+    "h": 49.99999999978373,
+    "d": 49.99999999954528,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "capped",
+    "rel": -4.769020733895268e-12
+   },
+   "harvetta": {
+    "h": 32.81834690706397,
+    "d": 49.99999999982652,
+    "call": "Increased",
+    "err": "opposite",
+    "sub": null,
+    "rel": 0.3436330618564433
+   }
+  },
+  "BTD EX_3hpp[u]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 0.0,
+    "d": 0.0,
+    "call": "Unchanged",
+    "err": "no_change",
+    "sub": "zero",
+    "rel": 0.0
+   },
+   "harvetta": {
+    "h": 1.8519067028766045e-06,
+    "d": 0.0,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -1.0
+   }
+  },
+  "MMA DM_3hpp[bc]": {
+   "expected": "Increased",
+   "harvey": {
+    "h": 7012.016233916127,
+    "d": 6935.991632791248,
+    "call": "Decreased",
+    "err": "opposite",
+    "sub": null,
+    "rel": -0.010842045795210649
+   },
+   "harvetta": {
+    "h": 16308.427454172022,
+    "d": 16355.490826147907,
+    "call": "Increased",
+    "err": null,
+    "sub": null,
+    "rel": 0.0028775273378309776
+   }
+  }
+ },
+ "effect_sizes": {
+  "Harvey": [
+   217,
+   212,
+   210,
+   207,
+   207
+  ],
+  "Harvetta": [
+   218,
+   215,
+   214,
+   213,
+   212
+  ],
+  "zeroed_variant_identical": true,
+  "any_gains": false,
+  "correct_below_5pct": {
+   "Harvey": 10,
+   "Harvetta": 5
+  },
+  "harvetta_below_5pct": [
+   [
+    "GACR",
+    "DM_gln_L[bc]",
+    2.481775571807962e-05
+   ],
+   [
+    "HPC",
+    "DM_C05770[csf]",
+    0.00017974277669499986
+   ],
+   [
+    "HPC",
+    "DM_C05770[bc]",
+    0.0002458794757725965
+   ],
+   [
+    "MMA",
+    "DM_3hpp[bc]",
+    0.0028775273378309776
+   ],
+   [
+    "GACR",
+    "EX_glu_L[u]",
+    0.023893465943063158
+   ]
+  ],
+  "harvey_below_0p1pct": [
+   [
+    "HPC",
+    "EX_C05770[u]",
+    1.3248297452746252e-07
+   ],
+   [
+    "GACR",
+    "DM_gln_L[bc]",
+    3.0191888670994532e-05
+   ],
+   [
+    "HPC",
+    "DM_C05770[csf]",
+    0.0002577896574671154
+   ],
+   [
+    "HPC",
+    "DM_C05770[bc]",
+    0.00030199934969205695
+   ],
+   [
+    "MSUD",
+    "EX_ile_L[u]",
+    0.0009619854118670472
+   ]
+  ]
+ },
+ "matlab": {
+  "Harvey": {
+   "runiem": "204/252 = 0.8095",
+   "matches_stored": true,
+   "n_nonfinite": 15,
+   "nonfinite_side": {
+    "H": 14,
+    "HD": 1
+   },
+   "absent": [
+    [
+     "HPC",
+     "EX_25aics[u]",
+     "NA",
+     "NA",
+     "Healthy - Reported:",
+     [
+      "absent",
+      "absent"
+     ]
+    ]
+   ],
+   "n_without_optimum": 14,
+   "without_optimum_by_iem": {
+    "BTD": 5,
+    "PHOX1": 3,
+    "ASNSD": 2,
+    "SUCLA": 2,
+    "EF": 1,
+    "GMT": 1
+   },
+   "python_correct_there": 13,
+   "python_wrong_there": [
+    [
+     "BTD",
+     "EX_3hpp[u]",
+     "Increased",
+     "Unchanged",
+     0.0,
+     0.0
+    ]
+   ],
+   "finite": 237,
+   "same_call_finite": 237,
+   "matlab_correct_finite": 204,
+   "acc_finite": 0.8608,
+   "same_call_all": 238,
+   "value_pairs_over_1e3": 293,
+   "max_rel_over_1e3": 0.002978059250623995,
+   "largest": [
+    [
+     "FED",
+     "DM_chsterol[bc]",
+     "healthy",
+     0.002978059250623995
+    ],
+    [
+     "AADC",
+     "DM_5htrp[bc]",
+     "disease",
+     0.00029782779984995083
+    ],
+    [
+     "GA2",
+     "EX_CE4970[u]",
+     "healthy",
+     0.00011141156694414515
+    ]
+   ]
+  },
+  "Harvetta": {
+   "runiem": "191/252 = 0.7579",
+   "matches_stored": true,
+   "n_nonfinite": 31,
+   "nonfinite_side": {
+    "H": 30,
+    "HD": 1
+   },
+   "absent": [
+    [
+     "HPC",
+     "EX_25aics[u]",
+     "NA",
+     "NA",
+     "Healthy - Reported:",
+     [
+      "absent",
+      "absent"
+     ]
+    ]
+   ],
+   "n_without_optimum": 30,
+   "without_optimum_by_iem": {
+    "PC": 9,
+    "BTD": 6,
+    "HPII": 5,
+    "LNS": 3,
+    "CIT1": 2,
+    "XAN1": 2,
+    "ADSL": 1,
+    "ASNSD": 1,
+    "DGK": 1
+   },
+   "python_correct_there": 27,
+   "python_wrong_there": [
+    [
+     "BTD",
+     "EX_3hpp[u]",
+     "Increased",
+     "Decreased",
+     1.8519067028766045e-06,
+     0.0
+    ],
+    [
+     "LNS",
+     "DM_fol[bc]",
+     "Decreased",
+     "Increased",
+     0.0,
+     69.999539745548
+    ],
+    [
+     "PC",
+     "DM_glc_D[bc]",
+     "Decreased",
+     "Increased",
+     0.0,
+     7253.875505437429
+    ]
+   ],
+   "finite": 221,
+   "same_call_finite": 221,
+   "matlab_correct_finite": 191,
+   "acc_finite": 0.8643,
+   "same_call_all": 221,
+   "value_pairs_over_1e3": 291,
+   "max_rel_over_1e3": 7.938871552676698e-05,
+   "largest": [
+    [
+     "BTD",
+     "EX_CE2026[u]",
+     "healthy",
+     7.938871552676698e-05
+    ],
+    [
+     "TYR1",
+     "EX_34hpp[u]",
+     "disease",
+     1.8592544389589313e-05
+    ],
+    [
+     "TYR3",
+     "EX_34hpp[u]",
+     "disease",
+     1.8592544389589313e-05
+    ]
+   ]
+  }
+ },
+ "bounds": {
+  "Harvey": {
+   "n_rxns": 81094,
+   "global_sha256_raw": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+   "matches_python_runs": [
+    "v0.3 (max)",
+    "B (min)"
+   ],
+   "my_global_step": {
+    "set_irreversible": 319,
+    "closed": 24,
+    "bile_duct_ub_100": 28
+   },
+   "my_global_vs_matlab": {
+    "lb_bit_equal": 81094,
+    "ub_bit_equal": 81094,
+    "n": 81094,
+    "sha256": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030"
+   },
+   "setup_vs_stored_lb_ub": [
+    1001,
+    571
+   ],
+   "groups": {
+    "kidney": {
+     "n": 1011,
+     "by_bound": {
+      "lb": 962,
+      "ub": 49
+     },
+     "ratios": {
+      "0.6936": 1011
+     }
+    },
+    "bbb_uptake": {
+     "n": 3,
+     "by_bound": {
+      "lb": 3
+     },
+     "ratios": {
+      "0.0": 2,
+      "0.0001": 1
+     }
+    },
+    "diet_opened_0.1": {
+     "n": 31,
+     "by_bound": {
+      "lb": 31
+     },
+     "ratios": {
+      "None": 31
+     }
+    },
+    "diet_10pm20pct": {
+     "n": 10,
+     "by_bound": {
+      "lb": 5,
+      "ub": 5
+     },
+     "ratios": {
+      "None": 10
+     }
+    },
+    "csf_export": {
+     "n": 517,
+     "by_bound": {
+      "ub": 517
+     },
+     "ratios": {
+      "1.4857": 517
+     }
+    }
+   },
+   "implied_old_gfr": {
+    "from_min_ratio": 129.74896556159996,
+    "from_max_ratio": 129.74896556160004
+   },
+   "csf_ratio": {
+    "min": 1.4857142857142853,
+    "max": 1.4857142857142864,
+    "expected": 1.4857142857142858
+   },
+   "setup_changes_on_overwritten_entries": {
+    "n_lb_written": 343,
+    "n_ub_written": 52,
+    "n_setup_lb_changes_there": 0,
+    "n_setup_ub_changes_there": 0
+   },
+   "n_bileduct_exits": 261,
+   "diet_crn": {
+    "stored": [
+     -50.0,
+     0.0
+    ],
+    "setup": [
+     -50.0,
+     0.0
+    ],
+    "glob": [
+     -50.0,
+     0.0
+    ]
+   }
+  },
+  "Harvetta": {
+   "n_rxns": 83521,
+   "global_sha256_raw": "8b2d70b5667cb303488585c9a0f724e571489e4ebebe7509b71fb61a80628532",
+   "matches_python_runs": [
+    "A (max)",
+    "C (min)"
+   ],
+   "my_global_step": {
+    "set_irreversible": 334,
+    "closed": 34,
+    "bile_duct_ub_100": 28
+   },
+   "my_global_vs_matlab": {
+    "lb_bit_equal": 83521,
+    "ub_bit_equal": 83521,
+    "n": 83521,
+    "sha256": "8b2d70b5667cb303488585c9a0f724e571489e4ebebe7509b71fb61a80628532"
+   },
+   "setup_vs_stored_lb_ub": [
+    1000,
+    562
+   ],
+   "groups": {
+    "kidney": {
+     "n": 1010,
+     "by_bound": {
+      "lb": 961,
+      "ub": 49
+     },
+     "ratios": {
+      "0.6996": 1010
+     }
+    },
+    "bbb_uptake": {
+     "n": 3,
+     "by_bound": {
+      "lb": 3
+     },
+     "ratios": {
+      "0.0": 2,
+      "0.0001": 1
+     }
+    },
+    "diet_opened_0.1": {
+     "n": 31,
+     "by_bound": {
+      "lb": 31
+     },
+     "ratios": {
+      "None": 31
+     }
+    },
+    "diet_10pm20pct": {
+     "n": 10,
+     "by_bound": {
+      "lb": 5,
+      "ub": 5
+     },
+     "ratios": {
+      "None": 10
+     }
+    },
+    "csf_export": {
+     "n": 508,
+     "by_bound": {
+      "ub": 508
+     },
+     "ratios": {
+      "1.4857": 508
+     }
+    }
+   },
+   "implied_old_gfr": {
+    "from_min_ratio": 128.63999999999993,
+    "from_max_ratio": 128.64000000000004
+   },
+   "csf_ratio": {
+    "min": 1.4857142857142853,
+    "max": 1.4857142857142864,
+    "expected": 1.4857142857142858
+   },
+   "setup_changes_on_overwritten_entries": {
+    "n_lb_written": 368,
+    "n_ub_written": 62,
+    "n_setup_lb_changes_there": 0,
+    "n_setup_ub_changes_there": 0
+   },
+   "n_bileduct_exits": 262,
+   "diet_crn": {
+    "stored": [
+     -50.0,
+     0.0
+    ],
+    "setup": [
+     -50.0,
+     0.0
+    ],
+    "glob": [
+     -50.0,
+     0.0
+    ]
+   }
+  }
+ },
+ "flux_ranges": {
+  "Harvey": {
+   "scored": 251,
+   "maxima_only": 217,
+   "R1": 207,
+   "R2": 217,
+   "R1_transitions": {
+    "right_to_right": 207,
+    "wrong_same_wrong": 33,
+    "right_to_wrong": 10,
+    "wrong_to_other_wrong": 1
+   },
+   "R2_transitions": {
+    "right_to_right": 217,
+    "wrong_same_wrong": 33,
+    "wrong_to_other_wrong": 1
+   },
+   "R1_losses_pattern": {
+    "smax=1 smin=-1 dmin_zero hmin_pos": 10
+   },
+   "R1_wrong_to_other": [
+    [
+     "BTD",
+     "EX_2mcit[u]",
+     "Increased",
+     "Unchanged",
+     "Decreased",
+     0.03369600000000001,
+     0.03369600000000001,
+     0.006068005021777179,
+     0.0,
+     true
+    ]
+   ],
+   "R2_wrong_to_other": [
+    [
+     "BTD",
+     "EX_2mcit[u]",
+     "Increased",
+     "Unchanged",
+     "Decreased",
+     0.03369600000000001,
+     0.03369600000000001,
+     0.006068005021777179,
+     0.0,
+     true
+    ]
+   ],
+   "capped": {
+    "n": 18,
+    "zero_minima_both": 17,
+    "differing_minima": 1,
+    "differing": [
+     [
+      "BTD",
+      "EX_2mcit[u]",
+      "Increased",
+      0.03369600000000001,
+      0.03369600000000001,
+      0.006068005021777179,
+      0.0,
+      "Decreased"
+     ]
+    ],
+    "nonzero_equal_minima": [],
+    "r1_correct": 0,
+    "r2_correct": 0
+   },
+   "by_fluid_R1": {
+    "blood": {
+     "n": 122,
+     "maxima_only": 102,
+     "rule": 97
+    },
+    "csf": {
+     "n": 7,
+     "maxima_only": 7,
+     "rule": 7
+    },
+    "other": {
+     "n": 1,
+     "maxima_only": 1,
+     "rule": 0
+    },
+    "urine": {
+     "n": 121,
+     "maxima_only": 107,
+     "rule": 103
+    }
+   },
+   "raw_variant_same": true
+  },
+  "Harvetta": {
+   "scored": 251,
+   "maxima_only": 218,
+   "R1": 205,
+   "R2": 218,
+   "R1_transitions": {
+    "right_to_right": 205,
+    "wrong_same_wrong": 30,
+    "right_to_wrong": 13,
+    "wrong_to_other_wrong": 3
+   },
+   "R2_transitions": {
+    "right_to_right": 218,
+    "wrong_same_wrong": 30,
+    "wrong_to_other_wrong": 3
+   },
+   "R1_losses_pattern": {
+    "smax=1 smin=-1 dmin_zero hmin_pos": 13
+   },
+   "R1_wrong_to_other": [
+    [
+     "BTD",
+     "EX_2mcit[u]",
+     "Increased",
+     "Unchanged",
+     "Decreased",
+     0.03369600000000001,
+     0.03369600000000001,
+     0.006067993934266269,
+     0.0,
+     true
+    ],
+    [
+     "MMA",
+     "DM_c4dc[bc]",
+     "Increased",
+     "Unchanged",
+     "Decreased",
+     49.999999999784386,
+     50.0000000003338,
+     17.177409732883483,
+     0.0,
+     true
+    ],
+    [
+     "PC",
+     "EX_acetone[u]",
+     "Increased",
+     "Unchanged",
+     "Decreased",
+     299.376,
+     299.376,
+     0.0042298629249444275,
+     0.0,
+     true
+    ]
+   ],
+   "R2_wrong_to_other": [
+    [
+     "BTD",
+     "EX_2mcit[u]",
+     "Increased",
+     "Unchanged",
+     "Decreased",
+     0.03369600000000001,
+     0.03369600000000001,
+     0.006067993934266269,
+     0.0,
+     true
+    ],
+    [
+     "MMA",
+     "DM_c4dc[bc]",
+     "Increased",
+     "Unchanged",
+     "Decreased",
+     49.999999999784386,
+     50.0000000003338,
+     17.177409732883483,
+     0.0,
+     true
+    ],
+    [
+     "PC",
+     "EX_acetone[u]",
+     "Increased",
+     "Unchanged",
+     "Decreased",
+     299.376,
+     299.376,
+     0.0042298629249444275,
+     0.0,
+     true
+    ]
+   ],
+   "capped": {
+    "n": 16,
+    "zero_minima_both": 13,
+    "differing_minima": 3,
+    "differing": [
+     [
+      "BTD",
+      "EX_2mcit[u]",
+      "Increased",
+      0.03369600000000001,
+      0.03369600000000001,
+      0.006067993934266269,
+      0.0,
+      "Decreased"
+     ],
+     [
+      "MMA",
+      "DM_c4dc[bc]",
+      "Increased",
+      49.999999999784386,
+      50.0000000003338,
+      17.177409732883483,
+      0.0,
+      "Decreased"
+     ],
+     [
+      "PC",
+      "EX_acetone[u]",
+      "Increased",
+      299.376,
+      299.376,
+      0.0042298629249444275,
+      0.0,
+      "Decreased"
+     ]
+    ],
+    "nonzero_equal_minima": [],
+    "r1_correct": 0,
+    "r2_correct": 0
+   },
+   "by_fluid_R1": {
+    "blood": {
+     "n": 122,
+     "maxima_only": 105,
+     "rule": 98
+    },
+    "csf": {
+     "n": 7,
+     "maxima_only": 7,
+     "rule": 7
+    },
+    "other": {
+     "n": 1,
+     "maxima_only": 1,
+     "rule": 0
+    },
+    "urine": {
+     "n": 121,
+     "maxima_only": 105,
+     "rule": 100
+    }
+   },
+   "raw_variant_same": true
+  }
+ },
+ "minima_runs_share_states_with_maxima_runs": {
+  "Harvey (v0.3 max vs B min)": {
+   "same_iem_reaction_sets": 57,
+   "n_iems": 57,
+   "max_rel_diff_vmax": 1.5733041831002343e-11
+  },
+  "Harvetta (A max vs C min)": {
+   "same_iem_reaction_sets": 57,
+   "n_iems": 57,
+   "max_rel_diff_vmax": 0.0
+  }
+ },
+ "post_hoc_indeterminate": {
+  "harvey_max_v0.3": {
+   "n_capped": 18,
+   "n_equal_positive_maxima_among_scored": 18,
+   "n_rest": 233,
+   "correct": 217,
+   "accuracy": 0.9313304721030042
+  },
+  "harvetta_max_A": {
+   "n_capped": 16,
+   "n_equal_positive_maxima_among_scored": 16,
+   "n_rest": 235,
+   "correct": 218,
+   "accuracy": 0.9276595744680851
+  }
+ },
+ "harvey_v0.2_to_v0.2b": [
+  {
+   "iem": "DPYR",
+   "reaction": "EX_ura[u]",
+   "expected": "Increased",
+   "v02": [
+    120.28109169192143,
+    120.85041147468755,
+    "Increased"
+   ],
+   "v02b": [
+    120.85041147469359,
+    120.85041147468905,
+    "Unchanged"
+   ],
+   "rel_v02": 0.004710946167405982,
+   "rel_v02b": -3.751135473046128e-14,
+   "effect": "right->wrong"
+  },
+  {
+   "iem": "DPYR",
+   "reaction": "EX_56dura[u]",
+   "expected": "Increased",
+   "v02": [
+    120.28109169192565,
+    120.85041147469485,
+    "Increased"
+   ],
+   "v02b": [
+    120.850411474691,
+    120.85041147468954,
+    "Unchanged"
+   ],
+   "rel_v02": 0.0047109461674312144,
+   "rel_v02b": -1.2111816731152333e-14,
+   "effect": "right->wrong"
+  },
+  {
+   "iem": "HCYS",
+   "reaction": "DM_Lhcystin[bc]",
+   "expected": "Increased",
+   "v02": [
+    28.18252052112752,
+    28.266720947796845,
+    "Increased"
+   ],
+   "v02b": [
+    28.266720947786503,
+    28.266720947782478,
+    "Unchanged"
+   ],
+   "rel_v02": 0.0029787829591139507,
+   "rel_v02b": -1.4240154015445407e-13,
+   "effect": "right->wrong"
+  },
+  {
+   "iem": "HCYS",
+   "reaction": "DM_hcys_L[bc]",
+   "expected": "Increased",
+   "v02": [
+    56.365041041511965,
+    56.53344189561429,
+    "Increased"
+   ],
+   "v02b": [
+    56.533441895555015,
+    56.533441895559136,
+    "Unchanged"
+   ],
+   "rel_v02": 0.0029787829726211535,
+   "rel_v02b": 7.289752276222739e-14,
+   "effect": "right->wrong"
+  },
+  {
+   "iem": "HYPRO1",
+   "reaction": "EX_4hpro_LT[u]",
+   "expected": "Increased",
+   "v02": [
+    28.22164019102423,
+    28.22164019102423,
+    "Unchanged"
+   ],
+   "v02b": [
+    0.0,
+    28.22164019102423,
+    "Increased"
+   ],
+   "rel_v02": 0.0,
+   "rel_v02b": 1.0,
+   "effect": "wrong->right"
+  }
+ ],
+ "caps_single_bound_check": {
+  "Harvey": {
+   "n_capped": 18,
+   "n_equal_to_a_bound_of_same_metabolite": 6,
+   "unmatched": [
+    [
+     "DPYR",
+     "EX_ura[u]",
+     84.1136662673896
+    ],
+    [
+     "DPYR",
+     "EX_56dura[u]",
+     84.11366626738747
+    ],
+    [
+     "GACR",
+     "EX_lys_L[u]",
+     39.43253494236069
+    ],
+    [
+     "GACR",
+     "DM_lys_L[bc]",
+     39.43253494235469
+    ],
+    [
+     "HCYS",
+     "DM_Lhcystin[bc]",
+     28.271616947794207
+    ],
+    [
+     "HCYS",
+     "DM_hcys_L[bc]",
+     56.54323389555974
+    ],
+    [
+     "HLYS2",
+     "EX_citr_L[u]",
+     7.13224336024723
+    ],
+    [
+     "HLYS2",
+     "DM_citr_L[bc]",
+     544.8180887022596
+    ],
+    [
+     "IVA",
+     "EX_3bcrn[u]",
+     21.94374240001288
+    ],
+    [
+     "MMA",
+     "DM_c4dc[bc]",
+     50.00000000014526
+    ],
+    [
+     "MMA",
+     "DM_pcrn[bc]",
+     50.00000000041166
+    ],
+    [
+     "MMA",
+     "DM_3hdececrn[bc]",
+     49.999999999940066
+    ]
+   ]
+  },
+  "Harvetta": {
+   "n_capped": 16,
+   "n_equal_to_a_bound_of_same_metabolite": 7,
+   "unmatched": [
+    [
+     "GACR",
+     "EX_lys_L[u]",
+     39.36136711118161
+    ],
+    [
+     "GACR",
+     "DM_lys_L[bc]",
+     39.3613671111777
+    ],
+    [
+     "HLYS2",
+     "EX_citr_L[u]",
+     7.13224336024723
+    ],
+    [
+     "HLYS2",
+     "DM_citr_L[bc]",
+     564.993533419485
+    ],
+    [
+     "IVA",
+     "EX_3bcrn[u]",
+     22.365655089577004
+    ],
+    [
+     "MSUD",
+     "EX_ile_L[u]",
+     18.143999051724677
+    ],
+    [
+     "MMA",
+     "DM_c4dc[bc]",
+     50.0000000003338
+    ],
+    [
+     "TYR1",
+     "DM_met_L[bc]",
+     56.729607051356865
+    ],
+    [
+     "HPC",
+     "EX_C05770[u]",
+     183.70663846249147
+    ]
+   ]
+  }
+ },
+ "references": {
+  "1_Thiele2020": "Mol Syst Biol 2020;16(5):e8982, doi:10.15252/msb.20198982 - citation correct. Text (Europe PMC full text and Leiden repository copy): 'a total of 215 out of 252 (85.3%) ... by Harvetta and 214 out of 252 (84.9%) by Harvey'; Recon3D 103 of 205 (50.2%). The documents assign 85.3% to Harvey and 84.9% to Harvetta (swapped).",
+  "2_Heirendt2019": "Nat Protoc 2019;14(3):639-702 - correct (ORBilu record).",
+  "3_Ebrahim2013": "BMC Syst Biol 2013;7:74, doi:10.1186/1752-0509-7-74 - correct (eScholarship record).",
+  "4_HuangfuHall2018": "Math Program Comput 2018;10(1):119-142, doi:10.1007/s12532-017-0130-5 - correct; it is the article HiGHS asks users to cite, but it describes the parallel dual simplex; the runs used the interior point method (IPX, Schork & Gondzio, Math Program Comput 2020;12:603-635).",
+  "5_Shlomi2009": "Mol Syst Biol 2009;5:263, doi:10.1038/msb.2009.22, PMID 19401675 - citation correct (Europe PMC record). The 'recall 0.10 on a clinical database' claim could not be checked against the full text (PMC reCAPTCHA; Europe PMC, Springer and archive.org rate-limited; NCBI E-utilities and Crossref blocked)."
+ }
+}

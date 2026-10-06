@@ -1,0 +1,553 @@
+{
+ "disk_sha256": {
+  "model_Harvey": "10e6cb6d02736fb88ae266e0c901e90766176bb80db2753e694e3a9330368c9c",
+  "model_Harvetta": "98810012918a5df1e46499fe2bd59cfc9730a570c10d1d4e146ab82ef671fad3",
+  "protocol": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
+  "constraint_inputs": "c63977bae925badb29d45522e43c298d992245586342f2d18f20463224a8e473"
+ },
+ "runs": {
+  "A_harvetta_max": {
+   "n_records": 57,
+   "iems": 57,
+   "statuses": {
+    "complete": 57
+   },
+   "notes": [
+    "[\"metabolite for DM_17ahprgnlone[bc] not in model\", \"metabolite for DM_17ahprgstrn[bc] not in model\", \"metabolite for DM_M00603[bc] not in model\", \"metabolite for DM_C05284[bc] not in model\", \"metabolite for DM_CE2211[bc] not in model\"]",
+    "[\"metabolite for DM_17ahprgstrn[bc] not in model\"]",
+    "[\"metabolite for DM_4hdxbutn[bc] not in model\"]",
+    "[\"metabolite for DM_CE5068[bc] not in model\"]",
+    "[\"metabolite for DM_M00429[bc] not in model\"]",
+    "[\"metabolite for DM_leuktrD4[csf] not in model\"]",
+    "[]"
+   ],
+   "n_fingerprints": 1,
+   "fingerprint": "51d7bda77122e72385194d5385dd2fbf4b9605195ad1fdcb2ac2f4ad8c14a2c8",
+   "n_provenance_blocks": 1,
+   "fingerprint_equals_sha256_of_provenance": true,
+   "summary_fingerprint_equal": true,
+   "summary_provenance_equal": true,
+   "senses": "(field absent)",
+   "provenance_keys": [
+    "bile_duct",
+    "engine_version",
+    "feas_tol",
+    "global_constraints",
+    "lp_bounds_sha256",
+    "method",
+    "min_flux_healthy",
+    "model_setup",
+    "model_sha256",
+    "opt_tol",
+    "protocol_sha256",
+    "solver",
+    "threads",
+    "time_limit_per_solve_s"
+   ],
+   "model_sha256_matches_file": true,
+   "protocol_sha256_matches_file": true,
+   "constraint_inputs_sha256_matches_file": true,
+   "solver": "HiGHS 1.15.1",
+   "method": "ipm",
+   "feas_tol": 1e-07,
+   "opt_tol": 1e-07,
+   "time_limit": 1800,
+   "min_flux_healthy": 1.0,
+   "bile_duct": "toolbox",
+   "model_setup": "toolbox",
+   "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc",
+   "n_lb_changed": 1000,
+   "n_ub_changed": 562,
+   "sex": "female",
+   "global_constraints": {
+    "set_irreversible": 334,
+    "closed": 34,
+    "bile_duct_ub_100": 28
+   },
+   "lp_bounds_sha256": "8b2d70b5667cb303488585c9a0f724e571489e4ebebe7509b71fb61a80628532",
+   "sum_time_s": 46559.24503469467,
+   "sum_time_h": 12.93312362074852,
+   "session_wall_s": 46569.8,
+   "session_wall_h": 12.936055555555557,
+   "session_solves": 673,
+   "total_solves": 673,
+   "sum_n_solves": 673,
+   "summary_mtime_utc": "2026-10-06T02:36:08.019746+00:00",
+   "inferred_start_utc": "2026-10-05T13:39:58.219746+00:00",
+   "summary_counts": {
+    "n_scored": 251,
+    "n_correct": 218,
+    "n_optimal_minima": 0
+   },
+   "same_provenance_keys_as_v0.3": true,
+   "biomarker_keys_extra_vs_v0.3": [
+    "disease_min",
+    "healthy_min",
+    "status_disease_min",
+    "status_healthy_min"
+   ]
+  },
+  "B_harvey_min": {
+   "n_records": 57,
+   "iems": 57,
+   "statuses": {
+    "complete": 57
+   },
+   "notes": [
+    "[\"metabolite for DM_17ahprgnlone[bc] not in model\", \"metabolite for DM_17ahprgstrn[bc] not in model\", \"metabolite for DM_M00603[bc] not in model\", \"metabolite for DM_C05284[bc] not in model\", \"metabolite for DM_CE2211[bc] not in model\"]",
+    "[\"metabolite for DM_17ahprgstrn[bc] not in model\"]",
+    "[\"metabolite for DM_4hdxbutn[bc] not in model\"]",
+    "[\"metabolite for DM_CE5068[bc] not in model\"]",
+    "[\"metabolite for DM_M00429[bc] not in model\"]",
+    "[]"
+   ],
+   "n_fingerprints": 1,
+   "fingerprint": "92385e328c9287deda5f3fc4316de0a381def08dafd4f1a2ab208feac515bb11",
+   "n_provenance_blocks": 1,
+   "fingerprint_equals_sha256_of_provenance": true,
+   "summary_fingerprint_equal": true,
+   "summary_provenance_equal": true,
+   "senses": [
+    "min"
+   ],
+   "provenance_keys": [
+    "bile_duct",
+    "engine_version",
+    "feas_tol",
+    "global_constraints",
+    "lp_bounds_sha256",
+    "method",
+    "min_flux_healthy",
+    "model_setup",
+    "model_sha256",
+    "opt_tol",
+    "protocol_sha256",
+    "senses",
+    "solver",
+    "threads",
+    "time_limit_per_solve_s"
+   ],
+   "model_sha256_matches_file": true,
+   "protocol_sha256_matches_file": true,
+   "constraint_inputs_sha256_matches_file": true,
+   "solver": "HiGHS 1.15.1",
+   "method": "ipm",
+   "feas_tol": 1e-07,
+   "opt_tol": 1e-07,
+   "time_limit": 1800,
+   "min_flux_healthy": 1.0,
+   "bile_duct": "toolbox",
+   "model_setup": "toolbox",
+   "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc",
+   "n_lb_changed": 1001,
+   "n_ub_changed": 571,
+   "sex": "male",
+   "global_constraints": {
+    "set_irreversible": 319,
+    "closed": 24,
+    "bile_duct_ub_100": 28
+   },
+   "lp_bounds_sha256": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+   "sum_time_s": 22073.889414548874,
+   "sum_time_h": 6.1316359484857985,
+   "session_wall_s": 22084.3,
+   "session_wall_h": 6.134527777777778,
+   "session_solves": 673,
+   "total_solves": 673,
+   "sum_n_solves": 673,
+   "summary_mtime_utc": "2026-10-05T19:48:02.586876+00:00",
+   "inferred_start_utc": "2026-10-05T13:39:58.286876+00:00",
+   "summary_counts": {
+    "n_scored": 0,
+    "n_correct": 0,
+    "n_optimal_minima": 251
+   },
+   "lp_bounds_equals_v0.3": true
+  },
+  "C_harvetta_min": {
+   "n_records": 57,
+   "iems": 57,
+   "statuses": {
+    "complete": 57
+   },
+   "notes": [
+    "[\"metabolite for DM_17ahprgnlone[bc] not in model\", \"metabolite for DM_17ahprgstrn[bc] not in model\", \"metabolite for DM_M00603[bc] not in model\", \"metabolite for DM_C05284[bc] not in model\", \"metabolite for DM_CE2211[bc] not in model\"]",
+    "[\"metabolite for DM_17ahprgstrn[bc] not in model\"]",
+    "[\"metabolite for DM_4hdxbutn[bc] not in model\"]",
+    "[\"metabolite for DM_CE5068[bc] not in model\"]",
+    "[\"metabolite for DM_M00429[bc] not in model\"]",
+    "[\"metabolite for DM_leuktrD4[csf] not in model\"]",
+    "[]"
+   ],
+   "n_fingerprints": 1,
+   "fingerprint": "5b6c8d075cf66e4299762473bf47f60f75b4e0423d6134efe1733307f8942eb3",
+   "n_provenance_blocks": 1,
+   "fingerprint_equals_sha256_of_provenance": true,
+   "summary_fingerprint_equal": true,
+   "summary_provenance_equal": true,
+   "senses": [
+    "min"
+   ],
+   "provenance_keys": [
+    "bile_duct",
+    "engine_version",
+    "feas_tol",
+    "global_constraints",
+    "lp_bounds_sha256",
+    "method",
+    "min_flux_healthy",
+    "model_setup",
+    "model_sha256",
+    "opt_tol",
+    "protocol_sha256",
+    "senses",
+    "solver",
+    "threads",
+    "time_limit_per_solve_s"
+   ],
+   "model_sha256_matches_file": true,
+   "protocol_sha256_matches_file": true,
+   "constraint_inputs_sha256_matches_file": true,
+   "solver": "HiGHS 1.15.1",
+   "method": "ipm",
+   "feas_tol": 1e-07,
+   "opt_tol": 1e-07,
+   "time_limit": 1800,
+   "min_flux_healthy": 1.0,
+   "bile_duct": "toolbox",
+   "model_setup": "toolbox",
+   "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc",
+   "n_lb_changed": 1000,
+   "n_ub_changed": 562,
+   "sex": "female",
+   "global_constraints": {
+    "set_irreversible": 334,
+    "closed": 34,
+    "bile_duct_ub_100": 28
+   },
+   "lp_bounds_sha256": "8b2d70b5667cb303488585c9a0f724e571489e4ebebe7509b71fb61a80628532",
+   "sum_time_s": 24539.95208477974,
+   "sum_time_h": 6.816653356883261,
+   "session_wall_s": 24550.3,
+   "session_wall_h": 6.819527777777777,
+   "session_solves": 673,
+   "total_solves": 673,
+   "sum_n_solves": 673,
+   "summary_mtime_utc": "2026-10-06T02:38:12.988364+00:00",
+   "inferred_start_utc": "2026-10-05T19:49:02.688364+00:00",
+   "summary_counts": {
+    "n_scored": 0,
+    "n_correct": 0,
+    "n_optimal_minima": 251
+   },
+   "lp_bounds_equals_A": true
+  },
+  "v0.3_harvey_max": {
+   "n_records": 57,
+   "iems": 57,
+   "statuses": {
+    "complete": 57
+   },
+   "notes": [
+    "[\"metabolite for DM_17ahprgnlone[bc] not in model\", \"metabolite for DM_17ahprgstrn[bc] not in model\", \"metabolite for DM_M00603[bc] not in model\", \"metabolite for DM_C05284[bc] not in model\", \"metabolite for DM_CE2211[bc] not in model\"]",
+    "[\"metabolite for DM_17ahprgstrn[bc] not in model\"]",
+    "[\"metabolite for DM_4hdxbutn[bc] not in model\"]",
+    "[\"metabolite for DM_CE5068[bc] not in model\"]",
+    "[\"metabolite for DM_M00429[bc] not in model\"]",
+    "[]"
+   ],
+   "n_fingerprints": 1,
+   "fingerprint": "c85ebde9a52350e43d035fd3bad750ec6426821887d7f6c058a61a106dd4650c",
+   "n_provenance_blocks": 1,
+   "fingerprint_equals_sha256_of_provenance": true,
+   "summary_fingerprint_equal": true,
+   "summary_provenance_equal": true,
+   "senses": "(field absent)",
+   "provenance_keys": [
+    "bile_duct",
+    "engine_version",
+    "feas_tol",
+    "global_constraints",
+    "lp_bounds_sha256",
+    "method",
+    "min_flux_healthy",
+    "model_setup",
+    "model_sha256",
+    "opt_tol",
+    "protocol_sha256",
+    "solver",
+    "threads",
+    "time_limit_per_solve_s"
+   ],
+   "model_sha256_matches_file": true,
+   "protocol_sha256_matches_file": true,
+   "constraint_inputs_sha256_matches_file": true,
+   "solver": "HiGHS 1.15.1",
+   "method": "ipm",
+   "feas_tol": 1e-07,
+   "opt_tol": 1e-07,
+   "time_limit": 1800,
+   "min_flux_healthy": 1.0,
+   "bile_duct": "toolbox",
+   "model_setup": "toolbox",
+   "toolbox_commit": "67c790dbac809d9d891fdbafc33e18c21fc9bddc",
+   "n_lb_changed": 1001,
+   "n_ub_changed": 571,
+   "sex": "male",
+   "global_constraints": {
+    "set_irreversible": 319,
+    "closed": 24,
+    "bile_duct_ub_100": 28
+   },
+   "lp_bounds_sha256": "693af5c9bdda79f63f5a3e708c405ebdfc58cf3e2a62460050b654636c7fe030",
+   "sum_time_s": 34751.93360877037,
+   "sum_time_h": 9.653314891325103,
+   "session_wall_s": 16090.7,
+   "session_wall_h": 4.469638888888889,
+   "session_solves": 248,
+   "total_solves": 673,
+   "sum_n_solves": 673,
+   "summary_mtime_utc": "2026-10-05T11:45:10.926796+00:00",
+   "inferred_start_utc": "2026-10-05T07:17:00.226796+00:00",
+   "summary_counts": {
+    "n_scored": 251,
+    "n_correct": 217,
+    "n_optimal_minima": null
+   }
+  }
+ },
+ "freeze": {
+  "created_at": "2026-10-05T13:39:37Z",
+  "repository": {
+   "available": true,
+   "head": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+   "dirty": false,
+   "tracked_changes": [],
+   "untracked_paths": [],
+   "excluded_untracked_roots": [
+    ".venv"
+   ]
+  },
+  "n_files": 22,
+  "n_size_ok": 22,
+  "n_sha_ok": 22,
+  "failing": [],
+  "recorded": "f3dde4e2c2d53d6f2a6c0b488bd186952239b4cc9f2b37f044200e772099b363",
+  "recomputed": "f3dde4e2c2d53d6f2a6c0b488bd186952239b4cc9f2b37f044200e772099b363",
+  "match": true,
+  "plan_json_equals_manifest_plan": true,
+  "frozen_model_sha_vs_plan": {
+   "Harvetta": true,
+   "Harvey": true
+  },
+  "frozen_paths_changed_freeze_commit_to_HEAD": [],
+  "frozen_paths_changed_in_worktree": [],
+  "plan_json_changed_since_plan_commit": [
+   "350c526"
+  ],
+  "freeze_verify_tool": {
+   "valid": true,
+   "checked_files": 22,
+   "missing": [],
+   "changed": [],
+   "errors": [],
+   "content_fingerprint": "f3dde4e2c2d53d6f2a6c0b488bd186952239b4cc9f2b37f044200e772099b363"
+  }
+ },
+ "git": {
+  "commits": {
+   "plan_md": [
+    {
+     "hash": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+     "committed": "2026-10-05T13:39:28+00:00",
+     "authored": "2026-10-05T13:39:28+00:00",
+     "subject": "IEM v0.4 plan: Harvetta under the v0.3 protocol, biomarker minima on both models, MATLAB reference on Harvetta"
+    }
+   ],
+   "plan_json": [
+    {
+     "hash": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+     "committed": "2026-10-05T13:39:28+00:00",
+     "authored": "2026-10-05T13:39:28+00:00",
+     "subject": "IEM v0.4 plan: Harvetta under the v0.3 protocol, biomarker minima on both models, MATLAB reference on Harvetta"
+    }
+   ],
+   "freeze_manifest": [
+    {
+     "hash": "9f9ebab2cd1f28ba79e76e36e6e5cd6bef05720e",
+     "committed": "2026-10-05T13:39:41+00:00",
+     "authored": "2026-10-05T13:39:41+00:00",
+     "subject": "Freeze IEM v0.4 plan (22 files, fingerprint f3dde4e2\u2026) before any Harvetta IEM run or biomarker minimum"
+    }
+   ],
+   "A_results": [
+    {
+     "hash": "c14e7027dfa74b5fd996438e357d3cec5c59e20c",
+     "committed": "2026-10-06T02:43:47+00:00",
+     "authored": "2026-10-06T02:43:47+00:00",
+     "subject": "IEM v0.4 complete: Harvetta 218 of 251 directions correct (86.9%); MATLAB same call on all 221 with values; flux-range rules harmful (R1) and not useful (R2)"
+    }
+   ],
+   "B_results": [
+    {
+     "hash": "f5959516fb08dcffce0d04ddbb472f7d205a8c40",
+     "committed": "2026-10-05T19:51:43+00:00",
+     "authored": "2026-10-05T19:51:43+00:00",
+     "subject": "IEM v0.4 run B complete: biomarker minima on Harvey 1.03d (57 IEMs, 251 optimal minimum pairs; LP bounds hash equals v0.3's)"
+    }
+   ],
+   "C_results": [
+    {
+     "hash": "c14e7027dfa74b5fd996438e357d3cec5c59e20c",
+     "committed": "2026-10-06T02:43:47+00:00",
+     "authored": "2026-10-06T02:43:47+00:00",
+     "subject": "IEM v0.4 complete: Harvetta 218 of 251 directions correct (86.9%); MATLAB same call on all 221 with values; flux-range rules harmful (R1) and not useful (R2)"
+    }
+   ],
+   "M_matlab_results": [
+    {
+     "hash": "62b41c09d5122daf247e8e8ad346cfae7ff20277",
+     "committed": "2026-10-05T18:40:47+00:00",
+     "authored": "2026-10-05T18:40:47+00:00",
+     "subject": "MATLAB reference run of runIEM_HH on Harvetta 1.03d (v0.4 run M, second attempt; the first stopped when Docker became unresponsive)"
+    }
+   ],
+   "harvetta_setup_bounds": [
+    {
+     "hash": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+     "committed": "2026-10-05T13:39:28+00:00",
+     "authored": "2026-10-05T13:39:28+00:00",
+     "subject": "IEM v0.4 plan: Harvetta under the v0.3 protocol, biomarker minima on both models, MATLAB reference on Harvetta"
+    }
+   ],
+   "harvetta_port_check": [
+    {
+     "hash": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+     "committed": "2026-10-05T13:39:28+00:00",
+     "authored": "2026-10-05T13:39:28+00:00",
+     "subject": "IEM v0.4 plan: Harvetta under the v0.3 protocol, biomarker minima on both models, MATLAB reference on Harvetta"
+    }
+   ],
+   "error_anatomy_script": [
+    {
+     "hash": "86f7a4c9858325f9e38419bf9c564d170a54d382",
+     "committed": "2026-10-05T14:45:11+00:00",
+     "authored": "2026-10-05T14:45:11+00:00",
+     "subject": "Error anatomy script for plan v0.4 analysis A3 (reproduces Harvey v0.3: 18 of 21 no-change errors at equal positive maxima)"
+    }
+   ],
+   "v04_report_script": [
+    {
+     "hash": "e646ef9a8e39bce3595c93bcb23046af10c783b3",
+     "committed": "2026-10-05T22:44:13+00:00",
+     "authored": "2026-10-05T22:44:13+00:00",
+     "subject": "v0.4 report script: runs every analysis declared in the v0.4 plan and applies its reading rules"
+    }
+   ],
+   "v04_report_json": [
+    {
+     "hash": "c14e7027dfa74b5fd996438e357d3cec5c59e20c",
+     "committed": "2026-10-06T02:43:47+00:00",
+     "authored": "2026-10-06T02:43:47+00:00",
+     "subject": "IEM v0.4 complete: Harvetta 218 of 251 directions correct (86.9%); MATLAB same call on all 221 with values; flux-range rules harmful (R1) and not useful (R2)"
+    }
+   ],
+   "results_note": [
+    {
+     "hash": "9943893ee71d5dd8d8dad53d6767b66d96198600",
+     "committed": "2026-10-06T06:41:12+00:00",
+     "authored": "2026-10-06T06:41:12+00:00",
+     "subject": "Paper 2 draft complete (Harvetta, abstract, discussion); v0.4 note: Gurobi had no optimum for 30 Harvetta biomarkers (31 non-finite incl. one absent), value agreement, Harvetta-only errors explained; README, handover, roadmap D24"
+    },
+    {
+     "hash": "107a88dee301ce72a6e03df5fa5589ec11155068",
+     "committed": "2026-10-06T02:45:11+00:00",
+     "authored": "2026-10-06T02:45:11+00:00",
+     "subject": "IEM v0.4 results note"
+    }
+   ],
+   "paper2": [
+    {
+     "hash": "9943893ee71d5dd8d8dad53d6767b66d96198600",
+     "committed": "2026-10-06T06:41:12+00:00",
+     "authored": "2026-10-06T06:41:12+00:00",
+     "subject": "Paper 2 draft complete (Harvetta, abstract, discussion); v0.4 note: Gurobi had no optimum for 30 Harvetta biomarkers (31 non-finite incl. one absent), value agreement, Harvetta-only errors explained; README, handover, roadmap D24"
+    }
+   ]
+  },
+  "plan_commit": "350c52647b5a9e9c90cdc005e9bc2c252ebb3d83",
+  "freeze_commit": "9f9ebab2cd1f28ba79e76e36e6e5cd6bef05720e",
+  "plan_ancestor_of_first_results": {
+   "A_results": true,
+   "B_results": true,
+   "C_results": true,
+   "M_matlab_results": true
+  },
+  "freeze_ancestor_of_first_results": {
+   "A_results": true,
+   "B_results": true,
+   "C_results": true,
+   "M_matlab_results": true
+  },
+  "first_appearance_any_ref": [
+   [
+    "62b41c09d5122daf247e8e8ad346cfae7ff20277|2026-10-05T18:40:47+00:00",
+    "results/wbm_iem/matlab_reference/harvetta_step2/matlab_iem_results_Harvetta_1_03d.mat"
+   ],
+   [
+    "f5959516fb08dcffce0d04ddbb472f7d205a8c40|2026-10-05T19:51:43+00:00",
+    "results/wbm_iem/Harvey_1_03d_iem_results_v0.4_min.json"
+   ],
+   [
+    "c14e7027dfa74b5fd996438e357d3cec5c59e20c|2026-10-06T02:43:47+00:00",
+    "results/wbm_iem/Harvetta_1_03d_iem_results_v0.4.json"
+   ],
+   [
+    "c14e7027dfa74b5fd996438e357d3cec5c59e20c|2026-10-06T02:43:47+00:00",
+    "results/wbm_iem/Harvetta_1_03d_iem_results_v0.4_min.json"
+   ]
+  ],
+  "n_refs_commits": {
+   "all": 77,
+   "head": 77
+  },
+  "head": "9943893ee71d5dd8d8dad53d6767b66d96198600",
+  "status_porcelain": [
+   "?? results/wbm_iem/independent_verification_v0.4/"
+  ]
+ },
+ "matlab_jobs": {
+  "first": {
+   "script": "iem_ref_harvetta_20261005_step2_runiem.m",
+   "status": "error",
+   "submitted": "2026-10-05T13:40:27.813917+00:00",
+   "finished": "2026-10-05T14:34:26.753515+00:00",
+   "hours": 0.8997054439120823,
+   "error": "Command '['/usr/local/bin/docker', 'container', 'inspect', '--format', '{{json .State}}', 'matlab-agent-c1a05d80555746128502b79f880e59f2']' timed out after 10 seconds",
+   "code_sha256": "3398850dfdb375afc32cec8ba0e7c60b9ce1ceb7daa041db362eba7a91a72a4d",
+   "automatic_retry": false,
+   "may_have_executed": true
+  },
+  "second": {
+   "script": "iem_ref_harvetta_20261005_step2b_runiem.m",
+   "status": "completed",
+   "submitted": "2026-10-05T15:28:09.668429+00:00",
+   "finished": "2026-10-05T18:31:09.642728+00:00",
+   "hours": 3.049992860754331,
+   "elapsed_h": 3.0499530766666667,
+   "code_sha256": "3398850dfdb375afc32cec8ba0e7c60b9ce1ceb7daa041db362eba7a91a72a4d",
+   "errors": []
+  },
+  "code_equals_frozen_job_script": true,
+  "agent_job_m_sha256": "3398850dfdb375afc32cec8ba0e7c60b9ce1ceb7daa041db362eba7a91a72a4d",
+  "run_info": [
+   "IEM reference run, step 2 (runIEM_HH)",
+   "started 2026-10-05 15:28:09",
+   "LP solver gurobi",
+   "executing /outbox/jobs/00000001/runIEM_HH_harvetta_ref.m",
+   "runIEM_HH finished after 10979 s",
+   "Accuracy as defined at the end of runIEM_HH.m: 0.7579",
+   "finished 2026-10-05 18:31:09"
+  ]
+ }
+}

@@ -1,0 +1,62 @@
+{
+ "Harvey (v0.3 max vs B min)": {
+  "n_iems": 57,
+  "same_iem_reaction_sets": 57,
+  "max_rel_diff_vmax": 1.5733041831002343e-11,
+  "worst": [
+   [
+    "XAN1",
+    "vmax_healthy",
+    35027.910529515895,
+    35027.9105289648,
+    1.5733041831002343e-11
+   ],
+   [
+    "ADSL",
+    "vmax_healthy",
+    36002.881042007604,
+    36002.881042231595,
+    6.221456413165789e-12
+   ],
+   [
+    "AKGD",
+    "vmax_healthy",
+    10796.6884337217,
+    10796.688433777113,
+    5.132471269270021e-12
+   ]
+  ],
+  "n_rel_over_1e6": 0,
+  "nonfinite": []
+ },
+ "Harvetta (A max vs C min)": {
+  "n_iems": 57,
+  "same_iem_reaction_sets": 57,
+  "max_rel_diff_vmax": 0.0,
+  "worst": [
+   [
+    "HIS",
+    "vmax_healthy",
+    66.69808613796486,
+    66.69808613796486,
+    0.0
+   ],
+   [
+    "HIS",
+    "vmax_disease",
+    0.0,
+    0.0,
+    0.0
+   ],
+   [
+    "AGAT",
+    "vmax_healthy",
+    564.9935334190001,
+    564.9935334190001,
+    0.0
+   ]
+  ],
+  "n_rel_over_1e6": 0,
+  "nonfinite": []
+ }
+}
