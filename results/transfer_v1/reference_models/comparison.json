@@ -1,0 +1,139 @@
+{
+ "note": "post hoc and descriptive; development organisms and the E. coli control are not held out",
+ "organisms": {
+  "Keio/iML1515": {
+   "reference": "iML1515",
+   "coverage": {
+    "iML1515": {
+     "n_conditions_mapped": 32,
+     "n_conditions_grows": 32
+    }
+   },
+   "own_mcc": {
+    "iML1515": 0.5863313832288578
+   }
+  },
+  "Putida/iJN1463": {
+   "reference": "iJN1463",
+   "coverage": {
+    "iJN1463": {
+     "n_conditions_mapped": 43,
+     "n_conditions_grows": 36
+    },
+    "B0": {
+     "n_conditions_mapped": 43,
+     "n_conditions_grows": 28
+    },
+    "U'": {
+     "n_conditions_mapped": 43,
+     "n_conditions_grows": 28
+    },
+    "M": {
+     "n_conditions_mapped": 43,
+     "n_conditions_grows": 28
+    }
+   },
+   "own_mcc": {
+    "iJN1463": 0.43928526513569544,
+    "B0": 0.49572851305159227,
+    "U'": 0.5531090772976097,
+    "M": 0.5901527631792
+   },
+   "four_way": {
+    "union_genes": 1423,
+    "conditions_all_grow": 28,
+    "n_observations": 39844,
+    "mcc": {
+     "B0": 0.48648392979609495,
+     "U'": 0.5412453645509097,
+     "M": 0.5770786378164985,
+     "iJN1463": 0.4466903810119367
+    },
+    "share_of_gap_closed": null
+   },
+   "pairwise_curated_minus_arm": {
+    "B0": {
+     "union": {
+      "union_genes": 1422,
+      "union_mcc_A": 0.4864693384296674,
+      "union_mcc_B": 0.4466654206034657,
+      "union_delta": -0.039803917826201685,
+      "union_delta_ci95": [
+       -0.1437489261961995,
+       0.0590194912164925
+      ]
+     },
+     "common": {
+      "n_common_genes": 764,
+      "n_conditions_both_grow": 28,
+      "mcc_arm": 0.5294351515447147,
+      "mcc_curated": 0.5641690289448611,
+      "difference": {
+       "point": 0.03473387740014644,
+       "ci95": [
+        -0.06342653672376551,
+        0.1397390526874267
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    },
+    "U'": {
+     "union": {
+      "union_genes": 1422,
+      "union_mcc_A": 0.5412328978403135,
+      "union_mcc_B": 0.4466654206034657,
+      "union_delta": -0.09456747723684777,
+      "union_delta_ci95": [
+       -0.20311271956557644,
+       0.003662217278930109
+      ]
+     },
+     "common": {
+      "n_common_genes": 764,
+      "n_conditions_both_grow": 28,
+      "mcc_arm": 0.5698542318450632,
+      "mcc_curated": 0.5641690289448611,
+      "difference": {
+       "point": -0.005685202900202135,
+       "ci95": [
+        -0.10828990457751116,
+        0.10253315996606333
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    },
+    "M": {
+     "union": {
+      "union_genes": 1423,
+      "union_mcc_A": 0.5770786378164985,
+      "union_mcc_B": 0.4466903810119367,
+      "union_delta": -0.1303882568045618,
+      "union_delta_ci95": [
+       -0.22722534313801743,
+       -0.03895744761487069
+      ]
+     },
+     "common": {
+      "n_common_genes": 765,
+      "n_conditions_both_grow": 28,
+      "mcc_arm": 0.6068284702857376,
+      "mcc_curated": 0.5644289134043114,
+      "difference": {
+       "point": -0.04239955688142616,
+       "ci95": [
+        -0.13866983947345132,
+        0.05371164887617001
+       ],
+       "finite_bootstrap_samples": 1000,
+       "requested_bootstrap_samples": 1000
+      }
+     }
+    }
+   }
+  }
+ }
+}

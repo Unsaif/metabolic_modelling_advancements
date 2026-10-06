@@ -93,11 +93,13 @@ def main() -> None:
     ax.set_yticks(list(lanes.values()))
     ax.set_yticklabels(list(lanes.keys()), fontsize=8)
     ax.set_ylim(-0.9, 2.9)
+    x0, x1 = ax.get_xlim()
+    ax.set_xlim(x0 - 12 / (24 * 60), x1)   # room for the first label
     ax.xaxis.set_major_formatter(mdates.DateFormatter("%H:%M"))
     ax.xaxis.set_major_locator(mdates.HourLocator())
-    ax.tick_params(axis="x", labelsize=8)
-    ax.set_xlabel("3 October 2026, UTC (times from lock manifests, download records and run cards)", fontsize=8)
-    ax.set_title("Time order of the transfer study: every outcome was first accessed after its inputs were locked", fontsize=9)
+    ax.tick_params(axis="x", labelsize=8, bottom=False, labelbottom=False)   # order, not clock times, in the paper
+    ax.set_xlabel("3 October 2026: events in time order (exact times in Supplementary Table S1)", fontsize=8)
+    ax.set_title("Every outcome was first accessed after its inputs were locked", fontsize=9)
     for s in ("top", "right"):
         ax.spines[s].set_visible(False)
     fig.tight_layout()

@@ -1,6 +1,6 @@
 # Paper 1 draft: do corrections to draft metabolic models transfer?
 
-> Repository copy of the Claude Docs draft (https://claude.ai/code/artifact/58c661c0-bff9-419c-a2e4-bbf1a6e4b3c3), exported 6 October 2026 after the abstract was rewritten with Tim. The doc is the working version; this copy records the text at export.
+> Repository copy of the Claude Docs draft (https://claude.ai/code/artifact/58c661c0-bff9-419c-a2e4-bbf1a6e4b3c3), exported 6 October 2026 after the hand-curated comparison was added. The doc is the working version; this copy records the text at export.
 
 Oct 5, 2026 · @Tim Hulshof
 
@@ -9,6 +9,8 @@ Oct 5, 2026 · @Tim Hulshof
 This is a first full draft of the benchmark paper, written only from the locked transfer study and its held-back second round. No number in it is new: each one comes from a result file in the repository (branch `claude/opus-continuation`), listed under Data and code availability. Numbers derived for the paper (gene counts, t-intervals) are in results/transfer\_v1/paper1\_derived\_numbers.json.
 
 The abstract was rewritten with Tim on 6 October, and "frozen" became "locked" throughout. The abstract's one new figure, 94%, is 367 of the 391 changed predictions ((273 + 94) / (274 + 117)), from counts in the derived-numbers file.
+
+Later on 6 October: a comparison with hand-curated models (added after the study, descriptive) and coverage across organisms are now in the Results and the Discussion, and the exact times moved to Supplementary Table S1.
 
 Decisions that are yours:
 
@@ -33,7 +35,9 @@ As the yardstick we used published genome-wide mutant screens (RB-TnSeq), which 
 
 Ten of the twelve could be tested. Before correction, the models agreed with the screens only moderately (Matthews correlation coefficient 0.33 to 0.52 in the eight bacteria whose experiments they could represent; 0 is chance and 1 is perfect). The automatic rules raised it by 0.037 on average (95% interval 0.025 to 0.048). The gain was the same in both rounds and in development, nine bacteria improved and none got worse, and 94% of the predictions the rules changed now agree with the screens. AI curation added 0.028 (eight improved, two worse; 0.029 on the held-back round alone), almost entirely by removing genes the drafts wrongly listed as backup enzymes. Four bacteria exposed limits of the locked pipeline. For two, the locked rules could not set up a model to test. Two others had experiments the models cannot represent: one grows by photosynthesis, and one "carbon-free" medium contains organic carbon. All four are reported.
 
-Simple annotation-based corrections carry over to new bacteria. The gain is modest but consistent.
+In a comparison added after the study, hand-curated models scored with the same protocol also agreed only moderately with the screens: the extensively curated *E. coli* model iML1515 scores 0.59. In *P. putida*, the one study organism with a compatible hand-curated model, the corrected draft scored as well as the curated model on the genes and conditions both cover (0.57 with the automatic rules and 0.61 with AI curation, against 0.56). But it grew in only 28 of the 43 conditions in which the bacterium was screened, against 36 for the curated model. Across the study, the drafts grew in 150 of 267 screened conditions (56%), and the corrections barely changed this.
+
+Simple annotation-based corrections carry over to new bacteria. Their gain is small in absolute terms, but in the one organism where it could be checked they brought the draft's gene-level predictions to the level of a hand-curated model. The larger remaining gap is coverage: the drafts cannot grow on many of the carbon sources the bacteria use.
 
 ## Introduction
 
@@ -47,7 +51,7 @@ Randomly barcoded transposon sequencing (RB-TnSeq) measures the fitness of mutan
 
 AI models are entering curation as well. For Human2 (Human-GEM 2.0), GPT-4 assessed all 26,246 gene–reaction pairs; the pairs it flagged were reviewed by hand, and the updated model was evaluated against CRISPR gene essentiality \[12\]. Machine-learning gap-filling has also been shown to improve phenotype predictions of draft models \[15\]. To our knowledge, no fully automated correction procedure has been locked before any outcome was accessed, tested on several held-out organisms with an isolated, paired effect estimate, and then repeated on a held-back set.
 
-Here we developed five annotation-based correction rules and a written AI curation procedure on four bacteria, and locked both: every file they use was fingerprinted and recorded with a timestamp, so any later change would show. We then scored them once on six new bacteria whose fitness data were downloaded only after the lock, and repeated the test unchanged on six more that had been held back. We report what transferred, what did not, and where the locked pipeline itself limited the test.
+Here we developed five annotation-based correction rules and a written AI curation procedure on four bacteria, and locked both: every file they use was fingerprinted and recorded with a timestamp, so any later change would show. We then scored them once on six new bacteria whose fitness data were downloaded only after the lock, and repeated the test unchanged on six more that had been held back. We report what transferred, what did not, and where the locked pipeline itself limited the test, and we compare the corrected drafts with hand-curated models scored the same way.
 
 ## Results
 
@@ -74,9 +78,9 @@ Twelve organisms qualified: every remaining bacterium in the Fitness Browser tha
 
 **Locking.** The method, and then each panel's inputs including every AI curation decision, were locked before that panel's fitness data were downloaded. Locking means that every file was fingerprinted (hashed), committed to git and recorded with an external timestamp, so any later change would show. The full time order and its independent check are in Methods.
 
-![Figure 1. Time order of the transfer study](fig1_timeline.png)
+![Figure 1. Design and order of events of the transfer study](fig1_timeline.png)
 
-*Figure 1. Time order of the transfer study on 3 October 2026 (UTC). The panel was drawn from metadata only. The organism-specific corrections behind the development arms were made in September. Their annotation-triggered form, and the arms shown here, were written and run on 3 October, after the panel was drawn and before any panel outcome was downloaded. Times come from the lock manifests, the download records and the run cards.*
+*Figure 1. Design and order of events of the transfer study, 3 October 2026. The panel was drawn from metadata only. The organism-specific corrections behind the development arms were made in September. Their annotation-triggered form, and the arms shown here, were written and run on 3 October, after the panel was drawn and before any panel outcome was downloaded. Exact times are in Supplementary Table S1.*
 
 ### The drafts agree only moderately with mutant fitness
 
@@ -107,6 +111,27 @@ Before any correction, the drafts predict gene importance with MCC 0.33–0.52 i
 | Panel B | *Shewanella loihica* PV-4 | 3 | 12 | 9 / 10 | 645 | 0.483 / 0.511 / 0.515 | evaluable |
 | Panel B | *Shewanella amazonensis* SB2B | 1 | 20 | 14 / 15 | 648 | 0.518 / 0.549 / 0.560 | evaluable |
 | Panel B | *Desulfovibrio vulgaris* Miyazaki F | — | — | — | — | — | not evaluable: no reference condition |
+
+### The corrected *P. putida* draft matches a hand-curated model where both grow
+
+This comparison was added after the study, to put the size of the gains in context. It is descriptive, not a held-out test: both organisms involved were used in development.
+
+We scored two hand-curated models with exactly the protocol the study used for the drafts, without gap-filling them: iML1515 for *E. coli* \[17\] and iJN1463 for *P. putida* \[18\]. iJN1463 is the only hand-curated model of a study organism whose gene identifiers match the Fitness Browser's.
+
+- **Hand-curated models score only moderately too.** iML1515 grows in all 32 *E. coli* conditions and scores MCC 0.59. Pooled mutant fitness and growth simulations agree only partly even for the best-studied bacterium, so on this benchmark a realistic target for a draft is nearer 0.6 than 1.
+- **Where both models grow, the corrected *P. putida* draft is as good as the curated one.** On the 764 genes and 28 conditions both cover:
+
+| Model of *P. putida* KT2440 | MCC, shared genes and conditions | Conditions with growth, of 43 |
+| --- | --- | --- |
+| Draft (B0) | 0.53 | 28 |
+| Draft + automatic rules (U′) | 0.57 | 28 |
+| Draft + automatic rules + AI curation (M) | 0.61 | 28 |
+| Hand-curated iJN1463 | 0.56 | 36 |
+
+- **The differences are within noise.** The curated model minus the draft is +0.035 \[−0.063, 0.140\] before correction and −0.042 \[−0.139, 0.054\] after both steps (gene bootstrap). On the union of genes, which credits a model with "no effect" for every gene it lacks, the curated model scores lower (0.45, against 0.49 to 0.58), so shared genes are the fair basis for models with different gene sets.
+- **The curated model's advantage is coverage.** It grows in 36 of the 43 conditions in which *P. putida* was screened; the draft grows in 28, before and after correction.
+
+**Coverage across the study.** In the twelve organisms with a working draft, the drafts grow in 33% to 75% of the conditions in which the bacteria were screened (median 60%; 150 of 267 in total), and the corrections raise this only to 155 of 267. The gene-level scores in this paper cover only the conditions where a model grows (Table 1).
 
 ### The automatic rules transfer, and the transfer replicates
 
@@ -204,9 +229,11 @@ Testing such fixes needs new organisms, because every eligible organism has now 
 
 ## Discussion
 
-Corrections derived from four bacteria improved predictions for nine of ten held-out bacteria and left the tenth unchanged. This holds within one assay platform and one 2017 draft collection. The three estimates agree within 0.001: +0.036, +0.037 and +0.036.
+Corrections derived from four bacteria improved predictions for nine of ten held-out bacteria and left the tenth unchanged, by the same amount in development and in both rounds (+0.036, +0.037 and +0.036). This holds within one assay platform and one 2017 draft collection.
 
-**The gain is small but reliable.** No new organism got worse under the automatic rules, and the total effect was the same in development, on the first panel and on the replication panel. A set of rules tuned to the quirks of its development organisms would shrink on new ones; this set did not. The agreement is in the total, though, not rule by rule: the parts shifted between phases (Figure 3). In practical terms the gain is 53 genes with changed predictions across ten organisms, almost all of them changed correctly. The corrected drafts are still far from good: an MCC of 0.4–0.6 leaves most of the gap between draft and experiment open.
+**How large is the gain?** In absolute terms it is small: 0.037 on a scale where the drafts start at 0.33 to 0.52. Two things change how it should be read. First, in practice the scale does not run to 1. The extensively curated *E. coli* model scores 0.59 on this benchmark, and in *P. putida* the corrected draft did as well as a hand-curated model on the genes and conditions both cover. Much of the remaining disagreement between models and screens is therefore shared by curated models. Second, the gain is reliable. No new organism got worse, the total was the same in all three phases, and 94% of the changed predictions moved toward the data. A set of rules tuned to the quirks of its development organisms would shrink on new ones; this set did not, although its parts shifted between phases (Figure 3).
+
+**Coverage is the larger gap.** The drafts grow in only about half to two thirds of the conditions in which the bacteria were screened, and the corrections barely change that. The hand-curated *P. putida* model's advantage over the corrected draft lies here, not in its gene-level predictions. Each screen shows that its bacterium grows on the carbon source tested, so filling these gaps needs no gene-level outcome data. A locked test of such a fix on new organisms is the natural next study.
 
 **What transferred is unglamorous.** On the new organisms the largest single contribution came from a biomass rule: dropping menaquinone where the annotation shows fewer than two of the eight steps of its pathway. The calls it corrected were mostly not about menaquinone enzymes. They concerned enzymes that the drafts had drawn into a route to menaquinone to satisfy the biomass demand. A universal biomass that demands what an organism cannot make distorts which genes look essential. The rule's annotation trigger has not yet been checked against measured quinone types, which differ systematically between bacterial groups \[16\].
 
@@ -230,9 +257,11 @@ An external custodian of the outcome data, or a community challenge on newly mea
 - **Blinding of the curator.** It rests on instructions. The packets' gene descriptions came from the Fitness Browser gene table. Whether any of them reflect the Browser's fitness-based re-annotations remains to be checked.
 - **Unknown training exposure.** The AI curator's training may include published phenotypes; the pre-declared sensitivity analysis without *M. tuberculosis* did not change the reading.
 - **Locked pipeline choices.** These excluded or misrepresented four of twelve organisms.
+- **One curated comparison.** Only *P. putida* had a hand-curated model whose gene identifiers match the Fitness Browser's. It is a development organism, and the comparison was made after the study.
 
 **Next tests.**
 
+- Growth on every screened carbon source: fill the coverage gaps from the experiment list alone, lock the fix, and test gene predictions on new organisms.
 - Current CarveMe drafts of the same organisms (a robustness check, since these organisms are now exposed).
 - A random-removal control for the curator's removals.
 - Other phenotype types, such as growth profiles.
@@ -296,18 +325,13 @@ The rules generalise organism-specific corrections made in September. One reacti
 - **Metric.** MCC \[14\] on all gene × condition pairs where both arms grow. The primary gene set was the union of both arms' genes: a gene absent from a model counts as predicted unimportant there.
 - **Uncertainty and reading.** Per-organism intervals: 1,000 gene-bootstrap resamples. Means: 10,000 organism-bootstrap resamples, with t-based intervals as a sensitivity analysis. Organisms changing by less than 0.001 counted as unchanged. Sign tests were exact and two-sided. The pre-declared reading is given in Results.
 
-**Locking, time order and verification.** Each lock is a manifest of file hashes with a content fingerprint, committed to git and recorded in a private project document whose server timestamp follows the commit by less than half a minute. Outcome files were downloaded only after the corresponding lock, and their hashes and download times were recorded. All times are on 3 October 2026 (UTC), with the external record in brackets:
-
-1. method locked at 09:40:45 (09:41:01);
-2. panel A inputs (media, carbon sources, base models, curation decisions) locked at 10:11:43 (10:11:50);
-3. panel A fitness tables first downloaded between 10:12:18 and 10:12:40, then every arm run once;
-4. replication plan for panel B locked at 12:31:09 (12:31:17);
-5. panel B inputs locked at 13:06:21 (13:06:45);
-6. panel B fitness tables first downloaded between 13:07:00 and 13:07:20, then every arm run once.
+**Locking, time order and verification.** Each lock is a manifest of file hashes with a content fingerprint, committed to git and recorded in a private project document whose server timestamp follows the commit by less than half a minute. Outcome files were downloaded only after the corresponding lock, and their hashes and download times were recorded. All locks, downloads and runs took place on 3 October 2026. The method was locked first, and each panel's inputs were locked before that panel's fitness tables were first downloaded; each arm was then run once. Supplementary Table S1 lists the times.
 
 All four manifests verify at their own commits. At the current head the replication plan's manifest differs in one file, `filter_report.json`, which gained panel B entries before the panel B inputs were locked; its earlier entries are unchanged.
 
 On 3 October a separate agent, using its own code, recomputed the primary and secondary results from the run matrices, with exact agreement. It checked the fitness values of every arm against the downloaded tables (376,620 arm × gene × condition cells on panel A and 881,911 on panel B), and confirmed the time order from git history, the manifests, the download records and the external timestamps. A second agent checked this paper's derived tables, figures and counts against the result files on 5 October.
+
+**Hand-curated reference models (added after the study).** iML1515 \[17\], from the validation repository of Bernstein et al. \[11\], and iJN1463 \[18\], from BiGG, were scored with the study's protocol unchanged: the same media and carbon-source tables, parameters, medium completion and solver, and no gap-filling. Their gene identifiers are locus tags that match the Fitness Browser's. iML1515 was scored on the *E. coli* BW25113 screens. The *P. putida* models were compared on the genes both cover and the conditions in which both grow, as in the study's common-gene analysis, with the union of genes as a secondary view. Coverage is the number of mapped conditions in which a model grows.
 
 ## Data and code availability
 
@@ -320,13 +344,14 @@ All code, inputs, lock manifests, run matrices and curation decisions are in the
 | Every curation decision | `data/studies/transfer_v1/decisions/<organism>.json` |
 | Run matrices, paired comparisons and aggregates | `results/transfer_v1/development/`, `evaluation_panel_A/`, `evaluation_panel_B/`, `pooled_panels_A_B_*.json` |
 | Fitness download records (hashes and times) | `data/fitness_browser_panel/` |
+| Hand-curated reference models and comparison | `scripts/score_reference_model.py`, `compare_reference_models.py`; `results/transfer_v1/reference_models/` |
 | Figures and Table 1 | `scripts/plot_transfer_timeline.py`, `plot_transfer_paired.py`, `plot_transfer_attribution.py`, `plot_curation_precision.py`, `make_transfer_table1.py` |
 
 Fitness data come from the Fitness Browser (fit.genomics.lbl.gov) and draft models from the EMBL GEMs collection.
 
 ## References
 
-A reviewing agent checked entries 1–14 against publisher or repository records on 5 October 2026 (Chicco and Bernstein from search records only). Entries 15 and 16 were added on its advice.
+A reviewing agent checked entries 1–14 against publisher or repository records on 5 October 2026 (Chicco and Bernstein from search records only). Entries 15 and 16 were added on its advice, and 17 and 18 with the hand-curated comparison.
 
 1. Machado D, Andrejev S, Tramontano M, Patil KR. Fast automated reconstruction of genome-scale metabolic models for microbial species and communities. *Nucleic Acids Res.* 2018;46(15):7542–7553. doi:10.1093/nar/gky537
 2. Zimmermann J, Kaleta C, Waschina S. gapseq: informed prediction of bacterial metabolic pathways and reconstruction of accurate metabolic models. *Genome Biol.* 2021;22:81. doi:10.1186/s13059-021-02295-1
@@ -344,3 +369,18 @@ A reviewing agent checked entries 1–14 against publisher or repository records
 14. Chicco D, Jurman G. The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation. *BMC Genomics.* 2020;21:6. doi:10.1186/s12864-019-6413-7
 15. Chen C, Liao C, Liu YY. Teasing out missing reactions in genome-scale metabolic networks through hypergraph learning. *Nat Commun.* 2023;14:2375. doi:10.1038/s41467-023-38110-7
 16. Collins MD, Jones D. Distribution of isoprenoid quinone structural types in bacteria and their taxonomic implication. *Microbiol Rev.* 1981;45(2):316–354. doi:10.1128/mr.45.2.316-354.1981
+17. Monk JM, Lloyd CJ, Brunk E, et al. iML1515, a knowledgebase that computes *Escherichia coli* traits. *Nat Biotechnol.* 2017;35:904–908. doi:10.1038/nbt.3956
+18. Nogales J, Mueller J, Gudmundsson S, et al. High-quality genome-scale metabolic modelling of *Pseudomonas putida* highlights its broad metabolic capabilities. *Environ Microbiol.* 2020;22(1):255–269. doi:10.1111/1462-2920.14843
+
+## Supplementary information
+
+**Supplementary Table S1. Time order of the transfer study, 3 October 2026 (UTC).** The external record is the server timestamp of the private project document made for each lock.
+
+| Step | Event | Time | External record |
+| --- | --- | --- | --- |
+| 1 | Method locked | 09:40:45 | 09:41:01 |
+| 2 | Panel A inputs locked (media, carbon sources, base models, curation decisions) | 10:11:43 | 10:11:50 |
+| 3 | Panel A fitness tables first downloaded; every arm then run once | 10:12:18 to 10:12:40 | — |
+| 4 | Replication plan for panel B locked | 12:31:09 | 12:31:17 |
+| 5 | Panel B inputs locked | 13:06:21 | 13:06:45 |
+| 6 | Panel B fitness tables first downloaded; every arm then run once | 13:07:00 to 13:07:20 | — |

@@ -1,0 +1,44 @@
+condition	media	bigg_ids	mapping_confidence	n_experiments	wt_growth	wt_grows	missing_exchanges	n_ko_no_growth	n_genes_fitness_below_threshold
+L-Arginine	MOPS minimal media_noCarbon	arg__L	high	1	0.9342340398861901	True		118	60
+L-Glutamic acid monopotassium salt monohydrate	MOPS minimal media_noCarbon	glu__L	high	3	0.7429518743862729	True		125	60
+L-Histidine	MOPS minimal media_noCarbon	his__L	high	1	0.8330837064553288	True		122	48
+Sodium succinate dibasic hexahydrate	MOPS minimal media_noCarbon	succ	high	1	0.5288375134650731	True		124	47
+a-Ketoglutaric acid disodium salt hydrate	MOPS minimal media_noCarbon	akg	high	1	0.6649253964977716	True		125	40
+Sodium butyrate	MOPS minimal media_noCarbon	but	high	3	0.0	False	EX_but_e	1148	57
+Vanillin	MOPS minimal media_noCarbon	vanln	high	2	1.0028399637157097	True		126	81
+1,2-Propanediol	MOPS minimal media_noCarbon	12ppd__S;12ppd__R	high	2	0.0	False	EX_12ppd__S_e;EX_12ppd__R_e	1148	68
+Sodium propionate	MOPS minimal media_noCarbon	ppa	high	2	0.47006660110057386	True		129	65
+Hydroxy-L-Proline	MOPS minimal media_noCarbon	4hpro_LT	medium	2	0.7213015691529605	True		128	65
+Vanillic Acid	MOPS minimal media_noCarbon	vanlt	high	2	0.9371011625631727	True		127	72
+Protocatechuic Acid	MOPS minimal media_noCarbon	34dhbz	high	2	0.8577165641242706	True		132	68
+4-Hydroxybenzoic Acid	MOPS minimal media_noCarbon	4hbz	high	2	0.7783319656916909	True		133	72
+L-Lysine	MOPS minimal media_noCarbon	lys__L	high	3	0.9826296399645041	True		125	71
+p-Coumaric acid	MOPS minimal media_noCarbon	T4hcinnm	medium	2	1.1451147097472278	True		126	74
+benzoic acid	MOPS minimal media_noCarbon	bz	high	3	0.8693149336977046	True		125	69
+Ferulic Acid	MOPS minimal media_noCarbon	fer	medium	3	1.2983336670113843	True		126	71
+D-Glucose	MOPS minimal media_noCarbon	glc__D	high	3	0.9796368101803962	True		124	59
+Phenylacetic acid	MOPS minimal media_noCarbon	pac	high	2	1.2545568220787693	True		136	78
+3-Methyl-2-Oxobutanoic Acid	MOPS minimal media_noCarbon	3mob	high	2	0.0	False	EX_3mob_e	1148	75
+4-Methyl-2-oxovaleric acid	MOPS minimal media_noCarbon	4mop	high	2	0.0	False	EX_4mop_e	1148	68
+Hexanoic acid	MOPS minimal media_noCarbon	hxa	high	2	1.1460129939924024	True		126	53
+Decanoic acid	MOPS minimal media_noCarbon	dca	high	2	2.031075892379713	True		126	62
+Lauric acid	MOPS minimal media_noCarbon	ddca	high	2	2.472162441929966	True		126	66
+Octanoic acid	MOPS minimal media_noCarbon	octa	high	2	1.587580761140648	True		126	61
+Myristic acid	MOPS minimal media_noCarbon	ttdca	high	2	2.9131981270281013	True		126	66
+Oleic acid	MOPS minimal media_noCarbon	ocdcea	high	2	3.7498431951006284	True		126	61
+Butanol	MOPS minimal media_noCarbon	btoh	high	2	0.0	False	EX_btoh_e	1148	60
+3-methyl-1-butanol	MOPS minimal media_noCarbon	iamoh	medium	2	0.0	False	EX_iamoh_e	1148	90
+Ethanol	MOPS minimal media_noCarbon	etoh	high	2	0.4653477781510134	True		125	54
+L-Valine	MOPS minimal media_noCarbon	val__L	high	2	0.833194568978526	True		128	68
+L-Leucine	MOPS minimal media_noCarbon	leu__L	high	2	1.067234554315874	True		129	53
+L-Isoleucine	MOPS minimal media_noCarbon	ile__L	high	2	1.1137875829306252	True		130	83
+3-methyl-2-oxopentanoic acid	MOPS minimal media_noCarbon	3mop	high	2	0.0	False	EX_3mop_e	1148	16
+D-Glucose	RCH2_defined_noCarbon	glc__D	high	6	0.9806704787008389	True		91	58
+Potassium acetate	RCH2_defined_noCarbon	ac	high	4	0.2692131408219765	True		92	60
+D-Galacturonic Acid monohydrate	MOPS minimal media_noCarbon	galur	high	2	0.8079027900861763	True		129	66
+Vanillin	RCH2_defined_noCarbon	vanln	high	2	1.0039124000329764	True		93	96
+p-Coumaric acid	RCH2_defined_noCarbon	T4hcinnm	medium	2	1.146321485751091	True		93	72
+D-Glucuronic Acid	MOPS minimal media_noCarbon	glcur	high	1	0.8079027900861996	True		129	49
+4-Aminobutyric acid	MOPS minimal media_noCarbon	4abut	high	1	0.6876067103365603	True		124	46
+5-Aminovaleric acid	MOPS minimal media_noCarbon	5aptn	medium	2	0.8255578710151372	True		131	53
+D-Lysine	MOPS minimal media_noCarbon	lys__D	high	2	0.9826296399645029	True		125	64

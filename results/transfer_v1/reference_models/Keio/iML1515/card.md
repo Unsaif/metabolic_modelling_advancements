@@ -1,0 +1,58 @@
+# Benchmark card — carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Keio
+
+Created: 2026-10-06T09:14:29Z
+
+## Model
+
+- model_id: iML1515
+- file: models/iML1515/iML1515.xml
+- source: iML1515 (Monk et al. 2017) via github.com/dbernste/E_coli_GEM_validation Models/, fetched 6 Oct 2026
+- version_note: 
+- n_reactions: 2712
+- n_metabolites: 1877
+- n_genes: 1516
+- sha256: 9c772d44ca43350e40dc7ee86c7aa148796856be1eea45e5406c6df8f7dcde28
+
+## Dataset provenance
+
+- dataset: Fitness Browser RB-TnSeq gene fitness, orgId 'Keio'
+- primary_source: Price et al. 2018, Nature 557:503-509, https://fit.genomics.lbl.gov
+- download: 5 September 2026 via createFitData.cgi / createExpData.cgi / orgGenes.cgi (see data/fitness_browser/PROVENANCE.md)
+- n_genes_with_fitness: 3789
+- n_experiments: 168
+
+## Protocol
+
+- study: transfer_v1 reference models (post hoc)
+- arm: REF_iML1515
+- applied: []
+- params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": false, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null, "complete_medium_transport": true, "medium_completion_exclude": ["pnto__R", "fol", "hco3"], "genes_subset": null}
+- media_mapping: data/reference/fitness_browser_media_bigg.tsv
+- carbon_source_mapping: data/reference/fitness_browser_carbon_sources_bigg.tsv
+- gene_mapping: {"method": "identity (BiGG gene ids are locus tags = Fitness Browser sysName)"}
+- role: reference
+
+## Leakage
+
+- ground_truth_used_in_model_curation: unknown for the published curated model; its authors may have used these or related phenotypes
+- ground_truth_public_since: Fitness Browser releases include Price et al. 2018
+- frontier_model_training_exposure: not applicable (no AI step)
+- held_out_recommendation: reference point only; not a held-out test
+- notes: ["Scored post hoc with the transfer study's fixed protocol, for context in Paper 1."]
+
+## Results
+
+- condition_level: {"n_conditions_mapped": 32, "n_conditions_wt_grows": 32, "conditions_with_absent_exchange": 0}
+- gene_level_conditions_where_wt_grows: {"n_genes": 1339, "n_conditions": 32, "n_gene_condition_pairs": 42848, "n_missing_fitness": 0, "n_nonfinite_simulation": 0, "aucpr_bernstein": {"point": 0.5923379532067504, "ci95": [0.48757228874189645, 0.6838334698330731]}, "aucpr_standard": {"point": 0.4679058157853799, "ci95": [0.3799686381184177, 0.5451562344076429]}, "auroc_standard": {"point": 0.7989895021408203, "ci95": [0.7630369724034646, …
+- gene_map: {"model_genes": 1516, "mapped": 1515, "mapped_with_fitness_data": 1339}
+- counts: {"model_genes": 1516, "model_genes_mapped": 1515, "genes_with_fitness": 1339, "genes_after_adjustment": 1339, "conditions_total": 32, "conditions_mapped": 32, "conditions_wt_grows": 32, "medium_completion_exchanges_added": 4}
+- timings_s: {"rich_medium_essentials_s": 2.384185791015625e-06, "knockout_simulation_s": 141.2052252292633, "total_s": 141.94555044174194}
+
+## Software
+
+- python: 3.13.16
+- cobra: 0.32.1
+- optlang: 1.9.1
+- numpy: 2.5.3
+- scipy: 1.18.1
+- scikit-learn: 1.9.1
