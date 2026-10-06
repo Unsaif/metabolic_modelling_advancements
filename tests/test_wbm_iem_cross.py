@@ -133,3 +133,57 @@ def test_minimal_context_keeps_own_sinks_closed(core_wbm):
     assert rec["status"] == "complete"
     j = hw.rxn_pos["DM_g3p_c"]
     assert hw.ub[j] == 0.0
+
+
+def test_rechecks_are_recorded_and_agree(core_wbm):
+    hw = backend("highs", core_wbm)
+    rec = X.run_one(hw, PROTOCOL[1], READOUTS, "protocol", "primal", log=False, recheck_every=1)
+    checks = [r[f"solve_{s}"]["recheck"] for r in rec["readouts"] for s in ("healthy", "disease")
+              if "recheck" in (r[f"solve_{s}"] or {})]
+    # every warm solve (all but the first present readout of each state) is rechecked when N = 1
+    n_present = sum(1 for r in rec["readouts"] if r["status_healthy"] != "absent")
+    assert len(checks) == 2 * (n_present - 1)
+    assert all(c["status"] == "Optimal" and c["abs_diff"] <= 1e-6 for c in checks)
+
+
+def test_rechecked_selection_is_deterministic():
+    picks = [X.rechecked("HIS", "healthy", f"R{i}", 10) for i in range(1000)]
+    assert picks == [X.rechecked("HIS", "healthy", f"R{i}", 10) for i in range(1000)]
+    assert 60 <= sum(picks) <= 140
+    assert not X.rechecked("HIS", "healthy", "R1", 0)
+
+
+@pytest.mark.parametrize("context", ["protocol", "minimal"])
+@pytest.mark.parametrize("name,warm,first", [("highs", "dual", "ipm"), ("highs", "primal", "warm"), ("highs", "ipm", "ipm"),
+                                             ("gurobi", "dual", "ipm"), ("gurobi", "dual", "warm")])
+def test_readout_major_equals_iem_major(core_wbm, context, name, warm, first):
+    base = cross(backend("highs", core_wbm), "ipm", context)
+    hw = backend(name, core_wbm)
+    lb0, ub0 = hw.lb.copy(), hw.ub.copy()
+    setups, entries = X.run_readout_major(hw, PROTOCOL, READOUTS, context, warm, first, False, 0, {}, lambda s, e: None)
+    recs = {r["iem"]: r for r in X.assemble(setups, entries, READOUTS, final=True)}
+    np.testing.assert_array_equal(hw.lb, lb0)
+    np.testing.assert_array_equal(hw.ub, ub0)
+    for iem, ref in base.items():
+        rec = recs[iem]
+        assert rec["status"] == ref["status"]
+        assert rec["vmax_healthy"] == pytest.approx(ref["vmax_healthy"])
+        assert [r["reaction"] for r in rec["readouts"]] == [r["reaction"] for r in ref["readouts"]]
+        for ra, rb in zip(ref["readouts"], rec["readouts"]):
+            assert ra["predicted"] == rb["predicted"], (iem, ra["reaction"])
+            assert same(ra["healthy"], rb["healthy"]) and same(ra["disease"], rb["disease"]), (iem, ra["reaction"])
+            assert ra["own"] == rb["own"] and ra["expected"] == rb["expected"]
+
+
+def test_readout_major_resumes(core_wbm):
+    hw = backend("highs", core_wbm)
+    setups, entries = X.run_readout_major(hw, PROTOCOL, READOUTS, "protocol", "dual", "ipm", False, 0, {}, lambda s, e: None)
+    first = READOUTS[0]
+    done = {k: v for k, v in entries.items() if k[1] == first}
+    hw2 = backend("highs", core_wbm)
+    calls = []
+    _, entries2 = X.run_readout_major(hw2, PROTOCOL, READOUTS, "protocol", "dual", "ipm", False, 0, done,
+                                      lambda s, e: calls.append(len(e)))
+    assert len(calls) == len(READOUTS) - 1     # the stored readout is not recomputed
+    for k, v in entries.items():
+        assert entries2[k]["predicted"] == v["predicted"]
