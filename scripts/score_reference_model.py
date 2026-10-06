@@ -12,6 +12,10 @@ used in development, and their fitness data were seen long before.
 Usage:
   python scripts/score_reference_model.py --org Putida --model models/bigg/iJN1463.xml --label iJN1463
   python scripts/score_reference_model.py --org Keio --model models/iML1515/iML1515.xml --label iML1515
+  python -I scripts/score_reference_model.py --org MR1 --model models/curated/iSO783/iSO783_bigg_view.xml.gz --label iSO783
+  python -I scripts/score_reference_model.py --org Smeli --model models/curated/iGD1575/iGD1575_bigg_view.xml.gz \
+      --label iGD1575 --gene-normalize sm_prefix
+Models outside BiGG are first given BiGG identifiers by scripts/translate_curated_model.py (relabelling only).
 Writes results/transfer_v1/reference_models/<org>/<label>/ (card.json, matrices.npz, conditions.tsv,
 per_condition_metrics.tsv), in the same format as the transfer arms.
 """
@@ -49,12 +53,21 @@ def config(org):
     return RT.load_config(org)
 
 
-def identity_gene_map(org, model, sysnames):
+GENE_NORMALIZE = {
+    "identity": (lambda g: g, "identity (BiGG gene ids are locus tags = Fitness Browser sysName)"),
+    "remove_underscore": (lambda g: g.replace("_", ""), "locus tag with the underscore removed (BT_0554 -> BT0554 = Fitness Browser sysName)"),
+    "sm_prefix": (lambda g: ("SM_b" + g[3:]) if g[:3].lower() == "smb" else ("SM" + g[2:]) if g[:2].lower() == "sm" else g,
+                  "S. meliloti locus tag in the Fitness Browser's form (smc04029 -> SMc04029, sma2091 -> SMa2091, smb21184 -> SM_b21184)"),
+}
+
+
+def identity_gene_map(org, model, sysnames, normalize="identity"):
+    fn, how = GENE_NORMALIZE[normalize]
     ids = [g.id for g in model.genes]
-    mp = {g: g for g in ids if g in sysnames}
+    mp = {g: fn(g) for g in ids if fn(g) in sysnames}
     return GeneMap(org_id=org, model_to_browser=mp, unmapped_model_genes=[g for g in ids if g not in mp],
                    stats={"model_genes": len(ids), "mapped": len(mp)},
-                   provenance={"method": "identity (BiGG gene ids are locus tags = Fitness Browser sysName)"})
+                   provenance={"method": how})
 
 
 def main() -> None:
@@ -64,6 +77,7 @@ def main() -> None:
     ap.add_argument("--label", required=True)
     ap.add_argument("--source", default="")
     ap.add_argument("--processes", type=int, default=2)
+    ap.add_argument("--gene-normalize", choices=sorted(GENE_NORMALIZE), default="identity")
     args = ap.parse_args()
     cfg = config(args.org)
     outdir = os.path.join(OUT, args.org, args.label)
@@ -76,7 +90,7 @@ def main() -> None:
     model.solver = "glpk"
     t0 = time.time()
     with RT.reference_tables(cfg) as (media_table, carbon_table):
-        gm = identity_gene_map(args.org, model, sysnames)
+        gm = identity_gene_map(args.org, model, sysnames, args.gene_normalize)
         gm.stats["mapped_with_fitness_data"] = sum(1 for v in gm.model_to_browser.values() if v in set(fb.fitness.index))
         conds = FB.carbon_source_conditions(fb)
         params = P.GenericParams(processes=args.processes, **RT.FIXED)

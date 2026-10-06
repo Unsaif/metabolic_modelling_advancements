@@ -1,0 +1,7 @@
+# Explicit identifier decisions for curated models whose identifiers the automatic rules in scripts/translate_curated_model.py cannot place.
+# One row per decision, made from the compound name and formula in the published model before the model was scored.
+model	original_base_id	bigg_id	evidence
+iSO783	ubq8	q8	ubiquinone-8: older BiGG identifier (ModelSEED cpd15560, BiGG1 alias ubq8, BiGG alias q8); reduced to ubq8h2 by NADH dehydrogenase in iSO783
+iSO783	ubq8h2	q8h2	ubiquinol-8: reduced form paired with ubq8 in iSO783 (BiGG q8h2)
+iGD1575	cpd15560	q8	Ubiquinone_8 (ModelSEED cpd15560); the ModelSEED alias table lists both q8 and q8h2 for this compound
+iGD1575	cpd15561	q8h2	Ubiquinol_8 (ModelSEED cpd15561); the ModelSEED alias table lists both q8 and q8h2 for this compound

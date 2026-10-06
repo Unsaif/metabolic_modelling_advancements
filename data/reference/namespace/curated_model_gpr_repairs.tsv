@@ -1,0 +1,3 @@
+# Gene rules in published curated models that the SBML reader cannot parse, restored to the rule the authors wrote.
+model	reaction	published_text	repaired_rule	evidence
+iGD1575	rxn09310_c0	GENE_ASSOCIATION:(smb23463 and smb20617	smb23463 and smb20617	closing parenthesis missing in the published SBML notes; the same reaction's PROTEIN_ASSOCIATION reads (ThiS and ThiG); cobrapy reads the unbalanced rule as empty
