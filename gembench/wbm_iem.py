@@ -141,7 +141,14 @@ class HighsWBM:
         t = time.time()
         # Interior point (with crossover) for every solve: on Harvey a cold IPM solve takes ~15-20 s whereas
         # dual-simplex warm starts after bound/objective changes were observed to take minutes.
-        self.h.setOptionValue("solver", self.method)
+        # method "primal"/"dual" (cross-disease readouts only) runs simplex from the current basis instead;
+        # "ipm" is unchanged from the v0.3 protocol runs.
+        if self.method in ("primal", "dual"):
+            self.h.setOptionValue("solver", "simplex")
+            self.h.setOptionValue("simplex_strategy", 4 if self.method == "primal" else 1)
+        else:
+            self.h.setOptionValue("solver", self.method)
+            self.h.setOptionValue("simplex_strategy", 1)   # HiGHS default (dual); only simplex runs use it
         # HiGHS applies time_limit to the cumulative run time of the Highs object, so a persistent model
         # would start failing every solve once the total exceeds the limit; re-base it before each run.
         self.h.setOptionValue("time_limit", float(self.h.getRunTime()) + self.per_solve_time_limit)
@@ -157,7 +164,11 @@ class HighsWBM:
         st = self.h.modelStatusToString(self.h.getModelStatus())
         sol = self.h.getSolution()
         x = np.array(sol.col_value) if sol.value_valid else np.full(self.n, np.nan)
-        obj = float(self.h.getInfo().objective_function_value) if sol.value_valid else float("nan")
+        info = self.h.getInfo()
+        obj = float(info.objective_function_value) if sol.value_valid else float("nan")
+        self.last_info = {"method": self.method, "simplex_iterations": int(info.simplex_iteration_count),
+                          "ipm_iterations": int(info.ipm_iteration_count),
+                          "crossover_iterations": int(info.crossover_iteration_count)}
         return st, obj, x, dt
 
 
