@@ -12,7 +12,7 @@
 - **Setup.** The port matches the COBRA Toolbox exactly on Harvetta too: all 83,521 bounds are identical after the setup and after the global constraints.
 - **Accuracy.** Harvetta gets 218 of 251 directions right (86.9%), against 217 (86.5%) for Harvey.
 - **Same calls as MATLAB.** MATLAB makes the same call for all 221 Harvetta biomarkers where it returned values.
-- **Solver failures matter more on Harvetta.** Gurobi returned no optimum for 31 of 252 biomarkers (Harvey: 15), so `runIEM_HH`'s own figure falls to 75.8%. HiGHS solves all of them; Python is right on 27 of the 30 scored ones.
+- **Solver failures matter more on Harvetta.** Gurobi returned no optimum for 30 biomarkers (Harvey: 14), and one more is absent from the model, so `runIEM_HH`'s own figure falls to 75.8%. HiGHS solves all 30; Python is right on 27 of them.
 - **Caps.** Most "no change" errors are capped values (16 of 18).
 - **Flux ranges.** Comparing minima as well as maxima recovers none of the capped calls on either model. The full-range rule loses 10 (Harvey) and 13 (Harvetta) correct calls.
 
@@ -35,7 +35,7 @@ Notes:
 |---|---|---|---|
 | (a) Setup bounds identical to MATLAB | 81,094 / 81,094 | 83,521 / 83,521 (setup and global) | replicated |
 | (b) Same call wherever MATLAB has values | 237 / 237 | 221 / 221 | replicated |
-| (c) Biomarkers without a MATLAB optimum | 15 of 252 | 31 of 252 | replicated |
+| (c) Biomarkers without a MATLAB optimum (one more is absent from the model) | 14 | 30 | replicated |
 | `runIEM_HH` figure vs Python accuracy among scored | 81.0% vs 86.5% | 75.8% vs 86.9% | |
 | (d) No-change errors with equal positive maxima | 18 of 21 | 16 of 18 | replicated |
 | (e) Correct calls resting on a change below 5% | 10 of 217 | 5 of 218 | (descriptive) |
@@ -51,15 +51,16 @@ Notes:
 
 The published figure for Harvetta is 84.9% (Thiele et al. 2020, other model and code versions).
 
-**Opposite-direction errors.** Twelve are shared with Harvey: citrulline in CPS1, NAGS and OTC, AADC L-DOPA and 3-methoxytyrosine, PC glucose, GMT creatinine, FED cholesterol, OXOP 5-oxoproline, LNS folate, NAGS orotate and HCYS ornithine. Harvetta adds three:
-- ASNSD blood asparagine;
-- MMA blood carnitine;
-- BTD urinary 3-hydroxypropionate. In Harvetta its healthy maximum is 1.85 × 10⁻⁶, just above the 10⁻⁶ threshold below which the protocol sets a value to zero, so the call becomes "decreased". In Harvey both values were zero and the call was "no change". The difference between the two models is numerical noise at the threshold, not biology.
+**Opposite-direction errors.** Twelve are shared with Harvey: citrulline in CPS1, NAGS and OTC, AADC L-DOPA and 3-methoxytyrosine, PC glucose, GMT creatinine, FED cholesterol, OXOP 5-oxoproline, LNS folate, NAGS orotate and HCYS ornithine. Harvey's thirteenth, MMA blood 3-hydroxypropionate, is right in Harvetta, on a change of 0.3%. Harvetta adds three:
+- **ASNSD blood asparagine.** The healthy maximum is zero in Harvetta (MATLAB agrees) but 130.7 mmol/day in Harvey, so the call turns from "decreased" to "increased". This is a real difference between the models.
+- **MMA blood carnitine.** In Harvey both states sat at the cap of 50 mmol/day (a no-change error). In Harvetta the healthy value is 32.8, below the cap, so the call becomes "increased".
+- **BTD urinary 3-hydroxypropionate.** In Harvetta its healthy maximum is 1.85 × 10⁻⁶, just above the 10⁻⁶ threshold below which the protocol sets a value to zero, so the call becomes "decreased". In Harvey both values were zero and the call was "no change". The difference between the two models is numerical noise at the threshold, not biology. MATLAB returned no healthy optimum for this biomarker on either model.
 
 ### Python against MATLAB on Harvetta (A2)
 
 - **Bounds.** Identical after the setup (checked before the freeze) and after the global constraints.
-- **Calls.** Same call on all 221 biomarkers where MATLAB returned values. All 30 differences are biomarkers that MATLAB recorded as NaN, so `runIEM_HH` scores them "unchanged"; Python calls 27 of these 30 correctly.
+- **Calls.** Same call on all 221 biomarkers where MATLAB returned values. All 30 differences are biomarkers that MATLAB recorded as NaN, so `runIEM_HH` scores them "unchanged"; Python calls 27 of these 30 correctly. Its three errors are LNS blood folate and PC blood glucose, which are also errors on Harvey where MATLAB has values and agrees, and BTD urinary 3-hydroxypropionate (the threshold case below). On Harvey, MATLAB also had no healthy optimum for that BTD biomarker, but both implementations called it "unchanged", so it is not among Harvey's 13 differences.
+- **Values.** Above 10⁻³, all 291 pairs of values agree within 0.008% (Harvey: 293 pairs, all within 0.03% except FED blood cholesterol at 0.3%).
 - **Where the failures are.**
 
 | IEM | Biomarkers without a MATLAB optimum |
