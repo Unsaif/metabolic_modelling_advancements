@@ -41,12 +41,12 @@ These are the same as v0.3:
 
 ## Readout panel
 
-188 reactions:
+187 reactions:
 
 - **The protocol's biomarker reactions (162).** One of them, `EX_25aics[u]`, is not in Harvey, so it is NA for every
   disease.
-- **26 readouts that only the HPO profiles need.** They are listed in `data/iem/iem_ranking_extra_readouts_v0.2.txt`
-  and include the 15 that the v0.1 HPO profiles needed.
+- **25 readouts that only the HPO profiles need.** They are listed in `data/iem/iem_ranking_extra_readouts_v0.2.txt`
+  and include the 15 that the v0.1 HPO profiles needed. The main run's panel is the protocol's readouts plus this list.
 
 If a correction after the independent check of the HPO profiles needs a readout outside the panel, it is computed in a
 supplementary run with identical settings, before any ranking. Each readout's LPs are independent of which other
@@ -129,9 +129,9 @@ simulated by the protocol, so they are neither candidates nor profiles.
 | Set | Source | Profiles | Tuples |
 |---|---|---|---|
 | **lab (primary)** | The protocol's biomarker tuples and expected directions (215 increased, 37 decreased) | 57 | 252 |
-| hpo | HPO metabolite-concentration annotations of each disorder in Orphanet, mapped to readouts (v0.2, rules below) | 39 | 137 |
-| hpo_frequent | As hpo, limited to Obligate, Very frequent and Frequent annotations | 38 | 115 |
-| lab_hpo_corroborated | Lab tuples whose readout and direction also appear in the disorder's hpo profile | 28 | 62 |
+| hpo | HPO metabolite-concentration annotations of each disorder in Orphanet, mapped to readouts (v0.2, rules below) | 39 | 142 |
+| hpo_frequent | As hpo, limited to Obligate, Very frequent and Frequent annotations | 38 | 119 |
+| lab_hpo_corroborated | Lab tuples whose readout and direction also appear in the disorder's hpo profile | 29 | 63 |
 
 Files:
 
@@ -166,19 +166,29 @@ v0.2 is therefore built directly from Orphanet, by these rules:
    term is mapped to one model metabolite, biofluid and direction, or excluded with a reason, by the v0.1 rules:
    - the term's label decides when label and definition disagree, and the disagreement is noted;
    - excluded are classes of compounds, proteins, enzymes and enzyme activities, electrolytes (Na⁺, K⁺, Ca²⁺, Mg²⁺,
-     phosphate) and the anion gap, and groups of vitamers;
-   - also excluded are compounds without a blood, urine or CSF form in Harvey.
+     Cl⁻, phosphate) and the anion gap, and groups of vitamers;
+   - also excluded are acid-base states, ratios of two metabolites, terms without a direction ("abnormal …"), signs
+     that are not concentrations, and erythrocyte contents, which lie outside the protocol's blood, urine and CSF
+     readouts;
+   - and compounds without a blood, urine or CSF form in Harvey;
+   - an obsolete HPO id is replaced by its `replaced_by` term.
 4. **Frequency, conflicts and corroboration.** Annotations with frequency "Excluded (0%)" are dropped. A readout with
    both directions in a profile is dropped. Corroboration of a lab tuple means the same readout and direction.
 
 v0.2 was built and committed with this plan, before the main run.
 
-- **Links.** 36 v0.1 links were kept, 13 changed and 3 added. One was removed: HMET's v0.1 entry is a different
+- **Links.** 35 v0.1 links were kept, 14 changed and 3 added. One was removed: HMET's v0.1 entry is a different
   enzyme, and GNMT deficiency has no annotated entry. Four IEMs have no annotated Orphanet entry.
-- **Terms.** 186 terms are in the map, 97 of them mapped. Of the 274 annotations considered, 143 are used.
+- **Terms.** 193 terms are in the map, 97 of them mapped. Of the 288 annotations considered, 149 are used.
 
-An independent check of the links, the map and the build runs during the main run, without access to the matrix.
-Any corrections are recorded as deviations before any ranking is computed.
+A second independent check of the links, the map and the build was made before the main run, without access to any
+matrix (`results/wbm_iem/ranking/independent_check_inputs/second_check/`). Its fixes are included above:
+
+- SUCLA linked to Orphanet 17 rather than 1933;
+- MMA linked to the complete-deficiency entry;
+- neonatal hyperbilirubinaemia excluded as a class;
+- obsolete HPO ids followed to their replacements;
+- the exclusion rules listed in full.
 
 ## Scoring and ranking
 
@@ -213,8 +223,8 @@ matrix existed.
 
 All of these are fixed now. Each reports the same metrics.
 
-1. **HPO profiles.** hpo (29 profiles) and hpo_frequent (29).
-2. **HPO-corroborated lab tuples.** 19 profiles.
+1. **HPO profiles.** hpo (39 profiles) and hpo_frequent (38).
+2. **HPO-corroborated lab tuples.** 29 profiles.
 3. **Promiscuity-adjusted score.**
    - S_adj(d | P) = S(d | P) − (n↑(P) − n↓(P)) · (p↑(d) − p↓(d)).
    - p↑ and p↓ are the fractions of d's available panel readouts called Increased and Decreased.
@@ -264,5 +274,4 @@ An agent that did not compute the matrix will:
 - `data/iem/hpo_term_readout_map_v0.2.tsv` (v0.1 kept for the record)
 - `data/iem/iem_ranking_profiles_v0.2.json` (v0.1 kept for the record)
 - `data/iem/iem_ranking_extra_readouts_v0.2.txt`
-- `data/iem/iem_ranking_supplement_readouts_v0.2.txt`
 - tests `tests/test_wbm_iem_cross.py` and `tests/test_iem_disease_ranking.py`

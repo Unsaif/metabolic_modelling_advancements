@@ -12,6 +12,7 @@ HP:0012112	Abnormal circulating corticosterone level	exclude					no direction (a
 HP:0500022	Abnormal circulating dehydroepiandrosterone concentration	exclude					no direction (abnormal, not increased or decreased)
 HP:0011021	Abnormal circulating enzyme concentration	exclude					enzymes, not metabolites
 HP:0012379	Abnormal circulating enzyme concentration or activity	exclude					enzymes, not metabolites
+HP:0040087	Abnormal circulating folate concentration	exclude					no direction; group of vitamers (reached from the obsolete HP:0012335 through replaced_by)
 HP:0010904	Abnormal circulating histidine concentration	exclude					no direction (abnormal, not increased or decreased)
 HP:0004357	Abnormal circulating leucine concentration	exclude					no direction (abnormal, not increased or decreased)
 HP:0040206	Abnormal circulating neopterin concentration	exclude					no direction (abnormal, not increased or decreased)
@@ -20,6 +21,7 @@ HP:0500170	Abnormal concentration of acylcarnitine in the urine	exclude					clas
 HP:0500243	Abnormal CSF ornithine concentration	exclude					no direction (abnormal, not increased or decreased)
 HP:0500231	Abnormal CSF pyruvate family amino acid concentration	exclude					class of compounds; no direction (abnormal, not increased or decreased)
 HP:0030272	Abnormal erythrocyte enzyme concentration or activity	exclude					enzymes, not metabolites
+HP:0012087	Abnormal mitochondrial shape	exclude					not a concentration
 HP:0040416	Abnormal urinary nitrogen compound level	exclude					class of compounds; no direction (abnormal, not increased or decreased)
 HP:0012401	Abnormal urine alpha-ketoglutarate concentration	exclude					no direction (abnormal, not increased or decreased)
 HP:0031979	Abnormal urine carbohydrate level	exclude					class of compounds; no direction (abnormal, not increased or decreased)
@@ -39,6 +41,9 @@ HP:0002908	Conjugated hyperbilirubinemia	exclude					class of compounds (bilirub
 HP:0020074	Crystalluria	exclude					not a concentration
 HP:0003131	Cystinuria	exclude					L-cystine has no blood or urine form in Harvey (organ cytosols, gut lumen and faeces only)
 HP:0040319	Dark urine	exclude					not a concentration
+HP:0011923	Decreased activity of mitochondrial complex I	exclude					enzyme activity, not a metabolite
+HP:0011924	Decreased activity of mitochondrial complex III	exclude					enzyme activity, not a metabolite
+HP:0008347	Decreased activity of mitochondrial complex IV	exclude					enzyme activity, not a metabolite
 HP:0004319	Decreased circulating aldosterone level	include	aldstrn	blood	Decreased	DM_aldstrn[bc]	
 HP:0031799	Decreased circulating apolipoprotein A-I concentration	exclude					protein, not a metabolite
 HP:0410145	Decreased circulating biotinidase concentration	exclude					enzyme, not a metabolite
@@ -87,6 +92,7 @@ HP:0001945	Fever	exclude					not a concentration
 HP:0002909	Generalized aminoaciduria	exclude					class of compounds, not one metabolite
 HP:0003150	Glutaric aciduria	include	glutar	urine	Increased	EX_glutar[u]	
 HP:0000790	Hematuria	exclude					not a concentration
+HP:0001397	Hepatic steatosis	exclude					not a concentration
 HP:0002927	Histidinuria	include	his_L	urine	Increased	EX_his_L[u]	
 HP:0003080	Hydroxyprolinuria	include	4hpro_LT	urine	Increased	EX_4hpro_LT[u]	
 HP:0003348	Hyperalaninemia	include	ala_L	blood	Increased	DM_ala_L[bc]	
@@ -94,7 +100,7 @@ HP:0001987	Hyperammonemia	include	nh4	blood	Increased	DM_nh4[bc]
 HP:0500151	Hypercystinemia	exclude					L-cystine has no blood form in Harvey (organ cytosols, gut lumen and faeces only)
 HP:0500149	Hyperglutamatemia	include	glu_L	blood	Increased	DM_glu_L[bc]	
 HP:0003217	Hyperglutaminemia	include	gln_L	blood	Increased	DM_gln_L[bc]	
-HP:0003074	Hyperglycemia	include	glc_D	blood	Increased	DM_glc_D[bc]	its only annotation (EF) has frequency Excluded (0%) and is dropped by the frequency rule
+HP:0003074	Hyperglycemia	include	glc_D	blood	Increased	DM_glc_D[bc]	dropped where its frequency is Excluded (0%) (EF); PC (Occasional) also has it, together with hypoglycemia, so PC's glucose readout is a conflict and is dropped
 HP:0002154	Hyperglycinemia	include	gly	blood	Increased	DM_gly[bc]	
 HP:0010906	Hyperhistidinemia	include	his_L	blood	Increased	DM_his_L[bc]	
 HP:0002160	Hyperhomocystinemia	include	Lhcystin	blood	Increased	DM_Lhcystin[bc]	HPO defines the term as increased homocystine in the blood (label and definition agree)
@@ -160,8 +166,9 @@ HP:0003572	Low plasma citrulline	include	citr_L	blood	Decreased	DM_citr_L[bc]
 HP:0004904	Maturity-onset diabetes of the young	exclude					not a concentration
 HP:0001942	Metabolic acidosis	exclude					acid-base state, not one metabolite
 HP:0005979	Metabolic ketoacidosis	exclude					acid-base state; class of compounds (ketone bodies)
+HP:0002912	Methylmalonic acidemia	include	HC00900	blood	Increased	DM_HC00900[bc]	
 HP:0012120	Methylmalonic aciduria	include	HC00900	urine	Increased	EX_HC00900[u]	
-HP:0003265	Neonatal hyperbilirubinemia	include	bilirub	blood	Increased	DM_bilirub[bc]	neonatal hyperbilirubinemia is mostly unconjugated bilirubin
+HP:0003265	Neonatal hyperbilirubinemia	exclude					by its label, hyperbilirubinemia is total bilirubin, a class of compounds (unconjugated and conjugated), as for conjugated hyperbilirubinemia
 HP:0001998	Neonatal hypoglycemia	include	glc_D	blood	Decreased	DM_glc_D[bc]	a form of hypoglycemia
 HP:0001958	Nonketotic hypoglycemia	include	glc_D	blood	Decreased	DM_glc_D[bc]	glucose only; the ketone part of the term is not mapped
 HP:0001992	Organic aciduria	exclude					class of compounds, not one metabolite

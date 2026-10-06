@@ -2,8 +2,8 @@
  "provenance": {
   "protocol_sha256": "6fed6856847f3745ec0b8003ce0ec874f5a5a63b6d38b20ab77994b7a7f51fd5",
   "lab_table_sha256": "2da16484937f0e3bac0c4a98b1abf1a5f863b725ead9b24d2881f0f701a41d0f",
-  "hpo_map_sha256": "27e1219fa9839cd5ca8764293a8f0e94258e1b10526b26ae529c68d45f2c04c3",
-  "links_sha256": "52eb10a9fa977a6aa5fbc5361fc264ddd49d6ecd77e0e9540dcf5075ae8363f6",
+  "hpo_map_sha256": "a75879c5089ea3e67a1d29bf678fa0e08642951c6a431bea488dc8f6a0f2e79a",
+  "links_sha256": "6365049db84b689723c9c5b8267b2c913845356cb719d7235fa4c4fdbe1fec25",
   "orphanet_en_product4_sha256": "4f44e8a61201399911aa1ba44a293c0ccaa5ce11272c47d40862255cb72f6b32",
   "orphanet_date": "2026-06-23 07:57:18",
   "hpo_obo_sha256": "93dace952fcb3ec4728818857f6ba76bc2d5312f4d83266519b8694b8e798f22",
@@ -414,7 +414,6 @@
   "DM_ala_L[csf]",
   "DM_arg_L[csf]",
   "DM_argsuc[bc]",
-  "DM_bilirub[bc]",
   "DM_citr_L[csf]",
   "DM_crtn[csf]",
   "DM_glu_L[csf]",
@@ -439,7 +438,6 @@
  "supplement_readouts": [
   "DM_ala_L[csf]",
   "DM_arg_L[csf]",
-  "DM_bilirub[bc]",
   "DM_citr_L[csf]",
   "DM_glu_L[csf]",
   "DM_lys_L[csf]",
@@ -457,17 +455,17 @@
   },
   "hpo": {
    "n_profiles": 39,
-   "n_tuples": 137,
+   "n_tuples": 142,
    "n_conflicts_dropped": 1
   },
   "hpo_frequent": {
    "n_profiles": 38,
-   "n_tuples": 115,
+   "n_tuples": 119,
    "n_conflicts_dropped": 0
   },
   "lab_hpo_corroborated": {
-   "n_profiles": 28,
-   "n_tuples": 62,
+   "n_profiles": 29,
+   "n_tuples": 63,
    "n_conflicts_dropped": 0
   }
  },
@@ -2021,7 +2019,31 @@
    ],
    "SUCLA": [
     [
+     "DM_HC00900[bc]",
+     "Increased"
+    ],
+    [
+     "DM_glc_D[bc]",
+     "Decreased"
+    ],
+    [
+     "DM_lac_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lac_L[csf]",
+     "Increased"
+    ],
+    [
+     "EX_3mglutac[u]",
+     "Increased"
+    ],
+    [
      "EX_HC00900[u]",
+     "Increased"
+    ],
+    [
+     "EX_ethmalac[u]",
      "Increased"
     ]
    ],
@@ -2130,10 +2152,6 @@
     ],
     [
      "DM_ala_L[csf]",
-     "Increased"
-    ],
-    [
-     "DM_bilirub[bc]",
      "Increased"
     ],
     [
@@ -2575,6 +2593,22 @@
    ],
    "SUCLA": [
     [
+     "DM_HC00900[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lac_L[bc]",
+     "Increased"
+    ],
+    [
+     "DM_lac_L[csf]",
+     "Increased"
+    ],
+    [
+     "EX_3mglutac[u]",
+     "Increased"
+    ],
+    [
      "EX_HC00900[u]",
      "Increased"
     ]
@@ -2952,6 +2986,12 @@
    "PKU": [
     [
      "DM_phe_L[bc]",
+     "Increased"
+    ]
+   ],
+   "SUCLA": [
+    [
+     "DM_lac_L[bc]",
      "Increased"
     ]
    ],
@@ -3826,6 +3866,16 @@
    "frequency": "Very frequent (99-80%)",
    "used": false,
    "reason": "no direction (abnormal, not increased or decreased)"
+  },
+  {
+   "iem": "FIGLU",
+   "orpha_code": "51208",
+   "hpo_id": "HP:0040087",
+   "hpo_term": "Abnormal circulating folate concentration",
+   "frequency": "Very frequent (99-80%)",
+   "obsolete_hpo_id_replaced": "HP:0012335",
+   "used": false,
+   "reason": "no direction; group of vitamers (reached from the obsolete HP:0012335 through replaced_by)"
   },
   {
    "iem": "FIGLU",
@@ -4713,16 +4763,7 @@
   },
   {
    "iem": "MMA",
-   "orpha_code": "27",
-   "hpo_id": "HP:0001944",
-   "hpo_term": "Dehydration",
-   "frequency": "Very frequent (99-80%)",
-   "used": false,
-   "reason": "not a concentration"
-  },
-  {
-   "iem": "MMA",
-   "orpha_code": "27",
+   "orpha_code": "289916",
    "hpo_id": "HP:0001987",
    "hpo_term": "Hyperammonemia",
    "frequency": "Occasional (29-5%)",
@@ -4899,30 +4940,170 @@
   },
   {
    "iem": "SUCLA",
-   "orpha_code": "1933",
-   "hpo_id": "HP:0003236",
-   "hpo_term": "Elevated circulating creatine kinase concentration",
-   "frequency": "Very frequent (99-80%)",
-   "used": false,
-   "reason": "enzyme, not a metabolite"
+   "orpha_code": "17",
+   "hpo_id": "HP:0002912",
+   "hpo_term": "Methylmalonic acidemia",
+   "frequency": "Obligate (100%)",
+   "used": true,
+   "readout": "DM_HC00900[bc]",
+   "direction": "Increased",
+   "reason": ""
   },
   {
    "iem": "SUCLA",
-   "orpha_code": "1933",
-   "hpo_id": "HP:0003355",
-   "hpo_term": "Aminoaciduria",
-   "frequency": "Very frequent (99-80%)",
-   "used": false,
-   "reason": "class of compounds, not one metabolite"
-  },
-  {
-   "iem": "SUCLA",
-   "orpha_code": "1933",
+   "orpha_code": "17",
    "hpo_id": "HP:0012120",
    "hpo_term": "Methylmalonic aciduria",
-   "frequency": "Very frequent (99-80%)",
+   "frequency": "Obligate (100%)",
    "used": true,
    "readout": "EX_HC00900[u]",
+   "direction": "Increased",
+   "reason": ""
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0003535",
+   "hpo_term": "3-Methylglutaconic aciduria",
+   "frequency": "Very frequent (99-80%)",
+   "used": true,
+   "readout": "EX_3mglutac[u]",
+   "direction": "Increased",
+   "reason": ""
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0012379",
+   "hpo_term": "Abnormal enzyme/coenzyme activity",
+   "frequency": "Very frequent (99-80%)",
+   "used": false,
+   "reason": "enzymes, not metabolites"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0001397",
+   "hpo_term": "Hepatic steatosis",
+   "frequency": "Frequent (79-30%)",
+   "used": false,
+   "reason": "not a concentration"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0002151",
+   "hpo_term": "Increased circulating lactate concentration",
+   "frequency": "Frequent (79-30%)",
+   "used": true,
+   "readout": "DM_lac_L[bc]",
+   "direction": "Increased",
+   "reason": ""
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0002490",
+   "hpo_term": "Increased CSF lactate",
+   "frequency": "Frequent (79-30%)",
+   "used": true,
+   "readout": "DM_lac_L[csf]",
+   "direction": "Increased",
+   "reason": ""
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0002910",
+   "hpo_term": "Elevated circulating hepatic transaminase concentration",
+   "frequency": "Frequent (79-30%)",
+   "used": false,
+   "reason": "enzymes, not metabolites"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0003128",
+   "hpo_term": "Lactic acidosis",
+   "frequency": "Frequent (79-30%)",
+   "used": true,
+   "readout": "DM_lac_L[bc]",
+   "direction": "Increased",
+   "reason": ""
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0008347",
+   "hpo_term": "Decreased activity of mitochondrial complex IV",
+   "frequency": "Frequent (79-30%)",
+   "used": false,
+   "reason": "enzyme activity, not a metabolite"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0011923",
+   "hpo_term": "Decreased activity of mitochondrial complex I",
+   "frequency": "Frequent (79-30%)",
+   "used": false,
+   "reason": "enzyme activity, not a metabolite"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0011924",
+   "hpo_term": "Decreased activity of mitochondrial complex III",
+   "frequency": "Frequent (79-30%)",
+   "used": false,
+   "reason": "enzyme activity, not a metabolite"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0001943",
+   "hpo_term": "Hypoglycemia",
+   "frequency": "Occasional (29-5%)",
+   "used": true,
+   "readout": "DM_glc_D[bc]",
+   "direction": "Decreased",
+   "reason": ""
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0002045",
+   "hpo_term": "Hypothermia",
+   "frequency": "Occasional (29-5%)",
+   "used": false,
+   "reason": "not a concentration"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0012087",
+   "hpo_term": "Abnormal mitochondrial shape",
+   "frequency": "Occasional (29-5%)",
+   "used": false,
+   "reason": "not a concentration"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0012240",
+   "hpo_term": "Increased intramyocellular lipid droplets",
+   "frequency": "Occasional (29-5%)",
+   "used": false,
+   "reason": "not a concentration"
+  },
+  {
+   "iem": "SUCLA",
+   "orpha_code": "17",
+   "hpo_id": "HP:0003219",
+   "hpo_term": "Ethylmalonic aciduria",
+   "frequency": "Very rare (<4-1%)",
+   "used": true,
+   "readout": "EX_ethmalac[u]",
    "direction": "Increased",
    "reason": ""
   },
@@ -5448,10 +5629,8 @@
    "hpo_id": "HP:0003265",
    "hpo_term": "Neonatal hyperbilirubinemia",
    "frequency": "Occasional (29-5%)",
-   "used": true,
-   "readout": "DM_bilirub[bc]",
-   "direction": "Increased",
-   "reason": ""
+   "used": false,
+   "reason": "by its label, hyperbilirubinemia is total bilirubin, a class of compounds (unconjugated and conjugated), as for conjugated hyperbilirubinemia"
   },
   {
    "iem": "PC",

@@ -20,7 +20,7 @@ the protocol panel lacks are written to data/iem/iem_ranking_extra_readouts_v0.1
   lab_hpo_corroborated  lab tuples whose readout and direction appear in the disorder's hpo profile
 It needs --orphanet en_product4.xml and --hpo-obo hp.obo (kept outside the repository; checksums are recorded) and
 writes data/iem/iem_ranking_profiles_v0.2.json, the HPO readouts outside the protocol panel
-(iem_ranking_extra_readouts_v0.2.txt) and those not already in the v0.1 extras (iem_ranking_supplement_readouts_v0.2.txt).
+(iem_ranking_extra_readouts_v0.2.txt; the main run's panel is the protocol's readouts plus this list).
 """
 from __future__ import annotations
 
@@ -73,7 +73,9 @@ ROOTS_V02 = ("HP:0001939", "HP:0003117", "HP:0040085")
 
 
 def load_obo(path):
+    """is_a parents, names, data-version, and replaced_by for obsolete terms."""
     parents, names, data_version = {}, {}, None
+    replaced, obsolete = {}, set()
     cur = None
     with open(path, encoding="utf-8") as fh:
         for line in fh:
@@ -92,7 +94,11 @@ def load_obo(path):
                 names[cur] = line[6:]
             elif cur and line.startswith("is_a: "):
                 parents[cur].add(line[6:].split(" ")[0])
-    return parents, names, data_version
+            elif cur and line.startswith("is_obsolete: true"):
+                obsolete.add(cur)
+            elif cur and line.startswith("replaced_by: "):
+                replaced[cur] = line[13:].split(" ")[0]
+    return parents, names, data_version, replaced, obsolete
 
 
 def under_roots(term, parents, roots=ROOTS_V02):
@@ -128,7 +134,7 @@ def load_orphanet(path):
 
 def build_v02(args, protocol, panel, profiles_v01):
     orpha, orpha_date = load_orphanet(args.orphanet)
-    parents, names, hpo_version = load_obo(args.hpo_obo)
+    parents, names, hpo_version, replaced, obsolete = load_obo(args.hpo_obo)
     term_map = {r["hpo_id"]: r for r in tsv(os.path.join(DATA, "hpo_term_readout_map_v0.2.tsv"))}
     links = {r["iem"]: r for r in tsv(os.path.join(DATA, "iem_orphanet_links_v0.2.tsv"))}
     if set(links) != {p["iem"] for p in protocol}:
@@ -143,6 +149,11 @@ def build_v02(args, protocol, panel, profiles_v01):
             for hid, term, freq in orpha[code]["annotations"]:
                 if hid not in parents:
                     raise ValueError(f"{p['iem']}: {hid} {term} is not in hp.obo")
+                original = None
+                if hid in obsolete:
+                    if hid not in replaced:
+                        raise ValueError(f"{p['iem']}: {hid} {term} is obsolete without a replacement")
+                    original, hid, term = hid, replaced[hid], names.get(replaced[hid], term)
                 if not under_roots(hid, parents) or (hid, freq) in seen:
                     continue
                 seen.add((hid, freq))
@@ -150,6 +161,8 @@ def build_v02(args, protocol, panel, profiles_v01):
                 if m is None:
                     raise ValueError(f"{p['iem']}: {hid} {term} has no row in hpo_term_readout_map_v0.2.tsv")
                 e = {"iem": p["iem"], "orpha_code": code, "hpo_id": hid, "hpo_term": term, "frequency": freq}
+                if original:
+                    e["obsolete_hpo_id_replaced"] = original
                 if m["decision"] == "exclude":
                     e.update(used=False, reason=m["reason"])
                 elif freq == EXCLUDED:
@@ -326,8 +339,6 @@ def main_v02(args):
         json.dump(out, fh, indent=1)
     with open(os.path.join(DATA, "iem_ranking_extra_readouts_v0.2.txt"), "w") as fh:
         fh.write("".join(r + "\n" for r in extra))
-    with open(os.path.join(DATA, "iem_ranking_supplement_readouts_v0.2.txt"), "w") as fh:
-        fh.write("".join(r + "\n" for r in supplement))
     print(json.dumps({"summary": summary, "n_extra": len(extra), "supplement": supplement,
                       "n_annotations": len(annotations), "n_used": sum(a["used"] for a in annotations)}, indent=1))
 
