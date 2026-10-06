@@ -136,6 +136,9 @@ class GurobiWBM:
         dt = time.time() - t
         self.n_solves += 1; self.solve_time += dt
         status = self.model.Status
+        if status == self.GRB.INTERRUPTED:
+            # gurobipy turns Ctrl+C into an interrupted solve instead of KeyboardInterrupt; stop the run.
+            raise KeyboardInterrupt
         st = self.STATUS.get(status, f"Gurobi status {status}")
         if status == self.GRB.OPTIMAL:
             obj = float(self.model.ObjVal)

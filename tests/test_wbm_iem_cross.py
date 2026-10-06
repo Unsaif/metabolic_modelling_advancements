@@ -188,3 +188,37 @@ def test_readout_major_resumes(core_wbm):
     assert len(calls) == len(READOUTS) - 1     # the stored readout is not recomputed
     for k, v in entries.items():
         assert entries2[k]["predicted"] == v["predicted"]
+
+
+def test_shards_merge_to_the_full_run(core_wbm):
+    import hashlib
+    import json as _json
+    spec_m = importlib.util.spec_from_file_location("merge_cross_shards", os.path.join(ROOT, "scripts", "merge_cross_shards.py"))
+    M = importlib.util.module_from_spec(spec_m)
+    spec_m.loader.exec_module(M)
+    full_setups, full_entries = X.run_readout_major(backend("highs", core_wbm), PROTOCOL, READOUTS, "protocol", "dual", "ipm",
+                                                    False, 0, {}, lambda s, e: None)
+    full = {r["iem"]: r for r in X.assemble(full_setups, full_entries, READOUTS, final=True)}
+    n = 3
+    panel_sha = hashlib.sha256(_json.dumps(READOUTS).encode()).hexdigest()
+    shards = []
+    for k in range(1, n + 1):
+        sub = READOUTS[k - 1::n]
+        setups, entries = X.run_readout_major(backend("highs", core_wbm), PROTOCOL, sub, "protocol", "dual", "ipm",
+                                              False, 0, {}, lambda s, e: None)
+        recs = X.assemble(setups, entries, sub, final=True)
+        prov = {"engine_version": "test", "shard": f"{k}/{n}", "panel_sha256": panel_sha, "n_panel": len(READOUTS),
+                "readouts_sha256": hashlib.sha256(_json.dumps(sub).encode()).hexdigest(), "n_readouts": len(sub)}
+        recs = _json.loads(_json.dumps(X.json_safe([dict(r, provenance=prov) for r in recs])))
+        shards.append((f"shard{k}", recs))
+    merged, panel = M.merge(shards)
+    assert panel == READOUTS
+    for rec in merged:
+        ref = full[rec["iem"]]
+        assert rec["status"] == ref["status"]
+        assert [e["reaction"] for e in rec["readouts"]] == READOUTS
+        for a, b in zip(ref["readouts"], rec["readouts"]):
+            assert a["predicted"] == b["predicted"]
+            assert same(a["healthy"], b["healthy"] if b["healthy"] is not None else float("nan"))
+    with pytest.raises(ValueError):
+        M.merge(shards[:2])          # a missing shard is refused

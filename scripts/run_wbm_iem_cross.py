@@ -507,6 +507,8 @@ def main():
     ap.add_argument("--first", choices=["ipm", "warm"], default="ipm", help="--order readout: first solve of each readout")
     ap.add_argument("--readout-limit", type=int, default=0, help="only the first N readouts of the panel (timing tests)")
     ap.add_argument("--readout-stride", type=int, default=0, help="only every K-th readout of the panel (timing tests)")
+    ap.add_argument("--shard", help="K/N: this process computes readouts K, K+N, K+2N, ... of the panel (1-based); "
+                                    "output goes to <out-suffix>_shardKofN; scripts/merge_cross_shards.py joins the shards")
     ap.add_argument("--quiet", action="store_true")
     args = ap.parse_args()
 
@@ -516,10 +518,22 @@ def main():
     if args.extra_readouts:
         with open(args.extra_readouts) as fh:
             readouts = list(dict.fromkeys(readouts + [line.strip() for line in fh if line.strip()]))
+    panel = list(readouts)
     if args.readout_stride:
         readouts = readouts[::args.readout_stride]
     if args.readout_limit:
         readouts = readouts[:args.readout_limit]
+    shard = None
+    split = list(readouts)      # what the shards divide between them (after any timing-test stride or limit)
+    if args.shard:
+        try:
+            k, n = (int(x) for x in args.shard.split("/"))
+        except ValueError:
+            ap.error("--shard must be K/N, e.g. 1/4")
+        if not 1 <= k <= n:
+            ap.error("--shard K/N needs 1 <= K <= N")
+        readouts = readouts[k - 1::n]
+        shard = (k, n)
     protocol = full_protocol
     if args.iems:
         unknown = set(args.iems) - {p["iem"] for p in protocol}
@@ -541,7 +555,8 @@ def main():
     bounds_protocol = hashlib.sha256(np.ascontiguousarray(hw.lb).tobytes() + np.ascontiguousarray(hw.ub).tobytes()).hexdigest()
     # Every demand sink any IEM or readout can need, added once and closed, so column positions do not
     # depend on which IEMs run in this process.
-    sink_mets = list(dict.fromkeys([rid[3:] for rid in readouts if rid.startswith("DM_")] +
+    # Sinks for the whole panel, also in a shard or timing test, so every process builds the same LP columns.
+    sink_mets = list(dict.fromkeys([rid[3:] for rid in panel if rid.startswith("DM_")] +
                                    [met for p in full_protocol for met in (p.get("demand_metabolites") or [])]))
     missing_mets = []
     for met in sink_mets:
@@ -562,8 +577,12 @@ def main():
     if args.order != "iem":
         # Recorded only when it differs from the first runs' default, so their fingerprints stay valid.
         provenance.update(order=args.order, first=args.first)
+    if shard:
+        provenance.update(shard=f"{shard[0]}/{shard[1]}",
+                          panel_sha256=hashlib.sha256(json.dumps(split).encode()).hexdigest(), n_panel=len(split))
     fingerprint = hashlib.sha256(json.dumps(provenance, sort_keys=True).encode()).hexdigest()
-    out_json = os.path.join(OUT, f"{args.model}_iem_cross{args.out_suffix}.json")
+    out_json = os.path.join(OUT, f"{args.model}_iem_cross{args.out_suffix}"
+                                 f"{f'_shard{shard[0]}of{shard[1]}' if shard else ''}.json")
     results = []
     if os.path.exists(out_json):
         with open(out_json) as fh:
@@ -583,6 +602,12 @@ def main():
     if args.order == "readout":
         stored = {r["iem"]: r for r in results}
         done = {(r["iem"], e["reaction"]): e for r in results for e in r.get("readouts", [])}
+        if results and {r["iem"] for r in results} == {p["iem"] for p in protocol} and all(
+                r["status"] in ("complete", "partial") or not r.get("readouts") and r["status"] not in ("set_up", "readouts_incomplete")
+                for r in results) and all((r["iem"], x) in done for r in results if r["status"] in ("complete", "partial")
+                                          for x in readouts):
+            print("all readouts are already computed; nothing to do", flush=True)
+            return
 
         def checkpoint(setups, entries):
             for s in setups:

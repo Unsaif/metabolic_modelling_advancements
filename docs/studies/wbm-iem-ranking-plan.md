@@ -104,13 +104,27 @@ then the same LPs as v0.3.
 Command, from the repository root:
 
 ```
-caffeinate -i python3 scripts/run_wbm_iem_cross.py Harvey_1_03d --backend gurobi --order readout --warm concurrent \
-  --context protocol --extra-readouts data/iem/iem_ranking_extra_readouts_v0.2.txt --recheck-every 100 \
-  --out-suffix _ranking_v1 --check-against results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json --quiet
+caffeinate -i python3 scripts/run_ranking_parallel.py
 ```
 
-The output is `results/wbm_iem/Harvey_1_03d_iem_cross_ranking_v1.json`. It is written after every readout and can be
-resumed per readout under the same fingerprint.
+It runs the matrix as N shards side by side on one machine: N = cores // 3 (1 to 6), with cores // N Gurobi
+threads each.
+
+- **What each shard runs.** `scripts/run_wbm_iem_cross.py` with the settings above:
+  `Harvey_1_03d --backend gurobi --order readout --warm concurrent --context protocol --extra-readouts
+  data/iem/iem_ranking_extra_readouts_v0.2.txt --recheck-every 100 --out-suffix _ranking_v1 --check-against
+  results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json --quiet`, plus `--shard K/N --threads T`.
+- **How the work is split.** Shard K computes readouts K, K+N, K+2N, … of the panel, in the same order and with the
+  same LPs as a single run. Every shard builds the same LP columns, including sinks for the whole panel. The
+  rechecks are chosen by the same hash as in a single run.
+- **Saving and resuming.** Each shard writes `results/wbm_iem/Harvey_1_03d_iem_cross_ranking_v1_shardKofN.json`
+  after every readout, and resumes from it.
+- **Joining.** `scripts/merge_cross_shards.py` joins the shards into
+  `results/wbm_iem/Harvey_1_03d_iem_cross_ranking_v1.json`. It first checks that:
+  - the provenance is identical apart from the shard fields;
+  - the IEM set-ups agree, with v_max within 1e-9 relative;
+  - every shard is complete;
+  - the shards rebuild the panel.
 
 ### Checks before any ranking
 
@@ -272,6 +286,7 @@ An agent that did not compute the matrix will:
 ## Files fixed with this plan
 
 - `scripts/run_wbm_iem_cross.py`
+- `scripts/run_ranking_parallel.py` and `scripts/merge_cross_shards.py`
 - `gembench/wbm_iem_gurobi.py`
 - `scripts/build_iem_ranking_profiles.py`
 - `scripts/iem_disease_ranking.py`
