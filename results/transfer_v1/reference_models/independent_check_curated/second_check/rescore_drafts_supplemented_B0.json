@@ -1,0 +1,33 @@
+{
+ "arm": "B0",
+ "n_genes": 507,
+ "max_abs_diff_fitness_vs_saved": 0.0,
+ "completion_added_strict": [
+  "EX_cys__L_e",
+  "EX_met__L_e",
+  "EX_na1_e",
+  "EX_ni2_e"
+ ],
+ "reproduction": {
+  "max_abs_diff_wt": 1.4342243902113003e-09,
+  "max_abs_diff_sim": 5.198567162494927e-08,
+  "binary_calls_differ": 0,
+  "wt_grows_differ": 0
+ },
+ "completion_added_supplemented": [
+  "EX_cys__L_e",
+  "EX_met__L_e",
+  "EX_na1_e",
+  "EX_ni2_e"
+ ],
+ "supplemented": {
+  "wt_grows": 14,
+  "wt_grows_strict": 14,
+  "conditions_gained": [],
+  "conditions_lost": [],
+  "calls_changed_in_conditions_both_grow": 0,
+  "genes_with_changed_calls": [],
+  "to_not_important": 0,
+  "to_important": 0
+ }
+}

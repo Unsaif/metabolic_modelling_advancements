@@ -1,0 +1,123 @@
+{
+ "objective": "1.0*Biomass_BT_v2 - 1.0*Biomass_BT_v2_reverse_877f4",
+ "atpm_bounds": [
+  8.43,
+  1000.0
+ ],
+ "table_S3": [
+  {
+   "condition": "Glucose",
+   "substrate": "glc__D",
+   "rate": 10,
+   "published": 0.24,
+   "rebuilt": 0.23691808866275307,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "Arabinan",
+   "substrate": "arabinan101",
+   "rate": 0.1179,
+   "published": 0.23,
+   "rebuilt": 0.2261156343187676,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "Dextran",
+   "substrate": "dextran40",
+   "rate": 0.125,
+   "published": 0.26,
+   "rebuilt": 0.25522423057765603,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "Levan",
+   "substrate": "levan1000",
+   "rate": 0.01,
+   "published": 0.24,
+   "rebuilt": 0.23691808866274963,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "Pullulan",
+   "substrate": "pullulan1200",
+   "rate": 0.00833,
+   "published": 0.25,
+   "rebuilt": 0.24898549741305792,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "Glycogen",
+   "substrate": "glycogen1500",
+   "rate": 0.0067,
+   "published": 0.25,
+   "rebuilt": 0.24776447774733476,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "Inulin",
+   "substrate": "inulin",
+   "rate": 0.33333,
+   "published": 0.24,
+   "rebuilt": 0.23691479355720432,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "Rhamnose (printed rate)",
+   "substrate": "rmn",
+   "rate": 12,
+   "published": 0.0012,
+   "rebuilt": 0.016002646303046427,
+   "rounds_to_published": false
+  },
+  {
+   "condition": "Rhamnose (rate 10)",
+   "substrate": "rmn",
+   "rate": 10,
+   "published": 0.0012,
+   "rebuilt": 0.001219601219402011,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "GlcNAc-Core 2 (printed rate)",
+   "substrate": "gncore2",
+   "rate": 2.7273,
+   "published": 0.14,
+   "rebuilt": 0.22665456806243048,
+   "rounds_to_published": false
+  },
+  {
+   "condition": "GlcNAc-Core 2 (60/C = 2)",
+   "substrate": "gncore2",
+   "rate": 2.0,
+   "published": 0.14,
+   "rebuilt": 0.14354500271280116,
+   "rounds_to_published": true
+  },
+  {
+   "condition": "Amylopectin as strch1",
+   "substrate": "strch1",
+   "rate": 0.91,
+   "published": 0.25,
+   "rebuilt": 0.24057931704572952,
+   "rounds_to_published": false
+  },
+  {
+   "condition": "Amylopectin as starch1200",
+   "substrate": "starch1200",
+   "rate": 0.00833,
+   "published": 0.25,
+   "rebuilt": 0.24898549741305667,
+   "rounds_to_published": true
+  }
+ ],
+ "glucose_growth_by_ATPM_lower_bound": {
+  "0.0": 0.32627402502469877,
+  "8.43": 0.23691808866273226,
+  "84.3": NaN
+ },
+ "rich_medium": {
+  "wt_growth": 86.94784638625445,
+  "essential_genes": 61,
+  "published": 61
+ }
+}

@@ -1,0 +1,24 @@
+{
+ "n_genes": 818,
+ "same_gene_set_as_saved": true,
+ "max_abs_diff_fitness_vs_saved": 0.0,
+ "strict_completion_added": [],
+ "strict_wt_grows": 0,
+ "strict_max_wt": 5.244131674958385e-16,
+ "exploratory_completion_added": [],
+ "exploratory_reproduction": {
+  "max_abs_diff_wt": 4.084510507595951e-13,
+  "max_abs_diff_sim": 2.5904278722066465e-12,
+  "binary_calls_differ": 0
+ },
+ "B12_only": {
+  "wt_grows": 24,
+  "wt_range": [
+   0.0012390023165732198,
+   0.007643506840944727
+  ],
+  "important_calls_exploratory": 2718,
+  "important_calls_B12_only": 2718,
+  "calls_changed": 0
+ }
+}

@@ -1,0 +1,678 @@
+{
+ "btheta_exploratory": [
+  {
+   "quantity": "iAH991 exploratory own MCC",
+   "reported": 0.4485042354800323,
+   "reproduced": 0.4485042354800323,
+   "match": true
+  },
+  {
+   "quantity": "coverage iAH991",
+   "reported": 24,
+   "reproduced": 24,
+   "match": true
+  },
+  {
+   "quantity": "coverage B0",
+   "reported": 14,
+   "reproduced": 14,
+   "match": true
+  },
+  {
+   "quantity": "coverage U'",
+   "reported": 14,
+   "reproduced": 14,
+   "match": true
+  },
+  {
+   "quantity": "coverage M",
+   "reported": 14,
+   "reproduced": 14,
+   "match": true
+  },
+  {
+   "quantity": "four-way union genes",
+   "reported": 958,
+   "reproduced": 958,
+   "match": true
+  },
+  {
+   "quantity": "four-way conditions",
+   "reported": 14,
+   "reproduced": 14,
+   "match": true
+  },
+  {
+   "quantity": "four-way observations",
+   "reported": 13412,
+   "reproduced": 13412,
+   "match": true
+  },
+  {
+   "quantity": "four-way MCC B0",
+   "reported": 0.49229495501987625,
+   "reproduced": 0.49229495501987625,
+   "match": true
+  },
+  {
+   "quantity": "four-way MCC U'",
+   "reported": 0.5042808778554904,
+   "reproduced": 0.5042808778554904,
+   "match": true
+  },
+  {
+   "quantity": "four-way MCC M",
+   "reported": 0.5569100174159979,
+   "reproduced": 0.5569100174159979,
+   "match": true
+  },
+  {
+   "quantity": "four-way MCC iAH991",
+   "reported": 0.44479155011839244,
+   "reproduced": 0.44479155011839244,
+   "match": true
+  },
+  {
+   "quantity": "common genes B0",
+   "reported": 367,
+   "reproduced": 367,
+   "match": true
+  },
+  {
+   "quantity": "common curated - B0",
+   "reported": 0.026955697689216962,
+   "reproduced": 0.026955697689216962,
+   "match": true
+  },
+  {
+   "quantity": "common curated - B0 ci95",
+   "reported": [
+    -0.0628034413,
+    0.1203385945
+   ],
+   "reproduced": [
+    -0.0628034413,
+    0.1203385945
+   ],
+   "match": true
+  },
+  {
+   "quantity": "union curated - B0",
+   "reported": -0.0475034049014838,
+   "reproduced": -0.0475034049014838,
+   "match": true
+  },
+  {
+   "quantity": "union curated - B0 ci95",
+   "reported": [
+    -0.1278195716,
+    0.0346237522
+   ],
+   "reproduced": [
+    -0.1278195716,
+    0.0346237522
+   ],
+   "match": true
+  },
+  {
+   "quantity": "common genes U'",
+   "reported": 367,
+   "reproduced": 367,
+   "match": true
+  },
+  {
+   "quantity": "common curated - U'",
+   "reported": 0.014358808267159628,
+   "reproduced": 0.014358808267159628,
+   "match": true
+  },
+  {
+   "quantity": "common curated - U' ci95",
+   "reported": [
+    -0.0708472804,
+    0.0969286967
+   ],
+   "reproduced": [
+    -0.0708472804,
+    0.0969286967
+   ],
+   "match": true
+  },
+  {
+   "quantity": "union curated - U'",
+   "reported": -0.05948932773709792,
+   "reproduced": -0.05948932773709792,
+   "match": true
+  },
+  {
+   "quantity": "union curated - U' ci95",
+   "reported": [
+    -0.1384497181,
+    0.0265197248
+   ],
+   "reproduced": [
+    -0.1384497181,
+    0.0265197248
+   ],
+   "match": true
+  },
+  {
+   "quantity": "common genes M",
+   "reported": 371,
+   "reproduced": 371,
+   "match": true
+  },
+  {
+   "quantity": "common curated - M",
+   "reported": -0.011828671900609322,
+   "reproduced": -0.011828671900609322,
+   "match": true
+  },
+  {
+   "quantity": "common curated - M ci95",
+   "reported": [
+    -0.0882424389,
+    0.0734567345
+   ],
+   "reproduced": [
+    -0.0882424389,
+    0.0734567345
+   ],
+   "match": true
+  },
+  {
+   "quantity": "union curated - M",
+   "reported": -0.11211846729760544,
+   "reproduced": -0.11211846729760544,
+   "match": true
+  },
+  {
+   "quantity": "union curated - M ci95",
+   "reported": [
+    -0.1880520804,
+    -0.0393740927
+   ],
+   "reproduced": [
+    -0.1880520804,
+    -0.0393740927
+   ],
+   "match": true
+  },
+  {
+   "quantity": "error overlap n_genes",
+   "reported": 367,
+   "reproduced": 367,
+   "match": true
+  },
+  {
+   "quantity": "error overlap n_conditions",
+   "reported": 14,
+   "reproduced": 14,
+   "match": true
+  },
+  {
+   "quantity": "error overlap n_observations",
+   "reported": 5138,
+   "reproduced": 5138,
+   "match": true
+  },
+  {
+   "quantity": "error overlap wrong_Uprime",
+   "reported": 711,
+   "reproduced": 711,
+   "match": true
+  },
+  {
+   "quantity": "error overlap wrong_curated",
+   "reported": 753,
+   "reproduced": 753,
+   "match": true
+  },
+  {
+   "quantity": "error overlap wrong_both",
+   "reported": 478,
+   "reproduced": 478,
+   "match": true
+  },
+  {
+   "quantity": "error overlap expected",
+   "reported": 104.20066173608409,
+   "reproduced": 104.20066173608409,
+   "match": true
+  },
+  {
+   "quantity": "curated-only n_genes",
+   "reported": 447,
+   "reproduced": 447,
+   "match": true
+  },
+  {
+   "quantity": "curated-only n_conditions",
+   "reported": 14,
+   "reproduced": 14,
+   "match": true
+  },
+  {
+   "quantity": "curated-only important_calls",
+   "reported": 568,
+   "reproduced": 568,
+   "match": true
+  },
+  {
+   "quantity": "curated-only important_calls_confirmed",
+   "reported": 30,
+   "reproduced": 30,
+   "match": true
+  }
+ ],
+ "all_match": true,
+ "rebuild_vs_pdf": {
+  "s10a_rows": 1488,
+  "s10a_rows_compared": 1487,
+  "problem_counts": {
+   "id_not_in_model": 0,
+   "formula_parse": 0,
+   "stoichiometry": 0,
+   "direction": 1,
+   "bounds": 2,
+   "gene_rule_parse": 0,
+   "gene_rule": 0,
+   "ambiguous_split": 6
+  }
+ },
+ "poppler_spot_check": {
+  "n": 30,
+  "formula_equal": 30,
+  "gene_rule_equal": 30
+ },
+ "rebuild_validation": {
+  "objective": "1.0*Biomass_BT_v2 - 1.0*Biomass_BT_v2_reverse_877f4",
+  "atpm_bounds": [
+   8.43,
+   1000.0
+  ],
+  "table_S3": [
+   {
+    "condition": "Glucose",
+    "substrate": "glc__D",
+    "rate": 10,
+    "published": 0.24,
+    "rebuilt": 0.23691808866275307,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "Arabinan",
+    "substrate": "arabinan101",
+    "rate": 0.1179,
+    "published": 0.23,
+    "rebuilt": 0.2261156343187676,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "Dextran",
+    "substrate": "dextran40",
+    "rate": 0.125,
+    "published": 0.26,
+    "rebuilt": 0.25522423057765603,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "Levan",
+    "substrate": "levan1000",
+    "rate": 0.01,
+    "published": 0.24,
+    "rebuilt": 0.23691808866274963,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "Pullulan",
+    "substrate": "pullulan1200",
+    "rate": 0.00833,
+    "published": 0.25,
+    "rebuilt": 0.24898549741305792,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "Glycogen",
+    "substrate": "glycogen1500",
+    "rate": 0.0067,
+    "published": 0.25,
+    "rebuilt": 0.24776447774733476,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "Inulin",
+    "substrate": "inulin",
+    "rate": 0.33333,
+    "published": 0.24,
+    "rebuilt": 0.23691479355720432,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "Rhamnose (printed rate)",
+    "substrate": "rmn",
+    "rate": 12,
+    "published": 0.0012,
+    "rebuilt": 0.016002646303046427,
+    "rounds_to_published": false
+   },
+   {
+    "condition": "Rhamnose (rate 10)",
+    "substrate": "rmn",
+    "rate": 10,
+    "published": 0.0012,
+    "rebuilt": 0.001219601219402011,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "GlcNAc-Core 2 (printed rate)",
+    "substrate": "gncore2",
+    "rate": 2.7273,
+    "published": 0.14,
+    "rebuilt": 0.22665456806243048,
+    "rounds_to_published": false
+   },
+   {
+    "condition": "GlcNAc-Core 2 (60/C = 2)",
+    "substrate": "gncore2",
+    "rate": 2.0,
+    "published": 0.14,
+    "rebuilt": 0.14354500271280116,
+    "rounds_to_published": true
+   },
+   {
+    "condition": "Amylopectin as strch1",
+    "substrate": "strch1",
+    "rate": 0.91,
+    "published": 0.25,
+    "rebuilt": 0.24057931704572952,
+    "rounds_to_published": false
+   },
+   {
+    "condition": "Amylopectin as starch1200",
+    "substrate": "starch1200",
+    "rate": 0.00833,
+    "published": 0.25,
+    "rebuilt": 0.24898549741305667,
+    "rounds_to_published": true
+   }
+  ],
+  "glucose_growth_by_ATPM_lower_bound": {
+   "0.0": 0.32627402502469877,
+   "8.43": 0.23691808866273226,
+   "84.3": NaN
+  },
+  "rich_medium": {
+   "wt_growth": 86.94784638625445,
+   "essential_genes": 61,
+   "published": 61
+  }
+ },
+ "iah991_growth": {
+  "medium_completion_added_with_supplement": [],
+  "biomass_adocbl_coefficient": -0.004668,
+  "growth_cap_from_B12_at_0.001": 0.21422450728363324,
+  "cobalamin_exchanges": [
+   "EX_adocbl_e",
+   "EX_cbl1_e"
+  ],
+  "max_adocbl_without_cobalamin_uptake": 0.0,
+  "max_adocbl_with_cbl1": 1000.0,
+  "sulfur_boundaries_closed_for_sulfate_test": [
+   "DM_AMOB",
+   "EX_acgalidour2s_e",
+   "EX_btn_e",
+   "EX_cgly_e",
+   "EX_cspg_a_e",
+   "EX_cspg_a_degr_e",
+   "EX_cspg_ab_rest_e",
+   "EX_cspg_b_e",
+   "EX_cspg_b_degr_e",
+   "EX_cspg_c_e",
+   "EX_cspg_c_degr_e",
+   "EX_cspg_c_rest_e",
+   "EX_cys__L_e",
+   "EX_gam26s_e",
+   "EX_glymet_e",
+   "EX_h2s_e",
+   "EX_hspg_e",
+   "EX_hspg_degr_1_e",
+   "EX_hspg_degr_10_e",
+   "EX_hspg_degr_2_e",
+   "EX_hspg_degr_3_e",
+   "EX_hspg_degr_4_e",
+   "EX_hspg_degr_5_e",
+   "EX_hspg_degr_7_e",
+   "EX_hspg_degr_8_e",
+   "EX_hspg_degr_9_e",
+   "EX_met__L_e",
+   "EX_metala_e",
+   "EX_taur_e",
+   "EX_tchola_e",
+   "EX_thm_e",
+   "sink_chols",
+   "sink_s"
+  ],
+  "max_cysteine_from_sulfate_only": 0.0,
+  "max_cysteine_with_h2s": 1000.0000000000002,
+  "max_cysteine_from_methionine_only": 0.0,
+  "growth_on_glucose": {
+   "strict protocol": 0.0,
+   "+ B12 only (cbl1 -0.001)": 0.007643506840938625,
+   "+ sulfide only (h2s -1000)": 3.0814181294326586e-16,
+   "+ B12 and sulfide (exploratory)": 0.21422450728363324,
+   "+ B12 (-0.001), cysteine uncapped (-10)": 0.21422450728363135,
+   "+ B12 (-0.001), methionine uncapped (-10)": 0.009710246251844867,
+   "+ B12 uncapped (-10), sulfide": 0.21422450728363407,
+   "exploratory, no carbon source": 0.0,
+   "exploratory, no carbon source, sinks closed": 0.0,
+   "exploratory + glucose, sinks closed": -1.969649749711964e-29,
+   "exploratory + glucose, sink_s closed": 0.0,
+   "exploratory + glucose, sink_chols closed": -5.797135421710834e-29,
+   "exploratory, no carbon, B12 and sulfide uncapped": 0.0
+  },
+  "exploratory_glucose_fluxes": {
+   "sink_chols": -0.0009999999999999838,
+   "sink_s": -0.0009999999999999838,
+   "DM_4HBA": 0.000999999999999984,
+   "DM_5DRIB": 0.0009999999999999835,
+   "DM_AMOB": 0.0009999999999999838,
+   "EX_cbl1_e": -0.0009999999999999838,
+   "EX_h2s_e": -0.05405398457581541,
+   "EX_cys__L_e": -0.001,
+   "EX_met__L_e": -0.001,
+   "EX_glc__D_e": -10.0,
+   "Biomass_BT_v2": 0.21422450728362974
+  },
+  "chol_c_reactions": [
+   "GPDDA1: g3pc_c + h2o_c --> chol_c + glyc3p_c + h_c (0.0, 1000.0)",
+   "CHOLK: atp_c + chol_c --> adp_c + cholp_c + h_c (0.0, 1000.0)",
+   "CHOLSH: chols_c + h2o_c --> chol_c + h_c + so4_c (0.0, 1000.0)"
+  ],
+  "n_conditions_B12_limited": 0
+ },
+ "iah991_rescore": {
+  "n_genes": 818,
+  "same_gene_set_as_saved": true,
+  "max_abs_diff_fitness_vs_saved": 0.0,
+  "strict_completion_added": [],
+  "strict_wt_grows": 0,
+  "strict_max_wt": 5.244131674958385e-16,
+  "exploratory_completion_added": [],
+  "exploratory_reproduction": {
+   "max_abs_diff_wt": 4.084510507595951e-13,
+   "max_abs_diff_sim": 2.5904278722066465e-12,
+   "binary_calls_differ": 0
+  },
+  "B12_only": {
+   "wt_grows": 24,
+   "wt_range": [
+    0.0012390023165732198,
+    0.007643506840944727
+   ],
+   "important_calls_exploratory": 2718,
+   "important_calls_B12_only": 2718,
+   "calls_changed": 0
+  }
+ },
+ "drafts_supplemented": {
+  "B0": {
+   "arm": "B0",
+   "n_genes": 507,
+   "max_abs_diff_fitness_vs_saved": 0.0,
+   "completion_added_strict": [
+    "EX_cys__L_e",
+    "EX_met__L_e",
+    "EX_na1_e",
+    "EX_ni2_e"
+   ],
+   "reproduction": {
+    "max_abs_diff_wt": 1.4342243902113003e-09,
+    "max_abs_diff_sim": 5.198567162494927e-08,
+    "binary_calls_differ": 0,
+    "wt_grows_differ": 0
+   },
+   "completion_added_supplemented": [
+    "EX_cys__L_e",
+    "EX_met__L_e",
+    "EX_na1_e",
+    "EX_ni2_e"
+   ],
+   "supplemented": {
+    "wt_grows": 14,
+    "wt_grows_strict": 14,
+    "conditions_gained": [],
+    "conditions_lost": [],
+    "calls_changed_in_conditions_both_grow": 0,
+    "genes_with_changed_calls": [],
+    "to_not_important": 0,
+    "to_important": 0
+   }
+  },
+  "UNQ": {
+   "arm": "UNQ",
+   "n_genes": 507,
+   "max_abs_diff_fitness_vs_saved": 0.0,
+   "completion_added_strict": [
+    "EX_cys__L_e",
+    "EX_met__L_e",
+    "EX_na1_e",
+    "EX_ni2_e"
+   ],
+   "reproduction": {
+    "max_abs_diff_wt": 3.366683795604701e-09,
+    "max_abs_diff_sim": 6.9528527252971225e-09,
+    "binary_calls_differ": 0,
+    "wt_grows_differ": 0
+   },
+   "completion_added_supplemented": [
+    "EX_cys__L_e",
+    "EX_met__L_e",
+    "EX_na1_e",
+    "EX_ni2_e"
+   ],
+   "supplemented": {
+    "wt_grows": 14,
+    "wt_grows_strict": 14,
+    "conditions_gained": [],
+    "conditions_lost": [],
+    "calls_changed_in_conditions_both_grow": 0,
+    "genes_with_changed_calls": [],
+    "to_not_important": 0,
+    "to_important": 0
+   }
+  },
+  "M": {
+   "arm": "M",
+   "n_genes": 511,
+   "max_abs_diff_fitness_vs_saved": 0.0,
+   "completion_added_strict": [
+    "EX_cys__L_e",
+    "EX_met__L_e",
+    "EX_na1_e",
+    "EX_ni2_e"
+   ],
+   "reproduction": {
+    "max_abs_diff_wt": 3.366683795604701e-09,
+    "max_abs_diff_sim": 1.5770513539784448e-09,
+    "binary_calls_differ": 0,
+    "wt_grows_differ": 0
+   },
+   "completion_added_supplemented": [
+    "EX_cys__L_e",
+    "EX_met__L_e",
+    "EX_na1_e",
+    "EX_ni2_e"
+   ],
+   "supplemented": {
+    "wt_grows": 14,
+    "wt_grows_strict": 14,
+    "conditions_gained": [],
+    "conditions_lost": [],
+    "calls_changed_in_conditions_both_grow": 0,
+    "genes_with_changed_calls": [],
+    "to_not_important": 0,
+    "to_important": 0
+   }
+  }
+ },
+ "call_agreement": {
+  "P. putida (iJN1463)": {
+   "genes": 764,
+   "conditions": 28,
+   "cells": 21392,
+   "agreement": 0.9390893792071803,
+   "cohen_kappa": 0.5735212233726328,
+   "important_Uprime": 1172,
+   "important_curated": 2115,
+   "important_both": 992,
+   "jaccard_important": 0.43224400871459695,
+   "observed_important": 1710,
+   "shared_errors": 710,
+   "shared_missed_important": 416,
+   "shared_false_important": 294,
+   "Uprime_errors": 1190,
+   "curated_errors": 1533,
+   "expected_shared_if_independent": 85.27814136125654,
+   "share_of_Uprime_errors_shared": 0.5966386554621849
+  },
+  "S. oneidensis (iSO783)": {
+   "genes": 440,
+   "conditions": 8,
+   "cells": 3520,
+   "agreement": 0.8988636363636363,
+   "cohen_kappa": 0.6167113742930638,
+   "important_Uprime": 455,
+   "important_curated": 639,
+   "important_both": 369,
+   "jaccard_important": 0.5089655172413793,
+   "observed_important": 843,
+   "shared_errors": 383,
+   "shared_missed_important": 359,
+   "shared_false_important": 24,
+   "Uprime_errors": 580,
+   "curated_errors": 542,
+   "expected_shared_if_independent": 89.30681818181819,
+   "share_of_Uprime_errors_shared": 0.6603448275862069
+  },
+  "B. thetaiotaomicron (iAH991, exploratory)": {
+   "genes": 367,
+   "conditions": 14,
+   "cells": 5138,
+   "agreement": 0.9011288439081354,
+   "cohen_kappa": 0.6587564954616422,
+   "important_Uprime": 799,
+   "important_curated": 1001,
+   "important_both": 646,
+   "jaccard_important": 0.5597920277296361,
+   "observed_important": 908,
+   "shared_errors": 478,
+   "shared_missed_important": 303,
+   "shared_false_important": 175,
+   "Uprime_errors": 711,
+   "curated_errors": 753,
+   "expected_shared_if_independent": 104.20066173608409,
+   "share_of_Uprime_errors_shared": 0.6722925457102672
+  }
+ }
+}

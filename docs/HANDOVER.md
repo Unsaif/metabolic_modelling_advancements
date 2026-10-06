@@ -1,5 +1,15 @@
 # Handover — "Metabolic modelling improvements" (Tim Hulshof / Claude sessions), 6 September 2026
 
+> **Paper 1: hand-curated models of three more organisms, 6 October 2026 (Claude Opus 5.5).** Tim asked for the curated models outside BiGG to be scored before his colleague reads Paper 1.
+> - **Plan and models.** The plan was committed before scoring (`docs/studies/transfer-v1-curated-references-plan.md`, commit 260b92f); the deviations are in `transfer-v1-curated-references-deviations.md`. The models are in `models/curated/` (README gives sources and checksums). They were downloaded through Tim's browser pane, because the cloud workspace cannot reach the publishers.
+> - **Pipeline.** `scripts/translate_curated_model.py` relabels identifiers to BiGG; `scripts/rebuild_iAH991_from_pdf.py` rebuilds iAH991 from the supplement PDF Tim supplied, since no public model file was found; `score_reference_model.py` gained `--gene-normalize` and an exploratory `--medium-supplement`.
+> - **iSO783 (*S. oneidensis*).** Scored. On shared genes, curated − U′ = +0.051 [−0.028, 0.125]; coverage 9 vs 9 of 12.
+> - **iGD1575 (*S. meliloti*).** Fails the energy gate (ATP from nothing; `results/transfer_v1/reference_models/Smeli/iGD1575/GATE_FAILURE.md`). Not scored.
+> - **iAH991 (*B. thetaiotaomicron*).** Grows in 0 of 25 conditions under the protocol, because its biomass requires B12, which the medium lacks. With B12 at the trace rate (exploratory) it grows in 24 vs 14 for the drafts, and curated − U′ = +0.014 [−0.073, 0.102].
+> - **Reading across three organisms.** There is no clear shared-gene difference between corrected drafts and curated models. 60–67% of the corrected drafts' wrong calls are shared, 4–8× chance. The curated models grow in at least as many conditions (iAH991 once given B12).
+> - **Checks.** Two independent checks (`results/transfer_v1/reference_models/independent_check_curated/`, with `second_check/`) found, among other things, gene-map gaps in iSO783 and iAH991. All were fixed; superseded runs are kept in `results/transfer_v1/reference_models/superseded/`.
+> - **Paper 1.** The doc is at revision 71, with the repository copy re-exported. Open for Tim: ask the lab for the original iAH991 file, which would confirm the rebuild.
+
 > **Papers and IEM v0.4, 5–6 October 2026 (Claude Opus 5.5):** Tim agreed two directions (roadmap D23). Both papers are drafted; the decisions left are Tim's (journal, authors, AI statement, and how to raise the `runIEM_HH` points with the lab).
 > - **Paper 1** (benchmark/transfer) is drafted as a Claude Doc (https://claude.ai/code/artifact/58c661c0-bff9-419c-a2e4-bbf1a6e4b3c3; repository copy `docs/paper/paper1-draft.md`), reviewed by a separate agent and revised.
 > - **Paper 2** (open whole-body IEM simulation and robustness) is drafted as a Claude Doc (https://claude.ai/code/artifact/11c54dd2-869a-43a5-af19-9aed235e9eea; repository copy `docs/paper/paper2-draft.md`). The doc is the working copy.

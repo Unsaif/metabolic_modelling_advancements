@@ -1,6 +1,6 @@
 # Benchmark card — carbon-source fitness benchmark (Fitness Browser RB-TnSeq), organism Btheta
 
-Created: 2026-10-06T13:12:05Z
+Created: 2026-10-06T12:18:11Z
 
 ## Model
 
@@ -29,7 +29,7 @@ Created: 2026-10-06T13:12:05Z
 - params: {"carbon_uptake": -10.0, "growth_threshold": 0.001, "fitness_threshold": -2.0, "drop_rich_medium_essentials": false, "rich_medium_uptake": -1000.0, "knockout_genes": [], "processes": 2, "solver": "glpk", "max_conditions": null, "complete_medium_transport": true, "medium_completion_exclude": ["pnto__R", "fol", "hco3"], "genes_subset": null}
 - media_mapping: data/reference/fitness_browser_media_bigg.tsv
 - carbon_source_mapping: data/reference/fitness_browser_carbon_sources_bigg.tsv
-- gene_mapping: {"method": "identity, else the locus tag without its underscore (BT_0554 -> BT0554; the Fitness Browser lists a few B. thetaiotaomicron loci with the underscore, e.g. BT_0823)"}
+- gene_mapping: {"method": "locus tag with the underscore removed (BT_0554 -> BT0554 = Fitness Browser sysName)"}
 - role: development
 - medium_supplement: {}
 - exploratory: false
@@ -46,9 +46,9 @@ Created: 2026-10-06T13:12:05Z
 
 - condition_level: {"n_conditions_mapped": 25, "n_conditions_wt_grows": 0, "conditions_with_absent_exchange": 1}
 - gene_level_conditions_where_wt_grows: {"n_genes": 0, "n_conditions": 0, "n_gene_condition_pairs": 0, "n_missing_fitness": 0, "n_nonfinite_simulation": 0}
-- gene_map: {"model_genes": 991, "mapped": 991, "mapped_with_fitness_data": 820}
-- counts: {"model_genes": 991, "model_genes_mapped": 991, "genes_with_fitness": 820, "genes_after_adjustment": 820, "conditions_total": 47, "conditions_mapped": 25, "conditions_wt_grows": 0, "medium_completion_exchanges_added": 0}
-- timings_s: {"rich_medium_essentials_s": 2.86102294921875e-06, "knockout_simulation_s": 0.45789551734924316, "total_s": 1.0147814750671387}
+- gene_map: {"model_genes": 991, "mapped": 986, "mapped_with_fitness_data": 818}
+- counts: {"model_genes": 991, "model_genes_mapped": 986, "genes_with_fitness": 818, "genes_after_adjustment": 818, "conditions_total": 47, "conditions_mapped": 25, "conditions_wt_grows": 0, "medium_completion_exchanges_added": 0}
+- timings_s: {"rich_medium_essentials_s": 2.384185791015625e-06, "knockout_simulation_s": 0.41486525535583496, "total_s": 0.9061815738677979}
 
 ## Software
 

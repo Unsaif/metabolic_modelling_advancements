@@ -1,0 +1,263 @@
+{
+ "s10a_rows": 1488,
+ "s10b_rows": 988,
+ "s12_rows": 1502,
+ "model_counts": {
+  "reactions": 1488,
+  "metabolites": 1152,
+  "genes": 991
+ },
+ "metabolites": {
+  "s10b_ids": 988,
+  "model_bases": 987,
+  "model_bases_without_s10b_id": [],
+  "s10b_ids_unused_by_model": [
+   "pectin"
+  ],
+  "s10b_ids_with_plus": [],
+  "non_injective": {}
+ },
+ "s10a_rows_compared": 1487,
+ "model_reactions_without_s10a_row": [
+  "Biomass_BT_v2"
+ ],
+ "problems": {
+  "id_not_in_model": [],
+  "formula_parse": [],
+  "stoichiometry": [],
+  "direction": [
+   {
+    "where": "p.144 row 3",
+    "id": "FORt",
+    "arrow": "<=>",
+    "rev_cell": "1",
+    "model_bounds": [
+     0.0,
+     1000.0
+    ]
+   }
+  ],
+  "bounds": [
+   {
+    "where": "p.84 row 2",
+    "id": "ARAI",
+    "pdf": [
+     "-1.000",
+     "1000"
+    ],
+    "model": [
+     -1000.0,
+     1000.0
+    ]
+   },
+   {
+    "where": "p.88 row 2",
+    "id": "ATPM",
+    "pdf": [
+     "84.300",
+     "1000"
+    ],
+    "model": [
+     8.43,
+     1000.0
+    ]
+   }
+  ],
+  "gene_rule_parse": [],
+  "gene_rule": [],
+  "ambiguous_split": [
+   {
+    "where": "p.36 row 4",
+    "id": "23PDE2",
+    "ambiguities": [
+     {
+      "term": "3ump[c]",
+      "readings": [
+       [
+        "",
+        "3ump"
+       ],
+       [
+        "3",
+        "ump"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "where": "p.36 row 5",
+    "id": "23PDE4",
+    "ambiguities": [
+     {
+      "term": "3cmp[c]",
+      "readings": [
+       [
+        "",
+        "3cmp"
+       ],
+       [
+        "3",
+        "cmp"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "where": "p.36 row 6",
+    "id": "23PDE7",
+    "ambiguities": [
+     {
+      "term": "3amp[c]",
+      "readings": [
+       [
+        "",
+        "3amp"
+       ],
+       [
+        "3",
+        "amp"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "where": "p.36 row 7",
+    "id": "23PDE9",
+    "ambiguities": [
+     {
+      "term": "3gmp[c]",
+      "readings": [
+       [
+        "",
+        "3gmp"
+       ],
+       [
+        "3",
+        "gmp"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "where": "p.61 row 3",
+    "id": "5DOAN",
+    "ambiguities": [
+     {
+      "term": "5drib[c]",
+      "readings": [
+       [
+        "",
+        "5drib"
+       ],
+       [
+        "5",
+        "drib"
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "where": "p.114 row 6",
+    "id": "DM_5DRIB",
+    "ambiguities": [
+     {
+      "term": "5drib[c]",
+      "readings": [
+       [
+        "",
+        "5drib"
+       ],
+       [
+        "5",
+        "drib"
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "problem_counts": {
+  "id_not_in_model": 0,
+  "formula_parse": 0,
+  "stoichiometry": 0,
+  "direction": 1,
+  "bounds": 2,
+  "gene_rule_parse": 0,
+  "gene_rule": 0,
+  "ambiguous_split": 6
+ },
+ "biomass": {
+  "s10a_row": {
+   "where": "p.89 row 1",
+   "visible_formula": "34.7965h2o[c]+0.25601glu-L[c]+0.50006ala-L[c]+0.004668ACP[c]+0.004668coa[c]+0.004668nadp[c]+0.004668nad[c]+0.004668na1[c]+40.1701atp[c]+0.004668adocbl[c]+0.23468asp-L[c]+0.2091gtp[c]+0.00466810fthf[c]+0.004668thf[c]+0.25601gln-L[c]+0.5958gly[c]+0.092623his-L[c]+0.43866leu-L[c]+0.24665thr-L[c]+0.004668amet[c]+0.004668mql8[c]+0.004668mql10[c]+0.004668mql11[c]+0.004668mql7[c]+0.004668mql9[c]+0.08898cys-L[c]+0.21543pro-L[c]+0.28828arg-L[c]+0.18056phe-L[c]+0.23468asn-L[c]+0.004668btn[c]+0.14934met-L[c]+0.004668ca2[c]+0.12988ctp[c]+0.010648pg140[c]+0.010648clpn140[c]+0.010648pg160[c]+",
+   "open_bottom": true
+  },
+  "model_reaction": "Biomass_BT_v2",
+  "model_n_metabolites": 97,
+  "model_bounds": [
+   0.0,
+   1000.0
+  ],
+  "model_gene_rule": "",
+  "s12": {
+   "page": 475,
+   "lb_ub": [
+    "0",
+    "1000"
+   ],
+   "gpr": "",
+   "arrow": "->",
+   "parse_errors": [],
+   "n_terms": 97,
+   "equal_to_model": true
+  },
+  "s10a_visible_terms_checked": 36,
+  "s10a_visible_terms_disagreeing": []
+ },
+ "s12_vs_model": {
+  "compared": 1213,
+  "stoichiometry": {
+   "n": 0,
+   "items": []
+  },
+  "bounds": {
+   "n": 0,
+   "items": []
+  },
+  "not_in_model": {
+   "n": 270,
+   "items": [
+    "BT12ethd[u]tr",
+    "BT12ppd-R[u]tr",
+    "BT12ppd-S[u]tr",
+    "BT2fuclac[u]tr",
+    "BTh2o[u]tr",
+    "BTfuc-L[u]tr",
+    "BTlcts[u]tr",
+    "BT3fuclac[u]tr",
+    "BT7ocholate[u]tr",
+    "BTna1[u]tr",
+    "BTacetol[u]tr",
+    "BTh[u]tr",
+    "BTacgal[u]tr",
+    "BTacgam[u]tr",
+    "BTacnam[u]tr",
+    "BTac[u]tr",
+    "BTadn[u]tr",
+    "BTadocbl[u]tr",
+    "BTs2l2n2m2m[u]tr",
+    "BTs2l2n2m2mn[u]tr"
+   ]
+  },
+  "parse": {
+   "n": 0,
+   "items": []
+  }
+ }
+}

@@ -59,6 +59,8 @@ GENE_NORMALIZE = {
     "remove_underscore": (lambda g: g.replace("_", ""), "locus tag with the underscore removed (BT_0554 -> BT0554 = Fitness Browser sysName)"),
     "identity_then_underscore": (None, "identity, else the same locus tag with an underscore after the letter prefix "
                                  "(SO0419 -> SO_0419: the Fitness Browser lists a few MR-1 loci in the RefSeq form)"),
+    "identity_then_no_underscore": (None, "identity, else the locus tag without its underscore (BT_0554 -> BT0554; the Fitness "
+                                    "Browser lists a few B. thetaiotaomicron loci with the underscore, e.g. BT_0823)"),
     "sm_prefix": (lambda g: ("SM_b" + g[3:]) if g[:3].lower() == "smb" else ("SM" + g[2:]) if g[:2].lower() == "sm" else g,
                   "S. meliloti locus tag in the Fitness Browser's form (smc04029 -> SMc04029, sma2091 -> SMa2091, smb21184 -> SM_b21184)"),
 }
@@ -68,6 +70,8 @@ def identity_gene_map(org, model, sysnames, normalize="identity"):
     fn, how = GENE_NORMALIZE[normalize]
     if normalize == "identity_then_underscore":
         fn = lambda g: g if g in sysnames else re.sub(r"^([A-Za-z]+)(\d)", r"\1_\2", g)  # noqa: E731
+    elif normalize == "identity_then_no_underscore":
+        fn = lambda g: g if g in sysnames else g.replace("_", "")  # noqa: E731
     ids = [g.id for g in model.genes]
     mp = {g: fn(g) for g in ids if fn(g) in sysnames}
     return GeneMap(org_id=org, model_to_browser=mp, unmapped_model_genes=[g for g in ids if g not in mp],

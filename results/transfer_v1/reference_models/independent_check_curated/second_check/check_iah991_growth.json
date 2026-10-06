@@ -1,0 +1,310 @@
+{
+ "medium_completion_added_with_supplement": [],
+ "biomass_adocbl_coefficient": -0.004668,
+ "growth_cap_from_B12_at_0.001": 0.21422450728363324,
+ "cobalamin_exchanges": [
+  "EX_adocbl_e",
+  "EX_cbl1_e"
+ ],
+ "max_adocbl_without_cobalamin_uptake": 0.0,
+ "max_adocbl_with_cbl1": 1000.0,
+ "sulfur_boundaries_closed_for_sulfate_test": [
+  "DM_AMOB",
+  "EX_acgalidour2s_e",
+  "EX_btn_e",
+  "EX_cgly_e",
+  "EX_cspg_a_e",
+  "EX_cspg_a_degr_e",
+  "EX_cspg_ab_rest_e",
+  "EX_cspg_b_e",
+  "EX_cspg_b_degr_e",
+  "EX_cspg_c_e",
+  "EX_cspg_c_degr_e",
+  "EX_cspg_c_rest_e",
+  "EX_cys__L_e",
+  "EX_gam26s_e",
+  "EX_glymet_e",
+  "EX_h2s_e",
+  "EX_hspg_e",
+  "EX_hspg_degr_1_e",
+  "EX_hspg_degr_10_e",
+  "EX_hspg_degr_2_e",
+  "EX_hspg_degr_3_e",
+  "EX_hspg_degr_4_e",
+  "EX_hspg_degr_5_e",
+  "EX_hspg_degr_7_e",
+  "EX_hspg_degr_8_e",
+  "EX_hspg_degr_9_e",
+  "EX_met__L_e",
+  "EX_metala_e",
+  "EX_taur_e",
+  "EX_tchola_e",
+  "EX_thm_e",
+  "sink_chols",
+  "sink_s"
+ ],
+ "max_cysteine_from_sulfate_only": 0.0,
+ "max_cysteine_with_h2s": 1000.0000000000002,
+ "max_cysteine_from_methionine_only": 0.0,
+ "growth_on_glucose": {
+  "strict protocol": 0.0,
+  "+ B12 only (cbl1 -0.001)": 0.007643506840938625,
+  "+ sulfide only (h2s -1000)": 3.0814181294326586e-16,
+  "+ B12 and sulfide (exploratory)": 0.21422450728363324,
+  "+ B12 (-0.001), cysteine uncapped (-10)": 0.21422450728363135,
+  "+ B12 (-0.001), methionine uncapped (-10)": 0.009710246251844867,
+  "+ B12 uncapped (-10), sulfide": 0.21422450728363407,
+  "exploratory, no carbon source": 0.0,
+  "exploratory, no carbon source, sinks closed": 0.0,
+  "exploratory + glucose, sinks closed": -1.969649749711964e-29,
+  "exploratory + glucose, sink_s closed": 0.0,
+  "exploratory + glucose, sink_chols closed": -5.797135421710834e-29,
+  "exploratory, no carbon, B12 and sulfide uncapped": 0.0
+ },
+ "exploratory_glucose_fluxes": {
+  "sink_chols": -0.0009999999999999838,
+  "sink_s": -0.0009999999999999838,
+  "DM_4HBA": 0.000999999999999984,
+  "DM_5DRIB": 0.0009999999999999835,
+  "DM_AMOB": 0.0009999999999999838,
+  "EX_cbl1_e": -0.0009999999999999838,
+  "EX_h2s_e": -0.05405398457581541,
+  "EX_cys__L_e": -0.001,
+  "EX_met__L_e": -0.001,
+  "EX_glc__D_e": -10.0,
+  "Biomass_BT_v2": 0.21422450728362974
+ },
+ "chol_c_reactions": [
+  "GPDDA1: g3pc_c + h2o_c --> chol_c + glyc3p_c + h_c (0.0, 1000.0)",
+  "CHOLK: atp_c + chol_c --> adp_c + cholp_c + h_c (0.0, 1000.0)",
+  "CHOLSH: chols_c + h2o_c --> chol_c + h_c + so4_c (0.0, 1000.0)"
+ ],
+ "conditions": [
+  {
+   "condition": "Maltotetraose",
+   "bigg_ids": [
+    "maltttr"
+   ],
+   "exploratory": 0.2142245072836332,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "Maltohexaose",
+   "bigg_ids": [
+    "malthx"
+   ],
+   "exploratory": 0.2142245072836332,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "Laminaribiose",
+   "bigg_ids": [
+    "lmn2"
+   ],
+   "exploratory": 0.2142245072836332,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "Stachyose - 70%",
+   "bigg_ids": [
+    "stys"
+   ],
+   "exploratory": 0.2142245072836327,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "Melibiose",
+   "bigg_ids": [
+    "melib"
+   ],
+   "exploratory": 0.21422450728363104,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Glucose",
+   "bigg_ids": [
+    "glc__D"
+   ],
+   "exploratory": 0.21422450728363124,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Trehalose dihydrate",
+   "bigg_ids": [
+    "tre"
+   ],
+   "exploratory": 0.2142245072836332,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Arabinose",
+   "bigg_ids": [
+    "arab__D"
+   ],
+   "exploratory": 0.0,
+   "B12_uncapped": 0.0,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Raffinose pentahydrate",
+   "bigg_ids": [
+    "raffin"
+   ],
+   "exploratory": 0.21422450728363693,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "L-Fucose",
+   "bigg_ids": [
+    "fuc__L"
+   ],
+   "exploratory": 0.0012421182654409624,
+   "B12_uncapped": 0.0012421182654394083,
+   "B12_limited": false
+  },
+  {
+   "condition": "Beta-Lactose",
+   "bigg_ids": [
+    "lcts"
+   ],
+   "exploratory": 0.214224507283634,
+   "B12_uncapped": 0.21422450728363304,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Fructose",
+   "bigg_ids": [
+    "fru"
+   ],
+   "exploratory": 0.21422450728363637,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Maltose monohydrate",
+   "bigg_ids": [
+    "malt"
+   ],
+   "exploratory": 0.2142245072836332,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "L-Rhamnose monohydrate",
+   "bigg_ids": [
+    "rmn"
+   ],
+   "exploratory": 0.0012390023165726061,
+   "B12_uncapped": 0.001239002316573925,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Mannose",
+   "bigg_ids": [
+    "man"
+   ],
+   "exploratory": 0.16376125372820174,
+   "B12_uncapped": 0.16376125372819395,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Xylose",
+   "bigg_ids": [
+    "xyl__D"
+   ],
+   "exploratory": 0.17596534833813887,
+   "B12_uncapped": 0.17596534833814026,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Galacturonic Acid monohydrate",
+   "bigg_ids": [
+    "galur"
+   ],
+   "exploratory": 0.14134555961259107,
+   "B12_uncapped": 0.14134555961258963,
+   "B12_limited": false
+  },
+  {
+   "condition": "N-Acetyl-D-Glucosamine",
+   "bigg_ids": [
+    "acgam"
+   ],
+   "exploratory": 0.1839500137784377,
+   "B12_uncapped": 0.18395001377844458,
+   "B12_limited": false
+  },
+  {
+   "condition": "L-Arabinose",
+   "bigg_ids": [
+    "arab__L"
+   ],
+   "exploratory": 0.17596534833813923,
+   "B12_uncapped": 0.17596534833813912,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Galactose",
+   "bigg_ids": [
+    "gal"
+   ],
+   "exploratory": 0.2142245072836319,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Glucosamine Hydrochloride",
+   "bigg_ids": [
+    "gam"
+   ],
+   "exploratory": 0.2142245072836324,
+   "B12_uncapped": 0.21422450728363182,
+   "B12_limited": false
+  },
+  {
+   "condition": "D-Ribose",
+   "bigg_ids": [
+    "rib__D"
+   ],
+   "exploratory": 0.1759653483381521,
+   "B12_uncapped": 0.17596534833813887,
+   "B12_limited": false
+  },
+  {
+   "condition": "Red Arabinan from sugar-beet",
+   "bigg_ids": [
+    "araban__L"
+   ],
+   "exploratory": 0.21422450728363018,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "Amylose from potato",
+   "bigg_ids": [
+    "amylose300"
+   ],
+   "exploratory": 0.2142245072836332,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  },
+  {
+   "condition": "Starch",
+   "bigg_ids": [
+    "starch1200"
+   ],
+   "exploratory": 0.2142245072836332,
+   "B12_uncapped": 0.2142245072836332,
+   "B12_limited": false
+  }
+ ],
+ "n_conditions_B12_limited": 0
+}
