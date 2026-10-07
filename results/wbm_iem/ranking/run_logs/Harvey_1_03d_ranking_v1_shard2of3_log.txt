@@ -1,0 +1,67 @@
+
+=== start 2026-10-06 19:37:29: /opt/homebrew/opt/python@3.14/bin/python3.14 /Users/timhulshof/Documents/metabolic_modelling_advancements/scripts/run_wbm_iem_cross.py Harvey_1_03d --backend gurobi --order readout --warm concurrent --context protocol --extra-readouts data/iem/iem_ranking_extra_readouts_v0.2.txt --recheck-every 100 --out-suffix _ranking_v1 --check-against results/wbm_iem/Harvey_1_03d_iem_results_v0.3.json --quiet --shard 2/3 --threads 3
+== Harvey_1_03d Gurobi 13.0.1 warm=concurrent context=protocol order=readout: 62 readouts; bounds 693af5c9bdda; 57 IEMs to run; setup 5s
+  readout 1/62 DM_hista[bc]: 117 solves 1062s; warm median 8.89s max 19.9s; fallbacks 0
+  readout 2/62 DM_his_L[bc]: 115 solves 1074s; warm median 9.02s max 23.4s; fallbacks 0
+  readout 3/62 EX_argsuc[u]: 117 solves 927s; warm median 7.88s max 16.3s; fallbacks 0
+  readout 4/62 DM_creat[bc]: 117 solves 1246s; warm median 10.65s max 23.9s; fallbacks 0
+  readout 5/62 EX_lys_L[u]: 117 solves 1009s; warm median 8.37s max 17.1s; fallbacks 0
+  readout 6/62 DM_citr_L[bc]: 115 solves 1312s; warm median 10.96s max 25.8s; fallbacks 0
+  readout 7/62 EX_acglu[u]: 115 solves 1163s; warm median 10.01s max 19.7s; fallbacks 0
+  readout 8/62 DM_34dhphe[bc]: 116 solves 1077s; warm median 9.14s max 16.2s; fallbacks 0
+  readout 9/62 DM_adrnl[bc]: 114 solves 1046s; warm median 8.76s max 16.5s; fallbacks 0
+  readout 10/62 DM_CE2176[bc]: 115 solves 1081s; warm median 9.17s max 17.7s; fallbacks 0
+  readout 11/62 EX_CE2026[u]: 114 solves 1095s; warm median 9.12s max 19.3s; fallbacks 0
+  readout 12/62 DM_crtsl[bc]: 115 solves 1118s; warm median 9.33s max 16.8s; fallbacks 0
+  readout 13/62 DM_andrstrn[bc]: 116 solves 1102s; warm median 9.15s max 19.2s; fallbacks 0
+  readout 14/62 DM_acac[bc]: 115 solves 1481s; warm median 13.28s max 20.7s; fallbacks 0
+  readout 15/62 EX_lac_L[u]: 117 solves 1274s; warm median 10.95s max 16.5s; fallbacks 0
+  readout 16/62 EX_2mcit[u]: 115 solves 1094s; warm median 9.13s max 20.3s; fallbacks 0
+  readout 17/62 DM_lac_L[bc]: 114 solves 1266s; warm median 10.70s max 20.6s; fallbacks 0
+  readout 18/62 EX_56dthm[u]: 115 solves 1069s; warm median 9.15s max 18.1s; fallbacks 0
+  readout 19/62 EX_fru[u]: 115 solves 1317s; warm median 11.35s max 17.6s; fallbacks 0
+  readout 20/62 DM_c5dc[bc]: 114 solves 1046s; warm median 8.91s max 18.6s; fallbacks 0
+  readout 21/62 DM_ddeccrn[bc]: 115 solves 1067s; warm median 9.05s max 20.7s; fallbacks 0
+  readout 22/62 EX_4hpro_LT[u]: 115 solves 1062s; warm median 8.80s max 20.5s; fallbacks 0
+  readout 23/62 EX_CE4968[u]: 114 solves 1075s; warm median 9.06s max 20.9s; fallbacks 0
+  readout 24/62 EX_subeac[u]: 115 solves 1089s; warm median 9.06s max 19.7s; fallbacks 0
+  readout 25/62 EX_leuktrE4[u]: 116 solves 1074s; warm median 9.17s max 15.5s; fallbacks 0
+  readout 26/62 DM_leuktrE4[bc]: 115 solves 1107s; warm median 9.38s max 20.1s; fallbacks 0
+  readout 27/62 DM_pro_L[bc]: 114 solves 1130s; warm median 9.97s max 22.2s; fallbacks 0
+  readout 28/62 EX_arg_L[u]: 116 solves 1018s; warm median 8.51s max 20.2s; fallbacks 0
+  readout 29/62 EX_orn[u]: 115 solves 993s; warm median 8.47s max 20.1s; fallbacks 0
+  readout 30/62 DM_c6dc[bc]: 114 solves 1089s; warm median 9.34s max 20.2s; fallbacks 0
+  readout 31/62 DM_Lhcystin[bc]: 114 solves 1002s; warm median 8.51s max 15.9s; fallbacks 0
+  readout 32/62 EX_cyst_L[u]: 116 solves 1118s; warm median 8.95s max 73.5s; fallbacks 0
+  readout 33/62 EX_3bcrn[u]: 114 solves 1061s; warm median 8.94s max 18.2s; fallbacks 0
+  readout 34/62 DM_urate[bc]: 115 solves 1310s; warm median 11.24s max 24.2s; fallbacks 0
+  readout 35/62 EX_3mop[u]: 115 solves 1073s; warm median 8.77s max 19.1s; fallbacks 0
+  readout 36/62 DM_val_L[bc]: 114 solves 1056s; warm median 8.97s max 15.9s; fallbacks 0
+  readout 37/62 DM_c4dc[bc]: 114 solves 1053s; warm median 9.01s max 14.9s; fallbacks 0
+  readout 38/62 DM_3hpp[bc]: 117 solves 1257s; warm median 10.63s max 24.9s; fallbacks 0
+  readout 39/62 DM_ala_L[bc]: 114 solves 1158s; warm median 9.72s max 20.5s; fallbacks 0
+  readout 40/62 DM_phe_L[bc]: 115 solves 1061s; warm median 8.79s max 14.8s; fallbacks 0
+  readout 41/62 DM_pyr[bc]: 115 solves 1334s; warm median 11.31s max 21.8s; fallbacks 0
+  readout 42/62 DM_sucsal[bc]: 116 solves 1288s; warm median 11.48s max 28.1s; fallbacks 0
+  readout 43/62 EX_34hpl[u]: 114 solves 1081s; warm median 9.21s max 19.9s; fallbacks 0
+  readout 44/62 EX_xan[u]: 116 solves 1078s; warm median 9.13s max 15.7s; fallbacks 0
+  readout 45/62 DM_glu_L[bc]: 115 solves 1321s; warm median 11.28s max 24.7s; fallbacks 0
+  readout 46/62 EX_leu_L[u]: 115 solves 1054s; warm median 8.82s max 17.5s; fallbacks 0
+  readout 47/62 DM_gln_L[csf]: 118 solves 1267s; warm median 10.71s max 24.0s; fallbacks 0
+  readout 48/62 EX_succ[u]: 115 solves 1192s; warm median 10.46s max 21.5s; fallbacks 0
+  readout 49/62 EX_bhb[u]: 114 solves 1049s; warm median 8.99s max 13.3s; fallbacks 0
+  readout 50/62 EX_glx[u]: 117 solves 931s; warm median 7.71s max 19.7s; fallbacks 0
+  readout 51/62 DM_Nacasp[bc]: 116 solves 1217s; warm median 10.67s max 27.2s; fallbacks 0
+  readout 52/62 EX_C05770[u]: 114 solves 1235s; warm median 10.86s max 18.3s; fallbacks 0
+  readout 53/62 EX_met_L[u]: 114 solves 1039s; warm median 8.76s max 18.6s; fallbacks 0
+  readout 54/62 EX_2oxoadp[u]: 114 solves 1089s; warm median 9.13s max 18.9s; fallbacks 0
+  readout 55/62 DM_5hoxindoa[csf]: 116 solves 1078s; warm median 9.05s max 17.6s; fallbacks 0
+  readout 56/62 DM_argsuc[bc]: 115 solves 1205s; warm median 10.66s max 24.4s; fallbacks 0
+  readout 57/62 DM_glu_L[csf]: 115 solves 1174s; warm median 10.16s max 24.1s; fallbacks 0
+  readout 58/62 DM_lys_L[csf]: 115 solves 1037s; warm median 8.78s max 15.6s; fallbacks 0
+  readout 59/62 EX_3mglutac[u]: 116 solves 923s; warm median 7.91s max 19.3s; fallbacks 0
+  readout 60/62 EX_5aop[u]: 115 solves 1086s; warm median 9.26s max 18.6s; fallbacks 0
+  readout 61/62 EX_actyr[u]: 116 solves 756s; warm median 5.83s max 14.6s; fallbacks 0
+  readout 62/62 EX_glutar[u]: 116 solves 646s; warm median 4.57s max 15.6s; fallbacks 0
+statuses ['complete']; own biomarkers vs reference: 87/87 same call, max |diff| 0.00195; rechecks 74 (max |diff| 0, non-optimal 0)
+done in 69759s

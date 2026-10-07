@@ -144,6 +144,8 @@ def test_rechecks_are_recorded_and_agree(core_wbm):
     n_present = sum(1 for r in rec["readouts"] if r["status_healthy"] != "absent")
     assert len(checks) == 2 * (n_present - 1)
     assert all(c["status"] == "Optimal" and c["abs_diff"] <= 1e-6 for c in checks)
+    # a recheck is a real solve from scratch, not the stored solution handed back
+    assert all((c["ipm_iterations"] or 0) > 0 for c in checks)
 
 
 def test_rechecked_selection_is_deterministic():
@@ -222,3 +224,35 @@ def test_shards_merge_to_the_full_run(core_wbm):
             assert same(a["healthy"], b["healthy"] if b["healthy"] is not None else float("nan"))
     with pytest.raises(ValueError):
         M.merge(shards[:2])          # a missing shard is refused
+
+
+@pytest.mark.parametrize("name", ["highs", "gurobi"])
+def test_readout_major_rechecks_really_resolve(core_wbm, name):
+    hw = backend(name, core_wbm)
+    setups, entries = X.run_readout_major(hw, PROTOCOL, READOUTS, "protocol", "dual", "ipm", False, 1, {}, lambda s, e: None)
+    checks = [e[f"solve_{st}"]["recheck"] for e in entries.values() for st in ("healthy", "disease")
+              if "recheck" in (e[f"solve_{st}"] or {})]
+    assert checks and all(c["status"] == "Optimal" and (c["ipm_iterations"] or 0) > 0 and c["abs_diff"] <= 1e-6 for c in checks)
+
+
+def test_prepare_from_stored_record_rebuilds_the_same_lps(core_wbm):
+    hw = backend("highs", core_wbm)
+    setups, entries = X.run_readout_major(hw, PROTOCOL, READOUTS, "protocol", "ipm", "ipm", False, 0, {}, lambda s, e: None)
+    recs = {r["iem"]: r for r in X.assemble(setups, entries, READOUTS, final=True)}
+    hw2 = backend("highs", core_wbm)
+    rebuilt = [X.prepare(hw2, p, "protocol", log=False, stored=recs[p["iem"]]) for p in PROTOCOL]
+    assert hw2.n_solves == 0
+    mover = X.Mover(hw2)
+    for s in rebuilt:
+        for rid in READOUTS:
+            if rid not in hw2.rxn_pos:
+                continue
+            rcol = hw2.rxn_pos[rid]
+            hw2.set_objective({rcol: 1.0}, "max")
+            for state in ("healthy", "disease"):
+                target, rb = X.target_bounds(s, state, rcol, mover.base_lb, mover.base_ub)
+                mover.move(target, s.row, rb)
+                hw2.fresh(); hw2.method = "ipm"
+                st, f, _, _ = hw2.solve()
+                f = 0.0 if abs(f) <= 1e-6 else f
+                assert same(f, entries[(s.iem, rid)][state]), (s.iem, rid, state)

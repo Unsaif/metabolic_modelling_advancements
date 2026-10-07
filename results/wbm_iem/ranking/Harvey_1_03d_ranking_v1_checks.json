@@ -1,0 +1,50 @@
+{
+ "matrix": "results/wbm_iem/Harvey_1_03d_iem_cross_ranking_v1.json",
+ "completeness": {
+  "n_iems": 57,
+  "statuses": {
+   "complete": 57
+  },
+  "readouts_per_iem": [
+   187
+  ],
+  "absent_readouts": [
+   "EX_25aics[u]"
+  ],
+  "non_optimal_solves": [],
+  "fallbacks": 0,
+  "na_readouts_other_than_absent": {}
+ },
+ "own_biomarkers_vs_v03": {
+  "n": 252,
+  "n_same_call": 252,
+  "differing_calls": [],
+  "gate_passed": true,
+  "max_abs_diff": 0.0019518277586030308,
+  "max_rel_diff_values_above_1e-3": 6.080989206320303e-05,
+  "values_with_rel_diff_above_1e-4": []
+ },
+ "rechecks": {
+  "n": 197,
+  "non_optimal": 0,
+  "max_abs_diff": 0,
+  "n_abs_diff_above_1e-6": 0
+ },
+ "his_vs_feasibility_run": {
+  "n_readouts_compared": 161,
+  "n_same_call": 161,
+  "max_abs_diff": 1.5343696304626064e-06
+ },
+ "timing": {
+  "concurrent": {
+   "n": 21018,
+   "median_s": 9.309,
+   "total_h": 56.4783925
+  },
+  "ipm": {
+   "n": 186,
+   "median_s": 7.8985,
+   "total_h": 0.48699027777777776
+  }
+ }
+}

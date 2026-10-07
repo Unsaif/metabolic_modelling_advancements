@@ -124,6 +124,11 @@ class GurobiWBM:
 
     temporary_state = HighsWBM.temporary_state
 
+    def fresh(self) -> None:
+        """Discard the last solution and basis, so the next solve starts from scratch (needed for rechecks:
+        optimize() on an unchanged model only returns the solution it already has)."""
+        self.model.reset(0)
+
     # --- solve ---------------------------------------------------------------------
     def solve(self) -> Tuple[str, float, np.ndarray, float]:
         # "ipm": barrier with crossover (Gurobi's default crossover), as the HiGHS protocol runs.

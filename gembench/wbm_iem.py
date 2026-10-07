@@ -136,6 +136,10 @@ class HighsWBM:
                 self.set_row_bounds(row, -np.inf, np.inf)
             self.set_objective(old_objective, old_sense)
 
+    def fresh(self) -> None:
+        """Discard the last solution and basis, so the next solve starts from scratch."""
+        self.h.clearSolver()
+
     # --- solve ---------------------------------------------------------------------
     def solve(self) -> Tuple[str, float, np.ndarray, float]:
         t = time.time()

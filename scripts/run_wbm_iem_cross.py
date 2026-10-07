@@ -228,9 +228,11 @@ def run_one(hw, p, readouts, context, warm, log=True, recheck_every=0):
                                                    show_value=rid in own)
                 first = False
                 if method != "ipm" and rechecked(p["iem"], state, rid, recheck_every):
-                    st2, f2, dt2, _, _ = solve_logged(hw, "ipm", f"{p['iem']} {state} recheck {rid}", log,
-                                                      show_value=rid in own)
+                    hw.fresh()   # without this the solver returns the solution it already has
+                    st2, f2, dt2, rinfo, _ = solve_logged(hw, "ipm", f"{p['iem']} {state} recheck {rid}", log,
+                                                          show_value=rid in own)
                     info = dict(info, recheck={"status": st2, "value": f2, "time_s": round(dt2, 3),
+                                               "ipm_iterations": rinfo.get("ipm_iterations"),
                                                "abs_diff": abs(f2 - f) if np.isfinite(f) and np.isfinite(f2) else None})
                 hw.set_bounds([j], ub=[old_ub])
                 ok = st == "Optimal" and np.isfinite(f)
@@ -273,8 +275,11 @@ class Setup:
                     "iem_reactions": [], "readouts": []}
 
 
-def prepare(hw, p, context, log=True):
-    """Protocol steps 1-3 for one IEM (as in run_one); records the overrides that define its two states."""
+def prepare(hw, p, context, log=True, stored=None):
+    """Protocol steps 1-3 for one IEM (as in run_one); records the overrides that define its two states.
+
+    stored: an IEM record from a finished matrix; its v_max, pin and status are used instead of solving
+    (scripts/recheck_cross_matrix.py rebuilds the LPs this way)."""
     t0, n0 = time.time(), hw.n_solves
     s = Setup(p, context)
     rx = hw.wbm.rxns
@@ -304,6 +309,15 @@ def prepare(hw, p, context, log=True):
             return finish_setup(s, hw, n0, t0)
         s.saved = [(float(hw.lb[i]), float(hw.ub[i])) for i in s.iem_idx]
         s.row = hw.add_row({i: 1.0 for i in s.iem_idx}, -1e5, 1e5)
+        if stored is not None:
+            if [rx[i] for i in s.iem_idx] != stored["iem_reactions"]:
+                raise ValueError(f"{s.iem}: IEM reactions differ from the stored record")
+            for key in ("vmax_healthy", "vmax_disease", "wb_objective_disease_feasible", "healthy_pin"):
+                s.rec[key] = stored.get(key)
+            s.ok = stored["status"] in ("complete", "partial")
+            s.lo = stored.get("healthy_pin")
+            s.rec["status"] = "set_up_from_record" if s.ok else stored["status"]
+            return finish_setup(s, hw, n0, t0)
         hw.set_objective({i: 1.0 for i in s.iem_idx}, "max")
         st, vmax, _, _, _ = solve_logged(hw, "ipm", f"{s.iem} v_max (healthy)", log)
         s.rec["vmax_healthy"] = vmax
@@ -429,8 +443,11 @@ def run_readout_major(hw, protocol, readouts, context, warm, first, log, recheck
                                                    show_value=rid in s.own)
                 is_first = False
                 if method != "ipm" and rechecked(s.iem, state, rid, recheck_every):
-                    st2, f2, dt2, _, _ = solve_logged(hw, "ipm", f"{rid} {s.iem} {state} recheck", log, show_value=rid in s.own)
+                    hw.fresh()   # without this the solver returns the solution it already has
+                    st2, f2, dt2, rinfo, _ = solve_logged(hw, "ipm", f"{rid} {s.iem} {state} recheck", log,
+                                                          show_value=rid in s.own)
                     info = dict(info, recheck={"status": st2, "value": f2, "time_s": round(dt2, 3),
+                                               "ipm_iterations": rinfo.get("ipm_iterations"),
                                                "abs_diff": abs(f2 - f) if np.isfinite(f) and np.isfinite(f2) else None})
                 okv = st == "Optimal" and np.isfinite(f)
                 f = (0.0 if abs(f) <= TOL else f) if okv else float("nan")
