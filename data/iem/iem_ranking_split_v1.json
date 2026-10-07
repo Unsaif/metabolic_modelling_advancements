@@ -1,0 +1,102 @@
+{
+ "seed": 20261007,
+ "offset": 2,
+ "method": "Stratified systematic sampling: the IEMs are ordered by stratum (whether the lab profile contains a known decrease, then the profile size: 1, 2-3, 4-6, 7 or more biomarkers) and, within a stratum, by a seeded random key; every third IEM from a seeded random offset goes to development. This gives 19 development and 38 held-out IEMs, each stratum split close to one in three. The split depends only on the lab profiles and the seed, not on any prediction. ",
+ "profiles_file": "data/iem/iem_ranking_profiles_v0.2.json",
+ "profiles_sha256": "f619f9d5b4c7ea82e81eb63ebcfd0ade12f9c5b9df2969c0d0b824affd4ec3d2",
+ "development": [
+  "3MGA",
+  "AGAT",
+  "CMO1",
+  "CPS1",
+  "CYP21D",
+  "DPYR",
+  "EP",
+  "GA2",
+  "GACR",
+  "HCYS",
+  "HIS",
+  "HLYS1",
+  "HMG",
+  "HYCARO",
+  "HYPRO1",
+  "IVA",
+  "MMA",
+  "SSADHD",
+  "TYR3"
+ ],
+ "held_out": [
+  "2OAA",
+  "3MCC",
+  "AADC",
+  "ADSL",
+  "AKGD",
+  "AMA1",
+  "ARG",
+  "ASA",
+  "ASNSD",
+  "BTD",
+  "CD",
+  "CIT1",
+  "DESMO",
+  "DGK",
+  "EF",
+  "FED",
+  "FIGLU",
+  "GA1",
+  "GMT",
+  "HLYS2",
+  "HMET",
+  "HPC",
+  "HPII",
+  "HYPVLI",
+  "LNS",
+  "LTC4S",
+  "MSUD",
+  "NAGS",
+  "OTC",
+  "OXOP",
+  "PC",
+  "PHOX1",
+  "PKU",
+  "STAR",
+  "SUCLA",
+  "TETB",
+  "TYR1",
+  "XAN1"
+ ],
+ "strata": {
+  "increases only, 2-3": {
+   "development": 4,
+   "held_out": 9
+  },
+  "increases only, 1": {
+   "development": 3,
+   "held_out": 6
+  },
+  "decrease, 7+": {
+   "development": 3,
+   "held_out": 4
+  },
+  "decrease, 2-3": {
+   "development": 1,
+   "held_out": 2
+  },
+  "increases only, 4-6": {
+   "development": 4,
+   "held_out": 9
+  },
+  "increases only, 7+": {
+   "development": 1,
+   "held_out": 2
+  },
+  "decrease, 4-6": {
+   "development": 2,
+   "held_out": 6
+  },
+  "decrease, 1": {
+   "development": 1,
+   "held_out": 0
+  }
+ }
+}
