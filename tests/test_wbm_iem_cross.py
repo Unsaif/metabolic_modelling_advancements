@@ -6,6 +6,7 @@ backend agrees with HiGHS (skipped without gurobipy; the size-limited licence is
 """
 import copy
 import importlib.util
+import json
 import math
 import os
 
@@ -286,3 +287,89 @@ def test_recheck_retries_an_infeasible_healthy_pin_with_its_own(core_wbm):
     status, f, _, _, first = R.solve_one(hw2, mover, s, "disease", rcol, alt_lo=R.truncated_pin(vmax))
     assert status == "Optimal" and first is None         # the disease state does not use the pin
     assert same(0.0 if abs(f) <= 1e-6 else f, entries[("TPI_def", rid)]["disease"])
+
+
+def _pin_sweep_module():
+    spec_s = importlib.util.spec_from_file_location("run_wbm_iem_pin_sweep", os.path.join(ROOT, "scripts", "run_wbm_iem_pin_sweep.py"))
+    S = importlib.util.module_from_spec(spec_s)
+    spec_s.loader.exec_module(S)
+    return S
+
+
+@pytest.mark.parametrize("name", ["highs", "gurobi"])
+def test_pin_sweep_reproduces_the_matrix_at_alpha_1_and_relaxes_monotonically(core_wbm, name):
+    """scripts/run_wbm_iem_pin_sweep.py: alpha = 1 rebuilds the matrix's healthy LPs; a lower pin can only raise a
+    healthy maximum; every alpha level equals a from-scratch barrier solve of the same LP."""
+    S = _pin_sweep_module()
+    hw = backend("highs", core_wbm)
+    setups, entries = X.run_readout_major(hw, PROTOCOL, READOUTS, "protocol", "ipm", "ipm", False, 0, {}, lambda s, e: None)
+    recs = {r["iem"]: r for r in X.assemble(setups, entries, READOUTS, final=True)}
+    hw2 = backend(name, core_wbm)
+    rebuilt = [X.prepare(hw2, p, "protocol", log=False, stored=recs[p["iem"]]) for p in PROTOCOL]
+    rebuilt = [s for s in rebuilt if s.ok]
+    mover = X.Mover(hw2)
+    alphas = [1.0, 0.5, 0.1]
+    for rid in READOUTS:
+        out = S.sweep_readout(hw2, mover, rebuilt, rid, alphas, "dual", "ipm", 2)
+        for s in rebuilt:
+            got = out[s.iem]
+            assert [e["alpha"] for e in got] == alphas
+            if rid not in hw2.rxn_pos:
+                assert all(e["status"] == "absent" for e in got)
+                continue
+            assert all(e["status"] == "Optimal" for e in got), (s.iem, rid, got)
+            assert s.lo == recs[s.iem]["healthy_pin"]                      # the pin is restored
+            assert same(got[0]["value"], entries[(s.iem, rid)]["healthy"]), (s.iem, rid)
+            vals = [e["value"] for e in got]
+            assert all(b >= a - 2e-6 for a, b in zip(vals, vals[1:])), (s.iem, rid, vals)
+            assert got[1]["pin"] == math.floor(0.5 * recs[s.iem]["vmax_healthy"] * 1e6) / 1e6
+            for e in got:
+                if "recheck" in e:
+                    assert e["recheck"]["status"] == "Optimal" and e["recheck"]["abs_diff"] <= 2e-6
+    # Each level against an independent from-scratch solve of the same LP.
+    hw3 = backend("highs", core_wbm)
+    fresh = [X.prepare(hw3, p, "protocol", log=False, stored=recs[p["iem"]]) for p in PROTOCOL]
+    fresh = [s for s in fresh if s.ok]
+    mover3 = X.Mover(hw3)
+    rid = "EX_ac_e"
+    out = S.sweep_readout(hw2, mover, rebuilt, rid, alphas, "dual", "ipm", 0)
+    rcol = hw3.rxn_pos[rid]
+    hw3.set_objective({rcol: 1.0}, "max")
+    for s in fresh:
+        for e in out[s.iem]:
+            s.lo = e["pin"]
+            target, rb = X.target_bounds(s, "healthy", rcol, mover3.base_lb, mover3.base_ub)
+            mover3.move(target, s.row, rb)
+            hw3.fresh(); hw3.method = "ipm"
+            st, f, _, _ = hw3.solve()
+            assert st == "Optimal" and same(0.0 if abs(f) <= 1e-6 else f, e["value"]), (s.iem, e)
+
+
+def test_pin_sweep_merge_checks_completeness(tmp_path):
+    S = _pin_sweep_module()
+    prov = {"n_panel": 3, "alphas": [1.0], "threads": 1}
+    a = {"provenance": dict(prov, shard="1/2", n_readouts=2, readouts_sha256="x"), "setups": {"A": {}},
+         "readouts": {"r1": {"A": []}, "r3": {"A": []}}}
+    b = {"provenance": dict(prov, shard="2/2", n_readouts=1, readouts_sha256="y"), "setups": {"A": {}},
+         "readouts": {"r2": {"A": []}}}
+    pa, pb = tmp_path / "a.json", tmp_path / "b.json"
+    pa.write_text(json.dumps(a)); pb.write_text(json.dumps(b))
+    merged = S.merge([str(pa), str(pb)], str(tmp_path / "m.json"))
+    assert sorted(merged["readouts"]) == ["r1", "r2", "r3"] and merged["provenance"]["shards"] == 2
+    b["readouts"] = {}
+    pb.write_text(json.dumps(b))
+    with pytest.raises(ValueError):
+        S.merge([str(pa), str(pb)], str(tmp_path / "m.json"))
+    b["readouts"] = {"r2": {"A": []}}
+    b["provenance"]["alphas"] = [0.5]
+    pb.write_text(json.dumps(b))
+    with pytest.raises(ValueError):
+        S.merge([str(pa), str(pb)], str(tmp_path / "m.json"))
+
+
+def test_pin_for_truncates_like_the_protocol():
+    S = _pin_sweep_module()
+    assert S.pin_for(1234.5678919, 1.0, 1234.567891) == 1234.567891     # alpha 1: the matrix's pin
+    assert S.pin_for(1234.5678919, 0.5) == math.floor(617.28394595 * 1e6) / 1e6
+    assert S.pin_for(0.0042433602, 0.001) == 0.000004
+    assert S.pin_for(-10.0000017, 0.5) == math.ceil(-5.00000085 * 1e6) / 1e6

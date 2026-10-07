@@ -55,9 +55,11 @@ Rules until the confirmatory plan is committed:
 ## First computation
 
 `scripts/run_wbm_iem_pin_sweep.py` computes, for each development IEM and each of the 187 readouts, the healthy maximum
-at α = 1, 0.5, 0.1, 0.01 and 0.001, in that order.
+at α = 1, 0.5, 0.1, 0.01, 0.001 and 0, in that order.
 
 - **The α = 1 values are a check.** They should reproduce the matrix.
+- **α = 0 is a reference.** The pin is then only sum ≥ 0, which the disease state meets, so no readout can be higher
+  in the disease state. These values show what the block removes: the decrease side of a rule without a pin.
 - **Only the pin's bound changes between the levels,** so the solves after the first warm-start.
 - **The disease maxima come from the matrix,** because the disease state does not depend on α.
 - **Everything else is as in the matrix:** the model, setup, protocol context, sinks and tolerances. The IEM set-ups
@@ -84,3 +86,14 @@ A confirmatory plan, checked independently and committed before its run, will fi
   protocol, with a paired test;
 - the secondary outcomes: HPO profiles and own-biomarker balanced accuracy;
 - the decision rules.
+
+## Amendments before the first development run
+
+Committed with the sweep script, before the development run.
+
+- **α = 0 added** to the sweep (see above).
+- **Smoke test of the launcher.** HiGHS in the cloud, HIS only, two readouts, α = 1 and 0.5, two shards.
+  - α = 1 reproduced the matrix: urinary histamine 0.000285 and blood histamine 50.0 in the healthy state.
+  - At α = 0.5, urinary histamine's healthy maximum rose to the disease value, 29.0, so that own increase would become
+    "unchanged". Blood histamine's rose from 50.0 to 83.4, still below the disease value of 116.7.
+  - HIS is a development IEM, so this is within the rules.
