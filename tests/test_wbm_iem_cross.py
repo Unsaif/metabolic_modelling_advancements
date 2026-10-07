@@ -256,3 +256,33 @@ def test_prepare_from_stored_record_rebuilds_the_same_lps(core_wbm):
                 st, f, _, _ = hw2.solve()
                 f = 0.0 if abs(f) <= 1e-6 else f
                 assert same(f, entries[(s.iem, rid)][state]), (s.iem, rid, state)
+
+
+def test_recheck_retries_an_infeasible_healthy_pin_with_its_own(core_wbm):
+    """scripts/recheck_cross_matrix.py: a pin just above this solver's maximum makes the healthy state infeasible;
+    the retry with the pin from this solver's own v_max reproduces the matrix value and leaves the pin as it was."""
+    spec_r = importlib.util.spec_from_file_location("recheck_cross_matrix", os.path.join(ROOT, "scripts", "recheck_cross_matrix.py"))
+    R = importlib.util.module_from_spec(spec_r)
+    spec_r.loader.exec_module(R)
+    hw = backend("highs", core_wbm)
+    setups, entries = X.run_readout_major(hw, PROTOCOL, READOUTS, "protocol", "ipm", "ipm", False, 0, {}, lambda s, e: None)
+    recs = {r["iem"]: r for r in X.assemble(setups, entries, READOUTS, final=True)}
+    hw2 = backend("highs", core_wbm)
+    rebuilt = {p["iem"]: X.prepare(hw2, p, "protocol", log=False, stored=recs[p["iem"]]) for p in PROTOCOL}
+    mover = X.Mover(hw2)
+    s = rebuilt["TPI_def"]
+    vmax = recs["TPI_def"]["vmax_healthy"]
+    assert R.truncated_pin(vmax) == recs["TPI_def"]["healthy_pin"]
+    rid = "DM_dhap_c"
+    rcol = hw2.rxn_pos[rid]
+    hw2.set_objective({rcol: 1.0}, "max")
+    s.lo = vmax + 1e-3                                   # a pin from "another solver", above this one's maximum
+    status, f, _, _, first = R.solve_one(hw2, mover, s, "healthy", rcol)
+    assert status == "Infeasible" and first is None      # no retry without a pin to retry with
+    status, f, _, _, first = R.solve_one(hw2, mover, s, "healthy", rcol, alt_lo=R.truncated_pin(vmax))
+    assert status == "Optimal" and first["status"] == "Infeasible" and first["pin"] == vmax + 1e-3
+    assert first["retry_pin"] == R.truncated_pin(vmax) and s.lo == vmax + 1e-3
+    assert same(0.0 if abs(f) <= 1e-6 else f, entries[("TPI_def", rid)]["healthy"])
+    status, f, _, _, first = R.solve_one(hw2, mover, s, "disease", rcol, alt_lo=R.truncated_pin(vmax))
+    assert status == "Optimal" and first is None         # the disease state does not use the pin
+    assert same(0.0 if abs(f) <= 1e-6 else f, entries[("TPI_def", rid)]["disease"])

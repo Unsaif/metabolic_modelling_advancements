@@ -5,11 +5,13 @@
 - **Plan.** `wbm-iem-ranking-plan.md` (committed 347b21f, amended before the run in 34ab349, a6e98ef and def01b0).
 - **Matrix.** `results/wbm_iem/Harvey_1_03d_iem_cross_ranking_v1.json` (sha256 11779e84…), joined from three shards.
 - **Ranking.** `results/wbm_iem/ranking/Harvey_1_03d_ranking_v1.json`.
-- **Checks.** `results/wbm_iem/ranking/Harvey_1_03d_ranking_v1_checks.json`, the cross-solver recheck
-  `Harvey_1_03d_ranking_v1_recheck_highs.json`, and the independent check `results/wbm_iem/ranking/independent_check_results/`.
+- **Checks.** `results/wbm_iem/ranking/Harvey_1_03d_ranking_v1_checks.json`, the rechecks
+  `Harvey_1_03d_ranking_v1_recheck_gurobi.json` and `Harvey_1_03d_ranking_v1_recheck_highs.json`, and the independent
+  check `results/wbm_iem/ranking/independent_check_results/`.
 
-One deviation after the run started: the planned rechecks did not re-solve anything and were replaced (see
-`wbm-iem-ranking-deviations.md`). Analyses marked *post hoc* were not in the plan.
+One deviation after the run started: the planned rechecks did not re-solve anything. They were redone after the
+ranking, with Gurobi as planned and with HiGHS, and no call changed (see `wbm-iem-ranking-deviations.md`). Analyses
+marked *post hoc* were not in the plan.
 
 ## Summary
 
@@ -47,9 +49,29 @@ The checks before ranking:
 |---|---|
 | Completeness | All 57 IEMs complete, 187 readouts each. Every solve ended optimal, and no barrier fallback was needed. The only unavailable readout is `EX_25aics[u]`, which is not in Harvey. |
 | Own biomarkers against v0.3 (HiGHS) | **252 of 252 calls the same** (stop rule: more than 5 differing). Largest absolute value difference 0.002; largest relative difference 6e-5 among values above 1e-3. |
-| Rechecks | **Not performed as planned.** The 197 hash-selected rechecks returned the stored solution without re-solving (0.000 s each), because the model was not reset; this was found by the independent check. They were replaced by re-solving the same 197 LPs from scratch with HiGHS (interior point with crossover), a different solver: RECHECK_RESULT. |
+| Rechecks | **Not performed during the run; redone after the ranking (deviation 1). No call changed** when the same 197 LPs were re-solved from scratch with Gurobi barrier and with HiGHS. Details below. |
 | HIS against the one-IEM-at-a-time feasibility run | 161 of 161 calls the same; largest difference 1.5e-6. |
 | Re-join of the three shards in the cloud | Identical to the joined file written on Tim's Mac. |
+
+**The rechecks.** The 197 rechecks marked during the run returned the stored solution without re-solving (0.000 s
+each), because the model was not reset before the barrier solve. The independent check found this. After the ranking
+had been computed, the same 197 LPs were re-solved from scratch twice, by `scripts/recheck_cross_matrix.py`:
+
+- **Gurobi barrier with crossover, as the plan specified** (Tim's Mac). All 197 ended optimal. 189 agree with the
+  matrix within the plan's tolerance (1e-6 absolute, or 1e-6 relative for values above 1). The other 8 are
+  healthy-state maxima below 0.001 that differ by 1.1e-6 to 1.6e-5. The largest is SSADHD's `EX_3hivac[u]`, 0.000571
+  against 0.000587.
+- **HiGHS 1.15.1 interior point with crossover, a different solver** (cloud). 195 ended optimal at the first attempt.
+  Two healthy states of PC were infeasible: the pin computed with Gurobi, 67,086.049148, sits 4.5e-7 above the
+  maximum HiGHS finds. With the pin from HiGHS's own maximum (67,086.049147, from v0.3), both solved and match the
+  matrix within 2e-7. 187 of the 197 agree within the plan's tolerance. The other 10 are again healthy-state maxima
+  below 0.001, differing by 1.2e-6 to 4.2e-5; the largest is SSADHD's `EX_3hivac[u]`, 0.000546 against 0.000587.
+- **No call changed in either**, so the plan's remedy, recomputing an IEM with barrier for every solve, was not
+  triggered.
+- **What the differences mean.** Small maxima differ by up to 4e-5 between solves and solvers, which is coarser than
+  the protocol's 1e-6 call threshold. A call that rests on a difference of that size is fragile, although
+  none of the 197 changed. The material-change rule (above 1e-3 and 5%) is well above this noise, and its rankings are
+  similar to the protocol's.
 
 ## Primary analysis: lab profiles, protocol calls, plain score
 
@@ -182,8 +204,14 @@ baseline. Specificity, as measured here, should be reported with them.
   - In the independent check's runs, LTC4S's maximum flux fell from 125.5 to 0.0087 without its sinks. Its own calls,
     and those of STAR and CYP21D, did not change.
   - Whether the ranking holds without the sinks is untested.
-- **The 1e-6 call threshold.** The protocol's threshold makes the smallest differences count. The material-change
-  sensitivity addresses this only partly.
+- **The 1e-6 call threshold.** The protocol's threshold makes the smallest differences count, although re-solving
+  moves small maxima by up to 4e-5 (see the rechecks). The material-change sensitivity addresses this only
+  partly.
+- **The healthy pin's margin.** The pin is the maximum IEM flux truncated to six decimals. For a large maximum the
+  margin this leaves is far smaller than the solvers' tolerances: PC's maximum is 67,086, and the pin computed with
+  Gurobi sits 4.5e-7 above the maximum HiGHS finds. HiGHS therefore declared two of PC's healthy states infeasible. In
+  the matrix every pin came from the same solver as the readouts, so this did not arise there. A pin computed with one
+  solver is not safe to reuse with another.
 
 ## Per-profile ranks (lab profiles)
 

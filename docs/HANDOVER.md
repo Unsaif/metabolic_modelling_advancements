@@ -1,22 +1,17 @@
 # Handover — "Metabolic modelling improvements" (Tim Hulshof / Claude sessions), 6 September 2026
 
-> **IEM disease-ranking study, 6 October 2026 (Claude Opus 5.5). In progress.** Tim chose this while his colleague reviews the papers.
+> **IEM disease-ranking study, 6–7 October 2026 (Claude Opus 5.5). Complete; the Paper 2 write-up waits for Tim's decisions.** Tim chose this while his colleague reviews the papers.
 > - **The question.** Given a disease's known biomarker profile, do the whole-body model's predictions rank that disease above the other 56 simulated IEMs? v0.3's 86.5% shows the predictions are accurate; this asks whether they are specific.
-> - **Plan.** `docs/studies/wbm-iem-ranking-plan.md` (commit 347b21f; amended before the run in 34ab349 after a second inputs check). Project copy: `studies/2026-10-06-iem-ranking-plan.md`.
->   - Profiles: the lab profiles are primary (57 IEMs, 252 tuples). HPO profiles v0.2 are rebuilt from Orphanet with corrected links (39 profiles, 142 tuples).
->   - Statistics: mean reciprocal rank, with a Monte Carlo null.
-> - **Computation.** `scripts/run_wbm_iem_cross.py --order readout` runs with Gurobi 13.0.1 on Tim's Mac: 57 IEMs × 187 readouts × 2 states, with dual-simplex warm starts. The plan gives the command.
->   - Tim starts it himself. His full licence is copied to `~/gurobi.lic`; he did that.
->   - Do not submit MATLAB runner jobs while it runs.
->   - HiGHS warm starts in the cloud took up to 29 minutes per solve, so they were not usable.
-> - **Checks of the inputs.** Two, both before the run: `results/wbm_iem/ranking/independent_check_inputs/` and `second_check/`. The Orphanet `en_product4.xml` and HPO `hp.obo` files live only in the cloud scratch space; URLs and checksums are in the RESPONSE files.
-> - **Already done (post hoc, descriptive).** Per-disease breakdown of the v0.3/v0.4 own-biomarker calls (`results/wbm_iem/per_disease_calls_v0.3_v0.4/`). On Harvey, recall is 0.865 and precision 0.943, and all calls are correct for 39 of 57 IEMs.
-> - **Next.**
->   1. Run the matrix.
->   2. Check the own biomarkers against v0.3, and review the rechecks.
->   3. Run `scripts/iem_disease_ranking.py`.
->   4. Have an independent agent check the results.
->   5. Write up the results and a Paper 2 section.
+> - **Read first.** Results `docs/studies/wbm-iem-ranking-results.md` (project copy `studies/2026-10-07-iem-ranking-results.md`), plan `wbm-iem-ranking-plan.md` (project copy `studies/2026-10-06-iem-ranking-plan.md`), deviations `wbm-iem-ranking-deviations.md`, and the file guide `results/wbm_iem/ranking/README.md`.
+> - **Result.** Lab profiles (primary): mean reciprocal rank 0.252 against 0.081 by chance (Monte Carlo p < 0.0001). The true disease is first in 8.8 of 57 profiles in expectation and in the top five in 17.4. The pre-specified adjusted score gives 0.423; HPO profiles from Orphanet give 0.204.
+> - **Post hoc.** A knockout calls a median of 80% of readouts increased, and 85% of the known biomarkers are increases. A rule that calls everything "increased" scores 85.3%, against the protocol's 86.5% on Harvey and the published 84.9% and 85.3%. Accuracy needs this baseline; the ranking shows the predictions still carry disease-specific information.
+> - **Computation.** Gurobi 13.0.1 on Tim's Mac in 3 parallel shards (`scripts/run_ranking_parallel.py`), 19.4 hours. The planned rechecks did not re-solve during the run (the model was not reset; now fixed and tested). They were redone afterwards with Gurobi on Tim's Mac and with HiGHS in the cloud (`scripts/recheck_cross_matrix.py`): no call changed.
+> - **Checks.** Two independent checks of the inputs before the run, and one of the results after it (`results/wbm_iem/ranking/independent_check_results/`: 2 major and 6 minor problems, all addressed).
+> - **Open for Tim.**
+>   1. How Paper 2 should frame accuracy, given the "always increased" baseline. This touches the lab's published method.
+>   2. Whether to add a ranking section to Paper 2 now; the colleague has the Word export.
+>   3. Follow-ups worth planning: a partial-pin or typical-healthy-state test of where the generic increases come from, and the minimal-context or Harvetta replication.
+>   4. A possible point for the `runIEM_HH` maintainers: the pin is truncated to six decimals whatever its size, so a pin from one solver can be infeasible in another (PC, 4.5e-7 above HiGHS's maximum).
 
 > **Paper 1: hand-curated models of three more organisms, 6 October 2026 (Claude Opus 5.5).** Tim asked for the curated models outside BiGG to be scored before his colleague reads Paper 1.
 > - **Plan and models.** The plan was committed before scoring (`docs/studies/transfer-v1-curated-references-plan.md`, commit 260b92f); the deviations are in `transfer-v1-curated-references-deviations.md`. The models are in `models/curated/` (README gives sources and checksums). They were downloaded through Tim's browser pane, because the cloud workspace cannot reach the publishers.

@@ -12,6 +12,11 @@ by interior point with crossover, and the value is compared with the matrix:
   - the absolute and relative difference;
   - whether the call for that IEM and readout changes when the recheck value replaces the matrix value.
 Writes results/wbm_iem/ranking/<matrix stem>_recheck_<backend>.json, resumable per readout.
+
+With another solver, a healthy state can be infeasible only because the matrix's pin (that solver's v_max truncated
+to six decimals) sits just above this solver's maximum. --retry-infeasible-pins FILE re-solves such rechecks once with
+the pin from FILE's v_max for that IEM, computed by this solver; the first attempt is kept under "first_attempt".
+Calls are counted as changed only for rechecks that end optimal; the others are listed in the summary.
 """
 from __future__ import annotations
 
@@ -37,6 +42,39 @@ X = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(X)
 
 
+def truncated_pin(v):
+    """The protocol's healthy pin from a maximum: truncated to six decimals, towards zero (as in prepare())."""
+    return math.floor(v * 1e6) / 1e6 if v > 0 else math.ceil(v * 1e6) / 1e6
+
+
+def solve_one(hw, mover, s, state, rcol, alt_lo=None):
+    """Solve one LP of the matrix from scratch by interior point with crossover.
+
+    If a healthy state is infeasible and alt_lo is given, it is solved once more with alt_lo as the pin. The matrix's
+    pin comes from another solver's v_max and, within tolerance, can sit just above this solver's maximum.
+    Returns (status, value, seconds, solver info, first attempt or None); s.lo is left as it was."""
+    target, row_bounds = X.target_bounds(s, state, rcol, mover.base_lb, mover.base_ub)
+    mover.move(target, s.row, row_bounds)
+    hw.fresh()
+    hw.method = "ipm"
+    status, f, _, dt = hw.solve()
+    info = dict(getattr(hw, "last_info", {}) or {})
+    first_attempt = None
+    if status == "Infeasible" and state == "healthy" and alt_lo is not None:
+        first_attempt = {"status": status, "pin": s.lo, "time_s": round(dt, 2)}
+        lo_matrix, s.lo = s.lo, alt_lo
+        try:
+            target, row_bounds = X.target_bounds(s, state, rcol, mover.base_lb, mover.base_ub)
+            mover.move(target, s.row, row_bounds)
+            hw.fresh()
+            status, f, _, dt = hw.solve()
+            info = dict(getattr(hw, "last_info", {}) or {})
+            first_attempt["retry_pin"] = s.lo
+        finally:
+            s.lo = lo_matrix
+    return status, f, dt, info, first_attempt
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("matrix")
@@ -46,6 +84,8 @@ def main():
     ap.add_argument("--every", type=int, default=0, help="select by the recheck hash with this N instead of the run's marks")
     ap.add_argument("--threads", type=int, default=0)
     ap.add_argument("--out")
+    ap.add_argument("--retry-infeasible-pins", help="results file whose v_max per IEM (computed by this solver) sets the "
+                    "healthy pin for a second attempt at rechecks this solver found infeasible in the healthy state")
     args = ap.parse_args()
 
     with open(args.matrix) as fh:
@@ -103,6 +143,16 @@ def main():
             old = json.load(fh)
         done = {(x["reaction"], x["iem"], x["state"]): x for x in old["rechecks"]}
     solver = X.backend_version(args.backend)
+    alt_pin = {}
+    if args.retry_infeasible_pins:
+        with open(args.retry_infeasible_pins) as fh:
+            for r in json.load(fh):
+                v = r.get("vmax_healthy")
+                if v is not None and math.isfinite(v):
+                    alt_pin[r["iem"]] = truncated_pin(v)
+        for key, x in list(done.items()):
+            if x["status"] == "Infeasible" and x["state"] == "healthy" and x["iem"] in alt_pin and "first_attempt" not in x:
+                del done[key]     # retried below with the other pin
     by_readout = {}
     for rid, iem, st in selected:
         by_readout.setdefault(rid, []).append((iem, st))
@@ -114,13 +164,7 @@ def main():
         rcol = hw.rxn_pos[rid]
         hw.set_objective({rcol: 1.0}, "max")
         for iem, st in todo:
-            s = setups[iem]
-            target, row_bounds = X.target_bounds(s, st, rcol, mover.base_lb, mover.base_ub)
-            mover.move(target, s.row, row_bounds)
-            hw.fresh()
-            hw.method = "ipm"
-            status, f, _, dt = hw.solve()
-            info = dict(getattr(hw, "last_info", {}) or {})
+            status, f, dt, info, first_attempt = solve_one(hw, mover, setups[iem], st, rcol, alt_pin.get(iem))
             e = next(x for x in by_iem[iem]["readouts"] if x["reaction"] == rid)
             ok = status == "Optimal" and math.isfinite(f)
             fz = (0.0 if abs(f) <= X.TOL else f) if ok else float("nan")
@@ -134,12 +178,16 @@ def main():
                                     "matrix_value": stored, "abs_diff": diff,
                                     "rel_diff": diff / scale if diff is not None and scale > 1e-3 else None,
                                     "matrix_call": e["predicted"], "call_with_recheck": new_call,
-                                    "call_changes": new_call != e["predicted"], "time_s": round(dt, 2),
+                                    "call_changes": ok and new_call != e["predicted"], "time_s": round(dt, 2),
                                     "ipm_iterations": info.get("ipm_iterations")}
+            if first_attempt:
+                done[(rid, iem, st)]["first_attempt"] = first_attempt
         rows = list(done.values())
         diffs = [x["abs_diff"] for x in rows if x["abs_diff"] is not None]
         summary = {"n": len(rows), "n_selected": len(selected), "non_optimal": sum(x["status"] != "Optimal" for x in rows),
-                   "calls_changed": sum(x["call_changes"] for x in rows),
+                   "non_optimal_list": [(x["iem"], x["reaction"], x["state"], x["status"]) for x in rows if x["status"] != "Optimal"],
+                   "retried_with_own_pin": [(x["iem"], x["reaction"], x["state"], x["status"]) for x in rows if "first_attempt" in x],
+                   "calls_changed": sum(bool(x["call_changes"]) for x in rows),
                    "max_abs_diff": max(diffs) if diffs else None,
                    "n_abs_diff_above_1e-6": sum(x > 1e-6 for x in diffs),
                    "max_rel_diff_values_above_1e-3": max([x["rel_diff"] for x in rows if x["rel_diff"] is not None] or [0])}
