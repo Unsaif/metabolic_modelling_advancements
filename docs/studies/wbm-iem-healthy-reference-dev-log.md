@@ -47,3 +47,33 @@ FED is a held-out IEM; only its reaction list was read. Any fix to these sets wo
 **5. Pin sweep timing.** The sweep started at 23:11 UTC on 7 October, as 3 shards of 3 threads. The solves after a
 change of pin level do not warm-start faster than barrier, at about 8 s each. One readout takes about 950 s per shard,
 so the 187 readouts should take about 16 to 17 hours.
+
+## 8 October 2026 (morning): partial look at the pin sweep
+
+At 06:31 UTC, 73 of the 187 readouts were finished, and all 8,322 solves had ended optimal. This look is partial and
+descriptive, on development IEMs only. No variant is chosen from it.
+
+- **Check.** α = 1 reproduces the matrix: 1,387 values, largest difference 2.8e-5, no call differs.
+- **Share of finished readouts called increased** (median over the 19 development knockouts): 0.26 at α = 1, 0.08 at
+  0.5, 0.03 at 0.1, 0.01 at 0.01 and 0.001, and 0 at 0. For the 7 knockouts with v_max of 545 or more, it falls from
+  0.95 to 0.10 at α = 0.5 and to 0 to 0.04 at α = 0.01.
+- **Own lab biomarkers with a finished readout** (50 tuples):
+
+  | α | Correct | Increases | Decreases |
+  |---|---|---|---|
+  | 1 | 43 | 39 of 43 | 4 of 7 |
+  | 0.5 | 17 | 11 of 43 | 6 of 7 |
+  | 0.1, 0.01, 0.001 | 15 | 9 of 43 | 6 of 7 |
+  | 0 | 6 | 0 of 43 | 6 of 7 |
+
+- **Two kinds of increase at α = 1:**
+  - *Capped readouts.* The healthy maximum equals the disease maximum at every α below 1, and falls to about zero
+    only at α = 1. Examples: HIS urinary histidine (29.0), HYPRO1 and GA2 urinary proline (889.9), and GA2 blood C4
+    and C10 carnitines (50). These increases come from draining the healthy state, which any knockout with a large
+    forced flux also does.
+  - *Coupled readouts.* The healthy maximum falls in proportion to the pin. Examples: HIS blood histidine
+    (66.7 − 66.7α) and CPS1 blood glutamine (793 − 793α). These stay increased at every α above 0, and look specific.
+- **Implication, not yet tested.** A single gentler pin removes the generic increases, but also the capped own
+  increases. Once the sweep is complete, two rules are worth comparing on the development set:
+  - calling increases from coupling at a small pin;
+  - reporting capped readouts as indeterminate.
