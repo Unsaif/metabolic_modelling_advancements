@@ -33,3 +33,17 @@ held-out results are already known from the ranking study, so it cannot be teste
 - Whole-body O2 uptake is bounded to 15,000–25,000 mmol/day.
 - The flux distribution at v_max, from interior point with crossover, carries loop fluxes of ±800,000 at their
   bounds. It cannot be read without removing loops first.
+
+## 8 October 2026 (night)
+
+**4. Reaction sets** (set-up information only; no prediction was looked at). The name patterns, copied from
+`runIEM_HH`, leave part of two deficiencies active:
+
+- FED's list skips `_LCAT6e` to `_LCAT9e`: 7 reactions (liver and adrenal gland).
+- HYPRO1's patterns (`_r1453`, `_PROD2m`, `_PRO1xm`) leave 9 cytosolic `PROD2` reactions active in the disease state.
+
+FED is a held-out IEM; only its reaction list was read. Any fix to these sets would be a separate, declared change.
+
+**5. Pin sweep timing.** The sweep started at 23:11 UTC on 7 October, as 3 shards of 3 threads. The solves after a
+change of pin level do not warm-start faster than barrier, at about 8 s each. One readout takes about 950 s per shard,
+so the 187 readouts should take about 16 to 17 hours.
