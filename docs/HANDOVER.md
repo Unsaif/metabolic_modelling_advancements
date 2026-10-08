@@ -1,5 +1,14 @@
 # Handover — "Metabolic modelling improvements" (Tim Hulshof / Claude sessions), 6 September 2026
 
+> **Healthy reference state and next direction, 7–8 October 2026 (Claude Opus 5.5).** Tim asked whether the IEM predictions could be improved by fixing their cause. The answer, on development data, is not by changing the protocol alone. The work is paused, and the next direction is model work.
+> - **Design.** The 57 IEMs were split into 19 development and 38 held-out IEMs (`data/iem/iem_ranking_split_v1.json`), committed before any variant was computed. Plan: `docs/studies/wbm-iem-healthy-reference-dev-plan.md`; every look is recorded in `wbm-iem-healthy-reference-dev-log.md`.
+> - **Pin sweep.** Healthy maxima at 1, 0.5, 0.1, 0.01, 0.001 and 0 of v_max for the development IEMs, run with Gurobi on Tim's Mac (`scripts/run_wbm_iem_pin_sweep.py`; results in `results/wbm_iem/pin_sweep/`).
+>   - At the full pin, most apparent hits on known increases are capped readouts drained to zero, which any large forced flux produces.
+>   - A gentler pin removes those, raising the plain-score ranking for low-v_max diseases and lowering it for large-v_max ones.
+>   - Against the adjusted score the lab gain is +0.04. The study stopped without a held-out test, so the held-out IEMs remain unused by any variant.
+> - **Side findings.** `runIEM_HH`'s name patterns miss part of two deficiencies: FED skips 7 LCAT reactions, and HYPRO1 leaves 9 cytosolic PROD2 reactions active. Shlomi et al. 2009's clinical recall of 0.1 is confirmed from the paper.
+> - **Ideas and next direction.** Tim's Claude Doc "Better IEM predictions: a local agent, the protocol and the model" covers this, alongside a note for Ines on the accuracy baseline. Tim is pausing protocol development. The next direction is model work: auditing caps, loops and disease definitions, and evaluating an agent that does reconstruction itself, Python first. The brief for that fresh Claude Code session is `docs/briefs/2026-10-08-reconstruction-agent-brief.md`.
+
 > **IEM disease-ranking study, 6–7 October 2026 (Claude Opus 5.5). Complete; the Paper 2 write-up waits for Tim's decisions.** Tim chose this while his colleague reviews the papers.
 > - **The question.** Given a disease's known biomarker profile, do the whole-body model's predictions rank that disease above the other 56 simulated IEMs? v0.3's 86.5% shows the predictions are accurate; this asks whether they are specific.
 > - **Read first.** Results `docs/studies/wbm-iem-ranking-results.md` (project copy `studies/2026-10-07-iem-ranking-results.md`), plan `wbm-iem-ranking-plan.md` (project copy `studies/2026-10-06-iem-ranking-plan.md`), deviations `wbm-iem-ranking-deviations.md`, and the file guide `results/wbm_iem/ranking/README.md`.

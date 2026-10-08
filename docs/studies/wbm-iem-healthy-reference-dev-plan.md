@@ -97,3 +97,10 @@ Committed with the sweep script, before the development run.
   - At α = 0.5, urinary histamine's healthy maximum rose to the disease value, 29.0, so that own increase would become
     "unchanged". Blood histamine's rose from 50.0 to 83.4, still below the disease value of 116.7.
   - HIS is a development IEM, so this is within the rules.
+
+## Outcome
+
+8 October 2026: the development sweep finished, and the study stopped without a held-out test. The development data
+showed no clear win over the current protocol with the adjusted score. The held-out set is dominated by the large-v_max
+diseases that a gentler pin hurts. The results and reasoning are in `wbm-iem-healthy-reference-dev-log.md`. The
+held-out IEMs remain unused by any variant.

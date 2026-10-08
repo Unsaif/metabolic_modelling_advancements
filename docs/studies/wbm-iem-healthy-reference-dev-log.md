@@ -77,3 +77,52 @@ descriptive, on development IEMs only. No variant is chosen from it.
   increases. Once the sweep is complete, two rules are worth comparing on the development set:
   - calling increases from coupling at a small pin;
   - reporting capped readouts as indeterminate.
+
+Note on items 2 and 6: "v_max of 545 or more" counts AGAT, whose v_max is 544.8. The 7 knockouts are those with v_max
+above 500.
+
+## 8 October 2026 (evening): the complete pin sweep, and the decision
+
+The sweep finished at 18:57 UTC: 187 readouts × 19 development IEMs × 6 pin levels, all solves optimal. The joined
+file equals a re-join of the three shards. α = 1 reproduces the matrix: 3,534 values, largest difference 9.3e-5, no
+call differs. Analyses: `scripts/iem_pin_sweep_analysis.py` and `scripts/iem_pin_sweep_rules_dev.py`; outputs are in
+`results/wbm_iem/pin_sweep/`. The ranking is among the 19 development knockouts (chance MRR 0.187).
+
+| Rule | Share called increased (median) | Own lab correct | Lab MRR, plain | Lab MRR, adjusted | HPO MRR, plain | HPO MRR, adjusted |
+|---|---|---|---|---|---|---|
+| α = 1 (current protocol) | 0.30 | 65 of 84 | 0.442 | 0.623 | 0.404 | 0.547 |
+| α = 0.5 | 0.06 | 30 of 84 | 0.619 | 0.659 | 0.604 | 0.684 |
+| α = 0.1 | 0.01 | 23 of 84 | 0.509 | 0.577 | 0.545 | 0.592 |
+| α = 0.001 (increases only where coupled) | 0.01 | 23 of 84 | 0.522 | 0.576 | 0.561 | 0.610 |
+| α = 0 | 0.00 | 8 of 84 | 0.286 | 0.363 | 0.420 | 0.554 |
+| α = 1 with capped increases indeterminate | 0.10 | 33 of 84 | 0.639 | 0.587 | 0.538 | 0.565 |
+| Pin capped at 100 mmol/day | 0.08 | 35 of 84 | 0.603 | 0.622 | 0.614 | 0.589 |
+
+**Paired comparison with α = 1** (19 lab profiles; 16 HPO profiles; bootstrap 95% intervals):
+
+- **α = 0.5, plain score:** lab +0.18 [−0.02, +0.37], 11 profiles better and 6 worse; HPO +0.20 [0.00, +0.40].
+- **α = 0.5, adjusted score:** lab +0.04 [−0.15, +0.23], 5 better and 5 worse; HPO +0.14 [−0.05, +0.33].
+- **Capped increases indeterminate, plain:** lab +0.20 [+0.03, +0.37]; adjusted: lab −0.04.
+
+**Where the change comes from.**
+
+- At α = 0.5, the low-v_max diseases move to the top: CYP21D, DPYR, HIS, HLYS1, HYCARO, IVA and TYR3 go from
+  0.1–0.5 to 1.0, because the large-v_max knockouts stop matching every profile.
+- The large-v_max diseases fall: GA2 from 0.75 to 0.07, SSADHD 0.52 to 0.09, HMG 0.46 to 0.19, HYPRO1 0.37 to 0.16.
+  Their own matches were drained, capped readouts.
+
+**Decision: stop without a held-out test.** The rule agreed with Tim on 8 October was to stop unless the development
+data showed a clear win. They do not:
+
+- Every interval for the plain score includes or touches zero.
+- Against the adjusted score, which is the current best method, the lab gain is +0.04, with 5 profiles better and 5
+  worse.
+- The gain comes from the low-v_max diseases, at the expense of the large-v_max ones. The held-out set has 24 of 38
+  IEMs with v_max above 500 (20 above 10,000), against 7 of 19 in development, so the gain would probably not carry
+  over.
+- Own-biomarker agreement falls from 65 to 30 of 84.
+
+**What the sweep shows.** The forced flux sets a trade-off between sensitivity and specificity. At the full pin, most
+apparent hits on known increases are capped readouts drained to zero, which any large forced flux produces. Real,
+coupled increases are fewer and survive any pin. Fixing this needs model work on caps, loops and disease definitions,
+not another protocol setting. That work is the next direction (see `docs/briefs/` and the ideas document).

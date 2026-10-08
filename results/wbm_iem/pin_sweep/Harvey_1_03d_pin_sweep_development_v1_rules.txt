@@ -1,0 +1,37 @@
+a1            own 65/84  inc share 0.30  lab 0.442  lab-adj 0.623  hpo 0.404  hpo-adj 0.547
+a0.5          own 30/84  inc share 0.06  lab 0.619  lab-adj 0.659  hpo 0.604  hpo-adj 0.684
+coupled       own 23/84  inc share 0.01  lab 0.522  lab-adj 0.576  hpo 0.561  hpo-adj 0.610
+capped_indet  own 33/84  inc share 0.10  lab 0.639  lab-adj 0.587  hpo 0.538  hpo-adj 0.565
+  a0.5          vs alpha 1, lab    : mean diff +0.178 [95% boot -0.021, +0.370]  better 11 worse 6  Wilcoxon p 0.113
+  a0.5          vs alpha 1, lab-adj: mean diff +0.036 [95% boot -0.151, +0.227]  better 5 worse 5  Wilcoxon p 0.834
+  a0.5          vs alpha 1, hpo    : mean diff +0.200 [95% boot -0.001, +0.402]  better 11 worse 3  Wilcoxon p 0.074
+  a0.5          vs alpha 1, hpo-adj: mean diff +0.137 [95% boot -0.051, +0.330]  better 7 worse 3  Wilcoxon p 0.160
+  coupled       vs alpha 1, lab    : mean diff +0.080 [95% boot -0.095, +0.252]  better 8 worse 9  Wilcoxon p 0.653
+  coupled       vs alpha 1, lab-adj: mean diff -0.047 [95% boot -0.214, +0.110]  better 6 worse 5  Wilcoxon p 0.765
+  coupled       vs alpha 1, hpo    : mean diff +0.157 [95% boot -0.037, +0.347]  better 10 worse 4  Wilcoxon p 0.124
+  coupled       vs alpha 1, hpo-adj: mean diff +0.062 [95% boot -0.100, +0.219]  better 7 worse 3  Wilcoxon p 0.322
+  capped_indet  vs alpha 1, lab    : mean diff +0.197 [95% boot +0.025, +0.367]  better 10 worse 4  Wilcoxon p 0.055
+  capped_indet  vs alpha 1, lab-adj: mean diff -0.035 [95% boot -0.169, +0.087]  better 4 worse 6  Wilcoxon p 0.793
+  capped_indet  vs alpha 1, hpo    : mean diff +0.134 [95% boot -0.051, +0.320]  better 10 worse 3  Wilcoxon p 0.163
+  capped_indet  vs alpha 1, hpo-adj: mean diff +0.018 [95% boot -0.109, +0.131]  better 6 worse 3  Wilcoxon p 0.570
+
+Per-profile expected reciprocal rank, lab plain (alpha 1 -> 0.5):
+  3MGA    vmax        56: 0.34 -> 0.19
+  AGAT    vmax       545: 1.00 -> 1.00
+  CMO1    vmax         0: 1.00 -> 0.75
+  CPS1    vmax       793: 0.37 -> 0.75
+  CYP21D  vmax         0: 0.34 -> 1.00
+  DPYR    vmax         0: 0.12 -> 1.00
+  EP      vmax      2357: 0.22 -> 0.31
+  GA2     vmax     79295: 0.75 -> 0.07
+  GACR    vmax        74: 1.00 -> 1.00
+  HCYS    vmax        16: 0.08 -> 0.41
+  HIS     vmax        67: 0.34 -> 1.00
+  HLYS1   vmax        79: 0.34 -> 1.00
+  HMG     vmax     43202: 0.46 -> 0.19
+  HYCARO  vmax         0: 0.37 -> 1.00
+  HYPRO1  vmax     92160: 0.37 -> 0.16
+  IVA     vmax        56: 0.16 -> 0.75
+  MMA     vmax        61: 0.09 -> 0.11
+  SSADHD  vmax      4733: 0.52 -> 0.09
+  TYR3    vmax        43: 0.52 -> 1.00
