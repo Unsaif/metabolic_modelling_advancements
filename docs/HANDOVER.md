@@ -1,7 +1,7 @@
 # Handover — "Metabolic modelling improvements" (Tim Hulshof / Claude sessions), 6 September 2026
 
 > **Healthy reference state and next direction, 7–8 October 2026 (Claude Opus 5.5).** Tim asked whether the IEM predictions could be improved by fixing their cause. The answer, on development data, is not by changing the protocol alone. The work is paused, and the next direction is model work.
-> - **Design.** The 57 IEMs were split into 19 development and 38 held-out IEMs (`data/iem/iem_ranking_split_v1.json`), committed before any variant was computed. Plan: `docs/studies/wbm-iem-healthy-reference-dev-plan.md`; every look is recorded in `wbm-iem-healthy-reference-dev-log.md`.
+> - **Design.** The 57 IEMs were split into 19 development and 38 held-out IEMs (`data/iem/iem_ranking_split_v1.json`), committed before any variant was computed. Plan: `docs/studies/wbm-iem-healthy-reference-dev-plan.md` (project copy `studies/2026-10-07-healthy-reference-dev-plan.md`); every look is recorded in `wbm-iem-healthy-reference-dev-log.md` (project copy `studies/2026-10-08-healthy-reference-dev-log.md`).
 > - **Pin sweep.** Healthy maxima at 1, 0.5, 0.1, 0.01, 0.001 and 0 of v_max for the development IEMs, run with Gurobi on Tim's Mac (`scripts/run_wbm_iem_pin_sweep.py`; results in `results/wbm_iem/pin_sweep/`).
 >   - At the full pin, most apparent hits on known increases are capped readouts drained to zero, which any large forced flux produces.
 >   - A gentler pin removes those, raising the plain-score ranking for low-v_max diseases and lowering it for large-v_max ones.
